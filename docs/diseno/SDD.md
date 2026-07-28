@@ -15,7 +15,7 @@ Autor: Josele · Diseño técnico: Claude
 | 0.2 | Doble salida por tarea (rúbrica estándar + modo IA). Exportación a Excel (.xlsx) compatible con iDoceo. Marco LOMLOE y matrices cuantitativas como fuente de criterios. |
 | 0.3 | Constructor guiado: dimensiones por checkboxes, profundidad, pesos visuales y 5 instrumentos generables. |
 | 0.4 | Fusión de profundidad con "tiempo disponible para corregir". Campo libre de actividad, guardar/cargar en localStorage, criterios obligatorios, barra de reparto de pesos, indicador de complejidad. Biblioteca organizada por bloques LOMLOE (A-D). |
-| **1.2** | Se cierran las reglas exactas de §6.2 y §6.3, hasta ahora escritas en prosa con ambigüedades reales de implementación: `valor_nivel` es siempre el de un nivel entero, nunca los puntos brutos de una matriz; la condición mínima es un techo no acumulativo que no actúa sin criterios obligatorios en el instrumento; las penalizaciones se recortan con `Math.max(ocurrencias × puntos, tope)` y la puntuación bruta de una dimensión nunca baja de 0; las bandas de §6.4 se cierran por umbrales (`>=9`, `>=7`, `>=5`) para no dejar huecos entre "8,9" y "9,0"; se fija la regla de redondeo exacta y en qué dos momentos se aplica; se documenta el invariante `total = 10` de toda matriz, todavía sin comprobar en el validador; y se añade §6.5, que separa el cálculo (implementable ya, como funciones puras) de la pantalla de entrada de resultados por alumno, que no existe todavía. Las tres decisiones de producto que siguen pendientes de confirmación (§17.1-§17.3) se implementan con el valor que el propio SDD proponía por defecto, sin darlas por cerradas. |
+| **1.2** | Se cierran las reglas exactas de §6.2 y §6.3, hasta ahora escritas en prosa con ambigüedades reales de implementación. **Una dimensión con matriz aporta a la nota sus puntos continuos, no el valor de su nivel**, y las bandas de §6.4 sirven para mostrar y para comprobar la condición mínima, no para calcular: lo confirman `Rúbricas documentación.md` y `scripts/simular_correccion.py`, y lo exige el hecho de que colapsar puntos a nivel haría que una décima valiese 2,5 puntos de nota en el corte del 9. Además: las penalizaciones aplicadas son negativas y **se suman**; la puntuación de una dimensión nunca baja de 0; la condición mínima es un techo no acumulativo que no actúa sin criterios obligatorios en el instrumento; **el detractor global se aplica antes que ese techo**, porque el orden entre ambos cambia la nota; las bandas se cierran por umbrales (`>=9`, `>=7`, `>=5`) para no dejar hueco entre "8,9" y "9,0"; y se fija la regla de redondeo con su alcance real. Se documenta el invariante `total = 10`, todavía sin comprobar en el validador, y la discrepancia de escala entre §6.2 y el simulador. Se añade §6.5, que separa el cálculo (implementable ya, como funciones puras) de la pantalla de entrada de resultados por alumno, que no existe. Las tres decisiones de producto pendientes (§17.1-§17.3) se implementan con el valor que el propio SDD proponía por defecto, sin darlas por cerradas. |
 | **1.1** | Se ajusta el roadmap a lo que hay construido: la fase 1 queda cerrada y la fase 2 se abre por piezas con su estado real (§16.1), contrastado con el código en vez de con la intención. Se añade la publicación como decisión abierta (§17.9). El proyecto pasa a repositorio con `README.md` y validación automática en cada empujón. |
 | **1.0** | El validador de §10 pasa a estar completo **dentro de la aplicación** (`js/validador.js`), con las quince reglas y en paridad comprobada con `scripts/validar_pack.py`: la app no puede dar por limpio lo que el script rechaza. La regla de **modalizadores del criterio** se reformula en dos direcciones (ayuda declarada que no aparece en la rúbrica; andamiaje que sobrevive a la autonomía) y se descartan las familias de sencillez y extensión, que marcaban criterios correctos (§10, nota). Cada regla lleva su microexplicación y el panel de salud del pack agrupa por regla. Las microexplicaciones de §11.3 se centralizan en `js/microexplicaciones.js` y cubren todos los controles del modo exprés, la vista previa y el modo avanzado. |
 | **0.9** | Se sustituye `evidencias_observables` por `matriz_cuantitativa` (§5.2, §7.8): cada componente de una dimensión pasa a tener puntos exactos por banda, con penalizaciones contables propias del componente. Es la pieza que faltaba para que el modo IA (7.8) corrija con precisión y no por impresión. Fuente: `Rúbricas documentación.md`, matrices de coherencia y cohesión del texto argumentativo. Se reescribe §6.2 para separar los dos mecanismos de descuento, que hasta ahora chocaban. |
@@ -307,17 +307,37 @@ La escala equilibrada evita que un alumno que ha producido algo, aunque flojo, o
 
 **Cálculo:** nota = Σ (valor_nivel_i × peso_i) / 100. Los pesos se normalizan siempre a 100 antes de calcular. Redondeo a la centésima en el cálculo interno y presentación con dos decimales; la conversión a nota entera de acta la hace el profesor según los criterios de su centro, no la app.
 
-**Regla cerrada, porque no es evidente en la frase anterior: `valor_nivel_i` es siempre el valor de un nivel entero (1 a 4), nunca los puntos brutos de una matriz.** Una dimensión con `matriz_cuantitativa` no entra en la suma con su puntuación continua (por ejemplo 6,5 sobre 10): primero esos puntos se traducen a nivel por las bandas de §6.4, y es *ese* nivel el que entra en la tabla de esta sección. Lo dice el propio nombre de la variable de la fórmula (`valor_nivel`, no `valor_puntos`) y lo confirma la frase de cierre de §6.4: una dimensión con matriz y otra sin ella «conviven en la misma rúbrica y en la misma nota final, sin que el alumno vea dos sistemas distintos» — y solo conviven si las dos entran como el mismo tipo de dato. Consecuencia práctica: dos alumnos con 5,1 y 6,9 puntos en la misma dimensión matricial obtienen idéntico nivel (2) e idéntica contribución a la nota; el desglose de puntos se conserva para explicar la calificación, pero no participa dos veces.
+**Qué es exactamente `valor_nivel_i`, porque la fórmula sola no lo dice.** Toda dimensión aporta a la suma un número de 0 a 10, pero ese número se obtiene de dos maneras según cómo se haya corregido la dimensión:
 
-**Redondeo, con la regla que evita el desajuste de coma flotante.** Se define
-`redondear2(x) = Math.round((x + Number.EPSILON) * 100) / 100` (mitad hacia arriba, no *banker's
-rounding*, y con el `Number.EPSILON` de rigor porque `Math.round(6.005 * 100)` en JavaScript da
-600 y no 601 sin él). Se aplica en dos momentos, y solo en esos dos:
+| Cómo se corrige la dimensión | Qué entra en la suma |
+|---|---|
+| **Con `matriz_cuantitativa`** | Sus **puntos brutos** (0–10), tal cual: la suma de componentes menos las penalizaciones (§6.3) |
+| **Sin matriz**, eligiendo nivel por descriptor | El **valor del nivel** según la escala de la tabla de arriba (2,5 / 5 / 7,5 / 10) |
 
-1. A la puntuación bruta de cada dimensión con matriz, **antes** de convertirla a nivel (§6.4)
-   — por si la suma de componentes y penalizaciones deja un resultado con más de dos decimales.
+Y **las bandas de §6.4 no intervienen en el cálculo de la nota**: traducen un número de 0 a 10 al nombre de su nivel, que es lo que ve el alumno en la rúbrica y lo que necesita la condición mínima para saber si un criterio obligatorio está en N1. La nota se calcula con el número; el nivel es su etiqueta.
+
+Esto es lo que sostienen las dos fuentes del modelo, y conviene dejarlo escrito porque la primera redacción de esta sección afirmó lo contrario. `Rúbricas documentación.md` reparte los diez puntos por dimensión —«Adecuación 25% → 2,5 pts; Coherencia 30% → 3,0 pts»—, que es exactamente `puntos × peso / 100` sobre la puntuación continua; y `scripts/simular_correccion.py`, que es la implementación de referencia con la que se prueba toda matriz nueva (§15), hace `aporta = puntos * peso / 100` desde antes de que esta sección existiera.
+
+**Por qué importa, más allá de la fidelidad a las fuentes.** Si los puntos de una matriz se colapsaran a su nivel antes de ponderar, un alumno con 8,9 aportaría 7,5 y otro con 9,0 aportaría 10: **una décima de desempeño valdría 2,5 puntos de nota**. Un escalón así es indefendible en una reclamación, y este modelo existe precisamente para sostenerse en una (§6, primera línea). Con puntos continuos, 8,9 aporta 8,9 y la matriz conserva la precisión que justifica su existencia (§5.2).
+
+**Redondeo.** Se define `redondear2(x) = Math.round((x + Number.EPSILON) * 100) / 100`: mitad hacia
+arriba, no *banker's rounding*. El `Number.EPSILON` corrige los casos en que el número decimal no
+tiene representación binaria exacta y cae un pelo por debajo del medio — `1.005 * 100` da
+`100.49999999999999`, que sin la corrección redondea a 1,00 en vez de a 1,01.
+
+No es una defensa completa y conviene no venderla como tal: `8.995` se almacena como `8.99499…`, un
+error mayor que `EPSILON`, y sigue redondeando a 8,99. Se acepta, porque para que eso importe haría
+falta un tercer decimal que estas matrices no producen: las bandas del pack puntúan con enteros y
+medios puntos, y las penalizaciones también, así que las sumas caen en valores exactos en binario.
+El `EPSILON` está por lo que pueda venir en packs futuros, no por lo que hay hoy.
+
+Se aplica en dos momentos, y solo en esos dos:
+
+1. A la puntuación de cada dimensión, **antes** de ponderarla y antes de convertirla a nivel
+   (§6.4) — así el número que ve el alumno en el desglose es exactamente el que se usó para
+   calcular, y no uno que difiera en el último decimal.
 2. A la nota final, una sola vez, al terminar la suma ponderada — no en cada término
-   `valor_nivel_i × peso_i` por separado, porque redondear términos intermedios acumula error y
+   `valor_i × peso_i` por separado, porque redondear términos intermedios acumula error y
    contradice que sea "el cálculo interno" el que se redondea, no cada paso de él.
 
 **Criterios obligatorios.** Por defecto un criterio obligatorio pesa como cualquier otro y no limita la nota. Existe una opción, desactivada por defecto, de *condición mínima*: si un criterio obligatorio se sitúa en N1, la nota final se limita a 4,9. Se deja desactivada porque una condición mínima que no se ha anunciado al alumnado antes de la prueba es difícil de sostener; si se activa, la app la imprime obligatoriamente en la ficha del alumno.
@@ -349,13 +369,24 @@ ocurrencias del fenómeno (por ejemplo, «3 digresiones»); la penalización apl
 `pen.puntos` y `pen.tope` son negativos, así que el valor "más grande" (menos negativo) es el que
 respeta el tope, y `Math.max` es el que se queda con él en cuanto las ocurrencias lo superan.
 
+**Las penalizaciones aplicadas son números negativos y por tanto se SUMAN, no se restan.** Es la
+trampa de signo evidente en cuanto se escribe y fácil de pasar por alto al leer: `pen.puntos` y
+`pen.tope` son negativos en el pack, luego el resultado de la fórmula anterior también lo es, y
+restarlo subiría la nota en vez de bajarla. La implementación de referencia lo hace bien
+(`scripts/simular_correccion.py`: `puntos = max(0.0, bruto + descuento)`), y esta especificación
+dijo lo contrario en su primera redacción.
+
 **La puntuación bruta de una dimensión con matriz nunca es negativa.** Los componentes solo pueden
 sumar entre 0 (todas las bandas mínimas) y `total`; las penalizaciones solo restan. El validador ya
 garantiza que la suma de topes no pase de la mitad de `total` (§10, `penalizacion_sin_tope`), pero
 en el caso límite —todos los componentes en su banda de 0 y todas las penalizaciones a tope— la
-resta simple daría un número negativo. Por eso el cálculo real es
-`puntosDimension = Math.max(0, sumaComponentes - sumaPenalizacionesAplicadas)`, no una resta a
-secas: la matriz puede llegar a 0, nunca a menos que 0.
+suma daría un número negativo. Por eso el cálculo completo es:
+
+```
+puntosDimension = Math.max(0, sumaComponentes + sumaPenalizacionesAplicadas)
+```
+
+La matriz puede llegar a 0, nunca a menos que 0.
 
 **Regla del doble castigo: una penalización no puede medir lo que ya mide un componente.** Es el error más fácil de cometer al escribir una matriz, y salió en la primera que redactamos: el componente *"Puntuación al servicio de la estructura"* ya valoraba los errores de puntuación, y encima había una penalización por párrafo largo sin puntos. El alumno pagaba dos veces por el mismo fenómeno.
 
@@ -368,17 +399,38 @@ De aquí salen dos consecuencias que el diseño adopta:
 
 Ambos mecanismos son coherentes con el principio de enmienda del Marco Teórico §1.4: el error no resta en términos absolutos, resta acotado y con la vía de mejora señalada al lado.
 
-**Fórmula exacta del detractor global**, para cuando exista un instrumento que lo produzca (§7.7):
-`notaFinal = Math.max(0, notaCalculada - Math.min(detractorAcumulado, 2))`. Resta sobre la nota ya
-calculada por §6.2 —no sobre una dimensión, no antes de aplicar la condición mínima ni después:
-son ajustes independientes, y el orden entre ellos no importa porque ninguno de los dos puede subir
-la nota—, y nunca la baja de 0. **Hoy no está conectado a ningún instrumento**: la escala de
-estimación analítica (§7.7) todavía no existe (§16.1), así que esta fórmula queda escrita para
-cuando se construya, no para usarse ya.
+**Fórmula exacta del detractor global**, para cuando exista un instrumento que lo produzca (§7.7).
+A diferencia de las penalizaciones de componente, `detractorAcumulado` se maneja como una cantidad
+**positiva** que se resta (es lo que hacen las fuentes al decir «restar 1,0 punto por falacia»), y
+su tope es común a todos: 2 puntos sobre 10.
+
+```
+notaTrasDetractor = Math.max(0, notaCalculada - Math.min(detractorAcumulado, 2))
+```
+
+**El orden respecto a la condición mínima sí importa, y se fija aquí: primero el detractor, después
+el techo.** La primera redacción de esta sección afirmó que daba igual porque ninguno de los dos
+puede subir la nota; es falso, y basta un caso para verlo. Con una nota calculada de 8, detractor de
+2 y la condición mínima disparada: aplicando el techo primero se obtiene `min(8; 4,9) = 4,9` y luego
+`4,9 − 2 = 2,9`; aplicando el detractor primero, `8 − 2 = 6` y luego `min(6; 4,9) = 4,9`. Dos notas
+distintas para el mismo alumno.
+
+Se elige el segundo orden por lo que significa cada mecanismo: el detractor forma parte de calcular
+la nota, y la condición mínima es un límite sobre **la nota final**, que es lo que dice §6.2 con esas
+mismas palabras. Un techo que se aplica antes de terminar el cálculo deja de ser un techo.
+
+```
+notaFinal = condicionMinimaActiva && algúnObligatorioEnN1
+  ? Math.min(notaTrasDetractor, 4.9)
+  : notaTrasDetractor
+```
+
+**Hoy no está conectado a ningún instrumento**: la escala de estimación analítica (§7.7) todavía no
+existe (§16.1), así que esta parte queda escrita para cuando se construya, no para usarse ya.
 
 ### 6.4 De puntos a nivel
 
-Cuando una dimensión se corrige con matriz cuantitativa, sus 10 puntos se traducen a nivel con estas bandas:
+Un número de 0 a 10 se traduce al nombre de su nivel con estas bandas. Se aplican tanto a los puntos de una dimensión con matriz como a la nota final del instrumento — son la misma escala, que es lo que permite decirle al alumno «tu texto está en Avanzado» sin cambiar de sistema. **Traducen para mostrar y para comprobar la condición mínima (§6.2); no intervienen en el cálculo de la nota.**
 
 | Puntos de la dimensión | Nivel |
 |---|---|
@@ -402,9 +454,9 @@ nivel = puntos >= 9 ? 4
       : 1
 ```
 
-`puntos` es la puntuación bruta de la dimensión **ya pasada por `redondear2` (§6.2)** antes de esta
-comparación: así un 8,995 que en realidad es 9,00 con error de coma flotante no se queda a un lado
-u otro del corte por azar de representación binaria.
+El número que entra aquí viene **ya pasado por `redondear2` (§6.2)**, para que un valor que en
+realidad es 9,00 pero se almacena como 8,99999… no caiga al lado equivocado del corte por azar de
+representación binaria.
 
 **Invariante: `matriz_cuantitativa.total` es siempre 10.** Estas bandas están escritas en puntos
 absolutos, no en porcentaje, y solo tienen sentido si toda matriz está construida sobre 10 — como
@@ -418,7 +470,9 @@ del validador, no como parte de esta especificación de cálculo.
 
 Lo único que no coincide entre ambas fuentes son los **nombres** de los niveles 1 a 3 (*En desarrollo / Conseguido / Avanzado* frente a *Iniciado / Suficiente / Notable*), y esa es una de las decisiones abiertas de §17. Los números no dependen de cómo se resuelva.
 
-Así, una dimensión corregida con matriz y otra corregida por descriptor conviven en la misma rúbrica y en la misma nota final, sin que el alumno vea dos sistemas distintos.
+Así, una dimensión corregida con matriz y otra corregida por descriptor conviven en la misma rúbrica y en la misma nota final, sin que el alumno vea dos sistemas distintos: las dos aportan un número de 0 a 10 y las dos se leen con esta misma tabla.
+
+**Discrepancia pendiente con la implementación de referencia.** `scripts/simular_correccion.py` valora las dimensiones **sin** matriz con `{1: 2,5 · 2: 6,0 · 3: 8,0 · 4: 9,5}` —los puntos medios de cada banda— y no con la escala equilibrada de §6.2 (2,5 / 5 / 7,5 / 10). Ambas escalas son internamente coherentes (las dos, releídas con esta tabla, devuelven el nivel del que salieron), pero no son la misma y hoy el proyecto sostiene las dos a la vez. La de §6.2 es la que tiene respaldo documental —se corresponde con los porcentajes por componente de `Rúbricas documentación.md`: 100 % / 75 % / 50 % / 25 %—, así que es la que debe prevalecer y el script el que hay que ajustar. No se ha tocado todavía porque cambiar esos valores cambia el resultado de las simulaciones con las que se validaron las matrices existentes, y eso pide rehacerlas, no editarlas de paso.
 
 **Bonificaciones:** no existen. Un desempeño excepcional se recoge subiendo de nivel, no sumando puntos fuera de la matriz.
 
@@ -444,12 +498,20 @@ ResultadoCriterio =
       ocurrenciasPenalizacion: { [clave]: number } }     // recuento por penalización disparada; ausente = 0
 ```
 
-Un criterio sin `matriz_cuantitativa` solo puede producir `{ tipo: "nivel" }` (selección directa
-del descriptor). Un criterio con matriz siempre produce `{ tipo: "matriz" }`, que el motor reduce a
-un nivel por §6.4 antes de entrar en la suma de §6.2. Con esta forma de entrada ya cerrada, el orden
-de trabajo queda: (1) las funciones puras de cálculo de §6.2–§6.4, con sus casos dorados de §15;
-(2) la pantalla o el flujo que produce un `ResultadoCriterio` por alumno y por dimensión, que es
-trabajo de interfaz nuevo y no está todavía diseñado en §11.
+Un criterio sin `matriz_cuantitativa` solo puede producir `{ tipo: "nivel" }` (selección directa del
+descriptor), y aporta el valor de ese nivel según la escala de §6.2. Un criterio con matriz siempre
+produce `{ tipo: "matriz" }`, del que salen sus puntos por §6.3, y son esos puntos los que aportan;
+su nivel se calcula aparte, por §6.4, para mostrarlo y para la condición mínima.
+
+`bandasElegidas` se indexa por nombre de componente, que es único dentro de cada matriz del pack
+—comprobado, aunque el validador no lo exige todavía—; si alguna vez dejara de serlo, la clave pasa
+a ser el índice del componente.
+
+Con esta forma de entrada cerrada, el orden de trabajo queda: (1) las funciones puras de cálculo de
+§6.2–§6.4, con sus casos dorados de §15, incluidos los bordes que esta revisión destapó —el signo de
+las penalizaciones, el orden entre detractor y techo, y los cortes 5 / 7 / 9 con valores justo por
+debajo—; (2) la pantalla o el flujo que produce un `ResultadoCriterio` por alumno y por dimensión,
+que es trabajo de interfaz nuevo y no está todavía diseñado en §11.
 
 ---
 
