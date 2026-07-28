@@ -2,7 +2,7 @@
 
 ## Generador de Instrumentos de Evaluación — Lengua Castellana y Literatura (LOMLOE)
 
-**Versión 1.0** · Documento de trabajo · Julio 2026
+**Versión 1.1** · Documento de trabajo · Julio 2026
 Autor: Josele · Diseño técnico: Claude
 
 ---
@@ -15,6 +15,7 @@ Autor: Josele · Diseño técnico: Claude
 | 0.2 | Doble salida por tarea (rúbrica estándar + modo IA). Exportación a Excel (.xlsx) compatible con iDoceo. Marco LOMLOE y matrices cuantitativas como fuente de criterios. |
 | 0.3 | Constructor guiado: dimensiones por checkboxes, profundidad, pesos visuales y 5 instrumentos generables. |
 | 0.4 | Fusión de profundidad con "tiempo disponible para corregir". Campo libre de actividad, guardar/cargar en localStorage, criterios obligatorios, barra de reparto de pesos, indicador de complejidad. Biblioteca organizada por bloques LOMLOE (A-D). |
+| **1.1** | Se ajusta el roadmap a lo que hay construido: la fase 1 queda cerrada y la fase 2 se abre por piezas con su estado real (§16.1), contrastado con el código en vez de con la intención. Se añade la publicación como decisión abierta (§17.9). El proyecto pasa a repositorio con `README.md` y validación automática en cada empujón. |
 | **1.0** | El validador de §10 pasa a estar completo **dentro de la aplicación** (`js/validador.js`), con las quince reglas y en paridad comprobada con `scripts/validar_pack.py`: la app no puede dar por limpio lo que el script rechaza. La regla de **modalizadores del criterio** se reformula en dos direcciones (ayuda declarada que no aparece en la rúbrica; andamiaje que sobrevive a la autonomía) y se descartan las familias de sencillez y extensión, que marcaban criterios correctos (§10, nota). Cada regla lleva su microexplicación y el panel de salud del pack agrupa por regla. Las microexplicaciones de §11.3 se centralizan en `js/microexplicaciones.js` y cubren todos los controles del modo exprés, la vista previa y el modo avanzado. |
 | **0.9** | Se sustituye `evidencias_observables` por `matriz_cuantitativa` (§5.2, §7.8): cada componente de una dimensión pasa a tener puntos exactos por banda, con penalizaciones contables propias del componente. Es la pieza que faltaba para que el modo IA (7.8) corrija con precisión y no por impresión. Fuente: `Rúbricas documentación.md`, matrices de coherencia y cohesión del texto argumentativo. Se reescribe §6.2 para separar los dos mecanismos de descuento, que hasta ahora chocaban. |
 | 0.8 | Se retira del validador toda comparación basada en el nivel cognitivo del verbo: producía falsos positivos y partía de una premisa equivocada. La progresión entre cursos la fija la redacción del criterio oficial, no el diseñador. Entra la regla de **modalizadores del criterio** y se rebaja la comparación entre cursos a detector de copiar y pegar (§10). Se explicita en §11.2 la libertad de reparto de pesos. |
@@ -584,13 +585,37 @@ Un motor de reglas sin pruebas se degrada en cuanto se toca. Con un puñado de c
 
 ## 16. Roadmap
 
-| Fase | Contenido |
-|---|---|
-| **Fase 1 — Prototipo** | Motor, modo exprés, rúbrica analítica, lista de cotejo, ficha del alumno, impresión. Pack de **texto expositivo en 1.º de ESO y en 3.º de ESO**: misma tarea en dos cursos distantes, para poner a prueba los ejes de progresión desde el primer día |
-| **Fase 2 — v1 completa** | La matriz completa de tarea × curso (§4.3), los siete instrumentos, modo avanzado, validador, exportación `.xlsx`, publicación |
-| **Fase 3** | Reacción a noticia, redacción de noticia, resumen, comentario de texto literario. Banco de criterios favoritos |
-| **Fase 4** | Lectura en voz alta, podcast, línea de tiempo, trabajo grupal. Calculadora de carga de corrección |
-| **Fase 5 (opcional)** | Enlace compartible y QR · adaptación NEAE · packs de otras materias · integración con iDoceo Connect |
+| Fase | Contenido | Estado |
+|---|---|---|
+| **Fase 1 — Prototipo** | Motor, modo exprés, rúbrica analítica, lista de cotejo, ficha del alumno, impresión. Pack de **texto expositivo en 1.º de ESO y en 3.º de ESO**: misma tarea en dos cursos distantes, para poner a prueba los ejes de progresión desde el primer día | **Terminada** |
+| **Fase 2 — v1 completa** | La matriz completa de tarea × curso (§4.3), los siete instrumentos, modo avanzado, validador, exportación `.xlsx`, publicación | **En curso** (ver desglose) |
+| **Fase 3** | Reacción a noticia, redacción de noticia, resumen, comentario de texto literario. Banco de criterios favoritos | Pendiente |
+| **Fase 4** | Lectura en voz alta, podcast, línea de tiempo, trabajo grupal. Calculadora de carga de corrección | Pendiente |
+| **Fase 5 (opcional)** | Enlace compartible y QR · adaptación NEAE · packs de otras materias · integración con iDoceo Connect | Pendiente |
+
+### 16.1 Desglose de la fase 2
+
+La fase 2 se cerró en el papel como un bloque único y en la práctica se está abriendo por piezas.
+Este es el estado real, contrastado con el código:
+
+| Pieza | Estado | Qué falta |
+|---|---|---|
+| **Validador de calidad (§10)** | Terminado | Nada. Las quince reglas están en `js/validador.js`, en paridad comprobada con `scripts/validar_pack.py`, con una batería de casos en `test/` |
+| **Microexplicaciones (§11.3)** | Terminado | Nada. Catálogo único en `js/microexplicaciones.js`, más un «¿por qué esta regla?» por cada regla del validador |
+| **Modo avanzado (§11.2)** | Parcial | Están los pesos libres con normalización a 100 y la selección de dimensiones por bloque. Faltan profundidad, criterios obligatorios, elección de instrumentos, modo de calificación y edición manual de descriptores con el validador activo |
+| **Catálogo de instrumentos (§7)** | 3 de 7 | Hechos 7.1, 7.2 y 7.3. Faltan rúbrica de un solo punto, autoevaluación, coevaluación, escala de estimación analítica y modo IA. La autoevaluación y la coevaluación son proyección pura —los 26 verbos del banco ya guardan su forma en 1.ª persona—; la rúbrica de un solo punto necesita además contenido, porque `descriptor_un_punto` está vacío en los doce criterios del pack |
+| **Modelo de calificación (§6)** | Parcial | Funciona el modo cualitativo. El numérico está diseñado y los datos existen (`matriz_cuantitativa` en diez criterios), pero el motor todavía no convierte puntos en nota ni aplica penalizaciones |
+| **Matriz tarea × curso (§4.3)** | 2 de 20 celdas | Solo texto expositivo en 1.º y 3.º de ESO. Cada celda nueva es contenido curricular, no código: pasa por el protocolo del skill `rubricas-pack` |
+| **Exportación (§12)** | Parcial | Impresión y PDF funcionan. Faltan `.xlsx` para iDoceo, configuración `.json` y el texto plano del modo IA |
+| **Publicación** | Parcial | Repositorio creado y validación automática en cada empujón. Falta activar GitHub Pages y decidir la URL estable |
+
+**Orden sugerido para seguir.** Primero el modo numérico (§6.2), porque diez criterios ya tienen la
+matriz cargada y sin él ese contenido no se usa. Después la autoevaluación y la coevaluación, que
+son proyección del contenido existente y no piden pack nuevo: coste bajo y valor alto en el aula.
+La ampliación de la matriz tarea × curso puede avanzar en paralelo, porque no toca código. La
+exportación `.xlsx` se deja para el final del bloque: es la única pieza que introduce una
+biblioteca externa (§13) y conviene decidirla junto con el solapamiento con el skill
+`rubricas-lomloe`, que sigue abierto (§17.8).
 
 ---
 
@@ -604,7 +629,8 @@ Un motor de reglas sin pruebas se degrada en cuanto se toca. Con un puñado de c
 6. **Rúbrica holística** (Marco Teórico §6.1): admisible para tareas muy acotadas. Pendiente de decidir si entra como octavo instrumento o se descarta por sostenibilidad.
 7. **Matriz de tarea × curso** (§4.3): la he construido leyendo los criterios del decreto, pero es una lectura mía y tú das clase. Repásala, sobre todo la narración (¿llega a 3.º?) y el argumentativo incipiente en 2.º de ESO.
 8. **Marco teórico superado (bloqueante).** El SDD se ha diseñado contra `Marco_Teorico_Rubricas_LOMLOE.md`, que es una versión anterior. La vigente vive en el proyecto de lengua (`documentos_base/marco_teorico_rubricas-LOMLOE.md`) y corrige el alcance a 1.º ESO – 1.º BACH, fija bandas de calificación sobre 10, impone un guardarraíl de terminología y remite al skill `rubricas-lomloe`. Afecta a §4.1, §6.2 y §7.7. Análisis completo y propuestas en `ENLACE_con_proyecto_lengua.md`.
-9. **Ampliación del marco teórico a 1.º de ESO**: el `Marco_Teorico_Rubricas_LOMLOE.md` describe la progresión desde 2.º de ESO. Los ejes extendidos de §5.4 cubren el hueco dentro de este SDD; conviene reflejarlo también en el marco para que ambos documentos digan lo mismo.
+9. **Publicación** (§16.1): el repositorio existe (`josele-duplex/rubricas`) y la validación se ejecuta en cada empujón, pero falta decidir si la aplicación se publica en GitHub Pages con URL estable y si el repositorio se hace público. Afecta a lo que puede contener `fuentes/`, que hoy guarda material aportado sin revisar para difusión.
+10. **Ampliación del marco teórico a 1.º de ESO**: el `Marco_Teorico_Rubricas_LOMLOE.md` describe la progresión desde 2.º de ESO. Los ejes extendidos de §5.4 cubren el hueco dentro de este SDD; conviene reflejarlo también en el marco para que ambos documentos digan lo mismo.
 
 ---
 

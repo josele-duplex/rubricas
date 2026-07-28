@@ -109,13 +109,21 @@ Nunca se modifican archivos del proyecto de Lengua desde aquí.
 ## Estructura
 
 ```
+index.html       modo exprés y contenedores de la vista previa
+css/             estilos de pantalla y de impresión
+js/              motor, validador, microexplicaciones, interfaz, modo avanzado
 data/            packs de criterios (.json) — la fuente de todo el contenido
 scripts/         validador, generador de revisiones, simulador de corrección
+test/            casos dorados del validador (Node, sin dependencias)
 docs/diseno/     SDD y análisis de enlace
 docs/marco/      marco teórico y matrices de referencia
 docs/            documentos de revisión generados y resúmenes para el docente
 fuentes/         currículo oficial y originales aportados (material crudo)
 ```
+
+El validador vive dos veces —`scripts/validar_pack.py` y `js/validador.js`— y las dos
+implementaciones aplican las mismas reglas. **La aplicación nunca puede dar por limpio un pack que
+el script rechaza** (SDD §10). Toda regla nueva entra en las dos, con su caso en `test/`.
 
 ## Decisiones pendientes
 

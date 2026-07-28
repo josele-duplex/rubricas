@@ -1,0 +1,8 @@
+# Normaliza los finales de línea a LF en el repositorio, aunque se trabaje
+# desde Windows. Sin esto, cada archivo editado aparece como reescrito entero.
+* text=auto eol=lf
+
+# Material aportado y derivados de Office: binarios, nunca se diferencian.
+*.docx binary
+*.xlsx binary
+*.pdf binary
