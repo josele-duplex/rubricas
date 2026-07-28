@@ -20,8 +20,14 @@ def nivel_de(puntos):
     if puntos >= 5: return 2
     return 1
 
-# Valor de una dimensión sin matriz: punto medio de su banda.
-VALOR_NIVEL = {1: 2.5, 2: 6.0, 3: 8.0, 4: 9.5}
+# Valor de una dimensión sin matriz: escala equilibrada del SDD §6.2.
+# Fue el punto medio de cada banda {1: 2.5, 2: 6.0, 3: 8.0, 4: 9.5} hasta que se
+# vio que el proyecto sostenía dos escalas a la vez y que la diferencia decidía
+# aprobados: el mismo perfil daba 5,10 con los puntos medios y 4,90 con esta.
+# Manda esta porque es la que se imprime en la ficha del alumno y la que se
+# corresponde con el vocabulario de siempre: Conseguido 5 (suficiente),
+# Avanzado 7,5 (notable), Excelente 10 (sobresaliente).
+VALOR_NIVEL = {1: 2.5, 2: 5.0, 3: 7.5, 4: 10.0}
 
 
 def simular(pack, curso, perfil=None, semilla=None):
