@@ -1,0 +1,19 @@
+# Derivados de Office
+~$*
+*.pdf
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+
+# Node (cuando empiece la aplicación)
+node_modules/
+
+# Sistema
+Thumbs.db
+desktop.ini
+.DS_Store
+
+# Ficheros de bloqueo de LibreOffice/Office mientras un .docx está abierto
+.~lock.*#

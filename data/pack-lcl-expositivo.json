@@ -1,0 +1,1556 @@
+{
+  "pack_id": "lcl-murcia-expositivo",
+  "materia": "LCL",
+  "etiqueta": "Texto expositivo escrito — Región de Murcia",
+  "version": "0.1.0",
+  "normativa": {
+    "estatal": [
+      "RD 217/2022, de 29 de marzo (ESO)"
+    ],
+    "autonomica": "Decreto de currículo de ESO de la Región de Murcia (BORM, diciembre de 2022) — PENDIENTE número exacto",
+    "vigencia_desde": "2022-2023",
+    "revisado": "2026-07"
+  },
+  "verbos": [
+    {
+      "id": "enumera",
+      "3s": "Enumera",
+      "1s": "Enumero",
+      "nivel_cognitivo": 1
+    },
+    {
+      "id": "localiza",
+      "3s": "Localiza",
+      "1s": "Localizo",
+      "nivel_cognitivo": 1
+    },
+    {
+      "id": "reconoce",
+      "3s": "Reconoce",
+      "1s": "Reconozco",
+      "nivel_cognitivo": 1
+    },
+    {
+      "id": "explica",
+      "3s": "Explica",
+      "1s": "Explico",
+      "nivel_cognitivo": 2
+    },
+    {
+      "id": "relaciona",
+      "3s": "Relaciona",
+      "1s": "Relaciono",
+      "nivel_cognitivo": 2
+    },
+    {
+      "id": "selecciona",
+      "3s": "Selecciona",
+      "1s": "Selecciono",
+      "nivel_cognitivo": 2
+    },
+    {
+      "id": "utiliza",
+      "3s": "Utiliza",
+      "1s": "Utilizo",
+      "nivel_cognitivo": 3
+    },
+    {
+      "id": "aplica",
+      "3s": "Aplica",
+      "1s": "Aplico",
+      "nivel_cognitivo": 3
+    },
+    {
+      "id": "redacta",
+      "3s": "Redacta",
+      "1s": "Redacto",
+      "nivel_cognitivo": 3
+    },
+    {
+      "id": "emplea",
+      "3s": "Emplea",
+      "1s": "Empleo",
+      "nivel_cognitivo": 3
+    },
+    {
+      "id": "mantiene",
+      "3s": "Mantiene",
+      "1s": "Mantengo",
+      "nivel_cognitivo": 3
+    },
+    {
+      "id": "ordena",
+      "3s": "Ordena",
+      "1s": "Ordeno",
+      "nivel_cognitivo": 3
+    },
+    {
+      "id": "ajusta",
+      "3s": "Ajusta",
+      "1s": "Ajusto",
+      "nivel_cognitivo": 3
+    },
+    {
+      "id": "elabora",
+      "3s": "Elabora",
+      "1s": "Elaboro",
+      "nivel_cognitivo": 3
+    },
+    {
+      "id": "estructura",
+      "3s": "Estructura",
+      "1s": "Estructuro",
+      "nivel_cognitivo": 4
+    },
+    {
+      "id": "contrasta",
+      "3s": "Contrasta",
+      "1s": "Contrasto",
+      "nivel_cognitivo": 4
+    },
+    {
+      "id": "justifica",
+      "3s": "Justifica",
+      "1s": "Justifico",
+      "nivel_cognitivo": 4
+    },
+    {
+      "id": "articula",
+      "3s": "Articula",
+      "1s": "Articulo",
+      "nivel_cognitivo": 4
+    },
+    {
+      "id": "distingue",
+      "3s": "Distingue",
+      "1s": "Distingo",
+      "nivel_cognitivo": 4
+    },
+    {
+      "id": "reelabora",
+      "3s": "Reelabora",
+      "1s": "Reelaboro",
+      "nivel_cognitivo": 5
+    },
+    {
+      "id": "sustituye",
+      "3s": "Sustituye",
+      "1s": "Sustituyo",
+      "nivel_cognitivo": 3
+    },
+    {
+      "id": "integra",
+      "3s": "Integra",
+      "1s": "Integro",
+      "nivel_cognitivo": 5
+    },
+    {
+      "id": "valora",
+      "3s": "Valora",
+      "1s": "Valoro",
+      "nivel_cognitivo": 6
+    },
+    {
+      "id": "revisa",
+      "3s": "Revisa",
+      "1s": "Reviso",
+      "nivel_cognitivo": 6
+    },
+    {
+      "id": "corrige",
+      "3s": "Corrige",
+      "1s": "Corrijo",
+      "nivel_cognitivo": 6
+    },
+    {
+      "id": "enmienda",
+      "3s": "Enmienda",
+      "1s": "Enmiendo",
+      "nivel_cognitivo": 6
+    }
+  ],
+  "criterios": [
+    {
+      "id": "lcl-b-adecuacion-expo-1eso",
+      "bloque_lomloe": "B",
+      "dimension": "adecuacion",
+      "nombre": "Adecuación: registro y destinatario",
+      "curso": "1ESO",
+      "hereda_de": null,
+      "criterio_oficial": {
+        "competencia_especifica": 5,
+        "codigo": "5.1",
+        "cita": "Planificar la redacción de textos escritos y multimodales sencillos, atendiendo a la situación comunicativa, al destinatario, al propósito y al canal; redactar borradores y revisarlos con ayuda del diálogo entre iguales e instrumentos de consulta.",
+        "perfil_salida": [
+          "CCL1",
+          "CCL3",
+          "CCL5",
+          "STEM1",
+          "CD2",
+          "CD3",
+          "CPSAA5",
+          "CC2"
+        ]
+      },
+      "saber_vehiculo": [
+        "secuencias textuales expositivas",
+        "iniciación a las propiedades textuales: adecuación"
+      ],
+      "progresion": {
+        "autonomia": 1,
+        "complejidad": 1,
+        "metalinguistico": 1
+      },
+      "tipos_tarea": [
+        "expositivo"
+      ],
+      "obligatorio": false,
+      "prioridad": 1,
+      "peso_base": 20,
+      "descriptores": {
+        "n1": {
+          "verbo": "utiliza",
+          "texto": "Utiliza expresiones propias de la conversación diaria en un texto dirigido a un lector del ámbito educativo."
+        },
+        "n2": {
+          "verbo": "ajusta",
+          "texto": "Ajusta el texto al modelo de exposición trabajado en clase y se dirige al destinatario indicado en el encargo."
+        },
+        "n3": {
+          "verbo": "emplea",
+          "texto": "Emplea el vocabulario del tema trabajado en clase y mantiene el mismo tono a lo largo del texto."
+        },
+        "n4": {
+          "verbo": "explica",
+          "texto": "Explica con sus propias palabras los términos del tema que el lector puede desconocer."
+        }
+      },
+      "matriz_cuantitativa": null,
+      "descriptor_cotejo": null,
+      "descriptor_un_punto": null
+    },
+    {
+      "id": "lcl-b-coherencia-expo-1eso",
+      "bloque_lomloe": "B",
+      "dimension": "coherencia",
+      "nombre": "Coherencia: estructura y selección de la información",
+      "curso": "1ESO",
+      "hereda_de": null,
+      "criterio_oficial": {
+        "competencia_especifica": 5,
+        "codigo": "5.1",
+        "cita": "Planificar la redacción de textos escritos y multimodales sencillos, atendiendo a la situación comunicativa, al destinatario, al propósito y al canal; redactar borradores y revisarlos con ayuda del diálogo entre iguales e instrumentos de consulta.",
+        "perfil_salida": [
+          "CCL1",
+          "CCL3",
+          "CCL5",
+          "STEM1",
+          "CD2",
+          "CD3",
+          "CPSAA5",
+          "CC2"
+        ]
+      },
+      "saber_vehiculo": [
+        "secuencias textuales expositivas",
+        "iniciación a las propiedades textuales: coherencia"
+      ],
+      "progresion": {
+        "autonomia": 1,
+        "complejidad": 1,
+        "metalinguistico": 1
+      },
+      "tipos_tarea": [
+        "expositivo"
+      ],
+      "obligatorio": true,
+      "prioridad": 1,
+      "peso_base": 25,
+      "descriptores": {
+        "n1": {
+          "verbo": "enumera",
+          "texto": "Enumera datos sobre el tema en un bloque único, siguiendo el orden en que los encontró."
+        },
+        "n2": {
+          "verbo": "ordena",
+          "texto": "Ordena la información en introducción, desarrollo y cierre siguiendo el esquema facilitado en clase."
+        },
+        "n3": {
+          "verbo": "ordena",
+          "texto": "Ordena la información en párrafos, cada uno con una idea principal, y mantiene el tema anunciado en la introducción."
+        },
+        "n4": {
+          "verbo": "ordena",
+          "texto": "Ordena los párrafos de lo general a lo concreto y cierra el texto recordando la idea principal."
+        }
+      },
+      "matriz_cuantitativa": {
+        "total": 10,
+        "componentes": [
+          {
+            "nombre": "Las tres partes del texto",
+            "max": 4,
+            "bandas": [
+              {
+                "puntos": 4,
+                "condicion": "Se distinguen introducción, desarrollo y cierre, y el cierre recoge la idea principal"
+              },
+              {
+                "puntos": 3,
+                "condicion": "Se distinguen las tres partes, pero el cierre repite la introducción sin recoger lo explicado"
+              },
+              {
+                "puntos": 2,
+                "condicion": "Se distinguen dos de las tres partes"
+              },
+              {
+                "puntos": 0,
+                "condicion": "El texto es un bloque único sin partes distinguibles"
+              }
+            ]
+          },
+          {
+            "nombre": "Una idea por párrafo",
+            "max": 4,
+            "bandas": [
+              {
+                "puntos": 4,
+                "condicion": "Cada párrafo desarrolla una sola idea principal identificable"
+              },
+              {
+                "puntos": 3,
+                "condicion": "Un párrafo mezcla dos ideas; el resto, una cada uno"
+              },
+              {
+                "puntos": 2,
+                "condicion": "Dos o más párrafos mezclan ideas distintas"
+              },
+              {
+                "puntos": 0,
+                "condicion": "El texto no está dividido en párrafos"
+              }
+            ]
+          },
+          {
+            "nombre": "Mantenerse en el tema",
+            "max": 2,
+            "bandas": [
+              {
+                "puntos": 2,
+                "condicion": "Toda la información responde al tema anunciado al principio"
+              },
+              {
+                "puntos": 1,
+                "condicion": "Incluye 1 dato que se aparta del tema"
+              },
+              {
+                "puntos": 0,
+                "condicion": "Incluye 2 o más datos ajenos al tema"
+              }
+            ]
+          }
+        ],
+        "penalizaciones": []
+      },
+      "descriptor_cotejo": null,
+      "descriptor_un_punto": null
+    },
+    {
+      "id": "lcl-b-cohesion-expo-1eso",
+      "bloque_lomloe": "B",
+      "dimension": "cohesion",
+      "nombre": "Cohesión: conectores y puntuación",
+      "curso": "1ESO",
+      "hereda_de": null,
+      "criterio_oficial": {
+        "competencia_especifica": 5,
+        "codigo": "5.1",
+        "cita": "Planificar la redacción de textos escritos y multimodales sencillos, atendiendo a la situación comunicativa, al destinatario, al propósito y al canal; redactar borradores y revisarlos con ayuda del diálogo entre iguales e instrumentos de consulta.",
+        "perfil_salida": [
+          "CCL1",
+          "CCL3",
+          "CCL5",
+          "STEM1",
+          "CD2",
+          "CD3",
+          "CPSAA5",
+          "CC2"
+        ]
+      },
+      "saber_vehiculo": [
+        "secuencias textuales expositivas",
+        "iniciación a las propiedades textuales: cohesión"
+      ],
+      "progresion": {
+        "autonomia": 1,
+        "complejidad": 1,
+        "metalinguistico": 1
+      },
+      "tipos_tarea": [
+        "expositivo"
+      ],
+      "obligatorio": false,
+      "prioridad": 1,
+      "peso_base": 20,
+      "descriptores": {
+        "n1": {
+          "verbo": "utiliza",
+          "texto": "Utiliza los conectores y, pero y entonces para enlazar las oraciones, y agrupa varios enunciados sin separarlos con punto."
+        },
+        "n2": {
+          "verbo": "utiliza",
+          "texto": "Utiliza conectores de adición y de orden (además, en primer lugar, por último) para enlazar las ideas, y separa los enunciados con punto."
+        },
+        "n3": {
+          "verbo": "emplea",
+          "texto": "Emplea conectores de orden, adición y causa, y utiliza la coma para separar los elementos de una enumeración."
+        },
+        "n4": {
+          "verbo": "sustituye",
+          "texto": "Sustituye por un sinónimo o un pronombre la palabra que ya ha aparecido en la oración anterior."
+        }
+      },
+      "matriz_cuantitativa": {
+        "total": 10,
+        "componentes": [
+          {
+            "nombre": "Variedad y uso de conectores",
+            "max": 4,
+            "bandas": [
+              {
+                "puntos": 4,
+                "condicion": "Emplea 3 o más tipos distintos: orden, adición y causa"
+              },
+              {
+                "puntos": 3,
+                "condicion": "Emplea 2 tipos distintos, uno de ellos de orden o de causa"
+              },
+              {
+                "puntos": 2,
+                "condicion": "Emplea conectores de adición y de orden, siempre los mismos"
+              },
+              {
+                "puntos": 1,
+                "condicion": "Enlaza con y, pero y entonces"
+              },
+              {
+                "puntos": 0,
+                "condicion": "Coloca las oraciones una detrás de otra sin enlace"
+              }
+            ]
+          },
+          {
+            "nombre": "El punto separa las ideas",
+            "max": 4,
+            "bandas": [
+              {
+                "puntos": 4,
+                "condicion": "Separa con punto todos los enunciados y usa la coma en las enumeraciones"
+              },
+              {
+                "puntos": 3,
+                "condicion": "Separa con punto los enunciados, con 1 o 2 casos sin separar"
+              },
+              {
+                "puntos": 2,
+                "condicion": "Separa con punto la mayoría, pero agrupa 3 o más enunciados seguidos"
+              },
+              {
+                "puntos": 0,
+                "condicion": "Escribe el texto casi sin puntos"
+              }
+            ]
+          },
+          {
+            "nombre": "No repetir la misma palabra",
+            "max": 2,
+            "bandas": [
+              {
+                "puntos": 2,
+                "condicion": "Sustituye por sinónimo o pronombre la palabra ya usada en la oración anterior"
+              },
+              {
+                "puntos": 1,
+                "condicion": "Sustituye alguna repetición, pero deja 2 o 3 sin sustituir"
+              },
+              {
+                "puntos": 0,
+                "condicion": "Repite la misma palabra en oraciones seguidas a lo largo del texto"
+              }
+            ]
+          }
+        ],
+        "penalizaciones": []
+      },
+      "descriptor_cotejo": null,
+      "descriptor_un_punto": null
+    },
+    {
+      "id": "lcl-d-correccion-expo-1eso",
+      "bloque_lomloe": "D",
+      "dimension": "correccion_lexico",
+      "nombre": "Corrección normativa y propiedad léxica",
+      "curso": "1ESO",
+      "hereda_de": null,
+      "criterio_oficial": {
+        "competencia_especifica": 5,
+        "codigo": "5.2",
+        "cita": "Incorporar procedimientos básicos para enriquecer los textos propios, atendiendo a aspectos discursivos, lingüísticos y de estilo, con precisión léxica y corrección ortográfica y gramatical.",
+        "perfil_salida": [
+          "CCL1",
+          "CCL3",
+          "CCL5",
+          "STEM1",
+          "CD2",
+          "CD3",
+          "CPSAA5",
+          "CC2"
+        ]
+      },
+      "saber_vehiculo": [
+        "corrección gramatical y ortográfica",
+        "propiedad léxica"
+      ],
+      "progresion": {
+        "autonomia": 1,
+        "complejidad": 1,
+        "metalinguistico": 1
+      },
+      "tipos_tarea": [
+        "expositivo"
+      ],
+      "obligatorio": true,
+      "prioridad": 2,
+      "peso_base": 15,
+      "descriptores": {
+        "n1": {
+          "verbo": "redacta",
+          "texto": "Redacta el texto con errores de ortografía y de concordancia que obligan al lector a releer para reconstruir la idea."
+        },
+        "n2": {
+          "verbo": "aplica",
+          "texto": "Aplica las normas de acentuación y concordancia trabajadas en clase, con errores que permiten seguir la explicación."
+        },
+        "n3": {
+          "verbo": "aplica",
+          "texto": "Aplica las normas de ortografía, acentuación y concordancia del nivel, y sustituye las palabras repetidas por sinónimos."
+        },
+        "n4": {
+          "verbo": "sustituye",
+          "texto": "Sustituye palabras de significado general (cosa, tema, hacer) por otras propias del tema, y entrega el texto sin errores que dificulten la lectura."
+        }
+      },
+      "matriz_cuantitativa": {
+        "total": 10,
+        "componentes": [
+          {
+            "nombre": "Ortografía y acentuación",
+            "max": 4,
+            "bandas": [
+              {
+                "puntos": 4,
+                "condicion": "Hasta 2 faltas en todo el texto"
+              },
+              {
+                "puntos": 3,
+                "condicion": "De 3 a 5 faltas"
+              },
+              {
+                "puntos": 2,
+                "condicion": "De 6 a 9 faltas"
+              },
+              {
+                "puntos": 0,
+                "condicion": "10 o más faltas"
+              }
+            ]
+          },
+          {
+            "nombre": "Concordancia",
+            "max": 3,
+            "bandas": [
+              {
+                "puntos": 3,
+                "condicion": "Sin errores de concordancia de género, número o persona"
+              },
+              {
+                "puntos": 2,
+                "condicion": "1 o 2 errores de concordancia"
+              },
+              {
+                "puntos": 0,
+                "condicion": "3 o más errores de concordancia"
+              }
+            ]
+          },
+          {
+            "nombre": "Precisión del vocabulario",
+            "max": 3,
+            "bandas": [
+              {
+                "puntos": 3,
+                "condicion": "Emplea palabras propias del tema en lugar de términos generales"
+              },
+              {
+                "puntos": 2,
+                "condicion": "Emplea 1 o 2 términos generales (cosa, tema, hacer) con sustituto evidente"
+              },
+              {
+                "puntos": 1,
+                "condicion": "Emplea 3 o más términos generales"
+              },
+              {
+                "puntos": 0,
+                "condicion": "El texto se sostiene sobre palabras comodín"
+              }
+            ]
+          }
+        ],
+        "penalizaciones": []
+      },
+      "descriptor_cotejo": null,
+      "descriptor_un_punto": null
+    },
+    {
+      "id": "lcl-d-planificacion-expo-1eso",
+      "bloque_lomloe": "D",
+      "dimension": "planificacion_revision",
+      "nombre": "Planificación y revisión del propio texto",
+      "curso": "1ESO",
+      "hereda_de": null,
+      "criterio_oficial": {
+        "competencia_especifica": 9,
+        "codigo": "9.1",
+        "cita": "Revisar los textos propios de manera guiada y hacer propuestas de mejora argumentando los cambios a partir de la reflexión metalingüística e interlingüística y con un metalenguaje específico.",
+        "perfil_salida": [
+          "CCL1",
+          "CCL2",
+          "CP2",
+          "STEM1",
+          "STEM2",
+          "CPSAA5"
+        ]
+      },
+      "saber_vehiculo": [
+        "producción escrita: planificación, redacción, revisión y edición",
+        "esquemas y mapas conceptuales"
+      ],
+      "progresion": {
+        "autonomia": 1,
+        "complejidad": 1,
+        "metalinguistico": 1
+      },
+      "tipos_tarea": [
+        "expositivo"
+      ],
+      "obligatorio": false,
+      "prioridad": 2,
+      "peso_base": 10,
+      "descriptores": {
+        "n1": {
+          "verbo": "redacta",
+          "texto": "Redacta el texto en una sola pasada y entrega la primera versión como texto final."
+        },
+        "n2": {
+          "verbo": "elabora",
+          "texto": "Elabora un esquema previo con las ideas principales siguiendo la pauta dada y entrega el borrador junto al texto final."
+        },
+        "n3": {
+          "verbo": "revisa",
+          "texto": "Revisa el borrador con la lista de comprobación facilitada y corrige al menos dos de los aspectos que aparecen en ella."
+        },
+        "n4": {
+          "verbo": "explica",
+          "texto": "Explica, en una nota al margen del borrador, por qué ha cambiado una palabra o una frase del texto."
+        }
+      },
+      "matriz_cuantitativa": {
+        "total": 10,
+        "componentes": [
+          {
+            "nombre": "Hay planificación previa",
+            "max": 4,
+            "bandas": [
+              {
+                "puntos": 4,
+                "condicion": "Entrega un esquema previo con las ideas principales"
+              },
+              {
+                "puntos": 2,
+                "condicion": "Entrega notas sueltas previas, sin organizar"
+              },
+              {
+                "puntos": 0,
+                "condicion": "No hay rastro de trabajo previo al texto"
+              }
+            ]
+          },
+          {
+            "nombre": "Hay revisión",
+            "max": 4,
+            "bandas": [
+              {
+                "puntos": 4,
+                "condicion": "El borrador muestra 2 o más correcciones sobre el propio texto"
+              },
+              {
+                "puntos": 2,
+                "condicion": "El borrador muestra 1 corrección"
+              },
+              {
+                "puntos": 0,
+                "condicion": "Entrega la primera versión sin marcas de revisión"
+              }
+            ]
+          },
+          {
+            "nombre": "Explica algún cambio",
+            "max": 2,
+            "bandas": [
+              {
+                "puntos": 2,
+                "condicion": "Anota por qué ha cambiado al menos una palabra o frase"
+              },
+              {
+                "puntos": 0,
+                "condicion": "No explica ningún cambio"
+              }
+            ]
+          }
+        ],
+        "penalizaciones": []
+      },
+      "descriptor_cotejo": null,
+      "descriptor_un_punto": null
+    },
+    {
+      "id": "lcl-b-informacion-expo-1eso",
+      "bloque_lomloe": "B",
+      "dimension": "tratamiento_informacion",
+      "nombre": "Tratamiento de la información y uso de fuentes",
+      "curso": "1ESO",
+      "hereda_de": null,
+      "criterio_oficial": {
+        "competencia_especifica": 6,
+        "codigo": "6.1",
+        "cita": "Localizar, seleccionar y contrastar información de manera guiada procedente de diferentes fuentes, calibrando su fiabilidad y pertinencia en función de los objetivos de lectura; organizarla e integrarla en esquemas propios, y reelaborarla y comunicarla de manera creativa adoptando un punto de vista crítico y respetando los principios de propiedad intelectual.",
+        "perfil_salida": [
+          "CCL3",
+          "CD1",
+          "CD2",
+          "CD3",
+          "CD4",
+          "CPSAA4",
+          "CC2",
+          "CE3"
+        ]
+      },
+      "saber_vehiculo": [
+        "alfabetización mediática e informacional: búsqueda y selección de la información"
+      ],
+      "progresion": {
+        "autonomia": 1,
+        "complejidad": 1,
+        "metalinguistico": 1
+      },
+      "tipos_tarea": [
+        "expositivo"
+      ],
+      "obligatorio": false,
+      "prioridad": 3,
+      "peso_base": 10,
+      "descriptores": {
+        "n1": {
+          "verbo": "utiliza",
+          "texto": "Utiliza una única fuente y traslada al texto fragmentos literales sin señalar que proceden de ella."
+        },
+        "n2": {
+          "verbo": "localiza",
+          "texto": "Localiza la información en las fuentes indicadas por el profesor y anota de dónde procede cada dato."
+        },
+        "n3": {
+          "verbo": "selecciona",
+          "texto": "Selecciona la información pertinente de dos fuentes indicadas y la explica con sus propias palabras."
+        },
+        "n4": {
+          "verbo": "contrasta",
+          "texto": "Contrasta, con la pauta facilitada, la información de dos fuentes indicadas, la explica con sus propias palabras e indica el origen de los datos."
+        }
+      },
+      "matriz_cuantitativa": {
+        "total": 10,
+        "componentes": [
+          {
+            "nombre": "Número de fuentes",
+            "max": 4,
+            "bandas": [
+              {
+                "puntos": 4,
+                "condicion": "Emplea las 2 fuentes indicadas y compara algún dato entre ellas"
+              },
+              {
+                "puntos": 3,
+                "condicion": "Emplea las 2 fuentes indicadas"
+              },
+              {
+                "puntos": 2,
+                "condicion": "Emplea 1 fuente"
+              },
+              {
+                "puntos": 0,
+                "condicion": "No se aprecia consulta de ninguna fuente"
+              }
+            ]
+          },
+          {
+            "nombre": "Anota de dónde sale cada dato",
+            "max": 3,
+            "bandas": [
+              {
+                "puntos": 3,
+                "condicion": "Anota la procedencia de cada dato tomado de una fuente"
+              },
+              {
+                "puntos": 2,
+                "condicion": "Anota las fuentes al final, sin ligar cada dato a la suya"
+              },
+              {
+                "puntos": 0,
+                "condicion": "No indica ninguna procedencia"
+              }
+            ]
+          },
+          {
+            "nombre": "Lo cuenta con sus palabras",
+            "max": 3,
+            "bandas": [
+              {
+                "puntos": 3,
+                "condicion": "Explica la información con palabras propias en todo el texto"
+              },
+              {
+                "puntos": 2,
+                "condicion": "Conserva alguna frase copiada, pero la mayor parte está reformulada"
+              },
+              {
+                "puntos": 0,
+                "condicion": "Copia fragmentos de la fuente sin señalarlos"
+              }
+            ]
+          }
+        ],
+        "penalizaciones": []
+      },
+      "descriptor_cotejo": null,
+      "descriptor_un_punto": null
+    },
+    {
+      "id": "lcl-b-adecuacion-expo-3eso",
+      "bloque_lomloe": "B",
+      "dimension": "adecuacion",
+      "nombre": "Adecuación: registro y destinatario",
+      "curso": "3ESO",
+      "hereda_de": null,
+      "criterio_oficial": {
+        "competencia_especifica": 5,
+        "codigo": "5.1",
+        "cita": "Planificar la redacción de textos escritos y multimodales de cierta extensión atendiendo a la situación comunicativa, al destinatario, al propósito y canal; redactar borradores y revisarlos con ayuda del diálogo entre iguales e instrumentos de consulta, y presentar un texto final coherente, cohesionado y con el registro adecuado.",
+        "perfil_salida": [
+          "CCL1",
+          "CCL3",
+          "CCL5",
+          "STEM1",
+          "CD2",
+          "CD3",
+          "CPSAA5",
+          "CC2"
+        ]
+      },
+      "saber_vehiculo": [
+        "secuencias textuales expositivas",
+        "análisis de las propiedades textuales: adecuación",
+        "expresión de la subjetividad en textos expositivos"
+      ],
+      "progresion": {
+        "autonomia": 2,
+        "complejidad": 2,
+        "metalinguistico": 2
+      },
+      "tipos_tarea": [
+        "expositivo"
+      ],
+      "obligatorio": false,
+      "prioridad": 1,
+      "peso_base": 20,
+      "descriptores": {
+        "n1": {
+          "verbo": "utiliza",
+          "texto": "Utiliza en el mismo texto expresiones coloquiales y expresiones formales en una tarea dirigida al ámbito académico."
+        },
+        "n2": {
+          "verbo": "ajusta",
+          "texto": "Ajusta el texto al género expositivo académico y mantiene la tercera persona, con algún término coloquial en el léxico."
+        },
+        "n3": {
+          "verbo": "ajusta",
+          "texto": "Ajusta el registro, la persona y el léxico al propósito de explicar un tema a un lector del ámbito académico."
+        },
+        "n4": {
+          "verbo": "selecciona",
+          "texto": "Selecciona el léxico específico del tema y emplea fórmulas de objetividad que mantienen la exposición libre de juicios personales."
+        }
+      },
+      "matriz_cuantitativa": null,
+      "descriptor_cotejo": null,
+      "descriptor_un_punto": null
+    },
+    {
+      "id": "lcl-b-coherencia-expo-3eso",
+      "bloque_lomloe": "B",
+      "dimension": "coherencia",
+      "nombre": "Coherencia: estructura y progresión temática",
+      "curso": "3ESO",
+      "hereda_de": null,
+      "criterio_oficial": {
+        "competencia_especifica": 5,
+        "codigo": "5.1",
+        "cita": "Planificar la redacción de textos escritos y multimodales de cierta extensión atendiendo a la situación comunicativa, al destinatario, al propósito y canal; redactar borradores y revisarlos con ayuda del diálogo entre iguales e instrumentos de consulta, y presentar un texto final coherente, cohesionado y con el registro adecuado.",
+        "perfil_salida": [
+          "CCL1",
+          "CCL3",
+          "CCL5",
+          "STEM1",
+          "CD2",
+          "CD3",
+          "CPSAA5",
+          "CC2"
+        ]
+      },
+      "saber_vehiculo": [
+        "secuencias textuales expositivas",
+        "análisis de las propiedades textuales: coherencia"
+      ],
+      "progresion": {
+        "autonomia": 2,
+        "complejidad": 2,
+        "metalinguistico": 2
+      },
+      "tipos_tarea": [
+        "expositivo"
+      ],
+      "obligatorio": true,
+      "prioridad": 1,
+      "peso_base": 25,
+      "descriptores": {
+        "n1": {
+          "verbo": "ordena",
+          "texto": "Ordena la información en párrafos que reúnen bajo un mismo bloque ideas de asuntos distintos."
+        },
+        "n2": {
+          "verbo": "estructura",
+          "texto": "Estructura el texto en introducción, desarrollo y conclusión, y desarrolla una idea por párrafo."
+        },
+        "n3": {
+          "verbo": "estructura",
+          "texto": "Estructura el texto con una introducción que delimita el tema y párrafos que avanzan de lo general a lo particular."
+        },
+        "n4": {
+          "verbo": "articula",
+          "texto": "Articula la progresión temática de modo que cada párrafo retoma un elemento del anterior, y cierra con una conclusión que sintetiza lo expuesto sin introducir información nueva."
+        }
+      },
+      "matriz_cuantitativa": {
+        "total": 10,
+        "componentes": [
+          {
+            "nombre": "Estructura y función de cada parte",
+            "max": 3,
+            "bandas": [
+              {
+                "puntos": 3,
+                "condicion": "Introducción que delimita el tema, desarrollo por párrafos y conclusión que sintetiza sin añadir información nueva"
+              },
+              {
+                "puntos": 2,
+                "condicion": "Las tres partes están, pero la conclusión introduce información no tratada antes"
+              },
+              {
+                "puntos": 1,
+                "condicion": "Falta una de las tres partes"
+              },
+              {
+                "puntos": 0,
+                "condicion": "No hay estructura reconocible"
+              }
+            ]
+          },
+          {
+            "nombre": "Una idea por párrafo",
+            "max": 3,
+            "bandas": [
+              {
+                "puntos": 3,
+                "condicion": "Todos los párrafos desarrollan una sola idea principal"
+              },
+              {
+                "puntos": 2,
+                "condicion": "Un párrafo mezcla dos ideas"
+              },
+              {
+                "puntos": 1,
+                "condicion": "Dos párrafos mezclan ideas distintas"
+              },
+              {
+                "puntos": 0,
+                "condicion": "Los párrafos agrupan ideas sin criterio"
+              }
+            ]
+          },
+          {
+            "nombre": "Progresión temática",
+            "max": 4,
+            "bandas": [
+              {
+                "puntos": 4,
+                "condicion": "Cada párrafo retoma un elemento del anterior y avanza de lo general a lo particular"
+              },
+              {
+                "puntos": 3,
+                "condicion": "El orden es seguible y avanza, pero los párrafos no se encadenan entre sí"
+              },
+              {
+                "puntos": 2,
+                "condicion": "El orden de los párrafos podría alterarse sin que el texto cambie"
+              },
+              {
+                "puntos": 0,
+                "condicion": "La información se presenta sin orden reconocible"
+              }
+            ]
+          }
+        ],
+        "penalizaciones": [
+          {
+            "clave": "digresion",
+            "puntos": -0.5,
+            "por": "cada bloque de información ajeno al tema anunciado",
+            "tope": -1.5
+          }
+        ]
+      },
+      "descriptor_cotejo": null,
+      "descriptor_un_punto": null
+    },
+    {
+      "id": "lcl-b-cohesion-expo-3eso",
+      "bloque_lomloe": "B",
+      "dimension": "cohesion",
+      "nombre": "Cohesión: conectores, puntuación y referencia",
+      "curso": "3ESO",
+      "hereda_de": null,
+      "criterio_oficial": {
+        "competencia_especifica": 5,
+        "codigo": "5.1",
+        "cita": "Planificar la redacción de textos escritos y multimodales de cierta extensión atendiendo a la situación comunicativa, al destinatario, al propósito y canal; redactar borradores y revisarlos con ayuda del diálogo entre iguales e instrumentos de consulta, y presentar un texto final coherente, cohesionado y con el registro adecuado.",
+        "perfil_salida": [
+          "CCL1",
+          "CCL3",
+          "CCL5",
+          "STEM1",
+          "CD2",
+          "CD3",
+          "CPSAA5",
+          "CC2"
+        ]
+      },
+      "saber_vehiculo": [
+        "secuencias textuales expositivas",
+        "análisis de las propiedades textuales: cohesión"
+      ],
+      "progresion": {
+        "autonomia": 2,
+        "complejidad": 2,
+        "metalinguistico": 2
+      },
+      "tipos_tarea": [
+        "expositivo"
+      ],
+      "obligatorio": false,
+      "prioridad": 1,
+      "peso_base": 20,
+      "descriptores": {
+        "n1": {
+          "verbo": "utiliza",
+          "texto": "Utiliza conectores de adición (además, también) para enlazar párrafos que desarrollan contenidos distintos."
+        },
+        "n2": {
+          "verbo": "utiliza",
+          "texto": "Utiliza conectores de orden, adición y causa entre párrafos, y delimita con la coma los incisos del texto."
+        },
+        "n3": {
+          "verbo": "emplea",
+          "texto": "Emplea conectores de causa, consecuencia y ejemplificación, y sustituye las repeticiones mediante sinónimos, hiperónimos y pronombres."
+        },
+        "n4": {
+          "verbo": "articula",
+          "texto": "Articula la exposición con marcadores de organización, reformulación y ejemplificación, y mantiene la referencia de cada pronombre sin ambigüedad."
+        }
+      },
+      "matriz_cuantitativa": {
+        "total": 10,
+        "componentes": [
+          {
+            "nombre": "Variedad y uso de conectores",
+            "max": 4,
+            "bandas": [
+              {
+                "puntos": 4,
+                "condicion": "Emplea 4 o más tipos distintos de marcador: al menos ordenación, causa, consecuencia y ejemplificación o reformulación"
+              },
+              {
+                "puntos": 3,
+                "condicion": "Emplea 3 tipos distintos de marcador"
+              },
+              {
+                "puntos": 2,
+                "condicion": "Emplea 2 tipos, uno de ellos más allá de la adición"
+              },
+              {
+                "puntos": 1,
+                "condicion": "Se limita a conectores de adición (además, también) o repite el mismo marcador"
+              },
+              {
+                "puntos": 0,
+                "condicion": "Yuxtapone los párrafos sin marcador que los enlace"
+              }
+            ]
+          },
+          {
+            "nombre": "Puntuación al servicio de la estructura",
+            "max": 3,
+            "bandas": [
+              {
+                "puntos": 3,
+                "condicion": "Separa los bloques con punto y aparte y delimita los incisos con coma, sin errores que obliguen a releer"
+              },
+              {
+                "puntos": 2,
+                "condicion": "Puntuación correcta con 1 o 2 errores que no impiden seguir el texto"
+              },
+              {
+                "puntos": 1,
+                "condicion": "Puntuación presente pero con 3 o más errores, o párrafos que mezclan bloques distintos"
+              },
+              {
+                "puntos": 0,
+                "condicion": "Texto sin puntuación o con uso errático en más de la mitad del escrito"
+              }
+            ]
+          },
+          {
+            "nombre": "Referencia y sustitución léxica",
+            "max": 3,
+            "bandas": [
+              {
+                "puntos": 3,
+                "condicion": "Sustituye las repeticiones con sinónimos, hiperónimos o pronombres, y todos los referentes son recuperables"
+              },
+              {
+                "puntos": 2,
+                "condicion": "Sustituye la mayoría de las repeticiones; 1 referente exige releer para identificarlo"
+              },
+              {
+                "puntos": 1,
+                "condicion": "Repite la palabra clave 3 o más veces teniendo sustituto evidente en el contexto"
+              },
+              {
+                "puntos": 0,
+                "condicion": "Repite el mismo sustantivo en oraciones consecutivas a lo largo del texto"
+              }
+            ]
+          }
+        ],
+        "penalizaciones": []
+      },
+      "descriptor_cotejo": null,
+      "descriptor_un_punto": null
+    },
+    {
+      "id": "lcl-d-correccion-expo-3eso",
+      "bloque_lomloe": "D",
+      "dimension": "correccion_lexico",
+      "nombre": "Corrección normativa y propiedad léxica",
+      "curso": "3ESO",
+      "hereda_de": null,
+      "criterio_oficial": {
+        "competencia_especifica": 5,
+        "codigo": "5.2",
+        "cita": "Incorporar progresivamente procedimientos para enriquecer los textos atendiendo a aspectos discursivos, lingüísticos y de estilo, con precisión léxica y corrección ortográfica y gramatical.",
+        "perfil_salida": [
+          "CCL1",
+          "CCL3",
+          "CCL5",
+          "STEM1",
+          "CD2",
+          "CD3",
+          "CPSAA5",
+          "CC2"
+        ]
+      },
+      "saber_vehiculo": [
+        "corrección gramatical y ortográfica",
+        "propiedad léxica",
+        "subordinación"
+      ],
+      "progresion": {
+        "autonomia": 2,
+        "complejidad": 2,
+        "metalinguistico": 2
+      },
+      "tipos_tarea": [
+        "expositivo"
+      ],
+      "obligatorio": true,
+      "prioridad": 2,
+      "peso_base": 15,
+      "descriptores": {
+        "n1": {
+          "verbo": "redacta",
+          "texto": "Redacta el texto con errores de ortografía, puntuación o concordancia que obligan a releer para reconstruir la idea."
+        },
+        "n2": {
+          "verbo": "aplica",
+          "texto": "Aplica las normas de ortografía y concordancia del nivel, con errores que permiten seguir la exposición."
+        },
+        "n3": {
+          "verbo": "aplica",
+          "texto": "Aplica las normas ortográficas y gramaticales del nivel y selecciona el término preciso en lugar de palabras de significado general."
+        },
+        "n4": {
+          "verbo": "emplea",
+          "texto": "Emplea la subordinación para condensar en una sola oración información que exigiría varias, y mantiene el texto libre de errores que afecten a la comprensión."
+        }
+      },
+      "matriz_cuantitativa": {
+        "total": 10,
+        "componentes": [
+          {
+            "nombre": "Ortografía, acentuación y puntuación",
+            "max": 4,
+            "bandas": [
+              {
+                "puntos": 4,
+                "condicion": "Hasta 2 faltas en todo el texto"
+              },
+              {
+                "puntos": 3,
+                "condicion": "De 3 a 5 faltas"
+              },
+              {
+                "puntos": 2,
+                "condicion": "De 6 a 9 faltas"
+              },
+              {
+                "puntos": 0,
+                "condicion": "10 o más faltas"
+              }
+            ]
+          },
+          {
+            "nombre": "Corrección gramatical",
+            "max": 3,
+            "bandas": [
+              {
+                "puntos": 3,
+                "condicion": "Sin errores de concordancia ni de construcción de la oración"
+              },
+              {
+                "puntos": 2,
+                "condicion": "1 o 2 errores que no impiden la comprensión"
+              },
+              {
+                "puntos": 1,
+                "condicion": "3 o más errores, o alguna oración que hay que releer para reconstruir"
+              },
+              {
+                "puntos": 0,
+                "condicion": "Errores sistemáticos que obligan a reconstruir el sentido"
+              }
+            ]
+          },
+          {
+            "nombre": "Precisión léxica y densidad",
+            "max": 3,
+            "bandas": [
+              {
+                "puntos": 3,
+                "condicion": "Selecciona el término preciso y emplea la subordinación para condensar información"
+              },
+              {
+                "puntos": 2,
+                "condicion": "Selecciona términos precisos, pero encadena oraciones simples donde cabría una subordinada"
+              },
+              {
+                "puntos": 1,
+                "condicion": "Recurre a términos de significado general con sustituto evidente"
+              },
+              {
+                "puntos": 0,
+                "condicion": "El texto se sostiene sobre palabras comodín"
+              }
+            ]
+          }
+        ],
+        "penalizaciones": []
+      },
+      "descriptor_cotejo": null,
+      "descriptor_un_punto": null
+    },
+    {
+      "id": "lcl-d-planificacion-expo-3eso",
+      "bloque_lomloe": "D",
+      "dimension": "planificacion_revision",
+      "nombre": "Planificación y revisión del propio texto",
+      "curso": "3ESO",
+      "hereda_de": null,
+      "criterio_oficial": {
+        "competencia_especifica": 9,
+        "codigo": "9.1",
+        "cita": "Revisar los textos propios de manera progresivamente autónoma y hacer propuestas de mejora argumentando los cambios a partir de la reflexión metalingüística e interlingüística con el metalenguaje específico, e identificar y subsanar algunos problemas de comprensión lectora utilizando los conocimientos explícitos sobre la lengua y su uso.",
+        "perfil_salida": [
+          "CCL1",
+          "CCL2",
+          "CP2",
+          "STEM1",
+          "STEM2",
+          "CPSAA5"
+        ]
+      },
+      "saber_vehiculo": [
+        "producción escrita: planificación, redacción, revisión y edición",
+        "metalenguaje específico"
+      ],
+      "progresion": {
+        "autonomia": 2,
+        "complejidad": 2,
+        "metalinguistico": 2
+      },
+      "tipos_tarea": [
+        "expositivo"
+      ],
+      "obligatorio": false,
+      "prioridad": 2,
+      "peso_base": 10,
+      "descriptores": {
+        "n1": {
+          "verbo": "redacta",
+          "texto": "Redacta el texto en una sola pasada y entrega la primera versión como texto final."
+        },
+        "n2": {
+          "verbo": "elabora",
+          "texto": "Elabora un esquema previo propio y entrega el borrador con marcas de revisión sobre la ortografía y el léxico."
+        },
+        "n3": {
+          "verbo": "revisa",
+          "texto": "Revisa el borrador por su cuenta y corrige problemas de puntuación y de conexión entre párrafos."
+        },
+        "n4": {
+          "verbo": "justifica",
+          "texto": "Justifica los cambios introducidos en el borrador con el metalenguaje del nivel (conector, referente, subordinada), explicando qué mejora aporta cada uno."
+        }
+      },
+      "matriz_cuantitativa": {
+        "total": 10,
+        "componentes": [
+          {
+            "nombre": "Planificación propia",
+            "max": 3,
+            "bandas": [
+              {
+                "puntos": 3,
+                "condicion": "Entrega un esquema previo propio con la estructura del texto"
+              },
+              {
+                "puntos": 2,
+                "condicion": "Entrega un esquema previo que solo lista ideas, sin estructura"
+              },
+              {
+                "puntos": 0,
+                "condicion": "No hay rastro de trabajo previo al texto"
+              }
+            ]
+          },
+          {
+            "nombre": "Alcance de la revisión",
+            "max": 4,
+            "bandas": [
+              {
+                "puntos": 4,
+                "condicion": "Corrige en el borrador aspectos de puntuación y de conexión entre párrafos, no solo faltas"
+              },
+              {
+                "puntos": 3,
+                "condicion": "Corrige faltas de ortografía y léxico"
+              },
+              {
+                "puntos": 2,
+                "condicion": "Corrige 1 o 2 detalles aislados"
+              },
+              {
+                "puntos": 0,
+                "condicion": "Entrega la primera versión sin marcas de revisión"
+              }
+            ]
+          },
+          {
+            "nombre": "Justificación con metalenguaje",
+            "max": 3,
+            "bandas": [
+              {
+                "puntos": 3,
+                "condicion": "Justifica 2 o más cambios usando el metalenguaje del nivel (conector, referente, subordinada)"
+              },
+              {
+                "puntos": 2,
+                "condicion": "Justifica 1 cambio con metalenguaje, o varios sin él"
+              },
+              {
+                "puntos": 0,
+                "condicion": "No justifica ningún cambio"
+              }
+            ]
+          }
+        ],
+        "penalizaciones": []
+      },
+      "descriptor_cotejo": null,
+      "descriptor_un_punto": null
+    },
+    {
+      "id": "lcl-b-informacion-expo-3eso",
+      "bloque_lomloe": "B",
+      "dimension": "tratamiento_informacion",
+      "nombre": "Tratamiento de la información y uso de fuentes",
+      "curso": "3ESO",
+      "hereda_de": null,
+      "criterio_oficial": {
+        "competencia_especifica": 6,
+        "codigo": "6.1",
+        "cita": "Localizar, seleccionar y contrastar información de manera progresivamente autónoma procedente de diferentes fuentes, calibrando su fiabilidad y pertinencia en función de los objetivos de lectura; organizarla e integrarla en esquemas propios, y reelaborarla y comunicarla de manera creativa.",
+        "perfil_salida": [
+          "CCL3",
+          "CD1",
+          "CD2",
+          "CD3",
+          "CD4",
+          "CPSAA4",
+          "CC2",
+          "CE3"
+        ]
+      },
+      "saber_vehiculo": [
+        "alfabetización mediática e informacional",
+        "fiabilidad y pertinencia de las fuentes"
+      ],
+      "progresion": {
+        "autonomia": 2,
+        "complejidad": 2,
+        "metalinguistico": 2
+      },
+      "tipos_tarea": [
+        "expositivo"
+      ],
+      "obligatorio": false,
+      "prioridad": 3,
+      "peso_base": 10,
+      "descriptores": {
+        "n1": {
+          "verbo": "utiliza",
+          "texto": "Utiliza una única fuente y traslada su información al texto sin indicar su procedencia."
+        },
+        "n2": {
+          "verbo": "selecciona",
+          "texto": "Selecciona información de dos o más fuentes e indica su procedencia al final del texto."
+        },
+        "n3": {
+          "verbo": "contrasta",
+          "texto": "Contrasta la información de fuentes distintas, descarta la que no responde al tema y cita el origen de los datos empleados."
+        },
+        "n4": {
+          "verbo": "valora",
+          "texto": "Valora la fiabilidad de cada fuente a partir de su autoría, su fecha y su propósito, y justifica en el texto por qué ha empleado unos datos y descartado otros."
+        }
+      },
+      "matriz_cuantitativa": {
+        "total": 10,
+        "componentes": [
+          {
+            "nombre": "Número de fuentes contrastadas",
+            "max": 4,
+            "bandas": [
+              {
+                "puntos": 4,
+                "condicion": "Emplea 3 o más fuentes distintas y coteja entre ellas al menos un dato"
+              },
+              {
+                "puntos": 3,
+                "condicion": "Emplea 2 fuentes distintas y coteja entre ellas al menos un dato"
+              },
+              {
+                "puntos": 2,
+                "condicion": "Emplea 2 fuentes, pero cada una sostiene una parte distinta del texto sin cotejo"
+              },
+              {
+                "puntos": 0,
+                "condicion": "Emplea una sola fuente"
+              }
+            ]
+          },
+          {
+            "nombre": "Atribución de los datos",
+            "max": 3,
+            "bandas": [
+              {
+                "puntos": 3,
+                "condicion": "Indica el origen de cada dato tomado de una fuente"
+              },
+              {
+                "puntos": 2,
+                "condicion": "Indica las fuentes al final, sin ligar cada dato a la suya"
+              },
+              {
+                "puntos": 1,
+                "condicion": "Menciona alguna fuente de pasada, sin sistema"
+              },
+              {
+                "puntos": 0,
+                "condicion": "No indica de dónde procede ningún dato"
+              }
+            ]
+          },
+          {
+            "nombre": "Reformulación frente a copia",
+            "max": 3,
+            "bandas": [
+              {
+                "puntos": 3,
+                "condicion": "Explica la información con palabras propias en todo el texto"
+              },
+              {
+                "puntos": 2,
+                "condicion": "Reformula la mayor parte; conserva alguna secuencia literal breve entrecomillada"
+              },
+              {
+                "puntos": 0,
+                "condicion": "Traslada pasajes literales sin comillas ni marca de cita"
+              }
+            ]
+          }
+        ],
+        "penalizaciones": []
+      },
+      "descriptor_cotejo": null,
+      "descriptor_un_punto": null
+    }
+  ]
+}

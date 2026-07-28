@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Generador de rúbricas LOMLOE — Lengua Castellana y Literatura</title>
+<link rel="stylesheet" href="css/styles.css" />
+<link rel="stylesheet" href="css/print.css" media="print" />
+</head>
+<body>
+<header class="cabecera">
+  <h1>Generador de instrumentos de evaluación</h1>
+  <p class="subtitulo">Lengua Castellana y Literatura · LOMLOE · Región de Murcia</p>
+</header>
+
+<main>
+  <section id="salud-pack" class="tarjeta" hidden></section>
+
+  <section id="modo-expres" class="tarjeta">
+    <h2>Modo exprés</h2>
+    <p class="ayuda">Tres decisiones y una rúbrica lista.</p>
+
+    <form id="form-expres">
+      <fieldset>
+        <legend>1. ¿Qué vas a evaluar?</legend>
+
+        <label for="puerta">Tipo de prueba</label>
+        <select id="puerta" name="puerta" required></select>
+        <div data-micro="puerta"></div>
+
+        <label for="tipo-tarea">Tipo de tarea</label>
+        <select id="tipo-tarea" name="tipo-tarea" required></select>
+        <div data-micro="tipo-tarea"></div>
+      </fieldset>
+
+      <fieldset>
+        <legend>2. ¿Qué curso?</legend>
+        <label for="curso">Curso</label>
+        <select id="curso" name="curso" required></select>
+        <div data-micro="curso"></div>
+      </fieldset>
+
+      <fieldset>
+        <legend>3. ¿Cuánto tiempo tienes por alumno?</legend>
+        <label for="tiempo">Tiempo de corrección</label>
+        <select id="tiempo" name="tiempo" required></select>
+        <div data-micro="tiempo"></div>
+      </fieldset>
+
+      <fieldset>
+        <legend>Actividad</legend>
+        <label for="actividad">¿Qué le vas a pedir al alumnado? (aparece en la cabecera y en la ficha)</label>
+        <input type="text" id="actividad" name="actividad" placeholder="p. ej. Texto expositivo sobre el reciclaje en el instituto" required />
+        <div data-micro="actividad"></div>
+      </fieldset>
+
+      <button type="submit">Generar</button>
+    </form>
+  </section>
+
+  <section id="resultado" class="tarjeta" hidden></section>
+</main>
+
+<script type="module" src="js/main.js"></script>
+</body>
+</html>
