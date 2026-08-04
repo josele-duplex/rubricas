@@ -117,7 +117,7 @@ export function conectarEventosModoAvanzado(container, criterios, onGuardar) {
 
     const avisos = comprobarRepartoPesos(criteriosAjustados.filter(c => !c.desactivado));
     avisosCaja.innerHTML = avisos
-      .map((a) => `<div class="aviso-caja">⚠️ ${a}</div>`)
+      .map((a) => `<div class="aviso-caja">${a}</div>`)
       .join("");
   }
 
