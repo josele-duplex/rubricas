@@ -406,6 +406,26 @@ table.rubrica td.col-dimension, table.rubrica th.col-dimension {
   margin: 0.5rem 0 1rem;
 }
 
+/* --- Autoevaluación / coevaluación (§7.5-§7.6) --------------------------- */
+.fila-comentario td { background: var(--fondo); padding: 0.6rem; }
+.etiqueta-comentario {
+  display: block;
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--tinta-suave);
+  margin-bottom: 0.4rem;
+}
+.linea-comentario {
+  height: 1.6em;
+  border-bottom: 1px solid var(--linea);
+}
+.linea-nombre {
+  display: inline-block;
+  min-width: 14rem;
+  border-bottom: 1px solid var(--linea);
+}
+
 .bloque-etiqueta {
   display: inline-block;
   width: 1.4em;

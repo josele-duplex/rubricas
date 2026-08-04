@@ -188,6 +188,102 @@ export function generarListaCotejo(criterios) {
   };
 }
 
+// Sustituciones de un caso: no encajan en "reemplaza el verbo del banco que
+// aparezca" porque cambian algo más que el verbo, o porque el verbo no está
+// en tiempo presente. "Se dirige" cambia también el pronombre (se -> me);
+// "los encontró" está en pretérito, fuera del par 3.ª/1.ª que guarda el
+// banco (§5.3). Las dos son casos reales del pack, no hipótesis.
+// Sin \b de cierre: \b exige un carácter \w a un lado de la frontera y "ó"
+// no cuenta como \w para el motor de expresiones regulares de JS, así que
+// "encontró." nunca casaría con \bencontró\b. Son frases literales y
+// específicas, no un patrón general, así que el riesgo de casar una
+// palabra más larga por accidente es nulo en este pack.
+const SUSTITUCIONES_ESPECIALES = [
+  { patron: /se dirige/g, reemplazo: "me dirijo" },
+  { patron: /los encontró/g, reemplazo: "los encontré" },
+];
+
+function minuscula(s) {
+  return s.charAt(0).toLowerCase() + s.slice(1);
+}
+
+// Muchos descriptores son una frase compuesta con un segundo verbo, también
+// en 3.ª persona, que no es el que el criterio declara como inicial (p. ej.
+// "Ajusta el texto ... y se dirige al destinatario"). Si solo se reconjuga
+// el primero, la autoevaluación mezcla "yo" y "él" en la misma frase.
+//
+// No todo verbo del banco que aparece después del inicial es del alumno:
+// "una introducción QUE delimita el tema" habla de la introducción, no de
+// quien escribe, y reconjugarlo produce "que delimito", que dice otra cosa.
+// La señal para distinguirlo, comprobada contra los cuarenta y ocho
+// descriptores del pack, es "que": el único caso de sujeto distinto de este
+// pack es justo esa relativa, y en ningún otro sitio "que" precede a un
+// verbo del banco con el alumno como sujeto. Por eso se excluye ese caso en
+// vez de intentar distinguir sujetos en general, que exigiría analizar la
+// frase de verdad.
+function reconjugarSecundarios(texto, verbosPorId) {
+  let resultado = texto;
+  for (const { patron, reemplazo } of SUSTITUCIONES_ESPECIALES) {
+    resultado = resultado.replace(patron, reemplazo);
+  }
+  for (const verbo of Object.values(verbosPorId)) {
+    const patron = new RegExp(`(?<!\\bque )\\b${verbo["3s"]}\\b`, "gi");
+    resultado = resultado.replace(patron, (coincidencia) =>
+      coincidencia[0] === coincidencia[0].toUpperCase() ? verbo["1s"] : minuscula(verbo["1s"])
+    );
+  }
+  return resultado;
+}
+
+// §7.5-§7.6 — proyección a primera persona. Sustituye la palabra inicial (el
+// verbo en 3.ª persona) por su forma en 1.ª del banco de verbos (§5.3):
+// "Utiliza expresiones..." -> "Utilizo expresiones...". Conserva cualquier
+// signo pegado al verbo (p. ej. la coma de "Explica, ...") y comprueba que el
+// descriptor empieza de verdad por el verbo que declara, porque una
+// autoevaluación mal conjugada es peor que ninguna. Después repasa el resto
+// de la frase por si hay un segundo verbo que reconjugar (§ reconjugarSecundarios).
+export function primeraPersona(texto, verboId, verbosPorId) {
+  const verbo = verbosPorId[verboId];
+  if (!verbo) throw new Error(`verbo desconocido en el banco: "${verboId}"`);
+
+  const m = texto.match(/^(\p{L}+)([^\s]*)(\s[\s\S]*)?$/u);
+  if (!m) throw new Error(`no se pudo aislar el verbo inicial de: "${texto}"`);
+  const [, palabraInicial, cola, resto] = m;
+  if (palabraInicial !== verbo["3s"]) {
+    throw new Error(
+      `el descriptor no empieza por el verbo que declara: esperaba "${verbo["3s"]}", encontré "${palabraInicial}" en "${texto}"`
+    );
+  }
+
+  const proyectado = `${verbo["1s"]}${cola}${resto ?? ""}`;
+  return reconjugarSecundarios(proyectado, verbosPorId);
+}
+
+// §7.5 — autoevaluación: la misma matriz de la rúbrica analítica, con los
+// cuatro niveles conjugados en 1.ª persona. §7.6 (coevaluación) reutiliza
+// esta misma proyección; lo que cambia entre ambas es solo la interfaz (la
+// coevaluación añade la referencia al compañero y el comentario obligatorio),
+// no el contenido.
+export function generarAutoevaluacion(criterios, verbosPack, meta) {
+  const verbosPorId = Object.fromEntries(verbosPack.map((v) => [v.id, v]));
+  return {
+    actividad: meta.actividad,
+    curso: meta.curso,
+    tipoTarea: meta.tipoTarea,
+    dimensiones: porPrioridad(criterios).map((c) => ({
+      id: c.id,
+      nombre: c.nombre,
+      bloque: c.bloque_lomloe,
+      peso: c.peso_normalizado,
+      obligatorio: c.obligatorio,
+      niveles: [1, 2, 3, 4].map((n) => {
+        const d = c.descriptores[`n${n}`];
+        return primeraPersona(d.texto, d.verbo, verbosPorId);
+      }),
+    })),
+  };
+}
+
 // §7.3 — ficha del alumno y guion de clase. Obligatoria, siempre se genera.
 export function generarFichaAlumno(criterios, meta) {
   const ordenadas = porPrioridad(criterios);
@@ -232,5 +328,6 @@ export function generarInstrumentos(pack, config) {
     rubricaAnalitica: generarRubricaAnalitica(ponderados, meta),
     listaCotejo: generarListaCotejo(ponderados),
     fichaAlumno: generarFichaAlumno(ponderados, meta),
+    autoevaluacion: generarAutoevaluacion(ponderados, pack.verbos, meta),
   };
 }

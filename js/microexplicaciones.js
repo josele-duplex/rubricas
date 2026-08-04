@@ -95,6 +95,23 @@ export const MICROEXPLICACIONES = {
       "genera siempre, con qué se te pide, qué se valora y cómo llegar al nivel excelente.",
   },
 
+  "autoevaluacion": {
+    titulo: "¿por qué es la misma matriz y no un texto nuevo?",
+    texto:
+      "No hay contenido propio que redactar: cada descriptor cambia solo el verbo inicial, de 3.ª a 1.ª " +
+      "persona, con la forma que ya guarda el banco de verbos (SDD §5.3, §7.5). Es proyección, no " +
+      "reinterpretación — si el alumno se reconoce en un nivel distinto al que marcarías tú, esa " +
+      "diferencia es justo lo que conviene hablar antes de la nota.",
+  },
+
+  "coevaluacion": {
+    titulo: "¿por qué el comentario es obligatorio?",
+    texto:
+      "Sin justificación escrita, la coevaluación degenera en reparto de notas entre amigos (SDD §7.6). " +
+      "El comentario no es opcional: se pide uno por dimensión, aunque el nivel marcado coincida con el " +
+      "de la rúbrica del profesor.",
+  },
+
   complejidad: {
     titulo: "¿qué mide este indicador?",
     texto:

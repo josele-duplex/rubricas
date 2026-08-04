@@ -8,6 +8,7 @@ import {
   generarRubricaAnalitica,
   generarListaCotejo,
   generarFichaAlumno,
+  generarAutoevaluacion,
 } from "./motor.js";
 import { poblarFormulario, actualizarCursos, renderResultado, renderSaludPack } from "./ui.js";
 import { validarPack } from "./validador.js";
@@ -92,6 +93,7 @@ function generarYMostrar(ajustesAplicados = null) {
       resultado.rubricaAnalitica = generarRubricaAnalitica(criteriosAjustados, meta);
       resultado.listaCotejo = generarListaCotejo(criteriosAjustados);
       resultado.fichaAlumno = generarFichaAlumno(criteriosAjustados, meta);
+      resultado.autoevaluacion = generarAutoevaluacion(criteriosAjustados, pack.verbos, meta);
     }
   }
 

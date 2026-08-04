@@ -167,6 +167,60 @@
       "3s": "Enmienda",
       "1s": "Enmiendo",
       "nivel_cognitivo": 6
+    },
+    {
+      "id": "agrupa",
+      "3s": "Agrupa",
+      "1s": "Agrupo",
+      "nivel_cognitivo": 2
+    },
+    {
+      "id": "entrega",
+      "3s": "Entrega",
+      "1s": "Entrego",
+      "nivel_cognitivo": 1
+    },
+    {
+      "id": "indica",
+      "3s": "Indica",
+      "1s": "Indico",
+      "nivel_cognitivo": 1
+    },
+    {
+      "id": "desarrolla",
+      "3s": "Desarrolla",
+      "1s": "Desarrollo",
+      "nivel_cognitivo": 3
+    },
+    {
+      "id": "cierra",
+      "3s": "Cierra",
+      "1s": "Cierro",
+      "nivel_cognitivo": 1
+    },
+    {
+      "id": "delimita",
+      "3s": "Delimita",
+      "1s": "Delimito",
+      "nivel_cognitivo": 3
+    },
+    {
+      "id": "descarta",
+      "3s": "Descarta",
+      "1s": "Descarto",
+      "nivel_cognitivo": 4
+    },
+    {
+      "id": "cita",
+      "3s": "Cita",
+      "1s": "Cito",
+      "nivel_cognitivo": 1
+    },
+    {
+      "id": "separa",
+      "3s": "Separa",
+      "1s": "Separo",
+      "nivel_cognitivo": 3
     }
   ],
   "criterios": [

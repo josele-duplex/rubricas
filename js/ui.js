@@ -114,6 +114,63 @@ function renderRubricaAnalitica(rubrica) {
   `;
 }
 
+// §7.5-§7.6 — autoevaluación y coevaluación comparten la misma matriz en
+// primera persona (js/motor.js, generarAutoevaluacion); lo único que cambia
+// entre ellas es la interfaz: la coevaluación añade la referencia a quién
+// se evalúa y un comentario por dimensión (§7.6, regla del comentario
+// obligatorio para que no degenere en reparto de notas entre amigos).
+function renderMatrizPersona(auto, { coevaluacion } = {}) {
+  const filas = auto.dimensiones
+    .map((d) => {
+      const filaPrincipal = `
+      <tr>
+        <td class="col-dimension">
+          <span class="bloque-etiqueta bloque-${d.bloque}" title="Bloque LOMLOE ${d.bloque}">${d.bloque}</span>
+          <span class="dimension-nombre">${escapeHtml(d.nombre)}${d.obligatorio ? ' <span class="etiqueta-obligatorio">obligatorio</span>' : ""}</span>
+          <span class="dimension-meta">Peso ${d.peso}%</span>
+        </td>
+        ${d.niveles.map((n) => `<td>${escapeHtml(n)}</td>`).join("")}
+      </tr>
+    `;
+      const filaComentario = coevaluacion
+        ? `
+      <tr class="fila-comentario">
+        <td colspan="5">
+          <span class="etiqueta-comentario">Comentario en «${escapeHtml(d.nombre)}»:</span>
+          <div class="linea-comentario"></div>
+        </td>
+      </tr>
+    `
+        : "";
+      return filaPrincipal + filaComentario;
+    })
+    .join("");
+
+  return `
+    ${renderCabeceraInstrumento(auto)}
+    ${
+      coevaluacion
+        ? `<p class="ayuda">Estoy evaluando el trabajo de: <span class="linea-nombre"></span></p>`
+        : ""
+    }
+    <div style="overflow-x:auto">
+    <table class="rubrica">
+      <thead>
+        <tr>
+          <th class="col-dimension">Dimensión</th>
+          <th class="col-nivel nivel-1">N1 · En desarrollo</th>
+          <th class="col-nivel nivel-2">N2 · Conseguido</th>
+          <th class="col-nivel nivel-3">N3 · Avanzado</th>
+          <th class="col-nivel nivel-4">N4 · Excelente</th>
+        </tr>
+      </thead>
+      <tbody>${filas}</tbody>
+    </table>
+    </div>
+    ${microexplicacion(coevaluacion ? "coevaluacion" : "autoevaluacion")}
+  `;
+}
+
 function renderListaCotejo(cotejo, meta) {
   const items = cotejo.items
     .map(
@@ -227,6 +284,8 @@ export function renderResultado(container, { puertaInfo, resultado }) {
       <button class="tab-boton" data-tab="rubrica" role="tab" aria-selected="true">Rúbrica analítica</button>
       <button class="tab-boton" data-tab="cotejo" role="tab" aria-selected="false">Lista de cotejo</button>
       <button class="tab-boton" data-tab="ficha" role="tab" aria-selected="false">Ficha del alumno</button>
+      <button class="tab-boton" data-tab="auto" role="tab" aria-selected="false">Autoevaluación</button>
+      <button class="tab-boton" data-tab="coeval" role="tab" aria-selected="false">Coevaluación</button>
       <button class="tab-boton tab-boton-utilidad" id="btn-ajustar" type="button">Ajustar</button>
       <button class="tab-boton tab-boton-utilidad" id="btn-calificar" type="button">Calificar</button>
       <button class="tab-boton tab-boton-utilidad" id="btn-imprimir" type="button">Imprimir esta vista</button>
@@ -234,6 +293,8 @@ export function renderResultado(container, { puertaInfo, resultado }) {
     <div class="panel-instrumento" data-panel="rubrica">${renderRubricaAnalitica(resultado.rubricaAnalitica)}</div>
     <div class="panel-instrumento" data-panel="cotejo" hidden>${renderListaCotejo(resultado.listaCotejo, resultado.fichaAlumno)}</div>
     <div class="panel-instrumento" data-panel="ficha" hidden>${renderFichaAlumno(resultado.fichaAlumno)}</div>
+    <div class="panel-instrumento" data-panel="auto" hidden>${renderMatrizPersona(resultado.autoevaluacion)}</div>
+    <div class="panel-instrumento" data-panel="coeval" hidden>${renderMatrizPersona(resultado.autoevaluacion, { coevaluacion: true })}</div>
   `;
   container.hidden = false;
 
