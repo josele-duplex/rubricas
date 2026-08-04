@@ -91,10 +91,25 @@ derivar la versión de autoevaluación sin errores de morfología.
 
 ---
 
+## Matriz digital: este proyecto es uno de tres
+
+`proyecto_plan_de_trabajo_lengua` (plan de aula) · `proyecto_taller-sintaxis` (app de sintaxis) ·
+este generador. Comparten terminología, alcance, filosofía evaluativa y marco de rúbricas.
+
+- **Quién manda sobre qué:** `proyecto_plan_de_trabajo_lengua/Metodologías innovadores morfología y sintaxis/proyecto/documentos_base/Matriz-digital_tres-proyectos.md` §2.
+  Antes de escribir un hecho compartido, comprueba si eres su dueño: **el que no lo es, referencia; no copia.**
+- **Este proyecto manda sobre la derivación normativa**: cita literal del criterio oficial,
+  numeración por curso, validador de packs y modelo de cálculo de un instrumento (SDD §6).
+- **Lengua manda sobre la arquitectura de rúbrica**: cuatro niveles, nombres canónicos, bandas /10,
+  anti-adverbitis, principio del vehículo. Divergencias vivas documentadas en §3 de la matriz —
+  **C1 (nombres de nivel) y C4 (puntero roto del SDD §17.8) están pendientes de corregir aquí.**
+- **Comprobación mecánica**, desde el repositorio de Lengua: `python scripts/verificar_matriz.py`.
+
 ## Relación con el proyecto de Lengua
 
 `C:\Users\Usuario\Proyectos\proyecto_plan_de_trabajo_lengua` es el plan de trabajo del docente.
-Análisis completo de puntos de contacto en `docs/diseno/enlace-proyecto-lengua.md`.
+Análisis bilateral completo en `docs/diseno/enlace-proyecto-lengua.md`, integrado y ampliado a los
+tres proyectos por la matriz digital.
 
 **Aviso importante:** el marco teórico vigente vive **allí**
 (`documentos_base/marco_teorico_rubricas-LOMLOE.md`), no aquí. La copia de este proyecto
