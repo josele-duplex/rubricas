@@ -84,7 +84,7 @@ function renderRubricaAnalitica(rubrica) {
       <tr>
         <td class="col-dimension">
           <span class="bloque-etiqueta bloque-${d.bloque}" title="Bloque LOMLOE ${d.bloque}">${d.bloque}</span>
-          <span class="dimension-nombre">${escapeHtml(d.nombre)}${d.obligatorio ? " 🔒" : ""}</span>
+          <span class="dimension-nombre">${escapeHtml(d.nombre)}${d.obligatorio ? ' <span class="etiqueta-obligatorio">obligatorio</span>' : ""}</span>
           <span class="dimension-meta">Peso ${d.peso}% · ${escapeHtml(d.criterioOficial)}</span>
         </td>
         ${d.niveles.map((n) => `<td>${escapeHtml(n)}</td>`).join("")}
@@ -172,7 +172,7 @@ function renderAvisos(resultado) {
   if (resultado.avisosProgresion.length) {
     bloques.push(
       resultado.avisosProgresion
-        .map((a) => `<div class="aviso-caja">⚠️ ${escapeHtml(a)}</div>`)
+        .map((a) => `<div class="aviso-caja">${escapeHtml(a)}</div>`)
         .join("")
     );
     bloques.push(microexplicacion("progresion"));
@@ -180,20 +180,19 @@ function renderAvisos(resultado) {
   const avisosPesos = comprobarRepartoPesos(resultado.criterios);
   if (avisosPesos.length) {
     bloques.push(
-      avisosPesos.map((a) => `<div class="aviso-caja">⚠️ ${escapeHtml(a)}</div>`).join("")
+      avisosPesos.map((a) => `<div class="aviso-caja">${escapeHtml(a)}</div>`).join("")
     );
   }
   const c = resultado.complejidad;
   const claseIndicador = { verde: "indicador-verde", amarillo: "indicador-amarillo", rojo: "indicador-rojo" }[c.nivel];
-  const emoji = { verde: "🟢", amarillo: "🟡", rojo: "🔴" }[c.nivel];
   bloques.push(
     `<p class="instrumento-cabecera">Complejidad del instrumento
-      <span class="indicador ${claseIndicador}">${emoji} ${c.nDimensiones} dimensiones · ${c.nBloques} bloques</span>
+      <span class="indicador ${claseIndicador}">${c.nDimensiones} dimensiones · ${c.nBloques} bloques</span>
     </p>`
   );
   bloques.push(microexplicacion("pesos"));
   bloques.push(microexplicacion("complejidad"));
-  if (c.aviso) bloques.push(`<div class="aviso-caja">⚠️ ${escapeHtml(c.aviso)}</div>`);
+  if (c.aviso) bloques.push(`<div class="aviso-caja">${escapeHtml(c.aviso)}</div>`);
   return bloques.join("");
 }
 
@@ -228,8 +227,9 @@ export function renderResultado(container, { puertaInfo, resultado }) {
       <button class="tab-boton" data-tab="rubrica" role="tab" aria-selected="true">Rúbrica analítica</button>
       <button class="tab-boton" data-tab="cotejo" role="tab" aria-selected="false">Lista de cotejo</button>
       <button class="tab-boton" data-tab="ficha" role="tab" aria-selected="false">Ficha del alumno</button>
-      <button class="tab-boton" id="btn-ajustar" type="button">⚙️ Ajustar</button>
-      <button class="tab-boton" id="btn-imprimir" type="button">🖨️ Imprimir esta vista</button>
+      <button class="tab-boton tab-boton-utilidad" id="btn-ajustar" type="button">Ajustar</button>
+      <button class="tab-boton tab-boton-utilidad" id="btn-calificar" type="button">Calificar</button>
+      <button class="tab-boton tab-boton-utilidad" id="btn-imprimir" type="button">Imprimir esta vista</button>
     </div>
     <div class="panel-instrumento" data-panel="rubrica">${renderRubricaAnalitica(resultado.rubricaAnalitica)}</div>
     <div class="panel-instrumento" data-panel="cotejo" hidden>${renderListaCotejo(resultado.listaCotejo, resultado.fichaAlumno)}</div>
@@ -273,7 +273,7 @@ export function renderSaludPack(container, informe) {
   if (informe.nErrores === 0 && informe.nAvisos === 0) {
     container.innerHTML = `
       <details>
-        <summary>✅ Salud del pack: sin incidencias (validador §10)</summary>
+        <summary class="marca-ok">Salud del pack: sin incidencias (validador §10)</summary>
         <p class="mensaje-vacio">Los descriptores, matrices y penalizaciones del pack cargado pasan las reglas automatizables del validador.</p>
         ${microexplicacion("salud-pack")}
       </details>
@@ -298,7 +298,7 @@ export function renderSaludPack(container, informe) {
         .map(
           (a) => `
           <li>
-            <strong>${a.severidad === "error" ? "❌" : "⚠️"}</strong>
+            <strong class="marca-severidad marca-${a.severidad}">${a.severidad === "error" ? "Error" : "Aviso"}</strong>
             ${escapeHtml(a.mensaje)}
           </li>
         `
@@ -316,7 +316,7 @@ export function renderSaludPack(container, informe) {
 
   container.innerHTML = `
     <details open>
-      <summary>⚠️ Salud del pack: ${informe.nErrores} error(es), ${informe.nAvisos} aviso(s)</summary>
+      <summary class="marca-aviso-resumen">Salud del pack: ${informe.nErrores} error(es), ${informe.nAvisos} aviso(s)</summary>
       <ul class="mensaje-vacio">${grupos}</ul>
     </details>
   `;

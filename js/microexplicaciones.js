@@ -142,6 +142,31 @@ export const MICROEXPLICACIONES = {
       "Cada dimensión procede de un bloque de saberes del currículo. Un instrumento que solo toca un bloque " +
       "evalúa una franja estrecha de la competencia; verlas agrupadas ayuda a detectar el hueco antes de imprimir.",
   },
+
+  // --- Calificar ---
+  "modo-numerico": {
+    titulo: "¿por qué puntos y no solo el nivel?",
+    texto:
+      "Una dimensión con matriz aporta a la nota sus puntos brutos, no el valor de su nivel: colapsar a nivel " +
+      "haría que una décima de desempeño valiese hasta 2,5 puntos en el corte del 9 (SDD §6.2). Esta pantalla " +
+      "calcula, no archiva: nada de lo que registres aquí se guarda al cerrarla.",
+  },
+
+  "escala-nivel": {
+    titulo: "¿equilibrada o exigente?",
+    texto:
+      "La equilibrada evita que un alumno que ha producido algo, aunque flojo, saque un cero en una dimensión " +
+      "sin matriz; la exigente reserva el cero para el trabajo no realizado o ininteligible (SDD §6.2). Se " +
+      "declara aquí porque cambia la nota, no es un detalle técnico.",
+  },
+
+  "condicion-minima": {
+    titulo: "¿qué hace exactamente este límite?",
+    texto:
+      "Si se activa, un solo criterio obligatorio en N1 recorta la nota final a un techo de 4,9; no baja más " +
+      "aunque haya varios en N1, y nunca sube una nota que ya era más baja (SDD §6.2-§6.3). Actívala solo si " +
+      "se lo anunciaste al alumnado antes de la prueba: una condición mínima no anunciada es difícil de sostener.",
+  },
 };
 
 function escapar(str) {

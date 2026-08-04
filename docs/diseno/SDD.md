@@ -2,7 +2,7 @@
 
 ## Generador de Instrumentos de Evaluación — Lengua Castellana y Literatura (LOMLOE)
 
-**Versión 1.2** · Documento de trabajo · Julio 2026
+**Versión 1.3** · Documento de trabajo · Agosto 2026
 Autor: Josele · Diseño técnico: Claude
 
 ---
@@ -11,6 +11,7 @@ Autor: Josele · Diseño técnico: Claude
 
 | Versión | Cambios |
 |---|---|
+| **1.3** | El modo numérico (§6.5) pasa de calcular-y-olvidar a persistir: `js/calificar.js` guarda el resultado de cada alumno en `localStorage`, namespaced por curso + tipo de tarea + actividad, con lista de alumnos ya calificados, recarga de sus respuestas y borrado. Sigue sin conectar con la ficha impresa ni con ningún instrumento con detractor (§7.7 no existe). Rediseño visual completo de `css/styles.css`: tipografía unificada en una sola familia serif (sin la mezcla con `system-ui` de antes), pastillas de 999px sustituidas por etiquetas rectangulares, pestañas del instrumento con forma de separador de carpeta en vez de píldora, y textura de grano de papel muy sutil en el fondo. Se retira todo emoji decorativo (🔒⚙️🖨️🧮✅❌⚠️🟢🟡🔴) de `js/ui.js`, `js/calificar.js` y `js/modo-avanzado.js`, sustituido por marcas tipográficas o de color con la misma información. |
 | 0.1 | Alcance de tipos de tarea, arquitectura sin backend/sin IA, motor de reglas, exportación a Word, roadmap por fases. |
 | 0.2 | Doble salida por tarea (rúbrica estándar + modo IA). Exportación a Excel (.xlsx) compatible con iDoceo. Marco LOMLOE y matrices cuantitativas como fuente de criterios. |
 | 0.3 | Constructor guiado: dimensiones por checkboxes, profundidad, pesos visuales y 5 instrumentos generables. |
@@ -769,7 +770,7 @@ Este es el estado real, contrastado con el código:
 | **Microexplicaciones (§11.3)** | Terminado | Nada. Catálogo único en `js/microexplicaciones.js`, más un «¿por qué esta regla?» por cada regla del validador |
 | **Modo avanzado (§11.2)** | Parcial | Están los pesos libres con normalización a 100 y la selección de dimensiones por bloque. Faltan profundidad, criterios obligatorios, elección de instrumentos, modo de calificación y edición manual de descriptores con el validador activo |
 | **Catálogo de instrumentos (§7)** | 3 de 7 | Hechos 7.1, 7.2 y 7.3. Faltan rúbrica de un solo punto, autoevaluación, coevaluación, escala de estimación analítica y modo IA. La autoevaluación y la coevaluación son proyección pura —los 26 verbos del banco ya guardan su forma en 1.ª persona—; la rúbrica de un solo punto necesita además contenido, porque `descriptor_un_punto` está vacío en los doce criterios del pack |
-| **Modelo de calificación (§6)** | Parcial | Funciona el modo cualitativo. El numérico está diseñado y los datos existen (`matriz_cuantitativa` en diez criterios), pero el motor todavía no convierte puntos en nota ni aplica penalizaciones |
+| **Modelo de calificación (§6)** | Parcial | Funciona el modo cualitativo. El numérico está completo: funciones puras en `js/calificacion.js` (redondeo, valor de nivel, puntos de matriz, condición mínima, detractor) con casos dorados en `test/calificacion.mjs`, y la pantalla de registro por alumno de §6.5 en `js/calificar.js` (botón «Calificar» en la vista previa), que ahora persiste en `localStorage` por instrumento (curso + tipo de tarea + actividad): guardar, recargar y borrar el resultado de un alumno. No se conecta todavía a la ficha impresa ni a ningún instrumento con detractor (§7.7 no existe) |
 | **Matriz tarea × curso (§4.3)** | 2 de 20 celdas | Solo texto expositivo en 1.º y 3.º de ESO. Cada celda nueva es contenido curricular, no código: pasa por el protocolo del skill `rubricas-pack` |
 | **Exportación (§12)** | Parcial | Impresión y PDF funcionan. Faltan `.xlsx` para iDoceo, configuración `.json` y el texto plano del modo IA |
 | **Publicación** | Parcial | Repositorio creado y validación automática en cada empujón. Falta activar GitHub Pages y decidir la URL estable |

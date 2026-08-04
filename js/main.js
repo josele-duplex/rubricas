@@ -12,6 +12,7 @@ import {
 import { poblarFormulario, actualizarCursos, renderResultado, renderSaludPack } from "./ui.js";
 import { validarPack } from "./validador.js";
 import { renderModoAvanzado, conectarEventosModoAvanzado } from "./modo-avanzado.js";
+import { renderCalificacion, conectarEventosCalificacion } from "./calificar.js";
 import { montarMicroexplicaciones } from "./microexplicaciones.js";
 
 const els = {
@@ -106,6 +107,17 @@ function generarYMostrar(ajustesAplicados = null) {
       abrirModoAvanzado(resultado.criterios);
     });
   }
+
+  const btnCalificar = els.resultado.querySelector("#btn-calificar");
+  if (btnCalificar && resultado?.ok) {
+    btnCalificar.addEventListener("click", () => {
+      abrirCalificacion(resultado.criterios, {
+        actividad: resultado.rubricaAnalitica.actividad,
+        curso: resultado.rubricaAnalitica.curso,
+        tipoTarea: resultado.rubricaAnalitica.tipoTarea,
+      });
+    });
+  }
 }
 
 function abrirModoAvanzado(criterios) {
@@ -124,6 +136,22 @@ function abrirModoAvanzado(criterios) {
     } else {
       els.resultado.scrollIntoView({ behavior: "smooth", block: "start" });
     }
+  });
+
+  contenedor.scrollIntoView({ behavior: "smooth", block: "start" });
+}
+
+function abrirCalificacion(criterios, meta) {
+  const contenedor = document.createElement("div");
+  contenedor.id = "calificacion-contenedor";
+  contenedor.className = "tarjeta";
+  document.querySelector("main").insertBefore(contenedor, els.resultado);
+
+  renderCalificacion(contenedor, criterios, meta);
+
+  conectarEventosCalificacion(contenedor, criterios, meta, () => {
+    contenedor.remove();
+    els.resultado.scrollIntoView({ behavior: "smooth", block: "start" });
   });
 
   contenedor.scrollIntoView({ behavior: "smooth", block: "start" });
