@@ -283,7 +283,8 @@ recomendación de este plan para cada una.
 | 2. Escala por defecto | Equilibrada (ya implementada así) |
 | 3. Tope de detractores | 2 puntos; contrastar con el departamento cuando toque, no bloquea |
 | 6. Rúbrica holística | Aplazar a fase 3: el catálogo está en 7/7 y la sostenibilidad era la duda |
-| 7. Revisión de la matriz §4.3 | **Narración en 3.º: ratificada (2026-08-05), sí llega, como ○.** Sigue pendiente repasar el argumentativo incipiente en 2.º ESO **antes** de ejecutar S1 |
+| 7. Revisión de la matriz §4.3 | **Resuelta el 2026-08-05.** Narración en 3.º: sí llega, como ○. Argumentativo en 2.º ESO: sí se sostiene, como ○ (criterio 5.1 sin género + saberes de 2.º sin nombrar ningún género, a diferencia de 3.º/4.º). S1 y S6 pueden ejecutarse sin bloqueo por esta decisión |
+| 12. Posible desajuste: expositivo en 2.º ESO (§4.3, §17) | Al ratificar la 7 salió que la celda ● de expositivo en 2.º ESO no encuentra respaldo textual literal en el bloque de saberes de "Segundo curso" que se ha leído en esta revisión. No bloquea nada (el pack ya está confirmado): revisar con el skill `rubricas-pack` cuando toque, para localizar la cita exacta o corregir la celda a ○ |
 | 8. Marco teórico (bloqueante) | Decidir dónde vive; mientras tanto las sesiones citan el del proyecto de Lengua como vigente |
 | 9. Publicación | Activar GitHub Pages **después** de revisar qué contiene `fuentes/` (hay currículo transcrito y documentación PAU: revisar difusión antes de hacer público el repositorio) |
 | 11. Progresión 2.º Bach | S2 la resuelve con la opción conservadora (reutilizar 1.º Bach); ratificarla o enmendarla |
