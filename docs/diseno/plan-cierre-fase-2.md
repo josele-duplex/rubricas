@@ -197,7 +197,7 @@ lo único que introduce una biblioteca externa (`.xlsx`, §16.1).
 
 **Pautas (Fable):**
 - Riesgo específico de la narración: convertir contenidos en filas («el narrador», «los personajes», «el diálogo»). La dimensión es la acción competencial (construye la secuencia narrativa, mantiene la coherencia temporal…); narrador y personajes van **dentro** del descriptor como saber-vehículo (CLAUDE.md regla 5).
-- La decisión abierta §17.7 pregunta justo por esta columna (¿narración llega a 3.º?). La celda ○ de 3.º es la lectura vigente de la matriz; si al leer el currículo de 3.º el criterio no la sostuviera, **no se rellena en silencio ni se vacía en silencio**: se para y se consulta a Josele, porque cambiar la matriz es cambiar §4.3 y `verificar_derivacion.py` la vigila.
+- La decisión §17.7 preguntaba justo por esta columna (¿narración llega a 3.º?): **ratificada por Josele el 2026-08-05, sí llega, como ○** (SDD §17, decisión 7). Esta sesión no necesita repasarla de nuevo; si al leer el currículo de 3.º el criterio no la sostuviera de todos modos, **no se vacía en silencio**: se para y se consulta a Josele, porque cambiar la matriz es cambiar §4.3 y `verificar_derivacion.py` la vigila.
 - Con este pack la matriz queda 20/20: buen momento para que la sesión repase que `verificar_derivacion.py` pasa sobre los cuatro packs a la vez.
 
 ## S7 · Sonnet — Rediseño de portada
@@ -283,7 +283,7 @@ recomendación de este plan para cada una.
 | 2. Escala por defecto | Equilibrada (ya implementada así) |
 | 3. Tope de detractores | 2 puntos; contrastar con el departamento cuando toque, no bloquea |
 | 6. Rúbrica holística | Aplazar a fase 3: el catálogo está en 7/7 y la sostenibilidad era la duda |
-| 7. Revisión de la matriz §4.3 | Repasar narración en 3.º y argumentativo en 2.º ESO **antes** de ejecutar S1 y S6, o al menos antes de darlas por cerradas |
+| 7. Revisión de la matriz §4.3 | **Narración en 3.º: ratificada (2026-08-05), sí llega, como ○.** Sigue pendiente repasar el argumentativo incipiente en 2.º ESO **antes** de ejecutar S1 |
 | 8. Marco teórico (bloqueante) | Decidir dónde vive; mientras tanto las sesiones citan el del proyecto de Lengua como vigente |
 | 9. Publicación | Activar GitHub Pages **después** de revisar qué contiene `fuentes/` (hay currículo transcrito y documentación PAU: revisar difusión antes de hacer público el repositorio) |
 | 11. Progresión 2.º Bach | S2 la resuelve con la opción conservadora (reutilizar 1.º Bach); ratificarla o enmendarla |
