@@ -62,6 +62,17 @@ y eso es buena señal.
 La app genera el texto de la rúbrica en modo IA para que el profesor lo use fuera si quiere.
 No ejecuta prompts, no pide claves, no envía nada. Sin servidor, sin cuentas, sin datos personales.
 
+### 9. El criterio es la puerta; los saberes, el foco
+
+Una celda de la matriz de tareas (SDD §4.3) solo la abre o la cierra un **criterio de
+evaluación**. Los saberes básicos nunca vacían una celda ni la sostienen solos: indican dónde
+pone el foco cada curso (● frente a ○). La regla vale en las dos direcciones: también la
+progresión se lee en la redacción del criterio, nunca se calibra a mano (regla del techo,
+SDD §5.4). Corolario de simetría: una regla de derivación solo está comprobada cuando se pasa
+por los seis cursos a la vez; **si invalida un pack ya validado, la rota es la regla, no el pack.**
+Esta regla se escribió el 2026-08-05, después de que su ausencia produjera el único error
+de derivación que ha llegado al docente.
+
 ---
 
 ## Método de trabajo
@@ -70,6 +81,13 @@ No ejecuta prompts, no pide claves, no envía nada. Sin servidor, sin cuentas, s
   (`scripts/simular_correccion.py`). Leerla no basta: la regla del doble castigo se descubrió
   calculando, no leyendo. Si una dimensión cae dos niveles de golpe, sospecha de las penalizaciones.
 - **Todo pack pasa el validador antes de darse por cerrado** (`scripts/validar_pack.py`).
+- **Toda afirmación sobre lo que dice el currículo se verifica mecánicamente**
+  (`scripts/verificar_derivacion.py`): citas literales de los packs y del SDD (§4.3 y §5.4),
+  matriz de tareas y techo de progresión. Se ejecuta junto al validador al cerrar un pack y
+  siempre que se toque el SDD. Convención: en §4.3 y §5.4, lo que va entre «» o *"..."* es
+  cita de fuente y debe encontrarse literalmente en `fuentes/curriculo/` o en el Marco
+  Teórico; el uso-mención propio va en comillas simples, que el verificador ignora.
+  El verificador se prueba a sí mismo con `--auto-prueba` (lo corrupto debe fallar).
 - **El JSON es la fuente; los documentos de revisión son derivados.** `docs/revision-*.md` se
   regenera con `scripts/generar_revision.py`, nunca se edita a mano.
 - **Los criterios oficiales se citan del texto real**, leyéndolo en `fuentes/curriculo/`.
@@ -103,6 +121,10 @@ este generador. Comparten terminología, alcance, filosofía evaluativa y marco 
 - **Lengua manda sobre la arquitectura de rúbrica**: cuatro niveles, nombres canónicos, bandas /10,
   anti-adverbitis, principio del vehículo. Divergencias vivas documentadas en §3 de la matriz —
   **C1 (nombres de nivel) y C4 (puntero roto del SDD §17.8) están pendientes de corregir aquí.**
+- **El límite 1.º ESO–1.º BACH es de los MATERIALES que genera Lengua** (sus UD, guías y porfolios),
+  no de este generador. **Esta app sí se usa legítimamente en 2.º BACH** como producto de uso más
+  amplio que el plan de aula de Lengua — mantener la capacidad de 2.º BACH del SDD sin tratarla como
+  excepción ni marcarla de ningún modo especial (corrección de H2, matriz §2, 4-ago-2026).
 - **Comprobación mecánica**, desde el repositorio de Lengua: `python scripts/verificar_matriz.py`.
 
 ## Relación con el proyecto de Lengua

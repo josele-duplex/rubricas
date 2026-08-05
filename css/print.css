@@ -18,11 +18,12 @@
     --papel: #fff;
     --fondo: #fff;
     --linea: #999;
+    --linea-fuerte: #666;
     --acento: #000;
     --acento-suave: #fff;
   }
 
-  .cabecera, #modo-expres, .tabs, button { display: none !important; }
+  .banda, #modo-expres, .tabs, button { display: none !important; }
   /* El andamiaje pedagógico es para el profesor que aprende, no para el aula (§4.2). */
   .microexplicacion { display: none !important; }
   body { background: #fff; color: #000; }

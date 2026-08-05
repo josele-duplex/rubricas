@@ -12,7 +12,7 @@ Uso:
 
 Devuelve código de salida 1 si hay errores, 0 si el pack está limpio.
 """
-import json, re, sys, glob, os, collections
+import json, re, sys, glob, os, collections, unicodedata
 
 # Calificadores vagos: la "adverbitis" del marco teórico §3.
 ADVERBITIS = [
@@ -32,6 +32,27 @@ TOPE_PENALIZACION = 0.35   # ninguna penalización pasa del 35% de la dimensión
 TOPE_CONJUNTO = 0.50       # todas juntas, no más de la mitad
 SIMILITUD_MAX = 0.75       # dos niveles contiguos no pueden parecerse más
 
+# Cabeza del nombre de dimensión que coincide exactamente con un saber, no
+# una acción competencial (paridad con js/validador.js, §3.3). Ya normalizada:
+# minúsculas y sin tildes.
+SABERES_PROHIBIDOS = {
+    "sintaxis", "morfologia", "ortografia", "puntuacion", "acentuacion", "lexico",
+    "vocabulario", "oracion", "oraciones", "subordinadas", "sintagma", "sintagmas",
+    "metrica", "figuras retoricas", "generos literarios", "barroco", "romanticismo",
+    "renacimiento", "siglo de oro", "literatura medieval",
+}
+
+# Modalizadores del criterio (paridad con js/validador.js, §3.4). Solo estas
+# dos direcciones: las familias "sencillez" y "extensión" se descartaron
+# deliberadamente (ver §5 de la especificación del validador de la app).
+DISPARADORES_AYUDA = ["de manera guiada", "de forma guiada", "con ayuda de pautas y modelos", "modelos dados"]
+MARCAS_ANDAMIAJE = ["guiad", "pauta", "modelo", "guion", "plantilla", "indicad", "facilitad", "profesor", "con apoyo"]
+DISPARADORES_AUTONOMIA = ["progresivamente autonoma", "de manera autonoma", "de forma autonoma", "con autonomia"]
+MARCAS_ANDAMIAJE_RESIDUAL = [
+    "indicadas por el profesor", "indicados por el profesor", "con la pauta facilitada",
+    "con la pauta dada", "con el modelo dado", "segun el guion facilitado", "de manera guiada",
+]
+
 
 def primer_verbo(texto):
     return re.findall(r"\w+", texto.lower())[0]
@@ -39,6 +60,18 @@ def primer_verbo(texto):
 
 def palabras(texto):
     return set(re.findall(r"\w+", texto.lower()))
+
+
+def quitar_tildes(texto):
+    return "".join(c for c in unicodedata.normalize("NFD", texto) if unicodedata.category(c) != "Mn")
+
+
+# Texto antes del primer ':', '(' o '—' del nombre de la dimensión (paridad
+# con js/validador.js, cabezaDimension).
+def cabeza_dimension(nombre):
+    posiciones = [p for p in (nombre.find(sep) for sep in (":", "(", "—")) if p != -1]
+    corte = min(posiciones) if posiciones else len(nombre)
+    return nombre[:corte].strip()
 
 
 def validar(ruta):
@@ -58,6 +91,45 @@ def validar(ruta):
         # --- Trazabilidad curricular: sin criterio oficial no hay rúbrica ---
         if not c.get("criterio_oficial", {}).get("cita"):
             err(cid, "trazabilidad", "no cita ningún criterio de evaluación oficial")
+
+        # --- Saber como vehículo: la dimensión es una acción competencial,
+        # no un contenido (CLAUDE.md regla 5); se comprueba la cabeza del
+        # nombre, antes de ':', '(' o '—'. ---
+        cabeza = cabeza_dimension(c["nombre"])
+        if re.match(r"(?i)^(el|la|los|las|un|una|lo)\s", cabeza):
+            err(cid, "saber_vehiculo",
+                "el nombre de la dimensión ('%s') empieza por un artículo: nombra un contenido, no una acción competencial" % c["nombre"])
+        if quitar_tildes(cabeza.lower()) in SABERES_PROHIBIDOS:
+            err(cid, "saber_vehiculo",
+                "'%s' es un saber, no una dimensión: los saberes son vehículo, van dentro del descriptor" % cabeza)
+
+        # --- Modalizadores del criterio: la ayuda o autonomía que declara
+        # la cita oficial debe verse en los descriptores. ---
+        cita = c.get("criterio_oficial", {}).get("cita")
+        if cita:
+            cita_norm = quitar_tildes(cita.lower())
+            codigo = c.get("criterio_oficial", {}).get("codigo")
+
+            disparador_ayuda = next((d for d in DISPARADORES_AYUDA if d in cita_norm), None)
+            if disparador_ayuda:
+                texto_descriptores = quitar_tildes(
+                    " ".join(c["descriptores"].get(n, {}).get("texto", "") for n in ("n1", "n2", "n3", "n4")).lower()
+                )
+                if not any(marca in texto_descriptores for marca in MARCAS_ANDAMIAJE):
+                    avi(cid, "modalizadores",
+                        "el criterio %s de %s evalúa '%s' y ningún descriptor nombra la ayuda" % (codigo, c["curso"], disparador_ayuda))
+
+            disparador_autonomia = next((d for d in DISPARADORES_AUTONOMIA if d in cita_norm), None)
+            if disparador_autonomia:
+                for nivel in ("n1", "n2", "n3", "n4"):
+                    d = c["descriptores"].get(nivel)
+                    if not d:
+                        continue
+                    texto_norm = quitar_tildes(d["texto"].lower())
+                    marca = next((m for m in MARCAS_ANDAMIAJE_RESIDUAL if m in texto_norm), None)
+                    if marca:
+                        avi(cid, "modalizadores",
+                            "el criterio %s ya pide autonomía y el descriptor %s mantiene el andamiaje del curso anterior ('%s')" % (codigo, nivel, marca))
 
         # --- Descriptores ---
         for nivel, d in c["descriptores"].items():
@@ -137,6 +209,40 @@ def validar(ruta):
         conjunto = sum(abs(x.get("tope") or 0) for x in m["penalizaciones"])
         if conjunto > m["total"] * TOPE_CONJUNTO:
             err(cid, "matriz", "las penalizaciones juntas pueden restar %s de %s" % (conjunto, m["total"]))
+
+    # --- Tarea aplicable al curso: el currículo no sostiene todas las
+    # tareas en todos los cursos (§4.3). ---
+    combos = collections.defaultdict(list)
+    for c in pack["criterios"]:
+        for tipo_tarea in c["tipos_tarea"]:
+            combos[(c["curso"], tipo_tarea)].append(c)
+    for (curso, tipo_tarea), lista in sorted(combos.items()):
+        if len(lista) < 3:
+            avi("(pack)", "tarea_aplicable",
+                "%s · %s: la combinación se sostiene con solo %d dimensión(es)" % (curso, tipo_tarea, len(lista)))
+        if not any(x["prioridad"] == 1 for x in lista):
+            avi("(pack)", "tarea_aplicable",
+                "%s · %s: ninguna dimensión es de prioridad 1, así que con poco tiempo de corrección el instrumento se queda vacío" % (curso, tipo_tarea))
+
+    # --- Copia entre cursos: descriptores N2-N4 idénticos en dos cursos
+    # distintos de la misma dimensión suelen ser copiar y pegar, no
+    # progresión (N1 queda exento: la misma evidencia vale en cualquier curso). ---
+    por_dimension = collections.defaultdict(list)
+    for c in pack["criterios"]:
+        por_dimension[c["dimension"]].append(c)
+    for dimension, lista in por_dimension.items():
+        for i in range(len(lista)):
+            for j in range(i + 1, len(lista)):
+                a, b = lista[i], lista[j]
+                if a["curso"] == b["curso"]:
+                    continue
+                iguales = all(
+                    a["descriptores"].get(n, {}).get("texto") == b["descriptores"].get(n, {}).get("texto")
+                    for n in ("n2", "n3", "n4")
+                )
+                if iguales:
+                    avi("%s / %s" % (a["id"], b["id"]), "copia_entre_cursos",
+                        "dimensión '%s': los descriptores N2-N4 de %s y %s son idénticos" % (dimension, a["curso"], b["curso"]))
 
     # --- Pesos ---
     for curso, total in sorted(pesos.items()):

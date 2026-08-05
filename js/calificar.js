@@ -9,13 +9,8 @@
 // misma prueba no se pierda al cerrar el navegador. No conecta todavía con
 // la ficha impresa ni con ningún instrumento con detractor (§7.7 no existe).
 
-import {
-  calcularNota,
-  redondear2,
-  valorNivel,
-  nivelDe,
-  puntosDeMatriz,
-} from "./calificacion.js";
+import { calcularNota, puntosYNivelDe, redondear2 } from "./calificacion.js";
+import { DETRACTOR_ESTIMACION } from "./motor.js";
 import { microexplicacion } from "./microexplicaciones.js";
 import { escapeHtml } from "./ui.js";
 
@@ -55,7 +50,7 @@ function escribirAlmacen(almacen) {
   }
 }
 
-function alumnosGuardados(meta) {
+export function alumnosGuardados(meta) {
   return leerAlmacen()[claveInstrumento(meta)] ?? {};
 }
 
@@ -187,6 +182,10 @@ export function renderCalificacion(container, criterios, meta) {
         Condición mínima: un criterio obligatorio en N1 limita la nota a 4,9
       </label>
       ${microexplicacion("condicion-minima")}
+
+      <label for="detractor-acumulado">${escapeHtml(DETRACTOR_ESTIMACION.concepto)}: puntos a restar de la nota (0 a ${DETRACTOR_ESTIMACION.tope})</label>
+      <input type="number" id="detractor-acumulado" min="0" max="${DETRACTOR_ESTIMACION.tope}" step="0.1" value="0" />
+      ${microexplicacion("detractor-estimacion")}
     </div>
 
     <div class="criterios-calificar">${filas}</div>
@@ -230,16 +229,6 @@ function leerResultadoFila(fila, criterio) {
   return { tipo: "nivel", nivel: Number(marcado.value) };
 }
 
-function puntosYNivelDe(criterio, resultado, escala) {
-  if (resultado.tipo === "matriz") {
-    const puntos = redondear2(
-      puntosDeMatriz(criterio.matriz_cuantitativa, resultado.bandasElegidas, resultado.ocurrenciasPenalizacion)
-    );
-    return { puntos, nivel: nivelDe(puntos) };
-  }
-  return { puntos: redondear2(valorNivel(resultado.nivel, escala)), nivel: resultado.nivel };
-}
-
 // Rellena una fila con un ResultadoCriterio guardado, para poder recargar
 // a un alumno y seguir corrigiendo o corregir un despiste sin repetirlo todo.
 function aplicarResultadoAFila(fila, criterio, resultado) {
@@ -264,6 +253,7 @@ export function conectarEventosCalificacion(container, criterios, meta, onCerrar
   const resultadoNota = container.querySelector("#resultado-nota");
   const escalaSelect = container.querySelector("#escala-nivel");
   const condicionCheckbox = container.querySelector("#condicion-minima");
+  const detractorInput = container.querySelector("#detractor-acumulado");
   const nombreInput = container.querySelector("#nombre-alumno");
 
   // Último cálculo completo, con los ResultadoCriterio crudos por criterio:
@@ -307,22 +297,43 @@ export function conectarEventosCalificacion(container, criterios, meta, onCerrar
     }
 
     const condicionMinimaActiva = condicionCheckbox.checked;
-    const { notaCalculada, notaFinal, algunObligatorioEnN1 } = calcularNota(entradas, {
+    // §6.3 — el profesor introduce el valor ya acumulado (no se cuenta por
+    // ocurrencias, porque el pack no declara una tarifa por falta); se acota
+    // aquí porque un <input type="number"> no impide escribir fuera de
+    // min/max a mano.
+    const detractorAcumulado = Math.min(
+      Math.max(Number(detractorInput.value) || 0, 0),
+      DETRACTOR_ESTIMACION.tope
+    );
+    const { notaCalculada, notaTrasDetractor, notaFinal, algunObligatorioEnN1 } = calcularNota(entradas, {
       escala,
       condicionMinimaActiva,
+      detractorAcumulado,
     });
 
     const disparada = condicionMinimaActiva && algunObligatorioEnN1;
     resultadoNota.innerHTML = `
       <p class="nota-final">Nota final: <strong>${notaFinal.toFixed(2)}</strong></p>
       ${
+        detractorAcumulado > 0
+          ? `<p class="ayuda">Detractor aplicado: −${detractorAcumulado.toFixed(2)} (nota antes del detractor: ${notaCalculada.toFixed(2)}; después: ${notaTrasDetractor.toFixed(2)})</p>`
+          : ""
+      }
+      ${
         disparada
-          ? `<div class="aviso-caja">Condición mínima disparada: la nota calculada era ${notaCalculada.toFixed(2)} y se recorta a 4,9.</div>`
+          ? `<div class="aviso-caja">Condición mínima disparada: la nota tras el detractor era ${notaTrasDetractor.toFixed(2)} y se recorta a 4,9.</div>`
           : ""
       }
     `;
 
-    ultimoCalculo = { escala, condicionMinima: condicionMinimaActiva, notaCalculada, notaFinal, resultadosPorCriterio };
+    ultimoCalculo = {
+      escala,
+      condicionMinima: condicionMinimaActiva,
+      detractorAcumulado,
+      notaCalculada,
+      notaFinal,
+      resultadosPorCriterio,
+    };
   }
 
   function refrescarListaAlumnos() {
@@ -337,6 +348,7 @@ export function conectarEventosCalificacion(container, criterios, meta, onCerrar
     container.querySelectorAll('.fila-calificar input[type="radio"]').forEach((r) => (r.checked = false));
     container.querySelectorAll(".select-banda").forEach((s) => (s.value = ""));
     container.querySelectorAll(".input-ocurrencias").forEach((i) => (i.value = 0));
+    detractorInput.value = 0;
     actualizar();
   });
 
@@ -370,6 +382,7 @@ export function conectarEventosCalificacion(container, criterios, meta, onCerrar
       nombreInput.value = nombre;
       escalaSelect.value = datos.escala;
       condicionCheckbox.checked = datos.condicionMinima;
+      detractorInput.value = datos.detractorAcumulado ?? 0;
       for (const fila of container.querySelectorAll(".fila-calificar")) {
         const criterio = porId[fila.dataset.criterioId];
         const resultado = datos.resultadosPorCriterio[criterio.id];

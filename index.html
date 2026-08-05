@@ -8,53 +8,66 @@
 <link rel="stylesheet" href="css/print.css" media="print" />
 </head>
 <body>
-<header class="cabecera">
-  <h1>Generador de instrumentos de evaluación</h1>
-  <p class="subtitulo">Lengua Castellana y Literatura · LOMLOE · Región de Murcia</p>
+<header class="banda">
+  <div class="banda-interior">
+    <div class="banda-titulo">
+      <h1>Generador de instrumentos de evaluación</h1>
+      <p class="subtitulo">Lengua Castellana y Literatura</p>
+    </div>
+    <ul class="banda-datos">
+      <li>LOMLOE · Región de Murcia</li>
+      <li>4 niveles de logro</li>
+      <li>7 instrumentos por tarea</li>
+    </ul>
+  </div>
 </header>
 
 <main>
   <section id="salud-pack" class="tarjeta" hidden></section>
 
-  <section id="modo-expres" class="tarjeta">
-    <h2>Modo exprés</h2>
-    <p class="ayuda">Tres decisiones y una rúbrica lista.</p>
+  <section id="modo-expres" class="tarjeta tarjeta-config">
+    <h2 class="titulo-config">Modo exprés <span class="ayuda">Tres decisiones y una rúbrica lista.</span></h2>
 
     <form id="form-expres">
-      <fieldset>
-        <legend>1. ¿Qué vas a evaluar?</legend>
+      <div class="rejilla-config">
+        <div class="campo-config">
+          <p class="paso-titulo"><span class="paso paso-1">1</span>¿Qué vas a evaluar?</p>
 
-        <label for="puerta">Tipo de prueba</label>
-        <select id="puerta" name="puerta" required></select>
-        <div data-micro="puerta"></div>
+          <label for="puerta">Tipo de prueba</label>
+          <select id="puerta" name="puerta" required></select>
+          <div data-micro="puerta"></div>
 
-        <label for="tipo-tarea">Tipo de tarea</label>
-        <select id="tipo-tarea" name="tipo-tarea" required></select>
-        <div data-micro="tipo-tarea"></div>
-      </fieldset>
+          <label for="tipo-tarea">Tipo de tarea</label>
+          <select id="tipo-tarea" name="tipo-tarea" required></select>
+          <div data-micro="tipo-tarea"></div>
+        </div>
 
-      <fieldset>
-        <legend>2. ¿Qué curso?</legend>
-        <label for="curso">Curso</label>
-        <select id="curso" name="curso" required></select>
-        <div data-micro="curso"></div>
-      </fieldset>
+        <div class="campo-config">
+          <p class="paso-titulo"><span class="paso paso-2">2</span>¿Qué curso?</p>
 
-      <fieldset>
-        <legend>3. ¿Cuánto tiempo tienes por alumno?</legend>
-        <label for="tiempo">Tiempo de corrección</label>
-        <select id="tiempo" name="tiempo" required></select>
-        <div data-micro="tiempo"></div>
-      </fieldset>
+          <label for="curso">Curso</label>
+          <select id="curso" name="curso" required></select>
+          <div data-micro="curso"></div>
+        </div>
 
-      <fieldset>
-        <legend>Actividad</legend>
-        <label for="actividad">¿Qué le vas a pedir al alumnado? (aparece en la cabecera y en la ficha)</label>
+        <div class="campo-config">
+          <p class="paso-titulo"><span class="paso paso-3">3</span>¿Cuánto tiempo tienes?</p>
+
+          <label for="tiempo">Tiempo de corrección por alumno</label>
+          <select id="tiempo" name="tiempo" required></select>
+          <div data-micro="tiempo"></div>
+        </div>
+      </div>
+
+      <div class="campo-config campo-actividad">
+        <label for="actividad">Actividad — ¿qué le vas a pedir al alumnado? (aparece en la cabecera y en la ficha)</label>
         <input type="text" id="actividad" name="actividad" placeholder="p. ej. Texto expositivo sobre el reciclaje en el instituto" required />
         <div data-micro="actividad"></div>
-      </fieldset>
+      </div>
 
-      <button type="submit">Generar</button>
+      <div class="acciones-config">
+        <button type="submit">Generar</button>
+      </div>
     </form>
   </section>
 

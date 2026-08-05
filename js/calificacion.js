@@ -126,3 +126,62 @@ export function calcularNota(entradas, opciones = {}) {
 
   return { notaCalculada, notaTrasDetractor, notaFinal, algunObligatorioEnN1 };
 }
+
+// §6.5 — puntos y nivel de un criterio a partir de su ResultadoCriterio ya
+// registrado. La usan tanto la pantalla de Calificar (elegir banda o nivel en
+// vivo) como la ficha del alumno (mostrar un resultado ya guardado): es el
+// mismo cálculo, no dos implementaciones que puedan desincronizarse.
+export function puntosYNivelDe(criterio, resultado, escala) {
+  if (resultado.tipo === "matriz") {
+    const puntos = redondear2(
+      puntosDeMatriz(criterio.matriz_cuantitativa, resultado.bandasElegidas, resultado.ocurrenciasPenalizacion)
+    );
+    return { puntos, nivel: nivelDe(puntos) };
+  }
+  return { puntos: redondear2(valorNivel(resultado.nivel, escala)), nivel: resultado.nivel };
+}
+
+// §6.5 — recompone el desglose por dimensión y la nota de un alumno ya
+// guardado (`datos` es lo que persiste `js/calificar.js` en localStorage: ver
+// su forma en `conectarEventosCalificacion`), contra los criterios activos
+// del instrumento en su estado actual. Si el profesor reajustó pesos o
+// dimensiones después de calificar, el desglose se recalcula con el
+// instrumento de ahora — igual que ya hace "Cargar" en Calificar (§6.5): no
+// se archiva un número congelado, se recalcula. Un criterio del alumno
+// guardado que ya no esté en `criterios` (por ejemplo, si se desactivó en
+// modo avanzado) se omite del desglose y de la nota, en vez de romper.
+export function calcularResultadoGuardado(criterios, datos) {
+  const filas = [];
+  const entradas = [];
+
+  for (const criterio of criterios) {
+    const resultado = datos.resultadosPorCriterio[criterio.id];
+    if (!resultado) continue;
+
+    const { puntos, nivel } = puntosYNivelDe(criterio, resultado, datos.escala);
+    const aporta = redondear2((puntos * criterio.peso_normalizado) / 100);
+    filas.push({ criterio, puntos, nivel, aporta });
+    entradas.push({
+      peso_base: criterio.peso_normalizado,
+      obligatorio: !!criterio.obligatorio,
+      matrizCuantitativa: criterio.matriz_cuantitativa,
+      resultado,
+    });
+  }
+
+  const detractorAcumulado = datos.detractorAcumulado ?? 0;
+  const { notaCalculada, notaTrasDetractor, notaFinal, algunObligatorioEnN1 } = calcularNota(entradas, {
+    escala: datos.escala,
+    condicionMinimaActiva: datos.condicionMinima,
+    detractorAcumulado,
+  });
+
+  return {
+    filas,
+    notaCalculada,
+    notaTrasDetractor,
+    notaFinal,
+    detractorAcumulado,
+    disparada: !!datos.condicionMinima && algunObligatorioEnN1,
+  };
+}

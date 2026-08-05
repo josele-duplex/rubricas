@@ -1,5 +1,6 @@
 import {
   cargarPack,
+  fusionarPacks,
   generarInstrumentos,
   PUERTA_APLICABILIDAD,
   normalizarPesos,
@@ -8,12 +9,15 @@ import {
   generarRubricaAnalitica,
   generarListaCotejo,
   generarFichaAlumno,
+  generarRubricaUnPunto,
   generarAutoevaluacion,
+  generarEscalaEstimacion,
 } from "./motor.js";
-import { poblarFormulario, actualizarCursos, renderResultado, renderSaludPack } from "./ui.js";
+import { poblarFormulario, actualizarCursos, renderResultado, renderSaludPack, renderResultadoAlumnoFicha, escapeHtml } from "./ui.js";
 import { validarPack } from "./validador.js";
 import { renderModoAvanzado, conectarEventosModoAvanzado } from "./modo-avanzado.js";
-import { renderCalificacion, conectarEventosCalificacion } from "./calificar.js";
+import { renderCalificacion, conectarEventosCalificacion, alumnosGuardados } from "./calificar.js";
+import { calcularResultadoGuardado } from "./calificacion.js";
 import { montarMicroexplicaciones } from "./microexplicaciones.js";
 
 const els = {
@@ -27,19 +31,31 @@ const els = {
   saludPack: document.getElementById("salud-pack"),
 };
 
+// Un pack por tipo de tarea (SDD §5.1). El formulario y el motor trabajan
+// sobre la fusión de todos ellos; la salud del pack se informa por separado
+// para no mezclar los pesos por curso de un pack con los de otro (§10).
+const PACKS_URLS = ["data/pack-lcl-expositivo.json", "data/pack-lcl-argumentativo.json"];
+
 let pack;
 let configActual = null;
 
 async function iniciar() {
+  let packsOriginales;
   try {
-    pack = await cargarPack("data/pack-lcl-expositivo.json");
+    packsOriginales = await Promise.all(PACKS_URLS.map((url) => cargarPack(url)));
   } catch (err) {
     els.resultado.hidden = false;
     els.resultado.innerHTML = `<div class="aviso-caja">No se pudo cargar el pack de criterios: ${err.message}</div>`;
     return;
   }
+  pack = fusionarPacks(packsOriginales);
 
-  renderSaludPack(els.saludPack, validarPack(pack));
+  const informes = packsOriginales.map((p) => validarPack(p));
+  renderSaludPack(els.saludPack, {
+    avisos: informes.flatMap((i) => i.avisos),
+    nErrores: informes.reduce((total, i) => total + i.nErrores, 0),
+    nAvisos: informes.reduce((total, i) => total + i.nAvisos, 0),
+  });
 
   montarMicroexplicaciones();
   poblarFormulario(pack, els);
@@ -54,6 +70,7 @@ async function iniciar() {
 function generarYMostrar(ajustesAplicados = null) {
   const puertaInfo = PUERTA_APLICABILIDAD[els.puerta.value];
   let resultado = null;
+  let meta = null;
 
   if (puertaInfo.generaRubrica) {
     resultado = generarInstrumentos(pack, {
@@ -63,6 +80,14 @@ function generarYMostrar(ajustesAplicados = null) {
       actividad: els.actividad.value.trim(),
       esProductoFinal: els.puerta.value === "desempeno",
     });
+
+    if (resultado.ok) {
+      meta = {
+        actividad: resultado.rubricaAnalitica.actividad,
+        curso: resultado.rubricaAnalitica.curso,
+        tipoTarea: resultado.rubricaAnalitica.tipoTarea,
+      };
+    }
 
     // Aplicar ajustes del modo avanzado, si los hay. En vez de reconstruir
     // cada instrumento a mano, se reutilizan las mismas funciones del motor
@@ -80,11 +105,6 @@ function generarYMostrar(ajustesAplicados = null) {
 
       criteriosAjustados = normalizarPesos(criteriosAjustados);
 
-      const meta = {
-        actividad: resultado.rubricaAnalitica.actividad,
-        curso: resultado.rubricaAnalitica.curso,
-        tipoTarea: resultado.rubricaAnalitica.tipoTarea,
-      };
       const esProductoFinal = els.puerta.value === "desempeno";
 
       resultado.criterios = criteriosAjustados;
@@ -93,13 +113,16 @@ function generarYMostrar(ajustesAplicados = null) {
       resultado.rubricaAnalitica = generarRubricaAnalitica(criteriosAjustados, meta);
       resultado.listaCotejo = generarListaCotejo(criteriosAjustados);
       resultado.fichaAlumno = generarFichaAlumno(criteriosAjustados, meta);
+      resultado.rubricaUnPunto = generarRubricaUnPunto(criteriosAjustados, meta);
       resultado.autoevaluacion = generarAutoevaluacion(criteriosAjustados, pack.verbos, meta);
+      resultado.escalaEstimacion = generarEscalaEstimacion(criteriosAjustados, meta);
     }
   }
 
   configActual = { puerta: els.puerta.value, tipoTarea: els.tipoTarea.value, curso: els.curso.value, ajustes: ajustesAplicados };
 
-  renderResultado(els.resultado, { puertaInfo, resultado });
+  const alumnos = meta ? alumnosGuardados(meta) : {};
+  renderResultado(els.resultado, { puertaInfo, resultado, alumnos });
   els.resultado.scrollIntoView({ behavior: "smooth", block: "start" });
 
   // Conectar botón Ajustar si existe
@@ -113,13 +136,51 @@ function generarYMostrar(ajustesAplicados = null) {
   const btnCalificar = els.resultado.querySelector("#btn-calificar");
   if (btnCalificar && resultado?.ok) {
     btnCalificar.addEventListener("click", () => {
-      abrirCalificacion(resultado.criterios, {
-        actividad: resultado.rubricaAnalitica.actividad,
-        curso: resultado.rubricaAnalitica.curso,
-        tipoTarea: resultado.rubricaAnalitica.tipoTarea,
-      });
+      abrirCalificacion(resultado.criterios, meta);
     });
   }
+
+  conectarSelectorFicha(resultado, meta);
+}
+
+// §6.5 — desplegable de "Resultado de un alumno calificado" en la ficha del
+// alumno. No es un instrumento nuevo (§7): reutiliza calcularResultadoGuardado
+// (js/calificacion.js) sobre los criterios activos ahora mismo, igual que
+// "Cargar" en Calificar. Se conecta aquí y no en ui.js porque implica leer
+// localStorage (vía alumnosGuardados), que es responsabilidad de esta capa,
+// no del renderizado puro.
+function conectarSelectorFicha(resultado, meta) {
+  const selector = els.resultado.querySelector("#selector-alumno-ficha");
+  if (!selector || !resultado?.ok || !meta) return;
+
+  selector.addEventListener("change", () => {
+    const contenedorResultado = els.resultado.querySelector("#resultado-alumno-ficha");
+    const nombre = selector.value;
+    if (!nombre) {
+      contenedorResultado.innerHTML = renderResultadoAlumnoFicha(null);
+      return;
+    }
+    const datos = alumnosGuardados(meta)[nombre];
+    contenedorResultado.innerHTML = renderResultadoAlumnoFicha(
+      datos ? calcularResultadoGuardado(resultado.criterios, datos) : null
+    );
+  });
+}
+
+// Tras cerrar "Calificar" puede haber un alumno nuevo (o borrado): se
+// repuebla el desplegable sin rehacer toda la vista previa, para no perder
+// la pestaña que el profesor tenía abierta.
+function refrescarSelectorFicha(meta) {
+  const selector = els.resultado.querySelector("#selector-alumno-ficha");
+  if (!selector || !meta) return;
+
+  const valorPrevio = selector.value;
+  const nombres = Object.keys(alumnosGuardados(meta)).sort((a, b) => a.localeCompare(b, "es"));
+  selector.innerHTML =
+    `<option value="">— vista en blanco, para repartir en clase —</option>` +
+    nombres.map((n) => `<option value="${escapeHtml(n)}">${escapeHtml(n)}</option>`).join("");
+  selector.value = nombres.includes(valorPrevio) ? valorPrevio : "";
+  selector.dispatchEvent(new Event("change"));
 }
 
 function abrirModoAvanzado(criterios) {
@@ -153,6 +214,7 @@ function abrirCalificacion(criterios, meta) {
 
   conectarEventosCalificacion(contenedor, criterios, meta, () => {
     contenedor.remove();
+    refrescarSelectorFicha(meta);
     els.resultado.scrollIntoView({ behavior: "smooth", block: "start" });
   });
 

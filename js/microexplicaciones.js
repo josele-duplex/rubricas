@@ -95,6 +95,24 @@ export const MICROEXPLICACIONES = {
       "genera siempre, con qué se te pide, qué se valora y cómo llegar al nivel excelente.",
   },
 
+  "un-punto": {
+    titulo: "¿por qué solo una columna y no las cuatro?",
+    texto:
+      "Para un borrador o una tarea de proceso, graduar cuatro niveles cuesta más de lo que aporta: basta con " +
+      "describir el desempeño esperado y anotar a mano en qué se queda corto o en qué destaca ese alumno " +
+      "concreto (SDD §7.4, Marco Teórico §10). Por eso se limita a 1-2 dimensiones: con más deja de ser " +
+      "«un punto» y toca usar la rúbrica analítica.",
+  },
+
+  "escala-estimacion": {
+    titulo: "¿por qué puntos directos y no los cuatro niveles?",
+    texto:
+      "En desarrollo largo y pruebas tipo EBAU corregir de un vistazo pesa más que graduar cuatro " +
+      "descriptores por apartado (Marco Teórico §5, SDD §7.7). Cada apartado reparte su peso en puntos " +
+      "sobre 10; el detractor de ortografía y presentación es transversal a todo el texto y resta al " +
+      "final, con un tope de 2 puntos que no se puede superar aunque el texto acumule muchos fallos (§6.3).",
+  },
+
   "autoevaluacion": {
     titulo: "¿por qué es la misma matriz y no un texto nuevo?",
     texto:
@@ -175,6 +193,16 @@ export const MICROEXPLICACIONES = {
       "La equilibrada evita que un alumno que ha producido algo, aunque flojo, saque un cero en una dimensión " +
       "sin matriz; la exigente reserva el cero para el trabajo no realizado o ininteligible (SDD §6.2). Se " +
       "declara aquí porque cambia la nota, no es un detalle técnico.",
+  },
+
+  "detractor-estimacion": {
+    titulo: "¿por qué se resta al final y no dentro de una dimensión?",
+    texto:
+      "La ortografía y la presentación son transversales a todo el texto, no de una dimensión concreta " +
+      "(§6.3), así que se restan de la nota ya calculada, con un tope de 2 puntos que no se puede superar " +
+      "aunque el texto acumule muchos fallos. Se aplica antes que la condición mínima: si esta se dispara, " +
+      "lo hace sobre la nota ya descontada, no al revés (SDD §6.3, orden fijado tras comprobar que da " +
+      "notas distintas según el orden elegido).",
   },
 
   "condicion-minima": {

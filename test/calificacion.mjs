@@ -11,6 +11,8 @@ import {
   nivelDe,
   puntosDeMatriz,
   calcularNota,
+  puntosYNivelDe,
+  calcularResultadoGuardado,
 } from "../js/calificacion.js";
 
 let pasados = 0;
@@ -284,6 +286,114 @@ caso("calcularNota: mezcla de dimensión con matriz y dimensión sin matriz en e
     { peso_base: 50, obligatorio: false, resultado: { tipo: "nivel", nivel: 2 } }, // vale 5
   ]);
   assertIgual(notaFinal, 6.5, "(8+5)/2 = 6,5 combinando matriz y descriptor en el mismo instrumento");
+});
+
+// --- puntosYNivelDe y calcularResultadoGuardado (§6.5) --------------------
+// Comparten la matriz constante y los helpers de "calcularNota" de arriba,
+// pero necesitan un objeto "criterio" completo (id, peso_normalizado,
+// matriz_cuantitativa), no la "entrada" reducida que consume calcularNota.
+
+function criterioMatriz({ id, peso_normalizado, obligatorio = false, puntos }) {
+  return {
+    id,
+    nombre: id,
+    bloque_lomloe: "B",
+    obligatorio,
+    peso_normalizado,
+    matriz_cuantitativa: matrizConstante(puntos),
+  };
+}
+
+function criterioNivel({ id, peso_normalizado, obligatorio = false }) {
+  return { id, nombre: id, bloque_lomloe: "D", obligatorio, peso_normalizado, matriz_cuantitativa: null };
+}
+
+function resultadoMatriz(puntos) {
+  return { tipo: "matriz", bandasElegidas: { unico: puntos } };
+}
+
+caso("puntosYNivelDe: criterio con matriz devuelve los puntos brutos y su nivel (§6.4)", () => {
+  const criterio = criterioMatriz({ id: "c1", peso_normalizado: 100, puntos: 8.9 });
+  const { puntos, nivel } = puntosYNivelDe(criterio, resultadoMatriz(8.9), "equilibrada");
+  assertIgual(puntos, 8.9, "debería devolver los puntos brutos de la matriz, no el valor de su nivel");
+  assertIgual(nivel, 3, "8,9 puntos caen en N3 por §6.4");
+});
+
+caso("puntosYNivelDe: criterio sin matriz devuelve el valor de nivel según la escala", () => {
+  const criterio = criterioNivel({ id: "c2", peso_normalizado: 100 });
+  const { puntos, nivel } = puntosYNivelDe(criterio, { tipo: "nivel", nivel: 3 }, "equilibrada");
+  assertIgual(puntos, 7.5, "N3 en la escala equilibrada vale 7,5");
+  assertIgual(nivel, 3, "el nivel devuelto debería ser el marcado, no uno derivado de los puntos");
+});
+
+caso("calcularResultadoGuardado: recompone el desglose por dimensión y la nota (§6.5)", () => {
+  const criterios = [
+    criterioMatriz({ id: "c1", peso_normalizado: 50, puntos: 8 }),
+    criterioNivel({ id: "c2", peso_normalizado: 50 }),
+  ];
+  const datos = {
+    escala: "equilibrada",
+    condicionMinima: false,
+    detractorAcumulado: 0,
+    resultadosPorCriterio: {
+      c1: resultadoMatriz(8),
+      c2: { tipo: "nivel", nivel: 2 }, // vale 5 en la escala equilibrada
+    },
+  };
+  const { filas, notaFinal } = calcularResultadoGuardado(criterios, datos);
+  assertIgual(filas.length, 2, "debería haber una fila por criterio guardado");
+  assertIgual(filas[0].puntos, 8, "la fila del criterio con matriz debería llevar sus puntos brutos");
+  assertIgual(filas[1].puntos, 5, "la fila del criterio sin matriz debería llevar el valor de su nivel");
+  assertIgual(notaFinal, 6.5, "(8+5)/2 = 6,5, igual que calcularNota con las mismas entradas");
+});
+
+caso("calcularResultadoGuardado: omite un criterio del alumno que ya no está en el instrumento actual", () => {
+  // El profesor pudo desactivar una dimensión en modo avanzado después de
+  // guardar a este alumno (§6.5): el desglose se recalcula contra el
+  // instrumento de ahora, no contra el de cuando se guardó.
+  const criterios = [criterioMatriz({ id: "c1", peso_normalizado: 100, puntos: 8 })];
+  const datos = {
+    escala: "equilibrada",
+    condicionMinima: false,
+    detractorAcumulado: 0,
+    resultadosPorCriterio: {
+      c1: resultadoMatriz(8),
+      c2: { tipo: "nivel", nivel: 4 }, // c2 ya no está en "criterios"
+    },
+  };
+  const { filas, notaFinal } = calcularResultadoGuardado(criterios, datos);
+  assertIgual(filas.length, 1, "el criterio desaparecido del instrumento no debería generar fila");
+  assertIgual(notaFinal, 8, "la nota debería calcularse solo con el criterio que sigue activo");
+});
+
+caso("calcularResultadoGuardado: recompone detractor y condición mínima igual que calcularNota", () => {
+  const criterios = [
+    criterioMatriz({ id: "c1", peso_normalizado: 20, obligatorio: true, puntos: 0 }), // N1
+    criterioMatriz({ id: "c2", peso_normalizado: 80, puntos: 10 }),
+  ];
+  const datos = {
+    escala: "equilibrada",
+    condicionMinima: true,
+    detractorAcumulado: 2,
+    resultadosPorCriterio: { c1: resultadoMatriz(0), c2: resultadoMatriz(10) },
+  };
+  const { notaCalculada, notaTrasDetractor, notaFinal, disparada } = calcularResultadoGuardado(criterios, datos);
+  assertIgual(notaCalculada, 8, "0×0,2 + 10×0,8 = 8");
+  assertIgual(notaTrasDetractor, 6, "8 - 2 (detractor) = 6");
+  assertIgual(notaFinal, 4.9, "condición mínima disparada recorta a 4,9, igual que en calcularNota");
+  assert(disparada, "disparada debería ser true: condición mínima activa y un obligatorio en N1");
+});
+
+caso("calcularResultadoGuardado: sin detractorAcumulado en los datos guardados se trata como 0 (compatibilidad con calificaciones previas a la v1.7)", () => {
+  const criterios = [criterioMatriz({ id: "c1", peso_normalizado: 100, puntos: 10 })];
+  const datos = {
+    escala: "equilibrada",
+    condicionMinima: false,
+    resultadosPorCriterio: { c1: resultadoMatriz(10) },
+  };
+  const { notaFinal, detractorAcumulado } = calcularResultadoGuardado(criterios, datos);
+  assertIgual(detractorAcumulado, 0, "sin el campo, debería asumirse 0");
+  assertIgual(notaFinal, 10, "sin detractor, la nota final debería ser 10");
 });
 
 // --- resumen -------------------------------------------------------------

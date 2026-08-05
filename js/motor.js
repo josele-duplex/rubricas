@@ -28,8 +28,7 @@ export const PUERTA_APLICABILIDAD = {
     instrumentoRecomendado: "escala_estimacion",
     explicacion:
       "Para desarrollo largo o pruebas tipo EBAU se recomienda la escala de estimación analítica " +
-      "en lugar de la rúbrica completa. Ese instrumento aún no está disponible en este prototipo; " +
-      "se genera la rúbrica analítica como alternativa más cercana.",
+      "en lugar de la rúbrica completa: puntuación directa por apartado, sin elegir entre cuatro niveles.",
   },
   desempeno: {
     etiqueta: "Tarea de desempeño o proyecto",
@@ -51,6 +50,21 @@ export async function cargarPack(url) {
   const res = await fetch(url);
   if (!res.ok) throw new Error(`No se pudo cargar el pack: ${res.status}`);
   return res.json();
+}
+
+// Combina varios packs (uno por tipo de tarea) en el pack operativo que usa
+// el resto del motor: concatena criterios y une el banco de verbos por id.
+// Cada pack sigue validándose por separado (SDD §10); esto solo hace visible
+// a la vez cada combinación curso × tipo de tarea que ya trae cada pack.
+export function fusionarPacks(packs) {
+  const verbosPorId = new Map();
+  for (const p of packs) {
+    for (const v of p.verbos) verbosPorId.set(v.id, v);
+  }
+  return {
+    criterios: packs.flatMap((p) => p.criterios),
+    verbos: [...verbosPorId.values()],
+  };
 }
 
 // hereda_de: el criterio del curso superior parte del inferior y solo
@@ -185,6 +199,67 @@ export function generarListaCotejo(criterios) {
   return {
     items,
     truncado: criterios.length > 8,
+  };
+}
+
+// §7.4 — rúbrica de un solo punto: solo la columna central con el descriptor
+// de N2 ("conseguido"); las columnas de evidencias de mejora y de excelencia
+// van en blanco, para que el profesor anote a mano. Se usa descriptor_un_punto
+// si está relleno, y si no el propio N2 (misma regla que descriptor_cotejo,
+// §5.2). Marco Teórico §10 reserva este instrumento a tareas de proceso y lo
+// limita a 1-2 dimensiones: por encima de eso deja de ser "un punto" y hay que
+// usar la rúbrica analítica. Se toman las de mayor prioridad, como en la lista
+// de cotejo.
+const MAX_DIMENSIONES_UN_PUNTO = 2;
+
+export function generarRubricaUnPunto(criterios, meta) {
+  const dimensiones = porPrioridad(criterios)
+    .slice(0, MAX_DIMENSIONES_UN_PUNTO)
+    .map((c) => ({
+      id: c.id,
+      nombre: c.nombre,
+      bloque: c.bloque_lomloe,
+      obligatorio: c.obligatorio,
+      descriptor: c.descriptor_un_punto ?? c.descriptores.n2.texto,
+    }));
+  return {
+    actividad: meta.actividad,
+    curso: meta.curso,
+    tipoTarea: meta.tipoTarea,
+    dimensiones,
+    truncado: criterios.length > MAX_DIMENSIONES_UN_PUNTO,
+  };
+}
+
+// §7.7 — escala de estimación analítica: puntuación directa por apartado, sin
+// elegir entre los cuatro niveles cualitativos, más el bloque de detractores
+// globales de §6.3 (ortografía y presentación, transversales a todo el texto,
+// con tope de 2 puntos sobre 10 — §17.3, pendiente de contrastar con el
+// departamento). Pensada para desarrollo largo y pruebas tipo EBAU (Marco
+// Teórico §5), donde puntuar de un vistazo pesa más que graduar cuatro
+// niveles. El detractor es un mecanismo del modelo de calificación (§6.2-§6.4),
+// no contenido curricular del pack, así que vive aquí como constante y no en
+// el JSON: no necesita `criterio_oficial` porque no es un criterio de
+// evaluación, es una convención de corrección transversal a cualquier texto.
+export const DETRACTOR_ESTIMACION = {
+  concepto: "Ortografía y presentación",
+  tope: 2,
+};
+
+export function generarEscalaEstimacion(criterios, meta) {
+  return {
+    actividad: meta.actividad,
+    curso: meta.curso,
+    tipoTarea: meta.tipoTarea,
+    apartados: porPrioridad(criterios).map((c) => ({
+      id: c.id,
+      nombre: c.nombre,
+      bloque: c.bloque_lomloe,
+      obligatorio: c.obligatorio,
+      criterioOficial: `${c.criterio_oficial.codigo} — «${c.criterio_oficial.cita}»`,
+      maxPuntos: Math.round((c.peso_normalizado / 10) * 100) / 100,
+    })),
+    detractor: DETRACTOR_ESTIMACION,
   };
 }
 
@@ -328,6 +403,8 @@ export function generarInstrumentos(pack, config) {
     rubricaAnalitica: generarRubricaAnalitica(ponderados, meta),
     listaCotejo: generarListaCotejo(ponderados),
     fichaAlumno: generarFichaAlumno(ponderados, meta),
+    rubricaUnPunto: generarRubricaUnPunto(ponderados, meta),
     autoevaluacion: generarAutoevaluacion(ponderados, pack.verbos, meta),
+    escalaEstimacion: generarEscalaEstimacion(ponderados, meta),
   };
 }
