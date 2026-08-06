@@ -53,6 +53,10 @@ MARCAS_ANDAMIAJE_RESIDUAL = [
     "con la pauta dada", "con el modelo dado", "segun el guion facilitado", "de manera guiada",
 ]
 
+# Fórmulas del propio decreto que sostienen que una dimensión evalúa una fase
+# del proceso y no el texto terminado (paridad con js/validador.js, §5.2).
+FORMULAS_PROCESO = ["planificar", "planificacion", "borrador", "revisar", "revision", "esquema"]
+
 
 def primer_verbo(texto):
     return re.findall(r"\w+", texto.lower())[0]
@@ -130,6 +134,18 @@ def validar(ruta):
                     if marca:
                         avi(cid, "modalizadores",
                             "el criterio %s ya pide autonomía y el descriptor %s mantiene el andamiaje del curso anterior ('%s')" % (codigo, nivel, marca))
+
+        # --- Dimensión de proceso sin respaldo: `evalua_proceso` decide qué
+        # premarca la puerta de "fase de un texto" (§8), así que se sostiene
+        # con la cita como todo lo demás. Solo esta dirección: deducir de la
+        # cita qué dimensiones son de proceso marcaría media rúbrica, porque
+        # el 5.1 sostiene también la adecuación del texto terminado. ---
+        if c.get("evalua_proceso"):
+            cita_proceso = quitar_tildes((c.get("criterio_oficial", {}).get("cita") or "").lower())
+            if not any(f in cita_proceso for f in FORMULAS_PROCESO):
+                err(cid, "proceso_sin_respaldo",
+                    "se declara dimensión de proceso y el criterio %s de %s no habla de planificar, de borradores ni de revisar"
+                    % (c.get("criterio_oficial", {}).get("codigo"), c["curso"]))
 
         # --- Descriptores ---
         for nivel, d in c["descriptores"].items():

@@ -14,6 +14,12 @@ export function agruparPorBloque(criterios) {
 
 function renderFila(criterio) {
   const min = 0, max = 100;
+  // Una dimensión desmarcada llega con peso normalizado 0, porque no entra en
+  // el reparto. El deslizador arranca en cambio con su `peso_base`: si el
+  // profesor la marca, tiene que incorporarse con el peso que el pack le
+  // propone, no con un cero que la haría invisible en el instrumento.
+  const pesoMostrado = criterio.peso_normalizado ?? 0;
+  const valorSlider = criterio.desactivado ? criterio.peso_base : pesoMostrado;
   return `
     <div class="fila-ajuste" data-criterio-id="${criterio.id}">
       <div class="fila-encabezado">
@@ -21,10 +27,10 @@ function renderFila(criterio) {
         <label class="etiqueta-dimension">${criterio.nombre}</label>
       </div>
       <div class="fila-deslizador">
-        <input type="range" class="slider-peso" min="${min}" max="${max}" value="${criterio.peso_normalizado}" />
-        <span class="peso-valor">${criterio.peso_normalizado.toFixed(1)}%</span>
+        <input type="range" class="slider-peso" min="${min}" max="${max}" value="${valorSlider}" />
+        <span class="peso-valor">${pesoMostrado.toFixed(1)}%</span>
       </div>
-      <div class="barra-reparto-item" style="width: ${criterio.peso_normalizado}%; opacity: 0.5;"></div>
+      <div class="barra-reparto-item" style="width: ${pesoMostrado}%; opacity: 0.5;"></div>
     </div>
   `;
 }

@@ -79,6 +79,7 @@ function generarYMostrar(ajustesAplicados = null) {
       tiempoCorreccion: els.tiempo.value,
       actividad: els.actividad.value.trim(),
       esProductoFinal: els.puerta.value === "desempeno",
+      puerta: els.puerta.value,
     });
 
     if (resultado.ok) {
@@ -95,19 +96,23 @@ function generarYMostrar(ajustesAplicados = null) {
     // de composición (fichaAlumno, complejidad y avisos quedaron
     // desincronizados la primera vez que se hizo así).
     if (ajustesAplicados && resultado.ok) {
-      let criteriosAjustados = resultado.criterios
-        .map((c) => {
-          const ajuste = ajustesAplicados[c.id];
-          if (!ajuste) return c;
-          return { ...c, desactivado: ajuste.desactivado, peso_base: ajuste.peso_editado };
-        })
-        .filter((c) => !c.desactivado);
+      // Se parte de todas las dimensiones que el profesor vio en "Ajustar",
+      // premarcadas o no (§9 paso 4): si solo se recorriesen las activas, una
+      // dimensión desmarcada no podría volver a marcarse nunca.
+      const conAjuste = [...resultado.criterios, ...resultado.noPremarcados].map((c) => {
+        const ajuste = ajustesAplicados[c.id];
+        if (!ajuste) return c;
+        return { ...c, desactivado: ajuste.desactivado, peso_base: ajuste.peso_editado };
+      });
 
-      criteriosAjustados = normalizarPesos(criteriosAjustados);
+      const criteriosAjustados = normalizarPesos(conAjuste.filter((c) => !c.desactivado));
 
       const esProductoFinal = els.puerta.value === "desempeno";
 
       resultado.criterios = criteriosAjustados;
+      resultado.noPremarcados = conAjuste
+        .filter((c) => c.desactivado)
+        .map((c) => ({ ...c, peso_normalizado: 0 }));
       resultado.avisosProgresion = comprobarProgresion(criteriosAjustados);
       resultado.complejidad = calcularComplejidad(criteriosAjustados, esProductoFinal);
       resultado.rubricaAnalitica = generarRubricaAnalitica(criteriosAjustados, meta);
@@ -129,7 +134,7 @@ function generarYMostrar(ajustesAplicados = null) {
   const btnAjustar = els.resultado.querySelector("#btn-ajustar");
   if (btnAjustar && resultado?.ok) {
     btnAjustar.addEventListener("click", () => {
-      abrirModoAvanzado(resultado.criterios);
+      abrirModoAvanzado([...resultado.criterios, ...resultado.noPremarcados]);
     });
   }
 

@@ -2,7 +2,7 @@
 
 ## Generador de Instrumentos de Evaluación — Lengua Castellana y Literatura (LOMLOE)
 
-**Versión 1.16** · Documento de trabajo · Agosto 2026
+**Versión 1.17** · Documento de trabajo · Agosto 2026
 Autor: Josele · Diseño técnico: Claude
 
 ---
@@ -11,6 +11,7 @@ Autor: Josele · Diseño técnico: Claude
 
 | Versión | Cambios |
 |---|---|
+| **1.17** | Quinta opción de la puerta de aplicabilidad (§8): **fase de un texto (esquema, borrador, revisión, párrafo suelto)**, que premarca solo las dimensiones de proceso y abre la vista previa por la lista de cotejo. Trae tres piezas. **(a) Campo `evalua_proceso` en el pack** (§5.2): la declaración es del contenido, no del motor, porque no se puede deducir de la cita — el 5.1 de Murcia dice *"Planificar la redacción… redactar borradores y revisarlos"* y sostiene a la vez la adecuación y la cohesión del texto terminado, así que un premarcado deducido de la cita marcaría media rúbrica. Se marca la dimensión de planificación y revisión en los seis cursos de expositivo y en los cinco de argumentativo (11 criterios); el pack oral no marca ninguna, y esa ausencia también es contenido: sus criterios evalúan el discurso realizado. **(b) Regla `proceso_sin_respaldo`** en las dos implementaciones del validador (§10): una dimensión declarada de proceso cuyo criterio oficial no hable de planificar, de borradores ni de revisar no carga. Solo esa dirección, por lo dicho en (a). **(c) `premarcarDimensiones` en `js/motor.js`** (§9 paso 4), con el invariante de que el premarcado nunca vacía el instrumento: si el filtro de tiempo se lleva la dimensión de proceso, se rescata (el filtro mide el coste de corregir un texto entero, que en una fase no existe); si la tarea no tiene ninguna, se mantienen todas y se explica por qué. `instrumentoRecomendado` deja de ser decorativo y elige la pestaña inicial, lo que de paso hace que las otras cuatro puertas abran por lo que ya recomendaban. De la misma pieza sale una corrección: una dimensión desmarcada en «Ajustar» ya no desaparece para siempre — sigue en la lista, sin marcar, con su `peso_base` en el deslizador. Siete casos nuevos en `test/premarcado.mjs` y dos en `test/validar-reglas.mjs`; `validar_pack.py` y `verificar_derivacion.py` sin incidencias nuevas sobre los tres packs. |
 | **1.16** | `data/pack-lcl-expositivo.json` (de 30 a 36 criterios) añade 2.º de Bachillerato, la última celda de la decisión 11 de §17: los tres packs de texto (oral, argumentativo, expositivo) quedan completos en los seis cursos. A diferencia de argumentativo, esta celda está marcada ○, no ●, en §4.3: los saberes propios de *Lengua II* nombran "textos argumentativos", no expositivos, así que `saber_vehiculo` se apoya en la descripción compartida de la competencia 5 (*"procurar mantener una adecuada claridad expositiva"*) en vez de en un saber que nombre el género. La diferencia real de contenido frente a 1.º Bach vive en el criterio **6.1** (tratamiento de la información): el de 2.º Bach añade *"con especial atención a la gestión de su almacenamiento y recuperación"*, ausente en el de 1.º Bach, que se refleja en el componente de bibliografía de la matriz. Progresión idéntica a 1.º Bach en los tres ejes, como en los otros dos packs. Validado con `validar_pack.py` (sin incidencias, sin avisos de `copia_entre_cursos` desde la primera redacción), `simular_correccion.py` (misma aritmética que 1.º Bach, sin caídas de dos niveles) y `verificar_derivacion.py` (sin errores). Probado en el navegador generando la rúbrica completa de 2.º de Bachillerato / texto expositivo (6 dimensiones, pesos correctos); de paso se confirmó que un aviso inicial de «2.º Bach no aparece en el curso» era caché del navegador de la sesión de previsualización, no un defecto de `cursosDisponibles` — se verificó forzando una recarga sin caché. |
 | **1.15** | `data/pack-lcl-argumentativo.json` (v0.2.0, de 24 a 30 criterios) añade 2.º de Bachillerato, cerrando la última celda de texto argumentativo. Aplica el mismo criterio que la decisión 11 de §17: progresión idéntica a 1.º Bach en los tres ejes (autonomía 3, complejidad 4, metalingüístico 4); la diferencia real vive en la redacción del criterio oficial y del descriptor — el 5.1 de *Lengua II* exige revisión *"entre iguales o utilizando otros instrumentos de consulta"*, sin la opción individual del 5.1 de 1.º Bach, y el 8.2 cambia el corpus de lectura guiada de «los clásicos» genéricos a literatura española e hispanoamericana del último cuarto del XIX al XXI, en tres ejes. Se documenta en §4.3 la celda «Argumentativo en 2.º Bach (●)», que la matriz ya marcaba pero que no tenía cita propia en la lista de celdas discutidas. §16.1 pasa a 16 de 20 celdas. **Se corrigen dos avisos de `copia_entre_cursos`** en `validar_pack.py`: los descriptores N2-N4 de cohesión y de corrección normativa se habían escrito calcando literalmente los de 1.º Bach; se reformulan sin cambiar la exigencia. Validado con `validar_pack.py` (sin incidencias), `simular_correccion.py` (nota 7,20, perfil de nivel medio verosímil) y `verificar_derivacion.py` (sin errores); probado en el navegador generando la rúbrica completa de 2.º de Bachillerato / texto argumentativo (6 dimensiones, pesos correctos). |
 | **1.14** | El pack de exposición oral queda completo en los seis cursos: `data/pack-lcl-oral.json` (v0.3.0, 30 criterios) añade 2.º de Bachillerato, resolviendo la decisión abierta 11 de §17 — mismo peldaño de progresión que 1.º Bach en los tres ejes, porque el Marco Teórico no describe ninguno por encima; la diferencia real vive en la redacción del criterio 3.1 de *Lengua II* (*"extensas en las que se recojan diferentes puntos de vista"*, ausente en 1.º Bach) y en los descriptores. `js/main.js` añade el pack a `PACKS_URLS`. §4.3 pasa a 15 de 20 celdas. **Se corrige `scripts/verificar_derivacion.py`**: el criterio 3.1 de 2.º Bach cruza en la fuente un salto de página del BORM (`NPE: A-241222-6755` y el pie «Número 296 Sábado, 24 de diciembre de 2022 Página 46733» caen en mitad de la frase citada), y `normalizar()` no los descartaba, lo que producía 5 falsos errores de cita. Se añaden dos patrones a `normalizar()` para ignorar cabecera y pie de página del BORM; la auto-prueba del verificador (`--auto-prueba`) sigue detectando toda corrupción deliberada, y el pack pasa a 0 errores. |
@@ -206,6 +207,7 @@ El campo `normativa` no es decorativo: los decretos se modifican, y un pack sin 
   "progresion": { "autonomia": 2, "complejidad": 2, "metalinguistico": 1 },
 
   "tipos_tarea": ["argumentativo", "expositivo"],
+  "evalua_proceso": false,
   "obligatorio": false,
   "prioridad": 1,
   "peso_base": 20,
@@ -260,6 +262,7 @@ El campo `normativa` no es decorativo: los decretos se modifican, y un pack sin 
 - La matriz es **opcional por dimensión**. Tiene sentido donde hay algo que contar (conectores, anáforas, argumentos, fuentes) y no lo tiene donde el juicio es necesariamente global. Una dimensión sin matriz se corrige por nivel, como siempre; sencillamente no estará disponible para corrección asistida con la misma precisión, y la app lo advierte.
 - **La matriz nunca sustituye al descriptor cualitativo.** Es su traducción operativa. Si al aplicar la matriz sale un nivel distinto del que el profesor habría puesto leyendo el descriptor, el problema está en la matriz y hay que ajustarla, no al revés. Esto es la regla del marco teórico: el descriptor manda, el número es su traducción.
 - `descriptor_cotejo` y `descriptor_un_punto` valen `null` por defecto y se derivan del nivel 2 (§7.2). Solo se rellenan cuando la derivación automática no produzca una frase natural.
+- `evalua_proceso` es opcional y vale `false` si no aparece: la dimensión evalúa el texto terminado. Se pone a `true` cuando lo que describen sus descriptores es una fase del proceso —el esquema, el borrador, las marcas de revisión— y no el producto, que es lo que premarca la puerta de *fase de un texto* (§8.1). Es una declaración de contenido, no una etiqueta libre: el validador rechaza el `true` que la cita del criterio no sostenga (§10). Hoy lo llevan las dimensiones de planificación y revisión de los packs de texto; el de exposición oral no marca ninguna, porque sus criterios evalúan el discurso realizado.
 
 ### 5.3 Banco cerrado de verbos
 
@@ -643,8 +646,22 @@ Antes de generar nada, la app pregunta qué se va a evaluar y actúa según el M
 | Desarrollo largo, comentario de texto | Propone la **escala de estimación analítica** (7.7) en lugar de la rúbrica analítica completa. |
 | Tarea de desempeño o proyecto | Terreno natural: **rúbrica analítica** completa. |
 | Tarea diaria, borrador, ejercicio de proceso | Propone **lista de cotejo** o **rúbrica de un solo punto**, y desaconseja la rúbrica completa. |
+| Fase de un texto: esquema, borrador, revisión, párrafo suelto | **Premarca solo las dimensiones de proceso** (§8.1) y abre la **lista de cotejo**. |
 
-La app propone y explica; el profesor puede seguir adelante con otra elección. Educa, no impone.
+La app propone y explica; el profesor puede seguir adelante con otra elección. Educa, no impone. Lo que la puerta recomienda es también lo que entrega: `instrumentoRecomendado` elige la pestaña con la que se abre la vista previa. Un consejo que hay que ir a buscar a otra pestaña no es un consejo, es letra pequeña.
+
+### 8.1 Fase de un texto: qué se premarca y por qué
+
+Las otras cuatro respuestas eligen instrumento; esta elige además **qué dimensiones vienen marcadas**, porque lo que se entrega no es el texto. En un esquema no hay cohesión que observar y en un borrador la corrección normativa aún no se juzga: lo evaluable es el trabajo de planificación y de revisión.
+
+Cuáles son esas dimensiones **lo declara el pack**, en el campo `evalua_proceso` (§5.2), y no lo deduce el motor. La razón es que de la cita no se deduce: el 5.1 de Murcia dice *"Planificar la redacción de textos escritos y multimodales sencillos… redactar borradores y revisarlos"* y es a la vez el criterio que sostiene la adecuación, la coherencia y la cohesión del texto terminado. Un premarcado leído de la cita marcaría media rúbrica — el mismo error que las familias de modalizadores descartadas en la nota de §10. Lo que sí se comprueba mecánicamente es la dirección que la cita puede sostener: una dimensión declarada de proceso cuyo criterio oficial no hable de planificar, de borradores ni de revisar no carga (regla `proceso_sin_respaldo`, §10).
+
+**El premarcado nunca vacía el instrumento.** Dos casos de borde, con la misma salida:
+
+- *La dimensión de proceso no sobrevive al filtro de tiempo* (es de prioridad 2 en los packs actuales). Se rescata y se avisa: el filtro de profundidad mide el coste de corregir un texto entero, que es justo lo que aquí no se está corrigiendo.
+- *La tarea no tiene ninguna dimensión de proceso.* Es el caso de la exposición oral, cuyos criterios evalúan el discurso realizado. Se mantienen todas premarcadas y se explica por qué, con la invitación a desmarcar en «Ajustar» lo que todavía no se puede observar.
+
+Nada se cierra: las dimensiones no premarcadas siguen en «Ajustar», sin marcar y con su `peso_base` de partida en el deslizador. La puerta premarca, no decide.
 
 ---
 
@@ -653,7 +670,7 @@ La app propone y explica; el profesor puede seguir adelante con otra elección. 
 1. Puerta de aplicabilidad (§8) → familia de instrumento recomendada.
 2. Comprobar la matriz de tarea × curso (§4.3): si la combinación no existe, explicarlo y proponer la alternativa del curso.
 3. Filtrar criterios del pack por `curso` y por `tipos_tarea`, resolviendo las herencias (`hereda_de`).
-4. Premarcar dimensiones, agrupadas por bloque LOMLOE (A-D).
+4. Premarcar dimensiones, agrupadas por bloque LOMLOE (A-D). Lo normal es marcarlas todas; la puerta de *fase de un texto* marca solo las de proceso (§8.1). Lo no premarcado no se descarta: queda sin marcar en el modo avanzado (§11.2).
 5. Aplicar profundidad según el tiempo de corrección declarado: menos de 2 min → `prioridad` 1; de 2 a 5 min → 1 y 2; más de 5 min → 1, 2 y 3.
 6. Aplicar los pesos y normalizar a 100.
 7. Comprobar coherencia de `progresion`: avisar si se mezclan criterios con más de un nivel de diferencia en el mismo eje.
@@ -680,6 +697,7 @@ Traducción directa del checklist del Marco Teórico §9. Se ejecuta sobre los d
 | **Modalizadores del criterio** | Dos direcciones. **A:** el criterio impone una ayuda (*de manera guiada*, *con ayuda de pautas y modelos*) y ningún descriptor la nombra. **B:** el criterio ya pide autonomía (*progresivamente autónoma*) y algún descriptor conserva el andamiaje del curso anterior (*indicadas por el profesor*, *con la pauta facilitada*) | Aviso |
 | **Copia entre cursos** | Los descriptores de N2 a N4 de la misma dimensión son textualmente idénticos en dos cursos distintos. **N1 queda exento** (ver nota) | Aviso |
 | **Tarea aplicable al curso** | El tipo de tarea no está sostenido por los criterios de ese curso (§4.3) | Error |
+| **Dimensión de proceso sin respaldo** | Un criterio declara `evalua_proceso: true` y su cita oficial no habla de planificar, de borradores ni de revisar. Solo esta dirección: la contraria —deducir de la cita qué dimensiones son de proceso— marcaría media rúbrica (§8.1) | Error |
 | **Matriz cuadrada** | Los componentes de una `matriz_cuantitativa` no suman el total declarado; una banda alta no coincide con el máximo del componente; faltan las bandas de 0; hay puntuaciones repetidas | Error |
 | **Penalización sin tope** | Una penalización sin tope declarado, con tope positivo, o cuyo tope pasa del 35% de la dimensión. También si todas juntas pueden restar más de la mitad | Error |
 | **Doble castigo** | Una penalización mide un fenómeno que un componente de la misma matriz ya recoge en sus bandas (§6.3) | Error |

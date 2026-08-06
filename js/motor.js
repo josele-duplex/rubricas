@@ -13,11 +13,18 @@ export const TIEMPOS_CORRECCION = {
 
 // SDD §8 — puerta de aplicabilidad. La app decide si la rúbrica es el
 // instrumento adecuado antes de generar nada.
+//
+// `premarca` gobierna el paso 4 del motor (§9): "todas" marca cuanto
+// sobreviva al filtro de profundidad, que es el comportamiento de siempre;
+// "proceso" marca solo las dimensiones que el pack declara de proceso
+// (`evalua_proceso`, §5.2). `instrumentoRecomendado` no es decorativo: es la
+// pestaña con la que se abre la vista previa (js/ui.js).
 export const PUERTA_APLICABILIDAD = {
   objetiva: {
     etiqueta: "Prueba objetiva (test, huecos, dictado, preguntas factuales)",
     generaRubrica: false,
     instrumentoRecomendado: null,
+    premarca: "todas",
     explicacion:
       "Una prueba objetiva no tiene gradación de calidad, solo acierto o error. " +
       "No se genera rúbrica: lo que corresponde es una plantilla de corrección con puntuación directa.",
@@ -26,6 +33,7 @@ export const PUERTA_APLICABILIDAD = {
     etiqueta: "Desarrollo largo, comentario de texto, EBAU",
     generaRubrica: true,
     instrumentoRecomendado: "escala_estimacion",
+    premarca: "todas",
     explicacion:
       "Para desarrollo largo o pruebas tipo EBAU se recomienda la escala de estimación analítica " +
       "en lugar de la rúbrica completa: puntuación directa por apartado, sin elegir entre cuatro niveles.",
@@ -34,15 +42,28 @@ export const PUERTA_APLICABILIDAD = {
     etiqueta: "Tarea de desempeño o proyecto",
     generaRubrica: true,
     instrumentoRecomendado: "rubrica_analitica",
+    premarca: "todas",
     explicacion: "Terreno natural de la rúbrica analítica completa.",
   },
   proceso: {
     etiqueta: "Tarea diaria, borrador, ejercicio de proceso",
     generaRubrica: true,
     instrumentoRecomendado: "lista_cotejo",
+    premarca: "todas",
     explicacion:
       "Se recomienda la lista de cotejo (o la rúbrica de un solo punto) y se desaconseja la rúbrica completa " +
       "para no sobrecargar una tarea de proceso.",
+  },
+  fase_texto: {
+    etiqueta: "Fase de un texto (esquema, borrador, revisión, párrafo suelto)",
+    generaRubrica: true,
+    instrumentoRecomendado: "lista_cotejo",
+    premarca: "proceso",
+    explicacion:
+      "Lo que se entrega es una fase del proceso de escritura, no el texto terminado: se premarcan solo " +
+      "las dimensiones que el pack declara de proceso —planificación, borrador y revisión— y se abre la " +
+      "lista de cotejo. Las demás siguen disponibles en «Ajustar», sin marcar: no se pueden observar en " +
+      "un esquema porque el texto que evalúan todavía no está escrito.",
   },
 };
 
@@ -106,6 +127,66 @@ export function aplicarProfundidad(criterios, tiempoCorreccion) {
   const conf = TIEMPOS_CORRECCION[tiempoCorreccion];
   if (!conf) throw new Error(`Tiempo de corrección desconocido: ${tiempoCorreccion}`);
   return criterios.filter((c) => conf.prioridades.includes(c.prioridad));
+}
+
+// §9 paso 4 — premarcado de dimensiones. Devuelve las que arrancan marcadas,
+// las que quedan disponibles sin marcar y el aviso que explica por qué, que
+// es la parte que enseña: el profesor tiene que entender qué ha decidido la
+// app por él y dónde encontrar lo demás (§3, §8).
+//
+// La puerta de "fase de un texto" premarca solo lo que el pack declara de
+// proceso (`evalua_proceso`, §5.2). No cierra nada: las demás dimensiones
+// siguen en la lista de "Ajustar", desmarcadas.
+//
+// Dos casos de borde, los dos con la misma regla de fondo — el premarcado
+// nunca deja el instrumento vacío:
+//
+//  1. La dimensión de proceso existe pero el filtro de profundidad la ha
+//     dejado fuera por prioridad. Se rescata: un instrumento de fase sin la
+//     dimensión de proceso no evalúa la fase, y el filtro de tiempo mide el
+//     coste de corregir un texto entero, que es justo lo que aquí no hay.
+//  2. El tipo de tarea no declara ninguna dimensión de proceso —la exposición
+//     oral, por ejemplo, se evalúa sobre el discurso realizado—. Entonces se
+//     mantienen todas premarcadas y se explica por qué; la app propone y
+//     explica, no impone (§8).
+export function premarcarDimensiones(profundos, filtrados, puerta) {
+  const conf = PUERTA_APLICABILIDAD[puerta];
+  const todas = { premarcados: profundos, noPremarcados: [], avisoPremarcado: null };
+  if (conf?.premarca !== "proceso") return todas;
+
+  const desmarcar = (criterios) => criterios.map((c) => ({ ...c, desactivado: true, peso_normalizado: 0 }));
+
+  const proceso = profundos.filter((c) => c.evalua_proceso);
+  if (proceso.length > 0) {
+    return {
+      premarcados: proceso,
+      noPremarcados: desmarcar(profundos.filter((c) => !c.evalua_proceso)),
+      avisoPremarcado:
+        `Se ha premarcado solo lo que se puede observar en una fase del texto: ` +
+        `${proceso.map((c) => `"${c.nombre}"`).join(", ")}. ` +
+        "El resto de dimensiones sigue disponible sin marcar en «Ajustar».",
+    };
+  }
+
+  const rescatados = filtrados.filter((c) => c.evalua_proceso);
+  if (rescatados.length > 0) {
+    return {
+      premarcados: rescatados,
+      noPremarcados: desmarcar(profundos),
+      avisoPremarcado:
+        `El tiempo de corrección declarado dejaba fuera ${rescatados.map((c) => `"${c.nombre}"`).join(", ")}, ` +
+        "que es la dimensión de proceso de este curso. Se mantiene premarcada: sin ella no se evalúa la " +
+        "fase, y el filtro de tiempo mide el coste de corregir un texto entero, que aquí no lo hay.",
+    };
+  }
+
+  return {
+    ...todas,
+    avisoPremarcado:
+      "Este tipo de tarea no tiene ninguna dimensión de proceso en el pack: sus criterios evalúan la " +
+      "producción realizada, no una fase previa. Se mantienen premarcadas todas las dimensiones; si vas a " +
+      "evaluar un guion o un ensayo previo, desmarca en «Ajustar» lo que todavía no se puede observar.",
+  };
 }
 
 // Normaliza peso_base a 100 entre los criterios que sobreviven al filtro de
@@ -378,7 +459,7 @@ export function generarFichaAlumno(criterios, meta) {
 
 // Orquesta el pipeline completo del motor (§9, pasos 3-10, sin validador ni exportación).
 export function generarInstrumentos(pack, config) {
-  const { curso, tipoTarea, tiempoCorreccion, actividad, esProductoFinal } = config;
+  const { curso, tipoTarea, tiempoCorreccion, actividad, esProductoFinal, puerta } = config;
 
   const filtrados = filtrarCriterios(pack, { curso, tipoTarea });
   if (filtrados.length === 0) {
@@ -389,7 +470,8 @@ export function generarInstrumentos(pack, config) {
   }
 
   const profundos = aplicarProfundidad(filtrados, tiempoCorreccion);
-  const ponderados = normalizarPesos(profundos);
+  const { premarcados, noPremarcados, avisoPremarcado } = premarcarDimensiones(profundos, filtrados, puerta);
+  const ponderados = normalizarPesos(premarcados);
   const avisosProgresion = comprobarProgresion(ponderados);
   const complejidad = calcularComplejidad(ponderados, esProductoFinal);
 
@@ -398,6 +480,8 @@ export function generarInstrumentos(pack, config) {
   return {
     ok: true,
     criterios: ponderados,
+    noPremarcados,
+    avisoPremarcado,
     avisosProgresion,
     complejidad,
     rubricaAnalitica: generarRubricaAnalitica(ponderados, meta),

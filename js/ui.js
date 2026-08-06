@@ -67,6 +67,20 @@ function renderExplicacionPuerta(puertaInfo) {
   `;
 }
 
+// La puerta de aplicabilidad no solo explica: elige la pestaña con la que se
+// abre la vista previa (SDD §8). Es la diferencia entre recomendar un
+// instrumento y entregarlo; si la app propone la lista de cotejo y abre la
+// rúbrica analítica, el consejo se queda en letra pequeña.
+const PANEL_POR_INSTRUMENTO = {
+  rubrica_analitica: "rubrica",
+  lista_cotejo: "cotejo",
+  escala_estimacion: "estimacion",
+};
+
+function panelInicial(puertaInfo) {
+  return PANEL_POR_INSTRUMENTO[puertaInfo.instrumentoRecomendado] ?? "rubrica";
+}
+
 function renderCabeceraInstrumento(meta) {
   return `
     <p class="instrumento-cabecera">
@@ -398,9 +412,10 @@ function renderAvisos(resultado) {
   }
   const c = resultado.complejidad;
   const claseIndicador = { verde: "indicador-verde", amarillo: "indicador-amarillo", rojo: "indicador-rojo" }[c.nivel];
+  const plural = (n, singular, pluralPalabra) => `${n} ${n === 1 ? singular : pluralPalabra}`;
   bloques.push(
     `<p class="instrumento-cabecera">Complejidad del instrumento
-      <span class="indicador ${claseIndicador}">${c.nDimensiones} dimensiones · ${c.nBloques} bloques</span>
+      <span class="indicador ${claseIndicador}">${plural(c.nDimensiones, "dimensión", "dimensiones")} · ${plural(c.nBloques, "bloque", "bloques")}</span>
     </p>`
   );
   bloques.push(microexplicacion("pesos"));
@@ -427,29 +442,43 @@ export function renderResultado(container, { puertaInfo, resultado, alumnos = {}
     return;
   }
 
+  const inicial = panelInicial(puertaInfo);
+  const pestanas = [
+    ["rubrica", "Rúbrica analítica"],
+    ["cotejo", "Lista de cotejo"],
+    ["ficha", "Ficha del alumno"],
+    ["unpunto", "Rúbrica de un punto"],
+    ["auto", "Autoevaluación"],
+    ["coeval", "Coevaluación"],
+    ["estimacion", "Escala de estimación"],
+  ]
+    .map(
+      ([id, etiqueta]) =>
+        `<button class="tab-boton" data-tab="${id}" role="tab" aria-selected="${id === inicial}">${etiqueta}</button>`
+    )
+    .join("\n      ");
+
+  const panel = (id, contenido) =>
+    `<div class="panel-instrumento" data-panel="${id}"${id === inicial ? "" : " hidden"}>${contenido}</div>`;
+
   container.innerHTML = `
     <h2>Vista previa</h2>
     ${renderExplicacionPuerta(puertaInfo)}
+    ${resultado.avisoPremarcado ? `<div class="aviso-caja">${escapeHtml(resultado.avisoPremarcado)}</div>` : ""}
     ${renderAvisos(resultado)}
     <div class="tabs" role="tablist">
-      <button class="tab-boton" data-tab="rubrica" role="tab" aria-selected="true">Rúbrica analítica</button>
-      <button class="tab-boton" data-tab="cotejo" role="tab" aria-selected="false">Lista de cotejo</button>
-      <button class="tab-boton" data-tab="ficha" role="tab" aria-selected="false">Ficha del alumno</button>
-      <button class="tab-boton" data-tab="unpunto" role="tab" aria-selected="false">Rúbrica de un punto</button>
-      <button class="tab-boton" data-tab="auto" role="tab" aria-selected="false">Autoevaluación</button>
-      <button class="tab-boton" data-tab="coeval" role="tab" aria-selected="false">Coevaluación</button>
-      <button class="tab-boton" data-tab="estimacion" role="tab" aria-selected="false">Escala de estimación</button>
+      ${pestanas}
       <button class="tab-boton tab-boton-utilidad" id="btn-ajustar" type="button">Ajustar</button>
       <button class="tab-boton tab-boton-utilidad" id="btn-calificar" type="button">Calificar</button>
       <button class="tab-boton tab-boton-utilidad" id="btn-imprimir" type="button">Imprimir esta vista</button>
     </div>
-    <div class="panel-instrumento" data-panel="rubrica">${renderRubricaAnalitica(resultado.rubricaAnalitica)}</div>
-    <div class="panel-instrumento" data-panel="cotejo" hidden>${renderListaCotejo(resultado.listaCotejo, resultado.fichaAlumno)}</div>
-    <div class="panel-instrumento" data-panel="ficha" hidden>${renderFichaAlumno(resultado.fichaAlumno, alumnos)}</div>
-    <div class="panel-instrumento" data-panel="unpunto" hidden>${renderRubricaUnPunto(resultado.rubricaUnPunto)}</div>
-    <div class="panel-instrumento" data-panel="auto" hidden>${renderMatrizPersona(resultado.autoevaluacion)}</div>
-    <div class="panel-instrumento" data-panel="coeval" hidden>${renderMatrizPersona(resultado.autoevaluacion, { coevaluacion: true })}</div>
-    <div class="panel-instrumento" data-panel="estimacion" hidden>${renderEscalaEstimacion(resultado.escalaEstimacion)}</div>
+    ${panel("rubrica", renderRubricaAnalitica(resultado.rubricaAnalitica))}
+    ${panel("cotejo", renderListaCotejo(resultado.listaCotejo, resultado.fichaAlumno))}
+    ${panel("ficha", renderFichaAlumno(resultado.fichaAlumno, alumnos))}
+    ${panel("unpunto", renderRubricaUnPunto(resultado.rubricaUnPunto))}
+    ${panel("auto", renderMatrizPersona(resultado.autoevaluacion))}
+    ${panel("coeval", renderMatrizPersona(resultado.autoevaluacion, { coevaluacion: true }))}
+    ${panel("estimacion", renderEscalaEstimacion(resultado.escalaEstimacion))}
   `;
   container.hidden = false;
 

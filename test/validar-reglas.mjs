@@ -349,7 +349,32 @@ caso("doble_castigo: penalización que repite lo que ya mide un componente dispa
   );
 });
 
-// --- 14. pesos_curso (nivel de pack) ------------------------------------------
+// --- 14. proceso_sin_respaldo -------------------------------------------------
+caso("proceso_sin_respaldo: dimensión de proceso cuya cita no la sostiene dispara error", () => {
+  const pack = clonarPack();
+  // 5.2 ("Incorporar procedimientos básicos para enriquecer los textos…") no
+  // habla de planificar, de borradores ni de revisar.
+  const c = criterio(pack, "lcl-d-correccion-expo-1eso");
+  c.evalua_proceso = true;
+  const informe = validarPack(pack);
+  assert(
+    avisosDeRegla(informe, "proceso_sin_respaldo").some((a) => a.criterioId === c.id),
+    "no se detectó la dimensión de proceso sin respaldo en la cita"
+  );
+});
+
+caso("proceso_sin_respaldo: control de falso positivo — la dimensión de planificación del pack real no dispara nada", () => {
+  const pack = clonarPack();
+  const c = criterio(pack, "lcl-d-planificacion-expo-1eso");
+  assert(c.evalua_proceso === true, "fixture inválida: la dimensión de planificación debería venir marcada de proceso");
+  const informe = validarPack(pack);
+  assert(
+    avisosDeRegla(informe, "proceso_sin_respaldo").length === 0,
+    "el criterio 9.1 ('Revisar los textos propios…') sí sostiene la dimensión de proceso"
+  );
+});
+
+// --- 15. pesos_curso (nivel de pack) ------------------------------------------
 caso("pesos_curso: pesos de un curso que no suman 100 disparan aviso", () => {
   const pack = clonarPack();
   criterio(pack, "lcl-b-adecuacion-expo-1eso").peso_base += 5;
@@ -360,7 +385,7 @@ caso("pesos_curso: pesos de un curso que no suman 100 disparan aviso", () => {
   );
 });
 
-// --- 15. reparto_pesos (no forma parte de validarPack: opera sobre un
+// --- 16. reparto_pesos (no forma parte de validarPack: opera sobre un
 // instrumento ya normalizado, según documenta el propio validador.js) -------
 caso("reparto_pesos: dimensión por encima del 40% dispara aviso", () => {
   const avisos = comprobarRepartoPesos([
@@ -369,6 +394,11 @@ caso("reparto_pesos: dimensión por encima del 40% dispara aviso", () => {
     { nombre: "Adecuación", peso_normalizado: 25 },
   ]);
   assert(avisos.some((a) => a.includes("Coherencia") && a.includes("40%")), "no se detectó la dimensión sobrerrepresentada");
+});
+
+caso("reparto_pesos: control de falso positivo — una sola dimensión no dispara aviso", () => {
+  const avisos = comprobarRepartoPesos([{ nombre: "Planificación y revisión del propio texto", peso_normalizado: 100 }]);
+  assert(avisos.length === 0, "con una sola dimensión el 100% es aritmética, no un reparto discutible");
 });
 
 caso("reparto_pesos: dimensión por debajo del 5% dispara aviso", () => {
@@ -380,7 +410,7 @@ caso("reparto_pesos: dimensión por debajo del 5% dispara aviso", () => {
   assert(avisos.some((a) => a.includes("Adecuación") && a.includes("5%")), "no se detectó la dimensión infrarrepresentada");
 });
 
-// --- 16. sostenibilidad (tampoco forma parte de validarPack: única
+// --- 17. sostenibilidad (tampoco forma parte de validarPack: única
 // implementación compartida con motor.js, §10 nota de la especificación) ----
 caso("sostenibilidad: más de 5 dimensiones en tarea que no es producto final dispara aviso", () => {
   const seis = Array.from({ length: 6 }, (_, i) => ({ id: `dim-${i}` }));

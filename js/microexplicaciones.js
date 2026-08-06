@@ -17,7 +17,9 @@ export const MICROEXPLICACIONES = {
     texto:
       "No toda evaluación necesita una rúbrica. Una prueba objetiva se corrige por acierto o error; " +
       "un desarrollo largo pide otro instrumento. La app decide contigo antes de generar nada " +
-      "(Marco Teórico §5), para no enseñar que la rúbrica sirve para todo.",
+      "(Marco Teórico §5), para no enseñar que la rúbrica sirve para todo. Si lo que entregas es una " +
+      "fase —un esquema, un borrador, una revisión—, se premarcan solo las dimensiones de proceso y se " +
+      "abre la lista de cotejo: en un esquema todavía no hay texto que juzgar (SDD §8.1).",
   },
 
   "tipo-tarea": {

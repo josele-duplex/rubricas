@@ -726,6 +726,7 @@
       "tipos_tarea": [
         "argumentativo"
       ],
+      "evalua_proceso": true,
       "obligatorio": false,
       "prioridad": 2,
       "peso_base": 10,
@@ -1434,6 +1435,7 @@
       "tipos_tarea": [
         "argumentativo"
       ],
+      "evalua_proceso": true,
       "obligatorio": false,
       "prioridad": 2,
       "peso_base": 10,
@@ -2142,6 +2144,7 @@
       "tipos_tarea": [
         "argumentativo"
       ],
+      "evalua_proceso": true,
       "obligatorio": false,
       "prioridad": 2,
       "peso_base": 10,
@@ -2851,6 +2854,7 @@
       "tipos_tarea": [
         "argumentativo"
       ],
+      "evalua_proceso": true,
       "obligatorio": false,
       "prioridad": 2,
       "peso_base": 10,
@@ -3549,6 +3553,7 @@
       "tipos_tarea": [
         "argumentativo"
       ],
+      "evalua_proceso": true,
       "obligatorio": false,
       "prioridad": 2,
       "peso_base": 10,

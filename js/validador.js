@@ -94,6 +94,16 @@ export const REGLAS = {
       "N1 queda exento: un texto entregado sin revisar es la misma evidencia en 1.º de ESO que en " +
       "2.º de Bachillerato.",
   },
+  proceso_sin_respaldo: {
+    etiqueta: "Dimensión de proceso sin respaldo",
+    severidad: "error",
+    fuente: "SDD §10",
+    porQue:
+      "Una dimensión solo se declara de proceso si su criterio oficial habla de planificar, de " +
+      "borradores o de revisar. Marcarla sin ese respaldo convierte el premarcado de la puerta de " +
+      "\"fase de un texto\" en una preferencia del redactor del pack, y la rúbrica se deriva del " +
+      "currículo, no se inventa.",
+  },
   tarea_aplicable: {
     etiqueta: "Tarea aplicable al curso",
     severidad: "aviso",
@@ -217,6 +227,11 @@ const MARCAS_ANDAMIAJE_RESIDUAL = [
   "indicadas por el profesor", "indicados por el profesor", "con la pauta facilitada",
   "con la pauta dada", "con el modelo dado", "segun el guion facilitado", "de manera guiada",
 ];
+
+// Fórmulas del propio decreto que sostienen que una dimensión evalúa una
+// fase del proceso y no el texto terminado (§5.2, campo `evalua_proceso`).
+// Ya normalizadas: minúsculas y sin tildes.
+const FORMULAS_PROCESO = ["planificar", "planificacion", "borrador", "revisar", "revision", "esquema"];
 
 export const UMBRAL_DIMENSIONES = 5;
 
@@ -665,6 +680,30 @@ function comprobarModalizadores(criterio) {
   return avisos;
 }
 
+// Regla: dimensión de proceso sin respaldo (§10). `evalua_proceso` decide
+// qué se premarca en la puerta de "fase de un texto" (§8), así que responde
+// a la misma exigencia que todo lo demás: el criterio es la puerta. Se
+// comprueba en una sola dirección, la que se puede sostener con la cita —
+// que lo declarado de proceso lo esté por escrito.
+//
+// La dirección contraria (una dimensión de proceso sin declarar) no es
+// automatizable y por eso no se intenta: el 5.1 de Murcia habla de
+// planificar y de borradores, pero sostiene también la adecuación y la
+// cohesión del texto terminado. Deducir de la cita qué dimensiones son de
+// proceso marcaría media rúbrica, que es el mismo error de los
+// modalizadores de sencillez descartados en la nota de §10.
+function comprobarProcesoRespaldado(criterio) {
+  if (!criterio.evalua_proceso) return [];
+  const citaNorm = quitarTildes((criterio.criterio_oficial?.cita ?? "").toLowerCase());
+  if (FORMULAS_PROCESO.some((f) => citaNorm.includes(f))) return [];
+  return [{
+    regla: "proceso_sin_respaldo",
+    severidad: REGLAS.proceso_sin_respaldo.severidad,
+    criterioId: criterio.id,
+    mensaje: `${criterio.id}: se declara dimensión de proceso y el criterio ${criterio.criterio_oficial?.codigo} de ${criterio.curso} no habla de planificar, de borradores ni de revisar.`,
+  }];
+}
+
 // Regla: tarea aplicable al curso (§10; especificación del validador de la
 // app, §3.5), a nivel de pack. El caso de 0 criterios ya lo cubre el motor
 // devolviendo ok:false; aquí se avisa de las combinaciones que sobreviven
@@ -741,6 +780,7 @@ export function validarPack(pack) {
       avisos.push(...comprobarNivelesIndistinguibles(criterio));
       avisos.push(...comprobarSaberVehiculo(criterio));
       avisos.push(...comprobarModalizadores(criterio));
+      avisos.push(...comprobarProcesoRespaldado(criterio));
     }
   }
   avisos.push(...comprobarCopiaEntreCursos(pack.criterios));
@@ -759,6 +799,11 @@ export function validarPack(pack) {
 // el reparto depende de qué dimensiones sobrevivan al filtro de profundidad.
 export function comprobarRepartoPesos(criteriosPonderados) {
   const avisos = [];
+  // Con una sola dimensión no hay reparto que valorar: el 100% no es una
+  // decisión discutible del profesor, es aritmética. Avisar ahí convierte la
+  // regla en ruido justo en el instrumento donde una dimensión sola es lo
+  // esperado — la fase de un texto (§8.1).
+  if (criteriosPonderados.length < 2) return avisos;
   for (const c of criteriosPonderados) {
     if (c.peso_normalizado > 40) {
       avisos.push(`"${c.nombre}" concentra el ${c.peso_normalizado}% del instrumento (por encima del 40%).`);
