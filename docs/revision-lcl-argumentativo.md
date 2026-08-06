@@ -1,6 +1,6 @@
 # Revisión del pack: Texto argumentativo escrito — Región de Murcia
 
-**Pack** `pack-lcl-argumentativo.json` · versión 0.2.0 · 24 criterios · 96 descriptores · 20 matrices cuantitativas
+**Pack** `pack-lcl-argumentativo.json` · versión 0.2.0 · 30 criterios · 120 descriptores · 25 matrices cuantitativas
 
 > Documento para validación docente, generado desde el JSON. No se edita a mano.
 > Al leer, mira sobre todo tres cosas: si el nivel N4 es alcanzable en ese curso,
@@ -535,6 +535,139 @@
 | Componente | Máx. | Bandas |
 |---|---|---|
 | Vínculos entre la obra y otros textos | 4 | **4** — Establece 2 o más vínculos, cada uno justificado por tema, tópico, estructura o recurso expresivo<br>**3** — Establece 1 vínculo justificado<br>**2** — Enuncia vínculos sin justificar en qué se apoyan<br>**0** — El ensayo trata la obra aislada, sin conexión con otros textos |
+| Los vínculos sirven a la tesis | 3 | **3** — Cada vínculo funciona como argumento de la tesis del ensayo<br>**2** — Algún vínculo funciona como argumento; el resto queda como comparación suelta<br>**0** — Los vínculos aparecen al margen de la línea argumentativa |
+| Respuesta personal del lector | 3 | **3** — Explicita la respuesta personal que la lectura le provoca y la conecta con la valoración que defiende<br>**2** — Explicita una impresión personal aislada de la argumentación<br>**0** — La postura personal del lector queda fuera del texto |
+
+---
+
+## 2.º de Bachillerato
+
+| Dimensión | Peso | Prio | Criterio oficial | Matriz |
+|---|---|---|---|---|
+| **Adecuación: registro y enunciación del ensayo** | 20% | 1 | CE5 — 5.1 | — |
+| **Coherencia: tesis, argumentación y contraargumento** 🔒 | 25% | 1 | CE5 — 5.1 | sí |
+| **Cohesión: conectores, marcadores y referencia** | 20% | 1 | CE5 — 5.1 | sí |
+| **Corrección normativa y propiedad léxica** 🔒 | 15% | 2 | CE5 — 5.2 | sí |
+| **Planificación y revisión del propio texto** | 10% | 2 | CE9 — 9.1 | sí |
+| **Tratamiento de las lecturas: vínculos argumentados** | 10% | 3 | CE8 — 8.2 | sí |
+
+### Adecuación: registro y enunciación del ensayo  ·  20%  ·  bloque B
+
+*Criterio oficial 5.1:* «Elaborar textos académicos coherentes, cohesionados y con el registro adecuado en torno a temas curriculares o de interés social y cultural, precedidos de un proceso de planificación que atienda a la situación comunicativa, destinatario, propósito y canal, y de redacción y revisión de borradores entre iguales o utilizando otros instrumentos de consulta.»
+
+*Saber-vehículo:* géneros académicos: disertaciones, ensayos y comentarios críticos, formas lingüísticas de expresión de la subjetividad y de la objetividad, recursos lingüísticos para adecuar el registro a la situación de comunicación
+
+| Nivel | Descriptor |
+|---|---|
+| **N1** | Utiliza expresiones coloquiales o valorativas sin matizar en un ensayo que el encargo académico pide en registro formal. |
+| **N2** | Ajusta el léxico y el tono al género del ensayo, pero no distingue mediante marcas la opinión propia de la información que aporta. |
+| **N3** | Mantiene el registro formal en todo el ensayo y distingue mediante la enunciación qué presenta como información contrastada y qué defiende como valoración propia. |
+| **N4** | Justifica el grado de presencia del emisor (primera persona, impersonalidad) elegido según el efecto persuasivo buscado, y emplea en todo el texto un lenguaje no discriminatorio. |
+
+*Sin matriz cuantitativa: esta dimensión se juzga en conjunto, no hay nada que contar.*
+
+### Coherencia: tesis, argumentación y contraargumento  ·  25%  ·  bloque B  ·  🔒 obligatorio
+
+*Criterio oficial 5.1:* «Elaborar textos académicos coherentes, cohesionados y con el registro adecuado en torno a temas curriculares o de interés social y cultural, precedidos de un proceso de planificación que atienda a la situación comunicativa, destinatario, propósito y canal, y de redacción y revisión de borradores entre iguales o utilizando otros instrumentos de consulta.»
+
+*Saber-vehículo:* géneros académicos: el ensayo, alternancia de información y opinión, gestión del contraargumento
+
+| Nivel | Descriptor |
+|---|---|
+| **N1** | Ordena los argumentos en párrafos yuxtapuestos que comparten tema, con una tesis que el lector debe inferir del conjunto. |
+| **N2** | Formula una tesis propia en la introducción y la desarrolla en párrafos, cada uno dedicado a un argumento distinto. |
+| **N3** | Anticipa una objeción a la propia tesis, la expone con sus términos y la rebate con un argumento no empleado antes. |
+| **N4** | Integra la concesión y la refutación en la línea argumentativa (es cierto que, sin embargo), y gradúa la fuerza de los argumentos hasta una conclusión que deriva de lo argumentado, sin limitarse a repetir la tesis inicial. |
+
+**Matriz cuantitativa** — total 10 puntos. Es lo que usa el modo IA para corregir.
+
+| Componente | Máx. | Bandas |
+|---|---|---|
+| Tesis y línea argumentativa | 3 | **3** — La tesis está formulada en la introducción y cada párrafo cumple una función reconocible respecto a ella<br>**2** — La tesis está formulada, pero algún párrafo queda sin función respecto a ella<br>**1** — La tesis debe inferirse del conjunto del texto<br>**0** — El texto acumula argumentos sin tesis reconocible |
+| Gestión del contraargumento | 4 | **4** — Expone al menos una objeción con sus términos y la rebate con un argumento distinto de los ya empleados<br>**3** — Expone una objeción y la rebate repitiendo un argumento ya empleado<br>**2** — Menciona la existencia de otras posturas, sin exponer ninguna<br>**0** — Argumenta solo a favor de su tesis, sin objeción alguna |
+| Conclusión derivada | 3 | **3** — La conclusión deriva de lo argumentado e incorpora el resultado de la refutación<br>**2** — La conclusión retoma la tesis sin incorporar lo ganado en la argumentación<br>**1** — La conclusión introduce argumentos nuevos<br>**0** — El ensayo termina en el último argumento, sin conclusión |
+
+### Cohesión: conectores, marcadores y referencia  ·  20%  ·  bloque B
+
+*Criterio oficial 5.1:* «Elaborar textos académicos coherentes, cohesionados y con el registro adecuado en torno a temas curriculares o de interés social y cultural, precedidos de un proceso de planificación que atienda a la situación comunicativa, destinatario, propósito y canal, y de redacción y revisión de borradores entre iguales o utilizando otros instrumentos de consulta.»
+
+*Saber-vehículo:* conectores, marcadores discursivos y otros procedimientos léxico-semánticos y gramaticales que contribuyen a la cohesión del texto, marcadores de concesión y refutación
+
+| Nivel | Descriptor |
+|---|---|
+| **N1** | Utiliza conectores de adición y de causa para enlazar los argumentos, sin marcar el paso de la opinión propia a la objeción. |
+| **N2** | Utiliza conectores de causa, consecuencia y contraste para engarzar los párrafos, y delimita los incisos mediante comas. |
+| **N3** | Emplea marcadores de concesión y refutación (es cierto que, no obstante) en el tránsito de cada objeción a su respuesta, sin limitarlos a un único par fijo. |
+| **N4** | Sustituye las repeticiones mediante nominalización, sinónimo o hiperónimo, y abre cada párrafo retomando un elemento del anterior para que la línea argumentativa se lea sin saltos. |
+
+**Matriz cuantitativa** — total 10 puntos. Es lo que usa el modo IA para corregir.
+
+| Componente | Máx. | Bandas |
+|---|---|---|
+| Variedad de conectores y marcadores | 4 | **4** — Emplea 4 o más tipos distintos, incluido al menos un marcador de concesión o refutación (es cierto que, no obstante)<br>**3** — Emplea 3 tipos distintos, sin marcador de concesión<br>**2** — Emplea 2 tipos distintos<br>**1** — Se limita a conectores de adición y causa<br>**0** — Yuxtapone los párrafos sin conector que los enlace |
+| Encadenamiento entre párrafos | 3 | **3** — Cada párrafo retoma al comienzo un elemento del anterior<br>**2** — La mayoría de los párrafos se encadenan; 1 arranca sin vínculo con lo anterior<br>**1** — Los párrafos comparten tema, pero su orden podría alterarse sin que el texto cambie<br>**0** — Los párrafos se suceden sin vínculo entre ellos |
+| Referencia y sustitución léxica | 3 | **3** — Sustituye las repeticiones mediante sinónimo, nominalización o hiperónimo, y todos los referentes son recuperables<br>**2** — Sustituye la mayoría de las repeticiones; 1 referente exige releer para identificarlo<br>**1** — Repite la palabra clave 3 o más veces teniendo sustituto evidente<br>**0** — Repite el mismo sustantivo en oraciones consecutivas a lo largo del texto |
+
+### Corrección normativa y propiedad léxica  ·  15%  ·  bloque D  ·  🔒 obligatorio
+
+*Criterio oficial 5.2:* «Incorporar procedimientos para enriquecer los textos, atendiendo a aspectos discursivos, lingüísticos y de estilo, con precisión léxica y corrección ortográfica y gramatical.»
+
+*Saber-vehículo:* corrección lingüística y revisión ortográfica, gramatical y tipográfica de los textos, propiedad léxica y vocación de estilo
+
+| Nivel | Descriptor |
+|---|---|
+| **N1** | Redacta el texto con errores de ortografía, concordancia o puntuación que obligan a releer para reconstruir la idea. |
+| **N2** | Aplica las normas de ortografía y concordancia propias del nivel, con algún desliz tipográfico aislado (comillas, mayúsculas, cursiva) que no llega a entorpecer la argumentación. |
+| **N3** | Selecciona el término valorativo preciso en lugar de palabras de significado impreciso, sin errores ortográficos, gramaticales ni tipográficos del nivel. |
+| **N4** | Emplea recursos de estilo propios del ensayo (interrogación retórica, variación sintáctica, léxico connotativo pertinente) con un lenguaje no discriminatorio en todo el texto, sin ningún error que afecte a la comprensión. |
+
+**Matriz cuantitativa** — total 10 puntos. Es lo que usa el modo IA para corregir.
+
+| Componente | Máx. | Bandas |
+|---|---|---|
+| Ortografía, gramática y tipografía | 4 | **4** — Hasta 2 faltas en todo el texto, incluidas las tipográficas<br>**3** — De 3 a 5 faltas<br>**2** — De 6 a 9 faltas<br>**0** — 10 o más faltas |
+| Corrección gramatical | 3 | **3** — Sin errores de concordancia ni de construcción de la oración<br>**2** — 1 o 2 errores que no impiden la comprensión<br>**1** — 3 o más errores, o alguna oración que hay que releer para reconstruir<br>**0** — Errores sistemáticos que obligan a reconstruir el sentido |
+| Precisión léxica y vocación de estilo | 3 | **3** — Selecciona el término valorativo preciso y emplea algún recurso de estilo propio del ensayo (interrogación retórica, variación sintáctica)<br>**2** — Selecciona términos precisos, pero sin recurso de estilo alguno más allá de lo correcto<br>**1** — Recurre a términos de significado impreciso con sustituto evidente<br>**0** — El texto se sostiene sobre palabras comodín |
+
+### Planificación y revisión del propio texto  ·  10%  ·  bloque D
+
+*Criterio oficial 9.1:* «Revisar los propios textos y hacer propuestas de mejora argumentando los cambios a partir de la reflexión metalingüística e interlingüística y con un metalenguaje específico, e identificar y subsanar problemas de comprensión lectora utilizando los conocimientos explícitos sobre la lengua y su uso.»
+
+*Saber-vehículo:* producción escrita: proceso de elaboración: planificación, redacción, revisión y edición en diferentes soportes, redacción y revisión de borradores entre iguales o utilizando otros instrumentos de consulta, metalenguaje específico
+
+| Nivel | Descriptor |
+|---|---|
+| **N1** | Redacta el texto en una sola pasada y lo entrega como versión final, sin someterlo a ninguna revisión. |
+| **N2** | Elabora un guion previo con la tesis, los argumentos y la objeción prevista, y revisa el borrador de forma individual, sin contrastarlo con nadie ni con ningún instrumento de consulta. |
+| **N3** | Revisa el borrador con ayuda de un compañero o de un instrumento de consulta (corrector, manual de estilo) y reformula los pasajes donde la argumentación resulta difícil de seguir para un lector que no comparte su postura. |
+| **N4** | Justifica con metalenguaje específico los cambios que introduce a partir de esa revisión compartida, explicando tanto el problema argumentativo que resuelven como el efecto persuasivo que persiguen. |
+
+**Matriz cuantitativa** — total 10 puntos. Es lo que usa el modo IA para corregir.
+
+| Componente | Máx. | Bandas |
+|---|---|---|
+| Planificación propia | 3 | **3** — Entrega un guion previo con la tesis, los argumentos y la objeción prevista<br>**2** — Entrega un guion previo que solo lista ideas, sin línea argumentativa<br>**0** — No hay rastro de trabajo previo al texto |
+| Revisión entre iguales o con instrumentos de consulta | 4 | **4** — Corrige, con ayuda de un compañero o de un instrumento de consulta, un pasaje que debilitaba la argumentación, además de aspectos de puntuación o conexión<br>**3** — Corrige aspectos de puntuación y de conexión entre párrafos, no solo faltas, pero de forma individual<br>**2** — Corrige faltas de ortografía y léxico, de forma individual<br>**0** — Entrega la primera versión sin marcas de revisión |
+| Justificación con metalenguaje | 3 | **3** — Justifica 2 o más cambios con metalenguaje específico, explicando el problema que resuelven y el efecto persuasivo que persiguen<br>**2** — Justifica los cambios con metalenguaje, pero solo señala el problema que resuelven<br>**0** — No justifica ningún cambio |
+
+### Tratamiento de las lecturas: vínculos argumentados  ·  10%  ·  bloque C
+
+*Criterio oficial 8.2:* «Desarrollar proyectos de investigación que se concreten en una exposición oral, un ensayo o una presentación multimodal, estableciendo vínculos argumentados entre las obras de la literatura española o hispánica del último cuarto del siglo XIX y de los siglos XX y XXI objeto de lectura guiada y otros textos y manifestaciones artísticas de ayer y de hoy, en función de temas, tópicos, estructuras, lenguaje, recursos expresivos y valores éticos y estéticos, y explicitando la implicación y la respuesta personal del lector en la lectura.»
+
+*Saber-vehículo:* lectura guiada: literatura española e hispanoamericana del último cuarto del siglo XIX y de los siglos XX y XXI, en torno a tres ejes: Edad de Plata (1875-1936), guerra civil, exilio y dictadura, y literatura contemporánea, vínculos entre obras en función de temas, tópicos, estructuras y recursos expresivos
+
+| Nivel | Descriptor |
+|---|---|
+| **N1** | Cita alguna obra leída en una mención aislada, sin situarla en el eje temático (Edad de Plata, guerra civil y exilio, literatura contemporánea) al que pertenece. |
+| **N2** | Relaciona la obra leída con otro texto o manifestación artística del mismo eje temático mediante una comparación enunciada, todavía sin desarrollar. |
+| **N3** | Justifica el vínculo entre la obra leída y otros textos o manifestaciones artísticas en función de temas, tópicos o recursos expresivos, situándolo en su contexto sociohistórico, y lo pone al servicio de la tesis del ensayo. |
+| **N4** | Integra los vínculos entre obras de distintos ejes temáticos como argumentos del ensayo y explicita la respuesta personal que la lectura le provoca, conectándola con la valoración que defiende. |
+
+**Matriz cuantitativa** — total 10 puntos. Es lo que usa el modo IA para corregir.
+
+| Componente | Máx. | Bandas |
+|---|---|---|
+| Vínculos entre la obra y otros textos | 4 | **4** — Establece 2 o más vínculos, cada uno justificado por tema, tópico, estructura o recurso expresivo y situado en su eje temático<br>**3** — Establece 1 vínculo justificado y situado en su eje temático<br>**2** — Enuncia vínculos sin justificar en qué se apoyan ni en qué eje se sitúan<br>**0** — El ensayo trata la obra aislada, sin conexión con otros textos |
 | Los vínculos sirven a la tesis | 3 | **3** — Cada vínculo funciona como argumento de la tesis del ensayo<br>**2** — Algún vínculo funciona como argumento; el resto queda como comparación suelta<br>**0** — Los vínculos aparecen al margen de la línea argumentativa |
 | Respuesta personal del lector | 3 | **3** — Explicita la respuesta personal que la lectura le provoca y la conecta con la valoración que defiende<br>**2** — Explicita una impresión personal aislada de la argumentación<br>**0** — La postura personal del lector queda fuera del texto |
 
