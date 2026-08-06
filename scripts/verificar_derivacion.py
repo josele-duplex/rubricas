@@ -79,6 +79,13 @@ def normalizar(texto):
     """Deja solo lo que sobrevive a un copiado fiel: ni maquetación ni mayúsculas."""
     texto = texto.replace("\\", "")            # el md del BORM escapa puntos: "1\."
     texto = re.sub(r"[*_`«»\"\u201c\u201d]", "", texto)
+    # cabecera/pie de pagina del BORM, que a veces cae en mitad de una frase citada
+    texto = re.sub(r"NPE:\s*[A-Za-z0-9\-]+", " ", texto)
+    texto = re.sub(
+        r"Número\s+\d+\s+\w+,\s*\d{1,2}\s+de\s+\w+\s+de\s+\d{4}\s+Página\s+\d+",
+        " ",
+        texto,
+    )
     texto = re.sub(r"\s+", " ", texto)         # saltos de línea y dobles espacios
     return texto.strip().lower()
 
