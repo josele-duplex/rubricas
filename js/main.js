@@ -34,7 +34,7 @@ const els = {
 // Un pack por tipo de tarea (SDD §5.1). El formulario y el motor trabajan
 // sobre la fusión de todos ellos; la salud del pack se informa por separado
 // para no mezclar los pesos por curso de un pack con los de otro (§10).
-const PACKS_URLS = ["data/pack-lcl-expositivo.json", "data/pack-lcl-argumentativo.json"];
+const PACKS_URLS = ["data/pack-lcl-expositivo.json", "data/pack-lcl-argumentativo.json", "data/pack-lcl-oral.json"];
 
 let pack;
 let configActual = null;
