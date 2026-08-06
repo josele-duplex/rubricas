@@ -1,6 +1,6 @@
 # Revisión del pack: Texto expositivo escrito — Región de Murcia
 
-**Pack** `pack-lcl-expositivo.json` · versión 0.1.0 · 30 criterios · 120 descriptores · 25 matrices cuantitativas
+**Pack** `pack-lcl-expositivo.json` · versión 0.1.0 · 36 criterios · 144 descriptores · 30 matrices cuantitativas
 
 > Documento para validación docente, generado desde el JSON. No se edita a mano.
 > Al leer, mira sobre todo tres cosas: si el nivel N4 es alcanzable en ese curso,
@@ -673,6 +673,139 @@
 |---|---|---|
 | Número de fuentes contrastadas | 4 | **4** — Emplea 3 o más fuentes distintas, coteja entre ellas y señala en qué difieren o coinciden<br>**3** — Emplea 2 fuentes distintas y coteja entre ellas al menos un dato<br>**2** — Emplea 2 fuentes, pero cada una sostiene una parte distinta del texto sin cotejo<br>**0** — Emplea una sola fuente |
 | Aparato de citas y bibliografía | 3 | **3** — Cita cada fuente en el lugar del texto donde la usa y añade una bibliografía final con un modelo de cita homogéneo<br>**2** — Añade una bibliografía final, pero no cita en el texto de qué fuente procede cada dato<br>**1** — Menciona alguna fuente de pasada, sin sistema<br>**0** — No incluye ninguna referencia bibliográfica |
+| Punto de vista crítico y verificación | 3 | **3** — Integra un punto de vista propio sobre el tema y señala que ha verificado algún dato dudoso antes de emplearlo<br>**2** — Explica con sus propias palabras la información de las fuentes, sin aportar una valoración propia ni verificar ningún dato<br>**0** — Traslada pasajes literales de las fuentes sin reformular ni valorar |
+
+---
+
+## 2.º de Bachillerato
+
+| Dimensión | Peso | Prio | Criterio oficial | Matriz |
+|---|---|---|---|---|
+| **Adecuación: registro y destinatario** | 20% | 1 | CE5 — 5.1 | — |
+| **Coherencia: estructura y progresión temática** 🔒 | 25% | 1 | CE5 — 5.1 | sí |
+| **Cohesión: conectores, referencia y uso del tiempo verbal** | 20% | 1 | CE5 — 5.1 | sí |
+| **Corrección normativa y propiedad léxica** 🔒 | 15% | 2 | CE5 — 5.2 | sí |
+| **Planificación y revisión del propio texto** | 10% | 2 | CE9 — 9.1 | sí |
+| **Tratamiento de la información y uso de fuentes** | 10% | 3 | CE6 — 6.1 | sí |
+
+### Adecuación: registro y destinatario  ·  20%  ·  bloque B
+
+*Criterio oficial 5.1:* «Elaborar textos académicos coherentes, cohesionados y con el registro adecuado en torno a temas curriculares o de interés social y cultural, precedidos de un proceso de planificación que atienda a la situación comunicativa, destinatario, propósito y canal, y de redacción y revisión de borradores entre iguales o utilizando otros instrumentos de consulta.»
+
+*Saber-vehículo:* géneros discursivos propios del ámbito educativo: los textos académicos, procurar mantener una adecuada claridad expositiva con cierta vocación de estilo, formas lingüísticas de expresión de la subjetividad y de la objetividad, recursos lingüísticos para adecuar el registro a la situación de comunicación
+
+| Nivel | Descriptor |
+|---|---|
+| **N1** | Utiliza fórmulas coloquiales o periodísticas en un texto que el encargo académico pide en registro formal. |
+| **N2** | Ajusta el léxico y el tono al género académico, sin marcar en ningún punto el paso de la información a la valoración propia. |
+| **N3** | Mantiene el registro formal en todo el texto y marca mediante la enunciación el paso de la información a la valoración propia. |
+| **N4** | Justifica ante el lector el grado de presencia como emisor y el punto en que alterna información y valoración, con un lenguaje no discriminatorio en todo el texto. |
+
+*Sin matriz cuantitativa: esta dimensión se juzga en conjunto, no hay nada que contar.*
+
+### Coherencia: estructura y progresión temática  ·  25%  ·  bloque B  ·  🔒 obligatorio
+
+*Criterio oficial 5.1:* «Elaborar textos académicos coherentes, cohesionados y con el registro adecuado en torno a temas curriculares o de interés social y cultural, precedidos de un proceso de planificación que atienda a la situación comunicativa, destinatario, propósito y canal, y de redacción y revisión de borradores entre iguales o utilizando otros instrumentos de consulta.»
+
+*Saber-vehículo:* géneros discursivos propios del ámbito educativo: los textos académicos, reflexión y explicación de la estructura textual según su tipología, análisis y comentario de textos del ámbito académico
+
+| Nivel | Descriptor |
+|---|---|
+| **N1** | Ordena la información en bloques que alternan datos y valoraciones propias, sin ninguna marca que las separe. |
+| **N2** | Estructura el texto en introducción, desarrollo y conclusión, y reserva un bloque del desarrollo para cada aspecto del tema. |
+| **N3** | Estructura el desarrollo de modo que cada bloque presenta primero los datos y, cuando procede, una valoración propia claramente diferenciada de ellos. |
+| **N4** | Articula el desarrollo incorporando una explicación alternativa o una objeción al planteamiento inicial, y la resuelve o la delimita antes de cerrar el texto, sin que el propósito expositivo se disuelva en argumentación. |
+
+**Matriz cuantitativa** — total 10 puntos. Es lo que usa el modo IA para corregir.
+
+| Componente | Máx. | Bandas |
+|---|---|---|
+| Estructura y función de cada parte | 3 | **3** — Introducción que delimita el tema, desarrollo por aspectos y conclusión que sintetiza sin añadir información nueva<br>**2** — Las tres partes están, pero la conclusión introduce información no tratada antes<br>**1** — Falta una de las tres partes<br>**0** — No hay estructura reconocible |
+| Separación entre información y valoración | 4 | **4** — Cada bloque distingue con claridad la información de la valoración propia, y el orden entre bloques es seguible de principio a fin<br>**3** — Distingue información y valoración en la mayoría de los bloques, con 1 excepción<br>**2** — Mezcla información y valoración en 2 o más bloques sin ninguna marca que las distinga<br>**0** — La información se presenta sin orden reconocible |
+| Gestión de la explicación alternativa | 3 | **3** — Incorpora una explicación alternativa u objeción pertinente y la resuelve o la delimita antes de la conclusión<br>**2** — Menciona una explicación alternativa, pero no llega a resolverla ni a delimitarla<br>**0** — Presenta una única explicación del tema, sin ninguna alternativa u objeción |
+
+### Cohesión: conectores, referencia y uso del tiempo verbal  ·  20%  ·  bloque B
+
+*Criterio oficial 5.1:* «Elaborar textos académicos coherentes, cohesionados y con el registro adecuado en torno a temas curriculares o de interés social y cultural, precedidos de un proceso de planificación que atienda a la situación comunicativa, destinatario, propósito y canal, y de redacción y revisión de borradores entre iguales o utilizando otros instrumentos de consulta.»
+
+*Saber-vehículo:* conectores, marcadores discursivos y otros procedimientos léxico-semánticos y gramaticales que contribuyen a la cohesión del texto, relaciones entre las formas verbales como procedimientos de cohesión del texto, con especial atención a la valoración y al uso de los tiempos verbales
+
+| Nivel | Descriptor |
+|---|---|
+| **N1** | Utiliza conectores de adición y de causa para enlazar los párrafos, y mantiene un único tiempo verbal en todo el texto sin ninguna función. |
+| **N2** | Utiliza conectores de orden, adición, causa y contraste entre párrafos, y solo cambia de tiempo verbal cuando lo exige la norma gramatical. |
+| **N3** | Emplea marcadores discursivos organizadores de la exposición (en primer lugar, dicho esto, en definitiva) además de los conectores lógicos, y usa el tiempo verbal para separar la explicación general de los datos concretos. |
+| **N4** | Sustituye las repeticiones mediante nominalización o hiperónimo, y elige en cada bloque el tiempo verbal que marca si se trata de explicación general o de dato concreto. |
+
+**Matriz cuantitativa** — total 10 puntos. Es lo que usa el modo IA para corregir.
+
+| Componente | Máx. | Bandas |
+|---|---|---|
+| Variedad de conectores y marcadores discursivos | 4 | **4** — Emplea 4 o más tipos distintos, incluyendo al menos un marcador discursivo organizador (en primer lugar, dicho esto, en definitiva) además de los conectores lógicos<br>**3** — Emplea 3 tipos distintos de conector, sin ningún marcador discursivo organizador<br>**2** — Emplea 2 tipos distintos de conector<br>**1** — Se limita a conectores de adición (además, también)<br>**0** — Yuxtapone los párrafos sin conector que los enlace |
+| Uso del tiempo verbal como procedimiento de cohesión | 3 | **3** — Mantiene la correlación temporal y usa un cambio de tiempo verbal con una función reconocible: marcar una cita, un dato concreto o un cambio de plano<br>**2** — Mantiene la correlación temporal, pero no hay ningún cambio de tiempo verbal con función reconocible<br>**1** — Presenta 1 o 2 saltos de tiempo verbal que no responden a ninguna norma ni función<br>**0** — El tiempo verbal cambia sin criterio a lo largo del texto |
+| Referencia y sustitución léxica | 3 | **3** — Sustituye las repeticiones mediante sinónimo, nominalización o hiperónimo, y todos los referentes son recuperables<br>**2** — Sustituye la mayoría de las repeticiones; 1 referente exige releer para identificarlo<br>**1** — Repite la palabra clave 3 o más veces teniendo sustituto evidente<br>**0** — Repite el mismo sustantivo en oraciones consecutivas a lo largo del texto |
+
+### Corrección normativa y propiedad léxica  ·  15%  ·  bloque D  ·  🔒 obligatorio
+
+*Criterio oficial 5.2:* «Incorporar procedimientos para enriquecer los textos, atendiendo a aspectos discursivos, lingüísticos y de estilo, con precisión léxica y corrección ortográfica y gramatical.»
+
+*Saber-vehículo:* corrección lingüística y revisión ortográfica, gramatical y tipográfica de los textos, propiedad léxica y vocación de estilo
+
+| Nivel | Descriptor |
+|---|---|
+| **N1** | Redacta el texto con errores de ortografía, concordancia o puntuación que obligan a releer para reconstruir la idea. |
+| **N2** | Aplica las normas de ortografía y concordancia propias del nivel, con algún desliz tipográfico aislado (comillas, mayúsculas, cursiva) que no llega a dificultar la lectura de la exposición. |
+| **N3** | Selecciona el término preciso en lugar de palabras de significado general, sin errores ortográficos, gramaticales ni tipográficos del nivel. |
+| **N4** | Emplea recursos de estilo propios del ensayo académico (variación sintáctica, léxico connotativo pertinente) con un lenguaje no discriminatorio en todo el texto, sin ningún error que afecte a la comprensión. |
+
+**Matriz cuantitativa** — total 10 puntos. Es lo que usa el modo IA para corregir.
+
+| Componente | Máx. | Bandas |
+|---|---|---|
+| Ortografía, gramática y tipografía | 4 | **4** — Hasta 2 faltas en todo el texto, incluidas las tipográficas<br>**3** — De 3 a 5 faltas<br>**2** — De 6 a 9 faltas<br>**0** — 10 o más faltas |
+| Corrección gramatical | 3 | **3** — Sin errores de concordancia ni de construcción de la oración<br>**2** — 1 o 2 errores que no impiden la comprensión<br>**1** — 3 o más errores, o alguna oración que hay que releer para reconstruir<br>**0** — Errores sistemáticos que obligan a reconstruir el sentido |
+| Precisión léxica y vocación de estilo | 3 | **3** — Selecciona el término preciso y emplea algún recurso de estilo propio del ensayo académico (variación sintáctica, léxico connotativo pertinente)<br>**2** — Selecciona términos precisos, pero no emplea ningún recurso de estilo más allá de lo correcto<br>**1** — Recurre a términos de significado general con sustituto evidente<br>**0** — El texto se sostiene sobre palabras comodín |
+
+### Planificación y revisión del propio texto  ·  10%  ·  bloque D
+
+*Criterio oficial 9.1:* «Revisar los propios textos y hacer propuestas de mejora argumentando los cambios a partir de la reflexión metalingüística e interlingüística y con un metalenguaje específico, e identificar y subsanar problemas de comprensión lectora utilizando los conocimientos explícitos sobre la lengua y su uso.»
+
+*Saber-vehículo:* producción escrita: proceso de elaboración: planificación, redacción, revisión y edición en diferentes soportes, redacción y revisión de borradores entre iguales o utilizando otros instrumentos de consulta, metalenguaje específico
+
+| Nivel | Descriptor |
+|---|---|
+| **N1** | Redacta el texto en una sola pasada y lo entrega como versión final, sin someterlo a ninguna revisión. |
+| **N2** | Elabora un esquema previo propio con la estructura del texto, y revisa el borrador de forma individual, sin contrastarlo con nadie ni con ningún instrumento de consulta. |
+| **N3** | Revisa el borrador con ayuda de un compañero o de un instrumento de consulta (corrector, manual de estilo) y reformula los pasajes que, releídos, resultan difíciles de entender para un lector que no conoce el tema. |
+| **N4** | Justifica con metalenguaje específico los cambios que introduce a partir de esa revisión compartida, explicando tanto el problema de comprensión que resuelven como el efecto estilístico que persiguen. |
+
+**Matriz cuantitativa** — total 10 puntos. Es lo que usa el modo IA para corregir.
+
+| Componente | Máx. | Bandas |
+|---|---|---|
+| Planificación propia | 3 | **3** — Entrega un esquema previo propio con la estructura del texto<br>**2** — Entrega un esquema previo que solo lista ideas, sin estructura<br>**0** — No hay rastro de trabajo previo al texto |
+| Revisión entre iguales o con instrumentos de consulta | 4 | **4** — Corrige, con ayuda de un compañero o de un instrumento de consulta, un pasaje que dificultaba la comprensión del lector, además de aspectos de puntuación o conexión<br>**3** — Corrige aspectos de puntuación y de conexión entre párrafos, no solo faltas, pero de forma individual<br>**2** — Corrige faltas de ortografía y léxico, de forma individual<br>**0** — Entrega la primera versión sin marcas de revisión |
+| Justificación con metalenguaje | 3 | **3** — Justifica 2 o más cambios con metalenguaje específico, explicando tanto el problema que resuelven como el efecto estilístico que persiguen<br>**2** — Justifica los cambios con metalenguaje específico, pero solo señala el problema que resuelven, sin el efecto estilístico<br>**0** — No justifica ningún cambio |
+
+### Tratamiento de la información y uso de fuentes  ·  10%  ·  bloque B
+
+*Criterio oficial 6.1:* «Elaborar trabajos de investigación de manera autónoma, en diferentes soportes, sobre diversos temas de interés académico, personal o social que impliquen localizar, seleccionar y contrastar información procedente de diferentes fuentes, con especial atención a la gestión de su almacenamiento y recuperación, así como a la evaluación de su fiabilidad y pertinencia; organizarla e integrarla en esquemas propios; y reelaborarla y comunicarla de manera creativa, adoptando un punto de vista crítico y respetuoso con la propiedad intelectual.»
+
+*Saber-vehículo:* alfabetización informacional: búsqueda autónoma y selección de la información con criterios de fiabilidad, calidad y pertinencia, la gestión de contenidos, el almacenamiento y la recuperación de la información relevante, noticias falsas y verificación de hechos
+
+| Nivel | Descriptor |
+|---|---|
+| **N1** | Utiliza una única fuente y traslada su información al texto sin ninguna referencia bibliográfica. |
+| **N2** | Selecciona información de dos o más fuentes por su cuenta, la organiza en una carpeta o gestor propio, y las enumera en una bibliografía final sin marcar en el texto qué dato procede de cuál. |
+| **N3** | Contrasta la información de fuentes distintas, cita su procedencia en el lugar del texto donde la usa, y mantiene organizado y recuperable el material consultado durante todo el proceso. |
+| **N4** | Integra en el texto un punto de vista propio sobre el tema, verifica los datos que resultan dudosos antes de emplearlos, y documenta todas las fuentes con el aparato de cita, notas y bibliografía del trabajo académico, de modo que el material de partida quede recuperable para una revisión posterior. |
+
+**Matriz cuantitativa** — total 10 puntos. Es lo que usa el modo IA para corregir.
+
+| Componente | Máx. | Bandas |
+|---|---|---|
+| Número de fuentes contrastadas | 4 | **4** — Emplea 3 o más fuentes distintas, coteja entre ellas y señala en qué difieren o coinciden<br>**3** — Emplea 2 fuentes distintas y coteja entre ellas al menos un dato<br>**2** — Emplea 2 fuentes, pero cada una sostiene una parte distinta del texto sin cotejo<br>**0** — Emplea una sola fuente |
+| Aparato de citas, bibliografía y gestión del material | 3 | **3** — Cita cada fuente en el lugar del texto donde la usa, añade una bibliografía final con un modelo de cita homogéneo, y mantiene el material organizado y recuperable<br>**2** — Añade una bibliografía final, pero no cita en el texto de qué fuente procede cada dato<br>**1** — Menciona alguna fuente de pasada, sin sistema<br>**0** — No incluye ninguna referencia bibliográfica |
 | Punto de vista crítico y verificación | 3 | **3** — Integra un punto de vista propio sobre el tema y señala que ha verificado algún dato dudoso antes de emplearlo<br>**2** — Explica con sus propias palabras la información de las fuentes, sin aportar una valoración propia ni verificar ningún dato<br>**0** — Traslada pasajes literales de las fuentes sin reformular ni valorar |
 
 ---

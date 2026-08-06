@@ -3710,6 +3710,706 @@
       },
       "descriptor_cotejo": null,
       "descriptor_un_punto": "Selecciona información de dos o más fuentes por su cuenta e indica su procedencia en el texto."
+    },
+    {
+      "id": "lcl-b-adecuacion-expo-2bach",
+      "bloque_lomloe": "B",
+      "dimension": "adecuacion",
+      "nombre": "Adecuación: registro y destinatario",
+      "curso": "2BACH",
+      "hereda_de": null,
+      "criterio_oficial": {
+        "competencia_especifica": 5,
+        "codigo": "5.1",
+        "cita": "Elaborar textos académicos coherentes, cohesionados y con el registro adecuado en torno a temas curriculares o de interés social y cultural, precedidos de un proceso de planificación que atienda a la situación comunicativa, destinatario, propósito y canal, y de redacción y revisión de borradores entre iguales o utilizando otros instrumentos de consulta.",
+        "perfil_salida": [
+          "CCL1",
+          "CCL3",
+          "CCL5",
+          "STEM1",
+          "CD2",
+          "CD3",
+          "CPSAA5",
+          "CC2"
+        ]
+      },
+      "saber_vehiculo": [
+        "géneros discursivos propios del ámbito educativo: los textos académicos",
+        "procurar mantener una adecuada claridad expositiva con cierta vocación de estilo",
+        "formas lingüísticas de expresión de la subjetividad y de la objetividad",
+        "recursos lingüísticos para adecuar el registro a la situación de comunicación"
+      ],
+      "progresion": {
+        "autonomia": 3,
+        "complejidad": 4,
+        "metalinguistico": 4
+      },
+      "tipos_tarea": [
+        "expositivo"
+      ],
+      "obligatorio": false,
+      "prioridad": 1,
+      "peso_base": 20,
+      "descriptores": {
+        "n1": {
+          "verbo": "utiliza",
+          "texto": "Utiliza fórmulas coloquiales o periodísticas en un texto que el encargo académico pide en registro formal."
+        },
+        "n2": {
+          "verbo": "ajusta",
+          "texto": "Ajusta el léxico y el tono al género académico, sin marcar en ningún punto el paso de la información a la valoración propia."
+        },
+        "n3": {
+          "verbo": "mantiene",
+          "texto": "Mantiene el registro formal en todo el texto y marca mediante la enunciación el paso de la información a la valoración propia."
+        },
+        "n4": {
+          "verbo": "justifica",
+          "texto": "Justifica ante el lector el grado de presencia como emisor y el punto en que alterna información y valoración, con un lenguaje no discriminatorio en todo el texto."
+        }
+      },
+      "matriz_cuantitativa": null,
+      "descriptor_cotejo": null,
+      "descriptor_un_punto": "Ajusta el léxico y el tono al género académico, sin marcar el paso de la información a la valoración propia."
+    },
+    {
+      "id": "lcl-b-coherencia-expo-2bach",
+      "bloque_lomloe": "B",
+      "dimension": "coherencia",
+      "nombre": "Coherencia: estructura y progresión temática",
+      "curso": "2BACH",
+      "hereda_de": null,
+      "criterio_oficial": {
+        "competencia_especifica": 5,
+        "codigo": "5.1",
+        "cita": "Elaborar textos académicos coherentes, cohesionados y con el registro adecuado en torno a temas curriculares o de interés social y cultural, precedidos de un proceso de planificación que atienda a la situación comunicativa, destinatario, propósito y canal, y de redacción y revisión de borradores entre iguales o utilizando otros instrumentos de consulta.",
+        "perfil_salida": [
+          "CCL1",
+          "CCL3",
+          "CCL5",
+          "STEM1",
+          "CD2",
+          "CD3",
+          "CPSAA5",
+          "CC2"
+        ]
+      },
+      "saber_vehiculo": [
+        "géneros discursivos propios del ámbito educativo: los textos académicos",
+        "reflexión y explicación de la estructura textual según su tipología",
+        "análisis y comentario de textos del ámbito académico"
+      ],
+      "progresion": {
+        "autonomia": 3,
+        "complejidad": 4,
+        "metalinguistico": 4
+      },
+      "tipos_tarea": [
+        "expositivo"
+      ],
+      "obligatorio": true,
+      "prioridad": 1,
+      "peso_base": 25,
+      "descriptores": {
+        "n1": {
+          "verbo": "ordena",
+          "texto": "Ordena la información en bloques que alternan datos y valoraciones propias, sin ninguna marca que las separe."
+        },
+        "n2": {
+          "verbo": "estructura",
+          "texto": "Estructura el texto en introducción, desarrollo y conclusión, y reserva un bloque del desarrollo para cada aspecto del tema."
+        },
+        "n3": {
+          "verbo": "estructura",
+          "texto": "Estructura el desarrollo de modo que cada bloque presenta primero los datos y, cuando procede, una valoración propia claramente diferenciada de ellos."
+        },
+        "n4": {
+          "verbo": "articula",
+          "texto": "Articula el desarrollo incorporando una explicación alternativa o una objeción al planteamiento inicial, y la resuelve o la delimita antes de cerrar el texto, sin que el propósito expositivo se disuelva en argumentación."
+        }
+      },
+      "matriz_cuantitativa": {
+        "total": 10,
+        "componentes": [
+          {
+            "nombre": "Estructura y función de cada parte",
+            "max": 3,
+            "bandas": [
+              {
+                "puntos": 3,
+                "condicion": "Introducción que delimita el tema, desarrollo por aspectos y conclusión que sintetiza sin añadir información nueva"
+              },
+              {
+                "puntos": 2,
+                "condicion": "Las tres partes están, pero la conclusión introduce información no tratada antes"
+              },
+              {
+                "puntos": 1,
+                "condicion": "Falta una de las tres partes"
+              },
+              {
+                "puntos": 0,
+                "condicion": "No hay estructura reconocible"
+              }
+            ]
+          },
+          {
+            "nombre": "Separación entre información y valoración",
+            "max": 4,
+            "bandas": [
+              {
+                "puntos": 4,
+                "condicion": "Cada bloque distingue con claridad la información de la valoración propia, y el orden entre bloques es seguible de principio a fin"
+              },
+              {
+                "puntos": 3,
+                "condicion": "Distingue información y valoración en la mayoría de los bloques, con 1 excepción"
+              },
+              {
+                "puntos": 2,
+                "condicion": "Mezcla información y valoración en 2 o más bloques sin ninguna marca que las distinga"
+              },
+              {
+                "puntos": 0,
+                "condicion": "La información se presenta sin orden reconocible"
+              }
+            ]
+          },
+          {
+            "nombre": "Gestión de la explicación alternativa",
+            "max": 3,
+            "bandas": [
+              {
+                "puntos": 3,
+                "condicion": "Incorpora una explicación alternativa u objeción pertinente y la resuelve o la delimita antes de la conclusión"
+              },
+              {
+                "puntos": 2,
+                "condicion": "Menciona una explicación alternativa, pero no llega a resolverla ni a delimitarla"
+              },
+              {
+                "puntos": 0,
+                "condicion": "Presenta una única explicación del tema, sin ninguna alternativa u objeción"
+              }
+            ]
+          }
+        ],
+        "penalizaciones": []
+      },
+      "descriptor_cotejo": null,
+      "descriptor_un_punto": "Estructura el texto en introducción, desarrollo y conclusión, y reserva un bloque del desarrollo para cada aspecto del tema."
+    },
+    {
+      "id": "lcl-b-cohesion-expo-2bach",
+      "bloque_lomloe": "B",
+      "dimension": "cohesion",
+      "nombre": "Cohesión: conectores, referencia y uso del tiempo verbal",
+      "curso": "2BACH",
+      "hereda_de": null,
+      "criterio_oficial": {
+        "competencia_especifica": 5,
+        "codigo": "5.1",
+        "cita": "Elaborar textos académicos coherentes, cohesionados y con el registro adecuado en torno a temas curriculares o de interés social y cultural, precedidos de un proceso de planificación que atienda a la situación comunicativa, destinatario, propósito y canal, y de redacción y revisión de borradores entre iguales o utilizando otros instrumentos de consulta.",
+        "perfil_salida": [
+          "CCL1",
+          "CCL3",
+          "CCL5",
+          "STEM1",
+          "CD2",
+          "CD3",
+          "CPSAA5",
+          "CC2"
+        ]
+      },
+      "saber_vehiculo": [
+        "conectores, marcadores discursivos y otros procedimientos léxico-semánticos y gramaticales que contribuyen a la cohesión del texto",
+        "relaciones entre las formas verbales como procedimientos de cohesión del texto, con especial atención a la valoración y al uso de los tiempos verbales"
+      ],
+      "progresion": {
+        "autonomia": 3,
+        "complejidad": 4,
+        "metalinguistico": 4
+      },
+      "tipos_tarea": [
+        "expositivo"
+      ],
+      "obligatorio": false,
+      "prioridad": 1,
+      "peso_base": 20,
+      "descriptores": {
+        "n1": {
+          "verbo": "utiliza",
+          "texto": "Utiliza conectores de adición y de causa para enlazar los párrafos, y mantiene un único tiempo verbal en todo el texto sin ninguna función."
+        },
+        "n2": {
+          "verbo": "utiliza",
+          "texto": "Utiliza conectores de orden, adición, causa y contraste entre párrafos, y solo cambia de tiempo verbal cuando lo exige la norma gramatical."
+        },
+        "n3": {
+          "verbo": "emplea",
+          "texto": "Emplea marcadores discursivos organizadores de la exposición (en primer lugar, dicho esto, en definitiva) además de los conectores lógicos, y usa el tiempo verbal para separar la explicación general de los datos concretos."
+        },
+        "n4": {
+          "verbo": "sustituye",
+          "texto": "Sustituye las repeticiones mediante nominalización o hiperónimo, y elige en cada bloque el tiempo verbal que marca si se trata de explicación general o de dato concreto."
+        }
+      },
+      "matriz_cuantitativa": {
+        "total": 10,
+        "componentes": [
+          {
+            "nombre": "Variedad de conectores y marcadores discursivos",
+            "max": 4,
+            "bandas": [
+              {
+                "puntos": 4,
+                "condicion": "Emplea 4 o más tipos distintos, incluyendo al menos un marcador discursivo organizador (en primer lugar, dicho esto, en definitiva) además de los conectores lógicos"
+              },
+              {
+                "puntos": 3,
+                "condicion": "Emplea 3 tipos distintos de conector, sin ningún marcador discursivo organizador"
+              },
+              {
+                "puntos": 2,
+                "condicion": "Emplea 2 tipos distintos de conector"
+              },
+              {
+                "puntos": 1,
+                "condicion": "Se limita a conectores de adición (además, también)"
+              },
+              {
+                "puntos": 0,
+                "condicion": "Yuxtapone los párrafos sin conector que los enlace"
+              }
+            ]
+          },
+          {
+            "nombre": "Uso del tiempo verbal como procedimiento de cohesión",
+            "max": 3,
+            "bandas": [
+              {
+                "puntos": 3,
+                "condicion": "Mantiene la correlación temporal y usa un cambio de tiempo verbal con una función reconocible: marcar una cita, un dato concreto o un cambio de plano"
+              },
+              {
+                "puntos": 2,
+                "condicion": "Mantiene la correlación temporal, pero no hay ningún cambio de tiempo verbal con función reconocible"
+              },
+              {
+                "puntos": 1,
+                "condicion": "Presenta 1 o 2 saltos de tiempo verbal que no responden a ninguna norma ni función"
+              },
+              {
+                "puntos": 0,
+                "condicion": "El tiempo verbal cambia sin criterio a lo largo del texto"
+              }
+            ]
+          },
+          {
+            "nombre": "Referencia y sustitución léxica",
+            "max": 3,
+            "bandas": [
+              {
+                "puntos": 3,
+                "condicion": "Sustituye las repeticiones mediante sinónimo, nominalización o hiperónimo, y todos los referentes son recuperables"
+              },
+              {
+                "puntos": 2,
+                "condicion": "Sustituye la mayoría de las repeticiones; 1 referente exige releer para identificarlo"
+              },
+              {
+                "puntos": 1,
+                "condicion": "Repite la palabra clave 3 o más veces teniendo sustituto evidente"
+              },
+              {
+                "puntos": 0,
+                "condicion": "Repite el mismo sustantivo en oraciones consecutivas a lo largo del texto"
+              }
+            ]
+          }
+        ],
+        "penalizaciones": []
+      },
+      "descriptor_cotejo": null,
+      "descriptor_un_punto": "Utiliza conectores de orden, adición, causa y contraste entre párrafos, y solo cambia de tiempo verbal cuando lo exige la norma gramatical."
+    },
+    {
+      "id": "lcl-d-correccion-expo-2bach",
+      "bloque_lomloe": "D",
+      "dimension": "correccion_lexico",
+      "nombre": "Corrección normativa y propiedad léxica",
+      "curso": "2BACH",
+      "hereda_de": null,
+      "criterio_oficial": {
+        "competencia_especifica": 5,
+        "codigo": "5.2",
+        "cita": "Incorporar procedimientos para enriquecer los textos, atendiendo a aspectos discursivos, lingüísticos y de estilo, con precisión léxica y corrección ortográfica y gramatical.",
+        "perfil_salida": [
+          "CCL1",
+          "CCL3",
+          "CCL5",
+          "STEM1",
+          "CD2",
+          "CD3",
+          "CPSAA5",
+          "CC2"
+        ]
+      },
+      "saber_vehiculo": [
+        "corrección lingüística y revisión ortográfica, gramatical y tipográfica de los textos",
+        "propiedad léxica y vocación de estilo"
+      ],
+      "progresion": {
+        "autonomia": 3,
+        "complejidad": 4,
+        "metalinguistico": 4
+      },
+      "tipos_tarea": [
+        "expositivo"
+      ],
+      "obligatorio": true,
+      "prioridad": 2,
+      "peso_base": 15,
+      "descriptores": {
+        "n1": {
+          "verbo": "redacta",
+          "texto": "Redacta el texto con errores de ortografía, concordancia o puntuación que obligan a releer para reconstruir la idea."
+        },
+        "n2": {
+          "verbo": "aplica",
+          "texto": "Aplica las normas de ortografía y concordancia propias del nivel, con algún desliz tipográfico aislado (comillas, mayúsculas, cursiva) que no llega a dificultar la lectura de la exposición."
+        },
+        "n3": {
+          "verbo": "selecciona",
+          "texto": "Selecciona el término preciso en lugar de palabras de significado general, sin errores ortográficos, gramaticales ni tipográficos del nivel."
+        },
+        "n4": {
+          "verbo": "emplea",
+          "texto": "Emplea recursos de estilo propios del ensayo académico (variación sintáctica, léxico connotativo pertinente) con un lenguaje no discriminatorio en todo el texto, sin ningún error que afecte a la comprensión."
+        }
+      },
+      "matriz_cuantitativa": {
+        "total": 10,
+        "componentes": [
+          {
+            "nombre": "Ortografía, gramática y tipografía",
+            "max": 4,
+            "bandas": [
+              {
+                "puntos": 4,
+                "condicion": "Hasta 2 faltas en todo el texto, incluidas las tipográficas"
+              },
+              {
+                "puntos": 3,
+                "condicion": "De 3 a 5 faltas"
+              },
+              {
+                "puntos": 2,
+                "condicion": "De 6 a 9 faltas"
+              },
+              {
+                "puntos": 0,
+                "condicion": "10 o más faltas"
+              }
+            ]
+          },
+          {
+            "nombre": "Corrección gramatical",
+            "max": 3,
+            "bandas": [
+              {
+                "puntos": 3,
+                "condicion": "Sin errores de concordancia ni de construcción de la oración"
+              },
+              {
+                "puntos": 2,
+                "condicion": "1 o 2 errores que no impiden la comprensión"
+              },
+              {
+                "puntos": 1,
+                "condicion": "3 o más errores, o alguna oración que hay que releer para reconstruir"
+              },
+              {
+                "puntos": 0,
+                "condicion": "Errores sistemáticos que obligan a reconstruir el sentido"
+              }
+            ]
+          },
+          {
+            "nombre": "Precisión léxica y vocación de estilo",
+            "max": 3,
+            "bandas": [
+              {
+                "puntos": 3,
+                "condicion": "Selecciona el término preciso y emplea algún recurso de estilo propio del ensayo académico (variación sintáctica, léxico connotativo pertinente)"
+              },
+              {
+                "puntos": 2,
+                "condicion": "Selecciona términos precisos, pero no emplea ningún recurso de estilo más allá de lo correcto"
+              },
+              {
+                "puntos": 1,
+                "condicion": "Recurre a términos de significado general con sustituto evidente"
+              },
+              {
+                "puntos": 0,
+                "condicion": "El texto se sostiene sobre palabras comodín"
+              }
+            ]
+          }
+        ],
+        "penalizaciones": []
+      },
+      "descriptor_cotejo": null,
+      "descriptor_un_punto": "Aplica las normas de ortografía y concordancia propias del nivel, con algún desliz tipográfico aislado que no llega a dificultar la lectura."
+    },
+    {
+      "id": "lcl-d-planificacion-expo-2bach",
+      "bloque_lomloe": "D",
+      "dimension": "planificacion_revision",
+      "nombre": "Planificación y revisión del propio texto",
+      "curso": "2BACH",
+      "hereda_de": null,
+      "criterio_oficial": {
+        "competencia_especifica": 9,
+        "codigo": "9.1",
+        "cita": "Revisar los propios textos y hacer propuestas de mejora argumentando los cambios a partir de la reflexión metalingüística e interlingüística y con un metalenguaje específico, e identificar y subsanar problemas de comprensión lectora utilizando los conocimientos explícitos sobre la lengua y su uso.",
+        "perfil_salida": [
+          "CCL1",
+          "CCL2",
+          "CP2",
+          "STEM1",
+          "STEM2",
+          "CPSAA5"
+        ]
+      },
+      "saber_vehiculo": [
+        "producción escrita: proceso de elaboración: planificación, redacción, revisión y edición en diferentes soportes",
+        "redacción y revisión de borradores entre iguales o utilizando otros instrumentos de consulta",
+        "metalenguaje específico"
+      ],
+      "progresion": {
+        "autonomia": 3,
+        "complejidad": 4,
+        "metalinguistico": 4
+      },
+      "tipos_tarea": [
+        "expositivo"
+      ],
+      "obligatorio": false,
+      "prioridad": 2,
+      "peso_base": 10,
+      "descriptores": {
+        "n1": {
+          "verbo": "redacta",
+          "texto": "Redacta el texto en una sola pasada y lo entrega como versión final, sin someterlo a ninguna revisión."
+        },
+        "n2": {
+          "verbo": "elabora",
+          "texto": "Elabora un esquema previo propio con la estructura del texto, y revisa el borrador de forma individual, sin contrastarlo con nadie ni con ningún instrumento de consulta."
+        },
+        "n3": {
+          "verbo": "revisa",
+          "texto": "Revisa el borrador con ayuda de un compañero o de un instrumento de consulta (corrector, manual de estilo) y reformula los pasajes que, releídos, resultan difíciles de entender para un lector que no conoce el tema."
+        },
+        "n4": {
+          "verbo": "justifica",
+          "texto": "Justifica con metalenguaje específico los cambios que introduce a partir de esa revisión compartida, explicando tanto el problema de comprensión que resuelven como el efecto estilístico que persiguen."
+        }
+      },
+      "matriz_cuantitativa": {
+        "total": 10,
+        "componentes": [
+          {
+            "nombre": "Planificación propia",
+            "max": 3,
+            "bandas": [
+              {
+                "puntos": 3,
+                "condicion": "Entrega un esquema previo propio con la estructura del texto"
+              },
+              {
+                "puntos": 2,
+                "condicion": "Entrega un esquema previo que solo lista ideas, sin estructura"
+              },
+              {
+                "puntos": 0,
+                "condicion": "No hay rastro de trabajo previo al texto"
+              }
+            ]
+          },
+          {
+            "nombre": "Revisión entre iguales o con instrumentos de consulta",
+            "max": 4,
+            "bandas": [
+              {
+                "puntos": 4,
+                "condicion": "Corrige, con ayuda de un compañero o de un instrumento de consulta, un pasaje que dificultaba la comprensión del lector, además de aspectos de puntuación o conexión"
+              },
+              {
+                "puntos": 3,
+                "condicion": "Corrige aspectos de puntuación y de conexión entre párrafos, no solo faltas, pero de forma individual"
+              },
+              {
+                "puntos": 2,
+                "condicion": "Corrige faltas de ortografía y léxico, de forma individual"
+              },
+              {
+                "puntos": 0,
+                "condicion": "Entrega la primera versión sin marcas de revisión"
+              }
+            ]
+          },
+          {
+            "nombre": "Justificación con metalenguaje",
+            "max": 3,
+            "bandas": [
+              {
+                "puntos": 3,
+                "condicion": "Justifica 2 o más cambios con metalenguaje específico, explicando tanto el problema que resuelven como el efecto estilístico que persiguen"
+              },
+              {
+                "puntos": 2,
+                "condicion": "Justifica los cambios con metalenguaje específico, pero solo señala el problema que resuelven, sin el efecto estilístico"
+              },
+              {
+                "puntos": 0,
+                "condicion": "No justifica ningún cambio"
+              }
+            ]
+          }
+        ],
+        "penalizaciones": []
+      },
+      "descriptor_cotejo": null,
+      "descriptor_un_punto": "Elabora un esquema previo propio con la estructura del texto, y revisa el borrador de forma individual."
+    },
+    {
+      "id": "lcl-b-informacion-expo-2bach",
+      "bloque_lomloe": "B",
+      "dimension": "tratamiento_informacion",
+      "nombre": "Tratamiento de la información y uso de fuentes",
+      "curso": "2BACH",
+      "hereda_de": null,
+      "criterio_oficial": {
+        "competencia_especifica": 6,
+        "codigo": "6.1",
+        "cita": "Elaborar trabajos de investigación de manera autónoma, en diferentes soportes, sobre diversos temas de interés académico, personal o social que impliquen localizar, seleccionar y contrastar información procedente de diferentes fuentes, con especial atención a la gestión de su almacenamiento y recuperación, así como a la evaluación de su fiabilidad y pertinencia; organizarla e integrarla en esquemas propios; y reelaborarla y comunicarla de manera creativa, adoptando un punto de vista crítico y respetuoso con la propiedad intelectual.",
+        "perfil_salida": [
+          "CCL3",
+          "CD1",
+          "CD2",
+          "CD3",
+          "CD4",
+          "CPSAA4",
+          "CC2",
+          "CE3"
+        ]
+      },
+      "saber_vehiculo": [
+        "alfabetización informacional: búsqueda autónoma y selección de la información con criterios de fiabilidad, calidad y pertinencia",
+        "la gestión de contenidos, el almacenamiento y la recuperación de la información relevante",
+        "noticias falsas y verificación de hechos"
+      ],
+      "progresion": {
+        "autonomia": 3,
+        "complejidad": 4,
+        "metalinguistico": 4
+      },
+      "tipos_tarea": [
+        "expositivo"
+      ],
+      "obligatorio": false,
+      "prioridad": 3,
+      "peso_base": 10,
+      "descriptores": {
+        "n1": {
+          "verbo": "utiliza",
+          "texto": "Utiliza una única fuente y traslada su información al texto sin ninguna referencia bibliográfica."
+        },
+        "n2": {
+          "verbo": "selecciona",
+          "texto": "Selecciona información de dos o más fuentes por su cuenta, la organiza en una carpeta o gestor propio, y las enumera en una bibliografía final sin marcar en el texto qué dato procede de cuál."
+        },
+        "n3": {
+          "verbo": "contrasta",
+          "texto": "Contrasta la información de fuentes distintas, cita su procedencia en el lugar del texto donde la usa, y mantiene organizado y recuperable el material consultado durante todo el proceso."
+        },
+        "n4": {
+          "verbo": "integra",
+          "texto": "Integra en el texto un punto de vista propio sobre el tema, verifica los datos que resultan dudosos antes de emplearlos, y documenta todas las fuentes con el aparato de cita, notas y bibliografía del trabajo académico, de modo que el material de partida quede recuperable para una revisión posterior."
+        }
+      },
+      "matriz_cuantitativa": {
+        "total": 10,
+        "componentes": [
+          {
+            "nombre": "Número de fuentes contrastadas",
+            "max": 4,
+            "bandas": [
+              {
+                "puntos": 4,
+                "condicion": "Emplea 3 o más fuentes distintas, coteja entre ellas y señala en qué difieren o coinciden"
+              },
+              {
+                "puntos": 3,
+                "condicion": "Emplea 2 fuentes distintas y coteja entre ellas al menos un dato"
+              },
+              {
+                "puntos": 2,
+                "condicion": "Emplea 2 fuentes, pero cada una sostiene una parte distinta del texto sin cotejo"
+              },
+              {
+                "puntos": 0,
+                "condicion": "Emplea una sola fuente"
+              }
+            ]
+          },
+          {
+            "nombre": "Aparato de citas, bibliografía y gestión del material",
+            "max": 3,
+            "bandas": [
+              {
+                "puntos": 3,
+                "condicion": "Cita cada fuente en el lugar del texto donde la usa, añade una bibliografía final con un modelo de cita homogéneo, y mantiene el material organizado y recuperable"
+              },
+              {
+                "puntos": 2,
+                "condicion": "Añade una bibliografía final, pero no cita en el texto de qué fuente procede cada dato"
+              },
+              {
+                "puntos": 1,
+                "condicion": "Menciona alguna fuente de pasada, sin sistema"
+              },
+              {
+                "puntos": 0,
+                "condicion": "No incluye ninguna referencia bibliográfica"
+              }
+            ]
+          },
+          {
+            "nombre": "Punto de vista crítico y verificación",
+            "max": 3,
+            "bandas": [
+              {
+                "puntos": 3,
+                "condicion": "Integra un punto de vista propio sobre el tema y señala que ha verificado algún dato dudoso antes de emplearlo"
+              },
+              {
+                "puntos": 2,
+                "condicion": "Explica con sus propias palabras la información de las fuentes, sin aportar una valoración propia ni verificar ningún dato"
+              },
+              {
+                "puntos": 0,
+                "condicion": "Traslada pasajes literales de las fuentes sin reformular ni valorar"
+              }
+            ]
+          }
+        ],
+        "penalizaciones": []
+      },
+      "descriptor_cotejo": null,
+      "descriptor_un_punto": "Selecciona información de dos o más fuentes por su cuenta, la organiza en una carpeta o gestor propio e indica su procedencia en el texto."
     }
   ]
 }
