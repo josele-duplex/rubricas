@@ -8,7 +8,7 @@ verdad, y que los packs cuadren con las tablas de derivación del SDD. Nació de
 diagnóstico del 2026-08-05: los tres errores de esa fecha vivían en el SDD, no en
 los packs, porque el SDD no tenía ninguna prueba.
 
-Cuatro comprobaciones:
+Cinco comprobaciones:
 
  1. CITAS DE PACK. Toda `criterio_oficial.cita` de data/*.json aparece literalmente
     en fuentes/curriculo/ tras normalizar (espacios, saltos de línea, énfasis).
@@ -25,6 +25,17 @@ Cuatro comprobaciones:
     la redacción del criterio oficial lo justifica con una fórmula guiada («de
     manera guiada», «sencillos», «con ayuda», «pautas y modelos»). Los cursos que
     la tabla no define (2.º Bach, decisión abierta §17.11) generan aviso, no error.
+ 5. GÉNERO EN SABER_VEHÍCULO (regla decidida el 2026-08-07, decisión 13 de §17).
+    Si una entrada de `saber_vehiculo` nombra un género (expositivo, argumentativo,
+    narrativo), ese género debe aparecer en el segmento de fuente que corresponde
+    a SU curso — no en el documento entero, que es como se coló la cita fabricada
+    de la decisión 12 en 2.º ESO. Es una regla estrecha a propósito: medir un
+    contraste literal de todo `saber_vehiculo` contra la fuente da un 42.5% de
+    "fallos" que son parafraseos y descomposiciones legítimas del descriptor
+    (SDD, nota de la decisión 13), así que aquí solo se comprueba lo único que
+    tiene una respuesta binaria verificable — si el género que se nombra existe
+    en ese curso — y se deja el resto al buen redactar y a la revisión del
+    docente, como todo lo que no es citable.
 
 Las tablas §4.3 y §5.4 se leen del SDD en cada ejecución: el SDD sigue siendo la
 fuente única y este script se rompe en voz alta si su formato cambia, en lugar de
@@ -244,9 +255,91 @@ def comprobar_progresion(pack, tabla, err, avi):
             "pendiente de la decisión §17.11, sin comprobar" % curso)
 
 
+# ---------------------------------------------------------------- comprobación 5
+
+# Cabeceras de curso tal y como aparecen en fuentes/curriculo/, literal, una
+# por línea. El texto ANTES de la primera cabecera de cada archivo es
+# preámbulo compartido por todos sus cursos (p. ej. en Bachillerato, la
+# descripción de "Competencia específica 5" que cita el SDD para 2.º Bach en
+# la celda de texto expositivo vive ahí, antes de que el documento se separe
+# en "Lengua Castellana y Literatura I/II") y se añade al segmento de cada
+# curso del archivo, no solo al primero.
+CABECERAS_CURSO = {
+    "curriculo-ESO-Murcia-lengua.md": [
+        ("Primer curso", "1ESO"), ("Segundo curso", "2ESO"),
+        ("Tercer curso", "3ESO"), ("Cuarto curso", "4ESO"),
+    ],
+    "curriculo-Bachillerato-lengua.md": [
+        ("Lengua Castellana y Literatura I", "1BACH"),
+        ("Lengua Castellana y Literatura II", "2BACH"),
+    ],
+}
+
+GENEROS = ["expositiv", "argumentativ", "narrativ"]
+
+
+def segmentar_por_curso():
+    """Devuelve {curso: texto_normalizado} recortando cada archivo de fuentes
+    por sus cabeceras de curso; el preámbulo antes de la primera cabecera se
+    añade a todos los cursos de ese archivo."""
+    segmentos = {}
+    for nombre, cabeceras in CABECERAS_CURSO.items():
+        ruta = os.path.join(DIR_FUENTES, nombre)
+        if not os.path.isfile(ruta):
+            continue
+        lineas = open(ruta, encoding="utf8").read().splitlines()
+        # Solo la PRIMERA aparición de cada cabecera: el documento de ESO
+        # repite "Primer/Segundo/... curso" más adelante para otra materia
+        # (lengua de signos), y esa segunda tanda no es la de Lengua
+        # Castellana y Literatura que este verificador comprueba.
+        pendientes = list(cabeceras)
+        indices = []
+        for i, linea in enumerate(lineas):
+            if not pendientes:
+                break
+            texto, curso = pendientes[0]
+            if linea.strip().rstrip(":") == texto:
+                indices.append((i, curso))
+                pendientes.pop(0)
+        if pendientes:
+            raise SystemExit("No encuentro todas las cabeceras de curso en %s (¿cambió el formato?): faltan %s"
+                              % (nombre, [c for _, c in pendientes]))
+        # Tope del último curso: si la cabecera se repite más adelante para
+        # otra materia (lengua de signos, en el archivo de ESO), el segmento
+        # del último curso de Lengua Castellana no debe tragarse ese bloque.
+        textos = {texto for texto, _ in cabeceras}
+        fin_ultimo = len(lineas)
+        for i in range(indices[-1][0] + 1, len(lineas)):
+            if lineas[i].strip().rstrip(":") in textos:
+                fin_ultimo = i
+                break
+        preambulo = normalizar("\n".join(lineas[:indices[0][0]]))
+        for pos, (i, curso) in enumerate(indices):
+            fin = indices[pos + 1][0] if pos + 1 < len(indices) else fin_ultimo
+            segmentos[curso] = preambulo + " " + normalizar("\n".join(lineas[i:fin]))
+    return segmentos
+
+
+def comprobar_genero_saber_vehiculo(pack, segmentos, err, avi):
+    for c in pack["criterios"]:
+        curso = c["curso"]
+        seg = segmentos.get(curso)
+        for entrada in c.get("saber_vehiculo", []):
+            en = normalizar(entrada)
+            for genero in GENEROS:
+                if genero not in en:
+                    continue
+                if seg is None:
+                    avi(c["id"], "saber_vehiculo", "curso %s sin segmento de fuente mapeado; "
+                        "no se comprueba el género '%s' en '%s'" % (curso, genero, entrada))
+                elif genero not in seg:
+                    err(c["id"], "saber_vehiculo", "saber_vehiculo nombra el género '%s' pero no "
+                        "aparece en el segmento de fuente de %s: '%s'" % (genero, curso, entrada))
+
+
 # ------------------------------------------------------------------- ejecución
 
-def verificar_pack(ruta, fuentes, matriz, tabla):
+def verificar_pack(ruta, fuentes, matriz, tabla, segmentos):
     pack = json.load(open(ruta, encoding="utf8"))
     errores, avisos = [], []
     err = lambda cid, donde, msg: errores.append((cid, donde, msg))
@@ -254,6 +347,7 @@ def verificar_pack(ruta, fuentes, matriz, tabla):
     comprobar_citas_pack(pack, fuentes, err)
     comprobar_matriz_tareas(pack, matriz, err, avi)
     comprobar_progresion(pack, tabla, err, avi)
+    comprobar_genero_saber_vehiculo(pack, segmentos, err, avi)
     return pack, errores, avisos
 
 
@@ -274,7 +368,7 @@ def informar(titulo, errores, avisos):
     return bool(errores)
 
 
-def auto_prueba(fuentes, matriz, tabla, sdd, marco):
+def auto_prueba(fuentes, matriz, tabla, sdd, marco, segmentos):
     """Casos dorados: cada corrupción deliberada tiene que producir su error."""
     ruta = sorted(glob.glob(os.path.join(RAIZ, "data", "*.json")))[0]
     limpio = json.load(open(ruta, encoding="utf8"))
@@ -307,6 +401,13 @@ def auto_prueba(fuentes, matriz, tabla, sdd, marco):
          lambda p: p["criterios"][0].update(curso="4ESO", tipos_tarea=["narracion"],
                                             progresion=tabla["4ESO"].copy()),
          lambda p, err, avi: comprobar_matriz_tareas(p, matriz, err, avi))
+    caso("género trasplantado en saber_vehiculo debe detectarse (decisión 12/13)",
+         # criterios[0] es 2ESO, el único curso de ESO cuyos saberes no
+         # nombran ningún género: es la corrupción exacta que produjo la
+         # decisión 12 antes de corregirse.
+         lambda p: p["criterios"][0].update(
+             saber_vehiculo=["secuencias textuales expositivas"]),
+         lambda p, err, avi: comprobar_genero_saber_vehiculo(p, segmentos, err, avi))
 
     # Y una cita corrupta del SDD también.
     sdd_corrupto = sdd.replace('*"de manera guiada"*', '*"de manera guiada e inventada"*')
@@ -340,9 +441,10 @@ def main():
     sdd = open(RUTA_SDD, encoding="utf8").read()
     matriz = parsear_matriz_tareas(sdd)
     tabla = parsear_tabla_progresion(sdd)
+    segmentos = segmentar_por_curso()
 
     if "--auto-prueba" in sys.argv:
-        return auto_prueba(fuentes, matriz, tabla, sdd, marco)
+        return auto_prueba(fuentes, matriz, tabla, sdd, marco, segmentos)
 
     fallo = False
 
@@ -356,7 +458,7 @@ def main():
     rutas = [a for a in sys.argv[1:] if not a.startswith("--")]
     rutas = rutas or sorted(glob.glob(os.path.join(RAIZ, "data", "*.json")))
     for ruta in rutas:
-        pack, errores, avisos = verificar_pack(ruta, fuentes, matriz, tabla)
+        pack, errores, avisos = verificar_pack(ruta, fuentes, matriz, tabla, segmentos)
         fallo |= informar("%s · derivación contra fuentes y SDD" % pack["pack_id"],
                           errores, avisos)
     return 1 if fallo else 0
