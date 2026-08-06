@@ -156,7 +156,7 @@
 
 *Criterio oficial 5.1:* «Planificar la redacción de textos escritos y multimodales sencillos, atendiendo a la situación comunicativa, al destinatario, al propósito y al canal; redactar borradores y revisarlos con ayuda del diálogo entre iguales e instrumentos de consulta, y presentar un texto final coherente, cohesionado y con el registro adecuado.»
 
-*Saber-vehículo:* secuencias textuales expositivas, análisis de las propiedades textuales: adecuación
+*Saber-vehículo:* análisis de los componentes del hecho comunicativo: grado de formalidad de la situación, géneros discursivos propios del ámbito educativo, análisis de las propiedades textuales: adecuación
 
 | Nivel | Descriptor |
 |---|---|
@@ -171,7 +171,7 @@
 
 *Criterio oficial 5.1:* «Planificar la redacción de textos escritos y multimodales sencillos, atendiendo a la situación comunicativa, al destinatario, al propósito y al canal; redactar borradores y revisarlos con ayuda del diálogo entre iguales e instrumentos de consulta, y presentar un texto final coherente, cohesionado y con el registro adecuado.»
 
-*Saber-vehículo:* secuencias textuales expositivas, análisis de las propiedades textuales: coherencia
+*Saber-vehículo:* géneros discursivos propios del ámbito educativo, análisis de las propiedades textuales: coherencia
 
 | Nivel | Descriptor |
 |---|---|
@@ -192,7 +192,7 @@
 
 *Criterio oficial 5.1:* «Planificar la redacción de textos escritos y multimodales sencillos, atendiendo a la situación comunicativa, al destinatario, al propósito y al canal; redactar borradores y revisarlos con ayuda del diálogo entre iguales e instrumentos de consulta, y presentar un texto final coherente, cohesionado y con el registro adecuado.»
 
-*Saber-vehículo:* secuencias textuales expositivas, análisis de las propiedades textuales: cohesión
+*Saber-vehículo:* mecanismos de cohesión: conectores textuales temporales, explicativos, de orden y de contraste, mecanismos de referencia interna gramaticales y léxicos: sustituciones pronominales, sinónimos e hiperónimos, análisis de las propiedades textuales: cohesión
 
 | Nivel | Descriptor |
 |---|---|
