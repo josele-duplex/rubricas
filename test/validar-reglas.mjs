@@ -363,6 +363,23 @@ caso("proceso_sin_respaldo: dimensión de proceso cuya cita no la sostiene dispa
   );
 });
 
+caso("proceso_sin_respaldo: 'esquemas propios' del 6.1 no sostiene la bandera de proceso", () => {
+  // El 6.1 de 3º ESO dice "...organizarla e integrarla en esquemas propios...":
+  // esa frase describe la reorganización mental de información ajena en el
+  // texto terminado, no un esquema como fase previa de escritura. Coinciden
+  // en la palabra, no en el referente (SDD §5.2) — FORMULAS_PROCESO no debe
+  // dejarse arrastrar por la subcadena "esquema".
+  const pack = clonarPack();
+  const c = criterio(pack, "lcl-b-informacion-expo-3eso");
+  assert(c.criterio_oficial.cita.includes("esquemas propios"), "fixture inválida: el 6.1 de 3ESO debería citar 'esquemas propios'");
+  c.evalua_proceso = true;
+  const informe = validarPack(pack);
+  assert(
+    avisosDeRegla(informe, "proceso_sin_respaldo").some((a) => a.criterioId === c.id),
+    "'esquemas propios' no debería sostener evalua_proceso: true"
+  );
+});
+
 caso("proceso_sin_respaldo: control de falso positivo — la dimensión de planificación del pack real no dispara nada", () => {
   const pack = clonarPack();
   const c = criterio(pack, "lcl-d-planificacion-expo-1eso");

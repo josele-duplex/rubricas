@@ -55,7 +55,10 @@ MARCAS_ANDAMIAJE_RESIDUAL = [
 
 # Fórmulas del propio decreto que sostienen que una dimensión evalúa una fase
 # del proceso y no el texto terminado (paridad con js/validador.js, §5.2).
-FORMULAS_PROCESO = ["planificar", "planificacion", "borrador", "revisar", "revision", "esquema"]
+# Sin "esquema": el 6.1 usa "esquemas propios" para la reorganización mental
+# de información ajena en el texto terminado, no para el esquema como fase
+# previa de escritura — coinciden en la palabra, no en el referente.
+FORMULAS_PROCESO = ["planificar", "planificacion", "borrador", "revisar", "revision"]
 
 
 def primer_verbo(texto):

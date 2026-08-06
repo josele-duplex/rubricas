@@ -230,8 +230,11 @@ const MARCAS_ANDAMIAJE_RESIDUAL = [
 
 // Fórmulas del propio decreto que sostienen que una dimensión evalúa una
 // fase del proceso y no el texto terminado (§5.2, campo `evalua_proceso`).
-// Ya normalizadas: minúsculas y sin tildes.
-const FORMULAS_PROCESO = ["planificar", "planificacion", "borrador", "revisar", "revision", "esquema"];
+// Ya normalizadas: minúsculas y sin tildes. Sin "esquema": el 6.1 usa
+// "esquemas propios" para la reorganización mental de información ajena en
+// el texto terminado, no para el esquema como fase previa de escritura —
+// coinciden en la palabra, no en el referente (§5.2).
+const FORMULAS_PROCESO = ["planificar", "planificacion", "borrador", "revisar", "revision"];
 
 export const UMBRAL_DIMENSIONES = 5;
 
