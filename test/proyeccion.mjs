@@ -13,8 +13,11 @@
 import { readFileSync } from "node:fs";
 import { primeraPersona, generarAutoevaluacion } from "../js/motor.js";
 
-const rutaPack = new URL("../data/pack-lcl-expositivo.json", import.meta.url);
-const pack = JSON.parse(readFileSync(rutaPack, "utf8"));
+function cargar(nombre) {
+  return JSON.parse(readFileSync(new URL(`../data/${nombre}`, import.meta.url), "utf8"));
+}
+
+const pack = cargar("pack-lcl-expositivo.json");
 const verbosPorId = Object.fromEntries(pack.verbos.map((v) => [v.id, v]));
 
 let pasados = 0;
@@ -138,37 +141,56 @@ caso("generarAutoevaluacion: reconjuga sin excepciones los doce criterios del pa
   }
 });
 
-// Invariante fuerte: en las cuatro filas de las dos ofertas del pack (1.º y
-// 3.º de ESO, texto expositivo), ningún nivel debe conservar un verbo del
-// banco todavía en 3.ª persona. Es la comprobación que habría atrapado el
-// fallo del "se dirige" antes de llegar al navegador.
+// Invariante fuerte: ningún nivel debe conservar un verbo del banco todavía
+// en 3.ª persona. Es la comprobación que habría atrapado el fallo del "se
+// dirige" antes de llegar al navegador. Recorre TODOS los cursos y tipos de
+// tarea de cada pack de la lista, no solo un par de ofertas: hasta la v1.19
+// estaba cableado al expositivo y de ahí salieron los ocho verbos que faltaban
+// en el banco del argumentativo (registro de cambios v1.13).
 //
-// Única excepción deliberada: "una introducción que delimita el tema"
+// Excepciones deliberadas: "una introducción que delimita el tema"
 // (lcl-b-coherencia-expo-3eso, N3) tiene "delimita" con la introducción como
 // sujeto, no el alumno, así que se queda en 3.ª persona a propósito
-// (js/motor.js, reconjugarSecundarios). Si aparece una segunda excepción no
-// listada aquí, es una regresión real, no ruido del test.
+// (js/motor.js, reconjugarSecundarios). Si aparece una excepción no listada
+// aquí, es una regresión real, no ruido del test.
+//
+// `data/pack-lcl-argumentativo.json` NO está todavía en la lista, y su
+// ausencia es un hallazgo, no un olvido: al ampliar este invariante a los
+// cuatro packs aparecieron tres restos suyos. Uno es legítimo ("la forma
+// deíctica QUE ajusta la distancia", lcl-b-adecuacion-arg-4eso N4), pero los
+// otros dos son el defecto real del "se dirige" otra vez, en 1.º y 2.º de
+// Bachillerato: "...y explicita la respuesta personal que la lectura LE
+// provoca, conectándola con la valoración que DEFIENDE"
+// (lcl-c-fuentes-arg-1bach y -2bach, N4), que en la autoevaluación imprime
+// "yo" y "él" en la misma frase. Se arregla reescribiendo esos dos
+// descriptores, no metiéndolos en la lista de excepciones; hasta entonces el
+// pack se queda fuera para que la lista no legitime un fallo.
+const PACKS_CON_INVARIANTE = ["pack-lcl-expositivo.json", "pack-lcl-narracion.json"];
 const EXCEPCIONES_DELIBERADAS = new Set(["lcl-b-coherencia-expo-3eso|3|Delimita"]);
 
 caso("generarAutoevaluacion: ningún descriptor conserva un verbo del banco en 3.ª persona (salvo las excepciones documentadas)", () => {
-  const formas3s = pack.verbos.map((v) => v["3s"]);
-  for (const curso of ["1ESO", "3ESO"]) {
-    const criterios = pack.criterios
-      .filter((c) => c.curso === curso && c.tipos_tarea.includes("expositivo"))
-      .map((c) => ({ ...c, peso_normalizado: c.peso_base }));
-    const auto = generarAutoevaluacion(criterios, pack.verbos, {
-      actividad: "Prueba",
-      curso,
-      tipoTarea: "expositivo",
-    });
-    for (const d of auto.dimensiones) {
-      for (const [i, texto] of d.niveles.entries()) {
-        for (const forma of formas3s) {
-          const patron = new RegExp(`\\b${forma}\\b`, "i");
-          if (patron.test(texto) && !EXCEPCIONES_DELIBERADAS.has(`${d.id}|${i + 1}|${forma}`)) {
-            throw new Error(
-              `${curso} · ${d.nombre} · N${i + 1} conserva "${forma}" en 3.ª persona: "${texto}"`
-            );
+  for (const nombre of PACKS_CON_INVARIANTE) {
+    const p = cargar(nombre);
+    const formas3s = p.verbos.map((v) => v["3s"]);
+    const cursos = [...new Set(p.criterios.map((c) => c.curso))];
+    const tipos = [...new Set(p.criterios.flatMap((c) => c.tipos_tarea))];
+    for (const curso of cursos) {
+      for (const tipoTarea of tipos) {
+        const criterios = p.criterios
+          .filter((c) => c.curso === curso && c.tipos_tarea.includes(tipoTarea))
+          .map((c) => ({ ...c, peso_normalizado: c.peso_base }));
+        if (criterios.length === 0) continue;
+        const auto = generarAutoevaluacion(criterios, p.verbos, { actividad: "Prueba", curso, tipoTarea });
+        for (const d of auto.dimensiones) {
+          for (const [i, texto] of d.niveles.entries()) {
+            for (const forma of formas3s) {
+              const patron = new RegExp(`\\b${forma}\\b`, "i");
+              if (patron.test(texto) && !EXCEPCIONES_DELIBERADAS.has(`${d.id}|${i + 1}|${forma}`)) {
+                throw new Error(
+                  `${nombre} · ${curso} · ${d.nombre} · N${i + 1} conserva "${forma}" en 3.ª persona: "${texto}"`
+                );
+              }
+            }
           }
         }
       }

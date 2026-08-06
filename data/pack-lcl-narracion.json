@@ -1,0 +1,1185 @@
+{
+  "pack_id": "lcl-murcia-narracion",
+  "materia": "LCL",
+  "etiqueta": "Narración escrita — Región de Murcia",
+  "version": "0.1.0",
+  "normativa": {
+    "estatal": [
+      "RD 217/2022, de 29 de marzo (ESO)"
+    ],
+    "autonomica": "Decreto n.º 235/2022, de 7 de diciembre, por el que se establece la ordenación y el currículo de la Educación Secundaria Obligatoria en la Comunidad Autónoma de la Región de Murcia",
+    "vigencia_desde": "2022-2023",
+    "revisado": "2026-08"
+  },
+  "verbos": [
+    { "id": "enumera", "3s": "Enumera", "1s": "Enumero", "nivel_cognitivo": 1 },
+    { "id": "entrega", "3s": "Entrega", "1s": "Entrego", "nivel_cognitivo": 1 },
+    { "id": "anota", "3s": "Anota", "1s": "Anoto", "nivel_cognitivo": 1 },
+    { "id": "cierra", "3s": "Cierra", "1s": "Cierro", "nivel_cognitivo": 1 },
+    { "id": "explica", "3s": "Explica", "1s": "Explico", "nivel_cognitivo": 2 },
+    { "id": "presenta", "3s": "Presenta", "1s": "Presento", "nivel_cognitivo": 2 },
+    { "id": "selecciona", "3s": "Selecciona", "1s": "Selecciono", "nivel_cognitivo": 2 },
+    { "id": "utiliza", "3s": "Utiliza", "1s": "Utilizo", "nivel_cognitivo": 3 },
+    { "id": "aplica", "3s": "Aplica", "1s": "Aplico", "nivel_cognitivo": 3 },
+    { "id": "redacta", "3s": "Redacta", "1s": "Redacto", "nivel_cognitivo": 3 },
+    { "id": "emplea", "3s": "Emplea", "1s": "Empleo", "nivel_cognitivo": 3 },
+    { "id": "mantiene", "3s": "Mantiene", "1s": "Mantengo", "nivel_cognitivo": 3 },
+    { "id": "sostiene", "3s": "Sostiene", "1s": "Sostengo", "nivel_cognitivo": 3 },
+    { "id": "ordena", "3s": "Ordena", "1s": "Ordeno", "nivel_cognitivo": 3 },
+    { "id": "situa", "3s": "Sitúa", "1s": "Sitúo", "nivel_cognitivo": 3 },
+    { "id": "ajusta", "3s": "Ajusta", "1s": "Ajusto", "nivel_cognitivo": 3 },
+    { "id": "adapta", "3s": "Adapta", "1s": "Adapto", "nivel_cognitivo": 3 },
+    { "id": "elige", "3s": "Elige", "1s": "Elijo", "nivel_cognitivo": 3 },
+    { "id": "elabora", "3s": "Elabora", "1s": "Elaboro", "nivel_cognitivo": 3 },
+    { "id": "sustituye", "3s": "Sustituye", "1s": "Sustituyo", "nivel_cognitivo": 3 },
+    { "id": "delimita", "3s": "Delimita", "1s": "Delimito", "nivel_cognitivo": 3 },
+    { "id": "desarrolla", "3s": "Desarrolla", "1s": "Desarrollo", "nivel_cognitivo": 3 },
+    { "id": "estructura", "3s": "Estructura", "1s": "Estructuro", "nivel_cognitivo": 4 },
+    { "id": "articula", "3s": "Articula", "1s": "Articulo", "nivel_cognitivo": 4 },
+    { "id": "distingue", "3s": "Distingue", "1s": "Distingo", "nivel_cognitivo": 4 },
+    { "id": "descarta", "3s": "Descarta", "1s": "Descarto", "nivel_cognitivo": 4 },
+    { "id": "resuelve", "3s": "Resuelve", "1s": "Resuelvo", "nivel_cognitivo": 4 },
+    { "id": "justifica", "3s": "Justifica", "1s": "Justifico", "nivel_cognitivo": 4 },
+    { "id": "recrea", "3s": "Recrea", "1s": "Recreo", "nivel_cognitivo": 5 },
+    { "id": "transforma", "3s": "Transforma", "1s": "Transformo", "nivel_cognitivo": 5 },
+    { "id": "integra", "3s": "Integra", "1s": "Integro", "nivel_cognitivo": 5 },
+    { "id": "reelabora", "3s": "Reelabora", "1s": "Reelaboro", "nivel_cognitivo": 5 },
+    { "id": "revisa", "3s": "Revisa", "1s": "Reviso", "nivel_cognitivo": 6 },
+    { "id": "corrige", "3s": "Corrige", "1s": "Corrijo", "nivel_cognitivo": 6 }
+  ],
+  "criterios": [
+    {
+      "id": "lcl-b-adecuacion-narr-1eso",
+      "bloque_lomloe": "B",
+      "dimension": "adecuacion",
+      "nombre": "Adecuación: registro y destinatario del relato",
+      "curso": "1ESO",
+      "hereda_de": null,
+      "criterio_oficial": {
+        "competencia_especifica": 5,
+        "codigo": "5.1",
+        "cita": "Planificar la redacción de textos escritos y multimodales sencillos, atendiendo a la situación comunicativa, al destinatario, al propósito y al canal; redactar borradores y revisarlos con ayuda del diálogo entre iguales e instrumentos de consulta.",
+        "perfil_salida": ["CCL1", "CCL3", "CCL5", "STEM1", "CD2", "CD3", "CPSAA5", "CC2"]
+      },
+      "saber_vehiculo": [
+        "secuencias textuales narrativas",
+        "iniciación a las propiedades textuales: adecuación",
+        "recursos lingüísticos para adecuar el registro a la situación de comunicación"
+      ],
+      "progresion": { "autonomia": 1, "complejidad": 1, "metalinguistico": 1 },
+      "tipos_tarea": ["narracion"],
+      "obligatorio": false,
+      "prioridad": 1,
+      "peso_base": 15,
+      "descriptores": {
+        "n1": { "verbo": "utiliza", "texto": "Utiliza expresiones de la conversación diaria y abreviaturas del chat en un relato destinado a leerse en clase." },
+        "n2": { "verbo": "ajusta", "texto": "Ajusta el relato al modelo de narración trabajado en clase y mantiene el mismo tratamiento del lector de principio a fin." },
+        "n3": { "verbo": "emplea", "texto": "Emplea un vocabulario propio de la lengua escrita, sin las marcas de la conversación, y sostiene el mismo tono en todo el relato." },
+        "n4": { "verbo": "adapta", "texto": "Adapta el tono del relato al destinatario del encargo y elige las palabras que crean su atmósfera." }
+      },
+      "matriz_cuantitativa": null,
+      "descriptor_cotejo": null,
+      "descriptor_un_punto": "Ajusta el relato al modelo de narración trabajado en clase y mantiene el mismo tratamiento del lector."
+    },
+    {
+      "id": "lcl-b-coherencia-narr-1eso",
+      "bloque_lomloe": "B",
+      "dimension": "coherencia",
+      "nombre": "Coherencia: construcción de la secuencia narrativa",
+      "curso": "1ESO",
+      "hereda_de": null,
+      "criterio_oficial": {
+        "competencia_especifica": 5,
+        "codigo": "5.1",
+        "cita": "Planificar la redacción de textos escritos y multimodales sencillos, atendiendo a la situación comunicativa, al destinatario, al propósito y al canal; redactar borradores y revisarlos con ayuda del diálogo entre iguales e instrumentos de consulta.",
+        "perfil_salida": ["CCL1", "CCL3", "CCL5", "STEM1", "CD2", "CD3", "CPSAA5", "CC2"]
+      },
+      "saber_vehiculo": [
+        "secuencias textuales narrativas",
+        "iniciación a las propiedades textuales: coherencia"
+      ],
+      "progresion": { "autonomia": 1, "complejidad": 1, "metalinguistico": 1 },
+      "tipos_tarea": ["narracion"],
+      "obligatorio": true,
+      "prioridad": 1,
+      "peso_base": 25,
+      "descriptores": {
+        "n1": { "verbo": "enumera", "texto": "Enumera los hechos del relato uno detrás de otro y cierra el texto en el último de ellos." },
+        "n2": { "verbo": "ordena", "texto": "Ordena el relato en planteamiento, nudo y desenlace siguiendo el esquema facilitado en clase." },
+        "n3": { "verbo": "ordena", "texto": "Ordena los hechos en párrafos, presenta a los personajes en el planteamiento y resuelve en el desenlace el conflicto del nudo." },
+        "n4": { "verbo": "selecciona", "texto": "Selecciona los hechos que hacen avanzar la historia y descarta los que la detienen." }
+      },
+      "matriz_cuantitativa": {
+        "total": 10,
+        "componentes": [
+          {
+            "nombre": "Las tres partes del relato",
+            "max": 4,
+            "bandas": [
+              { "puntos": 4, "condicion": "Se distinguen planteamiento, nudo y desenlace, y el desenlace resuelve el conflicto del nudo" },
+              { "puntos": 3, "condicion": "Se distinguen las tres partes y el desenlace deja el conflicto abierto" },
+              { "puntos": 2, "condicion": "Se distinguen dos de las tres partes" },
+              { "puntos": 0, "condicion": "El relato es una sucesión de hechos sin partes distinguibles" }
+            ]
+          },
+          {
+            "nombre": "Un episodio por párrafo",
+            "max": 3,
+            "bandas": [
+              { "puntos": 3, "condicion": "Cada párrafo cuenta un episodio identificable" },
+              { "puntos": 2, "condicion": "Un párrafo mezcla dos episodios; el resto, uno cada uno" },
+              { "puntos": 1, "condicion": "Dos o más párrafos mezclan episodios distintos" },
+              { "puntos": 0, "condicion": "El relato no está dividido en párrafos" }
+            ]
+          },
+          {
+            "nombre": "Hechos que hacen avanzar la historia",
+            "max": 3,
+            "bandas": [
+              { "puntos": 3, "condicion": "Todos los hechos contados influyen en el desenlace" },
+              { "puntos": 2, "condicion": "Incluye 1 hecho que no influye en el desenlace" },
+              { "puntos": 1, "condicion": "Incluye 2 hechos que no influyen en el desenlace" },
+              { "puntos": 0, "condicion": "Incluye 3 o más hechos ajenos a la historia" }
+            ]
+          }
+        ],
+        "penalizaciones": []
+      },
+      "descriptor_cotejo": null,
+      "descriptor_un_punto": "Ordena el relato en planteamiento, nudo y desenlace, siguiendo el esquema facilitado en clase."
+    },
+    {
+      "id": "lcl-b-cohesion-narr-1eso",
+      "bloque_lomloe": "B",
+      "dimension": "cohesion",
+      "nombre": "Cohesión: hilo temporal y referencia a los personajes",
+      "curso": "1ESO",
+      "hereda_de": null,
+      "criterio_oficial": {
+        "competencia_especifica": 5,
+        "codigo": "5.1",
+        "cita": "Planificar la redacción de textos escritos y multimodales sencillos, atendiendo a la situación comunicativa, al destinatario, al propósito y al canal; redactar borradores y revisarlos con ayuda del diálogo entre iguales e instrumentos de consulta.",
+        "perfil_salida": ["CCL1", "CCL3", "CCL5", "STEM1", "CD2", "CD3", "CPSAA5", "CC2"]
+      },
+      "saber_vehiculo": [
+        "mecanismos básicos de cohesión textual: conectores temporales y explicativos",
+        "los tiempos de pretérito en la narración",
+        "correlación temporal en el discurso relatado",
+        "los signos básicos de puntuación como mecanismo organizador del texto escrito"
+      ],
+      "progresion": { "autonomia": 1, "complejidad": 1, "metalinguistico": 1 },
+      "tipos_tarea": ["narracion"],
+      "obligatorio": false,
+      "prioridad": 1,
+      "peso_base": 20,
+      "descriptores": {
+        "n1": { "verbo": "utiliza", "texto": "Utiliza los conectores y, luego y entonces para enlazar los hechos, y agrupa varios enunciados sin separarlos con punto." },
+        "n2": { "verbo": "emplea", "texto": "Emplea conectores temporales (primero, después, al final) para ordenar los hechos, y separa los enunciados con punto." },
+        "n3": { "verbo": "mantiene", "texto": "Mantiene los tiempos de pretérito a lo largo del relato y sustituye por un pronombre el nombre del personaje ya citado." },
+        "n4": { "verbo": "emplea", "texto": "Emplea la coma en los incisos que describen a los personajes y la raya para marcar las intervenciones del diálogo." }
+      },
+      "matriz_cuantitativa": {
+        "total": 10,
+        "componentes": [
+          {
+            "nombre": "Conectores temporales",
+            "max": 4,
+            "bandas": [
+              { "puntos": 4, "condicion": "Emplea 3 o más conectores temporales distintos (primero, después, mientras, al final)" },
+              { "puntos": 3, "condicion": "Emplea 2 conectores temporales distintos" },
+              { "puntos": 2, "condicion": "Emplea siempre el mismo conector temporal" },
+              { "puntos": 1, "condicion": "Enlaza los hechos con y y con entonces" },
+              { "puntos": 0, "condicion": "Coloca los hechos uno detrás de otro sin enlace" }
+            ]
+          },
+          {
+            "nombre": "El tiempo del relato se mantiene",
+            "max": 3,
+            "bandas": [
+              { "puntos": 3, "condicion": "Sostiene los tiempos de pretérito en todo el relato" },
+              { "puntos": 2, "condicion": "Cambia de tiempo verbal en 1 o 2 puntos del relato" },
+              { "puntos": 1, "condicion": "Alterna presente y pretérito a lo largo del texto" },
+              { "puntos": 0, "condicion": "El tiempo verbal cambia dentro de la misma oración" }
+            ]
+          },
+          {
+            "nombre": "El punto y la raya del diálogo",
+            "max": 3,
+            "bandas": [
+              { "puntos": 3, "condicion": "Separa con punto todos los enunciados y marca con raya las intervenciones del diálogo" },
+              { "puntos": 2, "condicion": "Separa con punto los enunciados y deja 1 o 2 sin separar" },
+              { "puntos": 1, "condicion": "Agrupa 3 o más enunciados seguidos sin punto" },
+              { "puntos": 0, "condicion": "Escribe el relato casi sin puntos" }
+            ]
+          }
+        ],
+        "penalizaciones": []
+      },
+      "descriptor_cotejo": null,
+      "descriptor_un_punto": "Emplea conectores temporales para ordenar los hechos y separa los enunciados con punto."
+    },
+    {
+      "id": "lcl-d-correccion-narr-1eso",
+      "bloque_lomloe": "D",
+      "dimension": "correccion_lexico",
+      "nombre": "Corrección normativa y propiedad léxica",
+      "curso": "1ESO",
+      "hereda_de": null,
+      "criterio_oficial": {
+        "competencia_especifica": 5,
+        "codigo": "5.2",
+        "cita": "Incorporar procedimientos básicos para enriquecer los textos propios, atendiendo a aspectos discursivos, lingüísticos y de estilo, con precisión léxica y corrección ortográfica y gramatical.",
+        "perfil_salida": ["CCL1", "CCL3", "CCL5", "STEM1", "CD2", "CD3", "CPSAA5", "CC2"]
+      },
+      "saber_vehiculo": [
+        "corrección lingüística y revisión ortográfica y gramatical de los textos, de manera guiada",
+        "propiedad léxica",
+        "uso coherente de las formas verbales en los textos"
+      ],
+      "progresion": { "autonomia": 1, "complejidad": 1, "metalinguistico": 1 },
+      "tipos_tarea": ["narracion"],
+      "obligatorio": true,
+      "prioridad": 2,
+      "peso_base": 15,
+      "descriptores": {
+        "n1": { "verbo": "redacta", "texto": "Redacta el relato con errores de ortografía y de concordancia que obligan al lector a releer para seguir la historia." },
+        "n2": { "verbo": "aplica", "texto": "Aplica las normas de acentuación y concordancia trabajadas en clase, con errores que permiten seguir el relato." },
+        "n3": { "verbo": "aplica", "texto": "Aplica las normas de ortografía, acentuación y concordancia del nivel, y utiliza la grafía correcta de las formas de pretérito." },
+        "n4": { "verbo": "sustituye", "texto": "Sustituye los verbos comodín (decir, hacer, ir) por otros que precisan la acción del personaje." }
+      },
+      "matriz_cuantitativa": {
+        "total": 10,
+        "componentes": [
+          {
+            "nombre": "Ortografía y acentuación",
+            "max": 4,
+            "bandas": [
+              { "puntos": 4, "condicion": "Hasta 2 faltas en todo el relato" },
+              { "puntos": 3, "condicion": "De 3 a 5 faltas" },
+              { "puntos": 2, "condicion": "De 6 a 9 faltas" },
+              { "puntos": 0, "condicion": "10 o más faltas" }
+            ]
+          },
+          {
+            "nombre": "Concordancia",
+            "max": 3,
+            "bandas": [
+              { "puntos": 3, "condicion": "Sin errores de concordancia de género, número o persona" },
+              { "puntos": 2, "condicion": "1 o 2 errores de concordancia" },
+              { "puntos": 0, "condicion": "3 o más errores de concordancia" }
+            ]
+          },
+          {
+            "nombre": "Precisión de los verbos y los adjetivos",
+            "max": 3,
+            "bandas": [
+              { "puntos": 3, "condicion": "Emplea verbos y adjetivos concretos en lugar de comodines" },
+              { "puntos": 2, "condicion": "Emplea 1 o 2 comodines (decir, hacer, cosa) con sustituto evidente" },
+              { "puntos": 1, "condicion": "Emplea 3 o más comodines" },
+              { "puntos": 0, "condicion": "El relato se sostiene sobre palabras comodín" }
+            ]
+          }
+        ],
+        "penalizaciones": []
+      },
+      "descriptor_cotejo": null,
+      "descriptor_un_punto": "Aplica las normas de acentuación y concordancia trabajadas en clase, con algún error aislado que no impide seguir el relato."
+    },
+    {
+      "id": "lcl-d-planificacion-narr-1eso",
+      "bloque_lomloe": "D",
+      "dimension": "planificacion_revision",
+      "nombre": "Planificación y revisión del propio relato",
+      "curso": "1ESO",
+      "hereda_de": null,
+      "criterio_oficial": {
+        "competencia_especifica": 9,
+        "codigo": "9.1",
+        "cita": "Revisar los textos propios de manera guiada y hacer propuestas de mejora argumentando los cambios a partir de la reflexión metalingüística e interlingüística y con un metalenguaje específico.",
+        "perfil_salida": ["CCL1", "CCL2", "CP2", "STEM1", "STEM2", "CPSAA5"]
+      },
+      "saber_vehiculo": [
+        "producción escrita: planificación, redacción, revisión y edición",
+        "esquemas y mapas conceptuales"
+      ],
+      "progresion": { "autonomia": 1, "complejidad": 1, "metalinguistico": 1 },
+      "tipos_tarea": ["narracion"],
+      "evalua_proceso": true,
+      "obligatorio": false,
+      "prioridad": 3,
+      "peso_base": 10,
+      "descriptores": {
+        "n1": { "verbo": "redacta", "texto": "Redacta el relato en una sola pasada y entrega la primera versión como texto final." },
+        "n2": { "verbo": "elabora", "texto": "Elabora un esquema previo con los hechos del relato siguiendo la pauta dada y entrega el borrador junto al texto final." },
+        "n3": { "verbo": "revisa", "texto": "Revisa el borrador con la lista facilitada y corrige el orden de los hechos que habían quedado desordenados." },
+        "n4": { "verbo": "explica", "texto": "Explica en una nota al margen del borrador el motivo de cada cambio en el orden de los hechos." }
+      },
+      "matriz_cuantitativa": {
+        "total": 10,
+        "componentes": [
+          {
+            "nombre": "Hay planificación previa",
+            "max": 4,
+            "bandas": [
+              { "puntos": 4, "condicion": "Entrega un esquema previo con los hechos del relato ordenados" },
+              { "puntos": 2, "condicion": "Entrega notas sueltas previas, sin ordenar" },
+              { "puntos": 0, "condicion": "No hay rastro de trabajo previo al relato" }
+            ]
+          },
+          {
+            "nombre": "Hay revisión",
+            "max": 4,
+            "bandas": [
+              { "puntos": 4, "condicion": "El borrador muestra 2 o más correcciones sobre el propio texto" },
+              { "puntos": 2, "condicion": "El borrador muestra 1 corrección" },
+              { "puntos": 0, "condicion": "Entrega la primera versión sin marcas de revisión" }
+            ]
+          },
+          {
+            "nombre": "Explica algún cambio",
+            "max": 2,
+            "bandas": [
+              { "puntos": 2, "condicion": "Anota al margen el motivo de al menos un cambio" },
+              { "puntos": 0, "condicion": "El borrador no lleva ninguna nota al margen" }
+            ]
+          }
+        ],
+        "penalizaciones": []
+      },
+      "descriptor_cotejo": null,
+      "descriptor_un_punto": "Elabora un esquema previo con los hechos del relato, siguiendo la pauta dada, y entrega el borrador junto al texto final."
+    },
+    {
+      "id": "lcl-c-literaria-narr-1eso",
+      "bloque_lomloe": "C",
+      "dimension": "intencion_literaria",
+      "nombre": "Recreación con intención literaria",
+      "curso": "1ESO",
+      "hereda_de": null,
+      "criterio_oficial": {
+        "competencia_especifica": 8,
+        "codigo": "8.2",
+        "cita": "Crear textos personales o colectivos sencillos con intención literaria y conciencia de estilo, en distintos soportes y con ayuda de otros lenguajes artísticos y audiovisuales.",
+        "perfil_salida": ["CCL1", "CCL4", "CC1", "CCEC1", "CCEC2", "CCEC3", "CCEC4"]
+      },
+      "saber_vehiculo": [
+        "iniciación en la creación de textos sencillos a partir de la apropiación de las convenciones del lenguaje literario",
+        "modelos dados: imitación, transformación, continuación",
+        "análisis básico del valor de los recursos expresivos y de sus efectos en la recepción"
+      ],
+      "progresion": { "autonomia": 1, "complejidad": 1, "metalinguistico": 1 },
+      "tipos_tarea": ["narracion"],
+      "obligatorio": false,
+      "prioridad": 2,
+      "peso_base": 15,
+      "descriptores": {
+        "n1": { "verbo": "utiliza", "texto": "Utiliza el argumento y las expresiones del modelo leído en clase tal como aparecen en el original." },
+        "n2": { "verbo": "emplea", "texto": "Emplea el esquema del modelo leído en clase con un lugar y unos personajes distintos de los del original." },
+        "n3": { "verbo": "recrea", "texto": "Recrea la escena con comparaciones y detalles de los sentidos para que el lector la imagine." },
+        "n4": { "verbo": "transforma", "texto": "Transforma el final del modelo en uno propio y mantiene el tono del relato hasta la última línea." }
+      },
+      "matriz_cuantitativa": {
+        "total": 10,
+        "componentes": [
+          {
+            "nombre": "Se reconoce el modelo trabajado",
+            "max": 3,
+            "bandas": [
+              { "puntos": 3, "condicion": "El relato conserva el esquema del modelo y cambia lugar, personajes y final" },
+              { "puntos": 2, "condicion": "El relato conserva el esquema del modelo y cambia uno de los tres elementos" },
+              { "puntos": 1, "condicion": "El relato reproduce el modelo con los nombres cambiados" },
+              { "puntos": 0, "condicion": "El relato no guarda relación con el modelo trabajado" }
+            ]
+          },
+          {
+            "nombre": "Recursos que hacen ver la escena",
+            "max": 4,
+            "bandas": [
+              { "puntos": 4, "condicion": "Emplea 3 o más recursos distintos: comparación, detalle de los sentidos, diálogo" },
+              { "puntos": 3, "condicion": "Emplea 2 recursos distintos" },
+              { "puntos": 2, "condicion": "Emplea 1 recurso" },
+              { "puntos": 0, "condicion": "Cuenta los hechos sin recursos de estilo" }
+            ]
+          },
+          {
+            "nombre": "El tono se mantiene",
+            "max": 3,
+            "bandas": [
+              { "puntos": 3, "condicion": "El mismo tono desde la primera línea hasta la última" },
+              { "puntos": 2, "condicion": "El tono cambia en 1 punto del relato" },
+              { "puntos": 1, "condicion": "El tono cambia en 2 puntos del relato" },
+              { "puntos": 0, "condicion": "El tono cambia de párrafo en párrafo" }
+            ]
+          }
+        ],
+        "penalizaciones": []
+      },
+      "descriptor_cotejo": null,
+      "descriptor_un_punto": "Emplea el esquema del modelo leído en clase con un lugar y unos personajes propios."
+    },
+
+    {
+      "id": "lcl-b-adecuacion-narr-2eso",
+      "bloque_lomloe": "B",
+      "dimension": "adecuacion",
+      "nombre": "Adecuación: registro y destinatario del relato",
+      "curso": "2ESO",
+      "hereda_de": null,
+      "criterio_oficial": {
+        "competencia_especifica": 5,
+        "codigo": "5.1",
+        "cita": "Planificar la redacción de textos escritos y multimodales sencillos, atendiendo a la situación comunicativa, al destinatario, al propósito y al canal; redactar borradores y revisarlos con ayuda del diálogo entre iguales e instrumentos de consulta, y presentar un texto final coherente, cohesionado y con el registro adecuado.",
+        "perfil_salida": ["CCL1", "CCL3", "CCL5", "STEM1", "CD2", "CD3", "CPSAA5", "CC2"]
+      },
+      "saber_vehiculo": [
+        "análisis de los componentes del hecho comunicativo: grado de formalidad de la situación",
+        "análisis de las propiedades textuales: adecuación",
+        "recursos lingüísticos para mostrar la implicación del emisor en los textos"
+      ],
+      "progresion": { "autonomia": 2, "complejidad": 2, "metalinguistico": 2 },
+      "tipos_tarea": ["narracion"],
+      "obligatorio": false,
+      "prioridad": 1,
+      "peso_base": 15,
+      "descriptores": {
+        "n1": { "verbo": "utiliza", "texto": "Utiliza expresiones de la conversación diaria y cambia el tratamiento del lector a mitad del relato." },
+        "n2": { "verbo": "ajusta", "texto": "Ajusta el registro del relato a la situación que plantea el encargo y mantiene el mismo tratamiento del lector." },
+        "n3": { "verbo": "mantiene", "texto": "Mantiene un registro propio de la lengua escrita y ajusta el léxico al mundo en que transcurre el relato." },
+        "n4": { "verbo": "adapta", "texto": "Adapta el registro a cada voz del texto: distingue el modo de hablar de los personajes del modo de contar del narrador." }
+      },
+      "matriz_cuantitativa": null,
+      "descriptor_cotejo": null,
+      "descriptor_un_punto": "Ajusta el registro del relato a la situación que plantea el encargo y mantiene el mismo tratamiento del lector."
+    },
+    {
+      "id": "lcl-b-coherencia-narr-2eso",
+      "bloque_lomloe": "B",
+      "dimension": "coherencia",
+      "nombre": "Coherencia: construcción de la secuencia narrativa",
+      "curso": "2ESO",
+      "hereda_de": null,
+      "criterio_oficial": {
+        "competencia_especifica": 5,
+        "codigo": "5.1",
+        "cita": "Planificar la redacción de textos escritos y multimodales sencillos, atendiendo a la situación comunicativa, al destinatario, al propósito y al canal; redactar borradores y revisarlos con ayuda del diálogo entre iguales e instrumentos de consulta, y presentar un texto final coherente, cohesionado y con el registro adecuado.",
+        "perfil_salida": ["CCL1", "CCL3", "CCL5", "STEM1", "CD2", "CD3", "CPSAA5", "CC2"]
+      },
+      "saber_vehiculo": [
+        "análisis de las propiedades textuales: coherencia",
+        "géneros discursivos propios del ámbito educativo"
+      ],
+      "progresion": { "autonomia": 2, "complejidad": 2, "metalinguistico": 2 },
+      "tipos_tarea": ["narracion"],
+      "obligatorio": true,
+      "prioridad": 1,
+      "peso_base": 25,
+      "descriptores": {
+        "n1": { "verbo": "enumera", "texto": "Enumera los hechos en un bloque único y agrupa el planteamiento y el desenlace en la misma línea." },
+        "n2": { "verbo": "ordena", "texto": "Ordena el relato en planteamiento, nudo y desenlace, y sitúa el conflicto en el nudo." },
+        "n3": { "verbo": "estructura", "texto": "Estructura el relato en planteamiento, nudo y desenlace, y desarrolla el conflicto hasta un final que se sigue de lo contado." },
+        "n4": { "verbo": "selecciona", "texto": "Selecciona los hechos que sostienen el conflicto y descarta los que lo detienen." }
+      },
+      "matriz_cuantitativa": {
+        "total": 10,
+        "componentes": [
+          {
+            "nombre": "Planteamiento, nudo y desenlace",
+            "max": 4,
+            "bandas": [
+              { "puntos": 4, "condicion": "Las tres partes se distinguen y el desenlace se sigue de lo contado en el nudo" },
+              { "puntos": 3, "condicion": "Las tres partes se distinguen y el desenlace llega sin preparación en el nudo" },
+              { "puntos": 2, "condicion": "Se distinguen dos de las tres partes" },
+              { "puntos": 0, "condicion": "El relato es un bloque de hechos sin partes distinguibles" }
+            ]
+          },
+          {
+            "nombre": "El conflicto sostiene el relato",
+            "max": 3,
+            "bandas": [
+              { "puntos": 3, "condicion": "Hay un conflicto planteado en el nudo y resuelto en el desenlace" },
+              { "puntos": 2, "condicion": "Hay un conflicto planteado que queda sin resolver" },
+              { "puntos": 1, "condicion": "Hay un conflicto apuntado en una sola línea del relato" },
+              { "puntos": 0, "condicion": "El relato enumera hechos sin ningún conflicto" }
+            ]
+          },
+          {
+            "nombre": "Episodios en párrafos",
+            "max": 3,
+            "bandas": [
+              { "puntos": 3, "condicion": "Cada párrafo cierra un episodio del relato" },
+              { "puntos": 2, "condicion": "Un párrafo mezcla dos episodios" },
+              { "puntos": 1, "condicion": "Dos o más párrafos mezclan episodios" },
+              { "puntos": 0, "condicion": "El relato no está dividido en párrafos" }
+            ]
+          }
+        ],
+        "penalizaciones": []
+      },
+      "descriptor_cotejo": null,
+      "descriptor_un_punto": "Ordena el relato en planteamiento, nudo y desenlace, y sitúa el conflicto en el nudo."
+    },
+    {
+      "id": "lcl-b-cohesion-narr-2eso",
+      "bloque_lomloe": "B",
+      "dimension": "cohesion",
+      "nombre": "Cohesión: hilo temporal y referencia a los personajes",
+      "curso": "2ESO",
+      "hereda_de": null,
+      "criterio_oficial": {
+        "competencia_especifica": 5,
+        "codigo": "5.1",
+        "cita": "Planificar la redacción de textos escritos y multimodales sencillos, atendiendo a la situación comunicativa, al destinatario, al propósito y al canal; redactar borradores y revisarlos con ayuda del diálogo entre iguales e instrumentos de consulta, y presentar un texto final coherente, cohesionado y con el registro adecuado.",
+        "perfil_salida": ["CCL1", "CCL3", "CCL5", "STEM1", "CD2", "CD3", "CPSAA5", "CC2"]
+      },
+      "saber_vehiculo": [
+        "mecanismos de cohesión: conectores textuales temporales, explicativos, de orden y de contraste",
+        "mecanismos de referencia interna gramaticales (sustituciones pronominales y adverbiales) y léxicos (repeticiones, sinónimos, hiperónimos y elipsis)",
+        "formas de deixis personal, temporal y espacial",
+        "los signos básicos de puntuación como mecanismo organizador del texto escrito"
+      ],
+      "progresion": { "autonomia": 2, "complejidad": 2, "metalinguistico": 2 },
+      "tipos_tarea": ["narracion"],
+      "obligatorio": false,
+      "prioridad": 1,
+      "peso_base": 20,
+      "descriptores": {
+        "n1": { "verbo": "utiliza", "texto": "Utiliza y, luego y entonces como único enlace entre los hechos, y repite el nombre del personaje en cada oración." },
+        "n2": { "verbo": "emplea", "texto": "Emplea conectores temporales y de orden para encadenar los hechos, y separa con punto los enunciados." },
+        "n3": { "verbo": "sustituye", "texto": "Sustituye por pronombres y sinónimos los nombres de los personajes ya citados, y mantiene el pretérito como tiempo del relato." },
+        "n4": { "verbo": "emplea", "texto": "Emplea la raya en los diálogos y la coma en los incisos, y marca con conectores los saltos de tiempo del relato." }
+      },
+      "matriz_cuantitativa": {
+        "total": 10,
+        "componentes": [
+          {
+            "nombre": "Conectores de tiempo y de orden",
+            "max": 3,
+            "bandas": [
+              { "puntos": 3, "condicion": "Emplea 4 o más conectores distintos entre temporales y de orden" },
+              { "puntos": 2, "condicion": "Emplea 2 o 3 conectores distintos" },
+              { "puntos": 1, "condicion": "Repite el mismo conector a lo largo del relato" },
+              { "puntos": 0, "condicion": "Coloca los hechos uno detrás de otro sin enlace" }
+            ]
+          },
+          {
+            "nombre": "Referencia a los personajes",
+            "max": 3,
+            "bandas": [
+              { "puntos": 3, "condicion": "Sustituye por pronombre o sinónimo el nombre del personaje ya citado en todo el relato" },
+              { "puntos": 2, "condicion": "Deja 1 o 2 repeticiones del nombre sin sustituir" },
+              { "puntos": 1, "condicion": "Repite el nombre del personaje en cada oración" },
+              { "puntos": 0, "condicion": "El pronombre empleado impide saber de qué personaje se habla" }
+            ]
+          },
+          {
+            "nombre": "El tiempo del relato",
+            "max": 2,
+            "bandas": [
+              { "puntos": 2, "condicion": "Sostiene el pretérito como tiempo del relato de principio a fin" },
+              { "puntos": 1, "condicion": "Cambia de tiempo verbal en 1 punto del relato" },
+              { "puntos": 0, "condicion": "Alterna presente y pretérito a lo largo del texto" }
+            ]
+          },
+          {
+            "nombre": "Puntuación del diálogo",
+            "max": 2,
+            "bandas": [
+              { "puntos": 2, "condicion": "Marca con raya cada intervención y con coma los incisos del narrador" },
+              { "puntos": 1, "condicion": "Marca las intervenciones del diálogo sin distinguir quién habla" },
+              { "puntos": 0, "condicion": "El diálogo se mezcla con la narración dentro del mismo párrafo" }
+            ]
+          }
+        ],
+        "penalizaciones": []
+      },
+      "descriptor_cotejo": null,
+      "descriptor_un_punto": "Emplea conectores temporales y de orden para encadenar los hechos y separa con punto los enunciados."
+    },
+    {
+      "id": "lcl-d-correccion-narr-2eso",
+      "bloque_lomloe": "D",
+      "dimension": "correccion_lexico",
+      "nombre": "Corrección normativa y propiedad léxica",
+      "curso": "2ESO",
+      "hereda_de": null,
+      "criterio_oficial": {
+        "competencia_especifica": 5,
+        "codigo": "5.2",
+        "cita": "Incorporar procedimientos básicos para enriquecer los textos, atendiendo a aspectos discursivos, lingüísticos y de estilo, con precisión léxica y corrección ortográfica y gramatical.",
+        "perfil_salida": ["CCL1", "CCL3", "CCL5", "STEM1", "CD2", "CD3", "CPSAA5", "CC2"]
+      },
+      "saber_vehiculo": [
+        "corrección lingüística y revisión ortográfica y gramatical de los textos",
+        "propiedad léxica"
+      ],
+      "progresion": { "autonomia": 1, "complejidad": 1, "metalinguistico": 1 },
+      "tipos_tarea": ["narracion"],
+      "obligatorio": true,
+      "prioridad": 2,
+      "peso_base": 15,
+      "descriptores": {
+        "n1": { "verbo": "redacta", "texto": "Redacta el relato con errores de ortografía y de puntuación que obligan al lector a releer." },
+        "n2": { "verbo": "aplica", "texto": "Aplica las normas de acentuación y concordancia, con errores aislados que permiten seguir el relato." },
+        "n3": { "verbo": "aplica", "texto": "Aplica las normas de ortografía del nivel y emplea las formas de pretérito con la grafía y la acentuación correctas." },
+        "n4": { "verbo": "sustituye", "texto": "Sustituye los verbos de decir repetidos (dijo, contestó) por otros que aportan la actitud del personaje." }
+      },
+      "matriz_cuantitativa": {
+        "total": 10,
+        "componentes": [
+          {
+            "nombre": "Ortografía y acentuación",
+            "max": 4,
+            "bandas": [
+              { "puntos": 4, "condicion": "Hasta 2 faltas en todo el relato" },
+              { "puntos": 3, "condicion": "De 3 a 4 faltas" },
+              { "puntos": 2, "condicion": "De 5 a 8 faltas" },
+              { "puntos": 0, "condicion": "9 o más faltas" }
+            ]
+          },
+          {
+            "nombre": "Formas verbales del relato",
+            "max": 3,
+            "bandas": [
+              { "puntos": 3, "condicion": "Escribe sin error las formas de pretérito, incluidas las de hacer, decir y traer" },
+              { "puntos": 2, "condicion": "1 o 2 errores en las formas verbales" },
+              { "puntos": 0, "condicion": "3 o más errores en las formas verbales" }
+            ]
+          },
+          {
+            "nombre": "Precisión del léxico",
+            "max": 3,
+            "bandas": [
+              { "puntos": 3, "condicion": "Emplea verbos de decir variados y adjetivos concretos" },
+              { "puntos": 2, "condicion": "Repite 1 o 2 verbos de decir a lo largo del diálogo" },
+              { "puntos": 1, "condicion": "Emplea dijo y contestó como únicos verbos de decir" },
+              { "puntos": 0, "condicion": "El relato se sostiene sobre palabras comodín" }
+            ]
+          }
+        ],
+        "penalizaciones": []
+      },
+      "descriptor_cotejo": null,
+      "descriptor_un_punto": "Aplica las normas de acentuación y concordancia, con errores aislados que permiten seguir el relato."
+    },
+    {
+      "id": "lcl-d-planificacion-narr-2eso",
+      "bloque_lomloe": "D",
+      "dimension": "planificacion_revision",
+      "nombre": "Planificación y revisión del propio relato",
+      "curso": "2ESO",
+      "hereda_de": null,
+      "criterio_oficial": {
+        "competencia_especifica": 5,
+        "codigo": "5.1",
+        "cita": "Planificar la redacción de textos escritos y multimodales sencillos, atendiendo a la situación comunicativa, al destinatario, al propósito y al canal; redactar borradores y revisarlos con ayuda del diálogo entre iguales e instrumentos de consulta, y presentar un texto final coherente, cohesionado y con el registro adecuado.",
+        "perfil_salida": ["CCL1", "CCL3", "CCL5", "STEM1", "CD2", "CD3", "CPSAA5", "CC2"]
+      },
+      "saber_vehiculo": [
+        "producción escrita: planificación, textualización, redacción, revisión y edición"
+      ],
+      "progresion": { "autonomia": 2, "complejidad": 2, "metalinguistico": 1 },
+      "tipos_tarea": ["narracion"],
+      "evalua_proceso": true,
+      "obligatorio": false,
+      "prioridad": 3,
+      "peso_base": 10,
+      "descriptores": {
+        "n1": { "verbo": "redacta", "texto": "Redacta el relato de una sola vez y entrega la primera versión como texto final." },
+        "n2": { "verbo": "elabora", "texto": "Elabora un guion previo con los hechos y los personajes del relato y entrega el borrador junto al texto final." },
+        "n3": { "verbo": "revisa", "texto": "Revisa el borrador con un compañero y corrige los puntos del relato que el lector no entiende." },
+        "n4": { "verbo": "reelabora", "texto": "Reelabora el desenlace del borrador después de la lectura entre iguales y anota el motivo del cambio." }
+      },
+      "matriz_cuantitativa": {
+        "total": 10,
+        "componentes": [
+          {
+            "nombre": "Guion previo del relato",
+            "max": 4,
+            "bandas": [
+              { "puntos": 4, "condicion": "Entrega un guion con los episodios y los personajes" },
+              { "puntos": 3, "condicion": "Entrega un guion solo con los episodios" },
+              { "puntos": 2, "condicion": "Entrega notas sueltas previas" },
+              { "puntos": 0, "condicion": "No hay rastro de trabajo previo al relato" }
+            ]
+          },
+          {
+            "nombre": "Revisión entre iguales",
+            "max": 4,
+            "bandas": [
+              { "puntos": 4, "condicion": "El borrador recoge 2 o más cambios a partir de la lectura de un compañero" },
+              { "puntos": 2, "condicion": "El borrador recoge 1 cambio a partir de esa lectura" },
+              { "puntos": 0, "condicion": "Entrega la primera versión sin marcas de revisión" }
+            ]
+          },
+          {
+            "nombre": "Motivo del cambio",
+            "max": 2,
+            "bandas": [
+              { "puntos": 2, "condicion": "Anota el motivo de al menos un cambio del desenlace" },
+              { "puntos": 0, "condicion": "El borrador no recoge ningún motivo" }
+            ]
+          }
+        ],
+        "penalizaciones": []
+      },
+      "descriptor_cotejo": null,
+      "descriptor_un_punto": "Elabora un guion previo con los hechos y los personajes del relato y entrega el borrador junto al texto final."
+    },
+    {
+      "id": "lcl-c-literaria-narr-2eso",
+      "bloque_lomloe": "C",
+      "dimension": "intencion_literaria",
+      "nombre": "Recreación con intención literaria",
+      "curso": "2ESO",
+      "hereda_de": null,
+      "criterio_oficial": {
+        "competencia_especifica": 8,
+        "codigo": "8.2",
+        "cita": "Crear textos personales o colectivos sencillos con intención literaria y conciencia de estilo, en distintos soportes y con ayuda de otros lenguajes artísticos y audiovisuales, a partir de la lectura de obras o fragmentos significativos en los que se empleen las convenciones formales de los diversos géneros y estilos literarios.",
+        "perfil_salida": ["CCL1", "CCL4", "CC1", "CCEC1", "CCEC2", "CCEC3", "CCEC4"]
+      },
+      "saber_vehiculo": [
+        "creación de textos sencillos a partir de la apropiación de las convenciones del lenguaje literario",
+        "convenciones formales de los diversos géneros y estilos literarios",
+        "apropiación de los textos leídos a través de distintas formas de recreación"
+      ],
+      "progresion": { "autonomia": 1, "complejidad": 2, "metalinguistico": 2 },
+      "tipos_tarea": ["narracion"],
+      "obligatorio": false,
+      "prioridad": 2,
+      "peso_base": 15,
+      "descriptores": {
+        "n1": { "verbo": "utiliza", "texto": "Utiliza el argumento de la obra leída con los nombres de los personajes cambiados." },
+        "n2": { "verbo": "recrea", "texto": "Recrea un fragmento de la obra leída conservando las convenciones del género: la voz del narrador y el tipo de personaje." },
+        "n3": { "verbo": "emplea", "texto": "Emplea comparaciones, metáforas y detalles de los sentidos para construir la atmósfera del relato." },
+        "n4": { "verbo": "transforma", "texto": "Transforma la voz del relato, de narrador externo a personaje que cuenta, y sostiene esa voz en todo el texto." }
+      },
+      "matriz_cuantitativa": {
+        "total": 10,
+        "componentes": [
+          {
+            "nombre": "Convenciones del género",
+            "max": 3,
+            "bandas": [
+              { "puntos": 3, "condicion": "El relato respeta 3 convenciones de la obra leída: voz, tipo de personaje y atmósfera" },
+              { "puntos": 2, "condicion": "El relato respeta 2 de esas convenciones" },
+              { "puntos": 1, "condicion": "El relato respeta 1 de esas convenciones" },
+              { "puntos": 0, "condicion": "El relato no guarda relación con la obra leída" }
+            ]
+          },
+          {
+            "nombre": "Recursos de estilo",
+            "max": 4,
+            "bandas": [
+              { "puntos": 4, "condicion": "Emplea 4 o más recursos distintos: comparación, metáfora, detalle de los sentidos, diálogo" },
+              { "puntos": 3, "condicion": "Emplea 2 o 3 recursos distintos" },
+              { "puntos": 2, "condicion": "Emplea 1 recurso" },
+              { "puntos": 0, "condicion": "Cuenta los hechos sin recursos de estilo" }
+            ]
+          },
+          {
+            "nombre": "La voz del relato",
+            "max": 3,
+            "bandas": [
+              { "puntos": 3, "condicion": "La voz elegida, narrador externo o personaje, se sostiene en todo el relato" },
+              { "puntos": 2, "condicion": "La voz cambia en 1 punto del relato" },
+              { "puntos": 1, "condicion": "La voz cambia en 2 puntos del relato" },
+              { "puntos": 0, "condicion": "La voz cambia de párrafo en párrafo" }
+            ]
+          }
+        ],
+        "penalizaciones": []
+      },
+      "descriptor_cotejo": null,
+      "descriptor_un_punto": "Recrea un fragmento de la obra leída conservando la voz del narrador y el tipo de personaje del original."
+    },
+
+    {
+      "id": "lcl-b-adecuacion-narr-3eso",
+      "bloque_lomloe": "B",
+      "dimension": "adecuacion",
+      "nombre": "Adecuación: registro y destinatario del relato",
+      "curso": "3ESO",
+      "hereda_de": null,
+      "criterio_oficial": {
+        "competencia_especifica": 5,
+        "codigo": "5.1",
+        "cita": "Planificar la redacción de textos escritos y multimodales de cierta extensión atendiendo a la situación comunicativa, al destinatario, al propósito y canal; redactar borradores y revisarlos con ayuda del diálogo entre iguales e instrumentos de consulta, y presentar un texto final coherente, cohesionado y con el registro adecuado.",
+        "perfil_salida": ["CCL1", "CCL3", "CCL5", "STEM1", "CD2", "CD3", "CPSAA5", "CC2"]
+      },
+      "saber_vehiculo": [
+        "reflexión y análisis de los componentes del hecho comunicativo: grado de formalidad de la situación",
+        "análisis de las propiedades textuales: adecuación",
+        "diferencias entre los rasgos propios de las variedades dialectales y los relativos a los sociolectos y los registros"
+      ],
+      "progresion": { "autonomia": 2, "complejidad": 2, "metalinguistico": 2 },
+      "tipos_tarea": ["narracion"],
+      "obligatorio": false,
+      "prioridad": 1,
+      "peso_base": 15,
+      "descriptores": {
+        "n1": { "verbo": "utiliza", "texto": "Utiliza el mismo registro coloquial para el narrador y para todos los personajes de un relato de cierta extensión." },
+        "n2": { "verbo": "ajusta", "texto": "Ajusta el registro del relato a la situación comunicativa del encargo y lo mantiene a lo largo de todo el texto." },
+        "n3": { "verbo": "distingue", "texto": "Distingue la voz del narrador de la de los personajes y sostiene esa diferencia en todo el relato." },
+        "n4": { "verbo": "adapta", "texto": "Adapta el léxico de cada personaje a su condición y a su situación, y emplea ese contraste para caracterizarlos." }
+      },
+      "matriz_cuantitativa": null,
+      "descriptor_cotejo": null,
+      "descriptor_un_punto": "Ajusta el registro del relato a la situación comunicativa del encargo y lo mantiene a lo largo de todo el texto."
+    },
+    {
+      "id": "lcl-b-coherencia-narr-3eso",
+      "bloque_lomloe": "B",
+      "dimension": "coherencia",
+      "nombre": "Coherencia: construcción de la secuencia narrativa",
+      "curso": "3ESO",
+      "hereda_de": null,
+      "criterio_oficial": {
+        "competencia_especifica": 5,
+        "codigo": "5.1",
+        "cita": "Planificar la redacción de textos escritos y multimodales de cierta extensión atendiendo a la situación comunicativa, al destinatario, al propósito y canal; redactar borradores y revisarlos con ayuda del diálogo entre iguales e instrumentos de consulta, y presentar un texto final coherente, cohesionado y con el registro adecuado.",
+        "perfil_salida": ["CCL1", "CCL3", "CCL5", "STEM1", "CD2", "CD3", "CPSAA5", "CC2"]
+      },
+      "saber_vehiculo": [
+        "análisis de las propiedades textuales: coherencia",
+        "textos escritos y multimodales de cierta extensión"
+      ],
+      "progresion": { "autonomia": 2, "complejidad": 2, "metalinguistico": 2 },
+      "tipos_tarea": ["narracion"],
+      "obligatorio": true,
+      "prioridad": 1,
+      "peso_base": 25,
+      "descriptores": {
+        "n1": { "verbo": "enumera", "texto": "Enumera los hechos en orden cronológico a lo largo del relato y cierra el texto en el último episodio." },
+        "n2": { "verbo": "ordena", "texto": "Ordena el relato en planteamiento, nudo y desenlace, y mantiene el conflicto presente a lo largo del nudo." },
+        "n3": { "verbo": "estructura", "texto": "Estructura el relato de cierta extensión en episodios encadenados y resuelve en el desenlace el conflicto planteado." },
+        "n4": { "verbo": "articula", "texto": "Articula el relato alterando el orden cronológico, con un salto atrás o un comienzo por el final, y mantiene la historia comprensible." }
+      },
+      "matriz_cuantitativa": {
+        "total": 10,
+        "componentes": [
+          {
+            "nombre": "Estructura del relato",
+            "max": 3,
+            "bandas": [
+              { "puntos": 3, "condicion": "Las tres partes se distinguen y el desenlace se sigue de lo contado" },
+              { "puntos": 2, "condicion": "Las tres partes se distinguen y el desenlace llega sin preparación" },
+              { "puntos": 1, "condicion": "Se distinguen dos de las tres partes" },
+              { "puntos": 0, "condicion": "El relato es un bloque de hechos sin partes distinguibles" }
+            ]
+          },
+          {
+            "nombre": "El conflicto sostiene el relato",
+            "max": 3,
+            "bandas": [
+              { "puntos": 3, "condicion": "El conflicto se plantea, se desarrolla en 2 o más episodios y se resuelve" },
+              { "puntos": 2, "condicion": "El conflicto se plantea y se resuelve en un solo episodio" },
+              { "puntos": 1, "condicion": "El conflicto se apunta en una sola línea del relato" },
+              { "puntos": 0, "condicion": "El relato enumera hechos sin ningún conflicto" }
+            ]
+          },
+          {
+            "nombre": "Orden del tiempo",
+            "max": 2,
+            "bandas": [
+              { "puntos": 2, "condicion": "El orden elegido, lineal o con salto atrás, se sigue sin releer" },
+              { "puntos": 1, "condicion": "Hay 1 salto de tiempo que obliga a releer para situarlo" },
+              { "puntos": 0, "condicion": "El orden de los hechos impide reconstruir la historia" }
+            ]
+          },
+          {
+            "nombre": "Episodios en párrafos",
+            "max": 2,
+            "bandas": [
+              { "puntos": 2, "condicion": "Cada párrafo cierra un episodio del relato" },
+              { "puntos": 1, "condicion": "Dos o más párrafos mezclan episodios" },
+              { "puntos": 0, "condicion": "El relato no está dividido en párrafos" }
+            ]
+          }
+        ],
+        "penalizaciones": []
+      },
+      "descriptor_cotejo": null,
+      "descriptor_un_punto": "Ordena el relato en planteamiento, nudo y desenlace, y mantiene el conflicto presente a lo largo del nudo."
+    },
+    {
+      "id": "lcl-b-cohesion-narr-3eso",
+      "bloque_lomloe": "B",
+      "dimension": "cohesion",
+      "nombre": "Cohesión: hilo temporal y referencia a los personajes",
+      "curso": "3ESO",
+      "hereda_de": null,
+      "criterio_oficial": {
+        "competencia_especifica": 5,
+        "codigo": "5.1",
+        "cita": "Planificar la redacción de textos escritos y multimodales de cierta extensión atendiendo a la situación comunicativa, al destinatario, al propósito y canal; redactar borradores y revisarlos con ayuda del diálogo entre iguales e instrumentos de consulta, y presentar un texto final coherente, cohesionado y con el registro adecuado.",
+        "perfil_salida": ["CCL1", "CCL3", "CCL5", "STEM1", "CD2", "CD3", "CPSAA5", "CC2"]
+      },
+      "saber_vehiculo": [
+        "mecanismos de cohesión: conectores textuales distributivos, de orden, contraste, explicación, causa, consecuencia, condición e hipótesis",
+        "los signos básicos de puntuación como mecanismo organizador del texto escrito y su relación con el significado",
+        "variaciones de las formas deícticas en relación con las situaciones de comunicación"
+      ],
+      "progresion": { "autonomia": 2, "complejidad": 2, "metalinguistico": 2 },
+      "tipos_tarea": ["narracion"],
+      "obligatorio": false,
+      "prioridad": 1,
+      "peso_base": 20,
+      "descriptores": {
+        "n1": { "verbo": "utiliza", "texto": "Utiliza conectores de orden para encadenar los hechos y repite el nombre del personaje al empezar cada párrafo." },
+        "n2": { "verbo": "emplea", "texto": "Emplea conectores de orden, de causa y de consecuencia para encadenar los episodios del relato." },
+        "n3": { "verbo": "mantiene", "texto": "Mantiene el tiempo del relato en los saltos atrás y sustituye por elipsis o por pronombre los nombres ya citados." },
+        "n4": { "verbo": "articula", "texto": "Articula los cambios de escena con marcas de tiempo y de lugar, y delimita con la puntuación las voces del diálogo." }
+      },
+      "matriz_cuantitativa": {
+        "total": 10,
+        "componentes": [
+          {
+            "nombre": "Conectores entre episodios",
+            "max": 3,
+            "bandas": [
+              { "puntos": 3, "condicion": "Emplea 4 o más conectores distintos: orden, causa, consecuencia, contraste" },
+              { "puntos": 2, "condicion": "Emplea 2 o 3 tipos de conector" },
+              { "puntos": 1, "condicion": "Repite el mismo conector entre los episodios" },
+              { "puntos": 0, "condicion": "Coloca los episodios uno detrás de otro sin enlace" }
+            ]
+          },
+          {
+            "nombre": "Marcas de tiempo y de lugar en los cambios de escena",
+            "max": 3,
+            "bandas": [
+              { "puntos": 3, "condicion": "Cada cambio de escena lleva una marca de tiempo o de lugar" },
+              { "puntos": 2, "condicion": "1 cambio de escena queda sin marca" },
+              { "puntos": 1, "condicion": "2 o más cambios de escena quedan sin marca" },
+              { "puntos": 0, "condicion": "Las escenas se suceden sin ninguna marca" }
+            ]
+          },
+          {
+            "nombre": "Referencia a los personajes",
+            "max": 2,
+            "bandas": [
+              { "puntos": 2, "condicion": "Sustituye por pronombre, sinónimo o elipsis los nombres ya citados" },
+              { "puntos": 1, "condicion": "Deja 2 o 3 repeticiones del nombre sin sustituir" },
+              { "puntos": 0, "condicion": "El referente de algún pronombre resulta irrecuperable" }
+            ]
+          },
+          {
+            "nombre": "Puntuación de las voces",
+            "max": 2,
+            "bandas": [
+              { "puntos": 2, "condicion": "Delimita con raya las intervenciones y separa los incisos del narrador" },
+              { "puntos": 1, "condicion": "Delimita las intervenciones sin separar los incisos del narrador" },
+              { "puntos": 0, "condicion": "Las voces del diálogo se confunden con la narración" }
+            ]
+          }
+        ],
+        "penalizaciones": []
+      },
+      "descriptor_cotejo": null,
+      "descriptor_un_punto": "Emplea conectores de orden, de causa y de consecuencia para encadenar los episodios del relato."
+    },
+    {
+      "id": "lcl-d-correccion-narr-3eso",
+      "bloque_lomloe": "D",
+      "dimension": "correccion_lexico",
+      "nombre": "Corrección normativa y propiedad léxica",
+      "curso": "3ESO",
+      "hereda_de": null,
+      "criterio_oficial": {
+        "competencia_especifica": 5,
+        "codigo": "5.2",
+        "cita": "Incorporar progresivamente procedimientos para enriquecer los textos atendiendo a aspectos discursivos, lingüísticos y de estilo, con precisión léxica y corrección ortográfica y gramatical.",
+        "perfil_salida": ["CCL1", "CCL3", "CCL5", "STEM1", "CD2", "CD3", "CPSAA5", "CC2"]
+      },
+      "saber_vehiculo": [
+        "corrección lingüística y revisión ortográfica y gramatical de los textos",
+        "propiedad léxica",
+        "funciones sintácticas de la oración simple"
+      ],
+      "progresion": { "autonomia": 2, "complejidad": 2, "metalinguistico": 2 },
+      "tipos_tarea": ["narracion"],
+      "obligatorio": true,
+      "prioridad": 2,
+      "peso_base": 15,
+      "descriptores": {
+        "n1": { "verbo": "redacta", "texto": "Redacta el relato con errores de ortografía y de concordancia que se repiten a lo largo del texto." },
+        "n2": { "verbo": "aplica", "texto": "Aplica las normas de ortografía y acentuación del nivel, con errores aislados en las formas verbales." },
+        "n3": { "verbo": "emplea", "texto": "Emplea la subordinación para encadenar los hechos dentro del párrafo y mantiene la concordancia en las oraciones largas." },
+        "n4": { "verbo": "sustituye", "texto": "Sustituye los adjetivos y los verbos de significado general por otros que concretan la escena y el gesto de los personajes." }
+      },
+      "matriz_cuantitativa": {
+        "total": 10,
+        "componentes": [
+          {
+            "nombre": "Ortografía y acentuación",
+            "max": 3,
+            "bandas": [
+              { "puntos": 3, "condicion": "Hasta 2 faltas en un relato de cierta extensión" },
+              { "puntos": 2, "condicion": "De 3 a 5 faltas" },
+              { "puntos": 1, "condicion": "De 6 a 8 faltas" },
+              { "puntos": 0, "condicion": "9 o más faltas" }
+            ]
+          },
+          {
+            "nombre": "Concordancia en oraciones largas",
+            "max": 3,
+            "bandas": [
+              { "puntos": 3, "condicion": "Sin errores de concordancia en las oraciones con subordinación" },
+              { "puntos": 2, "condicion": "1 o 2 errores de concordancia" },
+              { "puntos": 0, "condicion": "3 o más errores de concordancia" }
+            ]
+          },
+          {
+            "nombre": "Precisión del léxico",
+            "max": 4,
+            "bandas": [
+              { "puntos": 4, "condicion": "Emplea adjetivos y verbos que concretan la escena y el gesto" },
+              { "puntos": 3, "condicion": "Emplea 1 o 2 términos generales con sustituto evidente" },
+              { "puntos": 2, "condicion": "Emplea de 3 a 4 términos generales" },
+              { "puntos": 0, "condicion": "El relato se sostiene sobre palabras comodín" }
+            ]
+          }
+        ],
+        "penalizaciones": []
+      },
+      "descriptor_cotejo": null,
+      "descriptor_un_punto": "Aplica las normas de ortografía y acentuación del nivel, con errores aislados en las formas verbales."
+    },
+    {
+      "id": "lcl-d-planificacion-narr-3eso",
+      "bloque_lomloe": "D",
+      "dimension": "planificacion_revision",
+      "nombre": "Planificación y revisión del propio relato",
+      "curso": "3ESO",
+      "hereda_de": null,
+      "criterio_oficial": {
+        "competencia_especifica": 9,
+        "codigo": "9.1",
+        "cita": "Revisar los textos propios de manera progresivamente autónoma y hacer propuestas de mejora argumentando los cambios a partir de la reflexión metalingüística e interlingüística con el metalenguaje específico, e identificar y subsanar algunos problemas de comprensión lectora utilizando los conocimientos explícitos sobre la lengua y su uso.",
+        "perfil_salida": ["CCL1", "CCL2", "CP2", "STEM1", "STEM2", "CPSAA5"]
+      },
+      "saber_vehiculo": [
+        "producción escrita: planificación, textualización, redacción, revisión y edición",
+        "metalenguaje específico"
+      ],
+      "progresion": { "autonomia": 2, "complejidad": 2, "metalinguistico": 2 },
+      "tipos_tarea": ["narracion"],
+      "evalua_proceso": true,
+      "obligatorio": false,
+      "prioridad": 3,
+      "peso_base": 10,
+      "descriptores": {
+        "n1": { "verbo": "redacta", "texto": "Redacta el relato en una sola sesión y entrega la primera versión como texto final." },
+        "n2": { "verbo": "elabora", "texto": "Elabora de manera autónoma un guion del relato con los episodios y el conflicto, y entrega el borrador junto al texto final." },
+        "n3": { "verbo": "revisa", "texto": "Revisa el borrador por iniciativa propia y corrige los saltos de tiempo que rompen el hilo de la historia." },
+        "n4": { "verbo": "justifica", "texto": "Justifica en una nota final cada cambio del borrador con el metalenguaje trabajado en el curso." }
+      },
+      "matriz_cuantitativa": {
+        "total": 10,
+        "componentes": [
+          {
+            "nombre": "Guion previo",
+            "max": 3,
+            "bandas": [
+              { "puntos": 3, "condicion": "Entrega un guion con los episodios, el conflicto y el orden elegido" },
+              { "puntos": 2, "condicion": "Entrega un guion solo con los episodios" },
+              { "puntos": 1, "condicion": "Entrega notas sueltas previas" },
+              { "puntos": 0, "condicion": "No hay rastro de trabajo previo al relato" }
+            ]
+          },
+          {
+            "nombre": "Revisión del borrador",
+            "max": 4,
+            "bandas": [
+              { "puntos": 4, "condicion": "El borrador muestra 3 o más correcciones, una de ellas sobre el orden de los hechos" },
+              { "puntos": 3, "condicion": "El borrador muestra 2 correcciones" },
+              { "puntos": 2, "condicion": "El borrador muestra 1 corrección" },
+              { "puntos": 0, "condicion": "Entrega la primera versión sin marcas de revisión" }
+            ]
+          },
+          {
+            "nombre": "Justificación con metalenguaje",
+            "max": 3,
+            "bandas": [
+              { "puntos": 3, "condicion": "Justifica 2 o más cambios con el metalenguaje del curso" },
+              { "puntos": 2, "condicion": "Justifica 1 cambio con el metalenguaje del curso" },
+              { "puntos": 1, "condicion": "Anota los cambios sin nombrarlos con el metalenguaje del curso" },
+              { "puntos": 0, "condicion": "El borrador no recoge ninguna justificación" }
+            ]
+          }
+        ],
+        "penalizaciones": []
+      },
+      "descriptor_cotejo": null,
+      "descriptor_un_punto": "Elabora de manera autónoma un guion del relato con los episodios y el conflicto, y entrega el borrador junto al texto final."
+    },
+    {
+      "id": "lcl-c-literaria-narr-3eso",
+      "bloque_lomloe": "C",
+      "dimension": "intencion_literaria",
+      "nombre": "Recreación con intención literaria",
+      "curso": "3ESO",
+      "hereda_de": null,
+      "criterio_oficial": {
+        "competencia_especifica": 8,
+        "codigo": "8.2",
+        "cita": "Crear con progresiva autonomía textos personales o colectivos con intención literaria y conciencia de estilo, en distintos soportes y con ayuda de otros lenguajes artísticos y audiovisuales, a partir de la lectura de obras o fragmentos significativos en los que se empleen las convenciones formales de los diversos géneros y estilos literarios.",
+        "perfil_salida": ["CCL1", "CCL4", "CC1", "CCEC1", "CCEC2", "CCEC3", "CCEC4"]
+      },
+      "saber_vehiculo": [
+        "creación de textos a partir de la apropiación de las convenciones del lenguaje literario",
+        "modelos dados: imitación, transformación, continuación",
+        "efectos de los recursos expresivos en la recepción"
+      ],
+      "progresion": { "autonomia": 2, "complejidad": 2, "metalinguistico": 2 },
+      "tipos_tarea": ["narracion"],
+      "obligatorio": false,
+      "prioridad": 2,
+      "peso_base": 15,
+      "descriptores": {
+        "n1": { "verbo": "utiliza", "texto": "Utiliza el argumento de la obra leída con cambios en los nombres y en el lugar." },
+        "n2": { "verbo": "recrea", "texto": "Recrea las convenciones del género de la obra leída, la voz, el tiempo y el tipo de conflicto, en un relato propio." },
+        "n3": { "verbo": "integra", "texto": "Integra en el relato recursos de estilo, la comparación, la elipsis y el detalle de los sentidos, al servicio del conflicto." },
+        "n4": { "verbo": "transforma", "texto": "Transforma el punto de vista del relato y emplea ese cambio para que el lector descubra los hechos poco a poco." }
+      },
+      "matriz_cuantitativa": {
+        "total": 10,
+        "componentes": [
+          {
+            "nombre": "Convenciones del género",
+            "max": 3,
+            "bandas": [
+              { "puntos": 3, "condicion": "El relato respeta 3 convenciones de la obra leída: voz, tratamiento del tiempo y tipo de conflicto" },
+              { "puntos": 2, "condicion": "El relato respeta 2 de esas convenciones" },
+              { "puntos": 1, "condicion": "El relato respeta 1 de esas convenciones" },
+              { "puntos": 0, "condicion": "El relato no guarda relación con la obra leída" }
+            ]
+          },
+          {
+            "nombre": "Recursos de estilo al servicio del conflicto",
+            "max": 4,
+            "bandas": [
+              { "puntos": 4, "condicion": "Emplea 4 o más recursos distintos y todos apuntan al conflicto del relato" },
+              { "puntos": 3, "condicion": "Emplea 2 o 3 recursos ligados al conflicto" },
+              { "puntos": 2, "condicion": "Emplea recursos de estilo sin relación con el conflicto" },
+              { "puntos": 0, "condicion": "Cuenta los hechos sin recursos de estilo" }
+            ]
+          },
+          {
+            "nombre": "Punto de vista",
+            "max": 3,
+            "bandas": [
+              { "puntos": 3, "condicion": "El punto de vista elegido regula lo que el lector sabe en cada momento" },
+              { "puntos": 2, "condicion": "El punto de vista se sostiene sin efecto sobre lo que el lector sabe" },
+              { "puntos": 1, "condicion": "El punto de vista cambia en 1 punto del relato" },
+              { "puntos": 0, "condicion": "El punto de vista cambia de párrafo en párrafo" }
+            ]
+          }
+        ],
+        "penalizaciones": []
+      },
+      "descriptor_cotejo": null,
+      "descriptor_un_punto": "Recrea las convenciones del género de la obra leída —la voz, el tiempo y el tipo de conflicto— en un relato propio."
+    }
+  ]
+}
