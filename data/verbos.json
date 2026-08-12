@@ -1,0 +1,499 @@
+{
+  "_nota": [
+    "Banco cerrado de verbos: la ÚNICA copia.",
+    "",
+    "Estaba copiado dentro de cada pack —cuatro copias de la misma lista— y ya se habia",
+    "notado: al escribir el pack argumentativo faltaban ocho verbos que el expositivo si",
+    "tenia, y el error solo salio porque una prueba estaba cableada al expositivo. De las",
+    "59 entradas de aqui, ningun pack llegaba a tener mas de 37.",
+    "",
+    "Cada verbo guarda su forma de 3.a y de 1.a persona: es lo que permite derivar la",
+    "version de autoevaluacion sin errores de morfologia (CLAUDE.md).",
+    "",
+    "Un pack puede anadir verbos propios de su materia en `verbos_extra`, con la misma",
+    "forma que estos. Lo que NO puede es redefinir uno del banco: el validador lo rechaza."
+  ],
+  "version": "1.2.0",
+  "verbos": [
+    {
+      "id": "abre",
+      "3s": "Abre",
+      "1s": "Abro",
+      "nivel_cognitivo": 3
+    },
+    {
+      "id": "acompana",
+      "3s": "Acompaña",
+      "1s": "Acompaño",
+      "nivel_cognitivo": 3
+    },
+    {
+      "id": "adapta",
+      "3s": "Adapta",
+      "1s": "Adapto",
+      "nivel_cognitivo": 3
+    },
+    {
+      "id": "afirma",
+      "3s": "Afirma",
+      "1s": "Afirmo",
+      "nivel_cognitivo": 2
+    },
+    {
+      "id": "agrupa",
+      "3s": "Agrupa",
+      "1s": "Agrupo",
+      "nivel_cognitivo": 2
+    },
+    {
+      "id": "ajusta",
+      "3s": "Ajusta",
+      "1s": "Ajusto",
+      "nivel_cognitivo": 3
+    },
+    {
+      "id": "anade",
+      "3s": "Añade",
+      "1s": "Añado",
+      "nivel_cognitivo": 2
+    },
+    {
+      "id": "anota",
+      "3s": "Anota",
+      "1s": "Anoto",
+      "nivel_cognitivo": 1
+    },
+    {
+      "id": "anticipa",
+      "3s": "Anticipa",
+      "1s": "Anticipo",
+      "nivel_cognitivo": 4
+    },
+    {
+      "id": "anuncia",
+      "3s": "Anuncia",
+      "1s": "Anuncio",
+      "nivel_cognitivo": 2
+    },
+    {
+      "id": "aplica",
+      "3s": "Aplica",
+      "1s": "Aplico",
+      "nivel_cognitivo": 3
+    },
+    {
+      "id": "apoya",
+      "3s": "Apoya",
+      "1s": "Apoyo",
+      "nivel_cognitivo": 3
+    },
+    {
+      "id": "articula",
+      "3s": "Articula",
+      "1s": "Articulo",
+      "nivel_cognitivo": 4
+    },
+    {
+      "id": "cambia",
+      "3s": "Cambia",
+      "1s": "Cambio",
+      "nivel_cognitivo": 3
+    },
+    {
+      "id": "cierra",
+      "3s": "Cierra",
+      "1s": "Cierro",
+      "nivel_cognitivo": 1
+    },
+    {
+      "id": "cita",
+      "3s": "Cita",
+      "1s": "Cito",
+      "nivel_cognitivo": 1
+    },
+    {
+      "id": "combina",
+      "3s": "Combina",
+      "1s": "Combino",
+      "nivel_cognitivo": 4
+    },
+    {
+      "id": "contrasta",
+      "3s": "Contrasta",
+      "1s": "Contrasto",
+      "nivel_cognitivo": 4
+    },
+    {
+      "id": "corrige",
+      "3s": "Corrige",
+      "1s": "Corrijo",
+      "nivel_cognitivo": 6
+    },
+    {
+      "id": "dedica",
+      "3s": "Dedica",
+      "1s": "Dedico",
+      "nivel_cognitivo": 3
+    },
+    {
+      "id": "defiende",
+      "3s": "Defiende",
+      "1s": "Defiendo",
+      "nivel_cognitivo": 4
+    },
+    {
+      "id": "deja",
+      "3s": "Deja",
+      "1s": "Dejo",
+      "nivel_cognitivo": 1
+    },
+    {
+      "id": "delimita",
+      "3s": "Delimita",
+      "1s": "Delimito",
+      "nivel_cognitivo": 3
+    },
+    {
+      "id": "desarrolla",
+      "3s": "Desarrolla",
+      "1s": "Desarrollo",
+      "nivel_cognitivo": 3
+    },
+    {
+      "id": "descarta",
+      "3s": "Descarta",
+      "1s": "Descarto",
+      "nivel_cognitivo": 4
+    },
+    {
+      "id": "dirige",
+      "3s": "Dirige",
+      "1s": "Dirijo",
+      "nivel_cognitivo": 2
+    },
+    {
+      "id": "distingue",
+      "3s": "Distingue",
+      "1s": "Distingo",
+      "nivel_cognitivo": 4
+    },
+    {
+      "id": "documenta",
+      "3s": "Documenta",
+      "1s": "Documento",
+      "nivel_cognitivo": 3
+    },
+    {
+      "id": "elabora",
+      "3s": "Elabora",
+      "1s": "Elaboro",
+      "nivel_cognitivo": 3
+    },
+    {
+      "id": "elige",
+      "3s": "Elige",
+      "1s": "Elijo",
+      "nivel_cognitivo": 3
+    },
+    {
+      "id": "emplea",
+      "3s": "Emplea",
+      "1s": "Empleo",
+      "nivel_cognitivo": 3
+    },
+    {
+      "id": "encadena",
+      "3s": "Encadena",
+      "1s": "Encadeno",
+      "nivel_cognitivo": 4
+    },
+    {
+      "id": "enlaza",
+      "3s": "Enlaza",
+      "1s": "Enlazo",
+      "nivel_cognitivo": 3
+    },
+    {
+      "id": "enmienda",
+      "3s": "Enmienda",
+      "1s": "Enmiendo",
+      "nivel_cognitivo": 6
+    },
+    {
+      "id": "entrega",
+      "3s": "Entrega",
+      "1s": "Entrego",
+      "nivel_cognitivo": 1
+    },
+    {
+      "id": "enumera",
+      "3s": "Enumera",
+      "1s": "Enumero",
+      "nivel_cognitivo": 1
+    },
+    {
+      "id": "estructura",
+      "3s": "Estructura",
+      "1s": "Estructuro",
+      "nivel_cognitivo": 4
+    },
+    {
+      "id": "explica",
+      "3s": "Explica",
+      "1s": "Explico",
+      "nivel_cognitivo": 2
+    },
+    {
+      "id": "expone",
+      "3s": "Expone",
+      "1s": "Expongo",
+      "nivel_cognitivo": 3
+    },
+    {
+      "id": "formula",
+      "3s": "Formula",
+      "1s": "Formulo",
+      "nivel_cognitivo": 3
+    },
+    {
+      "id": "gradua",
+      "3s": "Gradúa",
+      "1s": "Gradúo",
+      "nivel_cognitivo": 4
+    },
+    {
+      "id": "indica",
+      "3s": "Indica",
+      "1s": "Indico",
+      "nivel_cognitivo": 1
+    },
+    {
+      "id": "integra",
+      "3s": "Integra",
+      "1s": "Integro",
+      "nivel_cognitivo": 5
+    },
+    {
+      "id": "justifica",
+      "3s": "Justifica",
+      "1s": "Justifico",
+      "nivel_cognitivo": 4
+    },
+    {
+      "id": "localiza",
+      "3s": "Localiza",
+      "1s": "Localizo",
+      "nivel_cognitivo": 1
+    },
+    {
+      "id": "mantiene",
+      "3s": "Mantiene",
+      "1s": "Mantengo",
+      "nivel_cognitivo": 3
+    },
+    {
+      "id": "matiza",
+      "3s": "Matiza",
+      "1s": "Matizo",
+      "nivel_cognitivo": 4
+    },
+    {
+      "id": "modula",
+      "3s": "Modula",
+      "1s": "Modulo",
+      "nivel_cognitivo": 3
+    },
+    {
+      "id": "ordena",
+      "3s": "Ordena",
+      "1s": "Ordeno",
+      "nivel_cognitivo": 3
+    },
+    {
+      "id": "organiza",
+      "3s": "Organiza",
+      "1s": "Organizo",
+      "nivel_cognitivo": 3
+    },
+    {
+      "id": "piensa",
+      "3s": "Piensa",
+      "1s": "Pienso",
+      "nivel_cognitivo": 3
+    },
+    {
+      "id": "pone",
+      "3s": "Pone",
+      "1s": "Pongo",
+      "nivel_cognitivo": 3
+    },
+    {
+      "id": "presenta",
+      "3s": "Presenta",
+      "1s": "Presento",
+      "nivel_cognitivo": 2
+    },
+    {
+      "id": "pronuncia",
+      "3s": "Pronuncia",
+      "1s": "Pronuncio",
+      "nivel_cognitivo": 3
+    },
+    {
+      "id": "rebate",
+      "3s": "Rebate",
+      "1s": "Rebato",
+      "nivel_cognitivo": 4
+    },
+    {
+      "id": "reconoce",
+      "3s": "Reconoce",
+      "1s": "Reconozco",
+      "nivel_cognitivo": 1
+    },
+    {
+      "id": "recrea",
+      "3s": "Recrea",
+      "1s": "Recreo",
+      "nivel_cognitivo": 5
+    },
+    {
+      "id": "recurre",
+      "3s": "Recurre",
+      "1s": "Recurro",
+      "nivel_cognitivo": 3
+    },
+    {
+      "id": "redacta",
+      "3s": "Redacta",
+      "1s": "Redacto",
+      "nivel_cognitivo": 3
+    },
+    {
+      "id": "reelabora",
+      "3s": "Reelabora",
+      "1s": "Reelaboro",
+      "nivel_cognitivo": 5
+    },
+    {
+      "id": "reformula",
+      "3s": "Reformula",
+      "1s": "Reformulo",
+      "nivel_cognitivo": 5
+    },
+    {
+      "id": "regula",
+      "3s": "Regula",
+      "1s": "Regulo",
+      "nivel_cognitivo": 4
+    },
+    {
+      "id": "relaciona",
+      "3s": "Relaciona",
+      "1s": "Relaciono",
+      "nivel_cognitivo": 2
+    },
+    {
+      "id": "respeta",
+      "3s": "Respeta",
+      "1s": "Respeto",
+      "nivel_cognitivo": 3
+    },
+    {
+      "id": "resuelve",
+      "3s": "Resuelve",
+      "1s": "Resuelvo",
+      "nivel_cognitivo": 4
+    },
+    {
+      "id": "revisa",
+      "3s": "Revisa",
+      "1s": "Reviso",
+      "nivel_cognitivo": 6
+    },
+    {
+      "id": "selecciona",
+      "3s": "Selecciona",
+      "1s": "Selecciono",
+      "nivel_cognitivo": 2
+    },
+    {
+      "id": "senala",
+      "3s": "Señala",
+      "1s": "Señalo",
+      "nivel_cognitivo": 2
+    },
+    {
+      "id": "separa",
+      "3s": "Separa",
+      "1s": "Separo",
+      "nivel_cognitivo": 3
+    },
+    {
+      "id": "situa",
+      "3s": "Sitúa",
+      "1s": "Sitúo",
+      "nivel_cognitivo": 3
+    },
+    {
+      "id": "sostiene",
+      "3s": "Sostiene",
+      "1s": "Sostengo",
+      "nivel_cognitivo": 3
+    },
+    {
+      "id": "sustituye",
+      "3s": "Sustituye",
+      "1s": "Sustituyo",
+      "nivel_cognitivo": 3
+    },
+    {
+      "id": "transforma",
+      "3s": "Transforma",
+      "1s": "Transformo",
+      "nivel_cognitivo": 5
+    },
+    {
+      "id": "traslada",
+      "3s": "Traslada",
+      "1s": "Traslado",
+      "nivel_cognitivo": 1
+    },
+    {
+      "id": "usa",
+      "3s": "Usa",
+      "1s": "Uso",
+      "nivel_cognitivo": 3
+    },
+    {
+      "id": "utiliza",
+      "3s": "Utiliza",
+      "1s": "Utilizo",
+      "nivel_cognitivo": 3
+    },
+    {
+      "id": "valora",
+      "3s": "Valora",
+      "1s": "Valoro",
+      "nivel_cognitivo": 6
+    },
+    {
+      "id": "verifica",
+      "3s": "Verifica",
+      "1s": "Verifico",
+      "nivel_cognitivo": 4
+    },
+    {
+      "id": "vocaliza",
+      "3s": "Vocaliza",
+      "1s": "Vocalizo",
+      "nivel_cognitivo": 3
+    },
+    {
+      "id": "vuelve",
+      "3s": "Vuelve",
+      "1s": "Vuelvo",
+      "nivel_cognitivo": 1
+    }
+  ]
+}

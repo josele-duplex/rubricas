@@ -12,53 +12,79 @@ Uso:
 
 Devuelve código de salida 1 si hay errores, 0 si el pack está limpio.
 """
-import json, re, sys, glob, os, collections, unicodedata
+import json, re, sys, os, collections, unicodedata
 
-# Calificadores vagos: la "adverbitis" del marco teórico §3.
-ADVERBITIS = [
-    "bien", "regular", "adecuadamente", "correctamente", "frecuentemente",
-    "a veces", "bastante", "suficientemente", "de forma adecuada", "normalmente",
-    "casi siempre", "en general", "habitualmente", "de manera correcta",
-    "puntualmente", "escasamente", "muy ",
-]
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+from catalogo import lexico as cargar_lexico, rutas_de_packs, cargar_pack   # noqa: E402
 
-# Un descriptor de nivel 1 describe lo que el alumno sí hace, de forma limitada.
-NEGACIONES = ["no ", "carece", "sin lograr", "es incapaz", "nunca "]
+# Las palabras de las reglas viven en un solo sitio (data/reglas-lexicas.json) y
+# js/validador.js las recibe generadas desde ese mismo archivo. Antes estaban
+# escritas dos veces y ya habían divergido: este script marcaba "bienestar" como
+# adverbitis por contener "bien" y la aplicación no, de modo que la app daba por
+# limpio un pack que este script rechazaba — justo lo que el SDD §10 prohíbe.
+LEXICO = cargar_lexico()
+COMUN = LEXICO["comun"]
 
-VACIAS = {"cada", "de", "la", "el", "los", "las", "un", "una", "que", "sin",
-          "por", "no", "y", "en", "su", "se", "mas", "con", "al", "del", "sea"}
+ADVERBITIS_SUBCADENA = COMUN["adverbitis"]["subcadena"]
+ADVERBITIS_PALABRA_COMPLETA = COMUN["adverbitis"]["palabra_completa"]
+ADVERBITIS_MULTIPALABRA = COMUN["adverbitis"]["multipalabra"]
+NEGACIONES = COMUN["negaciones"]
+VACIAS = set(COMUN["palabras_vacias"])
+MODALIZADORES = COMUN["modalizadores"]
+DISPARADORES_AYUDA = MODALIZADORES["disparadores_ayuda"]
+MARCAS_ANDAMIAJE = MODALIZADORES["marcas_andamiaje"]
+DISPARADORES_AUTONOMIA = MODALIZADORES["disparadores_autonomia"]
+MARCAS_ANDAMIAJE_RESIDUAL = MODALIZADORES["marcas_andamiaje_residual"]
 
-TOPE_PENALIZACION = 0.35   # ninguna penalización pasa del 35% de la dimensión
-TOPE_CONJUNTO = 0.50       # todas juntas, no más de la mitad
-SIMILITUD_MAX = 0.75       # dos niveles contiguos no pueden parecerse más
+UMBRALES = COMUN["umbrales"]
+TOPE_PENALIZACION = UMBRALES["tope_penalizacion"]              # por penalización
+TOPE_CONJUNTO = UMBRALES["tope_conjunto_penalizaciones"]        # todas juntas
+SIMILITUD_MAX = UMBRALES["similitud_maxima_entre_niveles"]
+VENTANA_NEGACION = UMBRALES["ventana_negacion_n1"]
+MINIMO_DIMENSIONES = UMBRALES["minimo_dimensiones_por_combinacion"]
 
-# Cabeza del nombre de dimensión que coincide exactamente con un saber, no
-# una acción competencial (paridad con js/validador.js, §3.3). Ya normalizada:
-# minúsculas y sin tildes.
-SABERES_PROHIBIDOS = {
-    "sintaxis", "morfologia", "ortografia", "puntuacion", "acentuacion", "lexico",
-    "vocabulario", "oracion", "oraciones", "subordinadas", "sintagma", "sintagmas",
-    "metrica", "figuras retoricas", "generos literarios", "barroco", "romanticismo",
-    "renacimiento", "siglo de oro", "literatura medieval",
-}
 
-# Modalizadores del criterio (paridad con js/validador.js, §3.4). Solo estas
-# dos direcciones: las familias "sencillez" y "extensión" se descartaron
-# deliberadamente (ver §5 de la especificación del validador de la app).
-DISPARADORES_AYUDA = ["de manera guiada", "de forma guiada", "con ayuda de pautas y modelos", "modelos dados"]
-MARCAS_ANDAMIAJE = ["guiad", "pauta", "modelo", "guion", "plantilla", "indicad", "facilitad", "profesor", "con apoyo"]
-DISPARADORES_AUTONOMIA = ["progresivamente autonoma", "de manera autonoma", "de forma autonoma", "con autonomia"]
-MARCAS_ANDAMIAJE_RESIDUAL = [
-    "indicadas por el profesor", "indicados por el profesor", "con la pauta facilitada",
-    "con la pauta dada", "con el modelo dado", "segun el guion facilitado", "de manera guiada",
-]
+def lexico_de_materia(materia):
+    """El bloque de la materia del pack. Si no existe, no se valida a medias:
+    una materia sin léxico propio solo PARECE validada (los saberes prohibidos
+    de Lengua no dicen nada de un pack de Matemáticas)."""
+    bloque = LEXICO["por_materia"].get(materia)
+    if bloque is None:
+        raise SystemExit(
+            "La materia '%s' no tiene bloque en data/reglas-lexicas.json.\n"
+            "Añádelo antes de validar: sin saberes prohibidos ni fórmulas de proceso\n"
+            "propios, el pack pasaría el validador sin estar comprobado.\n"
+            "Materias registradas: %s"
+            % (materia, ", ".join(LEXICO["por_materia"])))
+    return bloque
 
-# Fórmulas del propio decreto que sostienen que una dimensión evalúa una fase
-# del proceso y no el texto terminado (paridad con js/validador.js, §5.2).
-# Sin "esquema": el 6.1 usa "esquemas propios" para la reorganización mental
-# de información ajena en el texto terminado, no para el esquema como fase
-# previa de escritura — coinciden en la palabra, no en el referente.
-FORMULAS_PROCESO = ["planificar", "planificacion", "borrador", "revisar", "revision"]
+
+# --- Adverbitis: tres modos de coincidencia, no uno ---------------------------
+# Los términos de una sola palabra necesitan límite de palabra ("bienestar" no
+# es "bien", "formal" no es "mal"); los de varias, subcadena con espacios
+# flexibles. Misma partición y mismo resultado que js/validador.js.
+_LETRA = r"[^\W\d_]"
+
+
+def _regex_palabra(termino):
+    return re.compile(r"(?<!%s)%s(?!%s)" % (_LETRA, re.escape(termino).replace(r"\ ", r"\s+"), _LETRA),
+                      re.IGNORECASE | re.UNICODE)
+
+
+def _regex_subcadena(termino):
+    return re.compile(re.escape(termino).replace(r"\ ", r"\s+"), re.IGNORECASE | re.UNICODE)
+
+
+_PALABRA_COMPILADA = {t: _regex_palabra(t) for t in ADVERBITIS_PALABRA_COMPLETA}
+_MULTI_COMPILADA = {t: _regex_subcadena(t) for t in ADVERBITIS_MULTIPALABRA}
+
+
+def encontrar_adverbitis(texto):
+    minus = texto.lower()
+    hallados = [t for t in ADVERBITIS_SUBCADENA if t in minus]
+    hallados += [t for t, r in _PALABRA_COMPILADA.items() if r.search(texto)]
+    hallados += [t for t, r in _MULTI_COMPILADA.items() if r.search(texto)]
+    return hallados
 
 
 def primer_verbo(texto):
@@ -82,7 +108,10 @@ def cabeza_dimension(nombre):
 
 
 def validar(ruta):
-    pack = json.load(open(ruta, encoding="utf8"))
+    pack = cargar_pack(ruta)
+    materia = lexico_de_materia(pack["materia"])
+    saberes_prohibidos = set(materia["saberes_prohibidos"])
+    formulas_proceso = materia["formulas_proceso"]
     verbos = {v["3s"].lower(): v for v in pack["verbos"]}
     errores, avisos = [], []
     pesos = collections.defaultdict(int)
@@ -106,7 +135,7 @@ def validar(ruta):
         if re.match(r"(?i)^(el|la|los|las|un|una|lo)\s", cabeza):
             err(cid, "saber_vehiculo",
                 "el nombre de la dimensión ('%s') empieza por un artículo: nombra un contenido, no una acción competencial" % c["nombre"])
-        if quitar_tildes(cabeza.lower()) in SABERES_PROHIBIDOS:
+        if quitar_tildes(cabeza.lower()) in saberes_prohibidos:
             err(cid, "saber_vehiculo",
                 "'%s' es un saber, no una dimensión: los saberes son vehículo, van dentro del descriptor" % cabeza)
 
@@ -145,7 +174,7 @@ def validar(ruta):
         # el 5.1 sostiene también la adecuación del texto terminado. ---
         if c.get("evalua_proceso"):
             cita_proceso = quitar_tildes((c.get("criterio_oficial", {}).get("cita") or "").lower())
-            if not any(f in cita_proceso for f in FORMULAS_PROCESO):
+            if not any(f in cita_proceso for f in formulas_proceso):
                 err(cid, "proceso_sin_respaldo",
                     "se declara dimensión de proceso y el criterio %s de %s no habla de planificar, de borradores ni de revisar"
                     % (c.get("criterio_oficial", {}).get("codigo"), c["curso"]))
@@ -161,13 +190,12 @@ def validar(ruta):
             elif verbos[verbo]["id"] != d["verbo"]:
                 err(cid, nivel, "el verbo declarado (%s) no es el del texto (%s)" % (d["verbo"], verbo))
 
-            for a in ADVERBITIS:
-                if a in minus:
-                    err(cid, nivel, "adverbitis: '%s'" % a.strip())
+            for a in encontrar_adverbitis(texto):
+                err(cid, nivel, "adverbitis: '%s'" % a.strip())
 
             if nivel == "n1":
                 for n in NEGACIONES:
-                    if (" " + n) in minus[:45]:
+                    if (" " + n) in minus[:VENTANA_NEGACION]:
                         err(cid, nivel, "gradación negativa: el nivel 1 describe lo que sí hace, no lo que falta ('%s')" % n.strip())
 
         niveles = [c["descriptores"][n]["texto"] for n in ("n1", "n2", "n3", "n4")]
@@ -199,10 +227,8 @@ def validar(ruta):
             if len(set(puntos)) != len(puntos):
                 err(cid, etq, "hay puntuaciones repetidas entre bandas")
             for b in comp["bandas"]:
-                minus = " " + b["condicion"].lower()
-                for a in ADVERBITIS:
-                    if a in minus:
-                        err(cid, etq, "adverbitis en una banda ('%s'): la matriz deja de ser contable" % a.strip())
+                for a in encontrar_adverbitis(b["condicion"]):
+                    err(cid, etq, "adverbitis en una banda ('%s'): la matriz deja de ser contable" % a.strip())
 
         for pen in m["penalizaciones"]:
             clave = pen["clave"]
@@ -236,7 +262,7 @@ def validar(ruta):
         for tipo_tarea in c["tipos_tarea"]:
             combos[(c["curso"], tipo_tarea)].append(c)
     for (curso, tipo_tarea), lista in sorted(combos.items()):
-        if len(lista) < 3:
+        if len(lista) < MINIMO_DIMENSIONES:
             avi("(pack)", "tarea_aplicable",
                 "%s · %s: la combinación se sostiene con solo %d dimensión(es)" % (curso, tipo_tarea, len(lista)))
         if not any(x["prioridad"] == 1 for x in lista):
@@ -272,9 +298,9 @@ def validar(ruta):
 
 
 def main():
-    rutas = sys.argv[1:] or sorted(glob.glob(os.path.join("data", "*.json")))
+    rutas = rutas_de_packs(sys.argv[1:])
     if not rutas:
-        print("No hay packs que validar en data/")
+        print("El catálogo (data/catalogo.json) no declara ningún pack.")
         return 1
 
     fallo = False

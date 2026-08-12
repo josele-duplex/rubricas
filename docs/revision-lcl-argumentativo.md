@@ -160,10 +160,10 @@
 
 | Nivel | Descriptor |
 |---|---|
-| **N1** | Utiliza expresiones propias de la conversación diaria para defender su opinión en una tarea dirigida al ámbito académico. |
-| **N2** | Ajusta el texto al género de opinión trabajado en clase y presenta su postura en primera persona, con algún término coloquial en el léxico. |
-| **N3** | Emplea un registro formal sostenido y marca con fórmulas de opinión (considero, a mi juicio) los pasajes donde habla el emisor. |
-| **N4** | Matiza el grado de certeza de sus afirmaciones combinando expresiones de mayor y menor seguridad (quizá, es probable, resulta innegable) a lo largo del texto. |
+| **N1** | Utiliza expresiones propias de la conversación diaria para defender la opinión personal en una tarea dirigida al ámbito académico. |
+| **N2** | Ajusta el texto al género de opinión trabajado en clase y presenta la postura propia en primera persona, con algún término coloquial en el léxico. |
+| **N3** | Emplea un registro formal sostenido e indica con fórmulas de opinión (considero, a mi juicio) los pasajes donde habla el emisor. |
+| **N4** | Matiza el grado de certeza de las afirmaciones propias combinando expresiones de mayor y menor seguridad (quizá, es probable, resulta innegable) a lo largo del texto. |
 
 *Sin matriz cuantitativa: esta dimensión se juzga en conjunto, no hay nada que contar.*
 
@@ -175,7 +175,7 @@
 
 | Nivel | Descriptor |
 |---|---|
-| **N1** | Enumera opiniones sobre el tema en un bloque único, siguiendo el orden en que se le ocurren. |
+| **N1** | Enumera opiniones sobre el tema en un bloque único, siguiendo el orden en que van surgiendo. |
 | **N2** | Formula una tesis reconocible al comienzo del texto y la apoya con dos argumentos, siguiendo el esquema trabajado en clase. |
 | **N3** | Defiende la tesis con argumentos de distinto tipo (dato, ejemplo, experiencia propia), cada uno desarrollado en su propio párrafo. |
 | **N4** | Articula los argumentos de menor a mayor fuerza y cierra con una conclusión que retoma la tesis con otras palabras, recogiendo lo argumentado. |
@@ -240,7 +240,7 @@
 |---|---|
 | **N1** | Redacta el texto en una sola pasada y entrega la primera versión como texto final. |
 | **N2** | Elabora un esquema previo con la tesis y los argumentos ordenados, y entrega el borrador junto al texto final. |
-| **N3** | Revisa el borrador por su cuenta y corrige problemas de conexión entre los argumentos y la tesis. |
+| **N3** | Revisa el borrador por cuenta propia y corrige problemas de conexión entre los argumentos y la tesis. |
 | **N4** | Justifica los cambios del borrador con el metalenguaje del nivel (tesis, argumento, conector), explicando qué mejora aporta cada uno. |
 
 **Matriz cuantitativa** — total 10 puntos. Es lo que usa el modo IA para corregir.
@@ -262,7 +262,7 @@
 | **N1** | Utiliza una única fuente y traslada sus datos al texto sin indicar su procedencia. |
 | **N2** | Selecciona datos de dos o más fuentes para apoyar los argumentos e indica su procedencia al final del texto. |
 | **N3** | Contrasta la información de fuentes distintas antes de emplearla como apoyo de un argumento, y cita el origen de los datos empleados. |
-| **N4** | Distingue los datos comprobables de las opiniones que aparecen en sus fuentes, y apoya los argumentos en los datos citando su origen. |
+| **N4** | Distingue los datos comprobables de las opiniones que aparecen en las fuentes consultadas, y apoya los argumentos en los datos citando su origen. |
 
 **Matriz cuantitativa** — total 10 puntos. Es lo que usa el modo IA para corregir.
 
@@ -427,7 +427,7 @@
 | Nivel | Descriptor |
 |---|---|
 | **N1** | Utiliza fórmulas coloquiales o exclamativas en un ensayo que el encargo académico pide en registro formal. |
-| **N2** | Ajusta el léxico y el tono al género del ensayo, aunque presenta sus opiniones como si fueran hechos comprobados, sin marca que las distinga. |
+| **N2** | Ajusta el léxico y el tono al género del ensayo, aunque presenta las opiniones propias como si fueran hechos comprobados, sin marca que las distinga. |
 | **N3** | Mantiene el registro formal en todo el ensayo y distingue mediante la enunciación qué afirma como información y qué defiende como postura propia. |
 | **N4** | Justifica la elección del grado de presencia del emisor (primera persona, impersonalidad) según el efecto persuasivo buscado, y emplea en todo el texto un lenguaje no discriminatorio. |
 
@@ -506,7 +506,7 @@
 |---|---|
 | **N1** | Redacta el texto en una sola pasada y entrega la primera versión como texto final. |
 | **N2** | Elabora un guion previo con la tesis, los argumentos y la objeción prevista, y entrega el borrador con marcas de revisión sobre la ortografía y el léxico. |
-| **N3** | Revisa el borrador de manera autónoma y reformula los pasajes donde la argumentación resulta difícil de seguir para un lector que no comparte su postura. |
+| **N3** | Revisa el borrador de manera autónoma y reformula los pasajes donde la argumentación resulta difícil de seguir para un lector que no comparte la postura defendida. |
 | **N4** | Justifica con metalenguaje específico los cambios introducidos, explicando tanto el problema argumentativo que resuelven como el efecto persuasivo que persiguen. |
 
 **Matriz cuantitativa** — total 10 puntos. Es lo que usa el modo IA para corregir.
@@ -528,7 +528,7 @@
 | **N1** | Cita alguna obra leída en una mención aislada que queda al margen de la línea argumentativa. |
 | **N2** | Relaciona la obra leída con otro texto o manifestación artística mediante una comparación enunciada, todavía sin desarrollar. |
 | **N3** | Justifica el vínculo entre la obra leída y otros textos o manifestaciones artísticas en función de temas, tópicos o recursos expresivos, y lo pone al servicio de la tesis del ensayo. |
-| **N4** | Integra los vínculos entre obras como argumentos del ensayo y explicita la respuesta personal que la lectura le provoca, conectándola con la valoración que defiende. |
+| **N4** | Integra los vínculos entre obras como argumentos del ensayo y formula la respuesta personal a la lectura en conexión con la valoración defendida. |
 
 **Matriz cuantitativa** — total 10 puntos. Es lo que usa el modo IA para corregir.
 
@@ -560,7 +560,7 @@
 | Nivel | Descriptor |
 |---|---|
 | **N1** | Utiliza expresiones coloquiales o valorativas sin matizar en un ensayo que el encargo académico pide en registro formal. |
-| **N2** | Ajusta el léxico y el tono al género del ensayo, pero no distingue mediante marcas la opinión propia de la información que aporta. |
+| **N2** | Ajusta el léxico y el tono al género del ensayo, pero no distingue mediante marcas la opinión propia de la información aportada. |
 | **N3** | Mantiene el registro formal en todo el ensayo y distingue mediante la enunciación qué presenta como información contrastada y qué defiende como valoración propia. |
 | **N4** | Justifica el grado de presencia del emisor (primera persona, impersonalidad) elegido según el efecto persuasivo buscado, y emplea en todo el texto un lenguaje no discriminatorio. |
 
@@ -639,8 +639,8 @@
 |---|---|
 | **N1** | Redacta el texto en una sola pasada y lo entrega como versión final, sin someterlo a ninguna revisión. |
 | **N2** | Elabora un guion previo con la tesis, los argumentos y la objeción prevista, y revisa el borrador de forma individual, sin contrastarlo con nadie ni con ningún instrumento de consulta. |
-| **N3** | Revisa el borrador con ayuda de un compañero o de un instrumento de consulta (corrector, manual de estilo) y reformula los pasajes donde la argumentación resulta difícil de seguir para un lector que no comparte su postura. |
-| **N4** | Justifica con metalenguaje específico los cambios que introduce a partir de esa revisión compartida, explicando tanto el problema argumentativo que resuelven como el efecto persuasivo que persiguen. |
+| **N3** | Revisa el borrador con ayuda de un compañero o de un instrumento de consulta (corrector, manual de estilo) y reformula los pasajes donde la argumentación resulta difícil de seguir para un lector que no comparte la postura defendida. |
+| **N4** | Justifica con metalenguaje específico los cambios introducidos a partir de esa revisión compartida, explicando tanto el problema argumentativo que resuelven como el efecto persuasivo que persiguen. |
 
 **Matriz cuantitativa** — total 10 puntos. Es lo que usa el modo IA para corregir.
 
@@ -661,7 +661,7 @@
 | **N1** | Cita alguna obra leída en una mención aislada, sin situarla en el eje temático (Edad de Plata, guerra civil y exilio, literatura contemporánea) al que pertenece. |
 | **N2** | Relaciona la obra leída con otro texto o manifestación artística del mismo eje temático mediante una comparación enunciada, todavía sin desarrollar. |
 | **N3** | Justifica el vínculo entre la obra leída y otros textos o manifestaciones artísticas en función de temas, tópicos o recursos expresivos, situándolo en su contexto sociohistórico, y lo pone al servicio de la tesis del ensayo. |
-| **N4** | Integra los vínculos entre obras de distintos ejes temáticos como argumentos del ensayo y explicita la respuesta personal que la lectura le provoca, conectándola con la valoración que defiende. |
+| **N4** | Integra los vínculos entre obras de distintos ejes temáticos como argumentos del ensayo y formula la respuesta personal a la lectura en conexión con la valoración defendida. |
 
 **Matriz cuantitativa** — total 10 puntos. Es lo que usa el modo IA para corregir.
 

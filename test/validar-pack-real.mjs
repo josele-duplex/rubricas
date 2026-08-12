@@ -4,12 +4,10 @@
 // negativos de validador-reglas.mjs, porque el pack con el que trabaja el
 // profesorado ya no pasaría el validador de la aplicación.
 
-import { readFileSync } from "node:fs";
-import { fileURLToPath } from "node:url";
 import { validarPack } from "../js/validador.js";
+import { cargarPack } from "./cargar.mjs";
 
-const rutaPack = fileURLToPath(new URL("../data/pack-lcl-expositivo.json", import.meta.url));
-const pack = JSON.parse(readFileSync(rutaPack, "utf8"));
+const pack = cargarPack("pack-lcl-expositivo.json");
 
 const informe = validarPack(pack);
 

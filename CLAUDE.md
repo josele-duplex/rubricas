@@ -77,19 +77,39 @@ de derivación que ha llegado al docente.
 
 ## Método de trabajo
 
+- **Una sola orden lo comprueba todo:**
+
+  ```bash
+  python scripts/comprobar_todo.py
+  ```
+
+  Son doce comprobaciones: forma del pack, los dos derivados al día (`js/lexico.js` y las
+  tablas §4.3 y §5.4 del SDD), reglas de contenido, paridad entre los dos validadores, las
+  cuatro pruebas del motor y la derivación contra el currículo, con su auto-prueba.
+  **Es la misma orden que ejecuta el CI**, así que no hay una segunda lista
+  que mantener. No se cierra un pack con ninguna en rojo **ni con ninguna saltada**.
 - **Toda matriz cuantitativa nueva se prueba simulando una corrección** antes de darla por buena
-  (`scripts/simular_correccion.py`). Leerla no basta: la regla del doble castigo se descubrió
+  (`scripts/simular_correccion.py --todos`). Leerla no basta: la regla del doble castigo se descubrió
   calculando, no leyendo. Si una dimensión cae dos niveles de golpe, sospecha de las penalizaciones.
-- **Todo pack pasa el validador antes de darse por cerrado** (`scripts/validar_pack.py`).
+  Esto **no** está en `comprobar_todo.py` a propósito: pide un juicio, no da un booleano.
+  **Se simula con los perfiles de alumno, no con el sorteo**: sortear cada componente por separado
+  produce alumnos que no existen y, sobre todo, desliga el número de faltas de la extensión del
+  texto. Un umbral escrito en faltas absolutas no vale igual en dos tareas de distinta longitud
+  —así se vio que el comentario había heredado los umbrales del expositivo, que es el doble de
+  largo (SDD v1.27)—, y eso solo se ve poniendo la extensión de la tarea al lado del umbral.
 - **Toda afirmación sobre lo que dice el currículo se verifica mecánicamente**
   (`scripts/verificar_derivacion.py`): citas literales de los packs y del SDD (§4.3 y §5.4),
-  matriz de tareas y techo de progresión. Se ejecuta junto al validador al cerrar un pack y
-  siempre que se toque el SDD. Convención: en §4.3 y §5.4, lo que va entre «» o *"..."* es
-  cita de fuente y debe encontrarse literalmente en `fuentes/curriculo/` o en el Marco
-  Teórico; el uso-mención propio va en comillas simples, que el verificador ignora.
-  El verificador se prueba a sí mismo con `--auto-prueba` (lo corrupto debe fallar).
-- **El JSON es la fuente; los documentos de revisión son derivados.** `docs/revision-*.md` se
-  regenera con `scripts/generar_revision.py`, nunca se edita a mano.
+  matriz de tareas, techo de progresión y género en `saber_vehiculo`. Convención: en §4.3 y §5.4,
+  lo que va entre «» o *"..."* es cita de fuente y debe encontrarse literalmente en
+  `fuentes/curriculo/` o en el Marco Teórico; el uso-mención propio va en comillas simples,
+  que el verificador ignora.
+- **El JSON es la fuente; lo demás es derivado.** `docs/revision-*.md` se regenera con
+  `scripts/generar_revision.py` (sin argumentos los regenera todos), `js/lexico.js` con
+  `scripts/generar_lexico.py`, y **las dos tablas del SDD —la matriz §4.3 y los ejes §5.4—
+  con `scripts/generar_tablas_sdd.py`**, desde `data/derivacion-<materia>.json`. Ninguno se
+  edita a mano; `comprobar_todo.py` falla si se han separado de su fuente. En el SDD eso
+  afecta **solo a las dos tablas**: la prosa que las justifica —qué sostiene cada celda, con
+  su cita— se escribe a mano y sigue siendo lo que da sentido al dato.
 - **Los criterios oficiales se citan del texto real**, leyéndolo en `fuentes/curriculo/`.
   Nunca de memoria ni parafraseados.
 - **Cuando el usuario corrija un planteamiento, revisar si el error está en más sitios.**
@@ -106,6 +126,14 @@ repeticiones mediante sinónimos, hiperónimos y pronombres.»*
 
 El banco guarda cada verbo en 3.ª y en 1.ª persona (`Reconoce`/`Reconozco`), lo que permite
 derivar la versión de autoevaluación sin errores de morfología.
+
+**El descriptor no nombra al alumno en 3.ª persona.** El alumno es el sujeto de la frase, así
+que todo lo demás que apunte a él —un segundo verbo, un posesivo, un dativo— imprime «él»
+dentro de una frase en «yo» al proyectar la autoevaluación. Lo que es del alumno se escribe con
+`propio` o con el artículo: «por cuenta propia», no «por su cuenta»; «con palabras propias», no
+«con sus propias palabras»; «a las notas», no «a sus notas». `su` solo entra cuando el referente
+es otro («indica **su** procedencia», que es la de los datos), y entonces hay que declararlo en
+`posesivos_ajenos` de `data/reglas-lexicas.json`, con el referente escrito al lado.
 
 ---
 
@@ -149,18 +177,42 @@ Nunca se modifican archivos del proyecto de Lengua desde aquí.
 index.html       modo exprés y contenedores de la vista previa
 css/             estilos de pantalla y de impresión
 js/              motor, validador, microexplicaciones, interfaz, modo avanzado
-data/            packs de criterios (.json) — la fuente de todo el contenido
-scripts/         validador, generador de revisiones, simulador de corrección
-test/            casos dorados del validador (Node, sin dependencias)
-docs/diseno/     SDD y análisis de enlace
+                 (js/lexico.js es GENERADO — no se edita)
+data/            la fuente de todo: packs, catálogo, tablas de derivación por
+                 materia, léxico de reglas, banco de verbos y esquema de pack
+scripts/         comprobación completa, validadores, generadores, simulador
+test/            casos dorados del validador y del motor (Node, sin dependencias)
+docs/diseno/     SDD, guía para añadir una materia y análisis de enlace
+                 (sus tablas §4.3 y §5.4 son GENERADAS — la prosa no)
 docs/marco/      marco teórico y matrices de referencia
 docs/            documentos de revisión generados y resúmenes para el docente
 fuentes/         currículo oficial y originales aportados (material crudo)
 ```
 
-El validador vive dos veces —`scripts/validar_pack.py` y `js/validador.js`— y las dos
-implementaciones aplican las mismas reglas. **La aplicación nunca puede dar por limpio un pack que
-el script rechaza** (SDD §10). Toda regla nueva entra en las dos, con su caso en `test/`.
+### Cada hecho, en un solo sitio
+
+Los errores de este proyecto han sido casi siempre el mismo: **un hecho escrito dos veces y
+las dos copias separándose en silencio**. Por eso `data/` manda sobre todo lo demás:
+
+| Archivo | Manda sobre | Quién lo lee |
+|---|---|---|
+| `data/catalogo.json` | qué packs hay, qué materias, qué tipos de tarea y cómo se llaman los cursos | `js/main.js`, `js/ui.js` y todos los scripts |
+| `data/derivacion-<materia>.json` | qué tarea sostiene el currículo en qué curso (§4.3) y hasta dónde puede exigir cada uno (§5.4) | `scripts/verificar_derivacion.py` y, vía `scripts/generar_tablas_sdd.py`, las tablas del SDD |
+| `data/reglas-lexicas.json` | las palabras y los umbrales de las reglas del validador | `scripts/validar_pack.py` y, vía `js/lexico.js`, la aplicación |
+| `data/verbos.json` | el banco cerrado de verbos, con 3.ª y 1.ª persona | los packs ya no llevan copia; solo pueden añadir en `verbos_extra` |
+| `data/esquema-pack.json` | la forma que debe tener un pack | `scripts/validar_esquema.py`, antes que ninguna regla de contenido |
+
+El validador vive dos veces —`scripts/validar_pack.py` y `js/validador.js`—, pero solo su
+**lógica**: las palabras salen del archivo compartido. **La aplicación nunca puede dar por
+limpio un pack que el script rechaza** (SDD §10), y eso ya no se confía a la memoria:
+`scripts/comprobar_paridad.py` ejecuta los dos lados sobre un corpus de trampas y exige que
+digan lo mismo. Toda regla nueva entra en las dos implementaciones, con su caso en `test/`.
+
+### Antes de añadir una materia
+
+Léete `docs/diseno/anadir-una-materia.md`. La regla corta es: **dar de alta una asignatura no
+debe obligar a tocar código.** Si hace falta editar un `.py` o un `.js`, eso es un fallo de
+diseño de este proyecto — se arregla aquí, no en la materia nueva.
 
 ## Decisiones pendientes
 

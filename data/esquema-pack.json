@@ -1,0 +1,133 @@
+{
+  "_nota": [
+    "Forma de un pack: qué campos existen, de qué tipo son y cuáles son obligatorios.",
+    "",
+    "No sustituye a las reglas de contenido de validar_pack.py; va ANTES. Hasta ahora",
+    "un pack con una clave mal escrita no fallaba con un mensaje: fallaba con un",
+    "KeyError tres niveles dentro del validador, o —peor— no fallaba, porque medio",
+    "código lee con .get() y un campo ausente se lee como 'no aplica'. Un descriptor",
+    "sin `verbo`, un criterio sin `progresion`, una matriz sin `penalizaciones`:",
+    "todo eso pasaba de largo.",
+    "",
+    "Esto importa poco con cuatro packs escritos por la misma persona. Importa mucho",
+    "cuando el pack lo escriba el profesorado de otra materia.",
+    "",
+    "Lo interpreta scripts/validar_esquema.py. El lenguaje es a propósito pequeño:",
+    "  tipo        texto | entero | decimal | booleano | lista | objeto | nulo",
+    "                    (varios tipos: 'texto|nulo')",
+    "  obligatorio si el campo tiene que estar",
+    "  de          para listas y objetos: nombre de otra forma de este archivo",
+    "  valores     lista cerrada de valores admitidos",
+    "  minimo/maximo   para números; min_elementos para listas",
+    "  claves_de   las claves del objeto salen de esta lista de `valores`",
+    "  del_catalogo    el valor tiene que estar dado de alta en data/catalogo.json"
+  ],
+
+  "version": "1.0.0",
+
+  "raiz": "pack",
+
+  "formas": {
+    "pack": {
+      "pack_id":   { "tipo": "texto", "obligatorio": true },
+      "materia":   { "tipo": "texto", "obligatorio": true, "del_catalogo": "materias" },
+      "etiqueta":  { "tipo": "texto", "obligatorio": true },
+      "version":   { "tipo": "texto", "obligatorio": true },
+      "normativa": { "tipo": "objeto", "obligatorio": true, "de": "normativa" },
+      "criterios": { "tipo": "lista", "obligatorio": true, "de": "criterio", "min_elementos": 1 },
+      "verbos_extra": { "tipo": "lista", "obligatorio": false, "de": "verbo" }
+    },
+
+    "normativa": {
+      "_nota": "Un pack sin declaración de vigencia se convierte en una rúbrica desactualizada que nadie sabe que lo está (SDD §5.1).",
+      "estatal":        { "tipo": "lista", "obligatorio": true, "de": "texto_suelto", "min_elementos": 1 },
+      "autonomica":     { "tipo": "texto", "obligatorio": true },
+      "vigencia_desde": { "tipo": "texto", "obligatorio": true },
+      "revisado":       { "tipo": "texto", "obligatorio": true }
+    },
+
+    "criterio": {
+      "id":            { "tipo": "texto", "obligatorio": true },
+      "bloque_lomloe": { "tipo": "texto", "obligatorio": true, "valores": ["A", "B", "C", "D"] },
+      "dimension":     { "tipo": "texto", "obligatorio": true },
+      "nombre":        { "tipo": "texto", "obligatorio": true },
+      "curso":         { "tipo": "texto", "obligatorio": true, "del_catalogo": "cursos" },
+      "hereda_de":     { "tipo": "texto|nulo", "obligatorio": true },
+      "criterio_oficial": { "tipo": "objeto", "obligatorio": true, "de": "criterio_oficial" },
+      "saber_vehiculo":   { "tipo": "lista", "obligatorio": true, "de": "texto_suelto" },
+      "progresion":       { "tipo": "objeto", "obligatorio": true, "de": "progresion" },
+      "tipos_tarea":      { "tipo": "lista", "obligatorio": true, "de": "texto_suelto", "min_elementos": 1 },
+      "obligatorio":   { "tipo": "booleano", "obligatorio": true },
+      "prioridad":     { "tipo": "entero", "obligatorio": true, "minimo": 1, "maximo": 3 },
+      "peso_base":     { "tipo": "entero", "obligatorio": true, "minimo": 0, "maximo": 100 },
+      "descriptores":  { "tipo": "objeto", "obligatorio": true, "de": "descriptores" },
+      "matriz_cuantitativa": { "tipo": "objeto|nulo", "obligatorio": true, "de": "matriz" },
+      "descriptor_cotejo":   { "tipo": "texto|nulo", "obligatorio": true },
+      "descriptor_un_punto": { "tipo": "texto", "obligatorio": true },
+      "evalua_proceso":      { "tipo": "booleano", "obligatorio": false }
+    },
+
+    "criterio_oficial": {
+      "_nota": "Sin `cita` no hay rúbrica, solo una opinión con formato de tabla (CLAUDE.md, regla 1).",
+      "competencia_especifica": { "tipo": "entero", "obligatorio": true, "minimo": 1, "maximo": 10 },
+      "codigo":        { "tipo": "texto", "obligatorio": true },
+      "cita":          { "tipo": "texto", "obligatorio": true },
+      "perfil_salida": { "tipo": "lista", "obligatorio": true, "de": "texto_suelto" }
+    },
+
+    "progresion": {
+      "_nota": "Los tres ejes de §5.4. Los tres son obligatorios: si falta uno, el techo de ese eje no se comprueba y la exigencia se cuela desde arriba sin que salte nada.",
+      "autonomia":       { "tipo": "entero", "obligatorio": true, "minimo": 0, "maximo": 4 },
+      "complejidad":     { "tipo": "entero", "obligatorio": true, "minimo": 0, "maximo": 4 },
+      "metalinguistico": { "tipo": "entero", "obligatorio": true, "minimo": 0, "maximo": 4 }
+    },
+
+    "descriptores": {
+      "_nota": "Cuatro niveles, siempre. No es configurable (CLAUDE.md, regla 3).",
+      "n1": { "tipo": "objeto", "obligatorio": true, "de": "descriptor" },
+      "n2": { "tipo": "objeto", "obligatorio": true, "de": "descriptor" },
+      "n3": { "tipo": "objeto", "obligatorio": true, "de": "descriptor" },
+      "n4": { "tipo": "objeto", "obligatorio": true, "de": "descriptor" }
+    },
+
+    "descriptor": {
+      "verbo": { "tipo": "texto", "obligatorio": true },
+      "texto": { "tipo": "texto", "obligatorio": true }
+    },
+
+    "matriz": {
+      "total":          { "tipo": "decimal", "obligatorio": true, "minimo": 1 },
+      "componentes":    { "tipo": "lista", "obligatorio": true, "de": "componente", "min_elementos": 1 },
+      "penalizaciones": { "tipo": "lista", "obligatorio": true, "de": "penalizacion" }
+    },
+
+    "componente": {
+      "nombre": { "tipo": "texto", "obligatorio": true },
+      "max":    { "tipo": "decimal", "obligatorio": true, "minimo": 0 },
+      "bandas": { "tipo": "lista", "obligatorio": true, "de": "banda", "min_elementos": 2 }
+    },
+
+    "banda": {
+      "puntos":    { "tipo": "decimal", "obligatorio": true, "minimo": 0 },
+      "condicion": { "tipo": "texto", "obligatorio": true }
+    },
+
+    "penalizacion": {
+      "_nota": "`tope` es obligatorio y negativo: una penalización sin tope puede vaciar la dimensión entera (SDD §6.3).",
+      "clave":  { "tipo": "texto", "obligatorio": true },
+      "puntos": { "tipo": "decimal", "obligatorio": true, "maximo": 0 },
+      "por":    { "tipo": "texto", "obligatorio": true },
+      "tope":   { "tipo": "decimal", "obligatorio": true, "maximo": 0 }
+    },
+
+    "verbo": {
+      "_nota": "Misma forma que las entradas de data/verbos.json. La 1.ª persona no es decorativa: de ella sale la autoevaluación.",
+      "id":              { "tipo": "texto", "obligatorio": true },
+      "3s":              { "tipo": "texto", "obligatorio": true },
+      "1s":              { "tipo": "texto", "obligatorio": true },
+      "nivel_cognitivo": { "tipo": "entero", "obligatorio": true, "minimo": 1, "maximo": 6 }
+    },
+
+    "texto_suelto": { "_primitiva": "texto" }
+  }
+}

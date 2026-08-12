@@ -43,29 +43,32 @@ listas para imprimir.
 
 ## Cómo se comprueba el contenido
 
-El contenido curricular se valida con dos programas que aplican **las mismas reglas** (SDD §10):
-uno se ejecuta al construir el pack y otro dentro de la propia aplicación. El invariante es que la
-aplicación nunca puede dar por limpio un pack que el script rechaza.
+Una sola orden ejecuta las doce comprobaciones del proyecto, y es la misma que ejecuta el CI:
 
 ```bash
-python scripts/validar_pack.py
+python scripts/comprobar_todo.py
 ```
 
-```bash
-node test/validar-pack-real.mjs
-```
+Comprueba, en este orden: la **forma** del pack contra su esquema; que los archivos generados
+sigan al día respecto a su fuente; las **reglas de contenido**; la **paridad** entre los dos
+validadores; las cuatro pruebas del **motor**; y la **derivación** contra el currículo oficial,
+con su propia auto-prueba de que lo corrupto falla.
 
-```bash
-node test/validar-reglas.mjs
-```
+El contenido curricular se valida con dos programas que aplican las mismas reglas (SDD §10): uno
+al construir el pack y otro dentro de la propia aplicación. El invariante es que **la aplicación
+nunca puede dar por limpio un pack que el script rechaza**. Las dos implementaciones comparten
+las listas de palabras (`data/reglas-lexicas.json`) y `scripts/comprobar_paridad.py` las ejecuta
+sobre un corpus de trampas para exigir que digan lo mismo — porque ya se separaron una vez sin
+que nadie lo notara.
 
-El último es la batería de casos del validador: introduce un defecto por regla sobre una copia en
-memoria del pack y comprueba que la regla lo detecta. **Si un caso obliga a cambiar el pack, la
-regla está mal escrita, no el contenido.**
+`node test/validar-reglas.mjs` es la batería de casos del validador: introduce un defecto por
+regla sobre una copia en memoria del pack y comprueba que la regla lo detecta. **Si un caso
+obliga a cambiar el pack, la regla está mal escrita, no el contenido.**
 
-Además, toda matriz cuantitativa nueva se prueba simulando una corrección antes de darla por buena
-(`scripts/simular_correccion.py`). Leerla no basta: la regla del doble castigo se descubrió
-calculando, no leyendo.
+Lo único que queda fuera de la orden única, a propósito, es simular una corrección
+(`scripts/simular_correccion.py`), obligatorio para toda matriz cuantitativa nueva: pide un
+juicio del docente, no devuelve un booleano. Leerla no basta — la regla del doble castigo se
+descubrió calculando, no leyendo.
 
 ---
 
@@ -75,13 +78,24 @@ calculando, no leyendo.
 index.html          modo exprés y contenedores de la vista previa
 css/                estilos de pantalla y de impresión
 js/                 motor, validador, microexplicaciones, interfaz, modo avanzado
-data/               packs de criterios (.json) — la fuente de todo el contenido
-scripts/            validador, generador de revisiones, simulador de corrección
-test/               casos dorados del validador (Node, sin dependencias)
-docs/diseno/        SDD y análisis de enlace con el proyecto de Lengua
+                    (js/lexico.js es generado desde data/ — no se edita a mano)
+data/               la fuente de todo el contenido:
+                      pack-*.json          criterios, descriptores y matrices
+                      catalogo.json        qué packs y materias hay, y sus etiquetas
+                      derivacion-*.json    qué tarea cabe en qué curso y cuánto puede exigir
+                      reglas-lexicas.json  las palabras y umbrales del validador
+                      verbos.json          el banco cerrado de verbos
+                      esquema-pack.json    la forma que debe tener un pack
+scripts/            comprobación completa, validadores, generadores, simulador
+test/               casos dorados del validador y del motor (Node, sin dependencias)
+docs/diseno/        SDD, guía para añadir una materia y enlace con el proyecto de Lengua
+                    (las tablas §4.3 y §5.4 del SDD se generan desde data/; la prosa no)
 docs/marco/         marco teórico y matrices de referencia
 fuentes/            currículo oficial y originales aportados (material crudo)
 ```
+
+Añadir una asignatura al generador se hace **solo editando `data/`**: el procedimiento completo
+está en [`docs/diseno/anadir-una-materia.md`](docs/diseno/anadir-una-materia.md).
 
 **Sin dependencias y sin proceso de construcción.** Ni framework ni gestor de paquetes: el estado
 de la aplicación es una configuración pequeña y un pack de datos, y eso no justifica una

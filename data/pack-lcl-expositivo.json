@@ -11,224 +11,6 @@
     "vigencia_desde": "2022-2023",
     "revisado": "2026-07"
   },
-  "verbos": [
-    {
-      "id": "enumera",
-      "3s": "Enumera",
-      "1s": "Enumero",
-      "nivel_cognitivo": 1
-    },
-    {
-      "id": "localiza",
-      "3s": "Localiza",
-      "1s": "Localizo",
-      "nivel_cognitivo": 1
-    },
-    {
-      "id": "reconoce",
-      "3s": "Reconoce",
-      "1s": "Reconozco",
-      "nivel_cognitivo": 1
-    },
-    {
-      "id": "explica",
-      "3s": "Explica",
-      "1s": "Explico",
-      "nivel_cognitivo": 2
-    },
-    {
-      "id": "relaciona",
-      "3s": "Relaciona",
-      "1s": "Relaciono",
-      "nivel_cognitivo": 2
-    },
-    {
-      "id": "selecciona",
-      "3s": "Selecciona",
-      "1s": "Selecciono",
-      "nivel_cognitivo": 2
-    },
-    {
-      "id": "utiliza",
-      "3s": "Utiliza",
-      "1s": "Utilizo",
-      "nivel_cognitivo": 3
-    },
-    {
-      "id": "aplica",
-      "3s": "Aplica",
-      "1s": "Aplico",
-      "nivel_cognitivo": 3
-    },
-    {
-      "id": "redacta",
-      "3s": "Redacta",
-      "1s": "Redacto",
-      "nivel_cognitivo": 3
-    },
-    {
-      "id": "emplea",
-      "3s": "Emplea",
-      "1s": "Empleo",
-      "nivel_cognitivo": 3
-    },
-    {
-      "id": "mantiene",
-      "3s": "Mantiene",
-      "1s": "Mantengo",
-      "nivel_cognitivo": 3
-    },
-    {
-      "id": "ordena",
-      "3s": "Ordena",
-      "1s": "Ordeno",
-      "nivel_cognitivo": 3
-    },
-    {
-      "id": "ajusta",
-      "3s": "Ajusta",
-      "1s": "Ajusto",
-      "nivel_cognitivo": 3
-    },
-    {
-      "id": "elabora",
-      "3s": "Elabora",
-      "1s": "Elaboro",
-      "nivel_cognitivo": 3
-    },
-    {
-      "id": "estructura",
-      "3s": "Estructura",
-      "1s": "Estructuro",
-      "nivel_cognitivo": 4
-    },
-    {
-      "id": "contrasta",
-      "3s": "Contrasta",
-      "1s": "Contrasto",
-      "nivel_cognitivo": 4
-    },
-    {
-      "id": "justifica",
-      "3s": "Justifica",
-      "1s": "Justifico",
-      "nivel_cognitivo": 4
-    },
-    {
-      "id": "articula",
-      "3s": "Articula",
-      "1s": "Articulo",
-      "nivel_cognitivo": 4
-    },
-    {
-      "id": "distingue",
-      "3s": "Distingue",
-      "1s": "Distingo",
-      "nivel_cognitivo": 4
-    },
-    {
-      "id": "reelabora",
-      "3s": "Reelabora",
-      "1s": "Reelaboro",
-      "nivel_cognitivo": 5
-    },
-    {
-      "id": "sustituye",
-      "3s": "Sustituye",
-      "1s": "Sustituyo",
-      "nivel_cognitivo": 3
-    },
-    {
-      "id": "integra",
-      "3s": "Integra",
-      "1s": "Integro",
-      "nivel_cognitivo": 5
-    },
-    {
-      "id": "valora",
-      "3s": "Valora",
-      "1s": "Valoro",
-      "nivel_cognitivo": 6
-    },
-    {
-      "id": "revisa",
-      "3s": "Revisa",
-      "1s": "Reviso",
-      "nivel_cognitivo": 6
-    },
-    {
-      "id": "corrige",
-      "3s": "Corrige",
-      "1s": "Corrijo",
-      "nivel_cognitivo": 6
-    },
-    {
-      "id": "enmienda",
-      "3s": "Enmienda",
-      "1s": "Enmiendo",
-      "nivel_cognitivo": 6
-    },
-    {
-      "id": "agrupa",
-      "3s": "Agrupa",
-      "1s": "Agrupo",
-      "nivel_cognitivo": 2
-    },
-    {
-      "id": "entrega",
-      "3s": "Entrega",
-      "1s": "Entrego",
-      "nivel_cognitivo": 1
-    },
-    {
-      "id": "indica",
-      "3s": "Indica",
-      "1s": "Indico",
-      "nivel_cognitivo": 1
-    },
-    {
-      "id": "desarrolla",
-      "3s": "Desarrolla",
-      "1s": "Desarrollo",
-      "nivel_cognitivo": 3
-    },
-    {
-      "id": "cierra",
-      "3s": "Cierra",
-      "1s": "Cierro",
-      "nivel_cognitivo": 1
-    },
-    {
-      "id": "delimita",
-      "3s": "Delimita",
-      "1s": "Delimito",
-      "nivel_cognitivo": 3
-    },
-    {
-      "id": "descarta",
-      "3s": "Descarta",
-      "1s": "Descarto",
-      "nivel_cognitivo": 4
-    },
-    {
-      "id": "cita",
-      "3s": "Cita",
-      "1s": "Cito",
-      "nivel_cognitivo": 1
-    },
-    {
-      "id": "separa",
-      "3s": "Separa",
-      "1s": "Separo",
-      "nivel_cognitivo": 3
-    },
-    {
-      "id": "matiza",
-      "3s": "Matiza",
-      "1s": "Matizo",
-      "nivel_cognitivo": 4
-    }
-  ],
   "criterios": [
     {
       "id": "lcl-b-adecuacion-expo-1eso",
@@ -282,7 +64,7 @@
         },
         "n4": {
           "verbo": "explica",
-          "texto": "Explica con sus propias palabras los términos del tema que el lector puede desconocer."
+          "texto": "Explica con palabras propias los términos del tema que el lector puede desconocer."
         }
       },
       "matriz_cuantitativa": null,
@@ -722,7 +504,7 @@
         },
         "n4": {
           "verbo": "explica",
-          "texto": "Explica, en una nota al margen del borrador, por qué ha cambiado una palabra o una frase del texto."
+          "texto": "Explica, en una nota al margen del borrador, por qué cambia una palabra o una frase del texto."
         }
       },
       "matriz_cuantitativa": {
@@ -831,11 +613,11 @@
         },
         "n3": {
           "verbo": "selecciona",
-          "texto": "Selecciona la información pertinente de dos fuentes indicadas y la explica con sus propias palabras."
+          "texto": "Selecciona la información pertinente de dos fuentes indicadas y la explica con palabras propias."
         },
         "n4": {
           "verbo": "contrasta",
-          "texto": "Contrasta, con la pauta facilitada, la información de dos fuentes indicadas, la explica con sus propias palabras e indica el origen de los datos."
+          "texto": "Contrasta, con la pauta facilitada, la información de dos fuentes indicadas, la explica con palabras propias e indica el origen de los datos."
         }
       },
       "matriz_cuantitativa": {
@@ -950,7 +732,7 @@
         },
         "n2": {
           "verbo": "ajusta",
-          "texto": "Ajusta el texto al modelo de exposición trabajado en clase, aunque mezcla algún término coloquial con el vocabulario del tema."
+          "texto": "Ajusta el texto al modelo de exposición trabajado en clase, con algún término coloquial junto al vocabulario del tema."
         },
         "n3": {
           "verbo": "emplea",
@@ -1009,7 +791,7 @@
         },
         "n2": {
           "verbo": "estructura",
-          "texto": "Estructura el texto en introducción, desarrollo y cierre por su cuenta, con un párrafo dedicado a cada parte."
+          "texto": "Estructura el texto en introducción, desarrollo y cierre por cuenta propia, con un párrafo dedicado a cada parte."
         },
         "n3": {
           "verbo": "estructura",
@@ -1089,7 +871,7 @@
         "penalizaciones": []
       },
       "descriptor_cotejo": null,
-      "descriptor_un_punto": "Estructura el texto en introducción, desarrollo y cierre por su cuenta, con un párrafo dedicado a cada parte."
+      "descriptor_un_punto": "Estructura el texto en introducción, desarrollo y cierre por cuenta propia, con un párrafo dedicado a cada parte."
     },
     {
       "id": "lcl-b-cohesion-expo-2eso",
@@ -1396,7 +1178,7 @@
         },
         "n2": {
           "verbo": "elabora",
-          "texto": "Elabora un esquema previo con las ideas principales por su cuenta y entrega el borrador junto al texto final."
+          "texto": "Elabora un esquema previo con las ideas principales por cuenta propia y entrega el borrador junto al texto final."
         },
         "n3": {
           "verbo": "revisa",
@@ -1472,7 +1254,7 @@
         "penalizaciones": []
       },
       "descriptor_cotejo": null,
-      "descriptor_un_punto": "Elabora un esquema previo con las ideas principales por su cuenta y entrega el borrador junto al texto final."
+      "descriptor_un_punto": "Elabora un esquema previo con las ideas principales por cuenta propia y entrega el borrador junto al texto final."
     },
     {
       "id": "lcl-b-informacion-expo-2eso",
@@ -1522,11 +1304,11 @@
         },
         "n3": {
           "verbo": "elabora",
-          "texto": "Elabora el texto a partir de la información seleccionada de dos fuentes indicadas y la explica en su mayor parte con sus propias palabras."
+          "texto": "Elabora el texto a partir de la información seleccionada de dos fuentes indicadas y la explica en su mayor parte con palabras propias."
         },
         "n4": {
           "verbo": "desarrolla",
-          "texto": "Desarrolla el trabajo de investigación combinando la información de dos o más fuentes indicadas, y explica con sus propias palabras el contenido tomado de cada una."
+          "texto": "Desarrolla el trabajo de investigación combinando la información de dos o más fuentes indicadas, y explica con palabras propias el contenido tomado de cada una."
         }
       },
       "matriz_cuantitativa": {
@@ -2105,7 +1887,7 @@
         },
         "n3": {
           "verbo": "revisa",
-          "texto": "Revisa el borrador por su cuenta y corrige problemas de puntuación y de conexión entre párrafos."
+          "texto": "Revisa el borrador por cuenta propia y corrige problemas de puntuación y de conexión entre párrafos."
         },
         "n4": {
           "verbo": "justifica",
@@ -2231,7 +2013,7 @@
         },
         "n4": {
           "verbo": "valora",
-          "texto": "Valora la fiabilidad de cada fuente a partir de su autoría, su fecha y su propósito, y justifica en el texto por qué ha empleado unos datos y descartado otros."
+          "texto": "Valora la fiabilidad de cada fuente a partir de su autoría, su fecha y su propósito, y justifica en el texto por qué emplea unos datos y descarta otros."
         }
       },
       "matriz_cuantitativa": {
@@ -2359,7 +2141,7 @@
         },
         "n4": {
           "verbo": "matiza",
-          "texto": "Matiza el grado de objetividad introduciendo su punto de vista mediante fórmulas propias del registro académico, sin abandonar la tercera persona ni el léxico específico del tema."
+          "texto": "Matiza el grado de objetividad introduciendo el punto de vista propio mediante fórmulas propias del registro académico, sin abandonar la tercera persona ni el léxico específico del tema."
         }
       },
       "matriz_cuantitativa": null,
@@ -2415,7 +2197,7 @@
         },
         "n3": {
           "verbo": "estructura",
-          "texto": "Estructura el desarrollo en párrafos que avanzan de lo general a lo particular y encadena cada uno con la información que retoma del anterior."
+          "texto": "Estructura el desarrollo en párrafos que avanzan de lo general a lo particular y encadena cada uno con un elemento retomado del anterior."
         },
         "n4": {
           "verbo": "articula",
@@ -2811,11 +2593,11 @@
         },
         "n2": {
           "verbo": "elabora",
-          "texto": "Elabora un esquema previo propio con la estructura del texto y entrega el borrador con marcas de revisión sobre la ortografía y el léxico."
+          "texto": "Elabora un esquema previo propio con el orden de las partes del texto y entrega el borrador con marcas de revisión sobre la ortografía y el léxico."
         },
         "n3": {
           "verbo": "revisa",
-          "texto": "Revisa el borrador por su cuenta y reformula los pasajes que, releídos, resultan difíciles de entender para un lector que no conoce el tema."
+          "texto": "Revisa el borrador por cuenta propia y reformula los pasajes que, releídos, resultan difíciles de entender para un lector que no conoce el tema."
         },
         "n4": {
           "verbo": "justifica",
@@ -2887,7 +2669,7 @@
         "penalizaciones": []
       },
       "descriptor_cotejo": null,
-      "descriptor_un_punto": "Elabora un esquema previo propio con la estructura del texto y entrega el borrador con marcas de revisión sobre la ortografía y el léxico."
+      "descriptor_un_punto": "Elabora un esquema previo propio con el orden de las partes del texto y entrega el borrador con marcas de revisión sobre la ortografía y el léxico."
     },
     {
       "id": "lcl-b-informacion-expo-4eso",
@@ -2933,7 +2715,7 @@
         },
         "n2": {
           "verbo": "selecciona",
-          "texto": "Selecciona información de dos o más fuentes por su cuenta e indica su procedencia en el texto."
+          "texto": "Selecciona información de dos o más fuentes por cuenta propia e indica su procedencia en el texto."
         },
         "n3": {
           "verbo": "contrasta",
@@ -3001,7 +2783,7 @@
               },
               {
                 "puntos": 2,
-                "condicion": "Explica con sus propias palabras la información de las fuentes, sin aportar una valoración propia"
+                "condicion": "Explica con palabras propias la información de las fuentes, sin aportar una valoración propia"
               },
               {
                 "puntos": 0,
@@ -3013,7 +2795,7 @@
         "penalizaciones": []
       },
       "descriptor_cotejo": null,
-      "descriptor_un_punto": "Selecciona información de dos o más fuentes por su cuenta e indica su procedencia en el texto."
+      "descriptor_un_punto": "Selecciona información de dos o más fuentes por cuenta propia e indica su procedencia en el texto."
     },
     {
       "id": "lcl-b-adecuacion-expo-1bach",
@@ -3061,7 +2843,7 @@
         },
         "n2": {
           "verbo": "ajusta",
-          "texto": "Ajusta el léxico y el tono al género académico, aunque mezcla información y valoración propia sin ninguna marca que las distinga."
+          "texto": "Ajusta el léxico y el tono al género académico, sin ninguna marca que distinga la información de la valoración propia."
         },
         "n3": {
           "verbo": "mantiene",
@@ -3069,7 +2851,7 @@
         },
         "n4": {
           "verbo": "justifica",
-          "texto": "Justifica la elección del grado de presencia como emisor y del punto en que alterna información y valoración, y emplea en todo el texto un lenguaje no discriminatorio."
+          "texto": "Justifica la elección del grado de presencia como emisor y del lugar del texto en que la información da paso a la valoración, y emplea en todo el texto un lenguaje no discriminatorio."
         }
       },
       "matriz_cuantitativa": null,
@@ -3125,7 +2907,7 @@
         },
         "n3": {
           "verbo": "estructura",
-          "texto": "Estructura el desarrollo de modo que cada bloque presenta primero la información y después, si procede, una valoración propia claramente diferenciada."
+          "texto": "Estructura el desarrollo en bloques que ofrecen primero la información y después, si procede, una valoración propia claramente diferenciada."
         },
         "n4": {
           "verbo": "articula",
@@ -3256,7 +3038,7 @@
         },
         "n4": {
           "verbo": "sustituye",
-          "texto": "Sustituye las repeticiones mediante nominalizaciones e hiperónimos, y elige el tiempo verbal de cada bloque para marcar qué es explicación general y qué es dato concreto o cita."
+          "texto": "Sustituye las repeticiones mediante nominalizaciones e hiperónimos, y elige el tiempo verbal de cada bloque para marcar qué es explicación general y qué es dato concreto o referencia a una fuente."
         }
       },
       "matriz_cuantitativa": {
@@ -3513,11 +3295,11 @@
         },
         "n2": {
           "verbo": "elabora",
-          "texto": "Elabora un esquema previo propio con la estructura del texto y entrega el borrador con marcas de revisión sobre la ortografía y el léxico."
+          "texto": "Elabora un esquema previo propio con el orden de las partes del texto y entrega el borrador con marcas de revisión sobre la ortografía y el léxico."
         },
         "n3": {
           "verbo": "revisa",
-          "texto": "Revisa el borrador por su cuenta y reformula los pasajes que, releídos, resultan difíciles de entender para un lector que no conoce el tema."
+          "texto": "Revisa el borrador por cuenta propia y reformula los pasajes que, releídos, resultan difíciles de entender para un lector que no conoce el tema."
         },
         "n4": {
           "verbo": "justifica",
@@ -3589,7 +3371,7 @@
         "penalizaciones": []
       },
       "descriptor_cotejo": null,
-      "descriptor_un_punto": "Elabora un esquema previo propio con la estructura del texto y entrega el borrador con marcas de revisión sobre la ortografía y el léxico."
+      "descriptor_un_punto": "Elabora un esquema previo propio con el orden de las partes del texto y entrega el borrador con marcas de revisión sobre la ortografía y el léxico."
     },
     {
       "id": "lcl-b-informacion-expo-1bach",
@@ -3636,15 +3418,15 @@
         },
         "n2": {
           "verbo": "selecciona",
-          "texto": "Selecciona información de dos o más fuentes por su cuenta y las enumera en una bibliografía final, sin marcar en el texto qué dato procede de cuál."
+          "texto": "Selecciona información de dos o más fuentes por cuenta propia y las enumera en una bibliografía final, sin marcar en el texto qué dato procede de cuál."
         },
         "n3": {
           "verbo": "contrasta",
-          "texto": "Contrasta la información de fuentes distintas, cita su procedencia en el lugar del texto donde la usa, y sigue un modelo de cita bibliográfica dado."
+          "texto": "Contrasta la información de fuentes distintas, cita su procedencia en el lugar del texto donde la usa, y aplica el modelo de referencia bibliográfica dado."
         },
         "n4": {
           "verbo": "integra",
-          "texto": "Integra en el texto un punto de vista propio sobre el tema, verifica los datos que resultan dudosos antes de emplearlos, y documenta todas las fuentes con el aparato de cita, notas y bibliografía del trabajo académico."
+          "texto": "Integra en el texto un punto de vista propio sobre el tema, verifica los datos que resultan dudosos antes de emplearlos, y documenta todas las fuentes con el aparato de referencias, notas y bibliografía del trabajo académico."
         }
       },
       "matriz_cuantitativa": {
@@ -3704,7 +3486,7 @@
               },
               {
                 "puntos": 2,
-                "condicion": "Explica con sus propias palabras la información de las fuentes, sin aportar una valoración propia ni verificar ningún dato"
+                "condicion": "Explica con palabras propias la información de las fuentes, sin aportar una valoración propia ni verificar ningún dato"
               },
               {
                 "puntos": 0,
@@ -3716,7 +3498,7 @@
         "penalizaciones": []
       },
       "descriptor_cotejo": null,
-      "descriptor_un_punto": "Selecciona información de dos o más fuentes por su cuenta e indica su procedencia en el texto."
+      "descriptor_un_punto": "Selecciona información de dos o más fuentes por cuenta propia e indica su procedencia en el texto."
     },
     {
       "id": "lcl-b-adecuacion-expo-2bach",
@@ -3768,11 +3550,11 @@
         },
         "n3": {
           "verbo": "mantiene",
-          "texto": "Mantiene el registro formal en todo el texto y marca mediante la enunciación el paso de la información a la valoración propia."
+          "texto": "Mantiene el registro formal en todo el texto e indica mediante la enunciación el paso de la información a la valoración propia."
         },
         "n4": {
           "verbo": "justifica",
-          "texto": "Justifica ante el lector el grado de presencia como emisor y el punto en que alterna información y valoración, con un lenguaje no discriminatorio en todo el texto."
+          "texto": "Justifica ante el lector el grado de presencia como emisor y el lugar del texto en que la información da paso a la valoración, con un lenguaje no discriminatorio en todo el texto."
         }
       },
       "matriz_cuantitativa": null,
@@ -3824,11 +3606,11 @@
         },
         "n2": {
           "verbo": "estructura",
-          "texto": "Estructura el texto en introducción, desarrollo y conclusión, y reserva un bloque del desarrollo para cada aspecto del tema."
+          "texto": "Estructura el texto en introducción, desarrollo y conclusión, y dedica un bloque del desarrollo a cada aspecto del tema."
         },
         "n3": {
           "verbo": "estructura",
-          "texto": "Estructura el desarrollo de modo que cada bloque presenta primero los datos y, cuando procede, una valoración propia claramente diferenciada de ellos."
+          "texto": "Estructura el desarrollo en bloques que ofrecen primero los datos y, cuando procede, una valoración propia claramente diferenciada de ellos."
         },
         "n4": {
           "verbo": "articula",
@@ -3904,7 +3686,7 @@
         "penalizaciones": []
       },
       "descriptor_cotejo": null,
-      "descriptor_un_punto": "Estructura el texto en introducción, desarrollo y conclusión, y reserva un bloque del desarrollo para cada aspecto del tema."
+      "descriptor_un_punto": "Estructura el texto en introducción, desarrollo y conclusión, y dedica un bloque del desarrollo a cada aspecto del tema."
     },
     {
       "id": "lcl-b-cohesion-expo-2bach",
@@ -4214,7 +3996,7 @@
         },
         "n2": {
           "verbo": "elabora",
-          "texto": "Elabora un esquema previo propio con la estructura del texto, y revisa el borrador de forma individual, sin contrastarlo con nadie ni con ningún instrumento de consulta."
+          "texto": "Elabora un esquema previo propio con el orden de las partes del texto, y revisa el borrador de forma individual, sin contrastarlo con nadie ni con ningún instrumento de consulta."
         },
         "n3": {
           "verbo": "revisa",
@@ -4222,7 +4004,7 @@
         },
         "n4": {
           "verbo": "justifica",
-          "texto": "Justifica con metalenguaje específico los cambios que introduce a partir de esa revisión compartida, explicando tanto el problema de comprensión que resuelven como el efecto estilístico que persiguen."
+          "texto": "Justifica con metalenguaje específico los cambios introducidos a partir de esa revisión compartida, explicando tanto el problema de comprensión que resuelven como el efecto estilístico que persiguen."
         }
       },
       "matriz_cuantitativa": {
@@ -4290,7 +4072,7 @@
         "penalizaciones": []
       },
       "descriptor_cotejo": null,
-      "descriptor_un_punto": "Elabora un esquema previo propio con la estructura del texto, y revisa el borrador de forma individual."
+      "descriptor_un_punto": "Elabora un esquema previo propio con el orden de las partes del texto, y revisa el borrador de forma individual."
     },
     {
       "id": "lcl-b-informacion-expo-2bach",
@@ -4337,7 +4119,7 @@
         },
         "n2": {
           "verbo": "selecciona",
-          "texto": "Selecciona información de dos o más fuentes por su cuenta, la organiza en una carpeta o gestor propio, y las enumera en una bibliografía final sin marcar en el texto qué dato procede de cuál."
+          "texto": "Selecciona información de dos o más fuentes por cuenta propia, la organiza en una carpeta o gestor propio, y las enumera en una bibliografía final sin marcar en el texto qué dato procede de cuál."
         },
         "n3": {
           "verbo": "contrasta",
@@ -4345,7 +4127,7 @@
         },
         "n4": {
           "verbo": "integra",
-          "texto": "Integra en el texto un punto de vista propio sobre el tema, verifica los datos que resultan dudosos antes de emplearlos, y documenta todas las fuentes con el aparato de cita, notas y bibliografía del trabajo académico, de modo que el material de partida quede recuperable para una revisión posterior."
+          "texto": "Integra en el texto un punto de vista propio sobre el tema, verifica los datos que resultan dudosos antes de emplearlos, y documenta todas las fuentes con el aparato de referencias, notas y bibliografía del trabajo académico, de modo que el material de partida quede recuperable para una revisión posterior."
         }
       },
       "matriz_cuantitativa": {
@@ -4405,7 +4187,7 @@
               },
               {
                 "puntos": 2,
-                "condicion": "Explica con sus propias palabras la información de las fuentes, sin aportar una valoración propia ni verificar ningún dato"
+                "condicion": "Explica con palabras propias la información de las fuentes, sin aportar una valoración propia ni verificar ningún dato"
               },
               {
                 "puntos": 0,
@@ -4417,7 +4199,7 @@
         "penalizaciones": []
       },
       "descriptor_cotejo": null,
-      "descriptor_un_punto": "Selecciona información de dos o más fuentes por su cuenta, la organiza en una carpeta o gestor propio e indica su procedencia en el texto."
+      "descriptor_un_punto": "Selecciona información de dos o más fuentes por cuenta propia, la organiza en una carpeta o gestor propio e indica su procedencia en el texto."
     }
   ]
 }

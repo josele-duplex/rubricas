@@ -10,12 +10,9 @@
 // misma frase. Se descubrió generando la pestaña de verdad en el navegador,
 // no leyendo el código (CLAUDE.md, método de trabajo).
 
-import { readFileSync } from "node:fs";
 import { primeraPersona, generarAutoevaluacion } from "../js/motor.js";
-
-function cargar(nombre) {
-  return JSON.parse(readFileSync(new URL(`../data/${nombre}`, import.meta.url), "utf8"));
-}
+import { LEXICO } from "../js/lexico.js";
+import { cargarPack as cargar } from "./cargar.mjs";
 
 const pack = cargar("pack-lcl-expositivo.json");
 const verbosPorId = Object.fromEntries(pack.verbos.map((v) => [v.id, v]));
@@ -100,6 +97,50 @@ caso("primeraPersona: no reconjuga un verbo del banco cuyo sujeto no es el alumn
   );
 });
 
+// Límite conocido del motor, no un fallo suyo: si un descriptor usa como
+// sustantivo una palabra que en el banco es verbo ("la estructura del texto",
+// "un modelo de cita bibliográfica"), la reconjugación la trata como verbo y
+// escribe "la estructuro del texto". Distinguirlo exigiría analizar la frase,
+// que es justo lo que reconjugarSecundarios no hace. La decisión, al barrer la
+// regla 1 de la decisión 15 (v1.22), fue arreglarlo en el contenido —los
+// descriptores ya no usan esas palabras como nombre— y dejar aquí pinchado el
+// comportamiento, para que nadie intente "arreglar" el motor y rompa de paso
+// los usos legítimos ("y la explica con sus propias palabras", donde "la" es
+// pronombre y no artículo, y la reconjugación sí debe ocurrir).
+caso("primeraPersona: un verbo del banco usado como sustantivo se reconjuga igual (límite conocido)", () => {
+  const resultado = primeraPersona(
+    "Elabora un esquema previo propio con la estructura del texto.",
+    "elabora",
+    verbosPorId
+  );
+  assertIgual(
+    resultado,
+    "Elaboro un esquema previo propio con la estructuro del texto.",
+    "el motor no distingue el sustantivo del verbo: se arregla escribiendo el descriptor de otro modo"
+  );
+});
+
+// Por qué "repite" NO está en el banco, aunque es verbo inequívoco y aparece
+// cinco veces con el alumno como sujeto: en el pack argumentativo el sujeto es
+// otro —"con un cierre QUE LA repite con las mismas palabras"— y el guardarraíl
+// `(?<!\bque )` no lo tapa, porque delante hay "la", no "que". Declararlo
+// habría escrito "que la repito con las mismas palabras" en un pack ya
+// validado, que es lo que prohíbe el corolario de simetría de CLAUDE.md. Es el
+// mismo caso que "sigue" en la v1.22, y por eso los cinco descriptores del oral
+// y de narración se arreglaron reescribiéndolos (v1.23, decisión 16(a)).
+caso("primeraPersona: 'repite' se queda en 3.ª persona porque su sujeto es el cierre, no el alumno", () => {
+  const resultado = primeraPersona(
+    "Formula la tesis en la introducción y desarrolla cada argumento en su propio párrafo, con un cierre que la repite con las mismas palabras.",
+    "formula",
+    verbosPorId
+  );
+  assertIgual(
+    resultado,
+    "Formulo la tesis en la introducción y desarrollo cada argumento en su propio párrafo, con un cierre que la repite con las mismas palabras.",
+    "declarar 'repite' en el banco rompería este descriptor del pack argumentativo"
+  );
+});
+
 caso("primeraPersona: corrige el pretérito 'encontró' fuera del par presente del banco", () => {
   const resultado = primeraPersona(
     "Enumera datos sobre el tema en un bloque único, siguiendo el orden en que los encontró.",
@@ -126,6 +167,39 @@ caso("primeraPersona: reconjuga un segundo verbo no reflexivo en la misma frase"
   );
 });
 
+// El frente (b) de la decisión 16 de §17, pinchado por las dos caras. La
+// redacción de la izquierda es la que llevaban los packs hasta la v1.23 y la de
+// la derecha la que se escribió al barrerla: el idioma equivalente sin posesivo
+// ("por cuenta propia", "con palabras propias", el artículo en "a las notas")
+// dice lo mismo y proyecta en las dos personas. No hay nada que arreglar en el
+// motor —ningún verbo está mal conjugado en la versión defectuosa—, y por eso el
+// caso se escribe aquí y no como una excepción de reconjugarSecundarios.
+caso("primeraPersona: el posesivo del alumno imprime «él» dentro de la frase en «yo» (defecto de la decisión 16(b))", () => {
+  const resultado = primeraPersona(
+    "Revisa el borrador por su cuenta y corrige problemas de puntuación y de conexión entre párrafos.",
+    "revisa",
+    verbosPorId
+  );
+  assertIgual(
+    resultado,
+    "Reviso el borrador por su cuenta y corrijo problemas de puntuación y de conexión entre párrafos.",
+    "el motor conjuga bien los dos verbos y aun así la frase mezcla los dos sujetos: el defecto no vive en el verbo"
+  );
+});
+
+caso("primeraPersona: 'por cuenta propia' dice lo mismo y proyecta sin cambiar de sujeto", () => {
+  const resultado = primeraPersona(
+    "Revisa el borrador por cuenta propia y corrige problemas de puntuación y de conexión entre párrafos.",
+    "revisa",
+    verbosPorId
+  );
+  assertIgual(
+    resultado,
+    "Reviso el borrador por cuenta propia y corrijo problemas de puntuación y de conexión entre párrafos.",
+    "la reescritura del contenido es lo que arregla el frente (b), no una regla nueva del motor"
+  );
+});
+
 // --- generarAutoevaluacion, contra el pack real --------------------------
 caso("generarAutoevaluacion: reconjuga sin excepciones los doce criterios del pack", () => {
   const meta = { actividad: "Prueba", curso: "1ESO", tipoTarea: "expositivo" };
@@ -148,25 +222,42 @@ caso("generarAutoevaluacion: reconjuga sin excepciones los doce criterios del pa
 // estaba cableado al expositivo y de ahí salieron los ocho verbos que faltaban
 // en el banco del argumentativo (registro de cambios v1.13).
 //
-// Excepciones deliberadas: "una introducción que delimita el tema"
-// (lcl-b-coherencia-expo-3eso, N3) tiene "delimita" con la introducción como
-// sujeto, no el alumno, así que se queda en 3.ª persona a propósito
-// (js/motor.js, reconjugarSecundarios). Si aparece una excepción no listada
-// aquí, es una regresión real, no ruido del test.
+// Excepciones deliberadas: dos descriptores llevan un verbo del banco cuyo
+// sujeto no es el alumno sino el sintagma que lo precede —"una introducción
+// QUE delimita el tema" (lcl-b-coherencia-expo-3eso N3) y "la forma deíctica
+// … QUE ajusta la distancia" (lcl-b-adecuacion-arg-4eso N4)—, así que se
+// quedan en 3.ª persona a propósito (js/motor.js, reconjugarSecundarios). Si
+// aparece una excepción no listada aquí, es una regresión real, no ruido.
 //
-// `data/pack-lcl-argumentativo.json` NO está todavía en la lista, y su
-// ausencia es un hallazgo, no un olvido: al ampliar este invariante a los
-// cuatro packs aparecieron tres restos suyos. Uno es legítimo ("la forma
-// deíctica QUE ajusta la distancia", lcl-b-adecuacion-arg-4eso N4), pero los
-// otros dos son el defecto real del "se dirige" otra vez, en 1.º y 2.º de
-// Bachillerato: "...y explicita la respuesta personal que la lectura LE
-// provoca, conectándola con la valoración que DEFIENDE"
-// (lcl-c-fuentes-arg-1bach y -2bach, N4), que en la autoevaluación imprime
-// "yo" y "él" en la misma frase. Se arregla reescribiendo esos dos
-// descriptores, no metiéndolos en la lista de excepciones; hasta entonces el
-// pack se queda fuera para que la lista no legitime un fallo.
-const PACKS_CON_INVARIANTE = ["pack-lcl-expositivo.json", "pack-lcl-narracion.json"];
-const EXCEPCIONES_DELIBERADAS = new Set(["lcl-b-coherencia-expo-3eso|3|Delimita"]);
+// Los cuatro packs están dentro. El argumentativo entró al cerrarse la
+// decisión 15 (SDD §17): sus dos restos ilegítimos —"…y explicita la respuesta
+// personal que la lectura LE provoca, conectándola con la valoración que
+// DEFIENDE", lcl-c-fuentes-arg-1bach y -2bach N4— se arreglaron reescribiendo
+// los descriptores, no ampliando la lista de excepciones. El oral estaba fuera
+// sin motivo escrito, que es la misma forma de agujero que la v1.19 encontró
+// en el expositivo.
+//
+// Lo que este invariante NO cubre: un verbo en 3.ª persona con el alumno como
+// sujeto que no esté en el banco (p. ej. "y dedica un párrafo a cada aspecto")
+// pasa sin ruido, porque solo se buscan las formas del banco. Ese barrido es
+// la regla 1 de la decisión 15 y se hace leyendo los descriptores proyectados:
+// no da un booleano, igual que `simular_correccion.py`. Está pasado sobre los
+// CUATRO packs: el expositivo y el argumentativo en la v1.22, el oral y el de
+// narración en la v1.23 (decisión 16(a)).
+//
+// El frente (b) de la decisión 16 —el posesivo y el dativo de 3.ª persona, que
+// no viven en un verbo— lo cubre el segundo invariante, más abajo.
+const PACKS_CON_INVARIANTE = [
+  "pack-lcl-expositivo.json",
+  "pack-lcl-argumentativo.json",
+  "pack-lcl-narracion.json",
+  "pack-lcl-oral.json",
+  "pack-lcl-comentario.json",
+];
+const EXCEPCIONES_DELIBERADAS = new Set([
+  "lcl-b-coherencia-expo-3eso|3|Delimita",
+  "lcl-b-adecuacion-arg-4eso|4|Ajusta",
+]);
 
 caso("generarAutoevaluacion: ningún descriptor conserva un verbo del banco en 3.ª persona (salvo las excepciones documentadas)", () => {
   for (const nombre of PACKS_CON_INVARIANTE) {
@@ -190,6 +281,96 @@ caso("generarAutoevaluacion: ningún descriptor conserva un verbo del banco en 3
                   `${nombre} · ${curso} · ${d.nombre} · N${i + 1} conserva "${forma}" en 3.ª persona: "${texto}"`
                 );
               }
+            }
+          }
+        }
+      }
+    }
+  }
+});
+
+// Segundo invariante: el posesivo y el dativo de 3.ª persona (decisión 16(b) de
+// §17). El defecto es el mismo —«él» dentro de una frase en «yo»— y no lo toca
+// ninguna de las dos reglas anteriores, porque aquí no hay ningún verbo mal
+// conjugado: "Reviso el borrador por SU cuenta", "Explico con SUS propias
+// palabras", "en el orden en que se LE ocurren".
+//
+// Se arregló en el CONTENIDO y no en `reconjugarSecundarios`, por lo mismo que
+// "estructura" o "repite": el motor tendría que saber de quién es cada "su", y
+// no puede. La mitad de los "su" de los packs son legítimos —"indica SU
+// procedencia" habla de los datos, "a partir de SU autoría" habla de la
+// fuente—, así que cualquier regla general sobre el posesivo rompería packs ya
+// validados, que es lo que prohíbe el corolario de simetría de CLAUDE.md. La
+// vía de motor que sí funcionaba —una entrada literal por frase en
+// SUSTITUCIONES_ESPECIALES— se descartó porque obliga a editar js/motor.js cada
+// vez que entra un pack, y con él una materia (docs/diseno/anadir-una-materia.md).
+//
+// Lo que sí se puede automatizar es la comprobación, y es fail-closed: todo
+// "su"/"sus" de un descriptor proyectado tiene que estar declarado con su
+// referente en `posesivos_ajenos` (data/reglas-lexicas.json, por materia); todo
+// "le"/"les" es error, porque en los cuatro packs el dativo siempre apuntaba al
+// alumno. Una aparición nueva no se cuela: obliga a decidir de quién es.
+// Las fronteras se escriben con \p{L} y no con \b: para el motor de expresiones
+// regulares de JS "á" no es un carácter de palabra, así que \bles\b casa dentro
+// de "cuáles" y el invariante daba un falso positivo en el N3 de adecuación de
+// 1.º Bach. Es la misma trampa que ya obligó a escribir sin \b la sustitución
+// de "los encontró" en js/motor.js.
+const RE_POSESIVO = /(?<!\p{L})(su|sus|le|les)(?!\p{L})(?:\s+(\p{L}+))?/giu;
+
+function posesivosSinDeclarar(texto, ajenos) {
+  const sueltos = [];
+  for (const [, forma, siguiente] of texto.matchAll(RE_POSESIVO)) {
+    const frase = `${forma.toLowerCase()} ${(siguiente ?? "").toLowerCase()}`.trim();
+    if (!(frase in ajenos)) sueltos.push(frase);
+  }
+  return sueltos;
+}
+
+// Auto-prueba del invariante, con la redacción real que tenían los packs: si
+// esto deja de dar positivo, el invariante ha dejado de mirar y los packs
+// pasarían igual de limpios estando mal (misma idea que el --auto-prueba de
+// scripts/verificar_derivacion.py).
+caso("posesivos: el invariante da positivo sobre la redacción anterior al barrido", () => {
+  const ajenos = LEXICO.por_materia.LCL.posesivos_ajenos;
+  const casos = [
+    ["Reviso el borrador por su cuenta y corrijo problemas de puntuación.", "su cuenta"],
+    ["Explico con sus propias palabras los términos del tema.", "sus propias"],
+    ["Dirijo la mirada casi todo el tiempo a sus notas o a la pantalla.", "sus notas"],
+    ["Enumero opiniones en un bloque único, siguiendo el orden en que se le ocurren.", "le ocurren"],
+  ];
+  for (const [texto, esperado] of casos) {
+    const sueltos = posesivosSinDeclarar(texto, ajenos);
+    if (!sueltos.includes(esperado)) {
+      throw new Error(`esperaba que "${esperado}" saliera sin declarar en "${texto}", obtuve [${sueltos}]`);
+    }
+  }
+  // Y la cara contraria: un posesivo legítimo no puede dar positivo.
+  const legitimo = "Selecciono información de dos o más fuentes e indico su procedencia al final del texto.";
+  const sueltos = posesivosSinDeclarar(legitimo, ajenos);
+  if (sueltos.length > 0) throw new Error(`"su procedencia" es legítimo y salió como [${sueltos}]`);
+});
+
+caso("generarAutoevaluacion: ningún descriptor conserva un posesivo o un dativo de 3.ª persona del alumno", () => {
+  for (const nombre of PACKS_CON_INVARIANTE) {
+    const p = cargar(nombre);
+    const bloque = LEXICO.por_materia[p.materia];
+    if (!bloque) throw new Error(`${nombre}: la materia "${p.materia}" no tiene léxico propio`);
+    const ajenos = bloque.posesivos_ajenos ?? {};
+    const cursos = [...new Set(p.criterios.map((c) => c.curso))];
+    const tipos = [...new Set(p.criterios.flatMap((c) => c.tipos_tarea))];
+    for (const curso of cursos) {
+      for (const tipoTarea of tipos) {
+        const criterios = p.criterios
+          .filter((c) => c.curso === curso && c.tipos_tarea.includes(tipoTarea))
+          .map((c) => ({ ...c, peso_normalizado: c.peso_base }));
+        if (criterios.length === 0) continue;
+        const auto = generarAutoevaluacion(criterios, p.verbos, { actividad: "Prueba", curso, tipoTarea });
+        for (const d of auto.dimensiones) {
+          for (const [i, texto] of d.niveles.entries()) {
+            for (const frase of posesivosSinDeclarar(texto, ajenos)) {
+              throw new Error(
+                `${nombre} · ${curso} · ${d.nombre} · N${i + 1} dice "${frase}" con el alumno como referente: "${texto}"`
+              );
             }
           }
         }

@@ -1,0 +1,159 @@
+{
+  "_nota": [
+    "Léxico de las reglas del validador: la ÚNICA fuente.",
+    "",
+    "Hasta ahora estas listas vivían dos veces —scripts/validar_pack.py y js/validador.js—",
+    "y se sincronizaban a mano. Ya habían divergido en silencio: el script marcaba",
+    "'bienestar' como adverbitis por contener 'bien' y la aplicación no, así que la app daba",
+    "por limpio un pack que el script rechazaba. Eso es exactamente lo que el SDD §10",
+    "prohíbe. La lógica de cada regla sigue escrita dos veces (es corta y conviene leerla",
+    "en cada lenguaje); las PALABRAS, que es donde vive el conocimiento de cada materia y",
+    "donde la copia se pudre, están aquí y solo aquí.",
+    "",
+    "js/lexico.js se GENERA desde este archivo con scripts/generar_lexico.py.",
+    "No se edita a mano. scripts/comprobar_todo.py falla si se han separado.",
+    "",
+    "Al añadir una materia nueva se añade su bloque en `por_materia` y no se toca",
+    "ni una línea de Python ni de JavaScript.",
+    "",
+    "Todo va en minúsculas, porque los validadores comparan contra texto normalizado.",
+    "Y va SIN TILDES salvo `comun.formulas_guiadas`, que es la única lista comparada",
+    "por verificar_derivacion.py: ese script normaliza sin quitar tildes, porque su",
+    "trabajo es casar citas literales contra el BORM. Cada lista dice contra qué se",
+    "compara en su propia `_nota`."
+  ],
+
+  "version": "1.1.0",
+
+  "comun": {
+    "_nota": "Vale para cualquier materia: sale del principio anti-adverbitis del marco teórico y de la redacción del decreto de Murcia, no del contenido de Lengua.",
+
+    "adverbitis": {
+      "_nota": "Calificadores vagos (marco teórico §3). Tres grupos por MODO de coincidencia, no por significado: la distinción no es cosmética, es la que evita el falso positivo de 'bienestar' y 'formal'.",
+      "subcadena": [
+        "adecuadamente", "correctamente", "frecuentemente", "suficientemente",
+        "normalmente", "habitualmente", "puntualmente", "escasamente",
+        "bastante", "regular"
+      ],
+      "palabra_completa": ["bien", "mal", "muy"],
+      "multipalabra": [
+        "a veces", "de forma adecuada", "de manera correcta", "casi siempre", "en general"
+      ]
+    },
+
+    "negaciones": {
+      "_nota": "El nivel 1 describe lo que el alumno SÍ hace de forma limitada (CLAUDE.md, regla 4).",
+      "terminos": ["no ", "carece", "sin lograr", "es incapaz", "nunca "]
+    },
+
+    "palabras_vacias": [
+      "cada", "de", "la", "el", "los", "las", "un", "una", "que", "sin",
+      "por", "no", "y", "en", "su", "se", "mas", "con", "al", "del", "sea"
+    ],
+
+    "modalizadores": {
+      "_nota": "Cómo el decreto de Murcia sube y baja la exigencia de un criterio. Solo estas dos direcciones: las familias 'sencillez' y 'extensión' se descartaron a propósito.",
+      "disparadores_ayuda": [
+        "de manera guiada", "de forma guiada", "con ayuda de pautas y modelos", "modelos dados"
+      ],
+      "marcas_andamiaje": [
+        "guiad", "pauta", "modelo", "guion", "plantilla", "indicad", "facilitad",
+        "profesor", "con apoyo"
+      ],
+      "disparadores_autonomia": [
+        "progresivamente autonoma", "de manera autonoma", "de forma autonoma", "con autonomia"
+      ],
+      "marcas_andamiaje_residual": [
+        "indicadas por el profesor", "indicados por el profesor", "con la pauta facilitada",
+        "con la pauta dada", "con el modelo dado", "segun el guion facilitado",
+        "de manera guiada"
+      ]
+    },
+
+    "formulas_guiadas": {
+      "_nota": "Fórmulas con las que el decreto rebaja la exigencia: justifican que un criterio quede POR DEBAJO del techo de su curso (§5.4). 'básico' está aquí porque el propio decreto escala así el 5.2. ATENCIÓN, ES LA ÚNICA LISTA CON TILDES: la comprueba scripts/verificar_derivacion.py, que normaliza sin quitarlas porque compara citas literales contra el BORM. Quitarle la tilde a 'básico' deja de casar y tres criterios de 2.º ESO empiezan a dar error.",
+      "terminos": [
+        "de manera guiada", "de forma guiada", "sencillo", "con ayuda",
+        "con la ayuda", "pautas", "modelos", "básico"
+      ]
+    },
+
+    "umbrales": {
+      "tope_penalizacion": 0.35,
+      "tope_conjunto_penalizaciones": 0.5,
+      "similitud_maxima_entre_niveles": 0.75,
+      "ventana_negacion_n1": 45,
+      "dimensiones_sostenibles": 5,
+      "minimo_dimensiones_por_combinacion": 3
+    }
+  },
+
+  "por_materia": {
+    "_nota": "Un bloque por materia. Si un pack declara una `materia` que no está aquí, los validadores dan ERROR en vez de pasar de largo: una materia sin léxico propio no está validada, solo parece validada.",
+
+    "LCL": {
+      "etiqueta": "Lengua Castellana y Literatura",
+
+      "saberes_prohibidos": {
+        "_nota": "Cabezas de dimensión que nombran un contenido y no una acción competencial (CLAUDE.md, regla 5). Es la lista MÁS dependiente de la materia: 'ecuaciones' o 'la Revolución Francesa' no pintan nada aquí, y 'sintaxis' no pintará nada en Matemáticas.",
+        "terminos": [
+          "sintaxis", "morfologia", "ortografia", "puntuacion", "acentuacion", "lexico",
+          "vocabulario", "oracion", "oraciones", "subordinadas", "sintagma", "sintagmas",
+          "metrica", "figuras retoricas", "generos literarios", "barroco", "romanticismo",
+          "renacimiento", "siglo de oro", "literatura medieval"
+        ]
+      },
+
+      "formulas_proceso": {
+        "_nota": "Fórmulas del decreto que sostienen que una dimensión evalúa una FASE del proceso y no el producto terminado (§5.2, campo `evalua_proceso`). Sin 'esquema': el 6.1 usa «esquemas propios» para reorganizar información ajena en el texto terminado, no para el esquema como fase previa — coinciden en la palabra, no en el referente.",
+        "terminos": ["planificar", "planificacion", "borrador", "revisar", "revision"]
+      },
+
+      "generos": {
+        "_nota": "Géneros textuales que `saber_vehiculo` puede nombrar. Se comprueban contra el segmento de fuente del curso del criterio (decisión 13 de §17): así se cazó la cita fabricada de 2.º ESO.",
+        "terminos": ["expositiv", "argumentativ", "narrativ"]
+      },
+
+      "posesivos_ajenos": {
+        "_nota": [
+          "Posesivo o dativo de 3.ª persona (`su`, `sus`, `le`, `les`) más la palabra que",
+          "le sigue, para los casos en que el referente NO es el alumno. Es la lista de",
+          "excepciones del invariante de posesivos de test/proyeccion.mjs (decisión 16(b)",
+          "de §17), y va aquí y no en el test porque es vocabulario de la materia:",
+          "añadir una materia no debe obligar a tocar código.",
+          "",
+          "La regla es fail-closed a propósito: en un descriptor proyectado a 1.ª persona,",
+          "todo `su` que no esté en esta lista es un error. El alumno es el sujeto de la",
+          "frase, así que un posesivo suyo imprime «él» dentro de una frase en «yo»",
+          "(«Reviso el borrador por su cuenta») sin que ningún verbo esté mal conjugado.",
+          "Lo que es del alumno se escribe con `propio` o con el artículo: «por cuenta",
+          "propia», «con palabras propias», «a las notas».",
+          "",
+          "El valor de cada entrada es el referente, y está para leerlo: si no sabes",
+          "escribir de quién es ese `su`, no es una excepción, es el defecto.",
+          "",
+          "No hay ninguna entrada de `le` ni de `les`: el dativo de 3.ª persona siempre",
+          "apuntaba al alumno en los cuatro packs («el orden en que se le ocurren»)."
+        ],
+        "su atmósfera": "el relato",
+        "su autoría": "la fuente citada",
+        "su complejidad": "el tema expuesto",
+        "su condición": "el personaje",
+        "su contexto": "la obra leída",
+        "su fecha": "la fuente citada",
+        "su información": "la fuente citada",
+        "su mayor": "la información seleccionada (en su mayor parte)",
+        "su origen": "los datos citados",
+        "su procedencia": "los datos o la información tomados de la fuente",
+        "su propio": "cada argumento (en su propio párrafo)",
+        "su propósito": "la fuente citada",
+        "su párrafo": "cada argumento",
+        "su respuesta": "cada objeción anticipada",
+        "su situación": "el personaje",
+        "sus datos": "la fuente citada",
+        "sus razones": "las opiniones que se enlazan",
+        "sus términos": "la objeción, expuesta con los términos en que se formula"
+      }
+    }
+  }
+}

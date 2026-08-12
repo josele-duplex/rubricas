@@ -1,5 +1,6 @@
 import {
   cargarPack,
+  cargarJson,
   fusionarPacks,
   generarInstrumentos,
   PUERTA_APLICABILIDAD,
@@ -13,7 +14,7 @@ import {
   generarAutoevaluacion,
   generarEscalaEstimacion,
 } from "./motor.js";
-import { poblarFormulario, actualizarCursos, renderResultado, renderSaludPack, renderResultadoAlumnoFicha, escapeHtml } from "./ui.js";
+import { poblarFormulario, actualizarCursos, renderResultado, renderSaludPack, renderResultadoAlumnoFicha, escapeHtml, fijarCatalogo } from "./ui.js";
 import { validarPack } from "./validador.js";
 import { renderModoAvanzado, conectarEventosModoAvanzado } from "./modo-avanzado.js";
 import { renderCalificacion, conectarEventosCalificacion, alumnosGuardados } from "./calificar.js";
@@ -31,28 +32,34 @@ const els = {
   saludPack: document.getElementById("salud-pack"),
 };
 
-// Un pack por tipo de tarea (SDD §5.1). El formulario y el motor trabajan
-// sobre la fusión de todos ellos; la salud del pack se informa por separado
-// para no mezclar los pesos por curso de un pack con los de otro (§10).
-const PACKS_URLS = [
-  "data/pack-lcl-expositivo.json",
-  "data/pack-lcl-argumentativo.json",
-  "data/pack-lcl-oral.json",
-  "data/pack-lcl-narracion.json",
-];
+// Qué packs existen, cómo se llaman las cosas en pantalla y qué verbos hay:
+// todo sale de data/. Esta lista estaba cableada aquí y las etiquetas en
+// ui.js, así que añadir un pack obligaba a acordarse de dos archivos de
+// código; ahora se añade una línea en data/catalogo.json.
+const URL_CATALOGO = "data/catalogo.json";
+const URL_VERBOS = "data/verbos.json";
 
 let pack;
 let configActual = null;
 
 async function iniciar() {
   let packsOriginales;
+  let catalogo;
   try {
-    packsOriginales = await Promise.all(PACKS_URLS.map((url) => cargarPack(url)));
+    const [cat, bancoJson] = await Promise.all([
+      cargarJson(URL_CATALOGO),
+      cargarJson(URL_VERBOS),
+    ]);
+    catalogo = cat;
+    packsOriginales = await Promise.all(
+      catalogo.packs.map((p) => cargarPack(p.archivo, bancoJson.verbos))
+    );
   } catch (err) {
     els.resultado.hidden = false;
     els.resultado.innerHTML = `<div class="aviso-caja">No se pudo cargar el pack de criterios: ${err.message}</div>`;
     return;
   }
+  fijarCatalogo(catalogo);
   pack = fusionarPacks(packsOriginales);
 
   const informes = packsOriginales.map((p) => validarPack(p));

@@ -7,13 +7,8 @@
 // se la lleve por delante, y que el premarcado deje el instrumento vacío— y
 // el invariante que las une: el premarcado nunca vacía el instrumento.
 
-import { readFileSync } from "node:fs";
-import { fileURLToPath } from "node:url";
 import { generarInstrumentos, PUERTA_APLICABILIDAD } from "../js/motor.js";
-
-function cargar(nombre) {
-  return JSON.parse(readFileSync(fileURLToPath(new URL(`../data/${nombre}`, import.meta.url)), "utf8"));
-}
+import { cargarPack as cargar } from "./cargar.mjs";
 
 const expositivo = cargar("pack-lcl-expositivo.json");
 const oral = cargar("pack-lcl-oral.json");

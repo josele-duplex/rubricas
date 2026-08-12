@@ -67,10 +67,36 @@ export const PUERTA_APLICABILIDAD = {
   },
 };
 
-export async function cargarPack(url) {
+// Compone el pack operativo a partir del .json del pack y del banco de verbos
+// compartido (data/verbos.json). El banco vivía copiado dentro de cada pack y
+// las copias se separaron: al escribir el argumentativo faltaban ocho verbos
+// que el expositivo sí tenía. Un pack solo puede AÑADIR los suyos en
+// `verbos_extra`; redefinir uno del banco es un error, porque la forma de 1.ª
+// persona —de la que depende la autoevaluación— no puede cambiar según qué
+// pack se cargase el último.
+//
+// Lo usan la aplicación y las pruebas, para que las pruebas no compongan el
+// pack de una manera distinta a la real.
+export function componerPack(packCrudo, banco) {
+  const porId = new Set(banco.map((v) => v.id));
+  const extra = packCrudo.verbos_extra ?? [];
+  const choques = extra.filter((v) => porId.has(v.id)).map((v) => v.id);
+  if (choques.length) {
+    throw new Error(
+      `${packCrudo.pack_id} redefine verbos del banco en verbos_extra: ${choques.join(", ")}`
+    );
+  }
+  return { ...packCrudo, verbos: [...banco, ...extra] };
+}
+
+export async function cargarJson(url) {
   const res = await fetch(url);
-  if (!res.ok) throw new Error(`No se pudo cargar el pack: ${res.status}`);
+  if (!res.ok) throw new Error(`No se pudo cargar ${url}: ${res.status}`);
   return res.json();
+}
+
+export async function cargarPack(url, banco) {
+  return componerPack(await cargarJson(url), banco);
 }
 
 // Combina varios packs (uno por tipo de tarea) en el pack operativo que usa

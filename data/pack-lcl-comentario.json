@@ -1,0 +1,2927 @@
+{
+  "pack_id": "lcl-murcia-comentario",
+  "materia": "LCL",
+  "etiqueta": "Comentario de texto literario — Región de Murcia",
+  "version": "0.2.1",
+  "normativa": {
+    "estatal": [
+      "RD 217/2022, de 29 de marzo (ESO)",
+      "RD 243/2022, de 5 de abril (Bachillerato)"
+    ],
+    "autonomica": "Decreto n.º 235/2022, de 7 de diciembre (ESO) y Decreto n.º 251/2022, de 22 de diciembre (Bachillerato), de la Comunidad Autónoma de la Región de Murcia",
+    "vigencia_desde": "2022-2023",
+    "revisado": "2026-08"
+  },
+  "criterios": [
+    {
+      "id": "lcl-c-evidencia-com-1eso",
+      "bloque_lomloe": "C",
+      "dimension": "evidencia_textual",
+      "nombre": "Uso del texto como prueba: fragmentos citados",
+      "curso": "1ESO",
+      "hereda_de": null,
+      "criterio_oficial": {
+        "competencia_especifica": 8,
+        "codigo": "8.1",
+        "cita": "Explicar y argumentar, con la ayuda de pautas y modelos, la interpretación de las obras leídas a partir del análisis de las relaciones internas de sus elementos constitutivos con el sentido de la obra, atendiendo a la configuración de los géneros y subgéneros literarios.",
+        "perfil_salida": [
+          "CCL1",
+          "CCL4",
+          "CC1",
+          "CCEC1",
+          "CCEC2",
+          "CCEC3",
+          "CCEC4"
+        ]
+      },
+      "saber_vehiculo": [
+        "relación entre los elementos constitutivos del género literario y la construcción del sentido de la obra",
+        "expresión pautada, a través de procesos y soportes diversificados, de la interpretación y valoración personal de obras y fragmentos literarios"
+      ],
+      "progresion": {
+        "autonomia": 1,
+        "complejidad": 1,
+        "metalinguistico": 1
+      },
+      "tipos_tarea": [
+        "comentario"
+      ],
+      "obligatorio": false,
+      "prioridad": 1,
+      "peso_base": 25,
+      "descriptores": {
+        "n1": {
+          "verbo": "traslada",
+          "texto": "Traslada al comentario frases enteras del texto tal como aparecen y añade después la respuesta a la pregunta de la pauta."
+        },
+        "n2": {
+          "verbo": "cita",
+          "texto": "Cita entre comillas un fragmento breve por cada pregunta de la pauta facilitada en clase."
+        },
+        "n3": {
+          "verbo": "apoya",
+          "texto": "Apoya cada respuesta de la pauta en un fragmento entrecomillado y señala el verso o la línea de donde procede."
+        },
+        "n4": {
+          "verbo": "selecciona",
+          "texto": "Selecciona los fragmentos más reveladores del texto y enlaza cada uno con la idea a la que da apoyo."
+        }
+      },
+      "matriz_cuantitativa": {
+        "total": 10,
+        "componentes": [
+          {
+            "nombre": "Fragmentos del texto traídos al comentario",
+            "max": 4,
+            "bandas": [
+              {
+                "puntos": 4,
+                "condicion": "Trae 3 o más fragmentos distintos del texto"
+              },
+              {
+                "puntos": 3,
+                "condicion": "Trae 2 fragmentos distintos del texto"
+              },
+              {
+                "puntos": 2,
+                "condicion": "Trae 1 fragmento del texto"
+              },
+              {
+                "puntos": 0,
+                "condicion": "Habla del texto sin traer ningún fragmento"
+              }
+            ]
+          },
+          {
+            "nombre": "Marca de la cita",
+            "max": 3,
+            "bandas": [
+              {
+                "puntos": 3,
+                "condicion": "Todos los fragmentos van entrecomillados y con el verso o la línea indicados"
+              },
+              {
+                "puntos": 2,
+                "condicion": "Todos los fragmentos van entrecomillados, sin verso ni línea"
+              },
+              {
+                "puntos": 1,
+                "condicion": "1 o 2 fragmentos quedan sin entrecomillar"
+              },
+              {
+                "puntos": 0,
+                "condicion": "Los fragmentos se copian dentro del texto propio sin comillas"
+              }
+            ]
+          },
+          {
+            "nombre": "Cada fragmento acompaña a una afirmación",
+            "max": 3,
+            "bandas": [
+              {
+                "puntos": 3,
+                "condicion": "Cada fragmento va junto a la afirmación que ilustra"
+              },
+              {
+                "puntos": 2,
+                "condicion": "1 fragmento aparece suelto, sin afirmación al lado"
+              },
+              {
+                "puntos": 1,
+                "condicion": "2 fragmentos aparecen sueltos, sin afirmación al lado"
+              },
+              {
+                "puntos": 0,
+                "condicion": "Los fragmentos se acumulan al margen de las afirmaciones"
+              }
+            ]
+          }
+        ],
+        "penalizaciones": []
+      },
+      "descriptor_cotejo": null,
+      "descriptor_un_punto": "Cita entre comillas un fragmento breve por cada pregunta de la pauta facilitada en clase."
+    },
+    {
+      "id": "lcl-c-analisis-com-1eso",
+      "bloque_lomloe": "C",
+      "dimension": "analisis_texto",
+      "nombre": "Análisis: recursos del texto y rasgos del género",
+      "curso": "1ESO",
+      "hereda_de": null,
+      "criterio_oficial": {
+        "competencia_especifica": 8,
+        "codigo": "8.1",
+        "cita": "Explicar y argumentar, con la ayuda de pautas y modelos, la interpretación de las obras leídas a partir del análisis de las relaciones internas de sus elementos constitutivos con el sentido de la obra, atendiendo a la configuración de los géneros y subgéneros literarios.",
+        "perfil_salida": [
+          "CCL1",
+          "CCL4",
+          "CC1",
+          "CCEC1",
+          "CCEC2",
+          "CCEC3",
+          "CCEC4"
+        ]
+      },
+      "saber_vehiculo": [
+        "análisis básico del valor de los recursos expresivos y de sus efectos en la recepción",
+        "relación entre los elementos constitutivos del género literario y la construcción del sentido de la obra"
+      ],
+      "progresion": {
+        "autonomia": 1,
+        "complejidad": 1,
+        "metalinguistico": 1
+      },
+      "tipos_tarea": [
+        "comentario"
+      ],
+      "obligatorio": true,
+      "prioridad": 1,
+      "peso_base": 30,
+      "descriptores": {
+        "n1": {
+          "verbo": "reconoce",
+          "texto": "Reconoce en el texto las palabras que se repiten y anota cada una junto a la pregunta de la pauta."
+        },
+        "n2": {
+          "verbo": "senala",
+          "texto": "Señala una comparación, una repetición o una imagen del texto con el término trabajado en clase."
+        },
+        "n3": {
+          "verbo": "explica",
+          "texto": "Explica qué efecto produce en el lector cada recurso señalado, con el modelo de comentario a la vista."
+        },
+        "n4": {
+          "verbo": "relaciona",
+          "texto": "Relaciona los recursos del texto con el género de la obra y con lo que el texto viene a decir."
+        }
+      },
+      "matriz_cuantitativa": {
+        "total": 10,
+        "componentes": [
+          {
+            "nombre": "Recursos señalados en el texto",
+            "max": 4,
+            "bandas": [
+              {
+                "puntos": 4,
+                "condicion": "Señala 3 o más recursos distintos (comparación, repetición, personificación)"
+              },
+              {
+                "puntos": 3,
+                "condicion": "Señala 2 recursos distintos"
+              },
+              {
+                "puntos": 2,
+                "condicion": "Señala 1 recurso"
+              },
+              {
+                "puntos": 0,
+                "condicion": "Comenta el texto sin señalar ningún recurso"
+              }
+            ]
+          },
+          {
+            "nombre": "Recursos puestos en relación con lo que el texto dice",
+            "max": 4,
+            "bandas": [
+              {
+                "puntos": 4,
+                "condicion": "Explica el efecto de todos los recursos señalados"
+              },
+              {
+                "puntos": 3,
+                "condicion": "Explica el efecto de 2 de los recursos señalados"
+              },
+              {
+                "puntos": 2,
+                "condicion": "Explica el efecto de 1 de los recursos señalados"
+              },
+              {
+                "puntos": 0,
+                "condicion": "Enumera los recursos y deja el efecto sin explicar"
+              }
+            ]
+          },
+          {
+            "nombre": "Rasgos del género o subgénero",
+            "max": 2,
+            "bandas": [
+              {
+                "puntos": 2,
+                "condicion": "Nombra el género y 1 rasgo del texto que lo confirma"
+              },
+              {
+                "puntos": 1,
+                "condicion": "Nombra el género sin ningún rasgo que lo confirme"
+              },
+              {
+                "puntos": 0,
+                "condicion": "Comenta el texto sin nombrar el género"
+              }
+            ]
+          }
+        ],
+        "penalizaciones": []
+      },
+      "descriptor_cotejo": null,
+      "descriptor_un_punto": "Señala una comparación, una repetición o una imagen del texto con el término trabajado en clase."
+    },
+    {
+      "id": "lcl-c-interpretacion-com-1eso",
+      "bloque_lomloe": "C",
+      "dimension": "interpretacion",
+      "nombre": "Interpretación: sentido de la obra",
+      "curso": "1ESO",
+      "hereda_de": null,
+      "criterio_oficial": {
+        "competencia_especifica": 8,
+        "codigo": "8.1",
+        "cita": "Explicar y argumentar, con la ayuda de pautas y modelos, la interpretación de las obras leídas a partir del análisis de las relaciones internas de sus elementos constitutivos con el sentido de la obra, atendiendo a la configuración de los géneros y subgéneros literarios.",
+        "perfil_salida": [
+          "CCL1",
+          "CCL4",
+          "CC1",
+          "CCEC1",
+          "CCEC2",
+          "CCEC3",
+          "CCEC4"
+        ]
+      },
+      "saber_vehiculo": [
+        "expresión pautada, a través de procesos y soportes diversificados, de la interpretación y valoración personal de obras y fragmentos literarios",
+        "lectura con perspectiva de género"
+      ],
+      "progresion": {
+        "autonomia": 1,
+        "complejidad": 1,
+        "metalinguistico": 1
+      },
+      "tipos_tarea": [
+        "comentario"
+      ],
+      "obligatorio": true,
+      "prioridad": 1,
+      "peso_base": 30,
+      "descriptores": {
+        "n1": {
+          "verbo": "enumera",
+          "texto": "Enumera lo que ocurre en el texto siguiendo el orden de las preguntas de la pauta."
+        },
+        "n2": {
+          "verbo": "explica",
+          "texto": "Explica con palabras propias de qué trata el texto y qué sentimiento despierta la lectura."
+        },
+        "n3": {
+          "verbo": "justifica",
+          "texto": "Justifica la idea central del texto con los detalles observados al responder la pauta."
+        },
+        "n4": {
+          "verbo": "integra",
+          "texto": "Integra en una sola idea lo observado en cada pregunta y formula el sentido del texto en dos o tres líneas."
+        }
+      },
+      "matriz_cuantitativa": null,
+      "descriptor_cotejo": null,
+      "descriptor_un_punto": "Explica con palabras propias de qué trata el texto y qué sentimiento despierta la lectura."
+    },
+    {
+      "id": "lcl-d-correccion-com-1eso",
+      "bloque_lomloe": "D",
+      "dimension": "correccion_lexico",
+      "nombre": "Corrección normativa y propiedad léxica",
+      "curso": "1ESO",
+      "hereda_de": null,
+      "criterio_oficial": {
+        "competencia_especifica": 5,
+        "codigo": "5.2",
+        "cita": "Incorporar procedimientos básicos para enriquecer los textos propios, atendiendo a aspectos discursivos, lingüísticos y de estilo, con precisión léxica y corrección ortográfica y gramatical.",
+        "perfil_salida": [
+          "CCL1",
+          "CCL3",
+          "CCL5",
+          "STEM1",
+          "CD2",
+          "CD3",
+          "CPSAA5",
+          "CC2"
+        ]
+      },
+      "saber_vehiculo": [
+        "corrección lingüística y revisión ortográfica y gramatical de los textos, de manera guiada",
+        "los signos básicos de puntuación como mecanismo organizador del texto escrito"
+      ],
+      "progresion": {
+        "autonomia": 1,
+        "complejidad": 1,
+        "metalinguistico": 1
+      },
+      "tipos_tarea": [
+        "comentario"
+      ],
+      "obligatorio": true,
+      "prioridad": 2,
+      "peso_base": 15,
+      "descriptores": {
+        "n1": {
+          "verbo": "redacta",
+          "texto": "Redacta el comentario con faltas de ortografía y errores de concordancia que obligan a releer para reconstruir la idea."
+        },
+        "n2": {
+          "verbo": "aplica",
+          "texto": "Aplica las normas de acentuación y de concordancia trabajadas en clase, con faltas que permiten seguir el comentario."
+        },
+        "n3": {
+          "verbo": "aplica",
+          "texto": "Aplica las normas de ortografía, acentuación y concordancia del nivel, y separa con punto cada idea sobre el texto."
+        },
+        "n4": {
+          "verbo": "sustituye",
+          "texto": "Sustituye las palabras de significado general (cosa, tema, decir) por el verbo que nombra lo que hace el texto, y entrega el comentario sin faltas que dificulten la lectura."
+        }
+      },
+      "matriz_cuantitativa": {
+        "total": 10,
+        "componentes": [
+          {
+            "nombre": "Ortografía, acentuación y puntuación",
+            "max": 4,
+            "bandas": [
+              {
+                "puntos": 4,
+                "condicion": "Hasta 1 falta en todo el comentario"
+              },
+              {
+                "puntos": 3,
+                "condicion": "De 2 a 3 faltas"
+              },
+              {
+                "puntos": 2,
+                "condicion": "De 4 a 5 faltas"
+              },
+              {
+                "puntos": 0,
+                "condicion": "6 o más faltas"
+              }
+            ]
+          },
+          {
+            "nombre": "Concordancia",
+            "max": 3,
+            "bandas": [
+              {
+                "puntos": 3,
+                "condicion": "Sin errores de concordancia de género, número o persona"
+              },
+              {
+                "puntos": 2,
+                "condicion": "1 o 2 errores de concordancia"
+              },
+              {
+                "puntos": 1,
+                "condicion": "3 o 4 errores de concordancia"
+              },
+              {
+                "puntos": 0,
+                "condicion": "5 o más errores de concordancia"
+              }
+            ]
+          },
+          {
+            "nombre": "Precisión del vocabulario",
+            "max": 3,
+            "bandas": [
+              {
+                "puntos": 3,
+                "condicion": "Nombra con el verbo preciso lo que hace el texto (describe, compara, repite)"
+              },
+              {
+                "puntos": 2,
+                "condicion": "Emplea 1 o 2 términos de significado general (cosa, tema, decir) con sustituto evidente"
+              },
+              {
+                "puntos": 1,
+                "condicion": "Emplea 3 o más términos de significado general"
+              },
+              {
+                "puntos": 0,
+                "condicion": "El comentario se sostiene sobre palabras comodín"
+              }
+            ]
+          }
+        ],
+        "penalizaciones": []
+      },
+      "descriptor_cotejo": null,
+      "descriptor_un_punto": "Aplica las normas de acentuación y de concordancia trabajadas en clase, con alguna falta aislada que permite seguir el comentario."
+    },
+    {
+      "id": "lcl-c-evidencia-com-3eso",
+      "bloque_lomloe": "C",
+      "dimension": "evidencia_textual",
+      "nombre": "Uso del texto como prueba: fragmentos citados",
+      "curso": "3ESO",
+      "hereda_de": null,
+      "criterio_oficial": {
+        "competencia_especifica": 8,
+        "codigo": "8.1",
+        "cita": "Explicar y argumentar de manera guiada la interpretación de las obras leídas a partir del análisis de las relaciones internas de sus elementos constitutivos con el sentido de la obra y de las relaciones externas del texto con su contexto sociohistórico, atendiendo a la configuración y evolución de los géneros y subgéneros literarios.",
+        "perfil_salida": [
+          "CCL1",
+          "CCL4",
+          "CC1",
+          "CCEC1",
+          "CCEC2",
+          "CCEC3",
+          "CCEC4"
+        ]
+      },
+      "saber_vehiculo": [
+        "estrategias básicas para interpretar obras y fragmentos literarios a partir de la integración de los diferentes aspectos analizados",
+        "estrategias de construcción compartida de la interpretación de las obras a través de conversaciones literarias, con la incorporación progresiva de metalenguaje específico"
+      ],
+      "progresion": {
+        "autonomia": 1,
+        "complejidad": 2,
+        "metalinguistico": 2
+      },
+      "tipos_tarea": [
+        "comentario"
+      ],
+      "obligatorio": false,
+      "prioridad": 1,
+      "peso_base": 20,
+      "descriptores": {
+        "n1": {
+          "verbo": "traslada",
+          "texto": "Traslada al comentario fragmentos largos del texto y añade después la respuesta a cada pregunta del guion."
+        },
+        "n2": {
+          "verbo": "cita",
+          "texto": "Cita entre comillas un fragmento breve por cada apartado del guion facilitado e indica el verso o la línea."
+        },
+        "n3": {
+          "verbo": "apoya",
+          "texto": "Apoya cada afirmación del comentario en un fragmento entrecomillado y descarta los fragmentos que prueban lo ya probado."
+        },
+        "n4": {
+          "verbo": "selecciona",
+          "texto": "Selecciona el fragmento más revelador de cada apartado y justifica en la misma frase por qué ese fragmento prueba la afirmación."
+        }
+      },
+      "matriz_cuantitativa": {
+        "total": 10,
+        "componentes": [
+          {
+            "nombre": "Fragmentos del texto traídos al comentario",
+            "max": 4,
+            "bandas": [
+              {
+                "puntos": 4,
+                "condicion": "Trae 4 o más fragmentos distintos del texto"
+              },
+              {
+                "puntos": 3,
+                "condicion": "Trae 3 fragmentos distintos del texto"
+              },
+              {
+                "puntos": 2,
+                "condicion": "Trae 2 fragmentos distintos del texto"
+              },
+              {
+                "puntos": 1,
+                "condicion": "Trae 1 fragmento del texto"
+              },
+              {
+                "puntos": 0,
+                "condicion": "Habla del texto sin traer ningún fragmento"
+              }
+            ]
+          },
+          {
+            "nombre": "Marca de la cita",
+            "max": 3,
+            "bandas": [
+              {
+                "puntos": 3,
+                "condicion": "Todos los fragmentos van entrecomillados y con el verso o la línea indicados"
+              },
+              {
+                "puntos": 2,
+                "condicion": "Todos los fragmentos van entrecomillados, sin verso ni línea"
+              },
+              {
+                "puntos": 1,
+                "condicion": "1 o 2 fragmentos quedan sin entrecomillar"
+              },
+              {
+                "puntos": 0,
+                "condicion": "Los fragmentos se copian dentro del texto propio sin comillas"
+              }
+            ]
+          },
+          {
+            "nombre": "Cada fragmento prueba una afirmación distinta",
+            "max": 3,
+            "bandas": [
+              {
+                "puntos": 3,
+                "condicion": "Cada fragmento prueba una afirmación distinta del comentario"
+              },
+              {
+                "puntos": 2,
+                "condicion": "2 fragmentos prueban la misma afirmación"
+              },
+              {
+                "puntos": 1,
+                "condicion": "3 o más fragmentos prueban la misma afirmación"
+              },
+              {
+                "puntos": 0,
+                "condicion": "Los fragmentos se acumulan al margen de las afirmaciones"
+              }
+            ]
+          }
+        ],
+        "penalizaciones": []
+      },
+      "descriptor_cotejo": null,
+      "descriptor_un_punto": "Cita entre comillas un fragmento breve por cada apartado del guion facilitado e indica el verso o la línea."
+    },
+    {
+      "id": "lcl-c-analisis-com-3eso",
+      "bloque_lomloe": "C",
+      "dimension": "analisis_texto",
+      "nombre": "Análisis: recursos del texto y evolución del género",
+      "curso": "3ESO",
+      "hereda_de": null,
+      "criterio_oficial": {
+        "competencia_especifica": 8,
+        "codigo": "8.1",
+        "cita": "Explicar y argumentar de manera guiada la interpretación de las obras leídas a partir del análisis de las relaciones internas de sus elementos constitutivos con el sentido de la obra y de las relaciones externas del texto con su contexto sociohistórico, atendiendo a la configuración y evolución de los géneros y subgéneros literarios.",
+        "perfil_salida": [
+          "CCL1",
+          "CCL4",
+          "CC1",
+          "CCEC1",
+          "CCEC2",
+          "CCEC3",
+          "CCEC4"
+        ]
+      },
+      "saber_vehiculo": [
+        "relación entre los elementos constitutivos del género literario y la construcción del sentido de la obra",
+        "efectos de los recursos expresivos en la recepción"
+      ],
+      "progresion": {
+        "autonomia": 1,
+        "complejidad": 2,
+        "metalinguistico": 2
+      },
+      "tipos_tarea": [
+        "comentario"
+      ],
+      "obligatorio": true,
+      "prioridad": 1,
+      "peso_base": 25,
+      "descriptores": {
+        "n1": {
+          "verbo": "localiza",
+          "texto": "Localiza en el texto los recursos recogidos en la pauta y anota el nombre de cada uno."
+        },
+        "n2": {
+          "verbo": "explica",
+          "texto": "Explica el efecto de cada recurso localizado con el modelo de comentario trabajado en clase."
+        },
+        "n3": {
+          "verbo": "relaciona",
+          "texto": "Relaciona los recursos analizados con la idea central del texto y con el género en que se inscribe."
+        },
+        "n4": {
+          "verbo": "contrasta",
+          "texto": "Contrasta el uso de un recurso en el texto comentado con el mismo recurso en otro texto del género leído en clase."
+        }
+      },
+      "matriz_cuantitativa": {
+        "total": 10,
+        "componentes": [
+          {
+            "nombre": "Recursos localizados en el texto",
+            "max": 4,
+            "bandas": [
+              {
+                "puntos": 4,
+                "condicion": "Localiza 4 o más recursos distintos"
+              },
+              {
+                "puntos": 3,
+                "condicion": "Localiza 3 recursos distintos"
+              },
+              {
+                "puntos": 2,
+                "condicion": "Localiza 2 recursos distintos"
+              },
+              {
+                "puntos": 1,
+                "condicion": "Localiza 1 recurso"
+              },
+              {
+                "puntos": 0,
+                "condicion": "Comenta el texto sin localizar ningún recurso"
+              }
+            ]
+          },
+          {
+            "nombre": "Recursos relacionados con el sentido del texto",
+            "max": 4,
+            "bandas": [
+              {
+                "puntos": 4,
+                "condicion": "Relaciona con el sentido del texto todos los recursos localizados"
+              },
+              {
+                "puntos": 3,
+                "condicion": "Relaciona con el sentido del texto 3 de los recursos localizados"
+              },
+              {
+                "puntos": 2,
+                "condicion": "Relaciona con el sentido del texto 2 de los recursos localizados"
+              },
+              {
+                "puntos": 1,
+                "condicion": "Relaciona con el sentido del texto 1 de los recursos localizados"
+              },
+              {
+                "puntos": 0,
+                "condicion": "Enumera los recursos y deja el sentido del texto aparte"
+              }
+            ]
+          },
+          {
+            "nombre": "Rasgos del género y de su evolución",
+            "max": 2,
+            "bandas": [
+              {
+                "puntos": 2,
+                "condicion": "Nombra el género y 2 rasgos del texto que lo confirman"
+              },
+              {
+                "puntos": 1,
+                "condicion": "Nombra el género y 1 rasgo del texto que lo confirma"
+              },
+              {
+                "puntos": 0,
+                "condicion": "Comenta el texto sin nombrar el género"
+              }
+            ]
+          }
+        ],
+        "penalizaciones": []
+      },
+      "descriptor_cotejo": null,
+      "descriptor_un_punto": "Explica el efecto de cada recurso localizado con el modelo de comentario trabajado en clase."
+    },
+    {
+      "id": "lcl-c-contexto-com-3eso",
+      "bloque_lomloe": "C",
+      "dimension": "contextualizacion",
+      "nombre": "Contextualización: relaciones del texto con el contexto sociohistórico",
+      "curso": "3ESO",
+      "hereda_de": null,
+      "criterio_oficial": {
+        "competencia_especifica": 8,
+        "codigo": "8.1",
+        "cita": "Explicar y argumentar de manera guiada la interpretación de las obras leídas a partir del análisis de las relaciones internas de sus elementos constitutivos con el sentido de la obra y de las relaciones externas del texto con su contexto sociohistórico, atendiendo a la configuración y evolución de los géneros y subgéneros literarios.",
+        "perfil_salida": [
+          "CCL1",
+          "CCL4",
+          "CC1",
+          "CCEC1",
+          "CCEC2",
+          "CCEC3",
+          "CCEC4"
+        ]
+      },
+      "saber_vehiculo": [
+        "estrategias básicas de utilización de información sociohistórica, cultural y artística básica para construir la interpretación de las obras literarias"
+      ],
+      "progresion": {
+        "autonomia": 1,
+        "complejidad": 2,
+        "metalinguistico": 2
+      },
+      "tipos_tarea": [
+        "comentario"
+      ],
+      "obligatorio": false,
+      "prioridad": 2,
+      "peso_base": 15,
+      "descriptores": {
+        "n1": {
+          "verbo": "anota",
+          "texto": "Anota el siglo y el nombre de quien escribe el texto a partir de la ficha facilitada en clase."
+        },
+        "n2": {
+          "verbo": "situa",
+          "texto": "Sitúa el texto en el movimiento y en la época recogidos en la pauta de contexto."
+        },
+        "n3": {
+          "verbo": "relaciona",
+          "texto": "Relaciona un dato del contexto sociohistórico con un rasgo concreto del texto comentado."
+        },
+        "n4": {
+          "verbo": "justifica",
+          "texto": "Justifica con dos datos del contexto la elección del tema y del tono en el texto comentado."
+        }
+      },
+      "matriz_cuantitativa": null,
+      "descriptor_cotejo": null,
+      "descriptor_un_punto": "Sitúa el texto en el movimiento y en la época recogidos en la pauta de contexto."
+    },
+    {
+      "id": "lcl-c-interpretacion-com-3eso",
+      "bloque_lomloe": "C",
+      "dimension": "interpretacion",
+      "nombre": "Interpretación: sentido de la obra",
+      "curso": "3ESO",
+      "hereda_de": null,
+      "criterio_oficial": {
+        "competencia_especifica": 8,
+        "codigo": "8.1",
+        "cita": "Explicar y argumentar de manera guiada la interpretación de las obras leídas a partir del análisis de las relaciones internas de sus elementos constitutivos con el sentido de la obra y de las relaciones externas del texto con su contexto sociohistórico, atendiendo a la configuración y evolución de los géneros y subgéneros literarios.",
+        "perfil_salida": [
+          "CCL1",
+          "CCL4",
+          "CC1",
+          "CCEC1",
+          "CCEC2",
+          "CCEC3",
+          "CCEC4"
+        ]
+      },
+      "saber_vehiculo": [
+        "estrategias básicas para interpretar obras y fragmentos literarios a partir de la integración de los diferentes aspectos analizados y atendiendo a los valores culturales, éticos y estéticos presentes en los textos",
+        "lectura con perspectiva de género"
+      ],
+      "progresion": {
+        "autonomia": 1,
+        "complejidad": 2,
+        "metalinguistico": 2
+      },
+      "tipos_tarea": [
+        "comentario"
+      ],
+      "obligatorio": true,
+      "prioridad": 1,
+      "peso_base": 25,
+      "descriptores": {
+        "n1": {
+          "verbo": "enumera",
+          "texto": "Enumera las respuestas del guion una detrás de otra y cierra el comentario en la última."
+        },
+        "n2": {
+          "verbo": "explica",
+          "texto": "Explica el sentido del texto reuniendo en un párrafo las respuestas del guion facilitado."
+        },
+        "n3": {
+          "verbo": "justifica",
+          "texto": "Justifica la interpretación del texto con lo analizado en los recursos y en el contexto."
+        },
+        "n4": {
+          "verbo": "integra",
+          "texto": "Integra el análisis interno y el dato de contexto en una interpretación propia y la defiende en el cierre."
+        }
+      },
+      "matriz_cuantitativa": null,
+      "descriptor_cotejo": null,
+      "descriptor_un_punto": "Explica el sentido del texto reuniendo en un párrafo las respuestas del guion facilitado."
+    },
+    {
+      "id": "lcl-d-correccion-com-3eso",
+      "bloque_lomloe": "D",
+      "dimension": "correccion_lexico",
+      "nombre": "Corrección normativa y propiedad léxica",
+      "curso": "3ESO",
+      "hereda_de": null,
+      "criterio_oficial": {
+        "competencia_especifica": 5,
+        "codigo": "5.2",
+        "cita": "Incorporar progresivamente procedimientos para enriquecer los textos atendiendo a aspectos discursivos, lingüísticos y de estilo, con precisión léxica y corrección ortográfica y gramatical.",
+        "perfil_salida": [
+          "CCL1",
+          "CCL3",
+          "CCL5",
+          "STEM1",
+          "CD2",
+          "CD3",
+          "CPSAA5",
+          "CC2"
+        ]
+      },
+      "saber_vehiculo": [
+        "corrección lingüística y revisión ortográfica y gramatical de los textos",
+        "los signos básicos de puntuación como mecanismo organizador del texto escrito"
+      ],
+      "progresion": {
+        "autonomia": 2,
+        "complejidad": 2,
+        "metalinguistico": 2
+      },
+      "tipos_tarea": [
+        "comentario"
+      ],
+      "obligatorio": true,
+      "prioridad": 2,
+      "peso_base": 15,
+      "descriptores": {
+        "n1": {
+          "verbo": "redacta",
+          "texto": "Redacta el comentario con faltas de ortografía y de puntuación que obligan a releer para reconstruir la idea."
+        },
+        "n2": {
+          "verbo": "aplica",
+          "texto": "Aplica las normas de ortografía y de concordancia del nivel, con faltas de puntuación que permiten seguir el comentario."
+        },
+        "n3": {
+          "verbo": "mantiene",
+          "texto": "Mantiene el presente al hablar del texto y aplica las normas ortográficas, gramaticales y de puntuación del nivel."
+        },
+        "n4": {
+          "verbo": "sustituye",
+          "texto": "Sustituye las palabras de significado general por el término preciso y emplea la subordinación para condensar en una oración lo que ocuparía varias."
+        }
+      },
+      "matriz_cuantitativa": {
+        "total": 10,
+        "componentes": [
+          {
+            "nombre": "Ortografía, acentuación y puntuación",
+            "max": 4,
+            "bandas": [
+              {
+                "puntos": 4,
+                "condicion": "Hasta 1 falta en todo el comentario"
+              },
+              {
+                "puntos": 3,
+                "condicion": "De 2 a 3 faltas"
+              },
+              {
+                "puntos": 2,
+                "condicion": "De 4 a 5 faltas"
+              },
+              {
+                "puntos": 0,
+                "condicion": "6 o más faltas"
+              }
+            ]
+          },
+          {
+            "nombre": "Corrección gramatical y presente del comentario",
+            "max": 3,
+            "bandas": [
+              {
+                "puntos": 3,
+                "condicion": "Sin errores de concordancia ni de construcción de la oración, y con el presente sostenido al hablar del texto"
+              },
+              {
+                "puntos": 2,
+                "condicion": "1 o 2 errores de concordancia, o 1 salto al pasado al hablar del texto"
+              },
+              {
+                "puntos": 1,
+                "condicion": "3 o más errores, o alguna oración que hay que releer para reconstruir"
+              },
+              {
+                "puntos": 0,
+                "condicion": "Errores sistemáticos que obligan a reconstruir el sentido"
+              }
+            ]
+          },
+          {
+            "nombre": "Precisión léxica y densidad",
+            "max": 3,
+            "bandas": [
+              {
+                "puntos": 3,
+                "condicion": "Selecciona el término preciso y emplea alguna subordinada para condensar la observación"
+              },
+              {
+                "puntos": 2,
+                "condicion": "Selecciona términos precisos, pero encadena oraciones simples donde cabría una subordinada"
+              },
+              {
+                "puntos": 1,
+                "condicion": "Recurre a términos de significado general con sustituto evidente"
+              },
+              {
+                "puntos": 0,
+                "condicion": "El comentario se sostiene sobre palabras comodín"
+              }
+            ]
+          }
+        ],
+        "penalizaciones": []
+      },
+      "descriptor_cotejo": null,
+      "descriptor_un_punto": "Aplica las normas de ortografía y de concordancia del nivel, con alguna falta de puntuación aislada que permite seguir el comentario."
+    },
+    {
+      "id": "lcl-c-evidencia-com-4eso",
+      "bloque_lomloe": "C",
+      "dimension": "evidencia_textual",
+      "nombre": "Uso del texto como prueba: fragmentos citados",
+      "curso": "4ESO",
+      "hereda_de": null,
+      "criterio_oficial": {
+        "competencia_especifica": 8,
+        "codigo": "8.1",
+        "cita": "Explicar y argumentar la interpretación de las obras leídas a partir del análisis de las relaciones internas de sus elementos constitutivos con el sentido de la obra y de las relaciones externas del texto con su contexto sociohistórico, atendiendo a la configuración y evolución de los géneros y subgéneros literarios.",
+        "perfil_salida": [
+          "CCL1",
+          "CCL4",
+          "CC1",
+          "CCEC1",
+          "CCEC2",
+          "CCEC3",
+          "CCEC4"
+        ]
+      },
+      "saber_vehiculo": [
+        "estrategias para interpretar obras y fragmentos literarios a partir de la integración de los diferentes aspectos analizados",
+        "procesos de indagación en torno a las obras leídas que promuevan el interés por construir la interpretación de las obras y establecer conexiones entre textos"
+      ],
+      "progresion": {
+        "autonomia": 3,
+        "complejidad": 3,
+        "metalinguistico": 3
+      },
+      "tipos_tarea": [
+        "comentario"
+      ],
+      "obligatorio": false,
+      "prioridad": 1,
+      "peso_base": 15,
+      "descriptores": {
+        "n1": {
+          "verbo": "traslada",
+          "texto": "Traslada al comentario fragmentos extensos del texto y explica después el conjunto en una frase."
+        },
+        "n2": {
+          "verbo": "cita",
+          "texto": "Cita entre comillas los fragmentos elegidos e indica en cada uno el verso o la línea de procedencia."
+        },
+        "n3": {
+          "verbo": "apoya",
+          "texto": "Apoya cada afirmación en un fragmento breve y descarta las citas que prueban lo mismo dos veces."
+        },
+        "n4": {
+          "verbo": "selecciona",
+          "texto": "Selecciona los fragmentos por el valor probatorio y enlaza cada uno con la afirmación correspondiente."
+        }
+      },
+      "matriz_cuantitativa": {
+        "total": 10,
+        "componentes": [
+          {
+            "nombre": "Fragmentos del texto traídos al comentario",
+            "max": 3,
+            "bandas": [
+              {
+                "puntos": 3,
+                "condicion": "Trae 5 o más fragmentos distintos del texto"
+              },
+              {
+                "puntos": 2,
+                "condicion": "Trae 3 o 4 fragmentos distintos del texto"
+              },
+              {
+                "puntos": 1,
+                "condicion": "Trae 1 o 2 fragmentos del texto"
+              },
+              {
+                "puntos": 0,
+                "condicion": "Habla del texto sin traer ningún fragmento"
+              }
+            ]
+          },
+          {
+            "nombre": "Marca de la cita",
+            "max": 3,
+            "bandas": [
+              {
+                "puntos": 3,
+                "condicion": "Todos los fragmentos van entrecomillados y con el verso o la línea indicados"
+              },
+              {
+                "puntos": 2,
+                "condicion": "Todos los fragmentos van entrecomillados, sin verso ni línea"
+              },
+              {
+                "puntos": 1,
+                "condicion": "1 o 2 fragmentos quedan sin entrecomillar"
+              },
+              {
+                "puntos": 0,
+                "condicion": "Los fragmentos se copian dentro del texto propio sin comillas"
+              }
+            ]
+          },
+          {
+            "nombre": "Cada fragmento prueba una afirmación distinta",
+            "max": 4,
+            "bandas": [
+              {
+                "puntos": 4,
+                "condicion": "Cada fragmento prueba una afirmación distinta del comentario"
+              },
+              {
+                "puntos": 3,
+                "condicion": "2 fragmentos prueban la misma afirmación"
+              },
+              {
+                "puntos": 2,
+                "condicion": "3 fragmentos prueban la misma afirmación"
+              },
+              {
+                "puntos": 1,
+                "condicion": "4 o más fragmentos prueban la misma afirmación"
+              },
+              {
+                "puntos": 0,
+                "condicion": "Los fragmentos se acumulan al margen de las afirmaciones"
+              }
+            ]
+          }
+        ],
+        "penalizaciones": []
+      },
+      "descriptor_cotejo": null,
+      "descriptor_un_punto": "Cita entre comillas los fragmentos elegidos e indica en cada uno el verso o la línea de procedencia."
+    },
+    {
+      "id": "lcl-c-analisis-com-4eso",
+      "bloque_lomloe": "C",
+      "dimension": "analisis_texto",
+      "nombre": "Análisis: recursos del texto y evolución del género",
+      "curso": "4ESO",
+      "hereda_de": null,
+      "criterio_oficial": {
+        "competencia_especifica": 8,
+        "codigo": "8.1",
+        "cita": "Explicar y argumentar la interpretación de las obras leídas a partir del análisis de las relaciones internas de sus elementos constitutivos con el sentido de la obra y de las relaciones externas del texto con su contexto sociohistórico, atendiendo a la configuración y evolución de los géneros y subgéneros literarios.",
+        "perfil_salida": [
+          "CCL1",
+          "CCL4",
+          "CC1",
+          "CCEC1",
+          "CCEC2",
+          "CCEC3",
+          "CCEC4"
+        ]
+      },
+      "saber_vehiculo": [
+        "análisis y relación entre los elementos constitutivos del género literario y la construcción del sentido de la obra",
+        "efectos de los recursos expresivos en la recepción"
+      ],
+      "progresion": {
+        "autonomia": 3,
+        "complejidad": 3,
+        "metalinguistico": 3
+      },
+      "tipos_tarea": [
+        "comentario"
+      ],
+      "obligatorio": true,
+      "prioridad": 1,
+      "peso_base": 20,
+      "descriptores": {
+        "n1": {
+          "verbo": "localiza",
+          "texto": "Localiza los recursos del texto y anota el nombre de cada uno al margen del comentario."
+        },
+        "n2": {
+          "verbo": "explica",
+          "texto": "Explica el efecto que produce en la lectura cada uno de los recursos localizados."
+        },
+        "n3": {
+          "verbo": "relaciona",
+          "texto": "Relaciona el conjunto de los recursos con la idea central del texto y con el subgénero de la obra."
+        },
+        "n4": {
+          "verbo": "distingue",
+          "texto": "Distingue los recursos decisivos para la idea central de los ornamentales y desarrolla el análisis de los primeros."
+        }
+      },
+      "matriz_cuantitativa": {
+        "total": 10,
+        "componentes": [
+          {
+            "nombre": "Recursos localizados en el texto",
+            "max": 3,
+            "bandas": [
+              {
+                "puntos": 3,
+                "condicion": "Localiza 5 o más recursos distintos"
+              },
+              {
+                "puntos": 2,
+                "condicion": "Localiza 3 o 4 recursos distintos"
+              },
+              {
+                "puntos": 1,
+                "condicion": "Localiza 1 o 2 recursos"
+              },
+              {
+                "puntos": 0,
+                "condicion": "Comenta el texto sin localizar ningún recurso"
+              }
+            ]
+          },
+          {
+            "nombre": "Recursos relacionados con el sentido del texto",
+            "max": 5,
+            "bandas": [
+              {
+                "puntos": 5,
+                "condicion": "Relaciona con el sentido del texto todos los recursos localizados"
+              },
+              {
+                "puntos": 4,
+                "condicion": "Deja 1 recurso localizado sin relacionar con el sentido del texto"
+              },
+              {
+                "puntos": 3,
+                "condicion": "Deja 2 recursos localizados sin relacionar con el sentido del texto"
+              },
+              {
+                "puntos": 2,
+                "condicion": "Deja 3 recursos localizados sin relacionar con el sentido del texto"
+              },
+              {
+                "puntos": 0,
+                "condicion": "Enumera los recursos y deja el sentido del texto aparte"
+              }
+            ]
+          },
+          {
+            "nombre": "Rasgos del género y de su evolución",
+            "max": 2,
+            "bandas": [
+              {
+                "puntos": 2,
+                "condicion": "Nombra el subgénero y 2 rasgos del texto que lo confirman"
+              },
+              {
+                "puntos": 1,
+                "condicion": "Nombra el subgénero y 1 rasgo del texto que lo confirma"
+              },
+              {
+                "puntos": 0,
+                "condicion": "Comenta el texto sin nombrar el subgénero"
+              }
+            ]
+          }
+        ],
+        "penalizaciones": []
+      },
+      "descriptor_cotejo": null,
+      "descriptor_un_punto": "Explica el efecto que produce en la lectura cada uno de los recursos localizados."
+    },
+    {
+      "id": "lcl-c-contexto-com-4eso",
+      "bloque_lomloe": "C",
+      "dimension": "contextualizacion",
+      "nombre": "Contextualización: relaciones del texto con el contexto sociohistórico",
+      "curso": "4ESO",
+      "hereda_de": null,
+      "criterio_oficial": {
+        "competencia_especifica": 8,
+        "codigo": "8.1",
+        "cita": "Explicar y argumentar la interpretación de las obras leídas a partir del análisis de las relaciones internas de sus elementos constitutivos con el sentido de la obra y de las relaciones externas del texto con su contexto sociohistórico, atendiendo a la configuración y evolución de los géneros y subgéneros literarios.",
+        "perfil_salida": [
+          "CCL1",
+          "CCL4",
+          "CC1",
+          "CCEC1",
+          "CCEC2",
+          "CCEC3",
+          "CCEC4"
+        ]
+      },
+      "saber_vehiculo": [
+        "estrategias de utilización de información sociohistórica, cultural y artística básica para construir la interpretación de las obras literarias",
+        "relación y comparación de los textos leídos con otros textos orales, escritos o multimodales, con otras manifestaciones artísticas y culturales y con las nuevas formas de ficción en función de temas, tópicos, estructuras y lenguajes"
+      ],
+      "progresion": {
+        "autonomia": 3,
+        "complejidad": 3,
+        "metalinguistico": 3
+      },
+      "tipos_tarea": [
+        "comentario"
+      ],
+      "obligatorio": false,
+      "prioridad": 2,
+      "peso_base": 15,
+      "descriptores": {
+        "n1": {
+          "verbo": "anota",
+          "texto": "Anota el siglo, el nombre de quien escribe y el movimiento del texto comentado."
+        },
+        "n2": {
+          "verbo": "situa",
+          "texto": "Sitúa el texto en el periodo literario correspondiente y señala dos rasgos de ese periodo."
+        },
+        "n3": {
+          "verbo": "relaciona",
+          "texto": "Relaciona los rasgos del texto con las condiciones sociales e históricas del momento en que se escribió."
+        },
+        "n4": {
+          "verbo": "contrasta",
+          "texto": "Contrasta lo que el texto decía a un lector del momento en que se escribió con lo que dice a un lector de hoy."
+        }
+      },
+      "matriz_cuantitativa": null,
+      "descriptor_cotejo": null,
+      "descriptor_un_punto": "Sitúa el texto en el periodo literario correspondiente y señala dos rasgos de ese periodo."
+    },
+    {
+      "id": "lcl-c-estructura-com-4eso",
+      "bloque_lomloe": "C",
+      "dimension": "estructura_comentario",
+      "nombre": "Estructura del comentario: del análisis a la interpretación",
+      "curso": "4ESO",
+      "hereda_de": null,
+      "criterio_oficial": {
+        "competencia_especifica": 8,
+        "codigo": "8.1",
+        "cita": "Explicar y argumentar la interpretación de las obras leídas a partir del análisis de las relaciones internas de sus elementos constitutivos con el sentido de la obra y de las relaciones externas del texto con su contexto sociohistórico, atendiendo a la configuración y evolución de los géneros y subgéneros literarios.",
+        "perfil_salida": [
+          "CCL1",
+          "CCL4",
+          "CC1",
+          "CCEC1",
+          "CCEC2",
+          "CCEC3",
+          "CCEC4"
+        ]
+      },
+      "saber_vehiculo": [
+        "estrategias para interpretar obras y fragmentos literarios a partir de la integración de los diferentes aspectos analizados"
+      ],
+      "progresion": {
+        "autonomia": 3,
+        "complejidad": 3,
+        "metalinguistico": 3
+      },
+      "tipos_tarea": [
+        "comentario"
+      ],
+      "obligatorio": false,
+      "prioridad": 2,
+      "peso_base": 15,
+      "descriptores": {
+        "n1": {
+          "verbo": "agrupa",
+          "texto": "Agrupa las observaciones sobre el texto en un bloque único y cierra con una frase de opinión."
+        },
+        "n2": {
+          "verbo": "ordena",
+          "texto": "Ordena el comentario en localización, análisis e interpretación, y dedica un párrafo a cada parte."
+        },
+        "n3": {
+          "verbo": "enlaza",
+          "texto": "Enlaza cada apartado con el siguiente mediante una frase de transición al comienzo del párrafo."
+        },
+        "n4": {
+          "verbo": "articula",
+          "texto": "Articula el comentario alrededor de una idea rectora y ordena los apartados por lo que aportan a esa idea."
+        }
+      },
+      "matriz_cuantitativa": null,
+      "descriptor_cotejo": null,
+      "descriptor_un_punto": "Ordena el comentario en localización, análisis e interpretación, y dedica un párrafo a cada parte."
+    },
+    {
+      "id": "lcl-c-interpretacion-com-4eso",
+      "bloque_lomloe": "C",
+      "dimension": "interpretacion",
+      "nombre": "Interpretación: sentido de la obra",
+      "curso": "4ESO",
+      "hereda_de": null,
+      "criterio_oficial": {
+        "competencia_especifica": 8,
+        "codigo": "8.1",
+        "cita": "Explicar y argumentar la interpretación de las obras leídas a partir del análisis de las relaciones internas de sus elementos constitutivos con el sentido de la obra y de las relaciones externas del texto con su contexto sociohistórico, atendiendo a la configuración y evolución de los géneros y subgéneros literarios.",
+        "perfil_salida": [
+          "CCL1",
+          "CCL4",
+          "CC1",
+          "CCEC1",
+          "CCEC2",
+          "CCEC3",
+          "CCEC4"
+        ]
+      },
+      "saber_vehiculo": [
+        "estrategias para interpretar obras y fragmentos literarios a partir de la integración de los diferentes aspectos analizados y atendiendo a los valores culturales, éticos y estéticos presentes en los textos",
+        "desarrollo de la lectura con perspectiva de género"
+      ],
+      "progresion": {
+        "autonomia": 3,
+        "complejidad": 3,
+        "metalinguistico": 3
+      },
+      "tipos_tarea": [
+        "comentario"
+      ],
+      "obligatorio": true,
+      "prioridad": 1,
+      "peso_base": 20,
+      "descriptores": {
+        "n1": {
+          "verbo": "enumera",
+          "texto": "Enumera lo observado en el texto y añade al final una impresión personal de la lectura."
+        },
+        "n2": {
+          "verbo": "explica",
+          "texto": "Explica el sentido del texto reuniendo el análisis de los recursos en una idea única."
+        },
+        "n3": {
+          "verbo": "justifica",
+          "texto": "Justifica la interpretación con el análisis interno y con el dato de contexto, en el mismo párrafo."
+        },
+        "n4": {
+          "verbo": "integra",
+          "texto": "Integra análisis, contexto y lectura propia en una interpretación argumentada y la sostiene hasta el cierre."
+        }
+      },
+      "matriz_cuantitativa": null,
+      "descriptor_cotejo": null,
+      "descriptor_un_punto": "Explica el sentido del texto reuniendo el análisis de los recursos en una idea única."
+    },
+    {
+      "id": "lcl-d-correccion-com-4eso",
+      "bloque_lomloe": "D",
+      "dimension": "correccion_lexico",
+      "nombre": "Corrección normativa y propiedad léxica",
+      "curso": "4ESO",
+      "hereda_de": null,
+      "criterio_oficial": {
+        "competencia_especifica": 5,
+        "codigo": "5.2",
+        "cita": "Incorporar procedimientos para enriquecer los textos atendiendo a aspectos discursivos, lingüísticos y de estilo, con precisión léxica y corrección ortográfica y gramatical.",
+        "perfil_salida": [
+          "CCL1",
+          "CCL3",
+          "CCL5",
+          "STEM1",
+          "CD2",
+          "CD3",
+          "CPSAA5",
+          "CC2"
+        ]
+      },
+      "saber_vehiculo": [
+        "uso coherente de las formas verbales en los textos. correlación temporal en la coordinación y subordinación de oraciones, y en el discurso relatado",
+        "corrección lingüística y revisión ortográfica y gramatical de textos de cierta extensión y complejidad"
+      ],
+      "progresion": {
+        "autonomia": 3,
+        "complejidad": 3,
+        "metalinguistico": 3
+      },
+      "tipos_tarea": [
+        "comentario"
+      ],
+      "obligatorio": true,
+      "prioridad": 2,
+      "peso_base": 15,
+      "descriptores": {
+        "n1": {
+          "verbo": "redacta",
+          "texto": "Redacta el comentario con faltas de ortografía y saltos de tiempo verbal que obligan a releer para reconstruir la idea."
+        },
+        "n2": {
+          "verbo": "aplica",
+          "texto": "Aplica las normas de ortografía y de concordancia del nivel, con algún salto al pasado al hablar del texto que permite seguir el comentario."
+        },
+        "n3": {
+          "verbo": "mantiene",
+          "texto": "Mantiene el presente al hablar del texto y la correlación temporal al recoger en estilo indirecto lo que el texto dice."
+        },
+        "n4": {
+          "verbo": "emplea",
+          "texto": "Emplea el término preciso y la subordinación para condensar el análisis, y entrega el comentario sin errores que afecten a la comprensión."
+        }
+      },
+      "matriz_cuantitativa": {
+        "total": 10,
+        "componentes": [
+          {
+            "nombre": "Ortografía, acentuación y puntuación",
+            "max": 4,
+            "bandas": [
+              {
+                "puntos": 4,
+                "condicion": "Hasta 1 falta en todo el comentario"
+              },
+              {
+                "puntos": 3,
+                "condicion": "De 2 a 3 faltas"
+              },
+              {
+                "puntos": 2,
+                "condicion": "De 4 a 5 faltas"
+              },
+              {
+                "puntos": 0,
+                "condicion": "6 o más faltas"
+              }
+            ]
+          },
+          {
+            "nombre": "Corrección gramatical y tiempo verbal del comentario",
+            "max": 3,
+            "bandas": [
+              {
+                "puntos": 3,
+                "condicion": "Sin errores de construcción de la oración, con el presente sostenido y la correlación temporal respetada en el estilo indirecto"
+              },
+              {
+                "puntos": 2,
+                "condicion": "1 o 2 errores de concordancia o de correlación temporal que permiten seguir el comentario"
+              },
+              {
+                "puntos": 1,
+                "condicion": "3 o más errores, o alguna oración que hay que releer para reconstruir"
+              },
+              {
+                "puntos": 0,
+                "condicion": "Errores sistemáticos que obligan a reconstruir el sentido"
+              }
+            ]
+          },
+          {
+            "nombre": "Precisión léxica y densidad",
+            "max": 3,
+            "bandas": [
+              {
+                "puntos": 3,
+                "condicion": "Selecciona el término preciso y emplea la subordinación para condensar el análisis"
+              },
+              {
+                "puntos": 2,
+                "condicion": "Selecciona términos precisos, pero encadena oraciones simples donde cabría una subordinada"
+              },
+              {
+                "puntos": 1,
+                "condicion": "Recurre a términos de significado general con sustituto evidente"
+              },
+              {
+                "puntos": 0,
+                "condicion": "El comentario se sostiene sobre palabras comodín"
+              }
+            ]
+          }
+        ],
+        "penalizaciones": []
+      },
+      "descriptor_cotejo": null,
+      "descriptor_un_punto": "Aplica las normas de ortografía y de concordancia del nivel, con algún salto al pasado aislado que permite seguir el comentario."
+    },
+    {
+      "id": "lcl-c-evidencia-com-1bach",
+      "bloque_lomloe": "C",
+      "dimension": "evidencia_textual",
+      "nombre": "Uso del texto como prueba: fragmentos citados",
+      "curso": "1BACH",
+      "hereda_de": null,
+      "criterio_oficial": {
+        "competencia_especifica": 8,
+        "codigo": "8.1",
+        "cita": "Explicar y argumentar la interpretación de las obras leídas mediante el análisis de las relaciones internas de sus elementos constitutivos con el sentido de la obra y de las relaciones externas del texto con su contexto sociohistórico y con la tradición literaria, utilizando un metalenguaje específico e incorporando juicios de valor vinculados a la apreciación estética de las obras.",
+        "perfil_salida": [
+          "CCL1",
+          "CCL4",
+          "CC1",
+          "CCEC1",
+          "CCEC2",
+          "CCEC3.1",
+          "CCEC3.2",
+          "CCEC4.2"
+        ]
+      },
+      "saber_vehiculo": [
+        "interpretación crítica de fragmentos u obras significativas desde la Edad Media hasta el Romanticismo, detectando las ideas que manifiestan la relación del texto con su contexto histórico, artístico y cultural",
+        "expresión argumentada de la interpretación de los textos, integrando los diferentes aspectos analizados"
+      ],
+      "progresion": {
+        "autonomia": 3,
+        "complejidad": 4,
+        "metalinguistico": 4
+      },
+      "tipos_tarea": [
+        "comentario"
+      ],
+      "obligatorio": false,
+      "prioridad": 1,
+      "peso_base": 15,
+      "descriptores": {
+        "n1": {
+          "verbo": "traslada",
+          "texto": "Traslada al comentario tiradas enteras de versos o de líneas y explica el conjunto al final."
+        },
+        "n2": {
+          "verbo": "cita",
+          "texto": "Cita los fragmentos con la referencia de verso o de línea y respeta la forma del original."
+        },
+        "n3": {
+          "verbo": "apoya",
+          "texto": "Apoya cada afirmación del análisis en un fragmento breve y descarta las citas redundantes."
+        },
+        "n4": {
+          "verbo": "integra",
+          "texto": "Integra las citas en la sintaxis del comentario y elige la extensión de cada una por lo que prueba."
+        }
+      },
+      "matriz_cuantitativa": {
+        "total": 10,
+        "componentes": [
+          {
+            "nombre": "Fragmentos del texto traídos al comentario",
+            "max": 3,
+            "bandas": [
+              {
+                "puntos": 3,
+                "condicion": "Trae 6 o más fragmentos distintos del texto"
+              },
+              {
+                "puntos": 2,
+                "condicion": "Trae 4 o 5 fragmentos distintos del texto"
+              },
+              {
+                "puntos": 1,
+                "condicion": "Trae entre 1 y 3 fragmentos del texto"
+              },
+              {
+                "puntos": 0,
+                "condicion": "Habla del texto sin traer ningún fragmento"
+              }
+            ]
+          },
+          {
+            "nombre": "Marca de la cita y respeto del original",
+            "max": 3,
+            "bandas": [
+              {
+                "puntos": 3,
+                "condicion": "Todos los fragmentos van entrecomillados, con referencia y con la forma del original respetada"
+              },
+              {
+                "puntos": 2,
+                "condicion": "Todos los fragmentos van entrecomillados, sin referencia de verso ni de línea"
+              },
+              {
+                "puntos": 1,
+                "condicion": "1 o 2 fragmentos quedan sin entrecomillar o alteran la forma del original"
+              },
+              {
+                "puntos": 0,
+                "condicion": "Los fragmentos se copian dentro del texto propio sin comillas"
+              }
+            ]
+          },
+          {
+            "nombre": "Cada fragmento prueba una afirmación distinta",
+            "max": 4,
+            "bandas": [
+              {
+                "puntos": 4,
+                "condicion": "Cada fragmento prueba una afirmación distinta del comentario"
+              },
+              {
+                "puntos": 3,
+                "condicion": "2 fragmentos prueban la misma afirmación"
+              },
+              {
+                "puntos": 2,
+                "condicion": "3 fragmentos prueban la misma afirmación"
+              },
+              {
+                "puntos": 1,
+                "condicion": "4 o más fragmentos prueban la misma afirmación"
+              },
+              {
+                "puntos": 0,
+                "condicion": "Los fragmentos se acumulan al margen de las afirmaciones"
+              }
+            ]
+          }
+        ],
+        "penalizaciones": []
+      },
+      "descriptor_cotejo": null,
+      "descriptor_un_punto": "Cita los fragmentos con la referencia de verso o de línea y respeta la forma del original."
+    },
+    {
+      "id": "lcl-c-analisis-com-1bach",
+      "bloque_lomloe": "C",
+      "dimension": "analisis_texto",
+      "nombre": "Análisis: elementos constitutivos y recursos del texto",
+      "curso": "1BACH",
+      "hereda_de": null,
+      "criterio_oficial": {
+        "competencia_especifica": 8,
+        "codigo": "8.1",
+        "cita": "Explicar y argumentar la interpretación de las obras leídas mediante el análisis de las relaciones internas de sus elementos constitutivos con el sentido de la obra y de las relaciones externas del texto con su contexto sociohistórico y con la tradición literaria, utilizando un metalenguaje específico e incorporando juicios de valor vinculados a la apreciación estética de las obras.",
+        "perfil_salida": [
+          "CCL1",
+          "CCL4",
+          "CC1",
+          "CCEC1",
+          "CCEC2",
+          "CCEC3.1",
+          "CCEC3.2",
+          "CCEC4.2"
+        ]
+      },
+      "saber_vehiculo": [
+        "análisis de los elementos constitutivos del género literario y su relación con el sentido de la obra",
+        "efectos en la recepción de los recursos expresivos"
+      ],
+      "progresion": {
+        "autonomia": 3,
+        "complejidad": 4,
+        "metalinguistico": 4
+      },
+      "tipos_tarea": [
+        "comentario"
+      ],
+      "obligatorio": true,
+      "prioridad": 1,
+      "peso_base": 20,
+      "descriptores": {
+        "n1": {
+          "verbo": "localiza",
+          "texto": "Localiza los recursos del texto y agrupa en una lista los recursos del mismo tipo."
+        },
+        "n2": {
+          "verbo": "explica",
+          "texto": "Explica el efecto de cada recurso en la recepción del texto, plano por plano."
+        },
+        "n3": {
+          "verbo": "relaciona",
+          "texto": "Relaciona los recursos de los distintos planos con la construcción del sentido de la obra."
+        },
+        "n4": {
+          "verbo": "articula",
+          "texto": "Articula el análisis en torno a los recursos decisivos y descarta el inventario sin rendimiento interpretativo."
+        }
+      },
+      "matriz_cuantitativa": {
+        "total": 10,
+        "componentes": [
+          {
+            "nombre": "Planos del texto analizados",
+            "max": 3,
+            "bandas": [
+              {
+                "puntos": 3,
+                "condicion": "Analiza 3 o más planos del texto (métrico, sintáctico, léxico, retórico)"
+              },
+              {
+                "puntos": 2,
+                "condicion": "Analiza 2 planos del texto"
+              },
+              {
+                "puntos": 1,
+                "condicion": "Analiza 1 plano del texto"
+              },
+              {
+                "puntos": 0,
+                "condicion": "Comenta el texto sin analizar ningún plano"
+              }
+            ]
+          },
+          {
+            "nombre": "Recursos relacionados con el sentido de la obra",
+            "max": 5,
+            "bandas": [
+              {
+                "puntos": 5,
+                "condicion": "Relaciona con el sentido de la obra todos los recursos localizados"
+              },
+              {
+                "puntos": 4,
+                "condicion": "Deja 1 recurso localizado sin relacionar con el sentido de la obra"
+              },
+              {
+                "puntos": 3,
+                "condicion": "Deja 2 recursos localizados sin relacionar con el sentido de la obra"
+              },
+              {
+                "puntos": 2,
+                "condicion": "Deja 3 recursos localizados sin relacionar con el sentido de la obra"
+              },
+              {
+                "puntos": 0,
+                "condicion": "Enumera los recursos y deja el sentido de la obra aparte"
+              }
+            ]
+          },
+          {
+            "nombre": "Elementos constitutivos del género",
+            "max": 2,
+            "bandas": [
+              {
+                "puntos": 2,
+                "condicion": "Nombra el subgénero y 2 elementos del texto que lo constituyen"
+              },
+              {
+                "puntos": 1,
+                "condicion": "Nombra el subgénero y 1 elemento del texto que lo constituye"
+              },
+              {
+                "puntos": 0,
+                "condicion": "Comenta el texto sin nombrar el subgénero"
+              }
+            ]
+          }
+        ],
+        "penalizaciones": []
+      },
+      "descriptor_cotejo": null,
+      "descriptor_un_punto": "Explica el efecto de cada recurso en la recepción del texto, plano por plano."
+    },
+    {
+      "id": "lcl-c-metalenguaje-com-1bach",
+      "bloque_lomloe": "C",
+      "dimension": "metalenguaje",
+      "nombre": "Metalenguaje: términos del análisis literario",
+      "curso": "1BACH",
+      "hereda_de": null,
+      "criterio_oficial": {
+        "competencia_especifica": 8,
+        "codigo": "8.1",
+        "cita": "Explicar y argumentar la interpretación de las obras leídas mediante el análisis de las relaciones internas de sus elementos constitutivos con el sentido de la obra y de las relaciones externas del texto con su contexto sociohistórico y con la tradición literaria, utilizando un metalenguaje específico e incorporando juicios de valor vinculados a la apreciación estética de las obras.",
+        "perfil_salida": [
+          "CCL1",
+          "CCL4",
+          "CC1",
+          "CCEC1",
+          "CCEC2",
+          "CCEC3.1",
+          "CCEC3.2",
+          "CCEC4.2"
+        ]
+      },
+      "saber_vehiculo": [
+        "comunicación de la experiencia lectora utilizando un metalenguaje específico y atendiendo a aspectos temáticos, género y subgénero, elementos de la estructura y el estilo y valores éticos y estéticos de las obras"
+      ],
+      "progresion": {
+        "autonomia": 3,
+        "complejidad": 4,
+        "metalinguistico": 4
+      },
+      "tipos_tarea": [
+        "comentario"
+      ],
+      "obligatorio": false,
+      "prioridad": 2,
+      "peso_base": 10,
+      "descriptores": {
+        "n1": {
+          "verbo": "utiliza",
+          "texto": "Utiliza palabras del habla común para nombrar los fenómenos del texto: repeticiones, palabras raras, frases largas."
+        },
+        "n2": {
+          "verbo": "emplea",
+          "texto": "Emplea los términos del análisis literario trabajados en clase para nombrar los fenómenos del texto."
+        },
+        "n3": {
+          "verbo": "distingue",
+          "texto": "Distingue los términos referidos a la forma de los referidos al contenido y aplica cada uno donde corresponde."
+        },
+        "n4": {
+          "verbo": "emplea",
+          "texto": "Emplea el término preciso en cada caso y acompaña cada uno del fragmento del texto correspondiente."
+        }
+      },
+      "matriz_cuantitativa": {
+        "total": 10,
+        "componentes": [
+          {
+            "nombre": "Términos del análisis literario empleados",
+            "max": 4,
+            "bandas": [
+              {
+                "puntos": 4,
+                "condicion": "Emplea 5 o más términos distintos del análisis literario"
+              },
+              {
+                "puntos": 3,
+                "condicion": "Emplea 3 o 4 términos distintos"
+              },
+              {
+                "puntos": 2,
+                "condicion": "Emplea 1 o 2 términos distintos"
+              },
+              {
+                "puntos": 0,
+                "condicion": "Comenta el texto con vocabulario del habla común"
+              }
+            ]
+          },
+          {
+            "nombre": "Términos que designan lo que el texto contiene",
+            "max": 4,
+            "bandas": [
+              {
+                "puntos": 4,
+                "condicion": "Todos los términos designan lo que el texto contiene"
+              },
+              {
+                "puntos": 3,
+                "condicion": "1 término designa algo distinto de lo que el texto contiene"
+              },
+              {
+                "puntos": 2,
+                "condicion": "2 términos designan algo distinto de lo que el texto contiene"
+              },
+              {
+                "puntos": 0,
+                "condicion": "3 o más términos designan algo distinto de lo que el texto contiene"
+              }
+            ]
+          },
+          {
+            "nombre": "Términos anclados en un fragmento",
+            "max": 2,
+            "bandas": [
+              {
+                "puntos": 2,
+                "condicion": "Cada término va acompañado del fragmento del texto correspondiente"
+              },
+              {
+                "puntos": 1,
+                "condicion": "1 o 2 términos aparecen sin fragmento al lado"
+              },
+              {
+                "puntos": 0,
+                "condicion": "Los términos se enuncian al margen del texto"
+              }
+            ]
+          }
+        ],
+        "penalizaciones": []
+      },
+      "descriptor_cotejo": null,
+      "descriptor_un_punto": "Emplea los términos del análisis literario trabajados en clase para nombrar los fenómenos del texto."
+    },
+    {
+      "id": "lcl-c-contexto-com-1bach",
+      "bloque_lomloe": "C",
+      "dimension": "contextualizacion",
+      "nombre": "Contextualización: contexto sociohistórico y tradición literaria",
+      "curso": "1BACH",
+      "hereda_de": null,
+      "criterio_oficial": {
+        "competencia_especifica": 8,
+        "codigo": "8.1",
+        "cita": "Explicar y argumentar la interpretación de las obras leídas mediante el análisis de las relaciones internas de sus elementos constitutivos con el sentido de la obra y de las relaciones externas del texto con su contexto sociohistórico y con la tradición literaria, utilizando un metalenguaje específico e incorporando juicios de valor vinculados a la apreciación estética de las obras.",
+        "perfil_salida": [
+          "CCL1",
+          "CCL4",
+          "CC1",
+          "CCEC1",
+          "CCEC2",
+          "CCEC3.1",
+          "CCEC3.2",
+          "CCEC4.2"
+        ]
+      },
+      "saber_vehiculo": [
+        "utilización de la información sociohistórica, cultural y artística para interpretar las obras y comprender su lugar en la tradición literaria",
+        "vínculos intertextuales entre obras y otras manifestaciones artísticas en función de temas, tópicos, estructuras y lenguajes. Elementos de continuidad y ruptura"
+      ],
+      "progresion": {
+        "autonomia": 3,
+        "complejidad": 4,
+        "metalinguistico": 4
+      },
+      "tipos_tarea": [
+        "comentario"
+      ],
+      "obligatorio": false,
+      "prioridad": 2,
+      "peso_base": 10,
+      "descriptores": {
+        "n1": {
+          "verbo": "anota",
+          "texto": "Anota el periodo, el nombre de quien escribe y la obra de la que procede el fragmento."
+        },
+        "n2": {
+          "verbo": "situa",
+          "texto": "Sitúa el texto en el movimiento literario correspondiente y señala dos rasgos del periodo presentes en él."
+        },
+        "n3": {
+          "verbo": "relaciona",
+          "texto": "Relaciona el texto con obras anteriores de la misma tradición y con las condiciones históricas del periodo."
+        },
+        "n4": {
+          "verbo": "explica",
+          "texto": "Explica el lugar del texto en la tradición literaria y qué recoge y qué rompe respecto de esa tradición."
+        }
+      },
+      "matriz_cuantitativa": null,
+      "descriptor_cotejo": null,
+      "descriptor_un_punto": "Sitúa el texto en el movimiento literario correspondiente y señala dos rasgos del periodo presentes en él."
+    },
+    {
+      "id": "lcl-c-estructura-com-1bach",
+      "bloque_lomloe": "C",
+      "dimension": "estructura_comentario",
+      "nombre": "Estructura del comentario: del análisis a la interpretación",
+      "curso": "1BACH",
+      "hereda_de": null,
+      "criterio_oficial": {
+        "competencia_especifica": 8,
+        "codigo": "8.1",
+        "cita": "Explicar y argumentar la interpretación de las obras leídas mediante el análisis de las relaciones internas de sus elementos constitutivos con el sentido de la obra y de las relaciones externas del texto con su contexto sociohistórico y con la tradición literaria, utilizando un metalenguaje específico e incorporando juicios de valor vinculados a la apreciación estética de las obras.",
+        "perfil_salida": [
+          "CCL1",
+          "CCL4",
+          "CC1",
+          "CCEC1",
+          "CCEC2",
+          "CCEC3.1",
+          "CCEC3.2",
+          "CCEC4.2"
+        ]
+      },
+      "saber_vehiculo": [
+        "expresión argumentada de la interpretación de los textos, integrando los diferentes aspectos analizados y atendiendo a sus valores culturales, éticos y estéticos"
+      ],
+      "progresion": {
+        "autonomia": 3,
+        "complejidad": 4,
+        "metalinguistico": 4
+      },
+      "tipos_tarea": [
+        "comentario"
+      ],
+      "obligatorio": false,
+      "prioridad": 2,
+      "peso_base": 10,
+      "descriptores": {
+        "n1": {
+          "verbo": "agrupa",
+          "texto": "Agrupa el análisis y la valoración en un bloque continuo de principio a fin."
+        },
+        "n2": {
+          "verbo": "ordena",
+          "texto": "Ordena el comentario en localización, análisis, interpretación y valoración, con un párrafo por parte."
+        },
+        "n3": {
+          "verbo": "enlaza",
+          "texto": "Enlaza los apartados con transiciones explícitas y vuelve en cada uno a lo probado en el anterior."
+        },
+        "n4": {
+          "verbo": "articula",
+          "texto": "Articula el comentario como una demostración: abre con la tesis interpretativa y ordena los apartados por el peso de la prueba."
+        }
+      },
+      "matriz_cuantitativa": null,
+      "descriptor_cotejo": null,
+      "descriptor_un_punto": "Ordena el comentario en localización, análisis, interpretación y valoración, con un párrafo por parte."
+    },
+    {
+      "id": "lcl-c-interpretacion-com-1bach",
+      "bloque_lomloe": "C",
+      "dimension": "interpretacion",
+      "nombre": "Interpretación: sentido de la obra y juicio estético",
+      "curso": "1BACH",
+      "hereda_de": null,
+      "criterio_oficial": {
+        "competencia_especifica": 8,
+        "codigo": "8.1",
+        "cita": "Explicar y argumentar la interpretación de las obras leídas mediante el análisis de las relaciones internas de sus elementos constitutivos con el sentido de la obra y de las relaciones externas del texto con su contexto sociohistórico y con la tradición literaria, utilizando un metalenguaje específico e incorporando juicios de valor vinculados a la apreciación estética de las obras.",
+        "perfil_salida": [
+          "CCL1",
+          "CCL4",
+          "CC1",
+          "CCEC1",
+          "CCEC2",
+          "CCEC3.1",
+          "CCEC3.2",
+          "CCEC4.2"
+        ]
+      },
+      "saber_vehiculo": [
+        "expresión argumentada de la interpretación de los textos, integrando los diferentes aspectos analizados y atendiendo a sus valores culturales, éticos y estéticos",
+        "construcción compartida de la interpretación de las obras a través de discusiones o conversaciones literarias"
+      ],
+      "progresion": {
+        "autonomia": 3,
+        "complejidad": 4,
+        "metalinguistico": 4
+      },
+      "tipos_tarea": [
+        "comentario"
+      ],
+      "obligatorio": true,
+      "prioridad": 1,
+      "peso_base": 20,
+      "descriptores": {
+        "n1": {
+          "verbo": "expone",
+          "texto": "Expone lo analizado y cierra con una valoración de gusto personal sobre el texto."
+        },
+        "n2": {
+          "verbo": "explica",
+          "texto": "Explica el sentido del texto reuniendo el análisis interno y el dato de contexto en una idea única."
+        },
+        "n3": {
+          "verbo": "justifica",
+          "texto": "Justifica la interpretación con las pruebas del texto y formula un juicio de valor sobre la obra."
+        },
+        "n4": {
+          "verbo": "integra",
+          "texto": "Integra análisis, tradición y lectura propia en una interpretación argumentada y gradúa el juicio estético con el término preciso."
+        }
+      },
+      "matriz_cuantitativa": null,
+      "descriptor_cotejo": null,
+      "descriptor_un_punto": "Explica el sentido del texto reuniendo el análisis interno y el dato de contexto en una idea única."
+    },
+    {
+      "id": "lcl-d-correccion-com-1bach",
+      "bloque_lomloe": "D",
+      "dimension": "correccion_lexico",
+      "nombre": "Corrección normativa y propiedad léxica",
+      "curso": "1BACH",
+      "hereda_de": null,
+      "criterio_oficial": {
+        "competencia_especifica": 5,
+        "codigo": "5.2",
+        "cita": "Incorporar procedimientos para enriquecer los textos, atendiendo a aspectos discursivos, lingüísticos y de estilo, con precisión léxica y corrección ortográfica y gramatical.",
+        "perfil_salida": [
+          "CCL1",
+          "CCL3",
+          "CCL5",
+          "STEM1",
+          "CD2",
+          "CD3",
+          "CPSAA5",
+          "CC2"
+        ]
+      },
+      "saber_vehiculo": [
+        "corrección lingüística y revisión ortográfica, gramatical y tipográfica de los textos",
+        "relaciones entre las formas verbales como procedimientos de cohesión del texto, con especial atención a la valoración y al uso de los tiempos verbales",
+        "valoración de las alternativas disponibles para el uso de un lenguaje inclusivo"
+      ],
+      "progresion": {
+        "autonomia": 3,
+        "complejidad": 4,
+        "metalinguistico": 4
+      },
+      "tipos_tarea": [
+        "comentario"
+      ],
+      "obligatorio": true,
+      "prioridad": 2,
+      "peso_base": 15,
+      "descriptores": {
+        "n1": {
+          "verbo": "redacta",
+          "texto": "Redacta el comentario con faltas de ortografía, de puntuación y de concordancia que obligan a releer para reconstruir la idea."
+        },
+        "n2": {
+          "verbo": "aplica",
+          "texto": "Aplica las normas de ortografía y de concordancia del nivel, con algún desliz tipográfico en el título de la obra o en el nombre del autor."
+        },
+        "n3": {
+          "verbo": "mantiene",
+          "texto": "Mantiene el presente al hablar del texto, la correlación temporal del estilo indirecto y la norma tipográfica de títulos y nombres propios."
+        },
+        "n4": {
+          "verbo": "emplea",
+          "texto": "Emplea la variación sintáctica y el término preciso propios del comentario académico, con un lenguaje inclusivo y sin errores que afecten a la comprensión."
+        }
+      },
+      "matriz_cuantitativa": {
+        "total": 10,
+        "componentes": [
+          {
+            "nombre": "Ortografía, gramática y tipografía",
+            "max": 4,
+            "bandas": [
+              {
+                "puntos": 4,
+                "condicion": "Hasta 1 falta en todo el comentario, tipográficas incluidas"
+              },
+              {
+                "puntos": 3,
+                "condicion": "De 2 a 3 faltas"
+              },
+              {
+                "puntos": 2,
+                "condicion": "De 4 a 5 faltas"
+              },
+              {
+                "puntos": 0,
+                "condicion": "6 o más faltas"
+              }
+            ]
+          },
+          {
+            "nombre": "Tiempo verbal y construcción de la oración",
+            "max": 3,
+            "bandas": [
+              {
+                "puntos": 3,
+                "condicion": "Sin errores de construcción, con el presente sostenido y la correlación temporal respetada en el estilo indirecto"
+              },
+              {
+                "puntos": 2,
+                "condicion": "1 o 2 errores de construcción o de correlación temporal que permiten seguir el comentario"
+              },
+              {
+                "puntos": 1,
+                "condicion": "3 o más errores, o alguna oración que hay que releer para reconstruir"
+              },
+              {
+                "puntos": 0,
+                "condicion": "Errores sistemáticos que obligan a reconstruir el sentido"
+              }
+            ]
+          },
+          {
+            "nombre": "Precisión léxica y vocación de estilo",
+            "max": 3,
+            "bandas": [
+              {
+                "puntos": 3,
+                "condicion": "Selecciona el término preciso y emplea la variación sintáctica propia del comentario académico"
+              },
+              {
+                "puntos": 2,
+                "condicion": "Selecciona términos precisos, pero repite la misma construcción a lo largo del comentario"
+              },
+              {
+                "puntos": 1,
+                "condicion": "Recurre a términos de significado general con sustituto evidente"
+              },
+              {
+                "puntos": 0,
+                "condicion": "El comentario se sostiene sobre palabras comodín"
+              }
+            ]
+          }
+        ],
+        "penalizaciones": []
+      },
+      "descriptor_cotejo": null,
+      "descriptor_un_punto": "Aplica las normas de ortografía y de concordancia del nivel, con algún desliz tipográfico aislado en el título de la obra o en el nombre del autor."
+    },
+    {
+      "id": "lcl-c-evidencia-com-2bach",
+      "bloque_lomloe": "C",
+      "dimension": "evidencia_textual",
+      "nombre": "Uso del texto como prueba: fragmentos citados",
+      "curso": "2BACH",
+      "hereda_de": null,
+      "criterio_oficial": {
+        "competencia_especifica": 8,
+        "codigo": "8.1",
+        "cita": "Explicar y argumentar la interpretación de las obras leídas a partir del análisis de las relaciones internas de sus elementos constitutivos con el sentido de la obra y de las relaciones externas del texto con su contexto sociohistórico y con la tradición literaria, utilizando un metalenguaje específico e incorporando juicios de valor vinculados a la apreciación estética de las obras.",
+        "perfil_salida": [
+          "CCL1",
+          "CCL4",
+          "CC1",
+          "CCEC1",
+          "CCEC2",
+          "CCEC3.1",
+          "CCEC3.2",
+          "CCEC4.2"
+        ]
+      },
+      "saber_vehiculo": [
+        "interpretación crítica de fragmentos u obras significativas del último cuarto del siglo XIX y de los siglos XX y XXI, detectando las ideas que manifiestan la relación del texto con su contexto histórico, artístico y cultural",
+        "expresión argumentada de la interpretación de los textos, integrando los diferentes aspectos analizados"
+      ],
+      "progresion": {
+        "autonomia": 3,
+        "complejidad": 4,
+        "metalinguistico": 4
+      },
+      "tipos_tarea": [
+        "comentario"
+      ],
+      "obligatorio": false,
+      "prioridad": 1,
+      "peso_base": 15,
+      "descriptores": {
+        "n1": {
+          "verbo": "traslada",
+          "texto": "Traslada al comentario párrafos completos del texto y añade una frase de cierre al conjunto."
+        },
+        "n2": {
+          "verbo": "cita",
+          "texto": "Cita los fragmentos con la referencia exacta y mantiene la puntuación del original."
+        },
+        "n3": {
+          "verbo": "apoya",
+          "texto": "Apoya en un fragmento breve cada paso del razonamiento y deja fuera las citas que no prueban nada nuevo."
+        },
+        "n4": {
+          "verbo": "integra",
+          "texto": "Integra las citas en el hilo del comentario y ajusta la extensión de cada una al peso probatorio."
+        }
+      },
+      "matriz_cuantitativa": {
+        "total": 10,
+        "componentes": [
+          {
+            "nombre": "Fragmentos del texto traídos al comentario",
+            "max": 3,
+            "bandas": [
+              {
+                "puntos": 3,
+                "condicion": "Trae 6 o más fragmentos distintos del texto"
+              },
+              {
+                "puntos": 2,
+                "condicion": "Trae 4 o 5 fragmentos distintos del texto"
+              },
+              {
+                "puntos": 1,
+                "condicion": "Trae entre 1 y 3 fragmentos del texto"
+              },
+              {
+                "puntos": 0,
+                "condicion": "Habla del texto sin traer ningún fragmento"
+              }
+            ]
+          },
+          {
+            "nombre": "Marca de la cita y respeto del original",
+            "max": 3,
+            "bandas": [
+              {
+                "puntos": 3,
+                "condicion": "Todos los fragmentos van entrecomillados, con referencia y con la puntuación del original respetada"
+              },
+              {
+                "puntos": 2,
+                "condicion": "Todos los fragmentos van entrecomillados, sin referencia de verso ni de línea"
+              },
+              {
+                "puntos": 1,
+                "condicion": "1 o 2 fragmentos quedan sin entrecomillar o alteran la puntuación del original"
+              },
+              {
+                "puntos": 0,
+                "condicion": "Los fragmentos se copian dentro del texto propio sin comillas"
+              }
+            ]
+          },
+          {
+            "nombre": "Cada fragmento prueba un paso del razonamiento",
+            "max": 4,
+            "bandas": [
+              {
+                "puntos": 4,
+                "condicion": "Cada fragmento prueba un paso distinto del razonamiento"
+              },
+              {
+                "puntos": 3,
+                "condicion": "2 fragmentos prueban el mismo paso"
+              },
+              {
+                "puntos": 2,
+                "condicion": "3 fragmentos prueban el mismo paso"
+              },
+              {
+                "puntos": 1,
+                "condicion": "4 o más fragmentos prueban el mismo paso"
+              },
+              {
+                "puntos": 0,
+                "condicion": "Los fragmentos se acumulan al margen del razonamiento"
+              }
+            ]
+          }
+        ],
+        "penalizaciones": []
+      },
+      "descriptor_cotejo": null,
+      "descriptor_un_punto": "Cita los fragmentos con la referencia exacta y mantiene la puntuación del original."
+    },
+    {
+      "id": "lcl-c-analisis-com-2bach",
+      "bloque_lomloe": "C",
+      "dimension": "analisis_texto",
+      "nombre": "Análisis: elementos constitutivos y recursos del texto",
+      "curso": "2BACH",
+      "hereda_de": null,
+      "criterio_oficial": {
+        "competencia_especifica": 8,
+        "codigo": "8.1",
+        "cita": "Explicar y argumentar la interpretación de las obras leídas a partir del análisis de las relaciones internas de sus elementos constitutivos con el sentido de la obra y de las relaciones externas del texto con su contexto sociohistórico y con la tradición literaria, utilizando un metalenguaje específico e incorporando juicios de valor vinculados a la apreciación estética de las obras.",
+        "perfil_salida": [
+          "CCL1",
+          "CCL4",
+          "CC1",
+          "CCEC1",
+          "CCEC2",
+          "CCEC3.1",
+          "CCEC3.2",
+          "CCEC4.2"
+        ]
+      },
+      "saber_vehiculo": [
+        "análisis de los elementos constitutivos del género literario y su relación con el sentido de la obra",
+        "efectos en la recepción de los recursos expresivos"
+      ],
+      "progresion": {
+        "autonomia": 3,
+        "complejidad": 4,
+        "metalinguistico": 4
+      },
+      "tipos_tarea": [
+        "comentario"
+      ],
+      "obligatorio": true,
+      "prioridad": 1,
+      "peso_base": 20,
+      "descriptores": {
+        "n1": {
+          "verbo": "localiza",
+          "texto": "Localiza los recursos del texto y presenta una lista ordenada por orden de aparición."
+        },
+        "n2": {
+          "verbo": "explica",
+          "texto": "Explica qué aporta cada recurso a la lectura del fragmento, uno por uno."
+        },
+        "n3": {
+          "verbo": "combina",
+          "texto": "Combina lo observado en los distintos planos del texto para dar cuenta del sentido de la obra."
+        },
+        "n4": {
+          "verbo": "articula",
+          "texto": "Articula el análisis en torno a los rasgos que deciden la lectura y deja fuera el inventario estéril."
+        }
+      },
+      "matriz_cuantitativa": {
+        "total": 10,
+        "componentes": [
+          {
+            "nombre": "Planos del texto analizados",
+            "max": 3,
+            "bandas": [
+              {
+                "puntos": 3,
+                "condicion": "Analiza 4 o más planos del texto (métrico, sintáctico, léxico, retórico, enunciativo)"
+              },
+              {
+                "puntos": 2,
+                "condicion": "Analiza 3 planos del texto"
+              },
+              {
+                "puntos": 1,
+                "condicion": "Analiza 1 o 2 planos del texto"
+              },
+              {
+                "puntos": 0,
+                "condicion": "Comenta el texto sin analizar ningún plano"
+              }
+            ]
+          },
+          {
+            "nombre": "Recursos relacionados con el sentido de la obra",
+            "max": 5,
+            "bandas": [
+              {
+                "puntos": 5,
+                "condicion": "Relaciona con el sentido de la obra todos los recursos localizados"
+              },
+              {
+                "puntos": 4,
+                "condicion": "Deja 1 recurso localizado sin relacionar con el sentido de la obra"
+              },
+              {
+                "puntos": 3,
+                "condicion": "Deja 2 recursos localizados sin relacionar con el sentido de la obra"
+              },
+              {
+                "puntos": 2,
+                "condicion": "Deja 3 recursos localizados sin relacionar con el sentido de la obra"
+              },
+              {
+                "puntos": 0,
+                "condicion": "Enumera los recursos y deja el sentido de la obra aparte"
+              }
+            ]
+          },
+          {
+            "nombre": "Elementos constitutivos del género",
+            "max": 2,
+            "bandas": [
+              {
+                "puntos": 2,
+                "condicion": "Nombra el subgénero y 3 elementos del texto que lo constituyen"
+              },
+              {
+                "puntos": 1,
+                "condicion": "Nombra el subgénero y 1 o 2 elementos del texto que lo constituyen"
+              },
+              {
+                "puntos": 0,
+                "condicion": "Comenta el texto sin nombrar el subgénero"
+              }
+            ]
+          }
+        ],
+        "penalizaciones": []
+      },
+      "descriptor_cotejo": null,
+      "descriptor_un_punto": "Explica qué aporta cada recurso a la lectura del fragmento, uno por uno."
+    },
+    {
+      "id": "lcl-c-metalenguaje-com-2bach",
+      "bloque_lomloe": "C",
+      "dimension": "metalenguaje",
+      "nombre": "Metalenguaje: términos del análisis literario",
+      "curso": "2BACH",
+      "hereda_de": null,
+      "criterio_oficial": {
+        "competencia_especifica": 8,
+        "codigo": "8.1",
+        "cita": "Explicar y argumentar la interpretación de las obras leídas a partir del análisis de las relaciones internas de sus elementos constitutivos con el sentido de la obra y de las relaciones externas del texto con su contexto sociohistórico y con la tradición literaria, utilizando un metalenguaje específico e incorporando juicios de valor vinculados a la apreciación estética de las obras.",
+        "perfil_salida": [
+          "CCL1",
+          "CCL4",
+          "CC1",
+          "CCEC1",
+          "CCEC2",
+          "CCEC3.1",
+          "CCEC3.2",
+          "CCEC4.2"
+        ]
+      },
+      "saber_vehiculo": [
+        "comunicación de la experiencia lectora utilizando un metalenguaje específico y atendiendo a aspectos temáticos, género y subgénero, elementos de la estructura y el estilo, y valores éticos y estéticos de las obras"
+      ],
+      "progresion": {
+        "autonomia": 3,
+        "complejidad": 4,
+        "metalinguistico": 4
+      },
+      "tipos_tarea": [
+        "comentario"
+      ],
+      "obligatorio": false,
+      "prioridad": 2,
+      "peso_base": 10,
+      "descriptores": {
+        "n1": {
+          "verbo": "utiliza",
+          "texto": "Utiliza palabras del habla común para nombrar los fenómenos del texto: repeticiones, saltos, frases cortadas."
+        },
+        "n2": {
+          "verbo": "emplea",
+          "texto": "Emplea los términos del análisis literario del repertorio del curso al describir el texto."
+        },
+        "n3": {
+          "verbo": "distingue",
+          "texto": "Distingue el término de la métrica del de la retórica y del de la enunciación, y aplica cada uno donde corresponde."
+        },
+        "n4": {
+          "verbo": "gradua",
+          "texto": "Gradúa el término empleado según lo que el texto autoriza y acompaña cada uno del fragmento correspondiente."
+        }
+      },
+      "matriz_cuantitativa": {
+        "total": 10,
+        "componentes": [
+          {
+            "nombre": "Términos del análisis literario empleados",
+            "max": 4,
+            "bandas": [
+              {
+                "puntos": 4,
+                "condicion": "Emplea 6 o más términos distintos del análisis literario"
+              },
+              {
+                "puntos": 3,
+                "condicion": "Emplea 4 o 5 términos distintos"
+              },
+              {
+                "puntos": 2,
+                "condicion": "Emplea entre 1 y 3 términos distintos"
+              },
+              {
+                "puntos": 0,
+                "condicion": "Comenta el texto con vocabulario del habla común"
+              }
+            ]
+          },
+          {
+            "nombre": "Términos que designan lo que el texto contiene",
+            "max": 4,
+            "bandas": [
+              {
+                "puntos": 4,
+                "condicion": "Todos los términos designan lo que el texto contiene"
+              },
+              {
+                "puntos": 3,
+                "condicion": "1 término designa algo distinto de lo que el texto contiene"
+              },
+              {
+                "puntos": 2,
+                "condicion": "2 términos designan algo distinto de lo que el texto contiene"
+              },
+              {
+                "puntos": 0,
+                "condicion": "3 o más términos designan algo distinto de lo que el texto contiene"
+              }
+            ]
+          },
+          {
+            "nombre": "Términos anclados en un fragmento",
+            "max": 2,
+            "bandas": [
+              {
+                "puntos": 2,
+                "condicion": "Cada término va acompañado del fragmento del texto correspondiente"
+              },
+              {
+                "puntos": 1,
+                "condicion": "1 o 2 términos aparecen sin fragmento al lado"
+              },
+              {
+                "puntos": 0,
+                "condicion": "Los términos se enuncian al margen del texto"
+              }
+            ]
+          }
+        ],
+        "penalizaciones": []
+      },
+      "descriptor_cotejo": null,
+      "descriptor_un_punto": "Emplea los términos del análisis literario del repertorio del curso al describir el texto."
+    },
+    {
+      "id": "lcl-c-contexto-com-2bach",
+      "bloque_lomloe": "C",
+      "dimension": "contextualizacion",
+      "nombre": "Contextualización: contexto sociohistórico y tradición literaria",
+      "curso": "2BACH",
+      "hereda_de": null,
+      "criterio_oficial": {
+        "competencia_especifica": 8,
+        "codigo": "8.1",
+        "cita": "Explicar y argumentar la interpretación de las obras leídas a partir del análisis de las relaciones internas de sus elementos constitutivos con el sentido de la obra y de las relaciones externas del texto con su contexto sociohistórico y con la tradición literaria, utilizando un metalenguaje específico e incorporando juicios de valor vinculados a la apreciación estética de las obras.",
+        "perfil_salida": [
+          "CCL1",
+          "CCL4",
+          "CC1",
+          "CCEC1",
+          "CCEC2",
+          "CCEC3.1",
+          "CCEC3.2",
+          "CCEC4.2"
+        ]
+      },
+      "saber_vehiculo": [
+        "utilización de la información sociohistórica, cultural y artística para interpretar las obras y comprender su lugar en la tradición literaria",
+        "vínculos intertextuales entre obras y otras manifestaciones artísticas en función de temas, tópicos, estructuras y lenguajes. Elementos de continuidad y ruptura"
+      ],
+      "progresion": {
+        "autonomia": 3,
+        "complejidad": 4,
+        "metalinguistico": 4
+      },
+      "tipos_tarea": [
+        "comentario"
+      ],
+      "obligatorio": false,
+      "prioridad": 2,
+      "peso_base": 10,
+      "descriptores": {
+        "n1": {
+          "verbo": "anota",
+          "texto": "Anota la fecha, el nombre de quien escribe y la obra de la que procede el fragmento."
+        },
+        "n2": {
+          "verbo": "situa",
+          "texto": "Sitúa el texto en uno de los tres ejes del curso y señala dos rasgos del periodo presentes en él."
+        },
+        "n3": {
+          "verbo": "relaciona",
+          "texto": "Relaciona el texto con las obras del eje al que pertenece y con la circunstancia histórica que lo rodea."
+        },
+        "n4": {
+          "verbo": "explica",
+          "texto": "Explica qué recoge el texto de la tradición anterior y qué inaugura para la literatura posterior."
+        }
+      },
+      "matriz_cuantitativa": null,
+      "descriptor_cotejo": null,
+      "descriptor_un_punto": "Sitúa el texto en uno de los tres ejes del curso y señala dos rasgos del periodo presentes en él."
+    },
+    {
+      "id": "lcl-c-estructura-com-2bach",
+      "bloque_lomloe": "C",
+      "dimension": "estructura_comentario",
+      "nombre": "Estructura del comentario: del análisis a la interpretación",
+      "curso": "2BACH",
+      "hereda_de": null,
+      "criterio_oficial": {
+        "competencia_especifica": 8,
+        "codigo": "8.1",
+        "cita": "Explicar y argumentar la interpretación de las obras leídas a partir del análisis de las relaciones internas de sus elementos constitutivos con el sentido de la obra y de las relaciones externas del texto con su contexto sociohistórico y con la tradición literaria, utilizando un metalenguaje específico e incorporando juicios de valor vinculados a la apreciación estética de las obras.",
+        "perfil_salida": [
+          "CCL1",
+          "CCL4",
+          "CC1",
+          "CCEC1",
+          "CCEC2",
+          "CCEC3.1",
+          "CCEC3.2",
+          "CCEC4.2"
+        ]
+      },
+      "saber_vehiculo": [
+        "expresión argumentada de la interpretación de los textos, integrando los diferentes aspectos analizados"
+      ],
+      "progresion": {
+        "autonomia": 3,
+        "complejidad": 4,
+        "metalinguistico": 4
+      },
+      "tipos_tarea": [
+        "comentario"
+      ],
+      "obligatorio": false,
+      "prioridad": 2,
+      "peso_base": 10,
+      "descriptores": {
+        "n1": {
+          "verbo": "agrupa",
+          "texto": "Agrupa observaciones y juicios en un bloque continuo, en el orden en que van surgiendo."
+        },
+        "n2": {
+          "verbo": "ordena",
+          "texto": "Ordena el comentario en apartados con título propio y dedica el último al juicio final."
+        },
+        "n3": {
+          "verbo": "encadena",
+          "texto": "Encadena los apartados de modo que cada uno parta de lo probado en el anterior."
+        },
+        "n4": {
+          "verbo": "articula",
+          "texto": "Articula el comentario alrededor de una tesis interpretativa anunciada al principio y probada apartado a apartado."
+        }
+      },
+      "matriz_cuantitativa": null,
+      "descriptor_cotejo": null,
+      "descriptor_un_punto": "Ordena el comentario en apartados con título propio y dedica el último al juicio final."
+    },
+    {
+      "id": "lcl-c-interpretacion-com-2bach",
+      "bloque_lomloe": "C",
+      "dimension": "interpretacion",
+      "nombre": "Interpretación: sentido de la obra y juicio estético",
+      "curso": "2BACH",
+      "hereda_de": null,
+      "criterio_oficial": {
+        "competencia_especifica": 8,
+        "codigo": "8.1",
+        "cita": "Explicar y argumentar la interpretación de las obras leídas a partir del análisis de las relaciones internas de sus elementos constitutivos con el sentido de la obra y de las relaciones externas del texto con su contexto sociohistórico y con la tradición literaria, utilizando un metalenguaje específico e incorporando juicios de valor vinculados a la apreciación estética de las obras.",
+        "perfil_salida": [
+          "CCL1",
+          "CCL4",
+          "CC1",
+          "CCEC1",
+          "CCEC2",
+          "CCEC3.1",
+          "CCEC3.2",
+          "CCEC4.2"
+        ]
+      },
+      "saber_vehiculo": [
+        "expresión argumentada de la interpretación de los textos, integrando los diferentes aspectos analizados",
+        "construcción compartida de la interpretación de las obras a través de discusiones o conversaciones literarias"
+      ],
+      "progresion": {
+        "autonomia": 3,
+        "complejidad": 4,
+        "metalinguistico": 4
+      },
+      "tipos_tarea": [
+        "comentario"
+      ],
+      "obligatorio": true,
+      "prioridad": 1,
+      "peso_base": 20,
+      "descriptores": {
+        "n1": {
+          "verbo": "expone",
+          "texto": "Expone lo analizado y añade al final una preferencia personal sobre el texto."
+        },
+        "n2": {
+          "verbo": "formula",
+          "texto": "Formula una lectura del texto que recoge el análisis interno y el dato de contexto."
+        },
+        "n3": {
+          "verbo": "justifica",
+          "texto": "Justifica esa lectura con las pruebas del texto y valora la obra con criterios estéticos declarados."
+        },
+        "n4": {
+          "verbo": "integra",
+          "texto": "Integra análisis, tradición y lectura propia en una interpretación argumentada y sostiene el juicio estético frente a otra lectura posible."
+        }
+      },
+      "matriz_cuantitativa": null,
+      "descriptor_cotejo": null,
+      "descriptor_un_punto": "Formula una lectura del texto que recoge el análisis interno y el dato de contexto."
+    },
+    {
+      "id": "lcl-d-correccion-com-2bach",
+      "bloque_lomloe": "D",
+      "dimension": "correccion_lexico",
+      "nombre": "Corrección normativa y propiedad léxica",
+      "curso": "2BACH",
+      "hereda_de": null,
+      "criterio_oficial": {
+        "competencia_especifica": 5,
+        "codigo": "5.2",
+        "cita": "Incorporar procedimientos para enriquecer los textos, atendiendo a aspectos discursivos, lingüísticos y de estilo, con precisión léxica y corrección ortográfica y gramatical.",
+        "perfil_salida": [
+          "CCL1",
+          "CCL3",
+          "CCL5",
+          "STEM1",
+          "CD2",
+          "CD3",
+          "CPSAA5",
+          "CC2"
+        ]
+      },
+      "saber_vehiculo": [
+        "corrección lingüística y revisión ortográfica, gramatical y tipográfica de los textos",
+        "relaciones entre las formas verbales como procedimientos de cohesión del texto con especial atención a la valoración y al uso de los tiempos verbales",
+        "valoración de las alternativas disponibles para el uso de un lenguaje inclusivo"
+      ],
+      "progresion": {
+        "autonomia": 3,
+        "complejidad": 4,
+        "metalinguistico": 4
+      },
+      "tipos_tarea": [
+        "comentario"
+      ],
+      "obligatorio": true,
+      "prioridad": 2,
+      "peso_base": 15,
+      "descriptores": {
+        "n1": {
+          "verbo": "redacta",
+          "texto": "Redacta el comentario con faltas de ortografía y de puntuación que obligan a releer el párrafo para reconstruir la idea."
+        },
+        "n2": {
+          "verbo": "aplica",
+          "texto": "Aplica las normas de ortografía y de concordancia propias del nivel, con algún desliz tipográfico aislado en títulos, cursivas o nombres propios."
+        },
+        "n3": {
+          "verbo": "mantiene",
+          "texto": "Mantiene el presente al hablar del texto y la correlación temporal del estilo indirecto, sin faltas tipográficas ni de puntuación del nivel."
+        },
+        "n4": {
+          "verbo": "modula",
+          "texto": "Modula la construcción de las oraciones según el paso del razonamiento y elige el término preciso, con un lenguaje inclusivo y sin errores que afecten a la comprensión."
+        }
+      },
+      "matriz_cuantitativa": {
+        "total": 10,
+        "componentes": [
+          {
+            "nombre": "Ortografía, gramática y tipografía",
+            "max": 4,
+            "bandas": [
+              {
+                "puntos": 4,
+                "condicion": "Hasta 1 falta en todo el comentario, tipográficas incluidas"
+              },
+              {
+                "puntos": 3,
+                "condicion": "De 2 a 3 faltas"
+              },
+              {
+                "puntos": 2,
+                "condicion": "De 4 a 5 faltas"
+              },
+              {
+                "puntos": 0,
+                "condicion": "6 o más faltas"
+              }
+            ]
+          },
+          {
+            "nombre": "Tiempo verbal y construcción de la oración",
+            "max": 3,
+            "bandas": [
+              {
+                "puntos": 3,
+                "condicion": "Sin errores de construcción, con el presente sostenido y la correlación temporal respetada en el estilo indirecto"
+              },
+              {
+                "puntos": 2,
+                "condicion": "1 o 2 errores de construcción o de correlación temporal que permiten seguir el comentario"
+              },
+              {
+                "puntos": 1,
+                "condicion": "3 o más errores, o alguna oración que hay que releer para reconstruir"
+              },
+              {
+                "puntos": 0,
+                "condicion": "Errores sistemáticos que obligan a reconstruir el sentido"
+              }
+            ]
+          },
+          {
+            "nombre": "Precisión léxica y vocación de estilo",
+            "max": 3,
+            "bandas": [
+              {
+                "puntos": 3,
+                "condicion": "Selecciona el término preciso y ajusta la extensión de la oración al paso del razonamiento"
+              },
+              {
+                "puntos": 2,
+                "condicion": "Selecciona términos precisos, pero mantiene la misma extensión de oración de principio a fin"
+              },
+              {
+                "puntos": 1,
+                "condicion": "Recurre a términos de significado general con sustituto evidente"
+              },
+              {
+                "puntos": 0,
+                "condicion": "El comentario se sostiene sobre palabras comodín"
+              }
+            ]
+          }
+        ],
+        "penalizaciones": []
+      },
+      "descriptor_cotejo": null,
+      "descriptor_un_punto": "Aplica las normas de ortografía y de concordancia propias del nivel, con algún desliz tipográfico aislado en títulos, cursivas o nombres propios."
+    }
+  ]
+}

@@ -3,23 +3,35 @@ import { comprobarRepartoPesos, REGLAS } from "./validador.js";
 import { microexplicacion } from "./microexplicaciones.js";
 import { calcularResultadoGuardado } from "./calificacion.js";
 
-export const ETIQUETAS_TIPO_TAREA = {
-  narracion: "Narración",
-  expositivo: "Texto expositivo",
-  oral: "Exposición oral",
-  argumentativo: "Texto argumentativo",
-};
+// Las etiquetas y el orden de los cursos vienen de data/catalogo.json, no de
+// aquí: eran tres listas cableadas en este archivo y una cuarta —la de packs—
+// en main.js, y una materia nueva obligaba a tocar las cuatro. main.js llama a
+// fijarCatalogo() nada más cargarlo.
+//
+// Si algo pide una etiqueta antes de que el catálogo esté puesto, se devuelve
+// la clave cruda en vez de "undefined": una interfaz con "1ESO" escrito se
+// entiende y se ve; una con "undefined" parece un fallo de contenido.
+let CATALOGO = { cursos: { orden: [], etiquetas: {} }, materias: {} };
 
-export const ETIQUETAS_CURSO = {
-  "1ESO": "1.º de ESO",
-  "2ESO": "2.º de ESO",
-  "3ESO": "3.º de ESO",
-  "4ESO": "4.º de ESO",
-  "1BACH": "1.º de Bachillerato",
-  "2BACH": "2.º de Bachillerato",
-};
+export function fijarCatalogo(catalogo) {
+  CATALOGO = catalogo;
+}
 
-const ORDEN_CURSOS = ["1ESO", "2ESO", "3ESO", "4ESO", "1BACH", "2BACH"];
+function etiquetaTipoTarea(tipo) {
+  for (const materia of Object.values(CATALOGO.materias ?? {})) {
+    const etiqueta = materia.tipos_tarea?.[tipo];
+    if (etiqueta) return etiqueta;
+  }
+  return tipo;
+}
+
+function etiquetaCurso(curso) {
+  return CATALOGO.cursos?.etiquetas?.[curso] ?? curso;
+}
+
+function ordenCursos() {
+  return CATALOGO.cursos?.orden ?? [];
+}
 
 export function escapeHtml(str) {
   return String(str)
@@ -38,7 +50,7 @@ export function poblarFormulario(pack, els) {
 
   const tipos = tiposTareaDisponibles(pack);
   els.tipoTarea.innerHTML = tipos
-    .map((t) => `<option value="${escapeHtml(t)}">${escapeHtml(ETIQUETAS_TIPO_TAREA[t] ?? t)}</option>`)
+    .map((t) => `<option value="${escapeHtml(t)}">${escapeHtml(etiquetaTipoTarea(t))}</option>`)
     .join("");
 
   els.tiempo.innerHTML = Object.entries(TIEMPOS_CORRECCION)
@@ -52,10 +64,10 @@ export function poblarFormulario(pack, els) {
 export function actualizarCursos(pack, els) {
   const tipoTarea = els.tipoTarea.value;
   const cursos = cursosDisponibles(pack, tipoTarea).sort(
-    (a, b) => ORDEN_CURSOS.indexOf(a) - ORDEN_CURSOS.indexOf(b)
+    (a, b) => ordenCursos().indexOf(a) - ordenCursos().indexOf(b)
   );
   els.curso.innerHTML = cursos
-    .map((c) => `<option value="${c}">${escapeHtml(ETIQUETAS_CURSO[c] ?? c)}</option>`)
+    .map((c) => `<option value="${c}">${escapeHtml(etiquetaCurso(c))}</option>`)
     .join("");
 }
 
@@ -85,8 +97,8 @@ function renderCabeceraInstrumento(meta) {
   return `
     <p class="instrumento-cabecera">
       <strong>Actividad:</strong> ${escapeHtml(meta.actividad)} ·
-      <strong>Curso:</strong> ${escapeHtml(ETIQUETAS_CURSO[meta.curso] ?? meta.curso)} ·
-      <strong>Tipo de tarea:</strong> ${escapeHtml(ETIQUETAS_TIPO_TAREA[meta.tipoTarea] ?? meta.tipoTarea)}
+      <strong>Curso:</strong> ${escapeHtml(etiquetaCurso(meta.curso))} ·
+      <strong>Tipo de tarea:</strong> ${escapeHtml(etiquetaTipoTarea(meta.tipoTarea))}
     </p>
   `;
 }

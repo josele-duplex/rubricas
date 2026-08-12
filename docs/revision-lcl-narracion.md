@@ -196,10 +196,10 @@
 
 | Nivel | Descriptor |
 |---|---|
-| **N1** | Utiliza y, luego y entonces como único enlace entre los hechos, y repite el nombre del personaje en cada oración. |
+| **N1** | Utiliza y, luego y entonces como único enlace entre los hechos, con el nombre del personaje repetido en cada oración. |
 | **N2** | Emplea conectores temporales y de orden para encadenar los hechos, y separa con punto los enunciados. |
 | **N3** | Sustituye por pronombres y sinónimos los nombres de los personajes ya citados, y mantiene el pretérito como tiempo del relato. |
-| **N4** | Emplea la raya en los diálogos y la coma en los incisos, y marca con conectores los saltos de tiempo del relato. |
+| **N4** | Emplea la raya en los diálogos y la coma en los incisos, y señala con conectores los saltos de tiempo del relato. |
 
 **Matriz cuantitativa** — total 10 puntos. Es lo que usa el modo IA para corregir.
 
@@ -331,7 +331,7 @@
 
 | Nivel | Descriptor |
 |---|---|
-| **N1** | Utiliza conectores de orden para encadenar los hechos y repite el nombre del personaje al empezar cada párrafo. |
+| **N1** | Utiliza conectores de orden para encadenar los hechos, con el nombre del personaje repetido al empezar cada párrafo. |
 | **N2** | Emplea conectores de orden, de causa y de consecuencia para encadenar los episodios del relato. |
 | **N3** | Mantiene el tiempo del relato en los saltos atrás y sustituye por elipsis o por pronombre los nombres ya citados. |
 | **N4** | Articula los cambios de escena con marcas de tiempo y de lugar, y delimita con la puntuación las voces del diálogo. |

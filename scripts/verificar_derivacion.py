@@ -18,7 +18,7 @@ Cinco comprobaciones:
     dice una fuente»; para uso-mención propio se usan comillas simples, que el
     verificador no examina.
  3. MATRIZ §4.3. Cada pareja curso × tipo de tarea de un pack tiene celda ● u ○ en
-    la matriz de tipos de tarea del SDD, que se parsea del propio documento.
+    la matriz de tipos de tarea de SU MATERIA (data/derivacion-<materia>.json).
  4. TECHO DE PROGRESIÓN §5.4 (regla decidida el 2026-08-05). El campo `progresion`
     de un criterio nunca supera el nivel que la tabla §5.4 asigna a su curso
     (exigencia colada desde arriba = error). Puede quedar por debajo únicamente si
@@ -37,9 +37,13 @@ Cinco comprobaciones:
     en ese curso — y se deja el resto al buen redactar y a la revisión del
     docente, como todo lo que no es citable.
 
-Las tablas §4.3 y §5.4 se leen del SDD en cada ejecución: el SDD sigue siendo la
-fuente única y este script se rompe en voz alta si su formato cambia, en lugar de
-quedarse obsoleto en silencio.
+Las tablas §4.3 y §5.4 se leen de `data/derivacion-<materia>.json`, una por materia.
+Hasta la v1.21 se parseaban del markdown del SDD; con una segunda materia el SDD
+tendría varias matrices y ese parseo se habría quedado corto. Ahora el sentido de la
+flecha es el contrario: manda `data/` y **las tablas del SDD son derivadas**, las
+escribe `scripts/generar_tablas_sdd.py` y `comprobar_todo.py` falla si se han
+separado. Lo que sigue viviendo en el SDD, y lo comprueba la comprobación 2, es la
+prosa: qué sostiene cada celda discutida, con su cita literal.
 
 Es un verificador de taller: necesita fuentes/ y el repositorio de Lengua, que no
 viajan con la aplicación, así que vive solo en scripts/ y no tiene gemelo en js/
@@ -59,31 +63,32 @@ import os
 import re
 import sys
 
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+from catalogo import (catalogo, lexico, rutas_de_packs, cargar_pack,   # noqa: E402
+                      derivacion)
+
 RAIZ = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 DIR_FUENTES = os.path.join(RAIZ, "fuentes", "curriculo")
 RUTA_SDD = os.path.join(RAIZ, "docs", "diseno", "SDD.md")
-RUTA_MARCO = os.path.join(
+
+# El Marco Teórico vigente vive en el repositorio de Lengua y NO viaja con este
+# proyecto (CLAUDE.md). La ruta se puede cambiar sin tocar el código: la variable
+# de entorno gana, y si no hay ninguna se usa la del equipo donde se escribió.
+# Si el archivo no está, la comprobación 2 lo dice y sigue; nunca se modifica.
+RUTA_MARCO = os.environ.get("RUBRICAS_MARCO_TEORICO") or os.path.join(
     "C:\\Users\\Usuario\\Proyectos\\proyecto_plan_de_trabajo_lengua",
     "Metodologías innovadores morfología y sintaxis", "proyecto",
     "documentos_base", "marco_teorico_rubricas-LOMLOE.md")
 
+CATALOGO = catalogo()
+LEXICO = lexico()
+
 # Fórmulas con las que el currículo de Murcia rebaja la exigencia de un criterio.
 # Si la cita oficial contiene una, el criterio puede quedar por debajo del nivel
-# que la tabla §5.4 asigna a su curso. «básico» está aquí porque el propio decreto
+# que la tabla §5.4 asigna a su curso. «básico» está ahí porque el propio decreto
 # escala así el 5.2: «procedimientos básicos» (1.º-2.º ESO) → «progresivamente
 # procedimientos» (3.º) → «procedimientos» a secas (4.º).
-FORMULAS_GUIADAS = [
-    "de manera guiada", "de forma guiada", "sencillo", "con ayuda",
-    "con la ayuda", "pautas", "modelos", "básico",
-]
-
-# Fila de la matriz §4.3 que corresponde a cada valor de `tipos_tarea` de un pack.
-FILA_POR_TIPO = {
-    "narracion": "narración",
-    "expositivo": "texto expositivo",
-    "oral": "exposición oral",
-    "argumentativo": "texto argumentativo",
-}
+FORMULAS_GUIADAS = LEXICO["comun"]["formulas_guiadas"]
 
 
 def normalizar(texto):
@@ -160,73 +165,55 @@ def comprobar_citas_sdd(sdd, fuentes, marco, err, avi):
 
 # ---------------------------------------------------------------- comprobación 3
 
-def parsear_matriz_tareas(sdd):
-    """Devuelve {fila_normalizada: {curso: '●'|'○'}} desde la tabla de §4.3."""
-    tramo = seccion(sdd, "### 4.3", "## 5.")
-    lineas = [l for l in tramo.splitlines() if l.strip().startswith("|")]
-    if not lineas:
-        raise SystemExit("No encuentro la tabla de tipos de tarea en SDD §4.3")
-    cursos = [curso_de_celda(c)[0] for c in celdas(lineas[0])[1:]]
-    matriz = {}
-    for linea in lineas[2:]:
-        partes = celdas(linea)
-        fila = normalizar(partes[0])
-        matriz[fila] = {curso: v.strip() for curso, v in zip(cursos, partes[1:])
-                        if v.strip() in ("●", "○")}
-    return matriz
+def matriz_tareas(materia):
+    """Devuelve {tipo_tarea: {curso: '●'|'○'}} desde data/derivacion-<materia>.json.
+
+    Antes se parseaba de la tabla markdown del SDD y las filas se buscaban por su
+    etiqueta visible, así que un tipo de tarea se daba de alta en dos sitios con
+    dos redacciones que tenían que coincidir. Ahora la clave es la del catálogo."""
+    datos = derivacion(materia)["matriz_tareas"]
+    simbolos = datos["simbolos"]
+    return {tipo: {curso: simbolos[clave]["simbolo"] for curso, clave in fila.items()}
+            for tipo, fila in datos["celdas"].items()}
 
 
 def comprobar_matriz_tareas(pack, matriz, err, avi):
+    tipos = CATALOGO["materias"].get(pack.get("materia"), {}).get("tipos_tarea", {})
     for c in pack["criterios"]:
         for tipo in c.get("tipos_tarea", []):
-            fila = FILA_POR_TIPO.get(tipo)
-            if fila is None or fila not in matriz:
-                avi(c["id"], "matriz §4.3", "tipo de tarea sin fila en la matriz: '%s'" % tipo)
-            elif c["curso"] not in matriz[fila]:
+            if tipo not in tipos:
+                err(c["id"], "matriz §4.3", "el tipo de tarea '%s' no está declarado en "
+                    "data/catalogo.json para la materia %s" % (tipo, pack.get("materia")))
+            elif tipo not in matriz:
+                err(c["id"], "matriz §4.3", "el tipo de tarea '%s' no tiene fila en la "
+                    "matriz §4.3 de la materia %s" % (tipo, pack.get("materia")))
+            elif c["curso"] not in matriz[tipo]:
                 err(c["id"], "matriz §4.3", "la matriz no sostiene '%s' en %s: "
                     "celda vacía, no hay criterio que abra esa puerta" % (tipo, c["curso"]))
 
 
 # ---------------------------------------------------------------- comprobación 4
 
-def celdas(linea):
-    return [c.strip() for c in linea.strip().strip("|").split("|")]
+def tabla_progresion(materia):
+    """Devuelve {curso: {eje: nivel}} desde data/derivacion-<materia>.json.
 
-
-def curso_de_celda(celda):
-    etapa = "BACH" if re.search(r"bach", celda, re.I) else "ESO"
-    return ["%s%s" % (n, etapa) for n in re.findall(r"(\d)\.º", celda)]
-
-
-def parsear_tabla_progresion(sdd):
-    """Devuelve {curso: {eje: nivel}} desde la tabla de ejes de §5.4."""
-    tramo = seccion(sdd, "### 5.4", "### 5.5")
-    lineas = [l for l in tramo.splitlines()
-              if l.strip().startswith("|") and "---" not in l]
-    cabecera = next(l for l in lineas if normalizar(celdas(l)[0]) == "eje")
-    columnas = []                     # [(nivel, [cursos])]
-    for celda in celdas(cabecera)[1:]:
-        nivel = int(re.match(r"(\d)", celda).group(1))
-        columnas.append((nivel, curso_de_celda(celda)))
-
+    Una celda `{"mismo_nivel_que": "4ESO"}` no define peldaño propio: sus cursos
+    heredan el nivel de aquel al que remite. Es lo que separa autonomía —que el
+    Marco Teórico culmina en «4.º ESO – 1.º BACH» juntos— de los otros dos ejes,
+    que culminan en 1.º Bach en solitario."""
+    datos = derivacion(materia)["ejes_progresion"]
+    columnas = datos["columnas"]
     tabla = {}
-    filas = lineas[lineas.index(cabecera) + 1:]
-    ejes = {"autonomía": "autonomia", "complejidad textual": "complejidad",
-            "metalingüístico": "metalinguistico"}
-    for linea in filas:
-        partes = celdas(linea)
-        eje = ejes.get(normalizar(partes[0]))
-        if eje is None:
-            continue
-        for (nivel, cursos), celda in zip(columnas, partes[1:]):
-            # «(mismo nivel que 4.º ESO …)»: la celda remite a otra columna.
-            remite = re.search(r"mismo nivel que (\d)\.º\s*(ESO|Bach)", celda, re.I)
-            if remite:
-                nivel = tabla["%s%s" % (remite.group(1), remite.group(2).upper())][eje]
-            for curso in cursos:
-                tabla.setdefault(curso, {})[eje] = nivel
+    for eje in datos["ejes"]:
+        for columna, celda in zip(columnas, eje["celdas"]):
+            nivel = columna["nivel"]
+            if isinstance(celda, dict):
+                nivel = tabla[celda["mismo_nivel_que"]][eje["id"]]
+            for curso in columna["cursos"]:
+                tabla.setdefault(curso, {})[eje["id"]] = nivel
     if not tabla:
-        raise SystemExit("No encuentro la tabla de ejes de progresión en SDD §5.4")
+        raise SystemExit("data/derivacion-%s.json no define ningún eje de progresión "
+                         "(§5.4)" % materia.lower())
     return tabla
 
 
@@ -257,25 +244,21 @@ def comprobar_progresion(pack, tabla, err, avi):
 
 # ---------------------------------------------------------------- comprobación 5
 
-# Cabeceras de curso tal y como aparecen en fuentes/curriculo/, literal, una
-# por línea. El texto ANTES de la primera cabecera de cada archivo es
-# preámbulo compartido por todos sus cursos (p. ej. en Bachillerato, la
-# descripción de "Competencia específica 5" que cita el SDD para 2.º Bach en
-# la celda de texto expositivo vive ahí, antes de que el documento se separe
-# en "Lengua Castellana y Literatura I/II") y se añade al segmento de cada
-# curso del archivo, no solo al primero.
-CABECERAS_CURSO = {
-    "curriculo-ESO-Murcia-lengua.md": [
-        ("Primer curso", "1ESO"), ("Segundo curso", "2ESO"),
-        ("Tercer curso", "3ESO"), ("Cuarto curso", "4ESO"),
-    ],
-    "curriculo-Bachillerato-lengua.md": [
-        ("Lengua Castellana y Literatura I", "1BACH"),
-        ("Lengua Castellana y Literatura II", "2BACH"),
-    ],
-}
+def cabeceras_de_curso():
+    """Cómo recortar cada archivo de fuentes/curriculo/ por cursos.
 
-GENEROS = ["expositiv", "argumentativ", "narrativ"]
+    Sale de data/catalogo.json (materias.<X>.fuentes), no de una tabla escrita
+    aquí: era el último sitio donde dar de alta una materia obligaba a tocar
+    código. Se juntan las de todas las materias porque un archivo de fuente
+    pertenece a una sola, y las claves son nombres de archivo."""
+    cabeceras = {}
+    for materia in CATALOGO["materias"].values():
+        for archivo, lista in materia.get("fuentes", {}).items():
+            cabeceras[archivo] = [tuple(par) for par in lista]
+    return cabeceras
+
+def generos_de(materia):
+    return LEXICO["por_materia"].get(materia, {}).get("generos", [])
 
 
 def segmentar_por_curso():
@@ -283,7 +266,7 @@ def segmentar_por_curso():
     por sus cabeceras de curso; el preámbulo antes de la primera cabecera se
     añade a todos los cursos de ese archivo."""
     segmentos = {}
-    for nombre, cabeceras in CABECERAS_CURSO.items():
+    for nombre, cabeceras in cabeceras_de_curso().items():
         ruta = os.path.join(DIR_FUENTES, nombre)
         if not os.path.isfile(ruta):
             continue
@@ -321,12 +304,13 @@ def segmentar_por_curso():
 
 
 def comprobar_genero_saber_vehiculo(pack, segmentos, err, avi):
+    generos = generos_de(pack.get("materia"))
     for c in pack["criterios"]:
         curso = c["curso"]
         seg = segmentos.get(curso)
         for entrada in c.get("saber_vehiculo", []):
             en = normalizar(entrada)
-            for genero in GENEROS:
+            for genero in generos:
                 if genero not in en:
                     continue
                 if seg is None:
@@ -339,14 +323,15 @@ def comprobar_genero_saber_vehiculo(pack, segmentos, err, avi):
 
 # ------------------------------------------------------------------- ejecución
 
-def verificar_pack(ruta, fuentes, matriz, tabla, segmentos):
-    pack = json.load(open(ruta, encoding="utf8"))
+def verificar_pack(ruta, fuentes, segmentos):
+    pack = cargar_pack(ruta)
+    materia = pack.get("materia")
     errores, avisos = [], []
     err = lambda cid, donde, msg: errores.append((cid, donde, msg))
     avi = lambda cid, donde, msg: avisos.append((cid, donde, msg))
     comprobar_citas_pack(pack, fuentes, err)
-    comprobar_matriz_tareas(pack, matriz, err, avi)
-    comprobar_progresion(pack, tabla, err, avi)
+    comprobar_matriz_tareas(pack, matriz_tareas(materia), err, avi)
+    comprobar_progresion(pack, tabla_progresion(materia), err, avi)
     comprobar_genero_saber_vehiculo(pack, segmentos, err, avi)
     return pack, errores, avisos
 
@@ -368,11 +353,26 @@ def informar(titulo, errores, avisos):
     return bool(errores)
 
 
-def auto_prueba(fuentes, matriz, tabla, sdd, marco, segmentos):
-    """Casos dorados: cada corrupción deliberada tiene que producir su error."""
-    ruta = sorted(glob.glob(os.path.join(RAIZ, "data", "*.json")))[0]
-    limpio = json.load(open(ruta, encoding="utf8"))
+def auto_prueba(fuentes, sdd, marco, segmentos):
+    """Casos dorados: cada corrupción deliberada tiene que producir su error.
+
+    Cada caso dice EN QUÉ CURSO tiene que corromper, y el curso se busca. Antes
+    corrompía `criterios[0]` dando por hecho que era de 2.º ESO, cosa que solo era
+    cierta porque los packs se recorrían por orden alfabético de archivo. Al pasar
+    a leerlos del catálogo, un caso empezó a fallar sin que nada estuviera mal:
+    una prueba acoplada a un orden que nadie había elegido a propósito."""
+    limpio = cargar_pack(rutas_de_packs()[0])
+    matriz = matriz_tareas(limpio["materia"])
+    tabla = tabla_progresion(limpio["materia"])
     fallos = []
+
+    def del_curso(pack, curso):
+        """Primer criterio del curso pedido; si el pack no lo tiene, se dice."""
+        for c in pack["criterios"]:
+            if c["curso"] == curso:
+                return c
+        raise SystemExit("auto-prueba mal montada: %s no tiene ningún criterio de %s"
+                         % (pack["pack_id"], curso))
 
     def caso(nombre, mutar, comprobar):
         pack = copy.deepcopy(limpio)
@@ -402,10 +402,10 @@ def auto_prueba(fuentes, matriz, tabla, sdd, marco, segmentos):
                                             progresion=tabla["4ESO"].copy()),
          lambda p, err, avi: comprobar_matriz_tareas(p, matriz, err, avi))
     caso("género trasplantado en saber_vehiculo debe detectarse (decisión 12/13)",
-         # criterios[0] es 2ESO, el único curso de ESO cuyos saberes no
-         # nombran ningún género: es la corrupción exacta que produjo la
-         # decisión 12 antes de corregirse.
-         lambda p: p["criterios"][0].update(
+         # 2.º ESO es el único curso de ESO cuyos saberes no nombran ningún
+         # género: trasplantarle la redacción de 1.º es la corrupción exacta
+         # que produjo la decisión 12 antes de corregirse.
+         lambda p: del_curso(p, "2ESO").update(
              saber_vehiculo=["secuencias textuales expositivas"]),
          lambda p, err, avi: comprobar_genero_saber_vehiculo(p, segmentos, err, avi))
 
@@ -439,12 +439,10 @@ def main():
     fuentes = cargar_fuentes()
     marco = cargar_marco()
     sdd = open(RUTA_SDD, encoding="utf8").read()
-    matriz = parsear_matriz_tareas(sdd)
-    tabla = parsear_tabla_progresion(sdd)
     segmentos = segmentar_por_curso()
 
     if "--auto-prueba" in sys.argv:
-        return auto_prueba(fuentes, matriz, tabla, sdd, marco, segmentos)
+        return auto_prueba(fuentes, sdd, marco, segmentos)
 
     fallo = False
 
@@ -455,10 +453,9 @@ def main():
                         lambda cid, donde, msg: avisos.append((cid, donde, msg)))
     fallo |= informar("SDD §4.3 y §5.4 · procedencia de las citas", errores, avisos)
 
-    rutas = [a for a in sys.argv[1:] if not a.startswith("--")]
-    rutas = rutas or sorted(glob.glob(os.path.join(RAIZ, "data", "*.json")))
+    rutas = rutas_de_packs(sys.argv[1:])
     for ruta in rutas:
-        pack, errores, avisos = verificar_pack(ruta, fuentes, matriz, tabla, segmentos)
+        pack, errores, avisos = verificar_pack(ruta, fuentes, segmentos)
         fallo |= informar("%s · derivación contra fuentes y SDD" % pack["pack_id"],
                           errores, avisos)
     return 1 if fallo else 0

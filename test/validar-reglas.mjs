@@ -11,12 +11,10 @@
 // la única dirección admisible), y "bastantes"/"regularmente" sí lo son
 // (ahí replica la búsqueda por subcadena del script).
 
-import { readFileSync } from "node:fs";
-import { fileURLToPath } from "node:url";
 import { validarPack, comprobarRepartoPesos, comprobarSostenibilidad } from "../js/validador.js";
+import { cargarPack } from "./cargar.mjs";
 
-const rutaPack = fileURLToPath(new URL("../data/pack-lcl-expositivo.json", import.meta.url));
-const packOriginal = JSON.parse(readFileSync(rutaPack, "utf8"));
+const packOriginal = cargarPack("pack-lcl-expositivo.json");
 
 function clonarPack() {
   return JSON.parse(JSON.stringify(packOriginal));

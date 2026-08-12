@@ -1,0 +1,107 @@
+{
+  "_nota": [
+    "Catálogo: qué packs existen y cómo se llaman las cosas en pantalla.",
+    "",
+    "Existe porque hasta ahora esto estaba cableado en tres sitios a la vez —la lista de",
+    "packs en js/main.js, las etiquetas de tipo de tarea y de curso en js/ui.js, y un",
+    "glob de data/*.json en los scripts— y añadir un pack obligaba a acordarse de los",
+    "tres. El glob, además, se tragaba cualquier .json que cayera en data/.",
+    "",
+    "Añadir un pack es añadir una entrada en `packs`. Añadir una MATERIA es añadir un",
+    "bloque en `materias` aquí y otro en data/reglas-lexicas.json, y nada más:",
+    "ni una línea de código en dos lenguajes.",
+    "",
+    "El orden de `packs` es el orden en que se cargan y se fusionan."
+  ],
+
+  "version": "1.0.0",
+
+  "cursos": {
+    "_nota": [
+      "Etapas del sistema educativo: común a todas las materias, no es de Lengua.",
+      "`orden` manda en los desplegables y en las columnas de las tablas del SDD.",
+      "",
+      "`etiquetas` es lo que ve el profesor; `etiquetas_cortas`, lo que cabe en la cabecera de",
+      "una tabla. No son la misma cadena y por eso están las dos, pero solo aquí: la matriz",
+      "§4.3 y la tabla §5.4 del SDD se escriben desde este archivo."
+    ],
+    "orden": ["1ESO", "2ESO", "3ESO", "4ESO", "1BACH", "2BACH"],
+    "etiquetas": {
+      "1ESO": "1.º de ESO",
+      "2ESO": "2.º de ESO",
+      "3ESO": "3.º de ESO",
+      "4ESO": "4.º de ESO",
+      "1BACH": "1.º de Bachillerato",
+      "2BACH": "2.º de Bachillerato"
+    },
+    "etiquetas_cortas": {
+      "1ESO": "1.º ESO",
+      "2ESO": "2.º ESO",
+      "3ESO": "3.º ESO",
+      "4ESO": "4.º ESO",
+      "1BACH": "1.º Bach",
+      "2BACH": "2.º Bach"
+    }
+  },
+
+  "materias": {
+    "LCL": {
+      "etiqueta": "Lengua Castellana y Literatura",
+      "etiqueta_corta": "Lengua",
+      "comunidad": "Región de Murcia",
+
+      "_nota": [
+        "Las dos tablas de derivación de la materia —qué tarea sostiene el currículo en qué curso",
+        "(SDD §4.3) y hasta dónde puede exigir cada curso (SDD §5.4)— viven en su propio archivo,",
+        "una por materia. El SDD las imprime desde ahí; no se editan en el SDD."
+      ],
+      "derivacion": "data/derivacion-lcl.json",
+
+      "tipos_tarea": {
+        "narracion": "Narración",
+        "expositivo": "Texto expositivo",
+        "oral": "Exposición oral",
+        "argumentativo": "Texto argumentativo",
+        "comentario": "Comentario de texto literario",
+        "resumen": "Resumen de un texto"
+      },
+
+      "fuentes": {
+        "_nota": [
+          "Cómo se recorta fuentes/curriculo/ por cursos, para poder comprobar una cita",
+          "contra el curso al que dice pertenecer y no contra el documento entero.",
+          "Fue así como se cazó la cita fabricada de 2.º ESO (decisión 12 de §17): el",
+          "género existía en el documento, pero no en ese curso.",
+          "",
+          "`cabeceras` son líneas literales del archivo, EN ORDEN y solo su primera",
+          "aparición: el documento de ESO repite 'Primer curso', 'Segundo curso'… más",
+          "adelante para lengua de signos, y esa segunda tanda no es la de esta materia.",
+          "",
+          "Lo que va ANTES de la primera cabecera es preámbulo compartido y se añade al",
+          "segmento de TODOS los cursos del archivo, no solo al primero: en Bachillerato,",
+          "la descripción de la competencia específica 5 que el SDD cita para 2.º Bach",
+          "vive ahí, antes de que el documento se separe en Lengua I y Lengua II."
+        ],
+        "curriculo-ESO-Murcia-lengua.md": [
+          ["Primer curso", "1ESO"],
+          ["Segundo curso", "2ESO"],
+          ["Tercer curso", "3ESO"],
+          ["Cuarto curso", "4ESO"]
+        ],
+        "curriculo-Bachillerato-lengua.md": [
+          ["Lengua Castellana y Literatura I", "1BACH"],
+          ["Lengua Castellana y Literatura II", "2BACH"]
+        ]
+      }
+    }
+  },
+
+  "packs": [
+    { "id": "lcl-murcia-expositivo",    "materia": "LCL", "archivo": "data/pack-lcl-expositivo.json" },
+    { "id": "lcl-murcia-argumentativo", "materia": "LCL", "archivo": "data/pack-lcl-argumentativo.json" },
+    { "id": "lcl-murcia-oral",          "materia": "LCL", "archivo": "data/pack-lcl-oral.json" },
+    { "id": "lcl-murcia-narracion",     "materia": "LCL", "archivo": "data/pack-lcl-narracion.json" },
+    { "id": "lcl-murcia-comentario",    "materia": "LCL", "archivo": "data/pack-lcl-comentario.json" },
+    { "id": "lcl-murcia-resumen",       "materia": "LCL", "archivo": "data/pack-lcl-resumen.json" }
+  ]
+}

@@ -12,230 +12,6 @@
     "vigencia_desde": "2022-2023",
     "revisado": "2026-08"
   },
-  "verbos": [
-    {
-      "id": "cierra",
-      "3s": "Cierra",
-      "1s": "Cierro",
-      "nivel_cognitivo": 1
-    },
-    {
-      "id": "cita",
-      "3s": "Cita",
-      "1s": "Cito",
-      "nivel_cognitivo": 1
-    },
-    {
-      "id": "entrega",
-      "3s": "Entrega",
-      "1s": "Entrego",
-      "nivel_cognitivo": 1
-    },
-    {
-      "id": "enumera",
-      "3s": "Enumera",
-      "1s": "Enumero",
-      "nivel_cognitivo": 1
-    },
-    {
-      "id": "indica",
-      "3s": "Indica",
-      "1s": "Indico",
-      "nivel_cognitivo": 1
-    },
-    {
-      "id": "traslada",
-      "3s": "Traslada",
-      "1s": "Traslado",
-      "nivel_cognitivo": 1
-    },
-    {
-      "id": "explica",
-      "3s": "Explica",
-      "1s": "Explico",
-      "nivel_cognitivo": 2
-    },
-    {
-      "id": "relaciona",
-      "3s": "Relaciona",
-      "1s": "Relaciono",
-      "nivel_cognitivo": 2
-    },
-    {
-      "id": "selecciona",
-      "3s": "Selecciona",
-      "1s": "Selecciono",
-      "nivel_cognitivo": 2
-    },
-    {
-      "id": "ajusta",
-      "3s": "Ajusta",
-      "1s": "Ajusto",
-      "nivel_cognitivo": 3
-    },
-    {
-      "id": "aplica",
-      "3s": "Aplica",
-      "1s": "Aplico",
-      "nivel_cognitivo": 3
-    },
-    {
-      "id": "apoya",
-      "3s": "Apoya",
-      "1s": "Apoyo",
-      "nivel_cognitivo": 3
-    },
-    {
-      "id": "delimita",
-      "3s": "Delimita",
-      "1s": "Delimito",
-      "nivel_cognitivo": 3
-    },
-    {
-      "id": "desarrolla",
-      "3s": "Desarrolla",
-      "1s": "Desarrollo",
-      "nivel_cognitivo": 3
-    },
-    {
-      "id": "elabora",
-      "3s": "Elabora",
-      "1s": "Elaboro",
-      "nivel_cognitivo": 3
-    },
-    {
-      "id": "emplea",
-      "3s": "Emplea",
-      "1s": "Empleo",
-      "nivel_cognitivo": 3
-    },
-    {
-      "id": "expone",
-      "3s": "Expone",
-      "1s": "Expongo",
-      "nivel_cognitivo": 3
-    },
-    {
-      "id": "formula",
-      "3s": "Formula",
-      "1s": "Formulo",
-      "nivel_cognitivo": 3
-    },
-    {
-      "id": "mantiene",
-      "3s": "Mantiene",
-      "1s": "Mantengo",
-      "nivel_cognitivo": 3
-    },
-    {
-      "id": "ordena",
-      "3s": "Ordena",
-      "1s": "Ordeno",
-      "nivel_cognitivo": 3
-    },
-    {
-      "id": "redacta",
-      "3s": "Redacta",
-      "1s": "Redacto",
-      "nivel_cognitivo": 3
-    },
-    {
-      "id": "separa",
-      "3s": "Separa",
-      "1s": "Separo",
-      "nivel_cognitivo": 3
-    },
-    {
-      "id": "sustituye",
-      "3s": "Sustituye",
-      "1s": "Sustituyo",
-      "nivel_cognitivo": 3
-    },
-    {
-      "id": "utiliza",
-      "3s": "Utiliza",
-      "1s": "Utilizo",
-      "nivel_cognitivo": 3
-    },
-    {
-      "id": "anticipa",
-      "3s": "Anticipa",
-      "1s": "Anticipo",
-      "nivel_cognitivo": 4
-    },
-    {
-      "id": "articula",
-      "3s": "Articula",
-      "1s": "Articulo",
-      "nivel_cognitivo": 4
-    },
-    {
-      "id": "contrasta",
-      "3s": "Contrasta",
-      "1s": "Contrasto",
-      "nivel_cognitivo": 4
-    },
-    {
-      "id": "defiende",
-      "3s": "Defiende",
-      "1s": "Defiendo",
-      "nivel_cognitivo": 4
-    },
-    {
-      "id": "distingue",
-      "3s": "Distingue",
-      "1s": "Distingo",
-      "nivel_cognitivo": 4
-    },
-    {
-      "id": "justifica",
-      "3s": "Justifica",
-      "1s": "Justifico",
-      "nivel_cognitivo": 4
-    },
-    {
-      "id": "matiza",
-      "3s": "Matiza",
-      "1s": "Matizo",
-      "nivel_cognitivo": 4
-    },
-    {
-      "id": "rebate",
-      "3s": "Rebate",
-      "1s": "Rebato",
-      "nivel_cognitivo": 4
-    },
-    {
-      "id": "integra",
-      "3s": "Integra",
-      "1s": "Integro",
-      "nivel_cognitivo": 5
-    },
-    {
-      "id": "reformula",
-      "3s": "Reformula",
-      "1s": "Reformulo",
-      "nivel_cognitivo": 5
-    },
-    {
-      "id": "corrige",
-      "3s": "Corrige",
-      "1s": "Corrijo",
-      "nivel_cognitivo": 6
-    },
-    {
-      "id": "revisa",
-      "3s": "Revisa",
-      "1s": "Reviso",
-      "nivel_cognitivo": 6
-    },
-    {
-      "id": "valora",
-      "3s": "Valora",
-      "1s": "Valoro",
-      "nivel_cognitivo": 6
-    }
-  ],
   "criterios": [
     {
       "id": "lcl-b-adecuacion-arg-2eso",
@@ -985,24 +761,24 @@
       "descriptores": {
         "n1": {
           "verbo": "utiliza",
-          "texto": "Utiliza expresiones propias de la conversación diaria para defender su opinión en una tarea dirigida al ámbito académico."
+          "texto": "Utiliza expresiones propias de la conversación diaria para defender la opinión personal en una tarea dirigida al ámbito académico."
         },
         "n2": {
           "verbo": "ajusta",
-          "texto": "Ajusta el texto al género de opinión trabajado en clase y presenta su postura en primera persona, con algún término coloquial en el léxico."
+          "texto": "Ajusta el texto al género de opinión trabajado en clase y presenta la postura propia en primera persona, con algún término coloquial en el léxico."
         },
         "n3": {
           "verbo": "emplea",
-          "texto": "Emplea un registro formal sostenido y marca con fórmulas de opinión (considero, a mi juicio) los pasajes donde habla el emisor."
+          "texto": "Emplea un registro formal sostenido e indica con fórmulas de opinión (considero, a mi juicio) los pasajes donde habla el emisor."
         },
         "n4": {
           "verbo": "matiza",
-          "texto": "Matiza el grado de certeza de sus afirmaciones combinando expresiones de mayor y menor seguridad (quizá, es probable, resulta innegable) a lo largo del texto."
+          "texto": "Matiza el grado de certeza de las afirmaciones propias combinando expresiones de mayor y menor seguridad (quizá, es probable, resulta innegable) a lo largo del texto."
         }
       },
       "matriz_cuantitativa": null,
       "descriptor_cotejo": null,
-      "descriptor_un_punto": "Ajusta el texto al género de opinión trabajado en clase y presenta su postura en primera persona, con algún término coloquial aislado."
+      "descriptor_un_punto": "Ajusta el texto al género de opinión trabajado en clase y presenta la postura propia en primera persona, con algún término coloquial aislado."
     },
     {
       "id": "lcl-b-coherencia-arg-3eso",
@@ -1044,7 +820,7 @@
       "descriptores": {
         "n1": {
           "verbo": "enumera",
-          "texto": "Enumera opiniones sobre el tema en un bloque único, siguiendo el orden en que se le ocurren."
+          "texto": "Enumera opiniones sobre el tema en un bloque único, siguiendo el orden en que van surgiendo."
         },
         "n2": {
           "verbo": "formula",
@@ -1450,7 +1226,7 @@
         },
         "n3": {
           "verbo": "revisa",
-          "texto": "Revisa el borrador por su cuenta y corrige problemas de conexión entre los argumentos y la tesis."
+          "texto": "Revisa el borrador por cuenta propia y corrige problemas de conexión entre los argumentos y la tesis."
         },
         "n4": {
           "verbo": "justifica",
@@ -1576,7 +1352,7 @@
         },
         "n4": {
           "verbo": "distingue",
-          "texto": "Distingue los datos comprobables de las opiniones que aparecen en sus fuentes, y apoya los argumentos en los datos citando su origen."
+          "texto": "Distingue los datos comprobables de las opiniones que aparecen en las fuentes consultadas, y apoya los argumentos en los datos citando su origen."
         }
       },
       "matriz_cuantitativa": {
@@ -2412,7 +2188,7 @@
         },
         "n2": {
           "verbo": "ajusta",
-          "texto": "Ajusta el léxico y el tono al género del ensayo, aunque presenta sus opiniones como si fueran hechos comprobados, sin marca que las distinga."
+          "texto": "Ajusta el léxico y el tono al género del ensayo, aunque presenta las opiniones propias como si fueran hechos comprobados, sin marca que las distinga."
         },
         "n3": {
           "verbo": "mantiene",
@@ -2869,7 +2645,7 @@
         },
         "n3": {
           "verbo": "revisa",
-          "texto": "Revisa el borrador de manera autónoma y reformula los pasajes donde la argumentación resulta difícil de seguir para un lector que no comparte su postura."
+          "texto": "Revisa el borrador de manera autónoma y reformula los pasajes donde la argumentación resulta difícil de seguir para un lector que no comparte la postura defendida."
         },
         "n4": {
           "verbo": "justifica",
@@ -2995,7 +2771,7 @@
         },
         "n4": {
           "verbo": "integra",
-          "texto": "Integra los vínculos entre obras como argumentos del ensayo y explicita la respuesta personal que la lectura le provoca, conectándola con la valoración que defiende."
+          "texto": "Integra los vínculos entre obras como argumentos del ensayo y formula la respuesta personal a la lectura en conexión con la valoración defendida."
         }
       },
       "matriz_cuantitativa": {
@@ -3110,7 +2886,7 @@
         },
         "n2": {
           "verbo": "ajusta",
-          "texto": "Ajusta el léxico y el tono al género del ensayo, pero no distingue mediante marcas la opinión propia de la información que aporta."
+          "texto": "Ajusta el léxico y el tono al género del ensayo, pero no distingue mediante marcas la opinión propia de la información aportada."
         },
         "n3": {
           "verbo": "mantiene",
@@ -3123,7 +2899,7 @@
       },
       "matriz_cuantitativa": null,
       "descriptor_cotejo": null,
-      "descriptor_un_punto": "Ajusta el léxico y el tono al género del ensayo, sin distinguir mediante marcas la opinión propia de la información que aporta."
+      "descriptor_un_punto": "Ajusta el léxico y el tono al género del ensayo, sin distinguir mediante marcas la opinión propia de la información aportada."
     },
     {
       "id": "lcl-b-coherencia-arg-2bach",
@@ -3568,11 +3344,11 @@
         },
         "n3": {
           "verbo": "revisa",
-          "texto": "Revisa el borrador con ayuda de un compañero o de un instrumento de consulta (corrector, manual de estilo) y reformula los pasajes donde la argumentación resulta difícil de seguir para un lector que no comparte su postura."
+          "texto": "Revisa el borrador con ayuda de un compañero o de un instrumento de consulta (corrector, manual de estilo) y reformula los pasajes donde la argumentación resulta difícil de seguir para un lector que no comparte la postura defendida."
         },
         "n4": {
           "verbo": "justifica",
-          "texto": "Justifica con metalenguaje específico los cambios que introduce a partir de esa revisión compartida, explicando tanto el problema argumentativo que resuelven como el efecto persuasivo que persiguen."
+          "texto": "Justifica con metalenguaje específico los cambios introducidos a partir de esa revisión compartida, explicando tanto el problema argumentativo que resuelven como el efecto persuasivo que persiguen."
         }
       },
       "matriz_cuantitativa": {
@@ -3694,7 +3470,7 @@
         },
         "n4": {
           "verbo": "integra",
-          "texto": "Integra los vínculos entre obras de distintos ejes temáticos como argumentos del ensayo y explicita la respuesta personal que la lectura le provoca, conectándola con la valoración que defiende."
+          "texto": "Integra los vínculos entre obras de distintos ejes temáticos como argumentos del ensayo y formula la respuesta personal a la lectura en conexión con la valoración defendida."
         }
       },
       "matriz_cuantitativa": {

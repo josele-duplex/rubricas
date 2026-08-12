@@ -1,0 +1,117 @@
+{
+  "_nota": [
+    "Derivación de Lengua Castellana y Literatura: las dos tablas que deciden qué se puede",
+    "generar y hasta dónde puede exigir cada curso.",
+    "",
+    "Existe porque hasta la v1.21 estas dos tablas vivían escritas a mano en el SDD y se leían",
+    "parseando markdown. Funcionaba con una sola materia; con dos, el SDD habría tenido varias",
+    "matrices y el parseo se habría quedado corto (deuda anotada en docs/diseno/anadir-una-materia.md).",
+    "Ahora manda este archivo y las tablas del SDD son DERIVADAS: se escriben con",
+    "`python scripts/generar_tablas_sdd.py` y `comprobar_todo.py` falla si se han separado,",
+    "igual que ocurre con docs/revision-*.md y con js/lexico.js.",
+    "",
+    "Lo que NO vive aquí es la prosa: qué sostiene cada celda discutida, con su cita literal,",
+    "sigue en el SDD §4.3, y el razonamiento de los ejes en §5.4. Este archivo guarda el dato;",
+    "el SDD guarda por qué el dato es ese.",
+    "",
+    "Una materia nueva se da de alta con su propio data/derivacion-<materia>.json, declarado en",
+    "`materias.<X>.derivacion` de data/catalogo.json. Ni una línea de código."
+  ],
+
+  "version": "1.0.0",
+  "materia": "LCL",
+
+  "matriz_tareas": {
+    "_nota": [
+      "SDD §4.3. Qué tipo de tarea sostiene el currículo en qué curso.",
+      "",
+      "La puerta la abre un CRITERIO DE EVALUACIÓN, nunca un saber (CLAUDE.md, regla 9): por eso",
+      "una celda ausente significa 'no hay criterio que la abra', y ○ no vacía nada — solo dice",
+      "dónde NO pone el foco ese curso. Un curso sin celda no se ofrece en la aplicación y ningún",
+      "pack puede declarar ese tipo de tarea ahí: lo comprueba scripts/verificar_derivacion.py.",
+      "",
+      "Las claves de `celdas` son las de `materias.LCL.tipos_tarea` del catálogo, y las de dentro,",
+      "las de `cursos.orden`. Un curso ausente es celda vacía."
+    ],
+
+    "simbolos": {
+      "nombrado": {
+        "simbolo": "●",
+        "significa": "**género o tarea nombrados en los saberes del curso**, además de sostenido por su criterio de evaluación"
+      },
+      "sostenido": {
+        "simbolo": "○",
+        "significa": "**sostenido por el criterio de evaluación del curso, pero no nombrado en sus saberes**: incipiente al principio de la secuencia (argumentativo en 2.º ESO), residual al final, cuando el foco del curso se ha desplazado al otro género (expositivo en 2.º Bach), o simplemente ausente del bloque de saberes de ese curso concreto (los tres géneros en 2.º ESO)"
+      }
+    },
+
+    "celdas": {
+      "narracion":     { "1ESO": "nombrado", "2ESO": "sostenido", "3ESO": "sostenido" },
+      "expositivo":    { "1ESO": "nombrado", "2ESO": "sostenido", "3ESO": "nombrado", "4ESO": "nombrado", "1BACH": "nombrado", "2BACH": "sostenido" },
+      "oral":          { "1ESO": "nombrado", "2ESO": "nombrado", "3ESO": "nombrado", "4ESO": "nombrado", "1BACH": "nombrado", "2BACH": "nombrado" },
+      "argumentativo": { "2ESO": "sostenido", "3ESO": "nombrado", "4ESO": "nombrado", "1BACH": "nombrado", "2BACH": "nombrado" },
+      "comentario":    { "1ESO": "nombrado", "3ESO": "nombrado", "4ESO": "nombrado", "1BACH": "nombrado", "2BACH": "nombrado" },
+      "resumen":       { "1ESO": "nombrado", "3ESO": "nombrado", "1BACH": "sostenido", "2BACH": "sostenido" }
+    }
+  },
+
+  "ejes_progresion": {
+    "_nota": [
+      "SDD §5.4. El techo de exigencia de cada curso en los tres ejes del Marco Teórico §8,",
+      "extendidos hacia abajo hasta 1.º de ESO.",
+      "",
+      "`columnas` es lo que el verificador usa: el nivel máximo que el campo `progresion` de un",
+      "criterio puede alcanzar en cada curso. Los cursos que no aparecen en ninguna columna quedan",
+      "fuera de la tabla a propósito (2.º Bach, decisión abierta §17.11) y producen aviso, no error.",
+      "",
+      "Los tres ejes NO avanzan en pareja entre 4.º ESO y 1.º Bach: el Marco Teórico sitúa el polo",
+      "alto de autonomía en '4.º ESO – 1.º BACH' juntos, y los de complejidad y metalingüístico en",
+      "1.º Bach en solitario. Eso se escribe con `mismo_nivel_que`: la columna existe, pero para ese",
+      "eje sus cursos heredan el nivel del curso al que remite. Igualarlos por uniformidad de",
+      "implementación fue el error corregido el 2026-08-05.",
+      "",
+      "`celdas` va en el orden de `columnas`, y sus textos son los peldaños tal y como se leen en",
+      "el SDD. Los ids de eje son los que escriben los packs en `progresion`."
+    ],
+
+    "columnas": [
+      { "nivel": 1, "cursos": ["1ESO"] },
+      { "nivel": 2, "cursos": ["2ESO", "3ESO"] },
+      { "nivel": 3, "cursos": ["4ESO"] },
+      { "nivel": 4, "cursos": ["1BACH"] }
+    ],
+
+    "ejes": [
+      {
+        "id": "autonomia",
+        "etiqueta": "Autonomía",
+        "celdas": [
+          "Tarea guiada con pauta y modelo a la vista",
+          "Tarea acompañada, con modelo retirado en la revisión",
+          "Planificación autónoma con revisión entre iguales",
+          { "mismo_nivel_que": "4ESO", "porque": "el Marco Teórico los empareja" }
+        ]
+      },
+      {
+        "id": "complejidad",
+        "etiqueta": "Complejidad textual",
+        "celdas": [
+          "Texto sencillo, un solo propósito, estructura dada",
+          "Texto de estructura propia, un propósito dominante",
+          "Texto con matización incipiente",
+          "Texto híbrido, con matización argumentativa y gestión del contraargumento"
+        ]
+      },
+      {
+        "id": "metalinguistico",
+        "etiqueta": "Metalingüístico",
+        "celdas": [
+          "Detección guiada del fenómeno sobre el modelo",
+          "Detección autónoma en el propio borrador",
+          "Justificación de la elección lingüística",
+          "Justificación teórica y estilística autónoma de las elecciones propias"
+        ]
+      }
+    ]
+  }
+}

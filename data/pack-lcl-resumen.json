@@ -1,0 +1,2670 @@
+{
+  "pack_id": "lcl-murcia-resumen",
+  "materia": "LCL",
+  "etiqueta": "Resumen de un texto — Región de Murcia",
+  "version": "0.1.0",
+  "normativa": {
+    "estatal": [
+      "RD 217/2022, de 29 de marzo (ESO)",
+      "RD 243/2022, de 5 de abril (Bachillerato)"
+    ],
+    "autonomica": "Decreto n.º 235/2022, de 7 de diciembre, por el que se establece la ordenación y el currículo de la Educación Secundaria Obligatoria en la Comunidad Autónoma de la Región de Murcia",
+    "vigencia_desde": "2022-2023",
+    "revisado": "2026-08"
+  },
+  "verbos_extra": [
+    {
+      "id": "copia",
+      "3s": "Copia",
+      "1s": "Copio",
+      "nivel_cognitivo": 1
+    },
+    {
+      "id": "jerarquiza",
+      "3s": "Jerarquiza",
+      "1s": "Jerarquizo",
+      "nivel_cognitivo": 4
+    },
+    {
+      "id": "sintetiza",
+      "3s": "Sintetiza",
+      "1s": "Sintetizo",
+      "nivel_cognitivo": 5
+    },
+    {
+      "id": "suprime",
+      "3s": "Suprime",
+      "1s": "Suprimo",
+      "nivel_cognitivo": 4
+    }
+  ],
+  "criterios": [
+    {
+      "id": "lcl-b-comprension-res-1eso",
+      "bloque_lomloe": "B",
+      "dimension": "comprension_global",
+      "nombre": "Comprensión: sentido global y jerarquía de las ideas",
+      "curso": "1ESO",
+      "hereda_de": null,
+      "criterio_oficial": {
+        "competencia_especifica": 4,
+        "codigo": "4.1",
+        "cita": "Comprender e interpretar el sentido global, la estructura, la información más relevante y la intención del emisor en textos escritos y multimodales sencillos de diferentes ámbitos, que respondan a diferentes propósitos de lectura, realizando las inferencias necesarias.",
+        "perfil_salida": [
+          "CCL2",
+          "CCL3",
+          "CCL5",
+          "CP2",
+          "STEM4",
+          "CD1",
+          "CPSAA4",
+          "CC3"
+        ]
+      },
+      "saber_vehiculo": [
+        "comprensión lectora: sentido global del texto y relación entre sus partes",
+        "estrategias y técnicas de reconocimiento y producción de la intención comunicativa"
+      ],
+      "progresion": {
+        "autonomia": 1,
+        "complejidad": 1,
+        "metalinguistico": 1
+      },
+      "tipos_tarea": [
+        "resumen"
+      ],
+      "obligatorio": true,
+      "prioridad": 1,
+      "peso_base": 25,
+      "descriptores": {
+        "n1": {
+          "verbo": "copia",
+          "texto": "Copia las primeras líneas del texto y las entrega como resumen del conjunto."
+        },
+        "n2": {
+          "verbo": "reconoce",
+          "texto": "Reconoce el tema del texto con la pauta facilitada y lo anuncia en la primera línea del resumen."
+        },
+        "n3": {
+          "verbo": "distingue",
+          "texto": "Distingue la idea principal de cada párrafo y las ordena en el resumen como aparecen en el original."
+        },
+        "n4": {
+          "verbo": "jerarquiza",
+          "texto": "Jerarquiza las ideas del texto y abre el resumen con la idea general que agrupa a las demás."
+        }
+      },
+      "matriz_cuantitativa": {
+        "total": 10,
+        "componentes": [
+          {
+            "nombre": "El tema queda enunciado",
+            "max": 3,
+            "bandas": [
+              {
+                "puntos": 3,
+                "condicion": "La primera línea del resumen enuncia el tema del texto"
+              },
+              {
+                "puntos": 2,
+                "condicion": "El tema del texto queda enunciado en otro punto del resumen"
+              },
+              {
+                "puntos": 0,
+                "condicion": "El resumen arranca con un detalle y el tema queda fuera"
+              }
+            ]
+          },
+          {
+            "nombre": "Ideas principales de los párrafos",
+            "max": 4,
+            "bandas": [
+              {
+                "puntos": 4,
+                "condicion": "Recoge la idea principal de todos los párrafos del texto"
+              },
+              {
+                "puntos": 3,
+                "condicion": "Deja fuera la idea principal de 1 párrafo"
+              },
+              {
+                "puntos": 2,
+                "condicion": "Deja fuera la idea principal de 2 párrafos"
+              },
+              {
+                "puntos": 0,
+                "condicion": "Recoge la idea principal de un solo párrafo"
+              }
+            ]
+          },
+          {
+            "nombre": "Orden de las ideas",
+            "max": 3,
+            "bandas": [
+              {
+                "puntos": 3,
+                "condicion": "Las ideas del resumen siguen el orden del texto original"
+              },
+              {
+                "puntos": 2,
+                "condicion": "1 idea queda fuera del orden del original"
+              },
+              {
+                "puntos": 1,
+                "condicion": "2 ideas quedan fuera de orden"
+              },
+              {
+                "puntos": 0,
+                "condicion": "Las ideas se suceden en el resumen sin orden reconocible"
+              }
+            ]
+          }
+        ],
+        "penalizaciones": []
+      },
+      "descriptor_cotejo": null,
+      "descriptor_un_punto": "Reconoce el tema del texto con la pauta facilitada y lo anuncia en la primera línea del resumen."
+    },
+    {
+      "id": "lcl-b-seleccion-res-1eso",
+      "bloque_lomloe": "B",
+      "dimension": "seleccion_informacion",
+      "nombre": "Selección de la información relevante",
+      "curso": "1ESO",
+      "hereda_de": null,
+      "criterio_oficial": {
+        "competencia_especifica": 4,
+        "codigo": "4.1",
+        "cita": "Comprender e interpretar el sentido global, la estructura, la información más relevante y la intención del emisor en textos escritos y multimodales sencillos de diferentes ámbitos, que respondan a diferentes propósitos de lectura, realizando las inferencias necesarias.",
+        "perfil_salida": [
+          "CCL2",
+          "CCL3",
+          "CCL5",
+          "CP2",
+          "STEM4",
+          "CD1",
+          "CPSAA4",
+          "CC3"
+        ]
+      },
+      "saber_vehiculo": [
+        "comprensión lectora: sentido global del texto y relación entre sus partes",
+        "usos básicos de la escritura para la organización del pensamiento: toma de notas, esquemas, mapas conceptuales, definiciones, resúmenes"
+      ],
+      "progresion": {
+        "autonomia": 1,
+        "complejidad": 1,
+        "metalinguistico": 1
+      },
+      "tipos_tarea": [
+        "resumen"
+      ],
+      "obligatorio": true,
+      "prioridad": 1,
+      "peso_base": 25,
+      "descriptores": {
+        "n1": {
+          "verbo": "traslada",
+          "texto": "Traslada al resumen los ejemplos y los datos del texto con el detalle del original."
+        },
+        "n2": {
+          "verbo": "selecciona",
+          "texto": "Selecciona las ideas señaladas en el texto con la pauta facilitada y deja fuera los ejemplos."
+        },
+        "n3": {
+          "verbo": "descarta",
+          "texto": "Descarta los ejemplos, las repeticiones y los datos accesorios, y mantiene las ideas del texto."
+        },
+        "n4": {
+          "verbo": "dedica",
+          "texto": "Dedica más espacio en el resumen a las ideas desarrolladas en el texto que a las apenas apuntadas."
+        }
+      },
+      "matriz_cuantitativa": {
+        "total": 10,
+        "componentes": [
+          {
+            "nombre": "Los ejemplos quedan fuera",
+            "max": 4,
+            "bandas": [
+              {
+                "puntos": 4,
+                "condicion": "El resumen recoge ideas y deja fuera todos los ejemplos del original"
+              },
+              {
+                "puntos": 3,
+                "condicion": "Conserva 1 ejemplo del original"
+              },
+              {
+                "puntos": 2,
+                "condicion": "Conserva 2 ejemplos del original"
+              },
+              {
+                "puntos": 0,
+                "condicion": "Conserva 3 o más ejemplos o datos accesorios"
+              }
+            ]
+          },
+          {
+            "nombre": "Las ideas relevantes están",
+            "max": 3,
+            "bandas": [
+              {
+                "puntos": 3,
+                "condicion": "El resumen recoge todas las ideas desarrolladas en el texto"
+              },
+              {
+                "puntos": 2,
+                "condicion": "Deja fuera 1 de esas ideas"
+              },
+              {
+                "puntos": 1,
+                "condicion": "Deja fuera 2 de esas ideas"
+              },
+              {
+                "puntos": 0,
+                "condicion": "El resumen recoge una sola de esas ideas"
+              }
+            ]
+          },
+          {
+            "nombre": "Nada ajeno al texto",
+            "max": 3,
+            "bandas": [
+              {
+                "puntos": 3,
+                "condicion": "Todo lo que dice el resumen está en el texto original"
+              },
+              {
+                "puntos": 2,
+                "condicion": "Añade 1 dato que el original no dice"
+              },
+              {
+                "puntos": 0,
+                "condicion": "Añade 2 o más datos ajenos al original"
+              }
+            ]
+          }
+        ],
+        "penalizaciones": []
+      },
+      "descriptor_cotejo": null,
+      "descriptor_un_punto": "Selecciona las ideas señaladas en el texto con la pauta facilitada y deja fuera los ejemplos."
+    },
+    {
+      "id": "lcl-b-reformulacion-res-1eso",
+      "bloque_lomloe": "B",
+      "dimension": "reformulacion",
+      "nombre": "Reformulación con palabras propias",
+      "curso": "1ESO",
+      "hereda_de": null,
+      "criterio_oficial": {
+        "competencia_especifica": 5,
+        "codigo": "5.2",
+        "cita": "Incorporar procedimientos básicos para enriquecer los textos propios, atendiendo a aspectos discursivos, lingüísticos y de estilo, con precisión léxica y corrección ortográfica y gramatical.",
+        "perfil_salida": [
+          "CCL1",
+          "CCL3",
+          "CCL5",
+          "STEM1",
+          "CD2",
+          "CD3",
+          "CPSAA5",
+          "CC2"
+        ]
+      },
+      "saber_vehiculo": [
+        "procedimientos para la adquisición y ampliación de vocabulario",
+        "reflexión contextualizada sobre la relación de significado entre unas palabras y otras",
+        "usos básicos de la escritura para la organización del pensamiento: toma de notas, esquemas, mapas conceptuales, definiciones, resúmenes"
+      ],
+      "progresion": {
+        "autonomia": 1,
+        "complejidad": 1,
+        "metalinguistico": 1
+      },
+      "tipos_tarea": [
+        "resumen"
+      ],
+      "obligatorio": false,
+      "prioridad": 1,
+      "peso_base": 20,
+      "descriptores": {
+        "n1": {
+          "verbo": "copia",
+          "texto": "Copia frases enteras del texto original y las enlaza unas con otras."
+        },
+        "n2": {
+          "verbo": "sustituye",
+          "texto": "Sustituye por sinónimos las palabras del texto y mantiene el molde de las frases del original."
+        },
+        "n3": {
+          "verbo": "reformula",
+          "texto": "Reformula con palabras propias las ideas del texto y agrupa en una frase lo que el original reparte en dos."
+        },
+        "n4": {
+          "verbo": "integra",
+          "texto": "Integra las ideas repetidas del texto en una sola frase y emplea un término general para la serie de ejemplos."
+        }
+      },
+      "matriz_cuantitativa": {
+        "total": 10,
+        "componentes": [
+          {
+            "nombre": "Frases propias",
+            "max": 4,
+            "bandas": [
+              {
+                "puntos": 4,
+                "condicion": "Ninguna frase del resumen reproduce literalmente una frase del original"
+              },
+              {
+                "puntos": 3,
+                "condicion": "1 frase literal del original"
+              },
+              {
+                "puntos": 2,
+                "condicion": "2 frases literales del original"
+              },
+              {
+                "puntos": 0,
+                "condicion": "3 o más frases literales, o el resumen encadena frases copiadas"
+              }
+            ]
+          },
+          {
+            "nombre": "Sustitución léxica",
+            "max": 3,
+            "bandas": [
+              {
+                "puntos": 3,
+                "condicion": "Emplea sinónimos o términos generales en 3 o más puntos del resumen"
+              },
+              {
+                "puntos": 2,
+                "condicion": "Los emplea en 2 puntos"
+              },
+              {
+                "puntos": 1,
+                "condicion": "Los emplea en 1 punto"
+              },
+              {
+                "puntos": 0,
+                "condicion": "Repite el léxico del original de principio a fin"
+              }
+            ]
+          },
+          {
+            "nombre": "Ideas reunidas",
+            "max": 3,
+            "bandas": [
+              {
+                "puntos": 3,
+                "condicion": "Reúne en una frase propia ideas que el original reparte en 2 o más"
+              },
+              {
+                "puntos": 2,
+                "condicion": "Reúne ideas en 1 punto del resumen"
+              },
+              {
+                "puntos": 0,
+                "condicion": "Cada frase del resumen corresponde a una frase del original"
+              }
+            ]
+          }
+        ],
+        "penalizaciones": []
+      },
+      "descriptor_cotejo": null,
+      "descriptor_un_punto": "Sustituye por sinónimos las palabras del texto y mantiene el molde de las frases del original."
+    },
+    {
+      "id": "lcl-b-redaccion-res-1eso",
+      "bloque_lomloe": "B",
+      "dimension": "redaccion_resumen",
+      "nombre": "Redacción: texto continuo, objetivo y ajustado",
+      "curso": "1ESO",
+      "hereda_de": null,
+      "criterio_oficial": {
+        "competencia_especifica": 5,
+        "codigo": "5.1",
+        "cita": "Planificar la redacción de textos escritos y multimodales sencillos, atendiendo a la situación comunicativa, al destinatario, al propósito y al canal; redactar borradores y revisarlos con ayuda del diálogo entre iguales e instrumentos de consulta.",
+        "perfil_salida": [
+          "CCL1",
+          "CCL3",
+          "CCL5",
+          "STEM1",
+          "CD2",
+          "CD3",
+          "CPSAA5",
+          "CC2"
+        ]
+      },
+      "saber_vehiculo": [
+        "producción escrita: planificación, redacción, revisión y edición en diferentes soportes de textos sencillos",
+        "mecanismos básicos de cohesión textual, con especial atención a los conectores temporales y explicativos",
+        "los signos básicos de puntuación como mecanismo organizador del texto escrito"
+      ],
+      "progresion": {
+        "autonomia": 1,
+        "complejidad": 1,
+        "metalinguistico": 1
+      },
+      "tipos_tarea": [
+        "resumen"
+      ],
+      "obligatorio": false,
+      "prioridad": 2,
+      "peso_base": 15,
+      "descriptores": {
+        "n1": {
+          "verbo": "enumera",
+          "texto": "Enumera las ideas del texto en frases sueltas y añade al final una opinión propia."
+        },
+        "n2": {
+          "verbo": "redacta",
+          "texto": "Redacta el resumen en un párrafo seguido y emplea los conectores de la pauta facilitada para unir las ideas."
+        },
+        "n3": {
+          "verbo": "mantiene",
+          "texto": "Mantiene el resumen dentro de la extensión pedida y enlaza las ideas con conectores de orden y de causa."
+        },
+        "n4": {
+          "verbo": "suprime",
+          "texto": "Suprime las marcas del texto de partida, como el autor opina o en este texto se habla de, y traslada las ideas en voz propia."
+        }
+      },
+      "matriz_cuantitativa": {
+        "total": 10,
+        "componentes": [
+          {
+            "nombre": "Texto seguido",
+            "max": 3,
+            "bandas": [
+              {
+                "puntos": 3,
+                "condicion": "El resumen es un texto seguido, sin guiones ni enumeraciones"
+              },
+              {
+                "puntos": 2,
+                "condicion": "El resumen alterna párrafo y lista de puntos"
+              },
+              {
+                "puntos": 0,
+                "condicion": "El resumen es una lista de puntos"
+              }
+            ]
+          },
+          {
+            "nombre": "Conectores entre ideas",
+            "max": 3,
+            "bandas": [
+              {
+                "puntos": 3,
+                "condicion": "Emplea 3 o más conectores distintos entre las ideas"
+              },
+              {
+                "puntos": 2,
+                "condicion": "Emplea 2 conectores distintos"
+              },
+              {
+                "puntos": 1,
+                "condicion": "Repite el mismo conector a lo largo del resumen"
+              },
+              {
+                "puntos": 0,
+                "condicion": "Coloca las ideas una detrás de otra sin enlace"
+              }
+            ]
+          },
+          {
+            "nombre": "Extensión",
+            "max": 2,
+            "bandas": [
+              {
+                "puntos": 2,
+                "condicion": "El resumen ocupa entre un cuarto y un tercio del texto original"
+              },
+              {
+                "puntos": 1,
+                "condicion": "Se aparta de esa extensión en menos de la mitad"
+              },
+              {
+                "puntos": 0,
+                "condicion": "El resumen es tan largo como el original o cabe en una línea"
+              }
+            ]
+          },
+          {
+            "nombre": "Voz del resumen",
+            "max": 2,
+            "bandas": [
+              {
+                "puntos": 2,
+                "condicion": "El resumen traslada las ideas sin fórmulas del tipo el autor dice y sin opinión propia"
+              },
+              {
+                "puntos": 1,
+                "condicion": "Incluye 1 fórmula de ese tipo o 1 opinión propia"
+              },
+              {
+                "puntos": 0,
+                "condicion": "Incluye 2 o más fórmulas de ese tipo u opiniones propias"
+              }
+            ]
+          }
+        ],
+        "penalizaciones": []
+      },
+      "descriptor_cotejo": null,
+      "descriptor_un_punto": "Redacta el resumen en un párrafo seguido y emplea los conectores de la pauta facilitada para unir las ideas."
+    },
+    {
+      "id": "lcl-d-correccion-res-1eso",
+      "bloque_lomloe": "D",
+      "dimension": "correccion_lexico",
+      "nombre": "Corrección normativa y propiedad léxica",
+      "curso": "1ESO",
+      "hereda_de": null,
+      "criterio_oficial": {
+        "competencia_especifica": 5,
+        "codigo": "5.2",
+        "cita": "Incorporar procedimientos básicos para enriquecer los textos propios, atendiendo a aspectos discursivos, lingüísticos y de estilo, con precisión léxica y corrección ortográfica y gramatical.",
+        "perfil_salida": [
+          "CCL1",
+          "CCL3",
+          "CCL5",
+          "STEM1",
+          "CD2",
+          "CD3",
+          "CPSAA5",
+          "CC2"
+        ]
+      },
+      "saber_vehiculo": [
+        "corrección lingüística y revisión ortográfica y gramatical de los textos, de manera guiada",
+        "propiedad léxica",
+        "iniciación al uso de diccionarios, manuales de consulta y de correctores ortográficos en soporte analógico o digital"
+      ],
+      "progresion": {
+        "autonomia": 1,
+        "complejidad": 1,
+        "metalinguistico": 1
+      },
+      "tipos_tarea": [
+        "resumen"
+      ],
+      "obligatorio": true,
+      "prioridad": 2,
+      "peso_base": 15,
+      "descriptores": {
+        "n1": {
+          "verbo": "redacta",
+          "texto": "Redacta el resumen con errores de ortografía y de puntuación que obligan al lector a releer."
+        },
+        "n2": {
+          "verbo": "aplica",
+          "texto": "Aplica las normas de acentuación y concordancia trabajadas en clase, con errores que permiten seguir el resumen."
+        },
+        "n3": {
+          "verbo": "aplica",
+          "texto": "Aplica las normas de ortografía y puntuación del nivel y separa con punto cada idea del resumen."
+        },
+        "n4": {
+          "verbo": "elige",
+          "texto": "Elige el término general preciso para agrupar los ejemplos del texto y sustituye las palabras comodín."
+        }
+      },
+      "matriz_cuantitativa": {
+        "total": 10,
+        "componentes": [
+          {
+            "nombre": "Ortografía y acentuación",
+            "max": 4,
+            "bandas": [
+              {
+                "puntos": 4,
+                "condicion": "Hasta 1 falta en todo el resumen"
+              },
+              {
+                "puntos": 3,
+                "condicion": "2 o 3 faltas"
+              },
+              {
+                "puntos": 2,
+                "condicion": "4 o 5 faltas"
+              },
+              {
+                "puntos": 0,
+                "condicion": "6 o más faltas"
+              }
+            ]
+          },
+          {
+            "nombre": "Puntuación",
+            "max": 3,
+            "bandas": [
+              {
+                "puntos": 3,
+                "condicion": "Cierra con punto todas las frases del resumen"
+              },
+              {
+                "puntos": 2,
+                "condicion": "Deja 1 frase sin cerrar con punto"
+              },
+              {
+                "puntos": 1,
+                "condicion": "Deja 2 frases sin cerrar con punto"
+              },
+              {
+                "puntos": 0,
+                "condicion": "El resumen es un bloque de texto casi sin puntos"
+              }
+            ]
+          },
+          {
+            "nombre": "Propiedad léxica",
+            "max": 3,
+            "bandas": [
+              {
+                "puntos": 3,
+                "condicion": "Emplea términos precisos y ninguna palabra comodín (cosa, tema, hacer)"
+              },
+              {
+                "puntos": 2,
+                "condicion": "Emplea 1 palabra comodín"
+              },
+              {
+                "puntos": 1,
+                "condicion": "Emplea 2 palabras comodín"
+              },
+              {
+                "puntos": 0,
+                "condicion": "El resumen se sostiene sobre palabras comodín"
+              }
+            ]
+          }
+        ],
+        "penalizaciones": []
+      },
+      "descriptor_cotejo": null,
+      "descriptor_un_punto": "Aplica las normas de acentuación y concordancia trabajadas en clase, con errores que permiten seguir el resumen."
+    },
+    {
+      "id": "lcl-b-comprension-res-3eso",
+      "bloque_lomloe": "B",
+      "dimension": "comprension_global",
+      "nombre": "Comprensión: sentido global y jerarquía de las ideas",
+      "curso": "3ESO",
+      "hereda_de": null,
+      "criterio_oficial": {
+        "competencia_especifica": 4,
+        "codigo": "4.1",
+        "cita": "Comprender e interpretar el sentido global, la estructura, la información más relevante y la intención del emisor de textos escritos y multimodales de cierta complejidad que respondan a diferentes propósitos de lectura, realizando las inferencias necesarias.",
+        "perfil_salida": [
+          "CCL2",
+          "CCL3",
+          "CCL5",
+          "CP2",
+          "STEM4",
+          "CD1",
+          "CPSAA4",
+          "CC3"
+        ]
+      },
+      "saber_vehiculo": [
+        "comprensión lectora: sentido global del texto y relación entre sus partes. La intención del emisor",
+        "análisis de las propiedades textuales: coherencia"
+      ],
+      "progresion": {
+        "autonomia": 2,
+        "complejidad": 2,
+        "metalinguistico": 2
+      },
+      "tipos_tarea": [
+        "resumen"
+      ],
+      "obligatorio": true,
+      "prioridad": 1,
+      "peso_base": 25,
+      "descriptores": {
+        "n1": {
+          "verbo": "copia",
+          "texto": "Copia el primer párrafo del texto y lo presenta como resumen del conjunto."
+        },
+        "n2": {
+          "verbo": "reconoce",
+          "texto": "Reconoce el tema del texto de cierta complejidad y lo anuncia en la primera línea del resumen."
+        },
+        "n3": {
+          "verbo": "distingue",
+          "texto": "Distingue las ideas principales de las secundarias y encadena en el resumen solo las principales."
+        },
+        "n4": {
+          "verbo": "jerarquiza",
+          "texto": "Jerarquiza las ideas según el desarrollo que reciben en el texto y abre el resumen con la que sostiene a las demás."
+        }
+      },
+      "matriz_cuantitativa": {
+        "total": 10,
+        "componentes": [
+          {
+            "nombre": "El tema queda enunciado",
+            "max": 3,
+            "bandas": [
+              {
+                "puntos": 3,
+                "condicion": "La primera línea del resumen enuncia el tema del texto"
+              },
+              {
+                "puntos": 2,
+                "condicion": "El tema del texto queda enunciado en otro punto del resumen"
+              },
+              {
+                "puntos": 1,
+                "condicion": "El tema se deduce del resumen pero no queda enunciado"
+              },
+              {
+                "puntos": 0,
+                "condicion": "El resumen arranca con un detalle y el tema queda fuera"
+              }
+            ]
+          },
+          {
+            "nombre": "Ideas principales y secundarias",
+            "max": 4,
+            "bandas": [
+              {
+                "puntos": 4,
+                "condicion": "El resumen recoge todas las ideas principales y ninguna secundaria"
+              },
+              {
+                "puntos": 3,
+                "condicion": "Recoge todas las principales y 1 secundaria"
+              },
+              {
+                "puntos": 2,
+                "condicion": "Deja fuera 1 idea principal o recoge 2 secundarias"
+              },
+              {
+                "puntos": 0,
+                "condicion": "Deja fuera 2 o más ideas principales"
+              }
+            ]
+          },
+          {
+            "nombre": "Estructura del original",
+            "max": 3,
+            "bandas": [
+              {
+                "puntos": 3,
+                "condicion": "El resumen deja ver las partes en que se organiza el texto"
+              },
+              {
+                "puntos": 2,
+                "condicion": "Deja ver una de las partes y funde el resto"
+              },
+              {
+                "puntos": 0,
+                "condicion": "El resumen sucede las ideas sin dejar ver la estructura del texto"
+              }
+            ]
+          }
+        ],
+        "penalizaciones": []
+      },
+      "descriptor_cotejo": null,
+      "descriptor_un_punto": "Reconoce el tema del texto y lo anuncia en la primera línea del resumen."
+    },
+    {
+      "id": "lcl-b-seleccion-res-3eso",
+      "bloque_lomloe": "B",
+      "dimension": "seleccion_informacion",
+      "nombre": "Selección de la información relevante",
+      "curso": "3ESO",
+      "hereda_de": null,
+      "criterio_oficial": {
+        "competencia_especifica": 4,
+        "codigo": "4.1",
+        "cita": "Comprender e interpretar el sentido global, la estructura, la información más relevante y la intención del emisor de textos escritos y multimodales de cierta complejidad que respondan a diferentes propósitos de lectura, realizando las inferencias necesarias.",
+        "perfil_salida": [
+          "CCL2",
+          "CCL3",
+          "CCL5",
+          "CP2",
+          "STEM4",
+          "CD1",
+          "CPSAA4",
+          "CC3"
+        ]
+      },
+      "saber_vehiculo": [
+        "comprensión lectora: sentido global del texto y relación entre sus partes. La intención del emisor",
+        "profundización en los usos de la escritura para la organización del pensamiento: toma de notas, esquemas, mapas conceptuales, definiciones, resúmenes"
+      ],
+      "progresion": {
+        "autonomia": 2,
+        "complejidad": 2,
+        "metalinguistico": 2
+      },
+      "tipos_tarea": [
+        "resumen"
+      ],
+      "obligatorio": true,
+      "prioridad": 1,
+      "peso_base": 25,
+      "descriptores": {
+        "n1": {
+          "verbo": "traslada",
+          "texto": "Traslada al resumen los datos y los ejemplos del texto uno detrás de otro."
+        },
+        "n2": {
+          "verbo": "selecciona",
+          "texto": "Selecciona las ideas que responden al propósito del resumen y deja fuera los ejemplos y las repeticiones."
+        },
+        "n3": {
+          "verbo": "descarta",
+          "texto": "Descarta las digresiones y los datos accesorios del texto y mantiene las ideas que lo articulan."
+        },
+        "n4": {
+          "verbo": "gradua",
+          "texto": "Gradúa el espacio de cada idea en el resumen según el desarrollo que recibe en el texto original."
+        }
+      },
+      "matriz_cuantitativa": {
+        "total": 10,
+        "componentes": [
+          {
+            "nombre": "Ejemplos y digresiones fuera",
+            "max": 4,
+            "bandas": [
+              {
+                "puntos": 4,
+                "condicion": "El resumen deja fuera todos los ejemplos y digresiones del original"
+              },
+              {
+                "puntos": 3,
+                "condicion": "Conserva 1 ejemplo o digresión"
+              },
+              {
+                "puntos": 2,
+                "condicion": "Conserva 2 ejemplos o digresiones"
+              },
+              {
+                "puntos": 0,
+                "condicion": "Conserva 3 o más"
+              }
+            ]
+          },
+          {
+            "nombre": "Las ideas que articulan el texto",
+            "max": 4,
+            "bandas": [
+              {
+                "puntos": 4,
+                "condicion": "El resumen recoge todas las ideas que articulan el texto"
+              },
+              {
+                "puntos": 3,
+                "condicion": "Deja fuera 1 de esas ideas"
+              },
+              {
+                "puntos": 2,
+                "condicion": "Deja fuera 2 de esas ideas"
+              },
+              {
+                "puntos": 0,
+                "condicion": "Deja fuera 3 o más"
+              }
+            ]
+          },
+          {
+            "nombre": "Fidelidad al original",
+            "max": 2,
+            "bandas": [
+              {
+                "puntos": 2,
+                "condicion": "Todo lo que dice el resumen está en el texto original"
+              },
+              {
+                "puntos": 1,
+                "condicion": "Añade 1 dato o inferencia que el original no sostiene"
+              },
+              {
+                "puntos": 0,
+                "condicion": "Añade 2 o más datos ajenos al original"
+              }
+            ]
+          }
+        ],
+        "penalizaciones": []
+      },
+      "descriptor_cotejo": null,
+      "descriptor_un_punto": "Selecciona las ideas que responden al propósito del resumen y deja fuera los ejemplos y las repeticiones."
+    },
+    {
+      "id": "lcl-b-reformulacion-res-3eso",
+      "bloque_lomloe": "B",
+      "dimension": "reformulacion",
+      "nombre": "Reformulación con palabras propias",
+      "curso": "3ESO",
+      "hereda_de": null,
+      "criterio_oficial": {
+        "competencia_especifica": 5,
+        "codigo": "5.2",
+        "cita": "Incorporar progresivamente procedimientos para enriquecer los textos atendiendo a aspectos discursivos, lingüísticos y de estilo, con precisión léxica y corrección ortográfica y gramatical.",
+        "perfil_salida": [
+          "CCL1",
+          "CCL3",
+          "CCL5",
+          "STEM1",
+          "CD2",
+          "CD3",
+          "CPSAA5",
+          "CC2"
+        ]
+      },
+      "saber_vehiculo": [
+        "alfabetización mediática e informacional: análisis, valoración, reorganización y síntesis de la información en esquemas propios y transformación en conocimiento",
+        "procedimientos para la ampliación de vocabulario y relación de significado entre unas palabras y otras"
+      ],
+      "progresion": {
+        "autonomia": 2,
+        "complejidad": 2,
+        "metalinguistico": 2
+      },
+      "tipos_tarea": [
+        "resumen"
+      ],
+      "obligatorio": false,
+      "prioridad": 1,
+      "peso_base": 20,
+      "descriptores": {
+        "n1": {
+          "verbo": "copia",
+          "texto": "Copia las frases del texto original en el mismo orden y las separa con punto."
+        },
+        "n2": {
+          "verbo": "sustituye",
+          "texto": "Sustituye por sinónimos e hiperónimos el léxico del texto y ordena las ideas por cuenta propia."
+        },
+        "n3": {
+          "verbo": "reformula",
+          "texto": "Reformula con palabras propias las ideas del texto y agrupa en una frase las que el original reparte en dos."
+        },
+        "n4": {
+          "verbo": "sintetiza",
+          "texto": "Sintetiza en un término general cada serie de ejemplos del texto y mantiene el sentido del original."
+        }
+      },
+      "matriz_cuantitativa": {
+        "total": 10,
+        "componentes": [
+          {
+            "nombre": "Frases propias",
+            "max": 4,
+            "bandas": [
+              {
+                "puntos": 4,
+                "condicion": "Ninguna frase del resumen reproduce literalmente una frase del original"
+              },
+              {
+                "puntos": 3,
+                "condicion": "1 frase literal del original"
+              },
+              {
+                "puntos": 2,
+                "condicion": "2 frases literales del original"
+              },
+              {
+                "puntos": 0,
+                "condicion": "3 o más frases literales del original"
+              }
+            ]
+          },
+          {
+            "nombre": "Léxico propio",
+            "max": 3,
+            "bandas": [
+              {
+                "puntos": 3,
+                "condicion": "Emplea sinónimos, hiperónimos o términos generales en 4 o más puntos"
+              },
+              {
+                "puntos": 2,
+                "condicion": "Los emplea en 2 o 3 puntos"
+              },
+              {
+                "puntos": 1,
+                "condicion": "Los emplea en 1 punto"
+              },
+              {
+                "puntos": 0,
+                "condicion": "Repite el léxico del original de principio a fin"
+              }
+            ]
+          },
+          {
+            "nombre": "Condensación",
+            "max": 3,
+            "bandas": [
+              {
+                "puntos": 3,
+                "condicion": "Reúne en una frase propia ideas que el original reparte en 3 o más"
+              },
+              {
+                "puntos": 2,
+                "condicion": "Reúne ideas de 2 frases del original"
+              },
+              {
+                "puntos": 1,
+                "condicion": "Reúne ideas en 1 punto del resumen"
+              },
+              {
+                "puntos": 0,
+                "condicion": "Cada frase del resumen corresponde a una frase del original"
+              }
+            ]
+          }
+        ],
+        "penalizaciones": []
+      },
+      "descriptor_cotejo": null,
+      "descriptor_un_punto": "Sustituye por sinónimos e hiperónimos el léxico del texto y ordena las ideas por cuenta propia."
+    },
+    {
+      "id": "lcl-b-redaccion-res-3eso",
+      "bloque_lomloe": "B",
+      "dimension": "redaccion_resumen",
+      "nombre": "Redacción: texto continuo, objetivo y ajustado",
+      "curso": "3ESO",
+      "hereda_de": null,
+      "criterio_oficial": {
+        "competencia_especifica": 5,
+        "codigo": "5.1",
+        "cita": "Planificar la redacción de textos escritos y multimodales de cierta extensión atendiendo a la situación comunicativa, al destinatario, al propósito y canal; redactar borradores y revisarlos con ayuda del diálogo entre iguales e instrumentos de consulta, y presentar un texto final coherente, cohesionado y con el registro adecuado.",
+        "perfil_salida": [
+          "CCL1",
+          "CCL3",
+          "CCL5",
+          "STEM1",
+          "CD2",
+          "CD3",
+          "CPSAA5",
+          "CC2"
+        ]
+      },
+      "saber_vehiculo": [
+        "producción escrita: planificación, textualización, redacción, revisión y edición en diferentes soportes",
+        "mecanismos de cohesión. Conectores textuales distributivos, de orden, contraste, explicación, causa, consecuencia, condición e hipótesis",
+        "iniciación a la expresión de la subjetividad en textos de carácter expositivo y argumentativo"
+      ],
+      "progresion": {
+        "autonomia": 2,
+        "complejidad": 2,
+        "metalinguistico": 2
+      },
+      "tipos_tarea": [
+        "resumen"
+      ],
+      "obligatorio": false,
+      "prioridad": 2,
+      "peso_base": 15,
+      "descriptores": {
+        "n1": {
+          "verbo": "enumera",
+          "texto": "Enumera las ideas del texto en el orden en que aparecen y añade una valoración propia."
+        },
+        "n2": {
+          "verbo": "redacta",
+          "texto": "Redacta el resumen en un texto seguido y enlaza las ideas con conectores de orden y de causa."
+        },
+        "n3": {
+          "verbo": "mantiene",
+          "texto": "Mantiene el resumen en la extensión pedida y encadena las ideas con marcadores de consecuencia y de contraste."
+        },
+        "n4": {
+          "verbo": "suprime",
+          "texto": "Suprime las marcas del texto de partida, como el autor opina o en este texto se habla de, y traslada las ideas en voz propia."
+        }
+      },
+      "matriz_cuantitativa": {
+        "total": 10,
+        "componentes": [
+          {
+            "nombre": "Texto continuo",
+            "max": 2,
+            "bandas": [
+              {
+                "puntos": 2,
+                "condicion": "El resumen es un texto seguido, sin guiones ni enumeraciones"
+              },
+              {
+                "puntos": 1,
+                "condicion": "El resumen alterna párrafo y lista de puntos"
+              },
+              {
+                "puntos": 0,
+                "condicion": "El resumen es una lista de puntos"
+              }
+            ]
+          },
+          {
+            "nombre": "Marcadores entre ideas",
+            "max": 3,
+            "bandas": [
+              {
+                "puntos": 3,
+                "condicion": "Emplea 4 o más marcadores distintos: orden, causa, consecuencia, contraste"
+              },
+              {
+                "puntos": 2,
+                "condicion": "Emplea 2 o 3 tipos de marcador"
+              },
+              {
+                "puntos": 1,
+                "condicion": "Repite el mismo marcador a lo largo del resumen"
+              },
+              {
+                "puntos": 0,
+                "condicion": "Coloca las ideas una detrás de otra sin enlace"
+              }
+            ]
+          },
+          {
+            "nombre": "Extensión",
+            "max": 2,
+            "bandas": [
+              {
+                "puntos": 2,
+                "condicion": "El resumen ocupa entre un quinto y un cuarto del texto original"
+              },
+              {
+                "puntos": 1,
+                "condicion": "Se aparta de esa extensión en menos de la mitad"
+              },
+              {
+                "puntos": 0,
+                "condicion": "El resumen es tan largo como el original o cabe en una línea"
+              }
+            ]
+          },
+          {
+            "nombre": "Objetividad",
+            "max": 3,
+            "bandas": [
+              {
+                "puntos": 3,
+                "condicion": "El resumen traslada las ideas sin fórmulas del tipo el autor dice y sin opinión propia"
+              },
+              {
+                "puntos": 2,
+                "condicion": "Incluye 1 fórmula de ese tipo o 1 opinión propia"
+              },
+              {
+                "puntos": 1,
+                "condicion": "Incluye 2 fórmulas de ese tipo u opiniones propias"
+              },
+              {
+                "puntos": 0,
+                "condicion": "El resumen alterna las ideas del texto con la valoración propia"
+              }
+            ]
+          }
+        ],
+        "penalizaciones": []
+      },
+      "descriptor_cotejo": null,
+      "descriptor_un_punto": "Redacta el resumen en un texto seguido y enlaza las ideas con conectores de orden y de causa."
+    },
+    {
+      "id": "lcl-d-correccion-res-3eso",
+      "bloque_lomloe": "D",
+      "dimension": "correccion_lexico",
+      "nombre": "Corrección normativa y propiedad léxica",
+      "curso": "3ESO",
+      "hereda_de": null,
+      "criterio_oficial": {
+        "competencia_especifica": 5,
+        "codigo": "5.2",
+        "cita": "Incorporar progresivamente procedimientos para enriquecer los textos atendiendo a aspectos discursivos, lingüísticos y de estilo, con precisión léxica y corrección ortográfica y gramatical.",
+        "perfil_salida": [
+          "CCL1",
+          "CCL3",
+          "CCL5",
+          "STEM1",
+          "CD2",
+          "CD3",
+          "CPSAA5",
+          "CC2"
+        ]
+      },
+      "saber_vehiculo": [
+        "corrección lingüística y revisión ortográfica y gramatical de los textos",
+        "los signos básicos de puntuación como mecanismo organizador del texto escrito. Su relación con el significado",
+        "profundización en el uso de diccionarios, manuales de consulta y de correctores ortográficos en soporte analógico o digital"
+      ],
+      "progresion": {
+        "autonomia": 2,
+        "complejidad": 2,
+        "metalinguistico": 2
+      },
+      "tipos_tarea": [
+        "resumen"
+      ],
+      "obligatorio": true,
+      "prioridad": 2,
+      "peso_base": 15,
+      "descriptores": {
+        "n1": {
+          "verbo": "redacta",
+          "texto": "Redacta el resumen con errores de ortografía y de puntuación que obligan a releer para seguir la idea."
+        },
+        "n2": {
+          "verbo": "aplica",
+          "texto": "Aplica las normas de acentuación y concordancia, con errores aislados que permiten seguir el resumen."
+        },
+        "n3": {
+          "verbo": "aplica",
+          "texto": "Aplica las normas de ortografía y puntuación del nivel y emplea la coma para delimitar los incisos."
+        },
+        "n4": {
+          "verbo": "elige",
+          "texto": "Elige el término preciso para nombrar cada idea del texto y sustituye los verbos comodín por otros exactos."
+        }
+      },
+      "matriz_cuantitativa": {
+        "total": 10,
+        "componentes": [
+          {
+            "nombre": "Ortografía y acentuación",
+            "max": 4,
+            "bandas": [
+              {
+                "puntos": 4,
+                "condicion": "Hasta 1 falta en todo el resumen"
+              },
+              {
+                "puntos": 3,
+                "condicion": "2 o 3 faltas"
+              },
+              {
+                "puntos": 2,
+                "condicion": "4 o 5 faltas"
+              },
+              {
+                "puntos": 0,
+                "condicion": "6 o más faltas"
+              }
+            ]
+          },
+          {
+            "nombre": "Puntuación",
+            "max": 3,
+            "bandas": [
+              {
+                "puntos": 3,
+                "condicion": "Cierra con punto todas las frases y delimita con coma los incisos"
+              },
+              {
+                "puntos": 2,
+                "condicion": "1 inciso sin delimitar o 1 frase sin cerrar"
+              },
+              {
+                "puntos": 1,
+                "condicion": "2 incisos sin delimitar o 2 frases sin cerrar"
+              },
+              {
+                "puntos": 0,
+                "condicion": "El resumen es un bloque de texto casi sin puntuación"
+              }
+            ]
+          },
+          {
+            "nombre": "Propiedad léxica",
+            "max": 3,
+            "bandas": [
+              {
+                "puntos": 3,
+                "condicion": "Emplea términos precisos y ninguna palabra comodín (cosa, tema, hacer)"
+              },
+              {
+                "puntos": 2,
+                "condicion": "Emplea 1 palabra comodín"
+              },
+              {
+                "puntos": 1,
+                "condicion": "Emplea 2 palabras comodín"
+              },
+              {
+                "puntos": 0,
+                "condicion": "El resumen se sostiene sobre palabras comodín"
+              }
+            ]
+          }
+        ],
+        "penalizaciones": []
+      },
+      "descriptor_cotejo": null,
+      "descriptor_un_punto": "Aplica las normas de acentuación y concordancia, con errores aislados que permiten seguir el resumen."
+    },
+    {
+      "id": "lcl-b-comprension-res-1bach",
+      "bloque_lomloe": "B",
+      "dimension": "comprension_global",
+      "nombre": "Comprensión: sentido global y jerarquía de las ideas",
+      "curso": "1BACH",
+      "hereda_de": null,
+      "criterio_oficial": {
+        "competencia_especifica": 4,
+        "codigo": "4.1",
+        "cita": "Identificar el sentido global, la estructura, la información relevante y la intención del emisor de textos escritos y multimodales especializados, con especial atención a textos académicos y de los medios de comunicación, realizando las inferencias necesarias y con diferentes propósitos de lectura.",
+        "perfil_salida": [
+          "CCL2",
+          "CCL3",
+          "CCL5",
+          "CP2",
+          "STEM4",
+          "CD1",
+          "CPSAA4",
+          "CC3"
+        ]
+      },
+      "saber_vehiculo": [
+        "comprensión lectora: sentido global del texto y relación entre sus partes. La intención del emisor",
+        "la comunicación escrita en el ámbito académico. Producción de textos expositivos escritos del ámbito académico"
+      ],
+      "progresion": {
+        "autonomia": 3,
+        "complejidad": 4,
+        "metalinguistico": 4
+      },
+      "tipos_tarea": [
+        "resumen"
+      ],
+      "obligatorio": true,
+      "prioridad": 1,
+      "peso_base": 25,
+      "descriptores": {
+        "n1": {
+          "verbo": "copia",
+          "texto": "Copia el arranque del texto académico y lo presenta como resumen del conjunto."
+        },
+        "n2": {
+          "verbo": "reconoce",
+          "texto": "Reconoce el sentido global del texto especializado y lo anuncia en la primera línea del resumen."
+        },
+        "n3": {
+          "verbo": "distingue",
+          "texto": "Distingue las partes del texto expositivo y las ordena en el resumen igual que en el original."
+        },
+        "n4": {
+          "verbo": "jerarquiza",
+          "texto": "Jerarquiza las ideas según la intención del emisor y abre el resumen con la que sostiene al conjunto del texto."
+        }
+      },
+      "matriz_cuantitativa": {
+        "total": 10,
+        "componentes": [
+          {
+            "nombre": "Sentido global enunciado",
+            "max": 3,
+            "bandas": [
+              {
+                "puntos": 3,
+                "condicion": "La primera línea del resumen enuncia el sentido global del texto"
+              },
+              {
+                "puntos": 2,
+                "condicion": "El sentido global queda enunciado en otro punto del resumen"
+              },
+              {
+                "puntos": 1,
+                "condicion": "El sentido global se deduce del resumen pero no queda enunciado"
+              },
+              {
+                "puntos": 0,
+                "condicion": "El resumen arranca con un detalle y el sentido global queda fuera"
+              }
+            ]
+          },
+          {
+            "nombre": "Estructura del texto",
+            "max": 4,
+            "bandas": [
+              {
+                "puntos": 4,
+                "condicion": "El resumen deja ver todas las partes en que se organiza el texto"
+              },
+              {
+                "puntos": 3,
+                "condicion": "Deja ver todas menos 1"
+              },
+              {
+                "puntos": 2,
+                "condicion": "Deja ver la mitad de las partes"
+              },
+              {
+                "puntos": 0,
+                "condicion": "El resumen sucede las ideas sin dejar ver la estructura"
+              }
+            ]
+          },
+          {
+            "nombre": "Intención del emisor",
+            "max": 3,
+            "bandas": [
+              {
+                "puntos": 3,
+                "condicion": "El resumen deja claro con qué propósito escribe el emisor"
+              },
+              {
+                "puntos": 2,
+                "condicion": "El propósito del emisor se intuye en el resumen"
+              },
+              {
+                "puntos": 0,
+                "condicion": "El resumen recoge el contenido y deja fuera el propósito"
+              }
+            ]
+          }
+        ],
+        "penalizaciones": []
+      },
+      "descriptor_cotejo": null,
+      "descriptor_un_punto": "Reconoce el sentido global del texto y lo anuncia en la primera línea del resumen."
+    },
+    {
+      "id": "lcl-b-seleccion-res-1bach",
+      "bloque_lomloe": "B",
+      "dimension": "seleccion_informacion",
+      "nombre": "Selección de la información relevante",
+      "curso": "1BACH",
+      "hereda_de": null,
+      "criterio_oficial": {
+        "competencia_especifica": 4,
+        "codigo": "4.1",
+        "cita": "Identificar el sentido global, la estructura, la información relevante y la intención del emisor de textos escritos y multimodales especializados, con especial atención a textos académicos y de los medios de comunicación, realizando las inferencias necesarias y con diferentes propósitos de lectura.",
+        "perfil_salida": [
+          "CCL2",
+          "CCL3",
+          "CCL5",
+          "CP2",
+          "STEM4",
+          "CD1",
+          "CPSAA4",
+          "CC3"
+        ]
+      },
+      "saber_vehiculo": [
+        "comprensión lectora: sentido global del texto y relación entre sus partes. La intención del emisor",
+        "alfabetización informacional: análisis, valoración, reorganización y síntesis de la información en esquemas propios y transformación en conocimiento"
+      ],
+      "progresion": {
+        "autonomia": 3,
+        "complejidad": 4,
+        "metalinguistico": 4
+      },
+      "tipos_tarea": [
+        "resumen"
+      ],
+      "obligatorio": true,
+      "prioridad": 1,
+      "peso_base": 25,
+      "descriptores": {
+        "n1": {
+          "verbo": "traslada",
+          "texto": "Traslada al resumen los datos y las citas del texto académico uno detrás de otro."
+        },
+        "n2": {
+          "verbo": "selecciona",
+          "texto": "Selecciona la información relevante en función del propósito de lectura y deja fuera los ejemplos."
+        },
+        "n3": {
+          "verbo": "descarta",
+          "texto": "Descarta los datos ilustrativos y las digresiones del texto especializado y mantiene la línea del razonamiento."
+        },
+        "n4": {
+          "verbo": "integra",
+          "texto": "Integra en una sola formulación la información que el texto reparte entre varios apartados."
+        }
+      },
+      "matriz_cuantitativa": {
+        "total": 10,
+        "componentes": [
+          {
+            "nombre": "Información ilustrativa fuera",
+            "max": 3,
+            "bandas": [
+              {
+                "puntos": 3,
+                "condicion": "El resumen deja fuera todos los datos ilustrativos y las digresiones"
+              },
+              {
+                "puntos": 2,
+                "condicion": "Conserva 1 dato ilustrativo o digresión"
+              },
+              {
+                "puntos": 1,
+                "condicion": "Conserva 2"
+              },
+              {
+                "puntos": 0,
+                "condicion": "Conserva 3 o más"
+              }
+            ]
+          },
+          {
+            "nombre": "La línea del razonamiento",
+            "max": 4,
+            "bandas": [
+              {
+                "puntos": 4,
+                "condicion": "El resumen recoge todos los pasos del razonamiento del texto"
+              },
+              {
+                "puntos": 3,
+                "condicion": "Deja fuera 1 paso del razonamiento"
+              },
+              {
+                "puntos": 2,
+                "condicion": "Deja fuera 2 pasos"
+              },
+              {
+                "puntos": 0,
+                "condicion": "El resumen rompe la línea del razonamiento del texto"
+              }
+            ]
+          },
+          {
+            "nombre": "Fidelidad al original",
+            "max": 3,
+            "bandas": [
+              {
+                "puntos": 3,
+                "condicion": "Todo lo que afirma el resumen está en el texto original"
+              },
+              {
+                "puntos": 2,
+                "condicion": "Añade 1 inferencia que el original no sostiene"
+              },
+              {
+                "puntos": 1,
+                "condicion": "Añade 2 inferencias ajenas al original"
+              },
+              {
+                "puntos": 0,
+                "condicion": "El resumen atribuye al texto lo que el texto no dice"
+              }
+            ]
+          }
+        ],
+        "penalizaciones": []
+      },
+      "descriptor_cotejo": null,
+      "descriptor_un_punto": "Selecciona la información relevante en función del propósito de lectura y deja fuera los ejemplos."
+    },
+    {
+      "id": "lcl-b-reformulacion-res-1bach",
+      "bloque_lomloe": "B",
+      "dimension": "reformulacion",
+      "nombre": "Reformulación con palabras propias",
+      "curso": "1BACH",
+      "hereda_de": null,
+      "criterio_oficial": {
+        "competencia_especifica": 5,
+        "codigo": "5.2",
+        "cita": "Incorporar procedimientos para enriquecer los textos, atendiendo a aspectos discursivos, lingüísticos y de estilo, con precisión léxica y corrección ortográfica y gramatical.",
+        "perfil_salida": [
+          "CCL1",
+          "CCL3",
+          "CCL5",
+          "STEM1",
+          "CD2",
+          "CD3",
+          "CPSAA5",
+          "CC2"
+        ]
+      },
+      "saber_vehiculo": [
+        "alfabetización informacional: análisis, valoración, reorganización y síntesis de la información en esquemas propios y transformación en conocimiento",
+        "procedimientos léxico-semánticos y gramaticales que contribuyen a la cohesión del texto"
+      ],
+      "progresion": {
+        "autonomia": 3,
+        "complejidad": 4,
+        "metalinguistico": 4
+      },
+      "tipos_tarea": [
+        "resumen"
+      ],
+      "obligatorio": false,
+      "prioridad": 1,
+      "peso_base": 20,
+      "descriptores": {
+        "n1": {
+          "verbo": "copia",
+          "texto": "Copia los períodos del texto académico y los separa con punto."
+        },
+        "n2": {
+          "verbo": "sustituye",
+          "texto": "Sustituye el léxico especializado del texto por términos equivalentes y mantiene el término técnico necesario."
+        },
+        "n3": {
+          "verbo": "reformula",
+          "texto": "Reformula con palabras propias el razonamiento del texto y agrupa en un período lo que el original reparte en varios."
+        },
+        "n4": {
+          "verbo": "sintetiza",
+          "texto": "Sintetiza en una formulación propia las series de datos del texto y mantiene el grado de certeza del original."
+        }
+      },
+      "matriz_cuantitativa": {
+        "total": 10,
+        "componentes": [
+          {
+            "nombre": "Formulación propia",
+            "max": 4,
+            "bandas": [
+              {
+                "puntos": 4,
+                "condicion": "Ninguna secuencia del resumen reproduce literalmente el original"
+              },
+              {
+                "puntos": 3,
+                "condicion": "1 secuencia literal del original"
+              },
+              {
+                "puntos": 2,
+                "condicion": "2 secuencias literales del original"
+              },
+              {
+                "puntos": 0,
+                "condicion": "3 o más secuencias literales del original"
+              }
+            ]
+          },
+          {
+            "nombre": "Léxico y término técnico",
+            "max": 3,
+            "bandas": [
+              {
+                "puntos": 3,
+                "condicion": "Emplea léxico propio y conserva los términos técnicos que el tema exige"
+              },
+              {
+                "puntos": 2,
+                "condicion": "Emplea léxico propio y pierde 1 término técnico necesario"
+              },
+              {
+                "puntos": 1,
+                "condicion": "Sustituye los términos técnicos por expresiones vagas"
+              },
+              {
+                "puntos": 0,
+                "condicion": "Repite el léxico del original de principio a fin"
+              }
+            ]
+          },
+          {
+            "nombre": "Grado de certeza",
+            "max": 3,
+            "bandas": [
+              {
+                "puntos": 3,
+                "condicion": "El resumen conserva las cautelas del original (parece, tiende a, en algunos casos)"
+              },
+              {
+                "puntos": 2,
+                "condicion": "Pierde 1 de esas cautelas y convierte en afirmación lo que era hipótesis"
+              },
+              {
+                "puntos": 0,
+                "condicion": "El resumen afirma como cierto lo que el texto plantea como hipótesis"
+              }
+            ]
+          }
+        ],
+        "penalizaciones": []
+      },
+      "descriptor_cotejo": null,
+      "descriptor_un_punto": "Sustituye el léxico especializado del texto por términos equivalentes y mantiene el término técnico necesario."
+    },
+    {
+      "id": "lcl-b-redaccion-res-1bach",
+      "bloque_lomloe": "B",
+      "dimension": "redaccion_resumen",
+      "nombre": "Redacción: texto continuo, objetivo y ajustado",
+      "curso": "1BACH",
+      "hereda_de": null,
+      "criterio_oficial": {
+        "competencia_especifica": 5,
+        "codigo": "5.1",
+        "cita": "Elaborar textos académicos coherentes, cohesionados y con el registro adecuado sobre temas curriculares o de interés social y cultural, precedidos de un proceso de planificación que atienda a la situación comunicativa, destinatario, propósito y canal y de redacción y revisión de borradores de manera individual o entre iguales, o mediante otros instrumentos de consulta.",
+        "perfil_salida": [
+          "CCL1",
+          "CCL3",
+          "CCL5",
+          "STEM1",
+          "CD2",
+          "CD3",
+          "CPSAA5",
+          "CC2"
+        ]
+      },
+      "saber_vehiculo": [
+        "producción escrita. Proceso de elaboración: planificación, redacción, revisión y edición en diferentes soportes",
+        "formas lingüísticas de expresión de la subjetividad y de la objetividad y de sus formas de expresión en los textos",
+        "conectores, marcadores discursivos y otros procedimientos léxico-semánticos y gramaticales que contribuyen a la cohesión del texto"
+      ],
+      "progresion": {
+        "autonomia": 3,
+        "complejidad": 4,
+        "metalinguistico": 4
+      },
+      "tipos_tarea": [
+        "resumen"
+      ],
+      "obligatorio": false,
+      "prioridad": 2,
+      "peso_base": 15,
+      "descriptores": {
+        "n1": {
+          "verbo": "enumera",
+          "texto": "Enumera las ideas del texto en el orden en que aparecen y añade una valoración propia."
+        },
+        "n2": {
+          "verbo": "redacta",
+          "texto": "Redacta el resumen en un texto continuo con el registro académico que la tarea pide."
+        },
+        "n3": {
+          "verbo": "mantiene",
+          "texto": "Mantiene el resumen en la extensión pedida y articula las ideas con marcadores discursivos de consecuencia y de contraste."
+        },
+        "n4": {
+          "verbo": "suprime",
+          "texto": "Suprime toda marca de subjetividad del resumen y traslada las ideas del texto sin nombrar al emisor."
+        }
+      },
+      "matriz_cuantitativa": {
+        "total": 10,
+        "componentes": [
+          {
+            "nombre": "Registro académico",
+            "max": 3,
+            "bandas": [
+              {
+                "puntos": 3,
+                "condicion": "El registro del resumen es el del ámbito académico de principio a fin"
+              },
+              {
+                "puntos": 2,
+                "condicion": "1 expresión coloquial se cuela en el resumen"
+              },
+              {
+                "puntos": 1,
+                "condicion": "2 expresiones coloquiales"
+              },
+              {
+                "puntos": 0,
+                "condicion": "El resumen está escrito en registro coloquial"
+              }
+            ]
+          },
+          {
+            "nombre": "Marcadores discursivos",
+            "max": 3,
+            "bandas": [
+              {
+                "puntos": 3,
+                "condicion": "Emplea 4 o más marcadores distintos entre las ideas del resumen"
+              },
+              {
+                "puntos": 2,
+                "condicion": "Emplea 2 o 3 marcadores distintos"
+              },
+              {
+                "puntos": 1,
+                "condicion": "Repite el mismo marcador a lo largo del resumen"
+              },
+              {
+                "puntos": 0,
+                "condicion": "Coloca las ideas una detrás de otra sin enlace"
+              }
+            ]
+          },
+          {
+            "nombre": "Extensión",
+            "max": 2,
+            "bandas": [
+              {
+                "puntos": 2,
+                "condicion": "El resumen ocupa entre un quinto y un cuarto del texto original"
+              },
+              {
+                "puntos": 1,
+                "condicion": "Se aparta de esa extensión en menos de la mitad"
+              },
+              {
+                "puntos": 0,
+                "condicion": "El resumen es tan largo como el original o cabe en una línea"
+              }
+            ]
+          },
+          {
+            "nombre": "Objetividad",
+            "max": 2,
+            "bandas": [
+              {
+                "puntos": 2,
+                "condicion": "El resumen traslada las ideas sin marcas de subjetividad ni referencias al emisor"
+              },
+              {
+                "puntos": 1,
+                "condicion": "Incluye 1 marca de subjetividad o 1 referencia al emisor"
+              },
+              {
+                "puntos": 0,
+                "condicion": "Incluye 2 o más marcas de subjetividad o referencias al emisor"
+              }
+            ]
+          }
+        ],
+        "penalizaciones": []
+      },
+      "descriptor_cotejo": null,
+      "descriptor_un_punto": "Redacta el resumen en un texto continuo con el registro académico que la tarea pide."
+    },
+    {
+      "id": "lcl-d-correccion-res-1bach",
+      "bloque_lomloe": "D",
+      "dimension": "correccion_lexico",
+      "nombre": "Corrección normativa y propiedad léxica",
+      "curso": "1BACH",
+      "hereda_de": null,
+      "criterio_oficial": {
+        "competencia_especifica": 5,
+        "codigo": "5.2",
+        "cita": "Incorporar procedimientos para enriquecer los textos, atendiendo a aspectos discursivos, lingüísticos y de estilo, con precisión léxica y corrección ortográfica y gramatical.",
+        "perfil_salida": [
+          "CCL1",
+          "CCL3",
+          "CCL5",
+          "STEM1",
+          "CD2",
+          "CD3",
+          "CPSAA5",
+          "CC2"
+        ]
+      },
+      "saber_vehiculo": [
+        "corrección lingüística y revisión ortográfica, gramatical y tipográfica de los textos",
+        "recursos lingüísticos para adecuar el registro a la situación de comunicación"
+      ],
+      "progresion": {
+        "autonomia": 3,
+        "complejidad": 4,
+        "metalinguistico": 4
+      },
+      "tipos_tarea": [
+        "resumen"
+      ],
+      "obligatorio": true,
+      "prioridad": 2,
+      "peso_base": 15,
+      "descriptores": {
+        "n1": {
+          "verbo": "redacta",
+          "texto": "Redacta el resumen con errores de ortografía y de puntuación que obligan a releer para seguir el razonamiento."
+        },
+        "n2": {
+          "verbo": "aplica",
+          "texto": "Aplica las normas de acentuación, concordancia y puntuación, con errores aislados en los períodos largos."
+        },
+        "n3": {
+          "verbo": "aplica",
+          "texto": "Aplica la puntuación de los períodos complejos y delimita con coma los incisos y las subordinadas antepuestas."
+        },
+        "n4": {
+          "verbo": "elige",
+          "texto": "Elige el término preciso para cada concepto del texto y sustituye las expresiones vagas por otras exactas."
+        }
+      },
+      "matriz_cuantitativa": {
+        "total": 10,
+        "componentes": [
+          {
+            "nombre": "Ortografía y acentuación",
+            "max": 4,
+            "bandas": [
+              {
+                "puntos": 4,
+                "condicion": "Sin faltas en todo el resumen"
+              },
+              {
+                "puntos": 3,
+                "condicion": "1 o 2 faltas"
+              },
+              {
+                "puntos": 2,
+                "condicion": "3 o 4 faltas"
+              },
+              {
+                "puntos": 0,
+                "condicion": "5 o más faltas"
+              }
+            ]
+          },
+          {
+            "nombre": "Puntuación del período",
+            "max": 3,
+            "bandas": [
+              {
+                "puntos": 3,
+                "condicion": "Delimita con coma los incisos y las subordinadas antepuestas de todo el resumen"
+              },
+              {
+                "puntos": 2,
+                "condicion": "1 período con la puntuación sin delimitar"
+              },
+              {
+                "puntos": 1,
+                "condicion": "2 períodos con la puntuación sin delimitar"
+              },
+              {
+                "puntos": 0,
+                "condicion": "El resumen encadena períodos largos sin puntuación interna"
+              }
+            ]
+          },
+          {
+            "nombre": "Precisión conceptual",
+            "max": 3,
+            "bandas": [
+              {
+                "puntos": 3,
+                "condicion": "Nombra cada concepto del texto con el término que le corresponde"
+              },
+              {
+                "puntos": 2,
+                "condicion": "1 concepto queda nombrado con una expresión vaga"
+              },
+              {
+                "puntos": 1,
+                "condicion": "2 conceptos quedan nombrados con expresiones vagas"
+              },
+              {
+                "puntos": 0,
+                "condicion": "El resumen sustituye los conceptos del texto por expresiones vagas"
+              }
+            ]
+          }
+        ],
+        "penalizaciones": []
+      },
+      "descriptor_cotejo": null,
+      "descriptor_un_punto": "Aplica las normas de acentuación, concordancia y puntuación, con errores aislados en los períodos largos."
+    },
+    {
+      "id": "lcl-b-comprension-res-2bach",
+      "bloque_lomloe": "B",
+      "dimension": "comprension_global",
+      "nombre": "Comprensión: sentido global y jerarquía de las ideas",
+      "curso": "2BACH",
+      "hereda_de": null,
+      "criterio_oficial": {
+        "competencia_especifica": 4,
+        "codigo": "4.1",
+        "cita": "Identificar el sentido global, la estructura, la información relevante y la intención del emisor de textos escritos y multimodales especializados, con especial atención a textos académicos y de los medios de comunicación, realizando las inferencias necesarias y con diferentes propósitos de lectura.",
+        "perfil_salida": [
+          "CCL2",
+          "CCL3",
+          "CCL5",
+          "CP2",
+          "STEM4",
+          "CD1",
+          "CPSAA4",
+          "CC3"
+        ]
+      },
+      "saber_vehiculo": [
+        "comprensión lectora: sentido global del texto y relación entre sus partes. La intención del emisor",
+        "la comunicación escrita en el ámbito académico, periodístico, profesional y empresarial. Principales géneros textuales"
+      ],
+      "progresion": {
+        "autonomia": 3,
+        "complejidad": 4,
+        "metalinguistico": 4
+      },
+      "tipos_tarea": [
+        "resumen"
+      ],
+      "obligatorio": true,
+      "prioridad": 1,
+      "peso_base": 25,
+      "descriptores": {
+        "n1": {
+          "verbo": "copia",
+          "texto": "Copia el primer párrafo del texto periodístico y lo presenta como resumen del conjunto."
+        },
+        "n2": {
+          "verbo": "reconoce",
+          "texto": "Reconoce la tesis del texto especializado y la anuncia en la primera línea del resumen."
+        },
+        "n3": {
+          "verbo": "distingue",
+          "texto": "Distingue la tesis de los argumentos que la sostienen y presenta esa relación en el resumen."
+        },
+        "n4": {
+          "verbo": "jerarquiza",
+          "texto": "Jerarquiza tesis, argumentos y objeciones según el peso que reciben en el texto argumentativo."
+        }
+      },
+      "matriz_cuantitativa": {
+        "total": 10,
+        "componentes": [
+          {
+            "nombre": "La tesis queda enunciada",
+            "max": 3,
+            "bandas": [
+              {
+                "puntos": 3,
+                "condicion": "La primera línea del resumen enuncia la tesis del texto"
+              },
+              {
+                "puntos": 2,
+                "condicion": "La tesis queda enunciada en otro punto del resumen"
+              },
+              {
+                "puntos": 1,
+                "condicion": "La tesis se deduce del resumen pero no queda enunciada"
+              },
+              {
+                "puntos": 0,
+                "condicion": "El resumen recoge argumentos sueltos y la tesis queda fuera"
+              }
+            ]
+          },
+          {
+            "nombre": "Tesis y argumentos",
+            "max": 4,
+            "bandas": [
+              {
+                "puntos": 4,
+                "condicion": "El resumen deja ver qué argumentos sostienen la tesis"
+              },
+              {
+                "puntos": 3,
+                "condicion": "Deja ver esa relación en todos los argumentos menos 1"
+              },
+              {
+                "puntos": 2,
+                "condicion": "Enumera los argumentos sin ligarlos a la tesis"
+              },
+              {
+                "puntos": 0,
+                "condicion": "El resumen mezcla tesis y argumentos en un mismo plano"
+              }
+            ]
+          },
+          {
+            "nombre": "Intención del emisor",
+            "max": 3,
+            "bandas": [
+              {
+                "puntos": 3,
+                "condicion": "El resumen deja claro con qué propósito escribe el emisor"
+              },
+              {
+                "puntos": 2,
+                "condicion": "El propósito del emisor se intuye en el resumen"
+              },
+              {
+                "puntos": 0,
+                "condicion": "El resumen recoge el contenido y deja fuera el propósito"
+              }
+            ]
+          }
+        ],
+        "penalizaciones": []
+      },
+      "descriptor_cotejo": null,
+      "descriptor_un_punto": "Reconoce la tesis del texto y la anuncia en la primera línea del resumen."
+    },
+    {
+      "id": "lcl-b-seleccion-res-2bach",
+      "bloque_lomloe": "B",
+      "dimension": "seleccion_informacion",
+      "nombre": "Selección de la información relevante",
+      "curso": "2BACH",
+      "hereda_de": null,
+      "criterio_oficial": {
+        "competencia_especifica": 4,
+        "codigo": "4.1",
+        "cita": "Identificar el sentido global, la estructura, la información relevante y la intención del emisor de textos escritos y multimodales especializados, con especial atención a textos académicos y de los medios de comunicación, realizando las inferencias necesarias y con diferentes propósitos de lectura.",
+        "perfil_salida": [
+          "CCL2",
+          "CCL3",
+          "CCL5",
+          "CP2",
+          "STEM4",
+          "CD1",
+          "CPSAA4",
+          "CC3"
+        ]
+      },
+      "saber_vehiculo": [
+        "comprensión lectora: sentido global del texto y relación entre sus partes. La intención del emisor",
+        "alfabetización informacional: análisis, valoración, reorganización y síntesis de la información en esquemas propios y transformación en conocimiento"
+      ],
+      "progresion": {
+        "autonomia": 3,
+        "complejidad": 4,
+        "metalinguistico": 4
+      },
+      "tipos_tarea": [
+        "resumen"
+      ],
+      "obligatorio": true,
+      "prioridad": 1,
+      "peso_base": 25,
+      "descriptores": {
+        "n1": {
+          "verbo": "traslada",
+          "texto": "Traslada al resumen los datos, los ejemplos y las opiniones del texto uno detrás de otro."
+        },
+        "n2": {
+          "verbo": "selecciona",
+          "texto": "Selecciona la tesis y los argumentos del texto y deja fuera los datos ilustrativos."
+        },
+        "n3": {
+          "verbo": "distingue",
+          "texto": "Distingue en el texto los hechos de las opiniones y los separa en el resumen con esa marca."
+        },
+        "n4": {
+          "verbo": "integra",
+          "texto": "Integra en una formulación propia los argumentos que el texto reparte entre apartados distintos."
+        }
+      },
+      "matriz_cuantitativa": {
+        "total": 10,
+        "componentes": [
+          {
+            "nombre": "Datos ilustrativos fuera",
+            "max": 3,
+            "bandas": [
+              {
+                "puntos": 3,
+                "condicion": "El resumen deja fuera todos los datos ilustrativos y las anécdotas"
+              },
+              {
+                "puntos": 2,
+                "condicion": "Conserva 1 dato ilustrativo o anécdota"
+              },
+              {
+                "puntos": 1,
+                "condicion": "Conserva 2"
+              },
+              {
+                "puntos": 0,
+                "condicion": "Conserva 3 o más"
+              }
+            ]
+          },
+          {
+            "nombre": "Argumentos recogidos",
+            "max": 4,
+            "bandas": [
+              {
+                "puntos": 4,
+                "condicion": "El resumen recoge todos los argumentos con que el texto sostiene la tesis"
+              },
+              {
+                "puntos": 3,
+                "condicion": "Deja fuera 1 argumento"
+              },
+              {
+                "puntos": 2,
+                "condicion": "Deja fuera 2 argumentos"
+              },
+              {
+                "puntos": 0,
+                "condicion": "El resumen recoge un solo argumento del texto"
+              }
+            ]
+          },
+          {
+            "nombre": "Hechos y opiniones",
+            "max": 3,
+            "bandas": [
+              {
+                "puntos": 3,
+                "condicion": "El resumen marca qué presenta el texto como hecho y qué como opinión"
+              },
+              {
+                "puntos": 2,
+                "condicion": "Confunde 1 opinión con un hecho, o al revés"
+              },
+              {
+                "puntos": 1,
+                "condicion": "Confunde 2"
+              },
+              {
+                "puntos": 0,
+                "condicion": "El resumen presenta como hechos las opiniones del emisor"
+              }
+            ]
+          }
+        ],
+        "penalizaciones": []
+      },
+      "descriptor_cotejo": null,
+      "descriptor_un_punto": "Selecciona la tesis y los argumentos del texto y deja fuera los datos ilustrativos."
+    },
+    {
+      "id": "lcl-b-reformulacion-res-2bach",
+      "bloque_lomloe": "B",
+      "dimension": "reformulacion",
+      "nombre": "Reformulación con palabras propias",
+      "curso": "2BACH",
+      "hereda_de": null,
+      "criterio_oficial": {
+        "competencia_especifica": 5,
+        "codigo": "5.2",
+        "cita": "Incorporar procedimientos para enriquecer los textos, atendiendo a aspectos discursivos, lingüísticos y de estilo, con precisión léxica y corrección ortográfica y gramatical.",
+        "perfil_salida": [
+          "CCL1",
+          "CCL3",
+          "CCL5",
+          "STEM1",
+          "CD2",
+          "CD3",
+          "CPSAA5",
+          "CC2"
+        ]
+      },
+      "saber_vehiculo": [
+        "alfabetización informacional: análisis, valoración, reorganización y síntesis de la información en esquemas propios y transformación en conocimiento",
+        "producción de textos argumentativos escritos del ámbito académico"
+      ],
+      "progresion": {
+        "autonomia": 3,
+        "complejidad": 4,
+        "metalinguistico": 4
+      },
+      "tipos_tarea": [
+        "resumen"
+      ],
+      "obligatorio": false,
+      "prioridad": 1,
+      "peso_base": 20,
+      "descriptores": {
+        "n1": {
+          "verbo": "copia",
+          "texto": "Copia los períodos del texto argumentativo y los separa con punto."
+        },
+        "n2": {
+          "verbo": "sustituye",
+          "texto": "Sustituye el léxico valorativo del texto por términos neutros y mantiene el término técnico necesario."
+        },
+        "n3": {
+          "verbo": "reformula",
+          "texto": "Reformula con palabras propias la línea argumental del texto y agrupa en un período los argumentos afines."
+        },
+        "n4": {
+          "verbo": "sintetiza",
+          "texto": "Sintetiza en una formulación propia la argumentación del texto y mantiene la fuerza argumentativa del original."
+        }
+      },
+      "matriz_cuantitativa": {
+        "total": 10,
+        "componentes": [
+          {
+            "nombre": "Formulación propia",
+            "max": 4,
+            "bandas": [
+              {
+                "puntos": 4,
+                "condicion": "Ninguna secuencia del resumen reproduce literalmente el original"
+              },
+              {
+                "puntos": 3,
+                "condicion": "1 secuencia literal del original"
+              },
+              {
+                "puntos": 2,
+                "condicion": "2 secuencias literales del original"
+              },
+              {
+                "puntos": 0,
+                "condicion": "3 o más secuencias literales del original"
+              }
+            ]
+          },
+          {
+            "nombre": "Léxico neutro",
+            "max": 3,
+            "bandas": [
+              {
+                "puntos": 3,
+                "condicion": "El resumen traslada la tesis con términos neutros y sin las valoraciones del emisor"
+              },
+              {
+                "puntos": 2,
+                "condicion": "Conserva 1 término valorativo del original"
+              },
+              {
+                "puntos": 1,
+                "condicion": "Conserva 2 términos valorativos"
+              },
+              {
+                "puntos": 0,
+                "condicion": "El resumen reproduce la carga valorativa del original"
+              }
+            ]
+          },
+          {
+            "nombre": "Fuerza argumentativa",
+            "max": 3,
+            "bandas": [
+              {
+                "puntos": 3,
+                "condicion": "El resumen conserva el grado con que el texto sostiene cada afirmación"
+              },
+              {
+                "puntos": 2,
+                "condicion": "Endurece o rebaja 1 afirmación del original"
+              },
+              {
+                "puntos": 1,
+                "condicion": "Endurece o rebaja 2 afirmaciones"
+              },
+              {
+                "puntos": 0,
+                "condicion": "El resumen convierte en tesis rotunda lo que el texto matiza"
+              }
+            ]
+          }
+        ],
+        "penalizaciones": []
+      },
+      "descriptor_cotejo": null,
+      "descriptor_un_punto": "Sustituye el léxico valorativo del texto por términos neutros y mantiene el término técnico necesario."
+    },
+    {
+      "id": "lcl-b-redaccion-res-2bach",
+      "bloque_lomloe": "B",
+      "dimension": "redaccion_resumen",
+      "nombre": "Redacción: texto continuo, objetivo y ajustado",
+      "curso": "2BACH",
+      "hereda_de": null,
+      "criterio_oficial": {
+        "competencia_especifica": 5,
+        "codigo": "5.1",
+        "cita": "Elaborar textos académicos coherentes, cohesionados y con el registro adecuado en torno a temas curriculares o de interés social y cultural, precedidos de un proceso de planificación que atienda a la situación comunicativa, destinatario, propósito y canal, y de redacción y revisión de borradores entre iguales o utilizando otros instrumentos de consulta.",
+        "perfil_salida": [
+          "CCL1",
+          "CCL3",
+          "CCL5",
+          "STEM1",
+          "CD2",
+          "CD3",
+          "CPSAA5",
+          "CC2"
+        ]
+      },
+      "saber_vehiculo": [
+        "producción escrita. Proceso de elaboración: planificación, redacción, revisión y edición en diferentes soportes",
+        "formas lingüísticas de expresión de la subjetividad y de la objetividad y de sus formas de expresión en los textos",
+        "conectores, marcadores discursivos y otros procedimientos léxico-semánticos y gramaticales que contribuyen a la cohesión del texto"
+      ],
+      "progresion": {
+        "autonomia": 3,
+        "complejidad": 4,
+        "metalinguistico": 4
+      },
+      "tipos_tarea": [
+        "resumen"
+      ],
+      "obligatorio": false,
+      "prioridad": 2,
+      "peso_base": 15,
+      "descriptores": {
+        "n1": {
+          "verbo": "enumera",
+          "texto": "Enumera los argumentos del texto en el orden en que aparecen y añade una valoración propia."
+        },
+        "n2": {
+          "verbo": "redacta",
+          "texto": "Redacta el resumen en un texto continuo con el registro que el ámbito académico pide."
+        },
+        "n3": {
+          "verbo": "mantiene",
+          "texto": "Mantiene el resumen en la extensión pedida y articula la línea argumental con marcadores de consecuencia y de concesión."
+        },
+        "n4": {
+          "verbo": "suprime",
+          "texto": "Suprime toda marca de subjetividad del resumen y traslada la argumentación del texto sin tomar partido por ella."
+        }
+      },
+      "matriz_cuantitativa": {
+        "total": 10,
+        "componentes": [
+          {
+            "nombre": "Registro académico",
+            "max": 3,
+            "bandas": [
+              {
+                "puntos": 3,
+                "condicion": "El registro del resumen es el del ámbito académico de principio a fin"
+              },
+              {
+                "puntos": 2,
+                "condicion": "1 expresión coloquial se cuela en el resumen"
+              },
+              {
+                "puntos": 1,
+                "condicion": "2 expresiones coloquiales"
+              },
+              {
+                "puntos": 0,
+                "condicion": "El resumen está escrito en registro coloquial"
+              }
+            ]
+          },
+          {
+            "nombre": "Marcadores de la línea argumental",
+            "max": 3,
+            "bandas": [
+              {
+                "puntos": 3,
+                "condicion": "Emplea 4 o más marcadores distintos: consecuencia, concesión, contraste, orden"
+              },
+              {
+                "puntos": 2,
+                "condicion": "Emplea 2 o 3 tipos de marcador"
+              },
+              {
+                "puntos": 1,
+                "condicion": "Repite el mismo marcador a lo largo del resumen"
+              },
+              {
+                "puntos": 0,
+                "condicion": "Coloca los argumentos uno detrás de otro sin enlace"
+              }
+            ]
+          },
+          {
+            "nombre": "Extensión",
+            "max": 2,
+            "bandas": [
+              {
+                "puntos": 2,
+                "condicion": "El resumen ocupa entre un sexto y un quinto del texto original"
+              },
+              {
+                "puntos": 1,
+                "condicion": "Se aparta de esa extensión en menos de la mitad"
+              },
+              {
+                "puntos": 0,
+                "condicion": "El resumen es tan largo como el original o cabe en una línea"
+              }
+            ]
+          },
+          {
+            "nombre": "Distancia respecto de la tesis",
+            "max": 2,
+            "bandas": [
+              {
+                "puntos": 2,
+                "condicion": "El resumen expone la tesis del texto sin suscribirla ni rebatirla"
+              },
+              {
+                "puntos": 1,
+                "condicion": "Incluye 1 marca de adhesión o de rechazo a la tesis"
+              },
+              {
+                "puntos": 0,
+                "condicion": "El resumen discute la tesis del texto en lugar de exponerla"
+              }
+            ]
+          }
+        ],
+        "penalizaciones": []
+      },
+      "descriptor_cotejo": null,
+      "descriptor_un_punto": "Redacta el resumen en un texto continuo con el registro que el ámbito académico pide."
+    },
+    {
+      "id": "lcl-d-correccion-res-2bach",
+      "bloque_lomloe": "D",
+      "dimension": "correccion_lexico",
+      "nombre": "Corrección normativa y propiedad léxica",
+      "curso": "2BACH",
+      "hereda_de": null,
+      "criterio_oficial": {
+        "competencia_especifica": 5,
+        "codigo": "5.2",
+        "cita": "Incorporar procedimientos para enriquecer los textos, atendiendo a aspectos discursivos, lingüísticos y de estilo, con precisión léxica y corrección ortográfica y gramatical.",
+        "perfil_salida": [
+          "CCL1",
+          "CCL3",
+          "CCL5",
+          "STEM1",
+          "CD2",
+          "CD3",
+          "CPSAA5",
+          "CC2"
+        ]
+      },
+      "saber_vehiculo": [
+        "corrección lingüística y revisión ortográfica, gramatical y tipográfica de los textos",
+        "recursos lingüísticos para adecuar el registro a la situación de comunicación"
+      ],
+      "progresion": {
+        "autonomia": 3,
+        "complejidad": 4,
+        "metalinguistico": 4
+      },
+      "tipos_tarea": [
+        "resumen"
+      ],
+      "obligatorio": true,
+      "prioridad": 2,
+      "peso_base": 15,
+      "descriptores": {
+        "n1": {
+          "verbo": "redacta",
+          "texto": "Redacta el resumen con errores de ortografía y de puntuación que obligan a releer para seguir la argumentación."
+        },
+        "n2": {
+          "verbo": "aplica",
+          "texto": "Aplica las normas de acentuación, concordancia y puntuación, con errores aislados en los períodos largos."
+        },
+        "n3": {
+          "verbo": "aplica",
+          "texto": "Aplica la puntuación de los períodos complejos y delimita las subordinadas concesivas y causales del resumen."
+        },
+        "n4": {
+          "verbo": "elige",
+          "texto": "Elige el término preciso para cada concepto del texto y gradúa el matiz de los verbos de opinión."
+        }
+      },
+      "matriz_cuantitativa": {
+        "total": 10,
+        "componentes": [
+          {
+            "nombre": "Ortografía y acentuación",
+            "max": 4,
+            "bandas": [
+              {
+                "puntos": 4,
+                "condicion": "Sin faltas en todo el resumen"
+              },
+              {
+                "puntos": 3,
+                "condicion": "1 o 2 faltas"
+              },
+              {
+                "puntos": 2,
+                "condicion": "3 o 4 faltas"
+              },
+              {
+                "puntos": 0,
+                "condicion": "5 o más faltas"
+              }
+            ]
+          },
+          {
+            "nombre": "Puntuación del período",
+            "max": 3,
+            "bandas": [
+              {
+                "puntos": 3,
+                "condicion": "Delimita con coma los incisos y las subordinadas antepuestas de todo el resumen"
+              },
+              {
+                "puntos": 2,
+                "condicion": "1 período con la puntuación sin delimitar"
+              },
+              {
+                "puntos": 1,
+                "condicion": "2 períodos con la puntuación sin delimitar"
+              },
+              {
+                "puntos": 0,
+                "condicion": "El resumen encadena períodos largos sin puntuación interna"
+              }
+            ]
+          },
+          {
+            "nombre": "Matiz de los verbos de opinión",
+            "max": 3,
+            "bandas": [
+              {
+                "puntos": 3,
+                "condicion": "Gradúa con el verbo exacto lo que el emisor afirma, sugiere o niega"
+              },
+              {
+                "puntos": 2,
+                "condicion": "1 verbo de opinión desplaza el matiz del original"
+              },
+              {
+                "puntos": 1,
+                "condicion": "2 verbos de opinión desplazan el matiz"
+              },
+              {
+                "puntos": 0,
+                "condicion": "El resumen reduce a decir todos los verbos de opinión del texto"
+              }
+            ]
+          }
+        ],
+        "penalizaciones": []
+      },
+      "descriptor_cotejo": null,
+      "descriptor_un_punto": "Aplica las normas de acentuación, concordancia y puntuación, con errores aislados en los períodos largos."
+    }
+  ]
+}

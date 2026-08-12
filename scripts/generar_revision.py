@@ -11,16 +11,18 @@ Uso:
 """
 import json, sys, os, re, collections
 
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+from catalogo import catalogo, cargar_pack, rutas_de_packs   # noqa: E402
+
 NIVELES = [("n1", "N1"), ("n2", "N2"), ("n3", "N3"), ("n4", "N4")]
 
-NOMBRE_CURSO = {
-    "1ESO": "1.º de ESO", "2ESO": "2.º de ESO", "3ESO": "3.º de ESO",
-    "4ESO": "4.º de ESO", "1BACH": "1.º de Bachillerato", "2BACH": "2.º de Bachillerato",
-}
+# Los nombres de curso salen del catálogo: eran la cuarta copia de la misma
+# tabla (js/ui.js, data/catalogo.json y aquí).
+NOMBRE_CURSO = catalogo()["cursos"]["etiquetas"]
 
 
 def generar(ruta_pack, ruta_salida):
-    pack = json.load(open(ruta_pack, encoding="utf8"))
+    pack = cargar_pack(ruta_pack)
     verbos = {v["3s"]: v["1s"] for v in pack["verbos"]}
     n_matrices = sum(1 for c in pack["criterios"] if c.get("matriz_cuantitativa"))
 
@@ -96,8 +98,11 @@ def generar(ruta_pack, ruta_salida):
 
 
 if __name__ == "__main__":
-    pack = sys.argv[1] if len(sys.argv) > 1 else "data/pack-lcl-expositivo.json"
-    nombre = os.path.basename(pack).replace("pack-", "").replace(".json", "")
-    salida = os.path.join("docs", "revision-%s.md" % nombre)
-    ruta, n = generar(pack, salida)
-    print("Escrito %s (%d líneas)" % (ruta, n))
+    # Sin argumentos regenera TODOS los documentos de revisión: eran derivados
+    # que había que acordarse de regenerar uno a uno, y por eso se quedaban
+    # atrás cuando se corregía un pack.
+    for ruta_pack in rutas_de_packs(sys.argv[1:]):
+        nombre = os.path.basename(ruta_pack).replace("pack-", "").replace(".json", "")
+        salida = os.path.join("docs", "revision-%s.md" % nombre)
+        ruta, n = generar(ruta_pack, salida)
+        print("Escrito %s (%d líneas)" % (ruta, n))

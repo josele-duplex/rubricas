@@ -12,27 +12,6 @@
     "vigencia_desde": "2022-2023",
     "revisado": "2026-08"
   },
-  "verbos": [
-    { "id": "utiliza", "3s": "Utiliza", "1s": "Utilizo", "nivel_cognitivo": 3 },
-    { "id": "ajusta", "3s": "Ajusta", "1s": "Ajusto", "nivel_cognitivo": 3 },
-    { "id": "adapta", "3s": "Adapta", "1s": "Adapto", "nivel_cognitivo": 3 },
-    { "id": "mantiene", "3s": "Mantiene", "1s": "Mantengo", "nivel_cognitivo": 3 },
-    { "id": "explica", "3s": "Explica", "1s": "Explico", "nivel_cognitivo": 2 },
-    { "id": "enumera", "3s": "Enumera", "1s": "Enumero", "nivel_cognitivo": 1 },
-    { "id": "ordena", "3s": "Ordena", "1s": "Ordeno", "nivel_cognitivo": 3 },
-    { "id": "cierra", "3s": "Cierra", "1s": "Cierro", "nivel_cognitivo": 1 },
-    { "id": "estructura", "3s": "Estructura", "1s": "Estructuro", "nivel_cognitivo": 4 },
-    { "id": "articula", "3s": "Articula", "1s": "Articulo", "nivel_cognitivo": 4 },
-    { "id": "emplea", "3s": "Emplea", "1s": "Empleo", "nivel_cognitivo": 3 },
-    { "id": "sustituye", "3s": "Sustituye", "1s": "Sustituyo", "nivel_cognitivo": 3 },
-    { "id": "vocaliza", "3s": "Vocaliza", "1s": "Vocalizo", "nivel_cognitivo": 3 },
-    { "id": "modula", "3s": "Modula", "1s": "Modulo", "nivel_cognitivo": 3 },
-    { "id": "regula", "3s": "Regula", "1s": "Regulo", "nivel_cognitivo": 4 },
-    { "id": "dirige", "3s": "Dirige", "1s": "Dirijo", "nivel_cognitivo": 2 },
-    { "id": "acompana", "3s": "Acompaña", "1s": "Acompaño", "nivel_cognitivo": 3 },
-    { "id": "selecciona", "3s": "Selecciona", "1s": "Selecciono", "nivel_cognitivo": 2 },
-    { "id": "pronuncia", "3s": "Pronuncia", "1s": "Pronuncio", "nivel_cognitivo": 3 }
-  ],
   "criterios": [
     {
       "id": "lcl-b-adecuacion-oral-1eso",
@@ -45,14 +24,30 @@
         "competencia_especifica": 3,
         "codigo": "3.1",
         "cita": "Realizar narraciones y exposiciones orales sencillas con diferente grado de planificación sobre temas de interés personal, social y educativo en diferentes soportes.",
-        "perfil_salida": ["CCL1", "CCL3", "CCL5", "CP2", "STEM1", "CD2", "CD3", "CC2", "CE1"]
+        "perfil_salida": [
+          "CCL1",
+          "CCL3",
+          "CCL5",
+          "CP2",
+          "STEM1",
+          "CD2",
+          "CD3",
+          "CC2",
+          "CE1"
+        ]
       },
       "saber_vehiculo": [
         "iniciación a la producción oral formal",
         "géneros discursivos propios del ámbito educativo"
       ],
-      "progresion": { "autonomia": 1, "complejidad": 1, "metalinguistico": 1 },
-      "tipos_tarea": ["oral"],
+      "progresion": {
+        "autonomia": 1,
+        "complejidad": 1,
+        "metalinguistico": 1
+      },
+      "tipos_tarea": [
+        "oral"
+      ],
       "obligatorio": false,
       "prioridad": 1,
       "peso_base": 20,
@@ -63,7 +58,7 @@
         },
         "n2": {
           "verbo": "ajusta",
-          "texto": "Ajusta el tono al modelo de exposición trabajado en clase, aunque mezcla alguna expresión coloquial."
+          "texto": "Ajusta el tono al modelo de exposición trabajado en clase, con alguna expresión coloquial aislada."
         },
         "n3": {
           "verbo": "mantiene",
@@ -71,7 +66,7 @@
         },
         "n4": {
           "verbo": "explica",
-          "texto": "Explica con sus propias palabras los términos del tema que el resto de la clase puede desconocer, manteniendo el tono formal."
+          "texto": "Explica con palabras propias los términos del tema que el resto de la clase puede desconocer, manteniendo el tono formal."
         }
       },
       "matriz_cuantitativa": null,
@@ -89,21 +84,37 @@
         "competencia_especifica": 3,
         "codigo": "3.1",
         "cita": "Realizar narraciones y exposiciones orales sencillas con diferente grado de planificación sobre temas de interés personal, social y educativo en diferentes soportes.",
-        "perfil_salida": ["CCL1", "CCL3", "CCL5", "CP2", "STEM1", "CD2", "CD3", "CC2", "CE1"]
+        "perfil_salida": [
+          "CCL1",
+          "CCL3",
+          "CCL5",
+          "CP2",
+          "STEM1",
+          "CD2",
+          "CD3",
+          "CC2",
+          "CE1"
+        ]
       },
       "saber_vehiculo": [
         "iniciación en la planificación y búsqueda de información, textualización y revisión",
         "secuencias textuales básicas, con especial atención a las narrativas, descriptivas, dialogadas y expositivas"
       ],
-      "progresion": { "autonomia": 1, "complejidad": 1, "metalinguistico": 1 },
-      "tipos_tarea": ["oral"],
+      "progresion": {
+        "autonomia": 1,
+        "complejidad": 1,
+        "metalinguistico": 1
+      },
+      "tipos_tarea": [
+        "oral"
+      ],
       "obligatorio": true,
       "prioridad": 1,
       "peso_base": 25,
       "descriptores": {
         "n1": {
           "verbo": "enumera",
-          "texto": "Enumera datos sobre el tema en un bloque único, en el orden en que se le han ocurrido."
+          "texto": "Enumera datos sobre el tema en un bloque único, en el orden en que van surgiendo."
         },
         "n2": {
           "verbo": "ordena",
@@ -125,29 +136,62 @@
             "nombre": "Las tres partes de la exposición",
             "max": 4,
             "bandas": [
-              { "puntos": 4, "condicion": "Se distinguen presentación, desarrollo y cierre, y el cierre recuerda la idea principal" },
-              { "puntos": 3, "condicion": "Se distinguen las tres partes, pero el cierre repite la presentación sin recordar lo explicado" },
-              { "puntos": 2, "condicion": "Se distinguen dos de las tres partes" },
-              { "puntos": 0, "condicion": "La exposición es un bloque único sin partes reconocibles" }
+              {
+                "puntos": 4,
+                "condicion": "Se distinguen presentación, desarrollo y cierre, y el cierre recuerda la idea principal"
+              },
+              {
+                "puntos": 3,
+                "condicion": "Se distinguen las tres partes, pero el cierre repite la presentación sin recordar lo explicado"
+              },
+              {
+                "puntos": 2,
+                "condicion": "Se distinguen dos de las tres partes"
+              },
+              {
+                "puntos": 0,
+                "condicion": "La exposición es un bloque único sin partes reconocibles"
+              }
             ]
           },
           {
             "nombre": "Una idea por bloque",
             "max": 4,
             "bandas": [
-              { "puntos": 4, "condicion": "Cada bloque del desarrollo trata una sola idea" },
-              { "puntos": 3, "condicion": "Un bloque mezcla dos ideas distintas" },
-              { "puntos": 2, "condicion": "Dos o más bloques mezclan ideas distintas" },
-              { "puntos": 0, "condicion": "El desarrollo no está dividido en bloques reconocibles" }
+              {
+                "puntos": 4,
+                "condicion": "Cada bloque del desarrollo trata una sola idea"
+              },
+              {
+                "puntos": 3,
+                "condicion": "Un bloque mezcla dos ideas distintas"
+              },
+              {
+                "puntos": 2,
+                "condicion": "Dos o más bloques mezclan ideas distintas"
+              },
+              {
+                "puntos": 0,
+                "condicion": "El desarrollo no está dividido en bloques reconocibles"
+              }
             ]
           },
           {
             "nombre": "Mantenerse en el tema",
             "max": 2,
             "bandas": [
-              { "puntos": 2, "condicion": "Toda la información responde al tema anunciado al principio" },
-              { "puntos": 1, "condicion": "Incluye 1 dato que se aparta del tema" },
-              { "puntos": 0, "condicion": "Incluye 2 o más datos ajenos al tema" }
+              {
+                "puntos": 2,
+                "condicion": "Toda la información responde al tema anunciado al principio"
+              },
+              {
+                "puntos": 1,
+                "condicion": "Incluye 1 dato que se aparta del tema"
+              },
+              {
+                "puntos": 0,
+                "condicion": "Incluye 2 o más datos ajenos al tema"
+              }
             ]
           }
         ],
@@ -167,14 +211,30 @@
         "competencia_especifica": 3,
         "codigo": "3.1",
         "cita": "Realizar narraciones y exposiciones orales sencillas con diferente grado de planificación sobre temas de interés personal, social y educativo en diferentes soportes.",
-        "perfil_salida": ["CCL1", "CCL3", "CCL5", "CP2", "STEM1", "CD2", "CD3", "CC2", "CE1"]
+        "perfil_salida": [
+          "CCL1",
+          "CCL3",
+          "CCL5",
+          "CP2",
+          "STEM1",
+          "CD2",
+          "CD3",
+          "CC2",
+          "CE1"
+        ]
       },
       "saber_vehiculo": [
         "iniciación a las propiedades textuales: cohesión",
         "producción oral formal"
       ],
-      "progresion": { "autonomia": 1, "complejidad": 1, "metalinguistico": 1 },
-      "tipos_tarea": ["oral"],
+      "progresion": {
+        "autonomia": 1,
+        "complejidad": 1,
+        "metalinguistico": 1
+      },
+      "tipos_tarea": [
+        "oral"
+      ],
       "obligatorio": false,
       "prioridad": 1,
       "peso_base": 20,
@@ -203,29 +263,62 @@
             "nombre": "Variedad de marcadores",
             "max": 4,
             "bandas": [
-              { "puntos": 4, "condicion": "Emplea 3 o más tipos distintos: orden, adición y causa" },
-              { "puntos": 3, "condicion": "Emplea 2 tipos distintos, uno de ellos de orden o de causa" },
-              { "puntos": 2, "condicion": "Emplea marcadores de orden y de adición, siempre los mismos" },
-              { "puntos": 1, "condicion": "Enlaza con y, pero y entonces" },
-              { "puntos": 0, "condicion": "Enlaza las ideas sin ningún marcador" }
+              {
+                "puntos": 4,
+                "condicion": "Emplea 3 o más tipos distintos: orden, adición y causa"
+              },
+              {
+                "puntos": 3,
+                "condicion": "Emplea 2 tipos distintos, uno de ellos de orden o de causa"
+              },
+              {
+                "puntos": 2,
+                "condicion": "Emplea marcadores de orden y de adición, siempre los mismos"
+              },
+              {
+                "puntos": 1,
+                "condicion": "Enlaza con y, pero y entonces"
+              },
+              {
+                "puntos": 0,
+                "condicion": "Enlaza las ideas sin ningún marcador"
+              }
             ]
           },
           {
             "nombre": "Señala el cambio de parte",
             "max": 3,
             "bandas": [
-              { "puntos": 3, "condicion": "Anuncia verbalmente el paso de una parte a otra en las tres transiciones de la exposición" },
-              { "puntos": 2, "condicion": "Anuncia el paso de una parte a otra en 1 o 2 transiciones" },
-              { "puntos": 0, "condicion": "No anuncia ninguna transición; el oyente debe inferir el cambio de parte" }
+              {
+                "puntos": 3,
+                "condicion": "Anuncia verbalmente el paso de una parte a otra en las tres transiciones de la exposición"
+              },
+              {
+                "puntos": 2,
+                "condicion": "Anuncia el paso de una parte a otra en 1 o 2 transiciones"
+              },
+              {
+                "puntos": 0,
+                "condicion": "No anuncia ninguna transición; el oyente debe inferir el cambio de parte"
+              }
             ]
           },
           {
             "nombre": "No repetir la misma palabra",
             "max": 3,
             "bandas": [
-              { "puntos": 3, "condicion": "Sustituye por sinónimo, pronombre o referencia (esto, esta idea) la palabra ya usada" },
-              { "puntos": 2, "condicion": "Sustituye alguna repetición, pero deja 2 o 3 sin sustituir" },
-              { "puntos": 0, "condicion": "Repite el mismo término a lo largo de toda la exposición" }
+              {
+                "puntos": 3,
+                "condicion": "Sustituye por sinónimo, pronombre o referencia (esto, esta idea) la palabra ya usada"
+              },
+              {
+                "puntos": 2,
+                "condicion": "Sustituye alguna repetición, pero deja 2 o 3 sin sustituir"
+              },
+              {
+                "puntos": 0,
+                "condicion": "Repite el mismo término a lo largo de toda la exposición"
+              }
             ]
           }
         ],
@@ -245,21 +338,37 @@
         "competencia_especifica": 3,
         "codigo": "3.1",
         "cita": "Realizar narraciones y exposiciones orales sencillas con diferente grado de planificación sobre temas de interés personal, social y educativo en diferentes soportes.",
-        "perfil_salida": ["CCL1", "CCL3", "CCL5", "CP2", "STEM1", "CD2", "CD3", "CC2", "CE1"]
+        "perfil_salida": [
+          "CCL1",
+          "CCL3",
+          "CCL5",
+          "CP2",
+          "STEM1",
+          "CD2",
+          "CD3",
+          "CC2",
+          "CE1"
+        ]
       },
       "saber_vehiculo": [
         "rasgos discursivos y lingüísticos de la oralidad formal",
         "iniciación en la planificación y búsqueda de información, textualización y revisión"
       ],
-      "progresion": { "autonomia": 1, "complejidad": 1, "metalinguistico": 1 },
-      "tipos_tarea": ["oral"],
+      "progresion": {
+        "autonomia": 1,
+        "complejidad": 1,
+        "metalinguistico": 1
+      },
+      "tipos_tarea": [
+        "oral"
+      ],
       "obligatorio": true,
       "prioridad": 2,
       "peso_base": 20,
       "descriptores": {
         "n1": {
           "verbo": "vocaliza",
-          "texto": "Vocaliza con un volumen tan bajo o un ritmo tan rápido que la clase pierde palabras sueltas, y repite muletillas (esto, eh) en casi todas las frases."
+          "texto": "Vocaliza con un volumen tan bajo o un ritmo tan rápido que la clase pierde palabras sueltas, y emplea las mismas muletillas (esto, eh) en casi todas las frases."
         },
         "n2": {
           "verbo": "vocaliza",
@@ -281,28 +390,58 @@
             "nombre": "Muletillas y titubeos",
             "max": 4,
             "bandas": [
-              { "puntos": 4, "condicion": "0 a 3 muletillas o titubeos en toda la exposición" },
-              { "puntos": 3, "condicion": "De 4 a 6" },
-              { "puntos": 2, "condicion": "De 7 a 10" },
-              { "puntos": 0, "condicion": "11 o más" }
+              {
+                "puntos": 4,
+                "condicion": "0 a 3 muletillas o titubeos en toda la exposición"
+              },
+              {
+                "puntos": 3,
+                "condicion": "De 4 a 6"
+              },
+              {
+                "puntos": 2,
+                "condicion": "De 7 a 10"
+              },
+              {
+                "puntos": 0,
+                "condicion": "11 o más"
+              }
             ]
           },
           {
             "nombre": "Volumen y ritmo comprensibles",
             "max": 4,
             "bandas": [
-              { "puntos": 4, "condicion": "Toda la clase entiende la exposición sin esfuerzo" },
-              { "puntos": 3, "condicion": "Se pierden palabras sueltas en algún momento" },
-              { "puntos": 2, "condicion": "Hay que pedirle que repita alguna parte" },
-              { "puntos": 0, "condicion": "Buena parte de la exposición resulta ininteligible por el volumen o el ritmo" }
+              {
+                "puntos": 4,
+                "condicion": "Toda la clase entiende la exposición sin esfuerzo"
+              },
+              {
+                "puntos": 3,
+                "condicion": "Se pierden palabras sueltas en algún momento"
+              },
+              {
+                "puntos": 2,
+                "condicion": "Hay que pedirle que repita alguna parte"
+              },
+              {
+                "puntos": 0,
+                "condicion": "Buena parte de la exposición resulta ininteligible por el volumen o el ritmo"
+              }
             ]
           },
           {
             "nombre": "Pausas con función",
             "max": 2,
             "bandas": [
-              { "puntos": 2, "condicion": "Hace al menos una pausa para separar ideas, distinta de los silencios de duda" },
-              { "puntos": 0, "condicion": "No hay pausas con función; solo silencios de duda o ninguna pausa" }
+              {
+                "puntos": 2,
+                "condicion": "Hace al menos una pausa para separar ideas, distinta de los silencios de duda"
+              },
+              {
+                "puntos": 0,
+                "condicion": "No hay pausas con función; solo silencios de duda o ninguna pausa"
+              }
             ]
           }
         ],
@@ -322,24 +461,40 @@
         "competencia_especifica": 3,
         "codigo": "3.1",
         "cita": "Realizar narraciones y exposiciones orales sencillas con diferente grado de planificación sobre temas de interés personal, social y educativo en diferentes soportes.",
-        "perfil_salida": ["CCL1", "CCL3", "CCL5", "CP2", "STEM1", "CD2", "CD3", "CC2", "CE1"]
+        "perfil_salida": [
+          "CCL1",
+          "CCL3",
+          "CCL5",
+          "CP2",
+          "STEM1",
+          "CD2",
+          "CD3",
+          "CC2",
+          "CE1"
+        ]
       },
       "saber_vehiculo": [
         "elementos no verbales"
       ],
-      "progresion": { "autonomia": 1, "complejidad": 1, "metalinguistico": 1 },
-      "tipos_tarea": ["oral"],
+      "progresion": {
+        "autonomia": 1,
+        "complejidad": 1,
+        "metalinguistico": 1
+      },
+      "tipos_tarea": [
+        "oral"
+      ],
       "obligatorio": false,
       "prioridad": 2,
       "peso_base": 15,
       "descriptores": {
         "n1": {
           "verbo": "dirige",
-          "texto": "Dirige la mirada casi todo el tiempo a sus notas o a la pantalla, sin mirar al resto de la clase."
+          "texto": "Dirige la mirada casi todo el tiempo a las notas o a la pantalla, sin mirar al resto de la clase."
         },
         "n2": {
           "verbo": "dirige",
-          "texto": "Dirige la mirada al público en algunos momentos de la exposición, aunque vuelve enseguida a sus notas."
+          "texto": "Dirige la mirada al público en algunos momentos de la exposición, aunque vuelve enseguida a las notas."
         },
         "n3": {
           "verbo": "mantiene",
@@ -347,12 +502,12 @@
         },
         "n4": {
           "verbo": "acompana",
-          "texto": "Acompaña la exposición con gestos que refuerzan lo que dice (señala, cuenta con los dedos, indica un tamaño) y mantiene el contacto visual con toda la clase."
+          "texto": "Acompaña la exposición con gestos que refuerzan el contenido (señala, enumera con los dedos, indica un tamaño) y mantiene el contacto visual con toda la clase."
         }
       },
       "matriz_cuantitativa": null,
       "descriptor_cotejo": null,
-      "descriptor_un_punto": "Dirige la mirada al público en algunos momentos de la exposición, aunque vuelve enseguida a sus notas."
+      "descriptor_un_punto": "Dirige la mirada al público en algunos momentos de la exposición, aunque vuelve enseguida a las notas."
     },
     {
       "id": "lcl-b-adecuacion-oral-2eso",
@@ -365,14 +520,30 @@
         "competencia_especifica": 3,
         "codigo": "3.1",
         "cita": "Realizar narraciones y exposiciones orales sencillas con diferente grado de planificación sobre temas de interés personal, social y educativo ajustándose a las convenciones propias de los diversos géneros discursivos, con fluidez, coherencia, cohesión y el registro adecuado, en diferentes soportes y utilizando de manera eficaz recursos verbales y no verbales.",
-        "perfil_salida": ["CCL1", "CCL3", "CCL5", "CP2", "STEM1", "CD2", "CD3", "CC2", "CE1"]
+        "perfil_salida": [
+          "CCL1",
+          "CCL3",
+          "CCL5",
+          "CP2",
+          "STEM1",
+          "CD2",
+          "CD3",
+          "CC2",
+          "CE1"
+        ]
       },
       "saber_vehiculo": [
         "producción oral formal: adecuación a la audiencia y al tiempo de exposición",
         "géneros discursivos propios del ámbito educativo"
       ],
-      "progresion": { "autonomia": 2, "complejidad": 2, "metalinguistico": 2 },
-      "tipos_tarea": ["oral"],
+      "progresion": {
+        "autonomia": 2,
+        "complejidad": 2,
+        "metalinguistico": 2
+      },
+      "tipos_tarea": [
+        "oral"
+      ],
       "obligatorio": false,
       "prioridad": 1,
       "peso_base": 20,
@@ -383,7 +554,7 @@
         },
         "n2": {
           "verbo": "ajusta",
-          "texto": "Ajusta el tono al modelo de exposición trabajado en clase, aunque mezcla alguna expresión coloquial con el vocabulario del tema."
+          "texto": "Ajusta el tono al modelo de exposición trabajado en clase, con alguna expresión coloquial aislada entre el vocabulario del tema."
         },
         "n3": {
           "verbo": "emplea",
@@ -409,14 +580,30 @@
         "competencia_especifica": 3,
         "codigo": "3.1",
         "cita": "Realizar narraciones y exposiciones orales sencillas con diferente grado de planificación sobre temas de interés personal, social y educativo ajustándose a las convenciones propias de los diversos géneros discursivos, con fluidez, coherencia, cohesión y el registro adecuado, en diferentes soportes y utilizando de manera eficaz recursos verbales y no verbales.",
-        "perfil_salida": ["CCL1", "CCL3", "CCL5", "CP2", "STEM1", "CD2", "CD3", "CC2", "CE1"]
+        "perfil_salida": [
+          "CCL1",
+          "CCL3",
+          "CCL5",
+          "CP2",
+          "STEM1",
+          "CD2",
+          "CD3",
+          "CC2",
+          "CE1"
+        ]
       },
       "saber_vehiculo": [
         "producción oral formal: planificación y búsqueda de información, textualización y revisión",
         "adecuación a la audiencia y al tiempo de exposición"
       ],
-      "progresion": { "autonomia": 2, "complejidad": 2, "metalinguistico": 2 },
-      "tipos_tarea": ["oral"],
+      "progresion": {
+        "autonomia": 2,
+        "complejidad": 2,
+        "metalinguistico": 2
+      },
+      "tipos_tarea": [
+        "oral"
+      ],
       "obligatorio": true,
       "prioridad": 1,
       "peso_base": 25,
@@ -427,7 +614,7 @@
         },
         "n2": {
           "verbo": "estructura",
-          "texto": "Estructura la exposición en presentación, desarrollo y cierre por su cuenta, con un bloque dedicado a cada parte."
+          "texto": "Estructura la exposición en presentación, desarrollo y cierre por cuenta propia, con un bloque dedicado a cada parte."
         },
         "n3": {
           "verbo": "estructura",
@@ -445,44 +632,83 @@
             "nombre": "Las tres partes de la exposición",
             "max": 3,
             "bandas": [
-              { "puntos": 3, "condicion": "Se distinguen presentación, desarrollo y cierre, y el cierre recuerda la idea principal" },
-              { "puntos": 2, "condicion": "Se distinguen las tres partes, pero el cierre repite la presentación sin recordar lo explicado" },
-              { "puntos": 1, "condicion": "Se distinguen dos de las tres partes" },
-              { "puntos": 0, "condicion": "La exposición es un bloque único sin partes reconocibles" }
+              {
+                "puntos": 3,
+                "condicion": "Se distinguen presentación, desarrollo y cierre, y el cierre recuerda la idea principal"
+              },
+              {
+                "puntos": 2,
+                "condicion": "Se distinguen las tres partes, pero el cierre repite la presentación sin recordar lo explicado"
+              },
+              {
+                "puntos": 1,
+                "condicion": "Se distinguen dos de las tres partes"
+              },
+              {
+                "puntos": 0,
+                "condicion": "La exposición es un bloque único sin partes reconocibles"
+              }
             ]
           },
           {
             "nombre": "Una idea por bloque",
             "max": 3,
             "bandas": [
-              { "puntos": 3, "condicion": "Cada bloque del desarrollo trata una sola idea" },
-              { "puntos": 2, "condicion": "Un bloque mezcla dos ideas distintas" },
-              { "puntos": 0, "condicion": "Dos o más bloques mezclan ideas distintas, o el desarrollo no está dividido en bloques" }
+              {
+                "puntos": 3,
+                "condicion": "Cada bloque del desarrollo trata una sola idea"
+              },
+              {
+                "puntos": 2,
+                "condicion": "Un bloque mezcla dos ideas distintas"
+              },
+              {
+                "puntos": 0,
+                "condicion": "Dos o más bloques mezclan ideas distintas, o el desarrollo no está dividido en bloques"
+              }
             ]
           },
           {
             "nombre": "Ajuste al tiempo asignado",
             "max": 2,
             "bandas": [
-              { "puntos": 2, "condicion": "Se ajusta al tiempo asignado sin que el profesor tenga que avisarle" },
-              { "puntos": 1, "condicion": "Se ajusta al tiempo asignado solo después de un aviso del profesor" },
-              { "puntos": 0, "condicion": "Excede o se queda corto del tiempo asignado en más de 2 minutos, incluso después de un aviso" }
+              {
+                "puntos": 2,
+                "condicion": "Se ajusta al tiempo asignado sin que el profesor tenga que avisarle"
+              },
+              {
+                "puntos": 1,
+                "condicion": "Se ajusta al tiempo asignado solo después de un aviso del profesor"
+              },
+              {
+                "puntos": 0,
+                "condicion": "Excede o se queda corto del tiempo asignado en más de 2 minutos, incluso después de un aviso"
+              }
             ]
           },
           {
             "nombre": "Mantenerse en el tema",
             "max": 2,
             "bandas": [
-              { "puntos": 2, "condicion": "Toda la información responde al tema anunciado al principio" },
-              { "puntos": 1, "condicion": "Incluye 1 dato que se aparta del tema" },
-              { "puntos": 0, "condicion": "Incluye 2 o más datos ajenos al tema" }
+              {
+                "puntos": 2,
+                "condicion": "Toda la información responde al tema anunciado al principio"
+              },
+              {
+                "puntos": 1,
+                "condicion": "Incluye 1 dato que se aparta del tema"
+              },
+              {
+                "puntos": 0,
+                "condicion": "Incluye 2 o más datos ajenos al tema"
+              }
             ]
           }
         ],
         "penalizaciones": []
       },
       "descriptor_cotejo": null,
-      "descriptor_un_punto": "Estructura la exposición en presentación, desarrollo y cierre por su cuenta, con un bloque dedicado a cada parte."
+      "descriptor_un_punto": "Estructura la exposición en presentación, desarrollo y cierre por cuenta propia, con un bloque dedicado a cada parte."
     },
     {
       "id": "lcl-b-cohesion-oral-2eso",
@@ -495,14 +721,30 @@
         "competencia_especifica": 3,
         "codigo": "3.1",
         "cita": "Realizar narraciones y exposiciones orales sencillas con diferente grado de planificación sobre temas de interés personal, social y educativo ajustándose a las convenciones propias de los diversos géneros discursivos, con fluidez, coherencia, cohesión y el registro adecuado, en diferentes soportes y utilizando de manera eficaz recursos verbales y no verbales.",
-        "perfil_salida": ["CCL1", "CCL3", "CCL5", "CP2", "STEM1", "CD2", "CD3", "CC2", "CE1"]
+        "perfil_salida": [
+          "CCL1",
+          "CCL3",
+          "CCL5",
+          "CP2",
+          "STEM1",
+          "CD2",
+          "CD3",
+          "CC2",
+          "CE1"
+        ]
       },
       "saber_vehiculo": [
         "coherencia y cohesión",
         "producción oral formal"
       ],
-      "progresion": { "autonomia": 2, "complejidad": 2, "metalinguistico": 2 },
-      "tipos_tarea": ["oral"],
+      "progresion": {
+        "autonomia": 2,
+        "complejidad": 2,
+        "metalinguistico": 2
+      },
+      "tipos_tarea": [
+        "oral"
+      ],
       "obligatorio": false,
       "prioridad": 1,
       "peso_base": 20,
@@ -531,29 +773,62 @@
             "nombre": "Variedad de marcadores",
             "max": 4,
             "bandas": [
-              { "puntos": 4, "condicion": "Emplea 3 o más tipos distintos: orden, adición y causa" },
-              { "puntos": 3, "condicion": "Emplea 2 tipos distintos, uno de ellos de orden o de causa" },
-              { "puntos": 2, "condicion": "Emplea marcadores de orden y de adición, siempre los mismos" },
-              { "puntos": 1, "condicion": "Enlaza con y, pero y entonces" },
-              { "puntos": 0, "condicion": "Enlaza las ideas sin ningún marcador" }
+              {
+                "puntos": 4,
+                "condicion": "Emplea 3 o más tipos distintos: orden, adición y causa"
+              },
+              {
+                "puntos": 3,
+                "condicion": "Emplea 2 tipos distintos, uno de ellos de orden o de causa"
+              },
+              {
+                "puntos": 2,
+                "condicion": "Emplea marcadores de orden y de adición, siempre los mismos"
+              },
+              {
+                "puntos": 1,
+                "condicion": "Enlaza con y, pero y entonces"
+              },
+              {
+                "puntos": 0,
+                "condicion": "Enlaza las ideas sin ningún marcador"
+              }
             ]
           },
           {
             "nombre": "Señala el cambio de parte",
             "max": 3,
             "bandas": [
-              { "puntos": 3, "condicion": "Anuncia verbalmente el paso de una parte a otra en las tres transiciones de la exposición" },
-              { "puntos": 2, "condicion": "Anuncia el paso de una parte a otra en 1 o 2 transiciones" },
-              { "puntos": 0, "condicion": "No anuncia ninguna transición; el oyente debe inferir el cambio de parte" }
+              {
+                "puntos": 3,
+                "condicion": "Anuncia verbalmente el paso de una parte a otra en las tres transiciones de la exposición"
+              },
+              {
+                "puntos": 2,
+                "condicion": "Anuncia el paso de una parte a otra en 1 o 2 transiciones"
+              },
+              {
+                "puntos": 0,
+                "condicion": "No anuncia ninguna transición; el oyente debe inferir el cambio de parte"
+              }
             ]
           },
           {
             "nombre": "No repetir la misma palabra",
             "max": 3,
             "bandas": [
-              { "puntos": 3, "condicion": "Sustituye por sinónimo, hiperónimo o referencia (esto, esta idea) la palabra ya usada" },
-              { "puntos": 2, "condicion": "Sustituye alguna repetición, pero deja 2 o 3 sin sustituir" },
-              { "puntos": 0, "condicion": "Repite el mismo término a lo largo de toda la exposición" }
+              {
+                "puntos": 3,
+                "condicion": "Sustituye por sinónimo, hiperónimo o referencia (esto, esta idea) la palabra ya usada"
+              },
+              {
+                "puntos": 2,
+                "condicion": "Sustituye alguna repetición, pero deja 2 o 3 sin sustituir"
+              },
+              {
+                "puntos": 0,
+                "condicion": "Repite el mismo término a lo largo de toda la exposición"
+              }
             ]
           }
         ],
@@ -573,21 +848,37 @@
         "competencia_especifica": 3,
         "codigo": "3.1",
         "cita": "Realizar narraciones y exposiciones orales sencillas con diferente grado de planificación sobre temas de interés personal, social y educativo ajustándose a las convenciones propias de los diversos géneros discursivos, con fluidez, coherencia, cohesión y el registro adecuado, en diferentes soportes y utilizando de manera eficaz recursos verbales y no verbales.",
-        "perfil_salida": ["CCL1", "CCL3", "CCL5", "CP2", "STEM1", "CD2", "CD3", "CC2", "CE1"]
+        "perfil_salida": [
+          "CCL1",
+          "CCL3",
+          "CCL5",
+          "CP2",
+          "STEM1",
+          "CD2",
+          "CD3",
+          "CC2",
+          "CE1"
+        ]
       },
       "saber_vehiculo": [
         "rasgos discursivos y lingüísticos de la oralidad formal",
         "producción oral formal: planificación y revisión"
       ],
-      "progresion": { "autonomia": 2, "complejidad": 2, "metalinguistico": 2 },
-      "tipos_tarea": ["oral"],
+      "progresion": {
+        "autonomia": 2,
+        "complejidad": 2,
+        "metalinguistico": 2
+      },
+      "tipos_tarea": [
+        "oral"
+      ],
       "obligatorio": true,
       "prioridad": 2,
       "peso_base": 20,
       "descriptores": {
         "n1": {
           "verbo": "vocaliza",
-          "texto": "Vocaliza con un volumen o un ritmo que dificulta seguir la exposición en algún momento, y repite muletillas con frecuencia."
+          "texto": "Vocaliza con un volumen o un ritmo que dificulta seguir la exposición en algún momento, y emplea las mismas muletillas a lo largo de toda la exposición."
         },
         "n2": {
           "verbo": "vocaliza",
@@ -609,28 +900,58 @@
             "nombre": "Muletillas y titubeos",
             "max": 4,
             "bandas": [
-              { "puntos": 4, "condicion": "0 a 3 muletillas o titubeos en toda la exposición" },
-              { "puntos": 3, "condicion": "De 4 a 6" },
-              { "puntos": 2, "condicion": "De 7 a 10" },
-              { "puntos": 0, "condicion": "11 o más" }
+              {
+                "puntos": 4,
+                "condicion": "0 a 3 muletillas o titubeos en toda la exposición"
+              },
+              {
+                "puntos": 3,
+                "condicion": "De 4 a 6"
+              },
+              {
+                "puntos": 2,
+                "condicion": "De 7 a 10"
+              },
+              {
+                "puntos": 0,
+                "condicion": "11 o más"
+              }
             ]
           },
           {
             "nombre": "Volumen y ritmo comprensibles",
             "max": 4,
             "bandas": [
-              { "puntos": 4, "condicion": "Toda la clase entiende la exposición sin esfuerzo" },
-              { "puntos": 3, "condicion": "Se pierden palabras sueltas en algún momento" },
-              { "puntos": 2, "condicion": "Hay que pedirle que repita alguna parte" },
-              { "puntos": 0, "condicion": "Buena parte de la exposición resulta ininteligible por el volumen o el ritmo" }
+              {
+                "puntos": 4,
+                "condicion": "Toda la clase entiende la exposición sin esfuerzo"
+              },
+              {
+                "puntos": 3,
+                "condicion": "Se pierden palabras sueltas en algún momento"
+              },
+              {
+                "puntos": 2,
+                "condicion": "Hay que pedirle que repita alguna parte"
+              },
+              {
+                "puntos": 0,
+                "condicion": "Buena parte de la exposición resulta ininteligible por el volumen o el ritmo"
+              }
             ]
           },
           {
             "nombre": "Pausas con función",
             "max": 2,
             "bandas": [
-              { "puntos": 2, "condicion": "Hace al menos una pausa para separar ideas, distinta de los silencios de duda" },
-              { "puntos": 0, "condicion": "No hay pausas con función; solo silencios de duda o ninguna pausa" }
+              {
+                "puntos": 2,
+                "condicion": "Hace al menos una pausa para separar ideas, distinta de los silencios de duda"
+              },
+              {
+                "puntos": 0,
+                "condicion": "No hay pausas con función; solo silencios de duda o ninguna pausa"
+              }
             ]
           }
         ],
@@ -650,20 +971,36 @@
         "competencia_especifica": 3,
         "codigo": "3.1",
         "cita": "Realizar narraciones y exposiciones orales sencillas con diferente grado de planificación sobre temas de interés personal, social y educativo ajustándose a las convenciones propias de los diversos géneros discursivos, con fluidez, coherencia, cohesión y el registro adecuado, en diferentes soportes y utilizando de manera eficaz recursos verbales y no verbales.",
-        "perfil_salida": ["CCL1", "CCL3", "CCL5", "CP2", "STEM1", "CD2", "CD3", "CC2", "CE1"]
+        "perfil_salida": [
+          "CCL1",
+          "CCL3",
+          "CCL5",
+          "CP2",
+          "STEM1",
+          "CD2",
+          "CD3",
+          "CC2",
+          "CE1"
+        ]
       },
       "saber_vehiculo": [
         "elementos no verbales"
       ],
-      "progresion": { "autonomia": 2, "complejidad": 2, "metalinguistico": 2 },
-      "tipos_tarea": ["oral"],
+      "progresion": {
+        "autonomia": 2,
+        "complejidad": 2,
+        "metalinguistico": 2
+      },
+      "tipos_tarea": [
+        "oral"
+      ],
       "obligatorio": false,
       "prioridad": 2,
       "peso_base": 15,
       "descriptores": {
         "n1": {
           "verbo": "dirige",
-          "texto": "Dirige la mirada a sus notas o a la pantalla la mayor parte del tiempo, con una postura tensa."
+          "texto": "Dirige la mirada a las notas o a la pantalla la mayor parte del tiempo, con una postura tensa."
         },
         "n2": {
           "verbo": "dirige",
@@ -693,14 +1030,30 @@
         "competencia_especifica": 3,
         "codigo": "3.1",
         "cita": "Realizar exposiciones y argumentaciones orales de cierta extensión sobre temas de interés personal, social, educativo y profesional ajustándose a las convenciones propias de los diversos géneros discursivos, con fluidez, coherencia, cohesión y el registro adecuado en diferentes soportes, utilizando de manera eficaz recursos verbales y no verbales.",
-        "perfil_salida": ["CCL1", "CCL3", "CCL5", "CP2", "STEM1", "CD2", "CD3", "CC2", "CE1"]
+        "perfil_salida": [
+          "CCL1",
+          "CCL3",
+          "CCL5",
+          "CP2",
+          "STEM1",
+          "CD2",
+          "CD3",
+          "CC2",
+          "CE1"
+        ]
       },
       "saber_vehiculo": [
         "producción oral formal: análisis, planificación y búsqueda de información",
         "géneros discursivos propios del ámbito educativo"
       ],
-      "progresion": { "autonomia": 2, "complejidad": 2, "metalinguistico": 2 },
-      "tipos_tarea": ["oral"],
+      "progresion": {
+        "autonomia": 2,
+        "complejidad": 2,
+        "metalinguistico": 2
+      },
+      "tipos_tarea": [
+        "oral"
+      ],
       "obligatorio": false,
       "prioridad": 1,
       "peso_base": 20,
@@ -737,14 +1090,30 @@
         "competencia_especifica": 3,
         "codigo": "3.1",
         "cita": "Realizar exposiciones y argumentaciones orales de cierta extensión sobre temas de interés personal, social, educativo y profesional ajustándose a las convenciones propias de los diversos géneros discursivos, con fluidez, coherencia, cohesión y el registro adecuado en diferentes soportes, utilizando de manera eficaz recursos verbales y no verbales.",
-        "perfil_salida": ["CCL1", "CCL3", "CCL5", "CP2", "STEM1", "CD2", "CD3", "CC2", "CE1"]
+        "perfil_salida": [
+          "CCL1",
+          "CCL3",
+          "CCL5",
+          "CP2",
+          "STEM1",
+          "CD2",
+          "CD3",
+          "CC2",
+          "CE1"
+        ]
       },
       "saber_vehiculo": [
         "producción oral formal: análisis, planificación y búsqueda de información, textualización y revisión",
         "adecuación a la audiencia y al tiempo de exposición"
       ],
-      "progresion": { "autonomia": 2, "complejidad": 2, "metalinguistico": 2 },
-      "tipos_tarea": ["oral"],
+      "progresion": {
+        "autonomia": 2,
+        "complejidad": 2,
+        "metalinguistico": 2
+      },
+      "tipos_tarea": [
+        "oral"
+      ],
       "obligatorio": true,
       "prioridad": 1,
       "peso_base": 25,
@@ -773,37 +1142,76 @@
             "nombre": "Las tres partes de la exposición",
             "max": 3,
             "bandas": [
-              { "puntos": 3, "condicion": "Se distinguen presentación, desarrollo y cierre, y el cierre recuerda la idea principal" },
-              { "puntos": 2, "condicion": "Se distinguen las tres partes, pero el cierre repite la presentación sin recordar lo explicado" },
-              { "puntos": 1, "condicion": "Se distinguen dos de las tres partes" },
-              { "puntos": 0, "condicion": "La exposición es un bloque único sin partes reconocibles" }
+              {
+                "puntos": 3,
+                "condicion": "Se distinguen presentación, desarrollo y cierre, y el cierre recuerda la idea principal"
+              },
+              {
+                "puntos": 2,
+                "condicion": "Se distinguen las tres partes, pero el cierre repite la presentación sin recordar lo explicado"
+              },
+              {
+                "puntos": 1,
+                "condicion": "Se distinguen dos de las tres partes"
+              },
+              {
+                "puntos": 0,
+                "condicion": "La exposición es un bloque único sin partes reconocibles"
+              }
             ]
           },
           {
             "nombre": "Un bloque distingue explicación de valoración",
             "max": 3,
             "bandas": [
-              { "puntos": 3, "condicion": "Cada bloque trata una idea y se distingue si es explicación del tema o valoración personal" },
-              { "puntos": 2, "condicion": "Un bloque mezcla explicación y valoración sin distinguirlas" },
-              { "puntos": 0, "condicion": "Dos o más bloques mezclan explicación y valoración, o no hay valoración personal reconocible" }
+              {
+                "puntos": 3,
+                "condicion": "Cada bloque trata una idea y se distingue si es explicación del tema o valoración personal"
+              },
+              {
+                "puntos": 2,
+                "condicion": "Un bloque mezcla explicación y valoración sin distinguirlas"
+              },
+              {
+                "puntos": 0,
+                "condicion": "Dos o más bloques mezclan explicación y valoración, o no hay valoración personal reconocible"
+              }
             ]
           },
           {
             "nombre": "Ajuste al tiempo asignado",
             "max": 2,
             "bandas": [
-              { "puntos": 2, "condicion": "Se ajusta al tiempo asignado sin ayuda del profesor" },
-              { "puntos": 1, "condicion": "Se ajusta al tiempo asignado solo después de un aviso del profesor" },
-              { "puntos": 0, "condicion": "Excede o se queda corto del tiempo asignado en más de 2 minutos, incluso después de un aviso" }
+              {
+                "puntos": 2,
+                "condicion": "Se ajusta al tiempo asignado sin ayuda del profesor"
+              },
+              {
+                "puntos": 1,
+                "condicion": "Se ajusta al tiempo asignado solo después de un aviso del profesor"
+              },
+              {
+                "puntos": 0,
+                "condicion": "Excede o se queda corto del tiempo asignado en más de 2 minutos, incluso después de un aviso"
+              }
             ]
           },
           {
             "nombre": "Mantenerse en el tema",
             "max": 2,
             "bandas": [
-              { "puntos": 2, "condicion": "Toda la información responde al tema anunciado al principio" },
-              { "puntos": 1, "condicion": "Incluye 1 dato que se aparta del tema" },
-              { "puntos": 0, "condicion": "Incluye 2 o más datos ajenos al tema" }
+              {
+                "puntos": 2,
+                "condicion": "Toda la información responde al tema anunciado al principio"
+              },
+              {
+                "puntos": 1,
+                "condicion": "Incluye 1 dato que se aparta del tema"
+              },
+              {
+                "puntos": 0,
+                "condicion": "Incluye 2 o más datos ajenos al tema"
+              }
             ]
           }
         ],
@@ -823,14 +1231,30 @@
         "competencia_especifica": 3,
         "codigo": "3.1",
         "cita": "Realizar exposiciones y argumentaciones orales de cierta extensión sobre temas de interés personal, social, educativo y profesional ajustándose a las convenciones propias de los diversos géneros discursivos, con fluidez, coherencia, cohesión y el registro adecuado en diferentes soportes, utilizando de manera eficaz recursos verbales y no verbales.",
-        "perfil_salida": ["CCL1", "CCL3", "CCL5", "CP2", "STEM1", "CD2", "CD3", "CC2", "CE1"]
+        "perfil_salida": [
+          "CCL1",
+          "CCL3",
+          "CCL5",
+          "CP2",
+          "STEM1",
+          "CD2",
+          "CD3",
+          "CC2",
+          "CE1"
+        ]
       },
       "saber_vehiculo": [
         "recursos lingüísticos para mostrar la implicación del emisor: formas de deixis y modalización",
         "producción oral formal"
       ],
-      "progresion": { "autonomia": 2, "complejidad": 2, "metalinguistico": 2 },
-      "tipos_tarea": ["oral"],
+      "progresion": {
+        "autonomia": 2,
+        "complejidad": 2,
+        "metalinguistico": 2
+      },
+      "tipos_tarea": [
+        "oral"
+      ],
       "obligatorio": false,
       "prioridad": 1,
       "peso_base": 20,
@@ -859,29 +1283,62 @@
             "nombre": "Variedad de marcadores",
             "max": 4,
             "bandas": [
-              { "puntos": 4, "condicion": "Emplea 3 o más tipos distintos, incluido algún marcador de opinión (a mi parecer, sin duda)" },
-              { "puntos": 3, "condicion": "Emplea 2 tipos distintos, uno de ellos de orden o de causa" },
-              { "puntos": 2, "condicion": "Emplea marcadores de orden y de adición, siempre los mismos" },
-              { "puntos": 1, "condicion": "Enlaza con y, pero y entonces" },
-              { "puntos": 0, "condicion": "Enlaza las ideas sin ningún marcador" }
+              {
+                "puntos": 4,
+                "condicion": "Emplea 3 o más tipos distintos, incluido algún marcador de opinión (a mi parecer, sin duda)"
+              },
+              {
+                "puntos": 3,
+                "condicion": "Emplea 2 tipos distintos, uno de ellos de orden o de causa"
+              },
+              {
+                "puntos": 2,
+                "condicion": "Emplea marcadores de orden y de adición, siempre los mismos"
+              },
+              {
+                "puntos": 1,
+                "condicion": "Enlaza con y, pero y entonces"
+              },
+              {
+                "puntos": 0,
+                "condicion": "Enlaza las ideas sin ningún marcador"
+              }
             ]
           },
           {
             "nombre": "Señala el cambio de parte",
             "max": 3,
             "bandas": [
-              { "puntos": 3, "condicion": "Anuncia verbalmente el paso de una parte a otra en las tres transiciones de la exposición" },
-              { "puntos": 2, "condicion": "Anuncia el paso de una parte a otra en 1 o 2 transiciones" },
-              { "puntos": 0, "condicion": "No anuncia ninguna transición; el oyente debe inferir el cambio de parte" }
+              {
+                "puntos": 3,
+                "condicion": "Anuncia verbalmente el paso de una parte a otra en las tres transiciones de la exposición"
+              },
+              {
+                "puntos": 2,
+                "condicion": "Anuncia el paso de una parte a otra en 1 o 2 transiciones"
+              },
+              {
+                "puntos": 0,
+                "condicion": "No anuncia ninguna transición; el oyente debe inferir el cambio de parte"
+              }
             ]
           },
           {
             "nombre": "No repetir la misma palabra",
             "max": 3,
             "bandas": [
-              { "puntos": 3, "condicion": "Sustituye por sinónimo o referencia la palabra ya usada en el bloque anterior" },
-              { "puntos": 2, "condicion": "Sustituye alguna repetición, pero deja 2 o 3 sin sustituir" },
-              { "puntos": 0, "condicion": "Repite el mismo término a lo largo de toda la exposición" }
+              {
+                "puntos": 3,
+                "condicion": "Sustituye por sinónimo o referencia la palabra ya usada en el bloque anterior"
+              },
+              {
+                "puntos": 2,
+                "condicion": "Sustituye alguna repetición, pero deja 2 o 3 sin sustituir"
+              },
+              {
+                "puntos": 0,
+                "condicion": "Repite el mismo término a lo largo de toda la exposición"
+              }
             ]
           }
         ],
@@ -901,21 +1358,37 @@
         "competencia_especifica": 3,
         "codigo": "3.1",
         "cita": "Realizar exposiciones y argumentaciones orales de cierta extensión sobre temas de interés personal, social, educativo y profesional ajustándose a las convenciones propias de los diversos géneros discursivos, con fluidez, coherencia, cohesión y el registro adecuado en diferentes soportes, utilizando de manera eficaz recursos verbales y no verbales.",
-        "perfil_salida": ["CCL1", "CCL3", "CCL5", "CP2", "STEM1", "CD2", "CD3", "CC2", "CE1"]
+        "perfil_salida": [
+          "CCL1",
+          "CCL3",
+          "CCL5",
+          "CP2",
+          "STEM1",
+          "CD2",
+          "CD3",
+          "CC2",
+          "CE1"
+        ]
       },
       "saber_vehiculo": [
         "rasgos discursivos y lingüísticos de la oralidad formal",
         "producción oral formal: análisis, planificación y revisión"
       ],
-      "progresion": { "autonomia": 2, "complejidad": 2, "metalinguistico": 2 },
-      "tipos_tarea": ["oral"],
+      "progresion": {
+        "autonomia": 2,
+        "complejidad": 2,
+        "metalinguistico": 2
+      },
+      "tipos_tarea": [
+        "oral"
+      ],
       "obligatorio": true,
       "prioridad": 2,
       "peso_base": 20,
       "descriptores": {
         "n1": {
           "verbo": "vocaliza",
-          "texto": "Vocaliza con un volumen o un ritmo que dificulta seguir la exposición en varios momentos, y repite muletillas al pasar de la explicación a la valoración personal."
+          "texto": "Vocaliza con un volumen o un ritmo que dificulta seguir la exposición en varios momentos, y emplea las mismas muletillas al pasar de la explicación a la valoración personal."
         },
         "n2": {
           "verbo": "vocaliza",
@@ -937,28 +1410,58 @@
             "nombre": "Muletillas y titubeos",
             "max": 4,
             "bandas": [
-              { "puntos": 4, "condicion": "0 a 3 muletillas o titubeos en toda la exposición" },
-              { "puntos": 3, "condicion": "De 4 a 6" },
-              { "puntos": 2, "condicion": "De 7 a 10" },
-              { "puntos": 0, "condicion": "11 o más" }
+              {
+                "puntos": 4,
+                "condicion": "0 a 3 muletillas o titubeos en toda la exposición"
+              },
+              {
+                "puntos": 3,
+                "condicion": "De 4 a 6"
+              },
+              {
+                "puntos": 2,
+                "condicion": "De 7 a 10"
+              },
+              {
+                "puntos": 0,
+                "condicion": "11 o más"
+              }
             ]
           },
           {
             "nombre": "Volumen y ritmo comprensibles",
             "max": 4,
             "bandas": [
-              { "puntos": 4, "condicion": "Toda la clase entiende la exposición sin esfuerzo" },
-              { "puntos": 3, "condicion": "Se pierden palabras sueltas en algún momento" },
-              { "puntos": 2, "condicion": "Hay que pedirle que repita alguna parte" },
-              { "puntos": 0, "condicion": "Buena parte de la exposición resulta ininteligible por el volumen o el ritmo" }
+              {
+                "puntos": 4,
+                "condicion": "Toda la clase entiende la exposición sin esfuerzo"
+              },
+              {
+                "puntos": 3,
+                "condicion": "Se pierden palabras sueltas en algún momento"
+              },
+              {
+                "puntos": 2,
+                "condicion": "Hay que pedirle que repita alguna parte"
+              },
+              {
+                "puntos": 0,
+                "condicion": "Buena parte de la exposición resulta ininteligible por el volumen o el ritmo"
+              }
             ]
           },
           {
             "nombre": "Pausas con función",
             "max": 2,
             "bandas": [
-              { "puntos": 2, "condicion": "Hace al menos una pausa para separar la explicación de la valoración personal" },
-              { "puntos": 0, "condicion": "No hay pausas con función; solo silencios de duda o ninguna pausa" }
+              {
+                "puntos": 2,
+                "condicion": "Hace al menos una pausa para separar la explicación de la valoración personal"
+              },
+              {
+                "puntos": 0,
+                "condicion": "No hay pausas con función; solo silencios de duda o ninguna pausa"
+              }
             ]
           }
         ],
@@ -978,20 +1481,36 @@
         "competencia_especifica": 3,
         "codigo": "3.1",
         "cita": "Realizar exposiciones y argumentaciones orales de cierta extensión sobre temas de interés personal, social, educativo y profesional ajustándose a las convenciones propias de los diversos géneros discursivos, con fluidez, coherencia, cohesión y el registro adecuado en diferentes soportes, utilizando de manera eficaz recursos verbales y no verbales.",
-        "perfil_salida": ["CCL1", "CCL3", "CCL5", "CP2", "STEM1", "CD2", "CD3", "CC2", "CE1"]
+        "perfil_salida": [
+          "CCL1",
+          "CCL3",
+          "CCL5",
+          "CP2",
+          "STEM1",
+          "CD2",
+          "CD3",
+          "CC2",
+          "CE1"
+        ]
       },
       "saber_vehiculo": [
         "elementos no verbales"
       ],
-      "progresion": { "autonomia": 2, "complejidad": 2, "metalinguistico": 2 },
-      "tipos_tarea": ["oral"],
+      "progresion": {
+        "autonomia": 2,
+        "complejidad": 2,
+        "metalinguistico": 2
+      },
+      "tipos_tarea": [
+        "oral"
+      ],
       "obligatorio": false,
       "prioridad": 2,
       "peso_base": 15,
       "descriptores": {
         "n1": {
           "verbo": "dirige",
-          "texto": "Dirige la mirada a sus notas o a la pantalla la mayor parte de la exposición, con gestos que no acompañan lo que dice."
+          "texto": "Dirige la mirada a las notas o a la pantalla la mayor parte de la exposición, con gestos que no acompañan el contenido."
         },
         "n2": {
           "verbo": "dirige",
@@ -1021,14 +1540,30 @@
         "competencia_especifica": 3,
         "codigo": "3.1",
         "cita": "Realizar exposiciones y argumentaciones orales de cierta extensión y complejidad con diferente grado de planificación sobre temas de interés personal, social, educativo y profesional ajustándose a las convenciones propias de los diversos géneros discursivos, con fluidez, coherencia, cohesión y el registro adecuado en diferentes soportes, utilizando de manera eficaz recursos verbales y no verbales.",
-        "perfil_salida": ["CCL1", "CCL3", "CCL5", "CP2", "STEM1", "CD2", "CD3", "CC2", "CE1"]
+        "perfil_salida": [
+          "CCL1",
+          "CCL3",
+          "CCL5",
+          "CP2",
+          "STEM1",
+          "CD2",
+          "CD3",
+          "CC2",
+          "CE1"
+        ]
       },
       "saber_vehiculo": [
         "géneros discursivos propios del ámbito educativo y profesional",
         "desarrollo de secuencias textuales básicas, con especial atención a las expositivas y argumentativas"
       ],
-      "progresion": { "autonomia": 3, "complejidad": 3, "metalinguistico": 3 },
-      "tipos_tarea": ["oral"],
+      "progresion": {
+        "autonomia": 3,
+        "complejidad": 3,
+        "metalinguistico": 3
+      },
+      "tipos_tarea": [
+        "oral"
+      ],
       "obligatorio": false,
       "prioridad": 1,
       "peso_base": 20,
@@ -1039,7 +1574,7 @@
         },
         "n2": {
           "verbo": "ajusta",
-          "texto": "Ajusta el registro al género académico y mantiene la tercera persona, aunque mezcla algún término coloquial en el léxico."
+          "texto": "Ajusta el registro al género académico y mantiene la tercera persona, con algún término coloquial aislado en el léxico."
         },
         "n3": {
           "verbo": "mantiene",
@@ -1047,7 +1582,7 @@
         },
         "n4": {
           "verbo": "adapta",
-          "texto": "Adapta el grado de formalidad y los ejemplos al conocimiento previo que atribuye al público, sin perder el rigor del tema."
+          "texto": "Adapta el grado de formalidad y los ejemplos al conocimiento previo del público, sin perder el rigor del tema."
         }
       },
       "matriz_cuantitativa": null,
@@ -1065,21 +1600,37 @@
         "competencia_especifica": 3,
         "codigo": "3.1",
         "cita": "Realizar exposiciones y argumentaciones orales de cierta extensión y complejidad con diferente grado de planificación sobre temas de interés personal, social, educativo y profesional ajustándose a las convenciones propias de los diversos géneros discursivos, con fluidez, coherencia, cohesión y el registro adecuado en diferentes soportes, utilizando de manera eficaz recursos verbales y no verbales.",
-        "perfil_salida": ["CCL1", "CCL3", "CCL5", "CP2", "STEM1", "CD2", "CD3", "CC2", "CE1"]
+        "perfil_salida": [
+          "CCL1",
+          "CCL3",
+          "CCL5",
+          "CP2",
+          "STEM1",
+          "CD2",
+          "CD3",
+          "CC2",
+          "CE1"
+        ]
       },
       "saber_vehiculo": [
         "desarrollo de secuencias textuales básicas, con especial atención a las expositivas y argumentativas",
         "producción oral formal: la deliberación oral argumentada"
       ],
-      "progresion": { "autonomia": 3, "complejidad": 3, "metalinguistico": 3 },
-      "tipos_tarea": ["oral"],
+      "progresion": {
+        "autonomia": 3,
+        "complejidad": 3,
+        "metalinguistico": 3
+      },
+      "tipos_tarea": [
+        "oral"
+      ],
       "obligatorio": true,
       "prioridad": 1,
       "peso_base": 25,
       "descriptores": {
         "n1": {
           "verbo": "enumera",
-          "texto": "Enumera los argumentos y los datos por el orden de aparición en sus notas, sin jerarquía entre ellos."
+          "texto": "Enumera los argumentos y los datos por el orden de aparición en las notas, sin jerarquía entre ellos."
         },
         "n2": {
           "verbo": "estructura",
@@ -1101,38 +1652,80 @@
             "nombre": "Estructura con función diferenciada",
             "max": 3,
             "bandas": [
-              { "puntos": 3, "condicion": "Presentación, desarrollo y conclusión cumplen cada una una función reconocible y distinta" },
-              { "puntos": 2, "condicion": "Se distinguen las tres partes, pero la conclusión repite la presentación sin cerrar la argumentación" },
-              { "puntos": 1, "condicion": "Se distinguen dos de las tres partes" },
-              { "puntos": 0, "condicion": "La exposición no tiene partes reconocibles" }
+              {
+                "puntos": 3,
+                "condicion": "Presentación, desarrollo y conclusión cumplen cada una una función reconocible y distinta"
+              },
+              {
+                "puntos": 2,
+                "condicion": "Se distinguen las tres partes, pero la conclusión repite la presentación sin cerrar la argumentación"
+              },
+              {
+                "puntos": 1,
+                "condicion": "Se distinguen dos de las tres partes"
+              },
+              {
+                "puntos": 0,
+                "condicion": "La exposición no tiene partes reconocibles"
+              }
             ]
           },
           {
             "nombre": "Progresión lógica entre bloques",
             "max": 3,
             "bandas": [
-              { "puntos": 3, "condicion": "Cada bloque del desarrollo se apoya en el anterior y avanza hacia la conclusión" },
-              { "puntos": 2, "condicion": "Los bloques comparten tema, pero su orden podría alterarse sin que cambie el sentido" },
-              { "puntos": 1, "condicion": "Un bloque no tiene relación reconocible con el resto" },
-              { "puntos": 0, "condicion": "El desarrollo no está organizado en bloques" }
+              {
+                "puntos": 3,
+                "condicion": "Cada bloque del desarrollo se apoya en el anterior y avanza hacia la conclusión"
+              },
+              {
+                "puntos": 2,
+                "condicion": "Los bloques comparten tema, pero su orden podría alterarse sin que cambie el sentido"
+              },
+              {
+                "puntos": 1,
+                "condicion": "Un bloque no tiene relación reconocible con el resto"
+              },
+              {
+                "puntos": 0,
+                "condicion": "El desarrollo no está organizado en bloques"
+              }
             ]
           },
           {
             "nombre": "Ajuste al tiempo asignado",
             "max": 2,
             "bandas": [
-              { "puntos": 2, "condicion": "La exposición se ajusta al tiempo asignado, con margen para la conclusión" },
-              { "puntos": 1, "condicion": "Se pasa o se queda corto del tiempo asignado, y la conclusión queda apresurada o se omite" },
-              { "puntos": 0, "condicion": "No se ajusta al tiempo en ningún momento" }
+              {
+                "puntos": 2,
+                "condicion": "La exposición se ajusta al tiempo asignado, con margen para la conclusión"
+              },
+              {
+                "puntos": 1,
+                "condicion": "Se pasa o se queda corto del tiempo asignado, y la conclusión queda apresurada o se omite"
+              },
+              {
+                "puntos": 0,
+                "condicion": "No se ajusta al tiempo en ningún momento"
+              }
             ]
           },
           {
             "nombre": "Cierre sin información nueva",
             "max": 2,
             "bandas": [
-              { "puntos": 2, "condicion": "El cierre retoma la idea principal o la tesis sin añadir información nueva" },
-              { "puntos": 1, "condicion": "El cierre añade información nueva no desarrollada antes" },
-              { "puntos": 0, "condicion": "La exposición termina en el último argumento, sin cierre" }
+              {
+                "puntos": 2,
+                "condicion": "El cierre retoma la idea principal o la tesis sin añadir información nueva"
+              },
+              {
+                "puntos": 1,
+                "condicion": "El cierre añade información nueva no desarrollada antes"
+              },
+              {
+                "puntos": 0,
+                "condicion": "La exposición termina en el último argumento, sin cierre"
+              }
             ]
           }
         ],
@@ -1152,14 +1745,30 @@
         "competencia_especifica": 3,
         "codigo": "3.1",
         "cita": "Realizar exposiciones y argumentaciones orales de cierta extensión y complejidad con diferente grado de planificación sobre temas de interés personal, social, educativo y profesional ajustándose a las convenciones propias de los diversos géneros discursivos, con fluidez, coherencia, cohesión y el registro adecuado en diferentes soportes, utilizando de manera eficaz recursos verbales y no verbales.",
-        "perfil_salida": ["CCL1", "CCL3", "CCL5", "CP2", "STEM1", "CD2", "CD3", "CC2", "CE1"]
+        "perfil_salida": [
+          "CCL1",
+          "CCL3",
+          "CCL5",
+          "CP2",
+          "STEM1",
+          "CD2",
+          "CD3",
+          "CC2",
+          "CE1"
+        ]
       },
       "saber_vehiculo": [
         "mecanismos de cohesión: referencia interna, gramaticales y léxicos",
         "producción oral formal: la deliberación oral argumentada"
       ],
-      "progresion": { "autonomia": 3, "complejidad": 3, "metalinguistico": 3 },
-      "tipos_tarea": ["oral"],
+      "progresion": {
+        "autonomia": 3,
+        "complejidad": 3,
+        "metalinguistico": 3
+      },
+      "tipos_tarea": [
+        "oral"
+      ],
       "obligatorio": false,
       "prioridad": 1,
       "peso_base": 20,
@@ -1188,31 +1797,70 @@
             "nombre": "Variedad de marcadores",
             "max": 4,
             "bandas": [
-              { "puntos": 4, "condicion": "Emplea 4 o más tipos distintos: orden, adición, causa-consecuencia y contraste" },
-              { "puntos": 3, "condicion": "Emplea 3 tipos distintos" },
-              { "puntos": 2, "condicion": "Emplea 2 tipos distintos" },
-              { "puntos": 1, "condicion": "Se limita a marcadores de orden y de adición" },
-              { "puntos": 0, "condicion": "Enlaza los argumentos sin ningún marcador" }
+              {
+                "puntos": 4,
+                "condicion": "Emplea 4 o más tipos distintos: orden, adición, causa-consecuencia y contraste"
+              },
+              {
+                "puntos": 3,
+                "condicion": "Emplea 3 tipos distintos"
+              },
+              {
+                "puntos": 2,
+                "condicion": "Emplea 2 tipos distintos"
+              },
+              {
+                "puntos": 1,
+                "condicion": "Se limita a marcadores de orden y de adición"
+              },
+              {
+                "puntos": 0,
+                "condicion": "Enlaza los argumentos sin ningún marcador"
+              }
             ]
           },
           {
             "nombre": "Encadenamiento entre bloques",
             "max": 3,
             "bandas": [
-              { "puntos": 3, "condicion": "Cada bloque retoma al empezar una idea del bloque anterior" },
-              { "puntos": 2, "condicion": "La mayoría de los bloques se encadenan; 1 arranca sin vínculo con lo anterior" },
-              { "puntos": 1, "condicion": "Los bloques comparten tema, pero podrían reordenarse sin que cambie el sentido" },
-              { "puntos": 0, "condicion": "Los bloques se suceden sin vínculo entre ellos" }
+              {
+                "puntos": 3,
+                "condicion": "Cada bloque retoma al empezar una idea del bloque anterior"
+              },
+              {
+                "puntos": 2,
+                "condicion": "La mayoría de los bloques se encadenan; 1 arranca sin vínculo con lo anterior"
+              },
+              {
+                "puntos": 1,
+                "condicion": "Los bloques comparten tema, pero podrían reordenarse sin que cambie el sentido"
+              },
+              {
+                "puntos": 0,
+                "condicion": "Los bloques se suceden sin vínculo entre ellos"
+              }
             ]
           },
           {
             "nombre": "Referencia y sustitución léxica",
             "max": 3,
             "bandas": [
-              { "puntos": 3, "condicion": "Sustituye las repeticiones mediante sinónimo o expresión de referencia, y el referente siempre es identificable" },
-              { "puntos": 2, "condicion": "Sustituye la mayoría de las repeticiones; 1 referencia exige un esfuerzo para identificarla" },
-              { "puntos": 1, "condicion": "Repite el término clave 3 o más veces teniendo alternativa evidente" },
-              { "puntos": 0, "condicion": "Repite el mismo término en frases consecutivas a lo largo de toda la exposición" }
+              {
+                "puntos": 3,
+                "condicion": "Sustituye las repeticiones mediante sinónimo o expresión de referencia, y el referente siempre es identificable"
+              },
+              {
+                "puntos": 2,
+                "condicion": "Sustituye la mayoría de las repeticiones; 1 referencia exige un esfuerzo para identificarla"
+              },
+              {
+                "puntos": 1,
+                "condicion": "Repite el término clave 3 o más veces teniendo alternativa evidente"
+              },
+              {
+                "puntos": 0,
+                "condicion": "Repite el mismo término en frases consecutivas a lo largo de toda la exposición"
+              }
             ]
           }
         ],
@@ -1232,13 +1880,29 @@
         "competencia_especifica": 3,
         "codigo": "3.1",
         "cita": "Realizar exposiciones y argumentaciones orales de cierta extensión y complejidad con diferente grado de planificación sobre temas de interés personal, social, educativo y profesional ajustándose a las convenciones propias de los diversos géneros discursivos, con fluidez, coherencia, cohesión y el registro adecuado en diferentes soportes, utilizando de manera eficaz recursos verbales y no verbales.",
-        "perfil_salida": ["CCL1", "CCL3", "CCL5", "CP2", "STEM1", "CD2", "CD3", "CC2", "CE1"]
+        "perfil_salida": [
+          "CCL1",
+          "CCL3",
+          "CCL5",
+          "CP2",
+          "STEM1",
+          "CD2",
+          "CD3",
+          "CC2",
+          "CE1"
+        ]
       },
       "saber_vehiculo": [
         "producción oral formal: la deliberación oral argumentada"
       ],
-      "progresion": { "autonomia": 3, "complejidad": 3, "metalinguistico": 3 },
-      "tipos_tarea": ["oral"],
+      "progresion": {
+        "autonomia": 3,
+        "complejidad": 3,
+        "metalinguistico": 3
+      },
+      "tipos_tarea": [
+        "oral"
+      ],
       "obligatorio": true,
       "prioridad": 2,
       "peso_base": 20,
@@ -1257,7 +1921,7 @@
         },
         "n4": {
           "verbo": "regula",
-          "texto": "Regula el ritmo, el volumen y las pausas para reforzar los momentos clave de la argumentación (la tesis, la conclusión), sin apoyarse en la lectura literal de las notas."
+          "texto": "Regula el ritmo, el volumen y las pausas para reforzar los momentos clave de la argumentación (la tesis, la conclusión), sin recurrir a la lectura literal de las notas."
         }
       },
       "matriz_cuantitativa": {
@@ -1267,38 +1931,80 @@
             "nombre": "Muletillas y titubeos",
             "max": 3,
             "bandas": [
-              { "puntos": 3, "condicion": "0 a 2 muletillas o titubeos en toda la exposición" },
-              { "puntos": 2, "condicion": "De 3 a 5" },
-              { "puntos": 1, "condicion": "De 6 a 9" },
-              { "puntos": 0, "condicion": "10 o más" }
+              {
+                "puntos": 3,
+                "condicion": "0 a 2 muletillas o titubeos en toda la exposición"
+              },
+              {
+                "puntos": 2,
+                "condicion": "De 3 a 5"
+              },
+              {
+                "puntos": 1,
+                "condicion": "De 6 a 9"
+              },
+              {
+                "puntos": 0,
+                "condicion": "10 o más"
+              }
             ]
           },
           {
             "nombre": "Volumen y ritmo comprensibles",
             "max": 3,
             "bandas": [
-              { "puntos": 3, "condicion": "Toda la exposición se entiende sin esfuerzo, con variación de ritmo que ayuda a seguirla" },
-              { "puntos": 2, "condicion": "Se entiende, con algún tramo leído de corrido sin pausas" },
-              { "puntos": 1, "condicion": "Hay que pedirle que repita alguna parte" },
-              { "puntos": 0, "condicion": "Buena parte de la exposición resulta ininteligible" }
+              {
+                "puntos": 3,
+                "condicion": "Toda la exposición se entiende sin esfuerzo, con variación de ritmo que ayuda a seguirla"
+              },
+              {
+                "puntos": 2,
+                "condicion": "Se entiende, con algún tramo leído de corrido sin pausas"
+              },
+              {
+                "puntos": 1,
+                "condicion": "Hay que pedirle que repita alguna parte"
+              },
+              {
+                "puntos": 0,
+                "condicion": "Buena parte de la exposición resulta ininteligible"
+              }
             ]
           },
           {
             "nombre": "Pausas con función argumentativa",
             "max": 2,
             "bandas": [
-              { "puntos": 2, "condicion": "Usa pausas para separar los argumentos y remarcar la tesis o la conclusión" },
-              { "puntos": 1, "condicion": "Usa alguna pausa, sin relación clara con la estructura de la argumentación" },
-              { "puntos": 0, "condicion": "No hay pausas con función; solo silencios de duda" }
+              {
+                "puntos": 2,
+                "condicion": "Usa pausas para separar los argumentos y remarcar la tesis o la conclusión"
+              },
+              {
+                "puntos": 1,
+                "condicion": "Usa alguna pausa, sin relación clara con la estructura de la argumentación"
+              },
+              {
+                "puntos": 0,
+                "condicion": "No hay pausas con función; solo silencios de duda"
+              }
             ]
           },
           {
             "nombre": "Apoyo en las notas",
             "max": 2,
             "bandas": [
-              { "puntos": 2, "condicion": "Consulta las notas con miradas breves, sin leer frases completas en ningún momento" },
-              { "puntos": 1, "condicion": "Lee frases completas de las notas en 1 o 2 momentos" },
-              { "puntos": 0, "condicion": "Lee la mayor parte de la exposición directamente de las notas" }
+              {
+                "puntos": 2,
+                "condicion": "Consulta las notas con miradas breves, sin leer frases completas en ningún momento"
+              },
+              {
+                "puntos": 1,
+                "condicion": "Lee frases completas de las notas en 1 o 2 momentos"
+              },
+              {
+                "puntos": 0,
+                "condicion": "Lee la mayor parte de la exposición directamente de las notas"
+              }
             ]
           }
         ],
@@ -1318,24 +2024,40 @@
         "competencia_especifica": 3,
         "codigo": "3.1",
         "cita": "Realizar exposiciones y argumentaciones orales de cierta extensión y complejidad con diferente grado de planificación sobre temas de interés personal, social, educativo y profesional ajustándose a las convenciones propias de los diversos géneros discursivos, con fluidez, coherencia, cohesión y el registro adecuado en diferentes soportes, utilizando de manera eficaz recursos verbales y no verbales.",
-        "perfil_salida": ["CCL1", "CCL3", "CCL5", "CP2", "STEM1", "CD2", "CD3", "CC2", "CE1"]
+        "perfil_salida": [
+          "CCL1",
+          "CCL3",
+          "CCL5",
+          "CP2",
+          "STEM1",
+          "CD2",
+          "CD3",
+          "CC2",
+          "CE1"
+        ]
       },
       "saber_vehiculo": [
         "elementos no verbales"
       ],
-      "progresion": { "autonomia": 3, "complejidad": 3, "metalinguistico": 3 },
-      "tipos_tarea": ["oral"],
+      "progresion": {
+        "autonomia": 3,
+        "complejidad": 3,
+        "metalinguistico": 3
+      },
+      "tipos_tarea": [
+        "oral"
+      ],
       "obligatorio": false,
       "prioridad": 2,
       "peso_base": 15,
       "descriptores": {
         "n1": {
           "verbo": "dirige",
-          "texto": "Dirige la mirada a sus notas o a la pantalla durante la mayor parte de la exposición, con una postura rígida o inquieta."
+          "texto": "Dirige la mirada a las notas o a la pantalla durante la mayor parte de la exposición, con una postura rígida o inquieta."
         },
         "n2": {
           "verbo": "dirige",
-          "texto": "Dirige la mirada al público en varios momentos y mantiene una postura estable, aunque los gestos no acompañan lo que dice."
+          "texto": "Dirige la mirada al público en varios momentos y mantiene una postura estable, aunque los gestos no acompañan el contenido."
         },
         "n3": {
           "verbo": "mantiene",
@@ -1343,7 +2065,7 @@
         },
         "n4": {
           "verbo": "adapta",
-          "texto": "Adapta la mirada, la postura y los gestos a la reacción del público (repite o aclara si detecta que no le siguen) y los pone al servicio de la argumentación."
+          "texto": "Adapta la mirada, la postura y los gestos a la reacción del público (vuelve sobre una idea o la reformula cuando el público da señales de no seguirla) y los pone al servicio de la argumentación."
         }
       },
       "matriz_cuantitativa": null,
@@ -1361,14 +2083,29 @@
         "competencia_especifica": 3,
         "codigo": "3.1",
         "cita": "Realizar exposiciones y argumentaciones orales formales con diferente grado de planificación sobre temas de interés científico y cultural y de relevancia académica y social, ajustándose a las convenciones propias de cada género discursivo y con fluidez, rigor, coherencia, cohesión y el registro adecuado, en diferentes soportes y utilizando de manera eficaz recursos verbales y no verbales.",
-        "perfil_salida": ["CCL1", "CCL3", "CCL5", "CP2", "STEM1", "CD2", "CD3", "CC2"]
+        "perfil_salida": [
+          "CCL1",
+          "CCL3",
+          "CCL5",
+          "CP2",
+          "STEM1",
+          "CD2",
+          "CD3",
+          "CC2"
+        ]
       },
       "saber_vehiculo": [
         "géneros textuales orales propios del ámbito académico",
         "la comunicación oral no espontánea en el ámbito académico según la situación comunicativa"
       ],
-      "progresion": { "autonomia": 3, "complejidad": 4, "metalinguistico": 4 },
-      "tipos_tarea": ["oral"],
+      "progresion": {
+        "autonomia": 3,
+        "complejidad": 4,
+        "metalinguistico": 4
+      },
+      "tipos_tarea": [
+        "oral"
+      ],
       "obligatorio": false,
       "prioridad": 1,
       "peso_base": 20,
@@ -1379,7 +2116,7 @@
         },
         "n2": {
           "verbo": "ajusta",
-          "texto": "Ajusta el registro al género académico y mantiene la impersonalidad, aunque mezcla algún término coloquial en el léxico."
+          "texto": "Ajusta el registro al género académico y mantiene la impersonalidad, con algún término coloquial aislado en el léxico."
         },
         "n3": {
           "verbo": "mantiene",
@@ -1405,22 +2142,37 @@
         "competencia_especifica": 3,
         "codigo": "3.1",
         "cita": "Realizar exposiciones y argumentaciones orales formales con diferente grado de planificación sobre temas de interés científico y cultural y de relevancia académica y social, ajustándose a las convenciones propias de cada género discursivo y con fluidez, rigor, coherencia, cohesión y el registro adecuado, en diferentes soportes y utilizando de manera eficaz recursos verbales y no verbales.",
-        "perfil_salida": ["CCL1", "CCL3", "CCL5", "CP2", "STEM1", "CD2", "CD3", "CC2"]
+        "perfil_salida": [
+          "CCL1",
+          "CCL3",
+          "CCL5",
+          "CP2",
+          "STEM1",
+          "CD2",
+          "CD3",
+          "CC2"
+        ]
       },
       "saber_vehiculo": [
         "producción oral formal: planificación y búsqueda de información, textualización y revisión",
         "adecuación a la audiencia y al tiempo de exposición",
         "la deliberación oral argumentada"
       ],
-      "progresion": { "autonomia": 3, "complejidad": 4, "metalinguistico": 4 },
-      "tipos_tarea": ["oral"],
+      "progresion": {
+        "autonomia": 3,
+        "complejidad": 4,
+        "metalinguistico": 4
+      },
+      "tipos_tarea": [
+        "oral"
+      ],
       "obligatorio": true,
       "prioridad": 1,
       "peso_base": 25,
       "descriptores": {
         "n1": {
           "verbo": "enumera",
-          "texto": "Enumera los argumentos y los datos por el orden en que aparecen en sus notas, sin jerarquía entre ellos."
+          "texto": "Enumera los argumentos y los datos por el orden en que aparecen en las notas, sin jerarquía entre ellos."
         },
         "n2": {
           "verbo": "estructura",
@@ -1442,38 +2194,80 @@
             "nombre": "Estructura con función diferenciada",
             "max": 3,
             "bandas": [
-              { "puntos": 3, "condicion": "Presentación, desarrollo y conclusión cumplen cada una una función reconocible y distinta" },
-              { "puntos": 2, "condicion": "Se distinguen las tres partes, pero la conclusión repite la presentación sin cerrar la argumentación" },
-              { "puntos": 1, "condicion": "Se distinguen dos de las tres partes" },
-              { "puntos": 0, "condicion": "La exposición no tiene partes reconocibles" }
+              {
+                "puntos": 3,
+                "condicion": "Presentación, desarrollo y conclusión cumplen cada una una función reconocible y distinta"
+              },
+              {
+                "puntos": 2,
+                "condicion": "Se distinguen las tres partes, pero la conclusión repite la presentación sin cerrar la argumentación"
+              },
+              {
+                "puntos": 1,
+                "condicion": "Se distinguen dos de las tres partes"
+              },
+              {
+                "puntos": 0,
+                "condicion": "La exposición no tiene partes reconocibles"
+              }
             ]
           },
           {
             "nombre": "Progresión argumentativa hacia una tesis",
             "max": 3,
             "bandas": [
-              { "puntos": 3, "condicion": "Anticipa al menos una objeción con sus términos y la resuelve con un argumento distinto de los ya empleados" },
-              { "puntos": 2, "condicion": "Menciona la existencia de otro punto de vista, sin exponerlo" },
-              { "puntos": 1, "condicion": "Cada bloque aporta un argumento, pero sin relación reconocible entre ellos" },
-              { "puntos": 0, "condicion": "La exposición no avanza hacia ninguna tesis reconocible" }
+              {
+                "puntos": 3,
+                "condicion": "Anticipa al menos una objeción con sus términos y la resuelve con un argumento distinto de los ya empleados"
+              },
+              {
+                "puntos": 2,
+                "condicion": "Menciona la existencia de otro punto de vista, sin exponerlo"
+              },
+              {
+                "puntos": 1,
+                "condicion": "Cada bloque aporta un argumento, pero sin relación reconocible entre ellos"
+              },
+              {
+                "puntos": 0,
+                "condicion": "La exposición no avanza hacia ninguna tesis reconocible"
+              }
             ]
           },
           {
             "nombre": "Ajuste al tiempo asignado",
             "max": 2,
             "bandas": [
-              { "puntos": 2, "condicion": "La exposición se ajusta al tiempo asignado, con margen para la conclusión" },
-              { "puntos": 1, "condicion": "Se pasa o se queda corto del tiempo asignado, y la conclusión queda apresurada o se omite" },
-              { "puntos": 0, "condicion": "Excede o se queda corto del tiempo asignado en más de 2 minutos" }
+              {
+                "puntos": 2,
+                "condicion": "La exposición se ajusta al tiempo asignado, con margen para la conclusión"
+              },
+              {
+                "puntos": 1,
+                "condicion": "Se pasa o se queda corto del tiempo asignado, y la conclusión queda apresurada o se omite"
+              },
+              {
+                "puntos": 0,
+                "condicion": "Excede o se queda corto del tiempo asignado en más de 2 minutos"
+              }
             ]
           },
           {
             "nombre": "Cierre sin información nueva",
             "max": 2,
             "bandas": [
-              { "puntos": 2, "condicion": "El cierre retoma la tesis sin añadir información nueva" },
-              { "puntos": 1, "condicion": "El cierre añade información nueva no desarrollada antes" },
-              { "puntos": 0, "condicion": "La exposición termina en el último argumento, sin cierre" }
+              {
+                "puntos": 2,
+                "condicion": "El cierre retoma la tesis sin añadir información nueva"
+              },
+              {
+                "puntos": 1,
+                "condicion": "El cierre añade información nueva no desarrollada antes"
+              },
+              {
+                "puntos": 0,
+                "condicion": "La exposición termina en el último argumento, sin cierre"
+              }
             ]
           }
         ],
@@ -1493,14 +2287,29 @@
         "competencia_especifica": 3,
         "codigo": "3.1",
         "cita": "Realizar exposiciones y argumentaciones orales formales con diferente grado de planificación sobre temas de interés científico y cultural y de relevancia académica y social, ajustándose a las convenciones propias de cada género discursivo y con fluidez, rigor, coherencia, cohesión y el registro adecuado, en diferentes soportes y utilizando de manera eficaz recursos verbales y no verbales.",
-        "perfil_salida": ["CCL1", "CCL3", "CCL5", "CP2", "STEM1", "CD2", "CD3", "CC2"]
+        "perfil_salida": [
+          "CCL1",
+          "CCL3",
+          "CCL5",
+          "CP2",
+          "STEM1",
+          "CD2",
+          "CD3",
+          "CC2"
+        ]
       },
       "saber_vehiculo": [
         "rasgos discursivos y lingüísticos de la oralidad formal",
         "la deliberación oral argumentada"
       ],
-      "progresion": { "autonomia": 3, "complejidad": 4, "metalinguistico": 4 },
-      "tipos_tarea": ["oral"],
+      "progresion": {
+        "autonomia": 3,
+        "complejidad": 4,
+        "metalinguistico": 4
+      },
+      "tipos_tarea": [
+        "oral"
+      ],
       "obligatorio": false,
       "prioridad": 1,
       "peso_base": 20,
@@ -1529,31 +2338,70 @@
             "nombre": "Variedad de conectores y marcadores",
             "max": 4,
             "bandas": [
-              { "puntos": 4, "condicion": "Emplea 4 o más tipos distintos, incluido al menos un marcador de concesión (es cierto que, no obstante)" },
-              { "puntos": 3, "condicion": "Emplea 3 tipos distintos, sin marcador de concesión" },
-              { "puntos": 2, "condicion": "Emplea 2 tipos distintos" },
-              { "puntos": 1, "condicion": "Se limita a marcadores de orden y de causa" },
-              { "puntos": 0, "condicion": "Enlaza los bloques sin ningún marcador" }
+              {
+                "puntos": 4,
+                "condicion": "Emplea 4 o más tipos distintos, incluido al menos un marcador de concesión (es cierto que, no obstante)"
+              },
+              {
+                "puntos": 3,
+                "condicion": "Emplea 3 tipos distintos, sin marcador de concesión"
+              },
+              {
+                "puntos": 2,
+                "condicion": "Emplea 2 tipos distintos"
+              },
+              {
+                "puntos": 1,
+                "condicion": "Se limita a marcadores de orden y de causa"
+              },
+              {
+                "puntos": 0,
+                "condicion": "Enlaza los bloques sin ningún marcador"
+              }
             ]
           },
           {
             "nombre": "Encadenamiento entre bloques",
             "max": 3,
             "bandas": [
-              { "puntos": 3, "condicion": "Cada bloque retoma al empezar un elemento del bloque anterior" },
-              { "puntos": 2, "condicion": "La mayoría de los bloques se encadenan; 1 arranca sin vínculo con lo anterior" },
-              { "puntos": 1, "condicion": "Los bloques comparten tema, pero podrían reordenarse sin que cambie el sentido" },
-              { "puntos": 0, "condicion": "Los bloques se suceden sin vínculo entre ellos" }
+              {
+                "puntos": 3,
+                "condicion": "Cada bloque retoma al empezar un elemento del bloque anterior"
+              },
+              {
+                "puntos": 2,
+                "condicion": "La mayoría de los bloques se encadenan; 1 arranca sin vínculo con lo anterior"
+              },
+              {
+                "puntos": 1,
+                "condicion": "Los bloques comparten tema, pero podrían reordenarse sin que cambie el sentido"
+              },
+              {
+                "puntos": 0,
+                "condicion": "Los bloques se suceden sin vínculo entre ellos"
+              }
             ]
           },
           {
             "nombre": "Referencia y sustitución léxica",
             "max": 3,
             "bandas": [
-              { "puntos": 3, "condicion": "Sustituye las repeticiones mediante nominalización, sinónimo o expresión de referencia, y el referente siempre es identificable" },
-              { "puntos": 2, "condicion": "Sustituye la mayoría de las repeticiones; 1 referencia exige un esfuerzo para identificarla" },
-              { "puntos": 1, "condicion": "Repite el término clave 3 o más veces teniendo alternativa evidente" },
-              { "puntos": 0, "condicion": "Repite el mismo término en frases consecutivas a lo largo de toda la exposición" }
+              {
+                "puntos": 3,
+                "condicion": "Sustituye las repeticiones mediante nominalización, sinónimo o expresión de referencia, y el referente siempre es identificable"
+              },
+              {
+                "puntos": 2,
+                "condicion": "Sustituye la mayoría de las repeticiones; 1 referencia exige un esfuerzo para identificarla"
+              },
+              {
+                "puntos": 1,
+                "condicion": "Repite el término clave 3 o más veces teniendo alternativa evidente"
+              },
+              {
+                "puntos": 0,
+                "condicion": "Repite el mismo término en frases consecutivas a lo largo de toda la exposición"
+              }
             ]
           }
         ],
@@ -1573,14 +2421,29 @@
         "competencia_especifica": 3,
         "codigo": "3.1",
         "cita": "Realizar exposiciones y argumentaciones orales formales con diferente grado de planificación sobre temas de interés científico y cultural y de relevancia académica y social, ajustándose a las convenciones propias de cada género discursivo y con fluidez, rigor, coherencia, cohesión y el registro adecuado, en diferentes soportes y utilizando de manera eficaz recursos verbales y no verbales.",
-        "perfil_salida": ["CCL1", "CCL3", "CCL5", "CP2", "STEM1", "CD2", "CD3", "CC2"]
+        "perfil_salida": [
+          "CCL1",
+          "CCL3",
+          "CCL5",
+          "CP2",
+          "STEM1",
+          "CD2",
+          "CD3",
+          "CC2"
+        ]
       },
       "saber_vehiculo": [
         "corrección ortológica",
         "rasgos discursivos y lingüísticos de la oralidad formal"
       ],
-      "progresion": { "autonomia": 3, "complejidad": 4, "metalinguistico": 4 },
-      "tipos_tarea": ["oral"],
+      "progresion": {
+        "autonomia": 3,
+        "complejidad": 4,
+        "metalinguistico": 4
+      },
+      "tipos_tarea": [
+        "oral"
+      ],
       "obligatorio": true,
       "prioridad": 2,
       "peso_base": 20,
@@ -1599,7 +2462,7 @@
         },
         "n4": {
           "verbo": "regula",
-          "texto": "Regula el ritmo, el volumen y las pausas para reforzar la tesis y la conclusión, con una pronunciación cuidada y sin apoyarse en la lectura literal de las notas."
+          "texto": "Regula el ritmo, el volumen y las pausas para reforzar la tesis y la conclusión, con una pronunciación cuidada y sin recurrir a la lectura literal de las notas."
         }
       },
       "matriz_cuantitativa": {
@@ -1609,38 +2472,80 @@
             "nombre": "Muletillas y titubeos",
             "max": 3,
             "bandas": [
-              { "puntos": 3, "condicion": "0 a 2 muletillas o titubeos en toda la exposición" },
-              { "puntos": 2, "condicion": "De 3 a 5" },
-              { "puntos": 1, "condicion": "De 6 a 9" },
-              { "puntos": 0, "condicion": "10 o más" }
+              {
+                "puntos": 3,
+                "condicion": "0 a 2 muletillas o titubeos en toda la exposición"
+              },
+              {
+                "puntos": 2,
+                "condicion": "De 3 a 5"
+              },
+              {
+                "puntos": 1,
+                "condicion": "De 6 a 9"
+              },
+              {
+                "puntos": 0,
+                "condicion": "10 o más"
+              }
             ]
           },
           {
             "nombre": "Pronunciación de los términos técnicos",
             "max": 2,
             "bandas": [
-              { "puntos": 2, "condicion": "Pronuncia sin errores los términos técnicos y de uso menos frecuente" },
-              { "puntos": 1, "condicion": "Comete 1 o 2 errores de pronunciación en términos técnicos" },
-              { "puntos": 0, "condicion": "Comete 3 o más errores de pronunciación" }
+              {
+                "puntos": 2,
+                "condicion": "Pronuncia sin errores los términos técnicos y de uso menos frecuente"
+              },
+              {
+                "puntos": 1,
+                "condicion": "Comete 1 o 2 errores de pronunciación en términos técnicos"
+              },
+              {
+                "puntos": 0,
+                "condicion": "Comete 3 o más errores de pronunciación"
+              }
             ]
           },
           {
             "nombre": "Volumen y ritmo comprensibles",
             "max": 3,
             "bandas": [
-              { "puntos": 3, "condicion": "Toda la exposición se entiende sin esfuerzo, con variación de ritmo que ayuda a seguirla" },
-              { "puntos": 2, "condicion": "Se entiende, con algún tramo leído de corrido sin pausas" },
-              { "puntos": 1, "condicion": "Hay que pedirle que repita alguna parte" },
-              { "puntos": 0, "condicion": "Buena parte de la exposición resulta ininteligible" }
+              {
+                "puntos": 3,
+                "condicion": "Toda la exposición se entiende sin esfuerzo, con variación de ritmo que ayuda a seguirla"
+              },
+              {
+                "puntos": 2,
+                "condicion": "Se entiende, con algún tramo leído de corrido sin pausas"
+              },
+              {
+                "puntos": 1,
+                "condicion": "Hay que pedirle que repita alguna parte"
+              },
+              {
+                "puntos": 0,
+                "condicion": "Buena parte de la exposición resulta ininteligible"
+              }
             ]
           },
           {
             "nombre": "Apoyo en las notas",
             "max": 2,
             "bandas": [
-              { "puntos": 2, "condicion": "Consulta las notas con miradas breves, sin leer frases completas en ningún momento" },
-              { "puntos": 1, "condicion": "Lee frases completas de las notas en 1 o 2 momentos" },
-              { "puntos": 0, "condicion": "Lee la mayor parte de la exposición directamente de las notas" }
+              {
+                "puntos": 2,
+                "condicion": "Consulta las notas con miradas breves, sin leer frases completas en ningún momento"
+              },
+              {
+                "puntos": 1,
+                "condicion": "Lee frases completas de las notas en 1 o 2 momentos"
+              },
+              {
+                "puntos": 0,
+                "condicion": "Lee la mayor parte de la exposición directamente de las notas"
+              }
             ]
           }
         ],
@@ -1660,20 +2565,35 @@
         "competencia_especifica": 3,
         "codigo": "3.1",
         "cita": "Realizar exposiciones y argumentaciones orales formales con diferente grado de planificación sobre temas de interés científico y cultural y de relevancia académica y social, ajustándose a las convenciones propias de cada género discursivo y con fluidez, rigor, coherencia, cohesión y el registro adecuado, en diferentes soportes y utilizando de manera eficaz recursos verbales y no verbales.",
-        "perfil_salida": ["CCL1", "CCL3", "CCL5", "CP2", "STEM1", "CD2", "CD3", "CC2"]
+        "perfil_salida": [
+          "CCL1",
+          "CCL3",
+          "CCL5",
+          "CP2",
+          "STEM1",
+          "CD2",
+          "CD3",
+          "CC2"
+        ]
       },
       "saber_vehiculo": [
         "elementos no verbales"
       ],
-      "progresion": { "autonomia": 3, "complejidad": 4, "metalinguistico": 4 },
-      "tipos_tarea": ["oral"],
+      "progresion": {
+        "autonomia": 3,
+        "complejidad": 4,
+        "metalinguistico": 4
+      },
+      "tipos_tarea": [
+        "oral"
+      ],
       "obligatorio": false,
       "prioridad": 2,
       "peso_base": 15,
       "descriptores": {
         "n1": {
           "verbo": "dirige",
-          "texto": "Dirige la mirada a sus notas o a la pantalla durante la mayor parte de la exposición, con gestos repetitivos que distraen del contenido."
+          "texto": "Dirige la mirada a las notas o a la pantalla durante la mayor parte de la exposición, con gestos repetitivos que distraen del contenido."
         },
         "n2": {
           "verbo": "dirige",
@@ -1703,14 +2623,29 @@
         "competencia_especifica": 3,
         "codigo": "3.1",
         "cita": "Realizar exposiciones y argumentaciones orales formales extensas en las que se recojan diferentes puntos de vista, con diferente grado de planificación sobre temas de interés científico y cultural y de relevancia académica y social ajustándose a las convenciones propias de cada género discursivo y hacerlo con fluidez, rigor, coherencia, cohesión y el registro adecuado en diferentes soportes, utilizando de manera eficaz recursos verbales y no verbales.",
-        "perfil_salida": ["CCL1", "CCL3", "CCL5", "CP2", "STEM1", "CD2", "CD3", "CC2"]
+        "perfil_salida": [
+          "CCL1",
+          "CCL3",
+          "CCL5",
+          "CP2",
+          "STEM1",
+          "CD2",
+          "CD3",
+          "CC2"
+        ]
       },
       "saber_vehiculo": [
         "géneros textuales orales procedentes de los medios de comunicación social: géneros informativos y de opinión",
         "la comunicación oral no espontánea en el ámbito académico, periodístico, profesional y empresarial"
       ],
-      "progresion": { "autonomia": 3, "complejidad": 4, "metalinguistico": 4 },
-      "tipos_tarea": ["oral"],
+      "progresion": {
+        "autonomia": 3,
+        "complejidad": 4,
+        "metalinguistico": 4
+      },
+      "tipos_tarea": [
+        "oral"
+      ],
       "obligatorio": false,
       "prioridad": 1,
       "peso_base": 20,
@@ -1721,7 +2656,7 @@
         },
         "n2": {
           "verbo": "ajusta",
-          "texto": "Ajusta el registro al género académico y mantiene la impersonalidad, aunque mezcla algún término coloquial en el léxico."
+          "texto": "Ajusta el registro al género académico y mantiene la impersonalidad, con algún término coloquial aislado en el léxico."
         },
         "n3": {
           "verbo": "mantiene",
@@ -1747,15 +2682,30 @@
         "competencia_especifica": 3,
         "codigo": "3.1",
         "cita": "Realizar exposiciones y argumentaciones orales formales extensas en las que se recojan diferentes puntos de vista, con diferente grado de planificación sobre temas de interés científico y cultural y de relevancia académica y social ajustándose a las convenciones propias de cada género discursivo y hacerlo con fluidez, rigor, coherencia, cohesión y el registro adecuado en diferentes soportes, utilizando de manera eficaz recursos verbales y no verbales.",
-        "perfil_salida": ["CCL1", "CCL3", "CCL5", "CP2", "STEM1", "CD2", "CD3", "CC2"]
+        "perfil_salida": [
+          "CCL1",
+          "CCL3",
+          "CCL5",
+          "CP2",
+          "STEM1",
+          "CD2",
+          "CD3",
+          "CC2"
+        ]
       },
       "saber_vehiculo": [
         "producción oral formal: planificación y búsqueda de información, textualización y revisión",
         "adecuación a la audiencia y al tiempo de exposición",
         "la deliberación oral argumentada"
       ],
-      "progresion": { "autonomia": 3, "complejidad": 4, "metalinguistico": 4 },
-      "tipos_tarea": ["oral"],
+      "progresion": {
+        "autonomia": 3,
+        "complejidad": 4,
+        "metalinguistico": 4
+      },
+      "tipos_tarea": [
+        "oral"
+      ],
       "obligatorio": true,
       "prioridad": 1,
       "peso_base": 25,
@@ -1784,38 +2734,80 @@
             "nombre": "Estructura con función diferenciada",
             "max": 3,
             "bandas": [
-              { "puntos": 3, "condicion": "Presentación, desarrollo y conclusión cumplen cada una una función reconocible y distinta" },
-              { "puntos": 2, "condicion": "Se distinguen las tres partes, pero la conclusión repite la presentación sin cerrar la argumentación" },
-              { "puntos": 1, "condicion": "Se distinguen dos de las tres partes" },
-              { "puntos": 0, "condicion": "La exposición no tiene partes reconocibles" }
+              {
+                "puntos": 3,
+                "condicion": "Presentación, desarrollo y conclusión cumplen cada una una función reconocible y distinta"
+              },
+              {
+                "puntos": 2,
+                "condicion": "Se distinguen las tres partes, pero la conclusión repite la presentación sin cerrar la argumentación"
+              },
+              {
+                "puntos": 1,
+                "condicion": "Se distinguen dos de las tres partes"
+              },
+              {
+                "puntos": 0,
+                "condicion": "La exposición no tiene partes reconocibles"
+              }
             ]
           },
           {
             "nombre": "Relación entre los puntos de vista",
             "max": 3,
             "bandas": [
-              { "puntos": 3, "condicion": "Expone 2 o más puntos de vista y explica en qué coinciden o en qué se oponen" },
-              { "puntos": 2, "condicion": "Expone 2 o más puntos de vista, pero sin relacionarlos entre sí" },
-              { "puntos": 1, "condicion": "Expone un único punto de vista, presentado como si fuera el único posible" },
-              { "puntos": 0, "condicion": "La exposición no distingue puntos de vista reconocibles" }
+              {
+                "puntos": 3,
+                "condicion": "Expone 2 o más puntos de vista y explica en qué coinciden o en qué se oponen"
+              },
+              {
+                "puntos": 2,
+                "condicion": "Expone 2 o más puntos de vista, pero sin relacionarlos entre sí"
+              },
+              {
+                "puntos": 1,
+                "condicion": "Expone un único punto de vista, presentado como si fuera el único posible"
+              },
+              {
+                "puntos": 0,
+                "condicion": "La exposición no distingue puntos de vista reconocibles"
+              }
             ]
           },
           {
             "nombre": "Ajuste al tiempo asignado",
             "max": 2,
             "bandas": [
-              { "puntos": 2, "condicion": "La exposición se ajusta al tiempo asignado, con margen para la conclusión" },
-              { "puntos": 1, "condicion": "Se pasa o se queda corto del tiempo asignado, y la conclusión queda apresurada o se omite" },
-              { "puntos": 0, "condicion": "Excede o se queda corto del tiempo asignado en más de 2 minutos" }
+              {
+                "puntos": 2,
+                "condicion": "La exposición se ajusta al tiempo asignado, con margen para la conclusión"
+              },
+              {
+                "puntos": 1,
+                "condicion": "Se pasa o se queda corto del tiempo asignado, y la conclusión queda apresurada o se omite"
+              },
+              {
+                "puntos": 0,
+                "condicion": "Excede o se queda corto del tiempo asignado en más de 2 minutos"
+              }
             ]
           },
           {
             "nombre": "Cierre con valoración propia",
             "max": 2,
             "bandas": [
-              { "puntos": 2, "condicion": "El cierre ofrece una valoración propia razonada de los puntos de vista expuestos, sin añadir información nueva" },
-              { "puntos": 1, "condicion": "El cierre retoma los puntos de vista expuestos sin ofrecer una valoración propia" },
-              { "puntos": 0, "condicion": "La exposición termina en el último punto de vista, sin cierre" }
+              {
+                "puntos": 2,
+                "condicion": "El cierre ofrece una valoración propia razonada de los puntos de vista expuestos, sin añadir información nueva"
+              },
+              {
+                "puntos": 1,
+                "condicion": "El cierre retoma los puntos de vista expuestos sin ofrecer una valoración propia"
+              },
+              {
+                "puntos": 0,
+                "condicion": "La exposición termina en el último punto de vista, sin cierre"
+              }
             ]
           }
         ],
@@ -1835,14 +2827,29 @@
         "competencia_especifica": 3,
         "codigo": "3.1",
         "cita": "Realizar exposiciones y argumentaciones orales formales extensas en las que se recojan diferentes puntos de vista, con diferente grado de planificación sobre temas de interés científico y cultural y de relevancia académica y social ajustándose a las convenciones propias de cada género discursivo y hacerlo con fluidez, rigor, coherencia, cohesión y el registro adecuado en diferentes soportes, utilizando de manera eficaz recursos verbales y no verbales.",
-        "perfil_salida": ["CCL1", "CCL3", "CCL5", "CP2", "STEM1", "CD2", "CD3", "CC2"]
+        "perfil_salida": [
+          "CCL1",
+          "CCL3",
+          "CCL5",
+          "CP2",
+          "STEM1",
+          "CD2",
+          "CD3",
+          "CC2"
+        ]
       },
       "saber_vehiculo": [
         "rasgos discursivos y lingüísticos de la oralidad formal",
         "la deliberación oral argumentada"
       ],
-      "progresion": { "autonomia": 3, "complejidad": 4, "metalinguistico": 4 },
-      "tipos_tarea": ["oral"],
+      "progresion": {
+        "autonomia": 3,
+        "complejidad": 4,
+        "metalinguistico": 4
+      },
+      "tipos_tarea": [
+        "oral"
+      ],
       "obligatorio": false,
       "prioridad": 1,
       "peso_base": 20,
@@ -1871,31 +2878,70 @@
             "nombre": "Variedad de conectores y marcadores",
             "max": 4,
             "bandas": [
-              { "puntos": 4, "condicion": "Emplea 4 o más tipos distintos, incluido al menos un marcador de contraste entre puntos de vista (frente a, en cambio)" },
-              { "puntos": 3, "condicion": "Emplea 3 tipos distintos, sin marcador de contraste" },
-              { "puntos": 2, "condicion": "Emplea 2 tipos distintos" },
-              { "puntos": 1, "condicion": "Se limita a marcadores de orden y de adición" },
-              { "puntos": 0, "condicion": "Enlaza los bloques sin ningún marcador" }
+              {
+                "puntos": 4,
+                "condicion": "Emplea 4 o más tipos distintos, incluido al menos un marcador de contraste entre puntos de vista (frente a, en cambio)"
+              },
+              {
+                "puntos": 3,
+                "condicion": "Emplea 3 tipos distintos, sin marcador de contraste"
+              },
+              {
+                "puntos": 2,
+                "condicion": "Emplea 2 tipos distintos"
+              },
+              {
+                "puntos": 1,
+                "condicion": "Se limita a marcadores de orden y de adición"
+              },
+              {
+                "puntos": 0,
+                "condicion": "Enlaza los bloques sin ningún marcador"
+              }
             ]
           },
           {
             "nombre": "Encadenamiento entre bloques",
             "max": 3,
             "bandas": [
-              { "puntos": 3, "condicion": "Cada bloque retoma al empezar un elemento del bloque anterior" },
-              { "puntos": 2, "condicion": "La mayoría de los bloques se encadenan; 1 arranca sin vínculo con lo anterior" },
-              { "puntos": 1, "condicion": "Los bloques comparten tema, pero podrían reordenarse sin que cambie el sentido" },
-              { "puntos": 0, "condicion": "Los bloques se suceden sin vínculo entre ellos" }
+              {
+                "puntos": 3,
+                "condicion": "Cada bloque retoma al empezar un elemento del bloque anterior"
+              },
+              {
+                "puntos": 2,
+                "condicion": "La mayoría de los bloques se encadenan; 1 arranca sin vínculo con lo anterior"
+              },
+              {
+                "puntos": 1,
+                "condicion": "Los bloques comparten tema, pero podrían reordenarse sin que cambie el sentido"
+              },
+              {
+                "puntos": 0,
+                "condicion": "Los bloques se suceden sin vínculo entre ellos"
+              }
             ]
           },
           {
             "nombre": "Referencia y sustitución léxica",
             "max": 3,
             "bandas": [
-              { "puntos": 3, "condicion": "Sustituye las repeticiones mediante nominalización, sinónimo o expresión de referencia, y el referente siempre es identificable" },
-              { "puntos": 2, "condicion": "Sustituye la mayoría de las repeticiones; 1 referencia exige un esfuerzo para identificarla" },
-              { "puntos": 1, "condicion": "Repite el término clave 3 o más veces teniendo alternativa evidente" },
-              { "puntos": 0, "condicion": "Repite el mismo término en frases consecutivas a lo largo de toda la exposición" }
+              {
+                "puntos": 3,
+                "condicion": "Sustituye las repeticiones mediante nominalización, sinónimo o expresión de referencia, y el referente siempre es identificable"
+              },
+              {
+                "puntos": 2,
+                "condicion": "Sustituye la mayoría de las repeticiones; 1 referencia exige un esfuerzo para identificarla"
+              },
+              {
+                "puntos": 1,
+                "condicion": "Repite el término clave 3 o más veces teniendo alternativa evidente"
+              },
+              {
+                "puntos": 0,
+                "condicion": "Repite el mismo término en frases consecutivas a lo largo de toda la exposición"
+              }
             ]
           }
         ],
@@ -1915,14 +2961,29 @@
         "competencia_especifica": 3,
         "codigo": "3.1",
         "cita": "Realizar exposiciones y argumentaciones orales formales extensas en las que se recojan diferentes puntos de vista, con diferente grado de planificación sobre temas de interés científico y cultural y de relevancia académica y social ajustándose a las convenciones propias de cada género discursivo y hacerlo con fluidez, rigor, coherencia, cohesión y el registro adecuado en diferentes soportes, utilizando de manera eficaz recursos verbales y no verbales.",
-        "perfil_salida": ["CCL1", "CCL3", "CCL5", "CP2", "STEM1", "CD2", "CD3", "CC2"]
+        "perfil_salida": [
+          "CCL1",
+          "CCL3",
+          "CCL5",
+          "CP2",
+          "STEM1",
+          "CD2",
+          "CD3",
+          "CC2"
+        ]
       },
       "saber_vehiculo": [
         "corrección ortológica",
         "rasgos discursivos y lingüísticos de la oralidad formal"
       ],
-      "progresion": { "autonomia": 3, "complejidad": 4, "metalinguistico": 4 },
-      "tipos_tarea": ["oral"],
+      "progresion": {
+        "autonomia": 3,
+        "complejidad": 4,
+        "metalinguistico": 4
+      },
+      "tipos_tarea": [
+        "oral"
+      ],
       "obligatorio": true,
       "prioridad": 2,
       "peso_base": 20,
@@ -1941,7 +3002,7 @@
         },
         "n4": {
           "verbo": "regula",
-          "texto": "Regula el ritmo, el volumen y las pausas para reforzar los contrastes entre puntos de vista y la valoración final, con una pronunciación cuidada y sin apoyarse en la lectura literal de las notas."
+          "texto": "Regula el ritmo, el volumen y las pausas para reforzar los contrastes entre puntos de vista y la valoración final, con una pronunciación cuidada y sin recurrir a la lectura literal de las notas."
         }
       },
       "matriz_cuantitativa": {
@@ -1951,38 +3012,80 @@
             "nombre": "Muletillas y titubeos",
             "max": 3,
             "bandas": [
-              { "puntos": 3, "condicion": "0 a 2 muletillas o titubeos en toda la exposición" },
-              { "puntos": 2, "condicion": "De 3 a 5" },
-              { "puntos": 1, "condicion": "De 6 a 9" },
-              { "puntos": 0, "condicion": "10 o más" }
+              {
+                "puntos": 3,
+                "condicion": "0 a 2 muletillas o titubeos en toda la exposición"
+              },
+              {
+                "puntos": 2,
+                "condicion": "De 3 a 5"
+              },
+              {
+                "puntos": 1,
+                "condicion": "De 6 a 9"
+              },
+              {
+                "puntos": 0,
+                "condicion": "10 o más"
+              }
             ]
           },
           {
             "nombre": "Pronunciación de los términos técnicos",
             "max": 2,
             "bandas": [
-              { "puntos": 2, "condicion": "Pronuncia sin errores los términos técnicos y de uso menos frecuente" },
-              { "puntos": 1, "condicion": "Comete 1 o 2 errores de pronunciación en términos técnicos" },
-              { "puntos": 0, "condicion": "Comete 3 o más errores de pronunciación" }
+              {
+                "puntos": 2,
+                "condicion": "Pronuncia sin errores los términos técnicos y de uso menos frecuente"
+              },
+              {
+                "puntos": 1,
+                "condicion": "Comete 1 o 2 errores de pronunciación en términos técnicos"
+              },
+              {
+                "puntos": 0,
+                "condicion": "Comete 3 o más errores de pronunciación"
+              }
             ]
           },
           {
             "nombre": "Volumen y ritmo comprensibles",
             "max": 3,
             "bandas": [
-              { "puntos": 3, "condicion": "Toda la exposición se entiende sin esfuerzo, con variación de ritmo que ayuda a seguirla" },
-              { "puntos": 2, "condicion": "Se entiende, con algún tramo leído de corrido sin pausas" },
-              { "puntos": 1, "condicion": "Hay que pedirle que repita alguna parte" },
-              { "puntos": 0, "condicion": "Buena parte de la exposición resulta ininteligible" }
+              {
+                "puntos": 3,
+                "condicion": "Toda la exposición se entiende sin esfuerzo, con variación de ritmo que ayuda a seguirla"
+              },
+              {
+                "puntos": 2,
+                "condicion": "Se entiende, con algún tramo leído de corrido sin pausas"
+              },
+              {
+                "puntos": 1,
+                "condicion": "Hay que pedirle que repita alguna parte"
+              },
+              {
+                "puntos": 0,
+                "condicion": "Buena parte de la exposición resulta ininteligible"
+              }
             ]
           },
           {
             "nombre": "Apoyo en las notas",
             "max": 2,
             "bandas": [
-              { "puntos": 2, "condicion": "Consulta las notas con miradas breves, sin leer frases completas en ningún momento" },
-              { "puntos": 1, "condicion": "Lee frases completas de las notas en 1 o 2 momentos" },
-              { "puntos": 0, "condicion": "Lee la mayor parte de la exposición directamente de las notas" }
+              {
+                "puntos": 2,
+                "condicion": "Consulta las notas con miradas breves, sin leer frases completas en ningún momento"
+              },
+              {
+                "puntos": 1,
+                "condicion": "Lee frases completas de las notas en 1 o 2 momentos"
+              },
+              {
+                "puntos": 0,
+                "condicion": "Lee la mayor parte de la exposición directamente de las notas"
+              }
             ]
           }
         ],
@@ -2002,20 +3105,35 @@
         "competencia_especifica": 3,
         "codigo": "3.1",
         "cita": "Realizar exposiciones y argumentaciones orales formales extensas en las que se recojan diferentes puntos de vista, con diferente grado de planificación sobre temas de interés científico y cultural y de relevancia académica y social ajustándose a las convenciones propias de cada género discursivo y hacerlo con fluidez, rigor, coherencia, cohesión y el registro adecuado en diferentes soportes, utilizando de manera eficaz recursos verbales y no verbales.",
-        "perfil_salida": ["CCL1", "CCL3", "CCL5", "CP2", "STEM1", "CD2", "CD3", "CC2"]
+        "perfil_salida": [
+          "CCL1",
+          "CCL3",
+          "CCL5",
+          "CP2",
+          "STEM1",
+          "CD2",
+          "CD3",
+          "CC2"
+        ]
       },
       "saber_vehiculo": [
         "elementos no verbales"
       ],
-      "progresion": { "autonomia": 3, "complejidad": 4, "metalinguistico": 4 },
-      "tipos_tarea": ["oral"],
+      "progresion": {
+        "autonomia": 3,
+        "complejidad": 4,
+        "metalinguistico": 4
+      },
+      "tipos_tarea": [
+        "oral"
+      ],
       "obligatorio": false,
       "prioridad": 2,
       "peso_base": 15,
       "descriptores": {
         "n1": {
           "verbo": "dirige",
-          "texto": "Dirige la mirada a sus notas o a la pantalla durante la mayor parte de la exposición, con gestos repetitivos que distraen del contenido."
+          "texto": "Dirige la mirada a las notas o a la pantalla durante la mayor parte de la exposición, con gestos repetitivos que distraen del contenido."
         },
         "n2": {
           "verbo": "dirige",

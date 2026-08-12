@@ -1,7 +1,14 @@
 # "Un motor de reglas sin pruebas se degrada en cuanto se toca" (SDD §15).
-# Esto ejecuta en cada empujón las mismas tres comprobaciones que se piden en
-# local, para que un pack no llegue roto a la rama principal.
-name: Validación del pack y del validador
+#
+# Este flujo ejecutaba TRES de las doce comprobaciones del proyecto: las de forma
+# del pack, y ninguna de procedencia. Es decir, precisamente las que no habrían
+# detenido el error de derivación del 2026-08-05, que es el único que ha llegado
+# al docente. Las otras existían y había que acordarse de ejecutarlas a mano.
+#
+# Ahora corre una sola orden, la misma que se ejecuta en local, y esa orden es la
+# lista completa. Añadir una comprobación nueva es añadirla a scripts/comprobar_todo.py
+# y aparece aquí sola: no hay una segunda lista que mantener.
+name: Comprobación completa
 
 on:
   push:
@@ -10,7 +17,7 @@ on:
   workflow_dispatch:
 
 jobs:
-  validar:
+  comprobar:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -23,14 +30,12 @@ jobs:
         with:
           node-version: "20"
 
-      # El validador de contenido: ninguna dependencia externa, solo la
-      # biblioteca estándar.
-      - name: Validador de packs (Python)
-        run: python scripts/validar_pack.py
-
-      # Paridad: la aplicación no puede dar por limpio lo que el script rechaza.
-      - name: El pack real carga limpio en la aplicación
-        run: node test/validar-pack-real.mjs
-
-      - name: Casos del validador, uno por regla
-        run: node test/validar-reglas.mjs
+      # Ninguna dependencia externa, ni en Python ni en Node: solo biblioteca
+      # estándar. Si algún día hace falta una, se instala aquí y se dice por qué.
+      #
+      # El verificador de derivación necesita fuentes/curriculo/, que sí viaja en
+      # el repositorio. El Marco Teórico vive en el repositorio de Lengua y no
+      # viaja: esa parte de la comprobación 2 emite un aviso y sigue, que es el
+      # comportamiento correcto y está probado.
+      - name: Las doce comprobaciones
+        run: python scripts/comprobar_todo.py

@@ -30,7 +30,7 @@
 | **N1** | Utiliza expresiones propias de la conversación diaria en un texto dirigido a un lector del ámbito educativo. |
 | **N2** | Ajusta el texto al modelo de exposición trabajado en clase y se dirige al destinatario indicado en el encargo. |
 | **N3** | Emplea el vocabulario del tema trabajado en clase y mantiene el mismo tono a lo largo del texto. |
-| **N4** | Explica con sus propias palabras los términos del tema que el lector puede desconocer. |
+| **N4** | Explica con palabras propias los términos del tema que el lector puede desconocer. |
 
 *Sin matriz cuantitativa: esta dimensión se juzga en conjunto, no hay nada que contar.*
 
@@ -108,7 +108,7 @@
 | **N1** | Redacta el texto en una sola pasada y entrega la primera versión como texto final. |
 | **N2** | Elabora un esquema previo con las ideas principales siguiendo la pauta dada y entrega el borrador junto al texto final. |
 | **N3** | Revisa el borrador con la lista de comprobación facilitada y corrige al menos dos de los aspectos que aparecen en ella. |
-| **N4** | Explica, en una nota al margen del borrador, por qué ha cambiado una palabra o una frase del texto. |
+| **N4** | Explica, en una nota al margen del borrador, por qué cambia una palabra o una frase del texto. |
 
 **Matriz cuantitativa** — total 10 puntos. Es lo que usa el modo IA para corregir.
 
@@ -128,8 +128,8 @@
 |---|---|
 | **N1** | Utiliza una única fuente y traslada al texto fragmentos literales sin señalar que proceden de ella. |
 | **N2** | Localiza la información en las fuentes indicadas por el profesor y anota de dónde procede cada dato. |
-| **N3** | Selecciona la información pertinente de dos fuentes indicadas y la explica con sus propias palabras. |
-| **N4** | Contrasta, con la pauta facilitada, la información de dos fuentes indicadas, la explica con sus propias palabras e indica el origen de los datos. |
+| **N3** | Selecciona la información pertinente de dos fuentes indicadas y la explica con palabras propias. |
+| **N4** | Contrasta, con la pauta facilitada, la información de dos fuentes indicadas, la explica con palabras propias e indica el origen de los datos. |
 
 **Matriz cuantitativa** — total 10 puntos. Es lo que usa el modo IA para corregir.
 
@@ -161,7 +161,7 @@
 | Nivel | Descriptor |
 |---|---|
 | **N1** | Utiliza expresiones propias de la conversación cotidiana en un texto dirigido a un lector del ámbito educativo. |
-| **N2** | Ajusta el texto al modelo de exposición trabajado en clase, aunque mezcla algún término coloquial con el vocabulario del tema. |
+| **N2** | Ajusta el texto al modelo de exposición trabajado en clase, con algún término coloquial junto al vocabulario del tema. |
 | **N3** | Emplea el vocabulario propio del tema y mantiene la tercera persona a lo largo de todo el texto. |
 | **N4** | Selecciona el léxico específico del tema y mantiene el registro formal sin mezclarlo con expresiones coloquiales a lo largo de todo el texto. |
 
@@ -176,7 +176,7 @@
 | Nivel | Descriptor |
 |---|---|
 | **N1** | Ordena la información en dos bloques —introducción y desarrollo—, sin cierre reconocible al final del texto. |
-| **N2** | Estructura el texto en introducción, desarrollo y cierre por su cuenta, con un párrafo dedicado a cada parte. |
+| **N2** | Estructura el texto en introducción, desarrollo y cierre por cuenta propia, con un párrafo dedicado a cada parte. |
 | **N3** | Estructura el desarrollo en varios párrafos, cada uno con una idea distinta, y mantiene el tema anunciado en la introducción. |
 | **N4** | Articula los párrafos del desarrollo de lo general a lo particular y cierra el texto retomando la idea principal sin añadir información nueva. |
 
@@ -239,7 +239,7 @@
 | Nivel | Descriptor |
 |---|---|
 | **N1** | Redacta el texto en una sola pasada y entrega la primera versión como texto final. |
-| **N2** | Elabora un esquema previo con las ideas principales por su cuenta y entrega el borrador junto al texto final. |
+| **N2** | Elabora un esquema previo con las ideas principales por cuenta propia y entrega el borrador junto al texto final. |
 | **N3** | Revisa el borrador con ayuda de un compañero y corrige al menos dos aspectos de puntuación o de conexión entre las ideas. |
 | **N4** | Explica, en una nota al margen del borrador, qué mejora aporta cada cambio introducido en el texto final. |
 
@@ -261,8 +261,8 @@
 |---|---|
 | **N1** | Utiliza una única fuente y traslada al texto fragmentos literales sin señalar que proceden de ella. |
 | **N2** | Selecciona información de la fuente indicada por el profesor y la traslada al texto con alguna palabra propia. |
-| **N3** | Elabora el texto a partir de la información seleccionada de dos fuentes indicadas y la explica en su mayor parte con sus propias palabras. |
-| **N4** | Desarrolla el trabajo de investigación combinando la información de dos o más fuentes indicadas, y explica con sus propias palabras el contenido tomado de cada una. |
+| **N3** | Elabora el texto a partir de la información seleccionada de dos fuentes indicadas y la explica en su mayor parte con palabras propias. |
+| **N4** | Desarrolla el trabajo de investigación combinando la información de dos o más fuentes indicadas, y explica con palabras propias el contenido tomado de cada una. |
 
 **Matriz cuantitativa** — total 10 puntos. Es lo que usa el modo IA para corregir.
 
@@ -375,7 +375,7 @@
 |---|---|
 | **N1** | Redacta el texto en una sola pasada y entrega la primera versión como texto final. |
 | **N2** | Elabora un esquema previo propio y entrega el borrador con marcas de revisión sobre la ortografía y el léxico. |
-| **N3** | Revisa el borrador por su cuenta y corrige problemas de puntuación y de conexión entre párrafos. |
+| **N3** | Revisa el borrador por cuenta propia y corrige problemas de puntuación y de conexión entre párrafos. |
 | **N4** | Justifica los cambios introducidos en el borrador con el metalenguaje del nivel (conector, referente, subordinada), explicando qué mejora aporta cada uno. |
 
 **Matriz cuantitativa** — total 10 puntos. Es lo que usa el modo IA para corregir.
@@ -397,7 +397,7 @@
 | **N1** | Utiliza una única fuente y traslada su información al texto sin indicar su procedencia. |
 | **N2** | Selecciona información de dos o más fuentes e indica su procedencia al final del texto. |
 | **N3** | Contrasta la información de fuentes distintas, descarta la que no responde al tema y cita el origen de los datos empleados. |
-| **N4** | Valora la fiabilidad de cada fuente a partir de su autoría, su fecha y su propósito, y justifica en el texto por qué ha empleado unos datos y descartado otros. |
+| **N4** | Valora la fiabilidad de cada fuente a partir de su autoría, su fecha y su propósito, y justifica en el texto por qué emplea unos datos y descarta otros. |
 
 **Matriz cuantitativa** — total 10 puntos. Es lo que usa el modo IA para corregir.
 
@@ -431,7 +431,7 @@
 | **N1** | Utiliza fórmulas coloquiales de cercanía junto a expresiones del registro formal en un mismo párrafo, sin ajustarlas al destinatario académico. |
 | **N2** | Ajusta el léxico y el tono al género expositivo académico, aunque mantiene alguna fórmula de cercanía aislada dirigida al lector. |
 | **N3** | Mantiene el registro formal y la tercera persona en todo el texto, y emplea fórmulas de objetividad propias del género expositivo. |
-| **N4** | Matiza el grado de objetividad introduciendo su punto de vista mediante fórmulas propias del registro académico, sin abandonar la tercera persona ni el léxico específico del tema. |
+| **N4** | Matiza el grado de objetividad introduciendo el punto de vista propio mediante fórmulas propias del registro académico, sin abandonar la tercera persona ni el léxico específico del tema. |
 
 *Sin matriz cuantitativa: esta dimensión se juzga en conjunto, no hay nada que contar.*
 
@@ -445,7 +445,7 @@
 |---|---|
 | **N1** | Ordena la información en bloques que mezclan ideas de aspectos distintos del tema, sin criterio que los relacione entre sí. |
 | **N2** | Estructura el texto en introducción, desarrollo y conclusión, y dedica un párrafo a cada aspecto relevante del tema. |
-| **N3** | Estructura el desarrollo en párrafos que avanzan de lo general a lo particular y encadena cada uno con la información que retoma del anterior. |
+| **N3** | Estructura el desarrollo en párrafos que avanzan de lo general a lo particular y encadena cada uno con un elemento retomado del anterior. |
 | **N4** | Articula la progresión temática incorporando algún matiz o excepción pertinente para comprender el tema en su complejidad, y cierra con una conclusión que sintetiza lo expuesto sin añadir información nueva. |
 
 **Matriz cuantitativa** — total 10 puntos. Es lo que usa el modo IA para corregir.
@@ -509,8 +509,8 @@
 | Nivel | Descriptor |
 |---|---|
 | **N1** | Redacta el texto en una sola pasada y entrega la primera versión como texto final. |
-| **N2** | Elabora un esquema previo propio con la estructura del texto y entrega el borrador con marcas de revisión sobre la ortografía y el léxico. |
-| **N3** | Revisa el borrador por su cuenta y reformula los pasajes que, releídos, resultan difíciles de entender para un lector que no conoce el tema. |
+| **N2** | Elabora un esquema previo propio con el orden de las partes del texto y entrega el borrador con marcas de revisión sobre la ortografía y el léxico. |
+| **N3** | Revisa el borrador por cuenta propia y reformula los pasajes que, releídos, resultan difíciles de entender para un lector que no conoce el tema. |
 | **N4** | Justifica con el metalenguaje del nivel los cambios introducidos para resolver un problema de comprensión detectado en el borrador, explicando qué mejora aporta cada uno. |
 
 **Matriz cuantitativa** — total 10 puntos. Es lo que usa el modo IA para corregir.
@@ -530,7 +530,7 @@
 | Nivel | Descriptor |
 |---|---|
 | **N1** | Utiliza una única fuente y traslada su información al texto sin indicar su procedencia. |
-| **N2** | Selecciona información de dos o más fuentes por su cuenta e indica su procedencia en el texto. |
+| **N2** | Selecciona información de dos o más fuentes por cuenta propia e indica su procedencia en el texto. |
 | **N3** | Contrasta la información de fuentes distintas, valora cuál es más fiable a partir de su autoría o su fecha, y cita el origen de los datos empleados. |
 | **N4** | Integra en el texto un punto de vista propio sobre el tema, contrastando las posturas de las fuentes cuando difieren entre sí, y respeta los principios de propiedad intelectual en todas las citas. |
 
@@ -540,7 +540,7 @@
 |---|---|---|
 | Número de fuentes contrastadas | 4 | **4** — Emplea 3 o más fuentes distintas, coteja entre ellas y señala en qué difieren o coinciden<br>**3** — Emplea 2 fuentes distintas y coteja entre ellas al menos un dato<br>**2** — Emplea 2 fuentes, pero cada una sostiene una parte distinta del texto sin cotejo<br>**0** — Emplea una sola fuente |
 | Valoración de la fiabilidad de las fuentes | 3 | **3** — Valora la fiabilidad de al menos una fuente a partir de su autoría, su fecha o su propósito, y lo explicita en el texto<br>**2** — Indica el origen de cada dato tomado de una fuente, sin valorar su fiabilidad<br>**1** — Indica las fuentes al final, sin ligar cada dato a la suya<br>**0** — No indica de dónde procede ningún dato |
-| Punto de vista crítico propio | 3 | **3** — Integra un punto de vista propio sobre el tema, distinto de la suma de las fuentes, y lo sostiene con los datos contrastados<br>**2** — Explica con sus propias palabras la información de las fuentes, sin aportar una valoración propia<br>**0** — Traslada pasajes literales de las fuentes sin reformular ni valorar |
+| Punto de vista crítico propio | 3 | **3** — Integra un punto de vista propio sobre el tema, distinto de la suma de las fuentes, y lo sostiene con los datos contrastados<br>**2** — Explica con palabras propias la información de las fuentes, sin aportar una valoración propia<br>**0** — Traslada pasajes literales de las fuentes sin reformular ni valorar |
 
 ---
 
@@ -564,9 +564,9 @@
 | Nivel | Descriptor |
 |---|---|
 | **N1** | Utiliza fórmulas coloquiales o periodísticas en un texto que el encargo académico pide en registro formal. |
-| **N2** | Ajusta el léxico y el tono al género académico, aunque mezcla información y valoración propia sin ninguna marca que las distinga. |
+| **N2** | Ajusta el léxico y el tono al género académico, sin ninguna marca que distinga la información de la valoración propia. |
 | **N3** | Mantiene el registro formal en todo el texto y señala con claridad qué pasajes son información y cuáles son valoración propia. |
-| **N4** | Justifica la elección del grado de presencia como emisor y del punto en que alterna información y valoración, y emplea en todo el texto un lenguaje no discriminatorio. |
+| **N4** | Justifica la elección del grado de presencia como emisor y del lugar del texto en que la información da paso a la valoración, y emplea en todo el texto un lenguaje no discriminatorio. |
 
 *Sin matriz cuantitativa: esta dimensión se juzga en conjunto, no hay nada que contar.*
 
@@ -580,7 +580,7 @@
 |---|---|
 | **N1** | Ordena la información en bloques que mezclan datos y valoraciones propias sin que se distinga una parte de otra. |
 | **N2** | Estructura el texto en introducción, desarrollo y conclusión, y dedica cada bloque del desarrollo a un aspecto del tema. |
-| **N3** | Estructura el desarrollo de modo que cada bloque presenta primero la información y después, si procede, una valoración propia claramente diferenciada. |
+| **N3** | Estructura el desarrollo en bloques que ofrecen primero la información y después, si procede, una valoración propia claramente diferenciada. |
 | **N4** | Articula el desarrollo incorporando una explicación alternativa o una objeción al planteamiento inicial, y la resuelve o la delimita antes de la conclusión, sin abandonar el propósito expositivo. |
 
 **Matriz cuantitativa** — total 10 puntos. Es lo que usa el modo IA para corregir.
@@ -602,7 +602,7 @@
 | **N1** | Utiliza conectores de adición y de causa para enlazar los párrafos, y mantiene el mismo tiempo verbal a lo largo de todo el texto sin ninguna finalidad. |
 | **N2** | Utiliza conectores de orden, adición, causa y contraste entre párrafos, y cambia de tiempo verbal solo cuando la norma gramatical lo exige. |
 | **N3** | Emplea marcadores discursivos que organizan la exposición (en primer lugar, dicho esto, en definitiva) además de los conectores lógicos, y usa el tiempo verbal para distinguir la información general de los datos concretos. |
-| **N4** | Sustituye las repeticiones mediante nominalizaciones e hiperónimos, y elige el tiempo verbal de cada bloque para marcar qué es explicación general y qué es dato concreto o cita. |
+| **N4** | Sustituye las repeticiones mediante nominalizaciones e hiperónimos, y elige el tiempo verbal de cada bloque para marcar qué es explicación general y qué es dato concreto o referencia a una fuente. |
 
 **Matriz cuantitativa** — total 10 puntos. Es lo que usa el modo IA para corregir.
 
@@ -642,8 +642,8 @@
 | Nivel | Descriptor |
 |---|---|
 | **N1** | Redacta el texto en una sola pasada y entrega la primera versión como texto final. |
-| **N2** | Elabora un esquema previo propio con la estructura del texto y entrega el borrador con marcas de revisión sobre la ortografía y el léxico. |
-| **N3** | Revisa el borrador por su cuenta y reformula los pasajes que, releídos, resultan difíciles de entender para un lector que no conoce el tema. |
+| **N2** | Elabora un esquema previo propio con el orden de las partes del texto y entrega el borrador con marcas de revisión sobre la ortografía y el léxico. |
+| **N3** | Revisa el borrador por cuenta propia y reformula los pasajes que, releídos, resultan difíciles de entender para un lector que no conoce el tema. |
 | **N4** | Justifica con metalenguaje específico los cambios introducidos, explicando tanto el problema de comprensión que resuelven como el efecto estilístico que persiguen. |
 
 **Matriz cuantitativa** — total 10 puntos. Es lo que usa el modo IA para corregir.
@@ -663,9 +663,9 @@
 | Nivel | Descriptor |
 |---|---|
 | **N1** | Utiliza una única fuente y traslada su información al texto sin ninguna referencia bibliográfica. |
-| **N2** | Selecciona información de dos o más fuentes por su cuenta y las enumera en una bibliografía final, sin marcar en el texto qué dato procede de cuál. |
-| **N3** | Contrasta la información de fuentes distintas, cita su procedencia en el lugar del texto donde la usa, y sigue un modelo de cita bibliográfica dado. |
-| **N4** | Integra en el texto un punto de vista propio sobre el tema, verifica los datos que resultan dudosos antes de emplearlos, y documenta todas las fuentes con el aparato de cita, notas y bibliografía del trabajo académico. |
+| **N2** | Selecciona información de dos o más fuentes por cuenta propia y las enumera en una bibliografía final, sin marcar en el texto qué dato procede de cuál. |
+| **N3** | Contrasta la información de fuentes distintas, cita su procedencia en el lugar del texto donde la usa, y aplica el modelo de referencia bibliográfica dado. |
+| **N4** | Integra en el texto un punto de vista propio sobre el tema, verifica los datos que resultan dudosos antes de emplearlos, y documenta todas las fuentes con el aparato de referencias, notas y bibliografía del trabajo académico. |
 
 **Matriz cuantitativa** — total 10 puntos. Es lo que usa el modo IA para corregir.
 
@@ -673,7 +673,7 @@
 |---|---|---|
 | Número de fuentes contrastadas | 4 | **4** — Emplea 3 o más fuentes distintas, coteja entre ellas y señala en qué difieren o coinciden<br>**3** — Emplea 2 fuentes distintas y coteja entre ellas al menos un dato<br>**2** — Emplea 2 fuentes, pero cada una sostiene una parte distinta del texto sin cotejo<br>**0** — Emplea una sola fuente |
 | Aparato de citas y bibliografía | 3 | **3** — Cita cada fuente en el lugar del texto donde la usa y añade una bibliografía final con un modelo de cita homogéneo<br>**2** — Añade una bibliografía final, pero no cita en el texto de qué fuente procede cada dato<br>**1** — Menciona alguna fuente de pasada, sin sistema<br>**0** — No incluye ninguna referencia bibliográfica |
-| Punto de vista crítico y verificación | 3 | **3** — Integra un punto de vista propio sobre el tema y señala que ha verificado algún dato dudoso antes de emplearlo<br>**2** — Explica con sus propias palabras la información de las fuentes, sin aportar una valoración propia ni verificar ningún dato<br>**0** — Traslada pasajes literales de las fuentes sin reformular ni valorar |
+| Punto de vista crítico y verificación | 3 | **3** — Integra un punto de vista propio sobre el tema y señala que ha verificado algún dato dudoso antes de emplearlo<br>**2** — Explica con palabras propias la información de las fuentes, sin aportar una valoración propia ni verificar ningún dato<br>**0** — Traslada pasajes literales de las fuentes sin reformular ni valorar |
 
 ---
 
@@ -698,8 +698,8 @@
 |---|---|
 | **N1** | Utiliza fórmulas coloquiales o periodísticas en un texto que el encargo académico pide en registro formal. |
 | **N2** | Ajusta el léxico y el tono al género académico, sin marcar en ningún punto el paso de la información a la valoración propia. |
-| **N3** | Mantiene el registro formal en todo el texto y marca mediante la enunciación el paso de la información a la valoración propia. |
-| **N4** | Justifica ante el lector el grado de presencia como emisor y el punto en que alterna información y valoración, con un lenguaje no discriminatorio en todo el texto. |
+| **N3** | Mantiene el registro formal en todo el texto e indica mediante la enunciación el paso de la información a la valoración propia. |
+| **N4** | Justifica ante el lector el grado de presencia como emisor y el lugar del texto en que la información da paso a la valoración, con un lenguaje no discriminatorio en todo el texto. |
 
 *Sin matriz cuantitativa: esta dimensión se juzga en conjunto, no hay nada que contar.*
 
@@ -712,8 +712,8 @@
 | Nivel | Descriptor |
 |---|---|
 | **N1** | Ordena la información en bloques que alternan datos y valoraciones propias, sin ninguna marca que las separe. |
-| **N2** | Estructura el texto en introducción, desarrollo y conclusión, y reserva un bloque del desarrollo para cada aspecto del tema. |
-| **N3** | Estructura el desarrollo de modo que cada bloque presenta primero los datos y, cuando procede, una valoración propia claramente diferenciada de ellos. |
+| **N2** | Estructura el texto en introducción, desarrollo y conclusión, y dedica un bloque del desarrollo a cada aspecto del tema. |
+| **N3** | Estructura el desarrollo en bloques que ofrecen primero los datos y, cuando procede, una valoración propia claramente diferenciada de ellos. |
 | **N4** | Articula el desarrollo incorporando una explicación alternativa o una objeción al planteamiento inicial, y la resuelve o la delimita antes de cerrar el texto, sin que el propósito expositivo se disuelva en argumentación. |
 
 **Matriz cuantitativa** — total 10 puntos. Es lo que usa el modo IA para corregir.
@@ -775,9 +775,9 @@
 | Nivel | Descriptor |
 |---|---|
 | **N1** | Redacta el texto en una sola pasada y lo entrega como versión final, sin someterlo a ninguna revisión. |
-| **N2** | Elabora un esquema previo propio con la estructura del texto, y revisa el borrador de forma individual, sin contrastarlo con nadie ni con ningún instrumento de consulta. |
+| **N2** | Elabora un esquema previo propio con el orden de las partes del texto, y revisa el borrador de forma individual, sin contrastarlo con nadie ni con ningún instrumento de consulta. |
 | **N3** | Revisa el borrador con ayuda de un compañero o de un instrumento de consulta (corrector, manual de estilo) y reformula los pasajes que, releídos, resultan difíciles de entender para un lector que no conoce el tema. |
-| **N4** | Justifica con metalenguaje específico los cambios que introduce a partir de esa revisión compartida, explicando tanto el problema de comprensión que resuelven como el efecto estilístico que persiguen. |
+| **N4** | Justifica con metalenguaje específico los cambios introducidos a partir de esa revisión compartida, explicando tanto el problema de comprensión que resuelven como el efecto estilístico que persiguen. |
 
 **Matriz cuantitativa** — total 10 puntos. Es lo que usa el modo IA para corregir.
 
@@ -796,9 +796,9 @@
 | Nivel | Descriptor |
 |---|---|
 | **N1** | Utiliza una única fuente y traslada su información al texto sin ninguna referencia bibliográfica. |
-| **N2** | Selecciona información de dos o más fuentes por su cuenta, la organiza en una carpeta o gestor propio, y las enumera en una bibliografía final sin marcar en el texto qué dato procede de cuál. |
+| **N2** | Selecciona información de dos o más fuentes por cuenta propia, la organiza en una carpeta o gestor propio, y las enumera en una bibliografía final sin marcar en el texto qué dato procede de cuál. |
 | **N3** | Contrasta la información de fuentes distintas, cita su procedencia en el lugar del texto donde la usa, y mantiene organizado y recuperable el material consultado durante todo el proceso. |
-| **N4** | Integra en el texto un punto de vista propio sobre el tema, verifica los datos que resultan dudosos antes de emplearlos, y documenta todas las fuentes con el aparato de cita, notas y bibliografía del trabajo académico, de modo que el material de partida quede recuperable para una revisión posterior. |
+| **N4** | Integra en el texto un punto de vista propio sobre el tema, verifica los datos que resultan dudosos antes de emplearlos, y documenta todas las fuentes con el aparato de referencias, notas y bibliografía del trabajo académico, de modo que el material de partida quede recuperable para una revisión posterior. |
 
 **Matriz cuantitativa** — total 10 puntos. Es lo que usa el modo IA para corregir.
 
@@ -806,7 +806,7 @@
 |---|---|---|
 | Número de fuentes contrastadas | 4 | **4** — Emplea 3 o más fuentes distintas, coteja entre ellas y señala en qué difieren o coinciden<br>**3** — Emplea 2 fuentes distintas y coteja entre ellas al menos un dato<br>**2** — Emplea 2 fuentes, pero cada una sostiene una parte distinta del texto sin cotejo<br>**0** — Emplea una sola fuente |
 | Aparato de citas, bibliografía y gestión del material | 3 | **3** — Cita cada fuente en el lugar del texto donde la usa, añade una bibliografía final con un modelo de cita homogéneo, y mantiene el material organizado y recuperable<br>**2** — Añade una bibliografía final, pero no cita en el texto de qué fuente procede cada dato<br>**1** — Menciona alguna fuente de pasada, sin sistema<br>**0** — No incluye ninguna referencia bibliográfica |
-| Punto de vista crítico y verificación | 3 | **3** — Integra un punto de vista propio sobre el tema y señala que ha verificado algún dato dudoso antes de emplearlo<br>**2** — Explica con sus propias palabras la información de las fuentes, sin aportar una valoración propia ni verificar ningún dato<br>**0** — Traslada pasajes literales de las fuentes sin reformular ni valorar |
+| Punto de vista crítico y verificación | 3 | **3** — Integra un punto de vista propio sobre el tema y señala que ha verificado algún dato dudoso antes de emplearlo<br>**2** — Explica con palabras propias la información de las fuentes, sin aportar una valoración propia ni verificar ningún dato<br>**0** — Traslada pasajes literales de las fuentes sin reformular ni valorar |
 
 ---
 

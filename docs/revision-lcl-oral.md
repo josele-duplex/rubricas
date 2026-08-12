@@ -27,9 +27,9 @@
 | Nivel | Descriptor |
 |---|---|
 | **N1** | Utiliza expresiones propias de la conversación con los amigos en una exposición dirigida a toda la clase. |
-| **N2** | Ajusta el tono al modelo de exposición trabajado en clase, aunque mezcla alguna expresión coloquial. |
+| **N2** | Ajusta el tono al modelo de exposición trabajado en clase, con alguna expresión coloquial aislada. |
 | **N3** | Mantiene un tono formal y se dirige a toda la clase, no solo al profesor, durante toda la exposición. |
-| **N4** | Explica con sus propias palabras los términos del tema que el resto de la clase puede desconocer, manteniendo el tono formal. |
+| **N4** | Explica con palabras propias los términos del tema que el resto de la clase puede desconocer, manteniendo el tono formal. |
 
 *Sin matriz cuantitativa: esta dimensión se juzga en conjunto, no hay nada que contar.*
 
@@ -41,7 +41,7 @@
 
 | Nivel | Descriptor |
 |---|---|
-| **N1** | Enumera datos sobre el tema en un bloque único, en el orden en que se le han ocurrido. |
+| **N1** | Enumera datos sobre el tema en un bloque único, en el orden en que van surgiendo. |
 | **N2** | Ordena la exposición en presentación del tema, desarrollo y cierre, siguiendo el guion facilitado en clase. |
 | **N3** | Ordena el desarrollo en varios bloques, cada uno centrado en una idea, y anuncia el tema al empezar. |
 | **N4** | Cierra la exposición recordando la idea principal explicada, sin añadir información nueva. |
@@ -83,7 +83,7 @@
 
 | Nivel | Descriptor |
 |---|---|
-| **N1** | Vocaliza con un volumen tan bajo o un ritmo tan rápido que la clase pierde palabras sueltas, y repite muletillas (esto, eh) en casi todas las frases. |
+| **N1** | Vocaliza con un volumen tan bajo o un ritmo tan rápido que la clase pierde palabras sueltas, y emplea las mismas muletillas (esto, eh) en casi todas las frases. |
 | **N2** | Vocaliza con un volumen y un ritmo que permiten seguir la mayor parte de la exposición, con alguna muletilla o silencio largo entre frases. |
 | **N3** | Modula el volumen y el ritmo para que toda la clase entienda la exposición sin esfuerzo, con muletillas puntuales que no interrumpen el sentido. |
 | **N4** | Regula el ritmo y las pausas para destacar las ideas principales, sin muletillas ni titubeos que interrumpan el discurso. |
@@ -104,10 +104,10 @@
 
 | Nivel | Descriptor |
 |---|---|
-| **N1** | Dirige la mirada casi todo el tiempo a sus notas o a la pantalla, sin mirar al resto de la clase. |
-| **N2** | Dirige la mirada al público en algunos momentos de la exposición, aunque vuelve enseguida a sus notas. |
+| **N1** | Dirige la mirada casi todo el tiempo a las notas o a la pantalla, sin mirar al resto de la clase. |
+| **N2** | Dirige la mirada al público en algunos momentos de la exposición, aunque vuelve enseguida a las notas. |
 | **N3** | Mantiene el contacto visual con distintos puntos de la clase durante la mayor parte de la exposición, con una postura erguida. |
-| **N4** | Acompaña la exposición con gestos que refuerzan lo que dice (señala, cuenta con los dedos, indica un tamaño) y mantiene el contacto visual con toda la clase. |
+| **N4** | Acompaña la exposición con gestos que refuerzan el contenido (señala, enumera con los dedos, indica un tamaño) y mantiene el contacto visual con toda la clase. |
 
 *Sin matriz cuantitativa: esta dimensión se juzga en conjunto, no hay nada que contar.*
 
@@ -132,7 +132,7 @@
 | Nivel | Descriptor |
 |---|---|
 | **N1** | Utiliza expresiones propias de la conversación cotidiana en una exposición dirigida a toda la clase. |
-| **N2** | Ajusta el tono al modelo de exposición trabajado en clase, aunque mezcla alguna expresión coloquial con el vocabulario del tema. |
+| **N2** | Ajusta el tono al modelo de exposición trabajado en clase, con alguna expresión coloquial aislada entre el vocabulario del tema. |
 | **N3** | Emplea el vocabulario específico del tema y mantiene un tono formal dirigido a toda la clase durante toda la exposición. |
 | **N4** | Selecciona el léxico específico del tema y mantiene el registro formal incluso al responder a las preguntas del público al final de la exposición. |
 
@@ -147,7 +147,7 @@
 | Nivel | Descriptor |
 |---|---|
 | **N1** | Ordena la exposición en presentación y desarrollo, sin cierre reconocible al final. |
-| **N2** | Estructura la exposición en presentación, desarrollo y cierre por su cuenta, con un bloque dedicado a cada parte. |
+| **N2** | Estructura la exposición en presentación, desarrollo y cierre por cuenta propia, con un bloque dedicado a cada parte. |
 | **N3** | Estructura el desarrollo en varios bloques, cada uno con una idea distinta, y ajusta la exposición al tiempo asignado. |
 | **N4** | Articula los bloques del desarrollo de lo general a lo particular y cierra retomando la idea principal, dentro del tiempo asignado y sin que el profesor tenga que avisarle. |
 
@@ -189,7 +189,7 @@
 
 | Nivel | Descriptor |
 |---|---|
-| **N1** | Vocaliza con un volumen o un ritmo que dificulta seguir la exposición en algún momento, y repite muletillas con frecuencia. |
+| **N1** | Vocaliza con un volumen o un ritmo que dificulta seguir la exposición en algún momento, y emplea las mismas muletillas a lo largo de toda la exposición. |
 | **N2** | Vocaliza con un volumen y un ritmo que permiten seguir toda la exposición, con alguna muletilla o silencio largo. |
 | **N3** | Modula el volumen y el ritmo para mantener la atención de la clase, con muletillas puntuales que no interrumpen el sentido. |
 | **N4** | Regula el ritmo y las pausas para dar énfasis a las ideas principales, consultando las notas solo con miradas breves. |
@@ -210,7 +210,7 @@
 
 | Nivel | Descriptor |
 |---|---|
-| **N1** | Dirige la mirada a sus notas o a la pantalla la mayor parte del tiempo, con una postura tensa. |
+| **N1** | Dirige la mirada a las notas o a la pantalla la mayor parte del tiempo, con una postura tensa. |
 | **N2** | Dirige la mirada al público en varios momentos, alternando con las notas, y mantiene una postura relajada. |
 | **N3** | Mantiene el contacto visual con distintos puntos de la clase durante la mayor parte de la exposición y acompaña alguna idea con gestos. |
 | **N4** | Acompaña las ideas principales con gestos naturales y mantiene el contacto visual con toda la clase durante toda la exposición. |
@@ -295,7 +295,7 @@
 
 | Nivel | Descriptor |
 |---|---|
-| **N1** | Vocaliza con un volumen o un ritmo que dificulta seguir la exposición en varios momentos, y repite muletillas al pasar de la explicación a la valoración personal. |
+| **N1** | Vocaliza con un volumen o un ritmo que dificulta seguir la exposición en varios momentos, y emplea las mismas muletillas al pasar de la explicación a la valoración personal. |
 | **N2** | Vocaliza con un volumen y un ritmo adecuados durante la mayor parte de la exposición, con alguna muletilla en los momentos de valoración personal. |
 | **N3** | Modula el ritmo para separar la explicación del tema de la valoración personal, con muletillas puntuales que no interrumpen el sentido. |
 | **N4** | Regula el ritmo y las pausas para dar énfasis tanto a la información como a la valoración personal, consultando las notas solo con miradas breves. |
@@ -316,7 +316,7 @@
 
 | Nivel | Descriptor |
 |---|---|
-| **N1** | Dirige la mirada a sus notas o a la pantalla la mayor parte de la exposición, con gestos que no acompañan lo que dice. |
+| **N1** | Dirige la mirada a las notas o a la pantalla la mayor parte de la exposición, con gestos que no acompañan el contenido. |
 | **N2** | Dirige la mirada al público en varios momentos y acompaña alguna idea con gestos, aunque vuelve con frecuencia a las notas. |
 | **N3** | Mantiene el contacto visual con distintas zonas de la clase durante la mayor parte de la exposición y acompaña las ideas principales con gestos. |
 | **N4** | Acompaña tanto la explicación como la valoración personal con gestos naturales y mantiene el contacto visual con toda la clase durante toda la exposición. |
@@ -344,9 +344,9 @@
 | Nivel | Descriptor |
 |---|---|
 | **N1** | Utiliza el mismo registro coloquial tanto al saludar al público como al presentar el tema académico. |
-| **N2** | Ajusta el registro al género académico y mantiene la tercera persona, aunque mezcla algún término coloquial en el léxico. |
+| **N2** | Ajusta el registro al género académico y mantiene la tercera persona, con algún término coloquial aislado en el léxico. |
 | **N3** | Mantiene el registro formal y el léxico específico del tema durante toda la exposición, sin mezclarlo con expresiones coloquiales. |
-| **N4** | Adapta el grado de formalidad y los ejemplos al conocimiento previo que atribuye al público, sin perder el rigor del tema. |
+| **N4** | Adapta el grado de formalidad y los ejemplos al conocimiento previo del público, sin perder el rigor del tema. |
 
 *Sin matriz cuantitativa: esta dimensión se juzga en conjunto, no hay nada que contar.*
 
@@ -358,7 +358,7 @@
 
 | Nivel | Descriptor |
 |---|---|
-| **N1** | Enumera los argumentos y los datos por el orden de aparición en sus notas, sin jerarquía entre ellos. |
+| **N1** | Enumera los argumentos y los datos por el orden de aparición en las notas, sin jerarquía entre ellos. |
 | **N2** | Estructura la exposición en presentación, desarrollo y conclusión, con un bloque dedicado a cada parte. |
 | **N3** | Estructura el desarrollo en bloques, cada uno con un argumento distinto, y ajusta la duración de cada bloque al tiempo asignado. |
 | **N4** | Articula los bloques del desarrollo de lo general a lo particular, deja tiempo para la conclusión y cierra retomando la tesis sin añadir información nueva. |
@@ -404,7 +404,7 @@
 | **N1** | Vocaliza con un volumen o un ritmo que dificulta seguir la exposición en varios momentos, y recurre a muletillas o repeticiones mientras piensa el siguiente argumento. |
 | **N2** | Vocaliza con un volumen y un ritmo adecuados durante la mayor parte de la exposición, con algún tramo leído de corrido sin pausas que ayuden a seguir el argumento. |
 | **N3** | Modula el ritmo y las pausas para separar los argumentos entre sí, con muletillas puntuales que no interrumpen la argumentación. |
-| **N4** | Regula el ritmo, el volumen y las pausas para reforzar los momentos clave de la argumentación (la tesis, la conclusión), sin apoyarse en la lectura literal de las notas. |
+| **N4** | Regula el ritmo, el volumen y las pausas para reforzar los momentos clave de la argumentación (la tesis, la conclusión), sin recurrir a la lectura literal de las notas. |
 
 **Matriz cuantitativa** — total 10 puntos. Es lo que usa el modo IA para corregir.
 
@@ -423,10 +423,10 @@
 
 | Nivel | Descriptor |
 |---|---|
-| **N1** | Dirige la mirada a sus notas o a la pantalla durante la mayor parte de la exposición, con una postura rígida o inquieta. |
-| **N2** | Dirige la mirada al público en varios momentos y mantiene una postura estable, aunque los gestos no acompañan lo que dice. |
+| **N1** | Dirige la mirada a las notas o a la pantalla durante la mayor parte de la exposición, con una postura rígida o inquieta. |
+| **N2** | Dirige la mirada al público en varios momentos y mantiene una postura estable, aunque los gestos no acompañan el contenido. |
 | **N3** | Mantiene el contacto visual con distintas zonas del público durante toda la exposición y acompaña las ideas clave con gestos naturales. |
-| **N4** | Adapta la mirada, la postura y los gestos a la reacción del público (repite o aclara si detecta que no le siguen) y los pone al servicio de la argumentación. |
+| **N4** | Adapta la mirada, la postura y los gestos a la reacción del público (vuelve sobre una idea o la reformula cuando el público da señales de no seguirla) y los pone al servicio de la argumentación. |
 
 *Sin matriz cuantitativa: esta dimensión se juzga en conjunto, no hay nada que contar.*
 
@@ -451,7 +451,7 @@
 | Nivel | Descriptor |
 |---|---|
 | **N1** | Utiliza el mismo registro coloquial tanto en la introducción como en el desarrollo de una exposición de carácter académico. |
-| **N2** | Ajusta el registro al género académico y mantiene la impersonalidad, aunque mezcla algún término coloquial en el léxico. |
+| **N2** | Ajusta el registro al género académico y mantiene la impersonalidad, con algún término coloquial aislado en el léxico. |
 | **N3** | Mantiene el registro formal y el rigor terminológico del tema durante toda la exposición, incluido el turno de preguntas. |
 | **N4** | Adapta el grado de formalidad y la terminología al perfil del público (compañeros, tribunal, público no especializado) sin perder el rigor del contenido. |
 
@@ -465,7 +465,7 @@
 
 | Nivel | Descriptor |
 |---|---|
-| **N1** | Enumera los argumentos y los datos por el orden en que aparecen en sus notas, sin jerarquía entre ellos. |
+| **N1** | Enumera los argumentos y los datos por el orden en que aparecen en las notas, sin jerarquía entre ellos. |
 | **N2** | Estructura la exposición en presentación, desarrollo y conclusión, con un bloque dedicado a cada parte. |
 | **N3** | Estructura el desarrollo en bloques con una función distinta cada uno (exposición del tema, argumentos, matización) y ajusta la duración al tiempo asignado. |
 | **N4** | Articula los bloques del desarrollo hacia una tesis, anticipa una objeción y la resuelve, y cierra dentro del tiempo asignado retomando la tesis sin añadir información nueva. |
@@ -511,7 +511,7 @@
 | **N1** | Vocaliza con un volumen o un ritmo que dificulta seguir la exposición en varios momentos, con errores de pronunciación que desvían la atención del contenido. |
 | **N2** | Vocaliza con un volumen y un ritmo adecuados durante la mayor parte de la exposición, con algún error de pronunciación aislado y algún tramo leído de las notas. |
 | **N3** | Pronuncia con cuidado los términos técnicos del tema y modula el ritmo y las pausas para separar los argumentos entre sí. |
-| **N4** | Regula el ritmo, el volumen y las pausas para reforzar la tesis y la conclusión, con una pronunciación cuidada y sin apoyarse en la lectura literal de las notas. |
+| **N4** | Regula el ritmo, el volumen y las pausas para reforzar la tesis y la conclusión, con una pronunciación cuidada y sin recurrir a la lectura literal de las notas. |
 
 **Matriz cuantitativa** — total 10 puntos. Es lo que usa el modo IA para corregir.
 
@@ -530,7 +530,7 @@
 
 | Nivel | Descriptor |
 |---|---|
-| **N1** | Dirige la mirada a sus notas o a la pantalla durante la mayor parte de la exposición, con gestos repetitivos que distraen del contenido. |
+| **N1** | Dirige la mirada a las notas o a la pantalla durante la mayor parte de la exposición, con gestos repetitivos que distraen del contenido. |
 | **N2** | Dirige la mirada al público en varios momentos y mantiene una postura estable, aunque los gestos no acompañan la argumentación. |
 | **N3** | Mantiene el contacto visual con distintas zonas del público durante toda la exposición y acompaña los argumentos con gestos naturales. |
 | **N4** | Adapta la mirada, la postura y los gestos a la reacción del público y los pone al servicio de la argumentación, sin manierismos ni movimientos repetitivos. |
@@ -558,7 +558,7 @@
 | Nivel | Descriptor |
 |---|---|
 | **N1** | Utiliza el mismo registro coloquial tanto en la introducción como en el desarrollo de una exposición de carácter académico. |
-| **N2** | Ajusta el registro al género académico y mantiene la impersonalidad, aunque mezcla algún término coloquial en el léxico. |
+| **N2** | Ajusta el registro al género académico y mantiene la impersonalidad, con algún término coloquial aislado en el léxico. |
 | **N3** | Mantiene el registro formal y el rigor terminológico durante toda la exposición, incluido el turno de preguntas. |
 | **N4** | Adapta el grado de formalidad y la terminología a un público con distintos niveles de conocimiento del tema, sin renunciar al rigor en ningún momento de la exposición. |
 
@@ -618,7 +618,7 @@
 | **N1** | Vocaliza con un volumen o un ritmo que dificulta seguir la exposición en varios momentos, con errores de pronunciación que desvían la atención del contenido. |
 | **N2** | Vocaliza con un volumen y un ritmo adecuados durante la mayor parte de la exposición, con algún error de pronunciación aislado y algún tramo leído de las notas. |
 | **N3** | Pronuncia con cuidado los términos técnicos y modula el ritmo y las pausas para separar los distintos puntos de vista entre sí. |
-| **N4** | Regula el ritmo, el volumen y las pausas para reforzar los contrastes entre puntos de vista y la valoración final, con una pronunciación cuidada y sin apoyarse en la lectura literal de las notas. |
+| **N4** | Regula el ritmo, el volumen y las pausas para reforzar los contrastes entre puntos de vista y la valoración final, con una pronunciación cuidada y sin recurrir a la lectura literal de las notas. |
 
 **Matriz cuantitativa** — total 10 puntos. Es lo que usa el modo IA para corregir.
 
@@ -637,7 +637,7 @@
 
 | Nivel | Descriptor |
 |---|---|
-| **N1** | Dirige la mirada a sus notas o a la pantalla durante la mayor parte de la exposición, con gestos repetitivos que distraen del contenido. |
+| **N1** | Dirige la mirada a las notas o a la pantalla durante la mayor parte de la exposición, con gestos repetitivos que distraen del contenido. |
 | **N2** | Dirige la mirada al público en varios momentos y mantiene una postura estable, aunque los gestos no acompañan los contrastes entre puntos de vista. |
 | **N3** | Mantiene el contacto visual con distintas zonas del público durante toda la exposición y acompaña los puntos de vista con gestos naturales. |
 | **N4** | Adapta la mirada, la postura y los gestos a la reacción del público y los pone al servicio de la argumentación, sin manierismos ni movimientos repetitivos. |

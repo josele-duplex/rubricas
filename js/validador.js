@@ -1,7 +1,17 @@
+import { LEXICO } from "./lexico.js";
+
 // Validador de calidad de descriptores — SDD §10.
 //
 // Paridad con scripts/validar_pack.py: toda regla del script hermano vive
-// aquí, con el mismo umbral y la misma semántica. Donde una regla usa una
+// aquí, con el mismo umbral y la misma semántica. La LÓGICA está escrita dos
+// veces a propósito (es corta y conviene poder leerla en cada lenguaje); las
+// PALABRAS y los umbrales, no: vienen de data/reglas-lexicas.json a través de
+// js/lexico.js, que es un archivo generado. Mientras se sincronizaban a mano
+// ya se separaron en silencio —este validador no marcaba "bienestar" y el
+// script sí—, que es la forma exacta de romper el invariante de abajo sin
+// que nadie se entere.
+//
+// Donde una regla usa una
 // heurística léxica —doble castigo, niveles indistinguibles, modalizadores
 // del criterio—, la regla avisa y explica, pero no sustituye a la
 // simulación de corrección (SDD §15): eso sigue siendo trabajo de
@@ -162,81 +172,71 @@ export const REGLAS = {
       "Los pesos de un curso que no suman 100 en el pack funcionan igual, porque el motor " +
       "normaliza, pero esconden un descuadre al editar el contenido.",
   },
+  materia_sin_lexico: {
+    etiqueta: "Materia sin léxico propio",
+    severidad: "error",
+    fuente: "SDD §10",
+    porQue:
+      "Las reglas que dependen de la materia —qué nombres de dimensión son un saber y no una " +
+      "acción, qué fórmulas del decreto sostienen una dimensión de proceso— solo existen para " +
+      "las materias registradas. Un pack de una materia sin registrar no está validado: lo " +
+      "parece, que es peor, porque nadie vuelve a mirarlo.",
+  },
 };
 
-// Calificadores vagos: la "adverbitis" del marco teórico §3. Lista unificada
-// con scripts/validar_pack.py (especificación del validador de la app, §2.1).
+// Calificadores vagos, negaciones, modalizadores, umbrales: todo viene de
+// data/reglas-lexicas.json. Aquí solo queda la LÓGICA.
 //
-// La lista se divide en tres grupos por modo de coincidencia — corrección
-// posterior a un aviso del invariante de paridad del §0: "bastantes",
-// "regularmente" y "regulares" no disparaban la regla en el JS aunque sí en
-// validar_pack.py (que busca por subcadena), así que la app daba por
-// limpios descriptores que el script hermano rechaza:
+// La adverbitis se busca en tres grupos según el MODO de coincidencia, y la
+// distinción no es cosmética:
 //
-//   1) término de una sola palabra y 7+ caracteres → SUBCADENA, insensible
-//      a mayúsculas, tal y como hace validar_pack.py. Así entran también
-//      las formas flexionadas: "bastantes", "regulares", "regularmente".
-//   2) término de una sola palabra y 6 caracteres o menos → PALABRA
-//      COMPLETA con límites Unicode. Son demasiado cortos para buscarlos
-//      como subcadena: "mal" casaría dentro de "formal" y "bien" dentro de
-//      "bienestar". Aquí el JS es deliberadamente más preciso que
-//      validar_pack.py, que sí marcaría "bienestar": la única dirección
-//      admisible es que la app sea más estricta, nunca más laxa que el
-//      script (§0).
-//   3) término de varias palabras → subcadena con espacios flexibles
-//      (\s+), igual que ya hacía validar_pack.py.
-const ADVERBITIS_SUBCADENA = [
-  "adecuadamente", "correctamente", "frecuentemente", "suficientemente",
-  "normalmente", "habitualmente", "puntualmente", "escasamente",
-  "bastante", "regular",
-];
-const ADVERBITIS_PALABRA_COMPLETA = ["bien", "mal", "muy"];
-const ADVERBITIS_MULTIPALABRA = [
-  "a veces", "de forma adecuada", "de manera correcta", "casi siempre", "en general",
-];
+//   1) `subcadena` → término largo, buscado como subcadena. Así entran las
+//      formas flexionadas: "bastantes", "regulares", "regularmente".
+//   2) `palabra_completa` → término corto, con límites de palabra Unicode.
+//      Buscarlos como subcadena daría falsos positivos: "mal" dentro de
+//      "formal", "bien" dentro de "bienestar".
+//   3) `multipalabra` → subcadena con espacios flexibles (\s+).
+//
+// scripts/validar_pack.py hace exactamente la misma partición sobre las
+// mismas listas. Cuando cada lado tenía su copia, no la hacía: el script
+// marcaba "bienestar" y la app no.
+const ADVERBITIS_SUBCADENA = LEXICO.comun.adverbitis.subcadena;
+const ADVERBITIS_PALABRA_COMPLETA = LEXICO.comun.adverbitis.palabra_completa;
+const ADVERBITIS_MULTIPALABRA = LEXICO.comun.adverbitis.multipalabra;
 
-// Un descriptor de nivel 1 describe lo que el alumno sí hace, de forma
-// limitada (paridad con validar_pack.py, misma ventana de 45 caracteres).
-const NEGACIONES = ["no ", "carece", "sin lograr", "es incapaz", "nunca "];
+// Un descriptor de nivel 1 describe lo que el alumno sí hace, de forma limitada.
+const NEGACIONES = LEXICO.comun.negaciones;
 
-// Palabras vacías del algoritmo de doble castigo (idéntica a validar_pack.py).
-const VACIAS = new Set([
-  "cada", "de", "la", "el", "los", "las", "un", "una", "que", "sin",
-  "por", "no", "y", "en", "su", "se", "mas", "con", "al", "del", "sea",
-]);
-
-const UMBRAL_SIMILITUD = 0.75;
-
-// Cabeza del nombre de dimensión que coincide exactamente con un saber, no
-// una acción competencial (especificación del validador de la app, §3.3).
-// Ya normalizada: minúsculas y sin tildes.
-const SABERES_PROHIBIDOS = new Set([
-  "sintaxis", "morfologia", "ortografia", "puntuacion", "acentuacion", "lexico",
-  "vocabulario", "oracion", "oraciones", "subordinadas", "sintagma", "sintagmas",
-  "metrica", "figuras retoricas", "generos literarios", "barroco", "romanticismo",
-  "renacimiento", "siglo de oro", "literatura medieval",
-]);
+// Palabras vacías del algoritmo de doble castigo.
+const VACIAS = new Set(LEXICO.comun.palabras_vacias);
 
 // Modalizadores del criterio (§3.4). Solo estas dos direcciones: las
 // familias "sencillez" y "extensión" se descartaron deliberadamente (ver §5
 // de la especificación del validador de la app antes de reintroducirlas).
-const DISPARADORES_AYUDA = ["de manera guiada", "de forma guiada", "con ayuda de pautas y modelos", "modelos dados"];
-const MARCAS_ANDAMIAJE = ["guiad", "pauta", "modelo", "guion", "plantilla", "indicad", "facilitad", "profesor", "con apoyo"];
-const DISPARADORES_AUTONOMIA = ["progresivamente autonoma", "de manera autonoma", "de forma autonoma", "con autonomia"];
-const MARCAS_ANDAMIAJE_RESIDUAL = [
-  "indicadas por el profesor", "indicados por el profesor", "con la pauta facilitada",
-  "con la pauta dada", "con el modelo dado", "segun el guion facilitado", "de manera guiada",
-];
+const DISPARADORES_AYUDA = LEXICO.comun.modalizadores.disparadores_ayuda;
+const MARCAS_ANDAMIAJE = LEXICO.comun.modalizadores.marcas_andamiaje;
+const DISPARADORES_AUTONOMIA = LEXICO.comun.modalizadores.disparadores_autonomia;
+const MARCAS_ANDAMIAJE_RESIDUAL = LEXICO.comun.modalizadores.marcas_andamiaje_residual;
 
-// Fórmulas del propio decreto que sostienen que una dimensión evalúa una
-// fase del proceso y no el texto terminado (§5.2, campo `evalua_proceso`).
-// Ya normalizadas: minúsculas y sin tildes. Sin "esquema": el 6.1 usa
-// "esquemas propios" para la reorganización mental de información ajena en
-// el texto terminado, no para el esquema como fase previa de escritura —
-// coinciden en la palabra, no en el referente (§5.2).
-const FORMULAS_PROCESO = ["planificar", "planificacion", "borrador", "revisar", "revision"];
+const UMBRAL_SIMILITUD = LEXICO.comun.umbrales.similitud_maxima_entre_niveles;
+const VENTANA_NEGACION = LEXICO.comun.umbrales.ventana_negacion_n1;
+const TOPE_PENALIZACION = LEXICO.comun.umbrales.tope_penalizacion;
 
-export const UMBRAL_DIMENSIONES = 5;
+export const UMBRAL_DIMENSIONES = LEXICO.comun.umbrales.dimensiones_sostenibles;
+
+// Léxico propio de la materia del pack. Si la materia no está registrada, el
+// validador lo dice en vez de callarse: un pack de Matemáticas comprobado
+// contra los saberes prohibidos de Lengua no está comprobado, solo lo parece.
+function lexicoDeMateria(pack) {
+  const bloque = LEXICO.por_materia[pack?.materia];
+  if (bloque) return bloque;
+  return {
+    desconocida: true,
+    saberes_prohibidos: [],
+    formulas_proceso: [],
+    generos: [],
+  };
+}
 
 function primeraPalabra(texto) {
   const m = texto.trim().match(/^[¡¿]?([A-Za-zÁÉÍÓÚÑáéíóúñ]+)/);
@@ -262,7 +262,10 @@ function construirRegexSubcadena(termino) {
   return new RegExp(escapado, "iu");
 }
 
-function encontrarAdverbitis(texto) {
+// Se exporta solo para que scripts/comprobar_paridad.py pueda contrastarla,
+// término a término, con la de validar_pack.py sobre un corpus de trampas.
+// Es la función donde los dos validadores se separaron sin que nadie lo viera.
+export function encontrarAdverbitis(texto) {
   const minus = texto.toLowerCase();
   const porSubcadena = ADVERBITIS_SUBCADENA.filter((termino) => minus.includes(termino));
   const porPalabraCompleta = ADVERBITIS_PALABRA_COMPLETA.filter((termino) =>
@@ -278,7 +281,7 @@ function encontrarAdverbitis(texto) {
 // "empieza por negación", es "la negación aparece cerca del principio".
 function negacionEncontrada(texto) {
   const minus = " " + texto.toLowerCase();
-  const ventana = minus.slice(0, 45);
+  const ventana = minus.slice(0, VENTANA_NEGACION);
   for (const n of NEGACIONES) {
     if (ventana.includes(" " + n)) return n.trim();
   }
@@ -529,13 +532,13 @@ function comprobarPenalizacionSinTope(criterio) {
       });
       continue;
     }
-    const limite35 = m.total * 0.35;
-    if (Math.abs(pen.tope) > limite35) {
+    const limiteTope = m.total * TOPE_PENALIZACION;
+    if (Math.abs(pen.tope) > limiteTope) {
       avisos.push({
         regla: "penalizacion_sin_tope",
         severidad: REGLAS.penalizacion_sin_tope.severidad,
         criterioId: criterio.id,
-        mensaje: `${criterio.id}: el tope de "${pen.clave}" (${pen.tope}) supera el 35% de la dimensión (máx. ${-limite35.toFixed(1)}).`,
+        mensaje: `${criterio.id}: el tope de "${pen.clave}" (${pen.tope}) supera el ${Math.round(TOPE_PENALIZACION * 100)}% de la dimensión (máx. ${-limiteTope.toFixed(1)}).`,
       });
     }
     sumaTopesAbs += Math.abs(pen.tope);
@@ -608,7 +611,7 @@ function comprobarNivelesIndistinguibles(criterio) {
 // Regla: saber como vehículo (§10; especificación del validador de la app,
 // §3.3). La dimensión es una acción competencial, no un contenido: se
 // comprueba la cabeza del nombre (antes de ":", "(" o "—").
-function comprobarSaberVehiculo(criterio) {
+function comprobarSaberVehiculo(criterio, materia) {
   const cabeza = cabezaDimension(criterio.nombre);
   const avisos = [];
 
@@ -621,7 +624,7 @@ function comprobarSaberVehiculo(criterio) {
     });
   }
 
-  if (SABERES_PROHIBIDOS.has(quitarTildes(cabeza.toLowerCase()))) {
+  if (materia.saberes_prohibidos.includes(quitarTildes(cabeza.toLowerCase()))) {
     avisos.push({
       regla: "saber_vehiculo",
       severidad: REGLAS.saber_vehiculo.severidad,
@@ -695,10 +698,10 @@ function comprobarModalizadores(criterio) {
 // cohesión del texto terminado. Deducir de la cita qué dimensiones son de
 // proceso marcaría media rúbrica, que es el mismo error de los
 // modalizadores de sencillez descartados en la nota de §10.
-function comprobarProcesoRespaldado(criterio) {
+function comprobarProcesoRespaldado(criterio, materia) {
   if (!criterio.evalua_proceso) return [];
   const citaNorm = quitarTildes((criterio.criterio_oficial?.cita ?? "").toLowerCase());
-  if (FORMULAS_PROCESO.some((f) => citaNorm.includes(f))) return [];
+  if (materia.formulas_proceso.some((f) => citaNorm.includes(f))) return [];
   return [{
     regla: "proceso_sin_respaldo",
     severidad: REGLAS.proceso_sin_respaldo.severidad,
@@ -768,7 +771,20 @@ function comprobarPesosCurso(criterios) {
 // al cargar el pack, como diagnóstico de salud del contenido.
 export function validarPack(pack) {
   const verbosPorForma = new Map(pack.verbos.map((v) => [v["3s"].toLowerCase(), v]));
+  const materia = lexicoDeMateria(pack);
   const avisos = [];
+
+  // Una materia sin bloque en data/reglas-lexicas.json se avisa en la propia
+  // vista de salud del pack, no se ignora: sus reglas dependientes de materia
+  // —saberes prohibidos, fórmulas de proceso— no se han podido aplicar.
+  if (materia.desconocida) {
+    avisos.push({
+      regla: "materia_sin_lexico",
+      severidad: REGLAS.materia_sin_lexico.severidad,
+      criterioId: "(pack)",
+      mensaje: `La materia "${pack.materia}" no está registrada en data/reglas-lexicas.json: las reglas que dependen de la materia no se han comprobado en este pack.`,
+    });
+  }
 
   for (const criterio of pack.criterios) {
     avisos.push(...comprobarTrazabilidad(criterio));
@@ -781,9 +797,9 @@ export function validarPack(pack) {
       avisos.push(...comprobarPenalizacionSinTope(criterio));
       avisos.push(...comprobarDobleCastigo(criterio));
       avisos.push(...comprobarNivelesIndistinguibles(criterio));
-      avisos.push(...comprobarSaberVehiculo(criterio));
+      avisos.push(...comprobarSaberVehiculo(criterio, materia));
       avisos.push(...comprobarModalizadores(criterio));
-      avisos.push(...comprobarProcesoRespaldado(criterio));
+      avisos.push(...comprobarProcesoRespaldado(criterio, materia));
     }
   }
   avisos.push(...comprobarCopiaEntreCursos(pack.criterios));
