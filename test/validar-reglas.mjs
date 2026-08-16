@@ -400,6 +400,40 @@ caso("pesos_curso: pesos de un curso que no suman 100 disparan aviso", () => {
   );
 });
 
+// --- 15 bis. razon_peso (nivel de pack) ---------------------------------------
+// El defecto se introduce QUITANDO la razón, no desigualando los pesos: los
+// packs reales ya son desiguales y esa es exactamente la situación que el marco
+// teórico admite mientras la razón esté escrita (§2.3).
+caso("razon_peso: reparto desigual sin razón declarada dispara aviso", () => {
+  const pack = clonarPack();
+  delete pack.razon_peso;
+  const informe = validarPack(pack);
+  assert(
+    avisosDeRegla(informe, "razon_peso").length === 1,
+    "no se detectó el reparto desigual sin razón declarada"
+  );
+});
+
+caso("razon_peso: control de falso positivo — el pack real, con su razón, no dispara nada", () => {
+  const informe = validarPack(clonarPack());
+  assert(
+    avisosDeRegla(informe, "razon_peso").length === 0,
+    "un pack desigual CON razón declarada es lo que el marco admite; no debe avisar"
+  );
+});
+
+caso("razon_peso: control de falso positivo — pesos iguales sin razón no disparan nada", () => {
+  const pack = clonarPack();
+  delete pack.razon_peso;
+  const de1eso = pack.criterios.filter((c) => c.curso === "1ESO");
+  pack.criterios = de1eso.map((c) => ({ ...c, peso_base: 100 / de1eso.length }));
+  const informe = validarPack(pack);
+  assert(
+    avisosDeRegla(informe, "razon_peso").length === 0,
+    "la ponderación igual es el valor por defecto del marco: no necesita razón"
+  );
+});
+
 // --- 16. reparto_pesos (no forma parte de validarPack: opera sobre un
 // instrumento ya normalizado, según documenta el propio validador.js) -------
 caso("reparto_pesos: dimensión por encima del 40% dispara aviso", () => {

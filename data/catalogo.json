@@ -44,6 +44,32 @@
     }
   },
 
+  "niveles": {
+    "_nota": [
+      "Los cuatro niveles de logro y sus nombres canónicos (SDD §6.2, §6.4).",
+      "",
+      "El dueño del hecho es el proyecto de Lengua (H4 de la matriz digital): el marco",
+      "teórico vigente los fija en su §2.1 —Iniciado · Suficiente · Notable · Excelente—",
+      "porque son los del material que ya está repartido en clase y los que la familia",
+      "entiende. Aquí no se decide el nombre; aquí se escribe una sola vez.",
+      "",
+      "Estaban cableados en cuatro sitios de js/ y en dos comentarios, y por eso el SDD y",
+      "la aplicación llevaban desde julio imprimiendo «Conseguido» donde Lengua dice",
+      "«Suficiente» (contradicción C1 de la matriz, resuelta el 4-ago-2026 y aplicada aquí).",
+      "",
+      "Las bandas sobre 10 NO viven aquí: son cálculo, y su única implementación está en",
+      "js/calificacion.js (cortes 5, 7 y 9, cerrados con >=). Escribirlas también en este",
+      "archivo sería volver a partir en dos un hecho que ya tiene un sitio."
+    ],
+    "orden": [1, 2, 3, 4],
+    "nombres": {
+      "1": "Iniciado",
+      "2": "Suficiente",
+      "3": "Notable",
+      "4": "Excelente"
+    }
+  },
+
   "materias": {
     "LCL": {
       "etiqueta": "Lengua Castellana y Literatura",

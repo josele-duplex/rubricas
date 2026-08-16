@@ -105,4 +105,7 @@ Señala explícitamente estas tres cosas, que son las que de verdad necesitan su
 1. **El N4 de los cursos bajos** — si es alcanzable en el aula real.
 2. **Los umbrales numéricos de las matrices** — cuántos conectores, cuántas faltas.
    Son los números que más van a chirriar si no coinciden con lo que ve en clase.
-3. **El reparto de pesos** — es una postura, no un dato.
+3. **El reparto de pesos** — es una postura, no un dato. Si no es igual para todas las
+   dimensiones de un curso, el pack tiene que decir por qué en `razon_peso`, con una frase
+   que pueda leer el alumno: se imprime en su ficha y el validador la exige (SDD §6.2, §10).
+   La ponderación igual es el valor por defecto del marco teórico; desigualarla se justifica.

@@ -1,6 +1,6 @@
 # Revisión del pack: Narración escrita — Región de Murcia
 
-**Pack** `pack-lcl-narracion.json` · versión 0.1.0 · 18 criterios · 72 descriptores · 15 matrices cuantitativas
+**Pack** `pack-lcl-narracion.json` · versión 0.2.0 · 18 criterios · 72 descriptores · 15 matrices cuantitativas
 
 > Documento para validación docente, generado desde el JSON. No se edita a mano.
 > Al leer, mira sobre todo tres cosas: si el nivel N4 es alcanzable en ese curso,
@@ -94,7 +94,7 @@
 | Componente | Máx. | Bandas |
 |---|---|---|
 | Ortografía y acentuación | 4 | **4** — Hasta 2 faltas en todo el relato<br>**3** — De 3 a 5 faltas<br>**2** — De 6 a 9 faltas<br>**0** — 10 o más faltas |
-| Concordancia | 3 | **3** — Sin errores de concordancia de género, número o persona<br>**2** — 1 o 2 errores de concordancia<br>**0** — 3 o más errores de concordancia |
+| Concordancia | 3 | **3** — Sin errores de concordancia de género, número o persona<br>**2** — 1 o 2 errores de concordancia<br>**1** — 3 o 4 errores de concordancia<br>**0** — 5 o más errores de concordancia |
 | Precisión de los verbos y los adjetivos | 3 | **3** — Emplea verbos y adjetivos concretos en lugar de comodines<br>**2** — Emplea 1 o 2 comodines (decir, hacer, cosa) con sustituto evidente<br>**1** — Emplea 3 o más comodines<br>**0** — El relato se sostiene sobre palabras comodín |
 
 ### Planificación y revisión del propio relato  ·  10%  ·  bloque D
@@ -228,7 +228,7 @@
 | Componente | Máx. | Bandas |
 |---|---|---|
 | Ortografía y acentuación | 4 | **4** — Hasta 2 faltas en todo el relato<br>**3** — De 3 a 4 faltas<br>**2** — De 5 a 8 faltas<br>**0** — 9 o más faltas |
-| Formas verbales del relato | 3 | **3** — Escribe sin error las formas de pretérito, incluidas las de hacer, decir y traer<br>**2** — 1 o 2 errores en las formas verbales<br>**0** — 3 o más errores en las formas verbales |
+| Formas verbales del relato | 3 | **3** — Sin errores en las formas de pretérito, incluidas las de hacer, decir y traer<br>**2** — 1 o 2 errores en las formas verbales<br>**1** — 3 o 4 errores en las formas verbales<br>**0** — 5 o más errores en las formas verbales |
 | Precisión del léxico | 3 | **3** — Emplea verbos de decir variados y adjetivos concretos<br>**2** — Repite 1 o 2 verbos de decir a lo largo del diálogo<br>**1** — Emplea dijo y contestó como únicos verbos de decir<br>**0** — El relato se sostiene sobre palabras comodín |
 
 ### Planificación y revisión del propio relato  ·  10%  ·  bloque D
@@ -363,7 +363,7 @@
 | Componente | Máx. | Bandas |
 |---|---|---|
 | Ortografía y acentuación | 3 | **3** — Hasta 2 faltas en un relato de cierta extensión<br>**2** — De 3 a 5 faltas<br>**1** — De 6 a 8 faltas<br>**0** — 9 o más faltas |
-| Concordancia en oraciones largas | 3 | **3** — Sin errores de concordancia en las oraciones con subordinación<br>**2** — 1 o 2 errores de concordancia<br>**0** — 3 o más errores de concordancia |
+| Concordancia en oraciones largas | 3 | **3** — Sin errores de concordancia en las oraciones con subordinación<br>**2** — 1 o 2 errores de concordancia<br>**1** — 3 o 4 errores de concordancia<br>**0** — 5 o más errores de concordancia |
 | Precisión del léxico | 4 | **4** — Emplea adjetivos y verbos que concretan la escena y el gesto<br>**3** — Emplea 1 o 2 términos generales con sustituto evidente<br>**2** — Emplea de 3 a 4 términos generales<br>**0** — El relato se sostiene sobre palabras comodín |
 
 ### Planificación y revisión del propio relato  ·  10%  ·  bloque D

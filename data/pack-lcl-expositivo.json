@@ -2,7 +2,7 @@
   "pack_id": "lcl-murcia-expositivo",
   "materia": "LCL",
   "etiqueta": "Texto expositivo escrito — Región de Murcia",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "normativa": {
     "estatal": [
       "RD 217/2022, de 29 de marzo (ESO)"
@@ -11,6 +11,7 @@
     "vigencia_desde": "2022-2023",
     "revisado": "2026-07"
   },
+  "razon_peso": "Pesa más la coherencia —estructura y selección de la información— porque es lo que convierte un texto en expositivo: sin ella, el resto no salva el texto. Pesan menos la planificación del borrador y el uso de fuentes, que se demuestran durante el proceso y en el material consultado, no solo en la página que se entrega. El reparto se puede igualar desde «Ajustar».",
   "criterios": [
     {
       "id": "lcl-b-adecuacion-expo-1eso",
@@ -420,8 +421,12 @@
                 "condicion": "1 o 2 errores de concordancia"
               },
               {
+                "puntos": 1,
+                "condicion": "3 o 4 errores de concordancia"
+              },
+              {
                 "puntos": 0,
-                "condicion": "3 o más errores de concordancia"
+                "condicion": "5 o más errores de concordancia"
               }
             ]
           },
@@ -1098,11 +1103,15 @@
               },
               {
                 "puntos": 2,
-                "condicion": "1 error de concordancia"
+                "condicion": "Hasta 1 error de concordancia"
+              },
+              {
+                "puntos": 1,
+                "condicion": "2 o 3 errores de concordancia"
               },
               {
                 "puntos": 0,
-                "condicion": "2 o más errores de concordancia"
+                "condicion": "4 o más errores de concordancia"
               }
             ]
           },

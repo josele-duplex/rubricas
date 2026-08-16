@@ -34,6 +34,7 @@
       "etiqueta":  { "tipo": "texto", "obligatorio": true },
       "version":   { "tipo": "texto", "obligatorio": true },
       "normativa": { "tipo": "objeto", "obligatorio": true, "de": "normativa" },
+      "razon_peso": { "tipo": "texto", "obligatorio": false },
       "criterios": { "tipo": "lista", "obligatorio": true, "de": "criterio", "min_elementos": 1 },
       "verbos_extra": { "tipo": "lista", "obligatorio": false, "de": "verbo" }
     },

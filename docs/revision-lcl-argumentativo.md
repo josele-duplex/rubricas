@@ -1,6 +1,6 @@
 # Revisión del pack: Texto argumentativo escrito — Región de Murcia
 
-**Pack** `pack-lcl-argumentativo.json` · versión 0.2.0 · 30 criterios · 120 descriptores · 25 matrices cuantitativas
+**Pack** `pack-lcl-argumentativo.json` · versión 0.3.0 · 30 criterios · 120 descriptores · 25 matrices cuantitativas
 
 > Documento para validación docente, generado desde el JSON. No se edita a mano.
 > Al leer, mira sobre todo tres cosas: si el nivel N4 es alcanzable en ese curso,
@@ -94,7 +94,7 @@
 | Componente | Máx. | Bandas |
 |---|---|---|
 | Ortografía y acentuación | 4 | **4** — Hasta 2 faltas en todo el texto<br>**3** — De 3 a 4 faltas<br>**2** — De 5 a 7 faltas<br>**0** — 8 o más faltas |
-| Concordancia | 3 | **3** — Sin errores de concordancia de género, número o persona<br>**2** — 1 error de concordancia<br>**0** — 2 o más errores de concordancia |
+| Concordancia | 3 | **3** — Sin errores de concordancia de género, número o persona<br>**2** — Hasta 1 error de concordancia<br>**1** — 2 o 3 errores de concordancia<br>**0** — 4 o más errores de concordancia |
 | Precisión del léxico valorativo | 3 | **3** — Emplea términos valorativos propios (injusto, necesario, útil) en lugar de palabras comodín<br>**2** — Emplea 1 palabra comodín (cosa, tema, hacer) con sustituto evidente<br>**1** — Emplea 2 o 3 palabras comodín<br>**0** — El texto se sostiene sobre palabras comodín |
 
 ### Planificación y revisión del propio texto  ·  10%  ·  bloque B

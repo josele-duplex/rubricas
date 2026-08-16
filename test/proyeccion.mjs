@@ -12,7 +12,7 @@
 
 import { primeraPersona, generarAutoevaluacion } from "../js/motor.js";
 import { LEXICO } from "../js/lexico.js";
-import { cargarPack as cargar } from "./cargar.mjs";
+import { cargarPack as cargar, CATALOGO } from "./cargar.mjs";
 
 const pack = cargar("pack-lcl-expositivo.json");
 const verbosPorId = Object.fromEntries(pack.verbos.map((v) => [v.id, v]));
@@ -215,53 +215,101 @@ caso("generarAutoevaluacion: reconjuga sin excepciones los doce criterios del pa
   }
 });
 
+// Los packs sobre los que corren los dos invariantes NO son una lista escrita
+// aquí: son todos los del catálogo (decisión 18 de §17). Una lista propia es
+// opt-in, y un opt-in se olvida —el oral estuvo fuera sin motivo escrito hasta
+// la v1.22, y el de resumen hasta la v1.29—, mientras que derivarla de
+// data/catalogo.json hace que un pack nuevo entre por definición: dejar uno
+// fuera exigiría borrarlo del catálogo, que es la aplicación entera.
+const PACKS = CATALOGO.packs.map((p) => p.archivo.replace(/^data\//, ""));
+if (PACKS.length === 0) throw new Error("data/catalogo.json no declara ningún pack: los invariantes no mirarían nada");
+
 // Invariante fuerte: ningún nivel debe conservar un verbo del banco todavía
 // en 3.ª persona. Es la comprobación que habría atrapado el fallo del "se
 // dirige" antes de llegar al navegador. Recorre TODOS los cursos y tipos de
-// tarea de cada pack de la lista, no solo un par de ofertas: hasta la v1.19
-// estaba cableado al expositivo y de ahí salieron los ocho verbos que faltaban
-// en el banco del argumentativo (registro de cambios v1.13).
+// tarea de cada pack, no solo un par de ofertas: hasta la v1.19 estaba
+// cableado al expositivo y de ahí salieron los ocho verbos que faltaban en el
+// banco del argumentativo (registro de cambios v1.13).
 //
-// Excepciones deliberadas: dos descriptores llevan un verbo del banco cuyo
-// sujeto no es el alumno sino el sintagma que lo precede —"una introducción
-// QUE delimita el tema" (lcl-b-coherencia-expo-3eso N3) y "la forma deíctica
-// … QUE ajusta la distancia" (lcl-b-adecuacion-arg-4eso N4)—, así que se
-// quedan en 3.ª persona a propósito (js/motor.js, reconjugarSecundarios). Si
-// aparece una excepción no listada aquí, es una regresión real, no ruido.
+// QUÉ SEÑALA EN REALIDAD, que es lo que resolvió la decisión 18. Barridos los
+// seis packs, los cinco restos van detrás de «que», sin una sola excepción, y
+// no es casualidad: el motor sustituye toda forma del banco salvo la que sigue
+// a «que» (el guardarraíl `(?<!\bque )` de reconjugarSecundarios), así que lo
+// único que puede quedar en 3.ª persona es justo eso. El invariante no duplica
+// el guardarraíl: vigila la ÚNICA zona donde el motor adivina sin poder
+// analizar la frase. Casi siempre acierta —"una introducción QUE delimita el
+// tema"—, y cuando no —"las ideas QUE selecciona del texto", con el alumno de
+// sujeto— imprime «él» dentro de una frase en «yo». Por eso la salida (b) que
+// la decisión sopesaba (enseñarle el guardarraíl al invariante) se descartó:
+// no lo habría hecho más silencioso, lo habría dejado incapaz de fallar.
 //
-// Los cuatro packs están dentro. El argumentativo entró al cerrarse la
-// decisión 15 (SDD §17): sus dos restos ilegítimos —"…y explicita la respuesta
-// personal que la lectura LE provoca, conectándola con la valoración que
-// DEFIENDE", lcl-c-fuentes-arg-1bach y -2bach N4— se arreglaron reescribiendo
-// los descriptores, no ampliando la lista de excepciones. El oral estaba fuera
-// sin motivo escrito, que es la misma forma de agujero que la v1.19 encontró
-// en el expositivo.
+// Las excepciones se firman en `sujetos_ajenos` (data/reglas-lexicas.json, por
+// materia) y no en este archivo, igual que los posesivos de la v1.24: cada
+// entrada lleva escrito el referente, y así un pack nuevo —y con él una
+// materia nueva— no obliga a tocar código (docs/diseno/anadir-una-materia.md).
+// Lo que no esté firmado, para el test.
 //
 // Lo que este invariante NO cubre: un verbo en 3.ª persona con el alumno como
 // sujeto que no esté en el banco (p. ej. "y dedica un párrafo a cada aspecto")
 // pasa sin ruido, porque solo se buscan las formas del banco. Ese barrido es
 // la regla 1 de la decisión 15 y se hace leyendo los descriptores proyectados:
 // no da un booleano, igual que `simular_correccion.py`. Está pasado sobre los
-// CUATRO packs: el expositivo y el argumentativo en la v1.22, el oral y el de
-// narración en la v1.23 (decisión 16(a)).
+// seis packs: el expositivo y el argumentativo en la v1.22, el oral y el de
+// narración en la v1.23 (decisión 16(a)), el comentario en la v1.25 y el
+// resumen en la v1.28.
 //
 // El frente (b) de la decisión 16 —el posesivo y el dativo de 3.ª persona, que
 // no viven en un verbo— lo cubre el segundo invariante, más abajo.
-const PACKS_CON_INVARIANTE = [
-  "pack-lcl-expositivo.json",
-  "pack-lcl-argumentativo.json",
-  "pack-lcl-narracion.json",
-  "pack-lcl-oral.json",
-  "pack-lcl-comentario.json",
-];
-const EXCEPCIONES_DELIBERADAS = new Set([
-  "lcl-b-coherencia-expo-3eso|3|Delimita",
-  "lcl-b-adecuacion-arg-4eso|4|Ajusta",
-]);
+//
+// La frontera se escribe con `\b`, y no con `\p{L}` como la del invariante de
+// posesivos, a propósito: este tiene que ver EXACTAMENTE lo que vio el motor,
+// que también usa `\b`. Un resto que el motor no pudo tocar y este no viera
+// sería un descriptor mal proyectado pasando en silencio.
+const RE_QUE_DELANTE = /(?<!\p{L})que $/iu;
 
-caso("generarAutoevaluacion: ningún descriptor conserva un verbo del banco en 3.ª persona (salvo las excepciones documentadas)", () => {
-  for (const nombre of PACKS_CON_INVARIANTE) {
+function verbosSinFirmar(texto, formas3s, ajenos) {
+  const sueltos = [];
+  for (const forma of formas3s) {
+    for (const m of texto.matchAll(new RegExp(`\\b${forma}\\b`, "gi"))) {
+      const relativa = RE_QUE_DELANTE.test(texto.slice(0, m.index));
+      const firma = `que ${forma.toLowerCase()}`;
+      if (!(relativa && firma in ajenos)) sueltos.push(relativa ? firma : forma);
+    }
+  }
+  return sueltos;
+}
+
+// Auto-prueba del invariante, con las dos caras: si esto deja de dar positivo,
+// el invariante ha dejado de mirar y los packs pasarían igual de limpios
+// estando mal (misma idea que el --auto-prueba de verificar_derivacion.py).
+caso("verbos: la firma tapa la relativa declarada y nada más", () => {
+  const ajenos = LEXICO.por_materia.LCL.sujetos_ajenos;
+  const formas = ["Delimita", "Selecciona", "Agrupa"];
+
+  const firmado = "Estructuro el texto con una introducción que delimita el tema.";
+  const sueltos = verbosSinFirmar(firmado, formas, ajenos);
+  if (sueltos.length > 0) throw new Error(`"que delimita" está firmado y salió como [${sueltos}]`);
+
+  // Mismo verbo, sin «que» delante: el motor lo habría reconjugado, así que si
+  // aparece es que algo falló antes. La firma no lo tapa.
+  const sinRelativa = verbosSinFirmar("Delimita el tema en la introducción.", formas, ajenos);
+  if (!sinRelativa.includes("Delimita")) throw new Error("un verbo sin «que» delante tiene que salir siempre");
+
+  // Y el caso que justifica que el invariante siga mirando esta zona: relativa
+  // cuyo sujeto SÍ es el alumno. Va detrás de «que», el motor la deja en 3.ª
+  // persona, y no está firmada porque es el defecto, no una excepción.
+  const defecto = verbosSinFirmar("Redacto el resumen con las ideas que selecciona del texto.", formas, ajenos);
+  if (!defecto.includes("que selecciona")) {
+    throw new Error("una relativa no firmada tiene que salir: es donde el guardarraíl del motor se equivoca");
+  }
+});
+
+caso("generarAutoevaluacion: ningún descriptor conserva un verbo del banco en 3.ª persona sin firmar", () => {
+  for (const nombre of PACKS) {
     const p = cargar(nombre);
+    const bloque = LEXICO.por_materia[p.materia];
+    if (!bloque) throw new Error(`${nombre}: la materia "${p.materia}" no tiene léxico propio`);
+    const ajenos = bloque.sujetos_ajenos ?? {};
     const formas3s = p.verbos.map((v) => v["3s"]);
     const cursos = [...new Set(p.criterios.map((c) => c.curso))];
     const tipos = [...new Set(p.criterios.flatMap((c) => c.tipos_tarea))];
@@ -274,13 +322,10 @@ caso("generarAutoevaluacion: ningún descriptor conserva un verbo del banco en 3
         const auto = generarAutoevaluacion(criterios, p.verbos, { actividad: "Prueba", curso, tipoTarea });
         for (const d of auto.dimensiones) {
           for (const [i, texto] of d.niveles.entries()) {
-            for (const forma of formas3s) {
-              const patron = new RegExp(`\\b${forma}\\b`, "i");
-              if (patron.test(texto) && !EXCEPCIONES_DELIBERADAS.has(`${d.id}|${i + 1}|${forma}`)) {
-                throw new Error(
-                  `${nombre} · ${curso} · ${d.nombre} · N${i + 1} conserva "${forma}" en 3.ª persona: "${texto}"`
-                );
-              }
+            for (const suelto of verbosSinFirmar(texto, formas3s, ajenos)) {
+              throw new Error(
+                `${nombre} · ${curso} · ${d.nombre} · N${i + 1} conserva "${suelto}" en 3.ª persona: "${texto}"`
+              );
             }
           }
         }
@@ -351,7 +396,7 @@ caso("posesivos: el invariante da positivo sobre la redacción anterior al barri
 });
 
 caso("generarAutoevaluacion: ningún descriptor conserva un posesivo o un dativo de 3.ª persona del alumno", () => {
-  for (const nombre of PACKS_CON_INVARIANTE) {
+  for (const nombre of PACKS) {
     const p = cargar(nombre);
     const bloque = LEXICO.por_materia[p.materia];
     if (!bloque) throw new Error(`${nombre}: la materia "${p.materia}" no tiene léxico propio`);

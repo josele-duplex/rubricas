@@ -2,7 +2,7 @@
   "pack_id": "lcl-murcia-narracion",
   "materia": "LCL",
   "etiqueta": "Narración escrita — Región de Murcia",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "normativa": {
     "estatal": [
       "RD 217/2022, de 29 de marzo (ESO)"
@@ -11,6 +11,7 @@
     "vigencia_desde": "2022-2023",
     "revisado": "2026-08"
   },
+  "razon_peso": "Pesa más la coherencia de la secuencia narrativa, que es lo que hace que un relato se sostenga de principio a fin. Pesa menos la planificación del borrador, que se demuestra durante el proceso y no en el relato entregado. El reparto se puede igualar desde «Ajustar».",
   "criterios": [
     {
       "id": "lcl-b-adecuacion-narr-1eso",
@@ -432,8 +433,12 @@
                 "condicion": "1 o 2 errores de concordancia"
               },
               {
+                "puntos": 1,
+                "condicion": "3 o 4 errores de concordancia"
+              },
+              {
                 "puntos": 0,
-                "condicion": "3 o más errores de concordancia"
+                "condicion": "5 o más errores de concordancia"
               }
             ]
           },
@@ -1130,15 +1135,19 @@
             "bandas": [
               {
                 "puntos": 3,
-                "condicion": "Escribe sin error las formas de pretérito, incluidas las de hacer, decir y traer"
+                "condicion": "Sin errores en las formas de pretérito, incluidas las de hacer, decir y traer"
               },
               {
                 "puntos": 2,
                 "condicion": "1 o 2 errores en las formas verbales"
               },
               {
+                "puntos": 1,
+                "condicion": "3 o 4 errores en las formas verbales"
+              },
+              {
                 "puntos": 0,
-                "condicion": "3 o más errores en las formas verbales"
+                "condicion": "5 o más errores en las formas verbales"
               }
             ]
           },
@@ -1861,8 +1870,12 @@
                 "condicion": "1 o 2 errores de concordancia"
               },
               {
+                "puntos": 1,
+                "condicion": "3 o 4 errores de concordancia"
+              },
+              {
                 "puntos": 0,
-                "condicion": "3 o más errores de concordancia"
+                "condicion": "5 o más errores de concordancia"
               }
             ]
           },

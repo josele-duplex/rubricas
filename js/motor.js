@@ -30,12 +30,17 @@ export const PUERTA_APLICABILIDAD = {
       "No se genera rúbrica: lo que corresponde es una plantilla de corrección con puntuación directa.",
   },
   desarrollo_largo: {
-    etiqueta: "Desarrollo largo, comentario de texto, EBAU",
+    // La fila del Marco Teórico §5 que abre esta puerta dice «Desarrollo largo /
+    // comentario de texto»: el marco vigente retiró de ahí «PAU/EBAU», que la
+    // versión anterior sí nombraba. La EBAU es horizonte de la senda del
+    // comentario (§1.2 del marco, SDD §7.7), no una tarea que este generador
+    // tome como diana, así que tampoco se ofrece como opción en la puerta.
+    etiqueta: "Desarrollo largo o comentario de texto",
     generaRubrica: true,
     instrumentoRecomendado: "escala_estimacion",
     premarca: "todas",
     explicacion:
-      "Para desarrollo largo o pruebas tipo EBAU se recomienda la escala de estimación analítica " +
+      "Para un desarrollo largo o un comentario de texto se recomienda la escala de estimación analítica " +
       "en lugar de la rúbrica completa: puntuación directa por apartado, sin elegir entre cuatro niveles.",
   },
   desempeno: {
@@ -108,10 +113,28 @@ export function fusionarPacks(packs) {
   for (const p of packs) {
     for (const v of p.verbos) verbosPorId.set(v.id, v);
   }
+  // `razon_peso` es del pack, y al fusionar hay seis. Se indexa por tipo de
+  // tarea, que es la unidad que el profesor elige y por la que el pack existe:
+  // la ficha del alumno imprime la razón del reparto que le toca, no las seis.
+  const razonesPeso = {};
+  for (const p of packs) {
+    if (!p.razon_peso) continue;
+    for (const tipo of new Set(p.criterios.flatMap((c) => c.tipos_tarea))) {
+      razonesPeso[tipo] = p.razon_peso;
+    }
+  }
   return {
     criterios: packs.flatMap((p) => p.criterios),
     verbos: [...verbosPorId.values()],
+    razones_peso: razonesPeso,
   };
+}
+
+// La razón del reparto desigual (Marco Teórico §2.3) del pack que sostiene esa
+// tarea. Funciona igual con un pack suelto y con el fusionado, que es lo que
+// usa la aplicación.
+export function razonPesoDe(pack, tipoTarea) {
+  return pack.razones_peso?.[tipoTarea] ?? pack.razon_peso ?? null;
 }
 
 // hereda_de: el criterio del curso superior parte del inferior y solo
@@ -310,7 +333,7 @@ export function generarListaCotejo(criterios) {
 }
 
 // §7.4 — rúbrica de un solo punto: solo la columna central con el descriptor
-// de N2 ("conseguido"); las columnas de evidencias de mejora y de excelencia
+// de N2 ("suficiente"); las columnas de evidencias de mejora y de excelencia
 // van en blanco, para que el profesor anote a mano. Se usa descriptor_un_punto
 // si está relleno, y si no el propio N2 (misma regla que descriptor_cotejo,
 // §5.2). Marco Teórico §10 reserva este instrumento a tareas de proceso y lo
@@ -342,7 +365,7 @@ export function generarRubricaUnPunto(criterios, meta) {
 // elegir entre los cuatro niveles cualitativos, más el bloque de detractores
 // globales de §6.3 (ortografía y presentación, transversales a todo el texto,
 // con tope de 2 puntos sobre 10 — §17.3, pendiente de contrastar con el
-// departamento). Pensada para desarrollo largo y pruebas tipo EBAU (Marco
+// departamento). Pensada para «Desarrollo largo / comentario de texto» (Marco
 // Teórico §5), donde puntuar de un vistazo pesa más que graduar cuatro
 // niveles. El detractor es un mecanismo del modelo de calificación (§6.2-§6.4),
 // no contenido curricular del pack, así que vive aquí como constante y no en
@@ -467,12 +490,16 @@ export function generarAutoevaluacion(criterios, verbosPack, meta) {
 }
 
 // §7.3 — ficha del alumno y guion de clase. Obligatoria, siempre se genera.
-export function generarFichaAlumno(criterios, meta) {
+// `razonPeso` llega desde el pack (§5.1) y no desde aquí: es contenido, y el
+// Marco Teórico §2.3 lo exige escrito precisamente donde el alumno lo lee antes
+// de la prueba. Sin él, la ficha enseña un reparto desigual sin decir por qué.
+export function generarFichaAlumno(criterios, meta, razonPeso = null) {
   const ordenadas = porPrioridad(criterios);
   return {
     actividad: meta.actividad,
     curso: meta.curso,
     tipoTarea: meta.tipoTarea,
+    razonPeso,
     queSeValora: ordenadas.map((c) => ({ nombre: c.nombre, peso: c.peso_normalizado })),
     comoLlegarAExcelente: ordenadas.map((c) => ({ nombre: c.nombre, texto: c.descriptores.n4.texto })),
     calculo: {
@@ -512,7 +539,7 @@ export function generarInstrumentos(pack, config) {
     complejidad,
     rubricaAnalitica: generarRubricaAnalitica(ponderados, meta),
     listaCotejo: generarListaCotejo(ponderados),
-    fichaAlumno: generarFichaAlumno(ponderados, meta),
+    fichaAlumno: generarFichaAlumno(ponderados, meta, razonPesoDe(pack, tipoTarea)),
     rubricaUnPunto: generarRubricaUnPunto(ponderados, meta),
     autoevaluacion: generarAutoevaluacion(ponderados, pack.verbos, meta),
     escalaEstimacion: generarEscalaEstimacion(ponderados, meta),

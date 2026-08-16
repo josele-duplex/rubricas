@@ -172,6 +172,15 @@ export const REGLAS = {
       "Los pesos de un curso que no suman 100 en el pack funcionan igual, porque el motor " +
       "normaliza, pero esconden un descuadre al editar el contenido.",
   },
+  razon_peso: {
+    etiqueta: "Reparto desigual sin razón declarada",
+    severidad: "aviso",
+    fuente: "Marco Teórico §2.3",
+    porQue:
+      "El marco vigente fija ponderación igual por defecto: solo se desiguala si hay una razón " +
+      "declarada. Un reparto desigual del que nadie sabe decir por qué es la mitad de una " +
+      "reclamación ya escrita, y el alumno lo lee en la ficha antes de la prueba.",
+  },
   materia_sin_lexico: {
     etiqueta: "Materia sin léxico propio",
     severidad: "error",
@@ -766,6 +775,37 @@ function comprobarPesosCurso(criterios) {
   return avisos;
 }
 
+// Regla: reparto desigual sin razón declarada (Marco Teórico §2.3), a nivel de
+// pack. Se mira por curso porque es donde el reparto tiene sentido —cada curso
+// arma su instrumento con sus dimensiones—, pero se avisa una sola vez: el
+// contenido que falta es uno, `razon_peso`, no uno por curso.
+function comprobarRazonPeso(pack) {
+  if (pack.razon_peso) return [];
+
+  const porCurso = new Map();
+  for (const c of pack.criterios) {
+    if (!porCurso.has(c.curso)) porCurso.set(c.curso, []);
+    porCurso.get(c.curso).push(c.peso_base);
+  }
+
+  const desiguales = [...porCurso.entries()]
+    .filter(([, pesos]) => pesos.length > 1 && new Set(pesos).size > 1)
+    .map(([curso]) => curso);
+
+  if (desiguales.length === 0) return [];
+
+  return [
+    {
+      regla: "razon_peso",
+      severidad: REGLAS.razon_peso.severidad,
+      criterioId: "(pack)",
+      mensaje:
+        `el reparto de pesos no es igual (${desiguales.join(", ")}) y el pack no declara ` +
+        "`razon_peso`: el marco teórico pide ponderación igual por defecto y razón escrita para desigualarla",
+    },
+  ];
+}
+
 // Recorre todo el pack (todas las combinaciones curso × tipo de tarea que
 // contenga) y devuelve el informe completo. Pensado para ejecutarse una vez
 // al cargar el pack, como diagnóstico de salud del contenido.
@@ -805,6 +845,7 @@ export function validarPack(pack) {
   avisos.push(...comprobarCopiaEntreCursos(pack.criterios));
   avisos.push(...comprobarTareaAplicable(pack.criterios));
   avisos.push(...comprobarPesosCurso(pack.criterios));
+  avisos.push(...comprobarRazonPeso(pack));
 
   return {
     avisos,

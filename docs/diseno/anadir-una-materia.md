@@ -69,7 +69,9 @@ Si la materia usa cursos que aún no existen (Primaria, FP), añádelos a
     "etiqueta": "Matemáticas",
     "saberes_prohibidos": { "_nota": "...", "terminos": ["ecuaciones", "fracciones", "..."] },
     "formulas_proceso":   { "_nota": "...", "terminos": ["..."] },
-    "generos":            { "_nota": "...", "terminos": [] }
+    "generos":            { "_nota": "...", "terminos": [] },
+    "posesivos_ajenos":   { "_nota": "...", "su radio": "la circunferencia" },
+    "sujetos_ajenos":     { "_nota": "...", "que corta": "la recta" }
   }
 }
 ```
@@ -87,14 +89,27 @@ Este es el paso que más se va a querer saltar, y el que más importa.
   leyendo el currículo de la materia, no por analogía con Lengua.
 - **`generos`** puede quedar vacío: es una regla estrecha, propia de las materias
   donde el currículo nombra géneros textuales curso a curso.
+- **`posesivos_ajenos` y `sujetos_ajenos`** son las dos listas de la proyección a
+  1.ª persona (SDD §7.5), y las dos empiezan **vacías**: se llenan leyendo los
+  descriptores proyectados del pack, no antes. La primera declara el `su`/`sus` cuyo
+  referente **no** es el alumno; la segunda, el «que» + verbo del banco cuyo sujeto
+  **no** es el alumno. Las dos son fail-closed: lo que no esté declarado, el
+  invariante de `test/proyeccion.mjs` lo para. **El valor de cada entrada es el
+  referente y está para leerlo**: si no sabes escribir de quién es ese `su` o quién
+  hace ese verbo, no es una excepción, es un descriptor que imprime «él» dentro de
+  una frase en «yo» (CLAUDE.md, «Cómo escribir un descriptor»). Los invariantes
+  recorren **todos** los packs del catálogo, así que un pack nuevo entra solo: no hay
+  ninguna lista de packs que actualizar en el test (SDD §17, decisión 18).
 
 Los dos validadores dan **error** si una materia no está registrada aquí. Está hecho
 a propósito.
 
 **Cuidado con las tildes.** Todas las listas van en minúsculas y sin tildes, porque
-se comparan contra texto normalizado, **salvo `comun.formulas_guiadas`**, que la
-compara `verificar_derivacion.py` sin quitar tildes. Cada lista lo dice en su
-`_nota`; léela antes de añadir un término.
+se comparan contra texto normalizado, **salvo tres**: `comun.formulas_guiadas`, que
+la compara `verificar_derivacion.py` sin quitar tildes, y `posesivos_ajenos` y
+`sujetos_ajenos`, que se comparan contra el descriptor proyectado tal como está
+escrito («su autoría», no «su autoria»). Cada lista lo dice en su `_nota`; léela
+antes de añadir un término.
 
 ### 3. `fuentes/curriculo/` — el currículo oficial de la materia
 
@@ -129,6 +144,12 @@ rápido es copiar la cabecera de uno existente y vaciar `criterios`.
 con la misma forma, y **no pueden redefinir uno del banco** — la forma de 1.ª persona
 de un verbo no puede depender de qué pack se cargó el último, porque de ella sale la
 autoevaluación.
+
+**Si los pesos de un curso no son iguales, el pack declara `razon_peso`**: una frase
+que dice qué dimensión pesa más y por qué, escrita para que la lea el alumno, porque
+se imprime en su ficha. No es burocracia del validador: el marco teórico fija
+ponderación igual por defecto y solo la desiguala con una razón declarada (SDD §6.2).
+Un pack de pesos iguales no necesita el campo.
 
 Para redactar los criterios, sigue el protocolo del skill `rubricas-pack`. No lo
 repito aquí para no tener dos versiones del mismo procedimiento.

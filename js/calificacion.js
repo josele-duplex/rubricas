@@ -6,7 +6,9 @@
 import { normalizarPesos } from "./motor.js";
 
 // §6.2 — valor de cada nivel según la escala elegida. La equilibrada es la que
-// se imprime en la ficha del alumno (Conseguido 5, Avanzado 7,5, Excelente 10).
+// se imprime en la ficha del alumno (Suficiente 5, Notable 7,5, Excelente 10),
+// que con los nombres canónicos de Lengua (data/catalogo.json) es ya el mismo
+// vocabulario que entiende la familia, sin traducción por medio.
 export const ESCALAS_NIVEL = {
   equilibrada: { 1: 2.5, 2: 5, 3: 7.5, 4: 10 },
   exigente: { 1: 0, 2: 5, 3: 7.5, 4: 10 },

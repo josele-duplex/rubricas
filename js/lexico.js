@@ -9,7 +9,7 @@
 // (SDD §10).
 
 export const LEXICO = {
-  "version": "1.1.0",
+  "version": "1.2.0",
   "comun": {
     "adverbitis": {
       "subcadena": [
@@ -176,6 +176,12 @@ export const LEXICO = {
         "sus datos": "la fuente citada",
         "sus razones": "las opiniones que se enlazan",
         "sus términos": "la objeción, expuesta con los términos en que se formula"
+      },
+      "sujetos_ajenos": {
+        "que agrupa": "la idea general del texto, que agrupa a las demás",
+        "que ajusta": "la forma deíctica elegida, que ajusta la distancia con el destinatario",
+        "que delimita": "la introducción del texto expositivo",
+        "que sostiene": "la idea que encabeza el resumen (antecedente elidido: «la que sostiene»)"
       }
     }
   }

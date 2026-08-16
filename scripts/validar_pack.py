@@ -115,6 +115,7 @@ def validar(ruta):
     verbos = {v["3s"].lower(): v for v in pack["verbos"]}
     errores, avisos = [], []
     pesos = collections.defaultdict(int)
+    pesos_por_curso = collections.defaultdict(list)
     con_matriz = 0
 
     def err(cid, donde, msg): errores.append((cid, donde, msg))
@@ -123,6 +124,7 @@ def validar(ruta):
     for c in pack["criterios"]:
         cid = c["id"]
         pesos[c["curso"]] += c["peso_base"]
+        pesos_por_curso[c["curso"]].append(c["peso_base"])
 
         # --- Trazabilidad curricular: sin criterio oficial no hay rúbrica ---
         if not c.get("criterio_oficial", {}).get("cita"):
@@ -293,6 +295,21 @@ def validar(ruta):
     for curso, total in sorted(pesos.items()):
         if total != 100:
             avi("(pack)", "pesos", "los pesos de %s suman %d, no 100 (el motor normaliza, pero conviene cuadrarlo)" % (curso, total))
+
+    # --- Reparto desigual sin razon declarada (Marco Teorico §2.3) ---
+    # El marco vigente del proyecto de Lengua fija ponderacion igual por defecto
+    # y solo admite desigualarla con una razon escrita. Los seis packs desiguales
+    # la traen en `razon_peso`, y la ficha del alumno la imprime al lado del
+    # reparto: la transparencia no era el problema, lo era que nadie habia
+    # escrito el porque.
+    if not pack.get("razon_peso"):
+        desiguales = [curso for curso, ps in sorted(pesos_por_curso.items())
+                      if len(ps) > 1 and len(set(ps)) > 1]
+        if desiguales:
+            avi("(pack)", "razon_peso",
+                "el reparto de pesos no es igual (%s) y el pack no declara `razon_peso`: "
+                "el marco teorico pide ponderacion igual por defecto y razon escrita para "
+                "desigualarla" % ", ".join(desiguales))
 
     return pack, errores, avisos, con_matriz, dict(pesos)
 

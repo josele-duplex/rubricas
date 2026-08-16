@@ -12,14 +12,7 @@
 import { calcularNota, puntosYNivelDe, redondear2 } from "./calificacion.js";
 import { DETRACTOR_ESTIMACION } from "./motor.js";
 import { microexplicacion } from "./microexplicaciones.js";
-import { escapeHtml } from "./ui.js";
-
-const ETIQUETAS_NIVEL = {
-  1: "N1 · En desarrollo",
-  2: "N2 · Conseguido",
-  3: "N3 · Avanzado",
-  4: "N4 · Excelente",
-};
+import { escapeHtml, etiquetaNivel } from "./ui.js";
 
 // --- Persistencia (§6.5) ---------------------------------------------------
 // Un alumno se guarda dentro de un "instrumento" (curso + tipo de tarea +
@@ -111,7 +104,7 @@ function renderCriterioNivel(criterio) {
       return `
         <label class="opcion-nivel">
           <input type="radio" name="nivel-${criterio.id}" value="${n}" />
-          <span><strong>${ETIQUETAS_NIVEL[n]}</strong> — ${escapeHtml(texto)}</span>
+          <span><strong>${escapeHtml(etiquetaNivel(n))}</strong> — ${escapeHtml(texto)}</span>
         </label>
       `;
     })
@@ -279,7 +272,7 @@ export function conectarEventosCalificacion(container, criterios, meta, onCerrar
 
       const { puntos, nivel } = puntosYNivelDe(criterio, resultado, escala);
       const aporta = redondear2((puntos * criterio.peso_normalizado) / 100);
-      parrafoResultado.textContent = `Puntos: ${puntos.toFixed(2)} · ${ETIQUETAS_NIVEL[nivel]} · aporta ${aporta.toFixed(2)} a la nota`;
+      parrafoResultado.textContent = `Puntos: ${puntos.toFixed(2)} · ${etiquetaNivel(nivel)} · aporta ${aporta.toFixed(2)} a la nota`;
 
       resultadosPorCriterio[criterio.id] = resultado;
       entradas.push({

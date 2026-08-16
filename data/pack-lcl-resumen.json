@@ -38,6 +38,7 @@
       "nivel_cognitivo": 4
     }
   ],
+  "razon_peso": "Pesan más la comprensión del sentido global y la selección de lo relevante, que son las dos mitades de lo que un resumen demuestra. Pesan menos la redacción y la corrección normativa, que vienen de otra competencia específica (la 5) y aquí acompañan al resumen en lugar de definirlo. El reparto se puede igualar desde «Ajustar».",
   "criterios": [
     {
       "id": "lcl-b-comprension-res-1eso",

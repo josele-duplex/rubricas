@@ -61,7 +61,7 @@ export const MICROEXPLICACIONES = {
     texto:
       "Cuatro niveles, siempre: no es configurable (Marco Teórico §2.1). Con tres se colapsa el centro " +
       "y con cinco se inventa una diferencia que después nadie sabe defender. El N1 describe lo que el " +
-      "alumno sí hace de forma limitada, nunca lo que le falta, y el N2 marca el desempeño conseguido " +
+      "alumno sí hace de forma limitada, nunca lo que le falta, y el N2 (Suficiente) marca el desempeño " +
       "del que se deriva la lista de cotejo.",
   },
 
@@ -109,7 +109,7 @@ export const MICROEXPLICACIONES = {
   "escala-estimacion": {
     titulo: "¿por qué puntos directos y no los cuatro niveles?",
     texto:
-      "En desarrollo largo y pruebas tipo EBAU corregir de un vistazo pesa más que graduar cuatro " +
+      "En un desarrollo largo o un comentario de texto, corregir de un vistazo pesa más que graduar cuatro " +
       "descriptores por apartado (Marco Teórico §5, SDD §7.7). Cada apartado reparte su peso en puntos " +
       "sobre 10; el detractor de ortografía y presentación es transversal a todo el texto y resta al " +
       "final, con un tope de 2 puntos que no se puede superar aunque el texto acumule muchos fallos (§6.3).",

@@ -17,13 +17,14 @@
     "ni una línea de Python ni de JavaScript.",
     "",
     "Todo va en minúsculas, porque los validadores comparan contra texto normalizado.",
-    "Y va SIN TILDES salvo `comun.formulas_guiadas`, que es la única lista comparada",
-    "por verificar_derivacion.py: ese script normaliza sin quitar tildes, porque su",
-    "trabajo es casar citas literales contra el BORM. Cada lista dice contra qué se",
-    "compara en su propia `_nota`."
+    "Y va SIN TILDES salvo tres listas: `comun.formulas_guiadas`, que la compara",
+    "verificar_derivacion.py normalizando sin quitar tildes, porque su trabajo es casar",
+    "citas literales contra el BORM; y `posesivos_ajenos` y `sujetos_ajenos`, que las",
+    "comparan los invariantes de test/proyeccion.mjs contra el descriptor proyectado tal",
+    "como está escrito. Cada lista dice contra qué se compara en su propia `_nota`."
   ],
 
-  "version": "1.1.0",
+  "version": "1.2.0",
 
   "comun": {
     "_nota": "Vale para cualquier materia: sale del principio anti-adverbitis del marco teórico y de la redacción del decreto de Murcia, no del contenido de Lengua.",
@@ -153,6 +154,37 @@
         "sus datos": "la fuente citada",
         "sus razones": "las opiniones que se enlazan",
         "sus términos": "la objeción, expuesta con los términos en que se formula"
+      },
+      "sujetos_ajenos": {
+        "_nota": [
+          "«que» más un verbo del banco, para los casos en que el sujeto de la relativa",
+          "NO es el alumno: «una introducción que delimita el tema», «la idea general que",
+          "agrupa a las demás». Es la lista de excepciones del invariante de verbos de",
+          "test/proyeccion.mjs (decisión 18 de §17), y vive aquí y no en el test por lo",
+          "mismo que `posesivos_ajenos`: es vocabulario de la materia, y añadir una",
+          "materia no debe obligar a tocar código.",
+          "",
+          "Es la única zona donde el motor adivina. `reconjugarSecundarios` deja en 3.ª",
+          "persona lo que va detrás de «que» (el guardarraíl `(?<!\\bque )` de js/motor.js)",
+          "porque no puede analizar la frase, y acierta casi siempre; cuando se equivoca",
+          "—«las ideas que selecciona del texto», donde el sujeto sí es el alumno— imprime",
+          "«él» dentro de una frase en «yo». Esta lista no copia el guardarraíl: lo firma.",
+          "Cada entrada es una vez que alguien leyó la frase y decidió que el motor tenía",
+          "razón; lo que no está firmado, el invariante lo para.",
+          "",
+          "El valor de cada entrada es el referente, y está para leerlo: si no sabes",
+          "escribir quién hace ese verbo, no es una excepción, es el defecto.",
+          "",
+          "Precio conocido de escribirla por frase y no por criterio: firmada «que",
+          "sostiene», queda firmada en todos los packs de la materia. Se acepta porque el",
+          "barrido manual de la regla 1 (decisión 15) sigue leyendo los descriptores",
+          "proyectados de cada pack nuevo, y porque la alternativa —clavar la excepción al",
+          "id del criterio— es el inventario del contenido metido en el test."
+        ],
+        "que agrupa": "la idea general del texto, que agrupa a las demás",
+        "que ajusta": "la forma deíctica elegida, que ajusta la distancia con el destinatario",
+        "que delimita": "la introducción del texto expositivo",
+        "que sostiene": "la idea que encabeza el resumen (antecedente elidido: «la que sostiene»)"
       }
     }
   }

@@ -40,8 +40,8 @@ def nivel_de(puntos):
 # vio que el proyecto sostenía dos escalas a la vez y que la diferencia decidía
 # aprobados: el mismo perfil daba 5,10 con los puntos medios y 4,90 con esta.
 # Manda esta porque es la que se imprime en la ficha del alumno y la que se
-# corresponde con el vocabulario de siempre: Conseguido 5 (suficiente),
-# Avanzado 7,5 (notable), Excelente 10 (sobresaliente).
+# corresponde con el vocabulario de siempre: Suficiente 5, Notable 7,5,
+# Excelente 10 (sobresaliente).
 VALOR_NIVEL = {1: 2.5, 2: 5.0, 3: 7.5, 4: 10.0}
 
 # ---------------------------------------------------------------------------
@@ -118,7 +118,7 @@ ORDEN_PERFILES = ["solvente", "medio", "justo", "en-riesgo"]
 # resuelve por el nivel del perfil.
 DENSIDAD_DE_COMPONENTE = [
     (re.compile(r"ortograf", re.I), "faltas_por_100"),
-    (re.compile(r"concordancia|gramatical|construcci|tiempo verbal", re.I), "errores_gram_por_100"),
+    (re.compile(r"concordancia|gramatical|construcci|tiempo verbal|formas verbales", re.I), "errores_gram_por_100"),
 ]
 
 # ---------------------------------------------------------------------------
