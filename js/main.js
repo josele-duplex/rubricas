@@ -20,6 +20,7 @@ import { renderModoAvanzado, conectarEventosModoAvanzado } from "./modo-avanzado
 import { renderCalificacion, conectarEventosCalificacion, alumnosGuardados } from "./calificar.js";
 import { calcularResultadoGuardado } from "./calificacion.js";
 import { montarMicroexplicaciones } from "./microexplicaciones.js";
+import { registrarServiceWorker, montarInstalacion } from "./pwa.js";
 
 const els = {
   form: document.getElementById("form-expres"),
@@ -30,7 +31,14 @@ const els = {
   actividad: document.getElementById("actividad"),
   resultado: document.getElementById("resultado"),
   saludPack: document.getElementById("salud-pack"),
+  zonaInstalar: document.getElementById("zona-instalar"),
 };
+
+// Instalación y modo sin conexión. Va antes de `iniciar()` y fuera de su
+// try/catch a propósito: no depende de que el pack cargue, y si algo fallara
+// aquí no puede impedir que la aplicación arranque.
+registrarServiceWorker();
+montarInstalacion(els.zonaInstalar);
 
 // Qué packs existen, cómo se llaman las cosas en pantalla y qué verbos hay:
 // todo sale de data/. Esta lista estaba cableada aquí y las etiquetas en

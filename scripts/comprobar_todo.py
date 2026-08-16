@@ -17,6 +17,7 @@ Esto ejecuta todas, en el orden en que conviene leerlas:
   4. Paridad    · la aplicación aplica exactamente las mismas reglas que el script
   5. Derivación · lo que el proyecto afirma del currículo lo dice el currículo
   6. Motor      · los instrumentos se generan y se calculan como dice el SDD
+  7. Instalable · existe todo lo que el manifest y el Service Worker prometen
 
 Uso:
     python scripts/comprobar_todo.py            (todo)
@@ -57,6 +58,11 @@ COMPROBACIONES = [
      [sys.executable, "scripts/verificar_derivacion.py"], False, True),
     ("Derivación: auto-prueba (lo corrupto debe fallar)",
      [sys.executable, "scripts/verificar_derivacion.py", "--auto-prueba"], False, True),
+    # Un icono que falta no rompe nada a la vista: la aplicación sigue
+    # abriéndose y solo deja de poder instalarse, en silencio. Por eso está
+    # aquí y no en la cabeza del que despliega.
+    ("Instalable: existe lo que el manifest y el sw prometen",
+     [sys.executable, "scripts/generar_iconos.py", "--comprobar"], False, False),
 ]
 
 

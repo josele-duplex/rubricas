@@ -1,8 +1,13 @@
-# Proyecto · Generador de instrumentos de evaluación (rúbricas LOMLOE)
+# Taller de Rúbricas · Generador de instrumentos de evaluación (LOMLOE)
 
 Aplicación web para que el profesorado de Lengua Castellana y Literatura construya rúbricas
 derivadas del currículo oficial de la Región de Murcia, con la hoja del alumno incluida.
 Este archivo recoge las **reglas no negociables**. El diseño completo vive en `docs/diseno/SDD.md`.
+
+**El nombre comercial es «Taller de Rúbricas»** (16-ago-2026), en la familia de «Taller de
+Sintaxis». Vive en dos sitios y en ninguno más: el `<title>` y el `<h1>` de `index.html`, y
+`manifest.webmanifest`, que es de donde lo toma el icono instalado (ahí se abrevia a
+«Rúbricas», que es lo que cabe bajo un icono de iPad).
 
 > **Antes de tocar contenido curricular, lee `docs/diseno/SDD.md`.** Es la única fuente de verdad
 > sobre el modelo de datos, el modelo de calificación y las reglas del validador. Este archivo
@@ -83,9 +88,10 @@ de derivación que ha llegado al docente.
   python scripts/comprobar_todo.py
   ```
 
-  Son doce comprobaciones: forma del pack, los dos derivados al día (`js/lexico.js` y las
+  Son trece comprobaciones: forma del pack, los dos derivados al día (`js/lexico.js` y las
   tablas §4.3 y §5.4 del SDD), reglas de contenido, paridad entre los dos validadores, las
-  cuatro pruebas del motor y la derivación contra el currículo, con su auto-prueba.
+  cuatro pruebas del motor, la derivación contra el currículo con su auto-prueba, y que
+  exista todo lo que la instalación promete (manifest, `<head>` y casco del Service Worker).
   **Es la misma orden que ejecuta el CI**, así que no hay una segunda lista
   que mantener. No se cierra un pack con ninguna en rojo **ni con ninguna saltada**.
 - **Toda matriz cuantitativa nueva se prueba simulando una corrección** antes de darla por buena
@@ -148,7 +154,13 @@ este generador. Comparten terminología, alcance, filosofía evaluativa y marco 
   numeración por curso, validador de packs y modelo de cálculo de un instrumento (SDD §6).
 - **Lengua manda sobre la arquitectura de rúbrica**: cuatro niveles, nombres canónicos, bandas /10,
   anti-adverbitis, principio del vehículo. Divergencias vivas documentadas en §3 de la matriz —
-  **C1 (nombres de nivel) y C4 (puntero roto del SDD §17.8) están pendientes de corregir aquí.**
+  **C1 y C4 corregidas aquí el 13-ago-2026 (SDD v1.31)**: los niveles se llaman **Iniciado ·
+  Suficiente · Notable · Excelente** y esa cadena vive **solo** en `data/catalogo.json`; el puntero
+  del SDD §17.8 apunta ya a `docs/diseno/enlace-proyecto-lengua.md`. **La que sigue viva es C3**
+  (hecho H11: la app y el skill `rubricas-lomloe` se solapan en la nota /10 y en iDoceo), abierta
+  como decisión §17.19 del SDD y **pendiente de que la decida Josele**, no de escribir código.
+- **De Lengua también es la ponderación igual por defecto** (marco §2.3): un pack solo desiguala
+  los pesos si declara `razon_peso`, que la ficha del alumno imprime y el validador exige.
 - **El límite 1.º ESO–1.º BACH es de los MATERIALES que genera Lengua** (sus UD, guías y porfolios),
   no de este generador. **Esta app sí se usa legítimamente en 2.º BACH** como producto de uso más
   amplio que el plan de aula de Lengua — mantener la capacidad de 2.º BACH del SDD sin tratarla como
@@ -175,6 +187,10 @@ Nunca se modifican archivos del proyecto de Lengua desde aquí.
 
 ```
 index.html       modo exprés y contenedores de la vista previa
+manifest.webmanifest · sw.js
+                 instalación en iPad/Android/escritorio y uso sin conexión
+assets/icons/    iconos de la aplicación instalada — GENERADOS, no se editan
+                 (scripts/generar_iconos.py, que lee la paleta de css/styles.css)
 css/             estilos de pantalla y de impresión
 js/              motor, validador, microexplicaciones, interfaz, modo avanzado
                  (js/lexico.js es GENERADO — no se edita)
@@ -196,7 +212,7 @@ las dos copias separándose en silencio**. Por eso `data/` manda sobre todo lo d
 
 | Archivo | Manda sobre | Quién lo lee |
 |---|---|---|
-| `data/catalogo.json` | qué packs hay, qué materias, qué tipos de tarea y cómo se llaman los cursos | `js/main.js`, `js/ui.js` y todos los scripts |
+| `data/catalogo.json` | qué packs hay, qué materias, qué tipos de tarea, cómo se llaman los cursos y cómo se llaman los cuatro niveles de logro | `js/main.js`, `js/ui.js` y todos los scripts |
 | `data/derivacion-<materia>.json` | qué tarea sostiene el currículo en qué curso (§4.3) y hasta dónde puede exigir cada uno (§5.4) | `scripts/verificar_derivacion.py` y, vía `scripts/generar_tablas_sdd.py`, las tablas del SDD |
 | `data/reglas-lexicas.json` | las palabras y los umbrales de las reglas del validador | `scripts/validar_pack.py` y, vía `js/lexico.js`, la aplicación |
 | `data/verbos.json` | el banco cerrado de verbos, con 3.ª y 1.ª persona | los packs ya no llevan copia; solo pueden añadir en `verbos_extra` |
@@ -216,6 +232,8 @@ diseño de este proyecto — se arregla aquí, no en la materia nueva.
 
 ## Decisiones pendientes
 
-Están al final del SDD (§17). Las dos que bloquean la alineación con el proyecto de Lengua:
-dónde vive el marco teórico, y qué hace la app frente al skill `rubricas-lomloe`
-(hoy se solapan en la conversión a 10 y en la exportación a iDoceo).
+Están al final del SDD (§17). De las dos que bloqueaban la alineación con el proyecto de Lengua,
+**dónde vive el marco teórico está resuelta** (13-ago-2026): vive allí, aquí se referencia por ruta
+y la copia de `docs/marco/…_ANTIGUO.md` es solo referencia histórica. **Queda la otra**: qué hace la
+app y qué hace el skill `rubricas-lomloe`, que hoy se solapan en la conversión a 10 y en la
+exportación a iDoceo (SDD §17.19). Es una decisión del docente, no de diseño técnico.

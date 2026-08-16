@@ -11,10 +11,22 @@ import { calcularResultadoGuardado } from "./calificacion.js";
 // Si algo pide una etiqueta antes de que el catálogo esté puesto, se devuelve
 // la clave cruda en vez de "undefined": una interfaz con "1ESO" escrito se
 // entiende y se ve; una con "undefined" parece un fallo de contenido.
-let CATALOGO = { cursos: { orden: [], etiquetas: {} }, materias: {} };
+let CATALOGO = { cursos: { orden: [], etiquetas: {} }, materias: {}, niveles: { nombres: {} } };
 
 export function fijarCatalogo(catalogo) {
   CATALOGO = catalogo;
+}
+
+// Los nombres de los cuatro niveles son de Lengua (H4 de la matriz digital,
+// marco teórico vigente §2.1) y viven en data/catalogo.json, no aquí: estaban
+// escritos cuatro veces en js/ y por eso la app siguió imprimiendo "Conseguido"
+// después de que la matriz digital diera la contradicción C1 por resuelta a
+// favor de "Suficiente", que es lo que dice el material que ya está en clase.
+// Sin catálogo puesto se imprime "N2" a secas, por lo mismo que un curso sin
+// etiqueta imprime "1ESO": una cabecera incompleta se entiende, "undefined" no.
+export function etiquetaNivel(n) {
+  const nombre = CATALOGO.niveles?.nombres?.[String(n)];
+  return nombre ? `N${n} · ${nombre}` : `N${n}`;
 }
 
 function etiquetaTipoTarea(tipo) {
@@ -121,15 +133,12 @@ function renderRubricaAnalitica(rubrica) {
 
   return `
     ${renderCabeceraInstrumento(rubrica)}
-    <div style="overflow-x:auto">
+    <div class="tabla-rodante">
     <table class="rubrica">
       <thead>
         <tr>
           <th class="col-dimension">Dimensión</th>
-          <th class="col-nivel nivel-1">N1 · En desarrollo</th>
-          <th class="col-nivel nivel-2">N2 · Conseguido</th>
-          <th class="col-nivel nivel-3">N3 · Avanzado</th>
-          <th class="col-nivel nivel-4">N4 · Excelente</th>
+          ${[1, 2, 3, 4].map((n) => `<th class="col-nivel nivel-${n}">${escapeHtml(etiquetaNivel(n))}</th>`).join("")}
         </tr>
       </thead>
       <tbody>${filas}</tbody>
@@ -179,15 +188,12 @@ function renderMatrizPersona(auto, { coevaluacion } = {}) {
         ? `<p class="ayuda">Estoy evaluando el trabajo de: <span class="linea-nombre"></span></p>`
         : ""
     }
-    <div style="overflow-x:auto">
+    <div class="tabla-rodante">
     <table class="rubrica">
       <thead>
         <tr>
           <th class="col-dimension">Dimensión</th>
-          <th class="col-nivel nivel-1">N1 · En desarrollo</th>
-          <th class="col-nivel nivel-2">N2 · Conseguido</th>
-          <th class="col-nivel nivel-3">N3 · Avanzado</th>
-          <th class="col-nivel nivel-4">N4 · Excelente</th>
+          ${[1, 2, 3, 4].map((n) => `<th class="col-nivel nivel-${n}">${escapeHtml(etiquetaNivel(n))}</th>`).join("")}
         </tr>
       </thead>
       <tbody>${filas}</tbody>
@@ -198,7 +204,7 @@ function renderMatrizPersona(auto, { coevaluacion } = {}) {
 }
 
 // §7.4 — rúbrica de un solo punto. Solo la columna central (el descriptor de
-// "conseguido"); las de mejora y excelencia se dejan en blanco para que el
+// N2, "suficiente"); las de mejora y excelencia se dejan en blanco para que el
 // profesor anote a mano lo que observa en ese alumno concreto.
 function renderRubricaUnPunto(unPunto) {
   const filas = unPunto.dimensiones
@@ -219,7 +225,7 @@ function renderRubricaUnPunto(unPunto) {
 
   return `
     ${renderCabeceraInstrumento(unPunto)}
-    <div style="overflow-x:auto">
+    <div class="tabla-rodante">
     <table class="rubrica rubrica-un-punto">
       <thead>
         <tr>
@@ -258,7 +264,7 @@ function renderEscalaEstimacion(escala) {
 
   return `
     ${renderCabeceraInstrumento(escala)}
-    <div style="overflow-x:auto">
+    <div class="tabla-rodante">
     <table class="rubrica rubrica-estimacion">
       <thead>
         <tr>
@@ -303,13 +309,6 @@ function renderListaCotejo(cotejo, meta) {
   `;
 }
 
-const ETIQUETAS_NIVEL_FICHA = {
-  1: "N1 · En desarrollo",
-  2: "N2 · Conseguido",
-  3: "N3 · Avanzado",
-  4: "N4 · Excelente",
-};
-
 // §6.5 — el bloque de resultado dentro de la ficha del alumno, no un
 // instrumento nuevo del catálogo (§7): mismo cálculo que "Calificar"
 // (calcularResultadoGuardado, js/calificacion.js), aplicado a un alumno ya
@@ -330,7 +329,7 @@ export function renderResultadoAlumnoFicha(resultadoCalculado) {
           <span class="bloque-etiqueta bloque-${f.criterio.bloque_lomloe}" title="Bloque LOMLOE ${f.criterio.bloque_lomloe}">${f.criterio.bloque_lomloe}</span>
           <span class="dimension-nombre">${escapeHtml(f.criterio.nombre)}</span>
         </td>
-        <td class="col-nivel-alcanzado">${ETIQUETAS_NIVEL_FICHA[f.nivel]}</td>
+        <td class="col-nivel-alcanzado">${escapeHtml(etiquetaNivel(f.nivel))}</td>
         <td class="col-puntos-alcanzados">${f.puntos.toFixed(2)} pts · aporta ${f.aporta.toFixed(2)}</td>
       </tr>
     `
@@ -338,7 +337,7 @@ export function renderResultadoAlumnoFicha(resultadoCalculado) {
     .join("");
 
   return `
-    <div style="overflow-x:auto">
+    <div class="tabla-rodante">
     <table class="rubrica rubrica-resultado-alumno">
       <thead>
         <tr>
@@ -385,6 +384,11 @@ function renderFichaAlumno(ficha, alumnos) {
     <div class="ficha-bloque">
       <h3>Qué se valora</h3>
       <ul>${valora}</ul>
+      ${
+        ficha.razonPeso
+          ? `<p class="ayuda razon-peso"><strong>Por qué no pesan igual:</strong> ${escapeHtml(ficha.razonPeso)}</p>`
+          : ""
+      }
     </div>
     <div class="ficha-bloque">
       <h3>Cómo llegar al nivel excelente</h3>

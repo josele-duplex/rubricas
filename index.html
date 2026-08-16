@@ -2,17 +2,37 @@
 <html lang="es">
 <head>
 <meta charset="utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Generador de rúbricas LOMLOE — Lengua Castellana y Literatura</title>
+<!-- viewport-fit=cover: instalada en el iPad, la banda de tinta llega hasta el
+     borde y bajo la barra de estado; el CSS devuelve el hueco con env(safe-area-*). -->
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<title>Taller de Rúbricas — Instrumentos de evaluación LOMLOE</title>
+<meta name="description" content="Rúbricas, listas de cotejo y ficha del alumno para Lengua Castellana y Literatura, derivadas del currículo oficial de la Región de Murcia. Sin servidor, sin cuentas y sin enviar datos." />
+
 <link rel="stylesheet" href="css/styles.css" />
 <link rel="stylesheet" href="css/print.css" media="print" />
+
+<!-- Instalación (iPad con Safari, Android y escritorio con Chrome). -->
+<link rel="manifest" href="manifest.webmanifest" />
+<meta name="theme-color" content="#1c1f26" media="(prefers-color-scheme: light)" />
+<meta name="theme-color" content="#2a2e37" media="(prefers-color-scheme: dark)" />
+<link rel="icon" href="assets/icons/favicon.svg" type="image/svg+xml" />
+<link rel="icon" href="assets/icons/favicon.ico" sizes="any" />
+<link rel="icon" href="assets/icons/favicon-32.png" type="image/png" sizes="32x32" />
+<!-- iOS no lee el manifest: necesita sus propias etiquetas para instalarse. -->
+<link rel="apple-touch-icon" href="assets/icons/apple-touch-icon.png" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+<meta name="apple-mobile-web-app-title" content="Rúbricas" />
 </head>
 <body>
 <header class="banda">
   <div class="banda-interior">
     <div class="banda-titulo">
-      <h1>Generador de instrumentos de evaluación</h1>
+      <h1>Taller de Rúbricas</h1>
       <p class="subtitulo">Lengua Castellana y Literatura</p>
+      <p class="banda-claim">Del criterio oficial a la rúbrica, la ficha del alumno y la nota.</p>
+      <div id="zona-instalar" class="zona-instalar" hidden></div>
     </div>
     <ul class="banda-datos">
       <li>LOMLOE · Región de Murcia</li>

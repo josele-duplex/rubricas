@@ -1,6 +1,6 @@
 # "Un motor de reglas sin pruebas se degrada en cuanto se toca" (SDD §15).
 #
-# Este flujo ejecutaba TRES de las doce comprobaciones del proyecto: las de forma
+# Este flujo ejecutaba TRES de las trece comprobaciones del proyecto: las de forma
 # del pack, y ninguna de procedencia. Es decir, precisamente las que no habrían
 # detenido el error de derivación del 2026-08-05, que es el único que ha llegado
 # al docente. Las otras existían y había que acordarse de ejecutarlas a mano.
@@ -37,5 +37,5 @@ jobs:
       # el repositorio. El Marco Teórico vive en el repositorio de Lengua y no
       # viaja: esa parte de la comprobación 2 emite un aviso y sigue, que es el
       # comportamiento correcto y está probado.
-      - name: Las doce comprobaciones
+      - name: Las trece comprobaciones
         run: python scripts/comprobar_todo.py

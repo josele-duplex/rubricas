@@ -1,9 +1,11 @@
-# Generador de instrumentos de evaluación · Rúbricas LOMLOE
+# Taller de Rúbricas · Instrumentos de evaluación LOMLOE
 
 Aplicación web para que el profesorado de **Lengua Castellana y Literatura** construya rúbricas
 derivadas del currículo oficial de la Región de Murcia, con la hoja del alumno incluida.
 
 Funciona en el navegador, sin servidor, sin cuentas y sin enviar nada a ninguna parte.
+Se puede **instalar** en el iPad (Safari), en Android y en el escritorio (Chrome y Edge), y una
+vez instalada sigue generando instrumentos **sin conexión**.
 
 ---
 
@@ -43,7 +45,7 @@ listas para imprimir.
 
 ## Cómo se comprueba el contenido
 
-Una sola orden ejecuta las doce comprobaciones del proyecto, y es la misma que ejecuta el CI:
+Una sola orden ejecuta las trece comprobaciones del proyecto, y es la misma que ejecuta el CI:
 
 ```bash
 python scripts/comprobar_todo.py
@@ -76,6 +78,9 @@ descubrió calculando, no leyendo.
 
 ```
 index.html          modo exprés y contenedores de la vista previa
+manifest.webmanifest
+sw.js               instalación en el dispositivo y funcionamiento sin conexión
+assets/icons/       iconos de la aplicación instalada (generados desde la paleta de css/)
 css/                estilos de pantalla y de impresión
 js/                 motor, validador, microexplicaciones, interfaz, modo avanzado
                     (js/lexico.js es generado desde data/ — no se edita a mano)

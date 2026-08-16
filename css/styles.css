@@ -107,6 +107,14 @@ body {
   position: relative;
   z-index: 0;
   padding: 2.75rem 1rem 4rem;
+  /* Instalada en el iPad, la aplicación se dibuja a sangre y por debajo de la
+     barra de estado (viewport-fit=cover en index.html). El hueco se devuelve
+     aquí y no en <body> para que el degradado siga llegando al borde físico de
+     la pantalla: si lo devolviera el body, aparecería una franja de fondo
+     encima de la banda, que es justo lo que se quería evitar. */
+  padding-top: calc(2.75rem + env(safe-area-inset-top));
+  padding-left: calc(1rem + env(safe-area-inset-left));
+  padding-right: calc(1rem + env(safe-area-inset-right));
   background: linear-gradient(118deg, var(--tinta-banda-1) 0%, var(--tinta-banda-1) 42%, var(--tinta-banda-2) 100%);
   color: #fff;
 }
@@ -136,12 +144,15 @@ body {
   gap: 2.5rem;
 }
 
+/* El nombre de la aplicación. Escala con el ancho en vez de saltar de golpe
+   en un punto de ruptura: entre el iPad en vertical y un monitor grande hay
+   demasiados anchos intermedios para tres tallas fijas. */
 .banda h1 {
   margin: 0 0 0.5rem;
-  font-size: 2.4rem;
-  line-height: 1.1;
+  font-size: clamp(1.9rem, 1.1rem + 2.6vw, 2.7rem);
+  line-height: 1.08;
   font-weight: 600;
-  letter-spacing: -0.01em;
+  letter-spacing: -0.015em;
   text-wrap: balance;
 }
 .subtitulo {
@@ -149,6 +160,57 @@ body {
   color: rgba(255, 255, 255, 0.7);
   font-size: 1rem;
 }
+
+/* Qué hace la aplicación, en una línea. La banda contestaba «¿qué es esto?»
+   con tres datos sueltos a la derecha; quien la abre por primera vez necesita
+   antes una frase, y quien la abre a diario no la lee y no le estorba. */
+.banda-claim {
+  margin: 1rem 0 0;
+  max-width: 34ch;
+  font-size: 0.95rem;
+  line-height: 1.45;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+/* --- Botón de instalar ----------------------------------------------------
+   Vive en la banda y solo aparece si el navegador puede instalar la
+   aplicación (js/pwa.js): en Chrome abre el diálogo del sistema; en Safari,
+   que no lo tiene, despliega las instrucciones de «Añadir a pantalla de
+   inicio». Contorno claro sobre tinta: es una acción secundaria, no compite
+   con «Generar». */
+.zona-instalar { margin-top: 1.5rem; }
+.zona-instalar[hidden] { display: none; }
+
+.boton-instalar {
+  min-height: 44px;
+  padding: 0.6rem 1.2rem;
+  background: rgba(255, 255, 255, 0.07);
+  color: #fff;
+  border: 1px solid rgba(255, 255, 255, 0.38);
+  border-radius: var(--radio);
+  font-size: 0.78rem;
+  cursor: pointer;
+  transition: background 0.12s ease, border-color 0.12s ease;
+}
+.boton-instalar:hover {
+  background: rgba(255, 255, 255, 0.14);
+  border-color: rgba(255, 255, 255, 0.7);
+}
+.boton-instalar:focus-visible {
+  outline: 2px solid #fff;
+  outline-offset: 2px;
+}
+
+.instalar-ayuda {
+  margin: 0.85rem 0 0;
+  max-width: 42ch;
+  padding-left: 0.85rem;
+  border-left: 2px solid rgba(255, 255, 255, 0.3);
+  font-size: 0.85rem;
+  line-height: 1.5;
+  color: rgba(255, 255, 255, 0.78);
+}
+.instalar-ayuda strong { color: #fff; font-weight: 600; }
 
 .banda-datos {
   margin: 0;
@@ -174,17 +236,36 @@ main {
      validador tiene algo que decir, y quien monte debe ser el primero. */
   margin: -3rem auto 0;
   padding: 0 1rem 4rem;
+  padding-left: calc(1rem + env(safe-area-inset-left));
+  padding-right: calc(1rem + env(safe-area-inset-right));
+  padding-bottom: calc(4rem + env(safe-area-inset-bottom));
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
 }
 
-@media (max-width: 760px) {
-  .banda { padding: 2rem 1rem 3.5rem; }
-  .banda-interior { flex-direction: column; align-items: flex-start; gap: 1.25rem; }
-  .banda h1 { font-size: 1.85rem; }
-  .banda-datos { text-align: left; }
-  .banda-datos li { padding-left: 0; }
+/* iPad en vertical y ventanas estrechas de escritorio: los tres datos dejan de
+   ser una columna a la derecha —que ahí obliga al título a partirse en tres
+   líneas— y pasan a ser una fila de píldoras bajo el título. */
+@media (max-width: 900px) {
+  .banda-interior { flex-direction: column; align-items: flex-start; gap: 1.5rem; }
+  .banda-datos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem 0.5rem;
+    text-align: left;
+  }
+  .banda-datos li {
+    padding: 0.25rem 0.7rem;
+    border: 1px solid rgba(255, 255, 255, 0.22);
+    border-radius: 999px;
+  }
+  .banda-claim { max-width: 46ch; }
+}
+
+@media (max-width: 620px) {
+  .banda { padding-bottom: 3.5rem; padding-top: calc(2rem + env(safe-area-inset-top)); }
+  .banda-claim { font-size: 0.9rem; }
 }
 
 .tarjeta {
@@ -299,9 +380,50 @@ main {
 }
 .acciones-config button[type="submit"] { margin-top: 0; }
 
-@media (max-width: 760px) {
+/* Tres columnas solo cuando caben de verdad. En el iPad en vertical, tres
+   columnas dejan los desplegables a 210 px y el nombre del curso se corta;
+   con dos, el paso 1 —que lleva dos desplegables— se queda una columna entera
+   y los pasos 2 y 3, cortos, se apilan en la otra. Alturas parejas y ningún
+   hueco vacío. */
+@media (max-width: 980px) {
+  .rejilla-config { grid-template-columns: 1fr 1fr; }
+  .rejilla-config > .campo-config:first-child { grid-row: span 2; }
+}
+
+@media (max-width: 620px) {
   .tarjeta-config { padding: 1.25rem 1.1rem; }
   .rejilla-config { grid-template-columns: 1fr; gap: 1.25rem; }
+  .rejilla-config > .campo-config:first-child { grid-row: auto; }
+}
+
+/* --- Dedo, no ratón -------------------------------------------------------
+   `pointer: coarse` es la tableta y el móvil, no un ancho de pantalla: un
+   iPad conectado a un teclado sigue tocándose con el dedo, y una ventana
+   estrecha de escritorio no. 44 px es el objetivo táctil mínimo que piden
+   tanto Apple como las WCAG 2.1 (2.5.5). */
+@media (pointer: coarse) {
+  select,
+  input[type="text"],
+  input[type="number"] {
+    min-height: 44px;
+    font-size: 1rem; /* por debajo de 16 px, Safari en iOS hace zoom al enfocar */
+  }
+  .tarjeta-config select,
+  .tarjeta-config input[type="text"] { font-size: 1rem; }
+
+  button[type="submit"],
+  #guardar-ajuste, #guardar-alumno, #reiniciar-calificacion,
+  #cancelar-ajuste, #cerrar-calificacion {
+    min-height: 44px;
+  }
+  .tab-boton { min-height: 44px; padding: 0.6rem 1.1rem; }
+  .cargar-alumno, .eliminar-alumno { min-height: 40px; padding: 0.4rem 0.8rem; }
+  .checkbox-dimension,
+  .opcion-checkbox input,
+  ul.lista-cotejo input[type="checkbox"],
+  .opcion-nivel input { width: 22px; height: 22px; }
+  /* El área que abre un «¿por qué?» era el ancho del texto del resumen. */
+  .microexplicacion summary { padding: 0.35rem 0; }
 }
 
 fieldset {
@@ -521,6 +643,28 @@ button[type="submit"]:active,
   margin-bottom: 1rem;
 }
 .panel-instrumento[hidden] { display: none; }
+
+/* Envoltorio de tabla. Cada instrumento con rejilla ya venía envuelto en un
+   `<div style="overflow-x:auto">` escrito cinco veces dentro de js/ui.js;
+   ahora es una clase, para que la regla de abajo tenga dónde agarrarse.
+
+   Una rúbrica analítica son cinco columnas de TEXTO: por debajo de cierto
+   ancho no hay reflujo que la salve, solo columnas de tres letras. Así que
+   rueda en horizontal dentro de su envoltorio —nunca la página entera— y la
+   tabla lleva un ancho mínimo legible, sin el cual no rodaría: se limitaría a
+   comprimirse hasta lo ilegible, que es lo que hacía. En papel no aplica:
+   print.css imprime a A4 completo. */
+.tabla-rodante { overflow-x: auto; }
+
+@media screen and (max-width: 900px) {
+  .tabla-rodante table.rubrica { min-width: 38rem; }
+  .tabla-rodante table.rubrica-un-punto,
+  .tabla-rodante table.rubrica-resultado-alumno { min-width: 32rem; }
+}
+
+@media print {
+  .tabla-rodante { overflow-x: visible; }
+}
 
 .instrumento-cabecera {
   color: var(--tinta-suave);

@@ -1,0 +1,20 @@
+{
+  "name": "Taller de Rúbricas — Instrumentos de evaluación LOMLOE",
+  "short_name": "Rúbricas",
+  "description": "Rúbricas, listas de cotejo y ficha del alumno derivadas del currículo oficial de Lengua Castellana y Literatura. Sin servidor, sin cuentas y sin enviar datos.",
+  "lang": "es",
+  "dir": "ltr",
+  "categories": ["education"],
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "any",
+  "background_color": "#ebe7e0",
+  "theme_color": "#1c1f26",
+  "icons": [
+    { "src": "assets/icons/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "assets/icons/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
+    { "src": "assets/icons/icon-maskable-192.png", "sizes": "192x192", "type": "image/png", "purpose": "maskable" },
+    { "src": "assets/icons/icon-maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ]
+}
