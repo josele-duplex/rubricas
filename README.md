@@ -115,15 +115,16 @@ Python 3.
 |---|---|
 | Motor de generación y puerta de aplicabilidad | Completo |
 | Modo exprés | Completo |
-| Modo avanzado | Parcial: pesos y selección de dimensiones |
-| Instrumentos | 3 de 7: rúbrica analítica, lista de cotejo y ficha del alumno |
-| Validador de calidad (§10) | Completo, 15 reglas, con microexplicación por regla |
-| Modelo de calificación | Solo modo cualitativo; el numérico está diseñado, no implementado |
-| Exportación | Impresión y PDF; faltan `.xlsx`, configuración `.json` y modo IA |
-| Contenido | Texto expositivo en 1.º y 3.º de ESO (2 de las 20 celdas de la matriz §4.3) |
+| Modo avanzado | Parcial: pesos libres con normalización a 100 y selección de dimensiones por bloque. Faltan profundidad, criterios obligatorios, elección de instrumentos, modo de calificación y edición manual de descriptores con el validador activo |
+| Instrumentos (§7) | 7 de 7: rúbrica analítica, lista de cotejo, ficha del alumno, autoevaluación, coevaluación, rúbrica de un punto y escala de estimación |
+| Validador de calidad (§10) | Completo, en paridad comprobada con `scripts/validar_pack.py`, con microexplicación por regla y batería de casos en `test/` |
+| Modelo de calificación (§6) | Parcial: el modo cualitativo y el numérico funcionan, con registro por alumno persistente en `localStorage` y conectado a la ficha del alumno. Pendiente la condición mínima de criterios obligatorios (decisión abierta, SDD §17.1) |
+| Exportación (§12) | Parcial: impresión y PDF funcionan. Faltan `.xlsx` para iDoceo, configuración `.json` y el texto plano del modo IA |
+| Contenido curricular (§4.3) | Matriz tarea × curso de la fase 2 completa: **20 de 20 celdas** (texto expositivo, exposición oral, texto argumentativo y narración). La fase 3 ya tiene dos tipos de tarea escritos: comentario de texto literario y resumen |
+| Publicación | Parcial: repositorio, validación automática en cada empujón, `.nojekyll` e instalación como PWA. Falta activar GitHub Pages con URL estable y decidir si el repositorio se hace público (SDD §17.9) |
 
-El roadmap por fases está en [`docs/diseno/SDD.md`](docs/diseno/SDD.md) §16, y las decisiones que
-siguen abiertas, en §17.
+El roadmap por fases está en [`docs/diseno/SDD.md`](docs/diseno/SDD.md) §16 (desglose de la fase 2
+en §16.1), y las decisiones que siguen abiertas, en §17.
 
 ---
 
