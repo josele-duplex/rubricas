@@ -1,0 +1,21 @@
+# Qué NO debe entrar en una búsqueda (ripgrep, fd y las herramientas del agente).
+#
+# Existe por una razón de coste, no de limpieza: hasta ahora un `grep` de
+# «conectores» devolvía 64 ficheros, y 43 de ellos eran copias del proyecto
+# dentro de .claude/worktrees/. Dos de cada tres resultados que llegaban al
+# contexto eran el mismo texto repetido, y el agente los leía y los comparaba.
+#
+# Lo que se excluye aquí sigue existiendo en el disco y se puede leer a
+# propósito con una ruta explícita; lo que no puede es aparecer solo.
+
+# Copias completas del repositorio (7,6 MB, más que el proyecto entero)
+.claude/worktrees/
+
+# Derivados: no llevan un solo hecho que no esté en data/ (ver scripts/ver.py)
+docs/revision-*.md
+js/lexico.js
+
+# Material crudo y binarios
+fuentes/pau/*.pdf
+*.docx
+__pycache__/

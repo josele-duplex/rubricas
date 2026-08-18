@@ -1,0 +1,34 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python scripts/ver.py:*)",
+      "Bash(python scripts/dossier_criterios.py:*)",
+      "Bash(python scripts/comprobar_todo.py:*)",
+      "Bash(python scripts/validar_pack.py:*)",
+      "Bash(python scripts/validar_esquema.py:*)",
+      "Bash(python scripts/comprobar_paridad.py:*)",
+      "Bash(python scripts/verificar_derivacion.py:*)",
+      "Bash(python scripts/simular_correccion.py:*)",
+      "Bash(node test/:*)",
+      "Bash(git status:*)",
+      "Bash(git diff:*)",
+      "Bash(git log:*)"
+    ]
+  },
+  "env": {
+    "PYTHONIOENCODING": "utf-8"
+  },
+  "hooks": {
+    "PreToolUse": [
+      {
+        "matcher": "Read",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python \"$CLAUDE_PROJECT_DIR/.claude/hooks/coste_lectura.py\""
+          }
+        ]
+      }
+    ]
+  }
+}

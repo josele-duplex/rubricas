@@ -17,3 +17,6 @@ desktop.ini
 
 # Ficheros de bloqueo de LibreOffice/Office mientras un .docx está abierto
 .~lock.*#
+
+# Copias completas del repositorio hechas por el agente: nunca se buscan
+.claude/worktrees/

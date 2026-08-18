@@ -37,5 +37,5 @@ jobs:
       # el repositorio. El Marco Teórico vive en el repositorio de Lengua y no
       # viaja: esa parte de la comprobación 2 emite un aviso y sigue, que es el
       # comportamiento correcto y está probado.
-      - name: Las trece comprobaciones
+      - name: Las catorce comprobaciones
         run: python scripts/comprobar_todo.py

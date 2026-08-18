@@ -45,7 +45,7 @@ listas para imprimir.
 
 ## Cómo se comprueba el contenido
 
-Una sola orden ejecuta las trece comprobaciones del proyecto, y es la misma que ejecuta el CI:
+Una sola orden ejecuta las catorce comprobaciones del proyecto, y es la misma que ejecuta el CI:
 
 ```bash
 python scripts/comprobar_todo.py
@@ -67,10 +67,31 @@ que nadie lo notara.
 regla sobre una copia en memoria del pack y comprueba que la regla lo detecta. **Si un caso
 obliga a cambiar el pack, la regla está mal escrita, no el contenido.**
 
+La orden es **callada**: una comprobación que pasa no escribe nada y la que falla escribe su
+salida entera. Con `--detallado` se ve todo, como antes.
+
 Lo único que queda fuera de la orden única, a propósito, es simular una corrección
-(`scripts/simular_correccion.py`), obligatorio para toda matriz cuantitativa nueva: pide un
-juicio del docente, no devuelve un booleano. Leerla no basta — la regla del doble castigo se
-descubrió calculando, no leyendo.
+(`scripts/simular_correccion.py --resumen`), obligatorio para toda matriz cuantitativa nueva:
+pide un juicio del docente, no devuelve un booleano. Leerla no basta — la regla del doble castigo
+se descubrió calculando, no leyendo. `--resumen` hace la parte mecánica —las notas por curso y
+perfil, y las celdas sospechosas: saltos de dos niveles, umbrales planos, ceros— y deja el juicio
+entero.
+
+---
+
+## Cómo se lee este repositorio sin abrirlo entero
+
+Son ~675.000 tokens de texto. Un pack son 39.000 y el SDD 42.000, así que nada de eso se abre
+completo, ni a mano ni desde un asistente:
+
+```bash
+python scripts/ver.py coste                    qué cuesta leer cada zona
+python scripts/ver.py pack expositivo          índice: una línea por criterio
+python scripts/ver.py criterio <id>            un criterio con su cita, sin el resto del pack
+python scripts/ver.py sdd 6.3                  una sección del SDD
+python scripts/ver.py buscar "hiperónimos"     dónde se dice algo, en una línea por acierto
+python scripts/dossier_criterios.py --codigo 5.1   ese criterio del decreto, curso a curso
+```
 
 ---
 
@@ -91,9 +112,11 @@ data/               la fuente de todo el contenido:
                       reglas-lexicas.json  las palabras y umbrales del validador
                       verbos.json          el banco cerrado de verbos
                       esquema-pack.json    la forma que debe tener un pack
-scripts/            comprobación completa, validadores, generadores, simulador
+scripts/            comprobación completa, validadores, generadores, simulador,
+                    lector quirúrgico (ver.py) y dossier de criterios
 test/               casos dorados del validador y del motor (Node, sin dependencias)
-docs/diseno/        SDD, guía para añadir una materia y enlace con el proyecto de Lengua
+docs/diseno/        SDD, registro de cambios, motivo de cada regla, guía para añadir
+                    una materia y enlace con el proyecto de Lengua
                     (las tablas §4.3 y §5.4 del SDD se generan desde data/; la prosa no)
 docs/marco/         marco teórico y matrices de referencia
 fuentes/            currículo oficial y originales aportados (material crudo)

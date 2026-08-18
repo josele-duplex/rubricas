@@ -70,6 +70,30 @@ PALABRAS_POR_TAREA = {
     # expositivo, que es de tres a cuatro veces más largo en el mismo curso:
     # «hasta 2 faltas» significa una cosa en 350 palabras y otra en 90.
     "resumen":       {"1ESO": 60, "3ESO": 90, "1BACH": 120, "2BACH": 130},
+    # La reacción a una noticia es un texto de valoración, no de desarrollo: el
+    # alumno presenta la noticia en dos líneas y lo demás lo dedica a juzgarla.
+    # Por eso se parece al comentario y no al expositivo del mismo curso, y por
+    # eso sus umbrales de faltas se escriben contra ESTA columna. No arranca en
+    # 1.º ni en 3.º de ESO porque la fila no existe ahí (§4.3): en esos cursos la
+    # competencia 4 solo tiene criterio de comprensión, no de valoración.
+    "reaccion":      {"2ESO": 150, "4ESO": 220, "1BACH": 280, "2BACH": 320},
+    # La noticia la comprime el propio género: la pirámide invertida obliga a
+    # decir lo esencial arriba y el texto se corta por donde el soporte manda,
+    # así que crece mucho menos que un expositivo del mismo curso. Queda entre
+    # el comentario y el expositivo, y por eso sus umbrales de faltas tampoco se
+    # heredan de nadie. Sin 2.º de ESO porque la fila no existe ahí (§4.3): la
+    # competencia 6 de ese curso no tiene el criterio de localizar, seleccionar
+    # y contrastar información, que es el que abre esta tarea.
+    "noticia":       {"1ESO": 150, "3ESO": 250, "4ESO": 300, "1BACH": 400, "2BACH": 450},
+    # El trabajo de investigación multimodal es el único cuyo texto no va seguido:
+    # la línea de tiempo, la infografía y la presentación lo reparten en pantallas
+    # y el resto del contenido lo llevan la imagen y el dato. Lo que el alumno
+    # escribe es menos que en cualquier texto del mismo curso, y encima se proyecta,
+    # así que los tramos de faltas de su matriz se escriben contra ESTA columna y no
+    # se heredan de nadie. Sin 1.º de ESO porque la fila no existe ahí (§4.3): la
+    # competencia 6 de ese curso no tiene el criterio de elaborar trabajos de
+    # investigación, que es el que abre esta tarea.
+    "investigacion": {"2ESO": 180, "3ESO": 220, "4ESO": 260, "1BACH": 320, "2BACH": 360},
 }
 
 # ---------------------------------------------------------------------------
@@ -291,7 +315,8 @@ def main():
     ruta = sueltos[0] if sueltos else "data/pack-lcl-expositivo.json"
     pack = cargar_pack(ruta)
 
-    todos_perfiles = "--todos" in banderas or "--perfiles" in banderas
+    resumido = "--resumen" in banderas
+    todos_perfiles = "--todos" in banderas or "--perfiles" in banderas or resumido
     if perfil_id and perfil_id not in PERFILES:
         raise SystemExit("Perfil desconocido: %s. Hay %s." % (perfil_id, ", ".join(ORDEN_PERFILES)))
 
@@ -306,14 +331,137 @@ def main():
         for pid in perfiles:
             filas, total = simular(pack, curso, PERFILES[pid] if pid else None,
                                    semilla=semilla, palabras=palabras)
-            imprimir(pack, curso, pid, filas, total, palabras)
+            if not resumido:
+                imprimir(pack, curso, pid, filas, total, palabras)
             resumen.append((curso, pid, palabras, filas, total))
+
+    if resumido:
+        _resumen_compacto(pack, resumen)
+        return
 
     if todos_perfiles:
         _tabla_resumen(resumen)
 
     print("Comprueba: ¿le pondrías esta nota a un alumno con este perfil?")
     print("Si una dimensión cae dos niveles de golpe, sospecha de las penalizaciones.")
+
+
+# ---------------------------------------------------------------------------
+# Modo --resumen: lo mecánico lo hace el código; el juicio se queda entero
+#
+# La simulación completa de un pack son 28 KB de tablas, y leerlas consiste en
+# recorrerlas buscando siempre los mismos cinco patrones. Buscar patrones en una
+# tabla es exactamente lo que no hay que hacer a mano: se hace mal y cuesta caro.
+#
+# Esto NO decide nada —sigue sin haber un booleano y sigue sin entrar en
+# comprobar_todo.py— pero deja sobre la mesa solo las celdas sospechosas, que es
+# donde el juicio del docente vale algo. Lo que el código puede ver:
+#
+#   1. una dimensión que cae dos niveles de golpe entre dos perfiles seguidos
+#      (la firma del doble castigo, SDD §6.3);
+#   2. una dimensión donde los cuatro alumnos caen en el mismo nivel: el umbral
+#      no está midiendo, está decorando;
+#   3. una dimensión que llega a 0 puntos, que en 1.º de ESO no debe pasar nunca;
+#   4. una nota final que no respeta el orden de los perfiles (el «justo» por
+#      encima del «medio» significa que las bandas se pisan);
+#   5. una dimensión inalcanzable para el alumno solvente o regalada al de riesgo.
+# ---------------------------------------------------------------------------
+
+def _celdas(resumen, curso):
+    """{dimensión: {perfil: (puntos, nivel, detalle)}} de un curso."""
+    tabla = {}
+    for c, pid, palabras, filas, total in resumen:
+        if c != curso:
+            continue
+        for nombre, peso, puntos, nivel, aporta, detalle in filas:
+            tabla.setdefault(nombre, {})[pid] = (puntos, nivel, detalle)
+    return tabla
+
+
+def _sospechas(pack, resumen, curso):
+    """[(dimensión, [motivos])] de un curso. Una línea por dimensión, no por motivo:
+    la misma banda mal puesta dispara tres reglas a la vez y no son tres hallazgos.
+
+    Los perfiles están a un nivel de distancia exacta (4-3-2-1), así que la caída
+    esperada entre dos seguidos es de UN nivel. Dos es la firma que el SDD §6.3
+    manda mirar."""
+    salida = []
+    tabla = _celdas(resumen, curso)
+    for dimension, por_perfil in tabla.items():
+        presentes = [p for p in ORDEN_PERFILES if p in por_perfil]
+        niveles = [por_perfil[p][1] for p in presentes]
+        puntos = [por_perfil[p][0] for p in presentes]
+        if len(niveles) < 2:
+            continue
+        motivos = []
+        saltos = [(niveles[i] - niveles[i + 1], i) for i in range(len(niveles) - 1)]
+        peor, donde = max(saltos)
+        if peor >= 2:
+            motivos.append("cae %d niveles de «%s» a «%s» (%.1f→%.1f)"
+                           % (peor, presentes[donde], presentes[donde + 1],
+                              puntos[donde], puntos[donde + 1]))
+        if len(set(niveles)) == 1:
+            motivos.append("los cuatro perfiles en el nivel %d: el umbral no mide" % niveles[0])
+        # Un cero absoluto solo llama la atención donde no se espera: en el alumno
+        # que aprueba, o en 1.º de ESO, donde el esfuerzo va por delante del
+        # resultado y una dimensión no debe caer a cero de una vez.
+        for p, pt in zip(presentes, puntos):
+            if pt == 0 and (p != "en-riesgo" or curso == "1ESO"):
+                motivos.append("el perfil «%s» llega a 0 puntos" % p)
+                break
+        if "justo" in por_perfil and por_perfil["justo"][1] == 1:
+            motivos.append("el alumno que aprueba se queda en nivel 1")
+        if niveles[0] < 3:
+            motivos.append("ni el perfil solvente pasa del nivel %d: inalcanzable" % niveles[0])
+        if niveles[-1] == 4:
+            motivos.append("hasta el perfil en riesgo saca nivel 4: regalada")
+        if motivos:
+            salida.append((dimension, motivos))
+    notas = [t for c, pid, pal, filas, t in resumen if c == curso]
+    if notas != sorted(notas, reverse=True):
+        salida.append(("(nota final)", ["no sigue el orden de los perfiles: %s"
+                                        % ", ".join("%.2f" % n for n in notas)]))
+    return salida
+
+
+def _resumen_compacto(pack, resumen):
+    cursos = []
+    for c, _, _, _, _ in resumen:
+        if c not in cursos:
+            cursos.append(c)
+    print("%s · %d cursos × %d perfiles = %d correcciones simuladas"
+          % (pack["etiqueta"], len(cursos), len(ORDEN_PERFILES), len(resumen)))
+    print("")
+    print("%-8s %9s  %s" % ("CURSO", "PALABRAS",
+                            " ".join("%9s" % p for p in ORDEN_PERFILES)))
+    for curso in cursos:
+        fila = []
+        palabras = None
+        for pid in ORDEN_PERFILES:
+            r = next((x for x in resumen if x[0] == curso and x[1] == pid), None)
+            if r:
+                palabras = r[2]
+                fila.append("%9.2f" % r[4])
+        print("%-8s %9s  %s" % (curso, palabras or "?", " ".join(fila)))
+    print("")
+    print("NIVEL POR DIMENSIÓN (solvente/medio/justo/en-riesgo)")
+    for curso in cursos:
+        tabla = _celdas(resumen, curso)
+        for dimension, por_perfil in tabla.items():
+            niveles = "/".join(str(por_perfil[p][1]) for p in ORDEN_PERFILES if p in por_perfil)
+            print("  %-6s %-42s %s" % (curso, dimension[:42], niveles))
+    print("")
+    total = 0
+    for curso in cursos:
+        for dimension, motivos in _sospechas(pack, resumen, curso):
+            total += 1
+            print("  REVISAR %-6s %-42s %s" % (curso, dimension[:42], "; ".join(motivos)))
+    if not total:
+        print("  Sin nada mecánicamente sospechoso: ningún salto de dos niveles, ningún")
+        print("  umbral plano, ningún cero y las notas van en el orden de los perfiles.")
+    print("")
+    print("Lo que queda es juicio, y no lo hace un script: ¿le pondrías esta nota a un")
+    print("alumno con este perfil? Para ver una corrección entera, sin --resumen.")
 
 
 def _tabla_resumen(resumen):

@@ -11,8 +11,8 @@ derivación del 2026-08-05 antes de llegar al docente.
 Esto ejecuta todas, en el orden en que conviene leerlas:
 
   1. Forma      · el pack tiene la estructura que el motor espera
-  2. Derivados  · lo generado desde data/ sigue al día: js/lexico.js y las tablas
-                  §4.3 y §5.4 del SDD
+  2. Derivados  · lo generado desde data/ sigue al día: js/lexico.js, las tablas
+                  §4.3 y §5.4 del SDD, y los nueve docs/revision-*.md
   3. Reglas     · el pack cumple las reglas de contenido del SDD §10
   4. Paridad    · la aplicación aplica exactamente las mismas reglas que el script
   5. Derivación · lo que el proyecto afirma del currículo lo dice el currículo
@@ -20,8 +20,15 @@ Esto ejecuta todas, en el orden en que conviene leerlas:
   7. Instalable · existe todo lo que el manifest y el Service Worker prometen
 
 Uso:
-    python scripts/comprobar_todo.py            (todo)
-    python scripts/comprobar_todo.py --rapido   (salta lo que necesita fuentes/)
+    python scripts/comprobar_todo.py             (todo, callado)
+    python scripts/comprobar_todo.py --detallado (con la salida de cada una)
+    python scripts/comprobar_todo.py --rapido    (salta lo que necesita fuentes/)
+
+CALLADO POR DEFECTO desde el 18-ago-2026. Una pasada limpia escribía 24 KB
+—unos 6.000 tokens— para decir «las trece están bien», y esa orden se ejecuta
+varias veces por sesión. Ahora una comprobación que pasa no dice nada; la que
+falla escribe su salida entera, que es cuando de verdad hace falta leerla. Los
+avisos (no son fallos, pero piden ojo) siguen apareciendo, en una línea.
 
 Código de salida 1 si algo falla.
 """
@@ -40,6 +47,8 @@ COMPROBACIONES = [
      [sys.executable, "scripts/generar_lexico.py", "--comprobar"], False, False),
     ("Tablas §4.3 y §5.4 al día (data/ → docs/diseno/SDD.md)",
      [sys.executable, "scripts/generar_tablas_sdd.py", "--comprobar"], False, False),
+    ("Revisiones docentes al día (data/ → docs/revision-*.md)",
+     [sys.executable, "scripts/generar_revision.py", "--comprobar"], False, False),
     ("Reglas de contenido (validador de taller)",
      [sys.executable, "scripts/validar_pack.py"], False, False),
     ("Paridad: los dos validadores dicen lo mismo",
@@ -73,7 +82,12 @@ def main():
         pass
 
     rapido = "--rapido" in sys.argv
+    detallado = "--detallado" in sys.argv
     hay_node = shutil.which("node") is not None
+
+    # Los hijos escriben acentos y «§». Sin esto, en Windows salen por cp1252 y
+    # llegan rotos: cada carácter roto es un token que no dice nada.
+    entorno = dict(os.environ, PYTHONIOENCODING="utf-8")
 
     resultados = []
     for etiqueta, orden, necesita_node, necesita_fuentes in COMPROBACIONES:
@@ -87,17 +101,47 @@ def main():
             resultados.append(("SALTA", etiqueta, "%s no existe todavía" % orden[1]))
             continue
 
-        print("\n" + "=" * 72)
-        print("· %s" % etiqueta)
-        print("=" * 72)
-        codigo = subprocess.call(orden, cwd=RAIZ)
-        resultados.append(("BIEN " if codigo == 0 else "FALLA", etiqueta, ""))
+        if detallado:
+            print("\n" + "=" * 72)
+            print("· %s" % etiqueta)
+            print("=" * 72)
+            codigo = subprocess.call(orden, cwd=RAIZ, env=entorno)
+            resultados.append(("BIEN " if codigo == 0 else "FALLA", etiqueta, ""))
+            continue
 
-    print("\n" + "=" * 72)
-    print("RESUMEN")
-    print("=" * 72)
-    for estado, etiqueta, nota in resultados:
-        print("  %s  %s%s" % (estado, etiqueta, (" (%s)" % nota) if nota else ""))
+        # Callado: una comprobación que pasa no tiene nada que contar. Lo que sí
+        # cuenta —y entero— es la que falla.
+        proceso = subprocess.run(orden, cwd=RAIZ, env=entorno,
+                                 stdout=subprocess.PIPE, stderr=subprocess.STDOUT)
+        salida = proceso.stdout.decode("utf-8", "replace")
+        if proceso.returncode != 0:
+            print("\n" + "=" * 72)
+            print("FALLA · %s" % etiqueta)
+            print("=" * 72)
+            print(salida.rstrip())
+        else:
+            # Un aviso de verdad empieza la línea. Lo que solo NOMBRA la palabra
+            # —«OK  niveles_indistinguibles: … dispara aviso», que es el nombre de
+            # un caso de prueba que ha pasado— no es un aviso.
+            avisos = []
+            for l in salida.splitlines():
+                l = l.strip()
+                if l.lower().startswith("aviso") and l not in avisos:
+                    avisos.append(l)
+            for l in avisos:
+                print("  %s · %s" % (etiqueta, l))
+        resultados.append(("BIEN " if proceso.returncode == 0 else "FALLA", etiqueta, ""))
+
+    if detallado:
+        print("\n" + "=" * 72)
+        print("RESUMEN")
+        print("=" * 72)
+        for estado, etiqueta, nota in resultados:
+            print("  %s  %s%s" % (estado, etiqueta, (" (%s)" % nota) if nota else ""))
+    else:
+        for estado, etiqueta, nota in resultados:
+            if estado != "BIEN ":
+                print("  %s  %s%s" % (estado, etiqueta, (" (%s)" % nota) if nota else ""))
 
     fallos = [e for estado, e, _ in resultados if estado == "FALLA"]
     saltadas = [e for estado, e, _ in resultados if estado == "SALTA"]

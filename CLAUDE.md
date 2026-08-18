@@ -2,124 +2,117 @@
 
 Aplicación web para que el profesorado de Lengua Castellana y Literatura construya rúbricas
 derivadas del currículo oficial de la Región de Murcia, con la hoja del alumno incluida.
-Este archivo recoge las **reglas no negociables**. El diseño completo vive en `docs/diseno/SDD.md`.
+
+Aquí está **la regla**. El **motivo** de cada regla está en
+[`docs/diseno/por-que-estas-reglas.md`](docs/diseno/por-que-estas-reglas.md), y se lee cuando se
+va a *tocar* una regla, no para cumplirla. El diseño completo vive en `docs/diseno/SDD.md`
+—que **no se abre entero**: ver el presupuesto de contexto, aquí abajo.
 
 **El nombre comercial es «Taller de Rúbricas»** (16-ago-2026), en la familia de «Taller de
 Sintaxis». Vive en dos sitios y en ninguno más: el `<title>` y el `<h1>` de `index.html`, y
-`manifest.webmanifest`, que es de donde lo toma el icono instalado (ahí se abrevia a
-«Rúbricas», que es lo que cabe bajo un icono de iPad).
+`manifest.webmanifest` (ahí se abrevia a «Rúbricas», que es lo que cabe bajo un icono de iPad).
 
-> **Antes de tocar contenido curricular, lee `docs/diseno/SDD.md`.** Es la única fuente de verdad
-> sobre el modelo de datos, el modelo de calificación y las reglas del validador. Este archivo
-> solo recoge lo que no se puede negociar y lo que se ha aprendido a base de equivocarse.
+---
+
+## Presupuesto de contexto
+
+Este repositorio son **~690.000 tokens**: tres veces y media una ventana de contexto. Ningún
+archivo grande se lee entero, porque hacerlo tres veces agota la sesión antes de terminar el
+trabajo. Compruébalo con `python scripts/ver.py coste`.
+
+| En vez de abrir | Usa | Coste |
+|---|---|---|
+| `data/pack-*.json` (~39.000 tok) | `python scripts/ver.py pack <mote> [--curso 3ESO]` | ~700 |
+| un criterio dentro del pack | `python scripts/ver.py criterio <id\|código>` | ~200 |
+| `docs/diseno/SDD.md` (~42.000 tok) | `python scripts/ver.py sdd` · `ver.py sdd 6.3` | ~1.000 |
+| `fuentes/curriculo/*.md` (~30.000 tok) | `python scripts/dossier_criterios.py --codigo 5.1` | ~500 |
+| buscar una expresión por el repo | `python scripts/ver.py buscar "hiperónimos"` | ~300 |
+| `docs/revision-*.md`, `js/lexico.js` | **nada**: son GENERADOS, no llevan un hecho propio | — |
+
+Tres costumbres más, del mismo orden de magnitud:
+
+- **Para editar no hace falta leer.** `Edit` sobre la cadena exacta que ya conoces por el índice;
+  volver a leer el archivo entero «para asegurar» es pagarlo dos veces.
+- **`comprobar_todo.py` es callado**: una comprobación que pasa no dice nada. Si necesitas verlo
+  todo, `--detallado`.
+- **No repitas lo que el script ya ha dicho.** Si la orden imprime la tabla, no la copies a la
+  respuesta: basta con lo que hay que decidir.
 
 ---
 
 ## Reglas no negociables
 
-### 1. Las rúbricas se derivan, no se inventan
-
-Todo criterio lleva `criterio_oficial` con la cita textual del currículo. Un criterio sin
-referencia normativa no se carga: no es un instrumento, es una opinión con formato de tabla.
-Si hace falta evaluar algo que no está en ningún criterio, la respuesta no es inventarlo,
-es buscar el criterio que sí lo sostiene.
-
-### 2. La progresión entre cursos la fija el currículo, no el diseñador
-
-Lo que separa 1.º de 3.º de ESO ya está escrito en la redacción del criterio oficial:
-*sencillos* y *de manera guiada* frente a *de cierta extensión* y *progresivamente autónoma*.
-No se calibra afinando vocabulario ni subiendo verbos de nivel en una taxonomía.
-**El verbo lo pone el criterio; lo que escala es la condición que lo acompaña.**
-
-Corolario: los criterios son **por curso**, nunca por ciclo. El decreto de Murcia los redacta
-curso a curso y el 5.1 de 1.º no es el 5.1 de 2.º.
-
-### 3. Cuatro niveles, siempre
-
-Escala fija. No es configurable. Bandas de conversión sobre 10 (confirmadas por dos fuentes
-independientes): 9–10 · 7–8,9 · 5–6,9 · 0–4,9.
-
-### 4. Cero adverbitis
-
-Todo descriptor empieza por un verbo del banco cerrado del pack. Nada de *bien*, *adecuadamente*,
-*a veces*, *bastante*. El nivel 1 describe **lo que el alumno sí hace de forma limitada**,
-nunca lo que le falta: «Utiliza conectores de adición», no «No usa conectores».
-
-### 5. Los saberes son vehículo, nunca fila
-
-La dimensión es una acción competencial, no un contenido. «Cohesión: conectores y puntuación»,
-no «Las oraciones subordinadas». El contenido va dentro del descriptor, como contexto.
-
-### 6. La hoja del alumno no es opcional
-
-Si el proyecto sostiene que el alumnado debe conocer la rúbrica antes de la prueba, la aplicación
-la genera siempre. No es una casilla que el profesor pueda olvidar marcar.
-
-### 7. Una penalización no puede medir lo que ya mide un componente
-
-Regla del **doble castigo**. Si el componente ya valora los errores de puntuación, no puede
-haber además una penalización por párrafo sin puntos: el alumno paga dos veces y la nota no
-aguanta una reclamación. En la práctica esto deja las matrices casi sin penalizaciones,
-y eso es buena señal.
-
-### 8. Ninguna llamada a IA desde la aplicación
-
-La app genera el texto de la rúbrica en modo IA para que el profesor lo use fuera si quiere.
-No ejecuta prompts, no pide claves, no envía nada. Sin servidor, sin cuentas, sin datos personales.
-
-### 9. El criterio es la puerta; los saberes, el foco
-
-Una celda de la matriz de tareas (SDD §4.3) solo la abre o la cierra un **criterio de
-evaluación**. Los saberes básicos nunca vacían una celda ni la sostienen solos: indican dónde
-pone el foco cada curso (● frente a ○). La regla vale en las dos direcciones: también la
-progresión se lee en la redacción del criterio, nunca se calibra a mano (regla del techo,
-SDD §5.4). Corolario de simetría: una regla de derivación solo está comprobada cuando se pasa
-por los seis cursos a la vez; **si invalida un pack ya validado, la rota es la regla, no el pack.**
-Esta regla se escribió el 2026-08-05, después de que su ausencia produjera el único error
-de derivación que ha llegado al docente.
+1. **Las rúbricas se derivan, no se inventan.** Todo criterio lleva `criterio_oficial` con la cita
+   textual del currículo. Un criterio sin referencia normativa no se carga.
+2. **La progresión la fija el currículo, no el diseñador.** Ya está escrita en la redacción del
+   criterio (*sencillos*/*de manera guiada* frente a *de cierta extensión*/*progresivamente
+   autónoma*). El verbo lo pone el criterio; lo que escala es la condición que lo acompaña.
+   Los criterios son **por curso**, nunca por ciclo.
+3. **Cuatro niveles, siempre.** Escala fija, no configurable. Bandas sobre 10: 9–10 · 7–8,9 ·
+   5–6,9 · 0–4,9. Los nombres (Iniciado · Suficiente · Notable · Excelente) viven solo en
+   `data/catalogo.json`.
+4. **Cero adverbitis.** Todo descriptor empieza por un verbo del banco cerrado. Nada de *bien*,
+   *adecuadamente*, *a veces*, *bastante*. El nivel 1 describe lo que el alumno **sí** hace de
+   forma limitada: «Utiliza conectores de adición», no «No usa conectores».
+5. **Los saberes son vehículo, nunca fila.** La dimensión es una acción competencial:
+   «Cohesión: conectores y puntuación», no «Las oraciones subordinadas».
+6. **La hoja del alumno no es opcional.** La aplicación la genera siempre; no es una casilla.
+7. **Una penalización no puede medir lo que ya mide un componente** (doble castigo). Si el
+   componente ya valora los errores de puntuación, no puede haber además penalización por
+   párrafo sin puntos. Deja las matrices casi sin penalizaciones, y eso es buena señal.
+8. **Ninguna llamada a IA desde la aplicación.** Genera el texto en modo IA para usarlo fuera:
+   no ejecuta prompts, no pide claves, no envía nada. Sin servidor ni datos personales.
+9. **El criterio es la puerta; los saberes, el foco.** Una celda de la matriz §4.3 solo la abre o
+   la cierra un criterio de evaluación; los saberes marcan el foco (● / ○) y nunca vacían una
+   celda. Una regla de derivación solo está comprobada si se pasa por los seis cursos a la vez:
+   **si invalida un pack ya validado, la rota es la regla, no el pack.**
 
 ---
 
 ## Método de trabajo
 
-- **Una sola orden lo comprueba todo:**
+- **Una sola orden lo comprueba todo** —la misma que ejecuta el CI, así que no hay una segunda
+  lista que mantener:
 
   ```bash
   python scripts/comprobar_todo.py
   ```
 
-  Son trece comprobaciones: forma del pack, los dos derivados al día (`js/lexico.js` y las
-  tablas §4.3 y §5.4 del SDD), reglas de contenido, paridad entre los dos validadores, las
-  cuatro pruebas del motor, la derivación contra el currículo con su auto-prueba, y que
-  exista todo lo que la instalación promete (manifest, `<head>` y casco del Service Worker).
-  **Es la misma orden que ejecuta el CI**, así que no hay una segunda lista
-  que mantener. No se cierra un pack con ninguna en rojo **ni con ninguna saltada**.
-- **Toda matriz cuantitativa nueva se prueba simulando una corrección** antes de darla por buena
-  (`scripts/simular_correccion.py --todos`). Leerla no basta: la regla del doble castigo se descubrió
-  calculando, no leyendo. Si una dimensión cae dos niveles de golpe, sospecha de las penalizaciones.
-  Esto **no** está en `comprobar_todo.py` a propósito: pide un juicio, no da un booleano.
-  **Se simula con los perfiles de alumno, no con el sorteo**: sortear cada componente por separado
-  produce alumnos que no existen y, sobre todo, desliga el número de faltas de la extensión del
-  texto. Un umbral escrito en faltas absolutas no vale igual en dos tareas de distinta longitud
-  —así se vio que el comentario había heredado los umbrales del expositivo, que es el doble de
-  largo (SDD v1.27)—, y eso solo se ve poniendo la extensión de la tarea al lado del umbral.
+  Catorce comprobaciones: forma del pack, los tres derivados al día (`js/lexico.js`, las tablas
+  §4.3 y §5.4 del SDD, y los `docs/revision-*.md`), reglas de contenido, paridad entre los dos
+  validadores, las cuatro pruebas del motor, la derivación contra el currículo con su
+  auto-prueba, y que exista todo lo que la instalación promete. **No se cierra un pack con
+  ninguna en rojo ni con ninguna saltada.**
+
+- **Toda matriz cuantitativa nueva se prueba simulando una corrección** antes de darla por buena:
+
+  ```bash
+  python scripts/simular_correccion.py data/pack-lcl-<tarea>.json --resumen
+  ```
+
+  `--resumen` hace lo mecánico —notas por curso y perfil, nivel de cada dimensión y las celdas
+  sospechosas: saltos de dos niveles, umbrales planos, ceros, notas fuera de orden— y deja el
+  juicio entero: *¿le pondrías esta nota a un alumno con este perfil?* Se simula **con los
+  perfiles de alumno, no con el sorteo**. Esto no está en `comprobar_todo.py` a propósito: pide
+  un juicio, no da un booleano.
+
 - **Toda afirmación sobre lo que dice el currículo se verifica mecánicamente**
   (`scripts/verificar_derivacion.py`): citas literales de los packs y del SDD (§4.3 y §5.4),
   matriz de tareas, techo de progresión y género en `saber_vehiculo`. Convención: en §4.3 y §5.4,
   lo que va entre «» o *"..."* es cita de fuente y debe encontrarse literalmente en
-  `fuentes/curriculo/` o en el Marco Teórico; el uso-mención propio va en comillas simples,
-  que el verificador ignora.
-- **El JSON es la fuente; lo demás es derivado.** `docs/revision-*.md` se regenera con
-  `scripts/generar_revision.py` (sin argumentos los regenera todos), `js/lexico.js` con
-  `scripts/generar_lexico.py`, y **las dos tablas del SDD —la matriz §4.3 y los ejes §5.4—
-  con `scripts/generar_tablas_sdd.py`**, desde `data/derivacion-<materia>.json`. Ninguno se
-  edita a mano; `comprobar_todo.py` falla si se han separado de su fuente. En el SDD eso
-  afecta **solo a las dos tablas**: la prosa que las justifica —qué sostiene cada celda, con
-  su cita— se escribe a mano y sigue siendo lo que da sentido al dato.
-- **Los criterios oficiales se citan del texto real**, leyéndolo en `fuentes/curriculo/`.
-  Nunca de memoria ni parafraseados.
+  `fuentes/curriculo/` o en el Marco Teórico; el uso-mención propio va en comillas simples.
+
+- **El JSON es la fuente; lo demás es derivado.** `docs/revision-*.md` con
+  `scripts/generar_revision.py`, `js/lexico.js` con `scripts/generar_lexico.py`, y **las dos
+  tablas del SDD con `scripts/generar_tablas_sdd.py`**, desde `data/derivacion-<materia>.json`.
+  Ninguno se edita a mano; `comprobar_todo.py` falla si se han separado de su fuente. En el SDD
+  eso afecta **solo a las dos tablas**: la prosa que las justifica se escribe a mano.
+
+- **Los criterios oficiales se citan del texto real**, nunca de memoria ni parafraseados. La
+  herramienta para leerlos por criterio, sin abrir el decreto, es
+  `python scripts/dossier_criterios.py`.
+
 - **Cuando el usuario corrija un planteamiento, revisar si el error está en más sitios.**
-  La regla de coherencia vertical estuvo mal formulada dos veces seguidas antes de acertar.
 
 ## Cómo escribir un descriptor
 
@@ -133,53 +126,13 @@ repeticiones mediante sinónimos, hiperónimos y pronombres.»*
 El banco guarda cada verbo en 3.ª y en 1.ª persona (`Reconoce`/`Reconozco`), lo que permite
 derivar la versión de autoevaluación sin errores de morfología.
 
-**El descriptor no nombra al alumno en 3.ª persona.** El alumno es el sujeto de la frase, así
-que todo lo demás que apunte a él —un segundo verbo, un posesivo, un dativo— imprime «él»
-dentro de una frase en «yo» al proyectar la autoevaluación. Lo que es del alumno se escribe con
-`propio` o con el artículo: «por cuenta propia», no «por su cuenta»; «con palabras propias», no
-«con sus propias palabras»; «a las notas», no «a sus notas». `su` solo entra cuando el referente
-es otro («indica **su** procedencia», que es la de los datos), y entonces hay que declararlo en
-`posesivos_ajenos` de `data/reglas-lexicas.json`, con el referente escrito al lado.
-
----
-
-## Matriz digital: este proyecto es uno de tres
-
-`proyecto_plan_de_trabajo_lengua` (plan de aula) · `proyecto_taller-sintaxis` (app de sintaxis) ·
-este generador. Comparten terminología, alcance, filosofía evaluativa y marco de rúbricas.
-
-- **Quién manda sobre qué:** `proyecto_plan_de_trabajo_lengua/Metodologías innovadores morfología y sintaxis/proyecto/documentos_base/Matriz-digital_tres-proyectos.md` §2.
-  Antes de escribir un hecho compartido, comprueba si eres su dueño: **el que no lo es, referencia; no copia.**
-- **Este proyecto manda sobre la derivación normativa**: cita literal del criterio oficial,
-  numeración por curso, validador de packs y modelo de cálculo de un instrumento (SDD §6).
-- **Lengua manda sobre la arquitectura de rúbrica**: cuatro niveles, nombres canónicos, bandas /10,
-  anti-adverbitis, principio del vehículo. Divergencias vivas documentadas en §3 de la matriz —
-  **C1 y C4 corregidas aquí el 13-ago-2026 (SDD v1.31)**: los niveles se llaman **Iniciado ·
-  Suficiente · Notable · Excelente** y esa cadena vive **solo** en `data/catalogo.json`; el puntero
-  del SDD §17.8 apunta ya a `docs/diseno/enlace-proyecto-lengua.md`. **La que sigue viva es C3**
-  (hecho H11: la app y el skill `rubricas-lomloe` se solapan en la nota /10 y en iDoceo), abierta
-  como decisión §17.19 del SDD y **pendiente de que la decida Josele**, no de escribir código.
-- **De Lengua también es la ponderación igual por defecto** (marco §2.3): un pack solo desiguala
-  los pesos si declara `razon_peso`, que la ficha del alumno imprime y el validador exige.
-- **El límite 1.º ESO–1.º BACH es de los MATERIALES que genera Lengua** (sus UD, guías y porfolios),
-  no de este generador. **Esta app sí se usa legítimamente en 2.º BACH** como producto de uso más
-  amplio que el plan de aula de Lengua — mantener la capacidad de 2.º BACH del SDD sin tratarla como
-  excepción ni marcarla de ningún modo especial (corrección de H2, matriz §2, 4-ago-2026).
-- **Comprobación mecánica**, desde el repositorio de Lengua: `python scripts/verificar_matriz.py`.
-
-## Relación con el proyecto de Lengua
-
-`C:\Users\Usuario\Proyectos\proyecto_plan_de_trabajo_lengua` es el plan de trabajo del docente.
-Análisis bilateral completo en `docs/diseno/enlace-proyecto-lengua.md`, integrado y ampliado a los
-tres proyectos por la matriz digital.
-
-**Aviso importante:** el marco teórico vigente vive **allí**
-(`documentos_base/marco_teorico_rubricas-LOMLOE.md`), no aquí. La copia de este proyecto
-(`docs/marco/...ANTIGUO.md`) está superada y se conserva solo como referencia histórica.
-El marco vigente corrige el alcance a 1.º ESO – 1.º BACH, fija las bandas sobre 10 e impone
-un guardarraíl de terminología (`sintagma`, `construcciones`, `periféricos`).
-
-Nunca se modifican archivos del proyecto de Lengua desde aquí.
+**El descriptor no nombra al alumno en 3.ª persona.** El alumno es el sujeto de la frase, así que
+todo lo demás que apunte a él —un segundo verbo, un posesivo, un dativo— imprime «él» dentro de
+una frase en «yo» al proyectar la autoevaluación. Lo que es del alumno se escribe con `propio` o
+con el artículo: «por cuenta propia», no «por su cuenta»; «con palabras propias», no «con sus
+propias palabras»; «a las notas», no «a sus notas». `su` solo entra cuando el referente es otro
+(«indica **su** procedencia», la de los datos), y entonces se declara en `posesivos_ajenos` de
+`data/reglas-lexicas.json`, con el referente escrito al lado.
 
 ---
 
@@ -189,51 +142,72 @@ Nunca se modifican archivos del proyecto de Lengua desde aquí.
 index.html       modo exprés y contenedores de la vista previa
 manifest.webmanifest · sw.js
                  instalación en iPad/Android/escritorio y uso sin conexión
-assets/icons/    iconos de la aplicación instalada — GENERADOS, no se editan
-                 (scripts/generar_iconos.py, que lee la paleta de css/styles.css)
+assets/icons/    iconos de la aplicación instalada — GENERADOS (scripts/generar_iconos.py)
 css/             estilos de pantalla y de impresión
 js/              motor, validador, microexplicaciones, interfaz, modo avanzado
                  (js/lexico.js es GENERADO — no se edita)
-data/            la fuente de todo: packs, catálogo, tablas de derivación por
-                 materia, léxico de reglas, banco de verbos y esquema de pack
-scripts/         comprobación completa, validadores, generadores, simulador
+data/            la fuente de todo: packs, catálogo, tablas de derivación por materia,
+                 léxico de reglas, banco de verbos y esquema de pack
+scripts/         comprobación completa, validadores, generadores, simulador, lector (ver.py)
 test/            casos dorados del validador y del motor (Node, sin dependencias)
-docs/diseno/     SDD, guía para añadir una materia y análisis de enlace
-                 (sus tablas §4.3 y §5.4 son GENERADAS — la prosa no)
+docs/diseno/     SDD, registro de cambios, motivos de las reglas, guía para añadir una materia
+                 (las tablas §4.3 y §5.4 del SDD son GENERADAS — la prosa no)
 docs/marco/      marco teórico y matrices de referencia
-docs/            documentos de revisión generados y resúmenes para el docente
+docs/            documentos de revisión GENERADOS y resúmenes para el docente
 fuentes/         currículo oficial y originales aportados (material crudo)
 ```
 
 ### Cada hecho, en un solo sitio
 
-Los errores de este proyecto han sido casi siempre el mismo: **un hecho escrito dos veces y
-las dos copias separándose en silencio**. Por eso `data/` manda sobre todo lo demás:
+`data/` manda sobre todo lo demás. El porqué —tres copias que se separaron en silencio— está en
+[`por-que-estas-reglas.md`](docs/diseno/por-que-estas-reglas.md).
 
 | Archivo | Manda sobre | Quién lo lee |
 |---|---|---|
-| `data/catalogo.json` | qué packs hay, qué materias, qué tipos de tarea, cómo se llaman los cursos y cómo se llaman los cuatro niveles de logro | `js/main.js`, `js/ui.js` y todos los scripts |
-| `data/derivacion-<materia>.json` | qué tarea sostiene el currículo en qué curso (§4.3) y hasta dónde puede exigir cada uno (§5.4) | `scripts/verificar_derivacion.py` y, vía `scripts/generar_tablas_sdd.py`, las tablas del SDD |
-| `data/reglas-lexicas.json` | las palabras y los umbrales de las reglas del validador | `scripts/validar_pack.py` y, vía `js/lexico.js`, la aplicación |
-| `data/verbos.json` | el banco cerrado de verbos, con 3.ª y 1.ª persona | los packs ya no llevan copia; solo pueden añadir en `verbos_extra` |
-| `data/esquema-pack.json` | la forma que debe tener un pack | `scripts/validar_esquema.py`, antes que ninguna regla de contenido |
+| `data/catalogo.json` | qué packs hay, qué materias, qué tipos de tarea, cómo se llaman los cursos y los cuatro niveles | `js/main.js`, `js/ui.js` y todos los scripts |
+| `data/derivacion-<materia>.json` | qué tarea sostiene el currículo en qué curso (§4.3) y hasta dónde exige cada uno (§5.4) | `verificar_derivacion.py` y, vía `generar_tablas_sdd.py`, el SDD |
+| `data/reglas-lexicas.json` | las palabras y los umbrales de las reglas del validador | `validar_pack.py` y, vía `js/lexico.js`, la aplicación |
+| `data/verbos.json` | el banco cerrado de verbos, con 3.ª y 1.ª persona | los packs solo pueden añadir en `verbos_extra` |
+| `data/esquema-pack.json` | la forma que debe tener un pack | `validar_esquema.py`, antes que ninguna regla de contenido |
 
 El validador vive dos veces —`scripts/validar_pack.py` y `js/validador.js`—, pero solo su
-**lógica**: las palabras salen del archivo compartido. **La aplicación nunca puede dar por
-limpio un pack que el script rechaza** (SDD §10), y eso ya no se confía a la memoria:
-`scripts/comprobar_paridad.py` ejecuta los dos lados sobre un corpus de trampas y exige que
-digan lo mismo. Toda regla nueva entra en las dos implementaciones, con su caso en `test/`.
+**lógica**: las palabras salen del archivo compartido. **La aplicación nunca puede dar por limpio
+un pack que el script rechaza** (SDD §10), y `scripts/comprobar_paridad.py` lo exige sobre un
+corpus de trampas. Toda regla nueva entra en las dos implementaciones, con su caso en `test/`.
 
 ### Antes de añadir una materia
 
-Léete `docs/diseno/anadir-una-materia.md`. La regla corta es: **dar de alta una asignatura no
-debe obligar a tocar código.** Si hace falta editar un `.py` o un `.js`, eso es un fallo de
-diseño de este proyecto — se arregla aquí, no en la materia nueva.
+Léete `docs/diseno/anadir-una-materia.md`. La regla corta: **dar de alta una asignatura no debe
+obligar a tocar código.** Si hace falta editar un `.py` o un `.js`, es un fallo de diseño de este
+proyecto y se arregla aquí, no en la materia nueva.
+
+---
+
+## Matriz digital: este proyecto es uno de tres
+
+`proyecto_plan_de_trabajo_lengua` (plan de aula) · `proyecto_taller-sintaxis` (app de sintaxis) ·
+este generador. Comparten terminología, alcance, filosofía evaluativa y marco de rúbricas.
+Quién manda sobre qué: §2 de
+`proyecto_plan_de_trabajo_lengua/Metodologías innovadores morfología y sintaxis/proyecto/documentos_base/Matriz-digital_tres-proyectos.md`.
+**El que no es dueño de un hecho, lo referencia; no lo copia.**
+
+- **Este proyecto manda sobre la derivación normativa**: cita literal del criterio, numeración por
+  curso, validador de packs y modelo de cálculo de un instrumento (SDD §6).
+- **Lengua manda sobre la arquitectura de rúbrica**: cuatro niveles, nombres canónicos, bandas /10,
+  anti-adverbitis, principio del vehículo. También sobre la **ponderación igual por defecto**: un
+  pack solo desiguala pesos si declara `razon_peso`, que la ficha imprime y el validador exige.
+- **El marco teórico vigente vive allí**, no aquí (`documentos_base/marco_teorico_rubricas-LOMLOE.md`).
+  La copia de `docs/marco/…ANTIGUO.md` es solo referencia histórica.
+- **2.º de Bachillerato no es una excepción** en esta app, aunque los materiales de Lengua lleguen
+  hasta 1.º BACH.
+- **Divergencia viva: C3** (la app y el skill `rubricas-lomloe` se solapan en la nota /10 y en
+  iDoceo), abierta como decisión §17.19 del SDD y **pendiente de que la decida Josele**.
+- **Comprobación mecánica**, desde el repositorio de Lengua: `python scripts/verificar_matriz.py`.
+- **Nunca se modifican archivos del proyecto de Lengua desde aquí.** Análisis bilateral completo en
+  `docs/diseno/enlace-proyecto-lengua.md`.
 
 ## Decisiones pendientes
 
-Están al final del SDD (§17). De las dos que bloqueaban la alineación con el proyecto de Lengua,
-**dónde vive el marco teórico está resuelta** (13-ago-2026): vive allí, aquí se referencia por ruta
-y la copia de `docs/marco/…_ANTIGUO.md` es solo referencia histórica. **Queda la otra**: qué hace la
-app y qué hace el skill `rubricas-lomloe`, que hoy se solapan en la conversión a 10 y en la
-exportación a iDoceo (SDD §17.19). Es una decisión del docente, no de diseño técnico.
+Al final del SDD (§17), y se leen con `python scripts/ver.py sdd 17`. La que bloquea la alineación
+con Lengua es §17.19 (qué hace la app y qué hace el skill `rubricas-lomloe`): es una decisión del
+docente, no de diseño técnico.

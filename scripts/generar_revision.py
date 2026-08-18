@@ -7,7 +7,18 @@ y las matrices sin tener que leer llaves. El JSON es la fuente; este documento
 es derivado y se regenera, nunca se edita a mano.
 
 Uso:
+    python scripts/generar_revision.py                       todos los packs
     python scripts/generar_revision.py data/pack-lcl-expositivo.json
+    python scripts/generar_revision.py --comprobar           falla si algún
+                                                               docs/revision-*.md
+                                                               está desfasado
+
+La comprobación corre en scripts/comprobar_todo.py y en el CI, con el mismo
+patrón que scripts/generar_lexico.py --comprobar: si alguien edita un
+docs/revision-*.md a mano, o corrige un pack sin regenerar, la rama se pone
+roja. Nueve documentos versionados sin esto eran nueve copias que se podían
+separar de su fuente en silencio, exactamente el error que el proyecto ya
+sufrió con el banco de verbos (CLAUDE.md, «cada hecho en un solo sitio»).
 """
 import json, sys, os, re, collections
 
@@ -21,7 +32,13 @@ NIVELES = [("n1", "N1"), ("n2", "N2"), ("n3", "N3"), ("n4", "N4")]
 NOMBRE_CURSO = catalogo()["cursos"]["etiquetas"]
 
 
-def generar(ruta_pack, ruta_salida):
+def ruta_de_salida(ruta_pack):
+    nombre = os.path.basename(ruta_pack).replace("pack-", "").replace(".json", "")
+    return os.path.join("docs", "revision-%s.md" % nombre)
+
+
+def generar_texto(ruta_pack):
+    """El contenido del documento, sin tocar el disco: lo que compara --comprobar."""
     pack = cargar_pack(ruta_pack)
     verbos = {v["3s"]: v["1s"] for v in pack["verbos"]}
     n_matrices = sum(1 for c in pack["criterios"] if c.get("matriz_cuantitativa"))
@@ -93,16 +110,60 @@ def generar(ruta_pack, ruta_salida):
         v = re.findall(r"\w+", t)[0]
         w("| %s | %s |" % (t, verbos[v] + t[len(v):]))
 
-    open(ruta_salida, "w", encoding="utf8").write("\n".join(L))
-    return ruta_salida, len(L)
+    return "\n".join(L) + "\n"
 
 
-if __name__ == "__main__":
+def generar(ruta_pack, ruta_salida):
+    texto = generar_texto(ruta_pack)
+    with open(ruta_salida, "w", encoding="utf8", newline="\n") as f:
+        f.write(texto)
+    return ruta_salida, texto.count("\n")
+
+
+def comprobar(rutas_packs):
+    """Regenera en memoria y compara con lo que hay en disco. No escribe nada."""
+    ok = True
+    for ruta_pack in rutas_packs:
+        salida = ruta_de_salida(ruta_pack)
+        nuevo = generar_texto(ruta_pack)
+        # Sin fijar `newline`: Python normaliza CRLF a LF al leer (universal
+        # newlines), igual que hace git con `autocrlf` al comparar. El archivo en
+        # disco puede estar en CRLF por cómo Windows hizo el checkout sin que eso
+        # sea una diferencia real frente a lo que se generaría ahora.
+        actual = open(salida, encoding="utf8").read() if os.path.isfile(salida) else None
+        if actual == nuevo:
+            continue
+        ok = False
+        if actual is None:
+            print("ERROR: falta %s." % salida)
+        else:
+            print("ERROR: %s no coincide con %s." % (salida, os.path.basename(ruta_pack)))
+        print("       Ejecuta: python scripts/generar_revision.py %s" % ruta_pack)
+    if ok:
+        print("Los %d documentos de revisión están al día con sus packs." % len(rutas_packs))
+    return ok
+
+
+def main():
+    try:
+        sys.stdout.reconfigure(encoding="utf-8")
+    except AttributeError:
+        pass
+
+    argumentos = [a for a in sys.argv[1:] if a != "--comprobar"]
+    rutas_packs = rutas_de_packs(argumentos)
+
+    if "--comprobar" in sys.argv:
+        return 0 if comprobar(rutas_packs) else 1
+
     # Sin argumentos regenera TODOS los documentos de revisión: eran derivados
     # que había que acordarse de regenerar uno a uno, y por eso se quedaban
     # atrás cuando se corregía un pack.
-    for ruta_pack in rutas_de_packs(sys.argv[1:]):
-        nombre = os.path.basename(ruta_pack).replace("pack-", "").replace(".json", "")
-        salida = os.path.join("docs", "revision-%s.md" % nombre)
-        ruta, n = generar(ruta_pack, salida)
+    for ruta_pack in rutas_packs:
+        ruta, n = generar(ruta_pack, ruta_de_salida(ruta_pack))
         print("Escrito %s (%d líneas)" % (ruta, n))
+    return 0
+
+
+if __name__ == "__main__":
+    sys.exit(main())
