@@ -126,9 +126,6 @@ El currículo no sostiene todas las tareas en todos los cursos. Producir una rú
 | Texto argumentativo |  | ○ | ● | ● | ● | ● |
 | Comentario de texto literario | ● |  | ● | ● | ● | ● |
 | Resumen de un texto | ● |  | ● |  | ○ | ○ |
-| Reacción a una noticia |  | ● |  | ● | ● | ● |
-| Redacción de una noticia | ○ |  | ● | ● | ● | ● |
-| Trabajo de investigación multimodal |  | ● | ● | ● | ○ | ○ |
 
 ● **género o tarea nombrados en los saberes del curso**, además de sostenido por su criterio de evaluación · ○ **sostenido por el criterio de evaluación del curso, pero no nombrado en sus saberes**: incipiente al principio de la secuencia (argumentativo en 2.º ESO), residual al final, cuando el foco del curso se ha desplazado al otro género (expositivo en 2.º Bach), o simplemente ausente del bloque de saberes de ese curso concreto (los tres géneros en 2.º ESO)
 <!-- FIN TABLA GENERADA -->
