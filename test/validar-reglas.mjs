@@ -136,6 +136,33 @@ caso("adverbitis: control de falso positivo — 'bienestar' no contiene 'bien'",
   );
 });
 
+// Los términos de varias palabras necesitan el mismo límite que los de una.
+// Hasta el 17-ago-2026 se buscaban por subcadena pelada y "el ord|en general|
+// de la información" saltaba como "en general". Los dos validadores se
+// equivocaban igual, así que la paridad estaba intacta y la corrección no:
+// ninguna prueba lo veía.
+caso("adverbitis: control de falso positivo — 'orden general' no contiene 'en general'", () => {
+  const pack = clonarPack();
+  const c = criterio(pack, "lcl-b-adecuacion-expo-1eso");
+  c.descriptores.n3.texto = "Explica el orden general de la información en el texto expositivo.";
+  const informe = validarPack(pack);
+  assert(
+    !avisosDeRegla(informe, "adverbitis").some((a) => a.criterioId === c.id),
+    "'orden general' disparó adverbitis por 'en general': el multipalabra busca por subcadena pelada"
+  );
+});
+
+caso("adverbitis: 'en general' como locución sí dispara error", () => {
+  const pack = clonarPack();
+  const c = criterio(pack, "lcl-b-adecuacion-expo-1eso");
+  c.descriptores.n3.texto = "Resume en general el contenido de las fuentes del texto.";
+  const informe = validarPack(pack);
+  assert(
+    avisosDeRegla(informe, "adverbitis").some((a) => a.criterioId === c.id && a.mensaje.includes("en general")),
+    "'en general' dejó de detectarse: el límite de palabra se ha pasado de estricto"
+  );
+});
+
 // --- 4. adverbitis_banda ---------------------------------------------------
 caso("adverbitis_banda: condición de banda no contable dispara error", () => {
   const pack = clonarPack();
@@ -303,6 +330,93 @@ caso("matriz_cuadrada: falta la banda de 0 puntos dispara error", () => {
   );
 });
 
+// --- 11 bis. continuidad_bandas ----------------------------------------------
+// El componente de ortografía de 1.º de ESO cuenta faltas en cuatro bandas
+// —"Hasta 2 faltas" · "De 3 a 5" · "De 6 a 9" · "10 o más"—, que es la forma
+// canónica de una escala de incidencias: empieza en 0, no salta ningún recuento
+// y termina abierta. Cada caso rompe una de esas tres cosas.
+function componenteDeFaltas(pack) {
+  const c = criterio(pack, "lcl-d-correccion-expo-1eso");
+  const comp = c.matriz_cuantitativa.componentes.find((x) => /Ortograf/i.test(x.nombre));
+  if (!comp) throw new Error("no se encontró el componente de ortografía en el pack de pruebas");
+  return { c, comp };
+}
+
+caso("continuidad_bandas: un recuento que ninguna banda recoge dispara error", () => {
+  const pack = clonarPack();
+  const { c, comp } = componenteDeFaltas(pack);
+  comp.bandas[1].condicion = "De 5 a 5 faltas"; // 3 y 4 faltas se quedan sin banda
+  const informe = validarPack(pack);
+  assert(
+    avisosDeRegla(informe, "continuidad_bandas").some(
+      (a) => a.criterioId === c.id && a.mensaje.includes("de 3 a 4")
+    ),
+    "no se detectó el hueco entre dos bandas seguidas"
+  );
+});
+
+caso("continuidad_bandas: la última banda cerrada deja fuera los recuentos altos", () => {
+  const pack = clonarPack();
+  const { c, comp } = componenteDeFaltas(pack);
+  comp.bandas[3].condicion = "De 10 a 12 faltas"; // ¿y con 13?
+  const informe = validarPack(pack);
+  assert(
+    avisosDeRegla(informe, "continuidad_bandas").some(
+      (a) => a.criterioId === c.id && a.mensaje.includes("13 o más")
+    ),
+    "no se detectó la escala sin banda abierta al final"
+  );
+});
+
+caso("continuidad_bandas: la primera banda por encima de 0 deja fuera el texto limpio", () => {
+  const pack = clonarPack();
+  const { c, comp } = componenteDeFaltas(pack);
+  comp.bandas[0].condicion = "De 1 a 2 faltas en todo el texto"; // el texto sin faltas no puntúa
+  const informe = validarPack(pack);
+  assert(
+    avisosDeRegla(informe, "continuidad_bandas").some(
+      (a) => a.criterioId === c.id && a.mensaje.includes("0")
+    ),
+    "no se detectó el hueco por debajo de la primera banda"
+  );
+});
+
+caso("continuidad_bandas: control de falso positivo — la escala real de faltas no dispara nada", () => {
+  const informe = validarPack(clonarPack());
+  assert(
+    avisosDeRegla(informe, "continuidad_bandas").length === 0,
+    "las matrices del pack real cubren todos los recuentos: no deben disparar la regla"
+  );
+});
+
+caso("continuidad_bandas: control de falso positivo — un componente que cuenta logros no es una escala de incidencias", () => {
+  const pack = clonarPack();
+  const { c, comp } = componenteDeFaltas(pack);
+  // Mismo componente, contando al revés: fuentes reunidas, no faltas cometidas.
+  // Salta de 4 a 2 sin pasar por 3, y eso no es un hueco: nadie corrige "3
+  // fuentes" con una banda de recuento, porque la escala baja según baja la nota.
+  comp.bandas[0].condicion = "Reúne 4 o más fuentes de tipos distintos";
+  comp.bandas[1].condicion = "Reúne 2 fuentes";
+  comp.bandas[2].condicion = "Reúne 1 fuente";
+  comp.bandas[3].condicion = "Escribe el texto sin consultar ninguna fuente";
+  const informe = validarPack(pack);
+  assert(
+    avisosDeRegla(informe, "continuidad_bandas").filter((a) => a.criterioId === c.id).length === 0,
+    "los componentes que cuentan logros no siguen la lógica de continuidad y no deben dar falso positivo"
+  );
+});
+
+caso("continuidad_bandas: control de falso positivo — una banda final sin recuento recoge lo que la escala no nombra", () => {
+  const pack = clonarPack();
+  const { c, comp } = componenteDeFaltas(pack);
+  comp.bandas[3].condicion = "Comete faltas de forma sistemática en todo el texto";
+  const informe = validarPack(pack);
+  assert(
+    avisosDeRegla(informe, "continuidad_bandas").filter((a) => a.criterioId === c.id).length === 0,
+    "una banda cualitativa de cierre es la casilla de recogida del corrector, no un hueco"
+  );
+});
+
 // --- 12. penalizacion_sin_tope -----------------------------------------------
 caso("penalizacion_sin_tope: penalización sin tope declarado dispara error", () => {
   const pack = clonarPack();
@@ -386,6 +500,89 @@ caso("proceso_sin_respaldo: control de falso positivo — la dimensión de plani
   assert(
     avisosDeRegla(informe, "proceso_sin_respaldo").length === 0,
     "el criterio 9.1 ('Revisar los textos propios…') sí sostiene la dimensión de proceso"
+  );
+});
+
+// --- 14 bis. dimension_sin_respaldo -------------------------------------------
+// Regla hermana de la anterior y por la misma razón: si el criterio oficial no
+// nombra lo que la dimensión mide, la dimensión no está derivada del currículo
+// (CLAUDE.md, regla 1) y la cita literal no la salva.
+//
+// Lo que la motivó es un hecho del decreto: la competencia específica 4 evalúa
+// el canal en unos cursos y no en otros. 2.º ESO (4.1) y 1.º Bach (4.2) dicen
+// «la idoneidad del canal utilizado»; 4.º ESO (4.1) y 2.º Bach (4.2) no lo
+// nombran, se quedan en «su calidad y fiabilidad». Antes de esta regla, una
+// dimensión de canal en 4.º ESO pasaba limpia: la cita seguía siendo literal y
+// del curso correcto.
+//
+// Los términos exigidos viven en data/reglas-lexicas.json
+// (por_materia.LCL.dimensiones_con_respaldo), no en el código: dar de alta una
+// materia no obliga a tocar ni Python ni JavaScript.
+const packReaccionOriginal = cargarPack("pack-lcl-reaccion.json");
+
+function clonarReaccion() {
+  return JSON.parse(JSON.stringify(packReaccionOriginal));
+}
+
+caso("dimension_sin_respaldo: dimensión de canal en un curso cuyo criterio no nombra el canal dispara error", () => {
+  // El defecto no es un descriptor mal escrito: es un criterio movido de curso.
+  // Se clona la dimensión de canal de 2.º ESO y se le pone la cita de 4.º ESO,
+  // que es la que no habla del canal.
+  const pack = clonarReaccion();
+  const canal = criterio(pack, "lcl-b-valcanal-rea-2eso");
+  const contenido4eso = criterio(pack, "lcl-b-valcontenido-rea-4eso");
+  assert(
+    !contenido4eso.criterio_oficial.cita.toLowerCase().includes("canal"),
+    "fixture inválida: el 4.1 de 4ESO no debería nombrar el canal"
+  );
+
+  const clon = JSON.parse(JSON.stringify(canal));
+  clon.id = "lcl-b-valcanal-rea-4eso";
+  clon.curso = "4ESO";
+  clon.criterio_oficial = JSON.parse(JSON.stringify(contenido4eso.criterio_oficial));
+  clon.progresion = { autonomia: 3, complejidad: 3, metalinguistico: 3 };
+  clon.peso_base = 0; // para no descuadrar los pesos de 4ESO y no arrastrar un aviso que enturbie el caso
+  pack.criterios.push(clon);
+
+  // El clon dispara además `copia_entre_cursos` —sus N2-N4 son los de 2.º ESO,
+  // que es justo lo que la otra regla busca—, así que el informe NO tiene un
+  // solo aviso: se filtra por regla.
+  const informe = validarPack(pack);
+  const avisos = avisosDeRegla(informe, "dimension_sin_respaldo");
+  assert(avisos.length === 1, `se esperaba un solo aviso de la regla y hubo ${avisos.length}`);
+  assert(avisos[0].criterioId === clon.id, "el aviso no señala al criterio trampa");
+  assert(avisos[0].severidad === "error", "la dimensión sin respaldo es error, no aviso");
+  assert(
+    avisos[0].mensaje ===
+      "lcl-b-valcanal-rea-4eso: la dimensión 'valoracion_canal' evalúa algo que el criterio 4.1 de 4ESO no nombra (ninguno de: canal, soporte).",
+    `mensaje inesperado: ${avisos[0].mensaje}`
+  );
+});
+
+caso("dimension_sin_respaldo: control de falso positivo — las dimensiones de canal del pack real no disparan nada", () => {
+  // Las dos que el pack sí tiene (2.º ESO y 1.º Bach) citan criterios que sí
+  // dicen «canal». Este control es el que impide «arreglar» la regla dejándola
+  // siempre activa.
+  const informe = validarPack(clonarReaccion());
+  assert(
+    avisosDeRegla(informe, "dimension_sin_respaldo").length === 0,
+    "el pack real de reacción no debería tener ninguna dimensión sin respaldo"
+  );
+});
+
+caso("dimension_sin_respaldo: control de alcance — la regla no opina sobre un pack sin dimensiones listadas", () => {
+  // La regla se aplica POR DIMENSIÓN listada en `dimensiones_con_respaldo`, no
+  // a todas las dimensiones de todos los packs: ninguna del expositivo se llama
+  // `valoracion_canal`, así que no tiene nada que decir.
+  const pack = clonarPack();
+  assert(
+    !pack.criterios.some((c) => c.dimension === "valoracion_canal"),
+    "fixture inválida: el expositivo no debería tener dimensión de canal"
+  );
+  const informe = validarPack(pack);
+  assert(
+    avisosDeRegla(informe, "dimension_sin_respaldo").length === 0,
+    "la regla se está aplicando a dimensiones que no están en dimensiones_con_respaldo"
   );
 });
 

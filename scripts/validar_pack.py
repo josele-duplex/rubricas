@@ -36,12 +36,195 @@ MARCAS_ANDAMIAJE = MODALIZADORES["marcas_andamiaje"]
 DISPARADORES_AUTONOMIA = MODALIZADORES["disparadores_autonomia"]
 MARCAS_ANDAMIAJE_RESIDUAL = MODALIZADORES["marcas_andamiaje_residual"]
 
+RECUENTO = COMUN["recuento_bandas"]
+NUMERALES = RECUENTO["numerales"]
+
 UMBRALES = COMUN["umbrales"]
 TOPE_PENALIZACION = UMBRALES["tope_penalizacion"]              # por penalización
 TOPE_CONJUNTO = UMBRALES["tope_conjunto_penalizaciones"]        # todas juntas
 SIMILITUD_MAX = UMBRALES["similitud_maxima_entre_niveles"]
 VENTANA_NEGACION = UMBRALES["ventana_negacion_n1"]
 MINIMO_DIMENSIONES = UMBRALES["minimo_dimensiones_por_combinacion"]
+
+
+# --- Recuentos escritos en una banda de matriz ---------------------------------
+# "Hasta 2 faltas", "De 3 a 5 faltas", "8 o más faltas", "1 o 2 errores",
+# "Sin errores de concordancia": cada forma se traduce a un intervalo de recuentos
+# (desde, hasta), con `hasta = None` para la banda abierta. Las PALABRAS que abren
+# cada forma salen de data/reglas-lexicas.json; la lógica está escrita también en
+# js/validador.js, con la misma partición y el mismo resultado.
+def _fichas(texto):
+    return re.findall(r"[^\W\d_]+|\d+", quitar_tildes(texto.lower()), re.UNICODE)
+
+
+def _numero(ficha):
+    if ficha is None:
+        return None
+    if ficha.isdigit():
+        return int(ficha)
+    return NUMERALES.get(ficha)
+
+
+def _casa(fichas, i, frase):
+    """Longitud en fichas de `frase` si empieza en la posición i; 0 si no casa."""
+    partes = frase.split()
+    return len(partes) if fichas[i:i + len(partes)] == partes else 0
+
+
+def _raiz(palabra):
+    """Singular aproximado, para casar "error" con "errores" y "frase" con
+    "frases": se quita la -s final y después la -e. No acierta con "vez/veces",
+    y el fallo va en la dirección segura — dos raíces distintas no forman escala,
+    así que la regla calla en vez de inventarse un hueco."""
+    if palabra.endswith("s"):
+        palabra = palabra[:-1]
+    if palabra.endswith("e"):
+        palabra = palabra[:-1]
+    return palabra
+
+
+def _cosa_contada(fichas, i):
+    """Lo que se cuenta, saltando artículos, preposiciones y otros números: en
+    «1 de los tres procedimientos falla» lo contado son procedimientos."""
+    saltos = 0
+    while (i < len(fichas) and saltos < 4
+           and (fichas[i] in RECUENTO["palabras_no_contables"]
+                or _numero(fichas[i]) is not None)):
+        i += 1
+        saltos += 1
+    return _raiz(fichas[i]) if i < len(fichas) else None
+
+
+def recuentos_de_banda(condicion):
+    """{cosa contada: (desde, hasta)} de una condición. `hasta` None es «o más».
+
+    De cada cosa se queda el PRIMER recuento: si una banda la cuenta dos veces,
+    manda el que se lee antes, que es el que da nombre a la banda."""
+    fichas, hallados = _fichas(condicion), {}
+
+    def anotar(j, desde, hasta):
+        cosa = _cosa_contada(fichas, j)
+        if cosa and cosa not in hallados:
+            hallados[cosa] = (desde, hasta)
+
+    i = 0
+    while i < len(fichas):
+        n = _numero(fichas[i])
+        paso = 0
+
+        for inicio, fin in RECUENTO["rangos"]:                 # "de 3 a 5 faltas"
+            if (fichas[i] == inicio
+                    and _numero(fichas[i + 1] if i + 1 < len(fichas) else None) is not None
+                    and i + 2 < len(fichas) and fichas[i + 2] == fin
+                    and _numero(fichas[i + 3] if i + 3 < len(fichas) else None) is not None):
+                anotar(i + 4, _numero(fichas[i + 1]), _numero(fichas[i + 3]))
+                paso = 4
+                break
+
+        for clave, tramo in (("hasta", lambda v: (0, v)),          # "hasta 2 faltas"
+                             ("mas_de", lambda v: (v + 1, None)),  # "más de 2 faltas"
+                             ("al_menos", lambda v: (v, None))):   # "al menos 2 faltas"
+            if paso:
+                break
+            for termino in RECUENTO[clave]:
+                k = _casa(fichas, i, termino)
+                valor = _numero(fichas[i + k] if k and i + k < len(fichas) else None)
+                if k and valor is not None:
+                    anotar(i + k + 1, *tramo(valor))
+                    paso = k + 1
+                    break
+
+        if not paso and n is not None:                         # "8 o más faltas"
+            for termino in RECUENTO["o_mas"]:
+                k = _casa(fichas, i + 1, termino)
+                if k:
+                    anotar(i + 1 + k, n, None)
+                    paso = 1 + k
+                    break
+
+        if not paso and n is not None:                         # "2 o 3 errores"
+            for termino in RECUENTO["alternativa"]:
+                k = _casa(fichas, i + 1, termino)
+                segundo = _numero(fichas[i + 1 + k] if k and i + 1 + k < len(fichas) else None)
+                if k and segundo is not None:
+                    anotar(i + 2 + k, n, segundo)
+                    paso = 2 + k
+                    break
+
+        if not paso:                                           # "sin errores de..."
+            for termino in RECUENTO["ninguno"]:
+                k = _casa(fichas, i, termino)
+                if k:
+                    anotar(i + k, 0, 0)
+                    paso = k
+                    break
+
+        if not paso and n is not None:                         # "2 faltas"
+            anotar(i + 1, n, n)
+            paso = 1
+
+        i += paso or 1
+
+    return hallados
+
+
+def escalas_de_incidencia(componente):
+    """Lo que el componente cuenta COMO INCIDENCIA, con sus tramos.
+
+    Ningún pack declara si un componente cuenta incidencias o logros: se lee de
+    la propia matriz. Si la cuenta SUBE según BAJAN los puntos, lo contado es una
+    incidencia (faltas, errores, datos ajenos al tema). Si baja, es un logro
+    (fuentes reunidas, apartados desarrollados, recursos localizados) y la
+    continuidad no significa nada ahí: «4 o más fuentes / 3 / 2 / 1» no deja
+    ningún hueco por no decir qué pasa con 5.
+
+    Se lee en el orden en que están escritas las bandas, que es el de puntos
+    descendentes porque `matriz_cuadrada` ya lo exige: si estuvieran desordenadas,
+    el pack falla antes por esa regla.
+
+    Devuelve [(cosa, [(índice de banda, desde, hasta), ...]), ...]."""
+    candidatas = {}
+    for indice, banda in enumerate(componente["bandas"]):
+        for cosa, (desde, hasta) in recuentos_de_banda(banda["condicion"]).items():
+            candidatas.setdefault(cosa, []).append((indice, desde, hasta))
+
+    escalas = []
+    for cosa, tramos in sorted(candidatas.items()):
+        if len(tramos) < 2:
+            continue
+        desdes = [d for _, d, _ in tramos]
+        if any(desdes[k] > desdes[k + 1] for k in range(len(desdes) - 1)):
+            continue                  # la cuenta baja: es un logro, no una incidencia
+        if desdes[-1] <= desdes[0]:
+            continue                  # no sube nunca: no hay escala que comprobar
+        escalas.append((cosa, tramos))
+    return escalas
+
+
+def huecos_de_escala(componente, tramos):
+    """Recuentos que ninguna banda recoge. Tres maneras de dejar uno fuera: entre
+    dos bandas seguidas, por debajo de la primera y por encima de la última.
+
+    Una banda SIN recuento no es un hueco: es la casilla de recogida del corrector
+    («Errores sistemáticos que obligan a reconstruir el sentido») y cubre lo que la
+    escala no nombra. Por eso el arranque solo se exige si la escala empieza en la
+    primera banda, y el cierre solo si termina en la última."""
+    huecos = []
+    for k in range(len(tramos) - 1):
+        (indice_a, _, hasta_a), (indice_b, desde_b, _) = tramos[k], tramos[k + 1]
+        if indice_b == indice_a + 1 and hasta_a is not None and desde_b > hasta_a + 1:
+            huecos.append((hasta_a + 1, desde_b - 1))
+    if tramos[0][0] == 0 and tramos[0][1] > 0:
+        huecos.append((0, tramos[0][1] - 1))
+    if tramos[-1][0] == len(componente["bandas"]) - 1 and tramos[-1][2] is not None:
+        huecos.append((tramos[-1][2] + 1, None))
+    return huecos
+
+
+def texto_de_hueco(desde, hasta):
+    if hasta is None:
+        return "%d o más" % desde
+    return str(desde) if desde == hasta else "de %d a %d" % (desde, hasta)
 
 
 def lexico_de_materia(materia):
@@ -60,23 +243,25 @@ def lexico_de_materia(materia):
 
 
 # --- Adverbitis: tres modos de coincidencia, no uno ---------------------------
-# Los términos de una sola palabra necesitan límite de palabra ("bienestar" no
-# es "bien", "formal" no es "mal"); los de varias, subcadena con espacios
-# flexibles. Misma partición y mismo resultado que js/validador.js.
+# El grupo 1 casa por subcadena a propósito (flexiones: "regulares" contiene
+# "regular"). Los grupos 2 y 3 exigen límite de palabra A LOS DOS LADOS: sin él
+# "bienestar" era "bien" y "el ord|en general| de la información" era
+# "en general" (defecto corregido el 17-ago-2026, que los dos validadores
+# compartían). Dentro del término los espacios siguen siendo flexibles, que es
+# lo único que distingue a los de varias palabras. El límite no puede
+# escribirse con \b: en JavaScript las letras acentuadas no son carácter de
+# palabra y \b casaría dentro de "explícita". Misma partición y mismo resultado
+# que js/validador.js.
 _LETRA = r"[^\W\d_]"
 
 
-def _regex_palabra(termino):
+def _regex_termino(termino):
     return re.compile(r"(?<!%s)%s(?!%s)" % (_LETRA, re.escape(termino).replace(r"\ ", r"\s+"), _LETRA),
                       re.IGNORECASE | re.UNICODE)
 
 
-def _regex_subcadena(termino):
-    return re.compile(re.escape(termino).replace(r"\ ", r"\s+"), re.IGNORECASE | re.UNICODE)
-
-
-_PALABRA_COMPILADA = {t: _regex_palabra(t) for t in ADVERBITIS_PALABRA_COMPLETA}
-_MULTI_COMPILADA = {t: _regex_subcadena(t) for t in ADVERBITIS_MULTIPALABRA}
+_PALABRA_COMPILADA = {t: _regex_termino(t) for t in ADVERBITIS_PALABRA_COMPLETA}
+_MULTI_COMPILADA = {t: _regex_termino(t) for t in ADVERBITIS_MULTIPALABRA}
 
 
 def encontrar_adverbitis(texto):
@@ -112,6 +297,7 @@ def validar(ruta):
     materia = lexico_de_materia(pack["materia"])
     saberes_prohibidos = set(materia["saberes_prohibidos"])
     formulas_proceso = materia["formulas_proceso"]
+    dimensiones_con_respaldo = materia.get("dimensiones_con_respaldo", {})
     verbos = {v["3s"].lower(): v for v in pack["verbos"]}
     errores, avisos = [], []
     pesos = collections.defaultdict(int)
@@ -181,6 +367,21 @@ def validar(ruta):
                     "se declara dimensión de proceso y el criterio %s de %s no habla de planificar, de borradores ni de revisar"
                     % (c.get("criterio_oficial", {}).get("codigo"), c["curso"]))
 
+        # --- Dimensión cuyo objeto el criterio no nombra: misma forma que
+        # `proceso_sin_respaldo`, y por la misma razón. Lo escribió la fila de
+        # reacción a una noticia: la competencia 4 evalúa el canal en 2.º ESO y
+        # en 1.º Bach y no lo evalúa en 4.º ESO ni en 2.º Bach, y sin esto una
+        # dimensión de canal en esos dos cursos pasaba limpia. ---
+        exigidos = dimensiones_con_respaldo.get(c["dimension"])
+        if exigidos:
+            cita_dim = quitar_tildes((c.get("criterio_oficial", {}).get("cita") or "").lower())
+            if not any(t in cita_dim for t in exigidos):
+                err(cid, "dimension_sin_respaldo",
+                    "la dimensión '%s' evalúa algo que el criterio %s de %s no nombra "
+                    "(ninguno de: %s)"
+                    % (c["dimension"], c.get("criterio_oficial", {}).get("codigo"),
+                       c["curso"], ", ".join(exigidos)))
+
         # --- Descriptores ---
         for nivel, d in c["descriptores"].items():
             texto = d["texto"]
@@ -231,6 +432,18 @@ def validar(ruta):
             for b in comp["bandas"]:
                 for a in encontrar_adverbitis(b["condicion"]):
                     err(cid, etq, "adverbitis en una banda ('%s'): la matriz deja de ser contable" % a.strip())
+
+            # --- Continuidad de bandas: si el componente cuenta incidencias, sus
+            # bandas cubren todos los recuentos. Un hueco deja al corrector sin
+            # banda que aplicar justo donde la matriz prometía aritmética. ---
+            for cosa, tramos in escalas_de_incidencia(comp):
+                huecos = huecos_de_escala(comp, tramos)
+                if huecos:
+                    err(cid, "continuidad_bandas",
+                        "el componente '%s' cuenta %s y sus bandas dejan fuera %s: "
+                        "con ese recuento no hay banda que aplicar"
+                        % (comp["nombre"], cosa,
+                           " y ".join(texto_de_hueco(d, h) for d, h in huecos)))
 
         for pen in m["penalizaciones"]:
             clave = pen["clave"]

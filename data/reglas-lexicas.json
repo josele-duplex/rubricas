@@ -24,7 +24,7 @@
     "como está escrito. Cada lista dice contra qué se compara en su propia `_nota`."
   ],
 
-  "version": "1.2.0",
+  "version": "1.4.0",
 
   "comun": {
     "_nota": "Vale para cualquier materia: sale del principio anti-adverbitis del marco teórico y de la redacción del decreto de Murcia, no del contenido de Lengua.",
@@ -79,6 +79,48 @@
       ]
     },
 
+    "recuento_bandas": {
+      "_nota": [
+        "Cómo se lee un recuento escrito en la condición de una banda de matriz: «Hasta 2",
+        "faltas», «De 3 a 5 faltas», «8 o más faltas», «1 o 2 errores», «Sin errores de",
+        "concordancia». Lo usa la regla de continuidad de bandas: un componente que cuenta",
+        "incidencias tiene que cubrir todos los recuentos posibles, sin dejar ninguno fuera.",
+        "Si el corrector cuenta 4 faltas y ninguna banda dice qué hacer con 4, la nota se",
+        "decide a ojo justo en el sitio donde la matriz prometía aritmética.",
+        "",
+        "Todo va en minúsculas y SIN TILDES: los dos validadores normalizan la condición",
+        "antes de leerla, igual que hacen con las citas del decreto.",
+        "",
+        "`numerales` empieza en «dos» a propósito, y esto no es una omisión que arreglar.",
+        "«un», «una» y «uno» son artículo mucho más veces que número —«sin una oración que",
+        "la formule», «una sola idea principal», «cada uno en su párrafo»— y leerlos como",
+        "recuento inventaba escalas donde no había ninguna. El uno de verdad se escribe con",
+        "cifra en los nueve packs («1 o 2 errores», «Deja 1 dato sin fuente nombrada»), y",
+        "las cifras se leen siempre.",
+        "",
+        "`ninguno` marca el recuento cero: «Sin errores de concordancia» es la banda de 0",
+        "incidencias, no una banda sin número.",
+        "",
+        "`palabras_no_contables` son las que se saltan entre el número y la cosa contada:",
+        "«1 de los tres procedimientos falla» cuenta procedimientos, no «de»."
+      ],
+      "numerales": {
+        "dos": 2, "tres": 3, "cuatro": 4, "cinco": 5, "seis": 6,
+        "siete": 7, "ocho": 8, "nueve": 9, "diez": 10
+      },
+      "ninguno": ["sin", "ningun", "ninguna", "ningunos", "ningunas"],
+      "hasta": ["hasta", "como maximo"],
+      "rangos": [["de", "a"], ["entre", "y"]],
+      "o_mas": ["o mas"],
+      "al_menos": ["al menos", "un minimo de"],
+      "mas_de": ["mas de"],
+      "alternativa": ["o"],
+      "palabras_no_contables": [
+        "el", "la", "los", "las", "un", "una", "unos", "unas", "de", "del",
+        "ese", "esa", "esos", "esas", "este", "esta", "estos", "estas"
+      ]
+    },
+
     "umbrales": {
       "tope_penalizacion": 0.35,
       "tope_conjunto_penalizaciones": 0.5,
@@ -108,6 +150,44 @@
       "formulas_proceso": {
         "_nota": "Fórmulas del decreto que sostienen que una dimensión evalúa una FASE del proceso y no el producto terminado (§5.2, campo `evalua_proceso`). Sin 'esquema': el 6.1 usa «esquemas propios» para reorganizar información ajena en el texto terminado, no para el esquema como fase previa — coinciden en la palabra, no en el referente.",
         "terminos": ["planificar", "planificacion", "borrador", "revisar", "revision"]
+      },
+
+      "dimensiones_con_respaldo": {
+        "_nota": [
+          "Dimensiones cuyo objeto tiene que estar NOMBRADO en la cita del criterio que las",
+          "sostiene, con los términos que valen como nombre. Misma forma que la regla de",
+          "`evalua_proceso` (formulas_proceso), y por la misma razón: si el criterio no pide",
+          "eso, la dimensión no se deriva del currículo, se inventa (CLAUDE.md, regla 1).",
+          "",
+          "La escribió el pack de reacción a una noticia (v1.32). La competencia 4 evalúa el",
+          "canal en 2.º ESO y en 1.º Bach —«la idoneidad del canal utilizado»— y NO lo evalúa",
+          "en 4.º ESO ni en 2.º Bach, donde el criterio se queda en «su calidad y fiabilidad» y",
+          "cambia los procedimientos comunicativos por lingüísticos. Nada impedía escribir una",
+          "dimensión de canal en esos dos cursos: la cita seguía siendo literal y del curso",
+          "correcto, y el validador la daba por buena. Es el mismo agujero que tapó",
+          "`proceso_sin_respaldo`, en otra dimensión.",
+          "",
+          "La clave es el `dimension` del criterio; los términos van en minúsculas y SIN",
+          "tildes, porque se comparan contra la cita normalizada.",
+          "",
+          "`propiedad_intelectual` la añadió el pack de redacción de una noticia (v1.33), y",
+          "es el mismo caso en otra competencia: el 6.1 cierra en «adoptando un punto de",
+          "vista crítico y respetando los principios de propiedad intelectual» en 1.º y 4.º",
+          "de ESO y en los dos cursos de Bachillerato, y en 3.º de ESO se acaba en",
+          "«reelaborarla y comunicarla de manera creativa», sin una cosa ni la otra. Sin",
+          "esta entrada, una dimensión de atribución de fuentes en 3.º de ESO pasaba limpia.",
+          "",
+          "`soporte_multimodal` la añadió el pack de trabajo de investigación (v1.34). Los",
+          "cinco criterios que abren esa fila dicen «en diferentes soportes», así que la",
+          "dimensión que evalúa el ajuste del soporte tiene dónde agarrarse; escrita en un",
+          "curso cuyo criterio no lo nombrara sería el mismo agujero de `valoracion_canal`.",
+          "Comparte término con él a propósito: son dos dimensiones distintas —una juzga el",
+          "canal de un texto ajeno, la otra construye el propio— sostenidas por la misma",
+          "palabra del decreto, y la clave del diccionario es la dimensión, no el término."
+        ],
+        "valoracion_canal": ["canal", "soporte"],
+        "propiedad_intelectual": ["propiedad intelectual"],
+        "soporte_multimodal": ["soporte"]
       },
 
       "generos": {

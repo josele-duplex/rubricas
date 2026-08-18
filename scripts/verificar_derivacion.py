@@ -91,8 +91,13 @@ LEXICO = lexico()
 FORMULAS_GUIADAS = LEXICO["comun"]["formulas_guiadas"]
 
 
-def normalizar(texto):
-    """Deja solo lo que sobrevive a un copiado fiel: ni maquetación ni mayúsculas."""
+def limpiar(texto):
+    """Quita maquetación y cabeceras de página del BORM, sin tocar las mayúsculas.
+
+    Separado de normalizar() para que scripts/dossier_criterios.py pueda imprimir
+    una cita legible sin volver a escribir estas expresiones: son las mismas que
+    deciden si una cita de un pack se encuentra en la fuente, y dos copias de eso
+    acabarían diciendo cosas distintas."""
     texto = texto.replace("\\", "")            # el md del BORM escapa puntos: "1\."
     texto = re.sub(r"[*_`«»\"\u201c\u201d]", "", texto)
     # cabecera/pie de pagina del BORM, que a veces cae en mitad de una frase citada
@@ -103,7 +108,12 @@ def normalizar(texto):
         texto,
     )
     texto = re.sub(r"\s+", " ", texto)         # saltos de línea y dobles espacios
-    return texto.strip().lower()
+    return texto.strip()
+
+
+def normalizar(texto):
+    """Deja solo lo que sobrevive a un copiado fiel: ni maquetación ni mayúsculas."""
+    return limpiar(texto).lower()
 
 
 def cargar_fuentes():
@@ -261,11 +271,17 @@ def generos_de(materia):
     return LEXICO["por_materia"].get(materia, {}).get("generos", [])
 
 
-def segmentar_por_curso():
-    """Devuelve {curso: texto_normalizado} recortando cada archivo de fuentes
-    por sus cabeceras de curso; el preámbulo antes de la primera cabecera se
-    añade a todos los cursos de ese archivo."""
-    segmentos = {}
+def bloques_por_curso():
+    """Devuelve {curso: (preámbulo, bloque)} en texto CRUDO, recortando cada
+    archivo de fuentes por sus cabeceras de curso.
+
+    Está separado de segmentar_por_curso() porque el recorte tiene dos sutilezas
+    que costaron sendos fallos —solo la primera aparición de cada cabecera, y el
+    tope del último curso— y no puede haber dos copias de esa lógica. Lo que
+    cambia entre usos es el texto que se quiere: este verificador lo compara, y
+    por eso lo normaliza; scripts/dossier_criterios.py lo imprime para leerlo, y
+    lo necesita con sus mayúsculas y su puntuación."""
+    bloques = {}
     for nombre, cabeceras in cabeceras_de_curso().items():
         ruta = os.path.join(DIR_FUENTES, nombre)
         if not os.path.isfile(ruta):
@@ -296,11 +312,19 @@ def segmentar_por_curso():
             if lineas[i].strip().rstrip(":") in textos:
                 fin_ultimo = i
                 break
-        preambulo = normalizar("\n".join(lineas[:indices[0][0]]))
+        preambulo = "\n".join(lineas[:indices[0][0]])
         for pos, (i, curso) in enumerate(indices):
             fin = indices[pos + 1][0] if pos + 1 < len(indices) else fin_ultimo
-            segmentos[curso] = preambulo + " " + normalizar("\n".join(lineas[i:fin]))
-    return segmentos
+            bloques[curso] = (preambulo, "\n".join(lineas[i:fin]))
+    return bloques
+
+
+def segmentar_por_curso():
+    """Devuelve {curso: texto_normalizado} recortando cada archivo de fuentes
+    por sus cabeceras de curso; el preámbulo antes de la primera cabecera se
+    añade a todos los cursos de ese archivo."""
+    return {curso: normalizar(preambulo) + " " + normalizar(bloque)
+            for curso, (preambulo, bloque) in bloques_por_curso().items()}
 
 
 def comprobar_genero_saber_vehiculo(pack, segmentos, err, avi):

@@ -1,0 +1,2357 @@
+{
+  "pack_id": "lcl-murcia-reaccion",
+  "materia": "LCL",
+  "etiqueta": "Reacción a una noticia — Región de Murcia",
+  "version": "0.1.0",
+  "normativa": {
+    "estatal": [
+      "RD 217/2022, de 29 de marzo (ESO)",
+      "RD 243/2022, de 5 de abril (Bachillerato)"
+    ],
+    "autonomica": "Decreto n.º 235/2022, de 7 de diciembre, por el que se establece la ordenación y el currículo de la Educación Secundaria Obligatoria en la Comunidad Autónoma de la Región de Murcia",
+    "vigencia_desde": "2022-2023",
+    "revisado": "2026-08"
+  },
+  "verbos_extra": [
+    {
+      "id": "acepta",
+      "3s": "Acepta",
+      "1s": "Acepto",
+      "nivel_cognitivo": 2
+    }
+  ],
+  "razon_peso": "Pesa más la valoración del contenido —la calidad y la fiabilidad de lo que la noticia afirma—, porque es la operación que el criterio de evaluación pide y la que distingue esta tarea de cualquier otro texto de opinión. La valoración de la forma va detrás, y el canal pesa menos porque el propio currículo lo retira en 4.º de ESO y en 2.º de Bachillerato. La redacción y la corrección normativa vienen de otra competencia específica (la 5) y aquí acompañan a la reacción en lugar de definirla. El reparto se puede igualar desde «Ajustar».",
+  "criterios": [
+    {
+      "id": "lcl-b-valcontenido-rea-2eso",
+      "bloque_lomloe": "B",
+      "dimension": "valoracion_contenido",
+      "nombre": "Valoración del contenido: calidad y fiabilidad de la información",
+      "curso": "2ESO",
+      "hereda_de": null,
+      "criterio_oficial": {
+        "competencia_especifica": 4,
+        "codigo": "4.1",
+        "cita": "Valorar la forma y el contenido de textos escritos y multimodales sencillos evaluando su calidad, su fiabilidad y la idoneidad del canal utilizado, así como la eficacia de los procedimientos comunicativos empleados.",
+        "perfil_salida": [
+          "CCL2",
+          "CCL3",
+          "CCL5",
+          "CP2",
+          "STEM4",
+          "CD1",
+          "CPSAA4",
+          "CC3"
+        ]
+      },
+      "saber_vehiculo": [
+        "alfabetización mediática e informacional: búsqueda y selección de la información con criterios de fiabilidad, calidad y pertinencia",
+        "géneros discursivos propios del ámbito social. Redes sociales y medios de comunicación",
+        "riesgos de desinformación, manipulación y vulneración de la privacidad en la red"
+      ],
+      "progresion": {
+        "autonomia": 2,
+        "complejidad": 2,
+        "metalinguistico": 2
+      },
+      "tipos_tarea": [
+        "reaccion"
+      ],
+      "obligatorio": true,
+      "prioridad": 1,
+      "peso_base": 30,
+      "descriptores": {
+        "n1": {
+          "verbo": "acepta",
+          "texto": "Acepta como cierta la información de la noticia y la traslada a la reacción con las palabras del titular."
+        },
+        "n2": {
+          "verbo": "distingue",
+          "texto": "Distingue en la noticia los hechos de las opiniones del autor con la pauta facilitada."
+        },
+        "n3": {
+          "verbo": "contrasta",
+          "texto": "Contrasta el dato principal de la noticia con otra fuente y señala las coincidencias y las diferencias."
+        },
+        "n4": {
+          "verbo": "valora",
+          "texto": "Valora la fiabilidad de la noticia a partir de la fuente citada, la fecha y los datos comprobados."
+        }
+      },
+      "matriz_cuantitativa": {
+        "total": 10,
+        "componentes": [
+          {
+            "nombre": "Hechos y opiniones separados",
+            "max": 4,
+            "bandas": [
+              {
+                "puntos": 4,
+                "condicion": "La reacción separa de los hechos todos los enunciados de opinión de la noticia"
+              },
+              {
+                "puntos": 3,
+                "condicion": "Deja 1 opinión presentada como hecho"
+              },
+              {
+                "puntos": 2,
+                "condicion": "Deja 2 opiniones presentadas como hecho"
+              },
+              {
+                "puntos": 0,
+                "condicion": "La reacción trata toda la noticia como hechos"
+              }
+            ]
+          },
+          {
+            "nombre": "Fuente y fecha",
+            "max": 3,
+            "bandas": [
+              {
+                "puntos": 3,
+                "condicion": "La reacción nombra la fuente y la fecha de la noticia"
+              },
+              {
+                "puntos": 2,
+                "condicion": "Nombra una de las dos"
+              },
+              {
+                "puntos": 0,
+                "condicion": "La reacción comenta la noticia sin nombrar fuente ni fecha"
+              }
+            ]
+          },
+          {
+            "nombre": "Contraste con otra fuente",
+            "max": 3,
+            "bandas": [
+              {
+                "puntos": 3,
+                "condicion": "Contrasta 2 o más datos de la noticia con otra fuente"
+              },
+              {
+                "puntos": 2,
+                "condicion": "Contrasta 1 dato de la noticia con otra fuente"
+              },
+              {
+                "puntos": 0,
+                "condicion": "La reacción se apoya solo en la noticia de partida"
+              }
+            ]
+          }
+        ],
+        "penalizaciones": []
+      },
+      "descriptor_cotejo": null,
+      "descriptor_un_punto": "Distingue en la noticia los hechos de las opiniones del autor con la pauta facilitada."
+    },
+    {
+      "id": "lcl-b-valcanal-rea-2eso",
+      "bloque_lomloe": "B",
+      "dimension": "valoracion_canal",
+      "nombre": "Valoración del canal: idoneidad del soporte para el mensaje",
+      "curso": "2ESO",
+      "hereda_de": null,
+      "criterio_oficial": {
+        "competencia_especifica": 4,
+        "codigo": "4.1",
+        "cita": "Valorar la forma y el contenido de textos escritos y multimodales sencillos evaluando su calidad, su fiabilidad y la idoneidad del canal utilizado, así como la eficacia de los procedimientos comunicativos empleados.",
+        "perfil_salida": [
+          "CCL2",
+          "CCL3",
+          "CCL5",
+          "CP2",
+          "STEM4",
+          "CD1",
+          "CPSAA4",
+          "CC3"
+        ]
+      },
+      "saber_vehiculo": [
+        "géneros discursivos propios del ámbito social. Redes sociales y medios de comunicación",
+        "análisis de la imagen y elementos paratextuales de los textos icónico-verbales y multimodales"
+      ],
+      "progresion": {
+        "autonomia": 2,
+        "complejidad": 2,
+        "metalinguistico": 2
+      },
+      "tipos_tarea": [
+        "reaccion"
+      ],
+      "obligatorio": false,
+      "prioridad": 2,
+      "peso_base": 15,
+      "descriptores": {
+        "n1": {
+          "verbo": "reconoce",
+          "texto": "Reconoce el soporte en el cual aparece la noticia y lo indica en la reacción."
+        },
+        "n2": {
+          "verbo": "distingue",
+          "texto": "Distingue el periódico digital del mensaje de una red social con la pauta facilitada."
+        },
+        "n3": {
+          "verbo": "relaciona",
+          "texto": "Relaciona el soporte de la noticia con el público lector al cual apunta."
+        },
+        "n4": {
+          "verbo": "valora",
+          "texto": "Valora si el soporte elegido favorece la difusión rápida o la comprobación de los datos."
+        }
+      },
+      "matriz_cuantitativa": {
+        "total": 10,
+        "componentes": [
+          {
+            "nombre": "Soporte identificado",
+            "max": 3,
+            "bandas": [
+              {
+                "puntos": 3,
+                "condicion": "La reacción nombra el soporte concreto: periódico digital, radio, red social"
+              },
+              {
+                "puntos": 2,
+                "condicion": "Nombra el tipo de medio sin concretar el soporte"
+              },
+              {
+                "puntos": 0,
+                "condicion": "La reacción comenta la noticia sin nombrar el soporte"
+              }
+            ]
+          },
+          {
+            "nombre": "Rasgos del soporte",
+            "max": 4,
+            "bandas": [
+              {
+                "puntos": 4,
+                "condicion": "Señala 3 o más rasgos del soporte: titular, imagen, extensión, comentarios del lector"
+              },
+              {
+                "puntos": 3,
+                "condicion": "Señala 2 rasgos del soporte"
+              },
+              {
+                "puntos": 2,
+                "condicion": "Señala 1 rasgo del soporte"
+              },
+              {
+                "puntos": 0,
+                "condicion": "La reacción comenta el contenido y deja fuera los rasgos del soporte"
+              }
+            ]
+          },
+          {
+            "nombre": "Idoneidad razonada",
+            "max": 3,
+            "bandas": [
+              {
+                "puntos": 3,
+                "condicion": "Razona por qué ese soporte conviene al mensaje de la noticia"
+              },
+              {
+                "puntos": 2,
+                "condicion": "Afirma si el soporte conviene sin razonarlo"
+              },
+              {
+                "puntos": 0,
+                "condicion": "La reacción deja fuera la idoneidad del soporte"
+              }
+            ]
+          }
+        ],
+        "penalizaciones": []
+      },
+      "descriptor_cotejo": null,
+      "descriptor_un_punto": "Distingue el periódico digital del mensaje de una red social con la pauta facilitada."
+    },
+    {
+      "id": "lcl-b-valforma-rea-2eso",
+      "bloque_lomloe": "B",
+      "dimension": "valoracion_forma",
+      "nombre": "Valoración de la forma: eficacia de los procedimientos comunicativos",
+      "curso": "2ESO",
+      "hereda_de": null,
+      "criterio_oficial": {
+        "competencia_especifica": 4,
+        "codigo": "4.1",
+        "cita": "Valorar la forma y el contenido de textos escritos y multimodales sencillos evaluando su calidad, su fiabilidad y la idoneidad del canal utilizado, así como la eficacia de los procedimientos comunicativos empleados.",
+        "perfil_salida": [
+          "CCL2",
+          "CCL3",
+          "CCL5",
+          "CP2",
+          "STEM4",
+          "CD1",
+          "CPSAA4",
+          "CC3"
+        ]
+      },
+      "saber_vehiculo": [
+        "análisis de la imagen y elementos paratextuales de los textos icónico-verbales y multimodales",
+        "reconocimiento y uso discursivo de los elementos lingüísticos"
+      ],
+      "progresion": {
+        "autonomia": 2,
+        "complejidad": 2,
+        "metalinguistico": 2
+      },
+      "tipos_tarea": [
+        "reaccion"
+      ],
+      "obligatorio": true,
+      "prioridad": 1,
+      "peso_base": 20,
+      "descriptores": {
+        "n1": {
+          "verbo": "senala",
+          "texto": "Señala la parte más llamativa de la noticia y la traslada a la reacción."
+        },
+        "n2": {
+          "verbo": "reconoce",
+          "texto": "Reconoce el titular, la entradilla y la imagen como partes de la noticia y las indica en la reacción."
+        },
+        "n3": {
+          "verbo": "explica",
+          "texto": "Explica cómo el titular y la imagen orientan la lectura de la noticia."
+        },
+        "n4": {
+          "verbo": "valora",
+          "texto": "Valora la eficacia del titular y de la imagen para el propósito de informar."
+        }
+      },
+      "matriz_cuantitativa": {
+        "total": 10,
+        "componentes": [
+          {
+            "nombre": "Partes de la noticia nombradas",
+            "max": 3,
+            "bandas": [
+              {
+                "puntos": 3,
+                "condicion": "La reacción nombra 3 o más partes: titular, entradilla, cuerpo, imagen, pie de foto"
+              },
+              {
+                "puntos": 2,
+                "condicion": "Nombra 2 partes de la noticia"
+              },
+              {
+                "puntos": 1,
+                "condicion": "Nombra 1 parte de la noticia"
+              },
+              {
+                "puntos": 0,
+                "condicion": "La reacción comenta la noticia como un bloque"
+              }
+            ]
+          },
+          {
+            "nombre": "Efecto de cada procedimiento",
+            "max": 4,
+            "bandas": [
+              {
+                "puntos": 4,
+                "condicion": "Explica el efecto de 2 o más procedimientos sobre el lector"
+              },
+              {
+                "puntos": 3,
+                "condicion": "Explica el efecto de 1 procedimiento"
+              },
+              {
+                "puntos": 2,
+                "condicion": "Nombra un procedimiento sin explicar el efecto"
+              },
+              {
+                "puntos": 0,
+                "condicion": "La reacción resume el contenido y deja fuera los procedimientos"
+              }
+            ]
+          },
+          {
+            "nombre": "Léxico valorativo localizado",
+            "max": 3,
+            "bandas": [
+              {
+                "puntos": 3,
+                "condicion": "Localiza 3 o más palabras con carga valorativa en la noticia"
+              },
+              {
+                "puntos": 2,
+                "condicion": "Localiza 2 palabras con carga valorativa"
+              },
+              {
+                "puntos": 1,
+                "condicion": "Localiza 1 palabra con carga valorativa"
+              },
+              {
+                "puntos": 0,
+                "condicion": "La reacción toma el léxico de la noticia como neutro"
+              }
+            ]
+          }
+        ],
+        "penalizaciones": []
+      },
+      "descriptor_cotejo": null,
+      "descriptor_un_punto": "Reconoce el titular, la entradilla y la imagen como partes de la noticia y las indica en la reacción."
+    },
+    {
+      "id": "lcl-b-redaccion-rea-2eso",
+      "bloque_lomloe": "B",
+      "dimension": "redaccion_reaccion",
+      "nombre": "Redacción de la reacción: organización y registro",
+      "curso": "2ESO",
+      "hereda_de": null,
+      "criterio_oficial": {
+        "competencia_especifica": 5,
+        "codigo": "5.1",
+        "cita": "Planificar la redacción de textos escritos y multimodales sencillos, atendiendo a la situación comunicativa, al destinatario, al propósito y al canal; redactar borradores y revisarlos con ayuda del diálogo entre iguales e instrumentos de consulta, y presentar un texto final coherente, cohesionado y con el registro adecuado.",
+        "perfil_salida": [
+          "CCL1",
+          "CCL3",
+          "CCL5",
+          "STEM1",
+          "CD2",
+          "CD3",
+          "CPSAA5",
+          "CC2"
+        ]
+      },
+      "saber_vehiculo": [
+        "producción escrita: planificación, redacción, revisión y edición en diferentes soportes de textos sencillos",
+        "mecanismos básicos de cohesión textual, con especial atención a los conectores temporales y explicativos",
+        "adecuación al registro y a la situación comunicativa"
+      ],
+      "progresion": {
+        "autonomia": 2,
+        "complejidad": 2,
+        "metalinguistico": 2
+      },
+      "tipos_tarea": [
+        "reaccion"
+      ],
+      "obligatorio": false,
+      "prioridad": 2,
+      "peso_base": 20,
+      "descriptores": {
+        "n1": {
+          "verbo": "redacta",
+          "texto": "Redacta la reacción como un comentario seguido en el cual la noticia y la opinión propia van juntas."
+        },
+        "n2": {
+          "verbo": "organiza",
+          "texto": "Organiza la reacción en dos partes con la pauta facilitada: primero la noticia, después la valoración."
+        },
+        "n3": {
+          "verbo": "enlaza",
+          "texto": "Enlaza la valoración con los datos de la noticia mediante conectores de causa y de contraste."
+        },
+        "n4": {
+          "verbo": "ajusta",
+          "texto": "Ajusta el registro de la reacción al destinatario y sostiene la valoración con una cita literal de la noticia."
+        }
+      },
+      "matriz_cuantitativa": {
+        "total": 10,
+        "componentes": [
+          {
+            "nombre": "Partes de la reacción",
+            "max": 3,
+            "bandas": [
+              {
+                "puntos": 3,
+                "condicion": "La reacción presenta la noticia y después la valora, en partes reconocibles"
+              },
+              {
+                "puntos": 2,
+                "condicion": "Las dos partes se mezclan y la valoración aún se distingue del resumen"
+              },
+              {
+                "puntos": 0,
+                "condicion": "La reacción se queda en resumir la noticia"
+              }
+            ]
+          },
+          {
+            "nombre": "Conectores entre noticia y valoración",
+            "max": 3,
+            "bandas": [
+              {
+                "puntos": 3,
+                "condicion": "Emplea 3 o más conectores distintos de causa, contraste u orden"
+              },
+              {
+                "puntos": 2,
+                "condicion": "Emplea 1 o 2 conectores distintos"
+              },
+              {
+                "puntos": 0,
+                "condicion": "Coloca las frases una detrás de otra sin enlace"
+              }
+            ]
+          },
+          {
+            "nombre": "Apoyo en el texto de partida",
+            "max": 2,
+            "bandas": [
+              {
+                "puntos": 2,
+                "condicion": "Apoya la valoración en 1 o más citas literales de la noticia"
+              },
+              {
+                "puntos": 1,
+                "condicion": "Alude a la noticia sin citarla"
+              },
+              {
+                "puntos": 0,
+                "condicion": "La valoración avanza al margen de la noticia"
+              }
+            ]
+          },
+          {
+            "nombre": "Registro",
+            "max": 2,
+            "bandas": [
+              {
+                "puntos": 2,
+                "condicion": "Mantiene el registro formal en toda la reacción"
+              },
+              {
+                "puntos": 1,
+                "condicion": "Se desliza al registro coloquial en 1 o 2 puntos"
+              },
+              {
+                "puntos": 0,
+                "condicion": "La reacción está escrita en registro coloquial"
+              }
+            ]
+          }
+        ],
+        "penalizaciones": []
+      },
+      "descriptor_cotejo": null,
+      "descriptor_un_punto": "Organiza la reacción en dos partes con la pauta facilitada: primero la noticia, después la valoración."
+    },
+    {
+      "id": "lcl-d-correccion-rea-2eso",
+      "bloque_lomloe": "D",
+      "dimension": "correccion_lexico",
+      "nombre": "Corrección normativa y propiedad léxica",
+      "curso": "2ESO",
+      "hereda_de": null,
+      "criterio_oficial": {
+        "competencia_especifica": 5,
+        "codigo": "5.2",
+        "cita": "Incorporar procedimientos básicos para enriquecer los textos, atendiendo a aspectos discursivos, lingüísticos y de estilo, con precisión léxica y corrección ortográfica y gramatical.",
+        "perfil_salida": [
+          "CCL1",
+          "CCL3",
+          "CCL5",
+          "STEM1",
+          "CD2",
+          "CD3",
+          "CPSAA5",
+          "CC2"
+        ]
+      },
+      "saber_vehiculo": [
+        "corrección lingüística y revisión ortográfica y gramatical de los textos",
+        "los signos básicos de puntuación como mecanismo organizador del texto escrito",
+        "propiedad léxica"
+      ],
+      "progresion": {
+        "autonomia": 2,
+        "complejidad": 2,
+        "metalinguistico": 2
+      },
+      "tipos_tarea": [
+        "reaccion"
+      ],
+      "obligatorio": true,
+      "prioridad": 2,
+      "peso_base": 15,
+      "descriptores": {
+        "n1": {
+          "verbo": "redacta",
+          "texto": "Redacta la reacción con errores de ortografía y de puntuación que obligan al lector a releer."
+        },
+        "n2": {
+          "verbo": "aplica",
+          "texto": "Aplica las normas de acentuación y concordancia trabajadas en clase, con errores que permiten seguir la reacción."
+        },
+        "n3": {
+          "verbo": "aplica",
+          "texto": "Aplica las normas de ortografía y puntuación del nivel y delimita con comillas las palabras tomadas de la noticia."
+        },
+        "n4": {
+          "verbo": "elige",
+          "texto": "Elige el término preciso para nombrar cada parte de la noticia y sustituye las palabras comodín."
+        }
+      },
+      "matriz_cuantitativa": {
+        "total": 10,
+        "componentes": [
+          {
+            "nombre": "Ortografía y acentuación",
+            "max": 4,
+            "bandas": [
+              {
+                "puntos": 4,
+                "condicion": "Hasta 1 falta en toda la reacción"
+              },
+              {
+                "puntos": 3,
+                "condicion": "De 2 a 3 faltas"
+              },
+              {
+                "puntos": 2,
+                "condicion": "De 4 a 5 faltas"
+              },
+              {
+                "puntos": 0,
+                "condicion": "6 o más faltas"
+              }
+            ]
+          },
+          {
+            "nombre": "Puntuación y comillas",
+            "max": 3,
+            "bandas": [
+              {
+                "puntos": 3,
+                "condicion": "Cierra con punto todas las frases y entrecomilla las palabras tomadas de la noticia"
+              },
+              {
+                "puntos": 2,
+                "condicion": "Deja 1 o 2 citas sin comillas, o 1 o 2 frases sin cerrar"
+              },
+              {
+                "puntos": 0,
+                "condicion": "La reacción es un bloque de texto casi sin puntuación"
+              }
+            ]
+          },
+          {
+            "nombre": "Propiedad léxica",
+            "max": 3,
+            "bandas": [
+              {
+                "puntos": 3,
+                "condicion": "Emplea términos precisos y ninguna palabra comodín (cosa, tema, hacer)"
+              },
+              {
+                "puntos": 2,
+                "condicion": "Emplea 1 palabra comodín"
+              },
+              {
+                "puntos": 1,
+                "condicion": "Emplea 2 palabras comodín"
+              },
+              {
+                "puntos": 0,
+                "condicion": "La reacción se sostiene sobre palabras comodín"
+              }
+            ]
+          }
+        ],
+        "penalizaciones": []
+      },
+      "descriptor_cotejo": null,
+      "descriptor_un_punto": "Aplica las normas de acentuación y concordancia trabajadas en clase, con errores que permiten seguir la reacción."
+    },
+    {
+      "id": "lcl-b-valcontenido-rea-4eso",
+      "bloque_lomloe": "B",
+      "dimension": "valoracion_contenido",
+      "nombre": "Valoración del contenido: calidad y fiabilidad de la información",
+      "curso": "4ESO",
+      "hereda_de": null,
+      "criterio_oficial": {
+        "competencia_especifica": 4,
+        "codigo": "4.1",
+        "cita": "Valorar críticamente el contenido y la forma de textos escritos y multimodales de cierta complejidad evaluando su calidad y fiabilidad, así como la eficacia de los procedimientos lingüísticos empleados.",
+        "perfil_salida": [
+          "CCL2",
+          "CCL3",
+          "CCL5",
+          "CP2",
+          "STEM4",
+          "CD1",
+          "CPSAA4",
+          "CC3"
+        ]
+      },
+      "saber_vehiculo": [
+        "alfabetización mediática e informacional: análisis, búsqueda y selección de la información con criterios de fiabilidad, calidad y pertinencia",
+        "géneros discursivos propios del ámbito social. Redes sociales y medios de comunicación",
+        "etiqueta digital y riesgos de desinformación, manipulación y vulneración de la privacidad"
+      ],
+      "progresion": {
+        "autonomia": 3,
+        "complejidad": 3,
+        "metalinguistico": 3
+      },
+      "tipos_tarea": [
+        "reaccion"
+      ],
+      "obligatorio": true,
+      "prioridad": 1,
+      "peso_base": 35,
+      "descriptores": {
+        "n1": {
+          "verbo": "acepta",
+          "texto": "Acepta la versión de la noticia y apoya la reacción en los datos tal como aparecen en el texto."
+        },
+        "n2": {
+          "verbo": "distingue",
+          "texto": "Distingue los hechos verificables de las opiniones del autor y los separa en la reacción."
+        },
+        "n3": {
+          "verbo": "contrasta",
+          "texto": "Contrasta los datos de la noticia con una segunda fuente y explica en qué difieren las dos versiones."
+        },
+        "n4": {
+          "verbo": "valora",
+          "texto": "Valora críticamente la fiabilidad de la noticia a partir de la autoría, la fecha, los datos citados y la línea del medio."
+        }
+      },
+      "matriz_cuantitativa": {
+        "total": 10,
+        "componentes": [
+          {
+            "nombre": "Hechos y opiniones separados",
+            "max": 3,
+            "bandas": [
+              {
+                "puntos": 3,
+                "condicion": "La reacción separa de los hechos todos los enunciados de opinión de la noticia"
+              },
+              {
+                "puntos": 2,
+                "condicion": "Deja 1 opinión presentada como hecho"
+              },
+              {
+                "puntos": 1,
+                "condicion": "Deja 2 opiniones presentadas como hecho"
+              },
+              {
+                "puntos": 0,
+                "condicion": "La reacción trata toda la noticia como hechos"
+              }
+            ]
+          },
+          {
+            "nombre": "Contraste con una segunda fuente",
+            "max": 4,
+            "bandas": [
+              {
+                "puntos": 4,
+                "condicion": "Contrasta 3 o más datos de la noticia con otra fuente"
+              },
+              {
+                "puntos": 3,
+                "condicion": "Contrasta 2 datos con otra fuente"
+              },
+              {
+                "puntos": 2,
+                "condicion": "Contrasta 1 dato con otra fuente"
+              },
+              {
+                "puntos": 0,
+                "condicion": "La reacción se apoya solo en la noticia de partida"
+              }
+            ]
+          },
+          {
+            "nombre": "Indicios de fiabilidad",
+            "max": 3,
+            "bandas": [
+              {
+                "puntos": 3,
+                "condicion": "La reacción examina 3 o más indicios: autoría, fecha, datos citados, línea del medio"
+              },
+              {
+                "puntos": 2,
+                "condicion": "Examina 2 indicios de fiabilidad"
+              },
+              {
+                "puntos": 1,
+                "condicion": "Examina 1 indicio de fiabilidad"
+              },
+              {
+                "puntos": 0,
+                "condicion": "La reacción valora el contenido sin examinar ningún indicio"
+              }
+            ]
+          }
+        ],
+        "penalizaciones": []
+      },
+      "descriptor_cotejo": null,
+      "descriptor_un_punto": "Distingue los hechos verificables de las opiniones del autor y los separa en la reacción."
+    },
+    {
+      "id": "lcl-b-valforma-rea-4eso",
+      "bloque_lomloe": "B",
+      "dimension": "valoracion_forma",
+      "nombre": "Valoración de la forma: eficacia de los procedimientos lingüísticos",
+      "curso": "4ESO",
+      "hereda_de": null,
+      "criterio_oficial": {
+        "competencia_especifica": 4,
+        "codigo": "4.1",
+        "cita": "Valorar críticamente el contenido y la forma de textos escritos y multimodales de cierta complejidad evaluando su calidad y fiabilidad, así como la eficacia de los procedimientos lingüísticos empleados.",
+        "perfil_salida": [
+          "CCL2",
+          "CCL3",
+          "CCL5",
+          "CP2",
+          "STEM4",
+          "CD1",
+          "CPSAA4",
+          "CC3"
+        ]
+      },
+      "saber_vehiculo": [
+        "la expresión de la subjetividad en textos de carácter expositivo y argumentativo",
+        "profundización en el estudio de la imagen y de los elementos paratextuales",
+        "reconocimiento y uso discursivo de los elementos lingüísticos"
+      ],
+      "progresion": {
+        "autonomia": 3,
+        "complejidad": 3,
+        "metalinguistico": 3
+      },
+      "tipos_tarea": [
+        "reaccion"
+      ],
+      "obligatorio": true,
+      "prioridad": 1,
+      "peso_base": 30,
+      "descriptores": {
+        "n1": {
+          "verbo": "senala",
+          "texto": "Señala las palabras más llamativas de la noticia y las traslada a la reacción."
+        },
+        "n2": {
+          "verbo": "reconoce",
+          "texto": "Reconoce en la noticia el léxico valorativo y los adjetivos con carga y los indica en la reacción."
+        },
+        "n3": {
+          "verbo": "explica",
+          "texto": "Explica cómo la selección léxica y el orden de la información orientan la lectura de la noticia."
+        },
+        "n4": {
+          "verbo": "valora",
+          "texto": "Valora la eficacia de los procedimientos lingüísticos de la noticia para el propósito del medio y apoya el juicio en dos ejemplos citados."
+        }
+      },
+      "matriz_cuantitativa": {
+        "total": 10,
+        "componentes": [
+          {
+            "nombre": "Procedimientos localizados",
+            "max": 4,
+            "bandas": [
+              {
+                "puntos": 4,
+                "condicion": "Localiza 4 o más procedimientos: léxico valorativo, adjetivación, orden de la información, discurso referido"
+              },
+              {
+                "puntos": 3,
+                "condicion": "Localiza 3 procedimientos lingüísticos"
+              },
+              {
+                "puntos": 2,
+                "condicion": "Localiza 2 procedimientos lingüísticos"
+              },
+              {
+                "puntos": 0,
+                "condicion": "Localiza 1 procedimiento lingüístico o ninguno"
+              }
+            ]
+          },
+          {
+            "nombre": "Efecto explicado",
+            "max": 3,
+            "bandas": [
+              {
+                "puntos": 3,
+                "condicion": "Explica el efecto de 3 o más de esos procedimientos"
+              },
+              {
+                "puntos": 2,
+                "condicion": "Explica el efecto de 2 procedimientos"
+              },
+              {
+                "puntos": 1,
+                "condicion": "Explica el efecto de 1 procedimiento"
+              },
+              {
+                "puntos": 0,
+                "condicion": "La reacción enumera procedimientos y deja fuera el efecto"
+              }
+            ]
+          },
+          {
+            "nombre": "Ejemplos citados",
+            "max": 3,
+            "bandas": [
+              {
+                "puntos": 3,
+                "condicion": "Apoya el juicio en 2 o más ejemplos citados literalmente"
+              },
+              {
+                "puntos": 2,
+                "condicion": "Apoya el juicio en 1 ejemplo citado literalmente"
+              },
+              {
+                "puntos": 0,
+                "condicion": "El juicio avanza sin ejemplos de la noticia"
+              }
+            ]
+          }
+        ],
+        "penalizaciones": []
+      },
+      "descriptor_cotejo": null,
+      "descriptor_un_punto": "Reconoce en la noticia el léxico valorativo y los adjetivos con carga y los indica en la reacción."
+    },
+    {
+      "id": "lcl-b-redaccion-rea-4eso",
+      "bloque_lomloe": "B",
+      "dimension": "redaccion_reaccion",
+      "nombre": "Redacción de la reacción: organización y registro",
+      "curso": "4ESO",
+      "hereda_de": null,
+      "criterio_oficial": {
+        "competencia_especifica": 5,
+        "codigo": "5.1",
+        "cita": "Planificar la redacción de escritos y multimodales de cierta extensión atendiendo a la situación comunicativa, al destinatario, al propósito y canal; redactar borradores y revisarlos con ayuda del diálogo entre iguales e instrumentos de consulta, y presentar un texto final, coherente, cohesionado y con el registro adecuado.",
+        "perfil_salida": [
+          "CCL1",
+          "CCL3",
+          "CCL5",
+          "STEM1",
+          "CD2",
+          "CD3",
+          "CPSAA5",
+          "CC2"
+        ]
+      },
+      "saber_vehiculo": [
+        "producción escrita: planificación, textualización, redacción, revisión y edición en diferentes soportes",
+        "conectores textuales de orden, contraste, explicación, causa, consecuencia y concesión",
+        "adecuación al registro y a la situación comunicativa"
+      ],
+      "progresion": {
+        "autonomia": 3,
+        "complejidad": 3,
+        "metalinguistico": 3
+      },
+      "tipos_tarea": [
+        "reaccion"
+      ],
+      "obligatorio": false,
+      "prioridad": 2,
+      "peso_base": 20,
+      "descriptores": {
+        "n1": {
+          "verbo": "redacta",
+          "texto": "Redacta la reacción en un bloque seguido donde el resumen de la noticia y el juicio propio van mezclados."
+        },
+        "n2": {
+          "verbo": "organiza",
+          "texto": "Organiza la reacción en presentación de la noticia, valoración y cierre."
+        },
+        "n3": {
+          "verbo": "enlaza",
+          "texto": "Enlaza cada juicio con el dato correspondiente de la noticia mediante conectores de causa y de contraste."
+        },
+        "n4": {
+          "verbo": "ajusta",
+          "texto": "Ajusta el registro de la reacción al medio de publicación y sostiene el juicio con citas literales de la noticia."
+        }
+      },
+      "matriz_cuantitativa": {
+        "total": 10,
+        "componentes": [
+          {
+            "nombre": "Partes de la reacción",
+            "max": 3,
+            "bandas": [
+              {
+                "puntos": 3,
+                "condicion": "La reacción presenta la noticia, la valora y cierra con una conclusión"
+              },
+              {
+                "puntos": 2,
+                "condicion": "Faltan 1 o 2 de las tres partes"
+              },
+              {
+                "puntos": 0,
+                "condicion": "La reacción se queda en resumir la noticia"
+              }
+            ]
+          },
+          {
+            "nombre": "Conectores entre juicio y dato",
+            "max": 3,
+            "bandas": [
+              {
+                "puntos": 3,
+                "condicion": "Emplea 4 o más conectores distintos de causa, contraste, consecuencia u orden"
+              },
+              {
+                "puntos": 2,
+                "condicion": "Emplea de 1 a 3 tipos de conector"
+              },
+              {
+                "puntos": 0,
+                "condicion": "Coloca las frases una detrás de otra sin enlace"
+              }
+            ]
+          },
+          {
+            "nombre": "Apoyo en el texto de partida",
+            "max": 2,
+            "bandas": [
+              {
+                "puntos": 2,
+                "condicion": "Apoya el juicio en 2 o más citas literales de la noticia"
+              },
+              {
+                "puntos": 1,
+                "condicion": "Apoya el juicio en 1 cita literal"
+              },
+              {
+                "puntos": 0,
+                "condicion": "El juicio avanza sin citar la noticia"
+              }
+            ]
+          },
+          {
+            "nombre": "Registro",
+            "max": 2,
+            "bandas": [
+              {
+                "puntos": 2,
+                "condicion": "Mantiene el registro formal en toda la reacción"
+              },
+              {
+                "puntos": 1,
+                "condicion": "Se desliza al registro coloquial en 1 o 2 puntos"
+              },
+              {
+                "puntos": 0,
+                "condicion": "La reacción está escrita en registro coloquial"
+              }
+            ]
+          }
+        ],
+        "penalizaciones": []
+      },
+      "descriptor_cotejo": null,
+      "descriptor_un_punto": "Organiza la reacción en presentación de la noticia, valoración y cierre."
+    },
+    {
+      "id": "lcl-d-correccion-rea-4eso",
+      "bloque_lomloe": "D",
+      "dimension": "correccion_lexico",
+      "nombre": "Corrección normativa y propiedad léxica",
+      "curso": "4ESO",
+      "hereda_de": null,
+      "criterio_oficial": {
+        "competencia_especifica": 5,
+        "codigo": "5.2",
+        "cita": "Incorporar procedimientos para enriquecer los textos atendiendo a aspectos discursivos, lingüísticos y de estilo, con precisión léxica y corrección ortográfica y gramatical.",
+        "perfil_salida": [
+          "CCL1",
+          "CCL3",
+          "CCL5",
+          "STEM1",
+          "CD2",
+          "CD3",
+          "CPSAA5",
+          "CC2"
+        ]
+      },
+      "saber_vehiculo": [
+        "corrección lingüística y revisión ortográfica y gramatical de los textos",
+        "los signos de puntuación como mecanismo organizador del texto escrito. Su relación con el significado",
+        "propiedad léxica"
+      ],
+      "progresion": {
+        "autonomia": 3,
+        "complejidad": 3,
+        "metalinguistico": 3
+      },
+      "tipos_tarea": [
+        "reaccion"
+      ],
+      "obligatorio": true,
+      "prioridad": 2,
+      "peso_base": 15,
+      "descriptores": {
+        "n1": {
+          "verbo": "redacta",
+          "texto": "Redacta la reacción con errores de ortografía y de puntuación que obligan a releer para seguir el juicio."
+        },
+        "n2": {
+          "verbo": "aplica",
+          "texto": "Aplica las normas de acentuación y de concordancia, con errores aislados que dejan seguir el razonamiento."
+        },
+        "n3": {
+          "verbo": "aplica",
+          "texto": "Aplica las normas de ortografía y puntuación del nivel y delimita con comillas las palabras tomadas de la noticia."
+        },
+        "n4": {
+          "verbo": "elige",
+          "texto": "Elige el término preciso para nombrar cada procedimiento de la noticia y sustituye los verbos comodín por otros exactos."
+        }
+      },
+      "matriz_cuantitativa": {
+        "total": 10,
+        "componentes": [
+          {
+            "nombre": "Ortografía y acentuación",
+            "max": 4,
+            "bandas": [
+              {
+                "puntos": 4,
+                "condicion": "Hasta 1 falta en toda la reacción"
+              },
+              {
+                "puntos": 3,
+                "condicion": "De 2 a 3 faltas"
+              },
+              {
+                "puntos": 2,
+                "condicion": "De 4 a 5 faltas"
+              },
+              {
+                "puntos": 0,
+                "condicion": "6 o más faltas"
+              }
+            ]
+          },
+          {
+            "nombre": "Puntuación y comillas",
+            "max": 3,
+            "bandas": [
+              {
+                "puntos": 3,
+                "condicion": "Cierra con punto todas las frases y entrecomilla todas las palabras tomadas de la noticia"
+              },
+              {
+                "puntos": 2,
+                "condicion": "Deja 1 o 2 citas sin comillas, o 1 o 2 frases sin cerrar"
+              },
+              {
+                "puntos": 0,
+                "condicion": "La reacción es un bloque de texto casi sin puntuación"
+              }
+            ]
+          },
+          {
+            "nombre": "Propiedad léxica",
+            "max": 3,
+            "bandas": [
+              {
+                "puntos": 3,
+                "condicion": "Emplea términos precisos y ninguna palabra comodín (cosa, tema, hacer)"
+              },
+              {
+                "puntos": 2,
+                "condicion": "Emplea 1 palabra comodín"
+              },
+              {
+                "puntos": 1,
+                "condicion": "Emplea 2 palabras comodín"
+              },
+              {
+                "puntos": 0,
+                "condicion": "La reacción se sostiene sobre palabras comodín"
+              }
+            ]
+          }
+        ],
+        "penalizaciones": []
+      },
+      "descriptor_cotejo": null,
+      "descriptor_un_punto": "Aplica las normas de acentuación y de concordancia, con errores aislados que dejan seguir el razonamiento."
+    },
+    {
+      "id": "lcl-b-valcontenido-rea-1bach",
+      "bloque_lomloe": "B",
+      "dimension": "valoracion_contenido",
+      "nombre": "Valoración del contenido: calidad y fiabilidad de la información",
+      "curso": "1BACH",
+      "hereda_de": null,
+      "criterio_oficial": {
+        "competencia_especifica": 4,
+        "codigo": "4.2",
+        "cita": "Valorar la forma y el contenido de textos complejos evaluando su calidad, la fiabilidad e idoneidad del canal utilizado, así como la eficacia de los procedimientos comunicativos empleados.",
+        "perfil_salida": [
+          "CCL2",
+          "CCL3",
+          "CCL5",
+          "CP2",
+          "STEM4",
+          "CD1",
+          "CPSAA4",
+          "CC3"
+        ]
+      },
+      "saber_vehiculo": [
+        "alfabetización informacional: búsqueda autónoma y selección de la información con criterios de fiabilidad, calidad y pertinencia",
+        "noticias falsas y verificación de hechos. El ciberanzuelo",
+        "géneros discursivos propios del ámbito social. Las redes sociales y medios de comunicación"
+      ],
+      "progresion": {
+        "autonomia": 3,
+        "complejidad": 4,
+        "metalinguistico": 4
+      },
+      "tipos_tarea": [
+        "reaccion"
+      ],
+      "obligatorio": true,
+      "prioridad": 1,
+      "peso_base": 30,
+      "descriptores": {
+        "n1": {
+          "verbo": "acepta",
+          "texto": "Acepta la versión del medio y apoya la reacción en los datos de la noticia sin comprobación."
+        },
+        "n2": {
+          "verbo": "distingue",
+          "texto": "Distingue en la noticia la información verificable del juicio del medio y los separa en la reacción."
+        },
+        "n3": {
+          "verbo": "contrasta",
+          "texto": "Contrasta la noticia con una fuente independiente y explica el alcance de las diferencias entre las dos versiones."
+        },
+        "n4": {
+          "verbo": "valora",
+          "texto": "Valora la fiabilidad de la noticia a partir de la autoría, la trazabilidad de los datos y la línea editorial del medio."
+        }
+      },
+      "matriz_cuantitativa": {
+        "total": 10,
+        "componentes": [
+          {
+            "nombre": "Información y juicio separados",
+            "max": 3,
+            "bandas": [
+              {
+                "puntos": 3,
+                "condicion": "La reacción separa de la información verificable todos los juicios del medio"
+              },
+              {
+                "puntos": 2,
+                "condicion": "Deja 1 juicio presentado como información"
+              },
+              {
+                "puntos": 1,
+                "condicion": "Deja 2 juicios presentados como información"
+              },
+              {
+                "puntos": 0,
+                "condicion": "La reacción trata toda la noticia como información"
+              }
+            ]
+          },
+          {
+            "nombre": "Verificación con fuente independiente",
+            "max": 4,
+            "bandas": [
+              {
+                "puntos": 4,
+                "condicion": "Verifica 3 o más datos de la noticia en una fuente independiente"
+              },
+              {
+                "puntos": 3,
+                "condicion": "Verifica 2 datos en una fuente independiente"
+              },
+              {
+                "puntos": 2,
+                "condicion": "Verifica 1 dato en una fuente independiente"
+              },
+              {
+                "puntos": 0,
+                "condicion": "La reacción se apoya solo en la noticia de partida"
+              }
+            ]
+          },
+          {
+            "nombre": "Indicios de fiabilidad examinados",
+            "max": 3,
+            "bandas": [
+              {
+                "puntos": 3,
+                "condicion": "La reacción examina autoría, trazabilidad de los datos y línea editorial"
+              },
+              {
+                "puntos": 2,
+                "condicion": "Examina 2 de los tres indicios"
+              },
+              {
+                "puntos": 1,
+                "condicion": "Examina 1 de los tres indicios"
+              },
+              {
+                "puntos": 0,
+                "condicion": "La reacción juzga el contenido sin examinar ningún indicio"
+              }
+            ]
+          }
+        ],
+        "penalizaciones": []
+      },
+      "descriptor_cotejo": null,
+      "descriptor_un_punto": "Distingue en la noticia la información verificable del juicio del medio y los separa en la reacción."
+    },
+    {
+      "id": "lcl-b-valcanal-rea-1bach",
+      "bloque_lomloe": "B",
+      "dimension": "valoracion_canal",
+      "nombre": "Valoración del canal: idoneidad del soporte para el mensaje",
+      "curso": "1BACH",
+      "hereda_de": null,
+      "criterio_oficial": {
+        "competencia_especifica": 4,
+        "codigo": "4.2",
+        "cita": "Valorar la forma y el contenido de textos complejos evaluando su calidad, la fiabilidad e idoneidad del canal utilizado, así como la eficacia de los procedimientos comunicativos empleados.",
+        "perfil_salida": [
+          "CCL2",
+          "CCL3",
+          "CCL5",
+          "CP2",
+          "STEM4",
+          "CD1",
+          "CPSAA4",
+          "CC3"
+        ]
+      },
+      "saber_vehiculo": [
+        "géneros discursivos propios del ámbito social. Las redes sociales y medios de comunicación",
+        "la gestión de contenidos, el almacenamiento y la recuperación de la información relevante"
+      ],
+      "progresion": {
+        "autonomia": 3,
+        "complejidad": 4,
+        "metalinguistico": 4
+      },
+      "tipos_tarea": [
+        "reaccion"
+      ],
+      "obligatorio": false,
+      "prioridad": 2,
+      "peso_base": 15,
+      "descriptores": {
+        "n1": {
+          "verbo": "reconoce",
+          "texto": "Reconoce el canal por el cual circula la noticia y lo indica en la reacción."
+        },
+        "n2": {
+          "verbo": "distingue",
+          "texto": "Distingue el canal institucional del canal abierto y sitúa la noticia en uno de los dos."
+        },
+        "n3": {
+          "verbo": "relaciona",
+          "texto": "Relaciona el canal con el público lector y con la velocidad de difusión de la noticia."
+        },
+        "n4": {
+          "verbo": "valora",
+          "texto": "Valora la idoneidad del canal para el asunto tratado y explica qué gana y qué pierde el mensaje en ese soporte."
+        }
+      },
+      "matriz_cuantitativa": {
+        "total": 10,
+        "componentes": [
+          {
+            "nombre": "Canal identificado",
+            "max": 2,
+            "bandas": [
+              {
+                "puntos": 2,
+                "condicion": "La reacción nombra el canal concreto y el medio que lo sostiene"
+              },
+              {
+                "puntos": 1,
+                "condicion": "Nombra el tipo de canal sin concretar el medio"
+              },
+              {
+                "puntos": 0,
+                "condicion": "La reacción comenta la noticia sin nombrar el canal"
+              }
+            ]
+          },
+          {
+            "nombre": "Rasgos del canal",
+            "max": 4,
+            "bandas": [
+              {
+                "puntos": 4,
+                "condicion": "Señala 3 o más rasgos del canal: inmediatez, extensión, verificación previa, interacción del lector"
+              },
+              {
+                "puntos": 3,
+                "condicion": "Señala 2 rasgos del canal"
+              },
+              {
+                "puntos": 2,
+                "condicion": "Señala 1 rasgo del canal"
+              },
+              {
+                "puntos": 0,
+                "condicion": "La reacción comenta el contenido y deja fuera los rasgos del canal"
+              }
+            ]
+          },
+          {
+            "nombre": "Idoneidad razonada",
+            "max": 4,
+            "bandas": [
+              {
+                "puntos": 4,
+                "condicion": "Razona la idoneidad del canal y pesa lo que el mensaje gana y lo que pierde"
+              },
+              {
+                "puntos": 3,
+                "condicion": "Razona la idoneidad del canal en una sola dirección"
+              },
+              {
+                "puntos": 2,
+                "condicion": "Afirma si el canal conviene sin razonarlo"
+              },
+              {
+                "puntos": 0,
+                "condicion": "La reacción deja fuera la idoneidad del canal"
+              }
+            ]
+          }
+        ],
+        "penalizaciones": []
+      },
+      "descriptor_cotejo": null,
+      "descriptor_un_punto": "Distingue el canal institucional del canal abierto y sitúa la noticia en uno de los dos."
+    },
+    {
+      "id": "lcl-b-valforma-rea-1bach",
+      "bloque_lomloe": "B",
+      "dimension": "valoracion_forma",
+      "nombre": "Valoración de la forma: eficacia de los procedimientos comunicativos",
+      "curso": "1BACH",
+      "hereda_de": null,
+      "criterio_oficial": {
+        "competencia_especifica": 4,
+        "codigo": "4.2",
+        "cita": "Valorar la forma y el contenido de textos complejos evaluando su calidad, la fiabilidad e idoneidad del canal utilizado, así como la eficacia de los procedimientos comunicativos empleados.",
+        "perfil_salida": [
+          "CCL2",
+          "CCL3",
+          "CCL5",
+          "CP2",
+          "STEM4",
+          "CD1",
+          "CPSAA4",
+          "CC3"
+        ]
+      },
+      "saber_vehiculo": [
+        "formas lingüísticas de expresión de la subjetividad y de la objetividad y de sus formas de expresión en los textos",
+        "recursos lingüísticos para adecuar el texto a la situación comunicativa",
+        "géneros discursivos propios del ámbito social. Las redes sociales y medios de comunicación"
+      ],
+      "progresion": {
+        "autonomia": 3,
+        "complejidad": 4,
+        "metalinguistico": 4
+      },
+      "tipos_tarea": [
+        "reaccion"
+      ],
+      "obligatorio": true,
+      "prioridad": 1,
+      "peso_base": 20,
+      "descriptores": {
+        "n1": {
+          "verbo": "senala",
+          "texto": "Señala los rasgos más llamativos de la noticia y los traslada a la reacción."
+        },
+        "n2": {
+          "verbo": "reconoce",
+          "texto": "Reconoce el léxico valorativo, la adjetivación y el discurso referido de la noticia y los indica en la reacción."
+        },
+        "n3": {
+          "verbo": "explica",
+          "texto": "Explica cómo la selección léxica, la titulación y el orden de la información construyen el punto de vista del medio."
+        },
+        "n4": {
+          "verbo": "valora",
+          "texto": "Valora la eficacia de esos procedimientos comunicativos para el propósito del medio y apoya el juicio en ejemplos citados."
+        }
+      },
+      "matriz_cuantitativa": {
+        "total": 10,
+        "componentes": [
+          {
+            "nombre": "Procedimientos localizados",
+            "max": 4,
+            "bandas": [
+              {
+                "puntos": 4,
+                "condicion": "Localiza 4 o más procedimientos: léxico valorativo, adjetivación, titulación, orden de la información, discurso referido"
+              },
+              {
+                "puntos": 3,
+                "condicion": "Localiza 3 procedimientos comunicativos"
+              },
+              {
+                "puntos": 2,
+                "condicion": "Localiza 2 procedimientos comunicativos"
+              },
+              {
+                "puntos": 0,
+                "condicion": "Localiza 1 procedimiento comunicativo o ninguno"
+              }
+            ]
+          },
+          {
+            "nombre": "Punto de vista reconstruido",
+            "max": 3,
+            "bandas": [
+              {
+                "puntos": 3,
+                "condicion": "La reacción explica cómo esos procedimientos construyen el punto de vista del medio"
+              },
+              {
+                "puntos": 2,
+                "condicion": "Explica el efecto de los procedimientos sin llegar al punto de vista"
+              },
+              {
+                "puntos": 0,
+                "condicion": "La reacción comenta el contenido y deja fuera la forma"
+              }
+            ]
+          },
+          {
+            "nombre": "Ejemplos citados",
+            "max": 3,
+            "bandas": [
+              {
+                "puntos": 3,
+                "condicion": "Apoya el juicio en 3 o más ejemplos citados literalmente"
+              },
+              {
+                "puntos": 2,
+                "condicion": "Apoya el juicio en 2 ejemplos citados literalmente"
+              },
+              {
+                "puntos": 1,
+                "condicion": "Apoya el juicio en 1 ejemplo citado literalmente"
+              },
+              {
+                "puntos": 0,
+                "condicion": "El juicio avanza sin ejemplos de la noticia"
+              }
+            ]
+          }
+        ],
+        "penalizaciones": []
+      },
+      "descriptor_cotejo": null,
+      "descriptor_un_punto": "Reconoce el léxico valorativo, la adjetivación y el discurso referido de la noticia y los indica en la reacción."
+    },
+    {
+      "id": "lcl-b-redaccion-rea-1bach",
+      "bloque_lomloe": "B",
+      "dimension": "redaccion_reaccion",
+      "nombre": "Redacción de la reacción: organización y registro",
+      "curso": "1BACH",
+      "hereda_de": null,
+      "criterio_oficial": {
+        "competencia_especifica": 5,
+        "codigo": "5.1",
+        "cita": "Elaborar textos académicos coherentes, cohesionados y con el registro adecuado sobre temas curriculares o de interés social y cultural, precedidos de un proceso de planificación que atienda a la situación comunicativa, destinatario, propósito y canal y de redacción y revisión de borradores de manera individual o entre iguales, o mediante otros instrumentos de consulta.",
+        "perfil_salida": [
+          "CCL1",
+          "CCL3",
+          "CCL5",
+          "STEM1",
+          "CD2",
+          "CD3",
+          "CPSAA5",
+          "CC2"
+        ]
+      },
+      "saber_vehiculo": [
+        "producción escrita. Proceso de elaboración: planificación, redacción, revisión y edición en diferentes soportes",
+        "conectores, marcadores discursivos y otros procedimientos léxico-semánticos y gramaticales que contribuyen a la cohesión del texto",
+        "formas lingüísticas de expresión de la subjetividad y de la objetividad y de sus formas de expresión en los textos"
+      ],
+      "progresion": {
+        "autonomia": 3,
+        "complejidad": 4,
+        "metalinguistico": 4
+      },
+      "tipos_tarea": [
+        "reaccion"
+      ],
+      "obligatorio": false,
+      "prioridad": 2,
+      "peso_base": 20,
+      "descriptores": {
+        "n1": {
+          "verbo": "redacta",
+          "texto": "Redacta la reacción como un comentario seguido, con el juicio propio nacido de la impresión de conjunto de la noticia."
+        },
+        "n2": {
+          "verbo": "organiza",
+          "texto": "Organiza la reacción en presentación del asunto, valoración razonada y conclusión."
+        },
+        "n3": {
+          "verbo": "enlaza",
+          "texto": "Enlaza cada juicio con el pasaje correspondiente de la noticia mediante conectores de causa, contraste y concesión."
+        },
+        "n4": {
+          "verbo": "ajusta",
+          "texto": "Ajusta el registro académico al destinatario y modula el juicio con expresiones de grado de certeza."
+        }
+      },
+      "matriz_cuantitativa": {
+        "total": 10,
+        "componentes": [
+          {
+            "nombre": "Estructura de la reacción",
+            "max": 3,
+            "bandas": [
+              {
+                "puntos": 3,
+                "condicion": "La reacción presenta el asunto, lo valora y cierra con una conclusión"
+              },
+              {
+                "puntos": 2,
+                "condicion": "Faltan 1 o 2 de las tres partes"
+              },
+              {
+                "puntos": 0,
+                "condicion": "La reacción se queda en resumir la noticia"
+              }
+            ]
+          },
+          {
+            "nombre": "Conectores y matización",
+            "max": 3,
+            "bandas": [
+              {
+                "puntos": 3,
+                "condicion": "Emplea 4 o más conectores distintos, entre ellos 1 de concesión"
+              },
+              {
+                "puntos": 2,
+                "condicion": "Emplea de 1 a 3 tipos de conector"
+              },
+              {
+                "puntos": 0,
+                "condicion": "Coloca las frases una detrás de otra sin enlace"
+              }
+            ]
+          },
+          {
+            "nombre": "Apoyo en el texto de partida",
+            "max": 2,
+            "bandas": [
+              {
+                "puntos": 2,
+                "condicion": "Apoya el juicio en 2 o más citas literales de la noticia"
+              },
+              {
+                "puntos": 1,
+                "condicion": "Apoya el juicio en 1 cita literal"
+              },
+              {
+                "puntos": 0,
+                "condicion": "El juicio avanza sin citar la noticia"
+              }
+            ]
+          },
+          {
+            "nombre": "Registro y grado de certeza",
+            "max": 2,
+            "bandas": [
+              {
+                "puntos": 2,
+                "condicion": "Mantiene el registro académico y modula el juicio con marcas de certeza"
+              },
+              {
+                "puntos": 1,
+                "condicion": "Mantiene el registro académico y afirma sin modular"
+              },
+              {
+                "puntos": 0,
+                "condicion": "La reacción alterna el registro académico con el coloquial"
+              }
+            ]
+          }
+        ],
+        "penalizaciones": []
+      },
+      "descriptor_cotejo": null,
+      "descriptor_un_punto": "Organiza la reacción en presentación del asunto, valoración razonada y conclusión."
+    },
+    {
+      "id": "lcl-d-correccion-rea-1bach",
+      "bloque_lomloe": "D",
+      "dimension": "correccion_lexico",
+      "nombre": "Corrección normativa y propiedad léxica",
+      "curso": "1BACH",
+      "hereda_de": null,
+      "criterio_oficial": {
+        "competencia_especifica": 5,
+        "codigo": "5.2",
+        "cita": "Incorporar procedimientos para enriquecer los textos, atendiendo a aspectos discursivos, lingüísticos y de estilo, con precisión léxica y corrección ortográfica y gramatical.",
+        "perfil_salida": [
+          "CCL1",
+          "CCL3",
+          "CCL5",
+          "STEM1",
+          "CD2",
+          "CD3",
+          "CPSAA5",
+          "CC2"
+        ]
+      },
+      "saber_vehiculo": [
+        "corrección lingüística y revisión ortográfica y gramatical de los textos",
+        "los signos de puntuación como mecanismo organizador del texto escrito. Su relación con el significado",
+        "procedimientos léxico-semánticos y gramaticales que contribuyen a la cohesión del texto"
+      ],
+      "progresion": {
+        "autonomia": 3,
+        "complejidad": 4,
+        "metalinguistico": 4
+      },
+      "tipos_tarea": [
+        "reaccion"
+      ],
+      "obligatorio": true,
+      "prioridad": 2,
+      "peso_base": 15,
+      "descriptores": {
+        "n1": {
+          "verbo": "redacta",
+          "texto": "Redacta la reacción con errores de ortografía y de puntuación que obligan a releer para seguir el razonamiento."
+        },
+        "n2": {
+          "verbo": "aplica",
+          "texto": "Aplica las normas de acentuación y de concordancia, con errores aislados en los períodos largos."
+        },
+        "n3": {
+          "verbo": "aplica",
+          "texto": "Aplica la puntuación del período complejo y delimita con comillas y cursiva las palabras tomadas de la noticia."
+        },
+        "n4": {
+          "verbo": "elige",
+          "texto": "Elige el término preciso del metalenguaje de los medios y sustituye las expresiones vagas por otras exactas."
+        }
+      },
+      "matriz_cuantitativa": {
+        "total": 10,
+        "componentes": [
+          {
+            "nombre": "Ortografía y acentuación",
+            "max": 4,
+            "bandas": [
+              {
+                "puntos": 4,
+                "condicion": "Hasta 1 falta en toda la reacción, tipográficas incluidas"
+              },
+              {
+                "puntos": 3,
+                "condicion": "De 2 a 3 faltas"
+              },
+              {
+                "puntos": 2,
+                "condicion": "De 4 a 5 faltas"
+              },
+              {
+                "puntos": 0,
+                "condicion": "6 o más faltas"
+              }
+            ]
+          },
+          {
+            "nombre": "Puntuación del período",
+            "max": 3,
+            "bandas": [
+              {
+                "puntos": 3,
+                "condicion": "Puntúa los incisos y las subordinadas y cierra todas las frases"
+              },
+              {
+                "puntos": 2,
+                "condicion": "Deja 1 o 2 incisos sin delimitar, o 1 o 2 frases sin cerrar"
+              },
+              {
+                "puntos": 0,
+                "condicion": "La reacción encadena períodos casi sin puntuación"
+              }
+            ]
+          },
+          {
+            "nombre": "Propiedad léxica",
+            "max": 3,
+            "bandas": [
+              {
+                "puntos": 3,
+                "condicion": "Emplea términos precisos y ninguna expresión vaga"
+              },
+              {
+                "puntos": 2,
+                "condicion": "Emplea 1 expresión vaga"
+              },
+              {
+                "puntos": 1,
+                "condicion": "Emplea 2 expresiones vagas"
+              },
+              {
+                "puntos": 0,
+                "condicion": "La reacción se sostiene sobre expresiones vagas"
+              }
+            ]
+          }
+        ],
+        "penalizaciones": []
+      },
+      "descriptor_cotejo": null,
+      "descriptor_un_punto": "Aplica las normas de acentuación y de concordancia, con errores aislados en los períodos largos."
+    },
+    {
+      "id": "lcl-b-valcontenido-rea-2bach",
+      "bloque_lomloe": "B",
+      "dimension": "valoracion_contenido",
+      "nombre": "Valoración del contenido: calidad y fiabilidad de la información",
+      "curso": "2BACH",
+      "hereda_de": null,
+      "criterio_oficial": {
+        "competencia_especifica": 4,
+        "codigo": "4.2",
+        "cita": "Valorar críticamente el contenido y la forma de textos especializados evaluando su calidad y fiabilidad, así como la eficacia de los procedimientos lingüísticos empleados.",
+        "perfil_salida": [
+          "CCL2",
+          "CCL3",
+          "CCL5",
+          "CP2",
+          "STEM4",
+          "CD1",
+          "CPSAA4",
+          "CC3"
+        ]
+      },
+      "saber_vehiculo": [
+        "alfabetización informacional: búsqueda autónoma y selección de la información con criterios de fiabilidad, calidad y pertinencia",
+        "noticias falsas y verificación de hechos",
+        "la comunicación escrita en el ámbito académico, periodístico, profesional y empresarial"
+      ],
+      "progresion": {
+        "autonomia": 3,
+        "complejidad": 4,
+        "metalinguistico": 4
+      },
+      "tipos_tarea": [
+        "reaccion"
+      ],
+      "obligatorio": true,
+      "prioridad": 1,
+      "peso_base": 35,
+      "descriptores": {
+        "n1": {
+          "verbo": "acepta",
+          "texto": "Acepta la versión del medio y traslada a la reacción los datos de la noticia sin comprobación."
+        },
+        "n2": {
+          "verbo": "distingue",
+          "texto": "Distingue la información verificable, la interpretación y el juicio editorial dentro de la noticia."
+        },
+        "n3": {
+          "verbo": "contrasta",
+          "texto": "Contrasta la noticia con fuentes de línea editorial distinta y explica a qué obedecen las diferencias."
+        },
+        "n4": {
+          "verbo": "valora",
+          "texto": "Valora críticamente la fiabilidad de la noticia a partir de la trazabilidad de los datos, la autoría y los intereses del medio, y sostiene el juicio con evidencia citada."
+        }
+      },
+      "matriz_cuantitativa": {
+        "total": 10,
+        "componentes": [
+          {
+            "nombre": "Información, interpretación y juicio",
+            "max": 3,
+            "bandas": [
+              {
+                "puntos": 3,
+                "condicion": "La reacción separa los tres planos a lo largo de toda la noticia"
+              },
+              {
+                "puntos": 2,
+                "condicion": "Funde 2 de los tres planos en la reacción"
+              },
+              {
+                "puntos": 0,
+                "condicion": "La reacción trata toda la noticia como información"
+              }
+            ]
+          },
+          {
+            "nombre": "Contraste entre líneas editoriales",
+            "max": 4,
+            "bandas": [
+              {
+                "puntos": 4,
+                "condicion": "Contrasta la noticia con 2 o más fuentes de línea editorial distinta"
+              },
+              {
+                "puntos": 3,
+                "condicion": "Contrasta la noticia con 1 fuente de línea editorial distinta"
+              },
+              {
+                "puntos": 2,
+                "condicion": "Contrasta la noticia con 1 fuente de la misma línea editorial"
+              },
+              {
+                "puntos": 0,
+                "condicion": "La reacción se apoya solo en la noticia de partida"
+              }
+            ]
+          },
+          {
+            "nombre": "Evidencia citada",
+            "max": 3,
+            "bandas": [
+              {
+                "puntos": 3,
+                "condicion": "Sostiene el juicio con 3 o más datos citados de las fuentes manejadas"
+              },
+              {
+                "puntos": 2,
+                "condicion": "Sostiene el juicio con 2 datos citados"
+              },
+              {
+                "puntos": 1,
+                "condicion": "Sostiene el juicio con 1 dato citado"
+              },
+              {
+                "puntos": 0,
+                "condicion": "El juicio avanza sin datos citados"
+              }
+            ]
+          }
+        ],
+        "penalizaciones": []
+      },
+      "descriptor_cotejo": null,
+      "descriptor_un_punto": "Distingue la información verificable, la interpretación y el juicio editorial dentro de la noticia."
+    },
+    {
+      "id": "lcl-b-valforma-rea-2bach",
+      "bloque_lomloe": "B",
+      "dimension": "valoracion_forma",
+      "nombre": "Valoración de la forma: eficacia de los procedimientos lingüísticos",
+      "curso": "2BACH",
+      "hereda_de": null,
+      "criterio_oficial": {
+        "competencia_especifica": 4,
+        "codigo": "4.2",
+        "cita": "Valorar críticamente el contenido y la forma de textos especializados evaluando su calidad y fiabilidad, así como la eficacia de los procedimientos lingüísticos empleados.",
+        "perfil_salida": [
+          "CCL2",
+          "CCL3",
+          "CCL5",
+          "CP2",
+          "STEM4",
+          "CD1",
+          "CPSAA4",
+          "CC3"
+        ]
+      },
+      "saber_vehiculo": [
+        "formas lingüísticas de expresión de la subjetividad y de la objetividad y de sus formas de expresión en los textos",
+        "la comunicación escrita en el ámbito académico, periodístico, profesional y empresarial",
+        "detección de prejuicios y valoraciones en el discurso"
+      ],
+      "progresion": {
+        "autonomia": 3,
+        "complejidad": 4,
+        "metalinguistico": 4
+      },
+      "tipos_tarea": [
+        "reaccion"
+      ],
+      "obligatorio": true,
+      "prioridad": 1,
+      "peso_base": 30,
+      "descriptores": {
+        "n1": {
+          "verbo": "senala",
+          "texto": "Señala los rasgos de estilo más llamativos de la noticia y los traslada a la reacción."
+        },
+        "n2": {
+          "verbo": "reconoce",
+          "texto": "Reconoce el léxico valorativo, la nominalización y el discurso referido de la noticia y los indica en la reacción."
+        },
+        "n3": {
+          "verbo": "explica",
+          "texto": "Explica cómo la titulación, la selección léxica y la atribución de las fuentes construyen el punto de vista del medio."
+        },
+        "n4": {
+          "verbo": "valora",
+          "texto": "Valora críticamente la eficacia de esos procedimientos lingüísticos para el propósito del medio y sostiene el análisis con ejemplos citados."
+        }
+      },
+      "matriz_cuantitativa": {
+        "total": 10,
+        "componentes": [
+          {
+            "nombre": "Procedimientos localizados",
+            "max": 3,
+            "bandas": [
+              {
+                "puntos": 3,
+                "condicion": "Localiza 4 o más procedimientos lingüísticos de la noticia"
+              },
+              {
+                "puntos": 2,
+                "condicion": "Localiza 3 procedimientos lingüísticos"
+              },
+              {
+                "puntos": 1,
+                "condicion": "Localiza 2 procedimientos lingüísticos"
+              },
+              {
+                "puntos": 0,
+                "condicion": "Localiza 1 procedimiento lingüístico o ninguno"
+              }
+            ]
+          },
+          {
+            "nombre": "Punto de vista reconstruido",
+            "max": 4,
+            "bandas": [
+              {
+                "puntos": 4,
+                "condicion": "La reacción reconstruye el punto de vista del medio a partir de los procedimientos localizados"
+              },
+              {
+                "puntos": 3,
+                "condicion": "Explica el efecto de los procedimientos sin llegar al punto de vista"
+              },
+              {
+                "puntos": 2,
+                "condicion": "Nombra los procedimientos y apunta un efecto"
+              },
+              {
+                "puntos": 0,
+                "condicion": "La reacción comenta el contenido y deja fuera la forma"
+              }
+            ]
+          },
+          {
+            "nombre": "Ejemplos citados",
+            "max": 3,
+            "bandas": [
+              {
+                "puntos": 3,
+                "condicion": "Sostiene el análisis con 3 o más ejemplos citados literalmente"
+              },
+              {
+                "puntos": 2,
+                "condicion": "Sostiene el análisis con 2 ejemplos citados literalmente"
+              },
+              {
+                "puntos": 1,
+                "condicion": "Sostiene el análisis con 1 ejemplo citado literalmente"
+              },
+              {
+                "puntos": 0,
+                "condicion": "El análisis avanza sin ejemplos de la noticia"
+              }
+            ]
+          }
+        ],
+        "penalizaciones": []
+      },
+      "descriptor_cotejo": null,
+      "descriptor_un_punto": "Reconoce el léxico valorativo, la nominalización y el discurso referido de la noticia y los indica en la reacción."
+    },
+    {
+      "id": "lcl-b-redaccion-rea-2bach",
+      "bloque_lomloe": "B",
+      "dimension": "redaccion_reaccion",
+      "nombre": "Redacción de la reacción: organización y registro",
+      "curso": "2BACH",
+      "hereda_de": null,
+      "criterio_oficial": {
+        "competencia_especifica": 5,
+        "codigo": "5.1",
+        "cita": "Elaborar textos académicos coherentes, cohesionados y con el registro adecuado en torno a temas curriculares o de interés social y cultural, precedidos de un proceso de planificación que atienda a la situación comunicativa, destinatario, propósito y canal, y de redacción y revisión de borradores entre iguales o utilizando otros instrumentos de consulta.",
+        "perfil_salida": [
+          "CCL1",
+          "CCL3",
+          "CCL5",
+          "STEM1",
+          "CD2",
+          "CD3",
+          "CPSAA5",
+          "CC2"
+        ]
+      },
+      "saber_vehiculo": [
+        "producción escrita. Proceso de elaboración: planificación, redacción, revisión y edición en diferentes soportes",
+        "conectores, marcadores discursivos y otros procedimientos léxico-semánticos y gramaticales que contribuyen a la cohesión del texto",
+        "la comunicación escrita en el ámbito académico, periodístico, profesional y empresarial"
+      ],
+      "progresion": {
+        "autonomia": 3,
+        "complejidad": 4,
+        "metalinguistico": 4
+      },
+      "tipos_tarea": [
+        "reaccion"
+      ],
+      "obligatorio": false,
+      "prioridad": 2,
+      "peso_base": 20,
+      "descriptores": {
+        "n1": {
+          "verbo": "redacta",
+          "texto": "Redacta la reacción en un solo bloque, con el juicio y el resumen de la noticia trabados en las mismas frases."
+        },
+        "n2": {
+          "verbo": "organiza",
+          "texto": "Organiza la reacción en presentación del asunto, análisis del tratamiento y conclusión razonada."
+        },
+        "n3": {
+          "verbo": "enlaza",
+          "texto": "Enlaza cada juicio con el pasaje correspondiente de la noticia mediante conectores de causa, contraste, concesión y consecuencia."
+        },
+        "n4": {
+          "verbo": "ajusta",
+          "texto": "Ajusta el registro académico al destinatario especializado y modula el juicio con marcas de grado de certeza."
+        }
+      },
+      "matriz_cuantitativa": {
+        "total": 10,
+        "componentes": [
+          {
+            "nombre": "Estructura de la reacción",
+            "max": 3,
+            "bandas": [
+              {
+                "puntos": 3,
+                "condicion": "La reacción presenta el asunto, analiza el tratamiento y cierra con una conclusión razonada"
+              },
+              {
+                "puntos": 2,
+                "condicion": "Faltan 1 o 2 de las tres partes"
+              },
+              {
+                "puntos": 0,
+                "condicion": "La reacción se queda en resumir la noticia"
+              }
+            ]
+          },
+          {
+            "nombre": "Conectores y matización",
+            "max": 3,
+            "bandas": [
+              {
+                "puntos": 3,
+                "condicion": "Emplea 5 o más conectores distintos, entre ellos concesión y consecuencia"
+              },
+              {
+                "puntos": 2,
+                "condicion": "Emplea de 2 a 4 tipos de conector"
+              },
+              {
+                "puntos": 0,
+                "condicion": "Repite el mismo conector de principio a fin"
+              }
+            ]
+          },
+          {
+            "nombre": "Apoyo en el texto de partida",
+            "max": 2,
+            "bandas": [
+              {
+                "puntos": 2,
+                "condicion": "Apoya el juicio en 3 o más citas literales de la noticia"
+              },
+              {
+                "puntos": 1,
+                "condicion": "Apoya el juicio en 1 o 2 citas literales"
+              },
+              {
+                "puntos": 0,
+                "condicion": "El juicio avanza sin citar la noticia"
+              }
+            ]
+          },
+          {
+            "nombre": "Registro y grado de certeza",
+            "max": 2,
+            "bandas": [
+              {
+                "puntos": 2,
+                "condicion": "Mantiene el registro académico y modula cada juicio con marcas de certeza"
+              },
+              {
+                "puntos": 1,
+                "condicion": "Mantiene el registro académico y afirma sin modular"
+              },
+              {
+                "puntos": 0,
+                "condicion": "La reacción alterna el registro académico con el coloquial"
+              }
+            ]
+          }
+        ],
+        "penalizaciones": []
+      },
+      "descriptor_cotejo": null,
+      "descriptor_un_punto": "Organiza la reacción en presentación del asunto, análisis del tratamiento y conclusión razonada."
+    },
+    {
+      "id": "lcl-d-correccion-rea-2bach",
+      "bloque_lomloe": "D",
+      "dimension": "correccion_lexico",
+      "nombre": "Corrección normativa y propiedad léxica",
+      "curso": "2BACH",
+      "hereda_de": null,
+      "criterio_oficial": {
+        "competencia_especifica": 5,
+        "codigo": "5.2",
+        "cita": "Incorporar procedimientos para enriquecer los textos, atendiendo a aspectos discursivos, lingüísticos y de estilo, con precisión léxica y corrección ortográfica y gramatical.",
+        "perfil_salida": [
+          "CCL1",
+          "CCL3",
+          "CCL5",
+          "STEM1",
+          "CD2",
+          "CD3",
+          "CPSAA5",
+          "CC2"
+        ]
+      },
+      "saber_vehiculo": [
+        "corrección lingüística y revisión ortográfica y gramatical de los textos",
+        "los signos de puntuación como mecanismo organizador del texto escrito. Su relación con el significado",
+        "procedimientos léxico-semánticos y gramaticales que contribuyen a la cohesión del texto"
+      ],
+      "progresion": {
+        "autonomia": 3,
+        "complejidad": 4,
+        "metalinguistico": 4
+      },
+      "tipos_tarea": [
+        "reaccion"
+      ],
+      "obligatorio": true,
+      "prioridad": 2,
+      "peso_base": 15,
+      "descriptores": {
+        "n1": {
+          "verbo": "redacta",
+          "texto": "Redacta la reacción con errores de ortografía y de puntuación que obligan a releer para seguir el análisis."
+        },
+        "n2": {
+          "verbo": "aplica",
+          "texto": "Aplica las normas de acentuación y de concordancia, con errores aislados en los períodos de mayor extensión."
+        },
+        "n3": {
+          "verbo": "aplica",
+          "texto": "Aplica la puntuación del período complejo y delimita con comillas y cursiva las citas tomadas de la noticia."
+        },
+        "n4": {
+          "verbo": "elige",
+          "texto": "Elige el término exacto del metalenguaje de los medios y sustituye las expresiones vagas por formulaciones precisas."
+        }
+      },
+      "matriz_cuantitativa": {
+        "total": 10,
+        "componentes": [
+          {
+            "nombre": "Ortografía y acentuación",
+            "max": 4,
+            "bandas": [
+              {
+                "puntos": 4,
+                "condicion": "Hasta 1 falta en toda la reacción, tipográficas incluidas"
+              },
+              {
+                "puntos": 3,
+                "condicion": "De 2 a 3 faltas"
+              },
+              {
+                "puntos": 2,
+                "condicion": "De 4 a 5 faltas"
+              },
+              {
+                "puntos": 0,
+                "condicion": "6 o más faltas"
+              }
+            ]
+          },
+          {
+            "nombre": "Puntuación del período",
+            "max": 3,
+            "bandas": [
+              {
+                "puntos": 3,
+                "condicion": "Puntúa los incisos y las subordinadas y cierra todas las frases"
+              },
+              {
+                "puntos": 2,
+                "condicion": "Deja 1 o 2 incisos sin delimitar, o 1 o 2 frases sin cerrar"
+              },
+              {
+                "puntos": 0,
+                "condicion": "La reacción encadena períodos casi sin puntuación"
+              }
+            ]
+          },
+          {
+            "nombre": "Propiedad léxica",
+            "max": 3,
+            "bandas": [
+              {
+                "puntos": 3,
+                "condicion": "Emplea términos precisos y ninguna expresión vaga"
+              },
+              {
+                "puntos": 2,
+                "condicion": "Emplea 1 expresión vaga"
+              },
+              {
+                "puntos": 1,
+                "condicion": "Emplea 2 expresiones vagas"
+              },
+              {
+                "puntos": 0,
+                "condicion": "La reacción se sostiene sobre expresiones vagas"
+              }
+            ]
+          }
+        ],
+        "penalizaciones": []
+      },
+      "descriptor_cotejo": null,
+      "descriptor_un_punto": "Aplica las normas de acentuación y de concordancia, con errores aislados en los períodos de mayor extensión."
+    }
+  ]
+}

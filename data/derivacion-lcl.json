@@ -51,7 +51,10 @@
       "oral":          { "1ESO": "nombrado", "2ESO": "nombrado", "3ESO": "nombrado", "4ESO": "nombrado", "1BACH": "nombrado", "2BACH": "nombrado" },
       "argumentativo": { "2ESO": "sostenido", "3ESO": "nombrado", "4ESO": "nombrado", "1BACH": "nombrado", "2BACH": "nombrado" },
       "comentario":    { "1ESO": "nombrado", "3ESO": "nombrado", "4ESO": "nombrado", "1BACH": "nombrado", "2BACH": "nombrado" },
-      "resumen":       { "1ESO": "nombrado", "3ESO": "nombrado", "1BACH": "sostenido", "2BACH": "sostenido" }
+      "resumen":       { "1ESO": "nombrado", "3ESO": "nombrado", "1BACH": "sostenido", "2BACH": "sostenido" },
+      "reaccion":      { "2ESO": "nombrado", "4ESO": "nombrado", "1BACH": "nombrado", "2BACH": "nombrado" },
+      "noticia":       { "1ESO": "sostenido", "3ESO": "nombrado", "4ESO": "nombrado", "1BACH": "nombrado", "2BACH": "nombrado" },
+      "investigacion": { "2ESO": "nombrado", "3ESO": "nombrado", "4ESO": "nombrado", "1BACH": "sostenido", "2BACH": "sostenido" }
     }
   },
 

@@ -114,6 +114,16 @@ export const REGLAS = {
       "\"fase de un texto\" en una preferencia del redactor del pack, y la rúbrica se deriva del " +
       "currículo, no se inventa.",
   },
+  dimension_sin_respaldo: {
+    etiqueta: "Dimensión que el criterio no nombra",
+    severidad: "error",
+    fuente: "SDD §10",
+    porQue:
+      "Una dimensión mide lo que su criterio oficial pide medir, y solo eso. El currículo " +
+      "evalúa el canal en unos cursos y en otros no —la competencia 4 lo nombra en 2.º de ESO " +
+      "y lo retira en 4.º—, así que una fila de canal donde el criterio no lo menciona no está " +
+      "derivada: está inventada, y la cita literal no la salva.",
+  },
   tarea_aplicable: {
     etiqueta: "Tarea aplicable al curso",
     severidad: "aviso",
@@ -129,6 +139,17 @@ export const REGLAS = {
     porQue:
       "Una matriz cuantitativa se defiende con aritmética. Si los componentes no suman el total, o " +
       "falta la banda de 0, la nota que sale de ahí no se puede reconstruir delante de una familia.",
+  },
+  continuidad_bandas: {
+    etiqueta: "Continuidad de bandas",
+    severidad: "error",
+    fuente: "SDD §10",
+    porQue:
+      "Si un componente cuenta incidencias, sus bandas tienen que cubrir todos los recuentos. " +
+      "Cuando \"hasta 2 faltas\" salta a \"de 5 a 7\", el alumno con 3 faltas no tiene banda y el " +
+      "corrector decide a ojo justo donde la matriz prometía aritmética: dos correctores dan dos " +
+      "notas y ninguna se puede reconstruir. Los componentes que cuentan logros —fuentes reunidas, " +
+      "apartados desarrollados— no siguen esa lógica y la regla no los mira.",
   },
   penalizacion_sin_tope: {
     etiqueta: "Penalización sin tope",
@@ -227,6 +248,12 @@ const MARCAS_ANDAMIAJE = LEXICO.comun.modalizadores.marcas_andamiaje;
 const DISPARADORES_AUTONOMIA = LEXICO.comun.modalizadores.disparadores_autonomia;
 const MARCAS_ANDAMIAJE_RESIDUAL = LEXICO.comun.modalizadores.marcas_andamiaje_residual;
 
+// Cómo se lee un recuento escrito en la condición de una banda ("hasta 2
+// faltas", "de 3 a 5 faltas", "8 o más faltas"). Las palabras vienen del JSON;
+// la lógica de abajo es el puerto exacto de la de scripts/validar_pack.py.
+const RECUENTO = LEXICO.comun.recuento_bandas;
+const NUMERALES = RECUENTO.numerales;
+
 const UMBRAL_SIMILITUD = LEXICO.comun.umbrales.similitud_maxima_entre_niveles;
 const VENTANA_NEGACION = LEXICO.comun.umbrales.ventana_negacion_n1;
 const TOPE_PENALIZACION = LEXICO.comun.umbrales.tope_penalizacion;
@@ -258,17 +285,13 @@ function escaparRegex(str) {
 
 // Límites de palabra con clase de letra Unicode: \b de JavaScript no separa
 // bien con letras acentuadas (especificación del validador de la app, §2.1).
+// Vale para los grupos 2 y 3: los términos de varias palabras necesitan el
+// límite igual que los de una. Sin él, "el ord|en general| de la información"
+// saltaba como "en general" (defecto corregido el 17-ago-2026). Lo único
+// propio del grupo 3 son los espacios interiores flexibles.
 function construirRegexTermino(termino) {
   const escapado = escaparRegex(termino).replace(/ /g, "\\s+");
   return new RegExp(`(?<![\\p{L}\\p{M}])${escapado}(?![\\p{L}\\p{M}])`, "iu");
-}
-
-// Subcadena con espacios flexibles, sin límites de palabra: para los
-// términos de varias palabras (grupo 3) es la misma coincidencia que ya
-// hacía validar_pack.py.
-function construirRegexSubcadena(termino) {
-  const escapado = escaparRegex(termino).replace(/ /g, "\\s+");
-  return new RegExp(escapado, "iu");
 }
 
 // Se exporta solo para que scripts/comprobar_paridad.py pueda contrastarla,
@@ -281,7 +304,7 @@ export function encontrarAdverbitis(texto) {
     construirRegexTermino(termino).test(texto)
   );
   const porMultipalabra = ADVERBITIS_MULTIPALABRA.filter((termino) =>
-    construirRegexSubcadena(termino).test(texto)
+    construirRegexTermino(termino).test(texto)
   );
   return [...porSubcadena, ...porPalabraCompleta, ...porMultipalabra];
 }
@@ -451,6 +474,227 @@ function comprobarCopiaEntreCursos(criterios) {
           });
         }
       }
+    }
+  }
+  return avisos;
+}
+
+// --- Recuentos escritos en una banda de matriz -----------------------------
+// Puerto exacto del lector de scripts/validar_pack.py: mismas formas, mismo
+// orden de reconocimiento y mismo resultado. Cada forma se traduce a un
+// intervalo (desde, hasta), con hasta === null para la banda abierta.
+function fichasDeCondicion(texto) {
+  return quitarTildes(texto.toLowerCase()).match(/[\p{L}]+|\d+/gu) ?? [];
+}
+
+function numeroDeFicha(ficha) {
+  if (ficha === undefined || ficha === null) return null;
+  if (/^\d+$/.test(ficha)) return Number(ficha);
+  return NUMERALES[ficha] ?? null;
+}
+
+// Longitud en fichas de `frase` si empieza en la posición i; 0 si no casa.
+function casaFrase(fichas, i, frase) {
+  const partes = frase.split(" ");
+  return partes.every((p, k) => fichas[i + k] === p) ? partes.length : 0;
+}
+
+// Singular aproximado, para casar "error" con "errores" y "frase" con "frases":
+// se quita la -s final y después la -e. No acierta con "vez/veces", y el fallo
+// va en la dirección segura — dos raíces distintas no forman escala, así que la
+// regla calla en vez de inventarse un hueco.
+function raizDeCosa(palabra) {
+  let p = palabra;
+  if (p.endsWith("s")) p = p.slice(0, -1);
+  if (p.endsWith("e")) p = p.slice(0, -1);
+  return p;
+}
+
+// Lo que se cuenta, saltando artículos, preposiciones y otros números: en
+// "1 de los tres procedimientos falla" lo contado son procedimientos.
+function cosaContada(fichas, i) {
+  let j = i;
+  let saltos = 0;
+  while (
+    j < fichas.length && saltos < 4 &&
+    (RECUENTO.palabras_no_contables.includes(fichas[j]) || numeroDeFicha(fichas[j]) !== null)
+  ) {
+    j++;
+    saltos++;
+  }
+  return j < fichas.length ? raizDeCosa(fichas[j]) : null;
+}
+
+// Map de cosa contada → [desde, hasta]. De cada cosa se queda el PRIMER
+// recuento: si una banda la cuenta dos veces, manda el que se lee antes, que es
+// el que da nombre a la banda.
+export function recuentosDeBanda(condicion) {
+  const fichas = fichasDeCondicion(condicion);
+  const hallados = new Map();
+  const anotar = (j, desde, hasta) => {
+    const cosa = cosaContada(fichas, j);
+    if (cosa && !hallados.has(cosa)) hallados.set(cosa, [desde, hasta]);
+  };
+
+  let i = 0;
+  while (i < fichas.length) {
+    const n = numeroDeFicha(fichas[i]);
+    let paso = 0;
+
+    for (const [inicio, fin] of RECUENTO.rangos) {            // "de 3 a 5 faltas"
+      if (fichas[i] === inicio && numeroDeFicha(fichas[i + 1]) !== null &&
+          fichas[i + 2] === fin && numeroDeFicha(fichas[i + 3]) !== null) {
+        anotar(i + 4, numeroDeFicha(fichas[i + 1]), numeroDeFicha(fichas[i + 3]));
+        paso = 4;
+        break;
+      }
+    }
+
+    const antepuestos = [
+      ["hasta", (v) => [0, v]],            // "hasta 2 faltas"
+      ["mas_de", (v) => [v + 1, null]],    // "más de 2 faltas"
+      ["al_menos", (v) => [v, null]],      // "al menos 2 faltas"
+    ];
+    for (const [clave, tramo] of antepuestos) {
+      if (paso) break;
+      for (const termino of RECUENTO[clave]) {
+        const k = casaFrase(fichas, i, termino);
+        const valor = k ? numeroDeFicha(fichas[i + k]) : null;
+        if (k && valor !== null) {
+          anotar(i + k + 1, ...tramo(valor));
+          paso = k + 1;
+          break;
+        }
+      }
+    }
+
+    if (!paso && n !== null) {                                // "8 o más faltas"
+      for (const termino of RECUENTO.o_mas) {
+        const k = casaFrase(fichas, i + 1, termino);
+        if (k) {
+          anotar(i + 1 + k, n, null);
+          paso = 1 + k;
+          break;
+        }
+      }
+    }
+
+    if (!paso && n !== null) {                                // "2 o 3 errores"
+      for (const termino of RECUENTO.alternativa) {
+        const k = casaFrase(fichas, i + 1, termino);
+        const segundo = k ? numeroDeFicha(fichas[i + 1 + k]) : null;
+        if (k && segundo !== null) {
+          anotar(i + 2 + k, n, segundo);
+          paso = 2 + k;
+          break;
+        }
+      }
+    }
+
+    if (!paso) {                                              // "sin errores de..."
+      for (const termino of RECUENTO.ninguno) {
+        const k = casaFrase(fichas, i, termino);
+        if (k) {
+          anotar(i + k, 0, 0);
+          paso = k;
+          break;
+        }
+      }
+    }
+
+    if (!paso && n !== null) {                                // "2 faltas"
+      anotar(i + 1, n, n);
+      paso = 1;
+    }
+
+    i += paso || 1;
+  }
+
+  return hallados;
+}
+
+// Lo que el componente cuenta COMO INCIDENCIA, con sus tramos.
+//
+// Ningún pack declara si un componente cuenta incidencias o logros: se lee de la
+// propia matriz. Si la cuenta SUBE según BAJAN los puntos, lo contado es una
+// incidencia (faltas, errores, datos ajenos al tema). Si baja, es un logro
+// (fuentes reunidas, apartados desarrollados, recursos localizados) y la
+// continuidad no significa nada ahí: "4 o más fuentes / 3 / 2 / 1" no deja
+// ningún hueco por no decir qué pasa con 5.
+//
+// Se lee en el orden en que están escritas las bandas, que es el de puntos
+// descendentes porque matriz_cuadrada ya lo exige: si estuvieran desordenadas, el
+// pack falla antes por esa regla.
+function escalasDeIncidencia(componente) {
+  const candidatas = new Map();
+  componente.bandas.forEach((banda, indice) => {
+    for (const [cosa, [desde, hasta]] of recuentosDeBanda(banda.condicion)) {
+      if (!candidatas.has(cosa)) candidatas.set(cosa, []);
+      candidatas.get(cosa).push([indice, desde, hasta]);
+    }
+  });
+
+  const escalas = [];
+  for (const cosa of [...candidatas.keys()].sort()) {
+    const tramos = candidatas.get(cosa);
+    if (tramos.length < 2) continue;
+    const desdes = tramos.map(([, desde]) => desde);
+    // La cuenta baja: es un logro, no una incidencia.
+    if (desdes.some((d, k) => k < desdes.length - 1 && d > desdes[k + 1])) continue;
+    // No sube nunca: no hay escala que comprobar.
+    if (desdes[desdes.length - 1] <= desdes[0]) continue;
+    escalas.push([cosa, tramos]);
+  }
+  return escalas;
+}
+
+// Recuentos que ninguna banda recoge. Tres maneras de dejar uno fuera: entre dos
+// bandas seguidas, por debajo de la primera y por encima de la última.
+//
+// Una banda SIN recuento no es un hueco: es la casilla de recogida del corrector
+// ("Errores sistemáticos que obligan a reconstruir el sentido") y cubre lo que la
+// escala no nombra. Por eso el arranque solo se exige si la escala empieza en la
+// primera banda, y el cierre solo si termina en la última.
+function huecosDeEscala(componente, tramos) {
+  const huecos = [];
+  for (let k = 0; k < tramos.length - 1; k++) {
+    const [indiceA, , hastaA] = tramos[k];
+    const [indiceB, desdeB] = tramos[k + 1];
+    if (indiceB === indiceA + 1 && hastaA !== null && desdeB > hastaA + 1) {
+      huecos.push([hastaA + 1, desdeB - 1]);
+    }
+  }
+  const primero = tramos[0];
+  const ultimo = tramos[tramos.length - 1];
+  if (primero[0] === 0 && primero[1] > 0) huecos.push([0, primero[1] - 1]);
+  if (ultimo[0] === componente.bandas.length - 1 && ultimo[2] !== null) {
+    huecos.push([ultimo[2] + 1, null]);
+  }
+  return huecos;
+}
+
+function textoDeHueco([desde, hasta]) {
+  if (hasta === null) return `${desde} o más`;
+  return desde === hasta ? `${desde}` : `de ${desde} a ${hasta}`;
+}
+
+// Regla: continuidad de bandas (§10, §6.3). Un componente que cuenta incidencias
+// cubre todos los recuentos posibles; si deja uno fuera, el corrector se queda
+// sin banda que aplicar justo donde la matriz prometía aritmética.
+function comprobarContinuidadBandas(criterio) {
+  const m = criterio.matriz_cuantitativa;
+  if (!m) return [];
+  const avisos = [];
+  for (const comp of m.componentes) {
+    for (const [cosa, tramos] of escalasDeIncidencia(comp)) {
+      const huecos = huecosDeEscala(comp, tramos);
+      if (!huecos.length) continue;
+      avisos.push({
+        regla: "continuidad_bandas",
+        severidad: REGLAS.continuidad_bandas.severidad,
+        criterioId: criterio.id,
+        mensaje: `${criterio.id} / "${comp.nombre}": el componente cuenta ${cosa} y sus bandas dejan fuera ${huecos.map(textoDeHueco).join(" y ")}; con ese recuento no hay banda que aplicar.`,
+      });
     }
   }
   return avisos;
@@ -719,6 +963,29 @@ function comprobarProcesoRespaldado(criterio, materia) {
   }];
 }
 
+// Regla: dimensión cuyo objeto el criterio no nombra (§10). Misma forma que
+// `proceso_sin_respaldo` y por la misma razón: si el criterio oficial no pide
+// eso, la dimensión no se deriva del currículo, se inventa.
+//
+// Qué dimensiones y con qué términos sale de data/reglas-lexicas.json, no de
+// aquí: es vocabulario de la materia, y dar de alta una materia no debe obligar
+// a tocar código. Lo escribió la fila de reacción a una noticia: la competencia
+// 4 evalúa "la idoneidad del canal utilizado" en 2.º ESO y en 1.º Bach y lo deja
+// fuera en 4.º ESO y en 2.º Bach, y sin esta regla una dimensión de canal en
+// esos dos cursos pasaba limpia, con su cita literal y del curso correcto.
+function comprobarDimensionRespaldada(criterio, materia) {
+  const exigidos = (materia.dimensiones_con_respaldo ?? {})[criterio.dimension];
+  if (!exigidos) return [];
+  const citaNorm = quitarTildes((criterio.criterio_oficial?.cita ?? "").toLowerCase());
+  if (exigidos.some((t) => citaNorm.includes(t))) return [];
+  return [{
+    regla: "dimension_sin_respaldo",
+    severidad: REGLAS.dimension_sin_respaldo.severidad,
+    criterioId: criterio.id,
+    mensaje: `${criterio.id}: la dimensión '${criterio.dimension}' evalúa algo que el criterio ${criterio.criterio_oficial?.codigo} de ${criterio.curso} no nombra (ninguno de: ${exigidos.join(", ")}).`,
+  }];
+}
+
 // Regla: tarea aplicable al curso (§10; especificación del validador de la
 // app, §3.5), a nivel de pack. El caso de 0 criterios ya lo cubre el motor
 // devolviendo ok:false; aquí se avisa de las combinaciones que sobreviven
@@ -834,12 +1101,14 @@ export function validarPack(pack) {
       avisos.push(...comprobarAdverbitis(criterio));
       avisos.push(...comprobarAdverbitisBanda(criterio));
       avisos.push(...comprobarMatrizCuadrada(criterio));
+      avisos.push(...comprobarContinuidadBandas(criterio));
       avisos.push(...comprobarPenalizacionSinTope(criterio));
       avisos.push(...comprobarDobleCastigo(criterio));
       avisos.push(...comprobarNivelesIndistinguibles(criterio));
       avisos.push(...comprobarSaberVehiculo(criterio, materia));
       avisos.push(...comprobarModalizadores(criterio));
       avisos.push(...comprobarProcesoRespaldado(criterio, materia));
+      avisos.push(...comprobarDimensionRespaldada(criterio, materia));
     }
   }
   avisos.push(...comprobarCopiaEntreCursos(pack.criterios));

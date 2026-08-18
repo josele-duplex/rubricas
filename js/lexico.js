@@ -9,7 +9,7 @@
 // (SDD §10).
 
 export const LEXICO = {
-  "version": "1.2.0",
+  "version": "1.4.0",
   "comun": {
     "adverbitis": {
       "subcadena": [
@@ -111,6 +111,73 @@ export const LEXICO = {
       "modelos",
       "básico"
     ],
+    "recuento_bandas": {
+      "numerales": {
+        "dos": 2,
+        "tres": 3,
+        "cuatro": 4,
+        "cinco": 5,
+        "seis": 6,
+        "siete": 7,
+        "ocho": 8,
+        "nueve": 9,
+        "diez": 10
+      },
+      "ninguno": [
+        "sin",
+        "ningun",
+        "ninguna",
+        "ningunos",
+        "ningunas"
+      ],
+      "hasta": [
+        "hasta",
+        "como maximo"
+      ],
+      "rangos": [
+        [
+          "de",
+          "a"
+        ],
+        [
+          "entre",
+          "y"
+        ]
+      ],
+      "o_mas": [
+        "o mas"
+      ],
+      "al_menos": [
+        "al menos",
+        "un minimo de"
+      ],
+      "mas_de": [
+        "mas de"
+      ],
+      "alternativa": [
+        "o"
+      ],
+      "palabras_no_contables": [
+        "el",
+        "la",
+        "los",
+        "las",
+        "un",
+        "una",
+        "unos",
+        "unas",
+        "de",
+        "del",
+        "ese",
+        "esa",
+        "esos",
+        "esas",
+        "este",
+        "esta",
+        "estos",
+        "estas"
+      ]
+    },
     "umbrales": {
       "tope_penalizacion": 0.35,
       "tope_conjunto_penalizaciones": 0.5,
@@ -152,6 +219,18 @@ export const LEXICO = {
         "revisar",
         "revision"
       ],
+      "dimensiones_con_respaldo": {
+        "valoracion_canal": [
+          "canal",
+          "soporte"
+        ],
+        "propiedad_intelectual": [
+          "propiedad intelectual"
+        ],
+        "soporte_multimodal": [
+          "soporte"
+        ]
+      },
       "generos": [
         "expositiv",
         "argumentativ",

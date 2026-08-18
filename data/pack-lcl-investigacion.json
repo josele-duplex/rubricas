@@ -1,0 +1,3094 @@
+{
+  "pack_id": "lcl-murcia-investigacion",
+  "materia": "LCL",
+  "etiqueta": "Trabajo de investigación multimodal — Región de Murcia",
+  "version": "0.2.0",
+  "normativa": {
+    "estatal": [
+      "RD 217/2022, de 29 de marzo (ESO)",
+      "RD 243/2022, de 5 de abril (Bachillerato)"
+    ],
+    "autonomica": "Decreto n.º 235/2022, de 7 de diciembre, por el que se establece la ordenación y el currículo de la Educación Secundaria Obligatoria en la Comunidad Autónoma de la Región de Murcia",
+    "vigencia_desde": "2022-2023",
+    "revisado": "2026-08"
+  },
+  "razon_peso": "Pesa más la integración de la información en un esquema propio, porque es la operación que el criterio de evaluación pide «organizarla e integrarla en esquemas propios» y la que separa un trabajo de investigación de un resumen de una sola fuente. Las fuentes y el soporte van justo detrás, porque el criterio nombra las dos: de dónde sale la información y en qué soporte se comunica. La corrección normativa viene de otra competencia específica (la 5) y aquí acompaña al trabajo en lugar de definirlo. La delimitación del tema pesa por debajo de las demás porque es la única dimensión que se juzga en conjunto, sin matriz cuantitativa que la sostenga. En 2.º de ESO no hay dimensión de fuentes ni de atribución: su criterio parte de la información ya seleccionada y no pide buscarla, así que ese peso se reparte a partes iguales entre la integración y el soporte. En 4.º de ESO la atribución entra con el peso de lo que el currículo acaba de exigir; en Bachillerato sube al nivel de la corrección, porque separar la aportación propia de lo ya publicado es lo que sostiene un trabajo académico. El reparto se puede igualar desde «Ajustar».",
+  "criterios": [
+    {
+      "id": "lcl-b-tema-inv-2eso",
+      "bloque_lomloe": "B",
+      "dimension": "delimitacion_tema",
+      "nombre": "Delimitación del tema: pregunta de investigación y alcance",
+      "curso": "2ESO",
+      "hereda_de": null,
+      "criterio_oficial": {
+        "competencia_especifica": 6,
+        "codigo": "6.1",
+        "cita": "Elaborar trabajos de investigación de manera guiada en diferentes soportes sobre diversos temas de interés académico, personal o social a partir de la información seleccionada.",
+        "perfil_salida": [
+          "CCL3",
+          "CD1",
+          "CD2",
+          "CD3",
+          "CD4",
+          "CPSAA4",
+          "CC2",
+          "CE3"
+        ]
+      },
+      "saber_vehiculo": [
+        "alfabetización mediática e informacional: búsqueda y selección de la información con criterios de fiabilidad, calidad y pertinencia",
+        "utilización de plataformas virtuales para la realización de proyectos escolares"
+      ],
+      "progresion": {
+        "autonomia": 1,
+        "complejidad": 1,
+        "metalinguistico": 1
+      },
+      "tipos_tarea": [
+        "investigacion"
+      ],
+      "obligatorio": true,
+      "prioridad": 2,
+      "peso_base": 15,
+      "descriptores": {
+        "n1": {
+          "verbo": "anota",
+          "texto": "Anota el tema del trabajo con el título que aparece en el guion facilitado."
+        },
+        "n2": {
+          "verbo": "delimita",
+          "texto": "Delimita el tema en una pregunta tomada de la lista de propuestas del guion."
+        },
+        "n3": {
+          "verbo": "formula",
+          "texto": "Formula la pregunta de investigación con palabras propias y delimita el periodo o el ámbito que abarca."
+        },
+        "n4": {
+          "verbo": "ajusta",
+          "texto": "Ajusta la pregunta de investigación a la información disponible y señala en una frase los aspectos del tema que quedan fuera."
+        }
+      },
+      "matriz_cuantitativa": null,
+      "descriptor_cotejo": null,
+      "descriptor_un_punto": "Delimita el tema en una pregunta tomada de la lista de propuestas del guion."
+    },
+    {
+      "id": "lcl-b-integracion-inv-2eso",
+      "bloque_lomloe": "B",
+      "dimension": "integracion_informacion",
+      "nombre": "Integración de la información: esquema propio y apartados",
+      "curso": "2ESO",
+      "hereda_de": null,
+      "criterio_oficial": {
+        "competencia_especifica": 6,
+        "codigo": "6.1",
+        "cita": "Elaborar trabajos de investigación de manera guiada en diferentes soportes sobre diversos temas de interés académico, personal o social a partir de la información seleccionada.",
+        "perfil_salida": [
+          "CCL3",
+          "CD1",
+          "CD2",
+          "CD3",
+          "CD4",
+          "CPSAA4",
+          "CC2",
+          "CE3"
+        ]
+      },
+      "saber_vehiculo": [
+        "análisis, valoración, reorganización y síntesis de la información en esquemas propios y transformación en conocimiento",
+        "usos de la escritura para la organización del pensamiento: toma de notas, esquemas, mapas conceptuales, definiciones, resúmenes"
+      ],
+      "progresion": {
+        "autonomia": 1,
+        "complejidad": 1,
+        "metalinguistico": 1
+      },
+      "tipos_tarea": [
+        "investigacion"
+      ],
+      "obligatorio": true,
+      "prioridad": 1,
+      "peso_base": 35,
+      "descriptores": {
+        "n1": {
+          "verbo": "traslada",
+          "texto": "Traslada al soporte los párrafos de la fuente en el orden en que aparecen."
+        },
+        "n2": {
+          "verbo": "agrupa",
+          "texto": "Agrupa la información en los apartados del guion facilitado y pone un título a cada uno."
+        },
+        "n3": {
+          "verbo": "organiza",
+          "texto": "Organiza la información en apartados propios y sitúa cada dato en el apartado que lo recoge."
+        },
+        "n4": {
+          "verbo": "integra",
+          "texto": "Integra los datos en un esquema propio, reformula con palabras propias lo que cada apartado aporta y enlaza los apartados con conectores de orden."
+        }
+      },
+      "matriz_cuantitativa": {
+        "total": 10,
+        "componentes": [
+          {
+            "nombre": "Apartados con título propio",
+            "max": 4,
+            "bandas": [
+              {
+                "puntos": 4,
+                "condicion": "Organiza el trabajo en 3 o más apartados con título propio"
+              },
+              {
+                "puntos": 3,
+                "condicion": "Organiza el trabajo en 2 apartados con título propio"
+              },
+              {
+                "puntos": 2,
+                "condicion": "Organiza el trabajo en 2 apartados con el título del guion"
+              },
+              {
+                "puntos": 0,
+                "condicion": "El trabajo presenta la información en un bloque único"
+              }
+            ]
+          },
+          {
+            "nombre": "Reformulación de lo tomado de las fuentes",
+            "max": 4,
+            "bandas": [
+              {
+                "puntos": 4,
+                "condicion": "Reformula con palabras propias todos los fragmentos tomados de la fuente"
+              },
+              {
+                "puntos": 3,
+                "condicion": "Deja de 1 a 2 fragmentos con la redacción del original"
+              },
+              {
+                "puntos": 2,
+                "condicion": "Deja de 3 a 4 fragmentos con la redacción del original"
+              },
+              {
+                "puntos": 0,
+                "condicion": "El trabajo reproduce la fuente párrafo a párrafo: 5 o más fragmentos con la redacción del original"
+              }
+            ]
+          },
+          {
+            "nombre": "Enlace entre apartados",
+            "max": 2,
+            "bandas": [
+              {
+                "puntos": 2,
+                "condicion": "Enlaza los apartados con conectores de orden"
+              },
+              {
+                "puntos": 1,
+                "condicion": "Enlaza 1 o 2 apartados y yuxtapone los demás"
+              },
+              {
+                "puntos": 0,
+                "condicion": "El trabajo yuxtapone los apartados"
+              }
+            ]
+          }
+        ],
+        "penalizaciones": []
+      },
+      "descriptor_cotejo": null,
+      "descriptor_un_punto": "Agrupa la información en los apartados del guion facilitado y pone un título a cada uno."
+    },
+    {
+      "id": "lcl-b-soporte-inv-2eso",
+      "bloque_lomloe": "B",
+      "dimension": "soporte_multimodal",
+      "nombre": "Ajuste del soporte: reparto entre texto, imagen y línea temporal",
+      "curso": "2ESO",
+      "hereda_de": null,
+      "criterio_oficial": {
+        "competencia_especifica": 6,
+        "codigo": "6.1",
+        "cita": "Elaborar trabajos de investigación de manera guiada en diferentes soportes sobre diversos temas de interés académico, personal o social a partir de la información seleccionada.",
+        "perfil_salida": [
+          "CCL3",
+          "CD1",
+          "CD2",
+          "CD3",
+          "CD4",
+          "CPSAA4",
+          "CC2",
+          "CE3"
+        ]
+      },
+      "saber_vehiculo": [
+        "producción escrita. planificación, textualización, redacción, revisión y edición en diferentes soportes",
+        "análisis de la imagen y elementos paratextuales de los textos icónico-verbales y multimodales"
+      ],
+      "progresion": {
+        "autonomia": 1,
+        "complejidad": 1,
+        "metalinguistico": 1
+      },
+      "tipos_tarea": [
+        "investigacion"
+      ],
+      "obligatorio": true,
+      "prioridad": 1,
+      "peso_base": 35,
+      "descriptores": {
+        "n1": {
+          "verbo": "presenta",
+          "texto": "Presenta el trabajo en el soporte del modelo facilitado, con el texto del borrador dividido en pantallas."
+        },
+        "n2": {
+          "verbo": "combina",
+          "texto": "Combina en cada pantalla un bloque de texto breve y una imagen relacionada con el tema."
+        },
+        "n3": {
+          "verbo": "ajusta",
+          "texto": "Ajusta el soporte al contenido: sitúa los hechos de la línea de tiempo por orden y acompaña cada hito con un pie de imagen."
+        },
+        "n4": {
+          "verbo": "mantiene",
+          "texto": "Mantiene en todas las pantallas el mismo reparto entre texto e imagen y ajusta la cantidad de texto para que la imagen sostenga el dato."
+        }
+      },
+      "matriz_cuantitativa": {
+        "total": 10,
+        "componentes": [
+          {
+            "nombre": "Reparto entre texto e imagen",
+            "max": 4,
+            "bandas": [
+              {
+                "puntos": 4,
+                "condicion": "Cada pantalla combina un texto breve y un elemento visual"
+              },
+              {
+                "puntos": 3,
+                "condicion": "Deja de 1 a 2 pantallas con texto solo"
+              },
+              {
+                "puntos": 2,
+                "condicion": "Deja de 3 a 4 pantallas con texto solo"
+              },
+              {
+                "puntos": 0,
+                "condicion": "El soporte reproduce el documento escrito: 5 o más pantallas con texto solo"
+              }
+            ]
+          },
+          {
+            "nombre": "Elementos de orientación: título, pie y leyenda",
+            "max": 3,
+            "bandas": [
+              {
+                "puntos": 3,
+                "condicion": "Todas las pantallas llevan título, y las imágenes, pie"
+              },
+              {
+                "puntos": 2,
+                "condicion": "Deja de 1 a 3 elementos sin título ni pie"
+              },
+              {
+                "puntos": 0,
+                "condicion": "El soporte presenta las imágenes sin título ni pie: 4 o más elementos"
+              }
+            ]
+          },
+          {
+            "nombre": "Cantidad de texto por pantalla",
+            "max": 3,
+            "bandas": [
+              {
+                "puntos": 3,
+                "condicion": "Ninguna pantalla pasa de 50 palabras"
+              },
+              {
+                "puntos": 2,
+                "condicion": "De 1 a 2 pantallas pasan de 50 palabras"
+              },
+              {
+                "puntos": 0,
+                "condicion": "El soporte vuelca el texto del documento: 3 o más pantallas pasan de 50 palabras"
+              }
+            ]
+          }
+        ],
+        "penalizaciones": []
+      },
+      "descriptor_cotejo": null,
+      "descriptor_un_punto": "Combina en cada pantalla un bloque de texto breve y una imagen relacionada con el tema."
+    },
+    {
+      "id": "lcl-d-correccion-inv-2eso",
+      "bloque_lomloe": "D",
+      "dimension": "correccion_lexico",
+      "nombre": "Corrección normativa y propiedad léxica",
+      "curso": "2ESO",
+      "hereda_de": null,
+      "criterio_oficial": {
+        "competencia_especifica": 5,
+        "codigo": "5.2",
+        "cita": "Incorporar procedimientos básicos para enriquecer los textos, atendiendo a aspectos discursivos, lingüísticos y de estilo, con precisión léxica y corrección ortográfica y gramatical.",
+        "perfil_salida": [
+          "CCL1",
+          "CCL3",
+          "CCL5",
+          "STEM1",
+          "CD2",
+          "CD3",
+          "CPSAA5",
+          "CC2"
+        ]
+      },
+      "saber_vehiculo": [
+        "corrección lingüística y revisión ortográfica y gramatical de los textos",
+        "los signos de puntuación como mecanismo organizador del texto escrito",
+        "propiedad léxica"
+      ],
+      "progresion": {
+        "autonomia": 1,
+        "complejidad": 1,
+        "metalinguistico": 1
+      },
+      "tipos_tarea": [
+        "investigacion"
+      ],
+      "obligatorio": true,
+      "prioridad": 2,
+      "peso_base": 15,
+      "descriptores": {
+        "n1": {
+          "verbo": "redacta",
+          "texto": "Redacta el texto del soporte con faltas de ortografía y de puntuación que entorpecen la lectura de cada pantalla."
+        },
+        "n2": {
+          "verbo": "aplica",
+          "texto": "Aplica las normas de acentuación y de concordancia, con errores aislados en las palabras menos frecuentes."
+        },
+        "n3": {
+          "verbo": "aplica",
+          "texto": "Aplica la puntuación de la enumeración y cierra con punto las frases completas del soporte."
+        },
+        "n4": {
+          "verbo": "elige",
+          "texto": "Elige el término preciso del tema investigado en lugar de la palabra comodín y sostiene la ortografía y la puntuación en todas las pantallas."
+        }
+      },
+      "matriz_cuantitativa": {
+        "total": 10,
+        "componentes": [
+          {
+            "nombre": "Ortografía y acentuación",
+            "max": 4,
+            "bandas": [
+              {
+                "puntos": 4,
+                "condicion": "Hasta 2 faltas en todo el soporte"
+              },
+              {
+                "puntos": 3,
+                "condicion": "De 3 a 4 faltas"
+              },
+              {
+                "puntos": 2,
+                "condicion": "De 5 a 6 faltas"
+              },
+              {
+                "puntos": 1,
+                "condicion": "De 7 a 9 faltas"
+              },
+              {
+                "puntos": 0,
+                "condicion": "10 o más faltas"
+              }
+            ]
+          },
+          {
+            "nombre": "Puntuación",
+            "max": 3,
+            "bandas": [
+              {
+                "puntos": 3,
+                "condicion": "Cierra con punto las frases completas y separa con coma las enumeraciones"
+              },
+              {
+                "puntos": 2,
+                "condicion": "Deja de 1 a 3 frases o enumeraciones sin marcar"
+              },
+              {
+                "puntos": 1,
+                "condicion": "Deja de 4 a 6 frases o enumeraciones sin marcar"
+              },
+              {
+                "puntos": 0,
+                "condicion": "El soporte encadena el texto sin signos de puntuación: 7 o más frases o enumeraciones sin marcar"
+              }
+            ]
+          },
+          {
+            "nombre": "Propiedad léxica",
+            "max": 3,
+            "bandas": [
+              {
+                "puntos": 3,
+                "condicion": "Emplea los términos del tema investigado y ninguna palabra comodín"
+              },
+              {
+                "puntos": 2,
+                "condicion": "Emplea 1 palabra comodín (cosa, tema, hacer)"
+              },
+              {
+                "puntos": 1,
+                "condicion": "Emplea 2 palabras comodín"
+              },
+              {
+                "puntos": 0,
+                "condicion": "El texto del soporte se sostiene sobre palabras comodín"
+              }
+            ]
+          }
+        ],
+        "penalizaciones": []
+      },
+      "descriptor_cotejo": null,
+      "descriptor_un_punto": "Aplica las normas de acentuación y de concordancia, con errores aislados en las palabras menos frecuentes."
+    },
+    {
+      "id": "lcl-b-tema-inv-3eso",
+      "bloque_lomloe": "B",
+      "dimension": "delimitacion_tema",
+      "nombre": "Delimitación del tema: pregunta de investigación y alcance",
+      "curso": "3ESO",
+      "hereda_de": null,
+      "criterio_oficial": {
+        "competencia_especifica": 6,
+        "codigo": "6.2",
+        "cita": "Elaborar trabajos de investigación de manera progresivamente autónoma en diferentes soportes sobre diversos temas de interés académico, personal o social a partir de la información seleccionada.",
+        "perfil_salida": [
+          "CCL3",
+          "CD1",
+          "CD2",
+          "CD3",
+          "CD4",
+          "CPSAA4",
+          "CC2",
+          "CE3"
+        ]
+      },
+      "saber_vehiculo": [
+        "alfabetización mediática e informacional: búsqueda y selección de la información con criterios de fiabilidad, calidad y pertinencia",
+        "utilización de plataformas virtuales para la realización de proyectos escolares"
+      ],
+      "progresion": {
+        "autonomia": 2,
+        "complejidad": 2,
+        "metalinguistico": 2
+      },
+      "tipos_tarea": [
+        "investigacion"
+      ],
+      "obligatorio": true,
+      "prioridad": 2,
+      "peso_base": 15,
+      "descriptores": {
+        "n1": {
+          "verbo": "anota",
+          "texto": "Anota el tema del trabajo con el título de la propuesta elegida."
+        },
+        "n2": {
+          "verbo": "delimita",
+          "texto": "Delimita el tema en una pregunta y señala el periodo o el ámbito que abarca."
+        },
+        "n3": {
+          "verbo": "formula",
+          "texto": "Formula la pregunta de investigación con palabras propias y delimita el alcance del trabajo en una frase."
+        },
+        "n4": {
+          "verbo": "justifica",
+          "texto": "Justifica la pregunta de investigación por el interés académico del tema y descarta los aspectos que el trabajo no aborda."
+        }
+      },
+      "matriz_cuantitativa": null,
+      "descriptor_cotejo": null,
+      "descriptor_un_punto": "Delimita el tema en una pregunta y señala el periodo o el ámbito que abarca."
+    },
+    {
+      "id": "lcl-b-fuentes-inv-3eso",
+      "bloque_lomloe": "B",
+      "dimension": "fuentes_contraste",
+      "nombre": "Fuentes: selección y contraste de la información",
+      "curso": "3ESO",
+      "hereda_de": null,
+      "criterio_oficial": {
+        "competencia_especifica": 6,
+        "codigo": "6.1",
+        "cita": "Localizar, seleccionar y contrastar información de manera progresivamente autónoma procedente de diferentes fuentes, calibrando su fiabilidad y pertinencia en función de los objetivos de lectura; organizarla e integrarla en esquemas propios, y reelaborarla y comunicarla de manera creativa.",
+        "perfil_salida": [
+          "CCL3",
+          "CD1",
+          "CD2",
+          "CD3",
+          "CD4",
+          "CPSAA4",
+          "CC2",
+          "CE3"
+        ]
+      },
+      "saber_vehiculo": [
+        "búsqueda y selección de la información con criterios de fiabilidad, calidad y pertinencia",
+        "análisis, valoración, reorganización y síntesis de la información en esquemas propios"
+      ],
+      "progresion": {
+        "autonomia": 2,
+        "complejidad": 2,
+        "metalinguistico": 2
+      },
+      "tipos_tarea": [
+        "investigacion"
+      ],
+      "obligatorio": true,
+      "prioridad": 1,
+      "peso_base": 25,
+      "descriptores": {
+        "n1": {
+          "verbo": "localiza",
+          "texto": "Localiza la información en la primera fuente que ofrece el buscador y la traslada al trabajo."
+        },
+        "n2": {
+          "verbo": "selecciona",
+          "texto": "Selecciona información de dos fuentes distintas y anota la dirección de cada una."
+        },
+        "n3": {
+          "verbo": "contrasta",
+          "texto": "Contrasta el dato principal entre tres fuentes y descarta las que repiten la misma información sin firma."
+        },
+        "n4": {
+          "verbo": "valora",
+          "texto": "Valora la fiabilidad de cada fuente por la autoría, la fecha y el respaldo de los datos, y selecciona las que sostienen el trabajo."
+        }
+      },
+      "matriz_cuantitativa": {
+        "total": 10,
+        "componentes": [
+          {
+            "nombre": "Fuentes reunidas",
+            "max": 4,
+            "bandas": [
+              {
+                "puntos": 4,
+                "condicion": "Reúne 3 o más fuentes de procedencias distintas"
+              },
+              {
+                "puntos": 3,
+                "condicion": "Reúne 2 fuentes de procedencias distintas"
+              },
+              {
+                "puntos": 2,
+                "condicion": "Reúne 2 fuentes de la misma procedencia"
+              },
+              {
+                "puntos": 0,
+                "condicion": "El trabajo se apoya en una sola fuente"
+              }
+            ]
+          },
+          {
+            "nombre": "Datos contrastados entre fuentes",
+            "max": 3,
+            "bandas": [
+              {
+                "puntos": 3,
+                "condicion": "Contrasta 3 o más datos entre dos fuentes al menos"
+              },
+              {
+                "puntos": 2,
+                "condicion": "Contrasta 1 o 2 datos"
+              },
+              {
+                "puntos": 0,
+                "condicion": "El trabajo traslada los datos de cada fuente sin compararlos"
+              }
+            ]
+          },
+          {
+            "nombre": "Registro de la procedencia",
+            "max": 3,
+            "bandas": [
+              {
+                "puntos": 3,
+                "condicion": "Anota la procedencia de todas las fuentes utilizadas"
+              },
+              {
+                "puntos": 2,
+                "condicion": "Deja de 1 a 2 fuentes sin procedencia anotada"
+              },
+              {
+                "puntos": 0,
+                "condicion": "El trabajo presenta los datos sin anotar la procedencia: 3 o más fuentes"
+              }
+            ]
+          }
+        ],
+        "penalizaciones": []
+      },
+      "descriptor_cotejo": null,
+      "descriptor_un_punto": "Selecciona información de dos fuentes distintas y anota la dirección de cada una."
+    },
+    {
+      "id": "lcl-b-integracion-inv-3eso",
+      "bloque_lomloe": "B",
+      "dimension": "integracion_informacion",
+      "nombre": "Integración de la información: esquema propio y apartados",
+      "curso": "3ESO",
+      "hereda_de": null,
+      "criterio_oficial": {
+        "competencia_especifica": 6,
+        "codigo": "6.2",
+        "cita": "Elaborar trabajos de investigación de manera progresivamente autónoma en diferentes soportes sobre diversos temas de interés académico, personal o social a partir de la información seleccionada.",
+        "perfil_salida": [
+          "CCL3",
+          "CD1",
+          "CD2",
+          "CD3",
+          "CD4",
+          "CPSAA4",
+          "CC2",
+          "CE3"
+        ]
+      },
+      "saber_vehiculo": [
+        "profundización en los usos de la escritura para la organización del pensamiento: toma de notas, esquemas, mapas conceptuales, definiciones, resúmenes",
+        "transformación de la información en conocimiento"
+      ],
+      "progresion": {
+        "autonomia": 2,
+        "complejidad": 2,
+        "metalinguistico": 2
+      },
+      "tipos_tarea": [
+        "investigacion"
+      ],
+      "obligatorio": true,
+      "prioridad": 1,
+      "peso_base": 25,
+      "descriptores": {
+        "n1": {
+          "verbo": "traslada",
+          "texto": "Traslada al soporte los párrafos de la fuente con el orden del original."
+        },
+        "n2": {
+          "verbo": "agrupa",
+          "texto": "Agrupa la información en apartados y pone un título a cada uno."
+        },
+        "n3": {
+          "verbo": "organiza",
+          "texto": "Organiza la información en un esquema propio y enlaza los apartados con conectores de orden."
+        },
+        "n4": {
+          "verbo": "integra",
+          "texto": "Integra los datos de varias fuentes en un esquema propio y reformula con palabras propias lo que cada apartado aporta al tema."
+        }
+      },
+      "matriz_cuantitativa": {
+        "total": 10,
+        "componentes": [
+          {
+            "nombre": "Apartados con título propio",
+            "max": 4,
+            "bandas": [
+              {
+                "puntos": 4,
+                "condicion": "Organiza el trabajo en 4 o más apartados con título propio"
+              },
+              {
+                "puntos": 3,
+                "condicion": "Organiza el trabajo en 3 apartados con título propio"
+              },
+              {
+                "puntos": 2,
+                "condicion": "Organiza el trabajo en 2 apartados"
+              },
+              {
+                "puntos": 0,
+                "condicion": "El trabajo presenta la información en un bloque único"
+              }
+            ]
+          },
+          {
+            "nombre": "Reformulación de lo tomado de las fuentes",
+            "max": 4,
+            "bandas": [
+              {
+                "puntos": 4,
+                "condicion": "Reformula con palabras propias todos los fragmentos tomados de las fuentes"
+              },
+              {
+                "puntos": 3,
+                "condicion": "Deja de 1 a 2 fragmentos con la redacción del original"
+              },
+              {
+                "puntos": 2,
+                "condicion": "Deja de 3 a 4 fragmentos con la redacción del original"
+              },
+              {
+                "puntos": 0,
+                "condicion": "El trabajo reproduce las fuentes párrafo a párrafo: 5 o más fragmentos con la redacción del original"
+              }
+            ]
+          },
+          {
+            "nombre": "Enlace entre apartados",
+            "max": 2,
+            "bandas": [
+              {
+                "puntos": 2,
+                "condicion": "Enlaza los apartados con conectores de orden o de contraste"
+              },
+              {
+                "puntos": 1,
+                "condicion": "Enlaza 1 o 2 apartados y yuxtapone los demás"
+              },
+              {
+                "puntos": 0,
+                "condicion": "El trabajo yuxtapone los apartados"
+              }
+            ]
+          }
+        ],
+        "penalizaciones": []
+      },
+      "descriptor_cotejo": null,
+      "descriptor_un_punto": "Agrupa la información en apartados y pone un título a cada uno."
+    },
+    {
+      "id": "lcl-b-soporte-inv-3eso",
+      "bloque_lomloe": "B",
+      "dimension": "soporte_multimodal",
+      "nombre": "Ajuste del soporte: reparto entre texto, imagen y línea temporal",
+      "curso": "3ESO",
+      "hereda_de": null,
+      "criterio_oficial": {
+        "competencia_especifica": 6,
+        "codigo": "6.2",
+        "cita": "Elaborar trabajos de investigación de manera progresivamente autónoma en diferentes soportes sobre diversos temas de interés académico, personal o social a partir de la información seleccionada.",
+        "perfil_salida": [
+          "CCL3",
+          "CD1",
+          "CD2",
+          "CD3",
+          "CD4",
+          "CPSAA4",
+          "CC2",
+          "CE3"
+        ]
+      },
+      "saber_vehiculo": [
+        "producción escrita. planificación, textualización, redacción, revisión y edición en diferentes soportes",
+        "análisis de la imagen y elementos paratextuales de los textos icónico-verbales y multimodales"
+      ],
+      "progresion": {
+        "autonomia": 2,
+        "complejidad": 2,
+        "metalinguistico": 2
+      },
+      "tipos_tarea": [
+        "investigacion"
+      ],
+      "obligatorio": true,
+      "prioridad": 1,
+      "peso_base": 20,
+      "descriptores": {
+        "n1": {
+          "verbo": "presenta",
+          "texto": "Presenta el trabajo en el soporte elegido con el texto del borrador dividido en pantallas."
+        },
+        "n2": {
+          "verbo": "combina",
+          "texto": "Combina en cada pantalla un texto breve, una imagen y un pie con la referencia de la imagen."
+        },
+        "n3": {
+          "verbo": "ajusta",
+          "texto": "Ajusta el soporte al contenido y gradúa la cantidad de texto para que la imagen sostenga el dato."
+        },
+        "n4": {
+          "verbo": "elige",
+          "texto": "Elige el soporte según lo que el tema pide, justifica la elección y mantiene el mismo criterio en todas las pantallas."
+        }
+      },
+      "matriz_cuantitativa": {
+        "total": 10,
+        "componentes": [
+          {
+            "nombre": "Reparto entre texto e imagen",
+            "max": 4,
+            "bandas": [
+              {
+                "puntos": 4,
+                "condicion": "Cada pantalla combina un texto breve y un elemento visual"
+              },
+              {
+                "puntos": 3,
+                "condicion": "Deja de 1 a 2 pantallas con texto solo"
+              },
+              {
+                "puntos": 2,
+                "condicion": "Deja de 3 a 4 pantallas con texto solo"
+              },
+              {
+                "puntos": 0,
+                "condicion": "El soporte reproduce el documento escrito: 5 o más pantallas con texto solo"
+              }
+            ]
+          },
+          {
+            "nombre": "Elementos de orientación: título, pie y leyenda",
+            "max": 3,
+            "bandas": [
+              {
+                "puntos": 3,
+                "condicion": "Todas las pantallas llevan título, y las imágenes, pie o leyenda"
+              },
+              {
+                "puntos": 2,
+                "condicion": "Deja de 1 a 3 elementos sin título ni pie"
+              },
+              {
+                "puntos": 0,
+                "condicion": "El soporte presenta las imágenes sin título ni pie: 4 o más elementos"
+              }
+            ]
+          },
+          {
+            "nombre": "Cantidad de texto por pantalla",
+            "max": 3,
+            "bandas": [
+              {
+                "puntos": 3,
+                "condicion": "Ninguna pantalla pasa de 50 palabras"
+              },
+              {
+                "puntos": 2,
+                "condicion": "De 1 a 2 pantallas pasan de 50 palabras"
+              },
+              {
+                "puntos": 0,
+                "condicion": "El soporte vuelca el texto del documento: 3 o más pantallas pasan de 50 palabras"
+              }
+            ]
+          }
+        ],
+        "penalizaciones": []
+      },
+      "descriptor_cotejo": null,
+      "descriptor_un_punto": "Combina en cada pantalla un texto breve, una imagen y un pie con la referencia de la imagen."
+    },
+    {
+      "id": "lcl-d-correccion-inv-3eso",
+      "bloque_lomloe": "D",
+      "dimension": "correccion_lexico",
+      "nombre": "Corrección normativa y propiedad léxica",
+      "curso": "3ESO",
+      "hereda_de": null,
+      "criterio_oficial": {
+        "competencia_especifica": 5,
+        "codigo": "5.2",
+        "cita": "Incorporar progresivamente procedimientos para enriquecer los textos atendiendo a aspectos discursivos, lingüísticos y de estilo, con precisión léxica y corrección ortográfica y gramatical.",
+        "perfil_salida": [
+          "CCL1",
+          "CCL3",
+          "CCL5",
+          "STEM1",
+          "CD2",
+          "CD3",
+          "CPSAA5",
+          "CC2"
+        ]
+      },
+      "saber_vehiculo": [
+        "corrección lingüística y revisión ortográfica y gramatical de los textos",
+        "los signos de puntuación como mecanismo organizador del texto escrito",
+        "propiedad léxica"
+      ],
+      "progresion": {
+        "autonomia": 2,
+        "complejidad": 2,
+        "metalinguistico": 2
+      },
+      "tipos_tarea": [
+        "investigacion"
+      ],
+      "obligatorio": true,
+      "prioridad": 2,
+      "peso_base": 15,
+      "descriptores": {
+        "n1": {
+          "verbo": "redacta",
+          "texto": "Redacta el texto del soporte con faltas de ortografía y de puntuación que entorpecen la lectura."
+        },
+        "n2": {
+          "verbo": "aplica",
+          "texto": "Aplica las normas de acentuación, concordancia y puntuación con errores aislados."
+        },
+        "n3": {
+          "verbo": "aplica",
+          "texto": "Aplica la puntuación de la enumeración y del inciso dentro de cada pantalla del soporte."
+        },
+        "n4": {
+          "verbo": "elige",
+          "texto": "Elige el término preciso del tema investigado y ajusta la longitud de la frase al espacio de la pantalla."
+        }
+      },
+      "matriz_cuantitativa": {
+        "total": 10,
+        "componentes": [
+          {
+            "nombre": "Ortografía y acentuación",
+            "max": 4,
+            "bandas": [
+              {
+                "puntos": 4,
+                "condicion": "Hasta 2 faltas en todo el soporte"
+              },
+              {
+                "puntos": 3,
+                "condicion": "De 3 a 5 faltas"
+              },
+              {
+                "puntos": 2,
+                "condicion": "De 6 a 8 faltas"
+              },
+              {
+                "puntos": 1,
+                "condicion": "De 9 a 11 faltas"
+              },
+              {
+                "puntos": 0,
+                "condicion": "12 o más faltas"
+              }
+            ]
+          },
+          {
+            "nombre": "Puntuación",
+            "max": 3,
+            "bandas": [
+              {
+                "puntos": 3,
+                "condicion": "Enumeración e inciso llevan la puntuación correspondiente"
+              },
+              {
+                "puntos": 2,
+                "condicion": "Deja de 1 a 3 incisos o enumeraciones sin marcar"
+              },
+              {
+                "puntos": 1,
+                "condicion": "Deja de 4 a 6 incisos o enumeraciones sin marcar"
+              },
+              {
+                "puntos": 0,
+                "condicion": "El soporte encadena el texto sin signos de puntuación: 7 o más incisos o enumeraciones sin marcar"
+              }
+            ]
+          },
+          {
+            "nombre": "Propiedad léxica",
+            "max": 3,
+            "bandas": [
+              {
+                "puntos": 3,
+                "condicion": "Emplea los términos del tema investigado y ninguna palabra comodín"
+              },
+              {
+                "puntos": 2,
+                "condicion": "Emplea 1 palabra comodín (cosa, tema, hacer)"
+              },
+              {
+                "puntos": 1,
+                "condicion": "Emplea 2 palabras comodín"
+              },
+              {
+                "puntos": 0,
+                "condicion": "El texto del soporte se sostiene sobre palabras comodín"
+              }
+            ]
+          }
+        ],
+        "penalizaciones": []
+      },
+      "descriptor_cotejo": null,
+      "descriptor_un_punto": "Aplica las normas de acentuación, concordancia y puntuación con errores aislados."
+    },
+    {
+      "id": "lcl-b-tema-inv-4eso",
+      "bloque_lomloe": "B",
+      "dimension": "delimitacion_tema",
+      "nombre": "Delimitación del tema: pregunta de investigación y alcance",
+      "curso": "4ESO",
+      "hereda_de": null,
+      "criterio_oficial": {
+        "competencia_especifica": 6,
+        "codigo": "6.2",
+        "cita": "Elaborar trabajos de investigación en diferentes soportes sobre diversos temas de interés académico, personal o social a partir de la información seleccionada.",
+        "perfil_salida": [
+          "CCL3",
+          "CD1",
+          "CD2",
+          "CD3",
+          "CD4",
+          "CPSAA4",
+          "CC2",
+          "CE3"
+        ]
+      },
+      "saber_vehiculo": [
+        "alfabetización mediática e informacional: análisis, búsqueda y selección de la información con criterios de fiabilidad, calidad y pertinencia",
+        "profundización en el uso de plataformas virtuales para la realización de proyectos escolares"
+      ],
+      "progresion": {
+        "autonomia": 3,
+        "complejidad": 3,
+        "metalinguistico": 3
+      },
+      "tipos_tarea": [
+        "investigacion"
+      ],
+      "obligatorio": true,
+      "prioridad": 2,
+      "peso_base": 15,
+      "descriptores": {
+        "n1": {
+          "verbo": "enumera",
+          "texto": "Enumera los aspectos del tema en el orden en que aparecen en la propuesta."
+        },
+        "n2": {
+          "verbo": "delimita",
+          "texto": "Delimita el tema en una pregunta propia y sitúa el periodo y el ámbito que abarca."
+        },
+        "n3": {
+          "verbo": "formula",
+          "texto": "Formula la pregunta de investigación y desarrolla dos subpreguntas que ordenan el trabajo."
+        },
+        "n4": {
+          "verbo": "justifica",
+          "texto": "Justifica la pregunta de investigación por lo que las fuentes consultadas dejan sin responder y delimita el alcance del trabajo."
+        }
+      },
+      "matriz_cuantitativa": null,
+      "descriptor_cotejo": null,
+      "descriptor_un_punto": "Delimita el tema en una pregunta propia y sitúa el periodo y el ámbito que abarca."
+    },
+    {
+      "id": "lcl-b-fuentes-inv-4eso",
+      "bloque_lomloe": "B",
+      "dimension": "fuentes_contraste",
+      "nombre": "Fuentes: selección y contraste de la información",
+      "curso": "4ESO",
+      "hereda_de": null,
+      "criterio_oficial": {
+        "competencia_especifica": 6,
+        "codigo": "6.1",
+        "cita": "Localizar, seleccionar y contrastar información de manera autónoma procedente de diferentes fuentes, calibrando su fiabilidad y pertinencia en función de los objetivos de lectura; organizarla e integrarla en esquemas propios, y reelaborarla y comunicarla de manera creativa adoptando un punto de vista crítico respetando los principios de propiedad intelectual.",
+        "perfil_salida": [
+          "CCL3",
+          "CD1",
+          "CD2",
+          "CD3",
+          "CD4",
+          "CPSAA4",
+          "CC2",
+          "CE3"
+        ]
+      },
+      "saber_vehiculo": [
+        "análisis, búsqueda y selección de la información con criterios de fiabilidad, calidad y pertinencia",
+        "análisis, valoración, reorganización y síntesis de la información en esquemas propios"
+      ],
+      "progresion": {
+        "autonomia": 3,
+        "complejidad": 3,
+        "metalinguistico": 3
+      },
+      "tipos_tarea": [
+        "investigacion"
+      ],
+      "obligatorio": true,
+      "prioridad": 1,
+      "peso_base": 20,
+      "descriptores": {
+        "n1": {
+          "verbo": "localiza",
+          "texto": "Localiza la información en una sola fuente y la traslada al trabajo con las palabras del original."
+        },
+        "n2": {
+          "verbo": "selecciona",
+          "texto": "Selecciona información de dos fuentes distintas y relaciona los datos que ofrecen sobre el tema."
+        },
+        "n3": {
+          "verbo": "contrasta",
+          "texto": "Contrasta los datos principales entre tres fuentes de distinta procedencia y descarta las que carecen de autoría."
+        },
+        "n4": {
+          "verbo": "valora",
+          "texto": "Valora la fiabilidad de cada fuente por la autoría, la fecha y el respaldo de los datos, y justifica la selección final dentro del trabajo."
+        }
+      },
+      "matriz_cuantitativa": {
+        "total": 10,
+        "componentes": [
+          {
+            "nombre": "Fuentes reunidas",
+            "max": 4,
+            "bandas": [
+              {
+                "puntos": 4,
+                "condicion": "Reúne 4 o más fuentes de procedencias distintas"
+              },
+              {
+                "puntos": 3,
+                "condicion": "Reúne 3 fuentes de procedencias distintas"
+              },
+              {
+                "puntos": 2,
+                "condicion": "Reúne 2 fuentes"
+              },
+              {
+                "puntos": 0,
+                "condicion": "El trabajo se apoya en una sola fuente"
+              }
+            ]
+          },
+          {
+            "nombre": "Datos contrastados entre fuentes",
+            "max": 3,
+            "bandas": [
+              {
+                "puntos": 3,
+                "condicion": "Contrasta 4 o más datos entre fuentes de distinta procedencia"
+              },
+              {
+                "puntos": 2,
+                "condicion": "Contrasta 2 o 3 datos"
+              },
+              {
+                "puntos": 1,
+                "condicion": "Contrasta 1 dato"
+              },
+              {
+                "puntos": 0,
+                "condicion": "El trabajo traslada los datos de cada fuente sin compararlos"
+              }
+            ]
+          },
+          {
+            "nombre": "Registro de la procedencia",
+            "max": 3,
+            "bandas": [
+              {
+                "puntos": 3,
+                "condicion": "Anota la procedencia de todas las fuentes utilizadas"
+              },
+              {
+                "puntos": 2,
+                "condicion": "Deja de 1 a 2 fuentes sin procedencia anotada"
+              },
+              {
+                "puntos": 0,
+                "condicion": "El trabajo presenta los datos sin anotar la procedencia: 3 o más fuentes"
+              }
+            ]
+          }
+        ],
+        "penalizaciones": []
+      },
+      "descriptor_cotejo": null,
+      "descriptor_un_punto": "Selecciona información de dos fuentes distintas y relaciona los datos que ofrecen sobre el tema."
+    },
+    {
+      "id": "lcl-b-integracion-inv-4eso",
+      "bloque_lomloe": "B",
+      "dimension": "integracion_informacion",
+      "nombre": "Integración de la información: esquema propio y apartados",
+      "curso": "4ESO",
+      "hereda_de": null,
+      "criterio_oficial": {
+        "competencia_especifica": 6,
+        "codigo": "6.2",
+        "cita": "Elaborar trabajos de investigación en diferentes soportes sobre diversos temas de interés académico, personal o social a partir de la información seleccionada.",
+        "perfil_salida": [
+          "CCL3",
+          "CD1",
+          "CD2",
+          "CD3",
+          "CD4",
+          "CPSAA4",
+          "CC2",
+          "CE3"
+        ]
+      },
+      "saber_vehiculo": [
+        "desarrollo de usos de la escritura para la organización del pensamiento: toma de notas, esquemas, mapas conceptuales, definiciones, resúmenes",
+        "transformación de la información en conocimiento"
+      ],
+      "progresion": {
+        "autonomia": 3,
+        "complejidad": 3,
+        "metalinguistico": 3
+      },
+      "tipos_tarea": [
+        "investigacion"
+      ],
+      "obligatorio": true,
+      "prioridad": 1,
+      "peso_base": 20,
+      "descriptores": {
+        "n1": {
+          "verbo": "traslada",
+          "texto": "Traslada al soporte los datos de las fuentes en el orden de consulta."
+        },
+        "n2": {
+          "verbo": "agrupa",
+          "texto": "Agrupa la información en apartados y anuncia el contenido de cada uno con un título."
+        },
+        "n3": {
+          "verbo": "organiza",
+          "texto": "Organiza la información en un esquema propio de tres o más apartados y encadena los apartados con conectores de orden y de contraste."
+        },
+        "n4": {
+          "verbo": "integra",
+          "texto": "Integra los datos de varias fuentes en un esquema propio y reelabora la información en un texto que responde a la pregunta de investigación."
+        }
+      },
+      "matriz_cuantitativa": {
+        "total": 10,
+        "componentes": [
+          {
+            "nombre": "Apartados con título propio",
+            "max": 4,
+            "bandas": [
+              {
+                "puntos": 4,
+                "condicion": "Organiza el trabajo en 4 o más apartados con título propio"
+              },
+              {
+                "puntos": 3,
+                "condicion": "Organiza el trabajo en 3 apartados con título propio"
+              },
+              {
+                "puntos": 2,
+                "condicion": "Organiza el trabajo en 2 apartados"
+              },
+              {
+                "puntos": 0,
+                "condicion": "El trabajo presenta la información en un bloque único"
+              }
+            ]
+          },
+          {
+            "nombre": "Reformulación de lo tomado de las fuentes",
+            "max": 4,
+            "bandas": [
+              {
+                "puntos": 4,
+                "condicion": "Reformula con palabras propias todos los fragmentos tomados de las fuentes"
+              },
+              {
+                "puntos": 3,
+                "condicion": "Deja 1 fragmento con la redacción del original"
+              },
+              {
+                "puntos": 2,
+                "condicion": "Deja de 2 a 3 fragmentos con la redacción del original"
+              },
+              {
+                "puntos": 0,
+                "condicion": "El trabajo reproduce las fuentes párrafo a párrafo: 4 o más fragmentos con la redacción del original"
+              }
+            ]
+          },
+          {
+            "nombre": "Enlace entre apartados",
+            "max": 2,
+            "bandas": [
+              {
+                "puntos": 2,
+                "condicion": "Enlaza los apartados con conectores de orden y de contraste"
+              },
+              {
+                "puntos": 1,
+                "condicion": "Enlaza 1 o 2 apartados y yuxtapone los demás"
+              },
+              {
+                "puntos": 0,
+                "condicion": "El trabajo yuxtapone los apartados"
+              }
+            ]
+          }
+        ],
+        "penalizaciones": []
+      },
+      "descriptor_cotejo": null,
+      "descriptor_un_punto": "Agrupa la información en apartados y anuncia el contenido de cada uno con un título."
+    },
+    {
+      "id": "lcl-b-soporte-inv-4eso",
+      "bloque_lomloe": "B",
+      "dimension": "soporte_multimodal",
+      "nombre": "Ajuste del soporte: reparto entre texto, imagen y línea temporal",
+      "curso": "4ESO",
+      "hereda_de": null,
+      "criterio_oficial": {
+        "competencia_especifica": 6,
+        "codigo": "6.2",
+        "cita": "Elaborar trabajos de investigación en diferentes soportes sobre diversos temas de interés académico, personal o social a partir de la información seleccionada.",
+        "perfil_salida": [
+          "CCL3",
+          "CD1",
+          "CD2",
+          "CD3",
+          "CD4",
+          "CPSAA4",
+          "CC2",
+          "CE3"
+        ]
+      },
+      "saber_vehiculo": [
+        "planificación, redacción, revisión y edición en diferentes soportes de textos de cierta complejidad",
+        "elementos paratextuales de los textos icónico-verbales y multimodales"
+      ],
+      "progresion": {
+        "autonomia": 3,
+        "complejidad": 3,
+        "metalinguistico": 3
+      },
+      "tipos_tarea": [
+        "investigacion"
+      ],
+      "obligatorio": true,
+      "prioridad": 1,
+      "peso_base": 20,
+      "descriptores": {
+        "n1": {
+          "verbo": "presenta",
+          "texto": "Presenta el trabajo en el soporte elegido con un cuerpo de letra único en todas las pantallas."
+        },
+        "n2": {
+          "verbo": "combina",
+          "texto": "Combina en cada pantalla texto, imagen y pie, y mantiene el mismo esquema de color en el trabajo."
+        },
+        "n3": {
+          "verbo": "ajusta",
+          "texto": "Ajusta el soporte al contenido, gradúa la cantidad de texto por pantalla y dirige la mirada con el tamaño y el color."
+        },
+        "n4": {
+          "verbo": "elige",
+          "texto": "Elige el soporte según lo que el tema pide, justifica la elección por el destinatario y adapta el reparto entre texto e imagen a cada apartado."
+        }
+      },
+      "matriz_cuantitativa": {
+        "total": 10,
+        "componentes": [
+          {
+            "nombre": "Reparto entre texto e imagen",
+            "max": 4,
+            "bandas": [
+              {
+                "puntos": 4,
+                "condicion": "Cada pantalla combina un texto breve y un elemento visual"
+              },
+              {
+                "puntos": 3,
+                "condicion": "Deja de 1 a 2 pantallas con texto solo"
+              },
+              {
+                "puntos": 2,
+                "condicion": "Deja de 3 a 4 pantallas con texto solo"
+              },
+              {
+                "puntos": 0,
+                "condicion": "El soporte reproduce el documento escrito: 5 o más pantallas con texto solo"
+              }
+            ]
+          },
+          {
+            "nombre": "Elementos de orientación: título, pie y leyenda",
+            "max": 3,
+            "bandas": [
+              {
+                "puntos": 3,
+                "condicion": "Todas las pantallas llevan título, y los elementos visuales, pie o leyenda"
+              },
+              {
+                "puntos": 2,
+                "condicion": "Deja de 1 a 2 elementos sin título ni pie"
+              },
+              {
+                "puntos": 0,
+                "condicion": "El soporte presenta los elementos visuales sin título ni pie: 3 o más elementos"
+              }
+            ]
+          },
+          {
+            "nombre": "Cantidad de texto por pantalla",
+            "max": 3,
+            "bandas": [
+              {
+                "puntos": 3,
+                "condicion": "Ninguna pantalla pasa de 50 palabras"
+              },
+              {
+                "puntos": 2,
+                "condicion": "De 1 a 2 pantallas pasan de 50 palabras"
+              },
+              {
+                "puntos": 0,
+                "condicion": "El soporte vuelca el texto del documento: 3 o más pantallas pasan de 50 palabras"
+              }
+            ]
+          }
+        ],
+        "penalizaciones": []
+      },
+      "descriptor_cotejo": null,
+      "descriptor_un_punto": "Combina en cada pantalla texto, imagen y pie, y mantiene el mismo esquema de color en el trabajo."
+    },
+    {
+      "id": "lcl-b-atribucion-inv-4eso",
+      "bloque_lomloe": "B",
+      "dimension": "propiedad_intelectual",
+      "nombre": "Atribución de fuentes y uso del material ajeno",
+      "curso": "4ESO",
+      "hereda_de": null,
+      "criterio_oficial": {
+        "competencia_especifica": 6,
+        "codigo": "6.1",
+        "cita": "Localizar, seleccionar y contrastar información de manera autónoma procedente de diferentes fuentes, calibrando su fiabilidad y pertinencia en función de los objetivos de lectura; organizarla e integrarla en esquemas propios, y reelaborarla y comunicarla de manera creativa adoptando un punto de vista crítico respetando los principios de propiedad intelectual.",
+        "perfil_salida": [
+          "CCL3",
+          "CD1",
+          "CD2",
+          "CD3",
+          "CD4",
+          "CPSAA4",
+          "CC2",
+          "CE3"
+        ]
+      },
+      "saber_vehiculo": [
+        "comunicación y difusión de manera creativa y respetuosa con la propiedad intelectual",
+        "procedimientos de cita, notas, bibliografía y webgrafía"
+      ],
+      "progresion": {
+        "autonomia": 3,
+        "complejidad": 3,
+        "metalinguistico": 3
+      },
+      "tipos_tarea": [
+        "investigacion"
+      ],
+      "obligatorio": false,
+      "prioridad": 2,
+      "peso_base": 10,
+      "descriptores": {
+        "n1": {
+          "verbo": "indica",
+          "texto": "Indica el nombre de la página de la cual toma los datos al final del trabajo."
+        },
+        "n2": {
+          "verbo": "anota",
+          "texto": "Anota la dirección completa de cada fuente utilizada en un apartado final."
+        },
+        "n3": {
+          "verbo": "documenta",
+          "texto": "Documenta cada dato con la fuente de procedencia y añade el autor y la fecha en la referencia."
+        },
+        "n4": {
+          "verbo": "respeta",
+          "texto": "Respeta la propiedad intelectual del material ajeno: separa con comillas lo tomado literalmente, documenta el origen de cada imagen y distingue la aportación propia de la ajena."
+        }
+      },
+      "matriz_cuantitativa": {
+        "total": 10,
+        "componentes": [
+          {
+            "nombre": "Referencias de las fuentes",
+            "max": 4,
+            "bandas": [
+              {
+                "puntos": 4,
+                "condicion": "Todas las fuentes utilizadas llevan referencia con autor, título y fecha"
+              },
+              {
+                "puntos": 3,
+                "condicion": "Deja de 1 a 2 referencias incompletas"
+              },
+              {
+                "puntos": 2,
+                "condicion": "Deja de 3 a 4 referencias incompletas"
+              },
+              {
+                "puntos": 0,
+                "condicion": "El trabajo presenta los datos sin referencia de origen: 5 o más referencias incompletas"
+              }
+            ]
+          },
+          {
+            "nombre": "Crédito del material visual",
+            "max": 3,
+            "bandas": [
+              {
+                "puntos": 3,
+                "condicion": "Todas las imágenes y los gráficos llevan crédito de procedencia"
+              },
+              {
+                "puntos": 2,
+                "condicion": "Deja de 1 a 2 elementos visuales sin crédito"
+              },
+              {
+                "puntos": 0,
+                "condicion": "El soporte utiliza el material visual sin crédito: 3 o más elementos visuales"
+              }
+            ]
+          },
+          {
+            "nombre": "Marca de lo tomado literalmente",
+            "max": 3,
+            "bandas": [
+              {
+                "puntos": 3,
+                "condicion": "Todo lo tomado literalmente va entre comillas y con referencia"
+              },
+              {
+                "puntos": 2,
+                "condicion": "Deja de 1 a 2 fragmentos literales sin marcar"
+              },
+              {
+                "puntos": 0,
+                "condicion": "El trabajo funde lo tomado de las fuentes con la redacción propia: 3 o más fragmentos literales sin marcar"
+              }
+            ]
+          }
+        ],
+        "penalizaciones": []
+      },
+      "descriptor_cotejo": null,
+      "descriptor_un_punto": "Anota la dirección completa de cada fuente utilizada en un apartado final."
+    },
+    {
+      "id": "lcl-d-correccion-inv-4eso",
+      "bloque_lomloe": "D",
+      "dimension": "correccion_lexico",
+      "nombre": "Corrección normativa y propiedad léxica",
+      "curso": "4ESO",
+      "hereda_de": null,
+      "criterio_oficial": {
+        "competencia_especifica": 5,
+        "codigo": "5.2",
+        "cita": "Incorporar procedimientos para enriquecer los textos atendiendo a aspectos discursivos, lingüísticos y de estilo, con precisión léxica y corrección ortográfica y gramatical.",
+        "perfil_salida": [
+          "CCL1",
+          "CCL3",
+          "CCL5",
+          "STEM1",
+          "CD2",
+          "CD3",
+          "CPSAA5",
+          "CC2"
+        ]
+      },
+      "saber_vehiculo": [
+        "corrección lingüística y revisión ortográfica y gramatical de los textos",
+        "los signos de puntuación como mecanismo organizador del texto escrito",
+        "propiedad léxica"
+      ],
+      "progresion": {
+        "autonomia": 3,
+        "complejidad": 3,
+        "metalinguistico": 3
+      },
+      "tipos_tarea": [
+        "investigacion"
+      ],
+      "obligatorio": true,
+      "prioridad": 2,
+      "peso_base": 15,
+      "descriptores": {
+        "n1": {
+          "verbo": "redacta",
+          "texto": "Redacta el texto del soporte con faltas de ortografía y de puntuación que interrumpen la lectura."
+        },
+        "n2": {
+          "verbo": "aplica",
+          "texto": "Aplica las normas de acentuación, concordancia y puntuación, con errores en los rótulos y los pies."
+        },
+        "n3": {
+          "verbo": "aplica",
+          "texto": "Aplica la puntuación del inciso explicativo y la del dato entrecomillado en cada pantalla."
+        },
+        "n4": {
+          "verbo": "elige",
+          "texto": "Elige el término preciso del campo del tema y mantiene el mismo registro en el texto y en los rótulos."
+        }
+      },
+      "matriz_cuantitativa": {
+        "total": 10,
+        "componentes": [
+          {
+            "nombre": "Ortografía y acentuación",
+            "max": 4,
+            "bandas": [
+              {
+                "puntos": 4,
+                "condicion": "Hasta 2 faltas en todo el soporte, incluidos los rótulos"
+              },
+              {
+                "puntos": 3,
+                "condicion": "De 3 a 5 faltas"
+              },
+              {
+                "puntos": 2,
+                "condicion": "De 6 a 8 faltas"
+              },
+              {
+                "puntos": 1,
+                "condicion": "De 9 a 12 faltas"
+              },
+              {
+                "puntos": 0,
+                "condicion": "13 o más faltas"
+              }
+            ]
+          },
+          {
+            "nombre": "Puntuación",
+            "max": 3,
+            "bandas": [
+              {
+                "puntos": 3,
+                "condicion": "Inciso, enumeración y dato entrecomillado llevan la puntuación correspondiente"
+              },
+              {
+                "puntos": 2,
+                "condicion": "1 de los tres procedimientos falla"
+              },
+              {
+                "puntos": 1,
+                "condicion": "2 de los tres procedimientos fallan"
+              },
+              {
+                "puntos": 0,
+                "condicion": "La puntuación del soporte se reduce al punto y la coma"
+              }
+            ]
+          },
+          {
+            "nombre": "Propiedad léxica",
+            "max": 3,
+            "bandas": [
+              {
+                "puntos": 3,
+                "condicion": "Emplea el término preciso del campo del tema en el texto y en los rótulos"
+              },
+              {
+                "puntos": 2,
+                "condicion": "Emplea 1 término impreciso o comodín"
+              },
+              {
+                "puntos": 1,
+                "condicion": "Emplea 2 términos imprecisos o comodín"
+              },
+              {
+                "puntos": 0,
+                "condicion": "El texto del soporte se sostiene sobre términos comodín"
+              }
+            ]
+          }
+        ],
+        "penalizaciones": []
+      },
+      "descriptor_cotejo": null,
+      "descriptor_un_punto": "Aplica las normas de acentuación, concordancia y puntuación, con errores en los rótulos y los pies."
+    },
+    {
+      "id": "lcl-b-tema-inv-1bach",
+      "bloque_lomloe": "B",
+      "dimension": "delimitacion_tema",
+      "nombre": "Delimitación del tema: pregunta de investigación y alcance",
+      "curso": "1BACH",
+      "hereda_de": null,
+      "criterio_oficial": {
+        "competencia_especifica": 6,
+        "codigo": "6.1",
+        "cita": "Elaborar trabajos de investigación de manera autónoma, en diferentes soportes, sobre temas curriculares de interés cultural que impliquen localizar, seleccionar y contrastar información procedente de diferentes fuentes; calibrar su fiabilidad y pertinencia en función de los objetivos de lectura; organizarla e integrarla en esquemas propios; y reelaborarla y comunicarla de manera creativa, adoptando un punto de vista crítico y respetuoso con la propiedad intelectual.",
+        "perfil_salida": [
+          "CCL3",
+          "CD1",
+          "CD2",
+          "CD3",
+          "CD4",
+          "CPSAA4",
+          "CC2",
+          "CE3"
+        ]
+      },
+      "saber_vehiculo": [
+        "alfabetización informacional: búsqueda autónoma y selección de la información con criterios de fiabilidad, calidad y pertinencia",
+        "los géneros textuales propios del ámbito académico"
+      ],
+      "progresion": {
+        "autonomia": 3,
+        "complejidad": 4,
+        "metalinguistico": 4
+      },
+      "tipos_tarea": [
+        "investigacion"
+      ],
+      "obligatorio": true,
+      "prioridad": 2,
+      "peso_base": 10,
+      "descriptores": {
+        "n1": {
+          "verbo": "enumera",
+          "texto": "Enumera los aspectos del tema en el orden en que aparecen en el enunciado del encargo."
+        },
+        "n2": {
+          "verbo": "delimita",
+          "texto": "Delimita el tema en una pregunta propia y anuncia el enfoque desde el cual lo aborda."
+        },
+        "n3": {
+          "verbo": "formula",
+          "texto": "Formula la pregunta de investigación y desarrolla las subpreguntas que organizan cada epígrafe del trabajo."
+        },
+        "n4": {
+          "verbo": "justifica",
+          "texto": "Justifica la pregunta de investigación por el estado de la cuestión en las fuentes consultadas y delimita el alcance del trabajo."
+        }
+      },
+      "matriz_cuantitativa": null,
+      "descriptor_cotejo": null,
+      "descriptor_un_punto": "Delimita el tema en una pregunta propia y anuncia el enfoque desde el cual lo aborda."
+    },
+    {
+      "id": "lcl-b-fuentes-inv-1bach",
+      "bloque_lomloe": "B",
+      "dimension": "fuentes_contraste",
+      "nombre": "Fuentes: selección y contraste de la información",
+      "curso": "1BACH",
+      "hereda_de": null,
+      "criterio_oficial": {
+        "competencia_especifica": 6,
+        "codigo": "6.1",
+        "cita": "Elaborar trabajos de investigación de manera autónoma, en diferentes soportes, sobre temas curriculares de interés cultural que impliquen localizar, seleccionar y contrastar información procedente de diferentes fuentes; calibrar su fiabilidad y pertinencia en función de los objetivos de lectura; organizarla e integrarla en esquemas propios; y reelaborarla y comunicarla de manera creativa, adoptando un punto de vista crítico y respetuoso con la propiedad intelectual.",
+        "perfil_salida": [
+          "CCL3",
+          "CD1",
+          "CD2",
+          "CD3",
+          "CD4",
+          "CPSAA4",
+          "CC2",
+          "CE3"
+        ]
+      },
+      "saber_vehiculo": [
+        "búsqueda autónoma y selección de la información con criterios de fiabilidad, calidad y pertinencia",
+        "noticias falsas y verificación de hechos. el ciberanzuelo"
+      ],
+      "progresion": {
+        "autonomia": 3,
+        "complejidad": 4,
+        "metalinguistico": 4
+      },
+      "tipos_tarea": [
+        "investigacion"
+      ],
+      "obligatorio": true,
+      "prioridad": 1,
+      "peso_base": 20,
+      "descriptores": {
+        "n1": {
+          "verbo": "localiza",
+          "texto": "Localiza la información en las fuentes que aparecen en las primeras páginas de resultados."
+        },
+        "n2": {
+          "verbo": "selecciona",
+          "texto": "Selecciona información de tres fuentes y distingue las de divulgación de las académicas."
+        },
+        "n3": {
+          "verbo": "contrasta",
+          "texto": "Contrasta los datos entre fuentes de distinta procedencia y verifica el dato discrepante en una fuente primaria."
+        },
+        "n4": {
+          "verbo": "valora",
+          "texto": "Valora la fiabilidad y la pertinencia de cada fuente en función del objetivo del trabajo y justifica el corpus reunido."
+        }
+      },
+      "matriz_cuantitativa": {
+        "total": 10,
+        "componentes": [
+          {
+            "nombre": "Fuentes reunidas",
+            "max": 4,
+            "bandas": [
+              {
+                "puntos": 4,
+                "condicion": "Reúne 5 o más fuentes, con una académica al menos"
+              },
+              {
+                "puntos": 3,
+                "condicion": "Reúne 4 fuentes de procedencias distintas"
+              },
+              {
+                "puntos": 2,
+                "condicion": "Reúne de 2 a 3 fuentes de divulgación"
+              },
+              {
+                "puntos": 0,
+                "condicion": "El trabajo se apoya en una sola fuente"
+              }
+            ]
+          },
+          {
+            "nombre": "Datos contrastados entre fuentes",
+            "max": 3,
+            "bandas": [
+              {
+                "puntos": 3,
+                "condicion": "Contrasta 4 o más datos y verifica el discrepante en una fuente primaria"
+              },
+              {
+                "puntos": 2,
+                "condicion": "Contrasta 2 o 3 datos"
+              },
+              {
+                "puntos": 1,
+                "condicion": "Contrasta 1 dato"
+              },
+              {
+                "puntos": 0,
+                "condicion": "El trabajo traslada los datos de cada fuente sin compararlos"
+              }
+            ]
+          },
+          {
+            "nombre": "Registro de la procedencia",
+            "max": 3,
+            "bandas": [
+              {
+                "puntos": 3,
+                "condicion": "Anota la procedencia y la fecha de consulta de todas las fuentes"
+              },
+              {
+                "puntos": 2,
+                "condicion": "Deja de 1 a 2 fuentes sin procedencia o sin fecha"
+              },
+              {
+                "puntos": 0,
+                "condicion": "El trabajo presenta los datos sin anotar la procedencia: 3 o más fuentes sin procedencia o sin fecha"
+              }
+            ]
+          }
+        ],
+        "penalizaciones": []
+      },
+      "descriptor_cotejo": null,
+      "descriptor_un_punto": "Selecciona información de tres fuentes y distingue las de divulgación de las académicas."
+    },
+    {
+      "id": "lcl-b-integracion-inv-1bach",
+      "bloque_lomloe": "B",
+      "dimension": "integracion_informacion",
+      "nombre": "Integración de la información: esquema propio y apartados",
+      "curso": "1BACH",
+      "hereda_de": null,
+      "criterio_oficial": {
+        "competencia_especifica": 6,
+        "codigo": "6.1",
+        "cita": "Elaborar trabajos de investigación de manera autónoma, en diferentes soportes, sobre temas curriculares de interés cultural que impliquen localizar, seleccionar y contrastar información procedente de diferentes fuentes; calibrar su fiabilidad y pertinencia en función de los objetivos de lectura; organizarla e integrarla en esquemas propios; y reelaborarla y comunicarla de manera creativa, adoptando un punto de vista crítico y respetuoso con la propiedad intelectual.",
+        "perfil_salida": [
+          "CCL3",
+          "CD1",
+          "CD2",
+          "CD3",
+          "CD4",
+          "CPSAA4",
+          "CC2",
+          "CE3"
+        ]
+      },
+      "saber_vehiculo": [
+        "análisis, valoración, reorganización y síntesis de la información en esquemas propios y transformación en conocimiento",
+        "la comunicación escrita en el ámbito académico"
+      ],
+      "progresion": {
+        "autonomia": 3,
+        "complejidad": 4,
+        "metalinguistico": 4
+      },
+      "tipos_tarea": [
+        "investigacion"
+      ],
+      "obligatorio": true,
+      "prioridad": 1,
+      "peso_base": 20,
+      "descriptores": {
+        "n1": {
+          "verbo": "traslada",
+          "texto": "Traslada al soporte fragmentos de las fuentes consultadas con la redacción del original."
+        },
+        "n2": {
+          "verbo": "agrupa",
+          "texto": "Agrupa la información en epígrafes y anuncia el contenido de cada epígrafe en una entrada."
+        },
+        "n3": {
+          "verbo": "organiza",
+          "texto": "Organiza la información en un esquema propio con epígrafes jerarquizados y encadena los epígrafes con conectores de orden y de contraste."
+        },
+        "n4": {
+          "verbo": "integra",
+          "texto": "Integra los datos de varias fuentes en un esquema propio y reelabora la información en un discurso que responde a la pregunta de investigación y sostiene una tesis."
+        }
+      },
+      "matriz_cuantitativa": {
+        "total": 10,
+        "componentes": [
+          {
+            "nombre": "Apartados con título propio",
+            "max": 4,
+            "bandas": [
+              {
+                "puntos": 4,
+                "condicion": "Organiza el trabajo en 4 o más epígrafes jerarquizados"
+              },
+              {
+                "puntos": 3,
+                "condicion": "Organiza el trabajo en 3 epígrafes jerarquizados"
+              },
+              {
+                "puntos": 2,
+                "condicion": "Organiza el trabajo en 2 epígrafes"
+              },
+              {
+                "puntos": 0,
+                "condicion": "El trabajo presenta la información en un bloque único"
+              }
+            ]
+          },
+          {
+            "nombre": "Reformulación de lo tomado de las fuentes",
+            "max": 4,
+            "bandas": [
+              {
+                "puntos": 4,
+                "condicion": "Reformula con palabras propias todos los fragmentos tomados de las fuentes"
+              },
+              {
+                "puntos": 3,
+                "condicion": "Deja 1 fragmento con la redacción del original"
+              },
+              {
+                "puntos": 2,
+                "condicion": "Deja de 2 a 3 fragmentos con la redacción del original"
+              },
+              {
+                "puntos": 0,
+                "condicion": "El trabajo reproduce las fuentes párrafo a párrafo: 4 o más fragmentos con la redacción del original"
+              }
+            ]
+          },
+          {
+            "nombre": "Enlace entre apartados",
+            "max": 2,
+            "bandas": [
+              {
+                "puntos": 2,
+                "condicion": "Enlaza los epígrafes con conectores de orden y de contraste"
+              },
+              {
+                "puntos": 1,
+                "condicion": "Enlaza 1 o 2 epígrafes y yuxtapone los demás"
+              },
+              {
+                "puntos": 0,
+                "condicion": "El trabajo yuxtapone los epígrafes"
+              }
+            ]
+          }
+        ],
+        "penalizaciones": []
+      },
+      "descriptor_cotejo": null,
+      "descriptor_un_punto": "Agrupa la información en epígrafes y anuncia el contenido de cada epígrafe en una entrada."
+    },
+    {
+      "id": "lcl-b-soporte-inv-1bach",
+      "bloque_lomloe": "B",
+      "dimension": "soporte_multimodal",
+      "nombre": "Ajuste del soporte: reparto entre texto, imagen y línea temporal",
+      "curso": "1BACH",
+      "hereda_de": null,
+      "criterio_oficial": {
+        "competencia_especifica": 6,
+        "codigo": "6.1",
+        "cita": "Elaborar trabajos de investigación de manera autónoma, en diferentes soportes, sobre temas curriculares de interés cultural que impliquen localizar, seleccionar y contrastar información procedente de diferentes fuentes; calibrar su fiabilidad y pertinencia en función de los objetivos de lectura; organizarla e integrarla en esquemas propios; y reelaborarla y comunicarla de manera creativa, adoptando un punto de vista crítico y respetuoso con la propiedad intelectual.",
+        "perfil_salida": [
+          "CCL3",
+          "CD1",
+          "CD2",
+          "CD3",
+          "CD4",
+          "CPSAA4",
+          "CC2",
+          "CE3"
+        ]
+      },
+      "saber_vehiculo": [
+        "producción escrita. proceso de elaboración: planificación, redacción, revisión y edición en diferentes soportes",
+        "combinación ajustada de diferentes códigos comunicativos en los mensajes multimodales"
+      ],
+      "progresion": {
+        "autonomia": 3,
+        "complejidad": 4,
+        "metalinguistico": 4
+      },
+      "tipos_tarea": [
+        "investigacion"
+      ],
+      "obligatorio": true,
+      "prioridad": 1,
+      "peso_base": 20,
+      "descriptores": {
+        "n1": {
+          "verbo": "presenta",
+          "texto": "Presenta el trabajo en el soporte elegido y reproduce en la pantalla el texto del documento."
+        },
+        "n2": {
+          "verbo": "combina",
+          "texto": "Combina texto, imagen y datos en cada pantalla y mantiene un esquema visual único en el trabajo."
+        },
+        "n3": {
+          "verbo": "ajusta",
+          "texto": "Ajusta el soporte al contenido, gradúa la densidad de cada pantalla y dirige la mirada del destinatario con la jerarquía tipográfica."
+        },
+        "n4": {
+          "verbo": "elige",
+          "texto": "Elige el soporte por la relación entre el tema y el destinatario, justifica la elección con el tipo de dato que muestra y adapta el código visual a cada epígrafe."
+        }
+      },
+      "matriz_cuantitativa": {
+        "total": 10,
+        "componentes": [
+          {
+            "nombre": "Reparto entre texto e imagen",
+            "max": 4,
+            "bandas": [
+              {
+                "puntos": 4,
+                "condicion": "Cada pantalla combina un texto breve y un elemento visual"
+              },
+              {
+                "puntos": 3,
+                "condicion": "Deja de 1 a 2 pantallas con texto solo"
+              },
+              {
+                "puntos": 2,
+                "condicion": "Deja de 3 a 4 pantallas con texto solo"
+              },
+              {
+                "puntos": 0,
+                "condicion": "El soporte reproduce el documento escrito: 5 o más pantallas con texto solo"
+              }
+            ]
+          },
+          {
+            "nombre": "Elementos de orientación: título, pie y leyenda",
+            "max": 3,
+            "bandas": [
+              {
+                "puntos": 3,
+                "condicion": "Todas las pantallas llevan título, y los elementos visuales, pie o leyenda"
+              },
+              {
+                "puntos": 2,
+                "condicion": "Deja de 1 a 2 elementos sin título ni pie"
+              },
+              {
+                "puntos": 0,
+                "condicion": "El soporte presenta los elementos visuales sin título ni pie: 3 o más elementos"
+              }
+            ]
+          },
+          {
+            "nombre": "Cantidad de texto por pantalla",
+            "max": 3,
+            "bandas": [
+              {
+                "puntos": 3,
+                "condicion": "Ninguna pantalla pasa de 50 palabras"
+              },
+              {
+                "puntos": 2,
+                "condicion": "De 1 a 2 pantallas pasan de 50 palabras"
+              },
+              {
+                "puntos": 0,
+                "condicion": "El soporte vuelca el texto del documento: 3 o más pantallas pasan de 50 palabras"
+              }
+            ]
+          }
+        ],
+        "penalizaciones": []
+      },
+      "descriptor_cotejo": null,
+      "descriptor_un_punto": "Combina texto, imagen y datos en cada pantalla y mantiene un esquema visual único en el trabajo."
+    },
+    {
+      "id": "lcl-b-atribucion-inv-1bach",
+      "bloque_lomloe": "B",
+      "dimension": "propiedad_intelectual",
+      "nombre": "Atribución de fuentes y uso del material ajeno",
+      "curso": "1BACH",
+      "hereda_de": null,
+      "criterio_oficial": {
+        "competencia_especifica": 6,
+        "codigo": "6.1",
+        "cita": "Elaborar trabajos de investigación de manera autónoma, en diferentes soportes, sobre temas curriculares de interés cultural que impliquen localizar, seleccionar y contrastar información procedente de diferentes fuentes; calibrar su fiabilidad y pertinencia en función de los objetivos de lectura; organizarla e integrarla en esquemas propios; y reelaborarla y comunicarla de manera creativa, adoptando un punto de vista crítico y respetuoso con la propiedad intelectual.",
+        "perfil_salida": [
+          "CCL3",
+          "CD1",
+          "CD2",
+          "CD3",
+          "CD4",
+          "CPSAA4",
+          "CC2",
+          "CE3"
+        ]
+      },
+      "saber_vehiculo": [
+        "comunicación y difusión de la información reelaborada de manera creativa y respetuosa con la propiedad intelectual",
+        "índice, organización en epígrafes, procedimientos de cita, notas a pie de página, bibliografía y webgrafía"
+      ],
+      "progresion": {
+        "autonomia": 3,
+        "complejidad": 4,
+        "metalinguistico": 4
+      },
+      "tipos_tarea": [
+        "investigacion"
+      ],
+      "obligatorio": false,
+      "prioridad": 2,
+      "peso_base": 15,
+      "descriptores": {
+        "n1": {
+          "verbo": "indica",
+          "texto": "Indica al final del trabajo las páginas de las cuales toma los datos."
+        },
+        "n2": {
+          "verbo": "anota",
+          "texto": "Anota la referencia completa de cada fuente en un apartado de bibliografía y webgrafía."
+        },
+        "n3": {
+          "verbo": "documenta",
+          "texto": "Documenta cada dato con la referencia de procedencia y aplica un mismo modelo de referencia en todo el trabajo."
+        },
+        "n4": {
+          "verbo": "respeta",
+          "texto": "Respeta la propiedad intelectual del material ajeno: separa con comillas lo tomado literalmente, documenta el origen de cada imagen y justifica el uso del material ajeno dentro del trabajo."
+        }
+      },
+      "matriz_cuantitativa": {
+        "total": 10,
+        "componentes": [
+          {
+            "nombre": "Referencias de las fuentes",
+            "max": 4,
+            "bandas": [
+              {
+                "puntos": 4,
+                "condicion": "Todas las fuentes llevan referencia con autor, título, edición y fecha"
+              },
+              {
+                "puntos": 3,
+                "condicion": "Deja de 1 a 2 referencias incompletas"
+              },
+              {
+                "puntos": 2,
+                "condicion": "Deja de 3 a 4 referencias incompletas"
+              },
+              {
+                "puntos": 0,
+                "condicion": "El trabajo presenta los datos sin referencia de origen: 5 o más referencias incompletas"
+              }
+            ]
+          },
+          {
+            "nombre": "Crédito del material visual",
+            "max": 3,
+            "bandas": [
+              {
+                "puntos": 3,
+                "condicion": "Todas las imágenes y los gráficos llevan crédito de procedencia"
+              },
+              {
+                "puntos": 2,
+                "condicion": "Deja de 1 a 2 elementos visuales sin crédito"
+              },
+              {
+                "puntos": 0,
+                "condicion": "El soporte utiliza el material visual sin crédito: 3 o más elementos visuales"
+              }
+            ]
+          },
+          {
+            "nombre": "Marca de lo tomado literalmente",
+            "max": 3,
+            "bandas": [
+              {
+                "puntos": 3,
+                "condicion": "Todo lo tomado literalmente va entre comillas y con referencia"
+              },
+              {
+                "puntos": 2,
+                "condicion": "Deja de 1 a 2 fragmentos literales sin marcar"
+              },
+              {
+                "puntos": 0,
+                "condicion": "El trabajo funde lo tomado de las fuentes con la redacción propia: 3 o más fragmentos literales sin marcar"
+              }
+            ]
+          }
+        ],
+        "penalizaciones": []
+      },
+      "descriptor_cotejo": null,
+      "descriptor_un_punto": "Anota la referencia completa de cada fuente en un apartado de bibliografía y webgrafía."
+    },
+    {
+      "id": "lcl-d-correccion-inv-1bach",
+      "bloque_lomloe": "D",
+      "dimension": "correccion_lexico",
+      "nombre": "Corrección normativa y propiedad léxica",
+      "curso": "1BACH",
+      "hereda_de": null,
+      "criterio_oficial": {
+        "competencia_especifica": 5,
+        "codigo": "5.2",
+        "cita": "Incorporar procedimientos para enriquecer los textos, atendiendo a aspectos discursivos, lingüísticos y de estilo, con precisión léxica y corrección ortográfica y gramatical.",
+        "perfil_salida": [
+          "CCL1",
+          "CCL3",
+          "CCL5",
+          "STEM1",
+          "CD2",
+          "CD3",
+          "CPSAA5",
+          "CC2"
+        ]
+      },
+      "saber_vehiculo": [
+        "corrección lingüística y revisión ortográfica y gramatical de los textos",
+        "los signos de puntuación como mecanismo organizador del texto escrito",
+        "propiedad léxica"
+      ],
+      "progresion": {
+        "autonomia": 3,
+        "complejidad": 4,
+        "metalinguistico": 4
+      },
+      "tipos_tarea": [
+        "investigacion"
+      ],
+      "obligatorio": true,
+      "prioridad": 2,
+      "peso_base": 15,
+      "descriptores": {
+        "n1": {
+          "verbo": "redacta",
+          "texto": "Redacta el texto del soporte con faltas de ortografía y de puntuación que interrumpen la lectura."
+        },
+        "n2": {
+          "verbo": "aplica",
+          "texto": "Aplica las normas de acentuación, concordancia y puntuación con errores aislados en los rótulos."
+        },
+        "n3": {
+          "verbo": "aplica",
+          "texto": "Aplica la puntuación del inciso, la del dato entrecomillado y la de la referencia abreviada."
+        },
+        "n4": {
+          "verbo": "elige",
+          "texto": "Elige el término preciso del registro académico y ajusta la longitud de la frase al espacio de cada pantalla."
+        }
+      },
+      "matriz_cuantitativa": {
+        "total": 10,
+        "componentes": [
+          {
+            "nombre": "Ortografía y acentuación",
+            "max": 4,
+            "bandas": [
+              {
+                "puntos": 4,
+                "condicion": "Hasta 2 faltas en todo el soporte, incluidos los rótulos"
+              },
+              {
+                "puntos": 3,
+                "condicion": "De 3 a 5 faltas"
+              },
+              {
+                "puntos": 2,
+                "condicion": "De 6 a 10 faltas"
+              },
+              {
+                "puntos": 1,
+                "condicion": "De 11 a 15 faltas"
+              },
+              {
+                "puntos": 0,
+                "condicion": "16 o más faltas"
+              }
+            ]
+          },
+          {
+            "nombre": "Puntuación",
+            "max": 3,
+            "bandas": [
+              {
+                "puntos": 3,
+                "condicion": "Inciso, dato entrecomillado y referencia abreviada llevan la puntuación correspondiente"
+              },
+              {
+                "puntos": 2,
+                "condicion": "1 de los tres procedimientos falla"
+              },
+              {
+                "puntos": 1,
+                "condicion": "2 de los tres procedimientos fallan"
+              },
+              {
+                "puntos": 0,
+                "condicion": "La puntuación del soporte se reduce al punto y la coma"
+              }
+            ]
+          },
+          {
+            "nombre": "Propiedad léxica",
+            "max": 3,
+            "bandas": [
+              {
+                "puntos": 3,
+                "condicion": "Emplea el término preciso del registro académico en todo el soporte"
+              },
+              {
+                "puntos": 2,
+                "condicion": "Emplea 1 término impreciso o comodín"
+              },
+              {
+                "puntos": 1,
+                "condicion": "Emplea 2 términos imprecisos o comodín"
+              },
+              {
+                "puntos": 0,
+                "condicion": "El texto del soporte se sostiene sobre términos comodín"
+              }
+            ]
+          }
+        ],
+        "penalizaciones": []
+      },
+      "descriptor_cotejo": null,
+      "descriptor_un_punto": "Aplica las normas de acentuación, concordancia y puntuación con errores aislados en los rótulos."
+    },
+    {
+      "id": "lcl-b-tema-inv-2bach",
+      "bloque_lomloe": "B",
+      "dimension": "delimitacion_tema",
+      "nombre": "Delimitación del tema: pregunta de investigación y alcance",
+      "curso": "2BACH",
+      "hereda_de": null,
+      "criterio_oficial": {
+        "competencia_especifica": 6,
+        "codigo": "6.1",
+        "cita": "Elaborar trabajos de investigación de manera autónoma, en diferentes soportes, sobre diversos temas de interés académico, personal o social que impliquen localizar, seleccionar y contrastar información procedente de diferentes fuentes, con especial atención a la gestión de su almacenamiento y recuperación, así como a la evaluación de su fiabilidad y pertinencia; organizarla e integrarla en esquemas propios; y reelaborarla y comunicarla de manera creativa, adoptando un punto de vista crítico y respetuoso con la propiedad intelectual.",
+        "perfil_salida": [
+          "CCL3",
+          "CD1",
+          "CD2",
+          "CD3",
+          "CD4",
+          "CPSAA4",
+          "CC2",
+          "CE3"
+        ]
+      },
+      "saber_vehiculo": [
+        "alfabetización informacional: búsqueda autónoma y selección de la información con criterios de fiabilidad, calidad y pertinencia",
+        "la comunicación escrita en el ámbito académico, periodístico, profesional y empresarial"
+      ],
+      "progresion": {
+        "autonomia": 3,
+        "complejidad": 4,
+        "metalinguistico": 4
+      },
+      "tipos_tarea": [
+        "investigacion"
+      ],
+      "obligatorio": true,
+      "prioridad": 2,
+      "peso_base": 10,
+      "descriptores": {
+        "n1": {
+          "verbo": "enumera",
+          "texto": "Enumera los aspectos del tema tal como aparecen en el primer resultado de la búsqueda."
+        },
+        "n2": {
+          "verbo": "delimita",
+          "texto": "Delimita el tema en una pregunta propia y anuncia el enfoque y el corpus de trabajo."
+        },
+        "n3": {
+          "verbo": "formula",
+          "texto": "Formula la pregunta de investigación, desarrolla las subpreguntas que organizan cada epígrafe y anuncia la hipótesis de partida."
+        },
+        "n4": {
+          "verbo": "justifica",
+          "texto": "Justifica la pregunta de investigación por el estado de la cuestión y delimita el alcance del trabajo con los criterios de selección del corpus."
+        }
+      },
+      "matriz_cuantitativa": null,
+      "descriptor_cotejo": null,
+      "descriptor_un_punto": "Delimita el tema en una pregunta propia y anuncia el enfoque y el corpus de trabajo."
+    },
+    {
+      "id": "lcl-b-fuentes-inv-2bach",
+      "bloque_lomloe": "B",
+      "dimension": "fuentes_contraste",
+      "nombre": "Fuentes: selección y contraste de la información",
+      "curso": "2BACH",
+      "hereda_de": null,
+      "criterio_oficial": {
+        "competencia_especifica": 6,
+        "codigo": "6.1",
+        "cita": "Elaborar trabajos de investigación de manera autónoma, en diferentes soportes, sobre diversos temas de interés académico, personal o social que impliquen localizar, seleccionar y contrastar información procedente de diferentes fuentes, con especial atención a la gestión de su almacenamiento y recuperación, así como a la evaluación de su fiabilidad y pertinencia; organizarla e integrarla en esquemas propios; y reelaborarla y comunicarla de manera creativa, adoptando un punto de vista crítico y respetuoso con la propiedad intelectual.",
+        "perfil_salida": [
+          "CCL3",
+          "CD1",
+          "CD2",
+          "CD3",
+          "CD4",
+          "CPSAA4",
+          "CC2",
+          "CE3"
+        ]
+      },
+      "saber_vehiculo": [
+        "búsqueda autónoma y selección de la información con criterios de fiabilidad, calidad y pertinencia",
+        "la gestión de contenidos, el almacenamiento y la recuperación de la información relevante"
+      ],
+      "progresion": {
+        "autonomia": 3,
+        "complejidad": 4,
+        "metalinguistico": 4
+      },
+      "tipos_tarea": [
+        "investigacion"
+      ],
+      "obligatorio": true,
+      "prioridad": 1,
+      "peso_base": 20,
+      "descriptores": {
+        "n1": {
+          "verbo": "localiza",
+          "texto": "Localiza la información y la agrupa en un único archivo de trabajo."
+        },
+        "n2": {
+          "verbo": "selecciona",
+          "texto": "Selecciona información de tres fuentes y anota la referencia de cada una en una hoja de registro."
+        },
+        "n3": {
+          "verbo": "contrasta",
+          "texto": "Contrasta los datos entre fuentes de distinta procedencia y organiza el material en carpetas que permiten recuperarlo."
+        },
+        "n4": {
+          "verbo": "valora",
+          "texto": "Valora la fiabilidad y la pertinencia de cada fuente, justifica el corpus reunido y mantiene un registro que permite recuperar cada dato."
+        }
+      },
+      "matriz_cuantitativa": {
+        "total": 10,
+        "componentes": [
+          {
+            "nombre": "Fuentes reunidas",
+            "max": 4,
+            "bandas": [
+              {
+                "puntos": 4,
+                "condicion": "Reúne 5 o más fuentes, con dos académicas al menos"
+              },
+              {
+                "puntos": 3,
+                "condicion": "Reúne 4 fuentes, con una académica"
+              },
+              {
+                "puntos": 2,
+                "condicion": "Reúne de 2 a 3 fuentes de divulgación"
+              },
+              {
+                "puntos": 0,
+                "condicion": "El trabajo se apoya en una sola fuente"
+              }
+            ]
+          },
+          {
+            "nombre": "Datos contrastados entre fuentes",
+            "max": 3,
+            "bandas": [
+              {
+                "puntos": 3,
+                "condicion": "Contrasta 5 o más datos y verifica el discrepante en una fuente primaria"
+              },
+              {
+                "puntos": 2,
+                "condicion": "Contrasta 3 o 4 datos"
+              },
+              {
+                "puntos": 1,
+                "condicion": "Contrasta 1 o 2 datos"
+              },
+              {
+                "puntos": 0,
+                "condicion": "El trabajo traslada los datos de cada fuente sin compararlos"
+              }
+            ]
+          },
+          {
+            "nombre": "Registro de la procedencia",
+            "max": 3,
+            "bandas": [
+              {
+                "puntos": 3,
+                "condicion": "Anota la procedencia y la fecha de consulta y mantiene el registro que permite recuperar cada dato"
+              },
+              {
+                "puntos": 2,
+                "condicion": "Deja de 1 a 2 fuentes fuera del registro"
+              },
+              {
+                "puntos": 0,
+                "condicion": "El trabajo presenta los datos sin anotar la procedencia: 3 o más fuentes fuera del registro"
+              }
+            ]
+          }
+        ],
+        "penalizaciones": []
+      },
+      "descriptor_cotejo": null,
+      "descriptor_un_punto": "Selecciona información de tres fuentes y anota la referencia de cada una en una hoja de registro."
+    },
+    {
+      "id": "lcl-b-integracion-inv-2bach",
+      "bloque_lomloe": "B",
+      "dimension": "integracion_informacion",
+      "nombre": "Integración de la información: esquema propio y apartados",
+      "curso": "2BACH",
+      "hereda_de": null,
+      "criterio_oficial": {
+        "competencia_especifica": 6,
+        "codigo": "6.1",
+        "cita": "Elaborar trabajos de investigación de manera autónoma, en diferentes soportes, sobre diversos temas de interés académico, personal o social que impliquen localizar, seleccionar y contrastar información procedente de diferentes fuentes, con especial atención a la gestión de su almacenamiento y recuperación, así como a la evaluación de su fiabilidad y pertinencia; organizarla e integrarla en esquemas propios; y reelaborarla y comunicarla de manera creativa, adoptando un punto de vista crítico y respetuoso con la propiedad intelectual.",
+        "perfil_salida": [
+          "CCL3",
+          "CD1",
+          "CD2",
+          "CD3",
+          "CD4",
+          "CPSAA4",
+          "CC2",
+          "CE3"
+        ]
+      },
+      "saber_vehiculo": [
+        "análisis, valoración, reorganización y síntesis de la información en esquemas propios y transformación en conocimiento",
+        "principales géneros textuales del ámbito académico"
+      ],
+      "progresion": {
+        "autonomia": 3,
+        "complejidad": 4,
+        "metalinguistico": 4
+      },
+      "tipos_tarea": [
+        "investigacion"
+      ],
+      "obligatorio": true,
+      "prioridad": 1,
+      "peso_base": 20,
+      "descriptores": {
+        "n1": {
+          "verbo": "traslada",
+          "texto": "Traslada al soporte los fragmentos recuperados del archivo de trabajo."
+        },
+        "n2": {
+          "verbo": "agrupa",
+          "texto": "Agrupa la información en epígrafes y presenta el contenido de cada epígrafe en una entrada."
+        },
+        "n3": {
+          "verbo": "organiza",
+          "texto": "Organiza la información en un esquema propio con epígrafes jerarquizados y gradúa el paso de lo general a lo particular."
+        },
+        "n4": {
+          "verbo": "integra",
+          "texto": "Integra los datos de varias fuentes en un esquema propio, reelabora la información en un discurso que sostiene una tesis y anticipa la objeción previsible."
+        }
+      },
+      "matriz_cuantitativa": {
+        "total": 10,
+        "componentes": [
+          {
+            "nombre": "Apartados con título propio",
+            "max": 4,
+            "bandas": [
+              {
+                "puntos": 4,
+                "condicion": "Organiza el trabajo en 5 o más epígrafes jerarquizados"
+              },
+              {
+                "puntos": 3,
+                "condicion": "Organiza el trabajo en 4 epígrafes jerarquizados"
+              },
+              {
+                "puntos": 2,
+                "condicion": "Organiza el trabajo en 2 o 3 epígrafes"
+              },
+              {
+                "puntos": 0,
+                "condicion": "El trabajo presenta la información en un bloque único"
+              }
+            ]
+          },
+          {
+            "nombre": "Reformulación de lo tomado de las fuentes",
+            "max": 4,
+            "bandas": [
+              {
+                "puntos": 4,
+                "condicion": "Reformula con palabras propias todos los fragmentos tomados de las fuentes"
+              },
+              {
+                "puntos": 3,
+                "condicion": "Deja 1 fragmento con la redacción del original"
+              },
+              {
+                "puntos": 2,
+                "condicion": "Deja 2 fragmentos con la redacción del original"
+              },
+              {
+                "puntos": 0,
+                "condicion": "El trabajo reproduce las fuentes párrafo a párrafo: 3 o más fragmentos con la redacción del original"
+              }
+            ]
+          },
+          {
+            "nombre": "Enlace entre apartados",
+            "max": 2,
+            "bandas": [
+              {
+                "puntos": 2,
+                "condicion": "Enlaza los epígrafes y gradúa el paso de lo general a lo particular"
+              },
+              {
+                "puntos": 1,
+                "condicion": "Enlaza 1 o 2 epígrafes y yuxtapone los demás"
+              },
+              {
+                "puntos": 0,
+                "condicion": "El trabajo yuxtapone los epígrafes"
+              }
+            ]
+          }
+        ],
+        "penalizaciones": []
+      },
+      "descriptor_cotejo": null,
+      "descriptor_un_punto": "Agrupa la información en epígrafes y presenta el contenido de cada epígrafe en una entrada."
+    },
+    {
+      "id": "lcl-b-soporte-inv-2bach",
+      "bloque_lomloe": "B",
+      "dimension": "soporte_multimodal",
+      "nombre": "Ajuste del soporte: reparto entre texto, imagen y línea temporal",
+      "curso": "2BACH",
+      "hereda_de": null,
+      "criterio_oficial": {
+        "competencia_especifica": 6,
+        "codigo": "6.1",
+        "cita": "Elaborar trabajos de investigación de manera autónoma, en diferentes soportes, sobre diversos temas de interés académico, personal o social que impliquen localizar, seleccionar y contrastar información procedente de diferentes fuentes, con especial atención a la gestión de su almacenamiento y recuperación, así como a la evaluación de su fiabilidad y pertinencia; organizarla e integrarla en esquemas propios; y reelaborarla y comunicarla de manera creativa, adoptando un punto de vista crítico y respetuoso con la propiedad intelectual.",
+        "perfil_salida": [
+          "CCL3",
+          "CD1",
+          "CD2",
+          "CD3",
+          "CD4",
+          "CPSAA4",
+          "CC2",
+          "CE3"
+        ]
+      },
+      "saber_vehiculo": [
+        "producción escrita. proceso de elaboración: planificación, redacción, revisión y edición en diferentes soportes",
+        "combinación ajustada de diferentes códigos comunicativos en los mensajes multimodales"
+      ],
+      "progresion": {
+        "autonomia": 3,
+        "complejidad": 4,
+        "metalinguistico": 4
+      },
+      "tipos_tarea": [
+        "investigacion"
+      ],
+      "obligatorio": true,
+      "prioridad": 1,
+      "peso_base": 20,
+      "descriptores": {
+        "n1": {
+          "verbo": "presenta",
+          "texto": "Presenta el trabajo en el soporte elegido con las pantallas en el orden del archivo de trabajo."
+        },
+        "n2": {
+          "verbo": "combina",
+          "texto": "Combina texto, imagen y gráfico de datos en cada pantalla, con una entrada y un cierre para el conjunto."
+        },
+        "n3": {
+          "verbo": "ajusta",
+          "texto": "Ajusta el soporte al contenido, gradúa la densidad de cada pantalla y dedica una pantalla completa al dato central de la tesis."
+        },
+        "n4": {
+          "verbo": "elige",
+          "texto": "Elige el soporte por la relación entre el tema y el destinatario, justifica la elección con el tipo de dato y modula el código visual según el epígrafe."
+        }
+      },
+      "matriz_cuantitativa": {
+        "total": 10,
+        "componentes": [
+          {
+            "nombre": "Reparto entre texto e imagen",
+            "max": 4,
+            "bandas": [
+              {
+                "puntos": 4,
+                "condicion": "Cada pantalla combina un texto breve y un elemento visual"
+              },
+              {
+                "puntos": 3,
+                "condicion": "Deja de 1 a 2 pantallas con texto solo"
+              },
+              {
+                "puntos": 2,
+                "condicion": "Deja de 3 a 4 pantallas con texto solo"
+              },
+              {
+                "puntos": 0,
+                "condicion": "El soporte reproduce el documento escrito: 5 o más pantallas con texto solo"
+              }
+            ]
+          },
+          {
+            "nombre": "Elementos de orientación: título, pie y leyenda",
+            "max": 3,
+            "bandas": [
+              {
+                "puntos": 3,
+                "condicion": "Título, pie, leyenda e índice del soporte están completos"
+              },
+              {
+                "puntos": 2,
+                "condicion": "Deja de 1 a 2 elementos sin título ni pie"
+              },
+              {
+                "puntos": 0,
+                "condicion": "El soporte presenta los elementos visuales sin título ni pie: 3 o más elementos"
+              }
+            ]
+          },
+          {
+            "nombre": "Cantidad de texto por pantalla",
+            "max": 3,
+            "bandas": [
+              {
+                "puntos": 3,
+                "condicion": "Ninguna pantalla pasa de 50 palabras"
+              },
+              {
+                "puntos": 2,
+                "condicion": "De 1 a 2 pantallas pasan de 50 palabras"
+              },
+              {
+                "puntos": 0,
+                "condicion": "El soporte vuelca el texto del documento: 3 o más pantallas pasan de 50 palabras"
+              }
+            ]
+          }
+        ],
+        "penalizaciones": []
+      },
+      "descriptor_cotejo": null,
+      "descriptor_un_punto": "Combina texto, imagen y gráfico de datos en cada pantalla, con una entrada y un cierre para el conjunto."
+    },
+    {
+      "id": "lcl-b-atribucion-inv-2bach",
+      "bloque_lomloe": "B",
+      "dimension": "propiedad_intelectual",
+      "nombre": "Atribución de fuentes y uso del material ajeno",
+      "curso": "2BACH",
+      "hereda_de": null,
+      "criterio_oficial": {
+        "competencia_especifica": 6,
+        "codigo": "6.1",
+        "cita": "Elaborar trabajos de investigación de manera autónoma, en diferentes soportes, sobre diversos temas de interés académico, personal o social que impliquen localizar, seleccionar y contrastar información procedente de diferentes fuentes, con especial atención a la gestión de su almacenamiento y recuperación, así como a la evaluación de su fiabilidad y pertinencia; organizarla e integrarla en esquemas propios; y reelaborarla y comunicarla de manera creativa, adoptando un punto de vista crítico y respetuoso con la propiedad intelectual.",
+        "perfil_salida": [
+          "CCL3",
+          "CD1",
+          "CD2",
+          "CD3",
+          "CD4",
+          "CPSAA4",
+          "CC2",
+          "CE3"
+        ]
+      },
+      "saber_vehiculo": [
+        "comunicación y difusión de la información reelaborada de manera creativa y respetuosa con la propiedad intelectual",
+        "índice, organización en epígrafes, procedimientos de cita, notas a pie de página, bibliografía y webgrafía"
+      ],
+      "progresion": {
+        "autonomia": 3,
+        "complejidad": 4,
+        "metalinguistico": 4
+      },
+      "tipos_tarea": [
+        "investigacion"
+      ],
+      "obligatorio": false,
+      "prioridad": 2,
+      "peso_base": 15,
+      "descriptores": {
+        "n1": {
+          "verbo": "indica",
+          "texto": "Indica en el apartado final la dirección de las fuentes recuperadas del archivo."
+        },
+        "n2": {
+          "verbo": "anota",
+          "texto": "Anota la referencia completa de cada fuente y ordena las referencias en bibliografía y webgrafía."
+        },
+        "n3": {
+          "verbo": "documenta",
+          "texto": "Documenta cada dato con la referencia de procedencia y mantiene un mismo modelo de referencia en el trabajo y en el soporte."
+        },
+        "n4": {
+          "verbo": "respeta",
+          "texto": "Respeta la propiedad intelectual del material ajeno: separa con comillas lo tomado literalmente, documenta el origen de cada imagen y sitúa la aportación propia frente a lo ya publicado."
+        }
+      },
+      "matriz_cuantitativa": {
+        "total": 10,
+        "componentes": [
+          {
+            "nombre": "Referencias de las fuentes",
+            "max": 4,
+            "bandas": [
+              {
+                "puntos": 4,
+                "condicion": "Todas las fuentes llevan referencia completa y un mismo modelo de referencia"
+              },
+              {
+                "puntos": 3,
+                "condicion": "Deja de 1 a 2 referencias incompletas o en otro modelo"
+              },
+              {
+                "puntos": 2,
+                "condicion": "Deja de 3 a 4 referencias incompletas o en otro modelo"
+              },
+              {
+                "puntos": 0,
+                "condicion": "El trabajo presenta los datos sin referencia de origen: 5 o más referencias incompletas o en otro modelo"
+              }
+            ]
+          },
+          {
+            "nombre": "Crédito del material visual",
+            "max": 3,
+            "bandas": [
+              {
+                "puntos": 3,
+                "condicion": "Todas las imágenes y los gráficos llevan crédito de procedencia"
+              },
+              {
+                "puntos": 2,
+                "condicion": "Deja de 1 a 2 elementos visuales sin crédito"
+              },
+              {
+                "puntos": 0,
+                "condicion": "El soporte utiliza el material visual sin crédito: 3 o más elementos visuales"
+              }
+            ]
+          },
+          {
+            "nombre": "Marca de lo tomado literalmente",
+            "max": 3,
+            "bandas": [
+              {
+                "puntos": 3,
+                "condicion": "Todo lo tomado literalmente va entre comillas y con referencia"
+              },
+              {
+                "puntos": 2,
+                "condicion": "Deja de 1 a 2 fragmentos literales sin marcar"
+              },
+              {
+                "puntos": 0,
+                "condicion": "El trabajo funde lo tomado de las fuentes con la redacción propia: 3 o más fragmentos literales sin marcar"
+              }
+            ]
+          }
+        ],
+        "penalizaciones": []
+      },
+      "descriptor_cotejo": null,
+      "descriptor_un_punto": "Anota la referencia completa de cada fuente y ordena las referencias en bibliografía y webgrafía."
+    },
+    {
+      "id": "lcl-d-correccion-inv-2bach",
+      "bloque_lomloe": "D",
+      "dimension": "correccion_lexico",
+      "nombre": "Corrección normativa y propiedad léxica",
+      "curso": "2BACH",
+      "hereda_de": null,
+      "criterio_oficial": {
+        "competencia_especifica": 5,
+        "codigo": "5.2",
+        "cita": "Incorporar procedimientos para enriquecer los textos, atendiendo a aspectos discursivos, lingüísticos y de estilo, con precisión léxica y corrección ortográfica y gramatical.",
+        "perfil_salida": [
+          "CCL1",
+          "CCL3",
+          "CCL5",
+          "STEM1",
+          "CD2",
+          "CD3",
+          "CPSAA5",
+          "CC2"
+        ]
+      },
+      "saber_vehiculo": [
+        "corrección lingüística y revisión ortográfica y gramatical de los textos",
+        "los signos de puntuación como mecanismo organizador del texto escrito",
+        "propiedad léxica"
+      ],
+      "progresion": {
+        "autonomia": 3,
+        "complejidad": 4,
+        "metalinguistico": 4
+      },
+      "tipos_tarea": [
+        "investigacion"
+      ],
+      "obligatorio": true,
+      "prioridad": 2,
+      "peso_base": 15,
+      "descriptores": {
+        "n1": {
+          "verbo": "redacta",
+          "texto": "Redacta el texto del soporte con faltas de ortografía y de puntuación visibles en la proyección."
+        },
+        "n2": {
+          "verbo": "aplica",
+          "texto": "Aplica las normas de acentuación, concordancia y puntuación con errores aislados en los rótulos."
+        },
+        "n3": {
+          "verbo": "aplica",
+          "texto": "Aplica la puntuación del inciso, la del dato entrecomillado y la de la referencia abreviada en todo el soporte."
+        },
+        "n4": {
+          "verbo": "elige",
+          "texto": "Elige el término preciso del registro académico, gradúa la densidad de la frase y mantiene el mismo registro en rótulos y pies."
+        }
+      },
+      "matriz_cuantitativa": {
+        "total": 10,
+        "componentes": [
+          {
+            "nombre": "Ortografía y acentuación",
+            "max": 4,
+            "bandas": [
+              {
+                "puntos": 4,
+                "condicion": "Hasta 1 falta en todo el soporte, incluidos los rótulos"
+              },
+              {
+                "puntos": 3,
+                "condicion": "De 2 a 4 faltas"
+              },
+              {
+                "puntos": 2,
+                "condicion": "De 5 a 8 faltas"
+              },
+              {
+                "puntos": 1,
+                "condicion": "De 9 a 13 faltas"
+              },
+              {
+                "puntos": 0,
+                "condicion": "14 o más faltas"
+              }
+            ]
+          },
+          {
+            "nombre": "Puntuación",
+            "max": 3,
+            "bandas": [
+              {
+                "puntos": 3,
+                "condicion": "Inciso, dato entrecomillado y referencia abreviada llevan la puntuación correspondiente"
+              },
+              {
+                "puntos": 2,
+                "condicion": "1 de los tres procedimientos falla"
+              },
+              {
+                "puntos": 1,
+                "condicion": "2 de los tres procedimientos fallan"
+              },
+              {
+                "puntos": 0,
+                "condicion": "La puntuación del soporte se reduce al punto y la coma"
+              }
+            ]
+          },
+          {
+            "nombre": "Propiedad léxica",
+            "max": 3,
+            "bandas": [
+              {
+                "puntos": 3,
+                "condicion": "Emplea el término preciso del registro académico en todo el soporte"
+              },
+              {
+                "puntos": 2,
+                "condicion": "Emplea 1 término impreciso o comodín"
+              },
+              {
+                "puntos": 1,
+                "condicion": "Emplea 2 términos imprecisos o comodín"
+              },
+              {
+                "puntos": 0,
+                "condicion": "El texto del soporte se sostiene sobre términos comodín"
+              }
+            ]
+          }
+        ],
+        "penalizaciones": []
+      },
+      "descriptor_cotejo": null,
+      "descriptor_un_punto": "Aplica las normas de acentuación, concordancia y puntuación con errores aislados en los rótulos."
+    }
+  ]
+}

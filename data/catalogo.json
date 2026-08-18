@@ -89,7 +89,10 @@
         "oral": "Exposición oral",
         "argumentativo": "Texto argumentativo",
         "comentario": "Comentario de texto literario",
-        "resumen": "Resumen de un texto"
+        "resumen": "Resumen de un texto",
+        "reaccion": "Reacción a una noticia",
+        "noticia": "Redacción de una noticia",
+        "investigacion": "Trabajo de investigación multimodal"
       },
 
       "fuentes": {
@@ -128,6 +131,9 @@
     { "id": "lcl-murcia-oral",          "materia": "LCL", "archivo": "data/pack-lcl-oral.json" },
     { "id": "lcl-murcia-narracion",     "materia": "LCL", "archivo": "data/pack-lcl-narracion.json" },
     { "id": "lcl-murcia-comentario",    "materia": "LCL", "archivo": "data/pack-lcl-comentario.json" },
-    { "id": "lcl-murcia-resumen",       "materia": "LCL", "archivo": "data/pack-lcl-resumen.json" }
+    { "id": "lcl-murcia-resumen",       "materia": "LCL", "archivo": "data/pack-lcl-resumen.json" },
+    { "id": "lcl-murcia-reaccion",      "materia": "LCL", "archivo": "data/pack-lcl-reaccion.json" },
+    { "id": "lcl-murcia-noticia",       "materia": "LCL", "archivo": "data/pack-lcl-noticia.json" },
+    { "id": "lcl-murcia-investigacion", "materia": "LCL", "archivo": "data/pack-lcl-investigacion.json" }
   ]
 }
