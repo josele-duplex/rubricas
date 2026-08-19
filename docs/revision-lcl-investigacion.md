@@ -49,9 +49,9 @@
 
 | Componente | Máx. | Bandas |
 |---|---|---|
-| Apartados con título propio | 4 | **4** — Organiza el trabajo en 3 o más apartados con título propio<br>**3** — Organiza el trabajo en 2 apartados con título propio<br>**2** — Organiza el trabajo en 2 apartados con el título del guion<br>**0** — El trabajo presenta la información en un bloque único |
-| Reformulación de lo tomado de las fuentes | 4 | **4** — Reformula con palabras propias todos los fragmentos tomados de la fuente<br>**3** — Deja de 1 a 2 fragmentos con la redacción del original<br>**2** — Deja de 3 a 4 fragmentos con la redacción del original<br>**0** — El trabajo reproduce la fuente párrafo a párrafo: 5 o más fragmentos con la redacción del original |
-| Enlace entre apartados | 2 | **2** — Enlaza los apartados con conectores de orden<br>**1** — Enlaza 1 o 2 apartados y yuxtapone los demás<br>**0** — El trabajo yuxtapone los apartados |
+| Apartados con título propio | 4 | **4** — Organiza el trabajo en 3 o más apartados con título propio<br>**3** — Organiza el trabajo en 2 apartados con título propio<br>**2** — Organiza el trabajo en 2 apartados con el título del guion<br>**1** — Separa el trabajo en 2 bloques sin título<br>**0** — El trabajo presenta la información en un bloque único |
+| Reformulación de lo tomado de las fuentes | 4 | **4** — Reformula con palabras propias todos los fragmentos tomados de la fuente<br>**3** — Deja de 1 a 2 fragmentos con la redacción del original<br>**2** — Deja de 3 a 4 fragmentos con la redacción del original<br>**1** — Deja de 5 a 6 fragmentos con la redacción del original<br>**0** — El trabajo reproduce la fuente párrafo a párrafo: 7 o más fragmentos con la redacción del original |
+| Enlace entre apartados | 2 | **2** — Enlaza los apartados con conectores de orden<br>**1.5** — Enlaza los apartados con un solo conector de orden, repetido en cada paso<br>**1** — Enlaza 1 o 2 apartados y yuxtapone los demás<br>**0.5** — Marca el paso de un apartado a otro con el título, sin ningún conector<br>**0** — El trabajo yuxtapone los apartados |
 
 ### Ajuste del soporte: reparto entre texto, imagen y línea temporal  ·  35%  ·  bloque B  ·  🔒 obligatorio
 
@@ -70,9 +70,9 @@
 
 | Componente | Máx. | Bandas |
 |---|---|---|
-| Reparto entre texto e imagen | 4 | **4** — Cada pantalla combina un texto breve y un elemento visual<br>**3** — Deja de 1 a 2 pantallas con texto solo<br>**2** — Deja de 3 a 4 pantallas con texto solo<br>**0** — El soporte reproduce el documento escrito: 5 o más pantallas con texto solo |
-| Elementos de orientación: título, pie y leyenda | 3 | **3** — Todas las pantallas llevan título, y las imágenes, pie<br>**2** — Deja de 1 a 3 elementos sin título ni pie<br>**0** — El soporte presenta las imágenes sin título ni pie: 4 o más elementos |
-| Cantidad de texto por pantalla | 3 | **3** — Ninguna pantalla pasa de 50 palabras<br>**2** — De 1 a 2 pantallas pasan de 50 palabras<br>**0** — El soporte vuelca el texto del documento: 3 o más pantallas pasan de 50 palabras |
+| Reparto entre texto e imagen | 4 | **4** — Cada pantalla combina un texto breve y un elemento visual<br>**3** — Deja de 1 a 2 pantallas con texto solo<br>**2** — Deja de 3 a 4 pantallas con texto solo<br>**1** — Deja de 5 a 6 pantallas con texto solo<br>**0** — El soporte reproduce el documento escrito: 7 o más pantallas con texto solo |
+| Elementos de orientación: título, pie y leyenda | 4 | **4** — Todas las pantallas llevan título, y las imágenes, pie<br>**3** — Deja 1 elemento sin título ni pie<br>**2** — Deja de 2 a 3 elementos sin título ni pie<br>**1** — Deja de 4 a 5 elementos sin título ni pie<br>**0** — El soporte presenta las imágenes sin título ni pie: 6 o más elementos |
+| Cantidad de texto por pantalla | 2 | **2** — Ninguna pantalla pasa de 50 palabras<br>**1.5** — 1 pantalla pasa de 50 palabras<br>**1** — 2 o 3 pantallas pasan de 50 palabras<br>**0.5** — De 4 a 5 pantallas pasan de 50 palabras<br>**0** — El soporte vuelca el texto del documento: 6 o más pantallas pasan de 50 palabras |
 
 ### Corrección normativa y propiedad léxica  ·  15%  ·  bloque D  ·  🔒 obligatorio
 
@@ -91,9 +91,9 @@
 
 | Componente | Máx. | Bandas |
 |---|---|---|
-| Ortografía y acentuación | 4 | **4** — Hasta 2 faltas en todo el soporte<br>**3** — De 3 a 4 faltas<br>**2** — De 5 a 6 faltas<br>**1** — De 7 a 9 faltas<br>**0** — 10 o más faltas |
-| Puntuación | 3 | **3** — Cierra con punto las frases completas y separa con coma las enumeraciones<br>**2** — Deja de 1 a 3 frases o enumeraciones sin marcar<br>**1** — Deja de 4 a 6 frases o enumeraciones sin marcar<br>**0** — El soporte encadena el texto sin signos de puntuación: 7 o más frases o enumeraciones sin marcar |
-| Propiedad léxica | 3 | **3** — Emplea los términos del tema investigado y ninguna palabra comodín<br>**2** — Emplea 1 palabra comodín (cosa, tema, hacer)<br>**1** — Emplea 2 palabras comodín<br>**0** — El texto del soporte se sostiene sobre palabras comodín |
+| Ortografía y acentuación | 4 | **4** — Hasta 2 faltas en todo el soporte<br>**3** — 3 o 4 faltas<br>**2** — 5 o 6 faltas<br>**1** — De 7 a 10 faltas<br>**0** — 11 o más faltas |
+| Puntuación | 2 | **2** — Cierra con punto las frases completas y separa con coma las enumeraciones<br>**1.5** — Deja 1 frase o enumeración sin marcar<br>**1** — Deja de 2 a 3 frases o enumeraciones sin marcar<br>**0.5** — Deja de 4 a 6 frases o enumeraciones sin marcar<br>**0** — El soporte encadena el texto sin signos de puntuación: 7 o más frases o enumeraciones sin marcar |
+| Propiedad léxica | 4 | **4** — Emplea los términos del tema investigado y ninguna palabra comodín<br>**3** — Emplea 1 palabra comodín (cosa, tema, hacer)<br>**2** — Emplea 2 palabras comodín<br>**1** — Emplea 3 o 4 palabras comodín<br>**0** — El texto del soporte se sostiene sobre palabras comodín |
 
 ---
 
@@ -139,9 +139,9 @@
 
 | Componente | Máx. | Bandas |
 |---|---|---|
-| Fuentes reunidas | 4 | **4** — Reúne 3 o más fuentes de procedencias distintas<br>**3** — Reúne 2 fuentes de procedencias distintas<br>**2** — Reúne 2 fuentes de la misma procedencia<br>**0** — El trabajo se apoya en una sola fuente |
-| Datos contrastados entre fuentes | 3 | **3** — Contrasta 3 o más datos entre dos fuentes al menos<br>**2** — Contrasta 1 o 2 datos<br>**0** — El trabajo traslada los datos de cada fuente sin compararlos |
-| Registro de la procedencia | 3 | **3** — Anota la procedencia de todas las fuentes utilizadas<br>**2** — Deja de 1 a 2 fuentes sin procedencia anotada<br>**0** — El trabajo presenta los datos sin anotar la procedencia: 3 o más fuentes |
+| Fuentes reunidas | 4 | **4** — Reúne 3 o más fuentes de procedencias distintas<br>**3** — Reúne 2 fuentes de procedencias distintas<br>**2** — Reúne 2 fuentes de la misma procedencia<br>**1** — Reúne 2 fuentes y una de ellas reproduce a la otra<br>**0** — El trabajo se apoya en una sola fuente |
+| Datos contrastados entre fuentes | 4 | **4** — Contrasta 3 o más datos entre dos fuentes al menos<br>**3** — Contrasta 2 datos entre dos fuentes<br>**2** — Contrasta 1 dato entre dos fuentes<br>**1** — Sitúa dos datos de fuentes distintas juntos, sin compararlos<br>**0** — El trabajo traslada los datos de cada fuente sin compararlos |
+| Registro de la procedencia | 2 | **2** — Anota la procedencia de todas las fuentes utilizadas<br>**1.5** — Deja 1 fuente sin procedencia anotada<br>**1** — Deja 2 fuentes sin procedencia anotada<br>**0.5** — Deja de 3 a 4 fuentes sin procedencia anotada<br>**0** — El trabajo presenta los datos sin anotar la procedencia: 5 o más fuentes |
 
 ### Integración de la información: esquema propio y apartados  ·  25%  ·  bloque B  ·  🔒 obligatorio
 
@@ -160,9 +160,9 @@
 
 | Componente | Máx. | Bandas |
 |---|---|---|
-| Apartados con título propio | 4 | **4** — Organiza el trabajo en 4 o más apartados con título propio<br>**3** — Organiza el trabajo en 3 apartados con título propio<br>**2** — Organiza el trabajo en 2 apartados<br>**0** — El trabajo presenta la información en un bloque único |
-| Reformulación de lo tomado de las fuentes | 4 | **4** — Reformula con palabras propias todos los fragmentos tomados de las fuentes<br>**3** — Deja de 1 a 2 fragmentos con la redacción del original<br>**2** — Deja de 3 a 4 fragmentos con la redacción del original<br>**0** — El trabajo reproduce las fuentes párrafo a párrafo: 5 o más fragmentos con la redacción del original |
-| Enlace entre apartados | 2 | **2** — Enlaza los apartados con conectores de orden o de contraste<br>**1** — Enlaza 1 o 2 apartados y yuxtapone los demás<br>**0** — El trabajo yuxtapone los apartados |
+| Apartados con título propio | 4 | **4** — Organiza el trabajo en 4 o más apartados con título propio<br>**3** — Organiza el trabajo en 3 apartados con título propio<br>**2** — Organiza el trabajo en 2 apartados<br>**1** — Separa el trabajo en 2 bloques sin título<br>**0** — El trabajo presenta la información en un bloque único |
+| Reformulación de lo tomado de las fuentes | 4 | **4** — Reformula con palabras propias todos los fragmentos tomados de las fuentes<br>**3** — Deja de 1 a 2 fragmentos con la redacción del original<br>**2** — Deja de 3 a 4 fragmentos con la redacción del original<br>**1** — Deja de 5 a 6 fragmentos con la redacción del original<br>**0** — El trabajo reproduce las fuentes párrafo a párrafo: 7 o más fragmentos con la redacción del original |
+| Enlace entre apartados | 2 | **2** — Enlaza los apartados con conectores de orden o de contraste<br>**1.5** — Enlaza los apartados con conectores de orden, sin ninguno de contraste<br>**1** — Enlaza 1 o 2 apartados y yuxtapone los demás<br>**0.5** — Marca el paso de un apartado a otro con el título, sin ningún conector<br>**0** — El trabajo yuxtapone los apartados |
 
 ### Ajuste del soporte: reparto entre texto, imagen y línea temporal  ·  20%  ·  bloque B  ·  🔒 obligatorio
 
@@ -181,9 +181,9 @@
 
 | Componente | Máx. | Bandas |
 |---|---|---|
-| Reparto entre texto e imagen | 4 | **4** — Cada pantalla combina un texto breve y un elemento visual<br>**3** — Deja de 1 a 2 pantallas con texto solo<br>**2** — Deja de 3 a 4 pantallas con texto solo<br>**0** — El soporte reproduce el documento escrito: 5 o más pantallas con texto solo |
-| Elementos de orientación: título, pie y leyenda | 3 | **3** — Todas las pantallas llevan título, y las imágenes, pie o leyenda<br>**2** — Deja de 1 a 3 elementos sin título ni pie<br>**0** — El soporte presenta las imágenes sin título ni pie: 4 o más elementos |
-| Cantidad de texto por pantalla | 3 | **3** — Ninguna pantalla pasa de 50 palabras<br>**2** — De 1 a 2 pantallas pasan de 50 palabras<br>**0** — El soporte vuelca el texto del documento: 3 o más pantallas pasan de 50 palabras |
+| Reparto entre texto e imagen | 4 | **4** — Cada pantalla combina un texto breve y un elemento visual<br>**3** — Deja de 1 a 2 pantallas con texto solo<br>**2** — Deja de 3 a 4 pantallas con texto solo<br>**1** — Deja de 5 a 6 pantallas con texto solo<br>**0** — El soporte reproduce el documento escrito: 7 o más pantallas con texto solo |
+| Elementos de orientación: título, pie y leyenda | 4 | **4** — Todas las pantallas llevan título, y las imágenes, pie o leyenda<br>**3** — Deja 1 elemento sin título ni pie<br>**2** — Deja de 2 a 3 elementos sin título ni pie<br>**1** — Deja de 4 a 5 elementos sin título ni pie<br>**0** — El soporte presenta las imágenes sin título ni pie: 6 o más elementos |
+| Cantidad de texto por pantalla | 2 | **2** — Ninguna pantalla pasa de 50 palabras<br>**1.5** — 1 pantalla pasa de 50 palabras<br>**1** — 2 o 3 pantallas pasan de 50 palabras<br>**0.5** — De 4 a 5 pantallas pasan de 50 palabras<br>**0** — El soporte vuelca el texto del documento: 6 o más pantallas pasan de 50 palabras |
 
 ### Corrección normativa y propiedad léxica  ·  15%  ·  bloque D  ·  🔒 obligatorio
 
@@ -202,9 +202,9 @@
 
 | Componente | Máx. | Bandas |
 |---|---|---|
-| Ortografía y acentuación | 4 | **4** — Hasta 2 faltas en todo el soporte<br>**3** — De 3 a 5 faltas<br>**2** — De 6 a 8 faltas<br>**1** — De 9 a 11 faltas<br>**0** — 12 o más faltas |
-| Puntuación | 3 | **3** — Enumeración e inciso llevan la puntuación correspondiente<br>**2** — Deja de 1 a 3 incisos o enumeraciones sin marcar<br>**1** — Deja de 4 a 6 incisos o enumeraciones sin marcar<br>**0** — El soporte encadena el texto sin signos de puntuación: 7 o más incisos o enumeraciones sin marcar |
-| Propiedad léxica | 3 | **3** — Emplea los términos del tema investigado y ninguna palabra comodín<br>**2** — Emplea 1 palabra comodín (cosa, tema, hacer)<br>**1** — Emplea 2 palabras comodín<br>**0** — El texto del soporte se sostiene sobre palabras comodín |
+| Ortografía y acentuación | 4 | **4** — Hasta 2 faltas en todo el soporte<br>**3** — 3 o 4 faltas<br>**2** — De 5 a 7 faltas<br>**1** — De 8 a 11 faltas<br>**0** — 12 o más faltas |
+| Puntuación | 2 | **2** — Enumeración e inciso llevan la puntuación correspondiente<br>**1.5** — Deja 1 inciso o enumeración sin marcar<br>**1** — Deja de 2 a 3 incisos o enumeraciones sin marcar<br>**0.5** — Deja de 4 a 6 incisos o enumeraciones sin marcar<br>**0** — El soporte encadena el texto sin signos de puntuación: 7 o más incisos o enumeraciones sin marcar |
+| Propiedad léxica | 4 | **4** — Emplea los términos del tema investigado y ninguna palabra comodín<br>**3** — Emplea 1 palabra comodín (cosa, tema, hacer)<br>**2** — Emplea 2 palabras comodín<br>**1** — Emplea 3 o 4 palabras comodín<br>**0** — El texto del soporte se sostiene sobre palabras comodín |
 
 ---
 
@@ -251,9 +251,9 @@
 
 | Componente | Máx. | Bandas |
 |---|---|---|
-| Fuentes reunidas | 4 | **4** — Reúne 4 o más fuentes de procedencias distintas<br>**3** — Reúne 3 fuentes de procedencias distintas<br>**2** — Reúne 2 fuentes<br>**0** — El trabajo se apoya en una sola fuente |
-| Datos contrastados entre fuentes | 3 | **3** — Contrasta 4 o más datos entre fuentes de distinta procedencia<br>**2** — Contrasta 2 o 3 datos<br>**1** — Contrasta 1 dato<br>**0** — El trabajo traslada los datos de cada fuente sin compararlos |
-| Registro de la procedencia | 3 | **3** — Anota la procedencia de todas las fuentes utilizadas<br>**2** — Deja de 1 a 2 fuentes sin procedencia anotada<br>**0** — El trabajo presenta los datos sin anotar la procedencia: 3 o más fuentes |
+| Fuentes reunidas | 4 | **4** — Reúne 4 o más fuentes de procedencias distintas<br>**3** — Reúne 3 fuentes de procedencias distintas<br>**2** — Reúne 2 fuentes<br>**1** — Reúne 2 fuentes y una de ellas reproduce a la otra<br>**0** — El trabajo se apoya en una sola fuente |
+| Datos contrastados entre fuentes | 4 | **4** — Contrasta 4 o más datos entre fuentes de distinta procedencia<br>**3** — Contrasta 2 o 3 datos<br>**2** — Contrasta 1 dato<br>**1** — Sitúa dos datos de fuentes distintas juntos, sin compararlos<br>**0** — El trabajo traslada los datos de cada fuente sin compararlos |
+| Registro de la procedencia | 2 | **2** — Anota la procedencia de todas las fuentes utilizadas<br>**1.5** — Deja 1 fuente sin procedencia anotada<br>**1** — Deja 2 fuentes sin procedencia anotada<br>**0.5** — Deja de 3 a 4 fuentes sin procedencia anotada<br>**0** — El trabajo presenta los datos sin anotar la procedencia: 5 o más fuentes |
 
 ### Integración de la información: esquema propio y apartados  ·  20%  ·  bloque B  ·  🔒 obligatorio
 
@@ -272,9 +272,9 @@
 
 | Componente | Máx. | Bandas |
 |---|---|---|
-| Apartados con título propio | 4 | **4** — Organiza el trabajo en 4 o más apartados con título propio<br>**3** — Organiza el trabajo en 3 apartados con título propio<br>**2** — Organiza el trabajo en 2 apartados<br>**0** — El trabajo presenta la información en un bloque único |
-| Reformulación de lo tomado de las fuentes | 4 | **4** — Reformula con palabras propias todos los fragmentos tomados de las fuentes<br>**3** — Deja 1 fragmento con la redacción del original<br>**2** — Deja de 2 a 3 fragmentos con la redacción del original<br>**0** — El trabajo reproduce las fuentes párrafo a párrafo: 4 o más fragmentos con la redacción del original |
-| Enlace entre apartados | 2 | **2** — Enlaza los apartados con conectores de orden y de contraste<br>**1** — Enlaza 1 o 2 apartados y yuxtapone los demás<br>**0** — El trabajo yuxtapone los apartados |
+| Apartados con título propio | 4 | **4** — Organiza el trabajo en 4 o más apartados con título propio<br>**3** — Organiza el trabajo en 3 apartados con título propio<br>**2** — Organiza el trabajo en 2 apartados<br>**1** — Separa el trabajo en 2 bloques sin título<br>**0** — El trabajo presenta la información en un bloque único |
+| Reformulación de lo tomado de las fuentes | 4 | **4** — Reformula con palabras propias todos los fragmentos tomados de las fuentes<br>**3** — Deja 1 fragmento con la redacción del original<br>**2** — Deja de 2 a 3 fragmentos con la redacción del original<br>**1** — Deja de 4 a 6 fragmentos con la redacción del original<br>**0** — El trabajo reproduce las fuentes párrafo a párrafo: 7 o más fragmentos con la redacción del original |
+| Enlace entre apartados | 2 | **2** — Enlaza los apartados con conectores de orden y de contraste<br>**1.5** — Enlaza los apartados con conectores de orden, sin ninguno de contraste<br>**1** — Enlaza 1 o 2 apartados y yuxtapone los demás<br>**0.5** — Marca el paso de un apartado a otro con el título, sin ningún conector<br>**0** — El trabajo yuxtapone los apartados |
 
 ### Ajuste del soporte: reparto entre texto, imagen y línea temporal  ·  20%  ·  bloque B  ·  🔒 obligatorio
 
@@ -293,9 +293,9 @@
 
 | Componente | Máx. | Bandas |
 |---|---|---|
-| Reparto entre texto e imagen | 4 | **4** — Cada pantalla combina un texto breve y un elemento visual<br>**3** — Deja de 1 a 2 pantallas con texto solo<br>**2** — Deja de 3 a 4 pantallas con texto solo<br>**0** — El soporte reproduce el documento escrito: 5 o más pantallas con texto solo |
-| Elementos de orientación: título, pie y leyenda | 3 | **3** — Todas las pantallas llevan título, y los elementos visuales, pie o leyenda<br>**2** — Deja de 1 a 2 elementos sin título ni pie<br>**0** — El soporte presenta los elementos visuales sin título ni pie: 3 o más elementos |
-| Cantidad de texto por pantalla | 3 | **3** — Ninguna pantalla pasa de 50 palabras<br>**2** — De 1 a 2 pantallas pasan de 50 palabras<br>**0** — El soporte vuelca el texto del documento: 3 o más pantallas pasan de 50 palabras |
+| Reparto entre texto e imagen | 4 | **4** — Cada pantalla combina un texto breve y un elemento visual<br>**3** — Deja de 1 a 2 pantallas con texto solo<br>**2** — Deja de 3 a 4 pantallas con texto solo<br>**1** — Deja de 5 a 6 pantallas con texto solo<br>**0** — El soporte reproduce el documento escrito: 7 o más pantallas con texto solo |
+| Elementos de orientación: título, pie y leyenda | 4 | **4** — Todas las pantallas llevan título, y los elementos visuales, pie o leyenda<br>**3** — Deja 1 elemento sin título ni pie<br>**2** — Deja 2 elementos sin título ni pie<br>**1** — Deja de 3 a 4 elementos sin título ni pie<br>**0** — El soporte presenta los elementos visuales sin título ni pie: 5 o más elementos |
+| Cantidad de texto por pantalla | 2 | **2** — Ninguna pantalla pasa de 50 palabras<br>**1.5** — 1 pantalla pasa de 50 palabras<br>**1** — 2 o 3 pantallas pasan de 50 palabras<br>**0.5** — De 4 a 5 pantallas pasan de 50 palabras<br>**0** — El soporte vuelca el texto del documento: 6 o más pantallas pasan de 50 palabras |
 
 ### Atribución de fuentes y uso del material ajeno  ·  10%  ·  bloque B
 
@@ -314,9 +314,9 @@
 
 | Componente | Máx. | Bandas |
 |---|---|---|
-| Referencias de las fuentes | 4 | **4** — Todas las fuentes utilizadas llevan referencia con autor, título y fecha<br>**3** — Deja de 1 a 2 referencias incompletas<br>**2** — Deja de 3 a 4 referencias incompletas<br>**0** — El trabajo presenta los datos sin referencia de origen: 5 o más referencias incompletas |
-| Crédito del material visual | 3 | **3** — Todas las imágenes y los gráficos llevan crédito de procedencia<br>**2** — Deja de 1 a 2 elementos visuales sin crédito<br>**0** — El soporte utiliza el material visual sin crédito: 3 o más elementos visuales |
-| Marca de lo tomado literalmente | 3 | **3** — Todo lo tomado literalmente va entre comillas y con referencia<br>**2** — Deja de 1 a 2 fragmentos literales sin marcar<br>**0** — El trabajo funde lo tomado de las fuentes con la redacción propia: 3 o más fragmentos literales sin marcar |
+| Referencias de las fuentes | 4 | **4** — Todas las fuentes utilizadas llevan referencia con autor, título y fecha<br>**3** — Deja de 1 a 2 referencias incompletas<br>**2** — Deja de 3 a 4 referencias incompletas<br>**1** — Deja de 5 a 6 referencias incompletas<br>**0** — El trabajo presenta los datos sin referencia de origen: 7 o más referencias incompletas |
+| Crédito del material visual | 2 | **2** — Todas las imágenes y los gráficos llevan crédito de procedencia<br>**1.5** — Deja 1 elemento visual sin crédito<br>**1** — Deja 2 elementos visuales sin crédito<br>**0.5** — Deja de 3 a 4 elementos visuales sin crédito<br>**0** — El soporte utiliza el material visual sin crédito: 5 o más elementos visuales |
+| Marca de lo tomado literalmente | 4 | **4** — Todo lo tomado literalmente va entre comillas y con referencia<br>**3** — Deja 1 fragmento literal sin marcar<br>**2** — Deja 2 fragmentos literales sin marcar<br>**1** — Deja 3 o 4 fragmentos literales sin marcar<br>**0** — El trabajo funde lo tomado de las fuentes con la redacción propia: 5 o más fragmentos literales sin marcar |
 
 ### Corrección normativa y propiedad léxica  ·  15%  ·  bloque D  ·  🔒 obligatorio
 
@@ -336,8 +336,8 @@
 | Componente | Máx. | Bandas |
 |---|---|---|
 | Ortografía y acentuación | 4 | **4** — Hasta 2 faltas en todo el soporte, incluidos los rótulos<br>**3** — De 3 a 5 faltas<br>**2** — De 6 a 8 faltas<br>**1** — De 9 a 12 faltas<br>**0** — 13 o más faltas |
-| Puntuación | 3 | **3** — Inciso, enumeración y dato entrecomillado llevan la puntuación correspondiente<br>**2** — 1 de los tres procedimientos falla<br>**1** — 2 de los tres procedimientos fallan<br>**0** — La puntuación del soporte se reduce al punto y la coma |
-| Propiedad léxica | 3 | **3** — Emplea el término preciso del campo del tema en el texto y en los rótulos<br>**2** — Emplea 1 término impreciso o comodín<br>**1** — Emplea 2 términos imprecisos o comodín<br>**0** — El texto del soporte se sostiene sobre términos comodín |
+| Puntuación | 2 | **2** — Inciso, enumeración y dato entrecomillado llevan la puntuación correspondiente<br>**1.5** — 1 de los tres procedimientos falla<br>**1** — 2 de los tres procedimientos fallan<br>**0.5** — Los tres procedimientos fallan y el texto conserva el punto y la coma<br>**0** — La puntuación del soporte se reduce al punto y la coma |
+| Propiedad léxica | 4 | **4** — Emplea el término preciso del campo del tema en el texto y en los rótulos<br>**3** — Emplea 1 término impreciso o comodín<br>**2** — Emplea 2 términos imprecisos o comodín<br>**1** — Emplea 3 o 4 términos imprecisos o comodín<br>**0** — El texto del soporte se sostiene sobre términos comodín |
 
 ---
 
@@ -384,9 +384,9 @@
 
 | Componente | Máx. | Bandas |
 |---|---|---|
-| Fuentes reunidas | 4 | **4** — Reúne 5 o más fuentes, con una académica al menos<br>**3** — Reúne 4 fuentes de procedencias distintas<br>**2** — Reúne de 2 a 3 fuentes de divulgación<br>**0** — El trabajo se apoya en una sola fuente |
-| Datos contrastados entre fuentes | 3 | **3** — Contrasta 4 o más datos y verifica el discrepante en una fuente primaria<br>**2** — Contrasta 2 o 3 datos<br>**1** — Contrasta 1 dato<br>**0** — El trabajo traslada los datos de cada fuente sin compararlos |
-| Registro de la procedencia | 3 | **3** — Anota la procedencia y la fecha de consulta de todas las fuentes<br>**2** — Deja de 1 a 2 fuentes sin procedencia o sin fecha<br>**0** — El trabajo presenta los datos sin anotar la procedencia: 3 o más fuentes sin procedencia o sin fecha |
+| Fuentes reunidas | 4 | **4** — Reúne 5 o más fuentes, con una académica al menos<br>**3** — Reúne 4 fuentes de procedencias distintas<br>**2** — Reúne de 2 a 3 fuentes de divulgación<br>**1** — Reúne 2 fuentes de divulgación y una reproduce a la otra<br>**0** — El trabajo se apoya en una sola fuente |
+| Datos contrastados entre fuentes | 4 | **4** — Contrasta 4 o más datos y verifica el discrepante en una fuente primaria<br>**3** — Contrasta 2 o 3 datos<br>**2** — Contrasta 1 dato<br>**1** — Sitúa dos datos de fuentes distintas juntos, sin compararlos<br>**0** — El trabajo traslada los datos de cada fuente sin compararlos |
+| Registro de la procedencia | 2 | **2** — Anota la procedencia y la fecha de consulta de todas las fuentes<br>**1.5** — Deja 1 fuente sin procedencia o sin fecha<br>**1** — Deja 2 fuentes sin procedencia o sin fecha<br>**0.5** — Deja de 3 a 4 fuentes sin procedencia o sin fecha<br>**0** — El trabajo presenta los datos sin anotar la procedencia: 5 o más fuentes sin procedencia o sin fecha |
 
 ### Integración de la información: esquema propio y apartados  ·  20%  ·  bloque B  ·  🔒 obligatorio
 
@@ -405,9 +405,9 @@
 
 | Componente | Máx. | Bandas |
 |---|---|---|
-| Apartados con título propio | 4 | **4** — Organiza el trabajo en 4 o más epígrafes jerarquizados<br>**3** — Organiza el trabajo en 3 epígrafes jerarquizados<br>**2** — Organiza el trabajo en 2 epígrafes<br>**0** — El trabajo presenta la información en un bloque único |
-| Reformulación de lo tomado de las fuentes | 4 | **4** — Reformula con palabras propias todos los fragmentos tomados de las fuentes<br>**3** — Deja 1 fragmento con la redacción del original<br>**2** — Deja de 2 a 3 fragmentos con la redacción del original<br>**0** — El trabajo reproduce las fuentes párrafo a párrafo: 4 o más fragmentos con la redacción del original |
-| Enlace entre apartados | 2 | **2** — Enlaza los epígrafes con conectores de orden y de contraste<br>**1** — Enlaza 1 o 2 epígrafes y yuxtapone los demás<br>**0** — El trabajo yuxtapone los epígrafes |
+| Apartados con título propio | 4 | **4** — Organiza el trabajo en 4 o más epígrafes jerarquizados<br>**3** — Organiza el trabajo en 3 epígrafes jerarquizados<br>**2** — Organiza el trabajo en 2 epígrafes<br>**1** — Separa el trabajo en 2 bloques sin epígrafe<br>**0** — El trabajo presenta la información en un bloque único |
+| Reformulación de lo tomado de las fuentes | 4 | **4** — Reformula con palabras propias todos los fragmentos tomados de las fuentes<br>**3** — Deja 1 fragmento con la redacción del original<br>**2** — Deja de 2 a 3 fragmentos con la redacción del original<br>**1** — Deja de 4 a 6 fragmentos con la redacción del original<br>**0** — El trabajo reproduce las fuentes párrafo a párrafo: 7 o más fragmentos con la redacción del original |
+| Enlace entre apartados | 2 | **2** — Enlaza los epígrafes con conectores de orden y de contraste<br>**1.5** — Enlaza los epígrafes con conectores de orden, sin ninguno de contraste<br>**1** — Enlaza 1 o 2 epígrafes y yuxtapone los demás<br>**0.5** — Marca el paso de un epígrafe a otro con el título, sin ningún conector<br>**0** — El trabajo yuxtapone los epígrafes |
 
 ### Ajuste del soporte: reparto entre texto, imagen y línea temporal  ·  20%  ·  bloque B  ·  🔒 obligatorio
 
@@ -426,9 +426,9 @@
 
 | Componente | Máx. | Bandas |
 |---|---|---|
-| Reparto entre texto e imagen | 4 | **4** — Cada pantalla combina un texto breve y un elemento visual<br>**3** — Deja de 1 a 2 pantallas con texto solo<br>**2** — Deja de 3 a 4 pantallas con texto solo<br>**0** — El soporte reproduce el documento escrito: 5 o más pantallas con texto solo |
-| Elementos de orientación: título, pie y leyenda | 3 | **3** — Todas las pantallas llevan título, y los elementos visuales, pie o leyenda<br>**2** — Deja de 1 a 2 elementos sin título ni pie<br>**0** — El soporte presenta los elementos visuales sin título ni pie: 3 o más elementos |
-| Cantidad de texto por pantalla | 3 | **3** — Ninguna pantalla pasa de 50 palabras<br>**2** — De 1 a 2 pantallas pasan de 50 palabras<br>**0** — El soporte vuelca el texto del documento: 3 o más pantallas pasan de 50 palabras |
+| Reparto entre texto e imagen | 4 | **4** — Cada pantalla combina un texto breve y un elemento visual<br>**3** — Deja de 1 a 2 pantallas con texto solo<br>**2** — Deja de 3 a 4 pantallas con texto solo<br>**1** — Deja de 5 a 6 pantallas con texto solo<br>**0** — El soporte reproduce el documento escrito: 7 o más pantallas con texto solo |
+| Elementos de orientación: título, pie y leyenda | 4 | **4** — Todas las pantallas llevan título, y los elementos visuales, pie o leyenda<br>**3** — Deja 1 elemento sin título ni pie<br>**2** — Deja 2 elementos sin título ni pie<br>**1** — Deja de 3 a 4 elementos sin título ni pie<br>**0** — El soporte presenta los elementos visuales sin título ni pie: 5 o más elementos |
+| Cantidad de texto por pantalla | 2 | **2** — Ninguna pantalla pasa de 50 palabras<br>**1.5** — 1 pantalla pasa de 50 palabras<br>**1** — 2 o 3 pantallas pasan de 50 palabras<br>**0.5** — De 4 a 5 pantallas pasan de 50 palabras<br>**0** — El soporte vuelca el texto del documento: 6 o más pantallas pasan de 50 palabras |
 
 ### Atribución de fuentes y uso del material ajeno  ·  15%  ·  bloque B
 
@@ -447,9 +447,9 @@
 
 | Componente | Máx. | Bandas |
 |---|---|---|
-| Referencias de las fuentes | 4 | **4** — Todas las fuentes llevan referencia con autor, título, edición y fecha<br>**3** — Deja de 1 a 2 referencias incompletas<br>**2** — Deja de 3 a 4 referencias incompletas<br>**0** — El trabajo presenta los datos sin referencia de origen: 5 o más referencias incompletas |
-| Crédito del material visual | 3 | **3** — Todas las imágenes y los gráficos llevan crédito de procedencia<br>**2** — Deja de 1 a 2 elementos visuales sin crédito<br>**0** — El soporte utiliza el material visual sin crédito: 3 o más elementos visuales |
-| Marca de lo tomado literalmente | 3 | **3** — Todo lo tomado literalmente va entre comillas y con referencia<br>**2** — Deja de 1 a 2 fragmentos literales sin marcar<br>**0** — El trabajo funde lo tomado de las fuentes con la redacción propia: 3 o más fragmentos literales sin marcar |
+| Referencias de las fuentes | 4 | **4** — Todas las fuentes llevan referencia con autor, título, edición y fecha<br>**3** — Deja de 1 a 2 referencias incompletas<br>**2** — Deja de 3 a 4 referencias incompletas<br>**1** — Deja de 5 a 6 referencias incompletas<br>**0** — El trabajo presenta los datos sin referencia de origen: 7 o más referencias incompletas |
+| Crédito del material visual | 2 | **2** — Todas las imágenes y los gráficos llevan crédito de procedencia<br>**1.5** — Deja 1 elemento visual sin crédito<br>**1** — Deja 2 elementos visuales sin crédito<br>**0.5** — Deja de 3 a 4 elementos visuales sin crédito<br>**0** — El soporte utiliza el material visual sin crédito: 5 o más elementos visuales |
+| Marca de lo tomado literalmente | 4 | **4** — Todo lo tomado literalmente va entre comillas y con referencia<br>**3** — Deja 1 fragmento literal sin marcar<br>**2** — Deja 2 fragmentos literales sin marcar<br>**1** — Deja 3 o 4 fragmentos literales sin marcar<br>**0** — El trabajo funde lo tomado de las fuentes con la redacción propia: 5 o más fragmentos literales sin marcar |
 
 ### Corrección normativa y propiedad léxica  ·  15%  ·  bloque D  ·  🔒 obligatorio
 
@@ -468,9 +468,9 @@
 
 | Componente | Máx. | Bandas |
 |---|---|---|
-| Ortografía y acentuación | 4 | **4** — Hasta 2 faltas en todo el soporte, incluidos los rótulos<br>**3** — De 3 a 5 faltas<br>**2** — De 6 a 10 faltas<br>**1** — De 11 a 15 faltas<br>**0** — 16 o más faltas |
-| Puntuación | 3 | **3** — Inciso, dato entrecomillado y referencia abreviada llevan la puntuación correspondiente<br>**2** — 1 de los tres procedimientos falla<br>**1** — 2 de los tres procedimientos fallan<br>**0** — La puntuación del soporte se reduce al punto y la coma |
-| Propiedad léxica | 3 | **3** — Emplea el término preciso del registro académico en todo el soporte<br>**2** — Emplea 1 término impreciso o comodín<br>**1** — Emplea 2 términos imprecisos o comodín<br>**0** — El texto del soporte se sostiene sobre términos comodín |
+| Ortografía y acentuación | 4 | **4** — Hasta 2 faltas en todo el soporte, incluidos los rótulos<br>**3** — De 3 a 5 faltas<br>**2** — De 6 a 10 faltas<br>**1** — De 11 a 13 faltas<br>**0** — 14 o más faltas |
+| Puntuación | 2 | **2** — Inciso, dato entrecomillado y referencia abreviada llevan la puntuación correspondiente<br>**1.5** — 1 de los tres procedimientos falla<br>**1** — 2 de los tres procedimientos fallan<br>**0.5** — Los tres procedimientos fallan y el texto conserva el punto y la coma<br>**0** — La puntuación del soporte se reduce al punto y la coma |
+| Propiedad léxica | 4 | **4** — Emplea el término preciso del registro académico en todo el soporte<br>**3** — Emplea 1 término impreciso o comodín<br>**2** — Emplea 2 términos imprecisos o comodín<br>**1** — Emplea 3 o 4 términos imprecisos o comodín<br>**0** — El texto del soporte se sostiene sobre términos comodín |
 
 ---
 
@@ -517,9 +517,9 @@
 
 | Componente | Máx. | Bandas |
 |---|---|---|
-| Fuentes reunidas | 4 | **4** — Reúne 5 o más fuentes, con dos académicas al menos<br>**3** — Reúne 4 fuentes, con una académica<br>**2** — Reúne de 2 a 3 fuentes de divulgación<br>**0** — El trabajo se apoya en una sola fuente |
-| Datos contrastados entre fuentes | 3 | **3** — Contrasta 5 o más datos y verifica el discrepante en una fuente primaria<br>**2** — Contrasta 3 o 4 datos<br>**1** — Contrasta 1 o 2 datos<br>**0** — El trabajo traslada los datos de cada fuente sin compararlos |
-| Registro de la procedencia | 3 | **3** — Anota la procedencia y la fecha de consulta y mantiene el registro que permite recuperar cada dato<br>**2** — Deja de 1 a 2 fuentes fuera del registro<br>**0** — El trabajo presenta los datos sin anotar la procedencia: 3 o más fuentes fuera del registro |
+| Fuentes reunidas | 4 | **4** — Reúne 5 o más fuentes, con dos académicas al menos<br>**3** — Reúne 4 fuentes, con una académica<br>**2** — Reúne de 2 a 3 fuentes de divulgación<br>**1** — Reúne 2 fuentes de divulgación y una reproduce a la otra<br>**0** — El trabajo se apoya en una sola fuente |
+| Datos contrastados entre fuentes | 4 | **4** — Contrasta 5 o más datos y verifica el discrepante en una fuente primaria<br>**3** — Contrasta 3 o 4 datos<br>**2** — Contrasta 1 o 2 datos<br>**1** — Sitúa dos datos de fuentes distintas juntos, sin compararlos<br>**0** — El trabajo traslada los datos de cada fuente sin compararlos |
+| Registro de la procedencia | 2 | **2** — Anota la procedencia y la fecha de consulta y mantiene el registro que permite recuperar cada dato<br>**1.5** — Deja 1 fuente fuera del registro<br>**1** — Deja 2 fuentes fuera del registro<br>**0.5** — Deja de 3 a 4 fuentes fuera del registro<br>**0** — El trabajo presenta los datos sin anotar la procedencia: 5 o más fuentes fuera del registro |
 
 ### Integración de la información: esquema propio y apartados  ·  20%  ·  bloque B  ·  🔒 obligatorio
 
@@ -538,9 +538,9 @@
 
 | Componente | Máx. | Bandas |
 |---|---|---|
-| Apartados con título propio | 4 | **4** — Organiza el trabajo en 5 o más epígrafes jerarquizados<br>**3** — Organiza el trabajo en 4 epígrafes jerarquizados<br>**2** — Organiza el trabajo en 2 o 3 epígrafes<br>**0** — El trabajo presenta la información en un bloque único |
-| Reformulación de lo tomado de las fuentes | 4 | **4** — Reformula con palabras propias todos los fragmentos tomados de las fuentes<br>**3** — Deja 1 fragmento con la redacción del original<br>**2** — Deja 2 fragmentos con la redacción del original<br>**0** — El trabajo reproduce las fuentes párrafo a párrafo: 3 o más fragmentos con la redacción del original |
-| Enlace entre apartados | 2 | **2** — Enlaza los epígrafes y gradúa el paso de lo general a lo particular<br>**1** — Enlaza 1 o 2 epígrafes y yuxtapone los demás<br>**0** — El trabajo yuxtapone los epígrafes |
+| Apartados con título propio | 4 | **4** — Organiza el trabajo en 5 o más epígrafes jerarquizados<br>**3** — Organiza el trabajo en 4 epígrafes jerarquizados<br>**2** — Organiza el trabajo en 2 o 3 epígrafes<br>**1** — Separa el trabajo en 2 bloques sin epígrafe<br>**0** — El trabajo presenta la información en un bloque único |
+| Reformulación de lo tomado de las fuentes | 4 | **4** — Reformula con palabras propias todos los fragmentos tomados de las fuentes<br>**3** — Deja 1 fragmento con la redacción del original<br>**2** — Deja 2 fragmentos con la redacción del original<br>**1** — Deja de 3 a 6 fragmentos con la redacción del original<br>**0** — El trabajo reproduce las fuentes párrafo a párrafo: 7 o más fragmentos con la redacción del original |
+| Enlace entre apartados | 2 | **2** — Enlaza los epígrafes y gradúa el paso de lo general a lo particular<br>**1.5** — Enlaza los epígrafes y mantiene el mismo grado de generalidad en todo el trabajo<br>**1** — Enlaza 1 o 2 epígrafes y yuxtapone los demás<br>**0.5** — Marca el paso de un epígrafe a otro con el título, sin ningún conector<br>**0** — El trabajo yuxtapone los epígrafes |
 
 ### Ajuste del soporte: reparto entre texto, imagen y línea temporal  ·  20%  ·  bloque B  ·  🔒 obligatorio
 
@@ -559,9 +559,9 @@
 
 | Componente | Máx. | Bandas |
 |---|---|---|
-| Reparto entre texto e imagen | 4 | **4** — Cada pantalla combina un texto breve y un elemento visual<br>**3** — Deja de 1 a 2 pantallas con texto solo<br>**2** — Deja de 3 a 4 pantallas con texto solo<br>**0** — El soporte reproduce el documento escrito: 5 o más pantallas con texto solo |
-| Elementos de orientación: título, pie y leyenda | 3 | **3** — Título, pie, leyenda e índice del soporte están completos<br>**2** — Deja de 1 a 2 elementos sin título ni pie<br>**0** — El soporte presenta los elementos visuales sin título ni pie: 3 o más elementos |
-| Cantidad de texto por pantalla | 3 | **3** — Ninguna pantalla pasa de 50 palabras<br>**2** — De 1 a 2 pantallas pasan de 50 palabras<br>**0** — El soporte vuelca el texto del documento: 3 o más pantallas pasan de 50 palabras |
+| Reparto entre texto e imagen | 4 | **4** — Cada pantalla combina un texto breve y un elemento visual<br>**3** — Deja de 1 a 2 pantallas con texto solo<br>**2** — Deja de 3 a 4 pantallas con texto solo<br>**1** — Deja de 5 a 6 pantallas con texto solo<br>**0** — El soporte reproduce el documento escrito: 7 o más pantallas con texto solo |
+| Elementos de orientación: título, pie y leyenda | 4 | **4** — Título, pie, leyenda e índice del soporte están completos<br>**3** — Deja 1 elemento sin título ni pie<br>**2** — Deja 2 elementos sin título ni pie<br>**1** — Deja de 3 a 4 elementos sin título ni pie<br>**0** — El soporte presenta los elementos visuales sin título ni pie: 5 o más elementos |
+| Cantidad de texto por pantalla | 2 | **2** — Ninguna pantalla pasa de 50 palabras<br>**1.5** — 1 pantalla pasa de 50 palabras<br>**1** — 2 o 3 pantallas pasan de 50 palabras<br>**0.5** — De 4 a 5 pantallas pasan de 50 palabras<br>**0** — El soporte vuelca el texto del documento: 6 o más pantallas pasan de 50 palabras |
 
 ### Atribución de fuentes y uso del material ajeno  ·  15%  ·  bloque B
 
@@ -580,9 +580,9 @@
 
 | Componente | Máx. | Bandas |
 |---|---|---|
-| Referencias de las fuentes | 4 | **4** — Todas las fuentes llevan referencia completa y un mismo modelo de referencia<br>**3** — Deja de 1 a 2 referencias incompletas o en otro modelo<br>**2** — Deja de 3 a 4 referencias incompletas o en otro modelo<br>**0** — El trabajo presenta los datos sin referencia de origen: 5 o más referencias incompletas o en otro modelo |
-| Crédito del material visual | 3 | **3** — Todas las imágenes y los gráficos llevan crédito de procedencia<br>**2** — Deja de 1 a 2 elementos visuales sin crédito<br>**0** — El soporte utiliza el material visual sin crédito: 3 o más elementos visuales |
-| Marca de lo tomado literalmente | 3 | **3** — Todo lo tomado literalmente va entre comillas y con referencia<br>**2** — Deja de 1 a 2 fragmentos literales sin marcar<br>**0** — El trabajo funde lo tomado de las fuentes con la redacción propia: 3 o más fragmentos literales sin marcar |
+| Referencias de las fuentes | 4 | **4** — Todas las fuentes llevan referencia completa y un mismo modelo de referencia<br>**3** — Deja de 1 a 2 referencias incompletas o en otro modelo<br>**2** — Deja de 3 a 4 referencias incompletas o en otro modelo<br>**1** — Deja de 5 a 6 referencias incompletas o en otro modelo<br>**0** — El trabajo presenta los datos sin referencia de origen: 7 o más referencias incompletas o en otro modelo |
+| Crédito del material visual | 2 | **2** — Todas las imágenes y los gráficos llevan crédito de procedencia<br>**1.5** — Deja 1 elemento visual sin crédito<br>**1** — Deja 2 elementos visuales sin crédito<br>**0.5** — Deja de 3 a 4 elementos visuales sin crédito<br>**0** — El soporte utiliza el material visual sin crédito: 5 o más elementos visuales |
+| Marca de lo tomado literalmente | 4 | **4** — Todo lo tomado literalmente va entre comillas y con referencia<br>**3** — Deja 1 fragmento literal sin marcar<br>**2** — Deja 2 fragmentos literales sin marcar<br>**1** — Deja 3 o 4 fragmentos literales sin marcar<br>**0** — El trabajo funde lo tomado de las fuentes con la redacción propia: 5 o más fragmentos literales sin marcar |
 
 ### Corrección normativa y propiedad léxica  ·  15%  ·  bloque D  ·  🔒 obligatorio
 
@@ -601,9 +601,9 @@
 
 | Componente | Máx. | Bandas |
 |---|---|---|
-| Ortografía y acentuación | 4 | **4** — Hasta 1 falta en todo el soporte, incluidos los rótulos<br>**3** — De 2 a 4 faltas<br>**2** — De 5 a 8 faltas<br>**1** — De 9 a 13 faltas<br>**0** — 14 o más faltas |
-| Puntuación | 3 | **3** — Inciso, dato entrecomillado y referencia abreviada llevan la puntuación correspondiente<br>**2** — 1 de los tres procedimientos falla<br>**1** — 2 de los tres procedimientos fallan<br>**0** — La puntuación del soporte se reduce al punto y la coma |
-| Propiedad léxica | 3 | **3** — Emplea el término preciso del registro académico en todo el soporte<br>**2** — Emplea 1 término impreciso o comodín<br>**1** — Emplea 2 términos imprecisos o comodín<br>**0** — El texto del soporte se sostiene sobre términos comodín |
+| Ortografía y acentuación | 4 | **4** — Hasta 2 faltas en todo el soporte, incluidos los rótulos<br>**3** — De 3 a 5 faltas<br>**2** — De 6 a 11 faltas<br>**1** — 12 o 13 faltas<br>**0** — 14 o más faltas |
+| Puntuación | 2 | **2** — Inciso, dato entrecomillado y referencia abreviada llevan la puntuación correspondiente<br>**1.5** — 1 de los tres procedimientos falla<br>**1** — 2 de los tres procedimientos fallan<br>**0.5** — Los tres procedimientos fallan y el texto conserva el punto y la coma<br>**0** — La puntuación del soporte se reduce al punto y la coma |
+| Propiedad léxica | 4 | **4** — Emplea el término preciso del registro académico en todo el soporte<br>**3** — Emplea 1 término impreciso o comodín<br>**2** — Emplea 2 términos imprecisos o comodín<br>**1** — Emplea 3 o 4 términos imprecisos o comodín<br>**0** — El texto del soporte se sostiene sobre términos comodín |
 
 ---
 

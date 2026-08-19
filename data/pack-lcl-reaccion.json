@@ -98,6 +98,10 @@
                 "condicion": "Deja 2 opiniones presentadas como hecho"
               },
               {
+                "puntos": 1,
+                "condicion": "Deja 3 o 4 opiniones presentadas como hecho"
+              },
+              {
                 "puntos": 0,
                 "condicion": "La reacción trata toda la noticia como hechos"
               }
@@ -105,15 +109,23 @@
           },
           {
             "nombre": "Fuente y fecha",
-            "max": 3,
+            "max": 2,
             "bandas": [
               {
-                "puntos": 3,
+                "puntos": 2,
                 "condicion": "La reacción nombra la fuente y la fecha de la noticia"
               },
               {
-                "puntos": 2,
+                "puntos": 1.5,
+                "condicion": "La reacción nombra la fuente y sitúa la fecha sin precisarla"
+              },
+              {
+                "puntos": 1,
                 "condicion": "Nombra una de las dos"
+              },
+              {
+                "puntos": 0.5,
+                "condicion": "La reacción nombra el medio de forma genérica: la tele, internet"
               },
               {
                 "puntos": 0,
@@ -123,15 +135,23 @@
           },
           {
             "nombre": "Contraste con otra fuente",
-            "max": 3,
+            "max": 4,
             "bandas": [
               {
+                "puntos": 4,
+                "condicion": "Contrasta 3 o más datos de la noticia con otra fuente"
+              },
+              {
                 "puntos": 3,
-                "condicion": "Contrasta 2 o más datos de la noticia con otra fuente"
+                "condicion": "Contrasta 2 datos de la noticia con otra fuente"
               },
               {
                 "puntos": 2,
                 "condicion": "Contrasta 1 dato de la noticia con otra fuente"
+              },
+              {
+                "puntos": 1,
+                "condicion": "Nombra otra fuente sin contrastar con ella ningún dato"
               },
               {
                 "puntos": 0,
@@ -205,15 +225,23 @@
         "componentes": [
           {
             "nombre": "Soporte identificado",
-            "max": 3,
+            "max": 2,
             "bandas": [
               {
-                "puntos": 3,
+                "puntos": 2,
                 "condicion": "La reacción nombra el soporte concreto: periódico digital, radio, red social"
               },
               {
-                "puntos": 2,
+                "puntos": 1.5,
+                "condicion": "La reacción nombra el soporte concreto y lo confunde con el medio que lo publica"
+              },
+              {
+                "puntos": 1,
                 "condicion": "Nombra el tipo de medio sin concretar el soporte"
+              },
+              {
+                "puntos": 0.5,
+                "condicion": "La reacción alude al soporte con una fórmula general: lo he visto por ahí"
               },
               {
                 "puntos": 0,
@@ -238,6 +266,10 @@
                 "condicion": "Señala 1 rasgo del soporte"
               },
               {
+                "puntos": 1,
+                "condicion": "Nombra el soporte sin señalar ningún rasgo"
+              },
+              {
                 "puntos": 0,
                 "condicion": "La reacción comenta el contenido y deja fuera los rasgos del soporte"
               }
@@ -245,15 +277,23 @@
           },
           {
             "nombre": "Idoneidad razonada",
-            "max": 3,
+            "max": 4,
             "bandas": [
               {
+                "puntos": 4,
+                "condicion": "Razona por qué ese soporte conviene al mensaje de la noticia, con un rasgo del soporte"
+              },
+              {
                 "puntos": 3,
-                "condicion": "Razona por qué ese soporte conviene al mensaje de la noticia"
+                "condicion": "Razona por qué ese soporte conviene al mensaje, sin apoyarse en ningún rasgo"
               },
               {
                 "puntos": 2,
                 "condicion": "Afirma si el soporte conviene sin razonarlo"
+              },
+              {
+                "puntos": 1,
+                "condicion": "Apunta que el soporte influye en el mensaje, sin decir si conviene"
               },
               {
                 "puntos": 0,
@@ -327,18 +367,22 @@
         "componentes": [
           {
             "nombre": "Partes de la noticia nombradas",
-            "max": 3,
+            "max": 2,
             "bandas": [
               {
-                "puntos": 3,
+                "puntos": 2,
                 "condicion": "La reacción nombra 3 o más partes: titular, entradilla, cuerpo, imagen, pie de foto"
               },
               {
-                "puntos": 2,
-                "condicion": "Nombra 2 partes de la noticia"
+                "puntos": 1.5,
+                "condicion": "La reacción nombra 3 o más partes y solo comenta una"
               },
               {
                 "puntos": 1,
+                "condicion": "Nombra 2 partes de la noticia"
+              },
+              {
+                "puntos": 0.5,
                 "condicion": "Nombra 1 parte de la noticia"
               },
               {
@@ -364,6 +408,10 @@
                 "condicion": "Nombra un procedimiento sin explicar el efecto"
               },
               {
+                "puntos": 1,
+                "condicion": "Señala un pasaje llamativo sin nombrar el procedimiento"
+              },
+              {
                 "puntos": 0,
                 "condicion": "La reacción resume el contenido y deja fuera los procedimientos"
               }
@@ -371,19 +419,23 @@
           },
           {
             "nombre": "Léxico valorativo localizado",
-            "max": 3,
+            "max": 4,
             "bandas": [
               {
-                "puntos": 3,
+                "puntos": 4,
                 "condicion": "Localiza 3 o más palabras con carga valorativa en la noticia"
               },
               {
-                "puntos": 2,
+                "puntos": 3,
                 "condicion": "Localiza 2 palabras con carga valorativa"
               },
               {
-                "puntos": 1,
+                "puntos": 2,
                 "condicion": "Localiza 1 palabra con carga valorativa"
+              },
+              {
+                "puntos": 1,
+                "condicion": "Señala un pasaje valorativo sin localizar la palabra"
               },
               {
                 "puntos": 0,
@@ -458,15 +510,23 @@
         "componentes": [
           {
             "nombre": "Partes de la reacción",
-            "max": 3,
+            "max": 4,
             "bandas": [
               {
-                "puntos": 3,
+                "puntos": 4,
                 "condicion": "La reacción presenta la noticia y después la valora, en partes reconocibles"
               },
               {
-                "puntos": 2,
+                "puntos": 3,
                 "condicion": "Las dos partes se mezclan y la valoración aún se distingue del resumen"
+              },
+              {
+                "puntos": 2,
+                "condicion": "La valoración se reduce a una frase final"
+              },
+              {
+                "puntos": 1,
+                "condicion": "La valoración se reduce a una fórmula de acuerdo o desacuerdo"
               },
               {
                 "puntos": 0,
@@ -476,15 +536,23 @@
           },
           {
             "nombre": "Conectores entre noticia y valoración",
-            "max": 3,
+            "max": 2,
             "bandas": [
               {
-                "puntos": 3,
+                "puntos": 2,
                 "condicion": "Emplea 3 o más conectores distintos de causa, contraste u orden"
               },
               {
-                "puntos": 2,
+                "puntos": 1.5,
+                "condicion": "Emplea 3 o más conectores y repite el mismo en la mayoría de los enlaces"
+              },
+              {
+                "puntos": 1,
                 "condicion": "Emplea 1 o 2 conectores distintos"
+              },
+              {
+                "puntos": 0.5,
+                "condicion": "Enlaza las frases con la conjunción y emplea un conector en un solo punto"
               },
               {
                 "puntos": 0,
@@ -501,8 +569,16 @@
                 "condicion": "Apoya la valoración en 1 o más citas literales de la noticia"
               },
               {
+                "puntos": 1.5,
+                "condicion": "Apoya la valoración en una cita literal copiada sin comillas"
+              },
+              {
                 "puntos": 1,
                 "condicion": "Alude a la noticia sin citarla"
+              },
+              {
+                "puntos": 0.5,
+                "condicion": "Resume la noticia al principio y valora sin volver a ella"
               },
               {
                 "puntos": 0,
@@ -519,8 +595,16 @@
                 "condicion": "Mantiene el registro formal en toda la reacción"
               },
               {
+                "puntos": 1.5,
+                "condicion": "Se desliza al registro coloquial en 1 punto"
+              },
+              {
                 "puntos": 1,
-                "condicion": "Se desliza al registro coloquial en 1 o 2 puntos"
+                "condicion": "Se desliza al registro coloquial en 2 o 3 puntos"
+              },
+              {
+                "puntos": 0.5,
+                "condicion": "Se desliza al registro coloquial en 4 o más puntos"
               },
               {
                 "puntos": 0,
@@ -599,33 +683,45 @@
             "bandas": [
               {
                 "puntos": 4,
-                "condicion": "Hasta 1 falta en toda la reacción"
+                "condicion": "Hasta 1 faltas en toda la reacción"
               },
               {
                 "puntos": 3,
-                "condicion": "De 2 a 3 faltas"
+                "condicion": "2 o 3 faltas"
               },
               {
                 "puntos": 2,
-                "condicion": "De 4 a 5 faltas"
+                "condicion": "4 o 5 faltas"
+              },
+              {
+                "puntos": 1,
+                "condicion": "De 6 a 8 faltas"
               },
               {
                 "puntos": 0,
-                "condicion": "6 o más faltas"
+                "condicion": "9 o más faltas"
               }
             ]
           },
           {
             "nombre": "Puntuación y comillas",
-            "max": 3,
+            "max": 2,
             "bandas": [
               {
-                "puntos": 3,
+                "puntos": 2,
                 "condicion": "Cierra con punto todas las frases y entrecomilla las palabras tomadas de la noticia"
               },
               {
-                "puntos": 2,
-                "condicion": "Deja 1 o 2 citas sin comillas, o 1 o 2 frases sin cerrar"
+                "puntos": 1.5,
+                "condicion": "Deja 1 cita sin comillas, o 1 frase sin cerrar"
+              },
+              {
+                "puntos": 1,
+                "condicion": "Deja 2 o 3 citas sin comillas, o 2 o 3 frases sin cerrar"
+              },
+              {
+                "puntos": 0.5,
+                "condicion": "Deja de 4 a 6 citas sin comillas, o de 4 a 6 frases sin cerrar"
               },
               {
                 "puntos": 0,
@@ -635,19 +731,23 @@
           },
           {
             "nombre": "Propiedad léxica",
-            "max": 3,
+            "max": 4,
             "bandas": [
               {
-                "puntos": 3,
+                "puntos": 4,
                 "condicion": "Emplea términos precisos y ninguna palabra comodín (cosa, tema, hacer)"
               },
               {
-                "puntos": 2,
+                "puntos": 3,
                 "condicion": "Emplea 1 palabra comodín"
               },
               {
-                "puntos": 1,
+                "puntos": 2,
                 "condicion": "Emplea 2 palabras comodín"
+              },
+              {
+                "puntos": 1,
+                "condicion": "Emplea 3 o 4 palabras comodín"
               },
               {
                 "puntos": 0,
@@ -722,19 +822,23 @@
         "componentes": [
           {
             "nombre": "Hechos y opiniones separados",
-            "max": 3,
+            "max": 4,
             "bandas": [
               {
-                "puntos": 3,
+                "puntos": 4,
                 "condicion": "La reacción separa de los hechos todos los enunciados de opinión de la noticia"
               },
               {
-                "puntos": 2,
+                "puntos": 3,
                 "condicion": "Deja 1 opinión presentada como hecho"
               },
               {
-                "puntos": 1,
+                "puntos": 2,
                 "condicion": "Deja 2 opiniones presentadas como hecho"
+              },
+              {
+                "puntos": 1,
+                "condicion": "Deja 3 o 4 opiniones presentadas como hecho"
               },
               {
                 "puntos": 0,
@@ -759,6 +863,10 @@
                 "condicion": "Contrasta 1 dato con otra fuente"
               },
               {
+                "puntos": 1,
+                "condicion": "Nombra otra fuente sin contrastar con ella ningún dato"
+              },
+              {
                 "puntos": 0,
                 "condicion": "La reacción se apoya solo en la noticia de partida"
               }
@@ -766,18 +874,22 @@
           },
           {
             "nombre": "Indicios de fiabilidad",
-            "max": 3,
+            "max": 2,
             "bandas": [
               {
-                "puntos": 3,
+                "puntos": 2,
                 "condicion": "La reacción examina 3 o más indicios: autoría, fecha, datos citados, línea del medio"
               },
               {
-                "puntos": 2,
-                "condicion": "Examina 2 indicios de fiabilidad"
+                "puntos": 1.5,
+                "condicion": "La reacción examina 3 o más indicios y solo uno con datos de la noticia"
               },
               {
                 "puntos": 1,
+                "condicion": "Examina 2 indicios de fiabilidad"
+              },
+              {
+                "puntos": 0.5,
                 "condicion": "Examina 1 indicio de fiabilidad"
               },
               {
@@ -868,26 +980,34 @@
                 "condicion": "Localiza 2 procedimientos lingüísticos"
               },
               {
+                "puntos": 1,
+                "condicion": "Localiza 1 procedimiento lingüístico"
+              },
+              {
                 "puntos": 0,
-                "condicion": "Localiza 1 procedimiento lingüístico o ninguno"
+                "condicion": "La reacción comenta el contenido sin localizar ningún procedimiento"
               }
             ]
           },
           {
             "nombre": "Efecto explicado",
-            "max": 3,
+            "max": 4,
             "bandas": [
               {
-                "puntos": 3,
+                "puntos": 4,
                 "condicion": "Explica el efecto de 3 o más de esos procedimientos"
               },
               {
-                "puntos": 2,
+                "puntos": 3,
                 "condicion": "Explica el efecto de 2 procedimientos"
               },
               {
-                "puntos": 1,
+                "puntos": 2,
                 "condicion": "Explica el efecto de 1 procedimiento"
+              },
+              {
+                "puntos": 1,
+                "condicion": "Nombra el efecto de un procedimiento sin explicarlo"
               },
               {
                 "puntos": 0,
@@ -897,15 +1017,23 @@
           },
           {
             "nombre": "Ejemplos citados",
-            "max": 3,
+            "max": 2,
             "bandas": [
               {
-                "puntos": 3,
+                "puntos": 2,
                 "condicion": "Apoya el juicio en 2 o más ejemplos citados literalmente"
               },
               {
-                "puntos": 2,
+                "puntos": 1.5,
+                "condicion": "Apoya el juicio en 2 o más ejemplos y cita uno sin comillas"
+              },
+              {
+                "puntos": 1,
                 "condicion": "Apoya el juicio en 1 ejemplo citado literalmente"
+              },
+              {
+                "puntos": 0.5,
+                "condicion": "Alude a un ejemplo de la noticia sin reproducirlo"
               },
               {
                 "puntos": 0,
@@ -980,15 +1108,23 @@
         "componentes": [
           {
             "nombre": "Partes de la reacción",
-            "max": 3,
+            "max": 4,
             "bandas": [
               {
-                "puntos": 3,
+                "puntos": 4,
                 "condicion": "La reacción presenta la noticia, la valora y cierra con una conclusión"
               },
               {
+                "puntos": 3,
+                "condicion": "Falta 1 de las tres partes"
+              },
+              {
                 "puntos": 2,
-                "condicion": "Faltan 1 o 2 de las tres partes"
+                "condicion": "Faltan 2 de las tres partes"
+              },
+              {
+                "puntos": 1,
+                "condicion": "La valoración se reduce a una fórmula de acuerdo o desacuerdo"
               },
               {
                 "puntos": 0,
@@ -998,15 +1134,23 @@
           },
           {
             "nombre": "Conectores entre juicio y dato",
-            "max": 3,
+            "max": 2,
             "bandas": [
               {
-                "puntos": 3,
+                "puntos": 2,
                 "condicion": "Emplea 4 o más conectores distintos de causa, contraste, consecuencia u orden"
               },
               {
-                "puntos": 2,
+                "puntos": 1.5,
+                "condicion": "Emplea 4 o más conectores y repite el mismo tipo en la mayoría de los enlaces"
+              },
+              {
+                "puntos": 1,
                 "condicion": "Emplea de 1 a 3 tipos de conector"
+              },
+              {
+                "puntos": 0.5,
+                "condicion": "Enlaza las frases con la conjunción y emplea un conector en un solo punto"
               },
               {
                 "puntos": 0,
@@ -1023,8 +1167,16 @@
                 "condicion": "Apoya el juicio en 2 o más citas literales de la noticia"
               },
               {
+                "puntos": 1.5,
+                "condicion": "Apoya el juicio en 2 o más citas y reproduce una sin comillas"
+              },
+              {
                 "puntos": 1,
                 "condicion": "Apoya el juicio en 1 cita literal"
+              },
+              {
+                "puntos": 0.5,
+                "condicion": "Alude al contenido de la noticia sin reproducir ninguna palabra"
               },
               {
                 "puntos": 0,
@@ -1041,8 +1193,16 @@
                 "condicion": "Mantiene el registro formal en toda la reacción"
               },
               {
+                "puntos": 1.5,
+                "condicion": "Se desliza al registro coloquial en 1 punto"
+              },
+              {
                 "puntos": 1,
-                "condicion": "Se desliza al registro coloquial en 1 o 2 puntos"
+                "condicion": "Se desliza al registro coloquial en 2 o 3 puntos"
+              },
+              {
+                "puntos": 0.5,
+                "condicion": "Se desliza al registro coloquial en 4 o más puntos"
               },
               {
                 "puntos": 0,
@@ -1121,33 +1281,45 @@
             "bandas": [
               {
                 "puntos": 4,
-                "condicion": "Hasta 1 falta en toda la reacción"
+                "condicion": "Hasta 2 faltas en toda la reacción"
               },
               {
                 "puntos": 3,
-                "condicion": "De 2 a 3 faltas"
+                "condicion": "3 o 4 faltas"
               },
               {
                 "puntos": 2,
-                "condicion": "De 4 a 5 faltas"
+                "condicion": "De 5 a 7 faltas"
+              },
+              {
+                "puntos": 1,
+                "condicion": "De 8 a 10 faltas"
               },
               {
                 "puntos": 0,
-                "condicion": "6 o más faltas"
+                "condicion": "11 o más faltas"
               }
             ]
           },
           {
             "nombre": "Puntuación y comillas",
-            "max": 3,
+            "max": 2,
             "bandas": [
               {
-                "puntos": 3,
+                "puntos": 2,
                 "condicion": "Cierra con punto todas las frases y entrecomilla todas las palabras tomadas de la noticia"
               },
               {
-                "puntos": 2,
-                "condicion": "Deja 1 o 2 citas sin comillas, o 1 o 2 frases sin cerrar"
+                "puntos": 1.5,
+                "condicion": "Deja 1 cita sin comillas, o 1 frase sin cerrar"
+              },
+              {
+                "puntos": 1,
+                "condicion": "Deja 2 o 3 citas sin comillas, o 2 o 3 frases sin cerrar"
+              },
+              {
+                "puntos": 0.5,
+                "condicion": "Deja de 4 a 6 citas sin comillas, o de 4 a 6 frases sin cerrar"
               },
               {
                 "puntos": 0,
@@ -1157,19 +1329,23 @@
           },
           {
             "nombre": "Propiedad léxica",
-            "max": 3,
+            "max": 4,
             "bandas": [
               {
-                "puntos": 3,
+                "puntos": 4,
                 "condicion": "Emplea términos precisos y ninguna palabra comodín (cosa, tema, hacer)"
               },
               {
-                "puntos": 2,
+                "puntos": 3,
                 "condicion": "Emplea 1 palabra comodín"
               },
               {
-                "puntos": 1,
+                "puntos": 2,
                 "condicion": "Emplea 2 palabras comodín"
+              },
+              {
+                "puntos": 1,
+                "condicion": "Emplea 3 o 4 palabras comodín"
               },
               {
                 "puntos": 0,
@@ -1244,19 +1420,23 @@
         "componentes": [
           {
             "nombre": "Información y juicio separados",
-            "max": 3,
+            "max": 4,
             "bandas": [
               {
-                "puntos": 3,
+                "puntos": 4,
                 "condicion": "La reacción separa de la información verificable todos los juicios del medio"
               },
               {
-                "puntos": 2,
+                "puntos": 3,
                 "condicion": "Deja 1 juicio presentado como información"
               },
               {
-                "puntos": 1,
+                "puntos": 2,
                 "condicion": "Deja 2 juicios presentados como información"
+              },
+              {
+                "puntos": 1,
+                "condicion": "Deja 3 o 4 juicios presentados como información"
               },
               {
                 "puntos": 0,
@@ -1281,6 +1461,10 @@
                 "condicion": "Verifica 1 dato en una fuente independiente"
               },
               {
+                "puntos": 1,
+                "condicion": "Nombra una fuente independiente sin verificar con ella ningún dato"
+              },
+              {
                 "puntos": 0,
                 "condicion": "La reacción se apoya solo en la noticia de partida"
               }
@@ -1288,18 +1472,22 @@
           },
           {
             "nombre": "Indicios de fiabilidad examinados",
-            "max": 3,
+            "max": 2,
             "bandas": [
               {
-                "puntos": 3,
+                "puntos": 2,
                 "condicion": "La reacción examina autoría, trazabilidad de los datos y línea editorial"
               },
               {
-                "puntos": 2,
-                "condicion": "Examina 2 de los tres indicios"
+                "puntos": 1.5,
+                "condicion": "La reacción examina los tres indicios y uno de ellos sin datos de la noticia"
               },
               {
                 "puntos": 1,
+                "condicion": "Examina 2 de los tres indicios"
+              },
+              {
+                "puntos": 0.5,
                 "condicion": "Examina 1 de los tres indicios"
               },
               {
@@ -1381,8 +1569,16 @@
                 "condicion": "La reacción nombra el canal concreto y el medio que lo sostiene"
               },
               {
+                "puntos": 1.5,
+                "condicion": "La reacción nombra el canal concreto y deja sin nombrar el medio que lo sostiene"
+              },
+              {
                 "puntos": 1,
                 "condicion": "Nombra el tipo de canal sin concretar el medio"
+              },
+              {
+                "puntos": 0.5,
+                "condicion": "La reacción alude al canal con una fórmula general: lo he visto por ahí"
               },
               {
                 "puntos": 0,
@@ -1407,6 +1603,10 @@
                 "condicion": "Señala 1 rasgo del canal"
               },
               {
+                "puntos": 1,
+                "condicion": "Nombra el canal sin señalar ningún rasgo"
+              },
+              {
                 "puntos": 0,
                 "condicion": "La reacción comenta el contenido y deja fuera los rasgos del canal"
               }
@@ -1427,6 +1627,10 @@
               {
                 "puntos": 2,
                 "condicion": "Afirma si el canal conviene sin razonarlo"
+              },
+              {
+                "puntos": 1,
+                "condicion": "Apunta que el canal influye en el mensaje, sin decir si conviene"
               },
               {
                 "puntos": 0,
@@ -1516,22 +1720,34 @@
                 "condicion": "Localiza 2 procedimientos comunicativos"
               },
               {
+                "puntos": 1,
+                "condicion": "Localiza 1 procedimiento comunicativo"
+              },
+              {
                 "puntos": 0,
-                "condicion": "Localiza 1 procedimiento comunicativo o ninguno"
+                "condicion": "La reacción comenta el contenido sin localizar ningún procedimiento"
               }
             ]
           },
           {
             "nombre": "Punto de vista reconstruido",
-            "max": 3,
+            "max": 2,
             "bandas": [
               {
-                "puntos": 3,
+                "puntos": 2,
                 "condicion": "La reacción explica cómo esos procedimientos construyen el punto de vista del medio"
               },
               {
-                "puntos": 2,
+                "puntos": 1.5,
+                "condicion": "La reacción explica cómo un solo procedimiento construye el punto de vista del medio"
+              },
+              {
+                "puntos": 1,
                 "condicion": "Explica el efecto de los procedimientos sin llegar al punto de vista"
+              },
+              {
+                "puntos": 0.5,
+                "condicion": "La reacción nombra los procedimientos de la noticia sin explicar ningún efecto"
               },
               {
                 "puntos": 0,
@@ -1541,19 +1757,23 @@
           },
           {
             "nombre": "Ejemplos citados",
-            "max": 3,
+            "max": 4,
             "bandas": [
               {
-                "puntos": 3,
+                "puntos": 4,
                 "condicion": "Apoya el juicio en 3 o más ejemplos citados literalmente"
               },
               {
-                "puntos": 2,
+                "puntos": 3,
                 "condicion": "Apoya el juicio en 2 ejemplos citados literalmente"
               },
               {
-                "puntos": 1,
+                "puntos": 2,
                 "condicion": "Apoya el juicio en 1 ejemplo citado literalmente"
+              },
+              {
+                "puntos": 1,
+                "condicion": "Alude a un pasaje de la noticia sin citarlo"
               },
               {
                 "puntos": 0,
@@ -1628,15 +1848,23 @@
         "componentes": [
           {
             "nombre": "Estructura de la reacción",
-            "max": 3,
+            "max": 4,
             "bandas": [
               {
-                "puntos": 3,
+                "puntos": 4,
                 "condicion": "La reacción presenta el asunto, lo valora y cierra con una conclusión"
               },
               {
+                "puntos": 3,
+                "condicion": "Falta 1 de las tres partes"
+              },
+              {
                 "puntos": 2,
-                "condicion": "Faltan 1 o 2 de las tres partes"
+                "condicion": "Faltan 2 de las tres partes"
+              },
+              {
+                "puntos": 1,
+                "condicion": "La valoración se reduce a una fórmula de acuerdo o desacuerdo"
               },
               {
                 "puntos": 0,
@@ -1646,15 +1874,23 @@
           },
           {
             "nombre": "Conectores y matización",
-            "max": 3,
+            "max": 2,
             "bandas": [
               {
-                "puntos": 3,
+                "puntos": 2,
                 "condicion": "Emplea 4 o más conectores distintos, entre ellos 1 de concesión"
               },
               {
-                "puntos": 2,
+                "puntos": 1.5,
+                "condicion": "Emplea 4 o más conectores distintos, ninguno de concesión"
+              },
+              {
+                "puntos": 1,
                 "condicion": "Emplea de 1 a 3 tipos de conector"
+              },
+              {
+                "puntos": 0.5,
+                "condicion": "Enlaza las frases con la conjunción y emplea un conector en un solo punto"
               },
               {
                 "puntos": 0,
@@ -1671,8 +1907,16 @@
                 "condicion": "Apoya el juicio en 2 o más citas literales de la noticia"
               },
               {
+                "puntos": 1.5,
+                "condicion": "Apoya el juicio en 2 o más citas y reproduce una sin comillas"
+              },
+              {
                 "puntos": 1,
                 "condicion": "Apoya el juicio en 1 cita literal"
+              },
+              {
+                "puntos": 0.5,
+                "condicion": "Alude al contenido de la noticia sin reproducir ninguna palabra"
               },
               {
                 "puntos": 0,
@@ -1689,8 +1933,16 @@
                 "condicion": "Mantiene el registro académico y modula el juicio con marcas de certeza"
               },
               {
+                "puntos": 1.5,
+                "condicion": "Mantiene el registro académico y modula un solo juicio con marcas de certeza"
+              },
+              {
                 "puntos": 1,
                 "condicion": "Mantiene el registro académico y afirma sin modular"
+              },
+              {
+                "puntos": 0.5,
+                "condicion": "Se desliza al registro coloquial en un punto y afirma sin modular"
               },
               {
                 "puntos": 0,
@@ -1769,33 +2021,45 @@
             "bandas": [
               {
                 "puntos": 4,
-                "condicion": "Hasta 1 falta en toda la reacción, tipográficas incluidas"
+                "condicion": "Hasta 1 faltas en toda la reacción, tipográficas incluidas"
               },
               {
                 "puntos": 3,
-                "condicion": "De 2 a 3 faltas"
+                "condicion": "De 2 a 4 faltas"
               },
               {
                 "puntos": 2,
-                "condicion": "De 4 a 5 faltas"
+                "condicion": "De 5 a 8 faltas"
+              },
+              {
+                "puntos": 1,
+                "condicion": "De 9 a 11 faltas"
               },
               {
                 "puntos": 0,
-                "condicion": "6 o más faltas"
+                "condicion": "12 o más faltas"
               }
             ]
           },
           {
             "nombre": "Puntuación del período",
-            "max": 3,
+            "max": 2,
             "bandas": [
               {
-                "puntos": 3,
+                "puntos": 2,
                 "condicion": "Puntúa los incisos y las subordinadas y cierra todas las frases"
               },
               {
-                "puntos": 2,
-                "condicion": "Deja 1 o 2 incisos sin delimitar, o 1 o 2 frases sin cerrar"
+                "puntos": 1.5,
+                "condicion": "Deja 1 inciso sin delimitar, o 1 frase sin cerrar"
+              },
+              {
+                "puntos": 1,
+                "condicion": "Deja 2 o 3 incisos sin delimitar, o 2 o 3 frases sin cerrar"
+              },
+              {
+                "puntos": 0.5,
+                "condicion": "Deja de 4 a 6 incisos sin delimitar, o de 4 a 6 frases sin cerrar"
               },
               {
                 "puntos": 0,
@@ -1805,19 +2069,23 @@
           },
           {
             "nombre": "Propiedad léxica",
-            "max": 3,
+            "max": 4,
             "bandas": [
               {
-                "puntos": 3,
+                "puntos": 4,
                 "condicion": "Emplea términos precisos y ninguna expresión vaga"
               },
               {
-                "puntos": 2,
+                "puntos": 3,
                 "condicion": "Emplea 1 expresión vaga"
               },
               {
-                "puntos": 1,
+                "puntos": 2,
                 "condicion": "Emplea 2 expresiones vagas"
+              },
+              {
+                "puntos": 1,
+                "condicion": "Emplea 3 o 4 expresiones vagas"
               },
               {
                 "puntos": 0,
@@ -1892,15 +2160,23 @@
         "componentes": [
           {
             "nombre": "Información, interpretación y juicio",
-            "max": 3,
+            "max": 2,
             "bandas": [
               {
-                "puntos": 3,
+                "puntos": 2,
                 "condicion": "La reacción separa los tres planos a lo largo de toda la noticia"
               },
               {
-                "puntos": 2,
+                "puntos": 1.5,
+                "condicion": "La reacción separa los tres planos en la mayor parte de la noticia"
+              },
+              {
+                "puntos": 1,
                 "condicion": "Funde 2 de los tres planos en la reacción"
+              },
+              {
+                "puntos": 0.5,
+                "condicion": "La reacción anuncia los tres planos y los funde al desarrollarlos"
               },
               {
                 "puntos": 0,
@@ -1925,6 +2201,10 @@
                 "condicion": "Contrasta la noticia con 1 fuente de la misma línea editorial"
               },
               {
+                "puntos": 1,
+                "condicion": "Nombra otra fuente sin contrastar con ella ningún dato"
+              },
+              {
                 "puntos": 0,
                 "condicion": "La reacción se apoya solo en la noticia de partida"
               }
@@ -1932,19 +2212,23 @@
           },
           {
             "nombre": "Evidencia citada",
-            "max": 3,
+            "max": 4,
             "bandas": [
               {
-                "puntos": 3,
+                "puntos": 4,
                 "condicion": "Sostiene el juicio con 3 o más datos citados de las fuentes manejadas"
               },
               {
-                "puntos": 2,
+                "puntos": 3,
                 "condicion": "Sostiene el juicio con 2 datos citados"
               },
               {
-                "puntos": 1,
+                "puntos": 2,
                 "condicion": "Sostiene el juicio con 1 dato citado"
+              },
+              {
+                "puntos": 1,
+                "condicion": "Alude a un dato de las fuentes sin citarlo"
               },
               {
                 "puntos": 0,
@@ -2019,23 +2303,27 @@
         "componentes": [
           {
             "nombre": "Procedimientos localizados",
-            "max": 3,
+            "max": 4,
             "bandas": [
               {
-                "puntos": 3,
+                "puntos": 4,
                 "condicion": "Localiza 4 o más procedimientos lingüísticos de la noticia"
               },
               {
-                "puntos": 2,
+                "puntos": 3,
                 "condicion": "Localiza 3 procedimientos lingüísticos"
               },
               {
-                "puntos": 1,
+                "puntos": 2,
                 "condicion": "Localiza 2 procedimientos lingüísticos"
               },
               {
+                "puntos": 1,
+                "condicion": "Localiza 1 procedimiento lingüístico"
+              },
+              {
                 "puntos": 0,
-                "condicion": "Localiza 1 procedimiento lingüístico o ninguno"
+                "condicion": "La reacción comenta el contenido sin localizar ningún procedimiento"
               }
             ]
           },
@@ -2056,6 +2344,10 @@
                 "condicion": "Nombra los procedimientos y apunta un efecto"
               },
               {
+                "puntos": 1,
+                "condicion": "Nombra un procedimiento sin apuntar ningún efecto"
+              },
+              {
                 "puntos": 0,
                 "condicion": "La reacción comenta el contenido y deja fuera la forma"
               }
@@ -2063,18 +2355,22 @@
           },
           {
             "nombre": "Ejemplos citados",
-            "max": 3,
+            "max": 2,
             "bandas": [
               {
-                "puntos": 3,
+                "puntos": 2,
                 "condicion": "Sostiene el análisis con 3 o más ejemplos citados literalmente"
               },
               {
-                "puntos": 2,
-                "condicion": "Sostiene el análisis con 2 ejemplos citados literalmente"
+                "puntos": 1.5,
+                "condicion": "Sostiene el análisis con 3 o más ejemplos y reproduce uno sin comillas"
               },
               {
                 "puntos": 1,
+                "condicion": "Sostiene el análisis con 2 ejemplos citados literalmente"
+              },
+              {
+                "puntos": 0.5,
                 "condicion": "Sostiene el análisis con 1 ejemplo citado literalmente"
               },
               {
@@ -2150,15 +2446,23 @@
         "componentes": [
           {
             "nombre": "Estructura de la reacción",
-            "max": 3,
+            "max": 4,
             "bandas": [
               {
-                "puntos": 3,
+                "puntos": 4,
                 "condicion": "La reacción presenta el asunto, analiza el tratamiento y cierra con una conclusión razonada"
               },
               {
+                "puntos": 3,
+                "condicion": "Falta 1 de las tres partes"
+              },
+              {
                 "puntos": 2,
-                "condicion": "Faltan 1 o 2 de las tres partes"
+                "condicion": "Faltan 2 de las tres partes"
+              },
+              {
+                "puntos": 1,
+                "condicion": "La valoración se reduce a una fórmula de acuerdo o desacuerdo"
               },
               {
                 "puntos": 0,
@@ -2168,15 +2472,23 @@
           },
           {
             "nombre": "Conectores y matización",
-            "max": 3,
+            "max": 2,
             "bandas": [
               {
-                "puntos": 3,
+                "puntos": 2,
                 "condicion": "Emplea 5 o más conectores distintos, entre ellos concesión y consecuencia"
               },
               {
-                "puntos": 2,
+                "puntos": 1.5,
+                "condicion": "Emplea 5 o más conectores distintos, sin ninguno de concesión"
+              },
+              {
+                "puntos": 1,
                 "condicion": "Emplea de 2 a 4 tipos de conector"
+              },
+              {
+                "puntos": 0.5,
+                "condicion": "Emplea 1 tipo de conector y repite el resto de los enlaces con la conjunción"
               },
               {
                 "puntos": 0,
@@ -2193,8 +2505,16 @@
                 "condicion": "Apoya el juicio en 3 o más citas literales de la noticia"
               },
               {
+                "puntos": 1.5,
+                "condicion": "Apoya el juicio en 3 o más citas y reproduce una sin comillas"
+              },
+              {
                 "puntos": 1,
                 "condicion": "Apoya el juicio en 1 o 2 citas literales"
+              },
+              {
+                "puntos": 0.5,
+                "condicion": "Alude al contenido de la noticia sin reproducir ninguna palabra"
               },
               {
                 "puntos": 0,
@@ -2211,8 +2531,16 @@
                 "condicion": "Mantiene el registro académico y modula cada juicio con marcas de certeza"
               },
               {
+                "puntos": 1.5,
+                "condicion": "Mantiene el registro académico y modula un solo juicio con marcas de certeza"
+              },
+              {
                 "puntos": 1,
                 "condicion": "Mantiene el registro académico y afirma sin modular"
+              },
+              {
+                "puntos": 0.5,
+                "condicion": "Se desliza al registro coloquial en un punto y afirma sin modular"
               },
               {
                 "puntos": 0,
@@ -2291,33 +2619,45 @@
             "bandas": [
               {
                 "puntos": 4,
-                "condicion": "Hasta 1 falta en toda la reacción, tipográficas incluidas"
+                "condicion": "Hasta 2 faltas en toda la reacción, tipográficas incluidas"
               },
               {
                 "puntos": 3,
-                "condicion": "De 2 a 3 faltas"
+                "condicion": "De 3 a 5 faltas"
               },
               {
                 "puntos": 2,
-                "condicion": "De 4 a 5 faltas"
+                "condicion": "De 6 a 10 faltas"
+              },
+              {
+                "puntos": 1,
+                "condicion": "De 11 a 15 faltas"
               },
               {
                 "puntos": 0,
-                "condicion": "6 o más faltas"
+                "condicion": "16 o más faltas"
               }
             ]
           },
           {
             "nombre": "Puntuación del período",
-            "max": 3,
+            "max": 2,
             "bandas": [
               {
-                "puntos": 3,
+                "puntos": 2,
                 "condicion": "Puntúa los incisos y las subordinadas y cierra todas las frases"
               },
               {
-                "puntos": 2,
-                "condicion": "Deja 1 o 2 incisos sin delimitar, o 1 o 2 frases sin cerrar"
+                "puntos": 1.5,
+                "condicion": "Deja 1 inciso sin delimitar, o 1 frase sin cerrar"
+              },
+              {
+                "puntos": 1,
+                "condicion": "Deja 2 o 3 incisos sin delimitar, o 2 o 3 frases sin cerrar"
+              },
+              {
+                "puntos": 0.5,
+                "condicion": "Deja de 4 a 6 incisos sin delimitar, o de 4 a 6 frases sin cerrar"
               },
               {
                 "puntos": 0,
@@ -2327,19 +2667,23 @@
           },
           {
             "nombre": "Propiedad léxica",
-            "max": 3,
+            "max": 4,
             "bandas": [
               {
-                "puntos": 3,
+                "puntos": 4,
                 "condicion": "Emplea términos precisos y ninguna expresión vaga"
               },
               {
-                "puntos": 2,
+                "puntos": 3,
                 "condicion": "Emplea 1 expresión vaga"
               },
               {
-                "puntos": 1,
+                "puntos": 2,
                 "condicion": "Emplea 2 expresiones vagas"
+              },
+              {
+                "puntos": 1,
+                "condicion": "Emplea 3 o 4 expresiones vagas"
               },
               {
                 "puntos": 0,

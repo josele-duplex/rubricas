@@ -150,6 +150,10 @@
                 "condicion": "Se distinguen dos de las tres partes"
               },
               {
+                "puntos": 1,
+                "condicion": "Se distingue una de las tres partes"
+              },
+              {
                 "puntos": 0,
                 "condicion": "La exposición es un bloque único sin partes reconocibles"
               }
@@ -172,6 +176,10 @@
                 "condicion": "Dos o más bloques mezclan ideas distintas"
               },
               {
+                "puntos": 1,
+                "condicion": "El desarrollo se divide en bloques que no responden a las ideas"
+              },
+              {
                 "puntos": 0,
                 "condicion": "El desarrollo no está dividido en bloques reconocibles"
               }
@@ -186,12 +194,20 @@
                 "condicion": "Toda la información responde al tema anunciado al principio"
               },
               {
-                "puntos": 1,
+                "puntos": 1.5,
                 "condicion": "Incluye 1 dato que se aparta del tema"
               },
               {
+                "puntos": 1,
+                "condicion": "Incluye 2 datos que se apartan del tema"
+              },
+              {
+                "puntos": 0.5,
+                "condicion": "Incluye 3 o 4 datos ajenos al tema"
+              },
+              {
                 "puntos": 0,
-                "condicion": "Incluye 2 o más datos ajenos al tema"
+                "condicion": "Incluye 5 o más datos ajenos al tema"
               }
             ]
           }
@@ -288,15 +304,23 @@
           },
           {
             "nombre": "Señala el cambio de parte",
-            "max": 3,
+            "max": 4,
             "bandas": [
               {
-                "puntos": 3,
+                "puntos": 4,
                 "condicion": "Anuncia verbalmente el paso de una parte a otra en las tres transiciones de la exposición"
               },
               {
+                "puntos": 3,
+                "condicion": "Anuncia el paso de una parte a otra en 2 transiciones"
+              },
+              {
                 "puntos": 2,
-                "condicion": "Anuncia el paso de una parte a otra en 1 o 2 transiciones"
+                "condicion": "Anuncia el paso de una parte a otra en 1 transición"
+              },
+              {
+                "puntos": 1,
+                "condicion": "Marca el paso de una parte a otra con una pausa, sin anunciarlo"
               },
               {
                 "puntos": 0,
@@ -306,15 +330,23 @@
           },
           {
             "nombre": "No repetir la misma palabra",
-            "max": 3,
+            "max": 2,
             "bandas": [
               {
-                "puntos": 3,
+                "puntos": 2,
                 "condicion": "Sustituye por sinónimo, pronombre o referencia (esto, esta idea) la palabra ya usada"
               },
               {
-                "puntos": 2,
+                "puntos": 1.5,
+                "condicion": "Sustituye la palabra ya usada y deja 1 repetición sin sustituir"
+              },
+              {
+                "puntos": 1,
                 "condicion": "Sustituye alguna repetición, pero deja 2 o 3 sin sustituir"
+              },
+              {
+                "puntos": 0.5,
+                "condicion": "Sustituye el término repetido en un solo punto de la exposición"
               },
               {
                 "puntos": 0,
@@ -404,8 +436,12 @@
                 "condicion": "De 7 a 10"
               },
               {
+                "puntos": 1,
+                "condicion": "De 11 a 15"
+              },
+              {
                 "puntos": 0,
-                "condicion": "11 o más"
+                "condicion": "16 o más"
               }
             ]
           },
@@ -426,6 +462,10 @@
                 "condicion": "Hay que pedirle que repita alguna parte"
               },
               {
+                "puntos": 1,
+                "condicion": "Se entiende desde la primera fila y hay que pedirle que levante la voz"
+              },
+              {
                 "puntos": 0,
                 "condicion": "Buena parte de la exposición resulta ininteligible por el volumen o el ritmo"
               }
@@ -438,6 +478,18 @@
               {
                 "puntos": 2,
                 "condicion": "Hace al menos una pausa para separar ideas, distinta de los silencios de duda"
+              },
+              {
+                "puntos": 1.5,
+                "condicion": "Hace una pausa para separar ideas y la alarga hasta parecer un silencio de duda"
+              },
+              {
+                "puntos": 1,
+                "condicion": "Marca el cambio de idea con un conector, sin pausa que lo acompañe"
+              },
+              {
+                "puntos": 0.5,
+                "condicion": "Hace una pausa al terminar la exposición y ninguna dentro"
               },
               {
                 "puntos": 0,
@@ -631,19 +683,23 @@
         "componentes": [
           {
             "nombre": "Las tres partes de la exposición",
-            "max": 3,
+            "max": 4,
             "bandas": [
               {
-                "puntos": 3,
+                "puntos": 4,
                 "condicion": "Se distinguen presentación, desarrollo y cierre, y el cierre recuerda la idea principal"
               },
               {
-                "puntos": 2,
+                "puntos": 3,
                 "condicion": "Se distinguen las tres partes, pero el cierre repite la presentación sin recordar lo explicado"
               },
               {
-                "puntos": 1,
+                "puntos": 2,
                 "condicion": "Se distinguen dos de las tres partes"
+              },
+              {
+                "puntos": 1,
+                "condicion": "Se distingue una de las tres partes"
               },
               {
                 "puntos": 0,
@@ -653,15 +709,23 @@
           },
           {
             "nombre": "Una idea por bloque",
-            "max": 3,
+            "max": 2,
             "bandas": [
               {
-                "puntos": 3,
+                "puntos": 2,
                 "condicion": "Cada bloque del desarrollo trata una sola idea"
               },
               {
-                "puntos": 2,
+                "puntos": 1.5,
+                "condicion": "Una idea se reparte entre dos bloques seguidos"
+              },
+              {
+                "puntos": 1,
                 "condicion": "Un bloque mezcla dos ideas distintas"
+              },
+              {
+                "puntos": 0.5,
+                "condicion": "Anuncia los bloques del desarrollo y los expone sin separarlos"
               },
               {
                 "puntos": 0,
@@ -678,8 +742,16 @@
                 "condicion": "Se ajusta al tiempo asignado sin que el profesor tenga que avisarle"
               },
               {
+                "puntos": 1.5,
+                "condicion": "Se ajusta al tiempo asignado y deja la conclusión sin desarrollar"
+              },
+              {
                 "puntos": 1,
                 "condicion": "Se ajusta al tiempo asignado solo después de un aviso del profesor"
+              },
+              {
+                "puntos": 0.5,
+                "condicion": "Se ajusta al tiempo asignado después de dos avisos del profesor"
               },
               {
                 "puntos": 0,
@@ -696,12 +768,20 @@
                 "condicion": "Toda la información responde al tema anunciado al principio"
               },
               {
-                "puntos": 1,
+                "puntos": 1.5,
                 "condicion": "Incluye 1 dato que se aparta del tema"
               },
               {
+                "puntos": 1,
+                "condicion": "Incluye 2 datos que se apartan del tema"
+              },
+              {
+                "puntos": 0.5,
+                "condicion": "Incluye 3 o 4 datos ajenos al tema"
+              },
+              {
                 "puntos": 0,
-                "condicion": "Incluye 2 o más datos ajenos al tema"
+                "condicion": "Incluye 5 o más datos ajenos al tema"
               }
             ]
           }
@@ -798,15 +878,23 @@
           },
           {
             "nombre": "Señala el cambio de parte",
-            "max": 3,
+            "max": 4,
             "bandas": [
               {
-                "puntos": 3,
+                "puntos": 4,
                 "condicion": "Anuncia verbalmente el paso de una parte a otra en las tres transiciones de la exposición"
               },
               {
+                "puntos": 3,
+                "condicion": "Anuncia el paso de una parte a otra en 2 transiciones"
+              },
+              {
                 "puntos": 2,
-                "condicion": "Anuncia el paso de una parte a otra en 1 o 2 transiciones"
+                "condicion": "Anuncia el paso de una parte a otra en 1 transición"
+              },
+              {
+                "puntos": 1,
+                "condicion": "Marca el paso de una parte a otra con una pausa, sin anunciarlo"
               },
               {
                 "puntos": 0,
@@ -816,15 +904,23 @@
           },
           {
             "nombre": "No repetir la misma palabra",
-            "max": 3,
+            "max": 2,
             "bandas": [
               {
-                "puntos": 3,
+                "puntos": 2,
                 "condicion": "Sustituye por sinónimo, hiperónimo o referencia (esto, esta idea) la palabra ya usada"
               },
               {
-                "puntos": 2,
+                "puntos": 1.5,
+                "condicion": "Sustituye la palabra ya usada y deja 1 repetición sin sustituir"
+              },
+              {
+                "puntos": 1,
                 "condicion": "Sustituye alguna repetición, pero deja 2 o 3 sin sustituir"
+              },
+              {
+                "puntos": 0.5,
+                "condicion": "Sustituye el término repetido en un solo punto de la exposición"
               },
               {
                 "puntos": 0,
@@ -914,8 +1010,12 @@
                 "condicion": "De 7 a 10"
               },
               {
+                "puntos": 1,
+                "condicion": "De 11 a 15"
+              },
+              {
                 "puntos": 0,
-                "condicion": "11 o más"
+                "condicion": "16 o más"
               }
             ]
           },
@@ -936,6 +1036,10 @@
                 "condicion": "Hay que pedirle que repita alguna parte"
               },
               {
+                "puntos": 1,
+                "condicion": "Se entiende desde la primera fila y hay que pedirle que levante la voz"
+              },
+              {
                 "puntos": 0,
                 "condicion": "Buena parte de la exposición resulta ininteligible por el volumen o el ritmo"
               }
@@ -948,6 +1052,18 @@
               {
                 "puntos": 2,
                 "condicion": "Hace al menos una pausa para separar ideas, distinta de los silencios de duda"
+              },
+              {
+                "puntos": 1.5,
+                "condicion": "Hace una pausa para separar ideas y la alarga hasta parecer un silencio de duda"
+              },
+              {
+                "puntos": 1,
+                "condicion": "Marca el cambio de idea con un conector, sin pausa que lo acompañe"
+              },
+              {
+                "puntos": 0.5,
+                "condicion": "Hace una pausa al terminar la exposición y ninguna dentro"
               },
               {
                 "puntos": 0,
@@ -1141,19 +1257,23 @@
         "componentes": [
           {
             "nombre": "Las tres partes de la exposición",
-            "max": 3,
+            "max": 4,
             "bandas": [
               {
-                "puntos": 3,
+                "puntos": 4,
                 "condicion": "Se distinguen presentación, desarrollo y cierre, y el cierre recuerda la idea principal"
               },
               {
-                "puntos": 2,
+                "puntos": 3,
                 "condicion": "Se distinguen las tres partes, pero el cierre repite la presentación sin recordar lo explicado"
               },
               {
-                "puntos": 1,
+                "puntos": 2,
                 "condicion": "Se distinguen dos de las tres partes"
+              },
+              {
+                "puntos": 1,
+                "condicion": "Se distingue una de las tres partes"
               },
               {
                 "puntos": 0,
@@ -1163,15 +1283,23 @@
           },
           {
             "nombre": "Un bloque distingue explicación de valoración",
-            "max": 3,
+            "max": 2,
             "bandas": [
               {
-                "puntos": 3,
+                "puntos": 2,
                 "condicion": "Cada bloque trata una idea y se distingue si es explicación del tema o valoración personal"
               },
               {
-                "puntos": 2,
+                "puntos": 1.5,
+                "condicion": "Cada bloque trata una idea y la valoración personal se distingue solo por el tono"
+              },
+              {
+                "puntos": 1,
                 "condicion": "Un bloque mezcla explicación y valoración sin distinguirlas"
+              },
+              {
+                "puntos": 0.5,
+                "condicion": "Anuncia la valoración personal al final y la mezcla con la explicación"
               },
               {
                 "puntos": 0,
@@ -1188,8 +1316,16 @@
                 "condicion": "Se ajusta al tiempo asignado sin ayuda del profesor"
               },
               {
+                "puntos": 1.5,
+                "condicion": "Se ajusta al tiempo asignado y deja la conclusión sin desarrollar"
+              },
+              {
                 "puntos": 1,
                 "condicion": "Se ajusta al tiempo asignado solo después de un aviso del profesor"
+              },
+              {
+                "puntos": 0.5,
+                "condicion": "Se ajusta al tiempo asignado después de dos avisos del profesor"
               },
               {
                 "puntos": 0,
@@ -1206,12 +1342,20 @@
                 "condicion": "Toda la información responde al tema anunciado al principio"
               },
               {
-                "puntos": 1,
+                "puntos": 1.5,
                 "condicion": "Incluye 1 dato que se aparta del tema"
               },
               {
+                "puntos": 1,
+                "condicion": "Incluye 2 datos que se apartan del tema"
+              },
+              {
+                "puntos": 0.5,
+                "condicion": "Incluye 3 o 4 datos ajenos al tema"
+              },
+              {
                 "puntos": 0,
-                "condicion": "Incluye 2 o más datos ajenos al tema"
+                "condicion": "Incluye 5 o más datos ajenos al tema"
               }
             ]
           }
@@ -1308,15 +1452,23 @@
           },
           {
             "nombre": "Señala el cambio de parte",
-            "max": 3,
+            "max": 4,
             "bandas": [
               {
-                "puntos": 3,
+                "puntos": 4,
                 "condicion": "Anuncia verbalmente el paso de una parte a otra en las tres transiciones de la exposición"
               },
               {
+                "puntos": 3,
+                "condicion": "Anuncia el paso de una parte a otra en 2 transiciones"
+              },
+              {
                 "puntos": 2,
-                "condicion": "Anuncia el paso de una parte a otra en 1 o 2 transiciones"
+                "condicion": "Anuncia el paso de una parte a otra en 1 transición"
+              },
+              {
+                "puntos": 1,
+                "condicion": "Marca el paso de una parte a otra con una pausa, sin anunciarlo"
               },
               {
                 "puntos": 0,
@@ -1326,15 +1478,23 @@
           },
           {
             "nombre": "No repetir la misma palabra",
-            "max": 3,
+            "max": 2,
             "bandas": [
               {
-                "puntos": 3,
+                "puntos": 2,
                 "condicion": "Sustituye por sinónimo o referencia la palabra ya usada en el bloque anterior"
               },
               {
-                "puntos": 2,
+                "puntos": 1.5,
+                "condicion": "Sustituye la palabra ya usada y deja 1 repetición sin sustituir"
+              },
+              {
+                "puntos": 1,
                 "condicion": "Sustituye alguna repetición, pero deja 2 o 3 sin sustituir"
+              },
+              {
+                "puntos": 0.5,
+                "condicion": "Sustituye el término repetido en un solo punto de la exposición"
               },
               {
                 "puntos": 0,
@@ -1424,8 +1584,12 @@
                 "condicion": "De 7 a 10"
               },
               {
+                "puntos": 1,
+                "condicion": "De 11 a 15"
+              },
+              {
                 "puntos": 0,
-                "condicion": "11 o más"
+                "condicion": "16 o más"
               }
             ]
           },
@@ -1446,6 +1610,10 @@
                 "condicion": "Hay que pedirle que repita alguna parte"
               },
               {
+                "puntos": 1,
+                "condicion": "Se entiende desde la primera fila y hay que pedirle que levante la voz"
+              },
+              {
                 "puntos": 0,
                 "condicion": "Buena parte de la exposición resulta ininteligible por el volumen o el ritmo"
               }
@@ -1458,6 +1626,18 @@
               {
                 "puntos": 2,
                 "condicion": "Hace al menos una pausa para separar la explicación de la valoración personal"
+              },
+              {
+                "puntos": 1.5,
+                "condicion": "Hace una pausa antes de la valoración personal y la alarga hasta parecer un silencio de duda"
+              },
+              {
+                "puntos": 1,
+                "condicion": "Anuncia la valoración personal con un conector, sin pausa que la separe"
+              },
+              {
+                "puntos": 0.5,
+                "condicion": "Hace una pausa al terminar la exposición y ninguna dentro"
               },
               {
                 "puntos": 0,
@@ -1651,18 +1831,22 @@
         "componentes": [
           {
             "nombre": "Estructura con función diferenciada",
-            "max": 3,
+            "max": 2,
             "bandas": [
               {
-                "puntos": 3,
+                "puntos": 2,
                 "condicion": "Presentación, desarrollo y conclusión cumplen cada una una función reconocible y distinta"
               },
               {
-                "puntos": 2,
-                "condicion": "Se distinguen las tres partes, pero la conclusión repite la presentación sin cerrar la argumentación"
+                "puntos": 1.5,
+                "condicion": "Las tres partes cumplen una función distinta y la presentación anticipa la conclusión"
               },
               {
                 "puntos": 1,
+                "condicion": "Se distinguen las tres partes, pero la conclusión repite la presentación sin cerrar la argumentación"
+              },
+              {
+                "puntos": 0.5,
                 "condicion": "Se distinguen dos de las tres partes"
               },
               {
@@ -1673,19 +1857,23 @@
           },
           {
             "nombre": "Progresión lógica entre bloques",
-            "max": 3,
+            "max": 4,
             "bandas": [
               {
-                "puntos": 3,
+                "puntos": 4,
                 "condicion": "Cada bloque del desarrollo se apoya en el anterior y avanza hacia la conclusión"
               },
               {
-                "puntos": 2,
+                "puntos": 3,
                 "condicion": "Los bloques comparten tema, pero su orden podría alterarse sin que cambie el sentido"
               },
               {
-                "puntos": 1,
+                "puntos": 2,
                 "condicion": "Un bloque no tiene relación reconocible con el resto"
+              },
+              {
+                "puntos": 1,
+                "condicion": "Dos bloques no tienen relación reconocible con el resto"
               },
               {
                 "puntos": 0,
@@ -1702,8 +1890,16 @@
                 "condicion": "La exposición se ajusta al tiempo asignado, con margen para la conclusión"
               },
               {
+                "puntos": 1.5,
+                "condicion": "La exposición se ajusta al tiempo asignado y la conclusión se dice sin margen"
+              },
+              {
                 "puntos": 1,
                 "condicion": "Se pasa o se queda corto del tiempo asignado, y la conclusión queda apresurada o se omite"
+              },
+              {
+                "puntos": 0.5,
+                "condicion": "La exposición se pasa del tiempo asignado y termina cuando el profesor avisa"
               },
               {
                 "puntos": 0,
@@ -1720,8 +1916,16 @@
                 "condicion": "El cierre retoma la idea principal o la tesis sin añadir información nueva"
               },
               {
+                "puntos": 1.5,
+                "condicion": "El cierre retoma la idea principal con las mismas palabras de la presentación"
+              },
+              {
                 "puntos": 1,
                 "condicion": "El cierre añade información nueva no desarrollada antes"
+              },
+              {
+                "puntos": 0.5,
+                "condicion": "La exposición se cierra con una fórmula de despedida ajena al tema"
               },
               {
                 "puntos": 0,
@@ -1822,19 +2026,23 @@
           },
           {
             "nombre": "Encadenamiento entre bloques",
-            "max": 3,
+            "max": 4,
             "bandas": [
               {
-                "puntos": 3,
+                "puntos": 4,
                 "condicion": "Cada bloque retoma al empezar una idea del bloque anterior"
               },
               {
-                "puntos": 2,
+                "puntos": 3,
                 "condicion": "La mayoría de los bloques se encadenan; 1 arranca sin vínculo con lo anterior"
               },
               {
-                "puntos": 1,
+                "puntos": 2,
                 "condicion": "Los bloques comparten tema, pero podrían reordenarse sin que cambie el sentido"
+              },
+              {
+                "puntos": 1,
+                "condicion": "Encadena 1 par de bloques y deja el resto sin vínculo"
               },
               {
                 "puntos": 0,
@@ -1844,18 +2052,22 @@
           },
           {
             "nombre": "Referencia y sustitución léxica",
-            "max": 3,
+            "max": 2,
             "bandas": [
               {
-                "puntos": 3,
+                "puntos": 2,
                 "condicion": "Sustituye las repeticiones mediante sinónimo o expresión de referencia, y el referente siempre es identificable"
               },
               {
-                "puntos": 2,
-                "condicion": "Sustituye la mayoría de las repeticiones; 1 referencia exige un esfuerzo para identificarla"
+                "puntos": 1.5,
+                "condicion": "Sustituye las repeticiones mediante pronombre, sin recurrir al sinónimo ni a la expresión de referencia, y el referente siempre es identificable"
               },
               {
                 "puntos": 1,
+                "condicion": "Sustituye la mayoría de las repeticiones; 1 referencia exige un esfuerzo para identificarla"
+              },
+              {
+                "puntos": 0.5,
                 "condicion": "Repite el término clave 3 o más veces teniendo alternativa evidente"
               },
               {
@@ -1930,14 +2142,14 @@
         "componentes": [
           {
             "nombre": "Muletillas y titubeos",
-            "max": 3,
+            "max": 2,
             "bandas": [
               {
-                "puntos": 3,
+                "puntos": 2,
                 "condicion": "0 a 2 muletillas o titubeos en toda la exposición"
               },
               {
-                "puntos": 2,
+                "puntos": 1.5,
                 "condicion": "De 3 a 5"
               },
               {
@@ -1945,26 +2157,34 @@
                 "condicion": "De 6 a 9"
               },
               {
+                "puntos": 0.5,
+                "condicion": "De 10 a 14"
+              },
+              {
                 "puntos": 0,
-                "condicion": "10 o más"
+                "condicion": "15 o más"
               }
             ]
           },
           {
             "nombre": "Volumen y ritmo comprensibles",
-            "max": 3,
+            "max": 4,
             "bandas": [
               {
-                "puntos": 3,
+                "puntos": 4,
                 "condicion": "Toda la exposición se entiende sin esfuerzo, con variación de ritmo que ayuda a seguirla"
               },
               {
-                "puntos": 2,
+                "puntos": 3,
                 "condicion": "Se entiende, con algún tramo leído de corrido sin pausas"
               },
               {
-                "puntos": 1,
+                "puntos": 2,
                 "condicion": "Hay que pedirle que repita alguna parte"
+              },
+              {
+                "puntos": 1,
+                "condicion": "Hay que pedirle que repita dos o más partes"
               },
               {
                 "puntos": 0,
@@ -1981,8 +2201,16 @@
                 "condicion": "Usa pausas para separar los argumentos y remarcar la tesis o la conclusión"
               },
               {
+                "puntos": 1.5,
+                "condicion": "Usa pausas para separar los argumentos y ninguna para remarcar la tesis"
+              },
+              {
                 "puntos": 1,
                 "condicion": "Usa alguna pausa, sin relación clara con la estructura de la argumentación"
+              },
+              {
+                "puntos": 0.5,
+                "condicion": "Hace una pausa al terminar y ninguna dentro de la argumentación"
               },
               {
                 "puntos": 0,
@@ -1999,8 +2227,16 @@
                 "condicion": "Consulta las notas con miradas breves, sin leer frases completas en ningún momento"
               },
               {
+                "puntos": 1.5,
+                "condicion": "Lee frases completas de las notas en 1 momento"
+              },
+              {
                 "puntos": 1,
-                "condicion": "Lee frases completas de las notas en 1 o 2 momentos"
+                "condicion": "Lee frases completas de las notas en 2 o 3 momentos"
+              },
+              {
+                "puntos": 0.5,
+                "condicion": "Lee frases completas de las notas en 4 o más momentos"
               },
               {
                 "puntos": 0,
@@ -2193,18 +2429,22 @@
         "componentes": [
           {
             "nombre": "Estructura con función diferenciada",
-            "max": 3,
+            "max": 2,
             "bandas": [
               {
-                "puntos": 3,
+                "puntos": 2,
                 "condicion": "Presentación, desarrollo y conclusión cumplen cada una una función reconocible y distinta"
               },
               {
-                "puntos": 2,
-                "condicion": "Se distinguen las tres partes, pero la conclusión repite la presentación sin cerrar la argumentación"
+                "puntos": 1.5,
+                "condicion": "Las tres partes cumplen una función distinta y la presentación anticipa la conclusión"
               },
               {
                 "puntos": 1,
+                "condicion": "Se distinguen las tres partes, pero la conclusión repite la presentación sin cerrar la argumentación"
+              },
+              {
+                "puntos": 0.5,
                 "condicion": "Se distinguen dos de las tres partes"
               },
               {
@@ -2215,19 +2455,23 @@
           },
           {
             "nombre": "Progresión argumentativa hacia una tesis",
-            "max": 3,
+            "max": 4,
             "bandas": [
               {
-                "puntos": 3,
+                "puntos": 4,
                 "condicion": "Anticipa al menos una objeción con sus términos y la resuelve con un argumento distinto de los ya empleados"
               },
               {
-                "puntos": 2,
+                "puntos": 3,
                 "condicion": "Menciona la existencia de otro punto de vista, sin exponerlo"
               },
               {
-                "puntos": 1,
+                "puntos": 2,
                 "condicion": "Cada bloque aporta un argumento, pero sin relación reconocible entre ellos"
+              },
+              {
+                "puntos": 1,
+                "condicion": "Los bloques repiten el mismo argumento con otras palabras"
               },
               {
                 "puntos": 0,
@@ -2244,8 +2488,16 @@
                 "condicion": "La exposición se ajusta al tiempo asignado, con margen para la conclusión"
               },
               {
+                "puntos": 1.5,
+                "condicion": "La exposición se ajusta al tiempo asignado y la conclusión se dice sin margen"
+              },
+              {
                 "puntos": 1,
                 "condicion": "Se pasa o se queda corto del tiempo asignado, y la conclusión queda apresurada o se omite"
+              },
+              {
+                "puntos": 0.5,
+                "condicion": "La exposición se pasa del tiempo asignado y termina cuando el profesor avisa"
               },
               {
                 "puntos": 0,
@@ -2262,8 +2514,16 @@
                 "condicion": "El cierre retoma la tesis sin añadir información nueva"
               },
               {
+                "puntos": 1.5,
+                "condicion": "El cierre retoma la tesis con las mismas palabras de la presentación"
+              },
+              {
                 "puntos": 1,
                 "condicion": "El cierre añade información nueva no desarrollada antes"
+              },
+              {
+                "puntos": 0.5,
+                "condicion": "La exposición se cierra con una fórmula de despedida ajena al tema"
               },
               {
                 "puntos": 0,
@@ -2363,19 +2623,23 @@
           },
           {
             "nombre": "Encadenamiento entre bloques",
-            "max": 3,
+            "max": 4,
             "bandas": [
               {
-                "puntos": 3,
+                "puntos": 4,
                 "condicion": "Cada bloque retoma al empezar un elemento del bloque anterior"
               },
               {
-                "puntos": 2,
+                "puntos": 3,
                 "condicion": "La mayoría de los bloques se encadenan; 1 arranca sin vínculo con lo anterior"
               },
               {
-                "puntos": 1,
+                "puntos": 2,
                 "condicion": "Los bloques comparten tema, pero podrían reordenarse sin que cambie el sentido"
+              },
+              {
+                "puntos": 1,
+                "condicion": "Encadena 1 par de bloques y deja el resto sin vínculo"
               },
               {
                 "puntos": 0,
@@ -2385,18 +2649,22 @@
           },
           {
             "nombre": "Referencia y sustitución léxica",
-            "max": 3,
+            "max": 2,
             "bandas": [
               {
-                "puntos": 3,
+                "puntos": 2,
                 "condicion": "Sustituye las repeticiones mediante nominalización, sinónimo o expresión de referencia, y el referente siempre es identificable"
               },
               {
-                "puntos": 2,
-                "condicion": "Sustituye la mayoría de las repeticiones; 1 referencia exige un esfuerzo para identificarla"
+                "puntos": 1.5,
+                "condicion": "Sustituye las repeticiones mediante sinónimo o expresión de referencia, sin recurrir a la nominalización, y el referente siempre es identificable"
               },
               {
                 "puntos": 1,
+                "condicion": "Sustituye la mayoría de las repeticiones; 1 referencia exige un esfuerzo para identificarla"
+              },
+              {
+                "puntos": 0.5,
                 "condicion": "Repite el término clave 3 o más veces teniendo alternativa evidente"
               },
               {
@@ -2471,14 +2739,14 @@
         "componentes": [
           {
             "nombre": "Muletillas y titubeos",
-            "max": 3,
+            "max": 2,
             "bandas": [
               {
-                "puntos": 3,
+                "puntos": 2,
                 "condicion": "0 a 2 muletillas o titubeos en toda la exposición"
               },
               {
-                "puntos": 2,
+                "puntos": 1.5,
                 "condicion": "De 3 a 5"
               },
               {
@@ -2486,8 +2754,12 @@
                 "condicion": "De 6 a 9"
               },
               {
+                "puntos": 0.5,
+                "condicion": "De 10 a 14"
+              },
+              {
                 "puntos": 0,
-                "condicion": "10 o más"
+                "condicion": "15 o más"
               }
             ]
           },
@@ -2500,30 +2772,42 @@
                 "condicion": "Pronuncia sin errores los términos técnicos y de uso menos frecuente"
               },
               {
+                "puntos": 1.5,
+                "condicion": "Comete 1 error de pronunciación en un término técnico"
+              },
+              {
                 "puntos": 1,
-                "condicion": "Comete 1 o 2 errores de pronunciación en términos técnicos"
+                "condicion": "Comete 2 o 3 errores de pronunciación en términos técnicos"
+              },
+              {
+                "puntos": 0.5,
+                "condicion": "Comete de 4 a 6 errores de pronunciación"
               },
               {
                 "puntos": 0,
-                "condicion": "Comete 3 o más errores de pronunciación"
+                "condicion": "Comete 7 o más errores de pronunciación"
               }
             ]
           },
           {
             "nombre": "Volumen y ritmo comprensibles",
-            "max": 3,
+            "max": 4,
             "bandas": [
               {
-                "puntos": 3,
+                "puntos": 4,
                 "condicion": "Toda la exposición se entiende sin esfuerzo, con variación de ritmo que ayuda a seguirla"
               },
               {
-                "puntos": 2,
+                "puntos": 3,
                 "condicion": "Se entiende, con algún tramo leído de corrido sin pausas"
               },
               {
-                "puntos": 1,
+                "puntos": 2,
                 "condicion": "Hay que pedirle que repita alguna parte"
+              },
+              {
+                "puntos": 1,
+                "condicion": "Hay que pedirle que repita dos o más partes"
               },
               {
                 "puntos": 0,
@@ -2540,8 +2824,16 @@
                 "condicion": "Consulta las notas con miradas breves, sin leer frases completas en ningún momento"
               },
               {
+                "puntos": 1.5,
+                "condicion": "Lee frases completas de las notas en 1 momento"
+              },
+              {
                 "puntos": 1,
-                "condicion": "Lee frases completas de las notas en 1 o 2 momentos"
+                "condicion": "Lee frases completas de las notas en 2 o 3 momentos"
+              },
+              {
+                "puntos": 0.5,
+                "condicion": "Lee frases completas de las notas en 4 o más momentos"
               },
               {
                 "puntos": 0,
@@ -2733,18 +3025,22 @@
         "componentes": [
           {
             "nombre": "Estructura con función diferenciada",
-            "max": 3,
+            "max": 2,
             "bandas": [
               {
-                "puntos": 3,
+                "puntos": 2,
                 "condicion": "Presentación, desarrollo y conclusión cumplen cada una una función reconocible y distinta"
               },
               {
-                "puntos": 2,
-                "condicion": "Se distinguen las tres partes, pero la conclusión repite la presentación sin cerrar la argumentación"
+                "puntos": 1.5,
+                "condicion": "Las tres partes cumplen una función distinta y la presentación anticipa la conclusión"
               },
               {
                 "puntos": 1,
+                "condicion": "Se distinguen las tres partes, pero la conclusión repite la presentación sin cerrar la argumentación"
+              },
+              {
+                "puntos": 0.5,
                 "condicion": "Se distinguen dos de las tres partes"
               },
               {
@@ -2755,19 +3051,23 @@
           },
           {
             "nombre": "Relación entre los puntos de vista",
-            "max": 3,
+            "max": 4,
             "bandas": [
               {
-                "puntos": 3,
+                "puntos": 4,
                 "condicion": "Expone 2 o más puntos de vista y explica en qué coinciden o en qué se oponen"
               },
               {
-                "puntos": 2,
+                "puntos": 3,
                 "condicion": "Expone 2 o más puntos de vista, pero sin relacionarlos entre sí"
               },
               {
-                "puntos": 1,
+                "puntos": 2,
                 "condicion": "Expone un único punto de vista, presentado como si fuera el único posible"
+              },
+              {
+                "puntos": 1,
+                "condicion": "Nombra otro punto de vista sin exponerlo"
               },
               {
                 "puntos": 0,
@@ -2784,8 +3084,16 @@
                 "condicion": "La exposición se ajusta al tiempo asignado, con margen para la conclusión"
               },
               {
+                "puntos": 1.5,
+                "condicion": "La exposición se ajusta al tiempo asignado y la conclusión se dice sin margen"
+              },
+              {
                 "puntos": 1,
                 "condicion": "Se pasa o se queda corto del tiempo asignado, y la conclusión queda apresurada o se omite"
+              },
+              {
+                "puntos": 0.5,
+                "condicion": "La exposición se pasa del tiempo asignado y termina cuando el profesor avisa"
               },
               {
                 "puntos": 0,
@@ -2802,8 +3110,16 @@
                 "condicion": "El cierre ofrece una valoración propia razonada de los puntos de vista expuestos, sin añadir información nueva"
               },
               {
+                "puntos": 1.5,
+                "condicion": "El cierre ofrece una valoración propia de los puntos de vista expuestos, sin razón que la sostenga"
+              },
+              {
                 "puntos": 1,
                 "condicion": "El cierre retoma los puntos de vista expuestos sin ofrecer una valoración propia"
+              },
+              {
+                "puntos": 0.5,
+                "condicion": "La exposición se cierra con una fórmula de despedida ajena a los puntos de vista"
               },
               {
                 "puntos": 0,
@@ -2903,19 +3219,23 @@
           },
           {
             "nombre": "Encadenamiento entre bloques",
-            "max": 3,
+            "max": 4,
             "bandas": [
               {
-                "puntos": 3,
+                "puntos": 4,
                 "condicion": "Cada bloque retoma al empezar un elemento del bloque anterior"
               },
               {
-                "puntos": 2,
+                "puntos": 3,
                 "condicion": "La mayoría de los bloques se encadenan; 1 arranca sin vínculo con lo anterior"
               },
               {
-                "puntos": 1,
+                "puntos": 2,
                 "condicion": "Los bloques comparten tema, pero podrían reordenarse sin que cambie el sentido"
+              },
+              {
+                "puntos": 1,
+                "condicion": "Encadena 1 par de bloques y deja el resto sin vínculo"
               },
               {
                 "puntos": 0,
@@ -2925,18 +3245,22 @@
           },
           {
             "nombre": "Referencia y sustitución léxica",
-            "max": 3,
+            "max": 2,
             "bandas": [
               {
-                "puntos": 3,
+                "puntos": 2,
                 "condicion": "Sustituye las repeticiones mediante nominalización, sinónimo o expresión de referencia, y el referente siempre es identificable"
               },
               {
-                "puntos": 2,
-                "condicion": "Sustituye la mayoría de las repeticiones; 1 referencia exige un esfuerzo para identificarla"
+                "puntos": 1.5,
+                "condicion": "Sustituye las repeticiones mediante sinónimo o expresión de referencia, sin recurrir a la nominalización, y el referente siempre es identificable"
               },
               {
                 "puntos": 1,
+                "condicion": "Sustituye la mayoría de las repeticiones; 1 referencia exige un esfuerzo para identificarla"
+              },
+              {
+                "puntos": 0.5,
                 "condicion": "Repite el término clave 3 o más veces teniendo alternativa evidente"
               },
               {
@@ -3011,14 +3335,14 @@
         "componentes": [
           {
             "nombre": "Muletillas y titubeos",
-            "max": 3,
+            "max": 2,
             "bandas": [
               {
-                "puntos": 3,
+                "puntos": 2,
                 "condicion": "0 a 2 muletillas o titubeos en toda la exposición"
               },
               {
-                "puntos": 2,
+                "puntos": 1.5,
                 "condicion": "De 3 a 5"
               },
               {
@@ -3026,8 +3350,12 @@
                 "condicion": "De 6 a 9"
               },
               {
+                "puntos": 0.5,
+                "condicion": "De 10 a 14"
+              },
+              {
                 "puntos": 0,
-                "condicion": "10 o más"
+                "condicion": "15 o más"
               }
             ]
           },
@@ -3040,30 +3368,42 @@
                 "condicion": "Pronuncia sin errores los términos técnicos y de uso menos frecuente"
               },
               {
+                "puntos": 1.5,
+                "condicion": "Comete 1 error de pronunciación en un término técnico"
+              },
+              {
                 "puntos": 1,
-                "condicion": "Comete 1 o 2 errores de pronunciación en términos técnicos"
+                "condicion": "Comete 2 o 3 errores de pronunciación en términos técnicos"
+              },
+              {
+                "puntos": 0.5,
+                "condicion": "Comete de 4 a 6 errores de pronunciación"
               },
               {
                 "puntos": 0,
-                "condicion": "Comete 3 o más errores de pronunciación"
+                "condicion": "Comete 7 o más errores de pronunciación"
               }
             ]
           },
           {
             "nombre": "Volumen y ritmo comprensibles",
-            "max": 3,
+            "max": 4,
             "bandas": [
               {
-                "puntos": 3,
+                "puntos": 4,
                 "condicion": "Toda la exposición se entiende sin esfuerzo, con variación de ritmo que ayuda a seguirla"
               },
               {
-                "puntos": 2,
+                "puntos": 3,
                 "condicion": "Se entiende, con algún tramo leído de corrido sin pausas"
               },
               {
-                "puntos": 1,
+                "puntos": 2,
                 "condicion": "Hay que pedirle que repita alguna parte"
+              },
+              {
+                "puntos": 1,
+                "condicion": "Hay que pedirle que repita dos o más partes"
               },
               {
                 "puntos": 0,
@@ -3080,8 +3420,16 @@
                 "condicion": "Consulta las notas con miradas breves, sin leer frases completas en ningún momento"
               },
               {
+                "puntos": 1.5,
+                "condicion": "Lee frases completas de las notas en 1 momento"
+              },
+              {
                 "puntos": 1,
-                "condicion": "Lee frases completas de las notas en 1 o 2 momentos"
+                "condicion": "Lee frases completas de las notas en 2 o 3 momentos"
+              },
+              {
+                "puntos": 0.5,
+                "condicion": "Lee frases completas de las notas en 4 o más momentos"
               },
               {
                 "puntos": 0,

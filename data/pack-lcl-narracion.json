@@ -148,6 +148,10 @@
                 "condicion": "Se distinguen dos de las tres partes"
               },
               {
+                "puntos": 1,
+                "condicion": "Se distingue una de las tres partes"
+              },
+              {
                 "puntos": 0,
                 "condicion": "El relato es una sucesión de hechos sin partes distinguibles"
               }
@@ -155,18 +159,22 @@
           },
           {
             "nombre": "Un episodio por párrafo",
-            "max": 3,
+            "max": 2,
             "bandas": [
               {
-                "puntos": 3,
+                "puntos": 2,
                 "condicion": "Cada párrafo cuenta un episodio identificable"
               },
               {
-                "puntos": 2,
-                "condicion": "Un párrafo mezcla dos episodios; el resto, uno cada uno"
+                "puntos": 1.5,
+                "condicion": "Un episodio se reparte entre dos párrafos seguidos"
               },
               {
                 "puntos": 1,
+                "condicion": "Un párrafo mezcla dos episodios; el resto, uno cada uno"
+              },
+              {
+                "puntos": 0.5,
                 "condicion": "Dos o más párrafos mezclan episodios distintos"
               },
               {
@@ -177,23 +185,27 @@
           },
           {
             "nombre": "Hechos que hacen avanzar la historia",
-            "max": 3,
+            "max": 4,
             "bandas": [
               {
-                "puntos": 3,
+                "puntos": 4,
                 "condicion": "Todos los hechos contados influyen en el desenlace"
               },
               {
-                "puntos": 2,
+                "puntos": 3,
                 "condicion": "Incluye 1 hecho que no influye en el desenlace"
               },
               {
-                "puntos": 1,
+                "puntos": 2,
                 "condicion": "Incluye 2 hechos que no influyen en el desenlace"
               },
               {
+                "puntos": 1,
+                "condicion": "Incluye 3 o 4 hechos que no influyen en el desenlace"
+              },
+              {
                 "puntos": 0,
-                "condicion": "Incluye 3 o más hechos ajenos a la historia"
+                "condicion": "Incluye 5 o más hechos ajenos a la historia"
               }
             ]
           }
@@ -291,19 +303,23 @@
           },
           {
             "nombre": "El tiempo del relato se mantiene",
-            "max": 3,
+            "max": 4,
             "bandas": [
               {
-                "puntos": 3,
+                "puntos": 4,
                 "condicion": "Sostiene los tiempos de pretérito en todo el relato"
               },
               {
-                "puntos": 2,
+                "puntos": 3,
                 "condicion": "Cambia de tiempo verbal en 1 o 2 puntos del relato"
               },
               {
-                "puntos": 1,
+                "puntos": 2,
                 "condicion": "Alterna presente y pretérito a lo largo del texto"
+              },
+              {
+                "puntos": 1,
+                "condicion": "Sostiene el pretérito en un episodio y cambia en el resto"
               },
               {
                 "puntos": 0,
@@ -313,18 +329,22 @@
           },
           {
             "nombre": "El punto y la raya del diálogo",
-            "max": 3,
+            "max": 2,
             "bandas": [
               {
-                "puntos": 3,
+                "puntos": 2,
                 "condicion": "Separa con punto todos los enunciados y marca con raya las intervenciones del diálogo"
               },
               {
-                "puntos": 2,
-                "condicion": "Separa con punto los enunciados y deja 1 o 2 sin separar"
+                "puntos": 1.5,
+                "condicion": "Separa con punto todos los enunciados y deja sin raya alguna intervención del diálogo"
               },
               {
                 "puntos": 1,
+                "condicion": "Separa con punto los enunciados y deja 1 o 2 sin separar"
+              },
+              {
+                "puntos": 0.5,
                 "condicion": "Agrupa 3 o más enunciados seguidos sin punto"
               },
               {
@@ -412,51 +432,63 @@
               },
               {
                 "puntos": 2,
-                "condicion": "De 6 a 9 faltas"
+                "condicion": "De 6 a 8 faltas"
+              },
+              {
+                "puntos": 1,
+                "condicion": "De 9 a 12 faltas"
               },
               {
                 "puntos": 0,
-                "condicion": "10 o más faltas"
+                "condicion": "13 o más faltas"
               }
             ]
           },
           {
             "nombre": "Concordancia",
-            "max": 3,
+            "max": 2,
             "bandas": [
               {
-                "puntos": 3,
+                "puntos": 2,
                 "condicion": "Sin errores de concordancia de género, número o persona"
               },
               {
-                "puntos": 2,
-                "condicion": "1 o 2 errores de concordancia"
+                "puntos": 1.5,
+                "condicion": "Hasta 1 error de concordancia"
               },
               {
                 "puntos": 1,
-                "condicion": "3 o 4 errores de concordancia"
+                "condicion": "2 o 3 errores de concordancia"
+              },
+              {
+                "puntos": 0.5,
+                "condicion": "De 4 a 5 errores de concordancia"
               },
               {
                 "puntos": 0,
-                "condicion": "5 o más errores de concordancia"
+                "condicion": "6 o más errores de concordancia"
               }
             ]
           },
           {
             "nombre": "Precisión de los verbos y los adjetivos",
-            "max": 3,
+            "max": 4,
             "bandas": [
               {
-                "puntos": 3,
+                "puntos": 4,
                 "condicion": "Emplea verbos y adjetivos concretos en lugar de comodines"
               },
               {
-                "puntos": 2,
+                "puntos": 3,
                 "condicion": "Emplea 1 o 2 comodines (decir, hacer, cosa) con sustituto evidente"
               },
               {
-                "puntos": 1,
+                "puntos": 2,
                 "condicion": "Emplea 3 o más comodines"
+              },
+              {
+                "puntos": 1,
+                "condicion": "Emplea comodines y algún verbo o adjetivo concreto"
               },
               {
                 "puntos": 0,
@@ -536,8 +568,16 @@
                 "condicion": "Entrega un esquema previo con los hechos del relato ordenados"
               },
               {
+                "puntos": 3,
+                "condicion": "Entrega un esquema previo con los hechos del relato sin ordenar"
+              },
+              {
                 "puntos": 2,
                 "condicion": "Entrega notas sueltas previas, sin ordenar"
+              },
+              {
+                "puntos": 1,
+                "condicion": "Apunta los nombres de los personajes antes de escribir, sin ordenar los hechos"
               },
               {
                 "puntos": 0,
@@ -554,8 +594,16 @@
                 "condicion": "El borrador muestra 2 o más correcciones sobre el propio texto"
               },
               {
+                "puntos": 3,
+                "condicion": "El borrador muestra 2 o más correcciones de ortografía, ninguna sobre lo que cuenta el relato"
+              },
+              {
                 "puntos": 2,
                 "condicion": "El borrador muestra 1 corrección"
+              },
+              {
+                "puntos": 1,
+                "condicion": "El borrador muestra una marca de lectura sin corrección terminada"
               },
               {
                 "puntos": 0,
@@ -570,6 +618,18 @@
               {
                 "puntos": 2,
                 "condicion": "Anota al margen el motivo de al menos un cambio"
+              },
+              {
+                "puntos": 1.5,
+                "condicion": "Anota al margen el motivo de un cambio con una palabra suelta: repetido, largo, no se entiende"
+              },
+              {
+                "puntos": 1,
+                "condicion": "Anota al margen el motivo de un cambio que no ha llegado a hacer en el relato"
+              },
+              {
+                "puntos": 0.5,
+                "condicion": "Señala el cambio en el borrador, sin anotar el motivo"
               },
               {
                 "puntos": 0,
@@ -643,19 +703,23 @@
         "componentes": [
           {
             "nombre": "Se reconoce el modelo trabajado",
-            "max": 3,
+            "max": 4,
             "bandas": [
               {
-                "puntos": 3,
+                "puntos": 4,
                 "condicion": "El relato conserva el esquema del modelo y cambia lugar, personajes y final"
               },
               {
-                "puntos": 2,
+                "puntos": 3,
                 "condicion": "El relato conserva el esquema del modelo y cambia uno de los tres elementos"
               },
               {
-                "puntos": 1,
+                "puntos": 2,
                 "condicion": "El relato reproduce el modelo con los nombres cambiados"
+              },
+              {
+                "puntos": 1,
+                "condicion": "El relato conserva un episodio del modelo y sigue por cuenta propia"
               },
               {
                 "puntos": 0,
@@ -680,6 +744,10 @@
                 "condicion": "Emplea 1 recurso"
               },
               {
+                "puntos": 1,
+                "condicion": "Apunta un recurso en una frase suelta"
+              },
+              {
                 "puntos": 0,
                 "condicion": "Cuenta los hechos sin recursos de estilo"
               }
@@ -687,18 +755,22 @@
           },
           {
             "nombre": "El tono se mantiene",
-            "max": 3,
+            "max": 2,
             "bandas": [
               {
-                "puntos": 3,
+                "puntos": 2,
                 "condicion": "El mismo tono desde la primera línea hasta la última"
               },
               {
-                "puntos": 2,
-                "condicion": "El tono cambia en 1 punto del relato"
+                "puntos": 1.5,
+                "condicion": "El mismo tono en todo el relato, con alguna expresión suelta ajena a ese tono"
               },
               {
                 "puntos": 1,
+                "condicion": "El tono cambia en 1 punto del relato"
+              },
+              {
+                "puntos": 0.5,
                 "condicion": "El tono cambia en 2 puntos del relato"
               },
               {
@@ -848,6 +920,10 @@
                 "condicion": "Se distinguen dos de las tres partes"
               },
               {
+                "puntos": 1,
+                "condicion": "Se distingue una de las tres partes"
+              },
+              {
                 "puntos": 0,
                 "condicion": "El relato es un bloque de hechos sin partes distinguibles"
               }
@@ -855,19 +931,23 @@
           },
           {
             "nombre": "El conflicto sostiene el relato",
-            "max": 3,
+            "max": 4,
             "bandas": [
               {
-                "puntos": 3,
+                "puntos": 4,
                 "condicion": "Hay un conflicto planteado en el nudo y resuelto en el desenlace"
               },
               {
-                "puntos": 2,
+                "puntos": 3,
                 "condicion": "Hay un conflicto planteado que queda sin resolver"
               },
               {
-                "puntos": 1,
+                "puntos": 2,
                 "condicion": "Hay un conflicto apuntado en una sola línea del relato"
+              },
+              {
+                "puntos": 1,
+                "condicion": "El relato apunta una dificultad del personaje sin llegar a conflicto"
               },
               {
                 "puntos": 0,
@@ -877,18 +957,22 @@
           },
           {
             "nombre": "Episodios en párrafos",
-            "max": 3,
+            "max": 2,
             "bandas": [
               {
-                "puntos": 3,
+                "puntos": 2,
                 "condicion": "Cada párrafo cierra un episodio del relato"
               },
               {
-                "puntos": 2,
-                "condicion": "Un párrafo mezcla dos episodios"
+                "puntos": 1.5,
+                "condicion": "Un episodio se reparte entre dos párrafos seguidos"
               },
               {
                 "puntos": 1,
+                "condicion": "Un párrafo mezcla dos episodios"
+              },
+              {
+                "puntos": 0.5,
                 "condicion": "Dos o más párrafos mezclan episodios"
               },
               {
@@ -965,19 +1049,23 @@
         "componentes": [
           {
             "nombre": "Conectores de tiempo y de orden",
-            "max": 3,
+            "max": 4,
             "bandas": [
               {
-                "puntos": 3,
+                "puntos": 4,
                 "condicion": "Emplea 4 o más conectores distintos entre temporales y de orden"
               },
               {
-                "puntos": 2,
+                "puntos": 3,
                 "condicion": "Emplea 2 o 3 conectores distintos"
               },
               {
-                "puntos": 1,
+                "puntos": 2,
                 "condicion": "Repite el mismo conector a lo largo del relato"
+              },
+              {
+                "puntos": 1,
+                "condicion": "Enlaza dos hechos con un conector y coloca el resto sin enlace"
               },
               {
                 "puntos": 0,
@@ -987,18 +1075,22 @@
           },
           {
             "nombre": "Referencia a los personajes",
-            "max": 3,
+            "max": 2,
             "bandas": [
               {
-                "puntos": 3,
+                "puntos": 2,
                 "condicion": "Sustituye por pronombre o sinónimo el nombre del personaje ya citado en todo el relato"
               },
               {
-                "puntos": 2,
-                "condicion": "Deja 1 o 2 repeticiones del nombre sin sustituir"
+                "puntos": 1.5,
+                "condicion": "Deja 1 repetición del nombre sin sustituir"
               },
               {
                 "puntos": 1,
+                "condicion": "Deja 2 o 3 repeticiones del nombre sin sustituir"
+              },
+              {
+                "puntos": 0.5,
                 "condicion": "Repite el nombre del personaje en cada oración"
               },
               {
@@ -1016,8 +1108,16 @@
                 "condicion": "Sostiene el pretérito como tiempo del relato de principio a fin"
               },
               {
-                "puntos": 1,
+                "puntos": 1.5,
                 "condicion": "Cambia de tiempo verbal en 1 punto del relato"
+              },
+              {
+                "puntos": 1,
+                "condicion": "Cambia de tiempo verbal en 2 puntos del relato"
+              },
+              {
+                "puntos": 0.5,
+                "condicion": "Cambia de tiempo verbal en 3 o más puntos del relato"
               },
               {
                 "puntos": 0,
@@ -1034,8 +1134,16 @@
                 "condicion": "Marca con raya cada intervención y con coma los incisos del narrador"
               },
               {
+                "puntos": 1.5,
+                "condicion": "Marca con raya cada intervención y deja sin coma los incisos del narrador"
+              },
+              {
                 "puntos": 1,
                 "condicion": "Marca las intervenciones del diálogo sin distinguir quién habla"
+              },
+              {
+                "puntos": 0.5,
+                "condicion": "Abre con raya el diálogo y sigue las intervenciones en el mismo párrafo"
               },
               {
                 "puntos": 0,
@@ -1117,55 +1225,67 @@
               },
               {
                 "puntos": 3,
-                "condicion": "De 3 a 4 faltas"
+                "condicion": "De 3 a 6 faltas"
               },
               {
                 "puntos": 2,
-                "condicion": "De 5 a 8 faltas"
+                "condicion": "De 7 a 9 faltas"
+              },
+              {
+                "puntos": 1,
+                "condicion": "De 10 a 14 faltas"
               },
               {
                 "puntos": 0,
-                "condicion": "9 o más faltas"
+                "condicion": "15 o más faltas"
               }
             ]
           },
           {
             "nombre": "Formas verbales del relato",
-            "max": 3,
+            "max": 2,
             "bandas": [
               {
-                "puntos": 3,
+                "puntos": 2,
                 "condicion": "Sin errores en las formas de pretérito, incluidas las de hacer, decir y traer"
               },
               {
-                "puntos": 2,
-                "condicion": "1 o 2 errores en las formas verbales"
+                "puntos": 1.5,
+                "condicion": "Hasta 1 error en las formas verbales"
               },
               {
                 "puntos": 1,
-                "condicion": "3 o 4 errores en las formas verbales"
+                "condicion": "2 o 3 errores en las formas verbales"
+              },
+              {
+                "puntos": 0.5,
+                "condicion": "De 4 a 7 errores en las formas verbales"
               },
               {
                 "puntos": 0,
-                "condicion": "5 o más errores en las formas verbales"
+                "condicion": "8 o más errores en las formas verbales"
               }
             ]
           },
           {
             "nombre": "Precisión del léxico",
-            "max": 3,
+            "max": 4,
             "bandas": [
               {
-                "puntos": 3,
+                "puntos": 4,
                 "condicion": "Emplea verbos de decir variados y adjetivos concretos"
               },
               {
-                "puntos": 2,
+                "puntos": 3,
                 "condicion": "Repite 1 o 2 verbos de decir a lo largo del diálogo"
               },
               {
-                "puntos": 1,
+                "puntos": 2,
                 "condicion": "Emplea dijo y contestó como únicos verbos de decir"
+              },
+              {
+                "puntos": 1,
+                "condicion": "Emplea dijo como único verbo de decir y algún adjetivo concreto"
               },
               {
                 "puntos": 0,
@@ -1254,6 +1374,10 @@
                 "condicion": "Entrega notas sueltas previas"
               },
               {
+                "puntos": 1,
+                "condicion": "Entrega el guion del modelo de clase, sin episodios propios"
+              },
+              {
                 "puntos": 0,
                 "condicion": "No hay rastro de trabajo previo al relato"
               }
@@ -1268,8 +1392,16 @@
                 "condicion": "El borrador recoge 2 o más cambios a partir de la lectura de un compañero"
               },
               {
+                "puntos": 3,
+                "condicion": "El borrador recoge 2 o más cambios y solo uno procede de esa lectura"
+              },
+              {
                 "puntos": 2,
                 "condicion": "El borrador recoge 1 cambio a partir de esa lectura"
+              },
+              {
+                "puntos": 1,
+                "condicion": "El borrador recoge la anotación del compañero sin ningún cambio hecho"
               },
               {
                 "puntos": 0,
@@ -1284,6 +1416,18 @@
               {
                 "puntos": 2,
                 "condicion": "Anota el motivo de al menos un cambio del desenlace"
+              },
+              {
+                "puntos": 1.5,
+                "condicion": "Anota el motivo de un cambio del desenlace en una frase sin desarrollar"
+              },
+              {
+                "puntos": 1,
+                "condicion": "Anota el motivo de un cambio que no afecta al desenlace"
+              },
+              {
+                "puntos": 0.5,
+                "condicion": "Señala en el borrador el cambio del desenlace, sin anotar el motivo"
               },
               {
                 "puntos": 0,
@@ -1357,18 +1501,22 @@
         "componentes": [
           {
             "nombre": "Convenciones del género",
-            "max": 3,
+            "max": 2,
             "bandas": [
               {
-                "puntos": 3,
+                "puntos": 2,
                 "condicion": "El relato respeta 3 convenciones de la obra leída: voz, tipo de personaje y atmósfera"
               },
               {
-                "puntos": 2,
-                "condicion": "El relato respeta 2 de esas convenciones"
+                "puntos": 1.5,
+                "condicion": "El relato respeta 2 convenciones y apunta la tercera en algún pasaje"
               },
               {
                 "puntos": 1,
+                "condicion": "El relato respeta 2 de esas convenciones"
+              },
+              {
+                "puntos": 0.5,
                 "condicion": "El relato respeta 1 de esas convenciones"
               },
               {
@@ -1394,6 +1542,10 @@
                 "condicion": "Emplea 1 recurso"
               },
               {
+                "puntos": 1,
+                "condicion": "Apunta un recurso en una frase suelta"
+              },
+              {
                 "puntos": 0,
                 "condicion": "Cuenta los hechos sin recursos de estilo"
               }
@@ -1401,19 +1553,23 @@
           },
           {
             "nombre": "La voz del relato",
-            "max": 3,
+            "max": 4,
             "bandas": [
               {
-                "puntos": 3,
+                "puntos": 4,
                 "condicion": "La voz elegida, narrador externo o personaje, se sostiene en todo el relato"
               },
               {
-                "puntos": 2,
+                "puntos": 3,
                 "condicion": "La voz cambia en 1 punto del relato"
               },
               {
-                "puntos": 1,
+                "puntos": 2,
                 "condicion": "La voz cambia en 2 puntos del relato"
+              },
+              {
+                "puntos": 1,
+                "condicion": "La voz cambia en 3 o 4 puntos del relato"
               },
               {
                 "puntos": 0,
@@ -1547,18 +1703,22 @@
         "componentes": [
           {
             "nombre": "Estructura del relato",
-            "max": 3,
+            "max": 2,
             "bandas": [
               {
-                "puntos": 3,
+                "puntos": 2,
                 "condicion": "Las tres partes se distinguen y el desenlace se sigue de lo contado"
               },
               {
-                "puntos": 2,
-                "condicion": "Las tres partes se distinguen y el desenlace llega sin preparación"
+                "puntos": 1.5,
+                "condicion": "Las tres partes se distinguen y el desenlace se prepara en la última línea"
               },
               {
                 "puntos": 1,
+                "condicion": "Las tres partes se distinguen y el desenlace llega sin preparación"
+              },
+              {
+                "puntos": 0.5,
                 "condicion": "Se distinguen dos de las tres partes"
               },
               {
@@ -1569,19 +1729,23 @@
           },
           {
             "nombre": "El conflicto sostiene el relato",
-            "max": 3,
+            "max": 4,
             "bandas": [
               {
-                "puntos": 3,
+                "puntos": 4,
                 "condicion": "El conflicto se plantea, se desarrolla en 2 o más episodios y se resuelve"
               },
               {
-                "puntos": 2,
+                "puntos": 3,
                 "condicion": "El conflicto se plantea y se resuelve en un solo episodio"
               },
               {
-                "puntos": 1,
+                "puntos": 2,
                 "condicion": "El conflicto se apunta en una sola línea del relato"
+              },
+              {
+                "puntos": 1,
+                "condicion": "El relato apunta una dificultad del personaje sin llegar a conflicto"
               },
               {
                 "puntos": 0,
@@ -1598,8 +1762,16 @@
                 "condicion": "El orden elegido, lineal o con salto atrás, se sigue sin releer"
               },
               {
-                "puntos": 1,
+                "puntos": 1.5,
                 "condicion": "Hay 1 salto de tiempo que obliga a releer para situarlo"
+              },
+              {
+                "puntos": 1,
+                "condicion": "Hay 2 saltos de tiempo que obligan a releer para situarlos"
+              },
+              {
+                "puntos": 0.5,
+                "condicion": "Hay 3 o más saltos de tiempo sin marca que los sitúe"
               },
               {
                 "puntos": 0,
@@ -1616,8 +1788,16 @@
                 "condicion": "Cada párrafo cierra un episodio del relato"
               },
               {
+                "puntos": 1.5,
+                "condicion": "Un episodio se reparte entre dos párrafos seguidos"
+              },
+              {
                 "puntos": 1,
                 "condicion": "Dos o más párrafos mezclan episodios"
+              },
+              {
+                "puntos": 0.5,
+                "condicion": "El relato divide en párrafos el comienzo y sigue en un bloque único"
               },
               {
                 "puntos": 0,
@@ -1692,19 +1872,23 @@
         "componentes": [
           {
             "nombre": "Conectores entre episodios",
-            "max": 3,
+            "max": 4,
             "bandas": [
               {
-                "puntos": 3,
+                "puntos": 4,
                 "condicion": "Emplea 4 o más conectores distintos: orden, causa, consecuencia, contraste"
               },
               {
-                "puntos": 2,
+                "puntos": 3,
                 "condicion": "Emplea 2 o 3 tipos de conector"
               },
               {
-                "puntos": 1,
+                "puntos": 2,
                 "condicion": "Repite el mismo conector entre los episodios"
+              },
+              {
+                "puntos": 1,
+                "condicion": "Enlaza dos episodios con un conector y coloca el resto sin enlace"
               },
               {
                 "puntos": 0,
@@ -1714,18 +1898,22 @@
           },
           {
             "nombre": "Marcas de tiempo y de lugar en los cambios de escena",
-            "max": 3,
+            "max": 2,
             "bandas": [
               {
-                "puntos": 3,
+                "puntos": 2,
                 "condicion": "Cada cambio de escena lleva una marca de tiempo o de lugar"
               },
               {
-                "puntos": 2,
-                "condicion": "1 cambio de escena queda sin marca"
+                "puntos": 1.5,
+                "condicion": "Cada cambio de escena lleva marca y alguna repite la del cambio anterior"
               },
               {
                 "puntos": 1,
+                "condicion": "1 cambio de escena queda sin marca"
+              },
+              {
+                "puntos": 0.5,
                 "condicion": "2 o más cambios de escena quedan sin marca"
               },
               {
@@ -1743,8 +1931,16 @@
                 "condicion": "Sustituye por pronombre, sinónimo o elipsis los nombres ya citados"
               },
               {
+                "puntos": 1.5,
+                "condicion": "Deja 1 repetición del nombre sin sustituir"
+              },
+              {
                 "puntos": 1,
                 "condicion": "Deja 2 o 3 repeticiones del nombre sin sustituir"
+              },
+              {
+                "puntos": 0.5,
+                "condicion": "Deja 4 o más repeticiones del nombre sin sustituir"
               },
               {
                 "puntos": 0,
@@ -1761,8 +1957,16 @@
                 "condicion": "Delimita con raya las intervenciones y separa los incisos del narrador"
               },
               {
+                "puntos": 1.5,
+                "condicion": "Delimita con raya las intervenciones y deja sin separar algún inciso del narrador"
+              },
+              {
                 "puntos": 1,
                 "condicion": "Delimita las intervenciones sin separar los incisos del narrador"
+              },
+              {
+                "puntos": 0.5,
+                "condicion": "Abre con raya la primera intervención y sigue el diálogo sin marcas"
               },
               {
                 "puntos": 0,
@@ -1837,45 +2041,53 @@
         "componentes": [
           {
             "nombre": "Ortografía y acentuación",
-            "max": 3,
+            "max": 4,
             "bandas": [
               {
+                "puntos": 4,
+                "condicion": "Hasta 3 faltas en un relato de cierta extensión"
+              },
+              {
                 "puntos": 3,
-                "condicion": "Hasta 2 faltas en un relato de cierta extensión"
+                "condicion": "De 4 a 7 faltas"
               },
               {
                 "puntos": 2,
-                "condicion": "De 3 a 5 faltas"
+                "condicion": "De 8 a 11 faltas"
               },
               {
                 "puntos": 1,
-                "condicion": "De 6 a 8 faltas"
+                "condicion": "De 12 a 18 faltas"
               },
               {
                 "puntos": 0,
-                "condicion": "9 o más faltas"
+                "condicion": "19 o más faltas"
               }
             ]
           },
           {
             "nombre": "Concordancia en oraciones largas",
-            "max": 3,
+            "max": 2,
             "bandas": [
               {
-                "puntos": 3,
+                "puntos": 2,
                 "condicion": "Sin errores de concordancia en las oraciones con subordinación"
               },
               {
-                "puntos": 2,
+                "puntos": 1.5,
                 "condicion": "1 o 2 errores de concordancia"
               },
               {
                 "puntos": 1,
-                "condicion": "3 o 4 errores de concordancia"
+                "condicion": "De 3 a 5 errores de concordancia"
+              },
+              {
+                "puntos": 0.5,
+                "condicion": "De 6 a 9 errores de concordancia"
               },
               {
                 "puntos": 0,
-                "condicion": "5 o más errores de concordancia"
+                "condicion": "10 o más errores de concordancia"
               }
             ]
           },
@@ -1894,6 +2106,10 @@
               {
                 "puntos": 2,
                 "condicion": "Emplea de 3 a 4 términos generales"
+              },
+              {
+                "puntos": 1,
+                "condicion": "Emplea de 5 a 6 términos generales"
               },
               {
                 "puntos": 0,
@@ -1966,19 +2182,23 @@
         "componentes": [
           {
             "nombre": "Guion previo",
-            "max": 3,
+            "max": 4,
             "bandas": [
               {
-                "puntos": 3,
+                "puntos": 4,
                 "condicion": "Entrega un guion con los episodios, el conflicto y el orden elegido"
               },
               {
-                "puntos": 2,
+                "puntos": 3,
                 "condicion": "Entrega un guion solo con los episodios"
               },
               {
-                "puntos": 1,
+                "puntos": 2,
                 "condicion": "Entrega notas sueltas previas"
+              },
+              {
+                "puntos": 1,
+                "condicion": "Entrega el guion del modelo de clase, sin episodios propios"
               },
               {
                 "puntos": 0,
@@ -2003,6 +2223,10 @@
                 "condicion": "El borrador muestra 1 corrección"
               },
               {
+                "puntos": 1,
+                "condicion": "El borrador muestra marcas de lectura sin corrección terminada"
+              },
+              {
                 "puntos": 0,
                 "condicion": "Entrega la primera versión sin marcas de revisión"
               }
@@ -2010,18 +2234,22 @@
           },
           {
             "nombre": "Justificación con metalenguaje",
-            "max": 3,
+            "max": 2,
             "bandas": [
               {
-                "puntos": 3,
+                "puntos": 2,
                 "condicion": "Justifica 2 o más cambios con el metalenguaje del curso"
               },
               {
-                "puntos": 2,
-                "condicion": "Justifica 1 cambio con el metalenguaje del curso"
+                "puntos": 1.5,
+                "condicion": "Justifica 2 o más cambios y emplea el metalenguaje del curso en uno de ellos"
               },
               {
                 "puntos": 1,
+                "condicion": "Justifica 1 cambio con el metalenguaje del curso"
+              },
+              {
+                "puntos": 0.5,
                 "condicion": "Anota los cambios sin nombrarlos con el metalenguaje del curso"
               },
               {
@@ -2096,18 +2324,22 @@
         "componentes": [
           {
             "nombre": "Convenciones del género",
-            "max": 3,
+            "max": 2,
             "bandas": [
               {
-                "puntos": 3,
+                "puntos": 2,
                 "condicion": "El relato respeta 3 convenciones de la obra leída: voz, tratamiento del tiempo y tipo de conflicto"
               },
               {
-                "puntos": 2,
-                "condicion": "El relato respeta 2 de esas convenciones"
+                "puntos": 1.5,
+                "condicion": "El relato respeta 2 convenciones y apunta la tercera en algún pasaje"
               },
               {
                 "puntos": 1,
+                "condicion": "El relato respeta 2 de esas convenciones"
+              },
+              {
+                "puntos": 0.5,
                 "condicion": "El relato respeta 1 de esas convenciones"
               },
               {
@@ -2133,6 +2365,10 @@
                 "condicion": "Emplea recursos de estilo sin relación con el conflicto"
               },
               {
+                "puntos": 1,
+                "condicion": "Apunta un recurso en una frase suelta"
+              },
+              {
                 "puntos": 0,
                 "condicion": "Cuenta los hechos sin recursos de estilo"
               }
@@ -2140,19 +2376,23 @@
           },
           {
             "nombre": "Punto de vista",
-            "max": 3,
+            "max": 4,
             "bandas": [
               {
-                "puntos": 3,
+                "puntos": 4,
                 "condicion": "El punto de vista elegido regula lo que el lector sabe en cada momento"
               },
               {
-                "puntos": 2,
+                "puntos": 3,
                 "condicion": "El punto de vista se sostiene sin efecto sobre lo que el lector sabe"
               },
               {
-                "puntos": 1,
+                "puntos": 2,
                 "condicion": "El punto de vista cambia en 1 punto del relato"
+              },
+              {
+                "puntos": 1,
+                "condicion": "El punto de vista cambia en 2 puntos del relato"
               },
               {
                 "puntos": 0,

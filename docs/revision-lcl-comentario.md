@@ -34,9 +34,9 @@
 
 | Componente | Máx. | Bandas |
 |---|---|---|
-| Fragmentos del texto traídos al comentario | 4 | **4** — Trae 3 o más fragmentos distintos del texto<br>**3** — Trae 2 fragmentos distintos del texto<br>**2** — Trae 1 fragmento del texto<br>**0** — Habla del texto sin traer ningún fragmento |
-| Marca de la cita | 3 | **3** — Todos los fragmentos van entrecomillados y con el verso o la línea indicados<br>**2** — Todos los fragmentos van entrecomillados, sin verso ni línea<br>**1** — 1 o 2 fragmentos quedan sin entrecomillar<br>**0** — Los fragmentos se copian dentro del texto propio sin comillas |
-| Cada fragmento acompaña a una afirmación | 3 | **3** — Cada fragmento va junto a la afirmación que ilustra<br>**2** — 1 fragmento aparece suelto, sin afirmación al lado<br>**1** — 2 fragmentos aparecen sueltos, sin afirmación al lado<br>**0** — Los fragmentos se acumulan al margen de las afirmaciones |
+| Fragmentos del texto traídos al comentario | 4 | **4** — Trae 3 o más fragmentos distintos del texto<br>**3** — Trae 2 fragmentos distintos del texto<br>**2** — Trae 1 fragmento del texto<br>**1** — Reproduce una frase del texto dentro del comentario, sin traerla como fragmento<br>**0** — Habla del texto sin traer ningún fragmento |
+| Marca de la cita | 2 | **2** — Todos los fragmentos van entrecomillados y con el verso o la línea indicados<br>**1.5** — Todos los fragmentos van entrecomillados y el verso o la línea aparecen solo en algunos<br>**1** — Todos los fragmentos van entrecomillados, sin verso ni línea<br>**0.5** — 1 o 2 fragmentos quedan sin entrecomillar<br>**0** — Los fragmentos se copian dentro del texto propio sin comillas |
+| Cada fragmento acompaña a una afirmación | 4 | **4** — Cada fragmento va junto a la afirmación que ilustra<br>**3** — 1 fragmento aparece suelto, sin afirmación al lado<br>**2** — 2 fragmentos aparecen sueltos, sin afirmación al lado<br>**1** — 3 fragmentos aparecen sueltos, sin afirmación al lado<br>**0** — Los fragmentos se acumulan al margen de las afirmaciones |
 
 ### Análisis: recursos del texto y rasgos del género  ·  30%  ·  bloque C  ·  🔒 obligatorio
 
@@ -55,9 +55,9 @@
 
 | Componente | Máx. | Bandas |
 |---|---|---|
-| Recursos señalados en el texto | 4 | **4** — Señala 3 o más recursos distintos (comparación, repetición, personificación)<br>**3** — Señala 2 recursos distintos<br>**2** — Señala 1 recurso<br>**0** — Comenta el texto sin señalar ningún recurso |
-| Recursos puestos en relación con lo que el texto dice | 4 | **4** — Explica el efecto de todos los recursos señalados<br>**3** — Explica el efecto de 2 de los recursos señalados<br>**2** — Explica el efecto de 1 de los recursos señalados<br>**0** — Enumera los recursos y deja el efecto sin explicar |
-| Rasgos del género o subgénero | 2 | **2** — Nombra el género y 1 rasgo del texto que lo confirma<br>**1** — Nombra el género sin ningún rasgo que lo confirme<br>**0** — Comenta el texto sin nombrar el género |
+| Recursos señalados en el texto | 4 | **4** — Señala 3 o más recursos distintos (comparación, repetición, personificación)<br>**3** — Señala 2 recursos distintos<br>**2** — Señala 1 recurso<br>**1** — Nombra un recurso sin señalarlo en el texto<br>**0** — Comenta el texto sin señalar ningún recurso |
+| Recursos puestos en relación con lo que el texto dice | 4 | **4** — Explica el efecto de todos los recursos señalados<br>**3** — Explica el efecto de 2 de los recursos señalados<br>**2** — Explica el efecto de 1 de los recursos señalados<br>**1** — Apunta el efecto de 1 recurso en una frase sin desarrollarla<br>**0** — Enumera los recursos y deja el efecto sin explicar |
+| Rasgos del género o subgénero | 2 | **2** — Nombra el género y 1 rasgo del texto que lo confirma<br>**1.5** — Nombra el género y señala un rasgo del texto que no lo confirma<br>**1** — Nombra el género sin ningún rasgo que lo confirme<br>**0.5** — Señala un rasgo del texto sin nombrar el género al que apunta<br>**0** — Comenta el texto sin nombrar el género |
 
 ### Interpretación: sentido de la obra  ·  30%  ·  bloque C  ·  🔒 obligatorio
 
@@ -91,9 +91,9 @@
 
 | Componente | Máx. | Bandas |
 |---|---|---|
-| Ortografía, acentuación y puntuación | 4 | **4** — Hasta 1 falta en todo el comentario<br>**3** — De 2 a 3 faltas<br>**2** — De 4 a 5 faltas<br>**0** — 6 o más faltas |
-| Concordancia | 3 | **3** — Sin errores de concordancia de género, número o persona<br>**2** — 1 o 2 errores de concordancia<br>**1** — 3 o 4 errores de concordancia<br>**0** — 5 o más errores de concordancia |
-| Precisión del vocabulario | 3 | **3** — Nombra con el verbo preciso lo que hace el texto (describe, compara, repite)<br>**2** — Emplea 1 o 2 términos de significado general (cosa, tema, decir) con sustituto evidente<br>**1** — Emplea 3 o más términos de significado general<br>**0** — El comentario se sostiene sobre palabras comodín |
+| Ortografía, acentuación y puntuación | 4 | **4** — Hasta 1 faltas en todo el comentario<br>**3** — 2 o 3 faltas<br>**2** — 4 o 5 faltas<br>**1** — 6 o 7 faltas<br>**0** — 8 o más faltas |
+| Concordancia | 2 | **2** — Sin errores de concordancia de género, número o persona<br>**1.5** — Hasta 1 error de concordancia<br>**1** — 2 o 3 errores de concordancia<br>**0.5** — De 4 a 5 errores de concordancia<br>**0** — 6 o más errores de concordancia |
+| Precisión del vocabulario | 4 | **4** — Nombra con el verbo preciso lo que hace el texto (describe, compara, repite)<br>**3** — Emplea 1 o 2 términos de significado general (cosa, tema, decir) con sustituto evidente<br>**2** — Emplea 3 o más términos de significado general<br>**1** — Emplea términos de significado general y algún verbo preciso<br>**0** — El comentario se sostiene sobre palabras comodín |
 
 ---
 
@@ -125,8 +125,8 @@
 | Componente | Máx. | Bandas |
 |---|---|---|
 | Fragmentos del texto traídos al comentario | 4 | **4** — Trae 4 o más fragmentos distintos del texto<br>**3** — Trae 3 fragmentos distintos del texto<br>**2** — Trae 2 fragmentos distintos del texto<br>**1** — Trae 1 fragmento del texto<br>**0** — Habla del texto sin traer ningún fragmento |
-| Marca de la cita | 3 | **3** — Todos los fragmentos van entrecomillados y con el verso o la línea indicados<br>**2** — Todos los fragmentos van entrecomillados, sin verso ni línea<br>**1** — 1 o 2 fragmentos quedan sin entrecomillar<br>**0** — Los fragmentos se copian dentro del texto propio sin comillas |
-| Cada fragmento prueba una afirmación distinta | 3 | **3** — Cada fragmento prueba una afirmación distinta del comentario<br>**2** — 2 fragmentos prueban la misma afirmación<br>**1** — 3 o más fragmentos prueban la misma afirmación<br>**0** — Los fragmentos se acumulan al margen de las afirmaciones |
+| Marca de la cita | 2 | **2** — Todos los fragmentos van entrecomillados y con el verso o la línea indicados<br>**1.5** — Todos los fragmentos van entrecomillados y el verso o la línea aparecen solo en algunos<br>**1** — Todos los fragmentos van entrecomillados, sin verso ni línea<br>**0.5** — 1 o 2 fragmentos quedan sin entrecomillar<br>**0** — Los fragmentos se copian dentro del texto propio sin comillas |
+| Cada fragmento prueba una afirmación distinta | 4 | **4** — Cada fragmento prueba una afirmación distinta del comentario<br>**3** — 2 fragmentos prueban la misma afirmación<br>**2** — 3 o más fragmentos prueban la misma afirmación<br>**1** — Todos los fragmentos prueban la misma afirmación<br>**0** — Los fragmentos se acumulan al margen de las afirmaciones |
 
 ### Análisis: recursos del texto y evolución del género  ·  25%  ·  bloque C  ·  🔒 obligatorio
 
@@ -147,7 +147,7 @@
 |---|---|---|
 | Recursos localizados en el texto | 4 | **4** — Localiza 4 o más recursos distintos<br>**3** — Localiza 3 recursos distintos<br>**2** — Localiza 2 recursos distintos<br>**1** — Localiza 1 recurso<br>**0** — Comenta el texto sin localizar ningún recurso |
 | Recursos relacionados con el sentido del texto | 4 | **4** — Relaciona con el sentido del texto todos los recursos localizados<br>**3** — Relaciona con el sentido del texto 3 de los recursos localizados<br>**2** — Relaciona con el sentido del texto 2 de los recursos localizados<br>**1** — Relaciona con el sentido del texto 1 de los recursos localizados<br>**0** — Enumera los recursos y deja el sentido del texto aparte |
-| Rasgos del género y de su evolución | 2 | **2** — Nombra el género y 2 rasgos del texto que lo confirman<br>**1** — Nombra el género y 1 rasgo del texto que lo confirma<br>**0** — Comenta el texto sin nombrar el género |
+| Rasgos del género y de su evolución | 2 | **2** — Nombra el género y 2 rasgos del texto que lo confirman<br>**1.5** — Nombra el género y 2 rasgos del texto, y solo uno lo confirma<br>**1** — Nombra el género y 1 rasgo del texto que lo confirma<br>**0.5** — Señala un rasgo del texto sin nombrar el género al que apunta<br>**0** — Comenta el texto sin nombrar el género |
 
 ### Contextualización: relaciones del texto con el contexto sociohistórico  ·  15%  ·  bloque C
 
@@ -196,9 +196,9 @@
 
 | Componente | Máx. | Bandas |
 |---|---|---|
-| Ortografía, acentuación y puntuación | 4 | **4** — Hasta 1 falta en todo el comentario<br>**3** — De 2 a 3 faltas<br>**2** — De 4 a 5 faltas<br>**0** — 6 o más faltas |
-| Corrección gramatical y presente del comentario | 3 | **3** — Sin errores de concordancia ni de construcción de la oración, y con el presente sostenido al hablar del texto<br>**2** — 1 o 2 errores de concordancia, o 1 salto al pasado al hablar del texto<br>**1** — 3 o más errores, o alguna oración que hay que releer para reconstruir<br>**0** — Errores sistemáticos que obligan a reconstruir el sentido |
-| Precisión léxica y densidad | 3 | **3** — Selecciona el término preciso y emplea alguna subordinada para condensar la observación<br>**2** — Selecciona términos precisos, pero encadena oraciones simples donde cabría una subordinada<br>**1** — Recurre a términos de significado general con sustituto evidente<br>**0** — El comentario se sostiene sobre palabras comodín |
+| Ortografía, acentuación y puntuación | 4 | **4** — Hasta 1 faltas en todo el comentario<br>**3** — De 2 a 4 faltas<br>**2** — 5 o 6 faltas<br>**1** — De 7 a 9 faltas<br>**0** — 10 o más faltas |
+| Corrección gramatical y presente del comentario | 2 | **2** — Sin errores de concordancia ni de construcción de la oración, y con el presente sostenido al hablar del texto<br>**1.5** — 1 error de concordancia, o 1 salto al pasado al hablar del texto<br>**1** — 2 o 3 errores, o alguna oración que hay que releer para reconstruir<br>**0.5** — De 4 a 5 errores, y el presente del comentario se pierde en varios pasajes<br>**0** — Errores sistemáticos que obligan a reconstruir el sentido |
+| Precisión léxica y densidad | 4 | **4** — Selecciona el término preciso y emplea alguna subordinada para condensar la observación<br>**3** — Selecciona términos precisos, pero encadena oraciones simples donde cabría una subordinada<br>**2** — Recurre a términos de significado general con sustituto evidente<br>**1** — Emplea términos de significado general y alguno preciso<br>**0** — El comentario se sostiene sobre palabras comodín |
 
 ---
 
@@ -230,8 +230,8 @@
 
 | Componente | Máx. | Bandas |
 |---|---|---|
-| Fragmentos del texto traídos al comentario | 3 | **3** — Trae 5 o más fragmentos distintos del texto<br>**2** — Trae 3 o 4 fragmentos distintos del texto<br>**1** — Trae 1 o 2 fragmentos del texto<br>**0** — Habla del texto sin traer ningún fragmento |
-| Marca de la cita | 3 | **3** — Todos los fragmentos van entrecomillados y con el verso o la línea indicados<br>**2** — Todos los fragmentos van entrecomillados, sin verso ni línea<br>**1** — 1 o 2 fragmentos quedan sin entrecomillar<br>**0** — Los fragmentos se copian dentro del texto propio sin comillas |
+| Fragmentos del texto traídos al comentario | 4 | **4** — Trae 5 o más fragmentos distintos del texto<br>**3** — Trae 3 o 4 fragmentos distintos del texto<br>**2** — Trae 1 o 2 fragmentos del texto<br>**1** — Reproduce una frase del texto dentro del comentario, sin traerla como fragmento<br>**0** — Habla del texto sin traer ningún fragmento |
+| Marca de la cita | 2 | **2** — Todos los fragmentos van entrecomillados y con el verso o la línea indicados<br>**1.5** — Todos los fragmentos van entrecomillados y el verso o la línea aparecen solo en algunos<br>**1** — Todos los fragmentos van entrecomillados, sin verso ni línea<br>**0.5** — 1 o 2 fragmentos quedan sin entrecomillar<br>**0** — Los fragmentos se copian dentro del texto propio sin comillas |
 | Cada fragmento prueba una afirmación distinta | 4 | **4** — Cada fragmento prueba una afirmación distinta del comentario<br>**3** — 2 fragmentos prueban la misma afirmación<br>**2** — 3 fragmentos prueban la misma afirmación<br>**1** — 4 o más fragmentos prueban la misma afirmación<br>**0** — Los fragmentos se acumulan al margen de las afirmaciones |
 
 ### Análisis: recursos del texto y evolución del género  ·  20%  ·  bloque C  ·  🔒 obligatorio
@@ -251,9 +251,9 @@
 
 | Componente | Máx. | Bandas |
 |---|---|---|
-| Recursos localizados en el texto | 3 | **3** — Localiza 5 o más recursos distintos<br>**2** — Localiza 3 o 4 recursos distintos<br>**1** — Localiza 1 o 2 recursos<br>**0** — Comenta el texto sin localizar ningún recurso |
-| Recursos relacionados con el sentido del texto | 5 | **5** — Relaciona con el sentido del texto todos los recursos localizados<br>**4** — Deja 1 recurso localizado sin relacionar con el sentido del texto<br>**3** — Deja 2 recursos localizados sin relacionar con el sentido del texto<br>**2** — Deja 3 recursos localizados sin relacionar con el sentido del texto<br>**0** — Enumera los recursos y deja el sentido del texto aparte |
-| Rasgos del género y de su evolución | 2 | **2** — Nombra el subgénero y 2 rasgos del texto que lo confirman<br>**1** — Nombra el subgénero y 1 rasgo del texto que lo confirma<br>**0** — Comenta el texto sin nombrar el subgénero |
+| Recursos localizados en el texto | 4 | **4** — Localiza 5 o más recursos distintos<br>**3** — Localiza 3 o 4 recursos distintos<br>**2** — Localiza 1 o 2 recursos<br>**1** — Nombra un recurso sin localizarlo en el texto<br>**0** — Comenta el texto sin localizar ningún recurso |
+| Recursos relacionados con el sentido del texto | 4 | **4** — Relaciona con el sentido del texto todos los recursos localizados<br>**3** — Deja 1 recurso localizado sin relacionar con el sentido del texto<br>**2** — Deja 2 recursos localizados sin relacionar con el sentido del texto<br>**1** — Deja 3 recursos localizados sin relacionar con el sentido del texto<br>**0** — Enumera los recursos y deja el sentido del texto aparte |
+| Rasgos del género y de su evolución | 2 | **2** — Nombra el subgénero y 2 rasgos del texto que lo confirman<br>**1.5** — Nombra el subgénero y 2 rasgos del texto, y solo uno lo confirma<br>**1** — Nombra el subgénero y 1 rasgo del texto que lo confirma<br>**0.5** — Señala un rasgo del texto sin nombrar el subgénero al que apunta<br>**0** — Comenta el texto sin nombrar el subgénero |
 
 ### Contextualización: relaciones del texto con el contexto sociohistórico  ·  15%  ·  bloque C
 
@@ -317,9 +317,9 @@
 
 | Componente | Máx. | Bandas |
 |---|---|---|
-| Ortografía, acentuación y puntuación | 4 | **4** — Hasta 1 falta en todo el comentario<br>**3** — De 2 a 3 faltas<br>**2** — De 4 a 5 faltas<br>**0** — 6 o más faltas |
-| Corrección gramatical y tiempo verbal del comentario | 3 | **3** — Sin errores de construcción de la oración, con el presente sostenido y la correlación temporal respetada en el estilo indirecto<br>**2** — 1 o 2 errores de concordancia o de correlación temporal que permiten seguir el comentario<br>**1** — 3 o más errores, o alguna oración que hay que releer para reconstruir<br>**0** — Errores sistemáticos que obligan a reconstruir el sentido |
-| Precisión léxica y densidad | 3 | **3** — Selecciona el término preciso y emplea la subordinación para condensar el análisis<br>**2** — Selecciona términos precisos, pero encadena oraciones simples donde cabría una subordinada<br>**1** — Recurre a términos de significado general con sustituto evidente<br>**0** — El comentario se sostiene sobre palabras comodín |
+| Ortografía, acentuación y puntuación | 4 | **4** — Hasta 1 faltas en todo el comentario<br>**3** — De 2 a 4 faltas<br>**2** — 5 o 6 faltas<br>**1** — De 7 a 9 faltas<br>**0** — 10 o más faltas |
+| Corrección gramatical y tiempo verbal del comentario | 2 | **2** — Sin errores de construcción de la oración, con el presente sostenido y la correlación temporal respetada en el estilo indirecto<br>**1.5** — 1 error de concordancia o de correlación temporal que permite seguir el comentario<br>**1** — 2 o 3 errores, o alguna oración que hay que releer para reconstruir<br>**0.5** — De 4 a 6 errores, y el presente del comentario se pierde en varios pasajes<br>**0** — Errores sistemáticos que obligan a reconstruir el sentido |
+| Precisión léxica y densidad | 4 | **4** — Selecciona el término preciso y emplea la subordinación para condensar el análisis<br>**3** — Selecciona términos precisos, pero encadena oraciones simples donde cabría una subordinada<br>**2** — Recurre a términos de significado general con sustituto evidente<br>**1** — Emplea términos de significado general y alguno preciso<br>**0** — El comentario se sostiene sobre palabras comodín |
 
 ---
 
@@ -352,8 +352,8 @@
 
 | Componente | Máx. | Bandas |
 |---|---|---|
-| Fragmentos del texto traídos al comentario | 3 | **3** — Trae 6 o más fragmentos distintos del texto<br>**2** — Trae 4 o 5 fragmentos distintos del texto<br>**1** — Trae entre 1 y 3 fragmentos del texto<br>**0** — Habla del texto sin traer ningún fragmento |
-| Marca de la cita y respeto del original | 3 | **3** — Todos los fragmentos van entrecomillados, con referencia y con la forma del original respetada<br>**2** — Todos los fragmentos van entrecomillados, sin referencia de verso ni de línea<br>**1** — 1 o 2 fragmentos quedan sin entrecomillar o alteran la forma del original<br>**0** — Los fragmentos se copian dentro del texto propio sin comillas |
+| Fragmentos del texto traídos al comentario | 4 | **4** — Trae 6 o más fragmentos distintos del texto<br>**3** — Trae 4 o 5 fragmentos distintos del texto<br>**2** — Trae entre 1 y 3 fragmentos del texto<br>**1** — Reproduce una frase del texto dentro del comentario, sin traerla como fragmento<br>**0** — Habla del texto sin traer ningún fragmento |
+| Marca de la cita y respeto del original | 2 | **2** — Todos los fragmentos van entrecomillados, con referencia y con la forma del original respetada<br>**1.5** — Todos los fragmentos van entrecomillados y con referencia, y alguno altera la forma del original<br>**1** — Todos los fragmentos van entrecomillados, sin referencia de verso ni de línea<br>**0.5** — 1 o 2 fragmentos quedan sin entrecomillar o alteran la forma del original<br>**0** — Los fragmentos se copian dentro del texto propio sin comillas |
 | Cada fragmento prueba una afirmación distinta | 4 | **4** — Cada fragmento prueba una afirmación distinta del comentario<br>**3** — 2 fragmentos prueban la misma afirmación<br>**2** — 3 fragmentos prueban la misma afirmación<br>**1** — 4 o más fragmentos prueban la misma afirmación<br>**0** — Los fragmentos se acumulan al margen de las afirmaciones |
 
 ### Análisis: elementos constitutivos y recursos del texto  ·  20%  ·  bloque C  ·  🔒 obligatorio
@@ -373,9 +373,9 @@
 
 | Componente | Máx. | Bandas |
 |---|---|---|
-| Planos del texto analizados | 3 | **3** — Analiza 3 o más planos del texto (métrico, sintáctico, léxico, retórico)<br>**2** — Analiza 2 planos del texto<br>**1** — Analiza 1 plano del texto<br>**0** — Comenta el texto sin analizar ningún plano |
-| Recursos relacionados con el sentido de la obra | 5 | **5** — Relaciona con el sentido de la obra todos los recursos localizados<br>**4** — Deja 1 recurso localizado sin relacionar con el sentido de la obra<br>**3** — Deja 2 recursos localizados sin relacionar con el sentido de la obra<br>**2** — Deja 3 recursos localizados sin relacionar con el sentido de la obra<br>**0** — Enumera los recursos y deja el sentido de la obra aparte |
-| Elementos constitutivos del género | 2 | **2** — Nombra el subgénero y 2 elementos del texto que lo constituyen<br>**1** — Nombra el subgénero y 1 elemento del texto que lo constituye<br>**0** — Comenta el texto sin nombrar el subgénero |
+| Planos del texto analizados | 4 | **4** — Analiza 3 o más planos del texto (métrico, sintáctico, léxico, retórico)<br>**3** — Analiza 2 planos del texto<br>**2** — Analiza 1 plano del texto<br>**1** — Nombra un plano del texto sin analizarlo<br>**0** — Comenta el texto sin analizar ningún plano |
+| Recursos relacionados con el sentido de la obra | 4 | **4** — Relaciona con el sentido de la obra todos los recursos localizados<br>**3** — Deja 1 recurso localizado sin relacionar con el sentido de la obra<br>**2** — Deja 2 recursos localizados sin relacionar con el sentido de la obra<br>**1** — Deja 3 recursos localizados sin relacionar con el sentido de la obra<br>**0** — Enumera los recursos y deja el sentido de la obra aparte |
+| Elementos constitutivos del género | 2 | **2** — Nombra el subgénero y 2 elementos del texto que lo constituyen<br>**1.5** — Nombra el subgénero y 2 elementos del texto, y solo uno lo constituye<br>**1** — Nombra el subgénero y 1 elemento del texto que lo constituye<br>**0.5** — Señala un elemento constitutivo sin nombrar el subgénero al que pertenece<br>**0** — Comenta el texto sin nombrar el subgénero |
 
 ### Metalenguaje: términos del análisis literario  ·  10%  ·  bloque C
 
@@ -394,9 +394,9 @@
 
 | Componente | Máx. | Bandas |
 |---|---|---|
-| Términos del análisis literario empleados | 4 | **4** — Emplea 5 o más términos distintos del análisis literario<br>**3** — Emplea 3 o 4 términos distintos<br>**2** — Emplea 1 o 2 términos distintos<br>**0** — Comenta el texto con vocabulario del habla común |
-| Términos que designan lo que el texto contiene | 4 | **4** — Todos los términos designan lo que el texto contiene<br>**3** — 1 término designa algo distinto de lo que el texto contiene<br>**2** — 2 términos designan algo distinto de lo que el texto contiene<br>**0** — 3 o más términos designan algo distinto de lo que el texto contiene |
-| Términos anclados en un fragmento | 2 | **2** — Cada término va acompañado del fragmento del texto correspondiente<br>**1** — 1 o 2 términos aparecen sin fragmento al lado<br>**0** — Los términos se enuncian al margen del texto |
+| Términos del análisis literario empleados | 4 | **4** — Emplea 5 o más términos distintos del análisis literario<br>**3** — Emplea 3 o 4 términos distintos<br>**2** — Emplea 1 o 2 términos distintos<br>**1** — Nombra un término del análisis literario sin aplicarlo al texto<br>**0** — Comenta el texto con vocabulario del habla común |
+| Términos que designan lo que el texto contiene | 4 | **4** — Todos los términos designan lo que el texto contiene<br>**3** — 1 término designa algo distinto de lo que el texto contiene<br>**2** — 2 términos designan algo distinto de lo que el texto contiene<br>**1** — 3 términos designan algo distinto de lo que el texto contiene<br>**0** — 4 o más términos designan algo distinto de lo que el texto contiene |
+| Términos anclados en un fragmento | 2 | **2** — Cada término va acompañado del fragmento del texto correspondiente<br>**1.5** — Cada término va acompañado de un fragmento y uno de ellos no corresponde al término<br>**1** — 1 o 2 términos aparecen sin fragmento al lado<br>**0.5** — 3 o más términos aparecen sin fragmento al lado<br>**0** — Los términos se enuncian al margen del texto |
 
 ### Contextualización: contexto sociohistórico y tradición literaria  ·  10%  ·  bloque C
 
@@ -460,9 +460,9 @@
 
 | Componente | Máx. | Bandas |
 |---|---|---|
-| Ortografía, gramática y tipografía | 4 | **4** — Hasta 1 falta en todo el comentario, tipográficas incluidas<br>**3** — De 2 a 3 faltas<br>**2** — De 4 a 5 faltas<br>**0** — 6 o más faltas |
-| Tiempo verbal y construcción de la oración | 3 | **3** — Sin errores de construcción, con el presente sostenido y la correlación temporal respetada en el estilo indirecto<br>**2** — 1 o 2 errores de construcción o de correlación temporal que permiten seguir el comentario<br>**1** — 3 o más errores, o alguna oración que hay que releer para reconstruir<br>**0** — Errores sistemáticos que obligan a reconstruir el sentido |
-| Precisión léxica y vocación de estilo | 3 | **3** — Selecciona el término preciso y emplea la variación sintáctica propia del comentario académico<br>**2** — Selecciona términos precisos, pero repite la misma construcción a lo largo del comentario<br>**1** — Recurre a términos de significado general con sustituto evidente<br>**0** — El comentario se sostiene sobre palabras comodín |
+| Ortografía, gramática y tipografía | 4 | **4** — Hasta 1 faltas en todo el comentario, tipográficas incluidas<br>**3** — De 2 a 4 faltas<br>**2** — De 5 a 8 faltas<br>**1** — 9 o 10 faltas<br>**0** — 11 o más faltas |
+| Tiempo verbal y construcción de la oración | 2 | **2** — Sin errores de construcción, con el presente sostenido y la correlación temporal respetada en el estilo indirecto<br>**1.5** — 1 error de construcción o de correlación temporal que permite seguir el comentario<br>**1** — 2 o 3 errores, o alguna oración que hay que releer para reconstruir<br>**0.5** — De 4 a 6 errores, y la lectura se detiene para rehacer la oración<br>**0** — Errores sistemáticos que obligan a reconstruir el sentido |
+| Precisión léxica y vocación de estilo | 4 | **4** — Selecciona el término preciso y emplea la variación sintáctica propia del comentario académico<br>**3** — Selecciona términos precisos, pero repite la misma construcción a lo largo del comentario<br>**2** — Recurre a términos de significado general con sustituto evidente<br>**1** — Emplea términos de significado general y alguno preciso<br>**0** — El comentario se sostiene sobre palabras comodín |
 
 ---
 
@@ -495,8 +495,8 @@
 
 | Componente | Máx. | Bandas |
 |---|---|---|
-| Fragmentos del texto traídos al comentario | 3 | **3** — Trae 6 o más fragmentos distintos del texto<br>**2** — Trae 4 o 5 fragmentos distintos del texto<br>**1** — Trae entre 1 y 3 fragmentos del texto<br>**0** — Habla del texto sin traer ningún fragmento |
-| Marca de la cita y respeto del original | 3 | **3** — Todos los fragmentos van entrecomillados, con referencia y con la puntuación del original respetada<br>**2** — Todos los fragmentos van entrecomillados, sin referencia de verso ni de línea<br>**1** — 1 o 2 fragmentos quedan sin entrecomillar o alteran la puntuación del original<br>**0** — Los fragmentos se copian dentro del texto propio sin comillas |
+| Fragmentos del texto traídos al comentario | 4 | **4** — Trae 6 o más fragmentos distintos del texto<br>**3** — Trae 4 o 5 fragmentos distintos del texto<br>**2** — Trae entre 1 y 3 fragmentos del texto<br>**1** — Reproduce una frase del texto dentro del comentario, sin traerla como fragmento<br>**0** — Habla del texto sin traer ningún fragmento |
+| Marca de la cita y respeto del original | 2 | **2** — Todos los fragmentos van entrecomillados, con referencia y con la puntuación del original respetada<br>**1.5** — Todos los fragmentos van entrecomillados y con referencia, y alguno altera la puntuación del original<br>**1** — Todos los fragmentos van entrecomillados, sin referencia de verso ni de línea<br>**0.5** — 1 o 2 fragmentos quedan sin entrecomillar o alteran la puntuación del original<br>**0** — Los fragmentos se copian dentro del texto propio sin comillas |
 | Cada fragmento prueba un paso del razonamiento | 4 | **4** — Cada fragmento prueba un paso distinto del razonamiento<br>**3** — 2 fragmentos prueban el mismo paso<br>**2** — 3 fragmentos prueban el mismo paso<br>**1** — 4 o más fragmentos prueban el mismo paso<br>**0** — Los fragmentos se acumulan al margen del razonamiento |
 
 ### Análisis: elementos constitutivos y recursos del texto  ·  20%  ·  bloque C  ·  🔒 obligatorio
@@ -516,9 +516,9 @@
 
 | Componente | Máx. | Bandas |
 |---|---|---|
-| Planos del texto analizados | 3 | **3** — Analiza 4 o más planos del texto (métrico, sintáctico, léxico, retórico, enunciativo)<br>**2** — Analiza 3 planos del texto<br>**1** — Analiza 1 o 2 planos del texto<br>**0** — Comenta el texto sin analizar ningún plano |
-| Recursos relacionados con el sentido de la obra | 5 | **5** — Relaciona con el sentido de la obra todos los recursos localizados<br>**4** — Deja 1 recurso localizado sin relacionar con el sentido de la obra<br>**3** — Deja 2 recursos localizados sin relacionar con el sentido de la obra<br>**2** — Deja 3 recursos localizados sin relacionar con el sentido de la obra<br>**0** — Enumera los recursos y deja el sentido de la obra aparte |
-| Elementos constitutivos del género | 2 | **2** — Nombra el subgénero y 3 elementos del texto que lo constituyen<br>**1** — Nombra el subgénero y 1 o 2 elementos del texto que lo constituyen<br>**0** — Comenta el texto sin nombrar el subgénero |
+| Planos del texto analizados | 4 | **4** — Analiza 4 o más planos del texto (métrico, sintáctico, léxico, retórico, enunciativo)<br>**3** — Analiza 3 planos del texto<br>**2** — Analiza 1 o 2 planos del texto<br>**1** — Nombra un plano del texto sin analizarlo<br>**0** — Comenta el texto sin analizar ningún plano |
+| Recursos relacionados con el sentido de la obra | 4 | **4** — Relaciona con el sentido de la obra todos los recursos localizados<br>**3** — Deja 1 recurso localizado sin relacionar con el sentido de la obra<br>**2** — Deja 2 recursos localizados sin relacionar con el sentido de la obra<br>**1** — Deja 3 recursos localizados sin relacionar con el sentido de la obra<br>**0** — Enumera los recursos y deja el sentido de la obra aparte |
+| Elementos constitutivos del género | 2 | **2** — Nombra el subgénero y 3 elementos del texto que lo constituyen<br>**1.5** — Nombra el subgénero y 3 elementos del texto, y solo 2 lo constituyen<br>**1** — Nombra el subgénero y 1 o 2 elementos del texto que lo constituyen<br>**0.5** — Señala un elemento constitutivo sin nombrar el subgénero al que pertenece<br>**0** — Comenta el texto sin nombrar el subgénero |
 
 ### Metalenguaje: términos del análisis literario  ·  10%  ·  bloque C
 
@@ -537,9 +537,9 @@
 
 | Componente | Máx. | Bandas |
 |---|---|---|
-| Términos del análisis literario empleados | 4 | **4** — Emplea 6 o más términos distintos del análisis literario<br>**3** — Emplea 4 o 5 términos distintos<br>**2** — Emplea entre 1 y 3 términos distintos<br>**0** — Comenta el texto con vocabulario del habla común |
-| Términos que designan lo que el texto contiene | 4 | **4** — Todos los términos designan lo que el texto contiene<br>**3** — 1 término designa algo distinto de lo que el texto contiene<br>**2** — 2 términos designan algo distinto de lo que el texto contiene<br>**0** — 3 o más términos designan algo distinto de lo que el texto contiene |
-| Términos anclados en un fragmento | 2 | **2** — Cada término va acompañado del fragmento del texto correspondiente<br>**1** — 1 o 2 términos aparecen sin fragmento al lado<br>**0** — Los términos se enuncian al margen del texto |
+| Términos del análisis literario empleados | 4 | **4** — Emplea 6 o más términos distintos del análisis literario<br>**3** — Emplea 4 o 5 términos distintos<br>**2** — Emplea entre 1 y 3 términos distintos<br>**1** — Nombra un término del análisis literario sin aplicarlo al texto<br>**0** — Comenta el texto con vocabulario del habla común |
+| Términos que designan lo que el texto contiene | 4 | **4** — Todos los términos designan lo que el texto contiene<br>**3** — 1 término designa algo distinto de lo que el texto contiene<br>**2** — 2 términos designan algo distinto de lo que el texto contiene<br>**1** — 3 términos designan algo distinto de lo que el texto contiene<br>**0** — 4 o más términos designan algo distinto de lo que el texto contiene |
+| Términos anclados en un fragmento | 2 | **2** — Cada término va acompañado del fragmento del texto correspondiente<br>**1.5** — Cada término va acompañado de un fragmento y uno de ellos no corresponde al término<br>**1** — 1 o 2 términos aparecen sin fragmento al lado<br>**0.5** — 3 o más términos aparecen sin fragmento al lado<br>**0** — Los términos se enuncian al margen del texto |
 
 ### Contextualización: contexto sociohistórico y tradición literaria  ·  10%  ·  bloque C
 
@@ -603,9 +603,9 @@
 
 | Componente | Máx. | Bandas |
 |---|---|---|
-| Ortografía, gramática y tipografía | 4 | **4** — Hasta 1 falta en todo el comentario, tipográficas incluidas<br>**3** — De 2 a 3 faltas<br>**2** — De 4 a 5 faltas<br>**0** — 6 o más faltas |
-| Tiempo verbal y construcción de la oración | 3 | **3** — Sin errores de construcción, con el presente sostenido y la correlación temporal respetada en el estilo indirecto<br>**2** — 1 o 2 errores de construcción o de correlación temporal que permiten seguir el comentario<br>**1** — 3 o más errores, o alguna oración que hay que releer para reconstruir<br>**0** — Errores sistemáticos que obligan a reconstruir el sentido |
-| Precisión léxica y vocación de estilo | 3 | **3** — Selecciona el término preciso y ajusta la extensión de la oración al paso del razonamiento<br>**2** — Selecciona términos precisos, pero mantiene la misma extensión de oración de principio a fin<br>**1** — Recurre a términos de significado general con sustituto evidente<br>**0** — El comentario se sostiene sobre palabras comodín |
+| Ortografía, gramática y tipografía | 4 | **4** — Hasta 1 faltas en todo el comentario, tipográficas incluidas<br>**3** — De 2 a 4 faltas<br>**2** — De 5 a 8 faltas<br>**1** — 9 o 10 faltas<br>**0** — 11 o más faltas |
+| Tiempo verbal y construcción de la oración | 2 | **2** — Sin errores de construcción, con el presente sostenido y la correlación temporal respetada en el estilo indirecto<br>**1.5** — 1 error de construcción o de correlación temporal que permite seguir el comentario<br>**1** — 2 o 3 errores, o alguna oración que hay que releer para reconstruir<br>**0.5** — De 4 a 6 errores, y la lectura se detiene para rehacer la oración<br>**0** — Errores sistemáticos que obligan a reconstruir el sentido |
+| Precisión léxica y vocación de estilo | 4 | **4** — Selecciona el término preciso y ajusta la extensión de la oración al paso del razonamiento<br>**3** — Selecciona términos precisos, pero mantiene la misma extensión de oración de principio a fin<br>**2** — Recurre a términos de significado general con sustituto evidente<br>**1** — Emplea términos de significado general y alguno preciso<br>**0** — El comentario se sostiene sobre palabras comodín |
 
 ---
 

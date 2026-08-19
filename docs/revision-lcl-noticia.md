@@ -35,9 +35,9 @@
 
 | Componente | Máx. | Bandas |
 |---|---|---|
-| Partes de la noticia | 4 | **4** — El texto presenta las tres partes: titular, entradilla y cuerpo<br>**3** — Presenta 2 de las tres partes<br>**2** — Presenta 1 de las tres partes<br>**0** — El texto es un bloque continuo sin partes reconocibles |
-| Preguntas resueltas en la entradilla | 4 | **4** — La entradilla responde a 4 preguntas: qué, quién, cuándo y dónde<br>**3** — Responde a 3 preguntas<br>**2** — Responde a 2 preguntas<br>**0** — Responde a 1 pregunta o a ninguna |
-| Orden del cuerpo | 2 | **2** — Los datos del cuerpo van de mayor a menor interés informativo<br>**1** — El cuerpo alterna datos principales y datos secundarios<br>**0** — El cuerpo sigue el orden en que se encontraron los datos |
+| Partes de la noticia | 4 | **4** — El texto presenta las tres partes: titular, entradilla y cuerpo<br>**3** — Presenta 2 de las tres partes<br>**2** — Presenta 1 de las tres partes<br>**1** — El texto marca el titular con otro tipo de letra, sin separarlo del cuerpo<br>**0** — El texto es un bloque continuo sin partes reconocibles |
+| Preguntas resueltas en la entradilla | 4 | **4** — La entradilla responde a 4 preguntas: qué, quién, cuándo y dónde<br>**3** — Responde a 3 preguntas<br>**2** — Responde a 2 preguntas<br>**1** — Responde a 1 pregunta<br>**0** — La entradilla deja las cuatro preguntas sin responder |
+| Orden del cuerpo | 2 | **2** — Los datos del cuerpo van de mayor a menor interés informativo<br>**1.5** — Los datos del cuerpo van de mayor a menor interés y un dato secundario se adelanta<br>**1** — El cuerpo alterna datos principales y datos secundarios<br>**0.5** — El cuerpo abre con el dato de mayor interés y sigue el orden en que se encontraron los demás<br>**0** — El cuerpo sigue el orden en que se encontraron los datos |
 
 ### Fuentes y contraste de la información  ·  25%  ·  bloque B  ·  🔒 obligatorio
 
@@ -56,9 +56,9 @@
 
 | Componente | Máx. | Bandas |
 |---|---|---|
-| Fuentes consultadas | 4 | **4** — La noticia se apoya en 2 o más fuentes<br>**2** — Se apoya en 1 fuente<br>**0** — La noticia se escribe sin fuente consultada |
-| Datos comprobados en la fuente | 3 | **3** — 3 o más datos del hecho coinciden con la fuente<br>**2** — 1 o 2 datos coinciden con la fuente<br>**0** — Los datos de la noticia proceden del recuerdo |
-| Contraste | 3 | **3** — El dato principal aparece contrastado en una segunda fuente<br>**2** — La noticia nombra una segunda fuente y deja el dato sin comparar<br>**0** — La noticia se apoya en una sola versión |
+| Fuentes consultadas | 4 | **4** — La noticia se apoya en 2 o más fuentes<br>**3** — La noticia se apoya en 2 fuentes y toma los datos de una sola<br>**2** — Se apoya en 1 fuente<br>**1** — Nombra una fuente sin tomar de ella ningún dato<br>**0** — La noticia se escribe sin fuente consultada |
+| Datos comprobados en la fuente | 2 | **2** — 3 o más datos del hecho coinciden con la fuente<br>**1.5** — 2 datos del hecho coinciden con la fuente<br>**1** — 1 dato del hecho coincide con la fuente<br>**0.5** — Nombra la fuente consultada y ningún dato coincide con ella<br>**0** — Los datos de la noticia proceden del recuerdo |
+| Contraste | 4 | **4** — El dato principal aparece contrastado en una segunda fuente<br>**3** — Un dato secundario aparece contrastado en una segunda fuente<br>**2** — La noticia nombra una segunda fuente y deja el dato sin comparar<br>**1** — La noticia cita una segunda fuente que repite la versión de la primera<br>**0** — La noticia se apoya en una sola versión |
 
 ### Atribución de la información a las fuentes  ·  15%  ·  bloque B
 
@@ -77,9 +77,9 @@
 
 | Componente | Máx. | Bandas |
 |---|---|---|
-| Fuentes nombradas | 4 | **4** — La noticia nombra la fuente de todos los datos tomados de fuera<br>**3** — Deja 1 dato sin fuente nombrada<br>**2** — Deja 2 datos sin fuente nombrada<br>**0** — La noticia da todos los datos como propios |
-| Comillas en lo citado | 3 | **3** — Las palabras tomadas de otro texto van entre comillas<br>**2** — Deja 1 cita sin comillas<br>**1** — Deja 2 citas sin comillas<br>**0** — La noticia funde las palabras ajenas con las propias |
-| Autoría de la declaración | 3 | **3** — Cada declaración lleva el nombre de quien la pronuncia<br>**2** — 1 declaración se queda sin autor<br>**1** — 2 declaraciones se quedan sin autor<br>**0** — Las declaraciones aparecen sin autor |
+| Fuentes nombradas | 4 | **4** — La noticia nombra la fuente de todos los datos tomados de fuera<br>**3** — Deja 1 dato sin fuente nombrada<br>**2** — Deja 2 datos sin fuente nombrada<br>**1** — Deja 3 o 4 datos sin fuente nombrada<br>**0** — La noticia da todos los datos como propios |
+| Comillas en lo citado | 2 | **2** — Las palabras tomadas de otro texto van entre comillas<br>**1.5** — Las palabras tomadas de otro texto van entre comillas, sin decir de dónde salen<br>**1** — Deja 1 cita sin comillas<br>**0.5** — Deja 2 citas sin comillas<br>**0** — La noticia funde las palabras ajenas con las propias |
+| Autoría de la declaración | 4 | **4** — Cada declaración lleva el nombre de quien la pronuncia<br>**3** — 1 declaración se queda sin autor<br>**2** — 2 declaraciones se quedan sin autor<br>**1** — 3 o 4 declaraciones se quedan sin autor<br>**0** — Las declaraciones aparecen sin autor |
 
 ### Registro informativo: hechos y voz del emisor  ·  20%  ·  bloque B  ·  🔒 obligatorio
 
@@ -98,9 +98,9 @@
 
 | Componente | Máx. | Bandas |
 |---|---|---|
-| Persona gramatical | 3 | **3** — La noticia mantiene la tercera persona de principio a fin<br>**2** — Pasa a la primera persona en 4 puntos o menos<br>**0** — La noticia está escrita en primera persona |
-| Hechos y opiniones | 4 | **4** — Toda opinión de la noticia aparece atribuida a alguien<br>**3** — Deja 1 opinión propia presentada como hecho<br>**2** — Deja 2 opiniones propias presentadas como hecho<br>**0** — La noticia cuenta el hecho desde la opinión propia |
-| Léxico valorativo | 3 | **3** — La noticia emplea adjetivos de descripción y ninguno de juicio<br>**2** — Emplea 1 adjetivo de juicio<br>**1** — Emplea 2 adjetivos de juicio<br>**0** — La noticia se sostiene sobre adjetivos de juicio |
+| Persona gramatical | 2 | **2** — La noticia mantiene la tercera persona de principio a fin<br>**1.5** — Pasa a la primera persona en 1 punto del texto<br>**1** — Pasa a la primera persona en 2 o 3 puntos del texto<br>**0.5** — Pasa a la primera persona en 4 o más puntos del texto<br>**0** — La noticia está escrita en primera persona |
+| Hechos y opiniones | 4 | **4** — Toda opinión de la noticia aparece atribuida a alguien<br>**3** — Deja 1 opinión propia presentada como hecho<br>**2** — Deja 2 opiniones propias presentadas como hecho<br>**1** — Deja 3 o 4 opiniones propias presentadas como hecho<br>**0** — La noticia cuenta el hecho desde la opinión propia |
+| Léxico valorativo | 4 | **4** — La noticia emplea adjetivos de descripción y ninguno de juicio<br>**3** — Emplea 1 adjetivo de juicio<br>**2** — Emplea 2 adjetivos de juicio<br>**1** — Emplea 3 o 4 adjetivos de juicio<br>**0** — La noticia se sostiene sobre adjetivos de juicio |
 
 ### Corrección normativa y propiedad léxica  ·  15%  ·  bloque D  ·  🔒 obligatorio
 
@@ -119,9 +119,9 @@
 
 | Componente | Máx. | Bandas |
 |---|---|---|
-| Ortografía y acentuación | 4 | **4** — Hasta 2 faltas en toda la noticia<br>**3** — De 3 a 4 faltas<br>**2** — De 5 a 7 faltas<br>**1** — De 8 a 12 faltas<br>**0** — 13 o más faltas |
-| Puntuación | 3 | **3** — Cierra con punto todas las frases y reparte el cuerpo en párrafos<br>**2** — Deja de 1 a 4 frases sin cerrar<br>**0** — La noticia es un bloque de texto casi sin puntuación |
-| Propiedad léxica | 3 | **3** — Emplea términos precisos y ninguna palabra comodín<br>**2** — Emplea 1 palabra comodín (cosa, tema, hacer)<br>**1** — Emplea 2 o 3 palabras comodín<br>**0** — La noticia se sostiene sobre palabras comodín |
+| Ortografía y acentuación | 4 | **4** — Hasta 2 faltas en toda la noticia<br>**3** — 3 o 4 faltas<br>**2** — 5 o 6 faltas<br>**1** — De 7 a 9 faltas<br>**0** — 10 o más faltas |
+| Puntuación | 2 | **2** — Cierra con punto todas las frases y reparte el cuerpo en párrafos<br>**1.5** — Cierra con punto todas las frases y deja el cuerpo sin repartir en párrafos<br>**1** — Deja de 1 a 4 frases sin cerrar<br>**0.5** — Deja de 5 a 8 frases sin cerrar<br>**0** — La noticia es un bloque de texto casi sin puntuación |
+| Propiedad léxica | 4 | **4** — Emplea términos precisos y ninguna palabra comodín<br>**3** — Emplea 1 palabra comodín (cosa, tema, hacer)<br>**2** — Emplea 2 o 3 palabras comodín<br>**1** — Emplea 4 o 5 palabras comodín<br>**0** — La noticia se sostiene sobre palabras comodín |
 
 ---
 
@@ -151,9 +151,9 @@
 
 | Componente | Máx. | Bandas |
 |---|---|---|
-| Partes de la noticia | 3 | **3** — El texto presenta titular, entradilla y cuerpo<br>**2** — Presenta 2 de las tres partes<br>**1** — Presenta 1 de las tres partes<br>**0** — El texto es un bloque continuo sin partes reconocibles |
-| Preguntas resueltas en la entradilla | 4 | **4** — La entradilla responde a 4 preguntas: qué, quién, cuándo y dónde<br>**3** — Responde a 3 preguntas<br>**2** — Responde a 2 preguntas<br>**0** — Responde a 1 pregunta o a ninguna |
-| Pirámide invertida | 3 | **3** — El cuerpo baja de mayor a menor interés informativo en todos los párrafos<br>**2** — Baja de mayor a menor interés con 1 o 2 párrafos fuera de sitio<br>**0** — El cuerpo ordena los hechos por el momento en que ocurrieron |
+| Partes de la noticia | 2 | **2** — El texto presenta titular, entradilla y cuerpo<br>**1.5** — El texto presenta las tres partes y la entradilla repite el titular<br>**1** — Presenta 2 de las tres partes<br>**0.5** — Presenta 1 de las tres partes<br>**0** — El texto es un bloque continuo sin partes reconocibles |
+| Preguntas resueltas en la entradilla | 4 | **4** — La entradilla responde a 4 preguntas: qué, quién, cuándo y dónde<br>**3** — Responde a 3 preguntas<br>**2** — Responde a 2 preguntas<br>**1** — Responde a 1 pregunta<br>**0** — La entradilla deja las cuatro preguntas sin responder |
+| Pirámide invertida | 4 | **4** — El cuerpo baja de mayor a menor interés informativo en todos los párrafos<br>**3** — Baja de mayor a menor interés con 1 párrafo fuera de sitio<br>**2** — Baja de mayor a menor interés con 2 párrafos fuera de sitio<br>**1** — Baja de mayor a menor interés en los dos primeros párrafos y sigue sin orden<br>**0** — El cuerpo ordena los hechos por el momento en que ocurrieron |
 
 ### Fuentes y contraste de la información  ·  30%  ·  bloque B  ·  🔒 obligatorio
 
@@ -172,9 +172,9 @@
 
 | Componente | Máx. | Bandas |
 |---|---|---|
-| Fuentes consultadas | 3 | **3** — La noticia se apoya en 3 o más fuentes<br>**2** — Se apoya en 2 fuentes<br>**1** — Se apoya en 1 fuente<br>**0** — La noticia se escribe sin fuente consultada |
-| Datos contrastados | 4 | **4** — 3 o más datos aparecen contrastados en dos fuentes<br>**3** — 2 datos aparecen contrastados en dos fuentes<br>**2** — 1 dato aparece contrastado en dos fuentes<br>**0** — Todos los datos proceden de una sola fuente |
-| Criterio de selección | 3 | **3** — La noticia descarta los datos ajenos al hecho y razona la elección de la fuente<br>**2** — La noticia descarta los datos ajenos al hecho<br>**0** — La noticia recoge de la fuente todos los datos disponibles o la copia entera |
+| Fuentes consultadas | 4 | **4** — La noticia se apoya en 3 o más fuentes<br>**3** — Se apoya en 2 fuentes<br>**2** — Se apoya en 1 fuente<br>**1** — La noticia nombra una fuente sin tomar de ella ningún dato<br>**0** — La noticia se escribe sin fuente consultada |
+| Datos contrastados | 4 | **4** — 3 o más datos aparecen contrastados en dos fuentes<br>**3** — 2 datos aparecen contrastados en dos fuentes<br>**2** — 1 dato aparece contrastado en dos fuentes<br>**1** — Un dato aparece en dos fuentes, sin señalar la coincidencia<br>**0** — Todos los datos proceden de una sola fuente |
+| Criterio de selección | 2 | **2** — La noticia descarta los datos ajenos al hecho y razona la elección de la fuente<br>**1.5** — La noticia descarta los datos ajenos al hecho y nombra la fuente elegida sin razonar la elección<br>**1** — La noticia descarta los datos ajenos al hecho<br>**0.5** — La noticia descarta algún dato ajeno al hecho y conserva el resto de la fuente<br>**0** — La noticia recoge de la fuente todos los datos disponibles o la copia entera |
 
 ### Registro informativo: hechos y voz del emisor  ·  25%  ·  bloque B  ·  🔒 obligatorio
 
@@ -193,9 +193,9 @@
 
 | Componente | Máx. | Bandas |
 |---|---|---|
-| Persona gramatical y registro | 3 | **3** — La noticia mantiene la tercera persona y el registro informativo<br>**2** — Pasa a la primera persona o al registro coloquial en 4 puntos o menos<br>**0** — La noticia está escrita en primera persona o en registro coloquial |
-| Hechos y declaraciones | 4 | **4** — La noticia separa los hechos comprobados de las declaraciones citadas<br>**3** — Funde 1 declaración con los hechos<br>**2** — Funde 2 declaraciones con los hechos<br>**0** — La noticia presenta las declaraciones como hechos |
-| Léxico valorativo | 3 | **3** — La noticia emplea léxico neutro y ningún adjetivo de juicio<br>**2** — Emplea 1 adjetivo de juicio<br>**1** — Emplea 2 adjetivos de juicio<br>**0** — La noticia se sostiene sobre adjetivos de juicio |
+| Persona gramatical y registro | 2 | **2** — La noticia mantiene la tercera persona y el registro informativo<br>**1.5** — Pasa a la primera persona o al registro coloquial en 1 punto del texto<br>**1** — Pasa a la primera persona o al registro coloquial en 2 o 3 puntos del texto<br>**0.5** — Pasa a la primera persona o al registro coloquial en 4 o más puntos del texto<br>**0** — La noticia está escrita en primera persona o en registro coloquial |
+| Hechos y declaraciones | 4 | **4** — La noticia separa los hechos comprobados de las declaraciones citadas<br>**3** — Funde 1 declaración con los hechos<br>**2** — Funde 2 declaraciones con los hechos<br>**1** — Funde 3 o 4 declaraciones con los hechos<br>**0** — La noticia presenta las declaraciones como hechos |
+| Léxico valorativo | 4 | **4** — La noticia emplea léxico neutro y ningún adjetivo de juicio<br>**3** — Emplea 1 adjetivo de juicio<br>**2** — Emplea 2 adjetivos de juicio<br>**1** — Emplea 3 o 4 adjetivos de juicio<br>**0** — La noticia se sostiene sobre adjetivos de juicio |
 
 ### Corrección normativa y propiedad léxica  ·  15%  ·  bloque D  ·  🔒 obligatorio
 
@@ -214,9 +214,9 @@
 
 | Componente | Máx. | Bandas |
 |---|---|---|
-| Ortografía y acentuación | 4 | **4** — Hasta 2 faltas en toda la noticia<br>**3** — De 3 a 4 faltas<br>**2** — De 5 a 7 faltas<br>**1** — De 8 a 12 faltas<br>**0** — 13 o más faltas |
-| Puntuación y comillas | 3 | **3** — Cierra con punto todas las frases y entrecomilla todas las declaraciones<br>**2** — Deja de 1 a 5 declaraciones o frases sin marcar<br>**0** — La noticia es un bloque de texto casi sin puntuación |
-| Propiedad léxica | 3 | **3** — Emplea términos precisos y ninguna palabra comodín<br>**2** — Emplea 1 palabra comodín (cosa, tema, hacer)<br>**1** — Emplea 2 palabras comodín<br>**0** — La noticia se sostiene sobre palabras comodín |
+| Ortografía y acentuación | 4 | **4** — Hasta 2 faltas en toda la noticia<br>**3** — De 3 a 5 faltas<br>**2** — De 6 a 8 faltas<br>**1** — De 9 a 12 faltas<br>**0** — 13 o más faltas |
+| Puntuación y comillas | 2 | **2** — Cierra con punto todas las frases y entrecomilla todas las declaraciones<br>**1.5** — Deja de 1 a 2 declaraciones o frases sin marcar<br>**1** — Deja de 3 a 5 declaraciones o frases sin marcar<br>**0.5** — Deja de 6 a 9 declaraciones o frases sin marcar<br>**0** — La noticia es un bloque de texto casi sin puntuación |
+| Propiedad léxica | 4 | **4** — Emplea términos precisos y ninguna palabra comodín<br>**3** — Emplea 1 palabra comodín (cosa, tema, hacer)<br>**2** — Emplea 2 palabras comodín<br>**1** — Emplea 3 o 4 palabras comodín<br>**0** — La noticia se sostiene sobre palabras comodín |
 
 ---
 
@@ -247,9 +247,9 @@
 
 | Componente | Máx. | Bandas |
 |---|---|---|
-| Titular informativo | 3 | **3** — El titular lleva verbo propio y nombra el hecho y el protagonista<br>**2** — El titular nombra el hecho y va sin verbo propio<br>**0** — El titular anuncia el tema o es una etiqueta de una palabra |
-| Entradilla completa | 4 | **4** — La entradilla responde a las 5 preguntas: qué, quién, cuándo, dónde y por qué<br>**3** — Responde a 4 preguntas<br>**2** — Responde a 3 preguntas<br>**0** — Responde a 2 preguntas o a menos |
-| Pirámide invertida | 3 | **3** — Cada párrafo del cuerpo aporta un dato nuevo y de menor jerarquía que el anterior<br>**2** — El cuerpo baja de jerarquía con 1 párrafo fuera de sitio<br>**0** — El cuerpo repite el orden de la entradilla o el de los hechos |
+| Titular informativo | 2 | **2** — El titular lleva verbo propio y nombra el hecho y el protagonista<br>**1.5** — El titular lleva verbo propio y nombra el hecho, sin el protagonista<br>**1** — El titular nombra el hecho y va sin verbo propio<br>**0.5** — El titular nombra al protagonista, sin el hecho ni verbo propio<br>**0** — El titular anuncia el tema o es una etiqueta de una palabra |
+| Entradilla completa | 4 | **4** — La entradilla responde a las 5 preguntas: qué, quién, cuándo, dónde y por qué<br>**3** — Responde a 4 preguntas<br>**2** — Responde a 3 preguntas<br>**1** — Responde a 2 preguntas<br>**0** — Responde a 1 pregunta o a ninguna |
+| Pirámide invertida | 4 | **4** — Cada párrafo del cuerpo aporta un dato nuevo y de menor jerarquía que el anterior<br>**3** — El cuerpo baja de jerarquía con 1 párrafo fuera de sitio<br>**2** — El cuerpo baja de jerarquía con 2 párrafos fuera de sitio<br>**1** — El cuerpo baja de jerarquía con 3 o 4 párrafos fuera de sitio<br>**0** — El cuerpo repite el orden de la entradilla o el de los hechos |
 
 ### Fuentes y contraste de la información  ·  25%  ·  bloque B  ·  🔒 obligatorio
 
@@ -268,9 +268,9 @@
 
 | Componente | Máx. | Bandas |
 |---|---|---|
-| Fuentes consultadas | 3 | **3** — La noticia se apoya en 3 o más fuentes de distinta procedencia<br>**2** — Se apoya en 2 fuentes<br>**1** — Se apoya en 1 fuente<br>**0** — La noticia se escribe sin fuente consultada |
-| Datos contrastados | 4 | **4** — 4 o más datos aparecen contrastados en dos fuentes<br>**3** — 3 datos aparecen contrastados<br>**2** — 2 datos aparecen contrastados<br>**0** — 1 dato aparece contrastado o ninguno |
-| Fiabilidad calibrada | 3 | **3** — La noticia examina 3 indicios de fiabilidad: autoría, fecha y datos citados<br>**2** — Examina 2 indicios de fiabilidad<br>**1** — Examina 1 indicio de fiabilidad<br>**0** — La noticia toma todas las fuentes como equivalentes |
+| Fuentes consultadas | 2 | **2** — La noticia se apoya en 3 o más fuentes de distinta procedencia<br>**1.5** — La noticia se apoya en 3 o más fuentes de la misma procedencia<br>**1** — Se apoya en 2 fuentes<br>**0.5** — Se apoya en 1 fuente<br>**0** — La noticia se escribe sin fuente consultada |
+| Datos contrastados | 4 | **4** — 4 o más datos aparecen contrastados en dos fuentes<br>**3** — 3 datos aparecen contrastados<br>**2** — 2 datos aparecen contrastados<br>**1** — 1 dato aparece contrastado<br>**0** — Todos los datos proceden de una sola fuente |
+| Fiabilidad calibrada | 4 | **4** — La noticia examina 3 indicios de fiabilidad: autoría, fecha y datos citados<br>**3** — Examina 2 indicios de fiabilidad<br>**2** — Examina 1 indicio de fiabilidad<br>**1** — Nombra un indicio de fiabilidad sin examinarlo<br>**0** — La noticia toma todas las fuentes como equivalentes |
 
 ### Atribución de la información a las fuentes  ·  15%  ·  bloque B
 
@@ -289,9 +289,9 @@
 
 | Componente | Máx. | Bandas |
 |---|---|---|
-| Fuentes nombradas | 3 | **3** — Cada dato tomado de otro texto lleva la fuente nombrada<br>**2** — Deja 1 dato sin fuente nombrada<br>**1** — Deja 2 datos sin fuente nombrada<br>**0** — La noticia da todos los datos como propios |
-| Discurso referido marcado | 4 | **4** — 3 o más declaraciones van entre comillas y con verbo de habla<br>**3** — 2 declaraciones van marcadas<br>**2** — 1 declaración va marcada<br>**0** — Las palabras ajenas se funden con las propias |
-| Registro de la consulta | 3 | **3** — La noticia cierra con la lista de fuentes y la fecha de consulta<br>**2** — Cierra con la lista de fuentes o las nombra dentro del cuerpo<br>**0** — La noticia termina sin registro de las fuentes |
+| Fuentes nombradas | 4 | **4** — Cada dato tomado de otro texto lleva la fuente nombrada<br>**3** — Deja 1 dato sin fuente nombrada<br>**2** — Deja 2 datos sin fuente nombrada<br>**1** — Deja 3 o 4 datos sin fuente nombrada<br>**0** — La noticia da todos los datos como propios |
+| Discurso referido marcado | 4 | **4** — 3 o más declaraciones van entre comillas y con verbo de habla<br>**3** — 2 declaraciones van marcadas<br>**2** — 1 declaración va marcada<br>**1** — 1 declaración lleva verbo de habla, sin comillas<br>**0** — Las palabras ajenas se funden con las propias |
+| Registro de la consulta | 2 | **2** — La noticia cierra con la lista de fuentes y la fecha de consulta<br>**1.5** — La noticia cierra con la lista de fuentes y deja alguna sin fecha de consulta<br>**1** — Cierra con la lista de fuentes o las nombra dentro del cuerpo<br>**0.5** — La noticia anuncia que ha consultado fuentes, sin nombrar ninguna<br>**0** — La noticia termina sin registro de las fuentes |
 
 ### Registro informativo: hechos y voz del emisor  ·  20%  ·  bloque B  ·  🔒 obligatorio
 
@@ -310,9 +310,9 @@
 
 | Componente | Máx. | Bandas |
 |---|---|---|
-| Registro informativo | 3 | **3** — La noticia mantiene la tercera persona y el registro informativo<br>**2** — Se aparta del registro informativo en 4 puntos o menos<br>**0** — La noticia alterna el registro informativo con el personal |
-| Grados de la información | 4 | **4** — La noticia distingue el dato comprobado, el atribuido y el pendiente de confirmar<br>**3** — Distingue 2 de los tres grados<br>**2** — Distingue 1 de los tres grados<br>**0** — La noticia presenta toda la información con el mismo grado de certeza |
-| Adjetivación | 3 | **3** — La noticia sustituye los adjetivos valorativos por datos<br>**2** — Deja 1 adjetivo valorativo<br>**1** — Deja 2 adjetivos valorativos<br>**0** — La noticia se sostiene sobre la adjetivación valorativa |
+| Registro informativo | 2 | **2** — La noticia mantiene la tercera persona y el registro informativo<br>**1.5** — Se aparta del registro informativo en 1 punto del texto<br>**1** — Se aparta del registro informativo en 2 o 3 puntos del texto<br>**0.5** — Se aparta del registro informativo en 4 o más puntos del texto<br>**0** — La noticia alterna el registro informativo con el personal |
+| Grados de la información | 4 | **4** — La noticia distingue el dato comprobado, el atribuido y el pendiente de confirmar<br>**3** — Distingue 2 de los tres grados<br>**2** — Distingue 1 de los tres grados<br>**1** — Nombra uno de los tres grados sin distinguirlo en el texto<br>**0** — La noticia presenta toda la información con el mismo grado de certeza |
+| Adjetivación | 4 | **4** — La noticia sustituye los adjetivos valorativos por datos<br>**3** — Deja 1 adjetivo valorativo<br>**2** — Deja 2 adjetivos valorativos<br>**1** — Deja 3 o 4 adjetivos valorativos<br>**0** — La noticia se sostiene sobre la adjetivación valorativa |
 
 ### Corrección normativa y propiedad léxica  ·  15%  ·  bloque D  ·  🔒 obligatorio
 
@@ -331,9 +331,9 @@
 
 | Componente | Máx. | Bandas |
 |---|---|---|
-| Ortografía y acentuación | 4 | **4** — Hasta 2 faltas en toda la noticia<br>**3** — De 3 a 4 faltas<br>**2** — De 5 a 7 faltas<br>**1** — De 8 a 12 faltas<br>**0** — 13 o más faltas |
-| Puntuación del discurso referido | 3 | **3** — Todas las declaraciones llevan comillas, dos puntos o raya<br>**2** — Deja 1 declaración sin marcar<br>**1** — Deja 2 declaraciones sin marcar<br>**0** — Las declaraciones aparecen sin marca de puntuación |
-| Propiedad léxica | 3 | **3** — Emplea términos precisos y ningún verbo comodín<br>**2** — Emplea 1 verbo comodín (hacer, tener, decir)<br>**1** — Emplea 2 verbos comodín<br>**0** — La noticia se sostiene sobre verbos comodín |
+| Ortografía y acentuación | 4 | **4** — Hasta 2 faltas en toda la noticia<br>**3** — De 3 a 5 faltas<br>**2** — De 6 a 9 faltas<br>**1** — De 10 a 14 faltas<br>**0** — 15 o más faltas |
+| Puntuación del discurso referido | 2 | **2** — Todas las declaraciones llevan comillas, dos puntos o raya<br>**1.5** — Todas las declaraciones llevan marca y alguna emplea la que no le corresponde<br>**1** — Deja 1 declaración sin marcar<br>**0.5** — Deja 2 declaraciones sin marcar<br>**0** — Las declaraciones aparecen sin marca de puntuación |
+| Propiedad léxica | 4 | **4** — Emplea términos precisos y ningún verbo comodín<br>**3** — Emplea 1 verbo comodín (hacer, tener, decir)<br>**2** — Emplea 2 verbos comodín<br>**1** — Emplea 3 o 4 verbos comodín<br>**0** — La noticia se sostiene sobre verbos comodín |
 
 ---
 
@@ -364,9 +364,9 @@
 
 | Componente | Máx. | Bandas |
 |---|---|---|
-| Titulación | 3 | **3** — El texto lleva titular con verbo propio y antetítulo o subtítulo<br>**2** — Lleva titular con verbo propio o titular nominal<br>**0** — El texto empieza sin titular |
-| Entradilla completa | 4 | **4** — La entradilla resuelve las 5 preguntas y anuncia el enfoque del texto<br>**3** — Resuelve las 5 preguntas<br>**2** — Resuelve 3 o 4 preguntas<br>**0** — Resuelve 2 preguntas o menos |
-| Jerarquía del cuerpo | 3 | **3** — Los párrafos bajan de jerarquía informativa y cierran con los antecedentes<br>**2** — Los párrafos bajan de jerarquía y el texto acaba sin antecedentes<br>**0** — El cuerpo agrupa los datos por tema o los ordena por el momento en que ocurrieron |
+| Titulación | 2 | **2** — El texto lleva titular con verbo propio y antetítulo o subtítulo<br>**1.5** — El texto lleva titular con verbo propio y antetítulo o subtítulo que lo repite<br>**1** — Lleva titular con verbo propio o titular nominal<br>**0.5** — El texto abre con una etiqueta de una palabra a modo de titular<br>**0** — El texto empieza sin titular |
+| Entradilla completa | 4 | **4** — La entradilla resuelve las 5 preguntas y anuncia el enfoque del texto<br>**3** — Resuelve las 5 preguntas<br>**2** — Resuelve 3 o 4 preguntas<br>**1** — Resuelve 2 preguntas<br>**0** — Resuelve 1 pregunta o ninguna |
+| Jerarquía del cuerpo | 4 | **4** — Los párrafos bajan de jerarquía informativa y cierran con los antecedentes<br>**3** — Los párrafos bajan de jerarquía y el texto acaba sin antecedentes<br>**2** — Los párrafos bajan de jerarquía con 1 párrafo fuera de sitio<br>**1** — Los párrafos bajan de jerarquía con 2 o 3 párrafos fuera de sitio<br>**0** — El cuerpo agrupa los datos por tema o los ordena por el momento en que ocurrieron |
 
 ### Fuentes y contraste de la información  ·  25%  ·  bloque B  ·  🔒 obligatorio
 
@@ -385,9 +385,9 @@
 
 | Componente | Máx. | Bandas |
 |---|---|---|
-| Naturaleza de las fuentes | 3 | **3** — La noticia combina fuente documental, fuente institucional y testimonio<br>**2** — Combina 2 de los tres tipos de fuente o se apoya en 1<br>**0** — La noticia se escribe sin fuente identificada |
-| Datos verificados | 4 | **4** — 4 o más datos quedan verificados en una fuente independiente<br>**3** — 3 datos quedan verificados<br>**2** — 2 datos quedan verificados<br>**0** — 1 dato queda verificado o ninguno |
-| Fiabilidad calibrada | 3 | **3** — La noticia examina autoría, trazabilidad del dato y línea del medio<br>**2** — Examina 2 de los tres indicios<br>**1** — Examina 1 de los tres indicios<br>**0** — La noticia toma todas las fuentes como equivalentes |
+| Naturaleza de las fuentes | 2 | **2** — La noticia combina fuente documental, fuente institucional y testimonio<br>**1.5** — La noticia combina los tres tipos de fuente y uno de ellos aparece sin identificar<br>**1** — Combina 2 de los tres tipos de fuente o se apoya en 1<br>**0.5** — La noticia nombra una fuente sin tomar de ella ningún dato<br>**0** — La noticia se escribe sin fuente identificada |
+| Datos verificados | 4 | **4** — 4 o más datos quedan verificados en una fuente independiente<br>**3** — 3 datos quedan verificados<br>**2** — 2 datos quedan verificados<br>**1** — 1 dato queda verificado<br>**0** — La noticia publica los datos sin verificar ninguno |
+| Fiabilidad calibrada | 4 | **4** — La noticia examina autoría, trazabilidad del dato y línea del medio<br>**3** — Examina 2 de los tres indicios<br>**2** — Examina 1 de los tres indicios<br>**1** — Nombra uno de los tres indicios sin examinarlo<br>**0** — La noticia toma todas las fuentes como equivalentes |
 
 ### Atribución de la información a las fuentes  ·  15%  ·  bloque B
 
@@ -406,9 +406,9 @@
 
 | Componente | Máx. | Bandas |
 |---|---|---|
-| Atribución dentro del texto | 4 | **4** — Cada afirmación tomada de una fuente queda atribuida dentro del texto<br>**3** — Deja 1 afirmación sin atribuir<br>**2** — Deja 2 afirmaciones sin atribuir<br>**0** — La noticia presenta la información sin atribución |
-| Cita y discurso referido | 3 | **3** — Las citas directas van entrecomilladas y las indirectas llevan verbo de habla<br>**2** — Uno de los dos procedimientos aparece marcado<br>**0** — Las citas se reproducen sin marca formal y las palabras ajenas se funden con las propias |
-| Propiedad intelectual del material | 3 | **3** — La noticia acredita el material reutilizado: texto, imagen y datos<br>**2** — Acredita 2 de los tres tipos de material<br>**1** — Acredita 1 de los tres tipos de material<br>**0** — El material reutilizado aparece sin acreditar |
+| Atribución dentro del texto | 4 | **4** — Cada afirmación tomada de una fuente queda atribuida dentro del texto<br>**3** — Deja 1 afirmación sin atribuir<br>**2** — Deja 2 afirmaciones sin atribuir<br>**1** — Deja 3 o 4 afirmaciones sin atribuir<br>**0** — La noticia presenta la información sin atribución |
+| Cita y discurso referido | 2 | **2** — Las citas directas van entrecomilladas y las indirectas llevan verbo de habla<br>**1.5** — Las citas directas y las indirectas van marcadas, y alguna indirecta repite las palabras textuales<br>**1** — Uno de los dos procedimientos aparece marcado<br>**0.5** — Las palabras citadas se entrecomillan en un solo punto del texto<br>**0** — Las citas se reproducen sin marca formal y las palabras ajenas se funden con las propias |
+| Propiedad intelectual del material | 4 | **4** — La noticia acredita el material reutilizado: texto, imagen y datos<br>**3** — Acredita 2 de los tres tipos de material<br>**2** — Acredita 1 de los tres tipos de material<br>**1** — Nombra el origen de un material sin acreditarlo<br>**0** — El material reutilizado aparece sin acreditar |
 
 ### Registro informativo: hechos y voz del emisor  ·  20%  ·  bloque B  ·  🔒 obligatorio
 
@@ -427,9 +427,9 @@
 
 | Componente | Máx. | Bandas |
 |---|---|---|
-| Registro informativo | 3 | **3** — La noticia sostiene el registro informativo y la impersonalidad en todo el texto<br>**2** — Se aparta del registro informativo en 4 puntos o menos<br>**0** — La noticia alterna el registro informativo con el de opinión |
-| Grados de certeza | 4 | **4** — Cada afirmación lleva marcado el grado de certeza: comprobada, atribuida o hipotética<br>**3** — Marca el grado de certeza en 2 de los tres casos<br>**2** — Marca el grado de certeza en 1 de los tres casos<br>**0** — La noticia presenta toda la información con el mismo grado de certeza |
-| Discurso referido | 3 | **3** — La noticia emplea cita directa e indirecta según la fuerza de cada declaración<br>**2** — Emplea un solo procedimiento de discurso referido<br>**0** — Parafrasea las declaraciones y las voces citadas se confunden con la del emisor |
+| Registro informativo | 2 | **2** — La noticia sostiene el registro informativo y la impersonalidad en todo el texto<br>**1.5** — Se aparta del registro informativo en 1 punto del texto<br>**1** — Se aparta del registro informativo en 2 o 3 puntos del texto<br>**0.5** — Se aparta del registro informativo en 4 o más puntos del texto<br>**0** — La noticia alterna el registro informativo con el de opinión |
+| Grados de certeza | 4 | **4** — Cada afirmación lleva marcado el grado de certeza: comprobada, atribuida o hipotética<br>**3** — Marca el grado de certeza en 2 de los tres casos<br>**2** — Marca el grado de certeza en 1 de los tres casos<br>**1** — Marca el grado de certeza con una fórmula repetida en todos los casos<br>**0** — La noticia presenta toda la información con el mismo grado de certeza |
+| Discurso referido | 4 | **4** — La noticia emplea cita directa e indirecta según la fuerza de cada declaración<br>**3** — Emplea los dos procedimientos sin graduarlos según la fuerza de la declaración<br>**2** — Emplea un solo procedimiento de discurso referido<br>**1** — Emplea un solo procedimiento y lo aplica a una declaración<br>**0** — Parafrasea las declaraciones y las voces citadas se confunden con la del emisor |
 
 ### Corrección normativa y propiedad léxica  ·  15%  ·  bloque D  ·  🔒 obligatorio
 
@@ -448,9 +448,9 @@
 
 | Componente | Máx. | Bandas |
 |---|---|---|
-| Ortografía y acentuación | 4 | **4** — Hasta 2 faltas en toda la noticia, incluidas las tipográficas<br>**3** — De 3 a 4 faltas<br>**2** — De 5 a 7 faltas<br>**1** — De 8 a 12 faltas<br>**0** — 13 o más faltas |
-| Puntuación | 3 | **3** — Cita, inciso y párrafo llevan la puntuación correspondiente<br>**2** — 1 o 2 de los tres procedimientos fallan<br>**0** — La puntuación de la noticia se reduce al punto y la coma |
-| Propiedad léxica | 3 | **3** — Emplea el término preciso del registro periodístico en todo el texto<br>**2** — Emplea 1 término impreciso o comodín<br>**1** — Emplea 2 términos imprecisos o comodín<br>**0** — La noticia se sostiene sobre términos comodín |
+| Ortografía y acentuación | 4 | **4** — Hasta 2 faltas en toda la noticia, incluidas las tipográficas<br>**3** — De 3 a 6 faltas<br>**2** — De 7 a 12 faltas<br>**1** — De 13 a 16 faltas<br>**0** — 17 o más faltas |
+| Puntuación | 2 | **2** — Cita, inciso y párrafo llevan la puntuación correspondiente<br>**1.5** — 1 de los tres procedimientos falla<br>**1** — 2 de los tres procedimientos fallan<br>**0.5** — Los tres procedimientos fallan y el texto conserva el punto y la coma<br>**0** — La puntuación de la noticia se reduce al punto y la coma |
+| Propiedad léxica | 4 | **4** — Emplea el término preciso del registro periodístico en todo el texto<br>**3** — Emplea 1 término impreciso o comodín<br>**2** — Emplea 2 términos imprecisos o comodín<br>**1** — Emplea 3 o 4 términos imprecisos o comodín<br>**0** — La noticia se sostiene sobre términos comodín |
 
 ---
 
@@ -481,9 +481,9 @@
 
 | Componente | Máx. | Bandas |
 |---|---|---|
-| Titulación completa | 3 | **3** — El texto lleva antetítulo, titular y subtítulo ajustados al soporte<br>**2** — Lleva titular y uno de los otros dos elementos, o titular a secas<br>**0** — El texto empieza sin titular |
-| Entradilla completa | 3 | **3** — La entradilla resuelve las 5 preguntas y fija el enfoque del texto<br>**2** — Resuelve de 3 a 5 preguntas<br>**0** — Resuelve 2 preguntas o menos |
-| Arquitectura del cuerpo | 4 | **4** — El cuerpo baja de jerarquía, reparte los bloques temáticos y cierra con los antecedentes<br>**3** — Baja de jerarquía y reparte los bloques temáticos<br>**2** — Baja de jerarquía y deja los bloques temáticos mezclados<br>**0** — El cuerpo ordena los hechos por el momento en que ocurrieron |
+| Titulación completa | 2 | **2** — El texto lleva antetítulo, titular y subtítulo ajustados al soporte<br>**1.5** — El texto lleva los tres elementos y uno de ellos no se ajusta al soporte<br>**1** — Lleva titular y uno de los otros dos elementos, o titular a secas<br>**0.5** — El texto abre con una etiqueta de una palabra a modo de titular<br>**0** — El texto empieza sin titular |
+| Entradilla completa | 4 | **4** — La entradilla resuelve las 5 preguntas y fija el enfoque del texto<br>**3** — Resuelve las 5 preguntas y deja el enfoque sin fijar<br>**2** — Resuelve 3 o 4 preguntas<br>**1** — Resuelve 2 preguntas<br>**0** — Resuelve 1 pregunta o ninguna |
+| Arquitectura del cuerpo | 4 | **4** — El cuerpo baja de jerarquía, reparte los bloques temáticos y cierra con los antecedentes<br>**3** — Baja de jerarquía y reparte los bloques temáticos<br>**2** — Baja de jerarquía y deja los bloques temáticos mezclados<br>**1** — El cuerpo baja de jerarquía en la primera mitad y sigue sin orden<br>**0** — El cuerpo ordena los hechos por el momento en que ocurrieron |
 
 ### Fuentes y contraste de la información  ·  25%  ·  bloque B  ·  🔒 obligatorio
 
@@ -502,9 +502,9 @@
 
 | Componente | Máx. | Bandas |
 |---|---|---|
-| Naturaleza de las fuentes | 3 | **3** — La noticia reúne 4 o más fuentes de tres naturalezas distintas<br>**2** — Reúne 2 o 3 fuentes<br>**0** — La noticia se apoya en 1 fuente o en ninguna |
-| Datos verificados | 4 | **4** — 5 o más datos quedan verificados en una fuente independiente<br>**3** — 4 datos quedan verificados<br>**2** — 3 datos quedan verificados<br>**0** — 2 datos quedan verificados o menos |
-| Fiabilidad y trazabilidad | 3 | **3** — La noticia examina autoría, trazabilidad, fecha y línea del medio, y deja registrada la consulta<br>**2** — Examina 3 de los cuatro indicios<br>**1** — Examina 2 de los cuatro indicios<br>**0** — Examina 1 indicio o ninguno |
+| Naturaleza de las fuentes | 2 | **2** — La noticia reúne 4 o más fuentes de tres naturalezas distintas<br>**1.5** — La noticia reúne 4 o más fuentes de dos naturalezas distintas<br>**1** — Reúne 2 o 3 fuentes<br>**0.5** — La noticia nombra una fuente sin tomar de ella ningún dato<br>**0** — La noticia se apoya en 1 fuente o en ninguna |
+| Datos verificados | 4 | **4** — 5 o más datos quedan verificados en una fuente independiente<br>**3** — 4 datos quedan verificados<br>**2** — 3 datos quedan verificados<br>**1** — 1 o 2 datos quedan verificados<br>**0** — La noticia publica los datos sin verificar ninguno |
+| Fiabilidad y trazabilidad | 4 | **4** — La noticia examina autoría, trazabilidad, fecha y línea del medio, y deja registrada la consulta<br>**3** — Examina 3 de los cuatro indicios<br>**2** — Examina 2 de los cuatro indicios<br>**1** — Examina 1 indicio de los cuatro<br>**0** — La noticia toma todas las fuentes como equivalentes |
 
 ### Atribución de la información a las fuentes  ·  15%  ·  bloque B
 
@@ -523,9 +523,9 @@
 
 | Componente | Máx. | Bandas |
 |---|---|---|
-| Atribución dentro del texto | 4 | **4** — Cada afirmación tomada de una fuente queda atribuida y fechada dentro del texto<br>**3** — Deja 1 afirmación sin atribuir<br>**2** — Deja 2 afirmaciones sin atribuir<br>**0** — La noticia presenta la información sin atribución |
-| Procedimientos de cita | 3 | **3** — La noticia gradúa cita directa, cita indirecta y cita dentro de cita con la puntuación de cada una<br>**2** — Gradúa 2 de los tres procedimientos o emplea uno solo<br>**0** — Las palabras ajenas se funden con las propias |
-| Propiedad intelectual del material | 3 | **3** — La noticia acredita texto, imagen y datos reutilizados, con la licencia cuando existe<br>**2** — Acredita los tres tipos de material y deja fuera la licencia<br>**1** — Acredita 1 o 2 tipos de material<br>**0** — El material reutilizado aparece sin acreditar |
+| Atribución dentro del texto | 4 | **4** — Cada afirmación tomada de una fuente queda atribuida y fechada dentro del texto<br>**3** — Deja 1 afirmación sin atribuir<br>**2** — Deja 2 afirmaciones sin atribuir<br>**1** — Deja 3 o 4 afirmaciones sin atribuir<br>**0** — La noticia presenta la información sin atribución |
+| Procedimientos de cita | 2 | **2** — La noticia gradúa cita directa, cita indirecta y cita dentro de cita con la puntuación de cada una<br>**1.5** — La noticia gradúa los tres procedimientos y deja alguno sin la puntuación que le corresponde<br>**1** — Gradúa 2 de los tres procedimientos o emplea uno solo<br>**0.5** — La noticia entrecomilla las palabras ajenas sin graduar ningún procedimiento<br>**0** — Las palabras ajenas se funden con las propias |
+| Propiedad intelectual del material | 4 | **4** — La noticia acredita texto, imagen y datos reutilizados, con la licencia cuando existe<br>**3** — Acredita los tres tipos de material y deja fuera la licencia<br>**2** — Acredita 1 o 2 tipos de material<br>**1** — Nombra el origen de un material sin acreditarlo<br>**0** — El material reutilizado aparece sin acreditar |
 
 ### Registro informativo: hechos y voz del emisor  ·  20%  ·  bloque B  ·  🔒 obligatorio
 
@@ -544,9 +544,9 @@
 
 | Componente | Máx. | Bandas |
 |---|---|---|
-| Registro informativo | 3 | **3** — La noticia sostiene el registro informativo y la impersonalidad en todo el texto<br>**2** — Se aparta del registro informativo en 3 puntos o menos<br>**0** — La noticia alterna el registro informativo con el de opinión |
-| Grados de certeza | 4 | **4** — Cada afirmación lleva marcada la certeza y la fuente de la cual procede<br>**3** — Deja 1 afirmación sin marca de certeza<br>**2** — Deja 2 afirmaciones sin marca de certeza<br>**0** — La noticia presenta toda la información con el mismo grado de certeza |
-| Selección de los datos | 3 | **3** — La noticia recoge datos de las dos partes implicadas en el hecho<br>**2** — Recoge datos de una parte y menciona la posición de la otra<br>**0** — La noticia selecciona los datos de una sola versión del hecho |
+| Registro informativo | 2 | **2** — La noticia sostiene el registro informativo y la impersonalidad en todo el texto<br>**1.5** — Se aparta del registro informativo en 1 punto del texto<br>**1** — Se aparta del registro informativo en 2 puntos del texto<br>**0.5** — Se aparta del registro informativo en 3 o más puntos del texto<br>**0** — La noticia alterna el registro informativo con el de opinión |
+| Grados de certeza | 4 | **4** — Cada afirmación lleva marcada la certeza y la fuente de la cual procede<br>**3** — Deja 1 afirmación sin marca de certeza<br>**2** — Deja 2 afirmaciones sin marca de certeza<br>**1** — Deja 3 o 4 afirmaciones sin marca de certeza<br>**0** — La noticia presenta toda la información con el mismo grado de certeza |
+| Selección de los datos | 4 | **4** — La noticia recoge datos de las dos partes implicadas en el hecho<br>**3** — Recoge datos de una parte y cita la posición de la otra<br>**2** — Recoge datos de una parte y menciona la posición de la otra<br>**1** — Recoge datos de una parte y nombra a la otra sin recoger su posición<br>**0** — La noticia selecciona los datos de una sola versión del hecho |
 
 ### Corrección normativa y propiedad léxica  ·  15%  ·  bloque D  ·  🔒 obligatorio
 
@@ -565,9 +565,9 @@
 
 | Componente | Máx. | Bandas |
 |---|---|---|
-| Ortografía y acentuación | 4 | **4** — Hasta 2 faltas en toda la noticia, incluidas las tipográficas<br>**3** — De 3 a 4 faltas<br>**2** — De 5 a 7 faltas<br>**1** — De 8 a 12 faltas<br>**0** — 13 o más faltas |
-| Puntuación | 3 | **3** — Cita, cita dentro de cita, inciso y párrafo llevan la puntuación correspondiente<br>**2** — 1 o 2 de los cuatro procedimientos fallan<br>**0** — La puntuación de la noticia se reduce al punto y la coma |
-| Propiedad léxica y ritmo | 3 | **3** — Emplea el término preciso y ninguna muletilla ni perífrasis vacía<br>**2** — Emplea 1 muletilla o perífrasis vacía<br>**1** — Emplea 2 muletillas o perífrasis vacías<br>**0** — La noticia se sostiene sobre muletillas y perífrasis vacías |
+| Ortografía y acentuación | 4 | **4** — Hasta 2 faltas en toda la noticia, incluidas las tipográficas<br>**3** — De 3 a 7 faltas<br>**2** — De 8 a 14 faltas<br>**1** — 15 o 16 faltas<br>**0** — 17 o más faltas |
+| Puntuación | 2 | **2** — Cita, cita dentro de cita, inciso y párrafo llevan la puntuación correspondiente<br>**1.5** — 1 de los cuatro procedimientos falla<br>**1** — 2 de los cuatro procedimientos fallan<br>**0.5** — 3 de los cuatro procedimientos fallan<br>**0** — La puntuación de la noticia se reduce al punto y la coma |
+| Propiedad léxica y ritmo | 4 | **4** — Emplea el término preciso y ninguna muletilla ni perífrasis vacía<br>**3** — Emplea 1 muletilla o perífrasis vacía<br>**2** — Emplea 2 muletillas o perífrasis vacías<br>**1** — Emplea 3 o 4 muletillas o perífrasis vacías<br>**0** — La noticia se sostiene sobre muletillas y perífrasis vacías |
 
 ---
 

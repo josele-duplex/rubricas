@@ -50,9 +50,9 @@
 
 | Componente | Máx. | Bandas |
 |---|---|---|
-| Las tres partes de la exposición | 4 | **4** — Se distinguen presentación, desarrollo y cierre, y el cierre recuerda la idea principal<br>**3** — Se distinguen las tres partes, pero el cierre repite la presentación sin recordar lo explicado<br>**2** — Se distinguen dos de las tres partes<br>**0** — La exposición es un bloque único sin partes reconocibles |
-| Una idea por bloque | 4 | **4** — Cada bloque del desarrollo trata una sola idea<br>**3** — Un bloque mezcla dos ideas distintas<br>**2** — Dos o más bloques mezclan ideas distintas<br>**0** — El desarrollo no está dividido en bloques reconocibles |
-| Mantenerse en el tema | 2 | **2** — Toda la información responde al tema anunciado al principio<br>**1** — Incluye 1 dato que se aparta del tema<br>**0** — Incluye 2 o más datos ajenos al tema |
+| Las tres partes de la exposición | 4 | **4** — Se distinguen presentación, desarrollo y cierre, y el cierre recuerda la idea principal<br>**3** — Se distinguen las tres partes, pero el cierre repite la presentación sin recordar lo explicado<br>**2** — Se distinguen dos de las tres partes<br>**1** — Se distingue una de las tres partes<br>**0** — La exposición es un bloque único sin partes reconocibles |
+| Una idea por bloque | 4 | **4** — Cada bloque del desarrollo trata una sola idea<br>**3** — Un bloque mezcla dos ideas distintas<br>**2** — Dos o más bloques mezclan ideas distintas<br>**1** — El desarrollo se divide en bloques que no responden a las ideas<br>**0** — El desarrollo no está dividido en bloques reconocibles |
+| Mantenerse en el tema | 2 | **2** — Toda la información responde al tema anunciado al principio<br>**1.5** — Incluye 1 dato que se aparta del tema<br>**1** — Incluye 2 datos que se apartan del tema<br>**0.5** — Incluye 3 o 4 datos ajenos al tema<br>**0** — Incluye 5 o más datos ajenos al tema |
 
 ### Cohesión: marcadores discursivos orales  ·  20%  ·  bloque B
 
@@ -72,8 +72,8 @@
 | Componente | Máx. | Bandas |
 |---|---|---|
 | Variedad de marcadores | 4 | **4** — Emplea 3 o más tipos distintos: orden, adición y causa<br>**3** — Emplea 2 tipos distintos, uno de ellos de orden o de causa<br>**2** — Emplea marcadores de orden y de adición, siempre los mismos<br>**1** — Enlaza con y, pero y entonces<br>**0** — Enlaza las ideas sin ningún marcador |
-| Señala el cambio de parte | 3 | **3** — Anuncia verbalmente el paso de una parte a otra en las tres transiciones de la exposición<br>**2** — Anuncia el paso de una parte a otra en 1 o 2 transiciones<br>**0** — No anuncia ninguna transición; el oyente debe inferir el cambio de parte |
-| No repetir la misma palabra | 3 | **3** — Sustituye por sinónimo, pronombre o referencia (esto, esta idea) la palabra ya usada<br>**2** — Sustituye alguna repetición, pero deja 2 o 3 sin sustituir<br>**0** — Repite el mismo término a lo largo de toda la exposición |
+| Señala el cambio de parte | 4 | **4** — Anuncia verbalmente el paso de una parte a otra en las tres transiciones de la exposición<br>**3** — Anuncia el paso de una parte a otra en 2 transiciones<br>**2** — Anuncia el paso de una parte a otra en 1 transición<br>**1** — Marca el paso de una parte a otra con una pausa, sin anunciarlo<br>**0** — No anuncia ninguna transición; el oyente debe inferir el cambio de parte |
+| No repetir la misma palabra | 2 | **2** — Sustituye por sinónimo, pronombre o referencia (esto, esta idea) la palabra ya usada<br>**1.5** — Sustituye la palabra ya usada y deja 1 repetición sin sustituir<br>**1** — Sustituye alguna repetición, pero deja 2 o 3 sin sustituir<br>**0.5** — Sustituye el término repetido en un solo punto de la exposición<br>**0** — Repite el mismo término a lo largo de toda la exposición |
 
 ### Fluidez y corrección de la oralidad formal  ·  20%  ·  bloque B  ·  🔒 obligatorio
 
@@ -92,9 +92,9 @@
 
 | Componente | Máx. | Bandas |
 |---|---|---|
-| Muletillas y titubeos | 4 | **4** — 0 a 3 muletillas o titubeos en toda la exposición<br>**3** — De 4 a 6<br>**2** — De 7 a 10<br>**0** — 11 o más |
-| Volumen y ritmo comprensibles | 4 | **4** — Toda la clase entiende la exposición sin esfuerzo<br>**3** — Se pierden palabras sueltas en algún momento<br>**2** — Hay que pedirle que repita alguna parte<br>**0** — Buena parte de la exposición resulta ininteligible por el volumen o el ritmo |
-| Pausas con función | 2 | **2** — Hace al menos una pausa para separar ideas, distinta de los silencios de duda<br>**0** — No hay pausas con función; solo silencios de duda o ninguna pausa |
+| Muletillas y titubeos | 4 | **4** — 0 a 3 muletillas o titubeos en toda la exposición<br>**3** — De 4 a 6<br>**2** — De 7 a 10<br>**1** — De 11 a 15<br>**0** — 16 o más |
+| Volumen y ritmo comprensibles | 4 | **4** — Toda la clase entiende la exposición sin esfuerzo<br>**3** — Se pierden palabras sueltas en algún momento<br>**2** — Hay que pedirle que repita alguna parte<br>**1** — Se entiende desde la primera fila y hay que pedirle que levante la voz<br>**0** — Buena parte de la exposición resulta ininteligible por el volumen o el ritmo |
+| Pausas con función | 2 | **2** — Hace al menos una pausa para separar ideas, distinta de los silencios de duda<br>**1.5** — Hace una pausa para separar ideas y la alarga hasta parecer un silencio de duda<br>**1** — Marca el cambio de idea con un conector, sin pausa que lo acompañe<br>**0.5** — Hace una pausa al terminar la exposición y ninguna dentro<br>**0** — No hay pausas con función; solo silencios de duda o ninguna pausa |
 
 ### Elementos no verbales: mirada, postura y gesto  ·  15%  ·  bloque B
 
@@ -155,10 +155,10 @@
 
 | Componente | Máx. | Bandas |
 |---|---|---|
-| Las tres partes de la exposición | 3 | **3** — Se distinguen presentación, desarrollo y cierre, y el cierre recuerda la idea principal<br>**2** — Se distinguen las tres partes, pero el cierre repite la presentación sin recordar lo explicado<br>**1** — Se distinguen dos de las tres partes<br>**0** — La exposición es un bloque único sin partes reconocibles |
-| Una idea por bloque | 3 | **3** — Cada bloque del desarrollo trata una sola idea<br>**2** — Un bloque mezcla dos ideas distintas<br>**0** — Dos o más bloques mezclan ideas distintas, o el desarrollo no está dividido en bloques |
-| Ajuste al tiempo asignado | 2 | **2** — Se ajusta al tiempo asignado sin que el profesor tenga que avisarle<br>**1** — Se ajusta al tiempo asignado solo después de un aviso del profesor<br>**0** — Excede o se queda corto del tiempo asignado en más de 2 minutos, incluso después de un aviso |
-| Mantenerse en el tema | 2 | **2** — Toda la información responde al tema anunciado al principio<br>**1** — Incluye 1 dato que se aparta del tema<br>**0** — Incluye 2 o más datos ajenos al tema |
+| Las tres partes de la exposición | 4 | **4** — Se distinguen presentación, desarrollo y cierre, y el cierre recuerda la idea principal<br>**3** — Se distinguen las tres partes, pero el cierre repite la presentación sin recordar lo explicado<br>**2** — Se distinguen dos de las tres partes<br>**1** — Se distingue una de las tres partes<br>**0** — La exposición es un bloque único sin partes reconocibles |
+| Una idea por bloque | 2 | **2** — Cada bloque del desarrollo trata una sola idea<br>**1.5** — Una idea se reparte entre dos bloques seguidos<br>**1** — Un bloque mezcla dos ideas distintas<br>**0.5** — Anuncia los bloques del desarrollo y los expone sin separarlos<br>**0** — Dos o más bloques mezclan ideas distintas, o el desarrollo no está dividido en bloques |
+| Ajuste al tiempo asignado | 2 | **2** — Se ajusta al tiempo asignado sin que el profesor tenga que avisarle<br>**1.5** — Se ajusta al tiempo asignado y deja la conclusión sin desarrollar<br>**1** — Se ajusta al tiempo asignado solo después de un aviso del profesor<br>**0.5** — Se ajusta al tiempo asignado después de dos avisos del profesor<br>**0** — Excede o se queda corto del tiempo asignado en más de 2 minutos, incluso después de un aviso |
+| Mantenerse en el tema | 2 | **2** — Toda la información responde al tema anunciado al principio<br>**1.5** — Incluye 1 dato que se aparta del tema<br>**1** — Incluye 2 datos que se apartan del tema<br>**0.5** — Incluye 3 o 4 datos ajenos al tema<br>**0** — Incluye 5 o más datos ajenos al tema |
 
 ### Cohesión: marcadores discursivos orales  ·  20%  ·  bloque B
 
@@ -178,8 +178,8 @@
 | Componente | Máx. | Bandas |
 |---|---|---|
 | Variedad de marcadores | 4 | **4** — Emplea 3 o más tipos distintos: orden, adición y causa<br>**3** — Emplea 2 tipos distintos, uno de ellos de orden o de causa<br>**2** — Emplea marcadores de orden y de adición, siempre los mismos<br>**1** — Enlaza con y, pero y entonces<br>**0** — Enlaza las ideas sin ningún marcador |
-| Señala el cambio de parte | 3 | **3** — Anuncia verbalmente el paso de una parte a otra en las tres transiciones de la exposición<br>**2** — Anuncia el paso de una parte a otra en 1 o 2 transiciones<br>**0** — No anuncia ninguna transición; el oyente debe inferir el cambio de parte |
-| No repetir la misma palabra | 3 | **3** — Sustituye por sinónimo, hiperónimo o referencia (esto, esta idea) la palabra ya usada<br>**2** — Sustituye alguna repetición, pero deja 2 o 3 sin sustituir<br>**0** — Repite el mismo término a lo largo de toda la exposición |
+| Señala el cambio de parte | 4 | **4** — Anuncia verbalmente el paso de una parte a otra en las tres transiciones de la exposición<br>**3** — Anuncia el paso de una parte a otra en 2 transiciones<br>**2** — Anuncia el paso de una parte a otra en 1 transición<br>**1** — Marca el paso de una parte a otra con una pausa, sin anunciarlo<br>**0** — No anuncia ninguna transición; el oyente debe inferir el cambio de parte |
+| No repetir la misma palabra | 2 | **2** — Sustituye por sinónimo, hiperónimo o referencia (esto, esta idea) la palabra ya usada<br>**1.5** — Sustituye la palabra ya usada y deja 1 repetición sin sustituir<br>**1** — Sustituye alguna repetición, pero deja 2 o 3 sin sustituir<br>**0.5** — Sustituye el término repetido en un solo punto de la exposición<br>**0** — Repite el mismo término a lo largo de toda la exposición |
 
 ### Fluidez y corrección de la oralidad formal  ·  20%  ·  bloque B  ·  🔒 obligatorio
 
@@ -198,9 +198,9 @@
 
 | Componente | Máx. | Bandas |
 |---|---|---|
-| Muletillas y titubeos | 4 | **4** — 0 a 3 muletillas o titubeos en toda la exposición<br>**3** — De 4 a 6<br>**2** — De 7 a 10<br>**0** — 11 o más |
-| Volumen y ritmo comprensibles | 4 | **4** — Toda la clase entiende la exposición sin esfuerzo<br>**3** — Se pierden palabras sueltas en algún momento<br>**2** — Hay que pedirle que repita alguna parte<br>**0** — Buena parte de la exposición resulta ininteligible por el volumen o el ritmo |
-| Pausas con función | 2 | **2** — Hace al menos una pausa para separar ideas, distinta de los silencios de duda<br>**0** — No hay pausas con función; solo silencios de duda o ninguna pausa |
+| Muletillas y titubeos | 4 | **4** — 0 a 3 muletillas o titubeos en toda la exposición<br>**3** — De 4 a 6<br>**2** — De 7 a 10<br>**1** — De 11 a 15<br>**0** — 16 o más |
+| Volumen y ritmo comprensibles | 4 | **4** — Toda la clase entiende la exposición sin esfuerzo<br>**3** — Se pierden palabras sueltas en algún momento<br>**2** — Hay que pedirle que repita alguna parte<br>**1** — Se entiende desde la primera fila y hay que pedirle que levante la voz<br>**0** — Buena parte de la exposición resulta ininteligible por el volumen o el ritmo |
+| Pausas con función | 2 | **2** — Hace al menos una pausa para separar ideas, distinta de los silencios de duda<br>**1.5** — Hace una pausa para separar ideas y la alarga hasta parecer un silencio de duda<br>**1** — Marca el cambio de idea con un conector, sin pausa que lo acompañe<br>**0.5** — Hace una pausa al terminar la exposición y ninguna dentro<br>**0** — No hay pausas con función; solo silencios de duda o ninguna pausa |
 
 ### Elementos no verbales: mirada, postura y gesto  ·  15%  ·  bloque B
 
@@ -261,10 +261,10 @@
 
 | Componente | Máx. | Bandas |
 |---|---|---|
-| Las tres partes de la exposición | 3 | **3** — Se distinguen presentación, desarrollo y cierre, y el cierre recuerda la idea principal<br>**2** — Se distinguen las tres partes, pero el cierre repite la presentación sin recordar lo explicado<br>**1** — Se distinguen dos de las tres partes<br>**0** — La exposición es un bloque único sin partes reconocibles |
-| Un bloque distingue explicación de valoración | 3 | **3** — Cada bloque trata una idea y se distingue si es explicación del tema o valoración personal<br>**2** — Un bloque mezcla explicación y valoración sin distinguirlas<br>**0** — Dos o más bloques mezclan explicación y valoración, o no hay valoración personal reconocible |
-| Ajuste al tiempo asignado | 2 | **2** — Se ajusta al tiempo asignado sin ayuda del profesor<br>**1** — Se ajusta al tiempo asignado solo después de un aviso del profesor<br>**0** — Excede o se queda corto del tiempo asignado en más de 2 minutos, incluso después de un aviso |
-| Mantenerse en el tema | 2 | **2** — Toda la información responde al tema anunciado al principio<br>**1** — Incluye 1 dato que se aparta del tema<br>**0** — Incluye 2 o más datos ajenos al tema |
+| Las tres partes de la exposición | 4 | **4** — Se distinguen presentación, desarrollo y cierre, y el cierre recuerda la idea principal<br>**3** — Se distinguen las tres partes, pero el cierre repite la presentación sin recordar lo explicado<br>**2** — Se distinguen dos de las tres partes<br>**1** — Se distingue una de las tres partes<br>**0** — La exposición es un bloque único sin partes reconocibles |
+| Un bloque distingue explicación de valoración | 2 | **2** — Cada bloque trata una idea y se distingue si es explicación del tema o valoración personal<br>**1.5** — Cada bloque trata una idea y la valoración personal se distingue solo por el tono<br>**1** — Un bloque mezcla explicación y valoración sin distinguirlas<br>**0.5** — Anuncia la valoración personal al final y la mezcla con la explicación<br>**0** — Dos o más bloques mezclan explicación y valoración, o no hay valoración personal reconocible |
+| Ajuste al tiempo asignado | 2 | **2** — Se ajusta al tiempo asignado sin ayuda del profesor<br>**1.5** — Se ajusta al tiempo asignado y deja la conclusión sin desarrollar<br>**1** — Se ajusta al tiempo asignado solo después de un aviso del profesor<br>**0.5** — Se ajusta al tiempo asignado después de dos avisos del profesor<br>**0** — Excede o se queda corto del tiempo asignado en más de 2 minutos, incluso después de un aviso |
+| Mantenerse en el tema | 2 | **2** — Toda la información responde al tema anunciado al principio<br>**1.5** — Incluye 1 dato que se aparta del tema<br>**1** — Incluye 2 datos que se apartan del tema<br>**0.5** — Incluye 3 o 4 datos ajenos al tema<br>**0** — Incluye 5 o más datos ajenos al tema |
 
 ### Cohesión: marcadores discursivos orales  ·  20%  ·  bloque B
 
@@ -284,8 +284,8 @@
 | Componente | Máx. | Bandas |
 |---|---|---|
 | Variedad de marcadores | 4 | **4** — Emplea 3 o más tipos distintos, incluido algún marcador de opinión (a mi parecer, sin duda)<br>**3** — Emplea 2 tipos distintos, uno de ellos de orden o de causa<br>**2** — Emplea marcadores de orden y de adición, siempre los mismos<br>**1** — Enlaza con y, pero y entonces<br>**0** — Enlaza las ideas sin ningún marcador |
-| Señala el cambio de parte | 3 | **3** — Anuncia verbalmente el paso de una parte a otra en las tres transiciones de la exposición<br>**2** — Anuncia el paso de una parte a otra en 1 o 2 transiciones<br>**0** — No anuncia ninguna transición; el oyente debe inferir el cambio de parte |
-| No repetir la misma palabra | 3 | **3** — Sustituye por sinónimo o referencia la palabra ya usada en el bloque anterior<br>**2** — Sustituye alguna repetición, pero deja 2 o 3 sin sustituir<br>**0** — Repite el mismo término a lo largo de toda la exposición |
+| Señala el cambio de parte | 4 | **4** — Anuncia verbalmente el paso de una parte a otra en las tres transiciones de la exposición<br>**3** — Anuncia el paso de una parte a otra en 2 transiciones<br>**2** — Anuncia el paso de una parte a otra en 1 transición<br>**1** — Marca el paso de una parte a otra con una pausa, sin anunciarlo<br>**0** — No anuncia ninguna transición; el oyente debe inferir el cambio de parte |
+| No repetir la misma palabra | 2 | **2** — Sustituye por sinónimo o referencia la palabra ya usada en el bloque anterior<br>**1.5** — Sustituye la palabra ya usada y deja 1 repetición sin sustituir<br>**1** — Sustituye alguna repetición, pero deja 2 o 3 sin sustituir<br>**0.5** — Sustituye el término repetido en un solo punto de la exposición<br>**0** — Repite el mismo término a lo largo de toda la exposición |
 
 ### Fluidez y corrección de la oralidad formal  ·  20%  ·  bloque B  ·  🔒 obligatorio
 
@@ -304,9 +304,9 @@
 
 | Componente | Máx. | Bandas |
 |---|---|---|
-| Muletillas y titubeos | 4 | **4** — 0 a 3 muletillas o titubeos en toda la exposición<br>**3** — De 4 a 6<br>**2** — De 7 a 10<br>**0** — 11 o más |
-| Volumen y ritmo comprensibles | 4 | **4** — Toda la clase entiende la exposición sin esfuerzo<br>**3** — Se pierden palabras sueltas en algún momento<br>**2** — Hay que pedirle que repita alguna parte<br>**0** — Buena parte de la exposición resulta ininteligible por el volumen o el ritmo |
-| Pausas con función | 2 | **2** — Hace al menos una pausa para separar la explicación de la valoración personal<br>**0** — No hay pausas con función; solo silencios de duda o ninguna pausa |
+| Muletillas y titubeos | 4 | **4** — 0 a 3 muletillas o titubeos en toda la exposición<br>**3** — De 4 a 6<br>**2** — De 7 a 10<br>**1** — De 11 a 15<br>**0** — 16 o más |
+| Volumen y ritmo comprensibles | 4 | **4** — Toda la clase entiende la exposición sin esfuerzo<br>**3** — Se pierden palabras sueltas en algún momento<br>**2** — Hay que pedirle que repita alguna parte<br>**1** — Se entiende desde la primera fila y hay que pedirle que levante la voz<br>**0** — Buena parte de la exposición resulta ininteligible por el volumen o el ritmo |
+| Pausas con función | 2 | **2** — Hace al menos una pausa para separar la explicación de la valoración personal<br>**1.5** — Hace una pausa antes de la valoración personal y la alarga hasta parecer un silencio de duda<br>**1** — Anuncia la valoración personal con un conector, sin pausa que la separe<br>**0.5** — Hace una pausa al terminar la exposición y ninguna dentro<br>**0** — No hay pausas con función; solo silencios de duda o ninguna pausa |
 
 ### Elementos no verbales: mirada, postura y gesto  ·  15%  ·  bloque B
 
@@ -367,10 +367,10 @@
 
 | Componente | Máx. | Bandas |
 |---|---|---|
-| Estructura con función diferenciada | 3 | **3** — Presentación, desarrollo y conclusión cumplen cada una una función reconocible y distinta<br>**2** — Se distinguen las tres partes, pero la conclusión repite la presentación sin cerrar la argumentación<br>**1** — Se distinguen dos de las tres partes<br>**0** — La exposición no tiene partes reconocibles |
-| Progresión lógica entre bloques | 3 | **3** — Cada bloque del desarrollo se apoya en el anterior y avanza hacia la conclusión<br>**2** — Los bloques comparten tema, pero su orden podría alterarse sin que cambie el sentido<br>**1** — Un bloque no tiene relación reconocible con el resto<br>**0** — El desarrollo no está organizado en bloques |
-| Ajuste al tiempo asignado | 2 | **2** — La exposición se ajusta al tiempo asignado, con margen para la conclusión<br>**1** — Se pasa o se queda corto del tiempo asignado, y la conclusión queda apresurada o se omite<br>**0** — No se ajusta al tiempo en ningún momento |
-| Cierre sin información nueva | 2 | **2** — El cierre retoma la idea principal o la tesis sin añadir información nueva<br>**1** — El cierre añade información nueva no desarrollada antes<br>**0** — La exposición termina en el último argumento, sin cierre |
+| Estructura con función diferenciada | 2 | **2** — Presentación, desarrollo y conclusión cumplen cada una una función reconocible y distinta<br>**1.5** — Las tres partes cumplen una función distinta y la presentación anticipa la conclusión<br>**1** — Se distinguen las tres partes, pero la conclusión repite la presentación sin cerrar la argumentación<br>**0.5** — Se distinguen dos de las tres partes<br>**0** — La exposición no tiene partes reconocibles |
+| Progresión lógica entre bloques | 4 | **4** — Cada bloque del desarrollo se apoya en el anterior y avanza hacia la conclusión<br>**3** — Los bloques comparten tema, pero su orden podría alterarse sin que cambie el sentido<br>**2** — Un bloque no tiene relación reconocible con el resto<br>**1** — Dos bloques no tienen relación reconocible con el resto<br>**0** — El desarrollo no está organizado en bloques |
+| Ajuste al tiempo asignado | 2 | **2** — La exposición se ajusta al tiempo asignado, con margen para la conclusión<br>**1.5** — La exposición se ajusta al tiempo asignado y la conclusión se dice sin margen<br>**1** — Se pasa o se queda corto del tiempo asignado, y la conclusión queda apresurada o se omite<br>**0.5** — La exposición se pasa del tiempo asignado y termina cuando el profesor avisa<br>**0** — No se ajusta al tiempo en ningún momento |
+| Cierre sin información nueva | 2 | **2** — El cierre retoma la idea principal o la tesis sin añadir información nueva<br>**1.5** — El cierre retoma la idea principal con las mismas palabras de la presentación<br>**1** — El cierre añade información nueva no desarrollada antes<br>**0.5** — La exposición se cierra con una fórmula de despedida ajena al tema<br>**0** — La exposición termina en el último argumento, sin cierre |
 
 ### Cohesión: marcadores discursivos orales  ·  20%  ·  bloque B
 
@@ -390,8 +390,8 @@
 | Componente | Máx. | Bandas |
 |---|---|---|
 | Variedad de marcadores | 4 | **4** — Emplea 4 o más tipos distintos: orden, adición, causa-consecuencia y contraste<br>**3** — Emplea 3 tipos distintos<br>**2** — Emplea 2 tipos distintos<br>**1** — Se limita a marcadores de orden y de adición<br>**0** — Enlaza los argumentos sin ningún marcador |
-| Encadenamiento entre bloques | 3 | **3** — Cada bloque retoma al empezar una idea del bloque anterior<br>**2** — La mayoría de los bloques se encadenan; 1 arranca sin vínculo con lo anterior<br>**1** — Los bloques comparten tema, pero podrían reordenarse sin que cambie el sentido<br>**0** — Los bloques se suceden sin vínculo entre ellos |
-| Referencia y sustitución léxica | 3 | **3** — Sustituye las repeticiones mediante sinónimo o expresión de referencia, y el referente siempre es identificable<br>**2** — Sustituye la mayoría de las repeticiones; 1 referencia exige un esfuerzo para identificarla<br>**1** — Repite el término clave 3 o más veces teniendo alternativa evidente<br>**0** — Repite el mismo término en frases consecutivas a lo largo de toda la exposición |
+| Encadenamiento entre bloques | 4 | **4** — Cada bloque retoma al empezar una idea del bloque anterior<br>**3** — La mayoría de los bloques se encadenan; 1 arranca sin vínculo con lo anterior<br>**2** — Los bloques comparten tema, pero podrían reordenarse sin que cambie el sentido<br>**1** — Encadena 1 par de bloques y deja el resto sin vínculo<br>**0** — Los bloques se suceden sin vínculo entre ellos |
+| Referencia y sustitución léxica | 2 | **2** — Sustituye las repeticiones mediante sinónimo o expresión de referencia, y el referente siempre es identificable<br>**1.5** — Sustituye las repeticiones mediante pronombre, sin recurrir al sinónimo ni a la expresión de referencia, y el referente siempre es identificable<br>**1** — Sustituye la mayoría de las repeticiones; 1 referencia exige un esfuerzo para identificarla<br>**0.5** — Repite el término clave 3 o más veces teniendo alternativa evidente<br>**0** — Repite el mismo término en frases consecutivas a lo largo de toda la exposición |
 
 ### Fluidez y corrección de la oralidad formal  ·  20%  ·  bloque B  ·  🔒 obligatorio
 
@@ -410,10 +410,10 @@
 
 | Componente | Máx. | Bandas |
 |---|---|---|
-| Muletillas y titubeos | 3 | **3** — 0 a 2 muletillas o titubeos en toda la exposición<br>**2** — De 3 a 5<br>**1** — De 6 a 9<br>**0** — 10 o más |
-| Volumen y ritmo comprensibles | 3 | **3** — Toda la exposición se entiende sin esfuerzo, con variación de ritmo que ayuda a seguirla<br>**2** — Se entiende, con algún tramo leído de corrido sin pausas<br>**1** — Hay que pedirle que repita alguna parte<br>**0** — Buena parte de la exposición resulta ininteligible |
-| Pausas con función argumentativa | 2 | **2** — Usa pausas para separar los argumentos y remarcar la tesis o la conclusión<br>**1** — Usa alguna pausa, sin relación clara con la estructura de la argumentación<br>**0** — No hay pausas con función; solo silencios de duda |
-| Apoyo en las notas | 2 | **2** — Consulta las notas con miradas breves, sin leer frases completas en ningún momento<br>**1** — Lee frases completas de las notas en 1 o 2 momentos<br>**0** — Lee la mayor parte de la exposición directamente de las notas |
+| Muletillas y titubeos | 2 | **2** — 0 a 2 muletillas o titubeos en toda la exposición<br>**1.5** — De 3 a 5<br>**1** — De 6 a 9<br>**0.5** — De 10 a 14<br>**0** — 15 o más |
+| Volumen y ritmo comprensibles | 4 | **4** — Toda la exposición se entiende sin esfuerzo, con variación de ritmo que ayuda a seguirla<br>**3** — Se entiende, con algún tramo leído de corrido sin pausas<br>**2** — Hay que pedirle que repita alguna parte<br>**1** — Hay que pedirle que repita dos o más partes<br>**0** — Buena parte de la exposición resulta ininteligible |
+| Pausas con función argumentativa | 2 | **2** — Usa pausas para separar los argumentos y remarcar la tesis o la conclusión<br>**1.5** — Usa pausas para separar los argumentos y ninguna para remarcar la tesis<br>**1** — Usa alguna pausa, sin relación clara con la estructura de la argumentación<br>**0.5** — Hace una pausa al terminar y ninguna dentro de la argumentación<br>**0** — No hay pausas con función; solo silencios de duda |
+| Apoyo en las notas | 2 | **2** — Consulta las notas con miradas breves, sin leer frases completas en ningún momento<br>**1.5** — Lee frases completas de las notas en 1 momento<br>**1** — Lee frases completas de las notas en 2 o 3 momentos<br>**0.5** — Lee frases completas de las notas en 4 o más momentos<br>**0** — Lee la mayor parte de la exposición directamente de las notas |
 
 ### Elementos no verbales: mirada, postura y gesto  ·  15%  ·  bloque B
 
@@ -474,10 +474,10 @@
 
 | Componente | Máx. | Bandas |
 |---|---|---|
-| Estructura con función diferenciada | 3 | **3** — Presentación, desarrollo y conclusión cumplen cada una una función reconocible y distinta<br>**2** — Se distinguen las tres partes, pero la conclusión repite la presentación sin cerrar la argumentación<br>**1** — Se distinguen dos de las tres partes<br>**0** — La exposición no tiene partes reconocibles |
-| Progresión argumentativa hacia una tesis | 3 | **3** — Anticipa al menos una objeción con sus términos y la resuelve con un argumento distinto de los ya empleados<br>**2** — Menciona la existencia de otro punto de vista, sin exponerlo<br>**1** — Cada bloque aporta un argumento, pero sin relación reconocible entre ellos<br>**0** — La exposición no avanza hacia ninguna tesis reconocible |
-| Ajuste al tiempo asignado | 2 | **2** — La exposición se ajusta al tiempo asignado, con margen para la conclusión<br>**1** — Se pasa o se queda corto del tiempo asignado, y la conclusión queda apresurada o se omite<br>**0** — Excede o se queda corto del tiempo asignado en más de 2 minutos |
-| Cierre sin información nueva | 2 | **2** — El cierre retoma la tesis sin añadir información nueva<br>**1** — El cierre añade información nueva no desarrollada antes<br>**0** — La exposición termina en el último argumento, sin cierre |
+| Estructura con función diferenciada | 2 | **2** — Presentación, desarrollo y conclusión cumplen cada una una función reconocible y distinta<br>**1.5** — Las tres partes cumplen una función distinta y la presentación anticipa la conclusión<br>**1** — Se distinguen las tres partes, pero la conclusión repite la presentación sin cerrar la argumentación<br>**0.5** — Se distinguen dos de las tres partes<br>**0** — La exposición no tiene partes reconocibles |
+| Progresión argumentativa hacia una tesis | 4 | **4** — Anticipa al menos una objeción con sus términos y la resuelve con un argumento distinto de los ya empleados<br>**3** — Menciona la existencia de otro punto de vista, sin exponerlo<br>**2** — Cada bloque aporta un argumento, pero sin relación reconocible entre ellos<br>**1** — Los bloques repiten el mismo argumento con otras palabras<br>**0** — La exposición no avanza hacia ninguna tesis reconocible |
+| Ajuste al tiempo asignado | 2 | **2** — La exposición se ajusta al tiempo asignado, con margen para la conclusión<br>**1.5** — La exposición se ajusta al tiempo asignado y la conclusión se dice sin margen<br>**1** — Se pasa o se queda corto del tiempo asignado, y la conclusión queda apresurada o se omite<br>**0.5** — La exposición se pasa del tiempo asignado y termina cuando el profesor avisa<br>**0** — Excede o se queda corto del tiempo asignado en más de 2 minutos |
+| Cierre sin información nueva | 2 | **2** — El cierre retoma la tesis sin añadir información nueva<br>**1.5** — El cierre retoma la tesis con las mismas palabras de la presentación<br>**1** — El cierre añade información nueva no desarrollada antes<br>**0.5** — La exposición se cierra con una fórmula de despedida ajena al tema<br>**0** — La exposición termina en el último argumento, sin cierre |
 
 ### Cohesión: marcadores discursivos orales  ·  20%  ·  bloque B
 
@@ -497,8 +497,8 @@
 | Componente | Máx. | Bandas |
 |---|---|---|
 | Variedad de conectores y marcadores | 4 | **4** — Emplea 4 o más tipos distintos, incluido al menos un marcador de concesión (es cierto que, no obstante)<br>**3** — Emplea 3 tipos distintos, sin marcador de concesión<br>**2** — Emplea 2 tipos distintos<br>**1** — Se limita a marcadores de orden y de causa<br>**0** — Enlaza los bloques sin ningún marcador |
-| Encadenamiento entre bloques | 3 | **3** — Cada bloque retoma al empezar un elemento del bloque anterior<br>**2** — La mayoría de los bloques se encadenan; 1 arranca sin vínculo con lo anterior<br>**1** — Los bloques comparten tema, pero podrían reordenarse sin que cambie el sentido<br>**0** — Los bloques se suceden sin vínculo entre ellos |
-| Referencia y sustitución léxica | 3 | **3** — Sustituye las repeticiones mediante nominalización, sinónimo o expresión de referencia, y el referente siempre es identificable<br>**2** — Sustituye la mayoría de las repeticiones; 1 referencia exige un esfuerzo para identificarla<br>**1** — Repite el término clave 3 o más veces teniendo alternativa evidente<br>**0** — Repite el mismo término en frases consecutivas a lo largo de toda la exposición |
+| Encadenamiento entre bloques | 4 | **4** — Cada bloque retoma al empezar un elemento del bloque anterior<br>**3** — La mayoría de los bloques se encadenan; 1 arranca sin vínculo con lo anterior<br>**2** — Los bloques comparten tema, pero podrían reordenarse sin que cambie el sentido<br>**1** — Encadena 1 par de bloques y deja el resto sin vínculo<br>**0** — Los bloques se suceden sin vínculo entre ellos |
+| Referencia y sustitución léxica | 2 | **2** — Sustituye las repeticiones mediante nominalización, sinónimo o expresión de referencia, y el referente siempre es identificable<br>**1.5** — Sustituye las repeticiones mediante sinónimo o expresión de referencia, sin recurrir a la nominalización, y el referente siempre es identificable<br>**1** — Sustituye la mayoría de las repeticiones; 1 referencia exige un esfuerzo para identificarla<br>**0.5** — Repite el término clave 3 o más veces teniendo alternativa evidente<br>**0** — Repite el mismo término en frases consecutivas a lo largo de toda la exposición |
 
 ### Fluidez y corrección de la oralidad formal  ·  20%  ·  bloque B  ·  🔒 obligatorio
 
@@ -517,10 +517,10 @@
 
 | Componente | Máx. | Bandas |
 |---|---|---|
-| Muletillas y titubeos | 3 | **3** — 0 a 2 muletillas o titubeos en toda la exposición<br>**2** — De 3 a 5<br>**1** — De 6 a 9<br>**0** — 10 o más |
-| Pronunciación de los términos técnicos | 2 | **2** — Pronuncia sin errores los términos técnicos y de uso menos frecuente<br>**1** — Comete 1 o 2 errores de pronunciación en términos técnicos<br>**0** — Comete 3 o más errores de pronunciación |
-| Volumen y ritmo comprensibles | 3 | **3** — Toda la exposición se entiende sin esfuerzo, con variación de ritmo que ayuda a seguirla<br>**2** — Se entiende, con algún tramo leído de corrido sin pausas<br>**1** — Hay que pedirle que repita alguna parte<br>**0** — Buena parte de la exposición resulta ininteligible |
-| Apoyo en las notas | 2 | **2** — Consulta las notas con miradas breves, sin leer frases completas en ningún momento<br>**1** — Lee frases completas de las notas en 1 o 2 momentos<br>**0** — Lee la mayor parte de la exposición directamente de las notas |
+| Muletillas y titubeos | 2 | **2** — 0 a 2 muletillas o titubeos en toda la exposición<br>**1.5** — De 3 a 5<br>**1** — De 6 a 9<br>**0.5** — De 10 a 14<br>**0** — 15 o más |
+| Pronunciación de los términos técnicos | 2 | **2** — Pronuncia sin errores los términos técnicos y de uso menos frecuente<br>**1.5** — Comete 1 error de pronunciación en un término técnico<br>**1** — Comete 2 o 3 errores de pronunciación en términos técnicos<br>**0.5** — Comete de 4 a 6 errores de pronunciación<br>**0** — Comete 7 o más errores de pronunciación |
+| Volumen y ritmo comprensibles | 4 | **4** — Toda la exposición se entiende sin esfuerzo, con variación de ritmo que ayuda a seguirla<br>**3** — Se entiende, con algún tramo leído de corrido sin pausas<br>**2** — Hay que pedirle que repita alguna parte<br>**1** — Hay que pedirle que repita dos o más partes<br>**0** — Buena parte de la exposición resulta ininteligible |
+| Apoyo en las notas | 2 | **2** — Consulta las notas con miradas breves, sin leer frases completas en ningún momento<br>**1.5** — Lee frases completas de las notas en 1 momento<br>**1** — Lee frases completas de las notas en 2 o 3 momentos<br>**0.5** — Lee frases completas de las notas en 4 o más momentos<br>**0** — Lee la mayor parte de la exposición directamente de las notas |
 
 ### Elementos no verbales: mirada, postura y gesto  ·  15%  ·  bloque B
 
@@ -581,10 +581,10 @@
 
 | Componente | Máx. | Bandas |
 |---|---|---|
-| Estructura con función diferenciada | 3 | **3** — Presentación, desarrollo y conclusión cumplen cada una una función reconocible y distinta<br>**2** — Se distinguen las tres partes, pero la conclusión repite la presentación sin cerrar la argumentación<br>**1** — Se distinguen dos de las tres partes<br>**0** — La exposición no tiene partes reconocibles |
-| Relación entre los puntos de vista | 3 | **3** — Expone 2 o más puntos de vista y explica en qué coinciden o en qué se oponen<br>**2** — Expone 2 o más puntos de vista, pero sin relacionarlos entre sí<br>**1** — Expone un único punto de vista, presentado como si fuera el único posible<br>**0** — La exposición no distingue puntos de vista reconocibles |
-| Ajuste al tiempo asignado | 2 | **2** — La exposición se ajusta al tiempo asignado, con margen para la conclusión<br>**1** — Se pasa o se queda corto del tiempo asignado, y la conclusión queda apresurada o se omite<br>**0** — Excede o se queda corto del tiempo asignado en más de 2 minutos |
-| Cierre con valoración propia | 2 | **2** — El cierre ofrece una valoración propia razonada de los puntos de vista expuestos, sin añadir información nueva<br>**1** — El cierre retoma los puntos de vista expuestos sin ofrecer una valoración propia<br>**0** — La exposición termina en el último punto de vista, sin cierre |
+| Estructura con función diferenciada | 2 | **2** — Presentación, desarrollo y conclusión cumplen cada una una función reconocible y distinta<br>**1.5** — Las tres partes cumplen una función distinta y la presentación anticipa la conclusión<br>**1** — Se distinguen las tres partes, pero la conclusión repite la presentación sin cerrar la argumentación<br>**0.5** — Se distinguen dos de las tres partes<br>**0** — La exposición no tiene partes reconocibles |
+| Relación entre los puntos de vista | 4 | **4** — Expone 2 o más puntos de vista y explica en qué coinciden o en qué se oponen<br>**3** — Expone 2 o más puntos de vista, pero sin relacionarlos entre sí<br>**2** — Expone un único punto de vista, presentado como si fuera el único posible<br>**1** — Nombra otro punto de vista sin exponerlo<br>**0** — La exposición no distingue puntos de vista reconocibles |
+| Ajuste al tiempo asignado | 2 | **2** — La exposición se ajusta al tiempo asignado, con margen para la conclusión<br>**1.5** — La exposición se ajusta al tiempo asignado y la conclusión se dice sin margen<br>**1** — Se pasa o se queda corto del tiempo asignado, y la conclusión queda apresurada o se omite<br>**0.5** — La exposición se pasa del tiempo asignado y termina cuando el profesor avisa<br>**0** — Excede o se queda corto del tiempo asignado en más de 2 minutos |
+| Cierre con valoración propia | 2 | **2** — El cierre ofrece una valoración propia razonada de los puntos de vista expuestos, sin añadir información nueva<br>**1.5** — El cierre ofrece una valoración propia de los puntos de vista expuestos, sin razón que la sostenga<br>**1** — El cierre retoma los puntos de vista expuestos sin ofrecer una valoración propia<br>**0.5** — La exposición se cierra con una fórmula de despedida ajena a los puntos de vista<br>**0** — La exposición termina en el último punto de vista, sin cierre |
 
 ### Cohesión: marcadores discursivos orales  ·  20%  ·  bloque B
 
@@ -604,8 +604,8 @@
 | Componente | Máx. | Bandas |
 |---|---|---|
 | Variedad de conectores y marcadores | 4 | **4** — Emplea 4 o más tipos distintos, incluido al menos un marcador de contraste entre puntos de vista (frente a, en cambio)<br>**3** — Emplea 3 tipos distintos, sin marcador de contraste<br>**2** — Emplea 2 tipos distintos<br>**1** — Se limita a marcadores de orden y de adición<br>**0** — Enlaza los bloques sin ningún marcador |
-| Encadenamiento entre bloques | 3 | **3** — Cada bloque retoma al empezar un elemento del bloque anterior<br>**2** — La mayoría de los bloques se encadenan; 1 arranca sin vínculo con lo anterior<br>**1** — Los bloques comparten tema, pero podrían reordenarse sin que cambie el sentido<br>**0** — Los bloques se suceden sin vínculo entre ellos |
-| Referencia y sustitución léxica | 3 | **3** — Sustituye las repeticiones mediante nominalización, sinónimo o expresión de referencia, y el referente siempre es identificable<br>**2** — Sustituye la mayoría de las repeticiones; 1 referencia exige un esfuerzo para identificarla<br>**1** — Repite el término clave 3 o más veces teniendo alternativa evidente<br>**0** — Repite el mismo término en frases consecutivas a lo largo de toda la exposición |
+| Encadenamiento entre bloques | 4 | **4** — Cada bloque retoma al empezar un elemento del bloque anterior<br>**3** — La mayoría de los bloques se encadenan; 1 arranca sin vínculo con lo anterior<br>**2** — Los bloques comparten tema, pero podrían reordenarse sin que cambie el sentido<br>**1** — Encadena 1 par de bloques y deja el resto sin vínculo<br>**0** — Los bloques se suceden sin vínculo entre ellos |
+| Referencia y sustitución léxica | 2 | **2** — Sustituye las repeticiones mediante nominalización, sinónimo o expresión de referencia, y el referente siempre es identificable<br>**1.5** — Sustituye las repeticiones mediante sinónimo o expresión de referencia, sin recurrir a la nominalización, y el referente siempre es identificable<br>**1** — Sustituye la mayoría de las repeticiones; 1 referencia exige un esfuerzo para identificarla<br>**0.5** — Repite el término clave 3 o más veces teniendo alternativa evidente<br>**0** — Repite el mismo término en frases consecutivas a lo largo de toda la exposición |
 
 ### Fluidez y corrección de la oralidad formal  ·  20%  ·  bloque B  ·  🔒 obligatorio
 
@@ -624,10 +624,10 @@
 
 | Componente | Máx. | Bandas |
 |---|---|---|
-| Muletillas y titubeos | 3 | **3** — 0 a 2 muletillas o titubeos en toda la exposición<br>**2** — De 3 a 5<br>**1** — De 6 a 9<br>**0** — 10 o más |
-| Pronunciación de los términos técnicos | 2 | **2** — Pronuncia sin errores los términos técnicos y de uso menos frecuente<br>**1** — Comete 1 o 2 errores de pronunciación en términos técnicos<br>**0** — Comete 3 o más errores de pronunciación |
-| Volumen y ritmo comprensibles | 3 | **3** — Toda la exposición se entiende sin esfuerzo, con variación de ritmo que ayuda a seguirla<br>**2** — Se entiende, con algún tramo leído de corrido sin pausas<br>**1** — Hay que pedirle que repita alguna parte<br>**0** — Buena parte de la exposición resulta ininteligible |
-| Apoyo en las notas | 2 | **2** — Consulta las notas con miradas breves, sin leer frases completas en ningún momento<br>**1** — Lee frases completas de las notas en 1 o 2 momentos<br>**0** — Lee la mayor parte de la exposición directamente de las notas |
+| Muletillas y titubeos | 2 | **2** — 0 a 2 muletillas o titubeos en toda la exposición<br>**1.5** — De 3 a 5<br>**1** — De 6 a 9<br>**0.5** — De 10 a 14<br>**0** — 15 o más |
+| Pronunciación de los términos técnicos | 2 | **2** — Pronuncia sin errores los términos técnicos y de uso menos frecuente<br>**1.5** — Comete 1 error de pronunciación en un término técnico<br>**1** — Comete 2 o 3 errores de pronunciación en términos técnicos<br>**0.5** — Comete de 4 a 6 errores de pronunciación<br>**0** — Comete 7 o más errores de pronunciación |
+| Volumen y ritmo comprensibles | 4 | **4** — Toda la exposición se entiende sin esfuerzo, con variación de ritmo que ayuda a seguirla<br>**3** — Se entiende, con algún tramo leído de corrido sin pausas<br>**2** — Hay que pedirle que repita alguna parte<br>**1** — Hay que pedirle que repita dos o más partes<br>**0** — Buena parte de la exposición resulta ininteligible |
+| Apoyo en las notas | 2 | **2** — Consulta las notas con miradas breves, sin leer frases completas en ningún momento<br>**1.5** — Lee frases completas de las notas en 1 momento<br>**1** — Lee frases completas de las notas en 2 o 3 momentos<br>**0.5** — Lee frases completas de las notas en 4 o más momentos<br>**0** — Lee la mayor parte de la exposición directamente de las notas |
 
 ### Elementos no verbales: mirada, postura y gesto  ·  15%  ·  bloque B
 

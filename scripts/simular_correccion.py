@@ -189,14 +189,55 @@ def banda_por_recuento(comp, techos, cuenta):
     return comp["bandas"][-1]
 
 
+def nota_de_banda(comp, banda):
+    """Lo que vale esa banda sobre 10, dentro de su componente.
+
+    Cada componente se corrige por separado y su banda superior es su máximo, así
+    que la nota de la banda es su parte de ese máximo. La suma de los máximos de
+    los componentes es el total de la dimensión: si todos los componentes pagan la
+    misma fracción, la dimensión da exactamente esa nota. Es lo que permite
+    comparar una banda con la escala del SDD §6.2 sin salir del componente."""
+    techo = max(b["puntos"] for b in comp["bandas"])
+    return banda["puntos"] / techo * 10 if techo else 0.0
+
+
 def banda_por_nivel(comp, nivel):
     """Banda que corresponde al modo de trabajar del alumno, sin contar nada.
 
-    Las bandas van de mejor a peor, así que el nivel 4 es la primera. Si el
-    componente tiene menos de cuatro bandas, se reparte proporcionalmente."""
+    NO se elige por posición. Durante un tiempo se hizo así —la banda n-ésima para
+    el nivel n, repartiendo proporcionalmente cuando había menos de cuatro— y eso
+    daba por hecho que el número de bandas era el número de niveles. No lo es: el
+    esquema solo pide dos bandas y nada fija dónde cae la intermedia, así que lo
+    que cobraba el alumno de nivel 2 dependía de cuántas bandas hubiera escrito el
+    redactor: 67 % del componente con tres bandas 3·2·0, 33 % con cuatro 3·2·1·0 y
+    25 % con cinco 4·3·2·1·0. Peor que el pago: cambiaba el alumno descrito. En
+    «Postura reconocible» de argumentativo 2.º ESO, la posición le daba al que
+    aprueba «El texto sostiene una postura distinta en cada parte», que es un texto
+    que se contradice y que ningún profesor llamaría aprobado.
+
+    Se elige por VALOR. Cada banda ya dice lo que vale —sus puntos sobre el máximo
+    del componente, `nota_de_banda`—, y el proyecto ya tiene la escala de nivel a
+    nota: VALOR_NIVEL (SDD §6.2), 10 · 7,5 · 5 · 2,5. Al alumno de nivel n le toca
+    la banda que un corrector puntuaría en ese nivel; es decir, la banda cuya nota
+    cae en el tramo del nivel n (`nivel_de`, SDD §6.4) y, de haber varias, la más
+    cercana a VALOR_NIVEL[n].
+
+    Si el componente no escribió ninguna banda en ese tramo, se coge la más cercana
+    en valor, y el empate lo gana la banda de arriba. El empate solo aparece cuando
+    ninguna de las dos candidatas está en el tramo (bandas 2·1·0 en el nivel 3:
+    10 y 5, y el 7,5 no existe), y entonces se prefiere describir de más: la banda
+    de abajo vale menos que el nivel del alumno por definición, y bajarlo es
+    repetir el error que se está corrigiendo.
+
+    Con esta regla las bandas 4·3·2·0 y 4·3·2·1·0 caen exactamente en la escala
+    canónica (10 · 7,5 · 5 · 2,5) y los componentes de cinco bandas dejan de
+    castigar: el nivel 2 de «Razones que apoyan la postura» pasa de «1 razón
+    desarrollada» a «2 razones enunciadas en una sola oración cada una»."""
     bandas = comp["bandas"]
-    indice = int(round((4 - nivel) * (len(bandas) - 1) / 3.0))
-    return bandas[max(0, min(len(bandas) - 1, indice))]
+    objetivo = VALOR_NIVEL[nivel]
+    del_tramo = [b for b in bandas if nivel_de(nota_de_banda(comp, b)) == nivel]
+    candidatas = del_tramo or bandas
+    return min(candidatas, key=lambda b: abs(nota_de_banda(comp, b) - objetivo))
 
 
 def densidad_de(comp):

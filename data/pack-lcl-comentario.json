@@ -88,6 +88,10 @@
                 "condicion": "Trae 1 fragmento del texto"
               },
               {
+                "puntos": 1,
+                "condicion": "Reproduce una frase del texto dentro del comentario, sin traerla como fragmento"
+              },
+              {
                 "puntos": 0,
                 "condicion": "Habla del texto sin traer ningún fragmento"
               }
@@ -95,18 +99,22 @@
           },
           {
             "nombre": "Marca de la cita",
-            "max": 3,
+            "max": 2,
             "bandas": [
               {
-                "puntos": 3,
+                "puntos": 2,
                 "condicion": "Todos los fragmentos van entrecomillados y con el verso o la línea indicados"
               },
               {
-                "puntos": 2,
-                "condicion": "Todos los fragmentos van entrecomillados, sin verso ni línea"
+                "puntos": 1.5,
+                "condicion": "Todos los fragmentos van entrecomillados y el verso o la línea aparecen solo en algunos"
               },
               {
                 "puntos": 1,
+                "condicion": "Todos los fragmentos van entrecomillados, sin verso ni línea"
+              },
+              {
+                "puntos": 0.5,
                 "condicion": "1 o 2 fragmentos quedan sin entrecomillar"
               },
               {
@@ -117,19 +125,23 @@
           },
           {
             "nombre": "Cada fragmento acompaña a una afirmación",
-            "max": 3,
+            "max": 4,
             "bandas": [
               {
-                "puntos": 3,
+                "puntos": 4,
                 "condicion": "Cada fragmento va junto a la afirmación que ilustra"
               },
               {
-                "puntos": 2,
+                "puntos": 3,
                 "condicion": "1 fragmento aparece suelto, sin afirmación al lado"
               },
               {
-                "puntos": 1,
+                "puntos": 2,
                 "condicion": "2 fragmentos aparecen sueltos, sin afirmación al lado"
+              },
+              {
+                "puntos": 1,
+                "condicion": "3 fragmentos aparecen sueltos, sin afirmación al lado"
               },
               {
                 "puntos": 0,
@@ -217,6 +229,10 @@
                 "condicion": "Señala 1 recurso"
               },
               {
+                "puntos": 1,
+                "condicion": "Nombra un recurso sin señalarlo en el texto"
+              },
+              {
                 "puntos": 0,
                 "condicion": "Comenta el texto sin señalar ningún recurso"
               }
@@ -239,6 +255,10 @@
                 "condicion": "Explica el efecto de 1 de los recursos señalados"
               },
               {
+                "puntos": 1,
+                "condicion": "Apunta el efecto de 1 recurso en una frase sin desarrollarla"
+              },
+              {
                 "puntos": 0,
                 "condicion": "Enumera los recursos y deja el efecto sin explicar"
               }
@@ -253,8 +273,16 @@
                 "condicion": "Nombra el género y 1 rasgo del texto que lo confirma"
               },
               {
+                "puntos": 1.5,
+                "condicion": "Nombra el género y señala un rasgo del texto que no lo confirma"
+              },
+              {
                 "puntos": 1,
                 "condicion": "Nombra el género sin ningún rasgo que lo confirme"
+              },
+              {
+                "puntos": 0.5,
+                "condicion": "Señala un rasgo del texto sin nombrar el género al que apunta"
               },
               {
                 "puntos": 0,
@@ -390,59 +418,71 @@
             "bandas": [
               {
                 "puntos": 4,
-                "condicion": "Hasta 1 falta en todo el comentario"
+                "condicion": "Hasta 1 faltas en todo el comentario"
               },
               {
                 "puntos": 3,
-                "condicion": "De 2 a 3 faltas"
+                "condicion": "2 o 3 faltas"
               },
               {
                 "puntos": 2,
-                "condicion": "De 4 a 5 faltas"
+                "condicion": "4 o 5 faltas"
+              },
+              {
+                "puntos": 1,
+                "condicion": "6 o 7 faltas"
               },
               {
                 "puntos": 0,
-                "condicion": "6 o más faltas"
+                "condicion": "8 o más faltas"
               }
             ]
           },
           {
             "nombre": "Concordancia",
-            "max": 3,
+            "max": 2,
             "bandas": [
               {
-                "puntos": 3,
+                "puntos": 2,
                 "condicion": "Sin errores de concordancia de género, número o persona"
               },
               {
-                "puntos": 2,
-                "condicion": "1 o 2 errores de concordancia"
+                "puntos": 1.5,
+                "condicion": "Hasta 1 error de concordancia"
               },
               {
                 "puntos": 1,
-                "condicion": "3 o 4 errores de concordancia"
+                "condicion": "2 o 3 errores de concordancia"
+              },
+              {
+                "puntos": 0.5,
+                "condicion": "De 4 a 5 errores de concordancia"
               },
               {
                 "puntos": 0,
-                "condicion": "5 o más errores de concordancia"
+                "condicion": "6 o más errores de concordancia"
               }
             ]
           },
           {
             "nombre": "Precisión del vocabulario",
-            "max": 3,
+            "max": 4,
             "bandas": [
               {
-                "puntos": 3,
+                "puntos": 4,
                 "condicion": "Nombra con el verbo preciso lo que hace el texto (describe, compara, repite)"
               },
               {
-                "puntos": 2,
+                "puntos": 3,
                 "condicion": "Emplea 1 o 2 términos de significado general (cosa, tema, decir) con sustituto evidente"
               },
               {
-                "puntos": 1,
+                "puntos": 2,
                 "condicion": "Emplea 3 o más términos de significado general"
+              },
+              {
+                "puntos": 1,
+                "condicion": "Emplea términos de significado general y algún verbo preciso"
               },
               {
                 "puntos": 0,
@@ -541,18 +581,22 @@
           },
           {
             "nombre": "Marca de la cita",
-            "max": 3,
+            "max": 2,
             "bandas": [
               {
-                "puntos": 3,
+                "puntos": 2,
                 "condicion": "Todos los fragmentos van entrecomillados y con el verso o la línea indicados"
               },
               {
-                "puntos": 2,
-                "condicion": "Todos los fragmentos van entrecomillados, sin verso ni línea"
+                "puntos": 1.5,
+                "condicion": "Todos los fragmentos van entrecomillados y el verso o la línea aparecen solo en algunos"
               },
               {
                 "puntos": 1,
+                "condicion": "Todos los fragmentos van entrecomillados, sin verso ni línea"
+              },
+              {
+                "puntos": 0.5,
                 "condicion": "1 o 2 fragmentos quedan sin entrecomillar"
               },
               {
@@ -563,19 +607,23 @@
           },
           {
             "nombre": "Cada fragmento prueba una afirmación distinta",
-            "max": 3,
+            "max": 4,
             "bandas": [
               {
-                "puntos": 3,
+                "puntos": 4,
                 "condicion": "Cada fragmento prueba una afirmación distinta del comentario"
               },
               {
-                "puntos": 2,
+                "puntos": 3,
                 "condicion": "2 fragmentos prueban la misma afirmación"
               },
               {
-                "puntos": 1,
+                "puntos": 2,
                 "condicion": "3 o más fragmentos prueban la misma afirmación"
+              },
+              {
+                "puntos": 1,
+                "condicion": "Todos los fragmentos prueban la misma afirmación"
               },
               {
                 "puntos": 0,
@@ -707,8 +755,16 @@
                 "condicion": "Nombra el género y 2 rasgos del texto que lo confirman"
               },
               {
+                "puntos": 1.5,
+                "condicion": "Nombra el género y 2 rasgos del texto, y solo uno lo confirma"
+              },
+              {
                 "puntos": 1,
                 "condicion": "Nombra el género y 1 rasgo del texto que lo confirma"
+              },
+              {
+                "puntos": 0.5,
+                "condicion": "Señala un rasgo del texto sin nombrar el género al que apunta"
               },
               {
                 "puntos": 0,
@@ -901,37 +957,45 @@
             "bandas": [
               {
                 "puntos": 4,
-                "condicion": "Hasta 1 falta en todo el comentario"
+                "condicion": "Hasta 1 faltas en todo el comentario"
               },
               {
                 "puntos": 3,
-                "condicion": "De 2 a 3 faltas"
+                "condicion": "De 2 a 4 faltas"
               },
               {
                 "puntos": 2,
-                "condicion": "De 4 a 5 faltas"
+                "condicion": "5 o 6 faltas"
+              },
+              {
+                "puntos": 1,
+                "condicion": "De 7 a 9 faltas"
               },
               {
                 "puntos": 0,
-                "condicion": "6 o más faltas"
+                "condicion": "10 o más faltas"
               }
             ]
           },
           {
             "nombre": "Corrección gramatical y presente del comentario",
-            "max": 3,
+            "max": 2,
             "bandas": [
               {
-                "puntos": 3,
+                "puntos": 2,
                 "condicion": "Sin errores de concordancia ni de construcción de la oración, y con el presente sostenido al hablar del texto"
               },
               {
-                "puntos": 2,
-                "condicion": "1 o 2 errores de concordancia, o 1 salto al pasado al hablar del texto"
+                "puntos": 1.5,
+                "condicion": "1 error de concordancia, o 1 salto al pasado al hablar del texto"
               },
               {
                 "puntos": 1,
-                "condicion": "3 o más errores, o alguna oración que hay que releer para reconstruir"
+                "condicion": "2 o 3 errores, o alguna oración que hay que releer para reconstruir"
+              },
+              {
+                "puntos": 0.5,
+                "condicion": "De 4 a 5 errores, y el presente del comentario se pierde en varios pasajes"
               },
               {
                 "puntos": 0,
@@ -941,19 +1005,23 @@
           },
           {
             "nombre": "Precisión léxica y densidad",
-            "max": 3,
+            "max": 4,
             "bandas": [
               {
-                "puntos": 3,
+                "puntos": 4,
                 "condicion": "Selecciona el término preciso y emplea alguna subordinada para condensar la observación"
               },
               {
-                "puntos": 2,
+                "puntos": 3,
                 "condicion": "Selecciona términos precisos, pero encadena oraciones simples donde cabría una subordinada"
               },
               {
-                "puntos": 1,
+                "puntos": 2,
                 "condicion": "Recurre a términos de significado general con sustituto evidente"
+              },
+              {
+                "puntos": 1,
+                "condicion": "Emplea términos de significado general y alguno preciso"
               },
               {
                 "puntos": 0,
@@ -1026,19 +1094,23 @@
         "componentes": [
           {
             "nombre": "Fragmentos del texto traídos al comentario",
-            "max": 3,
+            "max": 4,
             "bandas": [
               {
-                "puntos": 3,
+                "puntos": 4,
                 "condicion": "Trae 5 o más fragmentos distintos del texto"
               },
               {
-                "puntos": 2,
+                "puntos": 3,
                 "condicion": "Trae 3 o 4 fragmentos distintos del texto"
               },
               {
-                "puntos": 1,
+                "puntos": 2,
                 "condicion": "Trae 1 o 2 fragmentos del texto"
+              },
+              {
+                "puntos": 1,
+                "condicion": "Reproduce una frase del texto dentro del comentario, sin traerla como fragmento"
               },
               {
                 "puntos": 0,
@@ -1048,18 +1120,22 @@
           },
           {
             "nombre": "Marca de la cita",
-            "max": 3,
+            "max": 2,
             "bandas": [
               {
-                "puntos": 3,
+                "puntos": 2,
                 "condicion": "Todos los fragmentos van entrecomillados y con el verso o la línea indicados"
               },
               {
-                "puntos": 2,
-                "condicion": "Todos los fragmentos van entrecomillados, sin verso ni línea"
+                "puntos": 1.5,
+                "condicion": "Todos los fragmentos van entrecomillados y el verso o la línea aparecen solo en algunos"
               },
               {
                 "puntos": 1,
+                "condicion": "Todos los fragmentos van entrecomillados, sin verso ni línea"
+              },
+              {
+                "puntos": 0.5,
                 "condicion": "1 o 2 fragmentos quedan sin entrecomillar"
               },
               {
@@ -1159,19 +1235,23 @@
         "componentes": [
           {
             "nombre": "Recursos localizados en el texto",
-            "max": 3,
+            "max": 4,
             "bandas": [
               {
-                "puntos": 3,
+                "puntos": 4,
                 "condicion": "Localiza 5 o más recursos distintos"
               },
               {
-                "puntos": 2,
+                "puntos": 3,
                 "condicion": "Localiza 3 o 4 recursos distintos"
               },
               {
-                "puntos": 1,
+                "puntos": 2,
                 "condicion": "Localiza 1 o 2 recursos"
+              },
+              {
+                "puntos": 1,
+                "condicion": "Nombra un recurso sin localizarlo en el texto"
               },
               {
                 "puntos": 0,
@@ -1181,22 +1261,22 @@
           },
           {
             "nombre": "Recursos relacionados con el sentido del texto",
-            "max": 5,
+            "max": 4,
             "bandas": [
               {
-                "puntos": 5,
+                "puntos": 4,
                 "condicion": "Relaciona con el sentido del texto todos los recursos localizados"
               },
               {
-                "puntos": 4,
+                "puntos": 3,
                 "condicion": "Deja 1 recurso localizado sin relacionar con el sentido del texto"
               },
               {
-                "puntos": 3,
+                "puntos": 2,
                 "condicion": "Deja 2 recursos localizados sin relacionar con el sentido del texto"
               },
               {
-                "puntos": 2,
+                "puntos": 1,
                 "condicion": "Deja 3 recursos localizados sin relacionar con el sentido del texto"
               },
               {
@@ -1214,8 +1294,16 @@
                 "condicion": "Nombra el subgénero y 2 rasgos del texto que lo confirman"
               },
               {
+                "puntos": 1.5,
+                "condicion": "Nombra el subgénero y 2 rasgos del texto, y solo uno lo confirma"
+              },
+              {
                 "puntos": 1,
                 "condicion": "Nombra el subgénero y 1 rasgo del texto que lo confirma"
+              },
+              {
+                "puntos": 0.5,
+                "condicion": "Señala un rasgo del texto sin nombrar el subgénero al que apunta"
               },
               {
                 "puntos": 0,
@@ -1466,37 +1554,45 @@
             "bandas": [
               {
                 "puntos": 4,
-                "condicion": "Hasta 1 falta en todo el comentario"
+                "condicion": "Hasta 1 faltas en todo el comentario"
               },
               {
                 "puntos": 3,
-                "condicion": "De 2 a 3 faltas"
+                "condicion": "De 2 a 4 faltas"
               },
               {
                 "puntos": 2,
-                "condicion": "De 4 a 5 faltas"
+                "condicion": "5 o 6 faltas"
+              },
+              {
+                "puntos": 1,
+                "condicion": "De 7 a 9 faltas"
               },
               {
                 "puntos": 0,
-                "condicion": "6 o más faltas"
+                "condicion": "10 o más faltas"
               }
             ]
           },
           {
             "nombre": "Corrección gramatical y tiempo verbal del comentario",
-            "max": 3,
+            "max": 2,
             "bandas": [
               {
-                "puntos": 3,
+                "puntos": 2,
                 "condicion": "Sin errores de construcción de la oración, con el presente sostenido y la correlación temporal respetada en el estilo indirecto"
               },
               {
-                "puntos": 2,
-                "condicion": "1 o 2 errores de concordancia o de correlación temporal que permiten seguir el comentario"
+                "puntos": 1.5,
+                "condicion": "1 error de concordancia o de correlación temporal que permite seguir el comentario"
               },
               {
                 "puntos": 1,
-                "condicion": "3 o más errores, o alguna oración que hay que releer para reconstruir"
+                "condicion": "2 o 3 errores, o alguna oración que hay que releer para reconstruir"
+              },
+              {
+                "puntos": 0.5,
+                "condicion": "De 4 a 6 errores, y el presente del comentario se pierde en varios pasajes"
               },
               {
                 "puntos": 0,
@@ -1506,19 +1602,23 @@
           },
           {
             "nombre": "Precisión léxica y densidad",
-            "max": 3,
+            "max": 4,
             "bandas": [
               {
-                "puntos": 3,
+                "puntos": 4,
                 "condicion": "Selecciona el término preciso y emplea la subordinación para condensar el análisis"
               },
               {
-                "puntos": 2,
+                "puntos": 3,
                 "condicion": "Selecciona términos precisos, pero encadena oraciones simples donde cabría una subordinada"
               },
               {
-                "puntos": 1,
+                "puntos": 2,
                 "condicion": "Recurre a términos de significado general con sustituto evidente"
+              },
+              {
+                "puntos": 1,
+                "condicion": "Emplea términos de significado general y alguno preciso"
               },
               {
                 "puntos": 0,
@@ -1592,19 +1692,23 @@
         "componentes": [
           {
             "nombre": "Fragmentos del texto traídos al comentario",
-            "max": 3,
+            "max": 4,
             "bandas": [
               {
-                "puntos": 3,
+                "puntos": 4,
                 "condicion": "Trae 6 o más fragmentos distintos del texto"
               },
               {
-                "puntos": 2,
+                "puntos": 3,
                 "condicion": "Trae 4 o 5 fragmentos distintos del texto"
               },
               {
-                "puntos": 1,
+                "puntos": 2,
                 "condicion": "Trae entre 1 y 3 fragmentos del texto"
+              },
+              {
+                "puntos": 1,
+                "condicion": "Reproduce una frase del texto dentro del comentario, sin traerla como fragmento"
               },
               {
                 "puntos": 0,
@@ -1614,18 +1718,22 @@
           },
           {
             "nombre": "Marca de la cita y respeto del original",
-            "max": 3,
+            "max": 2,
             "bandas": [
               {
-                "puntos": 3,
+                "puntos": 2,
                 "condicion": "Todos los fragmentos van entrecomillados, con referencia y con la forma del original respetada"
               },
               {
-                "puntos": 2,
-                "condicion": "Todos los fragmentos van entrecomillados, sin referencia de verso ni de línea"
+                "puntos": 1.5,
+                "condicion": "Todos los fragmentos van entrecomillados y con referencia, y alguno altera la forma del original"
               },
               {
                 "puntos": 1,
+                "condicion": "Todos los fragmentos van entrecomillados, sin referencia de verso ni de línea"
+              },
+              {
+                "puntos": 0.5,
                 "condicion": "1 o 2 fragmentos quedan sin entrecomillar o alteran la forma del original"
               },
               {
@@ -1726,19 +1834,23 @@
         "componentes": [
           {
             "nombre": "Planos del texto analizados",
-            "max": 3,
+            "max": 4,
             "bandas": [
               {
-                "puntos": 3,
+                "puntos": 4,
                 "condicion": "Analiza 3 o más planos del texto (métrico, sintáctico, léxico, retórico)"
               },
               {
-                "puntos": 2,
+                "puntos": 3,
                 "condicion": "Analiza 2 planos del texto"
               },
               {
-                "puntos": 1,
+                "puntos": 2,
                 "condicion": "Analiza 1 plano del texto"
+              },
+              {
+                "puntos": 1,
+                "condicion": "Nombra un plano del texto sin analizarlo"
               },
               {
                 "puntos": 0,
@@ -1748,22 +1860,22 @@
           },
           {
             "nombre": "Recursos relacionados con el sentido de la obra",
-            "max": 5,
+            "max": 4,
             "bandas": [
               {
-                "puntos": 5,
+                "puntos": 4,
                 "condicion": "Relaciona con el sentido de la obra todos los recursos localizados"
               },
               {
-                "puntos": 4,
+                "puntos": 3,
                 "condicion": "Deja 1 recurso localizado sin relacionar con el sentido de la obra"
               },
               {
-                "puntos": 3,
+                "puntos": 2,
                 "condicion": "Deja 2 recursos localizados sin relacionar con el sentido de la obra"
               },
               {
-                "puntos": 2,
+                "puntos": 1,
                 "condicion": "Deja 3 recursos localizados sin relacionar con el sentido de la obra"
               },
               {
@@ -1781,8 +1893,16 @@
                 "condicion": "Nombra el subgénero y 2 elementos del texto que lo constituyen"
               },
               {
+                "puntos": 1.5,
+                "condicion": "Nombra el subgénero y 2 elementos del texto, y solo uno lo constituye"
+              },
+              {
                 "puntos": 1,
                 "condicion": "Nombra el subgénero y 1 elemento del texto que lo constituye"
+              },
+              {
+                "puntos": 0.5,
+                "condicion": "Señala un elemento constitutivo sin nombrar el subgénero al que pertenece"
               },
               {
                 "puntos": 0,
@@ -1870,6 +1990,10 @@
                 "condicion": "Emplea 1 o 2 términos distintos"
               },
               {
+                "puntos": 1,
+                "condicion": "Nombra un término del análisis literario sin aplicarlo al texto"
+              },
+              {
                 "puntos": 0,
                 "condicion": "Comenta el texto con vocabulario del habla común"
               }
@@ -1892,8 +2016,12 @@
                 "condicion": "2 términos designan algo distinto de lo que el texto contiene"
               },
               {
+                "puntos": 1,
+                "condicion": "3 términos designan algo distinto de lo que el texto contiene"
+              },
+              {
                 "puntos": 0,
-                "condicion": "3 o más términos designan algo distinto de lo que el texto contiene"
+                "condicion": "4 o más términos designan algo distinto de lo que el texto contiene"
               }
             ]
           },
@@ -1906,8 +2034,16 @@
                 "condicion": "Cada término va acompañado del fragmento del texto correspondiente"
               },
               {
+                "puntos": 1.5,
+                "condicion": "Cada término va acompañado de un fragmento y uno de ellos no corresponde al término"
+              },
+              {
                 "puntos": 1,
                 "condicion": "1 o 2 términos aparecen sin fragmento al lado"
+              },
+              {
+                "puntos": 0.5,
+                "condicion": "3 o más términos aparecen sin fragmento al lado"
               },
               {
                 "puntos": 0,
@@ -2162,37 +2298,45 @@
             "bandas": [
               {
                 "puntos": 4,
-                "condicion": "Hasta 1 falta en todo el comentario, tipográficas incluidas"
+                "condicion": "Hasta 1 faltas en todo el comentario, tipográficas incluidas"
               },
               {
                 "puntos": 3,
-                "condicion": "De 2 a 3 faltas"
+                "condicion": "De 2 a 4 faltas"
               },
               {
                 "puntos": 2,
-                "condicion": "De 4 a 5 faltas"
+                "condicion": "De 5 a 8 faltas"
+              },
+              {
+                "puntos": 1,
+                "condicion": "9 o 10 faltas"
               },
               {
                 "puntos": 0,
-                "condicion": "6 o más faltas"
+                "condicion": "11 o más faltas"
               }
             ]
           },
           {
             "nombre": "Tiempo verbal y construcción de la oración",
-            "max": 3,
+            "max": 2,
             "bandas": [
               {
-                "puntos": 3,
+                "puntos": 2,
                 "condicion": "Sin errores de construcción, con el presente sostenido y la correlación temporal respetada en el estilo indirecto"
               },
               {
-                "puntos": 2,
-                "condicion": "1 o 2 errores de construcción o de correlación temporal que permiten seguir el comentario"
+                "puntos": 1.5,
+                "condicion": "1 error de construcción o de correlación temporal que permite seguir el comentario"
               },
               {
                 "puntos": 1,
-                "condicion": "3 o más errores, o alguna oración que hay que releer para reconstruir"
+                "condicion": "2 o 3 errores, o alguna oración que hay que releer para reconstruir"
+              },
+              {
+                "puntos": 0.5,
+                "condicion": "De 4 a 6 errores, y la lectura se detiene para rehacer la oración"
               },
               {
                 "puntos": 0,
@@ -2202,19 +2346,23 @@
           },
           {
             "nombre": "Precisión léxica y vocación de estilo",
-            "max": 3,
+            "max": 4,
             "bandas": [
               {
-                "puntos": 3,
+                "puntos": 4,
                 "condicion": "Selecciona el término preciso y emplea la variación sintáctica propia del comentario académico"
               },
               {
-                "puntos": 2,
+                "puntos": 3,
                 "condicion": "Selecciona términos precisos, pero repite la misma construcción a lo largo del comentario"
               },
               {
-                "puntos": 1,
+                "puntos": 2,
                 "condicion": "Recurre a términos de significado general con sustituto evidente"
+              },
+              {
+                "puntos": 1,
+                "condicion": "Emplea términos de significado general y alguno preciso"
               },
               {
                 "puntos": 0,
@@ -2288,19 +2436,23 @@
         "componentes": [
           {
             "nombre": "Fragmentos del texto traídos al comentario",
-            "max": 3,
+            "max": 4,
             "bandas": [
               {
-                "puntos": 3,
+                "puntos": 4,
                 "condicion": "Trae 6 o más fragmentos distintos del texto"
               },
               {
-                "puntos": 2,
+                "puntos": 3,
                 "condicion": "Trae 4 o 5 fragmentos distintos del texto"
               },
               {
-                "puntos": 1,
+                "puntos": 2,
                 "condicion": "Trae entre 1 y 3 fragmentos del texto"
+              },
+              {
+                "puntos": 1,
+                "condicion": "Reproduce una frase del texto dentro del comentario, sin traerla como fragmento"
               },
               {
                 "puntos": 0,
@@ -2310,18 +2462,22 @@
           },
           {
             "nombre": "Marca de la cita y respeto del original",
-            "max": 3,
+            "max": 2,
             "bandas": [
               {
-                "puntos": 3,
+                "puntos": 2,
                 "condicion": "Todos los fragmentos van entrecomillados, con referencia y con la puntuación del original respetada"
               },
               {
-                "puntos": 2,
-                "condicion": "Todos los fragmentos van entrecomillados, sin referencia de verso ni de línea"
+                "puntos": 1.5,
+                "condicion": "Todos los fragmentos van entrecomillados y con referencia, y alguno altera la puntuación del original"
               },
               {
                 "puntos": 1,
+                "condicion": "Todos los fragmentos van entrecomillados, sin referencia de verso ni de línea"
+              },
+              {
+                "puntos": 0.5,
                 "condicion": "1 o 2 fragmentos quedan sin entrecomillar o alteran la puntuación del original"
               },
               {
@@ -2422,19 +2578,23 @@
         "componentes": [
           {
             "nombre": "Planos del texto analizados",
-            "max": 3,
+            "max": 4,
             "bandas": [
               {
-                "puntos": 3,
+                "puntos": 4,
                 "condicion": "Analiza 4 o más planos del texto (métrico, sintáctico, léxico, retórico, enunciativo)"
               },
               {
-                "puntos": 2,
+                "puntos": 3,
                 "condicion": "Analiza 3 planos del texto"
               },
               {
-                "puntos": 1,
+                "puntos": 2,
                 "condicion": "Analiza 1 o 2 planos del texto"
+              },
+              {
+                "puntos": 1,
+                "condicion": "Nombra un plano del texto sin analizarlo"
               },
               {
                 "puntos": 0,
@@ -2444,22 +2604,22 @@
           },
           {
             "nombre": "Recursos relacionados con el sentido de la obra",
-            "max": 5,
+            "max": 4,
             "bandas": [
               {
-                "puntos": 5,
+                "puntos": 4,
                 "condicion": "Relaciona con el sentido de la obra todos los recursos localizados"
               },
               {
-                "puntos": 4,
+                "puntos": 3,
                 "condicion": "Deja 1 recurso localizado sin relacionar con el sentido de la obra"
               },
               {
-                "puntos": 3,
+                "puntos": 2,
                 "condicion": "Deja 2 recursos localizados sin relacionar con el sentido de la obra"
               },
               {
-                "puntos": 2,
+                "puntos": 1,
                 "condicion": "Deja 3 recursos localizados sin relacionar con el sentido de la obra"
               },
               {
@@ -2477,8 +2637,16 @@
                 "condicion": "Nombra el subgénero y 3 elementos del texto que lo constituyen"
               },
               {
+                "puntos": 1.5,
+                "condicion": "Nombra el subgénero y 3 elementos del texto, y solo 2 lo constituyen"
+              },
+              {
                 "puntos": 1,
                 "condicion": "Nombra el subgénero y 1 o 2 elementos del texto que lo constituyen"
+              },
+              {
+                "puntos": 0.5,
+                "condicion": "Señala un elemento constitutivo sin nombrar el subgénero al que pertenece"
               },
               {
                 "puntos": 0,
@@ -2566,6 +2734,10 @@
                 "condicion": "Emplea entre 1 y 3 términos distintos"
               },
               {
+                "puntos": 1,
+                "condicion": "Nombra un término del análisis literario sin aplicarlo al texto"
+              },
+              {
                 "puntos": 0,
                 "condicion": "Comenta el texto con vocabulario del habla común"
               }
@@ -2588,8 +2760,12 @@
                 "condicion": "2 términos designan algo distinto de lo que el texto contiene"
               },
               {
+                "puntos": 1,
+                "condicion": "3 términos designan algo distinto de lo que el texto contiene"
+              },
+              {
                 "puntos": 0,
-                "condicion": "3 o más términos designan algo distinto de lo que el texto contiene"
+                "condicion": "4 o más términos designan algo distinto de lo que el texto contiene"
               }
             ]
           },
@@ -2602,8 +2778,16 @@
                 "condicion": "Cada término va acompañado del fragmento del texto correspondiente"
               },
               {
+                "puntos": 1.5,
+                "condicion": "Cada término va acompañado de un fragmento y uno de ellos no corresponde al término"
+              },
+              {
                 "puntos": 1,
                 "condicion": "1 o 2 términos aparecen sin fragmento al lado"
+              },
+              {
+                "puntos": 0.5,
+                "condicion": "3 o más términos aparecen sin fragmento al lado"
               },
               {
                 "puntos": 0,
@@ -2858,37 +3042,45 @@
             "bandas": [
               {
                 "puntos": 4,
-                "condicion": "Hasta 1 falta en todo el comentario, tipográficas incluidas"
+                "condicion": "Hasta 1 faltas en todo el comentario, tipográficas incluidas"
               },
               {
                 "puntos": 3,
-                "condicion": "De 2 a 3 faltas"
+                "condicion": "De 2 a 4 faltas"
               },
               {
                 "puntos": 2,
-                "condicion": "De 4 a 5 faltas"
+                "condicion": "De 5 a 8 faltas"
+              },
+              {
+                "puntos": 1,
+                "condicion": "9 o 10 faltas"
               },
               {
                 "puntos": 0,
-                "condicion": "6 o más faltas"
+                "condicion": "11 o más faltas"
               }
             ]
           },
           {
             "nombre": "Tiempo verbal y construcción de la oración",
-            "max": 3,
+            "max": 2,
             "bandas": [
               {
-                "puntos": 3,
+                "puntos": 2,
                 "condicion": "Sin errores de construcción, con el presente sostenido y la correlación temporal respetada en el estilo indirecto"
               },
               {
-                "puntos": 2,
-                "condicion": "1 o 2 errores de construcción o de correlación temporal que permiten seguir el comentario"
+                "puntos": 1.5,
+                "condicion": "1 error de construcción o de correlación temporal que permite seguir el comentario"
               },
               {
                 "puntos": 1,
-                "condicion": "3 o más errores, o alguna oración que hay que releer para reconstruir"
+                "condicion": "2 o 3 errores, o alguna oración que hay que releer para reconstruir"
+              },
+              {
+                "puntos": 0.5,
+                "condicion": "De 4 a 6 errores, y la lectura se detiene para rehacer la oración"
               },
               {
                 "puntos": 0,
@@ -2898,19 +3090,23 @@
           },
           {
             "nombre": "Precisión léxica y vocación de estilo",
-            "max": 3,
+            "max": 4,
             "bandas": [
               {
-                "puntos": 3,
+                "puntos": 4,
                 "condicion": "Selecciona el término preciso y ajusta la extensión de la oración al paso del razonamiento"
               },
               {
-                "puntos": 2,
+                "puntos": 3,
                 "condicion": "Selecciona términos precisos, pero mantiene la misma extensión de oración de principio a fin"
               },
               {
-                "puntos": 1,
+                "puntos": 2,
                 "condicion": "Recurre a términos de significado general con sustituto evidente"
+              },
+              {
+                "puntos": 1,
+                "condicion": "Emplea términos de significado general y alguno preciso"
               },
               {
                 "puntos": 0,

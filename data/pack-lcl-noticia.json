@@ -104,6 +104,10 @@
                 "condicion": "Presenta 1 de las tres partes"
               },
               {
+                "puntos": 1,
+                "condicion": "El texto marca el titular con otro tipo de letra, sin separarlo del cuerpo"
+              },
+              {
                 "puntos": 0,
                 "condicion": "El texto es un bloque continuo sin partes reconocibles"
               }
@@ -126,8 +130,12 @@
                 "condicion": "Responde a 2 preguntas"
               },
               {
+                "puntos": 1,
+                "condicion": "Responde a 1 pregunta"
+              },
+              {
                 "puntos": 0,
-                "condicion": "Responde a 1 pregunta o a ninguna"
+                "condicion": "La entradilla deja las cuatro preguntas sin responder"
               }
             ]
           },
@@ -140,8 +148,16 @@
                 "condicion": "Los datos del cuerpo van de mayor a menor interés informativo"
               },
               {
+                "puntos": 1.5,
+                "condicion": "Los datos del cuerpo van de mayor a menor interés y un dato secundario se adelanta"
+              },
+              {
                 "puntos": 1,
                 "condicion": "El cuerpo alterna datos principales y datos secundarios"
+              },
+              {
+                "puntos": 0.5,
+                "condicion": "El cuerpo abre con el dato de mayor interés y sigue el orden en que se encontraron los demás"
               },
               {
                 "puntos": 0,
@@ -223,8 +239,16 @@
                 "condicion": "La noticia se apoya en 2 o más fuentes"
               },
               {
+                "puntos": 3,
+                "condicion": "La noticia se apoya en 2 fuentes y toma los datos de una sola"
+              },
+              {
                 "puntos": 2,
                 "condicion": "Se apoya en 1 fuente"
+              },
+              {
+                "puntos": 1,
+                "condicion": "Nombra una fuente sin tomar de ella ningún dato"
               },
               {
                 "puntos": 0,
@@ -234,15 +258,23 @@
           },
           {
             "nombre": "Datos comprobados en la fuente",
-            "max": 3,
+            "max": 2,
             "bandas": [
               {
-                "puntos": 3,
+                "puntos": 2,
                 "condicion": "3 o más datos del hecho coinciden con la fuente"
               },
               {
-                "puntos": 2,
-                "condicion": "1 o 2 datos coinciden con la fuente"
+                "puntos": 1.5,
+                "condicion": "2 datos del hecho coinciden con la fuente"
+              },
+              {
+                "puntos": 1,
+                "condicion": "1 dato del hecho coincide con la fuente"
+              },
+              {
+                "puntos": 0.5,
+                "condicion": "Nombra la fuente consultada y ningún dato coincide con ella"
               },
               {
                 "puntos": 0,
@@ -252,15 +284,23 @@
           },
           {
             "nombre": "Contraste",
-            "max": 3,
+            "max": 4,
             "bandas": [
               {
-                "puntos": 3,
+                "puntos": 4,
                 "condicion": "El dato principal aparece contrastado en una segunda fuente"
+              },
+              {
+                "puntos": 3,
+                "condicion": "Un dato secundario aparece contrastado en una segunda fuente"
               },
               {
                 "puntos": 2,
                 "condicion": "La noticia nombra una segunda fuente y deja el dato sin comparar"
+              },
+              {
+                "puntos": 1,
+                "condicion": "La noticia cita una segunda fuente que repite la versión de la primera"
               },
               {
                 "puntos": 0,
@@ -350,6 +390,10 @@
                 "condicion": "Deja 2 datos sin fuente nombrada"
               },
               {
+                "puntos": 1,
+                "condicion": "Deja 3 o 4 datos sin fuente nombrada"
+              },
+              {
                 "puntos": 0,
                 "condicion": "La noticia da todos los datos como propios"
               }
@@ -357,18 +401,22 @@
           },
           {
             "nombre": "Comillas en lo citado",
-            "max": 3,
+            "max": 2,
             "bandas": [
               {
-                "puntos": 3,
+                "puntos": 2,
                 "condicion": "Las palabras tomadas de otro texto van entre comillas"
               },
               {
-                "puntos": 2,
-                "condicion": "Deja 1 cita sin comillas"
+                "puntos": 1.5,
+                "condicion": "Las palabras tomadas de otro texto van entre comillas, sin decir de dónde salen"
               },
               {
                 "puntos": 1,
+                "condicion": "Deja 1 cita sin comillas"
+              },
+              {
+                "puntos": 0.5,
                 "condicion": "Deja 2 citas sin comillas"
               },
               {
@@ -379,19 +427,23 @@
           },
           {
             "nombre": "Autoría de la declaración",
-            "max": 3,
+            "max": 4,
             "bandas": [
               {
-                "puntos": 3,
+                "puntos": 4,
                 "condicion": "Cada declaración lleva el nombre de quien la pronuncia"
               },
               {
-                "puntos": 2,
+                "puntos": 3,
                 "condicion": "1 declaración se queda sin autor"
               },
               {
-                "puntos": 1,
+                "puntos": 2,
                 "condicion": "2 declaraciones se quedan sin autor"
+              },
+              {
+                "puntos": 1,
+                "condicion": "3 o 4 declaraciones se quedan sin autor"
               },
               {
                 "puntos": 0,
@@ -466,15 +518,23 @@
         "componentes": [
           {
             "nombre": "Persona gramatical",
-            "max": 3,
+            "max": 2,
             "bandas": [
               {
-                "puntos": 3,
+                "puntos": 2,
                 "condicion": "La noticia mantiene la tercera persona de principio a fin"
               },
               {
-                "puntos": 2,
-                "condicion": "Pasa a la primera persona en 4 puntos o menos"
+                "puntos": 1.5,
+                "condicion": "Pasa a la primera persona en 1 punto del texto"
+              },
+              {
+                "puntos": 1,
+                "condicion": "Pasa a la primera persona en 2 o 3 puntos del texto"
+              },
+              {
+                "puntos": 0.5,
+                "condicion": "Pasa a la primera persona en 4 o más puntos del texto"
               },
               {
                 "puntos": 0,
@@ -499,6 +559,10 @@
                 "condicion": "Deja 2 opiniones propias presentadas como hecho"
               },
               {
+                "puntos": 1,
+                "condicion": "Deja 3 o 4 opiniones propias presentadas como hecho"
+              },
+              {
                 "puntos": 0,
                 "condicion": "La noticia cuenta el hecho desde la opinión propia"
               }
@@ -506,19 +570,23 @@
           },
           {
             "nombre": "Léxico valorativo",
-            "max": 3,
+            "max": 4,
             "bandas": [
               {
-                "puntos": 3,
+                "puntos": 4,
                 "condicion": "La noticia emplea adjetivos de descripción y ninguno de juicio"
               },
               {
-                "puntos": 2,
+                "puntos": 3,
                 "condicion": "Emplea 1 adjetivo de juicio"
               },
               {
-                "puntos": 1,
+                "puntos": 2,
                 "condicion": "Emplea 2 adjetivos de juicio"
+              },
+              {
+                "puntos": 1,
+                "condicion": "Emplea 3 o 4 adjetivos de juicio"
               },
               {
                 "puntos": 0,
@@ -601,33 +669,41 @@
               },
               {
                 "puntos": 3,
-                "condicion": "De 3 a 4 faltas"
+                "condicion": "3 o 4 faltas"
               },
               {
                 "puntos": 2,
-                "condicion": "De 5 a 7 faltas"
+                "condicion": "5 o 6 faltas"
               },
               {
                 "puntos": 1,
-                "condicion": "De 8 a 12 faltas"
+                "condicion": "De 7 a 9 faltas"
               },
               {
                 "puntos": 0,
-                "condicion": "13 o más faltas"
+                "condicion": "10 o más faltas"
               }
             ]
           },
           {
             "nombre": "Puntuación",
-            "max": 3,
+            "max": 2,
             "bandas": [
               {
-                "puntos": 3,
+                "puntos": 2,
                 "condicion": "Cierra con punto todas las frases y reparte el cuerpo en párrafos"
               },
               {
-                "puntos": 2,
+                "puntos": 1.5,
+                "condicion": "Cierra con punto todas las frases y deja el cuerpo sin repartir en párrafos"
+              },
+              {
+                "puntos": 1,
                 "condicion": "Deja de 1 a 4 frases sin cerrar"
+              },
+              {
+                "puntos": 0.5,
+                "condicion": "Deja de 5 a 8 frases sin cerrar"
               },
               {
                 "puntos": 0,
@@ -637,19 +713,23 @@
           },
           {
             "nombre": "Propiedad léxica",
-            "max": 3,
+            "max": 4,
             "bandas": [
               {
-                "puntos": 3,
+                "puntos": 4,
                 "condicion": "Emplea términos precisos y ninguna palabra comodín"
               },
               {
-                "puntos": 2,
+                "puntos": 3,
                 "condicion": "Emplea 1 palabra comodín (cosa, tema, hacer)"
               },
               {
-                "puntos": 1,
+                "puntos": 2,
                 "condicion": "Emplea 2 o 3 palabras comodín"
+              },
+              {
+                "puntos": 1,
+                "condicion": "Emplea 4 o 5 palabras comodín"
               },
               {
                 "puntos": 0,
@@ -724,18 +804,22 @@
         "componentes": [
           {
             "nombre": "Partes de la noticia",
-            "max": 3,
+            "max": 2,
             "bandas": [
               {
-                "puntos": 3,
+                "puntos": 2,
                 "condicion": "El texto presenta titular, entradilla y cuerpo"
               },
               {
-                "puntos": 2,
-                "condicion": "Presenta 2 de las tres partes"
+                "puntos": 1.5,
+                "condicion": "El texto presenta las tres partes y la entradilla repite el titular"
               },
               {
                 "puntos": 1,
+                "condicion": "Presenta 2 de las tres partes"
+              },
+              {
+                "puntos": 0.5,
                 "condicion": "Presenta 1 de las tres partes"
               },
               {
@@ -761,22 +845,34 @@
                 "condicion": "Responde a 2 preguntas"
               },
               {
+                "puntos": 1,
+                "condicion": "Responde a 1 pregunta"
+              },
+              {
                 "puntos": 0,
-                "condicion": "Responde a 1 pregunta o a ninguna"
+                "condicion": "La entradilla deja las cuatro preguntas sin responder"
               }
             ]
           },
           {
             "nombre": "Pirámide invertida",
-            "max": 3,
+            "max": 4,
             "bandas": [
               {
-                "puntos": 3,
+                "puntos": 4,
                 "condicion": "El cuerpo baja de mayor a menor interés informativo en todos los párrafos"
               },
               {
+                "puntos": 3,
+                "condicion": "Baja de mayor a menor interés con 1 párrafo fuera de sitio"
+              },
+              {
                 "puntos": 2,
-                "condicion": "Baja de mayor a menor interés con 1 o 2 párrafos fuera de sitio"
+                "condicion": "Baja de mayor a menor interés con 2 párrafos fuera de sitio"
+              },
+              {
+                "puntos": 1,
+                "condicion": "Baja de mayor a menor interés en los dos primeros párrafos y sigue sin orden"
               },
               {
                 "puntos": 0,
@@ -851,19 +947,23 @@
         "componentes": [
           {
             "nombre": "Fuentes consultadas",
-            "max": 3,
+            "max": 4,
             "bandas": [
               {
-                "puntos": 3,
+                "puntos": 4,
                 "condicion": "La noticia se apoya en 3 o más fuentes"
               },
               {
-                "puntos": 2,
+                "puntos": 3,
                 "condicion": "Se apoya en 2 fuentes"
               },
               {
-                "puntos": 1,
+                "puntos": 2,
                 "condicion": "Se apoya en 1 fuente"
+              },
+              {
+                "puntos": 1,
+                "condicion": "La noticia nombra una fuente sin tomar de ella ningún dato"
               },
               {
                 "puntos": 0,
@@ -888,6 +988,10 @@
                 "condicion": "1 dato aparece contrastado en dos fuentes"
               },
               {
+                "puntos": 1,
+                "condicion": "Un dato aparece en dos fuentes, sin señalar la coincidencia"
+              },
+              {
                 "puntos": 0,
                 "condicion": "Todos los datos proceden de una sola fuente"
               }
@@ -895,15 +999,23 @@
           },
           {
             "nombre": "Criterio de selección",
-            "max": 3,
+            "max": 2,
             "bandas": [
               {
-                "puntos": 3,
+                "puntos": 2,
                 "condicion": "La noticia descarta los datos ajenos al hecho y razona la elección de la fuente"
               },
               {
-                "puntos": 2,
+                "puntos": 1.5,
+                "condicion": "La noticia descarta los datos ajenos al hecho y nombra la fuente elegida sin razonar la elección"
+              },
+              {
+                "puntos": 1,
                 "condicion": "La noticia descarta los datos ajenos al hecho"
+              },
+              {
+                "puntos": 0.5,
+                "condicion": "La noticia descarta algún dato ajeno al hecho y conserva el resto de la fuente"
               },
               {
                 "puntos": 0,
@@ -978,15 +1090,23 @@
         "componentes": [
           {
             "nombre": "Persona gramatical y registro",
-            "max": 3,
+            "max": 2,
             "bandas": [
               {
-                "puntos": 3,
+                "puntos": 2,
                 "condicion": "La noticia mantiene la tercera persona y el registro informativo"
               },
               {
-                "puntos": 2,
-                "condicion": "Pasa a la primera persona o al registro coloquial en 4 puntos o menos"
+                "puntos": 1.5,
+                "condicion": "Pasa a la primera persona o al registro coloquial en 1 punto del texto"
+              },
+              {
+                "puntos": 1,
+                "condicion": "Pasa a la primera persona o al registro coloquial en 2 o 3 puntos del texto"
+              },
+              {
+                "puntos": 0.5,
+                "condicion": "Pasa a la primera persona o al registro coloquial en 4 o más puntos del texto"
               },
               {
                 "puntos": 0,
@@ -1011,6 +1131,10 @@
                 "condicion": "Funde 2 declaraciones con los hechos"
               },
               {
+                "puntos": 1,
+                "condicion": "Funde 3 o 4 declaraciones con los hechos"
+              },
+              {
                 "puntos": 0,
                 "condicion": "La noticia presenta las declaraciones como hechos"
               }
@@ -1018,19 +1142,23 @@
           },
           {
             "nombre": "Léxico valorativo",
-            "max": 3,
+            "max": 4,
             "bandas": [
               {
-                "puntos": 3,
+                "puntos": 4,
                 "condicion": "La noticia emplea léxico neutro y ningún adjetivo de juicio"
               },
               {
-                "puntos": 2,
+                "puntos": 3,
                 "condicion": "Emplea 1 adjetivo de juicio"
               },
               {
-                "puntos": 1,
+                "puntos": 2,
                 "condicion": "Emplea 2 adjetivos de juicio"
+              },
+              {
+                "puntos": 1,
+                "condicion": "Emplea 3 o 4 adjetivos de juicio"
               },
               {
                 "puntos": 0,
@@ -1113,15 +1241,15 @@
               },
               {
                 "puntos": 3,
-                "condicion": "De 3 a 4 faltas"
+                "condicion": "De 3 a 5 faltas"
               },
               {
                 "puntos": 2,
-                "condicion": "De 5 a 7 faltas"
+                "condicion": "De 6 a 8 faltas"
               },
               {
                 "puntos": 1,
-                "condicion": "De 8 a 12 faltas"
+                "condicion": "De 9 a 12 faltas"
               },
               {
                 "puntos": 0,
@@ -1131,15 +1259,23 @@
           },
           {
             "nombre": "Puntuación y comillas",
-            "max": 3,
+            "max": 2,
             "bandas": [
               {
-                "puntos": 3,
+                "puntos": 2,
                 "condicion": "Cierra con punto todas las frases y entrecomilla todas las declaraciones"
               },
               {
-                "puntos": 2,
-                "condicion": "Deja de 1 a 5 declaraciones o frases sin marcar"
+                "puntos": 1.5,
+                "condicion": "Deja de 1 a 2 declaraciones o frases sin marcar"
+              },
+              {
+                "puntos": 1,
+                "condicion": "Deja de 3 a 5 declaraciones o frases sin marcar"
+              },
+              {
+                "puntos": 0.5,
+                "condicion": "Deja de 6 a 9 declaraciones o frases sin marcar"
               },
               {
                 "puntos": 0,
@@ -1149,19 +1285,23 @@
           },
           {
             "nombre": "Propiedad léxica",
-            "max": 3,
+            "max": 4,
             "bandas": [
               {
-                "puntos": 3,
+                "puntos": 4,
                 "condicion": "Emplea términos precisos y ninguna palabra comodín"
               },
               {
-                "puntos": 2,
+                "puntos": 3,
                 "condicion": "Emplea 1 palabra comodín (cosa, tema, hacer)"
               },
               {
-                "puntos": 1,
+                "puntos": 2,
                 "condicion": "Emplea 2 palabras comodín"
+              },
+              {
+                "puntos": 1,
+                "condicion": "Emplea 3 o 4 palabras comodín"
               },
               {
                 "puntos": 0,
@@ -1236,15 +1376,23 @@
         "componentes": [
           {
             "nombre": "Titular informativo",
-            "max": 3,
+            "max": 2,
             "bandas": [
               {
-                "puntos": 3,
+                "puntos": 2,
                 "condicion": "El titular lleva verbo propio y nombra el hecho y el protagonista"
               },
               {
-                "puntos": 2,
+                "puntos": 1.5,
+                "condicion": "El titular lleva verbo propio y nombra el hecho, sin el protagonista"
+              },
+              {
+                "puntos": 1,
                 "condicion": "El titular nombra el hecho y va sin verbo propio"
+              },
+              {
+                "puntos": 0.5,
+                "condicion": "El titular nombra al protagonista, sin el hecho ni verbo propio"
               },
               {
                 "puntos": 0,
@@ -1269,22 +1417,34 @@
                 "condicion": "Responde a 3 preguntas"
               },
               {
+                "puntos": 1,
+                "condicion": "Responde a 2 preguntas"
+              },
+              {
                 "puntos": 0,
-                "condicion": "Responde a 2 preguntas o a menos"
+                "condicion": "Responde a 1 pregunta o a ninguna"
               }
             ]
           },
           {
             "nombre": "Pirámide invertida",
-            "max": 3,
+            "max": 4,
             "bandas": [
               {
-                "puntos": 3,
+                "puntos": 4,
                 "condicion": "Cada párrafo del cuerpo aporta un dato nuevo y de menor jerarquía que el anterior"
               },
               {
-                "puntos": 2,
+                "puntos": 3,
                 "condicion": "El cuerpo baja de jerarquía con 1 párrafo fuera de sitio"
+              },
+              {
+                "puntos": 2,
+                "condicion": "El cuerpo baja de jerarquía con 2 párrafos fuera de sitio"
+              },
+              {
+                "puntos": 1,
+                "condicion": "El cuerpo baja de jerarquía con 3 o 4 párrafos fuera de sitio"
               },
               {
                 "puntos": 0,
@@ -1359,18 +1519,22 @@
         "componentes": [
           {
             "nombre": "Fuentes consultadas",
-            "max": 3,
+            "max": 2,
             "bandas": [
               {
-                "puntos": 3,
+                "puntos": 2,
                 "condicion": "La noticia se apoya en 3 o más fuentes de distinta procedencia"
               },
               {
-                "puntos": 2,
-                "condicion": "Se apoya en 2 fuentes"
+                "puntos": 1.5,
+                "condicion": "La noticia se apoya en 3 o más fuentes de la misma procedencia"
               },
               {
                 "puntos": 1,
+                "condicion": "Se apoya en 2 fuentes"
+              },
+              {
+                "puntos": 0.5,
                 "condicion": "Se apoya en 1 fuente"
               },
               {
@@ -1396,26 +1560,34 @@
                 "condicion": "2 datos aparecen contrastados"
               },
               {
+                "puntos": 1,
+                "condicion": "1 dato aparece contrastado"
+              },
+              {
                 "puntos": 0,
-                "condicion": "1 dato aparece contrastado o ninguno"
+                "condicion": "Todos los datos proceden de una sola fuente"
               }
             ]
           },
           {
             "nombre": "Fiabilidad calibrada",
-            "max": 3,
+            "max": 4,
             "bandas": [
               {
-                "puntos": 3,
+                "puntos": 4,
                 "condicion": "La noticia examina 3 indicios de fiabilidad: autoría, fecha y datos citados"
               },
               {
-                "puntos": 2,
+                "puntos": 3,
                 "condicion": "Examina 2 indicios de fiabilidad"
               },
               {
-                "puntos": 1,
+                "puntos": 2,
                 "condicion": "Examina 1 indicio de fiabilidad"
+              },
+              {
+                "puntos": 1,
+                "condicion": "Nombra un indicio de fiabilidad sin examinarlo"
               },
               {
                 "puntos": 0,
@@ -1490,19 +1662,23 @@
         "componentes": [
           {
             "nombre": "Fuentes nombradas",
-            "max": 3,
+            "max": 4,
             "bandas": [
               {
-                "puntos": 3,
+                "puntos": 4,
                 "condicion": "Cada dato tomado de otro texto lleva la fuente nombrada"
               },
               {
-                "puntos": 2,
+                "puntos": 3,
                 "condicion": "Deja 1 dato sin fuente nombrada"
               },
               {
-                "puntos": 1,
+                "puntos": 2,
                 "condicion": "Deja 2 datos sin fuente nombrada"
+              },
+              {
+                "puntos": 1,
+                "condicion": "Deja 3 o 4 datos sin fuente nombrada"
               },
               {
                 "puntos": 0,
@@ -1527,6 +1703,10 @@
                 "condicion": "1 declaración va marcada"
               },
               {
+                "puntos": 1,
+                "condicion": "1 declaración lleva verbo de habla, sin comillas"
+              },
+              {
                 "puntos": 0,
                 "condicion": "Las palabras ajenas se funden con las propias"
               }
@@ -1534,15 +1714,23 @@
           },
           {
             "nombre": "Registro de la consulta",
-            "max": 3,
+            "max": 2,
             "bandas": [
               {
-                "puntos": 3,
+                "puntos": 2,
                 "condicion": "La noticia cierra con la lista de fuentes y la fecha de consulta"
               },
               {
-                "puntos": 2,
+                "puntos": 1.5,
+                "condicion": "La noticia cierra con la lista de fuentes y deja alguna sin fecha de consulta"
+              },
+              {
+                "puntos": 1,
                 "condicion": "Cierra con la lista de fuentes o las nombra dentro del cuerpo"
+              },
+              {
+                "puntos": 0.5,
+                "condicion": "La noticia anuncia que ha consultado fuentes, sin nombrar ninguna"
               },
               {
                 "puntos": 0,
@@ -1617,15 +1805,23 @@
         "componentes": [
           {
             "nombre": "Registro informativo",
-            "max": 3,
+            "max": 2,
             "bandas": [
               {
-                "puntos": 3,
+                "puntos": 2,
                 "condicion": "La noticia mantiene la tercera persona y el registro informativo"
               },
               {
-                "puntos": 2,
-                "condicion": "Se aparta del registro informativo en 4 puntos o menos"
+                "puntos": 1.5,
+                "condicion": "Se aparta del registro informativo en 1 punto del texto"
+              },
+              {
+                "puntos": 1,
+                "condicion": "Se aparta del registro informativo en 2 o 3 puntos del texto"
+              },
+              {
+                "puntos": 0.5,
+                "condicion": "Se aparta del registro informativo en 4 o más puntos del texto"
               },
               {
                 "puntos": 0,
@@ -1650,6 +1846,10 @@
                 "condicion": "Distingue 1 de los tres grados"
               },
               {
+                "puntos": 1,
+                "condicion": "Nombra uno de los tres grados sin distinguirlo en el texto"
+              },
+              {
                 "puntos": 0,
                 "condicion": "La noticia presenta toda la información con el mismo grado de certeza"
               }
@@ -1657,19 +1857,23 @@
           },
           {
             "nombre": "Adjetivación",
-            "max": 3,
+            "max": 4,
             "bandas": [
               {
-                "puntos": 3,
+                "puntos": 4,
                 "condicion": "La noticia sustituye los adjetivos valorativos por datos"
               },
               {
-                "puntos": 2,
+                "puntos": 3,
                 "condicion": "Deja 1 adjetivo valorativo"
               },
               {
-                "puntos": 1,
+                "puntos": 2,
                 "condicion": "Deja 2 adjetivos valorativos"
+              },
+              {
+                "puntos": 1,
+                "condicion": "Deja 3 o 4 adjetivos valorativos"
               },
               {
                 "puntos": 0,
@@ -1752,36 +1956,40 @@
               },
               {
                 "puntos": 3,
-                "condicion": "De 3 a 4 faltas"
+                "condicion": "De 3 a 5 faltas"
               },
               {
                 "puntos": 2,
-                "condicion": "De 5 a 7 faltas"
+                "condicion": "De 6 a 9 faltas"
               },
               {
                 "puntos": 1,
-                "condicion": "De 8 a 12 faltas"
+                "condicion": "De 10 a 14 faltas"
               },
               {
                 "puntos": 0,
-                "condicion": "13 o más faltas"
+                "condicion": "15 o más faltas"
               }
             ]
           },
           {
             "nombre": "Puntuación del discurso referido",
-            "max": 3,
+            "max": 2,
             "bandas": [
               {
-                "puntos": 3,
+                "puntos": 2,
                 "condicion": "Todas las declaraciones llevan comillas, dos puntos o raya"
               },
               {
-                "puntos": 2,
-                "condicion": "Deja 1 declaración sin marcar"
+                "puntos": 1.5,
+                "condicion": "Todas las declaraciones llevan marca y alguna emplea la que no le corresponde"
               },
               {
                 "puntos": 1,
+                "condicion": "Deja 1 declaración sin marcar"
+              },
+              {
+                "puntos": 0.5,
                 "condicion": "Deja 2 declaraciones sin marcar"
               },
               {
@@ -1792,19 +2000,23 @@
           },
           {
             "nombre": "Propiedad léxica",
-            "max": 3,
+            "max": 4,
             "bandas": [
               {
-                "puntos": 3,
+                "puntos": 4,
                 "condicion": "Emplea términos precisos y ningún verbo comodín"
               },
               {
-                "puntos": 2,
+                "puntos": 3,
                 "condicion": "Emplea 1 verbo comodín (hacer, tener, decir)"
               },
               {
-                "puntos": 1,
+                "puntos": 2,
                 "condicion": "Emplea 2 verbos comodín"
+              },
+              {
+                "puntos": 1,
+                "condicion": "Emplea 3 o 4 verbos comodín"
               },
               {
                 "puntos": 0,
@@ -1879,15 +2091,23 @@
         "componentes": [
           {
             "nombre": "Titulación",
-            "max": 3,
+            "max": 2,
             "bandas": [
               {
-                "puntos": 3,
+                "puntos": 2,
                 "condicion": "El texto lleva titular con verbo propio y antetítulo o subtítulo"
               },
               {
-                "puntos": 2,
+                "puntos": 1.5,
+                "condicion": "El texto lleva titular con verbo propio y antetítulo o subtítulo que lo repite"
+              },
+              {
+                "puntos": 1,
                 "condicion": "Lleva titular con verbo propio o titular nominal"
+              },
+              {
+                "puntos": 0.5,
+                "condicion": "El texto abre con una etiqueta de una palabra a modo de titular"
               },
               {
                 "puntos": 0,
@@ -1912,22 +2132,34 @@
                 "condicion": "Resuelve 3 o 4 preguntas"
               },
               {
+                "puntos": 1,
+                "condicion": "Resuelve 2 preguntas"
+              },
+              {
                 "puntos": 0,
-                "condicion": "Resuelve 2 preguntas o menos"
+                "condicion": "Resuelve 1 pregunta o ninguna"
               }
             ]
           },
           {
             "nombre": "Jerarquía del cuerpo",
-            "max": 3,
+            "max": 4,
             "bandas": [
               {
-                "puntos": 3,
+                "puntos": 4,
                 "condicion": "Los párrafos bajan de jerarquía informativa y cierran con los antecedentes"
               },
               {
-                "puntos": 2,
+                "puntos": 3,
                 "condicion": "Los párrafos bajan de jerarquía y el texto acaba sin antecedentes"
+              },
+              {
+                "puntos": 2,
+                "condicion": "Los párrafos bajan de jerarquía con 1 párrafo fuera de sitio"
+              },
+              {
+                "puntos": 1,
+                "condicion": "Los párrafos bajan de jerarquía con 2 o 3 párrafos fuera de sitio"
               },
               {
                 "puntos": 0,
@@ -2002,15 +2234,23 @@
         "componentes": [
           {
             "nombre": "Naturaleza de las fuentes",
-            "max": 3,
+            "max": 2,
             "bandas": [
               {
-                "puntos": 3,
+                "puntos": 2,
                 "condicion": "La noticia combina fuente documental, fuente institucional y testimonio"
               },
               {
-                "puntos": 2,
+                "puntos": 1.5,
+                "condicion": "La noticia combina los tres tipos de fuente y uno de ellos aparece sin identificar"
+              },
+              {
+                "puntos": 1,
                 "condicion": "Combina 2 de los tres tipos de fuente o se apoya en 1"
+              },
+              {
+                "puntos": 0.5,
+                "condicion": "La noticia nombra una fuente sin tomar de ella ningún dato"
               },
               {
                 "puntos": 0,
@@ -2035,26 +2275,34 @@
                 "condicion": "2 datos quedan verificados"
               },
               {
+                "puntos": 1,
+                "condicion": "1 dato queda verificado"
+              },
+              {
                 "puntos": 0,
-                "condicion": "1 dato queda verificado o ninguno"
+                "condicion": "La noticia publica los datos sin verificar ninguno"
               }
             ]
           },
           {
             "nombre": "Fiabilidad calibrada",
-            "max": 3,
+            "max": 4,
             "bandas": [
               {
-                "puntos": 3,
+                "puntos": 4,
                 "condicion": "La noticia examina autoría, trazabilidad del dato y línea del medio"
               },
               {
-                "puntos": 2,
+                "puntos": 3,
                 "condicion": "Examina 2 de los tres indicios"
               },
               {
-                "puntos": 1,
+                "puntos": 2,
                 "condicion": "Examina 1 de los tres indicios"
+              },
+              {
+                "puntos": 1,
+                "condicion": "Nombra uno de los tres indicios sin examinarlo"
               },
               {
                 "puntos": 0,
@@ -2144,6 +2392,10 @@
                 "condicion": "Deja 2 afirmaciones sin atribuir"
               },
               {
+                "puntos": 1,
+                "condicion": "Deja 3 o 4 afirmaciones sin atribuir"
+              },
+              {
                 "puntos": 0,
                 "condicion": "La noticia presenta la información sin atribución"
               }
@@ -2151,15 +2403,23 @@
           },
           {
             "nombre": "Cita y discurso referido",
-            "max": 3,
+            "max": 2,
             "bandas": [
               {
-                "puntos": 3,
+                "puntos": 2,
                 "condicion": "Las citas directas van entrecomilladas y las indirectas llevan verbo de habla"
               },
               {
-                "puntos": 2,
+                "puntos": 1.5,
+                "condicion": "Las citas directas y las indirectas van marcadas, y alguna indirecta repite las palabras textuales"
+              },
+              {
+                "puntos": 1,
                 "condicion": "Uno de los dos procedimientos aparece marcado"
+              },
+              {
+                "puntos": 0.5,
+                "condicion": "Las palabras citadas se entrecomillan en un solo punto del texto"
               },
               {
                 "puntos": 0,
@@ -2169,19 +2429,23 @@
           },
           {
             "nombre": "Propiedad intelectual del material",
-            "max": 3,
+            "max": 4,
             "bandas": [
               {
-                "puntos": 3,
+                "puntos": 4,
                 "condicion": "La noticia acredita el material reutilizado: texto, imagen y datos"
               },
               {
-                "puntos": 2,
+                "puntos": 3,
                 "condicion": "Acredita 2 de los tres tipos de material"
               },
               {
-                "puntos": 1,
+                "puntos": 2,
                 "condicion": "Acredita 1 de los tres tipos de material"
+              },
+              {
+                "puntos": 1,
+                "condicion": "Nombra el origen de un material sin acreditarlo"
               },
               {
                 "puntos": 0,
@@ -2256,15 +2520,23 @@
         "componentes": [
           {
             "nombre": "Registro informativo",
-            "max": 3,
+            "max": 2,
             "bandas": [
               {
-                "puntos": 3,
+                "puntos": 2,
                 "condicion": "La noticia sostiene el registro informativo y la impersonalidad en todo el texto"
               },
               {
-                "puntos": 2,
-                "condicion": "Se aparta del registro informativo en 4 puntos o menos"
+                "puntos": 1.5,
+                "condicion": "Se aparta del registro informativo en 1 punto del texto"
+              },
+              {
+                "puntos": 1,
+                "condicion": "Se aparta del registro informativo en 2 o 3 puntos del texto"
+              },
+              {
+                "puntos": 0.5,
+                "condicion": "Se aparta del registro informativo en 4 o más puntos del texto"
               },
               {
                 "puntos": 0,
@@ -2289,6 +2561,10 @@
                 "condicion": "Marca el grado de certeza en 1 de los tres casos"
               },
               {
+                "puntos": 1,
+                "condicion": "Marca el grado de certeza con una fórmula repetida en todos los casos"
+              },
+              {
                 "puntos": 0,
                 "condicion": "La noticia presenta toda la información con el mismo grado de certeza"
               }
@@ -2296,15 +2572,23 @@
           },
           {
             "nombre": "Discurso referido",
-            "max": 3,
+            "max": 4,
             "bandas": [
               {
-                "puntos": 3,
+                "puntos": 4,
                 "condicion": "La noticia emplea cita directa e indirecta según la fuerza de cada declaración"
+              },
+              {
+                "puntos": 3,
+                "condicion": "Emplea los dos procedimientos sin graduarlos según la fuerza de la declaración"
               },
               {
                 "puntos": 2,
                 "condicion": "Emplea un solo procedimiento de discurso referido"
+              },
+              {
+                "puntos": 1,
+                "condicion": "Emplea un solo procedimiento y lo aplica a una declaración"
               },
               {
                 "puntos": 0,
@@ -2387,33 +2671,41 @@
               },
               {
                 "puntos": 3,
-                "condicion": "De 3 a 4 faltas"
+                "condicion": "De 3 a 6 faltas"
               },
               {
                 "puntos": 2,
-                "condicion": "De 5 a 7 faltas"
+                "condicion": "De 7 a 12 faltas"
               },
               {
                 "puntos": 1,
-                "condicion": "De 8 a 12 faltas"
+                "condicion": "De 13 a 16 faltas"
               },
               {
                 "puntos": 0,
-                "condicion": "13 o más faltas"
+                "condicion": "17 o más faltas"
               }
             ]
           },
           {
             "nombre": "Puntuación",
-            "max": 3,
+            "max": 2,
             "bandas": [
               {
-                "puntos": 3,
+                "puntos": 2,
                 "condicion": "Cita, inciso y párrafo llevan la puntuación correspondiente"
               },
               {
-                "puntos": 2,
-                "condicion": "1 o 2 de los tres procedimientos fallan"
+                "puntos": 1.5,
+                "condicion": "1 de los tres procedimientos falla"
+              },
+              {
+                "puntos": 1,
+                "condicion": "2 de los tres procedimientos fallan"
+              },
+              {
+                "puntos": 0.5,
+                "condicion": "Los tres procedimientos fallan y el texto conserva el punto y la coma"
               },
               {
                 "puntos": 0,
@@ -2423,19 +2715,23 @@
           },
           {
             "nombre": "Propiedad léxica",
-            "max": 3,
+            "max": 4,
             "bandas": [
               {
-                "puntos": 3,
+                "puntos": 4,
                 "condicion": "Emplea el término preciso del registro periodístico en todo el texto"
               },
               {
-                "puntos": 2,
+                "puntos": 3,
                 "condicion": "Emplea 1 término impreciso o comodín"
               },
               {
-                "puntos": 1,
+                "puntos": 2,
                 "condicion": "Emplea 2 términos imprecisos o comodín"
+              },
+              {
+                "puntos": 1,
+                "condicion": "Emplea 3 o 4 términos imprecisos o comodín"
               },
               {
                 "puntos": 0,
@@ -2510,15 +2806,23 @@
         "componentes": [
           {
             "nombre": "Titulación completa",
-            "max": 3,
+            "max": 2,
             "bandas": [
               {
-                "puntos": 3,
+                "puntos": 2,
                 "condicion": "El texto lleva antetítulo, titular y subtítulo ajustados al soporte"
               },
               {
-                "puntos": 2,
+                "puntos": 1.5,
+                "condicion": "El texto lleva los tres elementos y uno de ellos no se ajusta al soporte"
+              },
+              {
+                "puntos": 1,
                 "condicion": "Lleva titular y uno de los otros dos elementos, o titular a secas"
+              },
+              {
+                "puntos": 0.5,
+                "condicion": "El texto abre con una etiqueta de una palabra a modo de titular"
               },
               {
                 "puntos": 0,
@@ -2528,19 +2832,27 @@
           },
           {
             "nombre": "Entradilla completa",
-            "max": 3,
+            "max": 4,
             "bandas": [
               {
-                "puntos": 3,
+                "puntos": 4,
                 "condicion": "La entradilla resuelve las 5 preguntas y fija el enfoque del texto"
               },
               {
+                "puntos": 3,
+                "condicion": "Resuelve las 5 preguntas y deja el enfoque sin fijar"
+              },
+              {
                 "puntos": 2,
-                "condicion": "Resuelve de 3 a 5 preguntas"
+                "condicion": "Resuelve 3 o 4 preguntas"
+              },
+              {
+                "puntos": 1,
+                "condicion": "Resuelve 2 preguntas"
               },
               {
                 "puntos": 0,
-                "condicion": "Resuelve 2 preguntas o menos"
+                "condicion": "Resuelve 1 pregunta o ninguna"
               }
             ]
           },
@@ -2559,6 +2871,10 @@
               {
                 "puntos": 2,
                 "condicion": "Baja de jerarquía y deja los bloques temáticos mezclados"
+              },
+              {
+                "puntos": 1,
+                "condicion": "El cuerpo baja de jerarquía en la primera mitad y sigue sin orden"
               },
               {
                 "puntos": 0,
@@ -2633,15 +2949,23 @@
         "componentes": [
           {
             "nombre": "Naturaleza de las fuentes",
-            "max": 3,
+            "max": 2,
             "bandas": [
               {
-                "puntos": 3,
+                "puntos": 2,
                 "condicion": "La noticia reúne 4 o más fuentes de tres naturalezas distintas"
               },
               {
-                "puntos": 2,
+                "puntos": 1.5,
+                "condicion": "La noticia reúne 4 o más fuentes de dos naturalezas distintas"
+              },
+              {
+                "puntos": 1,
                 "condicion": "Reúne 2 o 3 fuentes"
+              },
+              {
+                "puntos": 0.5,
+                "condicion": "La noticia nombra una fuente sin tomar de ella ningún dato"
               },
               {
                 "puntos": 0,
@@ -2666,30 +2990,38 @@
                 "condicion": "3 datos quedan verificados"
               },
               {
+                "puntos": 1,
+                "condicion": "1 o 2 datos quedan verificados"
+              },
+              {
                 "puntos": 0,
-                "condicion": "2 datos quedan verificados o menos"
+                "condicion": "La noticia publica los datos sin verificar ninguno"
               }
             ]
           },
           {
             "nombre": "Fiabilidad y trazabilidad",
-            "max": 3,
+            "max": 4,
             "bandas": [
               {
-                "puntos": 3,
+                "puntos": 4,
                 "condicion": "La noticia examina autoría, trazabilidad, fecha y línea del medio, y deja registrada la consulta"
               },
               {
-                "puntos": 2,
+                "puntos": 3,
                 "condicion": "Examina 3 de los cuatro indicios"
               },
               {
-                "puntos": 1,
+                "puntos": 2,
                 "condicion": "Examina 2 de los cuatro indicios"
               },
               {
+                "puntos": 1,
+                "condicion": "Examina 1 indicio de los cuatro"
+              },
+              {
                 "puntos": 0,
-                "condicion": "Examina 1 indicio o ninguno"
+                "condicion": "La noticia toma todas las fuentes como equivalentes"
               }
             ]
           }
@@ -2775,6 +3107,10 @@
                 "condicion": "Deja 2 afirmaciones sin atribuir"
               },
               {
+                "puntos": 1,
+                "condicion": "Deja 3 o 4 afirmaciones sin atribuir"
+              },
+              {
                 "puntos": 0,
                 "condicion": "La noticia presenta la información sin atribución"
               }
@@ -2782,15 +3118,23 @@
           },
           {
             "nombre": "Procedimientos de cita",
-            "max": 3,
+            "max": 2,
             "bandas": [
               {
-                "puntos": 3,
+                "puntos": 2,
                 "condicion": "La noticia gradúa cita directa, cita indirecta y cita dentro de cita con la puntuación de cada una"
               },
               {
-                "puntos": 2,
+                "puntos": 1.5,
+                "condicion": "La noticia gradúa los tres procedimientos y deja alguno sin la puntuación que le corresponde"
+              },
+              {
+                "puntos": 1,
                 "condicion": "Gradúa 2 de los tres procedimientos o emplea uno solo"
+              },
+              {
+                "puntos": 0.5,
+                "condicion": "La noticia entrecomilla las palabras ajenas sin graduar ningún procedimiento"
               },
               {
                 "puntos": 0,
@@ -2800,19 +3144,23 @@
           },
           {
             "nombre": "Propiedad intelectual del material",
-            "max": 3,
+            "max": 4,
             "bandas": [
               {
-                "puntos": 3,
+                "puntos": 4,
                 "condicion": "La noticia acredita texto, imagen y datos reutilizados, con la licencia cuando existe"
               },
               {
-                "puntos": 2,
+                "puntos": 3,
                 "condicion": "Acredita los tres tipos de material y deja fuera la licencia"
               },
               {
-                "puntos": 1,
+                "puntos": 2,
                 "condicion": "Acredita 1 o 2 tipos de material"
+              },
+              {
+                "puntos": 1,
+                "condicion": "Nombra el origen de un material sin acreditarlo"
               },
               {
                 "puntos": 0,
@@ -2887,15 +3235,23 @@
         "componentes": [
           {
             "nombre": "Registro informativo",
-            "max": 3,
+            "max": 2,
             "bandas": [
               {
-                "puntos": 3,
+                "puntos": 2,
                 "condicion": "La noticia sostiene el registro informativo y la impersonalidad en todo el texto"
               },
               {
-                "puntos": 2,
-                "condicion": "Se aparta del registro informativo en 3 puntos o menos"
+                "puntos": 1.5,
+                "condicion": "Se aparta del registro informativo en 1 punto del texto"
+              },
+              {
+                "puntos": 1,
+                "condicion": "Se aparta del registro informativo en 2 puntos del texto"
+              },
+              {
+                "puntos": 0.5,
+                "condicion": "Se aparta del registro informativo en 3 o más puntos del texto"
               },
               {
                 "puntos": 0,
@@ -2920,6 +3276,10 @@
                 "condicion": "Deja 2 afirmaciones sin marca de certeza"
               },
               {
+                "puntos": 1,
+                "condicion": "Deja 3 o 4 afirmaciones sin marca de certeza"
+              },
+              {
                 "puntos": 0,
                 "condicion": "La noticia presenta toda la información con el mismo grado de certeza"
               }
@@ -2927,15 +3287,23 @@
           },
           {
             "nombre": "Selección de los datos",
-            "max": 3,
+            "max": 4,
             "bandas": [
               {
-                "puntos": 3,
+                "puntos": 4,
                 "condicion": "La noticia recoge datos de las dos partes implicadas en el hecho"
+              },
+              {
+                "puntos": 3,
+                "condicion": "Recoge datos de una parte y cita la posición de la otra"
               },
               {
                 "puntos": 2,
                 "condicion": "Recoge datos de una parte y menciona la posición de la otra"
+              },
+              {
+                "puntos": 1,
+                "condicion": "Recoge datos de una parte y nombra a la otra sin recoger su posición"
               },
               {
                 "puntos": 0,
@@ -3018,33 +3386,41 @@
               },
               {
                 "puntos": 3,
-                "condicion": "De 3 a 4 faltas"
+                "condicion": "De 3 a 7 faltas"
               },
               {
                 "puntos": 2,
-                "condicion": "De 5 a 7 faltas"
+                "condicion": "De 8 a 14 faltas"
               },
               {
                 "puntos": 1,
-                "condicion": "De 8 a 12 faltas"
+                "condicion": "15 o 16 faltas"
               },
               {
                 "puntos": 0,
-                "condicion": "13 o más faltas"
+                "condicion": "17 o más faltas"
               }
             ]
           },
           {
             "nombre": "Puntuación",
-            "max": 3,
+            "max": 2,
             "bandas": [
               {
-                "puntos": 3,
+                "puntos": 2,
                 "condicion": "Cita, cita dentro de cita, inciso y párrafo llevan la puntuación correspondiente"
               },
               {
-                "puntos": 2,
-                "condicion": "1 o 2 de los cuatro procedimientos fallan"
+                "puntos": 1.5,
+                "condicion": "1 de los cuatro procedimientos falla"
+              },
+              {
+                "puntos": 1,
+                "condicion": "2 de los cuatro procedimientos fallan"
+              },
+              {
+                "puntos": 0.5,
+                "condicion": "3 de los cuatro procedimientos fallan"
               },
               {
                 "puntos": 0,
@@ -3054,19 +3430,23 @@
           },
           {
             "nombre": "Propiedad léxica y ritmo",
-            "max": 3,
+            "max": 4,
             "bandas": [
               {
-                "puntos": 3,
+                "puntos": 4,
                 "condicion": "Emplea el término preciso y ninguna muletilla ni perífrasis vacía"
               },
               {
-                "puntos": 2,
+                "puntos": 3,
                 "condicion": "Emplea 1 muletilla o perífrasis vacía"
               },
               {
-                "puntos": 1,
+                "puntos": 2,
                 "condicion": "Emplea 2 muletillas o perífrasis vacías"
+              },
+              {
+                "puntos": 1,
+                "condicion": "Emplea 3 o 4 muletillas o perífrasis vacías"
               },
               {
                 "puntos": 0,

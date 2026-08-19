@@ -331,15 +331,18 @@ caso("matriz_cuadrada: falta la banda de 0 puntos dispara error", () => {
 });
 
 // --- 11 bis. continuidad_bandas ----------------------------------------------
-// El componente de ortografía de 1.º de ESO cuenta faltas en cuatro bandas
-// —"Hasta 2 faltas" · "De 3 a 5" · "De 6 a 9" · "10 o más"—, que es la forma
-// canónica de una escala de incidencias: empieza en 0, no salta ningún recuento
-// y termina abierta. Cada caso rompe una de esas tres cosas.
+// El componente de ortografía de 1.º de ESO cuenta faltas en cinco bandas
+// —"Hasta 2 faltas" · "De 3 a 5" · "De 6 a 9" · "Deja de 10 a 13 sin corregir" ·
+// "14 o más"—, que es la forma canónica de una escala de incidencias: empieza en
+// 0, no salta ningún recuento y termina abierta. Cada caso rompe una de esas tres
+// cosas. La última banda se toma por posición relativa, NUNCA por índice fijo:
+// estas escalas pasaron de cuatro bandas a cinco y tres casos se rompieron por
+// tener escrito el 3.
 function componenteDeFaltas(pack) {
   const c = criterio(pack, "lcl-d-correccion-expo-1eso");
   const comp = c.matriz_cuantitativa.componentes.find((x) => /Ortograf/i.test(x.nombre));
   if (!comp) throw new Error("no se encontró el componente de ortografía en el pack de pruebas");
-  return { c, comp };
+  return { c, comp, ultima: comp.bandas[comp.bandas.length - 1] };
 }
 
 caso("continuidad_bandas: un recuento que ninguna banda recoge dispara error", () => {
@@ -357,12 +360,12 @@ caso("continuidad_bandas: un recuento que ninguna banda recoge dispara error", (
 
 caso("continuidad_bandas: la última banda cerrada deja fuera los recuentos altos", () => {
   const pack = clonarPack();
-  const { c, comp } = componenteDeFaltas(pack);
-  comp.bandas[3].condicion = "De 10 a 12 faltas"; // ¿y con 13?
+  const { c, ultima } = componenteDeFaltas(pack);
+  ultima.condicion = "De 14 a 16 faltas"; // ¿y con 17?
   const informe = validarPack(pack);
   assert(
     avisosDeRegla(informe, "continuidad_bandas").some(
-      (a) => a.criterioId === c.id && a.mensaje.includes("13 o más")
+      (a) => a.criterioId === c.id && a.mensaje.includes("17 o más")
     ),
     "no se detectó la escala sin banda abierta al final"
   );
@@ -395,10 +398,10 @@ caso("continuidad_bandas: control de falso positivo — un componente que cuenta
   // Mismo componente, contando al revés: fuentes reunidas, no faltas cometidas.
   // Salta de 4 a 2 sin pasar por 3, y eso no es un hueco: nadie corrige "3
   // fuentes" con una banda de recuento, porque la escala baja según baja la nota.
-  comp.bandas[0].condicion = "Reúne 4 o más fuentes de tipos distintos";
-  comp.bandas[1].condicion = "Reúne 2 fuentes";
-  comp.bandas[2].condicion = "Reúne 1 fuente";
-  comp.bandas[3].condicion = "Escribe el texto sin consultar ninguna fuente";
+  const textos = ["Reúne 4 o más fuentes de tipos distintos", "Reúne 3 fuentes",
+                  "Reúne 2 fuentes", "Reúne 1 fuente",
+                  "Escribe el texto sin consultar ninguna fuente"];
+  comp.bandas.forEach((b, i) => { b.condicion = textos[i] ?? textos[textos.length - 1]; });
   const informe = validarPack(pack);
   assert(
     avisosDeRegla(informe, "continuidad_bandas").filter((a) => a.criterioId === c.id).length === 0,
@@ -408,8 +411,8 @@ caso("continuidad_bandas: control de falso positivo — un componente que cuenta
 
 caso("continuidad_bandas: control de falso positivo — una banda final sin recuento recoge lo que la escala no nombra", () => {
   const pack = clonarPack();
-  const { c, comp } = componenteDeFaltas(pack);
-  comp.bandas[3].condicion = "Comete faltas de forma sistemática en todo el texto";
+  const { c, ultima } = componenteDeFaltas(pack);
+  ultima.condicion = "Comete faltas de forma sistemática en todo el texto";
   const informe = validarPack(pack);
   assert(
     avisosDeRegla(informe, "continuidad_bandas").filter((a) => a.criterioId === c.id).length === 0,
@@ -421,7 +424,12 @@ caso("continuidad_bandas: control de falso positivo — una banda final sin recu
 caso("penalizacion_sin_tope: penalización sin tope declarado dispara error", () => {
   const pack = clonarPack();
   const c = criterio(pack, "lcl-b-coherencia-expo-3eso");
-  delete c.matriz_cuantitativa.penalizaciones[0].tope;
+  // La trampa se escribe aquí y no se toma prestada del pack: desde la v1.40 no
+  // queda ninguna penalización en el repositorio, y un caso que dependa de que
+  // exista alguna se rompe el día que la última desaparece.
+  c.matriz_cuantitativa.penalizaciones = [
+    { clave: "digresion", puntos: -0.5, por: "cada bloque ajeno al tema anunciado" },
+  ];
   const informe = validarPack(pack);
   assert(
     avisosDeRegla(informe, "penalizacion_sin_tope").some((a) => a.criterioId === c.id && a.mensaje.includes("no declara tope")),
@@ -432,7 +440,14 @@ caso("penalizacion_sin_tope: penalización sin tope declarado dispara error", ()
 caso("penalizacion_sin_tope: tope que pasa del 35% de la dimensión dispara error", () => {
   const pack = clonarPack();
   const c = criterio(pack, "lcl-b-coherencia-expo-3eso");
-  c.matriz_cuantitativa.penalizaciones[0].tope = -(c.matriz_cuantitativa.total * 0.5);
+  c.matriz_cuantitativa.penalizaciones = [
+    {
+      clave: "digresion",
+      puntos: -0.5,
+      por: "cada bloque ajeno al tema anunciado",
+      tope: -(c.matriz_cuantitativa.total * 0.5),
+    },
+  ];
   const informe = validarPack(pack);
   assert(
     avisosDeRegla(informe, "penalizacion_sin_tope").some((a) => a.criterioId === c.id && a.mensaje.includes("supera el 35%")),

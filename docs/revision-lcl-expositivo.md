@@ -51,9 +51,9 @@
 
 | Componente | Máx. | Bandas |
 |---|---|---|
-| Las tres partes del texto | 4 | **4** — Se distinguen introducción, desarrollo y cierre, y el cierre recoge la idea principal<br>**3** — Se distinguen las tres partes, pero el cierre repite la introducción sin recoger lo explicado<br>**2** — Se distinguen dos de las tres partes<br>**0** — El texto es un bloque único sin partes distinguibles |
-| Una idea por párrafo | 4 | **4** — Cada párrafo desarrolla una sola idea principal identificable<br>**3** — Un párrafo mezcla dos ideas; el resto, una cada uno<br>**2** — Dos o más párrafos mezclan ideas distintas<br>**0** — El texto no está dividido en párrafos |
-| Mantenerse en el tema | 2 | **2** — Toda la información responde al tema anunciado al principio<br>**1** — Incluye 1 dato que se aparta del tema<br>**0** — Incluye 2 o más datos ajenos al tema |
+| Las tres partes del texto | 4 | **4** — Se distinguen introducción, desarrollo y cierre, y el cierre recoge la idea principal<br>**3** — Se distinguen las tres partes, pero el cierre repite la introducción sin recoger lo explicado<br>**2** — Se distinguen dos de las tres partes<br>**1** — Se distingue una de las tres partes<br>**0** — El texto es un bloque único sin partes distinguibles |
+| Una idea por párrafo | 4 | **4** — Cada párrafo desarrolla una sola idea principal identificable<br>**3** — Un párrafo mezcla dos ideas; el resto, una cada uno<br>**2** — Dos o más párrafos mezclan ideas distintas<br>**1** — El texto se divide en párrafos que no responden a las ideas<br>**0** — El texto no está dividido en párrafos |
+| Mantenerse en el tema | 2 | **2** — Toda la información responde al tema anunciado al principio<br>**1.5** — Incluye 1 dato que se aparta del tema<br>**1** — Incluye 2 datos que se apartan del tema<br>**0.5** — Incluye 3 o 4 datos ajenos al tema<br>**0** — Incluye 5 o más datos ajenos al tema |
 
 ### Cohesión: conectores y puntuación  ·  20%  ·  bloque B
 
@@ -73,8 +73,8 @@
 | Componente | Máx. | Bandas |
 |---|---|---|
 | Variedad y uso de conectores | 4 | **4** — Emplea 3 o más tipos distintos: orden, adición y causa<br>**3** — Emplea 2 tipos distintos, uno de ellos de orden o de causa<br>**2** — Emplea conectores de adición y de orden, siempre los mismos<br>**1** — Enlaza con y, pero y entonces<br>**0** — Coloca las oraciones una detrás de otra sin enlace |
-| El punto separa las ideas | 4 | **4** — Separa con punto todos los enunciados y usa la coma en las enumeraciones<br>**3** — Separa con punto los enunciados, con 1 o 2 casos sin separar<br>**2** — Separa con punto la mayoría, pero agrupa 3 o más enunciados seguidos<br>**0** — Escribe el texto casi sin puntos |
-| No repetir la misma palabra | 2 | **2** — Sustituye por sinónimo o pronombre la palabra ya usada en la oración anterior<br>**1** — Sustituye alguna repetición, pero deja 2 o 3 sin sustituir<br>**0** — Repite la misma palabra en oraciones seguidas a lo largo del texto |
+| El punto separa las ideas | 4 | **4** — Separa con punto todos los enunciados y usa la coma en las enumeraciones<br>**3** — Separa con punto los enunciados, con 1 o 2 casos sin separar<br>**2** — Separa con punto la mayoría, pero agrupa 3 o más enunciados seguidos<br>**1** — Separa con punto el final de cada párrafo y deja el interior sin puntos<br>**0** — Escribe el texto casi sin puntos |
+| No repetir la misma palabra | 2 | **2** — Sustituye por sinónimo o pronombre la palabra ya usada en la oración anterior<br>**1.5** — Sustituye la palabra ya usada en la oración anterior y deja 1 repetición sin sustituir<br>**1** — Sustituye alguna repetición, pero deja 2 o 3 sin sustituir<br>**0.5** — Sustituye la palabra repetida en un solo punto del texto<br>**0** — Repite la misma palabra en oraciones seguidas a lo largo del texto |
 
 ### Corrección normativa y propiedad léxica  ·  15%  ·  bloque D  ·  🔒 obligatorio
 
@@ -93,9 +93,9 @@
 
 | Componente | Máx. | Bandas |
 |---|---|---|
-| Ortografía y acentuación | 4 | **4** — Hasta 2 faltas en todo el texto<br>**3** — De 3 a 5 faltas<br>**2** — De 6 a 9 faltas<br>**0** — 10 o más faltas |
-| Concordancia | 3 | **3** — Sin errores de concordancia de género, número o persona<br>**2** — 1 o 2 errores de concordancia<br>**1** — 3 o 4 errores de concordancia<br>**0** — 5 o más errores de concordancia |
-| Precisión del vocabulario | 3 | **3** — Emplea palabras propias del tema en lugar de términos generales<br>**2** — Emplea 1 o 2 términos generales (cosa, tema, hacer) con sustituto evidente<br>**1** — Emplea 3 o más términos generales<br>**0** — El texto se sostiene sobre palabras comodín |
+| Ortografía y acentuación | 4 | **4** — Hasta 2 faltas en todo el texto<br>**3** — De 3 a 5 faltas<br>**2** — De 6 a 8 faltas<br>**1** — De 9 a 12 faltas<br>**0** — 13 o más faltas |
+| Concordancia | 2 | **2** — Sin errores de concordancia de género, número o persona<br>**1.5** — Hasta 1 error de concordancia<br>**1** — 2 o 3 errores de concordancia<br>**0.5** — De 4 a 5 errores de concordancia<br>**0** — 6 o más errores de concordancia |
+| Precisión del vocabulario | 4 | **4** — Emplea palabras propias del tema en lugar de términos generales<br>**3** — Emplea 1 o 2 términos generales (cosa, tema, hacer) con sustituto evidente<br>**2** — Emplea 3 o más términos generales<br>**1** — Emplea términos generales y alguna palabra propia del tema<br>**0** — El texto se sostiene sobre palabras comodín |
 
 ### Planificación y revisión del propio texto  ·  10%  ·  bloque D
 
@@ -114,9 +114,9 @@
 
 | Componente | Máx. | Bandas |
 |---|---|---|
-| Hay planificación previa | 4 | **4** — Entrega un esquema previo con las ideas principales<br>**2** — Entrega notas sueltas previas, sin organizar<br>**0** — No hay rastro de trabajo previo al texto |
-| Hay revisión | 4 | **4** — El borrador muestra 2 o más correcciones sobre el propio texto<br>**2** — El borrador muestra 1 corrección<br>**0** — Entrega la primera versión sin marcas de revisión |
-| Explica algún cambio | 2 | **2** — Anota por qué ha cambiado al menos una palabra o frase<br>**0** — No explica ningún cambio |
+| Hay planificación previa | 4 | **4** — Entrega un esquema previo con las ideas principales<br>**3** — Entrega un esquema previo con las ideas sueltas, sin distinguir la principal<br>**2** — Entrega notas sueltas previas, sin organizar<br>**1** — Subraya las ideas en el material de partida, sin pasarlas a un esquema<br>**0** — No hay rastro de trabajo previo al texto |
+| Hay revisión | 4 | **4** — El borrador muestra 2 o más correcciones sobre el propio texto<br>**3** — El borrador muestra 2 o más correcciones de ortografía, ninguna sobre lo que dice el texto<br>**2** — El borrador muestra 1 corrección<br>**1** — El borrador muestra una marca de lectura sin corrección terminada<br>**0** — Entrega la primera versión sin marcas de revisión |
+| Explica algún cambio | 2 | **2** — Anota por qué ha cambiado al menos una palabra o frase<br>**1.5** — Anota el motivo de un cambio con una palabra suelta: repetido, largo, no se entiende<br>**1** — Anota el motivo de un cambio que no ha llegado a hacer en el texto<br>**0.5** — Señala el cambio en el borrador, sin anotar el motivo<br>**0** — No explica ningún cambio |
 
 ### Tratamiento de la información y uso de fuentes  ·  10%  ·  bloque B
 
@@ -135,9 +135,9 @@
 
 | Componente | Máx. | Bandas |
 |---|---|---|
-| Número de fuentes | 4 | **4** — Emplea las 2 fuentes indicadas y compara algún dato entre ellas<br>**3** — Emplea las 2 fuentes indicadas<br>**2** — Emplea 1 fuente<br>**0** — No se aprecia consulta de ninguna fuente |
-| Anota de dónde sale cada dato | 3 | **3** — Anota la procedencia de cada dato tomado de una fuente<br>**2** — Anota las fuentes al final, sin ligar cada dato a la suya<br>**0** — No indica ninguna procedencia |
-| Lo cuenta con sus palabras | 3 | **3** — Explica la información con palabras propias en todo el texto<br>**2** — Conserva alguna frase copiada, pero la mayor parte está reformulada<br>**0** — Copia fragmentos de la fuente sin señalarlos |
+| Número de fuentes | 4 | **4** — Emplea las 2 fuentes indicadas y compara algún dato entre ellas<br>**3** — Emplea las 2 fuentes indicadas<br>**2** — Emplea 1 fuente<br>**1** — Nombra una fuente sin tomar de ella ningún dato<br>**0** — No se aprecia consulta de ninguna fuente |
+| Anota de dónde sale cada dato | 2 | **2** — Anota la procedencia de cada dato tomado de una fuente<br>**1.5** — Anota la procedencia de la mayoría de los datos y deja alguno sin fuente<br>**1** — Anota las fuentes al final, sin ligar cada dato a la suya<br>**0.5** — Nombra una fuente en el texto, sin ligarla a ningún dato<br>**0** — No indica ninguna procedencia |
+| Lo cuenta con sus palabras | 4 | **4** — Explica la información con palabras propias en todo el texto<br>**3** — Conserva 1 frase copiada y reformula el resto<br>**2** — Conserva 2 o 3 frases copiadas y reformula el resto<br>**1** — Conserva de 4 a 5 frases copiadas y reformula el resto<br>**0** — Copia fragmentos de la fuente sin señalarlos |
 
 ---
 
@@ -184,9 +184,9 @@
 
 | Componente | Máx. | Bandas |
 |---|---|---|
-| Estructura en tres partes | 4 | **4** — Se distinguen introducción, desarrollo y cierre, y el cierre recupera la idea principal<br>**3** — Se distinguen las tres partes, pero el cierre repite la introducción sin recuperar lo explicado<br>**2** — Se distinguen dos de las tres partes<br>**0** — El texto no tiene partes reconocibles |
-| Una idea por párrafo | 4 | **4** — Cada párrafo del desarrollo trata una sola idea, y el tema se mantiene desde la introducción<br>**3** — Un párrafo mezcla dos ideas distintas<br>**2** — Dos o más párrafos mezclan ideas distintas<br>**0** — El desarrollo no está dividido en párrafos |
-| Mantenerse en el tema | 2 | **2** — Toda la información responde al tema anunciado en la introducción<br>**1** — Incluye 1 dato que se aparta del tema<br>**0** — Incluye 2 o más datos ajenos al tema |
+| Estructura en tres partes | 4 | **4** — Se distinguen introducción, desarrollo y cierre, y el cierre recupera la idea principal<br>**3** — Se distinguen las tres partes, pero el cierre repite la introducción sin recuperar lo explicado<br>**2** — Se distinguen dos de las tres partes<br>**1** — Se distingue una de las tres partes<br>**0** — El texto no tiene partes reconocibles |
+| Una idea por párrafo | 4 | **4** — Cada párrafo del desarrollo trata una sola idea, y el tema se mantiene desde la introducción<br>**3** — Un párrafo mezcla dos ideas distintas<br>**2** — Dos o más párrafos mezclan ideas distintas<br>**1** — El desarrollo se divide en párrafos que no responden a las ideas<br>**0** — El desarrollo no está dividido en párrafos |
+| Mantenerse en el tema | 2 | **2** — Toda la información responde al tema anunciado en la introducción<br>**1.5** — Incluye 1 dato que se aparta del tema<br>**1** — Incluye 2 datos que se apartan del tema<br>**0.5** — Incluye 3 o 4 datos ajenos al tema<br>**0** — Incluye 5 o más datos ajenos al tema |
 
 ### Cohesión: conectores y puntuación  ·  20%  ·  bloque B
 
@@ -206,8 +206,8 @@
 | Componente | Máx. | Bandas |
 |---|---|---|
 | Variedad y uso de conectores | 4 | **4** — Emplea 3 tipos distintos: orden, adición y causa<br>**3** — Emplea 2 tipos distintos, uno de ellos de orden o de causa<br>**2** — Emplea conectores de adición y de orden, siempre los mismos<br>**1** — Enlaza con y, pero y entonces<br>**0** — Coloca las oraciones una detrás de otra sin enlace |
-| El punto separa las ideas | 3 | **3** — Separa con punto todos los enunciados y usa la coma para delimitar incisos<br>**2** — Separa con punto los enunciados, con 1 o 2 casos sin separar<br>**1** — Separa con punto la mayoría, pero agrupa 3 o más enunciados seguidos<br>**0** — Escribe el texto casi sin puntos |
-| No repetir la misma palabra | 3 | **3** — Sustituye por sinónimo, hiperónimo o pronombre la palabra ya usada en el párrafo anterior<br>**2** — Sustituye alguna repetición, pero deja 2 o 3 sin sustituir<br>**1** — Repite la misma palabra en párrafos seguidos, teniendo sustituto evidente<br>**0** — Repite el mismo sustantivo a lo largo de todo el texto |
+| El punto separa las ideas | 2 | **2** — Separa con punto todos los enunciados y usa la coma para delimitar incisos<br>**1.5** — Separa con punto todos los enunciados y deja sin comas algún inciso<br>**1** — Separa con punto los enunciados, con 1 o 2 casos sin separar<br>**0.5** — Separa con punto la mayoría, pero agrupa 3 o más enunciados seguidos<br>**0** — Escribe el texto casi sin puntos |
+| No repetir la misma palabra | 4 | **4** — Sustituye por sinónimo, hiperónimo o pronombre la palabra ya usada en el párrafo anterior<br>**3** — Sustituye alguna repetición, pero deja 2 o 3 sin sustituir<br>**2** — Repite la misma palabra en párrafos seguidos, teniendo sustituto evidente<br>**1** — Sustituye la palabra repetida en 1 punto del texto<br>**0** — Repite el mismo sustantivo a lo largo de todo el texto |
 
 ### Corrección normativa y propiedad léxica  ·  15%  ·  bloque D  ·  🔒 obligatorio
 
@@ -226,9 +226,9 @@
 
 | Componente | Máx. | Bandas |
 |---|---|---|
-| Ortografía y acentuación | 4 | **4** — Hasta 2 faltas en todo el texto<br>**3** — De 3 a 4 faltas<br>**2** — De 5 a 7 faltas<br>**0** — 8 o más faltas |
-| Concordancia | 3 | **3** — Sin errores de concordancia de género, número o persona<br>**2** — Hasta 1 error de concordancia<br>**1** — 2 o 3 errores de concordancia<br>**0** — 4 o más errores de concordancia |
-| Precisión del vocabulario | 3 | **3** — Emplea palabras propias del tema en lugar de términos generales<br>**2** — Emplea 1 término general (cosa, tema, hacer) con sustituto evidente<br>**1** — Emplea 2 o 3 términos generales<br>**0** — El texto se sostiene sobre palabras comodín |
+| Ortografía y acentuación | 4 | **4** — Hasta 2 faltas en todo el texto<br>**3** — De 3 a 6 faltas<br>**2** — De 7 a 9 faltas<br>**1** — De 10 a 14 faltas<br>**0** — 15 o más faltas |
+| Concordancia | 2 | **2** — Sin errores de concordancia de género, número o persona<br>**1.5** — Hasta 1 error de concordancia<br>**1** — 2 o 3 errores de concordancia<br>**0.5** — De 4 a 7 errores de concordancia<br>**0** — 8 o más errores de concordancia |
+| Precisión del vocabulario | 4 | **4** — Emplea palabras propias del tema en lugar de términos generales<br>**3** — Emplea 1 término general (cosa, tema, hacer) con sustituto evidente<br>**2** — Emplea 2 o 3 términos generales<br>**1** — Emplea términos generales y alguna palabra propia del tema<br>**0** — El texto se sostiene sobre palabras comodín |
 
 ### Planificación y revisión del propio texto  ·  10%  ·  bloque B
 
@@ -247,9 +247,9 @@
 
 | Componente | Máx. | Bandas |
 |---|---|---|
-| Hay planificación previa | 3 | **3** — Entrega un esquema previo propio con las ideas principales organizadas<br>**2** — Entrega notas sueltas previas, sin organizar<br>**0** — No hay rastro de trabajo previo al texto |
-| Hay revisión | 4 | **4** — El borrador muestra 2 o más correcciones sobre puntuación o conexión entre ideas<br>**3** — El borrador muestra 2 o más correcciones de ortografía o léxico<br>**2** — El borrador muestra 1 corrección<br>**0** — Entrega la primera versión sin marcas de revisión |
-| Explica alguna mejora | 3 | **3** — Explica en el borrador qué mejora aporta al menos un cambio<br>**1** — Anota un cambio sin explicar qué mejora aporta<br>**0** — No explica ningún cambio |
+| Hay planificación previa | 4 | **4** — Entrega un esquema previo propio con las ideas principales organizadas<br>**3** — Entrega un esquema previo que solo lista las ideas, sin organizarlas<br>**2** — Entrega notas sueltas previas, sin organizar<br>**1** — Entrega el esquema del modelo de clase, sin ideas propias<br>**0** — No hay rastro de trabajo previo al texto |
+| Hay revisión | 4 | **4** — El borrador muestra 2 o más correcciones sobre puntuación o conexión entre ideas<br>**3** — El borrador muestra 2 o más correcciones de ortografía o léxico<br>**2** — El borrador muestra 1 corrección<br>**1** — El borrador muestra marcas de lectura sin corrección terminada<br>**0** — Entrega la primera versión sin marcas de revisión |
+| Explica alguna mejora | 2 | **2** — Explica en el borrador qué mejora aporta al menos un cambio<br>**1.5** — Explica qué mejora aporta el conjunto de los cambios, sin ligarla a ninguno en concreto<br>**1** — Anota un cambio sin explicar qué mejora aporta<br>**0.5** — Marca en el borrador un punto para revisar y lo deja sin cambiar<br>**0** — No explica ningún cambio |
 
 ### Tratamiento de la información y uso de fuentes  ·  10%  ·  bloque B
 
@@ -268,9 +268,9 @@
 
 | Componente | Máx. | Bandas |
 |---|---|---|
-| Número de fuentes | 4 | **4** — Combina la información de 2 o más fuentes indicadas en el mismo trabajo<br>**3** — Emplea las 2 fuentes indicadas, cada una en una parte distinta del trabajo<br>**2** — Emplea 1 fuente<br>**0** — No se aprecia consulta de ninguna fuente |
-| Selección de la información | 3 | **3** — Incluye solo la información pertinente para el tema del trabajo<br>**2** — Incluye información de la fuente, con 1 o 2 datos que no responden al tema<br>**0** — Traslada la fuente casi completa, sin criterio de selección |
-| Lo cuenta con sus palabras | 3 | **3** — Explica la información con palabras propias en todo el trabajo<br>**2** — Conserva alguna frase copiada, pero la mayor parte está reformulada<br>**0** — Copia fragmentos de la fuente sin señalarlos |
+| Número de fuentes | 4 | **4** — Combina la información de 2 o más fuentes indicadas en el mismo trabajo<br>**3** — Emplea las 2 fuentes indicadas, cada una en una parte distinta del trabajo<br>**2** — Emplea 1 fuente<br>**1** — Nombra una fuente sin tomar de ella ningún dato<br>**0** — No se aprecia consulta de ninguna fuente |
+| Selección de la información | 2 | **2** — Incluye solo la información pertinente para el tema del trabajo<br>**1.5** — Incluye la información pertinente y añade algún dato que el tema no pide<br>**1** — Incluye información de la fuente, con 1 o 2 datos que no responden al tema<br>**0.5** — Selecciona un bloque de la fuente y lo traslada entero al trabajo<br>**0** — Traslada la fuente casi completa, sin criterio de selección |
+| Lo cuenta con sus palabras | 4 | **4** — Explica la información con palabras propias en todo el trabajo<br>**3** — Conserva 1 frase copiada y reformula el resto<br>**2** — Conserva 2 o 3 frases copiadas y reformula el resto<br>**1** — Conserva de 4 a 5 frases copiadas y reformula el resto<br>**0** — Copia fragmentos de la fuente sin señalarlos |
 
 ---
 
@@ -317,11 +317,9 @@
 
 | Componente | Máx. | Bandas |
 |---|---|---|
-| Estructura y función de cada parte | 3 | **3** — Introducción que delimita el tema, desarrollo por párrafos y conclusión que sintetiza sin añadir información nueva<br>**2** — Las tres partes están, pero la conclusión introduce información no tratada antes<br>**1** — Falta una de las tres partes<br>**0** — No hay estructura reconocible |
-| Una idea por párrafo | 3 | **3** — Todos los párrafos desarrollan una sola idea principal<br>**2** — Un párrafo mezcla dos ideas<br>**1** — Dos párrafos mezclan ideas distintas<br>**0** — Los párrafos agrupan ideas sin criterio |
-| Progresión temática | 4 | **4** — Cada párrafo retoma un elemento del anterior y avanza de lo general a lo particular<br>**3** — El orden es seguible y avanza, pero los párrafos no se encadenan entre sí<br>**2** — El orden de los párrafos podría alterarse sin que el texto cambie<br>**0** — La información se presenta sin orden reconocible |
-
-*Penalización:* -0.5 por cada bloque de información ajeno al tema anunciado (tope -1.5)
+| Estructura y función de cada parte | 4 | **4** — Introducción que delimita el tema, desarrollo por párrafos y conclusión que sintetiza sin añadir información nueva<br>**3** — Las tres partes están, pero la conclusión introduce información no tratada antes<br>**2** — Falta una de las tres partes<br>**1** — Faltan dos de las tres partes<br>**0** — No hay estructura reconocible |
+| Una idea por párrafo | 2 | **2** — Todos los párrafos desarrollan una sola idea principal<br>**1.5** — Una idea principal se reparte entre dos párrafos seguidos<br>**1** — Un párrafo mezcla dos ideas<br>**0.5** — Dos párrafos mezclan ideas distintas<br>**0** — Los párrafos agrupan ideas sin criterio |
+| Progresión temática | 4 | **4** — Cada párrafo retoma un elemento del anterior y avanza de lo general a lo particular<br>**3** — El orden es seguible y avanza, pero los párrafos no se encadenan entre sí<br>**2** — El orden de los párrafos podría alterarse sin que el texto cambie, o un bloque desarrolla información ajena al tema anunciado<br>**1** — Dos párrafos seguidos repiten el mismo contenido sin avanzar<br>**0** — La información se presenta sin orden reconocible |
 
 ### Cohesión: conectores, puntuación y referencia  ·  20%  ·  bloque B
 
@@ -341,8 +339,8 @@
 | Componente | Máx. | Bandas |
 |---|---|---|
 | Variedad y uso de conectores | 4 | **4** — Emplea 4 o más tipos distintos de marcador: al menos ordenación, causa, consecuencia y ejemplificación o reformulación<br>**3** — Emplea 3 tipos distintos de marcador<br>**2** — Emplea 2 tipos, uno de ellos más allá de la adición<br>**1** — Se limita a conectores de adición (además, también) o repite el mismo marcador<br>**0** — Yuxtapone los párrafos sin marcador que los enlace |
-| Puntuación al servicio de la estructura | 3 | **3** — Separa los bloques con punto y aparte y delimita los incisos con coma, sin errores que obliguen a releer<br>**2** — Puntuación correcta con 1 o 2 errores que no impiden seguir el texto<br>**1** — Puntuación presente pero con 3 o más errores, o párrafos que mezclan bloques distintos<br>**0** — Texto sin puntuación o con uso errático en más de la mitad del escrito |
-| Referencia y sustitución léxica | 3 | **3** — Sustituye las repeticiones con sinónimos, hiperónimos o pronombres, y todos los referentes son recuperables<br>**2** — Sustituye la mayoría de las repeticiones; 1 referente exige releer para identificarlo<br>**1** — Repite la palabra clave 3 o más veces teniendo sustituto evidente en el contexto<br>**0** — Repite el mismo sustantivo en oraciones consecutivas a lo largo del texto |
+| Puntuación al servicio de la estructura | 2 | **2** — Separa los bloques con punto y aparte y delimita los incisos con coma, sin errores que obliguen a releer<br>**1.5** — Separa los bloques con punto y aparte y deja sin comas algún inciso<br>**1** — Puntuación correcta con 1 o 2 errores que no impiden seguir el texto<br>**0.5** — Puntuación presente pero con 3 o más errores, o párrafos que mezclan bloques distintos<br>**0** — Texto sin puntuación o con uso errático en más de la mitad del escrito |
+| Referencia y sustitución léxica | 4 | **4** — Sustituye las repeticiones con sinónimos, hiperónimos o pronombres, y todos los referentes son recuperables<br>**3** — Sustituye la mayoría de las repeticiones; 1 referente exige releer para identificarlo<br>**2** — Repite la palabra clave 3 o más veces teniendo sustituto evidente en el contexto<br>**1** — Sustituye la palabra clave en 1 punto y la repite en el resto<br>**0** — Repite el mismo sustantivo en oraciones consecutivas a lo largo del texto |
 
 ### Corrección normativa y propiedad léxica  ·  15%  ·  bloque D  ·  🔒 obligatorio
 
@@ -361,9 +359,9 @@
 
 | Componente | Máx. | Bandas |
 |---|---|---|
-| Ortografía, acentuación y puntuación | 4 | **4** — Hasta 2 faltas en todo el texto<br>**3** — De 3 a 5 faltas<br>**2** — De 6 a 9 faltas<br>**0** — 10 o más faltas |
-| Corrección gramatical | 3 | **3** — Sin errores de concordancia ni de construcción de la oración<br>**2** — 1 o 2 errores que no impiden la comprensión<br>**1** — 3 o más errores, o alguna oración que hay que releer para reconstruir<br>**0** — Errores sistemáticos que obligan a reconstruir el sentido |
-| Precisión léxica y densidad | 3 | **3** — Selecciona el término preciso y emplea la subordinación para condensar información<br>**2** — Selecciona términos precisos, pero encadena oraciones simples donde cabría una subordinada<br>**1** — Recurre a términos de significado general con sustituto evidente<br>**0** — El texto se sostiene sobre palabras comodín |
+| Ortografía, acentuación y puntuación | 4 | **4** — Hasta 3 faltas en todo el texto<br>**3** — De 4 a 7 faltas<br>**2** — De 8 a 11 faltas<br>**1** — De 12 a 18 faltas<br>**0** — 19 o más faltas |
+| Corrección gramatical | 2 | **2** — Sin errores de concordancia ni de construcción de la oración<br>**1.5** — 1 o 2 errores que no impiden la comprensión<br>**1** — De 3 a 5 errores, o alguna oración que hay que releer para reconstruir<br>**0.5** — De 6 a 12 errores, y la lectura se detiene para rehacer la oración<br>**0** — Errores sistemáticos que obligan a reconstruir el sentido |
+| Precisión léxica y densidad | 4 | **4** — Selecciona el término preciso y emplea la subordinación para condensar información<br>**3** — Selecciona términos precisos, pero encadena oraciones simples donde cabría una subordinada<br>**2** — Recurre a términos de significado general con sustituto evidente<br>**1** — Emplea términos de significado general y alguno preciso<br>**0** — El texto se sostiene sobre palabras comodín |
 
 ### Planificación y revisión del propio texto  ·  10%  ·  bloque D
 
@@ -382,9 +380,9 @@
 
 | Componente | Máx. | Bandas |
 |---|---|---|
-| Planificación propia | 3 | **3** — Entrega un esquema previo propio con la estructura del texto<br>**2** — Entrega un esquema previo que solo lista ideas, sin estructura<br>**0** — No hay rastro de trabajo previo al texto |
-| Alcance de la revisión | 4 | **4** — Corrige en el borrador aspectos de puntuación y de conexión entre párrafos, no solo faltas<br>**3** — Corrige faltas de ortografía y léxico<br>**2** — Corrige 1 o 2 detalles aislados<br>**0** — Entrega la primera versión sin marcas de revisión |
-| Justificación con metalenguaje | 3 | **3** — Justifica 2 o más cambios usando el metalenguaje del nivel (conector, referente, subordinada)<br>**2** — Justifica 1 cambio con metalenguaje, o varios sin él<br>**0** — No justifica ningún cambio |
+| Planificación propia | 4 | **4** — Entrega un esquema previo propio con la estructura del texto<br>**3** — Entrega un esquema previo que solo lista ideas, sin estructura<br>**2** — Entrega notas sueltas previas, sin esquema<br>**1** — Entrega el esquema del modelo de clase, sin ideas propias<br>**0** — No hay rastro de trabajo previo al texto |
+| Alcance de la revisión | 4 | **4** — Corrige en el borrador aspectos de puntuación y de conexión entre párrafos, no solo faltas<br>**3** — Corrige faltas de ortografía y léxico<br>**2** — Corrige 1 o 2 detalles aislados<br>**1** — Marca en el borrador un punto para corregir y lo deja sin corregir<br>**0** — Entrega la primera versión sin marcas de revisión |
+| Justificación con metalenguaje | 2 | **2** — Justifica 2 o más cambios usando el metalenguaje del nivel (conector, referente, subordinada)<br>**1.5** — Justifica 2 o más cambios y emplea el metalenguaje del nivel en uno de ellos<br>**1** — Justifica 1 cambio con metalenguaje, o varios sin él<br>**0.5** — Anota en el borrador los cambios hechos, sin decir qué mejoran<br>**0** — No justifica ningún cambio |
 
 ### Tratamiento de la información y uso de fuentes  ·  10%  ·  bloque B
 
@@ -403,9 +401,9 @@
 
 | Componente | Máx. | Bandas |
 |---|---|---|
-| Número de fuentes contrastadas | 4 | **4** — Emplea 3 o más fuentes distintas y coteja entre ellas al menos un dato<br>**3** — Emplea 2 fuentes distintas y coteja entre ellas al menos un dato<br>**2** — Emplea 2 fuentes, pero cada una sostiene una parte distinta del texto sin cotejo<br>**0** — Emplea una sola fuente |
-| Atribución de los datos | 3 | **3** — Indica el origen de cada dato tomado de una fuente<br>**2** — Indica las fuentes al final, sin ligar cada dato a la suya<br>**1** — Menciona alguna fuente de pasada, sin sistema<br>**0** — No indica de dónde procede ningún dato |
-| Reformulación frente a copia | 3 | **3** — Explica la información con palabras propias en todo el texto<br>**2** — Reformula la mayor parte; conserva alguna secuencia literal breve entrecomillada<br>**0** — Traslada pasajes literales sin comillas ni marca de cita |
+| Número de fuentes contrastadas | 4 | **4** — Emplea 3 o más fuentes distintas y coteja entre ellas al menos un dato<br>**3** — Emplea 2 fuentes distintas y coteja entre ellas al menos un dato<br>**2** — Emplea 2 fuentes, pero cada una sostiene una parte distinta del texto sin cotejo<br>**1** — Emplea una fuente y nombra otra sin tomar de ella ningún dato<br>**0** — Emplea una sola fuente |
+| Atribución de los datos | 4 | **4** — Indica el origen de cada dato tomado de una fuente<br>**3** — Indica las fuentes al final, sin ligar cada dato a la suya<br>**2** — Menciona alguna fuente de pasada, sin sistema<br>**1** — Nombra una fuente una sola vez, al margen de los datos<br>**0** — No indica de dónde procede ningún dato |
+| Reformulación frente a copia | 2 | **2** — Explica la información con palabras propias en todo el texto<br>**1.5** — Explica la información con palabras propias y conserva el orden de la fuente en algún párrafo<br>**1** — Reformula la mayor parte; conserva alguna secuencia literal breve entrecomillada<br>**0.5** — Reformula el comienzo de cada párrafo y copia el resto de la fuente<br>**0** — Traslada pasajes literales sin comillas ni marca de cita |
 
 ---
 
@@ -452,11 +450,9 @@
 
 | Componente | Máx. | Bandas |
 |---|---|---|
-| Estructura y función de cada parte | 3 | **3** — Introducción que delimita el tema, desarrollo por aspectos y conclusión que sintetiza sin añadir información nueva<br>**2** — Las tres partes están, pero la conclusión introduce información no tratada antes<br>**1** — Falta una de las tres partes<br>**0** — No hay estructura reconocible |
-| Progresión y encadenamiento entre párrafos | 4 | **4** — Cada párrafo retoma un elemento del anterior y avanza de lo general a lo particular<br>**3** — El orden es seguible y avanza, pero los párrafos no se encadenan entre sí<br>**2** — El orden de los párrafos podría alterarse sin que el texto cambie<br>**0** — La información se presenta sin orden reconocible |
-| Matización del planteamiento | 3 | **3** — Incorpora al menos un matiz o una excepción pertinente para comprender el tema, sin perder el propósito expositivo<br>**1** — Apunta un matiz, pero resulta ajeno al tema o rompe el propósito expositivo<br>**0** — Presenta el tema de forma uniforme, sin matices ni excepciones |
-
-*Penalización:* -0.5 por cada bloque de información ajeno al tema anunciado (tope -1.5)
+| Estructura y función de cada parte | 4 | **4** — Introducción que delimita el tema, desarrollo por aspectos y conclusión que sintetiza sin añadir información nueva<br>**3** — Las tres partes están, pero la conclusión introduce información no tratada antes<br>**2** — Falta una de las tres partes<br>**1** — Faltan dos de las tres partes<br>**0** — No hay estructura reconocible |
+| Progresión y encadenamiento entre párrafos | 4 | **4** — Cada párrafo retoma un elemento del anterior y avanza de lo general a lo particular<br>**3** — El orden es seguible y avanza, pero los párrafos no se encadenan entre sí<br>**2** — El orden de los párrafos podría alterarse sin que el texto cambie, o un bloque desarrolla información ajena al tema anunciado<br>**1** — Dos párrafos seguidos repiten el mismo contenido sin avanzar<br>**0** — La información se presenta sin orden reconocible |
+| Matización del planteamiento | 2 | **2** — Incorpora al menos un matiz o una excepción pertinente para comprender el tema, sin perder el propósito expositivo<br>**1.5** — Incorpora un matiz pertinente y lo enuncia sin ligarlo al punto del tema que matiza<br>**1** — Apunta un matiz, pero resulta ajeno al tema o rompe el propósito expositivo<br>**0.5** — Anuncia que el tema admite excepciones, sin llegar a nombrar ninguna<br>**0** — Presenta el tema de forma uniforme, sin matices ni excepciones |
 
 ### Cohesión: conectores, referencia y recursos explicativos  ·  20%  ·  bloque B
 
@@ -476,8 +472,8 @@
 | Componente | Máx. | Bandas |
 |---|---|---|
 | Variedad y matización de los conectores | 4 | **4** — Emplea 4 o más tipos distintos de conector, incluyendo alguno de matización o contraste (aunque, no obstante, a pesar de)<br>**3** — Emplea 3 tipos distintos de conector, sin ninguno de matización o contraste<br>**2** — Emplea 2 tipos distintos de conector<br>**1** — Se limita a conectores de adición (además, también)<br>**0** — Yuxtapone los párrafos sin conector que los enlace |
-| Procedimientos explicativos | 3 | **3** — Incorpora 2 o más definiciones o precisiones mediante aposición u oración de relativo, sin interrumpir la exposición<br>**2** — Incorpora 1 definición mediante aposición u oración de relativo<br>**1** — Explica los términos del tema en una oración aparte, sin integrarlos mediante aposición ni relativa<br>**0** — No explica ningún término del tema |
-| Referencia y sustitución léxica | 3 | **3** — Sustituye las repeticiones mediante sinónimo, nominalización o hiperónimo abstracto, y todos los referentes son recuperables<br>**2** — Sustituye la mayoría de las repeticiones; 1 referente exige releer para identificarlo<br>**1** — Repite la palabra clave 3 o más veces teniendo sustituto evidente<br>**0** — Repite el mismo sustantivo en oraciones consecutivas a lo largo del texto |
+| Procedimientos explicativos | 4 | **4** — Incorpora 2 o más definiciones o precisiones mediante aposición u oración de relativo, sin interrumpir la exposición<br>**3** — Incorpora 1 definición mediante aposición u oración de relativo<br>**2** — Explica los términos del tema en una oración aparte, sin integrarlos mediante aposición ni relativa<br>**1** — Explica 1 término del tema con un sinónimo del habla común<br>**0** — No explica ningún término del tema |
+| Referencia y sustitución léxica | 2 | **2** — Sustituye las repeticiones mediante sinónimo, nominalización o hiperónimo abstracto, y todos los referentes son recuperables<br>**1.5** — Sustituye las repeticiones mediante sinónimo o pronombre, sin recurrir a la nominalización ni al hiperónimo, y todos los referentes son recuperables<br>**1** — Sustituye la mayoría de las repeticiones; 1 referente exige releer para identificarlo<br>**0.5** — Repite la palabra clave 3 o más veces teniendo sustituto evidente<br>**0** — Repite el mismo sustantivo en oraciones consecutivas a lo largo del texto |
 
 ### Corrección normativa y propiedad léxica  ·  15%  ·  bloque D  ·  🔒 obligatorio
 
@@ -496,9 +492,9 @@
 
 | Componente | Máx. | Bandas |
 |---|---|---|
-| Ortografía, acentuación y puntuación | 4 | **4** — Hasta 2 faltas en todo el texto<br>**3** — De 3 a 5 faltas<br>**2** — De 6 a 9 faltas<br>**0** — 10 o más faltas |
-| Corrección gramatical y correlación verbal | 3 | **3** — Sin errores de concordancia, de construcción de la oración ni de correlación temporal entre las formas verbales<br>**2** — 1 o 2 errores de concordancia o de correlación verbal que no impiden la comprensión<br>**1** — 3 o más errores, o alguna oración que hay que releer para reconstruir<br>**0** — Errores sistemáticos que obligan a reconstruir el sentido |
-| Precisión léxica y densidad | 3 | **3** — Selecciona el término preciso y emplea la subordinación para condensar información<br>**2** — Selecciona términos precisos, pero encadena oraciones simples donde cabría una subordinada<br>**1** — Recurre a términos de significado general con sustituto evidente<br>**0** — El texto se sostiene sobre palabras comodín |
+| Ortografía, acentuación y puntuación | 4 | **4** — Hasta 3 faltas en todo el texto<br>**3** — De 4 a 7 faltas<br>**2** — De 8 a 12 faltas<br>**1** — De 13 a 18 faltas<br>**0** — 19 o más faltas |
+| Corrección gramatical y correlación verbal | 2 | **2** — Sin errores de concordancia, de construcción de la oración ni de correlación temporal entre las formas verbales<br>**1.5** — 1 o 2 errores de concordancia o de correlación verbal que no impiden la comprensión<br>**1** — De 3 a 5 errores, o alguna oración que hay que releer para reconstruir<br>**0.5** — De 6 a 12 errores, y la lectura se detiene para rehacer la oración<br>**0** — Errores sistemáticos que obligan a reconstruir el sentido |
+| Precisión léxica y densidad | 4 | **4** — Selecciona el término preciso y emplea la subordinación para condensar información<br>**3** — Selecciona términos precisos, pero encadena oraciones simples donde cabría una subordinada<br>**2** — Recurre a términos de significado general con sustituto evidente<br>**1** — Emplea términos de significado general y alguno preciso<br>**0** — El texto se sostiene sobre palabras comodín |
 
 ### Planificación y revisión del propio texto  ·  10%  ·  bloque D
 
@@ -517,9 +513,9 @@
 
 | Componente | Máx. | Bandas |
 |---|---|---|
-| Planificación propia | 3 | **3** — Entrega un esquema previo propio con la estructura del texto<br>**2** — Entrega un esquema previo que solo lista ideas, sin estructura<br>**0** — No hay rastro de trabajo previo al texto |
-| Alcance de la revisión | 4 | **4** — Corrige en el borrador un pasaje que dificultaba la comprensión del lector, además de aspectos de puntuación o conexión<br>**3** — Corrige aspectos de puntuación y de conexión entre párrafos, no solo faltas<br>**2** — Corrige faltas de ortografía y léxico<br>**0** — Entrega la primera versión sin marcas de revisión |
-| Justificación con metalenguaje | 3 | **3** — Justifica 2 o más cambios con el metalenguaje del nivel, y vincula al menos uno a un problema de comprensión detectado<br>**2** — Justifica 1 cambio con metalenguaje, o varios sin vincularlos a ningún problema de comprensión<br>**0** — No justifica ningún cambio |
+| Planificación propia | 4 | **4** — Entrega un esquema previo propio con la estructura del texto<br>**3** — Entrega un esquema previo que solo lista ideas, sin estructura<br>**2** — Entrega notas sueltas previas, sin esquema<br>**1** — Entrega el esquema del modelo de clase, sin ideas propias<br>**0** — No hay rastro de trabajo previo al texto |
+| Alcance de la revisión | 4 | **4** — Corrige en el borrador un pasaje que dificultaba la comprensión del lector, además de aspectos de puntuación o conexión<br>**3** — Corrige aspectos de puntuación y de conexión entre párrafos, no solo faltas<br>**2** — Corrige faltas de ortografía y léxico<br>**1** — Corrige 1 o 2 faltas aisladas<br>**0** — Entrega la primera versión sin marcas de revisión |
+| Justificación con metalenguaje | 2 | **2** — Justifica 2 o más cambios con el metalenguaje del nivel, y vincula al menos uno a un problema de comprensión detectado<br>**1.5** — Justifica 2 o más cambios con el metalenguaje del nivel, sin vincular ninguno a un problema de comprensión<br>**1** — Justifica 1 cambio con metalenguaje, o varios sin vincularlos a ningún problema de comprensión<br>**0.5** — Señala en el borrador el cambio hecho, sin explicar qué mejora<br>**0** — No justifica ningún cambio |
 
 ### Tratamiento de la información y uso de fuentes  ·  10%  ·  bloque B
 
@@ -538,9 +534,9 @@
 
 | Componente | Máx. | Bandas |
 |---|---|---|
-| Número de fuentes contrastadas | 4 | **4** — Emplea 3 o más fuentes distintas, coteja entre ellas y señala en qué difieren o coinciden<br>**3** — Emplea 2 fuentes distintas y coteja entre ellas al menos un dato<br>**2** — Emplea 2 fuentes, pero cada una sostiene una parte distinta del texto sin cotejo<br>**0** — Emplea una sola fuente |
-| Valoración de la fiabilidad de las fuentes | 3 | **3** — Valora la fiabilidad de al menos una fuente a partir de su autoría, su fecha o su propósito, y lo explicita en el texto<br>**2** — Indica el origen de cada dato tomado de una fuente, sin valorar su fiabilidad<br>**1** — Indica las fuentes al final, sin ligar cada dato a la suya<br>**0** — No indica de dónde procede ningún dato |
-| Punto de vista crítico propio | 3 | **3** — Integra un punto de vista propio sobre el tema, distinto de la suma de las fuentes, y lo sostiene con los datos contrastados<br>**2** — Explica con palabras propias la información de las fuentes, sin aportar una valoración propia<br>**0** — Traslada pasajes literales de las fuentes sin reformular ni valorar |
+| Número de fuentes contrastadas | 4 | **4** — Emplea 3 o más fuentes distintas, coteja entre ellas y señala en qué difieren o coinciden<br>**3** — Emplea 2 fuentes distintas y coteja entre ellas al menos un dato<br>**2** — Emplea 2 fuentes, pero cada una sostiene una parte distinta del texto sin cotejo<br>**1** — Emplea una fuente y nombra otra sin tomar de ella ningún dato<br>**0** — Emplea una sola fuente |
+| Valoración de la fiabilidad de las fuentes | 4 | **4** — Valora la fiabilidad de al menos una fuente a partir de su autoría, su fecha o su propósito, y lo explicita en el texto<br>**3** — Indica el origen de cada dato tomado de una fuente, sin valorar su fiabilidad<br>**2** — Indica las fuentes al final, sin ligar cada dato a la suya<br>**1** — Nombra una fuente de pasada, sin sistema<br>**0** — No indica de dónde procede ningún dato |
+| Punto de vista crítico propio | 2 | **2** — Integra un punto de vista propio sobre el tema, distinto de la suma de las fuentes, y lo sostiene con los datos contrastados<br>**1.5** — Integra un punto de vista propio sobre el tema y lo sostiene con un solo dato de las fuentes<br>**1** — Explica con palabras propias la información de las fuentes, sin aportar una valoración propia<br>**0.5** — Reformula la información de las fuentes en la mitad del texto y copia el resto<br>**0** — Traslada pasajes literales de las fuentes sin reformular ni valorar |
 
 ---
 
@@ -587,9 +583,9 @@
 
 | Componente | Máx. | Bandas |
 |---|---|---|
-| Estructura y función de cada parte | 3 | **3** — Introducción que delimita el tema, desarrollo por aspectos y conclusión que sintetiza sin añadir información nueva<br>**2** — Las tres partes están, pero la conclusión introduce información no tratada antes<br>**1** — Falta una de las tres partes<br>**0** — No hay estructura reconocible |
-| Separación entre información y valoración | 4 | **4** — Cada bloque distingue con claridad la información de la valoración propia, y el orden entre bloques es seguible de principio a fin<br>**3** — Distingue información y valoración en la mayoría de los bloques, con 1 excepción<br>**2** — Mezcla información y valoración en 2 o más bloques sin ninguna marca que las distinga<br>**0** — La información se presenta sin orden reconocible |
-| Gestión de la explicación alternativa | 3 | **3** — Incorpora una explicación alternativa u objeción pertinente y la resuelve o la delimita antes de la conclusión<br>**2** — Menciona una explicación alternativa, pero no llega a resolverla ni a delimitarla<br>**0** — Presenta una única explicación del tema, sin ninguna alternativa u objeción |
+| Estructura y función de cada parte | 4 | **4** — Introducción que delimita el tema, desarrollo por aspectos y conclusión que sintetiza sin añadir información nueva<br>**3** — Las tres partes están, pero la conclusión introduce información no tratada antes<br>**2** — Falta una de las tres partes<br>**1** — Faltan dos de las tres partes<br>**0** — No hay estructura reconocible |
+| Separación entre información y valoración | 4 | **4** — Cada bloque distingue con claridad la información de la valoración propia, y el orden entre bloques es seguible de principio a fin<br>**3** — Distingue información y valoración en la mayoría de los bloques, con 1 excepción<br>**2** — Mezcla información y valoración en 2 o más bloques sin ninguna marca que las distinga<br>**1** — Distingue información y valoración en 1 bloque y las mezcla en el resto<br>**0** — La información se presenta sin orden reconocible |
+| Gestión de la explicación alternativa | 2 | **2** — Incorpora una explicación alternativa u objeción pertinente y la resuelve o la delimita antes de la conclusión<br>**1.5** — Incorpora una explicación alternativa pertinente y la resuelve con una fórmula breve, sin argumento que la sostenga<br>**1** — Menciona una explicación alternativa, pero no llega a resolverla ni a delimitarla<br>**0.5** — Anuncia que el tema admite otra explicación, sin llegar a formularla<br>**0** — Presenta una única explicación del tema, sin ninguna alternativa u objeción |
 
 ### Cohesión: conectores, referencia y uso del tiempo verbal  ·  20%  ·  bloque B
 
@@ -609,8 +605,8 @@
 | Componente | Máx. | Bandas |
 |---|---|---|
 | Variedad de conectores y marcadores discursivos | 4 | **4** — Emplea 4 o más tipos distintos, incluyendo al menos un marcador discursivo organizador (en primer lugar, dicho esto, en definitiva) además de los conectores lógicos<br>**3** — Emplea 3 tipos distintos de conector, sin ningún marcador discursivo organizador<br>**2** — Emplea 2 tipos distintos de conector<br>**1** — Se limita a conectores de adición (además, también)<br>**0** — Yuxtapone los párrafos sin conector que los enlace |
-| Uso del tiempo verbal como procedimiento de cohesión | 3 | **3** — Mantiene la correlación temporal y usa un cambio de tiempo verbal con una función reconocible: marcar una cita, un dato concreto o un cambio de plano<br>**2** — Mantiene la correlación temporal, pero no hay ningún cambio de tiempo verbal con función reconocible<br>**1** — Presenta 1 o 2 saltos de tiempo verbal que no responden a ninguna norma ni función<br>**0** — El tiempo verbal cambia sin criterio a lo largo del texto |
-| Referencia y sustitución léxica | 3 | **3** — Sustituye las repeticiones mediante sinónimo, nominalización o hiperónimo, y todos los referentes son recuperables<br>**2** — Sustituye la mayoría de las repeticiones; 1 referente exige releer para identificarlo<br>**1** — Repite la palabra clave 3 o más veces teniendo sustituto evidente<br>**0** — Repite el mismo sustantivo en oraciones consecutivas a lo largo del texto |
+| Uso del tiempo verbal como procedimiento de cohesión | 4 | **4** — Mantiene la correlación temporal y usa un cambio de tiempo verbal con una función reconocible: marcar una cita, un dato concreto o un cambio de plano<br>**3** — Mantiene la correlación temporal, pero no hay ningún cambio de tiempo verbal con función reconocible<br>**2** — Presenta 1 o 2 saltos de tiempo verbal que no responden a ninguna norma ni función<br>**1** — Presenta 3 o 4 saltos de tiempo verbal que no responden a ninguna norma ni función<br>**0** — El tiempo verbal cambia sin criterio a lo largo del texto |
+| Referencia y sustitución léxica | 2 | **2** — Sustituye las repeticiones mediante sinónimo, nominalización o hiperónimo, y todos los referentes son recuperables<br>**1.5** — Sustituye las repeticiones mediante sinónimo o pronombre, sin recurrir a la nominalización ni al hiperónimo, y todos los referentes son recuperables<br>**1** — Sustituye la mayoría de las repeticiones; 1 referente exige releer para identificarlo<br>**0.5** — Repite la palabra clave 3 o más veces teniendo sustituto evidente<br>**0** — Repite el mismo sustantivo en oraciones consecutivas a lo largo del texto |
 
 ### Corrección normativa y propiedad léxica  ·  15%  ·  bloque D  ·  🔒 obligatorio
 
@@ -629,9 +625,9 @@
 
 | Componente | Máx. | Bandas |
 |---|---|---|
-| Ortografía, gramática y tipografía | 4 | **4** — Hasta 2 faltas en todo el texto, incluidas las tipográficas<br>**3** — De 3 a 5 faltas<br>**2** — De 6 a 9 faltas<br>**0** — 10 o más faltas |
-| Corrección gramatical | 3 | **3** — Sin errores de concordancia ni de construcción de la oración<br>**2** — 1 o 2 errores que no impiden la comprensión<br>**1** — 3 o más errores, o alguna oración que hay que releer para reconstruir<br>**0** — Errores sistemáticos que obligan a reconstruir el sentido |
-| Precisión léxica y vocación de estilo | 3 | **3** — Selecciona el término preciso y emplea algún recurso de estilo propio del ensayo académico (variación sintáctica, léxico connotativo pertinente)<br>**2** — Selecciona términos precisos, pero no emplea ningún recurso de estilo más allá de lo correcto<br>**1** — Recurre a términos de significado general con sustituto evidente<br>**0** — El texto se sostiene sobre palabras comodín |
+| Ortografía, gramática y tipografía | 4 | **4** — Hasta 2 faltas en todo el texto, incluidas las tipográficas<br>**3** — De 3 a 8 faltas<br>**2** — De 9 a 15 faltas<br>**1** — De 16 a 20 faltas<br>**0** — 21 o más faltas |
+| Corrección gramatical | 2 | **2** — Sin errores de concordancia ni de construcción de la oración<br>**1.5** — 1 o 2 errores que no impiden la comprensión<br>**1** — De 3 a 5 errores, o alguna oración que hay que releer para reconstruir<br>**0.5** — De 6 a 12 errores, y la lectura se detiene para rehacer la oración<br>**0** — Errores sistemáticos que obligan a reconstruir el sentido |
+| Precisión léxica y vocación de estilo | 4 | **4** — Selecciona el término preciso y emplea algún recurso de estilo propio del ensayo académico (variación sintáctica, léxico connotativo pertinente)<br>**3** — Selecciona términos precisos, pero no emplea ningún recurso de estilo más allá de lo correcto<br>**2** — Recurre a términos de significado general con sustituto evidente<br>**1** — Emplea términos de significado general y alguno preciso<br>**0** — El texto se sostiene sobre palabras comodín |
 
 ### Planificación y revisión del propio texto  ·  10%  ·  bloque D
 
@@ -650,9 +646,9 @@
 
 | Componente | Máx. | Bandas |
 |---|---|---|
-| Planificación propia | 3 | **3** — Entrega un esquema previo propio con la estructura del texto<br>**2** — Entrega un esquema previo que solo lista ideas, sin estructura<br>**0** — No hay rastro de trabajo previo al texto |
-| Alcance de la revisión | 4 | **4** — Corrige en el borrador un pasaje que dificultaba la comprensión del lector, además de aspectos de puntuación o conexión<br>**3** — Corrige aspectos de puntuación y de conexión entre párrafos, no solo faltas<br>**2** — Corrige faltas de ortografía y léxico<br>**0** — Entrega la primera versión sin marcas de revisión |
-| Justificación con metalenguaje | 3 | **3** — Justifica 2 o más cambios con metalenguaje específico, explicando tanto el problema que resuelven como el efecto estilístico que persiguen<br>**2** — Justifica los cambios con metalenguaje específico, pero solo señala el problema que resuelven, sin el efecto estilístico<br>**0** — No justifica ningún cambio |
+| Planificación propia | 4 | **4** — Entrega un esquema previo propio con la estructura del texto<br>**3** — Entrega un esquema previo que solo lista ideas, sin estructura<br>**2** — Entrega notas sueltas previas, sin esquema<br>**1** — Entrega el esquema del modelo de clase, sin ideas propias<br>**0** — No hay rastro de trabajo previo al texto |
+| Alcance de la revisión | 4 | **4** — Corrige en el borrador un pasaje que dificultaba la comprensión del lector, además de aspectos de puntuación o conexión<br>**3** — Corrige aspectos de puntuación y de conexión entre párrafos, no solo faltas<br>**2** — Corrige faltas de ortografía y léxico<br>**1** — Corrige 1 o 2 faltas aisladas<br>**0** — Entrega la primera versión sin marcas de revisión |
+| Justificación con metalenguaje | 2 | **2** — Justifica 2 o más cambios con metalenguaje específico, explicando tanto el problema que resuelven como el efecto estilístico que persiguen<br>**1.5** — Justifica 2 o más cambios con metalenguaje específico y nombra el efecto estilístico en uno solo de ellos<br>**1** — Justifica los cambios con metalenguaje específico, pero solo señala el problema que resuelven, sin el efecto estilístico<br>**0.5** — Nombra los cambios hechos en el borrador, sin señalar el problema que resuelven<br>**0** — No justifica ningún cambio |
 
 ### Tratamiento de la información y uso de fuentes  ·  10%  ·  bloque B
 
@@ -671,9 +667,9 @@
 
 | Componente | Máx. | Bandas |
 |---|---|---|
-| Número de fuentes contrastadas | 4 | **4** — Emplea 3 o más fuentes distintas, coteja entre ellas y señala en qué difieren o coinciden<br>**3** — Emplea 2 fuentes distintas y coteja entre ellas al menos un dato<br>**2** — Emplea 2 fuentes, pero cada una sostiene una parte distinta del texto sin cotejo<br>**0** — Emplea una sola fuente |
-| Aparato de citas y bibliografía | 3 | **3** — Cita cada fuente en el lugar del texto donde la usa y añade una bibliografía final con un modelo de cita homogéneo<br>**2** — Añade una bibliografía final, pero no cita en el texto de qué fuente procede cada dato<br>**1** — Menciona alguna fuente de pasada, sin sistema<br>**0** — No incluye ninguna referencia bibliográfica |
-| Punto de vista crítico y verificación | 3 | **3** — Integra un punto de vista propio sobre el tema y señala que ha verificado algún dato dudoso antes de emplearlo<br>**2** — Explica con palabras propias la información de las fuentes, sin aportar una valoración propia ni verificar ningún dato<br>**0** — Traslada pasajes literales de las fuentes sin reformular ni valorar |
+| Número de fuentes contrastadas | 4 | **4** — Emplea 3 o más fuentes distintas, coteja entre ellas y señala en qué difieren o coinciden<br>**3** — Emplea 2 fuentes distintas y coteja entre ellas al menos un dato<br>**2** — Emplea 2 fuentes, pero cada una sostiene una parte distinta del texto sin cotejo<br>**1** — Emplea una fuente y nombra otra sin tomar de ella ningún dato<br>**0** — Emplea una sola fuente |
+| Aparato de citas y bibliografía | 4 | **4** — Cita cada fuente en el lugar del texto donde la usa y añade una bibliografía final con un modelo de cita homogéneo<br>**3** — Añade una bibliografía final, pero no cita en el texto de qué fuente procede cada dato<br>**2** — Menciona alguna fuente de pasada, sin sistema<br>**1** — Nombra una fuente en el cuerpo del texto, sin bibliografía final<br>**0** — No incluye ninguna referencia bibliográfica |
+| Punto de vista crítico y verificación | 2 | **2** — Integra un punto de vista propio sobre el tema y señala que ha verificado algún dato dudoso antes de emplearlo<br>**1.5** — Integra un punto de vista propio sobre el tema y emplea los datos dudosos sin verificarlos<br>**1** — Explica con palabras propias la información de las fuentes, sin aportar una valoración propia ni verificar ningún dato<br>**0.5** — Reformula la información de las fuentes en la mitad del texto y copia el resto<br>**0** — Traslada pasajes literales de las fuentes sin reformular ni valorar |
 
 ---
 
@@ -720,9 +716,9 @@
 
 | Componente | Máx. | Bandas |
 |---|---|---|
-| Estructura y función de cada parte | 3 | **3** — Introducción que delimita el tema, desarrollo por aspectos y conclusión que sintetiza sin añadir información nueva<br>**2** — Las tres partes están, pero la conclusión introduce información no tratada antes<br>**1** — Falta una de las tres partes<br>**0** — No hay estructura reconocible |
-| Separación entre información y valoración | 4 | **4** — Cada bloque distingue con claridad la información de la valoración propia, y el orden entre bloques es seguible de principio a fin<br>**3** — Distingue información y valoración en la mayoría de los bloques, con 1 excepción<br>**2** — Mezcla información y valoración en 2 o más bloques sin ninguna marca que las distinga<br>**0** — La información se presenta sin orden reconocible |
-| Gestión de la explicación alternativa | 3 | **3** — Incorpora una explicación alternativa u objeción pertinente y la resuelve o la delimita antes de la conclusión<br>**2** — Menciona una explicación alternativa, pero no llega a resolverla ni a delimitarla<br>**0** — Presenta una única explicación del tema, sin ninguna alternativa u objeción |
+| Estructura y función de cada parte | 4 | **4** — Introducción que delimita el tema, desarrollo por aspectos y conclusión que sintetiza sin añadir información nueva<br>**3** — Las tres partes están, pero la conclusión introduce información no tratada antes<br>**2** — Falta una de las tres partes<br>**1** — Faltan dos de las tres partes<br>**0** — No hay estructura reconocible |
+| Separación entre información y valoración | 4 | **4** — Cada bloque distingue con claridad la información de la valoración propia, y el orden entre bloques es seguible de principio a fin<br>**3** — Distingue información y valoración en la mayoría de los bloques, con 1 excepción<br>**2** — Mezcla información y valoración en 2 o más bloques sin ninguna marca que las distinga<br>**1** — Distingue información y valoración en 1 bloque y las mezcla en el resto<br>**0** — La información se presenta sin orden reconocible |
+| Gestión de la explicación alternativa | 2 | **2** — Incorpora una explicación alternativa u objeción pertinente y la resuelve o la delimita antes de la conclusión<br>**1.5** — Incorpora una explicación alternativa pertinente y la resuelve con una fórmula breve, sin argumento que la sostenga<br>**1** — Menciona una explicación alternativa, pero no llega a resolverla ni a delimitarla<br>**0.5** — Anuncia que el tema admite otra explicación, sin llegar a formularla<br>**0** — Presenta una única explicación del tema, sin ninguna alternativa u objeción |
 
 ### Cohesión: conectores, referencia y uso del tiempo verbal  ·  20%  ·  bloque B
 
@@ -742,8 +738,8 @@
 | Componente | Máx. | Bandas |
 |---|---|---|
 | Variedad de conectores y marcadores discursivos | 4 | **4** — Emplea 4 o más tipos distintos, incluyendo al menos un marcador discursivo organizador (en primer lugar, dicho esto, en definitiva) además de los conectores lógicos<br>**3** — Emplea 3 tipos distintos de conector, sin ningún marcador discursivo organizador<br>**2** — Emplea 2 tipos distintos de conector<br>**1** — Se limita a conectores de adición (además, también)<br>**0** — Yuxtapone los párrafos sin conector que los enlace |
-| Uso del tiempo verbal como procedimiento de cohesión | 3 | **3** — Mantiene la correlación temporal y usa un cambio de tiempo verbal con una función reconocible: marcar una cita, un dato concreto o un cambio de plano<br>**2** — Mantiene la correlación temporal, pero no hay ningún cambio de tiempo verbal con función reconocible<br>**1** — Presenta 1 o 2 saltos de tiempo verbal que no responden a ninguna norma ni función<br>**0** — El tiempo verbal cambia sin criterio a lo largo del texto |
-| Referencia y sustitución léxica | 3 | **3** — Sustituye las repeticiones mediante sinónimo, nominalización o hiperónimo, y todos los referentes son recuperables<br>**2** — Sustituye la mayoría de las repeticiones; 1 referente exige releer para identificarlo<br>**1** — Repite la palabra clave 3 o más veces teniendo sustituto evidente<br>**0** — Repite el mismo sustantivo en oraciones consecutivas a lo largo del texto |
+| Uso del tiempo verbal como procedimiento de cohesión | 4 | **4** — Mantiene la correlación temporal y usa un cambio de tiempo verbal con una función reconocible: marcar una cita, un dato concreto o un cambio de plano<br>**3** — Mantiene la correlación temporal, pero no hay ningún cambio de tiempo verbal con función reconocible<br>**2** — Presenta 1 o 2 saltos de tiempo verbal que no responden a ninguna norma ni función<br>**1** — Presenta 3 o 4 saltos de tiempo verbal que no responden a ninguna norma ni función<br>**0** — El tiempo verbal cambia sin criterio a lo largo del texto |
+| Referencia y sustitución léxica | 2 | **2** — Sustituye las repeticiones mediante sinónimo, nominalización o hiperónimo, y todos los referentes son recuperables<br>**1.5** — Sustituye las repeticiones mediante sinónimo o pronombre, sin recurrir a la nominalización ni al hiperónimo, y todos los referentes son recuperables<br>**1** — Sustituye la mayoría de las repeticiones; 1 referente exige releer para identificarlo<br>**0.5** — Repite la palabra clave 3 o más veces teniendo sustituto evidente<br>**0** — Repite el mismo sustantivo en oraciones consecutivas a lo largo del texto |
 
 ### Corrección normativa y propiedad léxica  ·  15%  ·  bloque D  ·  🔒 obligatorio
 
@@ -762,9 +758,9 @@
 
 | Componente | Máx. | Bandas |
 |---|---|---|
-| Ortografía, gramática y tipografía | 4 | **4** — Hasta 2 faltas en todo el texto, incluidas las tipográficas<br>**3** — De 3 a 5 faltas<br>**2** — De 6 a 9 faltas<br>**0** — 10 o más faltas |
-| Corrección gramatical | 3 | **3** — Sin errores de concordancia ni de construcción de la oración<br>**2** — 1 o 2 errores que no impiden la comprensión<br>**1** — 3 o más errores, o alguna oración que hay que releer para reconstruir<br>**0** — Errores sistemáticos que obligan a reconstruir el sentido |
-| Precisión léxica y vocación de estilo | 3 | **3** — Selecciona el término preciso y emplea algún recurso de estilo propio del ensayo académico (variación sintáctica, léxico connotativo pertinente)<br>**2** — Selecciona términos precisos, pero no emplea ningún recurso de estilo más allá de lo correcto<br>**1** — Recurre a términos de significado general con sustituto evidente<br>**0** — El texto se sostiene sobre palabras comodín |
+| Ortografía, gramática y tipografía | 4 | **4** — Hasta 3 faltas en todo el texto, incluidas las tipográficas<br>**3** — De 4 a 8 faltas<br>**2** — De 9 a 16 faltas<br>**1** — De 17 a 19 faltas<br>**0** — 20 o más faltas |
+| Corrección gramatical | 2 | **2** — Sin errores de concordancia ni de construcción de la oración<br>**1.5** — 1 o 2 errores que no impiden la comprensión<br>**1** — De 3 a 5 errores, o alguna oración que hay que releer para reconstruir<br>**0.5** — De 6 a 12 errores, y la lectura se detiene para rehacer la oración<br>**0** — Errores sistemáticos que obligan a reconstruir el sentido |
+| Precisión léxica y vocación de estilo | 4 | **4** — Selecciona el término preciso y emplea algún recurso de estilo propio del ensayo académico (variación sintáctica, léxico connotativo pertinente)<br>**3** — Selecciona términos precisos, pero no emplea ningún recurso de estilo más allá de lo correcto<br>**2** — Recurre a términos de significado general con sustituto evidente<br>**1** — Emplea términos de significado general y alguno preciso<br>**0** — El texto se sostiene sobre palabras comodín |
 
 ### Planificación y revisión del propio texto  ·  10%  ·  bloque D
 
@@ -783,9 +779,9 @@
 
 | Componente | Máx. | Bandas |
 |---|---|---|
-| Planificación propia | 3 | **3** — Entrega un esquema previo propio con la estructura del texto<br>**2** — Entrega un esquema previo que solo lista ideas, sin estructura<br>**0** — No hay rastro de trabajo previo al texto |
-| Revisión entre iguales o con instrumentos de consulta | 4 | **4** — Corrige, con ayuda de un compañero o de un instrumento de consulta, un pasaje que dificultaba la comprensión del lector, además de aspectos de puntuación o conexión<br>**3** — Corrige aspectos de puntuación y de conexión entre párrafos, no solo faltas, pero de forma individual<br>**2** — Corrige faltas de ortografía y léxico, de forma individual<br>**0** — Entrega la primera versión sin marcas de revisión |
-| Justificación con metalenguaje | 3 | **3** — Justifica 2 o más cambios con metalenguaje específico, explicando tanto el problema que resuelven como el efecto estilístico que persiguen<br>**2** — Justifica los cambios con metalenguaje específico, pero solo señala el problema que resuelven, sin el efecto estilístico<br>**0** — No justifica ningún cambio |
+| Planificación propia | 4 | **4** — Entrega un esquema previo propio con la estructura del texto<br>**3** — Entrega un esquema previo que solo lista ideas, sin estructura<br>**2** — Entrega notas sueltas previas, sin esquema<br>**1** — Entrega el esquema del modelo de clase, sin ideas propias<br>**0** — No hay rastro de trabajo previo al texto |
+| Revisión entre iguales o con instrumentos de consulta | 4 | **4** — Corrige, con ayuda de un compañero o de un instrumento de consulta, un pasaje que dificultaba la comprensión del lector, además de aspectos de puntuación o conexión<br>**3** — Corrige aspectos de puntuación y de conexión entre párrafos, no solo faltas, pero de forma individual<br>**2** — Corrige faltas de ortografía y léxico, de forma individual<br>**1** — Corrige 1 o 2 faltas aisladas, de forma individual<br>**0** — Entrega la primera versión sin marcas de revisión |
+| Justificación con metalenguaje | 2 | **2** — Justifica 2 o más cambios con metalenguaje específico, explicando tanto el problema que resuelven como el efecto estilístico que persiguen<br>**1.5** — Justifica 2 o más cambios con metalenguaje específico y nombra el efecto estilístico en uno solo de ellos<br>**1** — Justifica los cambios con metalenguaje específico, pero solo señala el problema que resuelven, sin el efecto estilístico<br>**0.5** — Nombra los cambios hechos en el borrador, sin señalar el problema que resuelven<br>**0** — No justifica ningún cambio |
 
 ### Tratamiento de la información y uso de fuentes  ·  10%  ·  bloque B
 
@@ -804,9 +800,9 @@
 
 | Componente | Máx. | Bandas |
 |---|---|---|
-| Número de fuentes contrastadas | 4 | **4** — Emplea 3 o más fuentes distintas, coteja entre ellas y señala en qué difieren o coinciden<br>**3** — Emplea 2 fuentes distintas y coteja entre ellas al menos un dato<br>**2** — Emplea 2 fuentes, pero cada una sostiene una parte distinta del texto sin cotejo<br>**0** — Emplea una sola fuente |
-| Aparato de citas, bibliografía y gestión del material | 3 | **3** — Cita cada fuente en el lugar del texto donde la usa, añade una bibliografía final con un modelo de cita homogéneo, y mantiene el material organizado y recuperable<br>**2** — Añade una bibliografía final, pero no cita en el texto de qué fuente procede cada dato<br>**1** — Menciona alguna fuente de pasada, sin sistema<br>**0** — No incluye ninguna referencia bibliográfica |
-| Punto de vista crítico y verificación | 3 | **3** — Integra un punto de vista propio sobre el tema y señala que ha verificado algún dato dudoso antes de emplearlo<br>**2** — Explica con palabras propias la información de las fuentes, sin aportar una valoración propia ni verificar ningún dato<br>**0** — Traslada pasajes literales de las fuentes sin reformular ni valorar |
+| Número de fuentes contrastadas | 4 | **4** — Emplea 3 o más fuentes distintas, coteja entre ellas y señala en qué difieren o coinciden<br>**3** — Emplea 2 fuentes distintas y coteja entre ellas al menos un dato<br>**2** — Emplea 2 fuentes, pero cada una sostiene una parte distinta del texto sin cotejo<br>**1** — Emplea una fuente y nombra otra sin tomar de ella ningún dato<br>**0** — Emplea una sola fuente |
+| Aparato de citas, bibliografía y gestión del material | 4 | **4** — Cita cada fuente en el lugar del texto donde la usa, añade una bibliografía final con un modelo de cita homogéneo, y mantiene el material organizado y recuperable<br>**3** — Añade una bibliografía final, pero no cita en el texto de qué fuente procede cada dato<br>**2** — Menciona alguna fuente de pasada, sin sistema<br>**1** — Nombra una fuente en el cuerpo del texto, sin bibliografía final<br>**0** — No incluye ninguna referencia bibliográfica |
+| Punto de vista crítico y verificación | 2 | **2** — Integra un punto de vista propio sobre el tema y señala que ha verificado algún dato dudoso antes de emplearlo<br>**1.5** — Integra un punto de vista propio sobre el tema y emplea los datos dudosos sin verificarlos<br>**1** — Explica con palabras propias la información de las fuentes, sin aportar una valoración propia ni verificar ningún dato<br>**0.5** — Reformula la información de las fuentes en la mitad del texto y copia el resto<br>**0** — Traslada pasajes literales de las fuentes sin reformular ni valorar |
 
 ---
 

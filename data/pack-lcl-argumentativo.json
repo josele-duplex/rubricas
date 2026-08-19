@@ -133,19 +133,23 @@
         "componentes": [
           {
             "nombre": "Postura reconocible",
-            "max": 3,
+            "max": 4,
             "bandas": [
               {
-                "puntos": 3,
+                "puntos": 4,
                 "condicion": "La postura aparece formulada en una oración propia del primer párrafo"
               },
               {
-                "puntos": 2,
+                "puntos": 3,
                 "condicion": "La postura se deduce del conjunto del texto, sin una oración que la formule"
               },
               {
-                "puntos": 1,
+                "puntos": 2,
                 "condicion": "El texto sostiene una postura distinta en cada parte"
+              },
+              {
+                "puntos": 1,
+                "condicion": "La postura aparece en una frase suelta del final, sin recorrido en el texto"
               },
               {
                 "puntos": 0,
@@ -181,18 +185,22 @@
           },
           {
             "nombre": "Cierre",
-            "max": 3,
+            "max": 2,
             "bandas": [
               {
-                "puntos": 3,
+                "puntos": 2,
                 "condicion": "El cierre retoma la postura con otras palabras y recoge las razones dadas"
               },
               {
-                "puntos": 2,
-                "condicion": "El cierre repite la postura con las mismas palabras del comienzo"
+                "puntos": 1.5,
+                "condicion": "El cierre retoma la postura con otras palabras, sin recoger las razones dadas"
               },
               {
                 "puntos": 1,
+                "condicion": "El cierre repite la postura con las mismas palabras del comienzo"
+              },
+              {
+                "puntos": 0.5,
                 "condicion": "El texto se cierra con una fórmula de despedida ajena a la postura"
               },
               {
@@ -294,18 +302,22 @@
           },
           {
             "nombre": "El punto y la coma organizan el texto",
-            "max": 3,
+            "max": 2,
             "bandas": [
               {
-                "puntos": 3,
+                "puntos": 2,
                 "condicion": "Separa con punto todos los enunciados y delimita los incisos con comas"
               },
               {
-                "puntos": 2,
-                "condicion": "Separa con punto los enunciados, con 1 o 2 casos sin separar"
+                "puntos": 1.5,
+                "condicion": "Separa con punto todos los enunciados y deja sin comas algún inciso"
               },
               {
                 "puntos": 1,
+                "condicion": "Separa con punto los enunciados, con 1 o 2 casos sin separar"
+              },
+              {
+                "puntos": 0.5,
                 "condicion": "Separa con punto la mayoría, pero agrupa 3 o más enunciados seguidos"
               },
               {
@@ -316,19 +328,23 @@
           },
           {
             "nombre": "Referencia y sustitución léxica",
-            "max": 3,
+            "max": 4,
             "bandas": [
               {
-                "puntos": 3,
+                "puntos": 4,
                 "condicion": "Sustituye por pronombre, sinónimo o hiperónimo la palabra ya usada en la oración anterior"
               },
               {
-                "puntos": 2,
+                "puntos": 3,
                 "condicion": "Sustituye alguna repetición, pero deja 2 o 3 sin sustituir"
               },
               {
-                "puntos": 1,
+                "puntos": 2,
                 "condicion": "Repite la misma palabra en oraciones seguidas, teniendo sustituto evidente"
+              },
+              {
+                "puntos": 1,
+                "condicion": "Sustituye la palabra repetida en 1 punto del texto"
               },
               {
                 "puntos": 0,
@@ -411,28 +427,32 @@
               },
               {
                 "puntos": 3,
-                "condicion": "De 3 a 4 faltas"
+                "condicion": "De 3 a 6 faltas"
               },
               {
                 "puntos": 2,
-                "condicion": "De 5 a 7 faltas"
+                "condicion": "De 7 a 9 faltas"
+              },
+              {
+                "puntos": 1,
+                "condicion": "De 10 a 14 faltas"
               },
               {
                 "puntos": 0,
-                "condicion": "8 o más faltas"
+                "condicion": "15 o más faltas"
               }
             ]
           },
           {
             "nombre": "Concordancia",
-            "max": 3,
+            "max": 2,
             "bandas": [
               {
-                "puntos": 3,
+                "puntos": 2,
                 "condicion": "Sin errores de concordancia de género, número o persona"
               },
               {
-                "puntos": 2,
+                "puntos": 1.5,
                 "condicion": "Hasta 1 error de concordancia"
               },
               {
@@ -440,26 +460,34 @@
                 "condicion": "2 o 3 errores de concordancia"
               },
               {
+                "puntos": 0.5,
+                "condicion": "De 4 a 7 errores de concordancia"
+              },
+              {
                 "puntos": 0,
-                "condicion": "4 o más errores de concordancia"
+                "condicion": "8 o más errores de concordancia"
               }
             ]
           },
           {
             "nombre": "Precisión del léxico valorativo",
-            "max": 3,
+            "max": 4,
             "bandas": [
               {
-                "puntos": 3,
+                "puntos": 4,
                 "condicion": "Emplea términos valorativos propios (injusto, necesario, útil) en lugar de palabras comodín"
               },
               {
-                "puntos": 2,
+                "puntos": 3,
                 "condicion": "Emplea 1 palabra comodín (cosa, tema, hacer) con sustituto evidente"
               },
               {
-                "puntos": 1,
+                "puntos": 2,
                 "condicion": "Emplea 2 o 3 palabras comodín"
+              },
+              {
+                "puntos": 1,
+                "condicion": "Emplea 4 o 5 palabras comodín y algún término valorativo propio"
               },
               {
                 "puntos": 0,
@@ -534,15 +562,23 @@
         "componentes": [
           {
             "nombre": "Hay planificación previa",
-            "max": 3,
+            "max": 4,
             "bandas": [
               {
-                "puntos": 3,
+                "puntos": 4,
                 "condicion": "Entrega un esquema previo propio con la postura y las razones ordenadas"
+              },
+              {
+                "puntos": 3,
+                "condicion": "Entrega un esquema previo que solo lista las razones, sin postura que las organice"
               },
               {
                 "puntos": 2,
                 "condicion": "Entrega notas sueltas previas, sin postura que las organice"
+              },
+              {
+                "puntos": 1,
+                "condicion": "Entrega el esquema del modelo de clase, sin razones propias"
               },
               {
                 "puntos": 0,
@@ -567,6 +603,10 @@
                 "condicion": "El borrador muestra 1 corrección"
               },
               {
+                "puntos": 1,
+                "condicion": "El borrador muestra marcas de lectura sin corrección terminada"
+              },
+              {
                 "puntos": 0,
                 "condicion": "Entrega la primera versión sin marcas de revisión"
               }
@@ -574,15 +614,23 @@
           },
           {
             "nombre": "Explica alguna mejora",
-            "max": 3,
+            "max": 2,
             "bandas": [
               {
-                "puntos": 3,
+                "puntos": 2,
                 "condicion": "Explica en el borrador qué mejora aporta al menos un cambio"
+              },
+              {
+                "puntos": 1.5,
+                "condicion": "Explica qué mejora aporta el conjunto de los cambios, sin ligarla a ninguno en concreto"
               },
               {
                 "puntos": 1,
                 "condicion": "Anota un cambio sin explicar qué mejora aporta"
+              },
+              {
+                "puntos": 0.5,
+                "condicion": "Marca en el borrador un punto para revisar y lo deja sin cambiar"
               },
               {
                 "puntos": 0,
@@ -671,6 +719,10 @@
                 "condicion": "Emplea 1 fuente"
               },
               {
+                "puntos": 1,
+                "condicion": "Nombra una fuente sin tomar de ella ningún dato"
+              },
+              {
                 "puntos": 0,
                 "condicion": "No se aprecia consulta de ninguna fuente"
               }
@@ -678,19 +730,23 @@
           },
           {
             "nombre": "Los datos apoyan las razones",
-            "max": 3,
+            "max": 4,
             "bandas": [
               {
-                "puntos": 3,
+                "puntos": 4,
                 "condicion": "Cada razón se apoya en un dato o ejemplo tomado de las fuentes"
               },
               {
-                "puntos": 2,
+                "puntos": 3,
                 "condicion": "Alguna razón se apoya en un dato de fuente; el resto, en la experiencia propia"
               },
               {
-                "puntos": 1,
+                "puntos": 2,
                 "condicion": "Los datos aparecen sueltos, sin ligarse a ninguna razón"
+              },
+              {
+                "puntos": 1,
+                "condicion": "Un solo dato procede de una fuente y aparece suelto"
               },
               {
                 "puntos": 0,
@@ -700,18 +756,22 @@
           },
           {
             "nombre": "Atribución y palabras propias",
-            "max": 3,
+            "max": 2,
             "bandas": [
               {
-                "puntos": 3,
+                "puntos": 2,
                 "condicion": "Señala junto a cada dato la fuente de la que procede y explica la información con palabras propias"
               },
               {
-                "puntos": 2,
-                "condicion": "Indica las fuentes al final, sin ligar cada dato a la suya"
+                "puntos": 1.5,
+                "condicion": "Señala junto a cada dato la fuente de la que procede y mantiene entre comillas algún pasaje de la fuente"
               },
               {
                 "puntos": 1,
+                "condicion": "Indica las fuentes al final, sin ligar cada dato a la suya"
+              },
+              {
+                "puntos": 0.5,
                 "condicion": "Conserva alguna frase copiada de la fuente, sin señalarla"
               },
               {
@@ -845,19 +905,23 @@
         "componentes": [
           {
             "nombre": "Tesis reconocible",
-            "max": 3,
+            "max": 4,
             "bandas": [
               {
-                "puntos": 3,
+                "puntos": 4,
                 "condicion": "La tesis está formulada en una oración propia al comienzo y el texto entero la defiende"
               },
               {
-                "puntos": 2,
+                "puntos": 3,
                 "condicion": "La tesis se deduce del conjunto, pero ninguna oración la formula"
               },
               {
-                "puntos": 1,
+                "puntos": 2,
                 "condicion": "El texto defiende dos posturas distintas según el párrafo"
+              },
+              {
+                "puntos": 1,
+                "condicion": "La tesis aparece enunciada en la última línea"
               },
               {
                 "puntos": 0,
@@ -893,18 +957,22 @@
           },
           {
             "nombre": "Conclusión",
-            "max": 3,
+            "max": 2,
             "bandas": [
               {
-                "puntos": 3,
+                "puntos": 2,
                 "condicion": "La conclusión retoma la tesis con otras palabras y recoge lo argumentado"
               },
               {
-                "puntos": 2,
-                "condicion": "La conclusión repite la tesis con las mismas palabras de la introducción"
+                "puntos": 1.5,
+                "condicion": "La conclusión retoma la tesis con otras palabras, sin recoger los argumentos dados"
               },
               {
                 "puntos": 1,
+                "condicion": "La conclusión repite la tesis con las mismas palabras de la introducción"
+              },
+              {
+                "puntos": 0.5,
                 "condicion": "El texto se cierra con una fórmula de despedida ajena a la tesis"
               },
               {
@@ -1005,18 +1073,22 @@
           },
           {
             "nombre": "Puntuación al servicio del argumento",
-            "max": 3,
+            "max": 2,
             "bandas": [
               {
-                "puntos": 3,
+                "puntos": 2,
                 "condicion": "Separa los argumentos con punto y aparte y delimita los incisos con comas, sin errores que obliguen a releer"
               },
               {
-                "puntos": 2,
-                "condicion": "Puntuación correcta con 1 o 2 errores que no impiden seguir el texto"
+                "puntos": 1.5,
+                "condicion": "Separa los argumentos con punto y aparte y deja sin comas algún inciso"
               },
               {
                 "puntos": 1,
+                "condicion": "Puntuación correcta con 1 o 2 errores que no impiden seguir el texto"
+              },
+              {
+                "puntos": 0.5,
                 "condicion": "Puntuación presente pero con 3 o más errores, o párrafos que mezclan argumentos distintos"
               },
               {
@@ -1027,19 +1099,23 @@
           },
           {
             "nombre": "Referencia y sustitución léxica",
-            "max": 3,
+            "max": 4,
             "bandas": [
               {
-                "puntos": 3,
+                "puntos": 4,
                 "condicion": "Sustituye las repeticiones con sinónimos o pronombres, y todos los referentes son recuperables"
               },
               {
-                "puntos": 2,
+                "puntos": 3,
                 "condicion": "Sustituye la mayoría de las repeticiones; 1 referente exige releer para identificarlo"
               },
               {
-                "puntos": 1,
+                "puntos": 2,
                 "condicion": "Repite la palabra clave 3 o más veces teniendo sustituto evidente en el contexto"
+              },
+              {
+                "puntos": 1,
+                "condicion": "Sustituye la palabra clave en 1 punto y la repite en el resto"
               },
               {
                 "puntos": 0,
@@ -1118,37 +1194,45 @@
             "bandas": [
               {
                 "puntos": 4,
-                "condicion": "Hasta 2 faltas en todo el texto"
+                "condicion": "Hasta 3 faltas en todo el texto"
               },
               {
                 "puntos": 3,
-                "condicion": "De 3 a 5 faltas"
+                "condicion": "De 4 a 7 faltas"
               },
               {
                 "puntos": 2,
-                "condicion": "De 6 a 9 faltas"
+                "condicion": "De 8 a 11 faltas"
+              },
+              {
+                "puntos": 1,
+                "condicion": "De 12 a 18 faltas"
               },
               {
                 "puntos": 0,
-                "condicion": "10 o más faltas"
+                "condicion": "19 o más faltas"
               }
             ]
           },
           {
             "nombre": "Corrección gramatical",
-            "max": 3,
+            "max": 2,
             "bandas": [
               {
-                "puntos": 3,
+                "puntos": 2,
                 "condicion": "Sin errores de concordancia ni de construcción de la oración"
               },
               {
-                "puntos": 2,
+                "puntos": 1.5,
                 "condicion": "1 o 2 errores que no impiden la comprensión"
               },
               {
                 "puntos": 1,
-                "condicion": "3 o más errores, o alguna oración que hay que releer para reconstruir"
+                "condicion": "De 3 a 5 errores, o alguna oración que hay que releer para reconstruir"
+              },
+              {
+                "puntos": 0.5,
+                "condicion": "De 6 a 12 errores, y la lectura se detiene para rehacer la oración"
               },
               {
                 "puntos": 0,
@@ -1158,19 +1242,23 @@
           },
           {
             "nombre": "Precisión del léxico valorativo",
-            "max": 3,
+            "max": 4,
             "bandas": [
               {
-                "puntos": 3,
+                "puntos": 4,
                 "condicion": "Valora con términos precisos (beneficioso, injusto, eficaz) y emplea alguna subordinada causal o concesiva para condensar un argumento"
               },
               {
-                "puntos": 2,
+                "puntos": 3,
                 "condicion": "Valora con términos precisos, pero encadena oraciones simples donde cabría una subordinada"
               },
               {
-                "puntos": 1,
+                "puntos": 2,
                 "condicion": "Recurre a valoraciones de significado impreciso con sustituto evidente"
+              },
+              {
+                "puntos": 1,
+                "condicion": "Valora con términos imprecisos y alguna palabra comodín"
               },
               {
                 "puntos": 0,
@@ -1243,15 +1331,23 @@
         "componentes": [
           {
             "nombre": "Planificación propia",
-            "max": 3,
+            "max": 4,
             "bandas": [
               {
-                "puntos": 3,
+                "puntos": 4,
                 "condicion": "Entrega un esquema previo propio con la tesis y los argumentos ordenados"
               },
               {
-                "puntos": 2,
+                "puntos": 3,
                 "condicion": "Entrega un esquema previo que solo lista ideas, sin tesis que las organice"
+              },
+              {
+                "puntos": 2,
+                "condicion": "Entrega notas sueltas previas, sin esquema"
+              },
+              {
+                "puntos": 1,
+                "condicion": "Entrega el esquema del modelo de clase, sin ideas propias"
               },
               {
                 "puntos": 0,
@@ -1276,6 +1372,10 @@
                 "condicion": "Corrige 1 o 2 detalles aislados"
               },
               {
+                "puntos": 1,
+                "condicion": "Marca en el borrador un punto para corregir y lo deja sin corregir"
+              },
+              {
                 "puntos": 0,
                 "condicion": "Entrega la primera versión sin marcas de revisión"
               }
@@ -1283,15 +1383,23 @@
           },
           {
             "nombre": "Justificación con metalenguaje",
-            "max": 3,
+            "max": 2,
             "bandas": [
               {
-                "puntos": 3,
+                "puntos": 2,
                 "condicion": "Justifica 2 o más cambios usando el metalenguaje del nivel (tesis, argumento, conector)"
               },
               {
-                "puntos": 2,
+                "puntos": 1.5,
+                "condicion": "Justifica 2 o más cambios y emplea el metalenguaje del nivel en uno de ellos"
+              },
+              {
+                "puntos": 1,
                 "condicion": "Justifica 1 cambio con metalenguaje, o varios sin él"
+              },
+              {
+                "puntos": 0.5,
+                "condicion": "Anota en el borrador los cambios hechos, sin decir qué mejoran"
               },
               {
                 "puntos": 0,
@@ -1380,6 +1488,10 @@
                 "condicion": "Los datos de las fuentes aparecen sueltos, sin ligarse a ningún argumento"
               },
               {
+                "puntos": 1,
+                "condicion": "Un solo dato procede de una fuente y aparece suelto"
+              },
+              {
                 "puntos": 0,
                 "condicion": "Ningún dato procede de una fuente"
               }
@@ -1387,19 +1499,23 @@
           },
           {
             "nombre": "Atribución de los datos",
-            "max": 3,
+            "max": 4,
             "bandas": [
               {
-                "puntos": 3,
+                "puntos": 4,
                 "condicion": "Indica el origen de cada dato tomado de una fuente"
               },
               {
-                "puntos": 2,
+                "puntos": 3,
                 "condicion": "Indica las fuentes al final, sin ligar cada dato a la suya"
               },
               {
-                "puntos": 1,
+                "puntos": 2,
                 "condicion": "Menciona alguna fuente de pasada, sin sistema"
+              },
+              {
+                "puntos": 1,
+                "condicion": "Nombra una fuente una sola vez, al margen de los datos"
               },
               {
                 "puntos": 0,
@@ -1409,15 +1525,23 @@
           },
           {
             "nombre": "Distinción entre dato y opinión",
-            "max": 3,
+            "max": 2,
             "bandas": [
               {
-                "puntos": 3,
+                "puntos": 2,
                 "condicion": "Distingue los datos comprobables de las opiniones de la fuente y apoya los argumentos en los datos"
               },
               {
-                "puntos": 2,
+                "puntos": 1.5,
+                "condicion": "Distingue los datos comprobables de las opiniones de la fuente y apoya algún argumento en una opinión"
+              },
+              {
+                "puntos": 1,
                 "condicion": "Emplea datos y opiniones de la fuente con el mismo valor de prueba"
+              },
+              {
+                "puntos": 0.5,
+                "condicion": "Traslada algún pasaje de la fuente y reformula el resto con palabras propias"
               },
               {
                 "puntos": 0,
@@ -1552,19 +1676,23 @@
         "componentes": [
           {
             "nombre": "Tesis y línea argumentativa",
-            "max": 3,
+            "max": 4,
             "bandas": [
               {
-                "puntos": 3,
+                "puntos": 4,
                 "condicion": "La tesis está formulada en la introducción y cada párrafo cumple una función reconocible respecto a ella"
               },
               {
-                "puntos": 2,
+                "puntos": 3,
                 "condicion": "La tesis está formulada, pero algún párrafo queda sin función respecto a ella"
               },
               {
-                "puntos": 1,
+                "puntos": 2,
                 "condicion": "La tesis aparece a mitad del texto o debe reconstruirse del conjunto"
+              },
+              {
+                "puntos": 1,
+                "condicion": "La tesis aparece enunciada en la conclusión"
               },
               {
                 "puntos": 0,
@@ -1600,18 +1728,22 @@
           },
           {
             "nombre": "Conclusión",
-            "max": 3,
+            "max": 2,
             "bandas": [
               {
-                "puntos": 3,
+                "puntos": 2,
                 "condicion": "La conclusión recoge lo argumentado e incorpora el matiz introducido"
               },
               {
-                "puntos": 2,
-                "condicion": "La conclusión retoma la tesis sin recoger lo argumentado"
+                "puntos": 1.5,
+                "condicion": "La conclusión recoge lo argumentado y deja fuera el matiz introducido"
               },
               {
                 "puntos": 1,
+                "condicion": "La conclusión retoma la tesis sin recoger lo argumentado"
+              },
+              {
+                "puntos": 0.5,
                 "condicion": "La conclusión introduce argumentos nuevos"
               },
               {
@@ -1713,19 +1845,23 @@
           },
           {
             "nombre": "Procedimientos explicativos",
-            "max": 3,
+            "max": 4,
             "bandas": [
               {
-                "puntos": 3,
+                "puntos": 4,
                 "condicion": "Incorpora 2 o más precisiones mediante aposición u oración de relativo, sin interrumpir la línea argumentativa"
               },
               {
-                "puntos": 2,
+                "puntos": 3,
                 "condicion": "Incorpora 1 precisión mediante aposición u oración de relativo"
               },
               {
-                "puntos": 1,
+                "puntos": 2,
                 "condicion": "Explica los términos del argumento en una oración aparte"
+              },
+              {
+                "puntos": 1,
+                "condicion": "Explica 1 término del argumento con un ejemplo, sin definirlo"
               },
               {
                 "puntos": 0,
@@ -1735,18 +1871,22 @@
           },
           {
             "nombre": "Referencia y sustitución léxica",
-            "max": 3,
+            "max": 2,
             "bandas": [
               {
-                "puntos": 3,
+                "puntos": 2,
                 "condicion": "Sustituye las repeticiones mediante nominalización o hiperónimo de significado abstracto, y todos los referentes son recuperables"
               },
               {
-                "puntos": 2,
-                "condicion": "Sustituye la mayoría de las repeticiones; 1 referente exige releer para identificarlo"
+                "puntos": 1.5,
+                "condicion": "Sustituye las repeticiones mediante sinónimos y pronombres, sin recurrir a la nominalización ni al hiperónimo, y todos los referentes son recuperables"
               },
               {
                 "puntos": 1,
+                "condicion": "Sustituye la mayoría de las repeticiones; 1 referente exige releer para identificarlo"
+              },
+              {
+                "puntos": 0.5,
                 "condicion": "Repite la palabra clave 3 o más veces teniendo sustituto evidente"
               },
               {
@@ -1826,37 +1966,45 @@
             "bandas": [
               {
                 "puntos": 4,
-                "condicion": "Hasta 2 faltas en todo el texto"
+                "condicion": "Hasta 3 faltas en todo el texto"
               },
               {
                 "puntos": 3,
-                "condicion": "De 3 a 5 faltas"
+                "condicion": "De 4 a 7 faltas"
               },
               {
                 "puntos": 2,
-                "condicion": "De 6 a 9 faltas"
+                "condicion": "De 8 a 12 faltas"
+              },
+              {
+                "puntos": 1,
+                "condicion": "De 13 a 18 faltas"
               },
               {
                 "puntos": 0,
-                "condicion": "10 o más faltas"
+                "condicion": "19 o más faltas"
               }
             ]
           },
           {
             "nombre": "Corrección gramatical y correlación verbal",
-            "max": 3,
+            "max": 2,
             "bandas": [
               {
-                "puntos": 3,
+                "puntos": 2,
                 "condicion": "Sin errores de concordancia, de construcción de la oración ni de correlación temporal"
               },
               {
-                "puntos": 2,
+                "puntos": 1.5,
                 "condicion": "1 o 2 errores que no impiden la comprensión"
               },
               {
                 "puntos": 1,
-                "condicion": "3 o más errores, o alguna oración que hay que releer para reconstruir"
+                "condicion": "De 3 a 5 errores, o alguna oración que hay que releer para reconstruir"
+              },
+              {
+                "puntos": 0.5,
+                "condicion": "De 6 a 12 errores, y la lectura se detiene para rehacer la oración"
               },
               {
                 "puntos": 0,
@@ -1866,19 +2014,23 @@
           },
           {
             "nombre": "Precisión del léxico valorativo",
-            "max": 3,
+            "max": 4,
             "bandas": [
               {
-                "puntos": 3,
+                "puntos": 4,
                 "condicion": "Valora con términos precisos (discutible, desproporcionado, eficaz) y recoge con el discurso relatado la posición de otros"
               },
               {
-                "puntos": 2,
+                "puntos": 3,
                 "condicion": "Valora con términos precisos, sin recoger la posición de otros"
               },
               {
-                "puntos": 1,
+                "puntos": 2,
                 "condicion": "Recurre a valoraciones de significado impreciso con sustituto evidente"
+              },
+              {
+                "puntos": 1,
+                "condicion": "Valora con términos imprecisos y alguna palabra comodín"
               },
               {
                 "puntos": 0,
@@ -1952,15 +2104,23 @@
         "componentes": [
           {
             "nombre": "Planificación propia",
-            "max": 3,
+            "max": 4,
             "bandas": [
               {
-                "puntos": 3,
+                "puntos": 4,
                 "condicion": "Entrega un esquema previo propio con la tesis y el orden de los argumentos"
               },
               {
-                "puntos": 2,
+                "puntos": 3,
                 "condicion": "Entrega un esquema previo que solo lista ideas, sin orden argumentativo"
+              },
+              {
+                "puntos": 2,
+                "condicion": "Entrega notas sueltas previas, sin esquema"
+              },
+              {
+                "puntos": 1,
+                "condicion": "Entrega el esquema del modelo de clase, sin orden propio"
               },
               {
                 "puntos": 0,
@@ -1985,6 +2145,10 @@
                 "condicion": "Corrige faltas de ortografía y léxico"
               },
               {
+                "puntos": 1,
+                "condicion": "Corrige 1 o 2 faltas aisladas"
+              },
+              {
                 "puntos": 0,
                 "condicion": "Entrega la primera versión sin marcas de revisión"
               }
@@ -1992,15 +2156,23 @@
           },
           {
             "nombre": "Justificación con metalenguaje",
-            "max": 3,
+            "max": 2,
             "bandas": [
               {
-                "puntos": 3,
+                "puntos": 2,
                 "condicion": "Justifica 2 o más cambios con el metalenguaje del nivel y vincula al menos uno a un problema de comprensión detectado"
               },
               {
-                "puntos": 2,
+                "puntos": 1.5,
+                "condicion": "Justifica 2 o más cambios con el metalenguaje del nivel, sin vincular ninguno a un problema de comprensión"
+              },
+              {
+                "puntos": 1,
                 "condicion": "Justifica 1 cambio con metalenguaje, o varios sin vincularlos a ningún problema de comprensión"
+              },
+              {
+                "puntos": 0.5,
+                "condicion": "Señala en el borrador el cambio hecho, sin explicar qué mejora"
               },
               {
                 "puntos": 0,
@@ -2100,18 +2272,22 @@
           },
           {
             "nombre": "Atribución y propiedad intelectual",
-            "max": 3,
+            "max": 2,
             "bandas": [
               {
-                "puntos": 3,
+                "puntos": 2,
                 "condicion": "Cita el origen de cada dato en el punto del texto donde aparece y recoge la referencia completa de cada fuente"
               },
               {
-                "puntos": 2,
-                "condicion": "Indica las fuentes al final, sin ligar cada dato a la suya"
+                "puntos": 1.5,
+                "condicion": "Cita el origen de cada dato en el punto del texto donde aparece y deja incompleta la referencia de alguna fuente"
               },
               {
                 "puntos": 1,
+                "condicion": "Indica las fuentes al final, sin ligar cada dato a la suya"
+              },
+              {
+                "puntos": 0.5,
                 "condicion": "Menciona alguna fuente de pasada, sin sistema"
               },
               {
@@ -2122,19 +2298,23 @@
           },
           {
             "nombre": "Valoración de la fiabilidad",
-            "max": 3,
+            "max": 4,
             "bandas": [
               {
-                "puntos": 3,
+                "puntos": 4,
                 "condicion": "Valora la fiabilidad de cada fuente a partir de su autoría, su fecha o su propósito, y lo explicita en el texto"
               },
               {
-                "puntos": 2,
+                "puntos": 3,
                 "condicion": "Valora la fiabilidad de una fuente, sin explicitar en qué se apoya"
               },
               {
-                "puntos": 1,
+                "puntos": 2,
                 "condicion": "Emplea datos y opiniones de la fuente con el mismo valor de prueba"
+              },
+              {
+                "puntos": 1,
+                "condicion": "Nombra el autor o la fecha de una fuente, sin sacar de ahí ninguna consecuencia"
               },
               {
                 "puntos": 0,
@@ -2269,19 +2449,23 @@
         "componentes": [
           {
             "nombre": "Tesis y línea argumentativa",
-            "max": 3,
+            "max": 4,
             "bandas": [
               {
-                "puntos": 3,
+                "puntos": 4,
                 "condicion": "La tesis está formulada en la introducción y cada párrafo cumple una función reconocible respecto a ella"
               },
               {
-                "puntos": 2,
+                "puntos": 3,
                 "condicion": "La tesis está formulada, pero algún párrafo queda sin función respecto a ella"
               },
               {
-                "puntos": 1,
+                "puntos": 2,
                 "condicion": "La tesis debe reconstruirse del conjunto del texto"
+              },
+              {
+                "puntos": 1,
+                "condicion": "La tesis aparece enunciada en la conclusión"
               },
               {
                 "puntos": 0,
@@ -2306,6 +2490,10 @@
                 "condicion": "Menciona la existencia de otras posturas, sin exponer ninguna"
               },
               {
+                "puntos": 1,
+                "condicion": "Nombra una postura contraria en una frase y sigue con la propia"
+              },
+              {
                 "puntos": 0,
                 "condicion": "Argumenta solo a favor de su tesis, sin objeción alguna"
               }
@@ -2313,18 +2501,22 @@
           },
           {
             "nombre": "Conclusión derivada",
-            "max": 3,
+            "max": 2,
             "bandas": [
               {
-                "puntos": 3,
+                "puntos": 2,
                 "condicion": "La conclusión deriva de lo argumentado e incorpora el resultado de la refutación"
               },
               {
-                "puntos": 2,
-                "condicion": "La conclusión retoma la tesis sin incorporar lo ganado en la argumentación"
+                "puntos": 1.5,
+                "condicion": "La conclusión deriva de lo argumentado y deja fuera el resultado de la refutación"
               },
               {
                 "puntos": 1,
+                "condicion": "La conclusión retoma la tesis sin incorporar lo ganado en la argumentación"
+              },
+              {
+                "puntos": 0.5,
                 "condicion": "La conclusión introduce argumentos nuevos"
               },
               {
@@ -2425,19 +2617,23 @@
           },
           {
             "nombre": "Encadenamiento entre párrafos",
-            "max": 3,
+            "max": 4,
             "bandas": [
               {
-                "puntos": 3,
+                "puntos": 4,
                 "condicion": "Cada párrafo retoma al comienzo un elemento del anterior"
               },
               {
-                "puntos": 2,
+                "puntos": 3,
                 "condicion": "La mayoría de los párrafos se encadenan; 1 arranca sin vínculo con lo anterior"
               },
               {
-                "puntos": 1,
+                "puntos": 2,
                 "condicion": "Los párrafos comparten tema, pero su orden podría alterarse sin que el texto cambie"
+              },
+              {
+                "puntos": 1,
+                "condicion": "Encadena 1 par de párrafos y deja el resto sin vínculo"
               },
               {
                 "puntos": 0,
@@ -2447,18 +2643,22 @@
           },
           {
             "nombre": "Referencia y sustitución léxica",
-            "max": 3,
+            "max": 2,
             "bandas": [
               {
-                "puntos": 3,
+                "puntos": 2,
                 "condicion": "Sustituye las repeticiones mediante sinónimo, nominalización o hiperónimo, y todos los referentes son recuperables"
               },
               {
-                "puntos": 2,
-                "condicion": "Sustituye la mayoría de las repeticiones; 1 referente exige releer para identificarlo"
+                "puntos": 1.5,
+                "condicion": "Sustituye las repeticiones mediante sinónimo o pronombre, sin recurrir a la nominalización ni al hiperónimo, y todos los referentes son recuperables"
               },
               {
                 "puntos": 1,
+                "condicion": "Sustituye la mayoría de las repeticiones; 1 referente exige releer para identificarlo"
+              },
+              {
+                "puntos": 0.5,
                 "condicion": "Repite la palabra clave 3 o más veces teniendo sustituto evidente"
               },
               {
@@ -2541,33 +2741,41 @@
               },
               {
                 "puntos": 3,
-                "condicion": "De 3 a 5 faltas"
+                "condicion": "De 3 a 8 faltas"
               },
               {
                 "puntos": 2,
-                "condicion": "De 6 a 9 faltas"
+                "condicion": "De 9 a 15 faltas"
+              },
+              {
+                "puntos": 1,
+                "condicion": "De 16 a 20 faltas"
               },
               {
                 "puntos": 0,
-                "condicion": "10 o más faltas"
+                "condicion": "21 o más faltas"
               }
             ]
           },
           {
             "nombre": "Corrección gramatical",
-            "max": 3,
+            "max": 2,
             "bandas": [
               {
-                "puntos": 3,
+                "puntos": 2,
                 "condicion": "Sin errores de concordancia ni de construcción de la oración"
               },
               {
-                "puntos": 2,
+                "puntos": 1.5,
                 "condicion": "1 o 2 errores que no impiden la comprensión"
               },
               {
                 "puntos": 1,
-                "condicion": "3 o más errores, o alguna oración que hay que releer para reconstruir"
+                "condicion": "De 3 a 5 errores, o alguna oración que hay que releer para reconstruir"
+              },
+              {
+                "puntos": 0.5,
+                "condicion": "De 6 a 12 errores, y la lectura se detiene para rehacer la oración"
               },
               {
                 "puntos": 0,
@@ -2577,19 +2785,23 @@
           },
           {
             "nombre": "Precisión léxica y vocación de estilo",
-            "max": 3,
+            "max": 4,
             "bandas": [
               {
-                "puntos": 3,
+                "puntos": 4,
                 "condicion": "Selecciona el término valorativo preciso y emplea algún recurso de estilo propio del ensayo (interrogación retórica, variación sintáctica)"
               },
               {
-                "puntos": 2,
+                "puntos": 3,
                 "condicion": "Selecciona términos precisos, pero sin recurso de estilo alguno más allá de lo correcto"
               },
               {
-                "puntos": 1,
+                "puntos": 2,
                 "condicion": "Recurre a términos de significado impreciso con sustituto evidente"
+              },
+              {
+                "puntos": 1,
+                "condicion": "Emplea términos imprecisos y alguna palabra comodín"
               },
               {
                 "puntos": 0,
@@ -2662,15 +2874,23 @@
         "componentes": [
           {
             "nombre": "Planificación propia",
-            "max": 3,
+            "max": 4,
             "bandas": [
               {
-                "puntos": 3,
+                "puntos": 4,
                 "condicion": "Entrega un guion previo con la tesis, los argumentos y la objeción prevista"
               },
               {
-                "puntos": 2,
+                "puntos": 3,
                 "condicion": "Entrega un guion previo que solo lista ideas, sin línea argumentativa"
+              },
+              {
+                "puntos": 2,
+                "condicion": "Entrega notas sueltas previas, sin guion"
+              },
+              {
+                "puntos": 1,
+                "condicion": "Entrega el guion del modelo de clase, sin tesis propia"
               },
               {
                 "puntos": 0,
@@ -2695,6 +2915,10 @@
                 "condicion": "Corrige faltas de ortografía y léxico"
               },
               {
+                "puntos": 1,
+                "condicion": "Corrige 1 o 2 faltas aisladas"
+              },
+              {
                 "puntos": 0,
                 "condicion": "Entrega la primera versión sin marcas de revisión"
               }
@@ -2702,15 +2926,23 @@
           },
           {
             "nombre": "Justificación con metalenguaje",
-            "max": 3,
+            "max": 2,
             "bandas": [
               {
-                "puntos": 3,
+                "puntos": 2,
                 "condicion": "Justifica 2 o más cambios con metalenguaje específico, explicando el problema que resuelven y el efecto persuasivo que persiguen"
               },
               {
-                "puntos": 2,
+                "puntos": 1.5,
+                "condicion": "Justifica 2 o más cambios con metalenguaje específico y nombra el efecto persuasivo en uno solo de ellos"
+              },
+              {
+                "puntos": 1,
                 "condicion": "Justifica los cambios con metalenguaje, pero solo señala el problema que resuelven"
+              },
+              {
+                "puntos": 0.5,
+                "condicion": "Nombra los cambios hechos en el borrador, sin señalar el problema que resuelven"
               },
               {
                 "puntos": 0,
@@ -2799,6 +3031,10 @@
                 "condicion": "Enuncia vínculos sin justificar en qué se apoyan"
               },
               {
+                "puntos": 1,
+                "condicion": "Nombra otro texto sin llegar a establecer el vínculo"
+              },
+              {
                 "puntos": 0,
                 "condicion": "El ensayo trata la obra aislada, sin conexión con otros textos"
               }
@@ -2806,15 +3042,23 @@
           },
           {
             "nombre": "Los vínculos sirven a la tesis",
-            "max": 3,
+            "max": 4,
             "bandas": [
               {
-                "puntos": 3,
+                "puntos": 4,
                 "condicion": "Cada vínculo funciona como argumento de la tesis del ensayo"
+              },
+              {
+                "puntos": 3,
+                "condicion": "La mayoría de los vínculos funcionan como argumento; 1 queda como comparación suelta"
               },
               {
                 "puntos": 2,
                 "condicion": "Algún vínculo funciona como argumento; el resto queda como comparación suelta"
+              },
+              {
+                "puntos": 1,
+                "condicion": "Un vínculo se acerca a la tesis sin llegar a funcionar como argumento"
               },
               {
                 "puntos": 0,
@@ -2824,15 +3068,23 @@
           },
           {
             "nombre": "Respuesta personal del lector",
-            "max": 3,
+            "max": 2,
             "bandas": [
               {
-                "puntos": 3,
+                "puntos": 2,
                 "condicion": "Explicita la respuesta personal que la lectura le provoca y la conecta con la valoración que defiende"
               },
               {
-                "puntos": 2,
+                "puntos": 1.5,
+                "condicion": "Explicita la respuesta personal que la lectura provoca y la conecta con un solo tramo de la valoración"
+              },
+              {
+                "puntos": 1,
                 "condicion": "Explicita una impresión personal aislada de la argumentación"
+              },
+              {
+                "puntos": 0.5,
+                "condicion": "Emplea la primera persona al valorar, sin nombrar la respuesta que la lectura provoca"
               },
               {
                 "puntos": 0,
@@ -2967,19 +3219,23 @@
         "componentes": [
           {
             "nombre": "Tesis y línea argumentativa",
-            "max": 3,
+            "max": 4,
             "bandas": [
               {
-                "puntos": 3,
+                "puntos": 4,
                 "condicion": "La tesis está formulada en la introducción y cada párrafo cumple una función reconocible respecto a ella"
               },
               {
-                "puntos": 2,
+                "puntos": 3,
                 "condicion": "La tesis está formulada, pero algún párrafo queda sin función respecto a ella"
               },
               {
-                "puntos": 1,
+                "puntos": 2,
                 "condicion": "La tesis debe inferirse del conjunto del texto"
+              },
+              {
+                "puntos": 1,
+                "condicion": "La tesis aparece enunciada en la conclusión"
               },
               {
                 "puntos": 0,
@@ -3004,6 +3260,10 @@
                 "condicion": "Menciona la existencia de otras posturas, sin exponer ninguna"
               },
               {
+                "puntos": 1,
+                "condicion": "Nombra una postura contraria en una frase y sigue con la propia"
+              },
+              {
                 "puntos": 0,
                 "condicion": "Argumenta solo a favor de su tesis, sin objeción alguna"
               }
@@ -3011,18 +3271,22 @@
           },
           {
             "nombre": "Conclusión derivada",
-            "max": 3,
+            "max": 2,
             "bandas": [
               {
-                "puntos": 3,
+                "puntos": 2,
                 "condicion": "La conclusión deriva de lo argumentado e incorpora el resultado de la refutación"
               },
               {
-                "puntos": 2,
-                "condicion": "La conclusión retoma la tesis sin incorporar lo ganado en la argumentación"
+                "puntos": 1.5,
+                "condicion": "La conclusión deriva de lo argumentado y deja fuera el resultado de la refutación"
               },
               {
                 "puntos": 1,
+                "condicion": "La conclusión retoma la tesis sin incorporar lo ganado en la argumentación"
+              },
+              {
+                "puntos": 0.5,
                 "condicion": "La conclusión introduce argumentos nuevos"
               },
               {
@@ -3123,19 +3387,23 @@
           },
           {
             "nombre": "Encadenamiento entre párrafos",
-            "max": 3,
+            "max": 4,
             "bandas": [
               {
-                "puntos": 3,
+                "puntos": 4,
                 "condicion": "Cada párrafo retoma al comienzo un elemento del anterior"
               },
               {
-                "puntos": 2,
+                "puntos": 3,
                 "condicion": "La mayoría de los párrafos se encadenan; 1 arranca sin vínculo con lo anterior"
               },
               {
-                "puntos": 1,
+                "puntos": 2,
                 "condicion": "Los párrafos comparten tema, pero su orden podría alterarse sin que el texto cambie"
+              },
+              {
+                "puntos": 1,
+                "condicion": "Encadena 1 par de párrafos y deja el resto sin vínculo"
               },
               {
                 "puntos": 0,
@@ -3145,18 +3413,22 @@
           },
           {
             "nombre": "Referencia y sustitución léxica",
-            "max": 3,
+            "max": 2,
             "bandas": [
               {
-                "puntos": 3,
+                "puntos": 2,
                 "condicion": "Sustituye las repeticiones mediante sinónimo, nominalización o hiperónimo, y todos los referentes son recuperables"
               },
               {
-                "puntos": 2,
-                "condicion": "Sustituye la mayoría de las repeticiones; 1 referente exige releer para identificarlo"
+                "puntos": 1.5,
+                "condicion": "Sustituye las repeticiones mediante sinónimo o pronombre, sin recurrir a la nominalización ni al hiperónimo, y todos los referentes son recuperables"
               },
               {
                 "puntos": 1,
+                "condicion": "Sustituye la mayoría de las repeticiones; 1 referente exige releer para identificarlo"
+              },
+              {
+                "puntos": 0.5,
                 "condicion": "Repite la palabra clave 3 o más veces teniendo sustituto evidente"
               },
               {
@@ -3235,37 +3507,45 @@
             "bandas": [
               {
                 "puntos": 4,
-                "condicion": "Hasta 2 faltas en todo el texto, incluidas las tipográficas"
+                "condicion": "Hasta 3 faltas en todo el texto, incluidas las tipográficas"
               },
               {
                 "puntos": 3,
-                "condicion": "De 3 a 5 faltas"
+                "condicion": "De 4 a 8 faltas"
               },
               {
                 "puntos": 2,
-                "condicion": "De 6 a 9 faltas"
+                "condicion": "De 9 a 16 faltas"
+              },
+              {
+                "puntos": 1,
+                "condicion": "De 17 a 19 faltas"
               },
               {
                 "puntos": 0,
-                "condicion": "10 o más faltas"
+                "condicion": "20 o más faltas"
               }
             ]
           },
           {
             "nombre": "Corrección gramatical",
-            "max": 3,
+            "max": 2,
             "bandas": [
               {
-                "puntos": 3,
+                "puntos": 2,
                 "condicion": "Sin errores de concordancia ni de construcción de la oración"
               },
               {
-                "puntos": 2,
+                "puntos": 1.5,
                 "condicion": "1 o 2 errores que no impiden la comprensión"
               },
               {
                 "puntos": 1,
-                "condicion": "3 o más errores, o alguna oración que hay que releer para reconstruir"
+                "condicion": "De 3 a 5 errores, o alguna oración que hay que releer para reconstruir"
+              },
+              {
+                "puntos": 0.5,
+                "condicion": "De 6 a 12 errores, y la lectura se detiene para rehacer la oración"
               },
               {
                 "puntos": 0,
@@ -3275,19 +3555,23 @@
           },
           {
             "nombre": "Precisión léxica y vocación de estilo",
-            "max": 3,
+            "max": 4,
             "bandas": [
               {
-                "puntos": 3,
+                "puntos": 4,
                 "condicion": "Selecciona el término valorativo preciso y emplea algún recurso de estilo propio del ensayo (interrogación retórica, variación sintáctica)"
               },
               {
-                "puntos": 2,
+                "puntos": 3,
                 "condicion": "Selecciona términos precisos, pero sin recurso de estilo alguno más allá de lo correcto"
               },
               {
-                "puntos": 1,
+                "puntos": 2,
                 "condicion": "Recurre a términos de significado impreciso con sustituto evidente"
+              },
+              {
+                "puntos": 1,
+                "condicion": "Emplea términos imprecisos y alguna palabra comodín"
               },
               {
                 "puntos": 0,
@@ -3361,15 +3645,23 @@
         "componentes": [
           {
             "nombre": "Planificación propia",
-            "max": 3,
+            "max": 4,
             "bandas": [
               {
-                "puntos": 3,
+                "puntos": 4,
                 "condicion": "Entrega un guion previo con la tesis, los argumentos y la objeción prevista"
               },
               {
-                "puntos": 2,
+                "puntos": 3,
                 "condicion": "Entrega un guion previo que solo lista ideas, sin línea argumentativa"
+              },
+              {
+                "puntos": 2,
+                "condicion": "Entrega notas sueltas previas, sin guion"
+              },
+              {
+                "puntos": 1,
+                "condicion": "Entrega el guion del modelo de clase, sin tesis propia"
               },
               {
                 "puntos": 0,
@@ -3394,6 +3686,10 @@
                 "condicion": "Corrige faltas de ortografía y léxico, de forma individual"
               },
               {
+                "puntos": 1,
+                "condicion": "Corrige 1 o 2 faltas aisladas, de forma individual"
+              },
+              {
                 "puntos": 0,
                 "condicion": "Entrega la primera versión sin marcas de revisión"
               }
@@ -3401,15 +3697,23 @@
           },
           {
             "nombre": "Justificación con metalenguaje",
-            "max": 3,
+            "max": 2,
             "bandas": [
               {
-                "puntos": 3,
+                "puntos": 2,
                 "condicion": "Justifica 2 o más cambios con metalenguaje específico, explicando el problema que resuelven y el efecto persuasivo que persiguen"
               },
               {
-                "puntos": 2,
+                "puntos": 1.5,
+                "condicion": "Justifica 2 o más cambios con metalenguaje específico y nombra el efecto persuasivo en uno solo de ellos"
+              },
+              {
+                "puntos": 1,
                 "condicion": "Justifica los cambios con metalenguaje, pero solo señala el problema que resuelven"
+              },
+              {
+                "puntos": 0.5,
+                "condicion": "Nombra los cambios hechos en el borrador, sin señalar el problema que resuelven"
               },
               {
                 "puntos": 0,
@@ -3498,6 +3802,10 @@
                 "condicion": "Enuncia vínculos sin justificar en qué se apoyan ni en qué eje se sitúan"
               },
               {
+                "puntos": 1,
+                "condicion": "Nombra otro texto del mismo eje sin llegar a establecer el vínculo"
+              },
+              {
                 "puntos": 0,
                 "condicion": "El ensayo trata la obra aislada, sin conexión con otros textos"
               }
@@ -3505,15 +3813,23 @@
           },
           {
             "nombre": "Los vínculos sirven a la tesis",
-            "max": 3,
+            "max": 4,
             "bandas": [
               {
-                "puntos": 3,
+                "puntos": 4,
                 "condicion": "Cada vínculo funciona como argumento de la tesis del ensayo"
+              },
+              {
+                "puntos": 3,
+                "condicion": "La mayoría de los vínculos funcionan como argumento; 1 queda como comparación suelta"
               },
               {
                 "puntos": 2,
                 "condicion": "Algún vínculo funciona como argumento; el resto queda como comparación suelta"
+              },
+              {
+                "puntos": 1,
+                "condicion": "Un vínculo se acerca a la tesis sin llegar a funcionar como argumento"
               },
               {
                 "puntos": 0,
@@ -3523,15 +3839,23 @@
           },
           {
             "nombre": "Respuesta personal del lector",
-            "max": 3,
+            "max": 2,
             "bandas": [
               {
-                "puntos": 3,
+                "puntos": 2,
                 "condicion": "Explicita la respuesta personal que la lectura le provoca y la conecta con la valoración que defiende"
               },
               {
-                "puntos": 2,
+                "puntos": 1.5,
+                "condicion": "Explicita la respuesta personal que la lectura provoca y la conecta con un solo tramo de la valoración"
+              },
+              {
+                "puntos": 1,
                 "condicion": "Explicita una impresión personal aislada de la argumentación"
+              },
+              {
+                "puntos": 0.5,
+                "condicion": "Emplea la primera persona al valorar, sin nombrar la respuesta que la lectura provoca"
               },
               {
                 "puntos": 0,

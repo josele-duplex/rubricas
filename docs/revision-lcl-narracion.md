@@ -51,9 +51,9 @@
 
 | Componente | Máx. | Bandas |
 |---|---|---|
-| Las tres partes del relato | 4 | **4** — Se distinguen planteamiento, nudo y desenlace, y el desenlace resuelve el conflicto del nudo<br>**3** — Se distinguen las tres partes y el desenlace deja el conflicto abierto<br>**2** — Se distinguen dos de las tres partes<br>**0** — El relato es una sucesión de hechos sin partes distinguibles |
-| Un episodio por párrafo | 3 | **3** — Cada párrafo cuenta un episodio identificable<br>**2** — Un párrafo mezcla dos episodios; el resto, uno cada uno<br>**1** — Dos o más párrafos mezclan episodios distintos<br>**0** — El relato no está dividido en párrafos |
-| Hechos que hacen avanzar la historia | 3 | **3** — Todos los hechos contados influyen en el desenlace<br>**2** — Incluye 1 hecho que no influye en el desenlace<br>**1** — Incluye 2 hechos que no influyen en el desenlace<br>**0** — Incluye 3 o más hechos ajenos a la historia |
+| Las tres partes del relato | 4 | **4** — Se distinguen planteamiento, nudo y desenlace, y el desenlace resuelve el conflicto del nudo<br>**3** — Se distinguen las tres partes y el desenlace deja el conflicto abierto<br>**2** — Se distinguen dos de las tres partes<br>**1** — Se distingue una de las tres partes<br>**0** — El relato es una sucesión de hechos sin partes distinguibles |
+| Un episodio por párrafo | 2 | **2** — Cada párrafo cuenta un episodio identificable<br>**1.5** — Un episodio se reparte entre dos párrafos seguidos<br>**1** — Un párrafo mezcla dos episodios; el resto, uno cada uno<br>**0.5** — Dos o más párrafos mezclan episodios distintos<br>**0** — El relato no está dividido en párrafos |
+| Hechos que hacen avanzar la historia | 4 | **4** — Todos los hechos contados influyen en el desenlace<br>**3** — Incluye 1 hecho que no influye en el desenlace<br>**2** — Incluye 2 hechos que no influyen en el desenlace<br>**1** — Incluye 3 o 4 hechos que no influyen en el desenlace<br>**0** — Incluye 5 o más hechos ajenos a la historia |
 
 ### Cohesión: hilo temporal y referencia a los personajes  ·  20%  ·  bloque B
 
@@ -73,8 +73,8 @@
 | Componente | Máx. | Bandas |
 |---|---|---|
 | Conectores temporales | 4 | **4** — Emplea 3 o más conectores temporales distintos (primero, después, mientras, al final)<br>**3** — Emplea 2 conectores temporales distintos<br>**2** — Emplea siempre el mismo conector temporal<br>**1** — Enlaza los hechos con y y con entonces<br>**0** — Coloca los hechos uno detrás de otro sin enlace |
-| El tiempo del relato se mantiene | 3 | **3** — Sostiene los tiempos de pretérito en todo el relato<br>**2** — Cambia de tiempo verbal en 1 o 2 puntos del relato<br>**1** — Alterna presente y pretérito a lo largo del texto<br>**0** — El tiempo verbal cambia dentro de la misma oración |
-| El punto y la raya del diálogo | 3 | **3** — Separa con punto todos los enunciados y marca con raya las intervenciones del diálogo<br>**2** — Separa con punto los enunciados y deja 1 o 2 sin separar<br>**1** — Agrupa 3 o más enunciados seguidos sin punto<br>**0** — Escribe el relato casi sin puntos |
+| El tiempo del relato se mantiene | 4 | **4** — Sostiene los tiempos de pretérito en todo el relato<br>**3** — Cambia de tiempo verbal en 1 o 2 puntos del relato<br>**2** — Alterna presente y pretérito a lo largo del texto<br>**1** — Sostiene el pretérito en un episodio y cambia en el resto<br>**0** — El tiempo verbal cambia dentro de la misma oración |
+| El punto y la raya del diálogo | 2 | **2** — Separa con punto todos los enunciados y marca con raya las intervenciones del diálogo<br>**1.5** — Separa con punto todos los enunciados y deja sin raya alguna intervención del diálogo<br>**1** — Separa con punto los enunciados y deja 1 o 2 sin separar<br>**0.5** — Agrupa 3 o más enunciados seguidos sin punto<br>**0** — Escribe el relato casi sin puntos |
 
 ### Corrección normativa y propiedad léxica  ·  15%  ·  bloque D  ·  🔒 obligatorio
 
@@ -93,9 +93,9 @@
 
 | Componente | Máx. | Bandas |
 |---|---|---|
-| Ortografía y acentuación | 4 | **4** — Hasta 2 faltas en todo el relato<br>**3** — De 3 a 5 faltas<br>**2** — De 6 a 9 faltas<br>**0** — 10 o más faltas |
-| Concordancia | 3 | **3** — Sin errores de concordancia de género, número o persona<br>**2** — 1 o 2 errores de concordancia<br>**1** — 3 o 4 errores de concordancia<br>**0** — 5 o más errores de concordancia |
-| Precisión de los verbos y los adjetivos | 3 | **3** — Emplea verbos y adjetivos concretos en lugar de comodines<br>**2** — Emplea 1 o 2 comodines (decir, hacer, cosa) con sustituto evidente<br>**1** — Emplea 3 o más comodines<br>**0** — El relato se sostiene sobre palabras comodín |
+| Ortografía y acentuación | 4 | **4** — Hasta 2 faltas en todo el relato<br>**3** — De 3 a 5 faltas<br>**2** — De 6 a 8 faltas<br>**1** — De 9 a 12 faltas<br>**0** — 13 o más faltas |
+| Concordancia | 2 | **2** — Sin errores de concordancia de género, número o persona<br>**1.5** — Hasta 1 error de concordancia<br>**1** — 2 o 3 errores de concordancia<br>**0.5** — De 4 a 5 errores de concordancia<br>**0** — 6 o más errores de concordancia |
+| Precisión de los verbos y los adjetivos | 4 | **4** — Emplea verbos y adjetivos concretos en lugar de comodines<br>**3** — Emplea 1 o 2 comodines (decir, hacer, cosa) con sustituto evidente<br>**2** — Emplea 3 o más comodines<br>**1** — Emplea comodines y algún verbo o adjetivo concreto<br>**0** — El relato se sostiene sobre palabras comodín |
 
 ### Planificación y revisión del propio relato  ·  10%  ·  bloque D
 
@@ -114,9 +114,9 @@
 
 | Componente | Máx. | Bandas |
 |---|---|---|
-| Hay planificación previa | 4 | **4** — Entrega un esquema previo con los hechos del relato ordenados<br>**2** — Entrega notas sueltas previas, sin ordenar<br>**0** — No hay rastro de trabajo previo al relato |
-| Hay revisión | 4 | **4** — El borrador muestra 2 o más correcciones sobre el propio texto<br>**2** — El borrador muestra 1 corrección<br>**0** — Entrega la primera versión sin marcas de revisión |
-| Explica algún cambio | 2 | **2** — Anota al margen el motivo de al menos un cambio<br>**0** — El borrador no lleva ninguna nota al margen |
+| Hay planificación previa | 4 | **4** — Entrega un esquema previo con los hechos del relato ordenados<br>**3** — Entrega un esquema previo con los hechos del relato sin ordenar<br>**2** — Entrega notas sueltas previas, sin ordenar<br>**1** — Apunta los nombres de los personajes antes de escribir, sin ordenar los hechos<br>**0** — No hay rastro de trabajo previo al relato |
+| Hay revisión | 4 | **4** — El borrador muestra 2 o más correcciones sobre el propio texto<br>**3** — El borrador muestra 2 o más correcciones de ortografía, ninguna sobre lo que cuenta el relato<br>**2** — El borrador muestra 1 corrección<br>**1** — El borrador muestra una marca de lectura sin corrección terminada<br>**0** — Entrega la primera versión sin marcas de revisión |
+| Explica algún cambio | 2 | **2** — Anota al margen el motivo de al menos un cambio<br>**1.5** — Anota al margen el motivo de un cambio con una palabra suelta: repetido, largo, no se entiende<br>**1** — Anota al margen el motivo de un cambio que no ha llegado a hacer en el relato<br>**0.5** — Señala el cambio en el borrador, sin anotar el motivo<br>**0** — El borrador no lleva ninguna nota al margen |
 
 ### Recreación con intención literaria  ·  15%  ·  bloque C
 
@@ -135,9 +135,9 @@
 
 | Componente | Máx. | Bandas |
 |---|---|---|
-| Se reconoce el modelo trabajado | 3 | **3** — El relato conserva el esquema del modelo y cambia lugar, personajes y final<br>**2** — El relato conserva el esquema del modelo y cambia uno de los tres elementos<br>**1** — El relato reproduce el modelo con los nombres cambiados<br>**0** — El relato no guarda relación con el modelo trabajado |
-| Recursos que hacen ver la escena | 4 | **4** — Emplea 3 o más recursos distintos: comparación, detalle de los sentidos, diálogo<br>**3** — Emplea 2 recursos distintos<br>**2** — Emplea 1 recurso<br>**0** — Cuenta los hechos sin recursos de estilo |
-| El tono se mantiene | 3 | **3** — El mismo tono desde la primera línea hasta la última<br>**2** — El tono cambia en 1 punto del relato<br>**1** — El tono cambia en 2 puntos del relato<br>**0** — El tono cambia de párrafo en párrafo |
+| Se reconoce el modelo trabajado | 4 | **4** — El relato conserva el esquema del modelo y cambia lugar, personajes y final<br>**3** — El relato conserva el esquema del modelo y cambia uno de los tres elementos<br>**2** — El relato reproduce el modelo con los nombres cambiados<br>**1** — El relato conserva un episodio del modelo y sigue por cuenta propia<br>**0** — El relato no guarda relación con el modelo trabajado |
+| Recursos que hacen ver la escena | 4 | **4** — Emplea 3 o más recursos distintos: comparación, detalle de los sentidos, diálogo<br>**3** — Emplea 2 recursos distintos<br>**2** — Emplea 1 recurso<br>**1** — Apunta un recurso en una frase suelta<br>**0** — Cuenta los hechos sin recursos de estilo |
+| El tono se mantiene | 2 | **2** — El mismo tono desde la primera línea hasta la última<br>**1.5** — El mismo tono en todo el relato, con alguna expresión suelta ajena a ese tono<br>**1** — El tono cambia en 1 punto del relato<br>**0.5** — El tono cambia en 2 puntos del relato<br>**0** — El tono cambia de párrafo en párrafo |
 
 ---
 
@@ -184,9 +184,9 @@
 
 | Componente | Máx. | Bandas |
 |---|---|---|
-| Planteamiento, nudo y desenlace | 4 | **4** — Las tres partes se distinguen y el desenlace se sigue de lo contado en el nudo<br>**3** — Las tres partes se distinguen y el desenlace llega sin preparación en el nudo<br>**2** — Se distinguen dos de las tres partes<br>**0** — El relato es un bloque de hechos sin partes distinguibles |
-| El conflicto sostiene el relato | 3 | **3** — Hay un conflicto planteado en el nudo y resuelto en el desenlace<br>**2** — Hay un conflicto planteado que queda sin resolver<br>**1** — Hay un conflicto apuntado en una sola línea del relato<br>**0** — El relato enumera hechos sin ningún conflicto |
-| Episodios en párrafos | 3 | **3** — Cada párrafo cierra un episodio del relato<br>**2** — Un párrafo mezcla dos episodios<br>**1** — Dos o más párrafos mezclan episodios<br>**0** — El relato no está dividido en párrafos |
+| Planteamiento, nudo y desenlace | 4 | **4** — Las tres partes se distinguen y el desenlace se sigue de lo contado en el nudo<br>**3** — Las tres partes se distinguen y el desenlace llega sin preparación en el nudo<br>**2** — Se distinguen dos de las tres partes<br>**1** — Se distingue una de las tres partes<br>**0** — El relato es un bloque de hechos sin partes distinguibles |
+| El conflicto sostiene el relato | 4 | **4** — Hay un conflicto planteado en el nudo y resuelto en el desenlace<br>**3** — Hay un conflicto planteado que queda sin resolver<br>**2** — Hay un conflicto apuntado en una sola línea del relato<br>**1** — El relato apunta una dificultad del personaje sin llegar a conflicto<br>**0** — El relato enumera hechos sin ningún conflicto |
+| Episodios en párrafos | 2 | **2** — Cada párrafo cierra un episodio del relato<br>**1.5** — Un episodio se reparte entre dos párrafos seguidos<br>**1** — Un párrafo mezcla dos episodios<br>**0.5** — Dos o más párrafos mezclan episodios<br>**0** — El relato no está dividido en párrafos |
 
 ### Cohesión: hilo temporal y referencia a los personajes  ·  20%  ·  bloque B
 
@@ -205,10 +205,10 @@
 
 | Componente | Máx. | Bandas |
 |---|---|---|
-| Conectores de tiempo y de orden | 3 | **3** — Emplea 4 o más conectores distintos entre temporales y de orden<br>**2** — Emplea 2 o 3 conectores distintos<br>**1** — Repite el mismo conector a lo largo del relato<br>**0** — Coloca los hechos uno detrás de otro sin enlace |
-| Referencia a los personajes | 3 | **3** — Sustituye por pronombre o sinónimo el nombre del personaje ya citado en todo el relato<br>**2** — Deja 1 o 2 repeticiones del nombre sin sustituir<br>**1** — Repite el nombre del personaje en cada oración<br>**0** — El pronombre empleado impide saber de qué personaje se habla |
-| El tiempo del relato | 2 | **2** — Sostiene el pretérito como tiempo del relato de principio a fin<br>**1** — Cambia de tiempo verbal en 1 punto del relato<br>**0** — Alterna presente y pretérito a lo largo del texto |
-| Puntuación del diálogo | 2 | **2** — Marca con raya cada intervención y con coma los incisos del narrador<br>**1** — Marca las intervenciones del diálogo sin distinguir quién habla<br>**0** — El diálogo se mezcla con la narración dentro del mismo párrafo |
+| Conectores de tiempo y de orden | 4 | **4** — Emplea 4 o más conectores distintos entre temporales y de orden<br>**3** — Emplea 2 o 3 conectores distintos<br>**2** — Repite el mismo conector a lo largo del relato<br>**1** — Enlaza dos hechos con un conector y coloca el resto sin enlace<br>**0** — Coloca los hechos uno detrás de otro sin enlace |
+| Referencia a los personajes | 2 | **2** — Sustituye por pronombre o sinónimo el nombre del personaje ya citado en todo el relato<br>**1.5** — Deja 1 repetición del nombre sin sustituir<br>**1** — Deja 2 o 3 repeticiones del nombre sin sustituir<br>**0.5** — Repite el nombre del personaje en cada oración<br>**0** — El pronombre empleado impide saber de qué personaje se habla |
+| El tiempo del relato | 2 | **2** — Sostiene el pretérito como tiempo del relato de principio a fin<br>**1.5** — Cambia de tiempo verbal en 1 punto del relato<br>**1** — Cambia de tiempo verbal en 2 puntos del relato<br>**0.5** — Cambia de tiempo verbal en 3 o más puntos del relato<br>**0** — Alterna presente y pretérito a lo largo del texto |
+| Puntuación del diálogo | 2 | **2** — Marca con raya cada intervención y con coma los incisos del narrador<br>**1.5** — Marca con raya cada intervención y deja sin coma los incisos del narrador<br>**1** — Marca las intervenciones del diálogo sin distinguir quién habla<br>**0.5** — Abre con raya el diálogo y sigue las intervenciones en el mismo párrafo<br>**0** — El diálogo se mezcla con la narración dentro del mismo párrafo |
 
 ### Corrección normativa y propiedad léxica  ·  15%  ·  bloque D  ·  🔒 obligatorio
 
@@ -227,9 +227,9 @@
 
 | Componente | Máx. | Bandas |
 |---|---|---|
-| Ortografía y acentuación | 4 | **4** — Hasta 2 faltas en todo el relato<br>**3** — De 3 a 4 faltas<br>**2** — De 5 a 8 faltas<br>**0** — 9 o más faltas |
-| Formas verbales del relato | 3 | **3** — Sin errores en las formas de pretérito, incluidas las de hacer, decir y traer<br>**2** — 1 o 2 errores en las formas verbales<br>**1** — 3 o 4 errores en las formas verbales<br>**0** — 5 o más errores en las formas verbales |
-| Precisión del léxico | 3 | **3** — Emplea verbos de decir variados y adjetivos concretos<br>**2** — Repite 1 o 2 verbos de decir a lo largo del diálogo<br>**1** — Emplea dijo y contestó como únicos verbos de decir<br>**0** — El relato se sostiene sobre palabras comodín |
+| Ortografía y acentuación | 4 | **4** — Hasta 2 faltas en todo el relato<br>**3** — De 3 a 6 faltas<br>**2** — De 7 a 9 faltas<br>**1** — De 10 a 14 faltas<br>**0** — 15 o más faltas |
+| Formas verbales del relato | 2 | **2** — Sin errores en las formas de pretérito, incluidas las de hacer, decir y traer<br>**1.5** — Hasta 1 error en las formas verbales<br>**1** — 2 o 3 errores en las formas verbales<br>**0.5** — De 4 a 7 errores en las formas verbales<br>**0** — 8 o más errores en las formas verbales |
+| Precisión del léxico | 4 | **4** — Emplea verbos de decir variados y adjetivos concretos<br>**3** — Repite 1 o 2 verbos de decir a lo largo del diálogo<br>**2** — Emplea dijo y contestó como únicos verbos de decir<br>**1** — Emplea dijo como único verbo de decir y algún adjetivo concreto<br>**0** — El relato se sostiene sobre palabras comodín |
 
 ### Planificación y revisión del propio relato  ·  10%  ·  bloque D
 
@@ -248,9 +248,9 @@
 
 | Componente | Máx. | Bandas |
 |---|---|---|
-| Guion previo del relato | 4 | **4** — Entrega un guion con los episodios y los personajes<br>**3** — Entrega un guion solo con los episodios<br>**2** — Entrega notas sueltas previas<br>**0** — No hay rastro de trabajo previo al relato |
-| Revisión entre iguales | 4 | **4** — El borrador recoge 2 o más cambios a partir de la lectura de un compañero<br>**2** — El borrador recoge 1 cambio a partir de esa lectura<br>**0** — Entrega la primera versión sin marcas de revisión |
-| Motivo del cambio | 2 | **2** — Anota el motivo de al menos un cambio del desenlace<br>**0** — El borrador no recoge ningún motivo |
+| Guion previo del relato | 4 | **4** — Entrega un guion con los episodios y los personajes<br>**3** — Entrega un guion solo con los episodios<br>**2** — Entrega notas sueltas previas<br>**1** — Entrega el guion del modelo de clase, sin episodios propios<br>**0** — No hay rastro de trabajo previo al relato |
+| Revisión entre iguales | 4 | **4** — El borrador recoge 2 o más cambios a partir de la lectura de un compañero<br>**3** — El borrador recoge 2 o más cambios y solo uno procede de esa lectura<br>**2** — El borrador recoge 1 cambio a partir de esa lectura<br>**1** — El borrador recoge la anotación del compañero sin ningún cambio hecho<br>**0** — Entrega la primera versión sin marcas de revisión |
+| Motivo del cambio | 2 | **2** — Anota el motivo de al menos un cambio del desenlace<br>**1.5** — Anota el motivo de un cambio del desenlace en una frase sin desarrollar<br>**1** — Anota el motivo de un cambio que no afecta al desenlace<br>**0.5** — Señala en el borrador el cambio del desenlace, sin anotar el motivo<br>**0** — El borrador no recoge ningún motivo |
 
 ### Recreación con intención literaria  ·  15%  ·  bloque C
 
@@ -269,9 +269,9 @@
 
 | Componente | Máx. | Bandas |
 |---|---|---|
-| Convenciones del género | 3 | **3** — El relato respeta 3 convenciones de la obra leída: voz, tipo de personaje y atmósfera<br>**2** — El relato respeta 2 de esas convenciones<br>**1** — El relato respeta 1 de esas convenciones<br>**0** — El relato no guarda relación con la obra leída |
-| Recursos de estilo | 4 | **4** — Emplea 4 o más recursos distintos: comparación, metáfora, detalle de los sentidos, diálogo<br>**3** — Emplea 2 o 3 recursos distintos<br>**2** — Emplea 1 recurso<br>**0** — Cuenta los hechos sin recursos de estilo |
-| La voz del relato | 3 | **3** — La voz elegida, narrador externo o personaje, se sostiene en todo el relato<br>**2** — La voz cambia en 1 punto del relato<br>**1** — La voz cambia en 2 puntos del relato<br>**0** — La voz cambia de párrafo en párrafo |
+| Convenciones del género | 2 | **2** — El relato respeta 3 convenciones de la obra leída: voz, tipo de personaje y atmósfera<br>**1.5** — El relato respeta 2 convenciones y apunta la tercera en algún pasaje<br>**1** — El relato respeta 2 de esas convenciones<br>**0.5** — El relato respeta 1 de esas convenciones<br>**0** — El relato no guarda relación con la obra leída |
+| Recursos de estilo | 4 | **4** — Emplea 4 o más recursos distintos: comparación, metáfora, detalle de los sentidos, diálogo<br>**3** — Emplea 2 o 3 recursos distintos<br>**2** — Emplea 1 recurso<br>**1** — Apunta un recurso en una frase suelta<br>**0** — Cuenta los hechos sin recursos de estilo |
+| La voz del relato | 4 | **4** — La voz elegida, narrador externo o personaje, se sostiene en todo el relato<br>**3** — La voz cambia en 1 punto del relato<br>**2** — La voz cambia en 2 puntos del relato<br>**1** — La voz cambia en 3 o 4 puntos del relato<br>**0** — La voz cambia de párrafo en párrafo |
 
 ---
 
@@ -318,10 +318,10 @@
 
 | Componente | Máx. | Bandas |
 |---|---|---|
-| Estructura del relato | 3 | **3** — Las tres partes se distinguen y el desenlace se sigue de lo contado<br>**2** — Las tres partes se distinguen y el desenlace llega sin preparación<br>**1** — Se distinguen dos de las tres partes<br>**0** — El relato es un bloque de hechos sin partes distinguibles |
-| El conflicto sostiene el relato | 3 | **3** — El conflicto se plantea, se desarrolla en 2 o más episodios y se resuelve<br>**2** — El conflicto se plantea y se resuelve en un solo episodio<br>**1** — El conflicto se apunta en una sola línea del relato<br>**0** — El relato enumera hechos sin ningún conflicto |
-| Orden del tiempo | 2 | **2** — El orden elegido, lineal o con salto atrás, se sigue sin releer<br>**1** — Hay 1 salto de tiempo que obliga a releer para situarlo<br>**0** — El orden de los hechos impide reconstruir la historia |
-| Episodios en párrafos | 2 | **2** — Cada párrafo cierra un episodio del relato<br>**1** — Dos o más párrafos mezclan episodios<br>**0** — El relato no está dividido en párrafos |
+| Estructura del relato | 2 | **2** — Las tres partes se distinguen y el desenlace se sigue de lo contado<br>**1.5** — Las tres partes se distinguen y el desenlace se prepara en la última línea<br>**1** — Las tres partes se distinguen y el desenlace llega sin preparación<br>**0.5** — Se distinguen dos de las tres partes<br>**0** — El relato es un bloque de hechos sin partes distinguibles |
+| El conflicto sostiene el relato | 4 | **4** — El conflicto se plantea, se desarrolla en 2 o más episodios y se resuelve<br>**3** — El conflicto se plantea y se resuelve en un solo episodio<br>**2** — El conflicto se apunta en una sola línea del relato<br>**1** — El relato apunta una dificultad del personaje sin llegar a conflicto<br>**0** — El relato enumera hechos sin ningún conflicto |
+| Orden del tiempo | 2 | **2** — El orden elegido, lineal o con salto atrás, se sigue sin releer<br>**1.5** — Hay 1 salto de tiempo que obliga a releer para situarlo<br>**1** — Hay 2 saltos de tiempo que obligan a releer para situarlos<br>**0.5** — Hay 3 o más saltos de tiempo sin marca que los sitúe<br>**0** — El orden de los hechos impide reconstruir la historia |
+| Episodios en párrafos | 2 | **2** — Cada párrafo cierra un episodio del relato<br>**1.5** — Un episodio se reparte entre dos párrafos seguidos<br>**1** — Dos o más párrafos mezclan episodios<br>**0.5** — El relato divide en párrafos el comienzo y sigue en un bloque único<br>**0** — El relato no está dividido en párrafos |
 
 ### Cohesión: hilo temporal y referencia a los personajes  ·  20%  ·  bloque B
 
@@ -340,10 +340,10 @@
 
 | Componente | Máx. | Bandas |
 |---|---|---|
-| Conectores entre episodios | 3 | **3** — Emplea 4 o más conectores distintos: orden, causa, consecuencia, contraste<br>**2** — Emplea 2 o 3 tipos de conector<br>**1** — Repite el mismo conector entre los episodios<br>**0** — Coloca los episodios uno detrás de otro sin enlace |
-| Marcas de tiempo y de lugar en los cambios de escena | 3 | **3** — Cada cambio de escena lleva una marca de tiempo o de lugar<br>**2** — 1 cambio de escena queda sin marca<br>**1** — 2 o más cambios de escena quedan sin marca<br>**0** — Las escenas se suceden sin ninguna marca |
-| Referencia a los personajes | 2 | **2** — Sustituye por pronombre, sinónimo o elipsis los nombres ya citados<br>**1** — Deja 2 o 3 repeticiones del nombre sin sustituir<br>**0** — El referente de algún pronombre resulta irrecuperable |
-| Puntuación de las voces | 2 | **2** — Delimita con raya las intervenciones y separa los incisos del narrador<br>**1** — Delimita las intervenciones sin separar los incisos del narrador<br>**0** — Las voces del diálogo se confunden con la narración |
+| Conectores entre episodios | 4 | **4** — Emplea 4 o más conectores distintos: orden, causa, consecuencia, contraste<br>**3** — Emplea 2 o 3 tipos de conector<br>**2** — Repite el mismo conector entre los episodios<br>**1** — Enlaza dos episodios con un conector y coloca el resto sin enlace<br>**0** — Coloca los episodios uno detrás de otro sin enlace |
+| Marcas de tiempo y de lugar en los cambios de escena | 2 | **2** — Cada cambio de escena lleva una marca de tiempo o de lugar<br>**1.5** — Cada cambio de escena lleva marca y alguna repite la del cambio anterior<br>**1** — 1 cambio de escena queda sin marca<br>**0.5** — 2 o más cambios de escena quedan sin marca<br>**0** — Las escenas se suceden sin ninguna marca |
+| Referencia a los personajes | 2 | **2** — Sustituye por pronombre, sinónimo o elipsis los nombres ya citados<br>**1.5** — Deja 1 repetición del nombre sin sustituir<br>**1** — Deja 2 o 3 repeticiones del nombre sin sustituir<br>**0.5** — Deja 4 o más repeticiones del nombre sin sustituir<br>**0** — El referente de algún pronombre resulta irrecuperable |
+| Puntuación de las voces | 2 | **2** — Delimita con raya las intervenciones y separa los incisos del narrador<br>**1.5** — Delimita con raya las intervenciones y deja sin separar algún inciso del narrador<br>**1** — Delimita las intervenciones sin separar los incisos del narrador<br>**0.5** — Abre con raya la primera intervención y sigue el diálogo sin marcas<br>**0** — Las voces del diálogo se confunden con la narración |
 
 ### Corrección normativa y propiedad léxica  ·  15%  ·  bloque D  ·  🔒 obligatorio
 
@@ -362,9 +362,9 @@
 
 | Componente | Máx. | Bandas |
 |---|---|---|
-| Ortografía y acentuación | 3 | **3** — Hasta 2 faltas en un relato de cierta extensión<br>**2** — De 3 a 5 faltas<br>**1** — De 6 a 8 faltas<br>**0** — 9 o más faltas |
-| Concordancia en oraciones largas | 3 | **3** — Sin errores de concordancia en las oraciones con subordinación<br>**2** — 1 o 2 errores de concordancia<br>**1** — 3 o 4 errores de concordancia<br>**0** — 5 o más errores de concordancia |
-| Precisión del léxico | 4 | **4** — Emplea adjetivos y verbos que concretan la escena y el gesto<br>**3** — Emplea 1 o 2 términos generales con sustituto evidente<br>**2** — Emplea de 3 a 4 términos generales<br>**0** — El relato se sostiene sobre palabras comodín |
+| Ortografía y acentuación | 4 | **4** — Hasta 3 faltas en un relato de cierta extensión<br>**3** — De 4 a 7 faltas<br>**2** — De 8 a 11 faltas<br>**1** — De 12 a 18 faltas<br>**0** — 19 o más faltas |
+| Concordancia en oraciones largas | 2 | **2** — Sin errores de concordancia en las oraciones con subordinación<br>**1.5** — 1 o 2 errores de concordancia<br>**1** — De 3 a 5 errores de concordancia<br>**0.5** — De 6 a 9 errores de concordancia<br>**0** — 10 o más errores de concordancia |
+| Precisión del léxico | 4 | **4** — Emplea adjetivos y verbos que concretan la escena y el gesto<br>**3** — Emplea 1 o 2 términos generales con sustituto evidente<br>**2** — Emplea de 3 a 4 términos generales<br>**1** — Emplea de 5 a 6 términos generales<br>**0** — El relato se sostiene sobre palabras comodín |
 
 ### Planificación y revisión del propio relato  ·  10%  ·  bloque D
 
@@ -383,9 +383,9 @@
 
 | Componente | Máx. | Bandas |
 |---|---|---|
-| Guion previo | 3 | **3** — Entrega un guion con los episodios, el conflicto y el orden elegido<br>**2** — Entrega un guion solo con los episodios<br>**1** — Entrega notas sueltas previas<br>**0** — No hay rastro de trabajo previo al relato |
-| Revisión del borrador | 4 | **4** — El borrador muestra 3 o más correcciones, una de ellas sobre el orden de los hechos<br>**3** — El borrador muestra 2 correcciones<br>**2** — El borrador muestra 1 corrección<br>**0** — Entrega la primera versión sin marcas de revisión |
-| Justificación con metalenguaje | 3 | **3** — Justifica 2 o más cambios con el metalenguaje del curso<br>**2** — Justifica 1 cambio con el metalenguaje del curso<br>**1** — Anota los cambios sin nombrarlos con el metalenguaje del curso<br>**0** — El borrador no recoge ninguna justificación |
+| Guion previo | 4 | **4** — Entrega un guion con los episodios, el conflicto y el orden elegido<br>**3** — Entrega un guion solo con los episodios<br>**2** — Entrega notas sueltas previas<br>**1** — Entrega el guion del modelo de clase, sin episodios propios<br>**0** — No hay rastro de trabajo previo al relato |
+| Revisión del borrador | 4 | **4** — El borrador muestra 3 o más correcciones, una de ellas sobre el orden de los hechos<br>**3** — El borrador muestra 2 correcciones<br>**2** — El borrador muestra 1 corrección<br>**1** — El borrador muestra marcas de lectura sin corrección terminada<br>**0** — Entrega la primera versión sin marcas de revisión |
+| Justificación con metalenguaje | 2 | **2** — Justifica 2 o más cambios con el metalenguaje del curso<br>**1.5** — Justifica 2 o más cambios y emplea el metalenguaje del curso en uno de ellos<br>**1** — Justifica 1 cambio con el metalenguaje del curso<br>**0.5** — Anota los cambios sin nombrarlos con el metalenguaje del curso<br>**0** — El borrador no recoge ninguna justificación |
 
 ### Recreación con intención literaria  ·  15%  ·  bloque C
 
@@ -404,9 +404,9 @@
 
 | Componente | Máx. | Bandas |
 |---|---|---|
-| Convenciones del género | 3 | **3** — El relato respeta 3 convenciones de la obra leída: voz, tratamiento del tiempo y tipo de conflicto<br>**2** — El relato respeta 2 de esas convenciones<br>**1** — El relato respeta 1 de esas convenciones<br>**0** — El relato no guarda relación con la obra leída |
-| Recursos de estilo al servicio del conflicto | 4 | **4** — Emplea 4 o más recursos distintos y todos apuntan al conflicto del relato<br>**3** — Emplea 2 o 3 recursos ligados al conflicto<br>**2** — Emplea recursos de estilo sin relación con el conflicto<br>**0** — Cuenta los hechos sin recursos de estilo |
-| Punto de vista | 3 | **3** — El punto de vista elegido regula lo que el lector sabe en cada momento<br>**2** — El punto de vista se sostiene sin efecto sobre lo que el lector sabe<br>**1** — El punto de vista cambia en 1 punto del relato<br>**0** — El punto de vista cambia de párrafo en párrafo |
+| Convenciones del género | 2 | **2** — El relato respeta 3 convenciones de la obra leída: voz, tratamiento del tiempo y tipo de conflicto<br>**1.5** — El relato respeta 2 convenciones y apunta la tercera en algún pasaje<br>**1** — El relato respeta 2 de esas convenciones<br>**0.5** — El relato respeta 1 de esas convenciones<br>**0** — El relato no guarda relación con la obra leída |
+| Recursos de estilo al servicio del conflicto | 4 | **4** — Emplea 4 o más recursos distintos y todos apuntan al conflicto del relato<br>**3** — Emplea 2 o 3 recursos ligados al conflicto<br>**2** — Emplea recursos de estilo sin relación con el conflicto<br>**1** — Apunta un recurso en una frase suelta<br>**0** — Cuenta los hechos sin recursos de estilo |
+| Punto de vista | 4 | **4** — El punto de vista elegido regula lo que el lector sabe en cada momento<br>**3** — El punto de vista se sostiene sin efecto sobre lo que el lector sabe<br>**2** — El punto de vista cambia en 1 punto del relato<br>**1** — El punto de vista cambia en 2 puntos del relato<br>**0** — El punto de vista cambia de párrafo en párrafo |
 
 ---
 

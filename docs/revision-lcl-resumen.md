@@ -35,9 +35,9 @@
 
 | Componente | Máx. | Bandas |
 |---|---|---|
-| El tema queda enunciado | 3 | **3** — La primera línea del resumen enuncia el tema del texto<br>**2** — El tema del texto queda enunciado en otro punto del resumen<br>**0** — El resumen arranca con un detalle y el tema queda fuera |
-| Ideas principales de los párrafos | 4 | **4** — Recoge la idea principal de todos los párrafos del texto<br>**3** — Deja fuera la idea principal de 1 párrafo<br>**2** — Deja fuera la idea principal de 2 párrafos<br>**0** — Recoge la idea principal de un solo párrafo |
-| Orden de las ideas | 3 | **3** — Las ideas del resumen siguen el orden del texto original<br>**2** — 1 idea queda fuera del orden del original<br>**1** — 2 ideas quedan fuera de orden<br>**0** — Las ideas se suceden en el resumen sin orden reconocible |
+| El tema queda enunciado | 4 | **4** — La primera línea del resumen enuncia el tema del texto<br>**3** — El tema del texto queda enunciado en otro punto del resumen<br>**2** — El tema se deduce del resumen pero no queda enunciado<br>**1** — El tema se reconoce solo al leer el texto original al lado<br>**0** — El resumen arranca con un detalle y el tema queda fuera |
+| Ideas principales de los párrafos | 4 | **4** — Recoge la idea principal de todos los párrafos del texto<br>**3** — Deja fuera la idea principal de 1 párrafo<br>**2** — Deja fuera la idea principal de 2 párrafos<br>**1** — Deja fuera la idea principal de 3 o 4 párrafos<br>**0** — Recoge la idea principal de un solo párrafo |
+| Orden de las ideas | 2 | **2** — Las ideas del resumen siguen el orden del texto original<br>**1.5** — 1 idea queda fuera del orden del original<br>**1** — 2 ideas quedan fuera de orden<br>**0.5** — 3 ideas quedan fuera de orden<br>**0** — Las ideas se suceden en el resumen sin orden reconocible |
 
 ### Selección de la información relevante  ·  25%  ·  bloque B  ·  🔒 obligatorio
 
@@ -56,9 +56,9 @@
 
 | Componente | Máx. | Bandas |
 |---|---|---|
-| Los ejemplos quedan fuera | 4 | **4** — El resumen recoge ideas y deja fuera todos los ejemplos del original<br>**3** — Conserva 1 ejemplo del original<br>**2** — Conserva 2 ejemplos del original<br>**0** — Conserva 3 o más ejemplos o datos accesorios |
-| Las ideas relevantes están | 3 | **3** — El resumen recoge todas las ideas desarrolladas en el texto<br>**2** — Deja fuera 1 de esas ideas<br>**1** — Deja fuera 2 de esas ideas<br>**0** — El resumen recoge una sola de esas ideas |
-| Nada ajeno al texto | 3 | **3** — Todo lo que dice el resumen está en el texto original<br>**2** — Añade 1 dato que el original no dice<br>**0** — Añade 2 o más datos ajenos al original |
+| Los ejemplos quedan fuera | 4 | **4** — El resumen recoge ideas y deja fuera todos los ejemplos del original<br>**3** — Conserva 1 ejemplo del original<br>**2** — Conserva 2 ejemplos del original<br>**1** — Conserva 3 o 4 ejemplos del original<br>**0** — Conserva 5 o más ejemplos o datos accesorios |
+| Las ideas relevantes están | 4 | **4** — El resumen recoge todas las ideas desarrolladas en el texto<br>**3** — Deja fuera 1 de esas ideas<br>**2** — Deja fuera 2 de esas ideas<br>**1** — Deja fuera 3 o 4 de esas ideas<br>**0** — El resumen recoge una sola de esas ideas |
+| Nada ajeno al texto | 2 | **2** — Todo lo que dice el resumen está en el texto original<br>**1.5** — Añade 1 dato que el original no dice<br>**1** — Añade 2 datos que el original no dice<br>**0.5** — Añade 3 o 4 datos ajenos al original<br>**0** — Añade 5 o más datos ajenos al original |
 
 ### Reformulación con palabras propias  ·  20%  ·  bloque B
 
@@ -77,9 +77,9 @@
 
 | Componente | Máx. | Bandas |
 |---|---|---|
-| Frases propias | 4 | **4** — Ninguna frase del resumen reproduce literalmente una frase del original<br>**3** — 1 frase literal del original<br>**2** — 2 frases literales del original<br>**0** — 3 o más frases literales, o el resumen encadena frases copiadas |
-| Sustitución léxica | 3 | **3** — Emplea sinónimos o términos generales en 3 o más puntos del resumen<br>**2** — Los emplea en 2 puntos<br>**1** — Los emplea en 1 punto<br>**0** — Repite el léxico del original de principio a fin |
-| Ideas reunidas | 3 | **3** — Reúne en una frase propia ideas que el original reparte en 2 o más<br>**2** — Reúne ideas en 1 punto del resumen<br>**0** — Cada frase del resumen corresponde a una frase del original |
+| Frases propias | 4 | **4** — Ninguna frase del resumen reproduce literalmente una frase del original<br>**3** — 1 frase literal del original<br>**2** — 2 frases literales del original<br>**1** — 3 o 4 frases literales del original<br>**0** — 5 o más frases literales, o el resumen encadena frases copiadas |
+| Sustitución léxica | 4 | **4** — Emplea sinónimos o términos generales en 3 o más puntos del resumen<br>**3** — Los emplea en 2 puntos<br>**2** — Los emplea en 1 punto<br>**1** — Cambia el orden de las palabras del original sin sustituir ninguna<br>**0** — Repite el léxico del original de principio a fin |
+| Ideas reunidas | 2 | **2** — Reúne en una frase propia ideas que el original reparte en 2 o más<br>**1.5** — Reúne ideas en 2 o 3 puntos del resumen<br>**1** — Reúne ideas en 1 punto del resumen<br>**0.5** — Une dos frases del original con una conjunción, sin reformularlas<br>**0** — Cada frase del resumen corresponde a una frase del original |
 
 ### Redacción: texto continuo, objetivo y ajustado  ·  15%  ·  bloque B
 
@@ -98,10 +98,10 @@
 
 | Componente | Máx. | Bandas |
 |---|---|---|
-| Texto seguido | 3 | **3** — El resumen es un texto seguido, sin guiones ni enumeraciones<br>**2** — El resumen alterna párrafo y lista de puntos<br>**0** — El resumen es una lista de puntos |
-| Conectores entre ideas | 3 | **3** — Emplea 3 o más conectores distintos entre las ideas<br>**2** — Emplea 2 conectores distintos<br>**1** — Repite el mismo conector a lo largo del resumen<br>**0** — Coloca las ideas una detrás de otra sin enlace |
-| Extensión | 2 | **2** — El resumen ocupa entre un cuarto y un tercio del texto original<br>**1** — Se aparta de esa extensión en menos de la mitad<br>**0** — El resumen es tan largo como el original o cabe en una línea |
-| Voz del resumen | 2 | **2** — El resumen traslada las ideas sin fórmulas del tipo el autor dice y sin opinión propia<br>**1** — Incluye 1 fórmula de ese tipo o 1 opinión propia<br>**0** — Incluye 2 o más fórmulas de ese tipo u opiniones propias |
+| Texto seguido | 2 | **2** — El resumen es un texto seguido, sin guiones ni enumeraciones<br>**1.5** — El resumen es un texto seguido y conserva una enumeración del original<br>**1** — El resumen alterna párrafo y lista de puntos<br>**0.5** — El resumen es una lista de puntos redactados en frases completas<br>**0** — El resumen es una lista de puntos |
+| Conectores entre ideas | 4 | **4** — Emplea 3 o más conectores distintos entre las ideas<br>**3** — Emplea 2 conectores distintos<br>**2** — Repite el mismo conector a lo largo del resumen<br>**1** — Enlaza dos ideas con un conector y coloca el resto sin enlace<br>**0** — Coloca las ideas una detrás de otra sin enlace |
+| Extensión | 2 | **2** — El resumen ocupa entre un cuarto y un tercio del texto original<br>**1.5** — Se aparta de esa extensión en menos de un cuarto<br>**1** — Se aparta de esa extensión en menos de la mitad<br>**0.5** — Se aparta de esa extensión en más de la mitad<br>**0** — El resumen es tan largo como el original o cabe en una línea |
+| Voz del resumen | 2 | **2** — El resumen traslada las ideas sin fórmulas del tipo el autor dice y sin opinión propia<br>**1.5** — Incluye 1 fórmula de ese tipo o 1 opinión propia<br>**1** — Incluye 2 fórmulas de ese tipo u opiniones propias<br>**0.5** — Incluye 3 o 4 fórmulas de ese tipo u opiniones propias<br>**0** — Incluye 5 o más fórmulas de ese tipo u opiniones propias |
 
 ### Corrección normativa y propiedad léxica  ·  15%  ·  bloque D  ·  🔒 obligatorio
 
@@ -120,9 +120,9 @@
 
 | Componente | Máx. | Bandas |
 |---|---|---|
-| Ortografía y acentuación | 4 | **4** — Hasta 1 falta en todo el resumen<br>**3** — 2 o 3 faltas<br>**2** — 4 o 5 faltas<br>**0** — 6 o más faltas |
-| Puntuación | 3 | **3** — Cierra con punto todas las frases del resumen<br>**2** — Deja 1 frase sin cerrar con punto<br>**1** — Deja 2 frases sin cerrar con punto<br>**0** — El resumen es un bloque de texto casi sin puntos |
-| Propiedad léxica | 3 | **3** — Emplea términos precisos y ninguna palabra comodín (cosa, tema, hacer)<br>**2** — Emplea 1 palabra comodín<br>**1** — Emplea 2 palabras comodín<br>**0** — El resumen se sostiene sobre palabras comodín |
+| Ortografía y acentuación | 4 | **4** — Hasta 1 faltas en todo el resumen<br>**3** — 2 o 3 faltas<br>**2** — 4 o 5 faltas<br>**1** — 6 o 7 faltas<br>**0** — 8 o más faltas |
+| Puntuación | 2 | **2** — Cierra con punto todas las frases del resumen<br>**1.5** — Deja 1 frase sin cerrar con punto<br>**1** — Deja 2 frases sin cerrar con punto<br>**0.5** — Deja 3 frases sin cerrar con punto<br>**0** — El resumen es un bloque de texto casi sin puntos |
+| Propiedad léxica | 4 | **4** — Emplea términos precisos y ninguna palabra comodín (cosa, tema, hacer)<br>**3** — Emplea 1 palabra comodín<br>**2** — Emplea 2 palabras comodín<br>**1** — Emplea 3 o 4 palabras comodín<br>**0** — El resumen se sostiene sobre palabras comodín |
 
 ---
 
@@ -153,9 +153,9 @@
 
 | Componente | Máx. | Bandas |
 |---|---|---|
-| El tema queda enunciado | 3 | **3** — La primera línea del resumen enuncia el tema del texto<br>**2** — El tema del texto queda enunciado en otro punto del resumen<br>**1** — El tema se deduce del resumen pero no queda enunciado<br>**0** — El resumen arranca con un detalle y el tema queda fuera |
-| Ideas principales y secundarias | 4 | **4** — El resumen recoge todas las ideas principales y ninguna secundaria<br>**3** — Recoge todas las principales y 1 secundaria<br>**2** — Deja fuera 1 idea principal o recoge 2 secundarias<br>**0** — Deja fuera 2 o más ideas principales |
-| Estructura del original | 3 | **3** — El resumen deja ver las partes en que se organiza el texto<br>**2** — Deja ver una de las partes y funde el resto<br>**0** — El resumen sucede las ideas sin dejar ver la estructura del texto |
+| El tema queda enunciado | 4 | **4** — La primera línea del resumen enuncia el tema del texto<br>**3** — El tema del texto queda enunciado en otro punto del resumen<br>**2** — El tema se deduce del resumen pero no queda enunciado<br>**1** — El tema se reconoce solo al leer el texto original al lado<br>**0** — El resumen arranca con un detalle y el tema queda fuera |
+| Ideas principales y secundarias | 4 | **4** — El resumen recoge todas las ideas principales y ninguna secundaria<br>**3** — Recoge todas las principales y 1 secundaria<br>**2** — Deja fuera 1 idea principal o recoge 2 secundarias<br>**1** — Deja fuera 1 idea principal y recoge 2 o más secundarias<br>**0** — Deja fuera 2 o más ideas principales |
+| Estructura del original | 2 | **2** — El resumen deja ver las partes en que se organiza el texto<br>**1.5** — El resumen deja ver las partes del texto y funde las dos últimas<br>**1** — Deja ver una de las partes y funde el resto<br>**0.5** — El resumen separa en dos bloques el contenido, sin correspondencia con las partes del texto<br>**0** — El resumen sucede las ideas sin dejar ver la estructura del texto |
 
 ### Selección de la información relevante  ·  25%  ·  bloque B  ·  🔒 obligatorio
 
@@ -174,9 +174,9 @@
 
 | Componente | Máx. | Bandas |
 |---|---|---|
-| Ejemplos y digresiones fuera | 4 | **4** — El resumen deja fuera todos los ejemplos y digresiones del original<br>**3** — Conserva 1 ejemplo o digresión<br>**2** — Conserva 2 ejemplos o digresiones<br>**0** — Conserva 3 o más |
-| Las ideas que articulan el texto | 4 | **4** — El resumen recoge todas las ideas que articulan el texto<br>**3** — Deja fuera 1 de esas ideas<br>**2** — Deja fuera 2 de esas ideas<br>**0** — Deja fuera 3 o más |
-| Fidelidad al original | 2 | **2** — Todo lo que dice el resumen está en el texto original<br>**1** — Añade 1 dato o inferencia que el original no sostiene<br>**0** — Añade 2 o más datos ajenos al original |
+| Ejemplos y digresiones fuera | 4 | **4** — El resumen deja fuera todos los ejemplos y digresiones del original<br>**3** — Conserva 1 ejemplo o digresión<br>**2** — Conserva 2 ejemplos o digresiones<br>**1** — Conserva 3 o 4 ejemplos o digresiones<br>**0** — Conserva 5 o más |
+| Las ideas que articulan el texto | 4 | **4** — El resumen recoge todas las ideas que articulan el texto<br>**3** — Deja fuera 1 de esas ideas<br>**2** — Deja fuera 2 de esas ideas<br>**1** — Deja fuera 3 o 4 de esas ideas<br>**0** — Deja fuera 5 o más |
+| Fidelidad al original | 2 | **2** — Todo lo que dice el resumen está en el texto original<br>**1.5** — Añade 1 dato o inferencia que el original no sostiene<br>**1** — Añade 2 datos o inferencias que el original no sostiene<br>**0.5** — Añade 3 o 4 datos ajenos al original<br>**0** — Añade 5 o más datos ajenos al original |
 
 ### Reformulación con palabras propias  ·  20%  ·  bloque B
 
@@ -195,9 +195,9 @@
 
 | Componente | Máx. | Bandas |
 |---|---|---|
-| Frases propias | 4 | **4** — Ninguna frase del resumen reproduce literalmente una frase del original<br>**3** — 1 frase literal del original<br>**2** — 2 frases literales del original<br>**0** — 3 o más frases literales del original |
-| Léxico propio | 3 | **3** — Emplea sinónimos, hiperónimos o términos generales en 4 o más puntos<br>**2** — Los emplea en 2 o 3 puntos<br>**1** — Los emplea en 1 punto<br>**0** — Repite el léxico del original de principio a fin |
-| Condensación | 3 | **3** — Reúne en una frase propia ideas que el original reparte en 3 o más<br>**2** — Reúne ideas de 2 frases del original<br>**1** — Reúne ideas en 1 punto del resumen<br>**0** — Cada frase del resumen corresponde a una frase del original |
+| Frases propias | 4 | **4** — Ninguna frase del resumen reproduce literalmente una frase del original<br>**3** — 1 frase literal del original<br>**2** — 2 frases literales del original<br>**1** — 3 o 4 frases literales del original<br>**0** — 5 o más frases literales, o el resumen encadena frases copiadas |
+| Léxico propio | 2 | **2** — Emplea sinónimos, hiperónimos o términos generales en 4 o más puntos<br>**1.5** — Los emplea en 4 o más puntos y repite el término clave del original<br>**1** — Los emplea en 2 o 3 puntos<br>**0.5** — Los emplea en 1 punto<br>**0** — Repite el léxico del original de principio a fin |
+| Condensación | 4 | **4** — Reúne en una frase propia ideas que el original reparte en 3 o más<br>**3** — Reúne ideas de 2 frases del original<br>**2** — Reúne ideas en 1 punto del resumen<br>**1** — Reúne dos frases del original en una, copiando su redacción<br>**0** — Cada frase del resumen corresponde a una frase del original |
 
 ### Redacción: texto continuo, objetivo y ajustado  ·  15%  ·  bloque B
 
@@ -216,10 +216,10 @@
 
 | Componente | Máx. | Bandas |
 |---|---|---|
-| Texto continuo | 2 | **2** — El resumen es un texto seguido, sin guiones ni enumeraciones<br>**1** — El resumen alterna párrafo y lista de puntos<br>**0** — El resumen es una lista de puntos |
-| Marcadores entre ideas | 3 | **3** — Emplea 4 o más marcadores distintos: orden, causa, consecuencia, contraste<br>**2** — Emplea 2 o 3 tipos de marcador<br>**1** — Repite el mismo marcador a lo largo del resumen<br>**0** — Coloca las ideas una detrás de otra sin enlace |
-| Extensión | 2 | **2** — El resumen ocupa entre un quinto y un cuarto del texto original<br>**1** — Se aparta de esa extensión en menos de la mitad<br>**0** — El resumen es tan largo como el original o cabe en una línea |
-| Objetividad | 3 | **3** — El resumen traslada las ideas sin fórmulas del tipo el autor dice y sin opinión propia<br>**2** — Incluye 1 fórmula de ese tipo o 1 opinión propia<br>**1** — Incluye 2 fórmulas de ese tipo u opiniones propias<br>**0** — El resumen alterna las ideas del texto con la valoración propia |
+| Texto continuo | 2 | **2** — El resumen es un texto seguido, sin guiones ni enumeraciones<br>**1.5** — El resumen es un texto seguido y conserva una enumeración del original<br>**1** — El resumen alterna párrafo y lista de puntos<br>**0.5** — El resumen es una lista de puntos redactados en frases completas<br>**0** — El resumen es una lista de puntos |
+| Marcadores entre ideas | 2 | **2** — Emplea 4 o más marcadores distintos: orden, causa, consecuencia, contraste<br>**1.5** — Emplea 4 o más marcadores y repite el mismo en la mayoría de los enlaces<br>**1** — Emplea 2 o 3 tipos de marcador<br>**0.5** — Repite el mismo marcador a lo largo del resumen<br>**0** — Coloca las ideas una detrás de otra sin enlace |
+| Extensión | 2 | **2** — El resumen ocupa entre un quinto y un cuarto del texto original<br>**1.5** — Se aparta de esa extensión en menos de un cuarto<br>**1** — Se aparta de esa extensión en menos de la mitad<br>**0.5** — Se aparta de esa extensión en más de la mitad<br>**0** — El resumen es tan largo como el original o cabe en una línea |
+| Objetividad | 4 | **4** — El resumen traslada las ideas sin fórmulas del tipo el autor dice y sin opinión propia<br>**3** — Incluye 1 fórmula de ese tipo o 1 opinión propia<br>**2** — Incluye 2 fórmulas de ese tipo u opiniones propias<br>**1** — Incluye 3 o 4 fórmulas de ese tipo u opiniones propias<br>**0** — El resumen alterna las ideas del texto con la valoración propia |
 
 ### Corrección normativa y propiedad léxica  ·  15%  ·  bloque D  ·  🔒 obligatorio
 
@@ -238,9 +238,9 @@
 
 | Componente | Máx. | Bandas |
 |---|---|---|
-| Ortografía y acentuación | 4 | **4** — Hasta 1 falta en todo el resumen<br>**3** — 2 o 3 faltas<br>**2** — 4 o 5 faltas<br>**0** — 6 o más faltas |
-| Puntuación | 3 | **3** — Cierra con punto todas las frases y delimita con coma los incisos<br>**2** — 1 inciso sin delimitar o 1 frase sin cerrar<br>**1** — 2 incisos sin delimitar o 2 frases sin cerrar<br>**0** — El resumen es un bloque de texto casi sin puntuación |
-| Propiedad léxica | 3 | **3** — Emplea términos precisos y ninguna palabra comodín (cosa, tema, hacer)<br>**2** — Emplea 1 palabra comodín<br>**1** — Emplea 2 palabras comodín<br>**0** — El resumen se sostiene sobre palabras comodín |
+| Ortografía y acentuación | 4 | **4** — Hasta 1 faltas en todo el resumen<br>**3** — 2 o 3 faltas<br>**2** — 4 o 5 faltas<br>**1** — 6 o 7 faltas<br>**0** — 8 o más faltas |
+| Puntuación | 2 | **2** — Cierra con punto todas las frases y delimita con coma los incisos<br>**1.5** — 1 inciso sin delimitar o 1 frase sin cerrar<br>**1** — 2 incisos sin delimitar o 2 frases sin cerrar<br>**0.5** — 3 o 4 incisos sin delimitar o 3 o 4 frases sin cerrar<br>**0** — El resumen es un bloque de texto casi sin puntuación |
+| Propiedad léxica | 4 | **4** — Emplea términos precisos y ninguna palabra comodín (cosa, tema, hacer)<br>**3** — Emplea 1 palabra comodín<br>**2** — Emplea 2 palabras comodín<br>**1** — Emplea 3 o 4 palabras comodín<br>**0** — El resumen se sostiene sobre palabras comodín |
 
 ---
 
@@ -271,9 +271,9 @@
 
 | Componente | Máx. | Bandas |
 |---|---|---|
-| Sentido global enunciado | 3 | **3** — La primera línea del resumen enuncia el sentido global del texto<br>**2** — El sentido global queda enunciado en otro punto del resumen<br>**1** — El sentido global se deduce del resumen pero no queda enunciado<br>**0** — El resumen arranca con un detalle y el sentido global queda fuera |
-| Estructura del texto | 4 | **4** — El resumen deja ver todas las partes en que se organiza el texto<br>**3** — Deja ver todas menos 1<br>**2** — Deja ver la mitad de las partes<br>**0** — El resumen sucede las ideas sin dejar ver la estructura |
-| Intención del emisor | 3 | **3** — El resumen deja claro con qué propósito escribe el emisor<br>**2** — El propósito del emisor se intuye en el resumen<br>**0** — El resumen recoge el contenido y deja fuera el propósito |
+| Sentido global enunciado | 4 | **4** — La primera línea del resumen enuncia el sentido global del texto<br>**3** — El sentido global queda enunciado en otro punto del resumen<br>**2** — El sentido global se deduce del resumen pero no queda enunciado<br>**1** — El sentido global se reconoce solo al leer el texto original al lado<br>**0** — El resumen arranca con un detalle y el sentido global queda fuera |
+| Estructura del texto | 4 | **4** — El resumen deja ver todas las partes en que se organiza el texto<br>**3** — Deja ver todas menos 1<br>**2** — Deja ver la mitad de las partes<br>**1** — Deja ver 1 de las partes y funde el resto<br>**0** — El resumen sucede las ideas sin dejar ver la estructura |
+| Intención del emisor | 2 | **2** — El resumen deja claro con qué propósito escribe el emisor<br>**1.5** — El resumen nombra el propósito del emisor en una frase del cierre<br>**1** — El propósito del emisor se intuye en el resumen<br>**0.5** — El resumen recoge el contenido y apunta el propósito con un verbo suelto<br>**0** — El resumen recoge el contenido y deja fuera el propósito |
 
 ### Selección de la información relevante  ·  25%  ·  bloque B  ·  🔒 obligatorio
 
@@ -292,9 +292,9 @@
 
 | Componente | Máx. | Bandas |
 |---|---|---|
-| Información ilustrativa fuera | 3 | **3** — El resumen deja fuera todos los datos ilustrativos y las digresiones<br>**2** — Conserva 1 dato ilustrativo o digresión<br>**1** — Conserva 2<br>**0** — Conserva 3 o más |
-| La línea del razonamiento | 4 | **4** — El resumen recoge todos los pasos del razonamiento del texto<br>**3** — Deja fuera 1 paso del razonamiento<br>**2** — Deja fuera 2 pasos<br>**0** — El resumen rompe la línea del razonamiento del texto |
-| Fidelidad al original | 3 | **3** — Todo lo que afirma el resumen está en el texto original<br>**2** — Añade 1 inferencia que el original no sostiene<br>**1** — Añade 2 inferencias ajenas al original<br>**0** — El resumen atribuye al texto lo que el texto no dice |
+| Información ilustrativa fuera | 2 | **2** — El resumen deja fuera todos los datos ilustrativos y las digresiones<br>**1.5** — Conserva 1 dato ilustrativo o digresión<br>**1** — Conserva 2<br>**0.5** — Conserva 3 o 4<br>**0** — Conserva 5 o más |
+| La línea del razonamiento | 4 | **4** — El resumen recoge todos los pasos del razonamiento del texto<br>**3** — Deja fuera 1 paso del razonamiento<br>**2** — Deja fuera 2 pasos<br>**1** — Deja fuera 3 o 4 pasos<br>**0** — El resumen rompe la línea del razonamiento del texto |
+| Fidelidad al original | 4 | **4** — Todo lo que afirma el resumen está en el texto original<br>**3** — Añade 1 inferencia que el original no sostiene<br>**2** — Añade 2 inferencias ajenas al original<br>**1** — Añade 3 o 4 inferencias ajenas al original<br>**0** — El resumen atribuye al texto lo que el texto no dice |
 
 ### Reformulación con palabras propias  ·  20%  ·  bloque B
 
@@ -313,9 +313,9 @@
 
 | Componente | Máx. | Bandas |
 |---|---|---|
-| Formulación propia | 4 | **4** — Ninguna secuencia del resumen reproduce literalmente el original<br>**3** — 1 secuencia literal del original<br>**2** — 2 secuencias literales del original<br>**0** — 3 o más secuencias literales del original |
-| Léxico y término técnico | 3 | **3** — Emplea léxico propio y conserva los términos técnicos que el tema exige<br>**2** — Emplea léxico propio y pierde 1 término técnico necesario<br>**1** — Sustituye los términos técnicos por expresiones vagas<br>**0** — Repite el léxico del original de principio a fin |
-| Grado de certeza | 3 | **3** — El resumen conserva las cautelas del original (parece, tiende a, en algunos casos)<br>**2** — Pierde 1 de esas cautelas y convierte en afirmación lo que era hipótesis<br>**0** — El resumen afirma como cierto lo que el texto plantea como hipótesis |
+| Formulación propia | 4 | **4** — Ninguna secuencia del resumen reproduce literalmente el original<br>**3** — 1 secuencia literal del original<br>**2** — 2 secuencias literales del original<br>**1** — 3 o 4 secuencias literales del original<br>**0** — 5 o más secuencias literales del original |
+| Léxico y término técnico | 4 | **4** — Emplea léxico propio y conserva los términos técnicos que el tema exige<br>**3** — Emplea léxico propio y pierde 1 término técnico necesario<br>**2** — Sustituye los términos técnicos por expresiones vagas<br>**1** — Conserva los términos técnicos con el léxico del original alrededor<br>**0** — Repite el léxico del original de principio a fin |
+| Grado de certeza | 2 | **2** — El resumen conserva las cautelas del original (parece, tiende a, en algunos casos)<br>**1.5** — Pierde 1 de esas cautelas y convierte en afirmación lo que era hipótesis<br>**1** — Pierde 2 de esas cautelas<br>**0.5** — Pierde 3 o más cautelas y mantiene alguna<br>**0** — El resumen afirma como cierto lo que el texto plantea como hipótesis |
 
 ### Redacción: texto continuo, objetivo y ajustado  ·  15%  ·  bloque B
 
@@ -334,10 +334,10 @@
 
 | Componente | Máx. | Bandas |
 |---|---|---|
-| Registro académico | 3 | **3** — El registro del resumen es el del ámbito académico de principio a fin<br>**2** — 1 expresión coloquial se cuela en el resumen<br>**1** — 2 expresiones coloquiales<br>**0** — El resumen está escrito en registro coloquial |
-| Marcadores discursivos | 3 | **3** — Emplea 4 o más marcadores distintos entre las ideas del resumen<br>**2** — Emplea 2 o 3 marcadores distintos<br>**1** — Repite el mismo marcador a lo largo del resumen<br>**0** — Coloca las ideas una detrás de otra sin enlace |
-| Extensión | 2 | **2** — El resumen ocupa entre un quinto y un cuarto del texto original<br>**1** — Se aparta de esa extensión en menos de la mitad<br>**0** — El resumen es tan largo como el original o cabe en una línea |
-| Objetividad | 2 | **2** — El resumen traslada las ideas sin marcas de subjetividad ni referencias al emisor<br>**1** — Incluye 1 marca de subjetividad o 1 referencia al emisor<br>**0** — Incluye 2 o más marcas de subjetividad o referencias al emisor |
+| Registro académico | 2 | **2** — El registro del resumen es el del ámbito académico de principio a fin<br>**1.5** — 1 expresión coloquial se cuela en el resumen<br>**1** — 2 expresiones coloquiales<br>**0.5** — 3 o 4 expresiones coloquiales<br>**0** — El resumen está escrito en registro coloquial |
+| Marcadores discursivos | 4 | **4** — Emplea 4 o más marcadores distintos entre las ideas del resumen<br>**3** — Emplea 2 o 3 marcadores distintos<br>**2** — Repite el mismo marcador a lo largo del resumen<br>**1** — Enlaza dos ideas con un marcador y coloca el resto sin enlace<br>**0** — Coloca las ideas una detrás de otra sin enlace |
+| Extensión | 2 | **2** — El resumen ocupa entre un quinto y un cuarto del texto original<br>**1.5** — Se aparta de esa extensión en menos de un cuarto<br>**1** — Se aparta de esa extensión en menos de la mitad<br>**0.5** — Se aparta de esa extensión en más de la mitad<br>**0** — El resumen es tan largo como el original o cabe en una línea |
+| Objetividad | 2 | **2** — El resumen traslada las ideas sin marcas de subjetividad ni referencias al emisor<br>**1.5** — Incluye 1 marca de subjetividad o 1 referencia al emisor<br>**1** — Incluye 2 marcas de subjetividad o referencias al emisor<br>**0.5** — Incluye 3 o 4 marcas de subjetividad o referencias al emisor<br>**0** — Incluye 5 o más marcas de subjetividad o referencias al emisor |
 
 ### Corrección normativa y propiedad léxica  ·  15%  ·  bloque D  ·  🔒 obligatorio
 
@@ -356,9 +356,9 @@
 
 | Componente | Máx. | Bandas |
 |---|---|---|
-| Ortografía y acentuación | 4 | **4** — Sin faltas en todo el resumen<br>**3** — 1 o 2 faltas<br>**2** — 3 o 4 faltas<br>**0** — 5 o más faltas |
-| Puntuación del período | 3 | **3** — Delimita con coma los incisos y las subordinadas antepuestas de todo el resumen<br>**2** — 1 período con la puntuación sin delimitar<br>**1** — 2 períodos con la puntuación sin delimitar<br>**0** — El resumen encadena períodos largos sin puntuación interna |
-| Precisión conceptual | 3 | **3** — Nombra cada concepto del texto con el término que le corresponde<br>**2** — 1 concepto queda nombrado con una expresión vaga<br>**1** — 2 conceptos quedan nombrados con expresiones vagas<br>**0** — El resumen sustituye los conceptos del texto por expresiones vagas |
+| Ortografía y acentuación | 4 | **4** — Hasta 1 faltas en todo el resumen<br>**3** — 2 o 3 faltas<br>**2** — 4 o 5 faltas<br>**1** — 6 o 7 faltas<br>**0** — 8 o más faltas |
+| Puntuación del período | 2 | **2** — Delimita con coma los incisos y las subordinadas antepuestas de todo el resumen<br>**1.5** — 1 período con la puntuación sin delimitar<br>**1** — 2 períodos con la puntuación sin delimitar<br>**0.5** — 3 o 4 períodos con la puntuación sin delimitar<br>**0** — El resumen encadena períodos largos sin puntuación interna |
+| Precisión conceptual | 4 | **4** — Nombra cada concepto del texto con el término que le corresponde<br>**3** — 1 concepto queda nombrado con una expresión vaga<br>**2** — 2 conceptos quedan nombrados con expresiones vagas<br>**1** — 3 o 4 conceptos quedan nombrados con expresiones vagas<br>**0** — El resumen sustituye los conceptos del texto por expresiones vagas |
 
 ---
 
@@ -389,9 +389,9 @@
 
 | Componente | Máx. | Bandas |
 |---|---|---|
-| La tesis queda enunciada | 3 | **3** — La primera línea del resumen enuncia la tesis del texto<br>**2** — La tesis queda enunciada en otro punto del resumen<br>**1** — La tesis se deduce del resumen pero no queda enunciada<br>**0** — El resumen recoge argumentos sueltos y la tesis queda fuera |
-| Tesis y argumentos | 4 | **4** — El resumen deja ver qué argumentos sostienen la tesis<br>**3** — Deja ver esa relación en todos los argumentos menos 1<br>**2** — Enumera los argumentos sin ligarlos a la tesis<br>**0** — El resumen mezcla tesis y argumentos en un mismo plano |
-| Intención del emisor | 3 | **3** — El resumen deja claro con qué propósito escribe el emisor<br>**2** — El propósito del emisor se intuye en el resumen<br>**0** — El resumen recoge el contenido y deja fuera el propósito |
+| La tesis queda enunciada | 4 | **4** — La primera línea del resumen enuncia la tesis del texto<br>**3** — La tesis queda enunciada en otro punto del resumen<br>**2** — La tesis se deduce del resumen pero no queda enunciada<br>**1** — La tesis se reconoce solo al leer el texto original al lado<br>**0** — El resumen recoge argumentos sueltos y la tesis queda fuera |
+| Tesis y argumentos | 4 | **4** — El resumen deja ver qué argumentos sostienen la tesis<br>**3** — Deja ver esa relación en todos los argumentos menos 1<br>**2** — Enumera los argumentos sin ligarlos a la tesis<br>**1** — Liga un argumento a la tesis y enumera el resto<br>**0** — El resumen mezcla tesis y argumentos en un mismo plano |
+| Intención del emisor | 2 | **2** — El resumen deja claro con qué propósito escribe el emisor<br>**1.5** — El resumen nombra el propósito del emisor en una frase del cierre<br>**1** — El propósito del emisor se intuye en el resumen<br>**0.5** — El resumen recoge el contenido y apunta el propósito con un verbo suelto<br>**0** — El resumen recoge el contenido y deja fuera el propósito |
 
 ### Selección de la información relevante  ·  25%  ·  bloque B  ·  🔒 obligatorio
 
@@ -410,9 +410,9 @@
 
 | Componente | Máx. | Bandas |
 |---|---|---|
-| Datos ilustrativos fuera | 3 | **3** — El resumen deja fuera todos los datos ilustrativos y las anécdotas<br>**2** — Conserva 1 dato ilustrativo o anécdota<br>**1** — Conserva 2<br>**0** — Conserva 3 o más |
-| Argumentos recogidos | 4 | **4** — El resumen recoge todos los argumentos con que el texto sostiene la tesis<br>**3** — Deja fuera 1 argumento<br>**2** — Deja fuera 2 argumentos<br>**0** — El resumen recoge un solo argumento del texto |
-| Hechos y opiniones | 3 | **3** — El resumen marca qué presenta el texto como hecho y qué como opinión<br>**2** — Confunde 1 opinión con un hecho, o al revés<br>**1** — Confunde 2<br>**0** — El resumen presenta como hechos las opiniones del emisor |
+| Datos ilustrativos fuera | 2 | **2** — El resumen deja fuera todos los datos ilustrativos y las anécdotas<br>**1.5** — Conserva 1 dato ilustrativo o anécdota<br>**1** — Conserva 2<br>**0.5** — Conserva 3 o 4<br>**0** — Conserva 5 o más |
+| Argumentos recogidos | 4 | **4** — El resumen recoge todos los argumentos con que el texto sostiene la tesis<br>**3** — Deja fuera 1 argumento<br>**2** — Deja fuera 2 argumentos<br>**1** — Deja fuera 3 o 4 argumentos<br>**0** — El resumen recoge un solo argumento del texto |
+| Hechos y opiniones | 4 | **4** — El resumen marca qué presenta el texto como hecho y qué como opinión<br>**3** — Confunde 1 opinión con un hecho, o al revés<br>**2** — Confunde 2<br>**1** — Confunde 3 o 4<br>**0** — El resumen presenta como hechos las opiniones del emisor |
 
 ### Reformulación con palabras propias  ·  20%  ·  bloque B
 
@@ -431,9 +431,9 @@
 
 | Componente | Máx. | Bandas |
 |---|---|---|
-| Formulación propia | 4 | **4** — Ninguna secuencia del resumen reproduce literalmente el original<br>**3** — 1 secuencia literal del original<br>**2** — 2 secuencias literales del original<br>**0** — 3 o más secuencias literales del original |
-| Léxico neutro | 3 | **3** — El resumen traslada la tesis con términos neutros y sin las valoraciones del emisor<br>**2** — Conserva 1 término valorativo del original<br>**1** — Conserva 2 términos valorativos<br>**0** — El resumen reproduce la carga valorativa del original |
-| Fuerza argumentativa | 3 | **3** — El resumen conserva el grado con que el texto sostiene cada afirmación<br>**2** — Endurece o rebaja 1 afirmación del original<br>**1** — Endurece o rebaja 2 afirmaciones<br>**0** — El resumen convierte en tesis rotunda lo que el texto matiza |
+| Formulación propia | 4 | **4** — Ninguna secuencia del resumen reproduce literalmente el original<br>**3** — 1 secuencia literal del original<br>**2** — 2 secuencias literales del original<br>**1** — 3 o 4 secuencias literales del original<br>**0** — 5 o más secuencias literales del original |
+| Léxico neutro | 2 | **2** — El resumen traslada la tesis con términos neutros y sin las valoraciones del emisor<br>**1.5** — Conserva 1 término valorativo del original<br>**1** — Conserva 2 términos valorativos<br>**0.5** — Conserva 3 o 4 términos valorativos<br>**0** — El resumen reproduce la carga valorativa del original |
+| Fuerza argumentativa | 4 | **4** — El resumen conserva el grado con que el texto sostiene cada afirmación<br>**3** — Endurece o rebaja 1 afirmación del original<br>**2** — Endurece o rebaja 2 afirmaciones<br>**1** — Endurece o rebaja 3 o 4 afirmaciones<br>**0** — El resumen convierte en tesis rotunda lo que el texto matiza |
 
 ### Redacción: texto continuo, objetivo y ajustado  ·  15%  ·  bloque B
 
@@ -452,10 +452,10 @@
 
 | Componente | Máx. | Bandas |
 |---|---|---|
-| Registro académico | 3 | **3** — El registro del resumen es el del ámbito académico de principio a fin<br>**2** — 1 expresión coloquial se cuela en el resumen<br>**1** — 2 expresiones coloquiales<br>**0** — El resumen está escrito en registro coloquial |
-| Marcadores de la línea argumental | 3 | **3** — Emplea 4 o más marcadores distintos: consecuencia, concesión, contraste, orden<br>**2** — Emplea 2 o 3 tipos de marcador<br>**1** — Repite el mismo marcador a lo largo del resumen<br>**0** — Coloca los argumentos uno detrás de otro sin enlace |
-| Extensión | 2 | **2** — El resumen ocupa entre un sexto y un quinto del texto original<br>**1** — Se aparta de esa extensión en menos de la mitad<br>**0** — El resumen es tan largo como el original o cabe en una línea |
-| Distancia respecto de la tesis | 2 | **2** — El resumen expone la tesis del texto sin suscribirla ni rebatirla<br>**1** — Incluye 1 marca de adhesión o de rechazo a la tesis<br>**0** — El resumen discute la tesis del texto en lugar de exponerla |
+| Registro académico | 2 | **2** — El registro del resumen es el del ámbito académico de principio a fin<br>**1.5** — 1 expresión coloquial se cuela en el resumen<br>**1** — 2 expresiones coloquiales<br>**0.5** — 3 o 4 expresiones coloquiales<br>**0** — El resumen está escrito en registro coloquial |
+| Marcadores de la línea argumental | 4 | **4** — Emplea 4 o más marcadores distintos: consecuencia, concesión, contraste, orden<br>**3** — Emplea 2 o 3 tipos de marcador<br>**2** — Repite el mismo marcador a lo largo del resumen<br>**1** — Enlaza dos argumentos con un marcador y coloca el resto sin enlace<br>**0** — Coloca los argumentos uno detrás de otro sin enlace |
+| Extensión | 2 | **2** — El resumen ocupa entre un sexto y un quinto del texto original<br>**1.5** — Se aparta de esa extensión en menos de un cuarto<br>**1** — Se aparta de esa extensión en menos de la mitad<br>**0.5** — Se aparta de esa extensión en más de la mitad<br>**0** — El resumen es tan largo como el original o cabe en una línea |
+| Distancia respecto de la tesis | 2 | **2** — El resumen expone la tesis del texto sin suscribirla ni rebatirla<br>**1.5** — Incluye 1 marca de adhesión o de rechazo a la tesis<br>**1** — Incluye 2 marcas de adhesión o de rechazo a la tesis<br>**0.5** — Incluye 3 o 4 marcas de adhesión o de rechazo a la tesis<br>**0** — El resumen discute la tesis del texto en lugar de exponerla |
 
 ### Corrección normativa y propiedad léxica  ·  15%  ·  bloque D  ·  🔒 obligatorio
 
@@ -474,9 +474,9 @@
 
 | Componente | Máx. | Bandas |
 |---|---|---|
-| Ortografía y acentuación | 4 | **4** — Sin faltas en todo el resumen<br>**3** — 1 o 2 faltas<br>**2** — 3 o 4 faltas<br>**0** — 5 o más faltas |
-| Puntuación del período | 3 | **3** — Delimita con coma los incisos y las subordinadas antepuestas de todo el resumen<br>**2** — 1 período con la puntuación sin delimitar<br>**1** — 2 períodos con la puntuación sin delimitar<br>**0** — El resumen encadena períodos largos sin puntuación interna |
-| Matiz de los verbos de opinión | 3 | **3** — Gradúa con el verbo exacto lo que el emisor afirma, sugiere o niega<br>**2** — 1 verbo de opinión desplaza el matiz del original<br>**1** — 2 verbos de opinión desplazan el matiz<br>**0** — El resumen reduce a decir todos los verbos de opinión del texto |
+| Ortografía y acentuación | 4 | **4** — Hasta 1 faltas en todo el resumen<br>**3** — 2 o 3 faltas<br>**2** — 4 o 5 faltas<br>**1** — 6 o 7 faltas<br>**0** — 8 o más faltas |
+| Puntuación del período | 2 | **2** — Delimita con coma los incisos y las subordinadas antepuestas de todo el resumen<br>**1.5** — 1 período con la puntuación sin delimitar<br>**1** — 2 períodos con la puntuación sin delimitar<br>**0.5** — 3 o 4 períodos con la puntuación sin delimitar<br>**0** — El resumen encadena períodos largos sin puntuación interna |
+| Matiz de los verbos de opinión | 4 | **4** — Gradúa con el verbo exacto lo que el emisor afirma, sugiere o niega<br>**3** — 1 verbo de opinión desplaza el matiz del original<br>**2** — 2 verbos de opinión desplazan el matiz<br>**1** — 3 o 4 verbos de opinión desplazan el matiz<br>**0** — El resumen reduce a decir todos los verbos de opinión del texto |
 
 ---
 

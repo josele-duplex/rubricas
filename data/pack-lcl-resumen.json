@@ -100,15 +100,23 @@
         "componentes": [
           {
             "nombre": "El tema queda enunciado",
-            "max": 3,
+            "max": 4,
             "bandas": [
               {
-                "puntos": 3,
+                "puntos": 4,
                 "condicion": "La primera línea del resumen enuncia el tema del texto"
               },
               {
-                "puntos": 2,
+                "puntos": 3,
                 "condicion": "El tema del texto queda enunciado en otro punto del resumen"
+              },
+              {
+                "puntos": 2,
+                "condicion": "El tema se deduce del resumen pero no queda enunciado"
+              },
+              {
+                "puntos": 1,
+                "condicion": "El tema se reconoce solo al leer el texto original al lado"
               },
               {
                 "puntos": 0,
@@ -133,6 +141,10 @@
                 "condicion": "Deja fuera la idea principal de 2 párrafos"
               },
               {
+                "puntos": 1,
+                "condicion": "Deja fuera la idea principal de 3 o 4 párrafos"
+              },
+              {
                 "puntos": 0,
                 "condicion": "Recoge la idea principal de un solo párrafo"
               }
@@ -140,19 +152,23 @@
           },
           {
             "nombre": "Orden de las ideas",
-            "max": 3,
+            "max": 2,
             "bandas": [
               {
-                "puntos": 3,
+                "puntos": 2,
                 "condicion": "Las ideas del resumen siguen el orden del texto original"
               },
               {
-                "puntos": 2,
+                "puntos": 1.5,
                 "condicion": "1 idea queda fuera del orden del original"
               },
               {
                 "puntos": 1,
                 "condicion": "2 ideas quedan fuera de orden"
+              },
+              {
+                "puntos": 0.5,
+                "condicion": "3 ideas quedan fuera de orden"
               },
               {
                 "puntos": 0,
@@ -241,26 +257,34 @@
                 "condicion": "Conserva 2 ejemplos del original"
               },
               {
+                "puntos": 1,
+                "condicion": "Conserva 3 o 4 ejemplos del original"
+              },
+              {
                 "puntos": 0,
-                "condicion": "Conserva 3 o más ejemplos o datos accesorios"
+                "condicion": "Conserva 5 o más ejemplos o datos accesorios"
               }
             ]
           },
           {
             "nombre": "Las ideas relevantes están",
-            "max": 3,
+            "max": 4,
             "bandas": [
               {
-                "puntos": 3,
+                "puntos": 4,
                 "condicion": "El resumen recoge todas las ideas desarrolladas en el texto"
               },
               {
-                "puntos": 2,
+                "puntos": 3,
                 "condicion": "Deja fuera 1 de esas ideas"
               },
               {
-                "puntos": 1,
+                "puntos": 2,
                 "condicion": "Deja fuera 2 de esas ideas"
+              },
+              {
+                "puntos": 1,
+                "condicion": "Deja fuera 3 o 4 de esas ideas"
               },
               {
                 "puntos": 0,
@@ -270,19 +294,27 @@
           },
           {
             "nombre": "Nada ajeno al texto",
-            "max": 3,
+            "max": 2,
             "bandas": [
               {
-                "puntos": 3,
+                "puntos": 2,
                 "condicion": "Todo lo que dice el resumen está en el texto original"
               },
               {
-                "puntos": 2,
+                "puntos": 1.5,
                 "condicion": "Añade 1 dato que el original no dice"
               },
               {
+                "puntos": 1,
+                "condicion": "Añade 2 datos que el original no dice"
+              },
+              {
+                "puntos": 0.5,
+                "condicion": "Añade 3 o 4 datos ajenos al original"
+              },
+              {
                 "puntos": 0,
-                "condicion": "Añade 2 o más datos ajenos al original"
+                "condicion": "Añade 5 o más datos ajenos al original"
               }
             ]
           }
@@ -368,26 +400,34 @@
                 "condicion": "2 frases literales del original"
               },
               {
+                "puntos": 1,
+                "condicion": "3 o 4 frases literales del original"
+              },
+              {
                 "puntos": 0,
-                "condicion": "3 o más frases literales, o el resumen encadena frases copiadas"
+                "condicion": "5 o más frases literales, o el resumen encadena frases copiadas"
               }
             ]
           },
           {
             "nombre": "Sustitución léxica",
-            "max": 3,
+            "max": 4,
             "bandas": [
               {
-                "puntos": 3,
+                "puntos": 4,
                 "condicion": "Emplea sinónimos o términos generales en 3 o más puntos del resumen"
               },
               {
-                "puntos": 2,
+                "puntos": 3,
                 "condicion": "Los emplea en 2 puntos"
               },
               {
-                "puntos": 1,
+                "puntos": 2,
                 "condicion": "Los emplea en 1 punto"
+              },
+              {
+                "puntos": 1,
+                "condicion": "Cambia el orden de las palabras del original sin sustituir ninguna"
               },
               {
                 "puntos": 0,
@@ -397,15 +437,23 @@
           },
           {
             "nombre": "Ideas reunidas",
-            "max": 3,
+            "max": 2,
             "bandas": [
               {
-                "puntos": 3,
+                "puntos": 2,
                 "condicion": "Reúne en una frase propia ideas que el original reparte en 2 o más"
               },
               {
-                "puntos": 2,
+                "puntos": 1.5,
+                "condicion": "Reúne ideas en 2 o 3 puntos del resumen"
+              },
+              {
+                "puntos": 1,
                 "condicion": "Reúne ideas en 1 punto del resumen"
+              },
+              {
+                "puntos": 0.5,
+                "condicion": "Une dos frases del original con una conjunción, sin reformularlas"
               },
               {
                 "puntos": 0,
@@ -480,15 +528,23 @@
         "componentes": [
           {
             "nombre": "Texto seguido",
-            "max": 3,
+            "max": 2,
             "bandas": [
               {
-                "puntos": 3,
+                "puntos": 2,
                 "condicion": "El resumen es un texto seguido, sin guiones ni enumeraciones"
               },
               {
-                "puntos": 2,
+                "puntos": 1.5,
+                "condicion": "El resumen es un texto seguido y conserva una enumeración del original"
+              },
+              {
+                "puntos": 1,
                 "condicion": "El resumen alterna párrafo y lista de puntos"
+              },
+              {
+                "puntos": 0.5,
+                "condicion": "El resumen es una lista de puntos redactados en frases completas"
               },
               {
                 "puntos": 0,
@@ -498,19 +554,23 @@
           },
           {
             "nombre": "Conectores entre ideas",
-            "max": 3,
+            "max": 4,
             "bandas": [
               {
-                "puntos": 3,
+                "puntos": 4,
                 "condicion": "Emplea 3 o más conectores distintos entre las ideas"
               },
               {
-                "puntos": 2,
+                "puntos": 3,
                 "condicion": "Emplea 2 conectores distintos"
               },
               {
-                "puntos": 1,
+                "puntos": 2,
                 "condicion": "Repite el mismo conector a lo largo del resumen"
+              },
+              {
+                "puntos": 1,
+                "condicion": "Enlaza dos ideas con un conector y coloca el resto sin enlace"
               },
               {
                 "puntos": 0,
@@ -527,8 +587,16 @@
                 "condicion": "El resumen ocupa entre un cuarto y un tercio del texto original"
               },
               {
+                "puntos": 1.5,
+                "condicion": "Se aparta de esa extensión en menos de un cuarto"
+              },
+              {
                 "puntos": 1,
                 "condicion": "Se aparta de esa extensión en menos de la mitad"
+              },
+              {
+                "puntos": 0.5,
+                "condicion": "Se aparta de esa extensión en más de la mitad"
               },
               {
                 "puntos": 0,
@@ -545,12 +613,20 @@
                 "condicion": "El resumen traslada las ideas sin fórmulas del tipo el autor dice y sin opinión propia"
               },
               {
-                "puntos": 1,
+                "puntos": 1.5,
                 "condicion": "Incluye 1 fórmula de ese tipo o 1 opinión propia"
               },
               {
+                "puntos": 1,
+                "condicion": "Incluye 2 fórmulas de ese tipo u opiniones propias"
+              },
+              {
+                "puntos": 0.5,
+                "condicion": "Incluye 3 o 4 fórmulas de ese tipo u opiniones propias"
+              },
+              {
                 "puntos": 0,
-                "condicion": "Incluye 2 o más fórmulas de ese tipo u opiniones propias"
+                "condicion": "Incluye 5 o más fórmulas de ese tipo u opiniones propias"
               }
             ]
           }
@@ -625,7 +701,7 @@
             "bandas": [
               {
                 "puntos": 4,
-                "condicion": "Hasta 1 falta en todo el resumen"
+                "condicion": "Hasta 1 faltas en todo el resumen"
               },
               {
                 "puntos": 3,
@@ -636,26 +712,34 @@
                 "condicion": "4 o 5 faltas"
               },
               {
+                "puntos": 1,
+                "condicion": "6 o 7 faltas"
+              },
+              {
                 "puntos": 0,
-                "condicion": "6 o más faltas"
+                "condicion": "8 o más faltas"
               }
             ]
           },
           {
             "nombre": "Puntuación",
-            "max": 3,
+            "max": 2,
             "bandas": [
               {
-                "puntos": 3,
+                "puntos": 2,
                 "condicion": "Cierra con punto todas las frases del resumen"
               },
               {
-                "puntos": 2,
+                "puntos": 1.5,
                 "condicion": "Deja 1 frase sin cerrar con punto"
               },
               {
                 "puntos": 1,
                 "condicion": "Deja 2 frases sin cerrar con punto"
+              },
+              {
+                "puntos": 0.5,
+                "condicion": "Deja 3 frases sin cerrar con punto"
               },
               {
                 "puntos": 0,
@@ -665,19 +749,23 @@
           },
           {
             "nombre": "Propiedad léxica",
-            "max": 3,
+            "max": 4,
             "bandas": [
               {
-                "puntos": 3,
+                "puntos": 4,
                 "condicion": "Emplea términos precisos y ninguna palabra comodín (cosa, tema, hacer)"
               },
               {
-                "puntos": 2,
+                "puntos": 3,
                 "condicion": "Emplea 1 palabra comodín"
               },
               {
-                "puntos": 1,
+                "puntos": 2,
                 "condicion": "Emplea 2 palabras comodín"
+              },
+              {
+                "puntos": 1,
+                "condicion": "Emplea 3 o 4 palabras comodín"
               },
               {
                 "puntos": 0,
@@ -751,19 +839,23 @@
         "componentes": [
           {
             "nombre": "El tema queda enunciado",
-            "max": 3,
+            "max": 4,
             "bandas": [
               {
-                "puntos": 3,
+                "puntos": 4,
                 "condicion": "La primera línea del resumen enuncia el tema del texto"
               },
               {
-                "puntos": 2,
+                "puntos": 3,
                 "condicion": "El tema del texto queda enunciado en otro punto del resumen"
               },
               {
-                "puntos": 1,
+                "puntos": 2,
                 "condicion": "El tema se deduce del resumen pero no queda enunciado"
+              },
+              {
+                "puntos": 1,
+                "condicion": "El tema se reconoce solo al leer el texto original al lado"
               },
               {
                 "puntos": 0,
@@ -788,6 +880,10 @@
                 "condicion": "Deja fuera 1 idea principal o recoge 2 secundarias"
               },
               {
+                "puntos": 1,
+                "condicion": "Deja fuera 1 idea principal y recoge 2 o más secundarias"
+              },
+              {
                 "puntos": 0,
                 "condicion": "Deja fuera 2 o más ideas principales"
               }
@@ -795,15 +891,23 @@
           },
           {
             "nombre": "Estructura del original",
-            "max": 3,
+            "max": 2,
             "bandas": [
               {
-                "puntos": 3,
+                "puntos": 2,
                 "condicion": "El resumen deja ver las partes en que se organiza el texto"
               },
               {
-                "puntos": 2,
+                "puntos": 1.5,
+                "condicion": "El resumen deja ver las partes del texto y funde las dos últimas"
+              },
+              {
+                "puntos": 1,
                 "condicion": "Deja ver una de las partes y funde el resto"
+              },
+              {
+                "puntos": 0.5,
+                "condicion": "El resumen separa en dos bloques el contenido, sin correspondencia con las partes del texto"
               },
               {
                 "puntos": 0,
@@ -892,8 +996,12 @@
                 "condicion": "Conserva 2 ejemplos o digresiones"
               },
               {
+                "puntos": 1,
+                "condicion": "Conserva 3 o 4 ejemplos o digresiones"
+              },
+              {
                 "puntos": 0,
-                "condicion": "Conserva 3 o más"
+                "condicion": "Conserva 5 o más"
               }
             ]
           },
@@ -914,8 +1022,12 @@
                 "condicion": "Deja fuera 2 de esas ideas"
               },
               {
+                "puntos": 1,
+                "condicion": "Deja fuera 3 o 4 de esas ideas"
+              },
+              {
                 "puntos": 0,
-                "condicion": "Deja fuera 3 o más"
+                "condicion": "Deja fuera 5 o más"
               }
             ]
           },
@@ -928,12 +1040,20 @@
                 "condicion": "Todo lo que dice el resumen está en el texto original"
               },
               {
-                "puntos": 1,
+                "puntos": 1.5,
                 "condicion": "Añade 1 dato o inferencia que el original no sostiene"
               },
               {
+                "puntos": 1,
+                "condicion": "Añade 2 datos o inferencias que el original no sostiene"
+              },
+              {
+                "puntos": 0.5,
+                "condicion": "Añade 3 o 4 datos ajenos al original"
+              },
+              {
                 "puntos": 0,
-                "condicion": "Añade 2 o más datos ajenos al original"
+                "condicion": "Añade 5 o más datos ajenos al original"
               }
             ]
           }
@@ -1018,25 +1138,33 @@
                 "condicion": "2 frases literales del original"
               },
               {
+                "puntos": 1,
+                "condicion": "3 o 4 frases literales del original"
+              },
+              {
                 "puntos": 0,
-                "condicion": "3 o más frases literales del original"
+                "condicion": "5 o más frases literales, o el resumen encadena frases copiadas"
               }
             ]
           },
           {
             "nombre": "Léxico propio",
-            "max": 3,
+            "max": 2,
             "bandas": [
               {
-                "puntos": 3,
+                "puntos": 2,
                 "condicion": "Emplea sinónimos, hiperónimos o términos generales en 4 o más puntos"
               },
               {
-                "puntos": 2,
-                "condicion": "Los emplea en 2 o 3 puntos"
+                "puntos": 1.5,
+                "condicion": "Los emplea en 4 o más puntos y repite el término clave del original"
               },
               {
                 "puntos": 1,
+                "condicion": "Los emplea en 2 o 3 puntos"
+              },
+              {
+                "puntos": 0.5,
                 "condicion": "Los emplea en 1 punto"
               },
               {
@@ -1047,19 +1175,23 @@
           },
           {
             "nombre": "Condensación",
-            "max": 3,
+            "max": 4,
             "bandas": [
               {
-                "puntos": 3,
+                "puntos": 4,
                 "condicion": "Reúne en una frase propia ideas que el original reparte en 3 o más"
               },
               {
-                "puntos": 2,
+                "puntos": 3,
                 "condicion": "Reúne ideas de 2 frases del original"
               },
               {
-                "puntos": 1,
+                "puntos": 2,
                 "condicion": "Reúne ideas en 1 punto del resumen"
+              },
+              {
+                "puntos": 1,
+                "condicion": "Reúne dos frases del original en una, copiando su redacción"
               },
               {
                 "puntos": 0,
@@ -1141,8 +1273,16 @@
                 "condicion": "El resumen es un texto seguido, sin guiones ni enumeraciones"
               },
               {
+                "puntos": 1.5,
+                "condicion": "El resumen es un texto seguido y conserva una enumeración del original"
+              },
+              {
                 "puntos": 1,
                 "condicion": "El resumen alterna párrafo y lista de puntos"
+              },
+              {
+                "puntos": 0.5,
+                "condicion": "El resumen es una lista de puntos redactados en frases completas"
               },
               {
                 "puntos": 0,
@@ -1152,18 +1292,22 @@
           },
           {
             "nombre": "Marcadores entre ideas",
-            "max": 3,
+            "max": 2,
             "bandas": [
               {
-                "puntos": 3,
+                "puntos": 2,
                 "condicion": "Emplea 4 o más marcadores distintos: orden, causa, consecuencia, contraste"
               },
               {
-                "puntos": 2,
-                "condicion": "Emplea 2 o 3 tipos de marcador"
+                "puntos": 1.5,
+                "condicion": "Emplea 4 o más marcadores y repite el mismo en la mayoría de los enlaces"
               },
               {
                 "puntos": 1,
+                "condicion": "Emplea 2 o 3 tipos de marcador"
+              },
+              {
+                "puntos": 0.5,
                 "condicion": "Repite el mismo marcador a lo largo del resumen"
               },
               {
@@ -1181,8 +1325,16 @@
                 "condicion": "El resumen ocupa entre un quinto y un cuarto del texto original"
               },
               {
+                "puntos": 1.5,
+                "condicion": "Se aparta de esa extensión en menos de un cuarto"
+              },
+              {
                 "puntos": 1,
                 "condicion": "Se aparta de esa extensión en menos de la mitad"
+              },
+              {
+                "puntos": 0.5,
+                "condicion": "Se aparta de esa extensión en más de la mitad"
               },
               {
                 "puntos": 0,
@@ -1192,19 +1344,23 @@
           },
           {
             "nombre": "Objetividad",
-            "max": 3,
+            "max": 4,
             "bandas": [
               {
-                "puntos": 3,
+                "puntos": 4,
                 "condicion": "El resumen traslada las ideas sin fórmulas del tipo el autor dice y sin opinión propia"
               },
               {
-                "puntos": 2,
+                "puntos": 3,
                 "condicion": "Incluye 1 fórmula de ese tipo o 1 opinión propia"
               },
               {
-                "puntos": 1,
+                "puntos": 2,
                 "condicion": "Incluye 2 fórmulas de ese tipo u opiniones propias"
+              },
+              {
+                "puntos": 1,
+                "condicion": "Incluye 3 o 4 fórmulas de ese tipo u opiniones propias"
               },
               {
                 "puntos": 0,
@@ -1283,7 +1439,7 @@
             "bandas": [
               {
                 "puntos": 4,
-                "condicion": "Hasta 1 falta en todo el resumen"
+                "condicion": "Hasta 1 faltas en todo el resumen"
               },
               {
                 "puntos": 3,
@@ -1294,26 +1450,34 @@
                 "condicion": "4 o 5 faltas"
               },
               {
+                "puntos": 1,
+                "condicion": "6 o 7 faltas"
+              },
+              {
                 "puntos": 0,
-                "condicion": "6 o más faltas"
+                "condicion": "8 o más faltas"
               }
             ]
           },
           {
             "nombre": "Puntuación",
-            "max": 3,
+            "max": 2,
             "bandas": [
               {
-                "puntos": 3,
+                "puntos": 2,
                 "condicion": "Cierra con punto todas las frases y delimita con coma los incisos"
               },
               {
-                "puntos": 2,
+                "puntos": 1.5,
                 "condicion": "1 inciso sin delimitar o 1 frase sin cerrar"
               },
               {
                 "puntos": 1,
                 "condicion": "2 incisos sin delimitar o 2 frases sin cerrar"
+              },
+              {
+                "puntos": 0.5,
+                "condicion": "3 o 4 incisos sin delimitar o 3 o 4 frases sin cerrar"
               },
               {
                 "puntos": 0,
@@ -1323,19 +1487,23 @@
           },
           {
             "nombre": "Propiedad léxica",
-            "max": 3,
+            "max": 4,
             "bandas": [
               {
-                "puntos": 3,
+                "puntos": 4,
                 "condicion": "Emplea términos precisos y ninguna palabra comodín (cosa, tema, hacer)"
               },
               {
-                "puntos": 2,
+                "puntos": 3,
                 "condicion": "Emplea 1 palabra comodín"
               },
               {
-                "puntos": 1,
+                "puntos": 2,
                 "condicion": "Emplea 2 palabras comodín"
+              },
+              {
+                "puntos": 1,
+                "condicion": "Emplea 3 o 4 palabras comodín"
               },
               {
                 "puntos": 0,
@@ -1409,19 +1577,23 @@
         "componentes": [
           {
             "nombre": "Sentido global enunciado",
-            "max": 3,
+            "max": 4,
             "bandas": [
               {
-                "puntos": 3,
+                "puntos": 4,
                 "condicion": "La primera línea del resumen enuncia el sentido global del texto"
               },
               {
-                "puntos": 2,
+                "puntos": 3,
                 "condicion": "El sentido global queda enunciado en otro punto del resumen"
               },
               {
-                "puntos": 1,
+                "puntos": 2,
                 "condicion": "El sentido global se deduce del resumen pero no queda enunciado"
+              },
+              {
+                "puntos": 1,
+                "condicion": "El sentido global se reconoce solo al leer el texto original al lado"
               },
               {
                 "puntos": 0,
@@ -1446,6 +1618,10 @@
                 "condicion": "Deja ver la mitad de las partes"
               },
               {
+                "puntos": 1,
+                "condicion": "Deja ver 1 de las partes y funde el resto"
+              },
+              {
                 "puntos": 0,
                 "condicion": "El resumen sucede las ideas sin dejar ver la estructura"
               }
@@ -1453,15 +1629,23 @@
           },
           {
             "nombre": "Intención del emisor",
-            "max": 3,
+            "max": 2,
             "bandas": [
               {
-                "puntos": 3,
+                "puntos": 2,
                 "condicion": "El resumen deja claro con qué propósito escribe el emisor"
               },
               {
-                "puntos": 2,
+                "puntos": 1.5,
+                "condicion": "El resumen nombra el propósito del emisor en una frase del cierre"
+              },
+              {
+                "puntos": 1,
                 "condicion": "El propósito del emisor se intuye en el resumen"
+              },
+              {
+                "puntos": 0.5,
+                "condicion": "El resumen recoge el contenido y apunta el propósito con un verbo suelto"
               },
               {
                 "puntos": 0,
@@ -1535,14 +1719,14 @@
         "componentes": [
           {
             "nombre": "Información ilustrativa fuera",
-            "max": 3,
+            "max": 2,
             "bandas": [
               {
-                "puntos": 3,
+                "puntos": 2,
                 "condicion": "El resumen deja fuera todos los datos ilustrativos y las digresiones"
               },
               {
-                "puntos": 2,
+                "puntos": 1.5,
                 "condicion": "Conserva 1 dato ilustrativo o digresión"
               },
               {
@@ -1550,8 +1734,12 @@
                 "condicion": "Conserva 2"
               },
               {
+                "puntos": 0.5,
+                "condicion": "Conserva 3 o 4"
+              },
+              {
                 "puntos": 0,
-                "condicion": "Conserva 3 o más"
+                "condicion": "Conserva 5 o más"
               }
             ]
           },
@@ -1572,6 +1760,10 @@
                 "condicion": "Deja fuera 2 pasos"
               },
               {
+                "puntos": 1,
+                "condicion": "Deja fuera 3 o 4 pasos"
+              },
+              {
                 "puntos": 0,
                 "condicion": "El resumen rompe la línea del razonamiento del texto"
               }
@@ -1579,19 +1771,23 @@
           },
           {
             "nombre": "Fidelidad al original",
-            "max": 3,
+            "max": 4,
             "bandas": [
               {
-                "puntos": 3,
+                "puntos": 4,
                 "condicion": "Todo lo que afirma el resumen está en el texto original"
               },
               {
-                "puntos": 2,
+                "puntos": 3,
                 "condicion": "Añade 1 inferencia que el original no sostiene"
               },
               {
-                "puntos": 1,
+                "puntos": 2,
                 "condicion": "Añade 2 inferencias ajenas al original"
+              },
+              {
+                "puntos": 1,
+                "condicion": "Añade 3 o 4 inferencias ajenas al original"
               },
               {
                 "puntos": 0,
@@ -1680,26 +1876,34 @@
                 "condicion": "2 secuencias literales del original"
               },
               {
+                "puntos": 1,
+                "condicion": "3 o 4 secuencias literales del original"
+              },
+              {
                 "puntos": 0,
-                "condicion": "3 o más secuencias literales del original"
+                "condicion": "5 o más secuencias literales del original"
               }
             ]
           },
           {
             "nombre": "Léxico y término técnico",
-            "max": 3,
+            "max": 4,
             "bandas": [
               {
-                "puntos": 3,
+                "puntos": 4,
                 "condicion": "Emplea léxico propio y conserva los términos técnicos que el tema exige"
               },
               {
-                "puntos": 2,
+                "puntos": 3,
                 "condicion": "Emplea léxico propio y pierde 1 término técnico necesario"
               },
               {
-                "puntos": 1,
+                "puntos": 2,
                 "condicion": "Sustituye los términos técnicos por expresiones vagas"
+              },
+              {
+                "puntos": 1,
+                "condicion": "Conserva los términos técnicos con el léxico del original alrededor"
               },
               {
                 "puntos": 0,
@@ -1709,15 +1913,23 @@
           },
           {
             "nombre": "Grado de certeza",
-            "max": 3,
+            "max": 2,
             "bandas": [
               {
-                "puntos": 3,
+                "puntos": 2,
                 "condicion": "El resumen conserva las cautelas del original (parece, tiende a, en algunos casos)"
               },
               {
-                "puntos": 2,
+                "puntos": 1.5,
                 "condicion": "Pierde 1 de esas cautelas y convierte en afirmación lo que era hipótesis"
+              },
+              {
+                "puntos": 1,
+                "condicion": "Pierde 2 de esas cautelas"
+              },
+              {
+                "puntos": 0.5,
+                "condicion": "Pierde 3 o más cautelas y mantiene alguna"
               },
               {
                 "puntos": 0,
@@ -1792,19 +2004,23 @@
         "componentes": [
           {
             "nombre": "Registro académico",
-            "max": 3,
+            "max": 2,
             "bandas": [
               {
-                "puntos": 3,
+                "puntos": 2,
                 "condicion": "El registro del resumen es el del ámbito académico de principio a fin"
               },
               {
-                "puntos": 2,
+                "puntos": 1.5,
                 "condicion": "1 expresión coloquial se cuela en el resumen"
               },
               {
                 "puntos": 1,
                 "condicion": "2 expresiones coloquiales"
+              },
+              {
+                "puntos": 0.5,
+                "condicion": "3 o 4 expresiones coloquiales"
               },
               {
                 "puntos": 0,
@@ -1814,19 +2030,23 @@
           },
           {
             "nombre": "Marcadores discursivos",
-            "max": 3,
+            "max": 4,
             "bandas": [
               {
-                "puntos": 3,
+                "puntos": 4,
                 "condicion": "Emplea 4 o más marcadores distintos entre las ideas del resumen"
               },
               {
-                "puntos": 2,
+                "puntos": 3,
                 "condicion": "Emplea 2 o 3 marcadores distintos"
               },
               {
-                "puntos": 1,
+                "puntos": 2,
                 "condicion": "Repite el mismo marcador a lo largo del resumen"
+              },
+              {
+                "puntos": 1,
+                "condicion": "Enlaza dos ideas con un marcador y coloca el resto sin enlace"
               },
               {
                 "puntos": 0,
@@ -1843,8 +2063,16 @@
                 "condicion": "El resumen ocupa entre un quinto y un cuarto del texto original"
               },
               {
+                "puntos": 1.5,
+                "condicion": "Se aparta de esa extensión en menos de un cuarto"
+              },
+              {
                 "puntos": 1,
                 "condicion": "Se aparta de esa extensión en menos de la mitad"
+              },
+              {
+                "puntos": 0.5,
+                "condicion": "Se aparta de esa extensión en más de la mitad"
               },
               {
                 "puntos": 0,
@@ -1861,12 +2089,20 @@
                 "condicion": "El resumen traslada las ideas sin marcas de subjetividad ni referencias al emisor"
               },
               {
-                "puntos": 1,
+                "puntos": 1.5,
                 "condicion": "Incluye 1 marca de subjetividad o 1 referencia al emisor"
               },
               {
+                "puntos": 1,
+                "condicion": "Incluye 2 marcas de subjetividad o referencias al emisor"
+              },
+              {
+                "puntos": 0.5,
+                "condicion": "Incluye 3 o 4 marcas de subjetividad o referencias al emisor"
+              },
+              {
                 "puntos": 0,
-                "condicion": "Incluye 2 o más marcas de subjetividad o referencias al emisor"
+                "condicion": "Incluye 5 o más marcas de subjetividad o referencias al emisor"
               }
             ]
           }
@@ -1940,37 +2176,45 @@
             "bandas": [
               {
                 "puntos": 4,
-                "condicion": "Sin faltas en todo el resumen"
+                "condicion": "Hasta 1 faltas en todo el resumen"
               },
               {
                 "puntos": 3,
-                "condicion": "1 o 2 faltas"
+                "condicion": "2 o 3 faltas"
               },
               {
                 "puntos": 2,
-                "condicion": "3 o 4 faltas"
+                "condicion": "4 o 5 faltas"
+              },
+              {
+                "puntos": 1,
+                "condicion": "6 o 7 faltas"
               },
               {
                 "puntos": 0,
-                "condicion": "5 o más faltas"
+                "condicion": "8 o más faltas"
               }
             ]
           },
           {
             "nombre": "Puntuación del período",
-            "max": 3,
+            "max": 2,
             "bandas": [
               {
-                "puntos": 3,
+                "puntos": 2,
                 "condicion": "Delimita con coma los incisos y las subordinadas antepuestas de todo el resumen"
               },
               {
-                "puntos": 2,
+                "puntos": 1.5,
                 "condicion": "1 período con la puntuación sin delimitar"
               },
               {
                 "puntos": 1,
                 "condicion": "2 períodos con la puntuación sin delimitar"
+              },
+              {
+                "puntos": 0.5,
+                "condicion": "3 o 4 períodos con la puntuación sin delimitar"
               },
               {
                 "puntos": 0,
@@ -1980,19 +2224,23 @@
           },
           {
             "nombre": "Precisión conceptual",
-            "max": 3,
+            "max": 4,
             "bandas": [
               {
-                "puntos": 3,
+                "puntos": 4,
                 "condicion": "Nombra cada concepto del texto con el término que le corresponde"
               },
               {
-                "puntos": 2,
+                "puntos": 3,
                 "condicion": "1 concepto queda nombrado con una expresión vaga"
               },
               {
-                "puntos": 1,
+                "puntos": 2,
                 "condicion": "2 conceptos quedan nombrados con expresiones vagas"
+              },
+              {
+                "puntos": 1,
+                "condicion": "3 o 4 conceptos quedan nombrados con expresiones vagas"
               },
               {
                 "puntos": 0,
@@ -2066,19 +2314,23 @@
         "componentes": [
           {
             "nombre": "La tesis queda enunciada",
-            "max": 3,
+            "max": 4,
             "bandas": [
               {
-                "puntos": 3,
+                "puntos": 4,
                 "condicion": "La primera línea del resumen enuncia la tesis del texto"
               },
               {
-                "puntos": 2,
+                "puntos": 3,
                 "condicion": "La tesis queda enunciada en otro punto del resumen"
               },
               {
-                "puntos": 1,
+                "puntos": 2,
                 "condicion": "La tesis se deduce del resumen pero no queda enunciada"
+              },
+              {
+                "puntos": 1,
+                "condicion": "La tesis se reconoce solo al leer el texto original al lado"
               },
               {
                 "puntos": 0,
@@ -2103,6 +2355,10 @@
                 "condicion": "Enumera los argumentos sin ligarlos a la tesis"
               },
               {
+                "puntos": 1,
+                "condicion": "Liga un argumento a la tesis y enumera el resto"
+              },
+              {
                 "puntos": 0,
                 "condicion": "El resumen mezcla tesis y argumentos en un mismo plano"
               }
@@ -2110,15 +2366,23 @@
           },
           {
             "nombre": "Intención del emisor",
-            "max": 3,
+            "max": 2,
             "bandas": [
               {
-                "puntos": 3,
+                "puntos": 2,
                 "condicion": "El resumen deja claro con qué propósito escribe el emisor"
               },
               {
-                "puntos": 2,
+                "puntos": 1.5,
+                "condicion": "El resumen nombra el propósito del emisor en una frase del cierre"
+              },
+              {
+                "puntos": 1,
                 "condicion": "El propósito del emisor se intuye en el resumen"
+              },
+              {
+                "puntos": 0.5,
+                "condicion": "El resumen recoge el contenido y apunta el propósito con un verbo suelto"
               },
               {
                 "puntos": 0,
@@ -2192,14 +2456,14 @@
         "componentes": [
           {
             "nombre": "Datos ilustrativos fuera",
-            "max": 3,
+            "max": 2,
             "bandas": [
               {
-                "puntos": 3,
+                "puntos": 2,
                 "condicion": "El resumen deja fuera todos los datos ilustrativos y las anécdotas"
               },
               {
-                "puntos": 2,
+                "puntos": 1.5,
                 "condicion": "Conserva 1 dato ilustrativo o anécdota"
               },
               {
@@ -2207,8 +2471,12 @@
                 "condicion": "Conserva 2"
               },
               {
+                "puntos": 0.5,
+                "condicion": "Conserva 3 o 4"
+              },
+              {
                 "puntos": 0,
-                "condicion": "Conserva 3 o más"
+                "condicion": "Conserva 5 o más"
               }
             ]
           },
@@ -2229,6 +2497,10 @@
                 "condicion": "Deja fuera 2 argumentos"
               },
               {
+                "puntos": 1,
+                "condicion": "Deja fuera 3 o 4 argumentos"
+              },
+              {
                 "puntos": 0,
                 "condicion": "El resumen recoge un solo argumento del texto"
               }
@@ -2236,19 +2508,23 @@
           },
           {
             "nombre": "Hechos y opiniones",
-            "max": 3,
+            "max": 4,
             "bandas": [
               {
-                "puntos": 3,
+                "puntos": 4,
                 "condicion": "El resumen marca qué presenta el texto como hecho y qué como opinión"
               },
               {
-                "puntos": 2,
+                "puntos": 3,
                 "condicion": "Confunde 1 opinión con un hecho, o al revés"
               },
               {
-                "puntos": 1,
+                "puntos": 2,
                 "condicion": "Confunde 2"
+              },
+              {
+                "puntos": 1,
+                "condicion": "Confunde 3 o 4"
               },
               {
                 "puntos": 0,
@@ -2337,26 +2613,34 @@
                 "condicion": "2 secuencias literales del original"
               },
               {
+                "puntos": 1,
+                "condicion": "3 o 4 secuencias literales del original"
+              },
+              {
                 "puntos": 0,
-                "condicion": "3 o más secuencias literales del original"
+                "condicion": "5 o más secuencias literales del original"
               }
             ]
           },
           {
             "nombre": "Léxico neutro",
-            "max": 3,
+            "max": 2,
             "bandas": [
               {
-                "puntos": 3,
+                "puntos": 2,
                 "condicion": "El resumen traslada la tesis con términos neutros y sin las valoraciones del emisor"
               },
               {
-                "puntos": 2,
+                "puntos": 1.5,
                 "condicion": "Conserva 1 término valorativo del original"
               },
               {
                 "puntos": 1,
                 "condicion": "Conserva 2 términos valorativos"
+              },
+              {
+                "puntos": 0.5,
+                "condicion": "Conserva 3 o 4 términos valorativos"
               },
               {
                 "puntos": 0,
@@ -2366,19 +2650,23 @@
           },
           {
             "nombre": "Fuerza argumentativa",
-            "max": 3,
+            "max": 4,
             "bandas": [
               {
-                "puntos": 3,
+                "puntos": 4,
                 "condicion": "El resumen conserva el grado con que el texto sostiene cada afirmación"
               },
               {
-                "puntos": 2,
+                "puntos": 3,
                 "condicion": "Endurece o rebaja 1 afirmación del original"
               },
               {
-                "puntos": 1,
+                "puntos": 2,
                 "condicion": "Endurece o rebaja 2 afirmaciones"
+              },
+              {
+                "puntos": 1,
+                "condicion": "Endurece o rebaja 3 o 4 afirmaciones"
               },
               {
                 "puntos": 0,
@@ -2453,19 +2741,23 @@
         "componentes": [
           {
             "nombre": "Registro académico",
-            "max": 3,
+            "max": 2,
             "bandas": [
               {
-                "puntos": 3,
+                "puntos": 2,
                 "condicion": "El registro del resumen es el del ámbito académico de principio a fin"
               },
               {
-                "puntos": 2,
+                "puntos": 1.5,
                 "condicion": "1 expresión coloquial se cuela en el resumen"
               },
               {
                 "puntos": 1,
                 "condicion": "2 expresiones coloquiales"
+              },
+              {
+                "puntos": 0.5,
+                "condicion": "3 o 4 expresiones coloquiales"
               },
               {
                 "puntos": 0,
@@ -2475,19 +2767,23 @@
           },
           {
             "nombre": "Marcadores de la línea argumental",
-            "max": 3,
+            "max": 4,
             "bandas": [
               {
-                "puntos": 3,
+                "puntos": 4,
                 "condicion": "Emplea 4 o más marcadores distintos: consecuencia, concesión, contraste, orden"
               },
               {
-                "puntos": 2,
+                "puntos": 3,
                 "condicion": "Emplea 2 o 3 tipos de marcador"
               },
               {
-                "puntos": 1,
+                "puntos": 2,
                 "condicion": "Repite el mismo marcador a lo largo del resumen"
+              },
+              {
+                "puntos": 1,
+                "condicion": "Enlaza dos argumentos con un marcador y coloca el resto sin enlace"
               },
               {
                 "puntos": 0,
@@ -2504,8 +2800,16 @@
                 "condicion": "El resumen ocupa entre un sexto y un quinto del texto original"
               },
               {
+                "puntos": 1.5,
+                "condicion": "Se aparta de esa extensión en menos de un cuarto"
+              },
+              {
                 "puntos": 1,
                 "condicion": "Se aparta de esa extensión en menos de la mitad"
+              },
+              {
+                "puntos": 0.5,
+                "condicion": "Se aparta de esa extensión en más de la mitad"
               },
               {
                 "puntos": 0,
@@ -2522,8 +2826,16 @@
                 "condicion": "El resumen expone la tesis del texto sin suscribirla ni rebatirla"
               },
               {
-                "puntos": 1,
+                "puntos": 1.5,
                 "condicion": "Incluye 1 marca de adhesión o de rechazo a la tesis"
+              },
+              {
+                "puntos": 1,
+                "condicion": "Incluye 2 marcas de adhesión o de rechazo a la tesis"
+              },
+              {
+                "puntos": 0.5,
+                "condicion": "Incluye 3 o 4 marcas de adhesión o de rechazo a la tesis"
               },
               {
                 "puntos": 0,
@@ -2601,37 +2913,45 @@
             "bandas": [
               {
                 "puntos": 4,
-                "condicion": "Sin faltas en todo el resumen"
+                "condicion": "Hasta 1 faltas en todo el resumen"
               },
               {
                 "puntos": 3,
-                "condicion": "1 o 2 faltas"
+                "condicion": "2 o 3 faltas"
               },
               {
                 "puntos": 2,
-                "condicion": "3 o 4 faltas"
+                "condicion": "4 o 5 faltas"
+              },
+              {
+                "puntos": 1,
+                "condicion": "6 o 7 faltas"
               },
               {
                 "puntos": 0,
-                "condicion": "5 o más faltas"
+                "condicion": "8 o más faltas"
               }
             ]
           },
           {
             "nombre": "Puntuación del período",
-            "max": 3,
+            "max": 2,
             "bandas": [
               {
-                "puntos": 3,
+                "puntos": 2,
                 "condicion": "Delimita con coma los incisos y las subordinadas antepuestas de todo el resumen"
               },
               {
-                "puntos": 2,
+                "puntos": 1.5,
                 "condicion": "1 período con la puntuación sin delimitar"
               },
               {
                 "puntos": 1,
                 "condicion": "2 períodos con la puntuación sin delimitar"
+              },
+              {
+                "puntos": 0.5,
+                "condicion": "3 o 4 períodos con la puntuación sin delimitar"
               },
               {
                 "puntos": 0,
@@ -2641,19 +2961,23 @@
           },
           {
             "nombre": "Matiz de los verbos de opinión",
-            "max": 3,
+            "max": 4,
             "bandas": [
               {
-                "puntos": 3,
+                "puntos": 4,
                 "condicion": "Gradúa con el verbo exacto lo que el emisor afirma, sugiere o niega"
               },
               {
-                "puntos": 2,
+                "puntos": 3,
                 "condicion": "1 verbo de opinión desplaza el matiz del original"
               },
               {
-                "puntos": 1,
+                "puntos": 2,
                 "condicion": "2 verbos de opinión desplazan el matiz"
+              },
+              {
+                "puntos": 1,
+                "condicion": "3 o 4 verbos de opinión desplazan el matiz"
               },
               {
                 "puntos": 0,

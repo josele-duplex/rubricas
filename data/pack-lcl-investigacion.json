@@ -148,6 +148,10 @@
                 "condicion": "Organiza el trabajo en 2 apartados con el título del guion"
               },
               {
+                "puntos": 1,
+                "condicion": "Separa el trabajo en 2 bloques sin título"
+              },
+              {
                 "puntos": 0,
                 "condicion": "El trabajo presenta la información en un bloque único"
               }
@@ -170,8 +174,12 @@
                 "condicion": "Deja de 3 a 4 fragmentos con la redacción del original"
               },
               {
+                "puntos": 1,
+                "condicion": "Deja de 5 a 6 fragmentos con la redacción del original"
+              },
+              {
                 "puntos": 0,
-                "condicion": "El trabajo reproduce la fuente párrafo a párrafo: 5 o más fragmentos con la redacción del original"
+                "condicion": "El trabajo reproduce la fuente párrafo a párrafo: 7 o más fragmentos con la redacción del original"
               }
             ]
           },
@@ -184,8 +192,16 @@
                 "condicion": "Enlaza los apartados con conectores de orden"
               },
               {
+                "puntos": 1.5,
+                "condicion": "Enlaza los apartados con un solo conector de orden, repetido en cada paso"
+              },
+              {
                 "puntos": 1,
                 "condicion": "Enlaza 1 o 2 apartados y yuxtapone los demás"
+              },
+              {
+                "puntos": 0.5,
+                "condicion": "Marca el paso de un apartado a otro con el título, sin ningún conector"
               },
               {
                 "puntos": 0,
@@ -274,44 +290,64 @@
                 "condicion": "Deja de 3 a 4 pantallas con texto solo"
               },
               {
+                "puntos": 1,
+                "condicion": "Deja de 5 a 6 pantallas con texto solo"
+              },
+              {
                 "puntos": 0,
-                "condicion": "El soporte reproduce el documento escrito: 5 o más pantallas con texto solo"
+                "condicion": "El soporte reproduce el documento escrito: 7 o más pantallas con texto solo"
               }
             ]
           },
           {
             "nombre": "Elementos de orientación: título, pie y leyenda",
-            "max": 3,
+            "max": 4,
             "bandas": [
               {
-                "puntos": 3,
+                "puntos": 4,
                 "condicion": "Todas las pantallas llevan título, y las imágenes, pie"
               },
               {
+                "puntos": 3,
+                "condicion": "Deja 1 elemento sin título ni pie"
+              },
+              {
                 "puntos": 2,
-                "condicion": "Deja de 1 a 3 elementos sin título ni pie"
+                "condicion": "Deja de 2 a 3 elementos sin título ni pie"
+              },
+              {
+                "puntos": 1,
+                "condicion": "Deja de 4 a 5 elementos sin título ni pie"
               },
               {
                 "puntos": 0,
-                "condicion": "El soporte presenta las imágenes sin título ni pie: 4 o más elementos"
+                "condicion": "El soporte presenta las imágenes sin título ni pie: 6 o más elementos"
               }
             ]
           },
           {
             "nombre": "Cantidad de texto por pantalla",
-            "max": 3,
+            "max": 2,
             "bandas": [
               {
-                "puntos": 3,
+                "puntos": 2,
                 "condicion": "Ninguna pantalla pasa de 50 palabras"
               },
               {
-                "puntos": 2,
-                "condicion": "De 1 a 2 pantallas pasan de 50 palabras"
+                "puntos": 1.5,
+                "condicion": "1 pantalla pasa de 50 palabras"
+              },
+              {
+                "puntos": 1,
+                "condicion": "2 o 3 pantallas pasan de 50 palabras"
+              },
+              {
+                "puntos": 0.5,
+                "condicion": "De 4 a 5 pantallas pasan de 50 palabras"
               },
               {
                 "puntos": 0,
-                "condicion": "El soporte vuelca el texto del documento: 3 o más pantallas pasan de 50 palabras"
+                "condicion": "El soporte vuelca el texto del documento: 6 o más pantallas pasan de 50 palabras"
               }
             ]
           }
@@ -390,36 +426,40 @@
               },
               {
                 "puntos": 3,
-                "condicion": "De 3 a 4 faltas"
+                "condicion": "3 o 4 faltas"
               },
               {
                 "puntos": 2,
-                "condicion": "De 5 a 6 faltas"
+                "condicion": "5 o 6 faltas"
               },
               {
                 "puntos": 1,
-                "condicion": "De 7 a 9 faltas"
+                "condicion": "De 7 a 10 faltas"
               },
               {
                 "puntos": 0,
-                "condicion": "10 o más faltas"
+                "condicion": "11 o más faltas"
               }
             ]
           },
           {
             "nombre": "Puntuación",
-            "max": 3,
+            "max": 2,
             "bandas": [
               {
-                "puntos": 3,
+                "puntos": 2,
                 "condicion": "Cierra con punto las frases completas y separa con coma las enumeraciones"
               },
               {
-                "puntos": 2,
-                "condicion": "Deja de 1 a 3 frases o enumeraciones sin marcar"
+                "puntos": 1.5,
+                "condicion": "Deja 1 frase o enumeración sin marcar"
               },
               {
                 "puntos": 1,
+                "condicion": "Deja de 2 a 3 frases o enumeraciones sin marcar"
+              },
+              {
+                "puntos": 0.5,
                 "condicion": "Deja de 4 a 6 frases o enumeraciones sin marcar"
               },
               {
@@ -430,19 +470,23 @@
           },
           {
             "nombre": "Propiedad léxica",
-            "max": 3,
+            "max": 4,
             "bandas": [
               {
-                "puntos": 3,
+                "puntos": 4,
                 "condicion": "Emplea los términos del tema investigado y ninguna palabra comodín"
               },
               {
-                "puntos": 2,
+                "puntos": 3,
                 "condicion": "Emplea 1 palabra comodín (cosa, tema, hacer)"
               },
               {
-                "puntos": 1,
+                "puntos": 2,
                 "condicion": "Emplea 2 palabras comodín"
+              },
+              {
+                "puntos": 1,
+                "condicion": "Emplea 3 o 4 palabras comodín"
               },
               {
                 "puntos": 0,
@@ -590,6 +634,10 @@
                 "condicion": "Reúne 2 fuentes de la misma procedencia"
               },
               {
+                "puntos": 1,
+                "condicion": "Reúne 2 fuentes y una de ellas reproduce a la otra"
+              },
+              {
                 "puntos": 0,
                 "condicion": "El trabajo se apoya en una sola fuente"
               }
@@ -597,15 +645,23 @@
           },
           {
             "nombre": "Datos contrastados entre fuentes",
-            "max": 3,
+            "max": 4,
             "bandas": [
               {
-                "puntos": 3,
+                "puntos": 4,
                 "condicion": "Contrasta 3 o más datos entre dos fuentes al menos"
               },
               {
+                "puntos": 3,
+                "condicion": "Contrasta 2 datos entre dos fuentes"
+              },
+              {
                 "puntos": 2,
-                "condicion": "Contrasta 1 o 2 datos"
+                "condicion": "Contrasta 1 dato entre dos fuentes"
+              },
+              {
+                "puntos": 1,
+                "condicion": "Sitúa dos datos de fuentes distintas juntos, sin compararlos"
               },
               {
                 "puntos": 0,
@@ -615,19 +671,27 @@
           },
           {
             "nombre": "Registro de la procedencia",
-            "max": 3,
+            "max": 2,
             "bandas": [
               {
-                "puntos": 3,
+                "puntos": 2,
                 "condicion": "Anota la procedencia de todas las fuentes utilizadas"
               },
               {
-                "puntos": 2,
-                "condicion": "Deja de 1 a 2 fuentes sin procedencia anotada"
+                "puntos": 1.5,
+                "condicion": "Deja 1 fuente sin procedencia anotada"
+              },
+              {
+                "puntos": 1,
+                "condicion": "Deja 2 fuentes sin procedencia anotada"
+              },
+              {
+                "puntos": 0.5,
+                "condicion": "Deja de 3 a 4 fuentes sin procedencia anotada"
               },
               {
                 "puntos": 0,
-                "condicion": "El trabajo presenta los datos sin anotar la procedencia: 3 o más fuentes"
+                "condicion": "El trabajo presenta los datos sin anotar la procedencia: 5 o más fuentes"
               }
             ]
           }
@@ -712,6 +776,10 @@
                 "condicion": "Organiza el trabajo en 2 apartados"
               },
               {
+                "puntos": 1,
+                "condicion": "Separa el trabajo en 2 bloques sin título"
+              },
+              {
                 "puntos": 0,
                 "condicion": "El trabajo presenta la información en un bloque único"
               }
@@ -734,8 +802,12 @@
                 "condicion": "Deja de 3 a 4 fragmentos con la redacción del original"
               },
               {
+                "puntos": 1,
+                "condicion": "Deja de 5 a 6 fragmentos con la redacción del original"
+              },
+              {
                 "puntos": 0,
-                "condicion": "El trabajo reproduce las fuentes párrafo a párrafo: 5 o más fragmentos con la redacción del original"
+                "condicion": "El trabajo reproduce las fuentes párrafo a párrafo: 7 o más fragmentos con la redacción del original"
               }
             ]
           },
@@ -748,8 +820,16 @@
                 "condicion": "Enlaza los apartados con conectores de orden o de contraste"
               },
               {
+                "puntos": 1.5,
+                "condicion": "Enlaza los apartados con conectores de orden, sin ninguno de contraste"
+              },
+              {
                 "puntos": 1,
                 "condicion": "Enlaza 1 o 2 apartados y yuxtapone los demás"
+              },
+              {
+                "puntos": 0.5,
+                "condicion": "Marca el paso de un apartado a otro con el título, sin ningún conector"
               },
               {
                 "puntos": 0,
@@ -838,44 +918,64 @@
                 "condicion": "Deja de 3 a 4 pantallas con texto solo"
               },
               {
+                "puntos": 1,
+                "condicion": "Deja de 5 a 6 pantallas con texto solo"
+              },
+              {
                 "puntos": 0,
-                "condicion": "El soporte reproduce el documento escrito: 5 o más pantallas con texto solo"
+                "condicion": "El soporte reproduce el documento escrito: 7 o más pantallas con texto solo"
               }
             ]
           },
           {
             "nombre": "Elementos de orientación: título, pie y leyenda",
-            "max": 3,
+            "max": 4,
             "bandas": [
               {
-                "puntos": 3,
+                "puntos": 4,
                 "condicion": "Todas las pantallas llevan título, y las imágenes, pie o leyenda"
               },
               {
+                "puntos": 3,
+                "condicion": "Deja 1 elemento sin título ni pie"
+              },
+              {
                 "puntos": 2,
-                "condicion": "Deja de 1 a 3 elementos sin título ni pie"
+                "condicion": "Deja de 2 a 3 elementos sin título ni pie"
+              },
+              {
+                "puntos": 1,
+                "condicion": "Deja de 4 a 5 elementos sin título ni pie"
               },
               {
                 "puntos": 0,
-                "condicion": "El soporte presenta las imágenes sin título ni pie: 4 o más elementos"
+                "condicion": "El soporte presenta las imágenes sin título ni pie: 6 o más elementos"
               }
             ]
           },
           {
             "nombre": "Cantidad de texto por pantalla",
-            "max": 3,
+            "max": 2,
             "bandas": [
               {
-                "puntos": 3,
+                "puntos": 2,
                 "condicion": "Ninguna pantalla pasa de 50 palabras"
               },
               {
-                "puntos": 2,
-                "condicion": "De 1 a 2 pantallas pasan de 50 palabras"
+                "puntos": 1.5,
+                "condicion": "1 pantalla pasa de 50 palabras"
+              },
+              {
+                "puntos": 1,
+                "condicion": "2 o 3 pantallas pasan de 50 palabras"
+              },
+              {
+                "puntos": 0.5,
+                "condicion": "De 4 a 5 pantallas pasan de 50 palabras"
               },
               {
                 "puntos": 0,
-                "condicion": "El soporte vuelca el texto del documento: 3 o más pantallas pasan de 50 palabras"
+                "condicion": "El soporte vuelca el texto del documento: 6 o más pantallas pasan de 50 palabras"
               }
             ]
           }
@@ -954,15 +1054,15 @@
               },
               {
                 "puntos": 3,
-                "condicion": "De 3 a 5 faltas"
+                "condicion": "3 o 4 faltas"
               },
               {
                 "puntos": 2,
-                "condicion": "De 6 a 8 faltas"
+                "condicion": "De 5 a 7 faltas"
               },
               {
                 "puntos": 1,
-                "condicion": "De 9 a 11 faltas"
+                "condicion": "De 8 a 11 faltas"
               },
               {
                 "puntos": 0,
@@ -972,18 +1072,22 @@
           },
           {
             "nombre": "Puntuación",
-            "max": 3,
+            "max": 2,
             "bandas": [
               {
-                "puntos": 3,
+                "puntos": 2,
                 "condicion": "Enumeración e inciso llevan la puntuación correspondiente"
               },
               {
-                "puntos": 2,
-                "condicion": "Deja de 1 a 3 incisos o enumeraciones sin marcar"
+                "puntos": 1.5,
+                "condicion": "Deja 1 inciso o enumeración sin marcar"
               },
               {
                 "puntos": 1,
+                "condicion": "Deja de 2 a 3 incisos o enumeraciones sin marcar"
+              },
+              {
+                "puntos": 0.5,
                 "condicion": "Deja de 4 a 6 incisos o enumeraciones sin marcar"
               },
               {
@@ -994,19 +1098,23 @@
           },
           {
             "nombre": "Propiedad léxica",
-            "max": 3,
+            "max": 4,
             "bandas": [
               {
-                "puntos": 3,
+                "puntos": 4,
                 "condicion": "Emplea los términos del tema investigado y ninguna palabra comodín"
               },
               {
-                "puntos": 2,
+                "puntos": 3,
                 "condicion": "Emplea 1 palabra comodín (cosa, tema, hacer)"
               },
               {
-                "puntos": 1,
+                "puntos": 2,
                 "condicion": "Emplea 2 palabras comodín"
+              },
+              {
+                "puntos": 1,
+                "condicion": "Emplea 3 o 4 palabras comodín"
               },
               {
                 "puntos": 0,
@@ -1154,6 +1262,10 @@
                 "condicion": "Reúne 2 fuentes"
               },
               {
+                "puntos": 1,
+                "condicion": "Reúne 2 fuentes y una de ellas reproduce a la otra"
+              },
+              {
                 "puntos": 0,
                 "condicion": "El trabajo se apoya en una sola fuente"
               }
@@ -1161,19 +1273,23 @@
           },
           {
             "nombre": "Datos contrastados entre fuentes",
-            "max": 3,
+            "max": 4,
             "bandas": [
               {
-                "puntos": 3,
+                "puntos": 4,
                 "condicion": "Contrasta 4 o más datos entre fuentes de distinta procedencia"
               },
               {
-                "puntos": 2,
+                "puntos": 3,
                 "condicion": "Contrasta 2 o 3 datos"
               },
               {
-                "puntos": 1,
+                "puntos": 2,
                 "condicion": "Contrasta 1 dato"
+              },
+              {
+                "puntos": 1,
+                "condicion": "Sitúa dos datos de fuentes distintas juntos, sin compararlos"
               },
               {
                 "puntos": 0,
@@ -1183,19 +1299,27 @@
           },
           {
             "nombre": "Registro de la procedencia",
-            "max": 3,
+            "max": 2,
             "bandas": [
               {
-                "puntos": 3,
+                "puntos": 2,
                 "condicion": "Anota la procedencia de todas las fuentes utilizadas"
               },
               {
-                "puntos": 2,
-                "condicion": "Deja de 1 a 2 fuentes sin procedencia anotada"
+                "puntos": 1.5,
+                "condicion": "Deja 1 fuente sin procedencia anotada"
+              },
+              {
+                "puntos": 1,
+                "condicion": "Deja 2 fuentes sin procedencia anotada"
+              },
+              {
+                "puntos": 0.5,
+                "condicion": "Deja de 3 a 4 fuentes sin procedencia anotada"
               },
               {
                 "puntos": 0,
-                "condicion": "El trabajo presenta los datos sin anotar la procedencia: 3 o más fuentes"
+                "condicion": "El trabajo presenta los datos sin anotar la procedencia: 5 o más fuentes"
               }
             ]
           }
@@ -1280,6 +1404,10 @@
                 "condicion": "Organiza el trabajo en 2 apartados"
               },
               {
+                "puntos": 1,
+                "condicion": "Separa el trabajo en 2 bloques sin título"
+              },
+              {
                 "puntos": 0,
                 "condicion": "El trabajo presenta la información en un bloque único"
               }
@@ -1302,8 +1430,12 @@
                 "condicion": "Deja de 2 a 3 fragmentos con la redacción del original"
               },
               {
+                "puntos": 1,
+                "condicion": "Deja de 4 a 6 fragmentos con la redacción del original"
+              },
+              {
                 "puntos": 0,
-                "condicion": "El trabajo reproduce las fuentes párrafo a párrafo: 4 o más fragmentos con la redacción del original"
+                "condicion": "El trabajo reproduce las fuentes párrafo a párrafo: 7 o más fragmentos con la redacción del original"
               }
             ]
           },
@@ -1316,8 +1448,16 @@
                 "condicion": "Enlaza los apartados con conectores de orden y de contraste"
               },
               {
+                "puntos": 1.5,
+                "condicion": "Enlaza los apartados con conectores de orden, sin ninguno de contraste"
+              },
+              {
                 "puntos": 1,
                 "condicion": "Enlaza 1 o 2 apartados y yuxtapone los demás"
+              },
+              {
+                "puntos": 0.5,
+                "condicion": "Marca el paso de un apartado a otro con el título, sin ningún conector"
               },
               {
                 "puntos": 0,
@@ -1406,44 +1546,64 @@
                 "condicion": "Deja de 3 a 4 pantallas con texto solo"
               },
               {
+                "puntos": 1,
+                "condicion": "Deja de 5 a 6 pantallas con texto solo"
+              },
+              {
                 "puntos": 0,
-                "condicion": "El soporte reproduce el documento escrito: 5 o más pantallas con texto solo"
+                "condicion": "El soporte reproduce el documento escrito: 7 o más pantallas con texto solo"
               }
             ]
           },
           {
             "nombre": "Elementos de orientación: título, pie y leyenda",
-            "max": 3,
+            "max": 4,
             "bandas": [
               {
-                "puntos": 3,
+                "puntos": 4,
                 "condicion": "Todas las pantallas llevan título, y los elementos visuales, pie o leyenda"
               },
               {
+                "puntos": 3,
+                "condicion": "Deja 1 elemento sin título ni pie"
+              },
+              {
                 "puntos": 2,
-                "condicion": "Deja de 1 a 2 elementos sin título ni pie"
+                "condicion": "Deja 2 elementos sin título ni pie"
+              },
+              {
+                "puntos": 1,
+                "condicion": "Deja de 3 a 4 elementos sin título ni pie"
               },
               {
                 "puntos": 0,
-                "condicion": "El soporte presenta los elementos visuales sin título ni pie: 3 o más elementos"
+                "condicion": "El soporte presenta los elementos visuales sin título ni pie: 5 o más elementos"
               }
             ]
           },
           {
             "nombre": "Cantidad de texto por pantalla",
-            "max": 3,
+            "max": 2,
             "bandas": [
               {
-                "puntos": 3,
+                "puntos": 2,
                 "condicion": "Ninguna pantalla pasa de 50 palabras"
               },
               {
-                "puntos": 2,
-                "condicion": "De 1 a 2 pantallas pasan de 50 palabras"
+                "puntos": 1.5,
+                "condicion": "1 pantalla pasa de 50 palabras"
+              },
+              {
+                "puntos": 1,
+                "condicion": "2 o 3 pantallas pasan de 50 palabras"
+              },
+              {
+                "puntos": 0.5,
+                "condicion": "De 4 a 5 pantallas pasan de 50 palabras"
               },
               {
                 "puntos": 0,
-                "condicion": "El soporte vuelca el texto del documento: 3 o más pantallas pasan de 50 palabras"
+                "condicion": "El soporte vuelca el texto del documento: 6 o más pantallas pasan de 50 palabras"
               }
             ]
           }
@@ -1528,44 +1688,64 @@
                 "condicion": "Deja de 3 a 4 referencias incompletas"
               },
               {
+                "puntos": 1,
+                "condicion": "Deja de 5 a 6 referencias incompletas"
+              },
+              {
                 "puntos": 0,
-                "condicion": "El trabajo presenta los datos sin referencia de origen: 5 o más referencias incompletas"
+                "condicion": "El trabajo presenta los datos sin referencia de origen: 7 o más referencias incompletas"
               }
             ]
           },
           {
             "nombre": "Crédito del material visual",
-            "max": 3,
+            "max": 2,
             "bandas": [
               {
-                "puntos": 3,
+                "puntos": 2,
                 "condicion": "Todas las imágenes y los gráficos llevan crédito de procedencia"
               },
               {
-                "puntos": 2,
-                "condicion": "Deja de 1 a 2 elementos visuales sin crédito"
+                "puntos": 1.5,
+                "condicion": "Deja 1 elemento visual sin crédito"
+              },
+              {
+                "puntos": 1,
+                "condicion": "Deja 2 elementos visuales sin crédito"
+              },
+              {
+                "puntos": 0.5,
+                "condicion": "Deja de 3 a 4 elementos visuales sin crédito"
               },
               {
                 "puntos": 0,
-                "condicion": "El soporte utiliza el material visual sin crédito: 3 o más elementos visuales"
+                "condicion": "El soporte utiliza el material visual sin crédito: 5 o más elementos visuales"
               }
             ]
           },
           {
             "nombre": "Marca de lo tomado literalmente",
-            "max": 3,
+            "max": 4,
             "bandas": [
               {
-                "puntos": 3,
+                "puntos": 4,
                 "condicion": "Todo lo tomado literalmente va entre comillas y con referencia"
               },
               {
+                "puntos": 3,
+                "condicion": "Deja 1 fragmento literal sin marcar"
+              },
+              {
                 "puntos": 2,
-                "condicion": "Deja de 1 a 2 fragmentos literales sin marcar"
+                "condicion": "Deja 2 fragmentos literales sin marcar"
+              },
+              {
+                "puntos": 1,
+                "condicion": "Deja 3 o 4 fragmentos literales sin marcar"
               },
               {
                 "puntos": 0,
-                "condicion": "El trabajo funde lo tomado de las fuentes con la redacción propia: 3 o más fragmentos literales sin marcar"
+                "condicion": "El trabajo funde lo tomado de las fuentes con la redacción propia: 5 o más fragmentos literales sin marcar"
               }
             ]
           }
@@ -1662,19 +1842,23 @@
           },
           {
             "nombre": "Puntuación",
-            "max": 3,
+            "max": 2,
             "bandas": [
               {
-                "puntos": 3,
+                "puntos": 2,
                 "condicion": "Inciso, enumeración y dato entrecomillado llevan la puntuación correspondiente"
               },
               {
-                "puntos": 2,
+                "puntos": 1.5,
                 "condicion": "1 de los tres procedimientos falla"
               },
               {
                 "puntos": 1,
                 "condicion": "2 de los tres procedimientos fallan"
+              },
+              {
+                "puntos": 0.5,
+                "condicion": "Los tres procedimientos fallan y el texto conserva el punto y la coma"
               },
               {
                 "puntos": 0,
@@ -1684,19 +1868,23 @@
           },
           {
             "nombre": "Propiedad léxica",
-            "max": 3,
+            "max": 4,
             "bandas": [
               {
-                "puntos": 3,
+                "puntos": 4,
                 "condicion": "Emplea el término preciso del campo del tema en el texto y en los rótulos"
               },
               {
-                "puntos": 2,
+                "puntos": 3,
                 "condicion": "Emplea 1 término impreciso o comodín"
               },
               {
-                "puntos": 1,
+                "puntos": 2,
                 "condicion": "Emplea 2 términos imprecisos o comodín"
+              },
+              {
+                "puntos": 1,
+                "condicion": "Emplea 3 o 4 términos imprecisos o comodín"
               },
               {
                 "puntos": 0,
@@ -1844,6 +2032,10 @@
                 "condicion": "Reúne de 2 a 3 fuentes de divulgación"
               },
               {
+                "puntos": 1,
+                "condicion": "Reúne 2 fuentes de divulgación y una reproduce a la otra"
+              },
+              {
                 "puntos": 0,
                 "condicion": "El trabajo se apoya en una sola fuente"
               }
@@ -1851,19 +2043,23 @@
           },
           {
             "nombre": "Datos contrastados entre fuentes",
-            "max": 3,
+            "max": 4,
             "bandas": [
               {
-                "puntos": 3,
+                "puntos": 4,
                 "condicion": "Contrasta 4 o más datos y verifica el discrepante en una fuente primaria"
               },
               {
-                "puntos": 2,
+                "puntos": 3,
                 "condicion": "Contrasta 2 o 3 datos"
               },
               {
-                "puntos": 1,
+                "puntos": 2,
                 "condicion": "Contrasta 1 dato"
+              },
+              {
+                "puntos": 1,
+                "condicion": "Sitúa dos datos de fuentes distintas juntos, sin compararlos"
               },
               {
                 "puntos": 0,
@@ -1873,19 +2069,27 @@
           },
           {
             "nombre": "Registro de la procedencia",
-            "max": 3,
+            "max": 2,
             "bandas": [
               {
-                "puntos": 3,
+                "puntos": 2,
                 "condicion": "Anota la procedencia y la fecha de consulta de todas las fuentes"
               },
               {
-                "puntos": 2,
-                "condicion": "Deja de 1 a 2 fuentes sin procedencia o sin fecha"
+                "puntos": 1.5,
+                "condicion": "Deja 1 fuente sin procedencia o sin fecha"
+              },
+              {
+                "puntos": 1,
+                "condicion": "Deja 2 fuentes sin procedencia o sin fecha"
+              },
+              {
+                "puntos": 0.5,
+                "condicion": "Deja de 3 a 4 fuentes sin procedencia o sin fecha"
               },
               {
                 "puntos": 0,
-                "condicion": "El trabajo presenta los datos sin anotar la procedencia: 3 o más fuentes sin procedencia o sin fecha"
+                "condicion": "El trabajo presenta los datos sin anotar la procedencia: 5 o más fuentes sin procedencia o sin fecha"
               }
             ]
           }
@@ -1970,6 +2174,10 @@
                 "condicion": "Organiza el trabajo en 2 epígrafes"
               },
               {
+                "puntos": 1,
+                "condicion": "Separa el trabajo en 2 bloques sin epígrafe"
+              },
+              {
                 "puntos": 0,
                 "condicion": "El trabajo presenta la información en un bloque único"
               }
@@ -1992,8 +2200,12 @@
                 "condicion": "Deja de 2 a 3 fragmentos con la redacción del original"
               },
               {
+                "puntos": 1,
+                "condicion": "Deja de 4 a 6 fragmentos con la redacción del original"
+              },
+              {
                 "puntos": 0,
-                "condicion": "El trabajo reproduce las fuentes párrafo a párrafo: 4 o más fragmentos con la redacción del original"
+                "condicion": "El trabajo reproduce las fuentes párrafo a párrafo: 7 o más fragmentos con la redacción del original"
               }
             ]
           },
@@ -2006,8 +2218,16 @@
                 "condicion": "Enlaza los epígrafes con conectores de orden y de contraste"
               },
               {
+                "puntos": 1.5,
+                "condicion": "Enlaza los epígrafes con conectores de orden, sin ninguno de contraste"
+              },
+              {
                 "puntos": 1,
                 "condicion": "Enlaza 1 o 2 epígrafes y yuxtapone los demás"
+              },
+              {
+                "puntos": 0.5,
+                "condicion": "Marca el paso de un epígrafe a otro con el título, sin ningún conector"
               },
               {
                 "puntos": 0,
@@ -2096,44 +2316,64 @@
                 "condicion": "Deja de 3 a 4 pantallas con texto solo"
               },
               {
+                "puntos": 1,
+                "condicion": "Deja de 5 a 6 pantallas con texto solo"
+              },
+              {
                 "puntos": 0,
-                "condicion": "El soporte reproduce el documento escrito: 5 o más pantallas con texto solo"
+                "condicion": "El soporte reproduce el documento escrito: 7 o más pantallas con texto solo"
               }
             ]
           },
           {
             "nombre": "Elementos de orientación: título, pie y leyenda",
-            "max": 3,
+            "max": 4,
             "bandas": [
               {
-                "puntos": 3,
+                "puntos": 4,
                 "condicion": "Todas las pantallas llevan título, y los elementos visuales, pie o leyenda"
               },
               {
+                "puntos": 3,
+                "condicion": "Deja 1 elemento sin título ni pie"
+              },
+              {
                 "puntos": 2,
-                "condicion": "Deja de 1 a 2 elementos sin título ni pie"
+                "condicion": "Deja 2 elementos sin título ni pie"
+              },
+              {
+                "puntos": 1,
+                "condicion": "Deja de 3 a 4 elementos sin título ni pie"
               },
               {
                 "puntos": 0,
-                "condicion": "El soporte presenta los elementos visuales sin título ni pie: 3 o más elementos"
+                "condicion": "El soporte presenta los elementos visuales sin título ni pie: 5 o más elementos"
               }
             ]
           },
           {
             "nombre": "Cantidad de texto por pantalla",
-            "max": 3,
+            "max": 2,
             "bandas": [
               {
-                "puntos": 3,
+                "puntos": 2,
                 "condicion": "Ninguna pantalla pasa de 50 palabras"
               },
               {
-                "puntos": 2,
-                "condicion": "De 1 a 2 pantallas pasan de 50 palabras"
+                "puntos": 1.5,
+                "condicion": "1 pantalla pasa de 50 palabras"
+              },
+              {
+                "puntos": 1,
+                "condicion": "2 o 3 pantallas pasan de 50 palabras"
+              },
+              {
+                "puntos": 0.5,
+                "condicion": "De 4 a 5 pantallas pasan de 50 palabras"
               },
               {
                 "puntos": 0,
-                "condicion": "El soporte vuelca el texto del documento: 3 o más pantallas pasan de 50 palabras"
+                "condicion": "El soporte vuelca el texto del documento: 6 o más pantallas pasan de 50 palabras"
               }
             ]
           }
@@ -2218,44 +2458,64 @@
                 "condicion": "Deja de 3 a 4 referencias incompletas"
               },
               {
+                "puntos": 1,
+                "condicion": "Deja de 5 a 6 referencias incompletas"
+              },
+              {
                 "puntos": 0,
-                "condicion": "El trabajo presenta los datos sin referencia de origen: 5 o más referencias incompletas"
+                "condicion": "El trabajo presenta los datos sin referencia de origen: 7 o más referencias incompletas"
               }
             ]
           },
           {
             "nombre": "Crédito del material visual",
-            "max": 3,
+            "max": 2,
             "bandas": [
               {
-                "puntos": 3,
+                "puntos": 2,
                 "condicion": "Todas las imágenes y los gráficos llevan crédito de procedencia"
               },
               {
-                "puntos": 2,
-                "condicion": "Deja de 1 a 2 elementos visuales sin crédito"
+                "puntos": 1.5,
+                "condicion": "Deja 1 elemento visual sin crédito"
+              },
+              {
+                "puntos": 1,
+                "condicion": "Deja 2 elementos visuales sin crédito"
+              },
+              {
+                "puntos": 0.5,
+                "condicion": "Deja de 3 a 4 elementos visuales sin crédito"
               },
               {
                 "puntos": 0,
-                "condicion": "El soporte utiliza el material visual sin crédito: 3 o más elementos visuales"
+                "condicion": "El soporte utiliza el material visual sin crédito: 5 o más elementos visuales"
               }
             ]
           },
           {
             "nombre": "Marca de lo tomado literalmente",
-            "max": 3,
+            "max": 4,
             "bandas": [
               {
-                "puntos": 3,
+                "puntos": 4,
                 "condicion": "Todo lo tomado literalmente va entre comillas y con referencia"
               },
               {
+                "puntos": 3,
+                "condicion": "Deja 1 fragmento literal sin marcar"
+              },
+              {
                 "puntos": 2,
-                "condicion": "Deja de 1 a 2 fragmentos literales sin marcar"
+                "condicion": "Deja 2 fragmentos literales sin marcar"
+              },
+              {
+                "puntos": 1,
+                "condicion": "Deja 3 o 4 fragmentos literales sin marcar"
               },
               {
                 "puntos": 0,
-                "condicion": "El trabajo funde lo tomado de las fuentes con la redacción propia: 3 o más fragmentos literales sin marcar"
+                "condicion": "El trabajo funde lo tomado de las fuentes con la redacción propia: 5 o más fragmentos literales sin marcar"
               }
             ]
           }
@@ -2342,29 +2602,33 @@
               },
               {
                 "puntos": 1,
-                "condicion": "De 11 a 15 faltas"
+                "condicion": "De 11 a 13 faltas"
               },
               {
                 "puntos": 0,
-                "condicion": "16 o más faltas"
+                "condicion": "14 o más faltas"
               }
             ]
           },
           {
             "nombre": "Puntuación",
-            "max": 3,
+            "max": 2,
             "bandas": [
               {
-                "puntos": 3,
+                "puntos": 2,
                 "condicion": "Inciso, dato entrecomillado y referencia abreviada llevan la puntuación correspondiente"
               },
               {
-                "puntos": 2,
+                "puntos": 1.5,
                 "condicion": "1 de los tres procedimientos falla"
               },
               {
                 "puntos": 1,
                 "condicion": "2 de los tres procedimientos fallan"
+              },
+              {
+                "puntos": 0.5,
+                "condicion": "Los tres procedimientos fallan y el texto conserva el punto y la coma"
               },
               {
                 "puntos": 0,
@@ -2374,19 +2638,23 @@
           },
           {
             "nombre": "Propiedad léxica",
-            "max": 3,
+            "max": 4,
             "bandas": [
               {
-                "puntos": 3,
+                "puntos": 4,
                 "condicion": "Emplea el término preciso del registro académico en todo el soporte"
               },
               {
-                "puntos": 2,
+                "puntos": 3,
                 "condicion": "Emplea 1 término impreciso o comodín"
               },
               {
-                "puntos": 1,
+                "puntos": 2,
                 "condicion": "Emplea 2 términos imprecisos o comodín"
+              },
+              {
+                "puntos": 1,
+                "condicion": "Emplea 3 o 4 términos imprecisos o comodín"
               },
               {
                 "puntos": 0,
@@ -2534,6 +2802,10 @@
                 "condicion": "Reúne de 2 a 3 fuentes de divulgación"
               },
               {
+                "puntos": 1,
+                "condicion": "Reúne 2 fuentes de divulgación y una reproduce a la otra"
+              },
+              {
                 "puntos": 0,
                 "condicion": "El trabajo se apoya en una sola fuente"
               }
@@ -2541,19 +2813,23 @@
           },
           {
             "nombre": "Datos contrastados entre fuentes",
-            "max": 3,
+            "max": 4,
             "bandas": [
               {
-                "puntos": 3,
+                "puntos": 4,
                 "condicion": "Contrasta 5 o más datos y verifica el discrepante en una fuente primaria"
               },
               {
-                "puntos": 2,
+                "puntos": 3,
                 "condicion": "Contrasta 3 o 4 datos"
               },
               {
-                "puntos": 1,
+                "puntos": 2,
                 "condicion": "Contrasta 1 o 2 datos"
+              },
+              {
+                "puntos": 1,
+                "condicion": "Sitúa dos datos de fuentes distintas juntos, sin compararlos"
               },
               {
                 "puntos": 0,
@@ -2563,19 +2839,27 @@
           },
           {
             "nombre": "Registro de la procedencia",
-            "max": 3,
+            "max": 2,
             "bandas": [
               {
-                "puntos": 3,
+                "puntos": 2,
                 "condicion": "Anota la procedencia y la fecha de consulta y mantiene el registro que permite recuperar cada dato"
               },
               {
-                "puntos": 2,
-                "condicion": "Deja de 1 a 2 fuentes fuera del registro"
+                "puntos": 1.5,
+                "condicion": "Deja 1 fuente fuera del registro"
+              },
+              {
+                "puntos": 1,
+                "condicion": "Deja 2 fuentes fuera del registro"
+              },
+              {
+                "puntos": 0.5,
+                "condicion": "Deja de 3 a 4 fuentes fuera del registro"
               },
               {
                 "puntos": 0,
-                "condicion": "El trabajo presenta los datos sin anotar la procedencia: 3 o más fuentes fuera del registro"
+                "condicion": "El trabajo presenta los datos sin anotar la procedencia: 5 o más fuentes fuera del registro"
               }
             ]
           }
@@ -2660,6 +2944,10 @@
                 "condicion": "Organiza el trabajo en 2 o 3 epígrafes"
               },
               {
+                "puntos": 1,
+                "condicion": "Separa el trabajo en 2 bloques sin epígrafe"
+              },
+              {
                 "puntos": 0,
                 "condicion": "El trabajo presenta la información en un bloque único"
               }
@@ -2682,8 +2970,12 @@
                 "condicion": "Deja 2 fragmentos con la redacción del original"
               },
               {
+                "puntos": 1,
+                "condicion": "Deja de 3 a 6 fragmentos con la redacción del original"
+              },
+              {
                 "puntos": 0,
-                "condicion": "El trabajo reproduce las fuentes párrafo a párrafo: 3 o más fragmentos con la redacción del original"
+                "condicion": "El trabajo reproduce las fuentes párrafo a párrafo: 7 o más fragmentos con la redacción del original"
               }
             ]
           },
@@ -2696,8 +2988,16 @@
                 "condicion": "Enlaza los epígrafes y gradúa el paso de lo general a lo particular"
               },
               {
+                "puntos": 1.5,
+                "condicion": "Enlaza los epígrafes y mantiene el mismo grado de generalidad en todo el trabajo"
+              },
+              {
                 "puntos": 1,
                 "condicion": "Enlaza 1 o 2 epígrafes y yuxtapone los demás"
+              },
+              {
+                "puntos": 0.5,
+                "condicion": "Marca el paso de un epígrafe a otro con el título, sin ningún conector"
               },
               {
                 "puntos": 0,
@@ -2786,44 +3086,64 @@
                 "condicion": "Deja de 3 a 4 pantallas con texto solo"
               },
               {
+                "puntos": 1,
+                "condicion": "Deja de 5 a 6 pantallas con texto solo"
+              },
+              {
                 "puntos": 0,
-                "condicion": "El soporte reproduce el documento escrito: 5 o más pantallas con texto solo"
+                "condicion": "El soporte reproduce el documento escrito: 7 o más pantallas con texto solo"
               }
             ]
           },
           {
             "nombre": "Elementos de orientación: título, pie y leyenda",
-            "max": 3,
+            "max": 4,
             "bandas": [
               {
-                "puntos": 3,
+                "puntos": 4,
                 "condicion": "Título, pie, leyenda e índice del soporte están completos"
               },
               {
+                "puntos": 3,
+                "condicion": "Deja 1 elemento sin título ni pie"
+              },
+              {
                 "puntos": 2,
-                "condicion": "Deja de 1 a 2 elementos sin título ni pie"
+                "condicion": "Deja 2 elementos sin título ni pie"
+              },
+              {
+                "puntos": 1,
+                "condicion": "Deja de 3 a 4 elementos sin título ni pie"
               },
               {
                 "puntos": 0,
-                "condicion": "El soporte presenta los elementos visuales sin título ni pie: 3 o más elementos"
+                "condicion": "El soporte presenta los elementos visuales sin título ni pie: 5 o más elementos"
               }
             ]
           },
           {
             "nombre": "Cantidad de texto por pantalla",
-            "max": 3,
+            "max": 2,
             "bandas": [
               {
-                "puntos": 3,
+                "puntos": 2,
                 "condicion": "Ninguna pantalla pasa de 50 palabras"
               },
               {
-                "puntos": 2,
-                "condicion": "De 1 a 2 pantallas pasan de 50 palabras"
+                "puntos": 1.5,
+                "condicion": "1 pantalla pasa de 50 palabras"
+              },
+              {
+                "puntos": 1,
+                "condicion": "2 o 3 pantallas pasan de 50 palabras"
+              },
+              {
+                "puntos": 0.5,
+                "condicion": "De 4 a 5 pantallas pasan de 50 palabras"
               },
               {
                 "puntos": 0,
-                "condicion": "El soporte vuelca el texto del documento: 3 o más pantallas pasan de 50 palabras"
+                "condicion": "El soporte vuelca el texto del documento: 6 o más pantallas pasan de 50 palabras"
               }
             ]
           }
@@ -2908,44 +3228,64 @@
                 "condicion": "Deja de 3 a 4 referencias incompletas o en otro modelo"
               },
               {
+                "puntos": 1,
+                "condicion": "Deja de 5 a 6 referencias incompletas o en otro modelo"
+              },
+              {
                 "puntos": 0,
-                "condicion": "El trabajo presenta los datos sin referencia de origen: 5 o más referencias incompletas o en otro modelo"
+                "condicion": "El trabajo presenta los datos sin referencia de origen: 7 o más referencias incompletas o en otro modelo"
               }
             ]
           },
           {
             "nombre": "Crédito del material visual",
-            "max": 3,
+            "max": 2,
             "bandas": [
               {
-                "puntos": 3,
+                "puntos": 2,
                 "condicion": "Todas las imágenes y los gráficos llevan crédito de procedencia"
               },
               {
-                "puntos": 2,
-                "condicion": "Deja de 1 a 2 elementos visuales sin crédito"
+                "puntos": 1.5,
+                "condicion": "Deja 1 elemento visual sin crédito"
+              },
+              {
+                "puntos": 1,
+                "condicion": "Deja 2 elementos visuales sin crédito"
+              },
+              {
+                "puntos": 0.5,
+                "condicion": "Deja de 3 a 4 elementos visuales sin crédito"
               },
               {
                 "puntos": 0,
-                "condicion": "El soporte utiliza el material visual sin crédito: 3 o más elementos visuales"
+                "condicion": "El soporte utiliza el material visual sin crédito: 5 o más elementos visuales"
               }
             ]
           },
           {
             "nombre": "Marca de lo tomado literalmente",
-            "max": 3,
+            "max": 4,
             "bandas": [
               {
-                "puntos": 3,
+                "puntos": 4,
                 "condicion": "Todo lo tomado literalmente va entre comillas y con referencia"
               },
               {
+                "puntos": 3,
+                "condicion": "Deja 1 fragmento literal sin marcar"
+              },
+              {
                 "puntos": 2,
-                "condicion": "Deja de 1 a 2 fragmentos literales sin marcar"
+                "condicion": "Deja 2 fragmentos literales sin marcar"
+              },
+              {
+                "puntos": 1,
+                "condicion": "Deja 3 o 4 fragmentos literales sin marcar"
               },
               {
                 "puntos": 0,
-                "condicion": "El trabajo funde lo tomado de las fuentes con la redacción propia: 3 o más fragmentos literales sin marcar"
+                "condicion": "El trabajo funde lo tomado de las fuentes con la redacción propia: 5 o más fragmentos literales sin marcar"
               }
             ]
           }
@@ -3020,19 +3360,19 @@
             "bandas": [
               {
                 "puntos": 4,
-                "condicion": "Hasta 1 falta en todo el soporte, incluidos los rótulos"
+                "condicion": "Hasta 2 faltas en todo el soporte, incluidos los rótulos"
               },
               {
                 "puntos": 3,
-                "condicion": "De 2 a 4 faltas"
+                "condicion": "De 3 a 5 faltas"
               },
               {
                 "puntos": 2,
-                "condicion": "De 5 a 8 faltas"
+                "condicion": "De 6 a 11 faltas"
               },
               {
                 "puntos": 1,
-                "condicion": "De 9 a 13 faltas"
+                "condicion": "12 o 13 faltas"
               },
               {
                 "puntos": 0,
@@ -3042,19 +3382,23 @@
           },
           {
             "nombre": "Puntuación",
-            "max": 3,
+            "max": 2,
             "bandas": [
               {
-                "puntos": 3,
+                "puntos": 2,
                 "condicion": "Inciso, dato entrecomillado y referencia abreviada llevan la puntuación correspondiente"
               },
               {
-                "puntos": 2,
+                "puntos": 1.5,
                 "condicion": "1 de los tres procedimientos falla"
               },
               {
                 "puntos": 1,
                 "condicion": "2 de los tres procedimientos fallan"
+              },
+              {
+                "puntos": 0.5,
+                "condicion": "Los tres procedimientos fallan y el texto conserva el punto y la coma"
               },
               {
                 "puntos": 0,
@@ -3064,19 +3408,23 @@
           },
           {
             "nombre": "Propiedad léxica",
-            "max": 3,
+            "max": 4,
             "bandas": [
               {
-                "puntos": 3,
+                "puntos": 4,
                 "condicion": "Emplea el término preciso del registro académico en todo el soporte"
               },
               {
-                "puntos": 2,
+                "puntos": 3,
                 "condicion": "Emplea 1 término impreciso o comodín"
               },
               {
-                "puntos": 1,
+                "puntos": 2,
                 "condicion": "Emplea 2 términos imprecisos o comodín"
+              },
+              {
+                "puntos": 1,
+                "condicion": "Emplea 3 o 4 términos imprecisos o comodín"
               },
               {
                 "puntos": 0,
