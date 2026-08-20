@@ -240,7 +240,18 @@ Contra eso solo hay dos cosas, y las dos son de método:
 
 1. **Simular una corrección** con `scripts/simular_correccion.py` antes de dar por
    buena una matriz cuantitativa. Leerla no basta: la regla del doble castigo se
-   descubrió calculando, no leyendo.
+   descubrió calculando, no leyendo. **Y escribe cada tramo para que el simulador
+   pueda contarlo, no solo para que se lea bien.** Solo reconoce cuatro formas fijas
+   —`hasta N`, `de N a M`, `N o M`, `N o más`— y ninguna admite un número suelto
+   (`«2 faltas»`, sin cuantificador). Si entre dos techos consecutivos solo cabe un
+   valor, el tramo no tiene ninguna de las cuatro formas y hay que ensancharlo, no
+   redactarlo mejor; con una tarea de texto corto eso pasa fácil, porque dos
+   perfiles pueden diferir en un solo recuento (el resumen del repositorio, con
+   textos de 60 a 130 palabras, es el caso real). Un tramo que el simulador no
+   reconoce **no da error**: se resuelve por el nivel del perfil en vez de por
+   recuento y el resultado parece razonable, así que es fácil no darse cuenta hasta
+   que se cuenta a mano — fue el único componente del repositorio que llegó a
+   producción sin que el simulador lo hubiera probado nunca (SDD v1.41).
 2. **Comprobar la regla en todos los cursos a la vez.** Si una regla de derivación
    nueva invalida un pack ya validado, **la rota es la regla, no el pack**
    (CLAUDE.md, regla 9). Esa regla se escribió después de que su ausencia produjera
