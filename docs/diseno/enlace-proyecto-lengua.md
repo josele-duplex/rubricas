@@ -3,7 +3,7 @@
 **Julio 2026** · Análisis de los dos proyectos y propuestas de conexión
 Proyecto analizado: `C:\Users\Usuario\Proyectos\proyecto_plan_de_trabajo_lengua`
 
-> **Estado (13-ago-2026).** Este documento es el **análisis de julio**, y se conserva tal cual porque explica de dónde vienen las decisiones; **no es la lista de tareas pendientes**. Lo que proponía en su §2 está resuelto en el SDD v1.31 (decisión §17.8): los nombres de nivel y las bandas son los de Lengua, 2.º de Bachillerato se mantiene como capacidad y no como diana, y la ponderación desigual pasa a exigir razón declarada (`razon_peso`) en vez de igualarse. Sus tablas conservan los nombres antiguos de nivel a propósito: describen el estado de entonces. **Lo único suyo que sigue abierto es el reparto de trabajo con el skill `rubricas-lomloe`** (§5, «decidir antes de tocar nada»), hoy decisión §17.19 del SDD. La visión de conjunto vive en la matriz digital de los tres proyectos, que este documento precede.
+> **Estado (25-ago-2026).** Este documento es el **análisis de julio**, y se conserva tal cual porque explica de dónde vienen las decisiones; **no es la lista de tareas pendientes**. Lo que proponía en su §2 está resuelto en el SDD v1.31 (decisión §17.8): los nombres de nivel y las bandas son los de Lengua, 2.º de Bachillerato se mantiene como capacidad y no como diana, y la ponderación desigual pasa a exigir razón declarada (`razon_peso`) en vez de igualarse. Sus tablas conservan los nombres antiguos de nivel a propósito: describen el estado de entonces. **El reparto de trabajo con el skill `rubricas-lomloe`** (§5, «decidir antes de tocar nada») también está resuelto, como decisión §17.19 del SDD: la app construye el instrumento, el skill califica y exporta a iDoceo. No queda nada abierto de este análisis. La visión de conjunto vive en la matriz digital de los tres proyectos, que este documento precede.
 
 > **Alcance de este documento.** No propone convertir el generador en una pieza del plan de trabajo ni al revés. Propone puntos concretos de contacto, la mayoría de uso personal, para que el trabajo hecho en un proyecto rinda en el otro. Ninguna de las propuestas modifica el proyecto de lengua: son cosas a decidir antes de tocar nada.
 
@@ -130,9 +130,9 @@ Si el generador acaba haciendo la derivación en las dos direcciones (3.2), esa 
 - Añadir la dimensión `justificacion_con_evidencia` y el campo `taller_asociado` al modelo de datos.
 - Añadir la generación de la plantilla de prueba por bloque como formato de salida.
 
-**Decidir antes de tocar nada:**
+**Decidido (resuelto el 25-ago-2026):**
 
-- Dónde vive el marco teórico y cuál de las dos copias desaparece.
-- Qué hace el skill `rubricas-lomloe` y qué hace la app, porque hoy se solapan en la conversión a 10 y en la exportación a iDoceo. La división más limpia es que la app construya el instrumento y el skill califique con él, pero es tu decisión.
+- ~~Dónde vive el marco teórico y cuál de las dos copias desaparece~~ — resuelto en la decisión §17.8 del SDD: vive en el proyecto de Lengua, referenciado por ruta.
+- ~~Qué hace el skill `rubricas-lomloe` y qué hace la app~~ — resuelto en la decisión §17.19 del SDD: la app construye el instrumento, el skill califica y exporta a iDoceo.
 
 **No tocar:** el proyecto de lengua. Todo lo anterior son propuestas; ningún archivo suyo se ha modificado.

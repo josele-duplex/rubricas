@@ -200,14 +200,17 @@ Quién manda sobre qué: §2 de
   La copia de `docs/marco/…ANTIGUO.md` es solo referencia histórica.
 - **2.º de Bachillerato no es una excepción** en esta app, aunque los materiales de Lengua lleguen
   hasta 1.º BACH.
-- **Divergencia viva: C3** (la app y el skill `rubricas-lomloe` se solapan en la nota /10 y en
-  iDoceo), abierta como decisión §17.19 del SDD y **pendiente de que la decida Josele**.
+- **C3 resuelta** (decisión §17.19 del SDD, 2026-08-25): la app construye el instrumento —deriva
+  del criterio, valida el pack, genera la rúbrica y la ficha—; el skill `rubricas-lomloe` califica
+  la producción del alumno y exporta a iDoceo. La app conserva el cálculo interno para su propia
+  pantalla de «Calificar», pero no promete exportación a iDoceo.
 - **Comprobación mecánica**, desde el repositorio de Lengua: `python scripts/verificar_matriz.py`.
 - **Nunca se modifican archivos del proyecto de Lengua desde aquí.** Análisis bilateral completo en
   `docs/diseno/enlace-proyecto-lengua.md`.
 
 ## Decisiones pendientes
 
-Al final del SDD (§17), y se leen con `python scripts/ver.py sdd 17`. La que bloquea la alineación
-con Lengua es §17.19 (qué hace la app y qué hace el skill `rubricas-lomloe`): es una decisión del
-docente, no de diseño técnico.
+Al final del SDD (§17), y se leen con `python scripts/ver.py sdd 17`. Las seis que quedaban
+abiertas —condición mínima, escala por defecto, tope de detractores, rúbrica holística,
+publicación y el reparto con `rubricas-lomloe`— se cerraron el 2026-08-25. No queda ninguna
+decisión abierta en §17 a fecha de hoy.
