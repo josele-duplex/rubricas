@@ -1,7 +1,8 @@
 import { PUERTA_APLICABILIDAD, TIEMPOS_CORRECCION, tiposTareaDisponibles, cursosDisponibles } from "./motor.js";
 import { comprobarRepartoPesos, REGLAS } from "./validador.js";
 import { microexplicacion } from "./microexplicaciones.js";
-import { calcularResultadoGuardado } from "./calificacion.js";
+import { calcularResultadoGuardado, valorNivel } from "./calificacion.js";
+import { filasACsv, descargarCsv, nombreMmaaaa } from "./csv.js";
 
 // Las etiquetas y el orden de los cursos vienen de data/catalogo.json, no de
 // aquí: eran tres listas cableadas en este archivo y una cuarta —la de packs—
@@ -52,6 +53,42 @@ export function escapeHtml(str) {
     .replaceAll(">", "&gt;")
     .replaceAll('"', "&quot;")
     .replaceAll("'", "&#39;");
+}
+
+// --- Exportación de la rúbrica para el importador de rúbricas de iDoceo ---
+// (§17.19, ampliada el 2026-08-26). Vía alternativa a "Calificar" (§6.5), no
+// complementaria: si el docente califica aquí importando esto en iDoceo, no
+// usa la pantalla "Calificar" para ese instrumento — por eso las dos
+// exportaciones viven en sitios distintos (js/calificar.js exporta la nota
+// ya puesta; esto exporta la matriz en blanco) y el docente elige una u
+// otra por instrumento, no las dos a la vez para lo mismo.
+//
+// Formato confirmado leyendo el ejemplo oficial de iDoceo (no documentado en
+// texto, solo en una imagen: idoceo.net, "Rubrics in iDoceo"), fila = criterio,
+// columna = nivel, de mayor a menor puntuación:
+//   - Columna A: fila 1 vacía; cada fila siguiente, "Nombre del criterio" +
+//     salto de línea + "peso%" en la misma celda.
+//   - Fila 1, resto de columnas: etiqueta del nivel + salto de línea + el
+//     valor numérico que ese nivel otorga (el mismo `valorNivel` que usa
+//     "Calificar", así que la nota que compute iDoceo coincide con la que
+//     habría calculado esta app).
+//   - Resto de celdas: el descriptor de ese criterio en ese nivel, el mismo
+//     texto que ya se ve en la Rúbrica analítica.
+// Un salto de línea dentro de una celda citada es CSV válido (RFC 4180) y
+// Excel/iDoceo lo leen como salto de línea de celda, no como fila nueva.
+export function generarCsvRubricaIdoceo(criterios, escala = "equilibrada") {
+  const nivelesDesc = [4, 3, 2, 1];
+  const cabecera = ["", ...nivelesDesc.map((n) => `${etiquetaNivel(n)}\n${valorNivel(n, escala)}`)];
+  const filas = criterios.map((c) => [
+    `${c.nombre}\n${c.peso_normalizado.toFixed(1)}%`,
+    ...nivelesDesc.map((n) => c.descriptores[`n${n}`].texto),
+  ]);
+  return filasACsv([cabecera, ...filas]);
+}
+
+export function descargarRubricaIdoceo(criterios, meta) {
+  const nombreArchivo = `Rubrica_${meta.tipoTarea}_${meta.curso}_${nombreMmaaaa()}.csv`;
+  descargarCsv(nombreArchivo, generarCsvRubricaIdoceo(criterios));
 }
 
 export function poblarFormulario(pack, els) {
@@ -486,8 +523,10 @@ export function renderResultado(container, { puertaInfo, resultado, alumnos = {}
       ${pestanas}
       <button class="tab-boton tab-boton-utilidad" id="btn-ajustar" type="button">Ajustar</button>
       <button class="tab-boton tab-boton-utilidad" id="btn-calificar" type="button">Calificar</button>
+      <button class="tab-boton tab-boton-utilidad" id="btn-exportar-idoceo" type="button">Exportar rúbrica (iDoceo)</button>
       <button class="tab-boton tab-boton-utilidad" id="btn-imprimir" type="button">Imprimir esta vista</button>
     </div>
+    ${microexplicacion("exportar-idoceo")}
     ${panel("rubrica", renderRubricaAnalitica(resultado.rubricaAnalitica))}
     ${panel("cotejo", renderListaCotejo(resultado.listaCotejo, resultado.fichaAlumno))}
     ${panel("ficha", renderFichaAlumno(resultado.fichaAlumno, alumnos))}

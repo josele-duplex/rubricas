@@ -13,6 +13,7 @@ import { calcularNota, puntosYNivelDe, redondear2 } from "./calificacion.js";
 import { DETRACTOR_ESTIMACION } from "./motor.js";
 import { microexplicacion } from "./microexplicaciones.js";
 import { escapeHtml, etiquetaNivel } from "./ui.js";
+import { filasACsv, descargarCsv, nombreMmaaaa } from "./csv.js";
 
 // --- Persistencia (§6.5) ---------------------------------------------------
 // Un alumno se guarda dentro de un "instrumento" (curso + tipo de tarea +
@@ -62,6 +63,31 @@ function eliminarAlumno(meta, nombre) {
     delete almacen[clave][nombre];
     escribirAlmacen(almacen);
   }
+}
+
+// --- Exportación de notas (§17.19, ampliada el 2026-08-25) -----------------
+// La app califica (esta pantalla) y también exporta: no hace falta pasar por
+// el skill rubricas-lomloe. Esto es la vía de iDoceo del asistente general
+// de importación de alumnos: una fila por alumno, con la nota ya calculada.
+// (La otra vía de iDoceo, importar la rúbrica entera para calificar dentro
+// de iDoceo, vive en js/ui.js — son dos caminos alternativos, no la misma
+// exportación con otro nombre: §17.19, ampliada el 2026-08-26.)
+export function csvNotas(meta) {
+  const alumnos = alumnosGuardados(meta);
+  const nombres = Object.keys(alumnos).sort((a, b) => a.localeCompare(b, "es"));
+  const filas = [
+    ["Alumno", "Nota"],
+    ...nombres.map((nombre) => [nombre, alumnos[nombre].notaFinal.toFixed(2)]),
+  ];
+  return filasACsv(filas);
+}
+
+function nombreArchivoCsv(meta) {
+  return `Notas_${meta.tipoTarea}_${meta.curso}_${nombreMmaaaa()}.csv`;
+}
+
+function descargarCsvNotas(meta) {
+  descargarCsv(nombreArchivoCsv(meta), csvNotas(meta));
 }
 
 function renderComponente(comp) {
@@ -138,6 +164,7 @@ function renderListaAlumnos(meta) {
 }
 
 export function renderCalificacion(container, criterios, meta) {
+  const hayAlumnosGuardados = Object.keys(alumnosGuardados(meta)).length > 0;
   const filas = criterios
     .map((c) => {
       const tipo = c.matriz_cuantitativa ? "matriz" : "nivel";
@@ -195,6 +222,10 @@ export function renderCalificacion(container, criterios, meta) {
 
     <div class="alumnos-guardados-bloque">
       <h3>Alumnos calificados en esta actividad</h3>
+      <button id="exportar-csv-notas" type="button" ${hayAlumnosGuardados ? "" : "disabled"}>
+        Exportar CSV (Alumno + Nota)
+      </button>
+      <p class="ayuda">Para importar en iDoceo por el asistente general de alumnos: Alumno = datos personales, Nota = libro de calificaciones.</p>
       <div id="alumnos-guardados-contenedor">${renderListaAlumnos(meta)}</div>
     </div>
   `;
@@ -331,6 +362,7 @@ export function conectarEventosCalificacion(container, criterios, meta, onCerrar
 
   function refrescarListaAlumnos() {
     container.querySelector("#alumnos-guardados-contenedor").innerHTML = renderListaAlumnos(meta);
+    container.querySelector("#exportar-csv-notas").disabled = Object.keys(alumnosGuardados(meta)).length === 0;
   }
 
   container.addEventListener("input", actualizar);
@@ -384,6 +416,8 @@ export function conectarEventosCalificacion(container, criterios, meta, onCerrar
       actualizar();
     }
   });
+
+  container.querySelector("#exportar-csv-notas").addEventListener("click", () => descargarCsvNotas(meta));
 
   container.querySelector("#cerrar-calificacion").addEventListener("click", () => onCerrar());
 

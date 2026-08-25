@@ -14,7 +14,7 @@ import {
   generarAutoevaluacion,
   generarEscalaEstimacion,
 } from "./motor.js";
-import { poblarFormulario, actualizarCursos, renderResultado, renderSaludPack, renderResultadoAlumnoFicha, escapeHtml, fijarCatalogo } from "./ui.js";
+import { poblarFormulario, actualizarCursos, renderResultado, renderSaludPack, renderResultadoAlumnoFicha, escapeHtml, fijarCatalogo, descargarRubricaIdoceo } from "./ui.js";
 import { validarPack } from "./validador.js";
 import { renderModoAvanzado, conectarEventosModoAvanzado } from "./modo-avanzado.js";
 import { renderCalificacion, conectarEventosCalificacion, alumnosGuardados } from "./calificar.js";
@@ -162,6 +162,13 @@ function generarYMostrar(ajustesAplicados = null) {
   if (btnCalificar && resultado?.ok) {
     btnCalificar.addEventListener("click", () => {
       abrirCalificacion(resultado.criterios, meta);
+    });
+  }
+
+  const btnExportarIdoceo = els.resultado.querySelector("#btn-exportar-idoceo");
+  if (btnExportarIdoceo && resultado?.ok) {
+    btnExportarIdoceo.addEventListener("click", () => {
+      descargarRubricaIdoceo(resultado.criterios, meta);
     });
   }
 

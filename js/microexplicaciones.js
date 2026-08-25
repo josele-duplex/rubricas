@@ -214,6 +214,16 @@ export const MICROEXPLICACIONES = {
       "aunque haya varios en N1, y nunca sube una nota que ya era más baja (SDD §6.2-§6.3). Actívala solo si " +
       "se lo anunciaste al alumnado antes de la prueba: una condición mínima no anunciada es difícil de sostener.",
   },
+
+  "exportar-idoceo": {
+    titulo: "¿esto sustituye a «Calificar»?",
+    texto:
+      "Son dos caminos alternativos, no complementarios (SDD §17.19). Este botón exporta la matriz en blanco " +
+      "para el importador de rúbricas de iDoceo: calificarías tocando cada celda dentro de iDoceo, y la " +
+      "pantalla «Calificar» de esta app dejaría de usarse para ese instrumento. Si prefieres seguir " +
+      "calificando aquí, usa «Calificar» y, si necesitas la nota en iDoceo, el botón «Exportar CSV» de esa " +
+      "pantalla — ese es el otro importador de iDoceo, el de alumnos, no el de rúbricas.",
+  },
 };
 
 function escapar(str) {
