@@ -49,6 +49,7 @@
       "narracion":     { "1ESO": "nombrado", "2ESO": "sostenido", "3ESO": "sostenido" },
       "expositivo":    { "1ESO": "nombrado", "2ESO": "sostenido", "3ESO": "nombrado", "4ESO": "nombrado", "1BACH": "nombrado", "2BACH": "sostenido" },
       "oral":          { "1ESO": "nombrado", "2ESO": "nombrado", "3ESO": "nombrado", "4ESO": "nombrado", "1BACH": "nombrado", "2BACH": "nombrado" },
+      "debate":        { "1ESO": "sostenido", "2ESO": "sostenido", "4ESO": "nombrado" },
       "argumentativo": { "2ESO": "sostenido", "3ESO": "nombrado", "4ESO": "nombrado", "1BACH": "nombrado", "2BACH": "nombrado" },
       "comentario":    { "1ESO": "nombrado", "3ESO": "nombrado", "4ESO": "nombrado", "1BACH": "nombrado", "2BACH": "nombrado" },
       "resumen":       { "1ESO": "nombrado", "3ESO": "nombrado", "1BACH": "sostenido", "2BACH": "sostenido" },

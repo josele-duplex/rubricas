@@ -136,3 +136,29 @@ Si el generador acaba haciendo la derivación en las dos direcciones (3.2), esa 
 - ~~Qué hace el skill `rubricas-lomloe` y qué hace la app~~ — resuelto en la decisión §17.19 del SDD: la app construye el instrumento, el skill califica y exporta a iDoceo.
 
 **No tocar:** el proyecto de lengua. Todo lo anterior son propuestas; ningún archivo suyo se ha modificado.
+
+---
+
+## 6 · Nota de coordinación (sept-2026): el debate, y la divergencia que dejó a la vista
+
+Lo que sigue **no es parte del análisis de julio**: es lo que pasó la primera vez que el proyecto de Lengua vino a buscar aquí algo antes de construirlo, que es exactamente el hábito que este documento proponía.
+
+**Lo que se buscó.** Sus dos rúbricas de oralidad (tarea A3 de su plan de arranque en frío): presentación y debate.
+
+**Lo que se encontró.** Media tarea ya hecha, y el hueco en el sitio que nadie miraba:
+
+| | ¿Estaba aquí? |
+|---|---|
+| **Presentación oral** (criterio 3.1) | **Sí** — pack `lcl-murcia-oral` desde ago-2026, seis cursos, cinco dimensiones, con matrices cuantitativas. |
+| **Debate** (criterio 3.2) | **No.** `dossier_criterios.py --codigo 3.2` lo daba **LIBRE en los seis cursos**, y «debate» no existía ni como tipo de tarea. |
+
+Se dio de alta `data/pack-lcl-debate.json` (v1.46 del SDD), con las dimensiones trasladadas de las rúbricas del Taller de Argumentación de Lengua, no inventadas aquí.
+
+**La divergencia que quedó abierta.** Para la presentación existen ahora **dos rúbricas que no cortan igual**, y ninguna está mal:
+
+- el pack `lcl-murcia-oral` reparte por **propiedades del discurso**: adecuación · coherencia · cohesión · fluidez · elementos no verbales;
+- la rúbrica de aula `RUB-ORAL-PRES` de Lengua reparte por **lo que el profesor observa mientras el alumno habla**: planificación y estructura · claridad y registro · apoyo visual y recursos no verbales · respuesta a preguntas.
+
+El pack gana en cobertura (seis cursos) y en precisión de corrección (matrices). La de aula gana en que cabe en una página, y tiene una dimensión que al pack le falta: **respuesta a preguntas**, que es donde se ve si el alumno entendió su propio trabajo. **No bloquea nada** —en clase se califica con la de aula—, pero conviene resolverlo antes de que alguien exporte desde aquí una rúbrica de presentación y se encuentre con otra distinta de la que repartió a sus alumnos. La propuesta natural, si se resuelve a favor del pack: **añadirle la dimensión de respuesta a preguntas**, que el criterio 3.1 sostiene sin forzar nada.
+
+**Lo que confirmó que el reparto de trabajo funciona.** Al codificar el debate, el comprobador de aquí cazó **seis defectos de redacción que la vista no ve**: tres verbos del banco en relativas cuyo sujeto no es el alumno, dos posesivos y dativos de tercera persona con el alumno de referente, y un caso de adverbitis. La rúbrica de aula los tenía igual. **Lengua manda en qué dice la rúbrica; esta app manda en cómo se escribe para que su motor la sostenga** — y el segundo filtro mejora al primero. Queda escrito como hecho H12 en la matriz digital de los tres proyectos.

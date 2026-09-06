@@ -120,7 +120,7 @@
 
 | Componente | Máx. | Bandas |
 |---|---|---|
-| Ortografía y acentuación | 4 | **4** — Hasta 1 faltas en todo el resumen<br>**3** — 2 o 3 faltas<br>**2** — 4 o 5 faltas<br>**1** — 6 o 7 faltas<br>**0** — 8 o más faltas |
+| Ortografía y acentuación | 4 | **4** — Hasta 1 falta en todo el resumen<br>**3** — 2 o 3 faltas<br>**2** — 4 o 5 faltas<br>**1** — 6 o 7 faltas<br>**0** — 8 o más faltas |
 | Puntuación | 2 | **2** — Cierra con punto todas las frases del resumen<br>**1.5** — Deja 1 frase sin cerrar con punto<br>**1** — Deja 2 frases sin cerrar con punto<br>**0.5** — Deja 3 frases sin cerrar con punto<br>**0** — El resumen es un bloque de texto casi sin puntos |
 | Propiedad léxica | 4 | **4** — Emplea términos precisos y ninguna palabra comodín (cosa, tema, hacer)<br>**3** — Emplea 1 palabra comodín<br>**2** — Emplea 2 palabras comodín<br>**1** — Emplea 3 o 4 palabras comodín<br>**0** — El resumen se sostiene sobre palabras comodín |
 
@@ -238,7 +238,7 @@
 
 | Componente | Máx. | Bandas |
 |---|---|---|
-| Ortografía y acentuación | 4 | **4** — Hasta 1 faltas en todo el resumen<br>**3** — 2 o 3 faltas<br>**2** — 4 o 5 faltas<br>**1** — 6 o 7 faltas<br>**0** — 8 o más faltas |
+| Ortografía y acentuación | 4 | **4** — Hasta 1 falta en todo el resumen<br>**3** — 2 o 3 faltas<br>**2** — 4 o 5 faltas<br>**1** — 6 o 7 faltas<br>**0** — 8 o más faltas |
 | Puntuación | 2 | **2** — Cierra con punto todas las frases y delimita con coma los incisos<br>**1.5** — 1 inciso sin delimitar o 1 frase sin cerrar<br>**1** — 2 incisos sin delimitar o 2 frases sin cerrar<br>**0.5** — 3 o 4 incisos sin delimitar o 3 o 4 frases sin cerrar<br>**0** — El resumen es un bloque de texto casi sin puntuación |
 | Propiedad léxica | 4 | **4** — Emplea términos precisos y ninguna palabra comodín (cosa, tema, hacer)<br>**3** — Emplea 1 palabra comodín<br>**2** — Emplea 2 palabras comodín<br>**1** — Emplea 3 o 4 palabras comodín<br>**0** — El resumen se sostiene sobre palabras comodín |
 
@@ -356,7 +356,7 @@
 
 | Componente | Máx. | Bandas |
 |---|---|---|
-| Ortografía y acentuación | 4 | **4** — Hasta 1 faltas en todo el resumen<br>**3** — 2 o 3 faltas<br>**2** — 4 o 5 faltas<br>**1** — 6 o 7 faltas<br>**0** — 8 o más faltas |
+| Ortografía y acentuación | 4 | **4** — Hasta 1 falta en todo el resumen<br>**3** — 2 o 3 faltas<br>**2** — 4 o 5 faltas<br>**1** — 6 o 7 faltas<br>**0** — 8 o más faltas |
 | Puntuación del período | 2 | **2** — Delimita con coma los incisos y las subordinadas antepuestas de todo el resumen<br>**1.5** — 1 período con la puntuación sin delimitar<br>**1** — 2 períodos con la puntuación sin delimitar<br>**0.5** — 3 o 4 períodos con la puntuación sin delimitar<br>**0** — El resumen encadena períodos largos sin puntuación interna |
 | Precisión conceptual | 4 | **4** — Nombra cada concepto del texto con el término que le corresponde<br>**3** — 1 concepto queda nombrado con una expresión vaga<br>**2** — 2 conceptos quedan nombrados con expresiones vagas<br>**1** — 3 o 4 conceptos quedan nombrados con expresiones vagas<br>**0** — El resumen sustituye los conceptos del texto por expresiones vagas |
 
@@ -474,7 +474,7 @@
 
 | Componente | Máx. | Bandas |
 |---|---|---|
-| Ortografía y acentuación | 4 | **4** — Hasta 1 faltas en todo el resumen<br>**3** — 2 o 3 faltas<br>**2** — 4 o 5 faltas<br>**1** — 6 o 7 faltas<br>**0** — 8 o más faltas |
+| Ortografía y acentuación | 4 | **4** — Hasta 1 falta en todo el resumen<br>**3** — 2 o 3 faltas<br>**2** — 4 o 5 faltas<br>**1** — 6 o 7 faltas<br>**0** — 8 o más faltas |
 | Puntuación del período | 2 | **2** — Delimita con coma los incisos y las subordinadas antepuestas de todo el resumen<br>**1.5** — 1 período con la puntuación sin delimitar<br>**1** — 2 períodos con la puntuación sin delimitar<br>**0.5** — 3 o 4 períodos con la puntuación sin delimitar<br>**0** — El resumen encadena períodos largos sin puntuación interna |
 | Matiz de los verbos de opinión | 4 | **4** — Gradúa con el verbo exacto lo que el emisor afirma, sugiere o niega<br>**3** — 1 verbo de opinión desplaza el matiz del original<br>**2** — 2 verbos de opinión desplazan el matiz<br>**1** — 3 o 4 verbos de opinión desplazan el matiz<br>**0** — El resumen reduce a decir todos los verbos de opinión del texto |
 

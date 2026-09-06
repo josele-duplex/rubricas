@@ -91,7 +91,7 @@
 
 | Componente | Máx. | Bandas |
 |---|---|---|
-| Ortografía, acentuación y puntuación | 4 | **4** — Hasta 1 faltas en todo el comentario<br>**3** — 2 o 3 faltas<br>**2** — 4 o 5 faltas<br>**1** — 6 o 7 faltas<br>**0** — 8 o más faltas |
+| Ortografía, acentuación y puntuación | 4 | **4** — Hasta 1 falta en todo el comentario<br>**3** — 2 o 3 faltas<br>**2** — 4 o 5 faltas<br>**1** — 6 o 7 faltas<br>**0** — 8 o más faltas |
 | Concordancia | 2 | **2** — Sin errores de concordancia de género, número o persona<br>**1.5** — Hasta 1 error de concordancia<br>**1** — 2 o 3 errores de concordancia<br>**0.5** — De 4 a 5 errores de concordancia<br>**0** — 6 o más errores de concordancia |
 | Precisión del vocabulario | 4 | **4** — Nombra con el verbo preciso lo que hace el texto (describe, compara, repite)<br>**3** — Emplea 1 o 2 términos de significado general (cosa, tema, decir) con sustituto evidente<br>**2** — Emplea 3 o más términos de significado general<br>**1** — Emplea términos de significado general y algún verbo preciso<br>**0** — El comentario se sostiene sobre palabras comodín |
 
@@ -196,7 +196,7 @@
 
 | Componente | Máx. | Bandas |
 |---|---|---|
-| Ortografía, acentuación y puntuación | 4 | **4** — Hasta 1 faltas en todo el comentario<br>**3** — De 2 a 4 faltas<br>**2** — 5 o 6 faltas<br>**1** — De 7 a 9 faltas<br>**0** — 10 o más faltas |
+| Ortografía, acentuación y puntuación | 4 | **4** — Hasta 1 falta en todo el comentario<br>**3** — De 2 a 4 faltas<br>**2** — 5 o 6 faltas<br>**1** — De 7 a 9 faltas<br>**0** — 10 o más faltas |
 | Corrección gramatical y presente del comentario | 2 | **2** — Sin errores de concordancia ni de construcción de la oración, y con el presente sostenido al hablar del texto<br>**1.5** — 1 error de concordancia, o 1 salto al pasado al hablar del texto<br>**1** — 2 o 3 errores, o alguna oración que hay que releer para reconstruir<br>**0.5** — De 4 a 5 errores, y el presente del comentario se pierde en varios pasajes<br>**0** — Errores sistemáticos que obligan a reconstruir el sentido |
 | Precisión léxica y densidad | 4 | **4** — Selecciona el término preciso y emplea alguna subordinada para condensar la observación<br>**3** — Selecciona términos precisos, pero encadena oraciones simples donde cabría una subordinada<br>**2** — Recurre a términos de significado general con sustituto evidente<br>**1** — Emplea términos de significado general y alguno preciso<br>**0** — El comentario se sostiene sobre palabras comodín |
 
@@ -317,7 +317,7 @@
 
 | Componente | Máx. | Bandas |
 |---|---|---|
-| Ortografía, acentuación y puntuación | 4 | **4** — Hasta 1 faltas en todo el comentario<br>**3** — De 2 a 4 faltas<br>**2** — 5 o 6 faltas<br>**1** — De 7 a 9 faltas<br>**0** — 10 o más faltas |
+| Ortografía, acentuación y puntuación | 4 | **4** — Hasta 1 falta en todo el comentario<br>**3** — De 2 a 4 faltas<br>**2** — 5 o 6 faltas<br>**1** — De 7 a 9 faltas<br>**0** — 10 o más faltas |
 | Corrección gramatical y tiempo verbal del comentario | 2 | **2** — Sin errores de construcción de la oración, con el presente sostenido y la correlación temporal respetada en el estilo indirecto<br>**1.5** — 1 error de concordancia o de correlación temporal que permite seguir el comentario<br>**1** — 2 o 3 errores, o alguna oración que hay que releer para reconstruir<br>**0.5** — De 4 a 6 errores, y el presente del comentario se pierde en varios pasajes<br>**0** — Errores sistemáticos que obligan a reconstruir el sentido |
 | Precisión léxica y densidad | 4 | **4** — Selecciona el término preciso y emplea la subordinación para condensar el análisis<br>**3** — Selecciona términos precisos, pero encadena oraciones simples donde cabría una subordinada<br>**2** — Recurre a términos de significado general con sustituto evidente<br>**1** — Emplea términos de significado general y alguno preciso<br>**0** — El comentario se sostiene sobre palabras comodín |
 
@@ -460,7 +460,7 @@
 
 | Componente | Máx. | Bandas |
 |---|---|---|
-| Ortografía, gramática y tipografía | 4 | **4** — Hasta 1 faltas en todo el comentario, tipográficas incluidas<br>**3** — De 2 a 4 faltas<br>**2** — De 5 a 8 faltas<br>**1** — 9 o 10 faltas<br>**0** — 11 o más faltas |
+| Ortografía, gramática y tipografía | 4 | **4** — Hasta 1 falta en todo el comentario, incluidas las tipográficas<br>**3** — De 2 a 4 faltas<br>**2** — De 5 a 8 faltas<br>**1** — 9 o 10 faltas<br>**0** — 11 o más faltas |
 | Tiempo verbal y construcción de la oración | 2 | **2** — Sin errores de construcción, con el presente sostenido y la correlación temporal respetada en el estilo indirecto<br>**1.5** — 1 error de construcción o de correlación temporal que permite seguir el comentario<br>**1** — 2 o 3 errores, o alguna oración que hay que releer para reconstruir<br>**0.5** — De 4 a 6 errores, y la lectura se detiene para rehacer la oración<br>**0** — Errores sistemáticos que obligan a reconstruir el sentido |
 | Precisión léxica y vocación de estilo | 4 | **4** — Selecciona el término preciso y emplea la variación sintáctica propia del comentario académico<br>**3** — Selecciona términos precisos, pero repite la misma construcción a lo largo del comentario<br>**2** — Recurre a términos de significado general con sustituto evidente<br>**1** — Emplea términos de significado general y alguno preciso<br>**0** — El comentario se sostiene sobre palabras comodín |
 
@@ -603,7 +603,7 @@
 
 | Componente | Máx. | Bandas |
 |---|---|---|
-| Ortografía, gramática y tipografía | 4 | **4** — Hasta 1 faltas en todo el comentario, tipográficas incluidas<br>**3** — De 2 a 4 faltas<br>**2** — De 5 a 8 faltas<br>**1** — 9 o 10 faltas<br>**0** — 11 o más faltas |
+| Ortografía, gramática y tipografía | 4 | **4** — Hasta 1 falta en todo el comentario, incluidas las tipográficas<br>**3** — De 2 a 4 faltas<br>**2** — De 5 a 8 faltas<br>**1** — 9 o 10 faltas<br>**0** — 11 o más faltas |
 | Tiempo verbal y construcción de la oración | 2 | **2** — Sin errores de construcción, con el presente sostenido y la correlación temporal respetada en el estilo indirecto<br>**1.5** — 1 error de construcción o de correlación temporal que permite seguir el comentario<br>**1** — 2 o 3 errores, o alguna oración que hay que releer para reconstruir<br>**0.5** — De 4 a 6 errores, y la lectura se detiene para rehacer la oración<br>**0** — Errores sistemáticos que obligan a reconstruir el sentido |
 | Precisión léxica y vocación de estilo | 4 | **4** — Selecciona el término preciso y ajusta la extensión de la oración al paso del razonamiento<br>**3** — Selecciona términos precisos, pero mantiene la misma extensión de oración de principio a fin<br>**2** — Recurre a términos de significado general con sustituto evidente<br>**1** — Emplea términos de significado general y alguno preciso<br>**0** — El comentario se sostiene sobre palabras comodín |
 

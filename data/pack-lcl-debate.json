@@ -1,0 +1,678 @@
+{
+ "pack_id": "lcl-murcia-debate",
+ "materia": "LCL",
+ "etiqueta": "Debate y situaciones orales dialogadas — Región de Murcia",
+ "version": "0.1.0",
+ "normativa": {
+  "estatal": [
+   "Ley Orgánica 3/2020, de 29 de diciembre (LOMLOE), art. 20",
+   "Real Decreto 217/2022, de 29 de marzo (ordenación y enseñanzas mínimas de la ESO)"
+  ],
+  "autonomica": "Decreto n.º 235/2022, de 7 de diciembre (ESO), de la Comunidad Autónoma de la Región de Murcia",
+  "vigencia_desde": "2022-2023",
+  "revisado": "2026-09"
+ },
+ "razon_peso": "El reparto es igual, que es el que fija por defecto el marco teórico del proyecto de Lengua (§2.3): ninguna de las cuatro dimensiones del debate pesa más que otra. En 1.º de ESO la primera lleva 34 y no 33 solo porque los pesos son enteros y tienen que sumar 100.",
+ "criterios": [
+  {
+   "id": "lcl-b-postura-debate-1eso",
+   "bloque_lomloe": "B",
+   "dimension": "postura_y_prueba",
+   "nombre": "Postura sostenida y prueba",
+   "curso": "1ESO",
+   "hereda_de": null,
+   "criterio_oficial": {
+    "competencia_especifica": 3,
+    "codigo": "3.2",
+    "cita": "Participar en interacciones orales informales, en el trabajo en equipo y en situaciones orales formales de carácter dialogado, de manera activa y adecuada, con actitudes de escucha activa.",
+    "perfil_salida": [
+     "CCL1",
+     "CCL3",
+     "CCL5",
+     "CP2",
+     "STEM1",
+     "CD2",
+     "CD3",
+     "CC2",
+     "CE1"
+    ]
+   },
+   "saber_vehiculo": [
+    "interacción oral de carácter informal: tomar y dejar la palabra",
+    "estrategias para la cooperación conversacional y la cortesía lingüística"
+   ],
+   "progresion": {
+    "autonomia": 1,
+    "complejidad": 1,
+    "metalinguistico": 1
+   },
+   "tipos_tarea": [
+    "debate"
+   ],
+   "obligatorio": true,
+   "prioridad": 1,
+   "peso_base": 34,
+   "descriptores": {
+    "n1": {
+     "verbo": "afirma",
+     "texto": "Afirma la postura propia y la repite con las mismas palabras en cada intervención, sin añadir una razón."
+    },
+    "n2": {
+     "verbo": "defiende",
+     "texto": "Defiende una postura reconocible y la apoya con una razón desarrollada y un ejemplo cercano."
+    },
+    "n3": {
+     "verbo": "sostiene",
+     "texto": "Sostiene la misma postura en todas las intervenciones y apoya cada una con una razón distinta."
+    },
+    "n4": {
+     "verbo": "apoya",
+     "texto": "Apoya la postura con un dato o un caso del material leído en clase, e indica de dónde sale."
+    }
+   },
+   "matriz_cuantitativa": null,
+   "descriptor_cotejo": null,
+   "descriptor_un_punto": "Defiende una postura reconocible y la apoya con una razón desarrollada y un ejemplo cercano."
+  },
+  {
+   "id": "lcl-b-escucha-debate-1eso",
+   "bloque_lomloe": "B",
+   "dimension": "escucha_activa",
+   "nombre": "Escucha y recogida de lo dicho por el otro",
+   "curso": "1ESO",
+   "hereda_de": null,
+   "criterio_oficial": {
+    "competencia_especifica": 3,
+    "codigo": "3.2",
+    "cita": "Participar en interacciones orales informales, en el trabajo en equipo y en situaciones orales formales de carácter dialogado, de manera activa y adecuada, con actitudes de escucha activa.",
+    "perfil_salida": [
+     "CCL1",
+     "CCL3",
+     "CCL5",
+     "CP2",
+     "STEM1",
+     "CD2",
+     "CD3",
+     "CC2",
+     "CE1"
+    ]
+   },
+   "saber_vehiculo": [
+    "interacción oral de carácter informal: tomar y dejar la palabra",
+    "estrategias para la cooperación conversacional y la cortesía lingüística"
+   ],
+   "progresion": {
+    "autonomia": 1,
+    "complejidad": 1,
+    "metalinguistico": 1
+   },
+   "tipos_tarea": [
+    "debate"
+   ],
+   "obligatorio": true,
+   "prioridad": 1,
+   "peso_base": 33,
+   "descriptores": {
+    "n1": {
+     "verbo": "expone",
+     "texto": "Expone lo que trae preparado, sin relación con la intervención anterior."
+    },
+    "n2": {
+     "verbo": "senala",
+     "texto": "Señala una palabra o una idea de quien ha hablado antes de aportar la propia."
+    },
+    "n3": {
+     "verbo": "reformula",
+     "texto": "Reformula con palabras propias lo que ha dicho el compañero antes de responderle."
+    },
+    "n4": {
+     "verbo": "distingue",
+     "texto": "Distingue en lo dicho por el otro qué parte acepta y cuál no, y lo dice al responder."
+    }
+   },
+   "matriz_cuantitativa": null,
+   "descriptor_cotejo": null,
+   "descriptor_un_punto": "Señala una palabra o una idea de quien ha hablado antes de aportar la propia."
+  },
+  {
+   "id": "lcl-b-turno-debate-1eso",
+   "bloque_lomloe": "B",
+   "dimension": "turno_y_cortesia",
+   "nombre": "Turno, cooperación conversacional y registro",
+   "curso": "1ESO",
+   "hereda_de": null,
+   "criterio_oficial": {
+    "competencia_especifica": 3,
+    "codigo": "3.2",
+    "cita": "Participar en interacciones orales informales, en el trabajo en equipo y en situaciones orales formales de carácter dialogado, de manera activa y adecuada, con actitudes de escucha activa.",
+    "perfil_salida": [
+     "CCL1",
+     "CCL3",
+     "CCL5",
+     "CP2",
+     "STEM1",
+     "CD2",
+     "CD3",
+     "CC2",
+     "CE1"
+    ]
+   },
+   "saber_vehiculo": [
+    "interacción oral de carácter informal: tomar y dejar la palabra",
+    "estrategias para la cooperación conversacional y la cortesía lingüística"
+   ],
+   "progresion": {
+    "autonomia": 1,
+    "complejidad": 1,
+    "metalinguistico": 1
+   },
+   "tipos_tarea": [
+    "debate"
+   ],
+   "obligatorio": true,
+   "prioridad": 2,
+   "peso_base": 33,
+   "descriptores": {
+    "n1": {
+     "verbo": "respeta",
+     "texto": "Respeta el turno cuando el profesor lo asigna, y entra por encima de quien habla cuando el turno queda libre."
+    },
+    "n2": {
+     "verbo": "respeta",
+     "texto": "Respeta el turno de palabra y ajusta la intervención al tiempo dado."
+    },
+    "n3": {
+     "verbo": "formula",
+     "texto": "Formula preguntas a los compañeros y cede la palabra al terminar."
+    },
+    "n4": {
+     "verbo": "regula",
+     "texto": "Regula el turno del grupo: devuelve la palabra a quien no ha intervenido y vuelve al tema cuando el debate se desvía."
+    }
+   },
+   "matriz_cuantitativa": null,
+   "descriptor_cotejo": null,
+   "descriptor_un_punto": "Respeta el turno de palabra y ajusta la intervención al tiempo dado."
+  },
+  {
+   "id": "lcl-b-postura-debate-2eso",
+   "bloque_lomloe": "B",
+   "dimension": "postura_y_prueba",
+   "nombre": "Postura sostenida y prueba",
+   "curso": "2ESO",
+   "hereda_de": null,
+   "criterio_oficial": {
+    "competencia_especifica": 3,
+    "codigo": "3.2",
+    "cita": "Participar en interacciones orales informales, en el trabajo en equipo y en situaciones orales formales de carácter dialogado, de manera activa y adecuada, con actitudes de escucha activa y haciendo uso de estrategias de cooperación conversacional y cortesía lingüística.",
+    "perfil_salida": [
+     "CCL1",
+     "CCL3",
+     "CCL5",
+     "CP2",
+     "STEM1",
+     "CD2",
+     "CD3",
+     "CC2",
+     "CE1"
+    ]
+   },
+   "saber_vehiculo": [
+    "interacción oral de carácter informal: tomar y dejar la palabra",
+    "escucha activa, asertividad y resolución dialogada de los conflictos"
+   ],
+   "progresion": {
+    "autonomia": 2,
+    "complejidad": 2,
+    "metalinguistico": 2
+   },
+   "tipos_tarea": [
+    "debate"
+   ],
+   "obligatorio": true,
+   "prioridad": 1,
+   "peso_base": 25,
+   "descriptores": {
+    "n1": {
+     "verbo": "afirma",
+     "texto": "Afirma la postura propia y la repite con otras palabras en cada intervención; las razones se quedan en la opinión."
+    },
+    "n2": {
+     "verbo": "defiende",
+     "texto": "Defiende una postura reconocible con al menos una razón desarrollada y un ejemplo concreto, y la mantiene hasta el final del debate."
+    },
+    "n3": {
+     "verbo": "apoya",
+     "texto": "Apoya las intervenciones con prueba nombrada —un dato, una cita del texto, un caso— y recurre a razones de tipos distintos."
+    },
+    "n4": {
+     "verbo": "gradua",
+     "texto": "Gradúa la fuerza de la postura propia, separa lo que da por seguro de lo que solo considera probable e indica la procedencia de cada prueba."
+    }
+   },
+   "matriz_cuantitativa": null,
+   "descriptor_cotejo": null,
+   "descriptor_un_punto": "Defiende una postura reconocible con al menos una razón desarrollada y un ejemplo concreto, y la mantiene hasta el final del debate."
+  },
+  {
+   "id": "lcl-b-escucha-debate-2eso",
+   "bloque_lomloe": "B",
+   "dimension": "escucha_activa",
+   "nombre": "Escucha y recogida de lo dicho por el otro",
+   "curso": "2ESO",
+   "hereda_de": null,
+   "criterio_oficial": {
+    "competencia_especifica": 3,
+    "codigo": "3.2",
+    "cita": "Participar en interacciones orales informales, en el trabajo en equipo y en situaciones orales formales de carácter dialogado, de manera activa y adecuada, con actitudes de escucha activa y haciendo uso de estrategias de cooperación conversacional y cortesía lingüística.",
+    "perfil_salida": [
+     "CCL1",
+     "CCL3",
+     "CCL5",
+     "CP2",
+     "STEM1",
+     "CD2",
+     "CD3",
+     "CC2",
+     "CE1"
+    ]
+   },
+   "saber_vehiculo": [
+    "interacción oral de carácter informal: tomar y dejar la palabra",
+    "escucha activa, asertividad y resolución dialogada de los conflictos"
+   ],
+   "progresion": {
+    "autonomia": 2,
+    "complejidad": 2,
+    "metalinguistico": 2
+   },
+   "tipos_tarea": [
+    "debate"
+   ],
+   "obligatorio": true,
+   "prioridad": 1,
+   "peso_base": 25,
+   "descriptores": {
+    "n1": {
+     "verbo": "expone",
+     "texto": "Expone lo que trae preparado, sin relación con lo que se acaba de decir; espera el turno para hablar, no para escuchar."
+    },
+    "n2": {
+     "verbo": "senala",
+     "texto": "Señala una palabra o una idea del interviniente anterior antes de aportar la propia."
+    },
+    "n3": {
+     "verbo": "reformula",
+     "texto": "Reformula con palabras propias la postura contraria antes de responderla, y quien la defendía se reconoce en esa reformulación."
+    },
+    "n4": {
+     "verbo": "distingue",
+     "texto": "Distingue qué parte de lo dicho por el otro acepta y cuál rechaza, y aprovecha lo aceptado para avanzar el debate."
+    }
+   },
+   "matriz_cuantitativa": null,
+   "descriptor_cotejo": null,
+   "descriptor_un_punto": "Señala una palabra o una idea del interviniente anterior antes de aportar la propia."
+  },
+  {
+   "id": "lcl-b-refutacion-debate-2eso",
+   "bloque_lomloe": "B",
+   "dimension": "refutacion",
+   "nombre": "Refutación limpia",
+   "curso": "2ESO",
+   "hereda_de": null,
+   "criterio_oficial": {
+    "competencia_especifica": 3,
+    "codigo": "3.2",
+    "cita": "Participar en interacciones orales informales, en el trabajo en equipo y en situaciones orales formales de carácter dialogado, de manera activa y adecuada, con actitudes de escucha activa y haciendo uso de estrategias de cooperación conversacional y cortesía lingüística.",
+    "perfil_salida": [
+     "CCL1",
+     "CCL3",
+     "CCL5",
+     "CP2",
+     "STEM1",
+     "CD2",
+     "CD3",
+     "CC2",
+     "CE1"
+    ]
+   },
+   "saber_vehiculo": [
+    "interacción oral de carácter informal: tomar y dejar la palabra",
+    "escucha activa, asertividad y resolución dialogada de los conflictos"
+   ],
+   "progresion": {
+    "autonomia": 2,
+    "complejidad": 2,
+    "metalinguistico": 2
+   },
+   "tipos_tarea": [
+    "debate"
+   ],
+   "obligatorio": false,
+   "prioridad": 2,
+   "peso_base": 25,
+   "descriptores": {
+    "n1": {
+     "verbo": "rebate",
+     "texto": "Rebate una versión más sencilla del argumento contrario, o se dirige a quien lo ha dicho en lugar de a lo dicho."
+    },
+    "n2": {
+     "verbo": "senala",
+     "texto": "Señala el punto concreto del argumento contrario que no acepta y da una razón para no aceptarlo, sin descalificar a quien lo ha dicho."
+    },
+    "n3": {
+     "verbo": "explica",
+     "texto": "Explica en qué falla el argumento contrario —ejemplo poco representativo, causa no demostrada, autoridad que no viene al caso— y concede lo que sí se sostiene."
+    },
+    "n4": {
+     "verbo": "rebate",
+     "texto": "Rebate la objeción más fuerte de la otra parte, no la más cómoda, y separa lo comprobado de lo verosímil en lo que se ha dicho."
+    }
+   },
+   "matriz_cuantitativa": null,
+   "descriptor_cotejo": null,
+   "descriptor_un_punto": "Señala el punto concreto del argumento contrario que no acepta y da una razón para no aceptarlo, sin descalificar a quien lo ha dicho."
+  },
+  {
+   "id": "lcl-b-turno-debate-2eso",
+   "bloque_lomloe": "B",
+   "dimension": "turno_y_cortesia",
+   "nombre": "Turno, cooperación conversacional y registro",
+   "curso": "2ESO",
+   "hereda_de": null,
+   "criterio_oficial": {
+    "competencia_especifica": 3,
+    "codigo": "3.2",
+    "cita": "Participar en interacciones orales informales, en el trabajo en equipo y en situaciones orales formales de carácter dialogado, de manera activa y adecuada, con actitudes de escucha activa y haciendo uso de estrategias de cooperación conversacional y cortesía lingüística.",
+    "perfil_salida": [
+     "CCL1",
+     "CCL3",
+     "CCL5",
+     "CP2",
+     "STEM1",
+     "CD2",
+     "CD3",
+     "CC2",
+     "CE1"
+    ]
+   },
+   "saber_vehiculo": [
+    "interacción oral de carácter informal: tomar y dejar la palabra",
+    "escucha activa, asertividad y resolución dialogada de los conflictos"
+   ],
+   "progresion": {
+    "autonomia": 2,
+    "complejidad": 2,
+    "metalinguistico": 2
+   },
+   "tipos_tarea": [
+    "debate"
+   ],
+   "obligatorio": true,
+   "prioridad": 2,
+   "peso_base": 25,
+   "descriptores": {
+    "n1": {
+     "verbo": "respeta",
+     "texto": "Respeta el turno cuando el profesor lo asigna, y entra por encima de quien habla cuando el turno queda libre; el registro salta al de la conversación entre amigos."
+    },
+    "n2": {
+     "verbo": "respeta",
+     "texto": "Respeta el turno, ajusta la intervención al tiempo dado y mantiene un registro formal, con algún coloquialismo suelto."
+    },
+    "n3": {
+     "verbo": "formula",
+     "texto": "Formula preguntas al otro equipo, cede la palabra y emplea fórmulas de cortesía para discrepar."
+    },
+    "n4": {
+     "verbo": "regula",
+     "texto": "Regula el debate cuando se atasca: resume lo acordado, devuelve la palabra a quien no ha intervenido y vuelve al tema."
+    }
+   },
+   "matriz_cuantitativa": null,
+   "descriptor_cotejo": null,
+   "descriptor_un_punto": "Respeta el turno, ajusta la intervención al tiempo dado y mantiene un registro formal, con algún coloquialismo suelto."
+  },
+  {
+   "id": "lcl-b-postura-debate-4eso",
+   "bloque_lomloe": "B",
+   "dimension": "postura_y_prueba",
+   "nombre": "Postura sostenida y prueba",
+   "curso": "4ESO",
+   "hereda_de": null,
+   "criterio_oficial": {
+    "competencia_especifica": 3,
+    "codigo": "3.2",
+    "cita": "Participar de manera activa y adecuada en interacciones orales informales, de cierta extensión y complejidad, en el trabajo en equipo y en situaciones orales formales de carácter dialogado, con actitudes de escucha activa y estrategias de cooperación conversacional y cortesía lingüística.",
+    "perfil_salida": [
+     "CCL1",
+     "CCL3",
+     "CCL5",
+     "CP2",
+     "STEM1",
+     "CD2",
+     "CD3",
+     "CC2",
+     "CE1"
+    ]
+   },
+   "saber_vehiculo": [
+    "interacción oral de carácter informal y formal: cooperación conversacional y cortesía lingüística",
+    "producción oral formal: la deliberación oral argumentada"
+   ],
+   "progresion": {
+    "autonomia": 3,
+    "complejidad": 3,
+    "metalinguistico": 3
+   },
+   "tipos_tarea": [
+    "debate"
+   ],
+   "obligatorio": true,
+   "prioridad": 1,
+   "peso_base": 25,
+   "descriptores": {
+    "n1": {
+     "verbo": "afirma",
+     "texto": "Afirma la postura propia y la ilustra con ejemplos de experiencia personal, sin prueba que otro pueda comprobar."
+    },
+    "n2": {
+     "verbo": "defiende",
+     "texto": "Defiende una postura reconocible con razones de al menos dos tipos distintos y una prueba que la clase puede comprobar."
+    },
+    "n3": {
+     "verbo": "documenta",
+     "texto": "Documenta la procedencia de las pruebas aportadas y elige cada una pensando en el equipo que tiene enfrente."
+    },
+    "n4": {
+     "verbo": "gradua",
+     "texto": "Gradúa la fuerza de la tesis con matices de certeza y de probabilidad, y separa en el propio discurso lo comprobado de lo verosímil."
+    }
+   },
+   "matriz_cuantitativa": null,
+   "descriptor_cotejo": null,
+   "descriptor_un_punto": "Defiende una postura reconocible con razones de al menos dos tipos distintos y una prueba que la clase puede comprobar."
+  },
+  {
+   "id": "lcl-b-escucha-debate-4eso",
+   "bloque_lomloe": "B",
+   "dimension": "escucha_activa",
+   "nombre": "Escucha y recogida de lo dicho por el otro",
+   "curso": "4ESO",
+   "hereda_de": null,
+   "criterio_oficial": {
+    "competencia_especifica": 3,
+    "codigo": "3.2",
+    "cita": "Participar de manera activa y adecuada en interacciones orales informales, de cierta extensión y complejidad, en el trabajo en equipo y en situaciones orales formales de carácter dialogado, con actitudes de escucha activa y estrategias de cooperación conversacional y cortesía lingüística.",
+    "perfil_salida": [
+     "CCL1",
+     "CCL3",
+     "CCL5",
+     "CP2",
+     "STEM1",
+     "CD2",
+     "CD3",
+     "CC2",
+     "CE1"
+    ]
+   },
+   "saber_vehiculo": [
+    "interacción oral de carácter informal y formal: cooperación conversacional y cortesía lingüística",
+    "producción oral formal: la deliberación oral argumentada"
+   ],
+   "progresion": {
+    "autonomia": 3,
+    "complejidad": 3,
+    "metalinguistico": 3
+   },
+   "tipos_tarea": [
+    "debate"
+   ],
+   "obligatorio": true,
+   "prioridad": 1,
+   "peso_base": 25,
+   "descriptores": {
+    "n1": {
+     "verbo": "expone",
+     "texto": "Expone lo que trae preparado y responde a la postura contraria, no a la intervención concreta que acaba de oír."
+    },
+    "n2": {
+     "verbo": "reformula",
+     "texto": "Reformula con palabras propias la intervención anterior antes de responderla."
+    },
+    "n3": {
+     "verbo": "distingue",
+     "texto": "Distingue qué parte de lo dicho acepta y cuál rechaza, y lo declara antes de dar la razón propia."
+    },
+    "n4": {
+     "verbo": "encadena",
+     "texto": "Encadena el debate: recoge la objeción, la responde y devuelve una razón o una pregunta que obliga a la otra parte a avanzar."
+    }
+   },
+   "matriz_cuantitativa": null,
+   "descriptor_cotejo": null,
+   "descriptor_un_punto": "Reformula con palabras propias la intervención anterior antes de responderla."
+  },
+  {
+   "id": "lcl-b-refutacion-debate-4eso",
+   "bloque_lomloe": "B",
+   "dimension": "refutacion",
+   "nombre": "Refutación limpia",
+   "curso": "4ESO",
+   "hereda_de": null,
+   "criterio_oficial": {
+    "competencia_especifica": 3,
+    "codigo": "3.2",
+    "cita": "Participar de manera activa y adecuada en interacciones orales informales, de cierta extensión y complejidad, en el trabajo en equipo y en situaciones orales formales de carácter dialogado, con actitudes de escucha activa y estrategias de cooperación conversacional y cortesía lingüística.",
+    "perfil_salida": [
+     "CCL1",
+     "CCL3",
+     "CCL5",
+     "CP2",
+     "STEM1",
+     "CD2",
+     "CD3",
+     "CC2",
+     "CE1"
+    ]
+   },
+   "saber_vehiculo": [
+    "interacción oral de carácter informal y formal: cooperación conversacional y cortesía lingüística",
+    "producción oral formal: la deliberación oral argumentada"
+   ],
+   "progresion": {
+    "autonomia": 3,
+    "complejidad": 3,
+    "metalinguistico": 3
+   },
+   "tipos_tarea": [
+    "debate"
+   ],
+   "obligatorio": true,
+   "prioridad": 1,
+   "peso_base": 25,
+   "descriptores": {
+    "n1": {
+     "verbo": "rebate",
+     "texto": "Rebate el argumento contrario oponiéndole el propio, sin señalar en qué falla."
+    },
+    "n2": {
+     "verbo": "senala",
+     "texto": "Señala el punto del argumento contrario que no acepta y da una razón para no aceptarlo, sin descalificar a quien lo ha dicho."
+    },
+    "n3": {
+     "verbo": "explica",
+     "texto": "Explica en qué falla el argumento contrario y concede la parte que sí se sostiene antes de rebatir el resto."
+    },
+    "n4": {
+     "verbo": "verifica",
+     "texto": "Verifica los datos del equipo contrario antes de darlos por buenos, y elige para rebatir la objeción más fuerte, no la más cómoda."
+    }
+   },
+   "matriz_cuantitativa": null,
+   "descriptor_cotejo": null,
+   "descriptor_un_punto": "Señala el punto del argumento contrario que no acepta y da una razón para no aceptarlo, sin descalificar a quien lo ha dicho."
+  },
+  {
+   "id": "lcl-b-turno-debate-4eso",
+   "bloque_lomloe": "B",
+   "dimension": "turno_y_cortesia",
+   "nombre": "Turno, cooperación conversacional y registro",
+   "curso": "4ESO",
+   "hereda_de": null,
+   "criterio_oficial": {
+    "competencia_especifica": 3,
+    "codigo": "3.2",
+    "cita": "Participar de manera activa y adecuada en interacciones orales informales, de cierta extensión y complejidad, en el trabajo en equipo y en situaciones orales formales de carácter dialogado, con actitudes de escucha activa y estrategias de cooperación conversacional y cortesía lingüística.",
+    "perfil_salida": [
+     "CCL1",
+     "CCL3",
+     "CCL5",
+     "CP2",
+     "STEM1",
+     "CD2",
+     "CD3",
+     "CC2",
+     "CE1"
+    ]
+   },
+   "saber_vehiculo": [
+    "interacción oral de carácter informal y formal: cooperación conversacional y cortesía lingüística",
+    "producción oral formal: la deliberación oral argumentada"
+   ],
+   "progresion": {
+    "autonomia": 3,
+    "complejidad": 3,
+    "metalinguistico": 3
+   },
+   "tipos_tarea": [
+    "debate"
+   ],
+   "obligatorio": true,
+   "prioridad": 2,
+   "peso_base": 25,
+   "descriptores": {
+    "n1": {
+     "verbo": "respeta",
+     "texto": "Respeta el turno asignado y mantiene el registro formal mientras lee lo que trae preparado."
+    },
+    "n2": {
+     "verbo": "respeta",
+     "texto": "Respeta el turno, ajusta la intervención al tiempo dado y emplea fórmulas de cortesía para discrepar."
+    },
+    "n3": {
+     "verbo": "formula",
+     "texto": "Formula preguntas que obligan al otro equipo a precisar, y cede la palabra sin que el profesor la reparta."
+    },
+    "n4": {
+     "verbo": "regula",
+     "texto": "Regula el debate cuando se atasca: resume lo acordado, reparte la palabra y reconduce al tema sin intervención del profesor."
+    }
+   },
+   "matriz_cuantitativa": null,
+   "descriptor_cotejo": null,
+   "descriptor_un_punto": "Respeta el turno, ajusta la intervención al tiempo dado y emplea fórmulas de cortesía para discrepar."
+  }
+ ]
+}

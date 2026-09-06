@@ -683,7 +683,7 @@
             "bandas": [
               {
                 "puntos": 4,
-                "condicion": "Hasta 1 faltas en toda la reacción"
+                "condicion": "Hasta 1 falta en toda la reacción"
               },
               {
                 "puntos": 3,
@@ -2021,7 +2021,7 @@
             "bandas": [
               {
                 "puntos": 4,
-                "condicion": "Hasta 1 faltas en toda la reacción, tipográficas incluidas"
+                "condicion": "Hasta 1 falta en toda la reacción, incluidas las tipográficas"
               },
               {
                 "puntos": 3,

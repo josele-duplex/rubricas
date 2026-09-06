@@ -418,7 +418,7 @@
             "bandas": [
               {
                 "puntos": 4,
-                "condicion": "Hasta 1 faltas en todo el comentario"
+                "condicion": "Hasta 1 falta en todo el comentario"
               },
               {
                 "puntos": 3,
@@ -957,7 +957,7 @@
             "bandas": [
               {
                 "puntos": 4,
-                "condicion": "Hasta 1 faltas en todo el comentario"
+                "condicion": "Hasta 1 falta en todo el comentario"
               },
               {
                 "puntos": 3,
@@ -1554,7 +1554,7 @@
             "bandas": [
               {
                 "puntos": 4,
-                "condicion": "Hasta 1 faltas en todo el comentario"
+                "condicion": "Hasta 1 falta en todo el comentario"
               },
               {
                 "puntos": 3,
@@ -2298,7 +2298,7 @@
             "bandas": [
               {
                 "puntos": 4,
-                "condicion": "Hasta 1 faltas en todo el comentario, tipográficas incluidas"
+                "condicion": "Hasta 1 falta en todo el comentario, incluidas las tipográficas"
               },
               {
                 "puntos": 3,
@@ -3042,7 +3042,7 @@
             "bandas": [
               {
                 "puntos": 4,
-                "condicion": "Hasta 1 faltas en todo el comentario, tipográficas incluidas"
+                "condicion": "Hasta 1 falta en todo el comentario, incluidas las tipográficas"
               },
               {
                 "puntos": 3,

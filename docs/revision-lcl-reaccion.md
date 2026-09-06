@@ -120,7 +120,7 @@
 
 | Componente | Máx. | Bandas |
 |---|---|---|
-| Ortografía y acentuación | 4 | **4** — Hasta 1 faltas en toda la reacción<br>**3** — 2 o 3 faltas<br>**2** — 4 o 5 faltas<br>**1** — De 6 a 8 faltas<br>**0** — 9 o más faltas |
+| Ortografía y acentuación | 4 | **4** — Hasta 1 falta en toda la reacción<br>**3** — 2 o 3 faltas<br>**2** — 4 o 5 faltas<br>**1** — De 6 a 8 faltas<br>**0** — 9 o más faltas |
 | Puntuación y comillas | 2 | **2** — Cierra con punto todas las frases y entrecomilla las palabras tomadas de la noticia<br>**1.5** — Deja 1 cita sin comillas, o 1 frase sin cerrar<br>**1** — Deja 2 o 3 citas sin comillas, o 2 o 3 frases sin cerrar<br>**0.5** — Deja de 4 a 6 citas sin comillas, o de 4 a 6 frases sin cerrar<br>**0** — La reacción es un bloque de texto casi sin puntuación |
 | Propiedad léxica | 4 | **4** — Emplea términos precisos y ninguna palabra comodín (cosa, tema, hacer)<br>**3** — Emplea 1 palabra comodín<br>**2** — Emplea 2 palabras comodín<br>**1** — Emplea 3 o 4 palabras comodín<br>**0** — La reacción se sostiene sobre palabras comodín |
 
@@ -334,7 +334,7 @@
 
 | Componente | Máx. | Bandas |
 |---|---|---|
-| Ortografía y acentuación | 4 | **4** — Hasta 1 faltas en toda la reacción, tipográficas incluidas<br>**3** — De 2 a 4 faltas<br>**2** — De 5 a 8 faltas<br>**1** — De 9 a 11 faltas<br>**0** — 12 o más faltas |
+| Ortografía y acentuación | 4 | **4** — Hasta 1 falta en toda la reacción, incluidas las tipográficas<br>**3** — De 2 a 4 faltas<br>**2** — De 5 a 8 faltas<br>**1** — De 9 a 11 faltas<br>**0** — 12 o más faltas |
 | Puntuación del período | 2 | **2** — Puntúa los incisos y las subordinadas y cierra todas las frases<br>**1.5** — Deja 1 inciso sin delimitar, o 1 frase sin cerrar<br>**1** — Deja 2 o 3 incisos sin delimitar, o 2 o 3 frases sin cerrar<br>**0.5** — Deja de 4 a 6 incisos sin delimitar, o de 4 a 6 frases sin cerrar<br>**0** — La reacción encadena períodos casi sin puntuación |
 | Propiedad léxica | 4 | **4** — Emplea términos precisos y ninguna expresión vaga<br>**3** — Emplea 1 expresión vaga<br>**2** — Emplea 2 expresiones vagas<br>**1** — Emplea 3 o 4 expresiones vagas<br>**0** — La reacción se sostiene sobre expresiones vagas |
 

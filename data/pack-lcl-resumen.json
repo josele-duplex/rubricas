@@ -701,7 +701,7 @@
             "bandas": [
               {
                 "puntos": 4,
-                "condicion": "Hasta 1 faltas en todo el resumen"
+                "condicion": "Hasta 1 falta en todo el resumen"
               },
               {
                 "puntos": 3,
@@ -1439,7 +1439,7 @@
             "bandas": [
               {
                 "puntos": 4,
-                "condicion": "Hasta 1 faltas en todo el resumen"
+                "condicion": "Hasta 1 falta en todo el resumen"
               },
               {
                 "puntos": 3,
@@ -2176,7 +2176,7 @@
             "bandas": [
               {
                 "puntos": 4,
-                "condicion": "Hasta 1 faltas en todo el resumen"
+                "condicion": "Hasta 1 falta en todo el resumen"
               },
               {
                 "puntos": 3,
@@ -2913,7 +2913,7 @@
             "bandas": [
               {
                 "puntos": 4,
-                "condicion": "Hasta 1 faltas en todo el resumen"
+                "condicion": "Hasta 1 falta en todo el resumen"
               },
               {
                 "puntos": 3,

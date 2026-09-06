@@ -153,7 +153,10 @@ test/            casos dorados del validador y del motor (Node, sin dependencias
 docs/diseno/     SDD, registro de cambios, motivos de las reglas, guía para añadir una materia
                  (las tablas §4.3 y §5.4 del SDD son GENERADAS — la prosa no)
 docs/marco/      marco teórico y matrices de referencia
-docs/            documentos de revisión GENERADOS y resúmenes para el docente
+docs/            documentos de revisión, guía del docente y memoria de registro — GENERADOS
+                 (la guía .docx sale de scripts/generar_manual.py y la memoria para el
+                 Registro de la Propiedad Intelectual de scripts/generar_memoria_registro.py;
+                 ninguno de los dos se edita en Word: sus cifras se leen de data/ y del código)
 fuentes/         currículo oficial y originales aportados (material crudo)
 ```
 
