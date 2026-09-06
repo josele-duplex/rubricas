@@ -2,7 +2,7 @@
   "pack_id": "lcl-murcia-oral",
   "materia": "LCL",
   "etiqueta": "Exposición oral — Región de Murcia",
-  "version": "0.3.0",
+  "version": "0.4.0",
   "normativa": {
     "estatal": [
       "RD 217/2022, de 29 de marzo (ESO)",
@@ -10,9 +10,9 @@
     ],
     "autonomica": "Decreto n.º 235/2022, de 7 de diciembre (ESO) y Decreto n.º 251/2022, de 22 de diciembre (Bachillerato), de la Comunidad Autónoma de la Región de Murcia",
     "vigencia_desde": "2022-2023",
-    "revisado": "2026-08"
+    "revisado": "2026-09"
   },
-  "razon_peso": "Pesa más la coherencia —estructura y planificación del discurso—, que es lo que permite seguir una exposición hasta el final. Pesan menos los elementos no verbales, que acompañan al discurso y lo mejoran, pero no lo sostienen. El reparto se puede igualar desde «Ajustar».",
+  "razon_peso": "Pesa más la coherencia —estructura y planificación del discurso—, que es lo que permite seguir una exposición hasta el final. Pesan menos los elementos no verbales, que acompañan al discurso y lo mejoran, pero no lo sostienen. La respuesta a las preguntas queda por debajo de las dimensiones del discurso porque el turno de preguntas ocupa unos minutos frente a toda la exposición, y por encima de los elementos no verbales porque lo que se responde es contenido y no acompañamiento. El reparto se puede igualar desde «Ajustar».",
   "criterios": [
     {
       "id": "lcl-b-adecuacion-oral-1eso",
@@ -51,7 +51,7 @@
       ],
       "obligatorio": false,
       "prioridad": 1,
-      "peso_base": 20,
+      "peso_base": 17,
       "descriptores": {
         "n1": {
           "verbo": "utiliza",
@@ -111,7 +111,7 @@
       ],
       "obligatorio": true,
       "prioridad": 1,
-      "peso_base": 25,
+      "peso_base": 22,
       "descriptores": {
         "n1": {
           "verbo": "enumera",
@@ -254,7 +254,7 @@
       ],
       "obligatorio": false,
       "prioridad": 1,
-      "peso_base": 20,
+      "peso_base": 17,
       "descriptores": {
         "n1": {
           "verbo": "utiliza",
@@ -397,7 +397,7 @@
       ],
       "obligatorio": true,
       "prioridad": 2,
-      "peso_base": 20,
+      "peso_base": 17,
       "descriptores": {
         "n1": {
           "verbo": "vocaliza",
@@ -539,7 +539,7 @@
       ],
       "obligatorio": false,
       "prioridad": 2,
-      "peso_base": 15,
+      "peso_base": 12,
       "descriptores": {
         "n1": {
           "verbo": "dirige",
@@ -561,6 +561,66 @@
       "matriz_cuantitativa": null,
       "descriptor_cotejo": null,
       "descriptor_un_punto": "Dirige la mirada al público en algunos momentos de la exposición, aunque vuelve enseguida a las notas."
+    },
+    {
+      "id": "lcl-b-preguntas-oral-1eso",
+      "bloque_lomloe": "B",
+      "dimension": "respuesta_a_preguntas",
+      "nombre": "Respuesta a las preguntas del público",
+      "curso": "1ESO",
+      "hereda_de": null,
+      "criterio_oficial": {
+        "competencia_especifica": 3,
+        "codigo": "3.2",
+        "cita": "Participar en interacciones orales informales, en el trabajo en equipo y en situaciones orales formales de carácter dialogado, de manera activa y adecuada, con actitudes de escucha activa.",
+        "perfil_salida": [
+          "CCL1",
+          "CCL3",
+          "CCL5",
+          "CP2",
+          "STEM1",
+          "CD2",
+          "CD3",
+          "CC2",
+          "CE1"
+        ]
+      },
+      "saber_vehiculo": [
+        "interacción oral de carácter informal: tomar y dejar la palabra",
+        "estrategias para la cooperación conversacional y la cortesía lingüística"
+      ],
+      "progresion": {
+        "autonomia": 1,
+        "complejidad": 1,
+        "metalinguistico": 1
+      },
+      "tipos_tarea": [
+        "oral"
+      ],
+      "obligatorio": false,
+      "prioridad": 2,
+      "peso_base": 15,
+      "descriptores": {
+        "n1": {
+          "verbo": "responde",
+          "texto": "Responde a las preguntas del público con una o dos palabras que repiten una frase ya dicha en la exposición."
+        },
+        "n2": {
+          "verbo": "responde",
+          "texto": "Responde con una frase completa a cada pregunta y deja terminar la pregunta antes de contestar."
+        },
+        "n3": {
+          "verbo": "explica",
+          "texto": "Explica con palabras propias la parte de la exposición por la que pregunta el público, en dos o tres frases seguidas."
+        },
+        "n4": {
+          "verbo": "recurre",
+          "texto": "Recurre a un dato o a un ejemplo de la exposición para aclarar la duda del público."
+        }
+      },
+      "matriz_cuantitativa": null,
+      "descriptor_cotejo": null,
+      "descriptor_un_punto": "Responde con una frase completa a cada pregunta y deja terminar la pregunta antes de contestar."
     },
     {
       "id": "lcl-b-adecuacion-oral-2eso",
@@ -599,7 +659,7 @@
       ],
       "obligatorio": false,
       "prioridad": 1,
-      "peso_base": 20,
+      "peso_base": 17,
       "descriptores": {
         "n1": {
           "verbo": "utiliza",
@@ -659,7 +719,7 @@
       ],
       "obligatorio": true,
       "prioridad": 1,
-      "peso_base": 25,
+      "peso_base": 22,
       "descriptores": {
         "n1": {
           "verbo": "ordena",
@@ -828,7 +888,7 @@
       ],
       "obligatorio": false,
       "prioridad": 1,
-      "peso_base": 20,
+      "peso_base": 17,
       "descriptores": {
         "n1": {
           "verbo": "utiliza",
@@ -971,7 +1031,7 @@
       ],
       "obligatorio": true,
       "prioridad": 2,
-      "peso_base": 20,
+      "peso_base": 17,
       "descriptores": {
         "n1": {
           "verbo": "vocaliza",
@@ -1113,7 +1173,7 @@
       ],
       "obligatorio": false,
       "prioridad": 2,
-      "peso_base": 15,
+      "peso_base": 12,
       "descriptores": {
         "n1": {
           "verbo": "dirige",
@@ -1135,6 +1195,66 @@
       "matriz_cuantitativa": null,
       "descriptor_cotejo": null,
       "descriptor_un_punto": "Dirige la mirada al público en varios momentos, alternando con las notas, y mantiene una postura relajada."
+    },
+    {
+      "id": "lcl-b-preguntas-oral-2eso",
+      "bloque_lomloe": "B",
+      "dimension": "respuesta_a_preguntas",
+      "nombre": "Respuesta a las preguntas del público",
+      "curso": "2ESO",
+      "hereda_de": null,
+      "criterio_oficial": {
+        "competencia_especifica": 3,
+        "codigo": "3.2",
+        "cita": "Participar en interacciones orales informales, en el trabajo en equipo y en situaciones orales formales de carácter dialogado, de manera activa y adecuada, con actitudes de escucha activa y haciendo uso de estrategias de cooperación conversacional y cortesía lingüística.",
+        "perfil_salida": [
+          "CCL1",
+          "CCL3",
+          "CCL5",
+          "CP2",
+          "STEM1",
+          "CD2",
+          "CD3",
+          "CC2",
+          "CE1"
+        ]
+      },
+      "saber_vehiculo": [
+        "interacción oral de carácter informal: tomar y dejar la palabra",
+        "escucha activa, asertividad y resolución dialogada de los conflictos"
+      ],
+      "progresion": {
+        "autonomia": 2,
+        "complejidad": 2,
+        "metalinguistico": 2
+      },
+      "tipos_tarea": [
+        "oral"
+      ],
+      "obligatorio": false,
+      "prioridad": 2,
+      "peso_base": 15,
+      "descriptores": {
+        "n1": {
+          "verbo": "responde",
+          "texto": "Responde a las preguntas del público con una frase suelta que repite lo ya dicho en la exposición."
+        },
+        "n2": {
+          "verbo": "responde",
+          "texto": "Responde a cada pregunta con la información pedida y respeta el turno completo antes de contestar."
+        },
+        "n3": {
+          "verbo": "explica",
+          "texto": "Explica con palabras propias la parte de la exposición por la que pregunta el público y deja la palabra con una fórmula de cortesía."
+        },
+        "n4": {
+          "verbo": "relaciona",
+          "texto": "Relaciona la respuesta con un dato o un ejemplo de la exposición hasta aclarar la duda del público."
+        }
+      },
+      "matriz_cuantitativa": null,
+      "descriptor_cotejo": null,
+      "descriptor_un_punto": "Responde a cada pregunta con la información pedida y respeta el turno antes de contestar."
     },
     {
       "id": "lcl-b-adecuacion-oral-3eso",
@@ -1173,7 +1293,7 @@
       ],
       "obligatorio": false,
       "prioridad": 1,
-      "peso_base": 20,
+      "peso_base": 17,
       "descriptores": {
         "n1": {
           "verbo": "utiliza",
@@ -1233,7 +1353,7 @@
       ],
       "obligatorio": true,
       "prioridad": 1,
-      "peso_base": 25,
+      "peso_base": 22,
       "descriptores": {
         "n1": {
           "verbo": "ordena",
@@ -1402,7 +1522,7 @@
       ],
       "obligatorio": false,
       "prioridad": 1,
-      "peso_base": 20,
+      "peso_base": 17,
       "descriptores": {
         "n1": {
           "verbo": "utiliza",
@@ -1545,7 +1665,7 @@
       ],
       "obligatorio": true,
       "prioridad": 2,
-      "peso_base": 20,
+      "peso_base": 17,
       "descriptores": {
         "n1": {
           "verbo": "vocaliza",
@@ -1687,7 +1807,7 @@
       ],
       "obligatorio": false,
       "prioridad": 2,
-      "peso_base": 15,
+      "peso_base": 12,
       "descriptores": {
         "n1": {
           "verbo": "dirige",
@@ -1709,6 +1829,66 @@
       "matriz_cuantitativa": null,
       "descriptor_cotejo": null,
       "descriptor_un_punto": "Dirige la mirada al público en varios momentos y acompaña alguna idea con gestos, aunque vuelve con frecuencia a las notas."
+    },
+    {
+      "id": "lcl-b-preguntas-oral-3eso",
+      "bloque_lomloe": "B",
+      "dimension": "respuesta_a_preguntas",
+      "nombre": "Respuesta a las preguntas del público",
+      "curso": "3ESO",
+      "hereda_de": null,
+      "criterio_oficial": {
+        "competencia_especifica": 3,
+        "codigo": "3.2",
+        "cita": "Participar de manera activa y adecuada en interacciones orales informales de cierta extensión, en el trabajo en equipo y en situaciones orales formales de carácter dialogado, con actitudes de escucha activa y estrategias de cooperación conversacional y cortesía lingüística.",
+        "perfil_salida": [
+          "CCL1",
+          "CCL3",
+          "CCL5",
+          "CP2",
+          "STEM1",
+          "CD2",
+          "CD3",
+          "CC2",
+          "CE1"
+        ]
+      },
+      "saber_vehiculo": [
+        "interacción oral de carácter informal y formal: estrategias básicas para la cooperación conversacional y cortesía lingüística",
+        "escucha activa, asertividad y resolución dialogada de los conflictos"
+      ],
+      "progresion": {
+        "autonomia": 2,
+        "complejidad": 2,
+        "metalinguistico": 2
+      },
+      "tipos_tarea": [
+        "oral"
+      ],
+      "obligatorio": false,
+      "prioridad": 2,
+      "peso_base": 15,
+      "descriptores": {
+        "n1": {
+          "verbo": "responde",
+          "texto": "Responde con una frase breve a cada pregunta del público y vuelve enseguida al guion de la exposición."
+        },
+        "n2": {
+          "verbo": "responde",
+          "texto": "Responde a cada pregunta con la información pedida, sin interrumpir a quien pregunta."
+        },
+        "n3": {
+          "verbo": "desarrolla",
+          "texto": "Desarrolla la respuesta en varias frases encadenadas que retoman la parte de la exposición por la que pregunta el público."
+        },
+        "n4": {
+          "verbo": "apoya",
+          "texto": "Apoya la respuesta en un dato o un ejemplo de la exposición y verifica con el público que la duda queda aclarada."
+        }
+      },
+      "matriz_cuantitativa": null,
+      "descriptor_cotejo": null,
+      "descriptor_un_punto": "Responde a cada pregunta con la información pedida, sin interrumpir a quien pregunta."
     },
     {
       "id": "lcl-b-adecuacion-oral-4eso",
@@ -1747,7 +1927,7 @@
       ],
       "obligatorio": false,
       "prioridad": 1,
-      "peso_base": 20,
+      "peso_base": 17,
       "descriptores": {
         "n1": {
           "verbo": "utiliza",
@@ -1807,7 +1987,7 @@
       ],
       "obligatorio": true,
       "prioridad": 1,
-      "peso_base": 25,
+      "peso_base": 22,
       "descriptores": {
         "n1": {
           "verbo": "enumera",
@@ -1976,7 +2156,7 @@
       ],
       "obligatorio": false,
       "prioridad": 1,
-      "peso_base": 20,
+      "peso_base": 17,
       "descriptores": {
         "n1": {
           "verbo": "utiliza",
@@ -2118,7 +2298,7 @@
       ],
       "obligatorio": true,
       "prioridad": 2,
-      "peso_base": 20,
+      "peso_base": 17,
       "descriptores": {
         "n1": {
           "verbo": "vocaliza",
@@ -2286,7 +2466,7 @@
       ],
       "obligatorio": false,
       "prioridad": 2,
-      "peso_base": 15,
+      "peso_base": 12,
       "descriptores": {
         "n1": {
           "verbo": "dirige",
@@ -2308,6 +2488,66 @@
       "matriz_cuantitativa": null,
       "descriptor_cotejo": null,
       "descriptor_un_punto": "Dirige la mirada al público en varios momentos y mantiene una postura estable durante la exposición."
+    },
+    {
+      "id": "lcl-b-preguntas-oral-4eso",
+      "bloque_lomloe": "B",
+      "dimension": "respuesta_a_preguntas",
+      "nombre": "Respuesta a las preguntas del público",
+      "curso": "4ESO",
+      "hereda_de": null,
+      "criterio_oficial": {
+        "competencia_especifica": 3,
+        "codigo": "3.2",
+        "cita": "Participar de manera activa y adecuada en interacciones orales informales, de cierta extensión y complejidad, en el trabajo en equipo y en situaciones orales formales de carácter dialogado, con actitudes de escucha activa y estrategias de cooperación conversacional y cortesía lingüística.",
+        "perfil_salida": [
+          "CCL1",
+          "CCL3",
+          "CCL5",
+          "CP2",
+          "STEM1",
+          "CD2",
+          "CD3",
+          "CC2",
+          "CE1"
+        ]
+      },
+      "saber_vehiculo": [
+        "interacción oral de carácter informal y formal: cooperación conversacional y cortesía lingüística",
+        "escucha activa, asertividad y resolución dialogada de los conflictos"
+      ],
+      "progresion": {
+        "autonomia": 3,
+        "complejidad": 3,
+        "metalinguistico": 3
+      },
+      "tipos_tarea": [
+        "oral"
+      ],
+      "obligatorio": false,
+      "prioridad": 2,
+      "peso_base": 15,
+      "descriptores": {
+        "n1": {
+          "verbo": "responde",
+          "texto": "Responde con una frase breve a cada pregunta del público y localiza el dato de la exposición al que apunta."
+        },
+        "n2": {
+          "verbo": "responde",
+          "texto": "Responde a cada pregunta con la información pedida y respeta el turno completo de quien pregunta."
+        },
+        "n3": {
+          "verbo": "desarrolla",
+          "texto": "Desarrolla la respuesta en varias frases encadenadas y reconoce la parte de la pregunta que la exposición había dejado fuera."
+        },
+        "n4": {
+          "verbo": "matiza",
+          "texto": "Matiza la respuesta ante una objeción del público y distingue lo afirmado en la exposición de lo que queda por comprobar."
+        }
+      },
+      "matriz_cuantitativa": null,
+      "descriptor_cotejo": null,
+      "descriptor_un_punto": "Responde a cada pregunta con la información pedida y respeta el turno completo de quien pregunta."
     },
     {
       "id": "lcl-b-adecuacion-oral-1bach",
@@ -2345,7 +2585,7 @@
       ],
       "obligatorio": false,
       "prioridad": 1,
-      "peso_base": 20,
+      "peso_base": 17,
       "descriptores": {
         "n1": {
           "verbo": "utiliza",
@@ -2405,7 +2645,7 @@
       ],
       "obligatorio": true,
       "prioridad": 1,
-      "peso_base": 25,
+      "peso_base": 22,
       "descriptores": {
         "n1": {
           "verbo": "enumera",
@@ -2573,7 +2813,7 @@
       ],
       "obligatorio": false,
       "prioridad": 1,
-      "peso_base": 20,
+      "peso_base": 17,
       "descriptores": {
         "n1": {
           "verbo": "utiliza",
@@ -2715,7 +2955,7 @@
       ],
       "obligatorio": true,
       "prioridad": 2,
-      "peso_base": 20,
+      "peso_base": 17,
       "descriptores": {
         "n1": {
           "verbo": "vocaliza",
@@ -2882,7 +3122,7 @@
       ],
       "obligatorio": false,
       "prioridad": 2,
-      "peso_base": 15,
+      "peso_base": 12,
       "descriptores": {
         "n1": {
           "verbo": "dirige",
@@ -2904,6 +3144,65 @@
       "matriz_cuantitativa": null,
       "descriptor_cotejo": null,
       "descriptor_un_punto": "Dirige la mirada al público en varios momentos y mantiene una postura estable durante la exposición."
+    },
+    {
+      "id": "lcl-b-preguntas-oral-1bach",
+      "bloque_lomloe": "B",
+      "dimension": "respuesta_a_preguntas",
+      "nombre": "Respuesta a las preguntas del público",
+      "curso": "1BACH",
+      "hereda_de": null,
+      "criterio_oficial": {
+        "competencia_especifica": 3,
+        "codigo": "3.2",
+        "cita": "Participar de manera activa y adecuada en interacciones orales (formales e informales) y en el trabajo en equipo con actitudes de escucha activa y estrategias de cooperación conversacional y cortesía lingüística.",
+        "perfil_salida": [
+          "CCL1",
+          "CCL3",
+          "CCL5",
+          "CP2",
+          "STEM1",
+          "CD2",
+          "CD3",
+          "CC2"
+        ]
+      },
+      "saber_vehiculo": [
+        "interacción oral de carácter formal: tomar y dejar la palabra",
+        "cooperación conversacional y cortesía lingüística"
+      ],
+      "progresion": {
+        "autonomia": 3,
+        "complejidad": 4,
+        "metalinguistico": 4
+      },
+      "tipos_tarea": [
+        "oral"
+      ],
+      "obligatorio": false,
+      "prioridad": 2,
+      "peso_base": 15,
+      "descriptores": {
+        "n1": {
+          "verbo": "responde",
+          "texto": "Responde con una frase breve a cada pregunta y señala el punto de la exposición donde ya estaba dicho."
+        },
+        "n2": {
+          "verbo": "responde",
+          "texto": "Responde a cada pregunta con la información pedida y respeta el turno de quien pregunta antes de contestar."
+        },
+        "n3": {
+          "verbo": "desarrolla",
+          "texto": "Desarrolla la respuesta en varias frases encadenadas y cita la fuente o el dato de donde procede."
+        },
+        "n4": {
+          "verbo": "justifica",
+          "texto": "Justifica la respuesta ante una objeción del público, distingue lo demostrado de lo probable y deja la palabra con una fórmula de cortesía."
+        }
+      },
+      "matriz_cuantitativa": null,
+      "descriptor_cotejo": null,
+      "descriptor_un_punto": "Responde a cada pregunta con la información pedida y respeta el turno de quien pregunta."
     },
     {
       "id": "lcl-b-adecuacion-oral-2bach",
@@ -2941,7 +3240,7 @@
       ],
       "obligatorio": false,
       "prioridad": 1,
-      "peso_base": 20,
+      "peso_base": 17,
       "descriptores": {
         "n1": {
           "verbo": "utiliza",
@@ -3001,7 +3300,7 @@
       ],
       "obligatorio": true,
       "prioridad": 1,
-      "peso_base": 25,
+      "peso_base": 22,
       "descriptores": {
         "n1": {
           "verbo": "enumera",
@@ -3169,7 +3468,7 @@
       ],
       "obligatorio": false,
       "prioridad": 1,
-      "peso_base": 20,
+      "peso_base": 17,
       "descriptores": {
         "n1": {
           "verbo": "utiliza",
@@ -3311,7 +3610,7 @@
       ],
       "obligatorio": true,
       "prioridad": 2,
-      "peso_base": 20,
+      "peso_base": 17,
       "descriptores": {
         "n1": {
           "verbo": "vocaliza",
@@ -3478,7 +3777,7 @@
       ],
       "obligatorio": false,
       "prioridad": 2,
-      "peso_base": 15,
+      "peso_base": 12,
       "descriptores": {
         "n1": {
           "verbo": "dirige",
@@ -3500,6 +3799,73 @@
       "matriz_cuantitativa": null,
       "descriptor_cotejo": null,
       "descriptor_un_punto": "Dirige la mirada al público en varios momentos y mantiene una postura estable durante la exposición."
+    },
+    {
+      "id": "lcl-b-preguntas-oral-2bach",
+      "bloque_lomloe": "B",
+      "dimension": "respuesta_a_preguntas",
+      "nombre": "Respuesta a las preguntas del público",
+      "curso": "2BACH",
+      "hereda_de": null,
+      "criterio_oficial": {
+        "competencia_especifica": 3,
+        "codigo": "3.2",
+        "cita": "Participar de manera activa y adecuada en interacciones orales (formales e informales) y en el trabajo en equipo con actitudes de escucha activa y estrategias de cooperación conversacional y cortesía lingüística.",
+        "perfil_salida": [
+          "CCL1",
+          "CCL3",
+          "CCL5",
+          "CP2",
+          "STEM1",
+          "CD2",
+          "CD3",
+          "CC2"
+        ]
+      },
+      "saber_vehiculo": [
+        "interacción oral de carácter formal: tomar y ceder la palabra",
+        "cooperación conversacional y cortesía lingüística"
+      ],
+      "progresion": {
+        "autonomia": 3,
+        "complejidad": 4,
+        "metalinguistico": 4
+      },
+      "tipos_tarea": [
+        "oral"
+      ],
+      "obligatorio": false,
+      "prioridad": 2,
+      "peso_base": 15,
+      "descriptores": {
+        "n1": {
+          "verbo": "responde",
+          "texto": "Responde con una frase breve a cada pregunta del público y sitúa la pregunta en la parte de la exposición que ya la trataba."
+        },
+        "n2": {
+          "verbo": "responde",
+          "texto": "Responde a cada pregunta con la información pedida y deja la palabra sin ocupar el tiempo de las preguntas siguientes."
+        },
+        "n3": {
+          "verbo": "desarrolla",
+          "texto": "Desarrolla la respuesta en varias frases encadenadas e indica el punto de la exposición y la fuente de donde procede el dato."
+        },
+        "n4": {
+          "verbo": "integra",
+          "texto": "Integra en la respuesta el punto de vista de quien pregunta, distingue lo demostrado de lo probable y deja constancia de lo que la exposición no cubre todavía."
+        }
+      },
+      "matriz_cuantitativa": null,
+      "descriptor_cotejo": null,
+      "descriptor_un_punto": "Responde a cada pregunta con la información pedida y deja la palabra a la pregunta siguiente."
+    }
+  ],
+  "verbos_extra": [
+    {
+      "id": "responde",
+      "3s": "Responde",
+      "1s": "Respondo",
+      "nivel_cognitivo": 2
     }
   ]
 }

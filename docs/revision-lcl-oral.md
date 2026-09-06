@@ -1,6 +1,6 @@
 # Revisión del pack: Exposición oral — Región de Murcia
 
-**Pack** `pack-lcl-oral.json` · versión 0.3.0 · 30 criterios · 120 descriptores · 18 matrices cuantitativas
+**Pack** `pack-lcl-oral.json` · versión 0.4.0 · 36 criterios · 144 descriptores · 18 matrices cuantitativas
 
 > Documento para validación docente, generado desde el JSON. No se edita a mano.
 > Al leer, mira sobre todo tres cosas: si el nivel N4 es alcanzable en ese curso,
@@ -12,13 +12,14 @@
 
 | Dimensión | Peso | Prio | Criterio oficial | Matriz |
 |---|---|---|---|---|
-| **Adecuación: situación comunicativa y registro** | 20% | 1 | CE3 — 3.1 | — |
-| **Coherencia: estructura y planificación del discurso** 🔒 | 25% | 1 | CE3 — 3.1 | sí |
-| **Cohesión: marcadores discursivos orales** | 20% | 1 | CE3 — 3.1 | sí |
-| **Fluidez y corrección de la oralidad formal** 🔒 | 20% | 2 | CE3 — 3.1 | sí |
-| **Elementos no verbales: mirada, postura y gesto** | 15% | 2 | CE3 — 3.1 | — |
+| **Adecuación: situación comunicativa y registro** | 17% | 1 | CE3 — 3.1 | — |
+| **Coherencia: estructura y planificación del discurso** 🔒 | 22% | 1 | CE3 — 3.1 | sí |
+| **Cohesión: marcadores discursivos orales** | 17% | 1 | CE3 — 3.1 | sí |
+| **Fluidez y corrección de la oralidad formal** 🔒 | 17% | 2 | CE3 — 3.1 | sí |
+| **Elementos no verbales: mirada, postura y gesto** | 12% | 2 | CE3 — 3.1 | — |
+| **Respuesta a las preguntas del público** | 15% | 2 | CE3 — 3.2 | — |
 
-### Adecuación: situación comunicativa y registro  ·  20%  ·  bloque B
+### Adecuación: situación comunicativa y registro  ·  17%  ·  bloque B
 
 *Criterio oficial 3.1:* «Realizar narraciones y exposiciones orales sencillas con diferente grado de planificación sobre temas de interés personal, social y educativo en diferentes soportes.»
 
@@ -33,7 +34,7 @@
 
 *Sin matriz cuantitativa: esta dimensión se juzga en conjunto, no hay nada que contar.*
 
-### Coherencia: estructura y planificación del discurso  ·  25%  ·  bloque B  ·  🔒 obligatorio
+### Coherencia: estructura y planificación del discurso  ·  22%  ·  bloque B  ·  🔒 obligatorio
 
 *Criterio oficial 3.1:* «Realizar narraciones y exposiciones orales sencillas con diferente grado de planificación sobre temas de interés personal, social y educativo en diferentes soportes.»
 
@@ -54,7 +55,7 @@
 | Una idea por bloque | 4 | **4** — Cada bloque del desarrollo trata una sola idea<br>**3** — Un bloque mezcla dos ideas distintas<br>**2** — Dos o más bloques mezclan ideas distintas<br>**1** — El desarrollo se divide en bloques que no responden a las ideas<br>**0** — El desarrollo no está dividido en bloques reconocibles |
 | Mantenerse en el tema | 2 | **2** — Toda la información responde al tema anunciado al principio<br>**1.5** — Incluye 1 dato que se aparta del tema<br>**1** — Incluye 2 datos que se apartan del tema<br>**0.5** — Incluye 3 o 4 datos ajenos al tema<br>**0** — Incluye 5 o más datos ajenos al tema |
 
-### Cohesión: marcadores discursivos orales  ·  20%  ·  bloque B
+### Cohesión: marcadores discursivos orales  ·  17%  ·  bloque B
 
 *Criterio oficial 3.1:* «Realizar narraciones y exposiciones orales sencillas con diferente grado de planificación sobre temas de interés personal, social y educativo en diferentes soportes.»
 
@@ -75,7 +76,7 @@
 | Señala el cambio de parte | 4 | **4** — Anuncia verbalmente el paso de una parte a otra en las tres transiciones de la exposición<br>**3** — Anuncia el paso de una parte a otra en 2 transiciones<br>**2** — Anuncia el paso de una parte a otra en 1 transición<br>**1** — Marca el paso de una parte a otra con una pausa, sin anunciarlo<br>**0** — No anuncia ninguna transición; el oyente debe inferir el cambio de parte |
 | No repetir la misma palabra | 2 | **2** — Sustituye por sinónimo, pronombre o referencia (esto, esta idea) la palabra ya usada<br>**1.5** — Sustituye la palabra ya usada y deja 1 repetición sin sustituir<br>**1** — Sustituye alguna repetición, pero deja 2 o 3 sin sustituir<br>**0.5** — Sustituye el término repetido en un solo punto de la exposición<br>**0** — Repite el mismo término a lo largo de toda la exposición |
 
-### Fluidez y corrección de la oralidad formal  ·  20%  ·  bloque B  ·  🔒 obligatorio
+### Fluidez y corrección de la oralidad formal  ·  17%  ·  bloque B  ·  🔒 obligatorio
 
 *Criterio oficial 3.1:* «Realizar narraciones y exposiciones orales sencillas con diferente grado de planificación sobre temas de interés personal, social y educativo en diferentes soportes.»
 
@@ -96,7 +97,7 @@
 | Volumen y ritmo comprensibles | 4 | **4** — Toda la clase entiende la exposición sin esfuerzo<br>**3** — Se pierden palabras sueltas en algún momento<br>**2** — Hay que pedirle que repita alguna parte<br>**1** — Se entiende desde la primera fila y hay que pedirle que levante la voz<br>**0** — Buena parte de la exposición resulta ininteligible por el volumen o el ritmo |
 | Pausas con función | 2 | **2** — Hace al menos una pausa para separar ideas, distinta de los silencios de duda<br>**1.5** — Hace una pausa para separar ideas y la alarga hasta parecer un silencio de duda<br>**1** — Marca el cambio de idea con un conector, sin pausa que lo acompañe<br>**0.5** — Hace una pausa al terminar la exposición y ninguna dentro<br>**0** — No hay pausas con función; solo silencios de duda o ninguna pausa |
 
-### Elementos no verbales: mirada, postura y gesto  ·  15%  ·  bloque B
+### Elementos no verbales: mirada, postura y gesto  ·  12%  ·  bloque B
 
 *Criterio oficial 3.1:* «Realizar narraciones y exposiciones orales sencillas con diferente grado de planificación sobre temas de interés personal, social y educativo en diferentes soportes.»
 
@@ -111,19 +112,35 @@
 
 *Sin matriz cuantitativa: esta dimensión se juzga en conjunto, no hay nada que contar.*
 
+### Respuesta a las preguntas del público  ·  15%  ·  bloque B
+
+*Criterio oficial 3.2:* «Participar en interacciones orales informales, en el trabajo en equipo y en situaciones orales formales de carácter dialogado, de manera activa y adecuada, con actitudes de escucha activa.»
+
+*Saber-vehículo:* interacción oral de carácter informal: tomar y dejar la palabra, estrategias para la cooperación conversacional y la cortesía lingüística
+
+| Nivel | Descriptor |
+|---|---|
+| **N1** | Responde a las preguntas del público con una o dos palabras que repiten una frase ya dicha en la exposición. |
+| **N2** | Responde con una frase completa a cada pregunta y deja terminar la pregunta antes de contestar. |
+| **N3** | Explica con palabras propias la parte de la exposición por la que pregunta el público, en dos o tres frases seguidas. |
+| **N4** | Recurre a un dato o a un ejemplo de la exposición para aclarar la duda del público. |
+
+*Sin matriz cuantitativa: esta dimensión se juzga en conjunto, no hay nada que contar.*
+
 ---
 
 ## 2.º de ESO
 
 | Dimensión | Peso | Prio | Criterio oficial | Matriz |
 |---|---|---|---|---|
-| **Adecuación: situación comunicativa y registro** | 20% | 1 | CE3 — 3.1 | — |
-| **Coherencia: estructura y planificación del discurso** 🔒 | 25% | 1 | CE3 — 3.1 | sí |
-| **Cohesión: marcadores discursivos orales** | 20% | 1 | CE3 — 3.1 | sí |
-| **Fluidez y corrección de la oralidad formal** 🔒 | 20% | 2 | CE3 — 3.1 | sí |
-| **Elementos no verbales: mirada, postura y gesto** | 15% | 2 | CE3 — 3.1 | — |
+| **Adecuación: situación comunicativa y registro** | 17% | 1 | CE3 — 3.1 | — |
+| **Coherencia: estructura y planificación del discurso** 🔒 | 22% | 1 | CE3 — 3.1 | sí |
+| **Cohesión: marcadores discursivos orales** | 17% | 1 | CE3 — 3.1 | sí |
+| **Fluidez y corrección de la oralidad formal** 🔒 | 17% | 2 | CE3 — 3.1 | sí |
+| **Elementos no verbales: mirada, postura y gesto** | 12% | 2 | CE3 — 3.1 | — |
+| **Respuesta a las preguntas del público** | 15% | 2 | CE3 — 3.2 | — |
 
-### Adecuación: situación comunicativa y registro  ·  20%  ·  bloque B
+### Adecuación: situación comunicativa y registro  ·  17%  ·  bloque B
 
 *Criterio oficial 3.1:* «Realizar narraciones y exposiciones orales sencillas con diferente grado de planificación sobre temas de interés personal, social y educativo ajustándose a las convenciones propias de los diversos géneros discursivos, con fluidez, coherencia, cohesión y el registro adecuado, en diferentes soportes y utilizando de manera eficaz recursos verbales y no verbales.»
 
@@ -138,7 +155,7 @@
 
 *Sin matriz cuantitativa: esta dimensión se juzga en conjunto, no hay nada que contar.*
 
-### Coherencia: estructura y planificación del discurso  ·  25%  ·  bloque B  ·  🔒 obligatorio
+### Coherencia: estructura y planificación del discurso  ·  22%  ·  bloque B  ·  🔒 obligatorio
 
 *Criterio oficial 3.1:* «Realizar narraciones y exposiciones orales sencillas con diferente grado de planificación sobre temas de interés personal, social y educativo ajustándose a las convenciones propias de los diversos géneros discursivos, con fluidez, coherencia, cohesión y el registro adecuado, en diferentes soportes y utilizando de manera eficaz recursos verbales y no verbales.»
 
@@ -160,7 +177,7 @@
 | Ajuste al tiempo asignado | 2 | **2** — Se ajusta al tiempo asignado sin que el profesor tenga que avisarle<br>**1.5** — Se ajusta al tiempo asignado y deja la conclusión sin desarrollar<br>**1** — Se ajusta al tiempo asignado solo después de un aviso del profesor<br>**0.5** — Se ajusta al tiempo asignado después de dos avisos del profesor<br>**0** — Excede o se queda corto del tiempo asignado en más de 2 minutos, incluso después de un aviso |
 | Mantenerse en el tema | 2 | **2** — Toda la información responde al tema anunciado al principio<br>**1.5** — Incluye 1 dato que se aparta del tema<br>**1** — Incluye 2 datos que se apartan del tema<br>**0.5** — Incluye 3 o 4 datos ajenos al tema<br>**0** — Incluye 5 o más datos ajenos al tema |
 
-### Cohesión: marcadores discursivos orales  ·  20%  ·  bloque B
+### Cohesión: marcadores discursivos orales  ·  17%  ·  bloque B
 
 *Criterio oficial 3.1:* «Realizar narraciones y exposiciones orales sencillas con diferente grado de planificación sobre temas de interés personal, social y educativo ajustándose a las convenciones propias de los diversos géneros discursivos, con fluidez, coherencia, cohesión y el registro adecuado, en diferentes soportes y utilizando de manera eficaz recursos verbales y no verbales.»
 
@@ -181,7 +198,7 @@
 | Señala el cambio de parte | 4 | **4** — Anuncia verbalmente el paso de una parte a otra en las tres transiciones de la exposición<br>**3** — Anuncia el paso de una parte a otra en 2 transiciones<br>**2** — Anuncia el paso de una parte a otra en 1 transición<br>**1** — Marca el paso de una parte a otra con una pausa, sin anunciarlo<br>**0** — No anuncia ninguna transición; el oyente debe inferir el cambio de parte |
 | No repetir la misma palabra | 2 | **2** — Sustituye por sinónimo, hiperónimo o referencia (esto, esta idea) la palabra ya usada<br>**1.5** — Sustituye la palabra ya usada y deja 1 repetición sin sustituir<br>**1** — Sustituye alguna repetición, pero deja 2 o 3 sin sustituir<br>**0.5** — Sustituye el término repetido en un solo punto de la exposición<br>**0** — Repite el mismo término a lo largo de toda la exposición |
 
-### Fluidez y corrección de la oralidad formal  ·  20%  ·  bloque B  ·  🔒 obligatorio
+### Fluidez y corrección de la oralidad formal  ·  17%  ·  bloque B  ·  🔒 obligatorio
 
 *Criterio oficial 3.1:* «Realizar narraciones y exposiciones orales sencillas con diferente grado de planificación sobre temas de interés personal, social y educativo ajustándose a las convenciones propias de los diversos géneros discursivos, con fluidez, coherencia, cohesión y el registro adecuado, en diferentes soportes y utilizando de manera eficaz recursos verbales y no verbales.»
 
@@ -202,7 +219,7 @@
 | Volumen y ritmo comprensibles | 4 | **4** — Toda la clase entiende la exposición sin esfuerzo<br>**3** — Se pierden palabras sueltas en algún momento<br>**2** — Hay que pedirle que repita alguna parte<br>**1** — Se entiende desde la primera fila y hay que pedirle que levante la voz<br>**0** — Buena parte de la exposición resulta ininteligible por el volumen o el ritmo |
 | Pausas con función | 2 | **2** — Hace al menos una pausa para separar ideas, distinta de los silencios de duda<br>**1.5** — Hace una pausa para separar ideas y la alarga hasta parecer un silencio de duda<br>**1** — Marca el cambio de idea con un conector, sin pausa que lo acompañe<br>**0.5** — Hace una pausa al terminar la exposición y ninguna dentro<br>**0** — No hay pausas con función; solo silencios de duda o ninguna pausa |
 
-### Elementos no verbales: mirada, postura y gesto  ·  15%  ·  bloque B
+### Elementos no verbales: mirada, postura y gesto  ·  12%  ·  bloque B
 
 *Criterio oficial 3.1:* «Realizar narraciones y exposiciones orales sencillas con diferente grado de planificación sobre temas de interés personal, social y educativo ajustándose a las convenciones propias de los diversos géneros discursivos, con fluidez, coherencia, cohesión y el registro adecuado, en diferentes soportes y utilizando de manera eficaz recursos verbales y no verbales.»
 
@@ -217,19 +234,35 @@
 
 *Sin matriz cuantitativa: esta dimensión se juzga en conjunto, no hay nada que contar.*
 
+### Respuesta a las preguntas del público  ·  15%  ·  bloque B
+
+*Criterio oficial 3.2:* «Participar en interacciones orales informales, en el trabajo en equipo y en situaciones orales formales de carácter dialogado, de manera activa y adecuada, con actitudes de escucha activa y haciendo uso de estrategias de cooperación conversacional y cortesía lingüística.»
+
+*Saber-vehículo:* interacción oral de carácter informal: tomar y dejar la palabra, escucha activa, asertividad y resolución dialogada de los conflictos
+
+| Nivel | Descriptor |
+|---|---|
+| **N1** | Responde a las preguntas del público con una frase suelta que repite lo ya dicho en la exposición. |
+| **N2** | Responde a cada pregunta con la información pedida y respeta el turno completo antes de contestar. |
+| **N3** | Explica con palabras propias la parte de la exposición por la que pregunta el público y deja la palabra con una fórmula de cortesía. |
+| **N4** | Relaciona la respuesta con un dato o un ejemplo de la exposición hasta aclarar la duda del público. |
+
+*Sin matriz cuantitativa: esta dimensión se juzga en conjunto, no hay nada que contar.*
+
 ---
 
 ## 3.º de ESO
 
 | Dimensión | Peso | Prio | Criterio oficial | Matriz |
 |---|---|---|---|---|
-| **Adecuación: situación comunicativa y registro** | 20% | 1 | CE3 — 3.1 | — |
-| **Coherencia: estructura y planificación del discurso** 🔒 | 25% | 1 | CE3 — 3.1 | sí |
-| **Cohesión: marcadores discursivos orales** | 20% | 1 | CE3 — 3.1 | sí |
-| **Fluidez y corrección de la oralidad formal** 🔒 | 20% | 2 | CE3 — 3.1 | sí |
-| **Elementos no verbales: mirada, postura y gesto** | 15% | 2 | CE3 — 3.1 | — |
+| **Adecuación: situación comunicativa y registro** | 17% | 1 | CE3 — 3.1 | — |
+| **Coherencia: estructura y planificación del discurso** 🔒 | 22% | 1 | CE3 — 3.1 | sí |
+| **Cohesión: marcadores discursivos orales** | 17% | 1 | CE3 — 3.1 | sí |
+| **Fluidez y corrección de la oralidad formal** 🔒 | 17% | 2 | CE3 — 3.1 | sí |
+| **Elementos no verbales: mirada, postura y gesto** | 12% | 2 | CE3 — 3.1 | — |
+| **Respuesta a las preguntas del público** | 15% | 2 | CE3 — 3.2 | — |
 
-### Adecuación: situación comunicativa y registro  ·  20%  ·  bloque B
+### Adecuación: situación comunicativa y registro  ·  17%  ·  bloque B
 
 *Criterio oficial 3.1:* «Realizar exposiciones y argumentaciones orales de cierta extensión sobre temas de interés personal, social, educativo y profesional ajustándose a las convenciones propias de los diversos géneros discursivos, con fluidez, coherencia, cohesión y el registro adecuado en diferentes soportes, utilizando de manera eficaz recursos verbales y no verbales.»
 
@@ -244,7 +277,7 @@
 
 *Sin matriz cuantitativa: esta dimensión se juzga en conjunto, no hay nada que contar.*
 
-### Coherencia: estructura y planificación del discurso  ·  25%  ·  bloque B  ·  🔒 obligatorio
+### Coherencia: estructura y planificación del discurso  ·  22%  ·  bloque B  ·  🔒 obligatorio
 
 *Criterio oficial 3.1:* «Realizar exposiciones y argumentaciones orales de cierta extensión sobre temas de interés personal, social, educativo y profesional ajustándose a las convenciones propias de los diversos géneros discursivos, con fluidez, coherencia, cohesión y el registro adecuado en diferentes soportes, utilizando de manera eficaz recursos verbales y no verbales.»
 
@@ -266,7 +299,7 @@
 | Ajuste al tiempo asignado | 2 | **2** — Se ajusta al tiempo asignado sin ayuda del profesor<br>**1.5** — Se ajusta al tiempo asignado y deja la conclusión sin desarrollar<br>**1** — Se ajusta al tiempo asignado solo después de un aviso del profesor<br>**0.5** — Se ajusta al tiempo asignado después de dos avisos del profesor<br>**0** — Excede o se queda corto del tiempo asignado en más de 2 minutos, incluso después de un aviso |
 | Mantenerse en el tema | 2 | **2** — Toda la información responde al tema anunciado al principio<br>**1.5** — Incluye 1 dato que se aparta del tema<br>**1** — Incluye 2 datos que se apartan del tema<br>**0.5** — Incluye 3 o 4 datos ajenos al tema<br>**0** — Incluye 5 o más datos ajenos al tema |
 
-### Cohesión: marcadores discursivos orales  ·  20%  ·  bloque B
+### Cohesión: marcadores discursivos orales  ·  17%  ·  bloque B
 
 *Criterio oficial 3.1:* «Realizar exposiciones y argumentaciones orales de cierta extensión sobre temas de interés personal, social, educativo y profesional ajustándose a las convenciones propias de los diversos géneros discursivos, con fluidez, coherencia, cohesión y el registro adecuado en diferentes soportes, utilizando de manera eficaz recursos verbales y no verbales.»
 
@@ -287,7 +320,7 @@
 | Señala el cambio de parte | 4 | **4** — Anuncia verbalmente el paso de una parte a otra en las tres transiciones de la exposición<br>**3** — Anuncia el paso de una parte a otra en 2 transiciones<br>**2** — Anuncia el paso de una parte a otra en 1 transición<br>**1** — Marca el paso de una parte a otra con una pausa, sin anunciarlo<br>**0** — No anuncia ninguna transición; el oyente debe inferir el cambio de parte |
 | No repetir la misma palabra | 2 | **2** — Sustituye por sinónimo o referencia la palabra ya usada en el bloque anterior<br>**1.5** — Sustituye la palabra ya usada y deja 1 repetición sin sustituir<br>**1** — Sustituye alguna repetición, pero deja 2 o 3 sin sustituir<br>**0.5** — Sustituye el término repetido en un solo punto de la exposición<br>**0** — Repite el mismo término a lo largo de toda la exposición |
 
-### Fluidez y corrección de la oralidad formal  ·  20%  ·  bloque B  ·  🔒 obligatorio
+### Fluidez y corrección de la oralidad formal  ·  17%  ·  bloque B  ·  🔒 obligatorio
 
 *Criterio oficial 3.1:* «Realizar exposiciones y argumentaciones orales de cierta extensión sobre temas de interés personal, social, educativo y profesional ajustándose a las convenciones propias de los diversos géneros discursivos, con fluidez, coherencia, cohesión y el registro adecuado en diferentes soportes, utilizando de manera eficaz recursos verbales y no verbales.»
 
@@ -308,7 +341,7 @@
 | Volumen y ritmo comprensibles | 4 | **4** — Toda la clase entiende la exposición sin esfuerzo<br>**3** — Se pierden palabras sueltas en algún momento<br>**2** — Hay que pedirle que repita alguna parte<br>**1** — Se entiende desde la primera fila y hay que pedirle que levante la voz<br>**0** — Buena parte de la exposición resulta ininteligible por el volumen o el ritmo |
 | Pausas con función | 2 | **2** — Hace al menos una pausa para separar la explicación de la valoración personal<br>**1.5** — Hace una pausa antes de la valoración personal y la alarga hasta parecer un silencio de duda<br>**1** — Anuncia la valoración personal con un conector, sin pausa que la separe<br>**0.5** — Hace una pausa al terminar la exposición y ninguna dentro<br>**0** — No hay pausas con función; solo silencios de duda o ninguna pausa |
 
-### Elementos no verbales: mirada, postura y gesto  ·  15%  ·  bloque B
+### Elementos no verbales: mirada, postura y gesto  ·  12%  ·  bloque B
 
 *Criterio oficial 3.1:* «Realizar exposiciones y argumentaciones orales de cierta extensión sobre temas de interés personal, social, educativo y profesional ajustándose a las convenciones propias de los diversos géneros discursivos, con fluidez, coherencia, cohesión y el registro adecuado en diferentes soportes, utilizando de manera eficaz recursos verbales y no verbales.»
 
@@ -323,19 +356,35 @@
 
 *Sin matriz cuantitativa: esta dimensión se juzga en conjunto, no hay nada que contar.*
 
+### Respuesta a las preguntas del público  ·  15%  ·  bloque B
+
+*Criterio oficial 3.2:* «Participar de manera activa y adecuada en interacciones orales informales de cierta extensión, en el trabajo en equipo y en situaciones orales formales de carácter dialogado, con actitudes de escucha activa y estrategias de cooperación conversacional y cortesía lingüística.»
+
+*Saber-vehículo:* interacción oral de carácter informal y formal: estrategias básicas para la cooperación conversacional y cortesía lingüística, escucha activa, asertividad y resolución dialogada de los conflictos
+
+| Nivel | Descriptor |
+|---|---|
+| **N1** | Responde con una frase breve a cada pregunta del público y vuelve enseguida al guion de la exposición. |
+| **N2** | Responde a cada pregunta con la información pedida, sin interrumpir a quien pregunta. |
+| **N3** | Desarrolla la respuesta en varias frases encadenadas que retoman la parte de la exposición por la que pregunta el público. |
+| **N4** | Apoya la respuesta en un dato o un ejemplo de la exposición y verifica con el público que la duda queda aclarada. |
+
+*Sin matriz cuantitativa: esta dimensión se juzga en conjunto, no hay nada que contar.*
+
 ---
 
 ## 4.º de ESO
 
 | Dimensión | Peso | Prio | Criterio oficial | Matriz |
 |---|---|---|---|---|
-| **Adecuación: situación comunicativa y registro** | 20% | 1 | CE3 — 3.1 | — |
-| **Coherencia: estructura y planificación del discurso** 🔒 | 25% | 1 | CE3 — 3.1 | sí |
-| **Cohesión: marcadores discursivos orales** | 20% | 1 | CE3 — 3.1 | sí |
-| **Fluidez y corrección de la oralidad formal** 🔒 | 20% | 2 | CE3 — 3.1 | sí |
-| **Elementos no verbales: mirada, postura y gesto** | 15% | 2 | CE3 — 3.1 | — |
+| **Adecuación: situación comunicativa y registro** | 17% | 1 | CE3 — 3.1 | — |
+| **Coherencia: estructura y planificación del discurso** 🔒 | 22% | 1 | CE3 — 3.1 | sí |
+| **Cohesión: marcadores discursivos orales** | 17% | 1 | CE3 — 3.1 | sí |
+| **Fluidez y corrección de la oralidad formal** 🔒 | 17% | 2 | CE3 — 3.1 | sí |
+| **Elementos no verbales: mirada, postura y gesto** | 12% | 2 | CE3 — 3.1 | — |
+| **Respuesta a las preguntas del público** | 15% | 2 | CE3 — 3.2 | — |
 
-### Adecuación: situación comunicativa y registro  ·  20%  ·  bloque B
+### Adecuación: situación comunicativa y registro  ·  17%  ·  bloque B
 
 *Criterio oficial 3.1:* «Realizar exposiciones y argumentaciones orales de cierta extensión y complejidad con diferente grado de planificación sobre temas de interés personal, social, educativo y profesional ajustándose a las convenciones propias de los diversos géneros discursivos, con fluidez, coherencia, cohesión y el registro adecuado en diferentes soportes, utilizando de manera eficaz recursos verbales y no verbales.»
 
@@ -350,7 +399,7 @@
 
 *Sin matriz cuantitativa: esta dimensión se juzga en conjunto, no hay nada que contar.*
 
-### Coherencia: estructura y planificación del discurso  ·  25%  ·  bloque B  ·  🔒 obligatorio
+### Coherencia: estructura y planificación del discurso  ·  22%  ·  bloque B  ·  🔒 obligatorio
 
 *Criterio oficial 3.1:* «Realizar exposiciones y argumentaciones orales de cierta extensión y complejidad con diferente grado de planificación sobre temas de interés personal, social, educativo y profesional ajustándose a las convenciones propias de los diversos géneros discursivos, con fluidez, coherencia, cohesión y el registro adecuado en diferentes soportes, utilizando de manera eficaz recursos verbales y no verbales.»
 
@@ -372,7 +421,7 @@
 | Ajuste al tiempo asignado | 2 | **2** — La exposición se ajusta al tiempo asignado, con margen para la conclusión<br>**1.5** — La exposición se ajusta al tiempo asignado y la conclusión se dice sin margen<br>**1** — Se pasa o se queda corto del tiempo asignado, y la conclusión queda apresurada o se omite<br>**0.5** — La exposición se pasa del tiempo asignado y termina cuando el profesor avisa<br>**0** — No se ajusta al tiempo en ningún momento |
 | Cierre sin información nueva | 2 | **2** — El cierre retoma la idea principal o la tesis sin añadir información nueva<br>**1.5** — El cierre retoma la idea principal con las mismas palabras de la presentación<br>**1** — El cierre añade información nueva no desarrollada antes<br>**0.5** — La exposición se cierra con una fórmula de despedida ajena al tema<br>**0** — La exposición termina en el último argumento, sin cierre |
 
-### Cohesión: marcadores discursivos orales  ·  20%  ·  bloque B
+### Cohesión: marcadores discursivos orales  ·  17%  ·  bloque B
 
 *Criterio oficial 3.1:* «Realizar exposiciones y argumentaciones orales de cierta extensión y complejidad con diferente grado de planificación sobre temas de interés personal, social, educativo y profesional ajustándose a las convenciones propias de los diversos géneros discursivos, con fluidez, coherencia, cohesión y el registro adecuado en diferentes soportes, utilizando de manera eficaz recursos verbales y no verbales.»
 
@@ -393,7 +442,7 @@
 | Encadenamiento entre bloques | 4 | **4** — Cada bloque retoma al empezar una idea del bloque anterior<br>**3** — La mayoría de los bloques se encadenan; 1 arranca sin vínculo con lo anterior<br>**2** — Los bloques comparten tema, pero podrían reordenarse sin que cambie el sentido<br>**1** — Encadena 1 par de bloques y deja el resto sin vínculo<br>**0** — Los bloques se suceden sin vínculo entre ellos |
 | Referencia y sustitución léxica | 2 | **2** — Sustituye las repeticiones mediante sinónimo o expresión de referencia, y el referente siempre es identificable<br>**1.5** — Sustituye las repeticiones mediante pronombre, sin recurrir al sinónimo ni a la expresión de referencia, y el referente siempre es identificable<br>**1** — Sustituye la mayoría de las repeticiones; 1 referencia exige un esfuerzo para identificarla<br>**0.5** — Repite el término clave 3 o más veces teniendo alternativa evidente<br>**0** — Repite el mismo término en frases consecutivas a lo largo de toda la exposición |
 
-### Fluidez y corrección de la oralidad formal  ·  20%  ·  bloque B  ·  🔒 obligatorio
+### Fluidez y corrección de la oralidad formal  ·  17%  ·  bloque B  ·  🔒 obligatorio
 
 *Criterio oficial 3.1:* «Realizar exposiciones y argumentaciones orales de cierta extensión y complejidad con diferente grado de planificación sobre temas de interés personal, social, educativo y profesional ajustándose a las convenciones propias de los diversos géneros discursivos, con fluidez, coherencia, cohesión y el registro adecuado en diferentes soportes, utilizando de manera eficaz recursos verbales y no verbales.»
 
@@ -415,7 +464,7 @@
 | Pausas con función argumentativa | 2 | **2** — Usa pausas para separar los argumentos y remarcar la tesis o la conclusión<br>**1.5** — Usa pausas para separar los argumentos y ninguna para remarcar la tesis<br>**1** — Usa alguna pausa, sin relación clara con la estructura de la argumentación<br>**0.5** — Hace una pausa al terminar y ninguna dentro de la argumentación<br>**0** — No hay pausas con función; solo silencios de duda |
 | Apoyo en las notas | 2 | **2** — Consulta las notas con miradas breves, sin leer frases completas en ningún momento<br>**1.5** — Lee frases completas de las notas en 1 momento<br>**1** — Lee frases completas de las notas en 2 o 3 momentos<br>**0.5** — Lee frases completas de las notas en 4 o más momentos<br>**0** — Lee la mayor parte de la exposición directamente de las notas |
 
-### Elementos no verbales: mirada, postura y gesto  ·  15%  ·  bloque B
+### Elementos no verbales: mirada, postura y gesto  ·  12%  ·  bloque B
 
 *Criterio oficial 3.1:* «Realizar exposiciones y argumentaciones orales de cierta extensión y complejidad con diferente grado de planificación sobre temas de interés personal, social, educativo y profesional ajustándose a las convenciones propias de los diversos géneros discursivos, con fluidez, coherencia, cohesión y el registro adecuado en diferentes soportes, utilizando de manera eficaz recursos verbales y no verbales.»
 
@@ -430,19 +479,35 @@
 
 *Sin matriz cuantitativa: esta dimensión se juzga en conjunto, no hay nada que contar.*
 
+### Respuesta a las preguntas del público  ·  15%  ·  bloque B
+
+*Criterio oficial 3.2:* «Participar de manera activa y adecuada en interacciones orales informales, de cierta extensión y complejidad, en el trabajo en equipo y en situaciones orales formales de carácter dialogado, con actitudes de escucha activa y estrategias de cooperación conversacional y cortesía lingüística.»
+
+*Saber-vehículo:* interacción oral de carácter informal y formal: cooperación conversacional y cortesía lingüística, escucha activa, asertividad y resolución dialogada de los conflictos
+
+| Nivel | Descriptor |
+|---|---|
+| **N1** | Responde con una frase breve a cada pregunta del público y localiza el dato de la exposición al que apunta. |
+| **N2** | Responde a cada pregunta con la información pedida y respeta el turno completo de quien pregunta. |
+| **N3** | Desarrolla la respuesta en varias frases encadenadas y reconoce la parte de la pregunta que la exposición había dejado fuera. |
+| **N4** | Matiza la respuesta ante una objeción del público y distingue lo afirmado en la exposición de lo que queda por comprobar. |
+
+*Sin matriz cuantitativa: esta dimensión se juzga en conjunto, no hay nada que contar.*
+
 ---
 
 ## 1.º de Bachillerato
 
 | Dimensión | Peso | Prio | Criterio oficial | Matriz |
 |---|---|---|---|---|
-| **Adecuación: situación comunicativa y registro** | 20% | 1 | CE3 — 3.1 | — |
-| **Coherencia: estructura y planificación del discurso** 🔒 | 25% | 1 | CE3 — 3.1 | sí |
-| **Cohesión: marcadores discursivos orales** | 20% | 1 | CE3 — 3.1 | sí |
-| **Fluidez y corrección de la oralidad formal** 🔒 | 20% | 2 | CE3 — 3.1 | sí |
-| **Elementos no verbales: mirada, postura y gesto** | 15% | 2 | CE3 — 3.1 | — |
+| **Adecuación: situación comunicativa y registro** | 17% | 1 | CE3 — 3.1 | — |
+| **Coherencia: estructura y planificación del discurso** 🔒 | 22% | 1 | CE3 — 3.1 | sí |
+| **Cohesión: marcadores discursivos orales** | 17% | 1 | CE3 — 3.1 | sí |
+| **Fluidez y corrección de la oralidad formal** 🔒 | 17% | 2 | CE3 — 3.1 | sí |
+| **Elementos no verbales: mirada, postura y gesto** | 12% | 2 | CE3 — 3.1 | — |
+| **Respuesta a las preguntas del público** | 15% | 2 | CE3 — 3.2 | — |
 
-### Adecuación: situación comunicativa y registro  ·  20%  ·  bloque B
+### Adecuación: situación comunicativa y registro  ·  17%  ·  bloque B
 
 *Criterio oficial 3.1:* «Realizar exposiciones y argumentaciones orales formales con diferente grado de planificación sobre temas de interés científico y cultural y de relevancia académica y social, ajustándose a las convenciones propias de cada género discursivo y con fluidez, rigor, coherencia, cohesión y el registro adecuado, en diferentes soportes y utilizando de manera eficaz recursos verbales y no verbales.»
 
@@ -457,7 +522,7 @@
 
 *Sin matriz cuantitativa: esta dimensión se juzga en conjunto, no hay nada que contar.*
 
-### Coherencia: estructura y planificación del discurso  ·  25%  ·  bloque B  ·  🔒 obligatorio
+### Coherencia: estructura y planificación del discurso  ·  22%  ·  bloque B  ·  🔒 obligatorio
 
 *Criterio oficial 3.1:* «Realizar exposiciones y argumentaciones orales formales con diferente grado de planificación sobre temas de interés científico y cultural y de relevancia académica y social, ajustándose a las convenciones propias de cada género discursivo y con fluidez, rigor, coherencia, cohesión y el registro adecuado, en diferentes soportes y utilizando de manera eficaz recursos verbales y no verbales.»
 
@@ -479,7 +544,7 @@
 | Ajuste al tiempo asignado | 2 | **2** — La exposición se ajusta al tiempo asignado, con margen para la conclusión<br>**1.5** — La exposición se ajusta al tiempo asignado y la conclusión se dice sin margen<br>**1** — Se pasa o se queda corto del tiempo asignado, y la conclusión queda apresurada o se omite<br>**0.5** — La exposición se pasa del tiempo asignado y termina cuando el profesor avisa<br>**0** — Excede o se queda corto del tiempo asignado en más de 2 minutos |
 | Cierre sin información nueva | 2 | **2** — El cierre retoma la tesis sin añadir información nueva<br>**1.5** — El cierre retoma la tesis con las mismas palabras de la presentación<br>**1** — El cierre añade información nueva no desarrollada antes<br>**0.5** — La exposición se cierra con una fórmula de despedida ajena al tema<br>**0** — La exposición termina en el último argumento, sin cierre |
 
-### Cohesión: marcadores discursivos orales  ·  20%  ·  bloque B
+### Cohesión: marcadores discursivos orales  ·  17%  ·  bloque B
 
 *Criterio oficial 3.1:* «Realizar exposiciones y argumentaciones orales formales con diferente grado de planificación sobre temas de interés científico y cultural y de relevancia académica y social, ajustándose a las convenciones propias de cada género discursivo y con fluidez, rigor, coherencia, cohesión y el registro adecuado, en diferentes soportes y utilizando de manera eficaz recursos verbales y no verbales.»
 
@@ -500,7 +565,7 @@
 | Encadenamiento entre bloques | 4 | **4** — Cada bloque retoma al empezar un elemento del bloque anterior<br>**3** — La mayoría de los bloques se encadenan; 1 arranca sin vínculo con lo anterior<br>**2** — Los bloques comparten tema, pero podrían reordenarse sin que cambie el sentido<br>**1** — Encadena 1 par de bloques y deja el resto sin vínculo<br>**0** — Los bloques se suceden sin vínculo entre ellos |
 | Referencia y sustitución léxica | 2 | **2** — Sustituye las repeticiones mediante nominalización, sinónimo o expresión de referencia, y el referente siempre es identificable<br>**1.5** — Sustituye las repeticiones mediante sinónimo o expresión de referencia, sin recurrir a la nominalización, y el referente siempre es identificable<br>**1** — Sustituye la mayoría de las repeticiones; 1 referencia exige un esfuerzo para identificarla<br>**0.5** — Repite el término clave 3 o más veces teniendo alternativa evidente<br>**0** — Repite el mismo término en frases consecutivas a lo largo de toda la exposición |
 
-### Fluidez y corrección de la oralidad formal  ·  20%  ·  bloque B  ·  🔒 obligatorio
+### Fluidez y corrección de la oralidad formal  ·  17%  ·  bloque B  ·  🔒 obligatorio
 
 *Criterio oficial 3.1:* «Realizar exposiciones y argumentaciones orales formales con diferente grado de planificación sobre temas de interés científico y cultural y de relevancia académica y social, ajustándose a las convenciones propias de cada género discursivo y con fluidez, rigor, coherencia, cohesión y el registro adecuado, en diferentes soportes y utilizando de manera eficaz recursos verbales y no verbales.»
 
@@ -522,7 +587,7 @@
 | Volumen y ritmo comprensibles | 4 | **4** — Toda la exposición se entiende sin esfuerzo, con variación de ritmo que ayuda a seguirla<br>**3** — Se entiende, con algún tramo leído de corrido sin pausas<br>**2** — Hay que pedirle que repita alguna parte<br>**1** — Hay que pedirle que repita dos o más partes<br>**0** — Buena parte de la exposición resulta ininteligible |
 | Apoyo en las notas | 2 | **2** — Consulta las notas con miradas breves, sin leer frases completas en ningún momento<br>**1.5** — Lee frases completas de las notas en 1 momento<br>**1** — Lee frases completas de las notas en 2 o 3 momentos<br>**0.5** — Lee frases completas de las notas en 4 o más momentos<br>**0** — Lee la mayor parte de la exposición directamente de las notas |
 
-### Elementos no verbales: mirada, postura y gesto  ·  15%  ·  bloque B
+### Elementos no verbales: mirada, postura y gesto  ·  12%  ·  bloque B
 
 *Criterio oficial 3.1:* «Realizar exposiciones y argumentaciones orales formales con diferente grado de planificación sobre temas de interés científico y cultural y de relevancia académica y social, ajustándose a las convenciones propias de cada género discursivo y con fluidez, rigor, coherencia, cohesión y el registro adecuado, en diferentes soportes y utilizando de manera eficaz recursos verbales y no verbales.»
 
@@ -537,19 +602,35 @@
 
 *Sin matriz cuantitativa: esta dimensión se juzga en conjunto, no hay nada que contar.*
 
+### Respuesta a las preguntas del público  ·  15%  ·  bloque B
+
+*Criterio oficial 3.2:* «Participar de manera activa y adecuada en interacciones orales (formales e informales) y en el trabajo en equipo con actitudes de escucha activa y estrategias de cooperación conversacional y cortesía lingüística.»
+
+*Saber-vehículo:* interacción oral de carácter formal: tomar y dejar la palabra, cooperación conversacional y cortesía lingüística
+
+| Nivel | Descriptor |
+|---|---|
+| **N1** | Responde con una frase breve a cada pregunta y señala el punto de la exposición donde ya estaba dicho. |
+| **N2** | Responde a cada pregunta con la información pedida y respeta el turno de quien pregunta antes de contestar. |
+| **N3** | Desarrolla la respuesta en varias frases encadenadas y cita la fuente o el dato de donde procede. |
+| **N4** | Justifica la respuesta ante una objeción del público, distingue lo demostrado de lo probable y deja la palabra con una fórmula de cortesía. |
+
+*Sin matriz cuantitativa: esta dimensión se juzga en conjunto, no hay nada que contar.*
+
 ---
 
 ## 2.º de Bachillerato
 
 | Dimensión | Peso | Prio | Criterio oficial | Matriz |
 |---|---|---|---|---|
-| **Adecuación: situación comunicativa y registro** | 20% | 1 | CE3 — 3.1 | — |
-| **Coherencia: estructura y planificación del discurso** 🔒 | 25% | 1 | CE3 — 3.1 | sí |
-| **Cohesión: marcadores discursivos orales** | 20% | 1 | CE3 — 3.1 | sí |
-| **Fluidez y corrección de la oralidad formal** 🔒 | 20% | 2 | CE3 — 3.1 | sí |
-| **Elementos no verbales: mirada, postura y gesto** | 15% | 2 | CE3 — 3.1 | — |
+| **Adecuación: situación comunicativa y registro** | 17% | 1 | CE3 — 3.1 | — |
+| **Coherencia: estructura y planificación del discurso** 🔒 | 22% | 1 | CE3 — 3.1 | sí |
+| **Cohesión: marcadores discursivos orales** | 17% | 1 | CE3 — 3.1 | sí |
+| **Fluidez y corrección de la oralidad formal** 🔒 | 17% | 2 | CE3 — 3.1 | sí |
+| **Elementos no verbales: mirada, postura y gesto** | 12% | 2 | CE3 — 3.1 | — |
+| **Respuesta a las preguntas del público** | 15% | 2 | CE3 — 3.2 | — |
 
-### Adecuación: situación comunicativa y registro  ·  20%  ·  bloque B
+### Adecuación: situación comunicativa y registro  ·  17%  ·  bloque B
 
 *Criterio oficial 3.1:* «Realizar exposiciones y argumentaciones orales formales extensas en las que se recojan diferentes puntos de vista, con diferente grado de planificación sobre temas de interés científico y cultural y de relevancia académica y social ajustándose a las convenciones propias de cada género discursivo y hacerlo con fluidez, rigor, coherencia, cohesión y el registro adecuado en diferentes soportes, utilizando de manera eficaz recursos verbales y no verbales.»
 
@@ -564,7 +645,7 @@
 
 *Sin matriz cuantitativa: esta dimensión se juzga en conjunto, no hay nada que contar.*
 
-### Coherencia: estructura y planificación del discurso  ·  25%  ·  bloque B  ·  🔒 obligatorio
+### Coherencia: estructura y planificación del discurso  ·  22%  ·  bloque B  ·  🔒 obligatorio
 
 *Criterio oficial 3.1:* «Realizar exposiciones y argumentaciones orales formales extensas en las que se recojan diferentes puntos de vista, con diferente grado de planificación sobre temas de interés científico y cultural y de relevancia académica y social ajustándose a las convenciones propias de cada género discursivo y hacerlo con fluidez, rigor, coherencia, cohesión y el registro adecuado en diferentes soportes, utilizando de manera eficaz recursos verbales y no verbales.»
 
@@ -586,7 +667,7 @@
 | Ajuste al tiempo asignado | 2 | **2** — La exposición se ajusta al tiempo asignado, con margen para la conclusión<br>**1.5** — La exposición se ajusta al tiempo asignado y la conclusión se dice sin margen<br>**1** — Se pasa o se queda corto del tiempo asignado, y la conclusión queda apresurada o se omite<br>**0.5** — La exposición se pasa del tiempo asignado y termina cuando el profesor avisa<br>**0** — Excede o se queda corto del tiempo asignado en más de 2 minutos |
 | Cierre con valoración propia | 2 | **2** — El cierre ofrece una valoración propia razonada de los puntos de vista expuestos, sin añadir información nueva<br>**1.5** — El cierre ofrece una valoración propia de los puntos de vista expuestos, sin razón que la sostenga<br>**1** — El cierre retoma los puntos de vista expuestos sin ofrecer una valoración propia<br>**0.5** — La exposición se cierra con una fórmula de despedida ajena a los puntos de vista<br>**0** — La exposición termina en el último punto de vista, sin cierre |
 
-### Cohesión: marcadores discursivos orales  ·  20%  ·  bloque B
+### Cohesión: marcadores discursivos orales  ·  17%  ·  bloque B
 
 *Criterio oficial 3.1:* «Realizar exposiciones y argumentaciones orales formales extensas en las que se recojan diferentes puntos de vista, con diferente grado de planificación sobre temas de interés científico y cultural y de relevancia académica y social ajustándose a las convenciones propias de cada género discursivo y hacerlo con fluidez, rigor, coherencia, cohesión y el registro adecuado en diferentes soportes, utilizando de manera eficaz recursos verbales y no verbales.»
 
@@ -607,7 +688,7 @@
 | Encadenamiento entre bloques | 4 | **4** — Cada bloque retoma al empezar un elemento del bloque anterior<br>**3** — La mayoría de los bloques se encadenan; 1 arranca sin vínculo con lo anterior<br>**2** — Los bloques comparten tema, pero podrían reordenarse sin que cambie el sentido<br>**1** — Encadena 1 par de bloques y deja el resto sin vínculo<br>**0** — Los bloques se suceden sin vínculo entre ellos |
 | Referencia y sustitución léxica | 2 | **2** — Sustituye las repeticiones mediante nominalización, sinónimo o expresión de referencia, y el referente siempre es identificable<br>**1.5** — Sustituye las repeticiones mediante sinónimo o expresión de referencia, sin recurrir a la nominalización, y el referente siempre es identificable<br>**1** — Sustituye la mayoría de las repeticiones; 1 referencia exige un esfuerzo para identificarla<br>**0.5** — Repite el término clave 3 o más veces teniendo alternativa evidente<br>**0** — Repite el mismo término en frases consecutivas a lo largo de toda la exposición |
 
-### Fluidez y corrección de la oralidad formal  ·  20%  ·  bloque B  ·  🔒 obligatorio
+### Fluidez y corrección de la oralidad formal  ·  17%  ·  bloque B  ·  🔒 obligatorio
 
 *Criterio oficial 3.1:* «Realizar exposiciones y argumentaciones orales formales extensas en las que se recojan diferentes puntos de vista, con diferente grado de planificación sobre temas de interés científico y cultural y de relevancia académica y social ajustándose a las convenciones propias de cada género discursivo y hacerlo con fluidez, rigor, coherencia, cohesión y el registro adecuado en diferentes soportes, utilizando de manera eficaz recursos verbales y no verbales.»
 
@@ -629,7 +710,7 @@
 | Volumen y ritmo comprensibles | 4 | **4** — Toda la exposición se entiende sin esfuerzo, con variación de ritmo que ayuda a seguirla<br>**3** — Se entiende, con algún tramo leído de corrido sin pausas<br>**2** — Hay que pedirle que repita alguna parte<br>**1** — Hay que pedirle que repita dos o más partes<br>**0** — Buena parte de la exposición resulta ininteligible |
 | Apoyo en las notas | 2 | **2** — Consulta las notas con miradas breves, sin leer frases completas en ningún momento<br>**1.5** — Lee frases completas de las notas en 1 momento<br>**1** — Lee frases completas de las notas en 2 o 3 momentos<br>**0.5** — Lee frases completas de las notas en 4 o más momentos<br>**0** — Lee la mayor parte de la exposición directamente de las notas |
 
-### Elementos no verbales: mirada, postura y gesto  ·  15%  ·  bloque B
+### Elementos no verbales: mirada, postura y gesto  ·  12%  ·  bloque B
 
 *Criterio oficial 3.1:* «Realizar exposiciones y argumentaciones orales formales extensas en las que se recojan diferentes puntos de vista, con diferente grado de planificación sobre temas de interés científico y cultural y de relevancia académica y social ajustándose a las convenciones propias de cada género discursivo y hacerlo con fluidez, rigor, coherencia, cohesión y el registro adecuado en diferentes soportes, utilizando de manera eficaz recursos verbales y no verbales.»
 
@@ -641,6 +722,21 @@
 | **N2** | Dirige la mirada al público en varios momentos y mantiene una postura estable, aunque los gestos no acompañan los contrastes entre puntos de vista. |
 | **N3** | Mantiene el contacto visual con distintas zonas del público durante toda la exposición y acompaña los puntos de vista con gestos naturales. |
 | **N4** | Adapta la mirada, la postura y los gestos a la reacción del público y los pone al servicio de la argumentación, sin manierismos ni movimientos repetitivos. |
+
+*Sin matriz cuantitativa: esta dimensión se juzga en conjunto, no hay nada que contar.*
+
+### Respuesta a las preguntas del público  ·  15%  ·  bloque B
+
+*Criterio oficial 3.2:* «Participar de manera activa y adecuada en interacciones orales (formales e informales) y en el trabajo en equipo con actitudes de escucha activa y estrategias de cooperación conversacional y cortesía lingüística.»
+
+*Saber-vehículo:* interacción oral de carácter formal: tomar y ceder la palabra, cooperación conversacional y cortesía lingüística
+
+| Nivel | Descriptor |
+|---|---|
+| **N1** | Responde con una frase breve a cada pregunta del público y sitúa la pregunta en la parte de la exposición que ya la trataba. |
+| **N2** | Responde a cada pregunta con la información pedida y deja la palabra sin ocupar el tiempo de las preguntas siguientes. |
+| **N3** | Desarrolla la respuesta en varias frases encadenadas e indica el punto de la exposición y la fuente de donde procede el dato. |
+| **N4** | Integra en la respuesta el punto de vista de quien pregunta, distingue lo demostrado de lo probable y deja constancia de lo que la exposición no cubre todavía. |
 
 *Sin matriz cuantitativa: esta dimensión se juzga en conjunto, no hay nada que contar.*
 

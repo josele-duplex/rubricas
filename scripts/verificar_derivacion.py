@@ -72,13 +72,14 @@ DIR_FUENTES = os.path.join(RAIZ, "fuentes", "curriculo")
 RUTA_SDD = os.path.join(RAIZ, "docs", "diseno", "SDD.md")
 
 # El Marco Teórico vigente vive en el repositorio de Lengua y NO viaja con este
-# proyecto (CLAUDE.md). La ruta se puede cambiar sin tocar el código: la variable
-# de entorno gana, y si no hay ninguna se usa la del equipo donde se escribió.
-# Si el archivo no está, la comprobación 2 lo dice y sigue; nunca se modifica.
-RUTA_MARCO = os.environ.get("RUBRICAS_MARCO_TEORICO") or os.path.join(
-    "C:\\Users\\Usuario\\Proyectos\\proyecto_plan_de_trabajo_lengua",
-    "Metodologías innovadores morfología y sintaxis", "proyecto",
-    "documentos_base", "marco_teorico_rubricas-LOMLOE.md")
+# proyecto (CLAUDE.md). Aquí NO se fija una ruta: fijarla ya salió mal una vez
+# —en agosto de 2026 el proyecto de Lengua se reestructuró, desapareció la carpeta
+# «Metodologías innovadores morfología y sintaxis» y catorce comprobaciones se
+# pusieron en rojo por un archivo que seguía existiendo un nivel más arriba—.
+# Se prueban varias candidatas y se usa la primera que exista; nunca se modifica.
+NOMBRE_MARCO = "marco_teorico_rubricas-LOMLOE.md"
+DIR_LENGUA = os.path.join(os.path.dirname(RAIZ), "proyecto_plan_de_trabajo_lengua")
+BUSQUEDA_MARCO = []   # rutas probadas, para poder decir dónde se ha mirado
 
 CATALOGO = catalogo()
 LEXICO = lexico()
@@ -123,10 +124,40 @@ def cargar_fuentes():
     return " ".join(normalizar(open(r, encoding="utf8").read()) for r in rutas)
 
 
+def candidatas_marco():
+    """Dónde puede estar el Marco Teórico, de lo más explícito a lo más tolerante.
+
+    La variable de entorno gana y no admite recambio: si alguien la declara, el
+    archivo está donde ella dice o no está. Si no hay variable se prueban las dos
+    distribuciones conocidas del repositorio hermano —la de ahora y la anterior a la
+    reestructuración de agosto de 2026— y, solo si ninguna acierta, se busca por
+    nombre dentro de él: esto es un verificador de taller, y que el vecino mueva una
+    carpeta no debe costar catorce comprobaciones en rojo."""
+    entorno = os.environ.get("RUBRICAS_MARCO_TEORICO")
+    if entorno:
+        return [entorno]
+    fijas = [
+        os.path.join(DIR_LENGUA, "proyecto", "documentos_base", NOMBRE_MARCO),
+        os.path.join(DIR_LENGUA, "Metodologías innovadores morfología y sintaxis",
+                     "proyecto", "documentos_base", NOMBRE_MARCO),
+    ]
+    if any(os.path.isfile(r) for r in fijas):
+        return fijas
+    return fijas + sorted(glob.glob(
+        os.path.join(DIR_LENGUA, "**", NOMBRE_MARCO), recursive=True))
+
+
 def cargar_marco():
-    if not os.path.isfile(RUTA_MARCO):
-        return None
-    return normalizar(open(RUTA_MARCO, encoding="utf8").read())
+    """El Marco Teórico normalizado, o None si no está en ninguna de las candidatas.
+
+    Deja en BUSQUEDA_MARCO las rutas probadas para que el aviso de la comprobación 2
+    diga dónde se ha mirado, en vez de dejar al lector adivinando."""
+    del BUSQUEDA_MARCO[:]
+    for ruta in candidatas_marco():
+        BUSQUEDA_MARCO.append(ruta)
+        if os.path.isfile(ruta):
+            return normalizar(open(ruta, encoding="utf8").read())
+    return None
 
 
 def seccion(texto, inicio, fin):
@@ -163,8 +194,10 @@ def citas_del_sdd(sdd):
 
 def comprobar_citas_sdd(sdd, fuentes, marco, err, avi):
     if marco is None:
-        avi("SDD", "marco", "Marco Teórico no accesible en el repositorio de Lengua; "
-            "la procedencia de §5.4 solo se comprueba contra fuentes/curriculo/")
+        avi("SDD", "marco", "Marco Teórico no accesible en el repositorio de Lengua "
+            "(probado: %s). Con RUBRICAS_MARCO_TEORICO se le dice dónde vive; "
+            "mientras tanto la procedencia de §5.4 solo se comprueba contra "
+            "fuentes/curriculo/" % " · ".join(BUSQUEDA_MARCO or ["ninguna ruta"]))
     for donde, cita in citas_del_sdd(sdd):
         c = normalizar(cita)
         if c in fuentes or (marco is not None and c in marco):

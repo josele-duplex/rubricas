@@ -130,7 +130,7 @@ poniendo la extensión de la tarea al lado del umbral.
 ## Por qué el marco teórico vive en el proyecto de Lengua
 
 Decisión del 13-ago-2026. El marco vigente es
-`proyecto_plan_de_trabajo_lengua/…/documentos_base/marco_teorico_rubricas-LOMLOE.md`.
+`proyecto_plan_de_trabajo_lengua/proyecto/documentos_base/marco_teorico_rubricas-LOMLOE.md`.
 La copia de este repositorio (`docs/marco/…_ANTIGUO.md`) está superada y se
 conserva solo como referencia histórica: corregir el alcance a 1.º ESO – 1.º BACH,
 fijar las bandas sobre 10 e imponer el guardarraíl de terminología (`sintagma`,
@@ -141,6 +141,19 @@ el 13-ago-2026 (SDD v1.31). **La que sigue viva es C3** (hecho H11: la app y el
 skill `rubricas-lomloe` se solapan en la nota /10 y en iDoceo), abierta como
 decisión §17.19 del SDD y pendiente de que la decida Josele: no es una decisión
 técnica y no se resuelve escribiendo código.
+
+**Y por qué esa ruta no se fija en el código.** Referenciar en vez de copiar tiene un
+precio: el dueño del archivo puede moverlo, y aquí no hay forma de enterarse. Pasó en
+agosto de 2026 —Lengua se reestructuró, desapareció la carpeta «Metodologías innovadores
+morfología y sintaxis», y `comprobar_todo.py` se puso en rojo entero por un archivo que
+seguía existiendo un nivel más arriba—. Una ruta fija convierte cualquier reforma del
+vecino en una avería de este repositorio, y peor aún: la avería **no se parece a lo que
+es**, porque lo que se lee es «cita sin fuente literal», no «no encuentro el archivo».
+Por eso `verificar_derivacion.py` prueba candidatas —la distribución de ahora, la
+anterior, y una búsqueda por nombre dentro del repositorio hermano— y `RUBRICAS_MARCO_TEORICO`
+gana sobre todas; además el aviso dice **dónde ha mirado**, que es lo que faltaba para
+diagnosticarlo en un minuto en vez de en media sesión. Es tolerancia de lector, no de
+escritor: el archivo se busca en varios sitios, pero se sigue sin tocar jamás.
 
 ## Por qué 2.º de Bachillerato no es una excepción
 

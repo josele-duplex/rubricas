@@ -191,7 +191,7 @@ proyecto y se arregla aquí, no en la materia nueva.
 `proyecto_plan_de_trabajo_lengua` (plan de aula) · `proyecto_taller-sintaxis` (app de sintaxis) ·
 este generador. Comparten terminología, alcance, filosofía evaluativa y marco de rúbricas.
 Quién manda sobre qué: §2 de
-`proyecto_plan_de_trabajo_lengua/Metodologías innovadores morfología y sintaxis/proyecto/documentos_base/Matriz-digital_tres-proyectos.md`.
+`proyecto_plan_de_trabajo_lengua/proyecto/documentos_base/Matriz-digital_tres-proyectos.md`.
 **El que no es dueño de un hecho, lo referencia; no lo copia.**
 
 - **Este proyecto manda sobre la derivación normativa**: cita literal del criterio, numeración por
@@ -199,8 +199,11 @@ Quién manda sobre qué: §2 de
 - **Lengua manda sobre la arquitectura de rúbrica**: cuatro niveles, nombres canónicos, bandas /10,
   anti-adverbitis, principio del vehículo. También sobre la **ponderación igual por defecto**: un
   pack solo desiguala pesos si declara `razon_peso`, que la ficha imprime y el validador exige.
-- **El marco teórico vigente vive allí**, no aquí (`documentos_base/marco_teorico_rubricas-LOMLOE.md`).
-  La copia de `docs/marco/…ANTIGUO.md` es solo referencia histórica.
+- **El marco teórico vigente vive allí**, no aquí (`proyecto/documentos_base/marco_teorico_rubricas-LOMLOE.md`).
+  La copia de `docs/marco/…ANTIGUO.md` es solo referencia histórica. **Esa ruta no se fija en
+  el código**: `verificar_derivacion.py` prueba varias candidatas dentro del repositorio
+  hermano y `RUBRICAS_MARCO_TEORICO` manda si vive en otro sitio —Lengua se reestructura, y
+  eso no puede costar catorce comprobaciones en rojo.
 - **2.º de Bachillerato no es una excepción** en esta app, aunque los materiales de Lengua lleguen
   hasta 1.º BACH.
 - **C3 resuelta** (decisión §17.19 del SDD, 2026-08-25): la app construye el instrumento —deriva
