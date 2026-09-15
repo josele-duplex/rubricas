@@ -1100,3 +1100,15 @@ table.rubrica-calificar tr.fila-matriz td { background: var(--fondo); padding: 0
 }
 .cargar-alumno:hover { border-color: var(--acento); color: var(--acento); }
 .eliminar-alumno:hover { border-color: var(--aviso); color: var(--aviso); }
+
+.pie {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 1rem 2rem;
+  padding-left: calc(1rem + env(safe-area-inset-left));
+  padding-right: calc(1rem + env(safe-area-inset-right));
+  text-align: center;
+  font-size: 0.8rem;
+}
+.pie a { color: var(--tinta-suave); }
+.pie a:hover { color: var(--acento); }

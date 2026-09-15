@@ -1,0 +1,100 @@
+/* Páginas de documentación (docs/*.html) — SDD, sin entrada en el índice
+   general porque solo hay una: la guía de terminología. Reutiliza las
+   variables de color de styles.css (una sola paleta para toda la
+   aplicación) y las clases .banda / .aviso-caja / .pie ya existentes; aquí
+   solo va el layout específico de un documento largo de lectura. */
+
+.banda-doc { padding-bottom: 3rem; }
+
+.volver {
+  margin: 0 0 1.25rem;
+  font-size: 0.85rem;
+}
+.volver a { color: rgba(255, 255, 255, 0.75); }
+.volver a:hover { color: #fff; }
+
+.guia {
+  max-width: 760px;
+  margin: -2.5rem auto 0;
+  padding: 0 1rem 4rem;
+  padding-left: calc(1rem + env(safe-area-inset-left));
+  padding-right: calc(1rem + env(safe-area-inset-right));
+  padding-bottom: calc(4rem + env(safe-area-inset-bottom));
+  position: relative;
+  z-index: 1;
+}
+
+.guia h2 {
+  margin: 2.5rem 0 1rem;
+  font-size: 1.3rem;
+  letter-spacing: 0.01em;
+  border-bottom: 1px solid var(--linea);
+  padding-bottom: 0.5rem;
+  scroll-margin-top: 1rem;
+}
+.guia section:first-of-type h2 { margin-top: 1.5rem; }
+.guia p { line-height: 1.6; }
+
+/* Las cajas destacadas del documento (regla de oro, definiciones,
+   trampas habituales) son la misma caja que ya usa la puerta de
+   aplicabilidad en la app: mismo lenguaje visual, sin inventar uno nuevo. */
+.guia .aviso-caja p { margin: 0; }
+.guia .aviso-caja p + p { margin-top: 0.5rem; }
+.guia .aviso-caja .etiqueta {
+  display: block;
+  margin-bottom: 0.35rem;
+  color: var(--acento);
+}
+
+/* Los pares "así no / así sí" toman el color de nivel más bajo y más alto
+   de la propia rúbrica (mismo origen que --nivel-1-bg / --nivel-4-bg):
+   rojo y verde no son un capricho de esta página, son el color que la app
+   ya usa para "no alcanzado" y "excelente". */
+.comparacion {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  margin: 0.5rem 0 1rem;
+}
+@media (max-width: 560px) {
+  .comparacion { grid-template-columns: 1fr; }
+}
+.comparacion > div {
+  border-radius: var(--radio);
+  padding: 0.75rem 1rem;
+  font-size: 0.9rem;
+  border: 1px solid currentColor;
+}
+.comparacion .etiqueta { display: block; margin-bottom: 0.35rem; font-weight: 600; }
+.caja-no { background: var(--nivel-1-bg); color: var(--nivel-1-tx); }
+.caja-si { background: var(--nivel-4-bg); color: var(--nivel-4-tx); }
+
+.guia table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 0.5rem 0 1.5rem;
+  font-size: 0.88rem;
+}
+.guia th, .guia td {
+  border: 1px solid var(--linea);
+  padding: 0.5rem 0.7rem;
+  text-align: left;
+  vertical-align: top;
+}
+.guia thead th { background: var(--col-dimension-bg); font-weight: 600; }
+.guia .tabla-rodante { overflow-x: auto; margin: 0.5rem 0 1.5rem; }
+.guia .tabla-rodante table { margin: 0; }
+
+.guia ul.lista-reglas { padding-left: 1.3rem; margin: 0.75rem 0; }
+.guia ul.lista-reglas li { margin: 0.5rem 0; line-height: 1.55; }
+
+.guia .cierre {
+  margin-top: 2.5rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--linea);
+  color: var(--tinta-suave);
+}
+
+@media (max-width: 620px) {
+  .guia { margin-top: -1.5rem; }
+}

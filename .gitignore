@@ -2,6 +2,10 @@
 ~$*
 *.pdf
 
+# Retirado como fuente de la app (docs/guia-terminologia.html lo sustituye);
+# se queda en el disco del docente sin versionarse, por si le vale para otra cosa.
+docs/Guia_terminologia_rubricas_LOMLOE.docx
+
 # Python
 __pycache__/
 *.pyc
