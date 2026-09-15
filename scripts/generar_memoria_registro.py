@@ -802,9 +802,10 @@ def construir(d: dict) -> Memoria:
         "decisión de calificación es suya, no de la herramienta.")
 
     m.h2("2.9 Pantalla de calificar")
-    m.p("El profesor registra el resultado de cada alumno —nivel por dimensión o banda por "
-        "componente en las dimensiones con matriz— y la aplicación calcula la nota con el modelo "
-        "de §5.3. El resultado se guarda en el propio navegador, separado por curso, tipo de "
+    m.p("El profesor registra el resultado de cada alumno en una cuadrícula —la tabla de la "
+        "rúbrica con las celdas de descriptor pinchables, un clic por dimensión, o la banda de "
+        "cada componente en las dimensiones con matriz— y la aplicación calcula la nota con el "
+        "modelo de §5.3 a cada clic, en una barra fija. El resultado se guarda en el propio navegador, separado por curso, tipo de "
         "tarea y actividad, y se puede recargar, corregir y borrar. Al recomponerlo contra el "
         "instrumento vigente, una dimensión que el profesor haya desactivado después de calificar "
         "se omite en lugar de romper, y la nota se recalcula con lo que queda activo.")

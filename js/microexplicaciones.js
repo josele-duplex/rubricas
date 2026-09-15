@@ -182,11 +182,13 @@ export const MICROEXPLICACIONES = {
 
   // --- Calificar ---
   "modo-numerico": {
-    titulo: "¿por qué puntos y no solo el nivel?",
+    titulo: "¿pinchar el descriptor o contar con la matriz?",
     texto:
-      "Una dimensión con matriz aporta a la nota sus puntos brutos, no el valor de su nivel: colapsar a nivel " +
-      "haría que una décima de desempeño valiese hasta 2,5 puntos en el corte del 9 (SDD §6.2). Esta pantalla " +
-      "calcula, no archiva: nada de lo que registres aquí se guarda al cerrarla.",
+      "Las dos valen. Pinchar el descriptor es un clic por fila y la dimensión aporta el valor de su nivel " +
+      "según la escala (2,5 / 5 / 7,5 / 10). «Contar» abre la matriz de la dimensión y entonces aporta sus " +
+      "puntos brutos, sin colapsar a nivel: colapsar haría que una décima de desempeño valiese hasta 2,5 " +
+      "puntos en el corte del 9 (SDD §6.2). Cuenta cuando la nota importe —una prueba, una entrega final— y " +
+      "pincha cuando baste el nivel. Lo que guardes se conserva en este navegador, por actividad.",
   },
 
   "escala-nivel": {
@@ -221,7 +223,8 @@ export const MICROEXPLICACIONES = {
       "Este botón exporta la matriz en blanco —criterio por fila, nivel por columna— en un CSV que abre " +
       "cualquier hoja de cálculo, no solo iDoceo: sirve igual si lo que quieres es la matriz en Excel, Sheets " +
       "o Calc por otro motivo. Si vas a llevarla a iDoceo, sí sustituye a «Calificar» y no se suman los dos " +
-      "(SDD §17.19): es el formato de su importador de rúbricas, calificarías tocando cada celda allí, y la " +
+      "(SDD §17.19): es el formato de su importador de rúbricas, calificarías tocando cada celda allí —igual que " +
+      "en la pantalla «Calificar» de esta app, pero sin las matrices contables—, y la " +
       "pantalla «Calificar» de esta app dejaría de usarse para ese instrumento. Si prefieres seguir " +
       "calificando aquí, usa «Calificar» y, si necesitas la nota en iDoceo, el botón «Exportar CSV» de esa " +
       "pantalla — ese es el otro importador de iDoceo, el de alumnos, no el de rúbricas.",

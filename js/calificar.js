@@ -3,17 +3,33 @@
 // js/calificacion.js tenía las funciones de cálculo pero ningún sitio donde
 // entrara un ResultadoCriterio real.
 //
+// Desde la v1.54 es una cuadrícula, al modo de iDoceo: la misma tabla de la
+// rúbrica (dimensiones por filas, cuatro niveles por columnas), con las
+// celdas de descriptor pinchables y la nota fija arriba, recalculada a cada
+// clic. La versión anterior era una columna de tarjetas con desplegables y
+// la nota al final: calificar exigía desplazarse dos o tres pantallas entre
+// marcar y ver el resultado. En las dimensiones con matriz cuantitativa,
+// «Contar» despliega dentro de la fila los componentes con sus bandas,
+// también pinchables, para cuando se quiere la precisión de §6.3.
+//
 // Sigue el mismo patrón que modo-avanzado.js (render + conectarEventos +
 // callback de cierre). Persiste en localStorage, namespaced por curso +
 // tipo de tarea + actividad, para que calificar a treinta alumnos de la
-// misma prueba no se pierda al cerrar el navegador. No conecta todavía con
-// la ficha impresa ni con ningún instrumento con detractor (§7.7 no existe).
+// misma prueba no se pierda al cerrar el navegador. El formato guardado es
+// el mismo desde la v1.5: los alumnos calificados antes de la cuadrícula se
+// cargan igual.
 
-import { calcularNota, puntosYNivelDe, redondear2 } from "./calificacion.js";
+import {
+  calcularNota,
+  puntosYNivelDe,
+  redondear2,
+  estadoFilaVacio,
+  resultadoDeFila,
+  estadoDeResultado,
+} from "./calificacion.js";
 import { DETRACTOR_ESTIMACION } from "./motor.js";
 import { microexplicacion } from "./microexplicaciones.js";
 import { escapeHtml, textoPack, etiquetaNivel } from "./ui.js";
-import { textoPlano } from "./marcas.js";
 import { filasACsv, descargarCsv, nombreMmaaaa } from "./csv.js";
 
 // --- Persistencia (§6.5) ---------------------------------------------------
@@ -91,52 +107,87 @@ function descargarCsvNotas(meta) {
   descargarCsv(nombreArchivoCsv(meta), csvNotas(meta));
 }
 
-function renderComponente(comp) {
-  const opciones = comp.bandas
-    .map((b, i) => `<option value="${i}">${b.puntos} pts — ${escapeHtml(textoPlano(b.condicion))}</option>`)
+// --- Cuadrícula (§6.5, v1.54) ---------------------------------------------
+
+function formatoPuntos(n) {
+  return String(n).replace(".", ",");
+}
+
+function renderCeldaNivel(criterio, n) {
+  const texto = criterio.descriptores?.[`n${n}`]?.texto ?? "";
+  return `
+    <td class="celda-nivel nivel-${n}" data-nivel="${n}" role="button" tabindex="0" aria-pressed="false"
+        title="${escapeHtml(etiquetaNivel(n))}">
+      ${textoPack(texto)}
+    </td>
+  `;
+}
+
+function renderComponenteContar(comp) {
+  const bandas = comp.bandas
+    .map(
+      (b, i) => `
+      <button type="button" class="celda-banda" data-idx="${i}" aria-pressed="false">
+        <strong>${formatoPuntos(b.puntos)}</strong>
+        <span>${textoPack(b.condicion)}</span>
+      </button>
+    `
+    )
     .join("");
   return `
-    <div class="componente-matriz">
-      <label>${escapeHtml(comp.nombre)} <span class="peso-pill">máx. ${comp.max}</span></label>
-      <select class="select-banda" data-comp="${escapeHtml(comp.nombre)}">
-        <option value="">— selecciona la banda —</option>
-        ${opciones}
-      </select>
+    <div class="componente-contar" data-comp="${escapeHtml(comp.nombre)}">
+      <div class="componente-cabecera">${escapeHtml(comp.nombre)} <span class="peso-pill">máx. ${formatoPuntos(comp.max)}</span></div>
+      <div class="bandas-contar">${bandas}</div>
     </div>
   `;
 }
 
-function renderPenalizacion(pen) {
+function renderPenalizacionContar(pen) {
   return `
-    <div class="penalizacion-matriz">
-      <label>${textoPack(pen.por)} <span class="peso-pill">${pen.puntos} pts, tope ${pen.tope}</span></label>
-      <input type="number" class="input-ocurrencias" data-clave="${escapeHtml(pen.clave)}" min="0" step="1" value="0" />
+    <div class="penalizacion-contar" data-clave="${escapeHtml(pen.clave)}">
+      <span class="penalizacion-texto">${textoPack(pen.por)} <span class="peso-pill">${formatoPuntos(pen.puntos)} cada una, tope ${formatoPuntos(pen.tope)}</span></span>
+      <span class="contador">
+        <button type="button" class="paso-ocurrencia" data-paso="-1" aria-label="una menos">−</button>
+        <output class="ocurrencias-valor">0</output>
+        <button type="button" class="paso-ocurrencia" data-paso="1" aria-label="una más">+</button>
+      </span>
     </div>
   `;
 }
 
-function renderCriterioMatriz(criterio) {
-  const componentes = criterio.matriz_cuantitativa.componentes.map(renderComponente).join("");
-  const penalizaciones = criterio.matriz_cuantitativa.penalizaciones ?? [];
+function renderFilaMatriz(criterio) {
+  const m = criterio.matriz_cuantitativa;
+  const componentes = m.componentes.map(renderComponenteContar).join("");
+  const penalizaciones = m.penalizaciones ?? [];
   const bloquePenalizaciones = penalizaciones.length
-    ? `<div class="penalizaciones-matriz">${penalizaciones.map(renderPenalizacion).join("")}</div>`
+    ? `<div class="penalizaciones-contar">${penalizaciones.map(renderPenalizacionContar).join("")}</div>`
     : "";
-  return `<div class="matriz-calificar">${componentes}${bloquePenalizaciones}</div>`;
+  return `
+    <tr class="fila-matriz" data-criterio-id="${criterio.id}" hidden>
+      <td colspan="5">
+        <div class="matriz-contar">
+          <p class="matriz-contar-ayuda">Marca la banda de cada componente; la fila aporta la suma de puntos (máx. ${formatoPuntos(m.total)}).</p>
+          ${componentes}${bloquePenalizaciones}
+        </div>
+      </td>
+    </tr>
+  `;
 }
 
-function renderCriterioNivel(criterio) {
-  const radios = [1, 2, 3, 4]
-    .map((n) => {
-      const texto = criterio.descriptores?.[`n${n}`]?.texto ?? "";
-      return `
-        <label class="opcion-nivel">
-          <input type="radio" name="nivel-${criterio.id}" value="${n}" />
-          <span><strong>${escapeHtml(etiquetaNivel(n))}</strong> — ${textoPack(texto)}</span>
-        </label>
-      `;
-    })
-    .join("");
-  return `<div class="niveles-calificar">${radios}</div>`;
+function renderFila(criterio) {
+  const conMatriz = !!criterio.matriz_cuantitativa;
+  return `
+    <tr class="fila-calificar" data-criterio-id="${criterio.id}">
+      <td class="col-dimension">
+        <span class="dimension-nombre">${escapeHtml(criterio.nombre)}${criterio.obligatorio ? ` <span class="etiqueta-obligatorio">obligatorio</span>` : ""}</span>
+        <span class="dimension-meta">Peso ${criterio.peso_normalizado.toFixed(1)}%</span>
+        <span class="resultado-criterio" data-resultado-criterio></span>
+        ${conMatriz ? `<button type="button" class="btn-contar" aria-expanded="false">Contar</button>` : ""}
+      </td>
+      ${[1, 2, 3, 4].map((n) => renderCeldaNivel(criterio, n)).join("")}
+    </tr>
+    ${conMatriz ? renderFilaMatriz(criterio) : ""}
+  `;
 }
 
 function renderListaAlumnos(meta) {
@@ -166,60 +217,67 @@ function renderListaAlumnos(meta) {
 
 export function renderCalificacion(container, criterios, meta) {
   const hayAlumnosGuardados = Object.keys(alumnosGuardados(meta)).length > 0;
-  const filas = criterios
-    .map((c) => {
-      const tipo = c.matriz_cuantitativa ? "matriz" : "nivel";
-      return `
-        <div class="fila-calificar" data-criterio-id="${c.id}" data-tipo="${tipo}">
-          <div class="fila-encabezado">
-            <span class="dimension-nombre">${escapeHtml(c.nombre)}${c.obligatorio ? ` <span class="etiqueta-obligatorio">obligatorio</span>` : ""}</span>
-            <span class="peso-pill">${c.peso_normalizado.toFixed(1)}%</span>
-          </div>
-          ${tipo === "matriz" ? renderCriterioMatriz(c) : renderCriterioNivel(c)}
-          <p class="resultado-criterio" data-resultado-criterio></p>
-        </div>
-      `;
-    })
-    .join("");
+  const filas = criterios.map(renderFila).join("");
 
   container.innerHTML = `
     <h2>Calificar</h2>
-    ${microexplicacion("modo-numerico")}
-    <p class="ayuda">Registra el resultado de un alumno concreto y guárdalo para seguir con el siguiente.</p>
+    <p class="ayuda">Pincha la celda del descriptor que alcanza el alumno; la nota se calcula sola. En las dimensiones con matriz, «Contar» abre las bandas de cada componente.</p>
 
-    <div class="config-calificacion">
-      <label for="nombre-alumno">Nombre del alumno</label>
-      <input type="text" id="nombre-alumno" placeholder="p. ej. García Ruiz, Elena" autocomplete="off" />
-
-      <label for="escala-nivel">Escala de valor de los niveles sin matriz</label>
-      <select id="escala-nivel">
-        <option value="equilibrada">Equilibrada (2,5 / 5 / 7,5 / 10)</option>
-        <option value="exigente">Exigente (0 / 5 / 7,5 / 10)</option>
-      </select>
-      ${microexplicacion("escala-nivel")}
-
-      <label class="opcion-checkbox">
-        <input type="checkbox" id="condicion-minima" />
-        Condición mínima: un criterio obligatorio en N1 limita la nota a 4,9
+    <div class="barra-calificar">
+      <label class="campo-barra campo-nombre">
+        <span>Alumno</span>
+        <input type="text" id="nombre-alumno" placeholder="p. ej. García Ruiz, Elena" autocomplete="off" />
       </label>
-      ${microexplicacion("condicion-minima")}
-
-      <label for="detractor-acumulado">${escapeHtml(DETRACTOR_ESTIMACION.concepto)}: puntos a restar de la nota (0 a ${DETRACTOR_ESTIMACION.tope})</label>
-      <input type="number" id="detractor-acumulado" min="0" max="${DETRACTOR_ESTIMACION.tope}" step="0.1" value="0" />
-      ${microexplicacion("detractor-estimacion")}
+      <label class="campo-barra campo-detractor" title="${escapeHtml(DETRACTOR_ESTIMACION.concepto)}: puntos a restar de la nota, tope ${DETRACTOR_ESTIMACION.tope}">
+        <span>Descuento ${escapeHtml(DETRACTOR_ESTIMACION.concepto.toLowerCase())}</span>
+        <input type="number" id="detractor-acumulado" min="0" max="${DETRACTOR_ESTIMACION.tope}" step="0.1" value="0" />
+      </label>
+      <div class="nota-viva" id="resultado-nota" aria-live="polite">
+        <span class="nota-etiqueta">Nota</span>
+        <strong class="nota-valor">—</strong>
+        <span class="nota-detalle">Faltan ${criterios.length} dimensiones</span>
+      </div>
     </div>
 
-    <div class="criterios-calificar">${filas}</div>
-
-    <div class="resultado-nota" id="resultado-nota">
-      <p class="mensaje-vacio">Completa todos los criterios para ver la nota.</p>
+    <div class="tabla-rodante">
+      <table class="rubrica rubrica-calificar">
+        <thead>
+          <tr>
+            <th class="col-dimension">Dimensión</th>
+            ${[1, 2, 3, 4].map((n) => `<th class="col-nivel nivel-${n}">${escapeHtml(etiquetaNivel(n))}</th>`).join("")}
+          </tr>
+        </thead>
+        <tbody>${filas}</tbody>
+      </table>
     </div>
+
+    <div class="aviso-calificar" id="aviso-calificar"></div>
 
     <div class="botones-modo-avanzado">
-      <button id="guardar-alumno" type="button">Guardar calificación</button>
-      <button id="reiniciar-calificacion" type="button">Calificar a otro alumno</button>
+      <button id="guardar-alumno" type="button">Guardar y pasar al siguiente</button>
+      <button id="reiniciar-calificacion" type="button">Borrar lo marcado</button>
       <button id="cerrar-calificacion" type="button">Volver a la vista previa</button>
     </div>
+
+    <details class="opciones-calculo">
+      <summary>Opciones de cálculo</summary>
+      <div class="config-calificacion">
+        <label for="escala-nivel">Valor de los niveles cuando se pincha el descriptor</label>
+        <select id="escala-nivel">
+          <option value="equilibrada">Equilibrada (2,5 / 5 / 7,5 / 10)</option>
+          <option value="exigente">Exigente (0 / 5 / 7,5 / 10)</option>
+        </select>
+        ${microexplicacion("escala-nivel")}
+
+        <label class="opcion-checkbox">
+          <input type="checkbox" id="condicion-minima" />
+          Condición mínima: un criterio obligatorio en N1 limita la nota a 4,9
+        </label>
+        ${microexplicacion("condicion-minima")}
+        ${microexplicacion("detractor-estimacion")}
+        ${microexplicacion("modo-numerico")}
+      </div>
+    </details>
 
     <div class="alumnos-guardados-bloque">
       <h3>Alumnos calificados en esta actividad</h3>
@@ -232,80 +290,100 @@ export function renderCalificacion(container, criterios, meta) {
   `;
 }
 
-// Lee la selección de una fila. Devuelve null si todavía falta algo por
-// marcar — una nota no se calcula con huecos rellenados a ciegas.
-function leerResultadoFila(fila, criterio) {
-  if (fila.dataset.tipo === "matriz") {
-    const bandasElegidas = {};
-    for (const select of fila.querySelectorAll(".select-banda")) {
-      if (select.value === "") return null;
-      const comp = criterio.matriz_cuantitativa.componentes.find((c) => c.nombre === select.dataset.comp);
-      bandasElegidas[select.dataset.comp] = comp.bandas[Number(select.value)].puntos;
-    }
-    const ocurrenciasPenalizacion = {};
-    for (const input of fila.querySelectorAll(".input-ocurrencias")) {
-      ocurrenciasPenalizacion[input.dataset.clave] = Number(input.value) || 0;
-    }
-    return { tipo: "matriz", bandasElegidas, ocurrenciasPenalizacion };
-  }
-
-  const marcado = fila.querySelector(`input[name="nivel-${criterio.id}"]:checked`);
-  if (!marcado) return null;
-  return { tipo: "nivel", nivel: Number(marcado.value) };
-}
-
-// Rellena una fila con un ResultadoCriterio guardado, para poder recargar
-// a un alumno y seguir corrigiendo o corregir un despiste sin repetirlo todo.
-function aplicarResultadoAFila(fila, criterio, resultado) {
-  if (fila.dataset.tipo === "matriz") {
-    for (const select of fila.querySelectorAll(".select-banda")) {
-      const comp = criterio.matriz_cuantitativa.componentes.find((c) => c.nombre === select.dataset.comp);
-      const puntos = resultado.bandasElegidas?.[select.dataset.comp];
-      const idx = comp.bandas.findIndex((b) => b.puntos === puntos);
-      select.value = idx >= 0 ? String(idx) : "";
-    }
-    for (const input of fila.querySelectorAll(".input-ocurrencias")) {
-      input.value = resultado.ocurrenciasPenalizacion?.[input.dataset.clave] ?? 0;
-    }
-  } else {
-    const radio = fila.querySelector(`input[name="nivel-${criterio.id}"][value="${resultado.nivel}"]`);
-    if (radio) radio.checked = true;
-  }
-}
-
 export function conectarEventosCalificacion(container, criterios, meta, onCerrar) {
   const porId = Object.fromEntries(criterios.map((c) => [c.id, c]));
   const resultadoNota = container.querySelector("#resultado-nota");
+  const aviso = container.querySelector("#aviso-calificar");
   const escalaSelect = container.querySelector("#escala-nivel");
   const condicionCheckbox = container.querySelector("#condicion-minima");
   const detractorInput = container.querySelector("#detractor-acumulado");
   const nombreInput = container.querySelector("#nombre-alumno");
 
+  // Estado por dimensión (EstadoFila, js/calificacion.js). Es la fuente; el
+  // DOM solo lo pinta. Así una fila a medias nunca entra en la nota y
+  // «Cargar» no tiene que reconstruir nada leyendo controles.
+  const estados = new Map(criterios.map((c) => [c.id, estadoFilaVacio(c)]));
+
   // Último cálculo completo, con los ResultadoCriterio crudos por criterio:
-  // es lo que "Guardar calificación" persiste. null mientras falte algo.
+  // es lo que "Guardar" persiste. null mientras falte algo.
   let ultimoCalculo = null;
 
+  function filaDe(id) {
+    return container.querySelector(`.fila-calificar[data-criterio-id="${id}"]`);
+  }
+  function filaMatrizDe(id) {
+    return container.querySelector(`.fila-matriz[data-criterio-id="${id}"]`);
+  }
+
+  // Pinta una fila desde su estado: celda elegida (o calculada, si viene de
+  // la matriz), bandas marcadas, contadores y el texto de puntos.
+  function pintarFila(id) {
+    const criterio = porId[id];
+    const estado = estados.get(id);
+    const fila = filaDe(id);
+    const filaMatriz = filaMatrizDe(id);
+    const resultado = resultadoDeFila(criterio, estado);
+    const calculo = resultado ? puntosYNivelDe(criterio, resultado, escalaSelect.value) : null;
+
+    for (const celda of fila.querySelectorAll(".celda-nivel")) {
+      const n = Number(celda.dataset.nivel);
+      const elegida = estado.modo === "nivel" && estado.nivel === n;
+      const calculada = estado.modo === "matriz" && calculo?.nivel === n;
+      celda.classList.toggle("elegida", elegida);
+      celda.classList.toggle("calculada", calculada);
+      celda.setAttribute("aria-pressed", elegida ? "true" : "false");
+    }
+
+    const btnContar = fila.querySelector(".btn-contar");
+    if (btnContar && filaMatriz) {
+      const abierta = estado.modo === "matriz";
+      filaMatriz.hidden = !abierta;
+      btnContar.textContent = abierta ? "Dejar de contar" : "Contar";
+      btnContar.setAttribute("aria-expanded", abierta ? "true" : "false");
+      if (abierta) {
+        for (const comp of filaMatriz.querySelectorAll(".componente-contar")) {
+          const idx = estado.bandas[comp.dataset.comp];
+          for (const banda of comp.querySelectorAll(".celda-banda")) {
+            const marcada = Number(banda.dataset.idx) === idx;
+            banda.classList.toggle("elegida", marcada);
+            banda.setAttribute("aria-pressed", marcada ? "true" : "false");
+          }
+        }
+        for (const pen of filaMatriz.querySelectorAll(".penalizacion-contar")) {
+          pen.querySelector(".ocurrencias-valor").textContent = String(estado.ocurrencias[pen.dataset.clave] ?? 0);
+        }
+      }
+    }
+
+    const texto = fila.querySelector("[data-resultado-criterio]");
+    if (calculo) {
+      const aporta = redondear2((calculo.puntos * criterio.peso_normalizado) / 100);
+      texto.textContent = `${calculo.puntos.toFixed(2)} pts · ${etiquetaNivel(calculo.nivel)} · aporta ${aporta.toFixed(2)}`;
+    } else if (estado.modo === "matriz") {
+      const faltan = Object.values(estado.bandas).filter((v) => v === null).length;
+      texto.textContent = faltan ? `Faltan ${faltan} componente${faltan === 1 ? "" : "s"}` : "";
+    } else {
+      texto.textContent = "";
+    }
+  }
+
+  function pintarTodo() {
+    for (const id of estados.keys()) pintarFila(id);
+  }
+
   function actualizar() {
+    aviso.innerHTML = "";
     const escala = escalaSelect.value;
     const entradas = [];
     const resultadosPorCriterio = {};
-    let completo = true;
+    let faltan = 0;
 
-    for (const fila of container.querySelectorAll(".fila-calificar")) {
-      const criterio = porId[fila.dataset.criterioId];
-      const resultado = leerResultadoFila(fila, criterio);
-      const parrafoResultado = fila.querySelector("[data-resultado-criterio]");
-
+    for (const criterio of criterios) {
+      const resultado = resultadoDeFila(criterio, estados.get(criterio.id));
       if (!resultado) {
-        completo = false;
-        parrafoResultado.textContent = "";
+        faltan++;
         continue;
       }
-
-      const { puntos, nivel } = puntosYNivelDe(criterio, resultado, escala);
-      const aporta = redondear2((puntos * criterio.peso_normalizado) / 100);
-      parrafoResultado.textContent = `Puntos: ${puntos.toFixed(2)} · ${etiquetaNivel(nivel)} · aporta ${aporta.toFixed(2)} a la nota`;
-
       resultadosPorCriterio[criterio.id] = resultado;
       entradas.push({
         peso_base: criterio.peso_normalizado,
@@ -315,8 +393,13 @@ export function conectarEventosCalificacion(container, criterios, meta, onCerrar
       });
     }
 
-    if (!completo || entradas.length === 0) {
-      resultadoNota.innerHTML = `<p class="mensaje-vacio">Completa todos los criterios para ver la nota.</p>`;
+    const valor = resultadoNota.querySelector(".nota-valor");
+    const detalle = resultadoNota.querySelector(".nota-detalle");
+
+    if (faltan > 0 || entradas.length === 0) {
+      valor.textContent = "—";
+      detalle.textContent = `Falta${faltan === 1 ? "" : "n"} ${faltan} dimensi${faltan === 1 ? "ón" : "ones"}`;
+      resultadoNota.classList.remove("completa");
       ultimoCalculo = null;
       return;
     }
@@ -337,19 +420,12 @@ export function conectarEventosCalificacion(container, criterios, meta, onCerrar
     });
 
     const disparada = condicionMinimaActiva && algunObligatorioEnN1;
-    resultadoNota.innerHTML = `
-      <p class="nota-final">Nota final: <strong>${notaFinal.toFixed(2)}</strong></p>
-      ${
-        detractorAcumulado > 0
-          ? `<p class="ayuda">Detractor aplicado: −${detractorAcumulado.toFixed(2)} (nota antes del detractor: ${notaCalculada.toFixed(2)}; después: ${notaTrasDetractor.toFixed(2)})</p>`
-          : ""
-      }
-      ${
-        disparada
-          ? `<div class="aviso-caja">Condición mínima disparada: la nota tras el detractor era ${notaTrasDetractor.toFixed(2)} y se recorta a 4,9.</div>`
-          : ""
-      }
-    `;
+    valor.textContent = notaFinal.toFixed(2);
+    resultadoNota.classList.add("completa");
+    const partes = [];
+    if (detractorAcumulado > 0) partes.push(`${notaCalculada.toFixed(2)} − ${detractorAcumulado.toFixed(2)}`);
+    if (disparada) partes.push(`recortada a 4,9 (era ${notaTrasDetractor.toFixed(2)})`);
+    detalle.textContent = partes.join(" · ");
 
     ultimoCalculo = {
       escala,
@@ -366,30 +442,101 @@ export function conectarEventosCalificacion(container, criterios, meta, onCerrar
     container.querySelector("#exportar-csv-notas").disabled = Object.keys(alumnosGuardados(meta)).length === 0;
   }
 
-  container.addEventListener("input", actualizar);
-  container.addEventListener("change", actualizar);
-
-  container.querySelector("#reiniciar-calificacion").addEventListener("click", () => {
+  function limpiar() {
     nombreInput.value = "";
-    container.querySelectorAll('.fila-calificar input[type="radio"]').forEach((r) => (r.checked = false));
-    container.querySelectorAll(".select-banda").forEach((s) => (s.value = ""));
-    container.querySelectorAll(".input-ocurrencias").forEach((i) => (i.value = 0));
     detractorInput.value = 0;
+    for (const c of criterios) estados.set(c.id, estadoFilaVacio(c));
+    pintarTodo();
+    actualizar();
+  }
+
+  // --- clics en la cuadrícula ------------------------------------------
+  container.querySelector(".rubrica-calificar").addEventListener("click", (ev) => {
+    const celda = ev.target.closest(".celda-nivel");
+    if (celda) {
+      const id = celda.closest(".fila-calificar").dataset.criterioId;
+      const nivel = Number(celda.dataset.nivel);
+      const estado = estados.get(id);
+      // Volver a pinchar la celda elegida la desmarca; pinchar una celda con
+      // la matriz abierta cierra la matriz: el descriptor manda.
+      const mismo = estado.modo === "nivel" && estado.nivel === nivel;
+      estados.set(id, { modo: "nivel", nivel: mismo ? null : nivel });
+      pintarFila(id);
+      actualizar();
+      return;
+    }
+
+    const btnContar = ev.target.closest(".btn-contar");
+    if (btnContar) {
+      const id = btnContar.closest(".fila-calificar").dataset.criterioId;
+      const estado = estados.get(id);
+      estados.set(id, estadoFilaVacio(porId[id], estado.modo === "matriz" ? "nivel" : "matriz"));
+      pintarFila(id);
+      actualizar();
+      return;
+    }
+
+    const banda = ev.target.closest(".celda-banda");
+    if (banda) {
+      const id = banda.closest(".fila-matriz").dataset.criterioId;
+      const nombreComp = banda.closest(".componente-contar").dataset.comp;
+      const estado = estados.get(id);
+      const idx = Number(banda.dataset.idx);
+      estado.bandas[nombreComp] = estado.bandas[nombreComp] === idx ? null : idx;
+      pintarFila(id);
+      actualizar();
+      return;
+    }
+
+    const paso = ev.target.closest(".paso-ocurrencia");
+    if (paso) {
+      const id = paso.closest(".fila-matriz").dataset.criterioId;
+      const clave = paso.closest(".penalizacion-contar").dataset.clave;
+      const estado = estados.get(id);
+      estado.ocurrencias[clave] = Math.max(0, (estado.ocurrencias[clave] ?? 0) + Number(paso.dataset.paso));
+      pintarFila(id);
+      actualizar();
+    }
+  });
+
+  // Las celdas <td> no son botones nativos: Enter y espacio las activan.
+  container.querySelector(".rubrica-calificar").addEventListener("keydown", (ev) => {
+    if ((ev.key === "Enter" || ev.key === " ") && ev.target.classList.contains("celda-nivel")) {
+      ev.preventDefault();
+      ev.target.click();
+    }
+  });
+
+  // Escala, condición mínima y detractor cambian la nota sin tocar las filas.
+  escalaSelect.addEventListener("change", () => {
+    pintarTodo();
     actualizar();
   });
+  condicionCheckbox.addEventListener("change", actualizar);
+  detractorInput.addEventListener("input", actualizar);
+
+  container.querySelector("#reiniciar-calificacion").addEventListener("click", limpiar);
 
   container.querySelector("#guardar-alumno").addEventListener("click", () => {
     const nombre = nombreInput.value.trim();
     if (!nombre) {
+      aviso.innerHTML = `<div class="aviso-caja">Escribe el nombre del alumno antes de guardar.</div>`;
       nombreInput.focus();
       return;
     }
     if (!ultimoCalculo) {
-      resultadoNota.innerHTML = `<div class="aviso-caja">Completa todos los criterios antes de guardar.</div>`;
+      aviso.innerHTML = `<div class="aviso-caja">Faltan dimensiones por marcar: la nota no se guarda con huecos.</div>`;
       return;
     }
+    const nota = ultimoCalculo.notaFinal.toFixed(2);
     guardarAlumno(meta, nombre, ultimoCalculo);
     refrescarListaAlumnos();
+    limpiar();
+    aviso.innerHTML = `<p class="guardado-ok">Guardado: <strong>${escapeHtml(nombre)}</strong> — ${nota}. Siguiente alumno.</p>`;
+    // La cuadrícula vacía vuelve arriba, lista para el siguiente; el foco en
+    // el nombre se pone sin desplazar, para no pelearse con el scroll suave.
+    container.scrollIntoView({ behavior: "smooth", block: "start" });
+    nombreInput.focus({ preventScroll: true });
   });
 
   container.querySelector("#alumnos-guardados-contenedor").addEventListener("click", (ev) => {
@@ -409,12 +556,14 @@ export function conectarEventosCalificacion(container, criterios, meta, onCerrar
       escalaSelect.value = datos.escala;
       condicionCheckbox.checked = datos.condicionMinima;
       detractorInput.value = datos.detractorAcumulado ?? 0;
-      for (const fila of container.querySelectorAll(".fila-calificar")) {
-        const criterio = porId[fila.dataset.criterioId];
-        const resultado = datos.resultadosPorCriterio[criterio.id];
-        if (resultado) aplicarResultadoAFila(fila, criterio, resultado);
+      for (const c of criterios) {
+        estados.set(c.id, estadoDeResultado(c, datos.resultadosPorCriterio[c.id]));
       }
+      pintarTodo();
       actualizar();
+      // Al principio de la tarjeta, no a la barra: la barra es pegajosa y ya
+      // está a la vista, así que llevarla «a la vista» no desplaza nada.
+      container.scrollIntoView({ behavior: "smooth", block: "start" });
     }
   });
 
@@ -422,5 +571,6 @@ export function conectarEventosCalificacion(container, criterios, meta, onCerrar
 
   container.querySelector("#cerrar-calificacion").addEventListener("click", () => onCerrar());
 
+  pintarTodo();
   actualizar();
 }

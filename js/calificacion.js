@@ -187,3 +187,76 @@ export function calcularResultadoGuardado(criterios, datos) {
     disparada: !!datos.condicionMinima && algunObligatorioEnN1,
   };
 }
+
+// --- Estado de una fila de «Calificar» (§6.5, v1.54) -----------------------
+// La pantalla guarda por dimensión un estado de fila, no el ResultadoCriterio
+// directamente, porque una fila a medio marcar (dos bandas de tres, o la
+// matriz abierta sin nada elegido) no es un resultado y no debe entrar en el
+// cálculo. Estas dos funciones traducen en los dos sentidos y son puras para
+// poder probarse en Node sin DOM.
+//
+// EstadoFila =
+//   | { modo: "nivel",  nivel: 1|2|3|4|null }
+//   | { modo: "matriz", bandas: { [nombreComponente]: índiceDeBanda|null },
+//                       ocurrencias: { [clave]: number } }
+//
+// Desde la v1.54 un criterio con matriz admite los dos modos: el docente pincha
+// el descriptor (modo "nivel", un clic por fila, como en iDoceo) o abre «Contar»
+// y marca la banda de cada componente (modo "matriz", que aporta sus puntos
+// continuos por §6.2). Un criterio sin matriz solo admite "nivel".
+
+export function estadoFilaVacio(criterio, modo = "nivel") {
+  if (modo === "matriz" && criterio.matriz_cuantitativa) {
+    const m = criterio.matriz_cuantitativa;
+    return {
+      modo: "matriz",
+      bandas: Object.fromEntries(m.componentes.map((c) => [c.nombre, null])),
+      ocurrencias: Object.fromEntries((m.penalizaciones ?? []).map((p) => [p.clave, 0])),
+    };
+  }
+  return { modo: "nivel", nivel: null };
+}
+
+// Devuelve el ResultadoCriterio de una fila, o null si todavía falta algo por
+// marcar: una nota no se calcula con huecos rellenados a ciegas.
+export function resultadoDeFila(criterio, estado) {
+  if (!estado) return null;
+  if (estado.modo === "matriz") {
+    const m = criterio.matriz_cuantitativa;
+    if (!m) return null;
+    const bandasElegidas = {};
+    for (const comp of m.componentes) {
+      const idx = estado.bandas?.[comp.nombre];
+      if (idx === null || idx === undefined || !comp.bandas[idx]) return null;
+      bandasElegidas[comp.nombre] = comp.bandas[idx].puntos;
+    }
+    const ocurrenciasPenalizacion = {};
+    for (const pen of m.penalizaciones ?? []) {
+      ocurrenciasPenalizacion[pen.clave] = Math.max(0, Number(estado.ocurrencias?.[pen.clave]) || 0);
+    }
+    return { tipo: "matriz", bandasElegidas, ocurrenciasPenalizacion };
+  }
+  if (estado.nivel === null || estado.nivel === undefined) return null;
+  return { tipo: "nivel", nivel: estado.nivel };
+}
+
+// Inverso de resultadoDeFila: recompone el estado de fila desde un resultado
+// guardado, para «Cargar» a un alumno. Una banda guardada que ya no exista en
+// la matriz (el pack cambió) queda sin marcar, no rompe.
+export function estadoDeResultado(criterio, resultado) {
+  if (!resultado) return estadoFilaVacio(criterio);
+  if (resultado.tipo === "matriz" && criterio.matriz_cuantitativa) {
+    const estado = estadoFilaVacio(criterio, "matriz");
+    for (const comp of criterio.matriz_cuantitativa.componentes) {
+      const puntos = resultado.bandasElegidas?.[comp.nombre];
+      const idx = comp.bandas.findIndex((b) => b.puntos === puntos);
+      estado.bandas[comp.nombre] = idx >= 0 ? idx : null;
+    }
+    for (const clave of Object.keys(estado.ocurrencias)) {
+      estado.ocurrencias[clave] = resultado.ocurrenciasPenalizacion?.[clave] ?? 0;
+    }
+    return estado;
+  }
+  if (resultado.tipo === "nivel") return { modo: "nivel", nivel: resultado.nivel };
+  return estadoFilaVacio(criterio);
+}

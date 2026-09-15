@@ -486,11 +486,17 @@ def construir(d: dict) -> Guia:
     g.tabla(["N" + str(n) + " · " + niveles["nombres"][str(n)] for n in orden],
             [[bandas[n] for n in orden]], centrar_desde=0)
     g.h2("Qué puedes hacer en esa pantalla")
+    g.p("La pantalla es la misma tabla de la rúbrica —dimensiones por filas, cuatro niveles por "
+        "columnas—, como en iDoceo: pinchas la celda del descriptor que alcanza el alumno y la "
+        "nota, en una barra fija arriba, se recalcula al instante. Un clic por fila; no hay que "
+        "desplazarse para verla.")
     g.puntos([
-        "**Elegir el nivel de cada dimensión** leyendo su descriptor, o —en las dimensiones que "
-        "traen matriz contable— marcar directamente la banda de cada componente: «3,0 puntos si "
-        "emplea cuatro o más tipos de marcador; 2,0 si emplea dos o tres». Eso se cuenta, no se "
-        "estima.",
+        "**Pinchar el descriptor de cada dimensión**, o —en las dimensiones que traen matriz "
+        "contable— pulsar «Contar» y marcar la banda de cada componente, que se despliegan dentro "
+        "de la misma fila: «3,0 puntos si emplea cuatro o más tipos de marcador; 2,0 si emplea "
+        "dos o tres». Eso se cuenta, no se estima. Las dos vías valen: cuenta cuando la nota "
+        "importe y pincha cuando baste el nivel. Volver a pinchar una celda la desmarca, y "
+        "pinchar un descriptor con la matriz abierta la cierra.",
         "**Marcar las faltas por tramos.** Las bandas de ortografía no están escritas en faltas "
         "absolutas: se recortan contra la longitud esperada del texto, así que las mismas seis "
         "faltas no pesan igual en un resumen breve que en un texto largo. Son cinco tramos, y "
@@ -503,9 +509,10 @@ def construir(d: dict) -> Guia:
         "**Elegir escala**: equilibrada (2,5 · 5 · 7,5 · 10), que es la de por defecto y evita el "
         "cero a quien ha producido algo aunque sea flojo, o exigente (0 · 5 · 7,5 · 10), que "
         "reserva el cero al trabajo no hecho.",
-        "**Guardar alumno por alumno.** Las calificaciones se quedan en tu propio equipo, "
-        "agrupadas por actividad: puedes corregir treinta exámenes en tres tardes sin perder "
-        "nada, y borrarlas cuando quieras.",
+        "**Guardar alumno por alumno.** «Guardar y pasar al siguiente» archiva la nota, vacía "
+        "la cuadrícula y deja el cursor en el nombre del siguiente. Las calificaciones se "
+        "quedan en tu propio equipo, agrupadas por actividad: puedes corregir treinta exámenes "
+        "en tres tardes sin perder nada, cargar a uno para retocarlo y borrarlas cuando quieras.",
         "**Exportar las notas en «.csv»** con el botón que hay junto a la lista de alumnos "
         "guardados (apartado 8).",
     ])
@@ -651,8 +658,8 @@ def construir(d: dict) -> Guia:
           "Corriges apartado por apartado con su puntuación máxima delante, y aplicas —si "
           "procede— el descuento de ortografía y presentación, que tiene tope de 2 puntos y está "
           "impreso en la ficha.",
-          "Pulsas «Calificar», marcas las bandas contables de cada componente y guardas al alumno "
-          "por su nombre."],
+          "Pulsas «Calificar», abres «Contar» en las dimensiones con matriz, marcas la banda de "
+          "cada componente y guardas al alumno por su nombre."],
          "Una nota sobre 10 con su desglose: qué nivel en cada dimensión, cuántos puntos aporta "
          "cada una y qué se descontó. Todo lo que necesitas para explicarla en dos minutos."),
         ("Caso 5 · Un trabajo de investigación en 4.º de ESO que acaba en tu cuaderno de iDoceo",

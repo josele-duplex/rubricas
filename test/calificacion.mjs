@@ -13,6 +13,9 @@ import {
   calcularNota,
   puntosYNivelDe,
   calcularResultadoGuardado,
+  estadoFilaVacio,
+  resultadoDeFila,
+  estadoDeResultado,
 } from "../js/calificacion.js";
 
 let pasados = 0;
@@ -394,6 +397,72 @@ caso("calcularResultadoGuardado: sin detractorAcumulado en los datos guardados s
   const { notaFinal, detractorAcumulado } = calcularResultadoGuardado(criterios, datos);
   assertIgual(detractorAcumulado, 0, "sin el campo, debería asumirse 0");
   assertIgual(notaFinal, 10, "sin detractor, la nota final debería ser 10");
+});
+
+// --- estado de fila de «Calificar» (v1.54) ---------------------------------
+const criterioConMatriz = {
+  id: "cm",
+  matriz_cuantitativa: {
+    total: 10,
+    componentes: [
+      { nombre: "A", max: 6, bandas: [{ puntos: 6, condicion: "x" }, { puntos: 3, condicion: "y" }, { puntos: 0, condicion: "z" }] },
+      { nombre: "B", max: 4, bandas: [{ puntos: 4, condicion: "x" }, { puntos: 0, condicion: "z" }] },
+    ],
+    penalizaciones: [{ clave: "p", por: "cosa", puntos: -0.5, tope: -1 }],
+  },
+};
+const criterioSinMatriz = { id: "sm" };
+
+caso("resultadoDeFila: una fila sin marcar no produce resultado", () => {
+  assertIgual(resultadoDeFila(criterioSinMatriz, estadoFilaVacio(criterioSinMatriz)), null, "nivel null → null");
+  assertIgual(resultadoDeFila(criterioConMatriz, estadoFilaVacio(criterioConMatriz, "matriz")), null, "matriz vacía → null");
+});
+
+caso("resultadoDeFila: pinchar el descriptor vale también en una fila con matriz", () => {
+  const r = resultadoDeFila(criterioConMatriz, { modo: "nivel", nivel: 3 });
+  assertIgual(r.tipo, "nivel", "el modo nivel produce tipo nivel aunque el criterio tenga matriz");
+  assertIgual(r.nivel, 3, "conserva el nivel");
+});
+
+caso("resultadoDeFila: la matriz a medias no cuenta; completa, traduce índices a puntos", () => {
+  const estado = estadoFilaVacio(criterioConMatriz, "matriz");
+  estado.bandas.A = 1;
+  assertIgual(resultadoDeFila(criterioConMatriz, estado), null, "falta B → null");
+  estado.bandas.B = 0;
+  estado.ocurrencias.p = 3;
+  const r = resultadoDeFila(criterioConMatriz, estado);
+  assertIgual(r.tipo, "matriz", "tipo matriz");
+  assertIgual(r.bandasElegidas.A, 3, "índice 1 de A son 3 puntos");
+  assertIgual(r.bandasElegidas.B, 4, "índice 0 de B son 4 puntos");
+  assertIgual(r.ocurrenciasPenalizacion.p, 3, "las ocurrencias pasan tal cual");
+  assertIgual(puntosYNivelDe(criterioConMatriz, r, "equilibrada").puntos, 6, "3 + 4 − min(1,5; 1) = 6");
+});
+
+caso("resultadoDeFila: un modo matriz sobre un criterio sin matriz no produce nada", () => {
+  assertIgual(resultadoDeFila(criterioSinMatriz, { modo: "matriz", bandas: {}, ocurrencias: {} }), null, "→ null");
+});
+
+caso("estadoDeResultado: ida y vuelta con un resultado de matriz guardado", () => {
+  const guardado = { tipo: "matriz", bandasElegidas: { A: 0, B: 4 }, ocurrenciasPenalizacion: { p: 2 } };
+  const estado = estadoDeResultado(criterioConMatriz, guardado);
+  assertIgual(estado.modo, "matriz", "modo matriz");
+  assertIgual(estado.bandas.A, 2, "0 puntos de A es el índice 2");
+  assertIgual(estado.bandas.B, 0, "4 puntos de B es el índice 0");
+  assertIgual(estado.ocurrencias.p, 2, "ocurrencias recuperadas");
+  const otraVez = resultadoDeFila(criterioConMatriz, estado);
+  assertIgual(JSON.stringify(otraVez), JSON.stringify(guardado), "la vuelta reproduce lo guardado");
+});
+
+caso("estadoDeResultado: una banda que ya no existe en el pack queda sin marcar", () => {
+  const estado = estadoDeResultado(criterioConMatriz, { tipo: "matriz", bandasElegidas: { A: 2.5, B: 4 } });
+  assertIgual(estado.bandas.A, null, "2,5 no es banda de A → null");
+  assertIgual(resultadoDeFila(criterioConMatriz, estado), null, "y la fila queda incompleta, no rota");
+});
+
+caso("estadoDeResultado: un nivel guardado vuelve como modo nivel, con o sin matriz", () => {
+  assertIgual(estadoDeResultado(criterioConMatriz, { tipo: "nivel", nivel: 2 }).nivel, 2, "con matriz");
+  assertIgual(estadoDeResultado(criterioSinMatriz, { tipo: "nivel", nivel: 4 }).nivel, 4, "sin matriz");
+  assertIgual(estadoDeResultado(criterioSinMatriz, null).nivel, null, "sin resultado → vacío");
 });
 
 // --- resumen -------------------------------------------------------------

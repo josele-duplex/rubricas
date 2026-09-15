@@ -420,8 +420,9 @@ main {
   .cargar-alumno, .eliminar-alumno { min-height: 40px; padding: 0.4rem 0.8rem; }
   .checkbox-dimension,
   .opcion-checkbox input,
-  ul.lista-cotejo input[type="checkbox"],
-  .opcion-nivel input { width: 22px; height: 22px; }
+  ul.lista-cotejo input[type="checkbox"] { width: 22px; height: 22px; }
+  .paso-ocurrencia { width: 2.5rem; height: 2.5rem; }
+  .btn-contar { min-height: 40px; }
   /* El área que abre un «¿por qué?» era el ancho del texto del resumen. */
   .microexplicacion summary { padding: 0.35rem 0; }
 }
@@ -843,11 +844,13 @@ ul.lista-cotejo input[type="checkbox"] { margin-top: 0.3rem; }
 #salud-pack ul { padding-left: 1.2rem; }
 #salud-pack li { margin-bottom: 0.4rem; }
 
+/* Sin `margin: 0 auto`: <main> es una columna flex y un margen automático en
+   el eje transversal impide que la tarjeta se estire, así que se encogía al
+   ancho de su contenido —en un móvil, al ancho mínimo de la tabla de
+   Calificar— y desbordaba la página entera. El ancho ya lo acota <main>. */
 #modo-avanzado-contenedor, #calificacion-contenedor {
   position: relative;
   z-index: 1;
-  max-width: 900px;
-  margin: 0 auto;
   padding: 1.5rem 1rem;
 }
 #modo-avanzado-contenedor h2, #calificacion-contenedor h2 { margin-top: 0; }
@@ -897,19 +900,159 @@ ul.lista-cotejo input[type="checkbox"] { margin-top: 0.3rem; }
 
 .botones-modo-avanzado { display: flex; gap: 1rem; margin-top: 1.5rem; flex-wrap: wrap; }
 
-/* --- Calificar (§6.5) --------------------------------------------------- */
+/* --- Calificar (§6.5) ----------------------------------------------------
+   Cuadrícula al modo de iDoceo (v1.54): la tabla de la rúbrica con las
+   celdas pinchables y la nota fija en una barra que no se va al desplazarse.
+   Antes era una columna de tarjetas con desplegables y la nota al final. */
+.barra-calificar {
+  position: sticky;
+  top: 0;
+  z-index: 5;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  gap: 0.75rem 1.25rem;
+  padding: 0.75rem 0;
+  margin-bottom: 1rem;
+  background: var(--papel);
+  border-bottom: 1px solid var(--linea);
+}
+.campo-barra { display: flex; flex-direction: column; gap: 0.25rem; font-size: 0.75rem; color: var(--tinta-suave); }
+.campo-barra input {
+  padding: 0.45rem 0.6rem;
+  border: 1px solid var(--linea);
+  border-radius: var(--radio);
+  background: var(--papel);
+  color: var(--tinta);
+  font-family: inherit;
+  font-size: 1rem;
+}
+.campo-nombre { flex: 1 1 14rem; }
+.campo-detractor input { width: 5.5em; }
+.nota-viva {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto auto;
+  column-gap: 0.6rem;
+  align-items: baseline;
+  margin-left: auto;
+  padding: 0.35rem 0.9rem;
+  border-radius: var(--radio);
+  background: var(--fondo);
+}
+.nota-etiqueta { font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.06em; color: var(--tinta-suave); }
+.nota-valor { font-size: 1.9rem; line-height: 1; color: var(--tinta-suave); font-variant-numeric: tabular-nums; }
+.nota-viva.completa .nota-valor { color: var(--acento); }
+.nota-detalle { grid-column: 1 / -1; font-size: 0.75rem; color: var(--tinta-suave); min-height: 1.1em; }
+/* En un móvil la barra ocupaba tres filas: el nombre a ancho completo y,
+   debajo, el descuento y la nota en la misma línea. */
+@media (max-width: 620px) {
+  .barra-calificar { gap: 0.5rem 1rem; padding: 0.5rem 0; }
+  .campo-nombre { flex-basis: 100%; }
+  .nota-valor { font-size: 1.6rem; }
+}
+
+table.rubrica-calificar { font-size: 0.84rem; }
+table.rubrica-calificar td.celda-nivel {
+  cursor: pointer;
+  user-select: none;
+  -webkit-user-select: none;
+  -webkit-tap-highlight-color: transparent;
+  transition: background-color 0.12s, box-shadow 0.12s;
+}
+table.rubrica-calificar td.celda-nivel:hover,
+table.rubrica-calificar td.celda-nivel:focus-visible { box-shadow: inset 0 0 0 2px var(--linea-fuerte); outline: none; }
+table.rubrica-calificar td.celda-nivel.elegida.nivel-1 { background: var(--nivel-1-bg); color: var(--nivel-1-tx); }
+table.rubrica-calificar td.celda-nivel.elegida.nivel-2 { background: var(--nivel-2-bg); color: var(--nivel-2-tx); }
+table.rubrica-calificar td.celda-nivel.elegida.nivel-3 { background: var(--nivel-3-bg); color: var(--nivel-3-tx); }
+table.rubrica-calificar td.celda-nivel.elegida.nivel-4 { background: var(--nivel-4-bg); color: var(--nivel-4-tx); }
+table.rubrica-calificar td.celda-nivel.elegida { box-shadow: inset 0 0 0 3px currentColor; font-weight: 600; }
+/* Nivel que sale de la matriz: se señala, pero no como si se hubiera pinchado. */
+table.rubrica-calificar td.celda-nivel.calculada { box-shadow: inset 0 0 0 2px var(--linea-fuerte); }
+table.rubrica-calificar td.celda-nivel.calculada.nivel-1 { background: var(--nivel-1-bg); color: var(--nivel-1-tx); }
+table.rubrica-calificar td.celda-nivel.calculada.nivel-2 { background: var(--nivel-2-bg); color: var(--nivel-2-tx); }
+table.rubrica-calificar td.celda-nivel.calculada.nivel-3 { background: var(--nivel-3-bg); color: var(--nivel-3-tx); }
+table.rubrica-calificar td.celda-nivel.calculada.nivel-4 { background: var(--nivel-4-bg); color: var(--nivel-4-tx); }
+
+.resultado-criterio {
+  display: block;
+  margin-top: 0.4rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: var(--acento);
+  min-height: 1.1em;
+}
+.btn-contar {
+  cursor: pointer;
+  margin-top: 0.5rem;
+  padding: 0.3rem 0.6rem;
+  font-size: 0.75rem;
+  background: transparent;
+  border: 1px solid var(--linea-fuerte);
+  border-radius: var(--radio);
+  color: var(--tinta);
+}
+.btn-contar[aria-expanded="true"] { background: var(--acento-suave); border-color: var(--acento); color: var(--acento); }
+
+/* Fila desplegada de la matriz: los componentes y sus bandas, también celdas. */
+table.rubrica-calificar tr.fila-matriz td { background: var(--fondo); padding: 0.75rem; }
+.matriz-contar-ayuda { margin: 0 0 0.6rem; font-size: 0.78rem; color: var(--tinta-suave); font-style: italic; }
+.componente-contar { margin-bottom: 0.6rem; }
+.componente-contar:last-child { margin-bottom: 0; }
+.componente-cabecera { display: flex; align-items: center; gap: 0.4rem; font-weight: 600; font-size: 0.82rem; margin-bottom: 0.35rem; }
+.bandas-contar { display: flex; flex-wrap: wrap; gap: 0.4rem; }
+.celda-banda {
+  text-transform: none;
+  letter-spacing: normal;
+  flex: 1 1 10rem;
+  display: flex;
+  align-items: flex-start;
+  gap: 0.5rem;
+  text-align: left;
+  padding: 0.45rem 0.6rem;
+  font-size: 0.8rem;
+  font-weight: 400;
+  background: var(--papel);
+  border: 1px solid var(--linea);
+  border-radius: var(--radio);
+  color: var(--tinta);
+  cursor: pointer;
+}
+.celda-banda strong { min-width: 1.6em; font-variant-numeric: tabular-nums; }
+.celda-banda:hover { border-color: var(--linea-fuerte); }
+.celda-banda.elegida { background: var(--acento-suave); border-color: var(--acento); color: var(--acento); box-shadow: inset 0 0 0 1px var(--acento); }
+.penalizaciones-contar { margin-top: 0.75rem; padding-top: 0.6rem; border-top: 1px dashed var(--linea-fuerte); }
+.penalizacion-contar { display: flex; align-items: center; justify-content: space-between; gap: 1rem; font-size: 0.8rem; margin-bottom: 0.4rem; }
+.penalizacion-contar:last-child { margin-bottom: 0; }
+.contador { display: inline-flex; align-items: center; gap: 0.2rem; }
+.paso-ocurrencia {
+  cursor: pointer;
+  width: 2rem;
+  height: 2rem;
+  padding: 0;
+  font-size: 1.1rem;
+  line-height: 1;
+  background: var(--papel);
+  border: 1px solid var(--linea-fuerte);
+  border-radius: var(--radio);
+  color: var(--tinta);
+}
+.ocurrencias-valor { min-width: 2em; text-align: center; font-weight: 600; font-variant-numeric: tabular-nums; }
+
+.aviso-calificar { min-height: 0; }
+.aviso-calificar .aviso-caja { margin-top: 1rem; }
+.guardado-ok { margin: 1rem 0 0; color: var(--tinta-suave); }
+.guardado-ok strong { color: var(--acento); }
+
+.opciones-calculo { margin-top: 1.5rem; }
+.opciones-calculo > summary { cursor: pointer; font-size: 0.85rem; color: var(--tinta-suave); }
 .config-calificacion {
+  margin-top: 0.75rem;
   border: 1px solid var(--linea);
   border-radius: var(--radio);
   padding: 1rem;
-  margin-bottom: 1.5rem;
 }
-.config-calificacion select,
-.config-calificacion input[type="text"],
-.config-calificacion input[type="number"] {
-  margin-bottom: 0.75rem;
-}
-.config-calificacion input[type="number"] { width: 5em; }
+.config-calificacion select { margin-bottom: 0.75rem; }
 .opcion-checkbox {
   display: flex;
   align-items: center;
@@ -919,66 +1062,6 @@ ul.lista-cotejo input[type="checkbox"] { margin-top: 0.3rem; }
   cursor: pointer;
 }
 .opcion-checkbox input { width: 18px; height: 18px; cursor: pointer; margin: 0; accent-color: var(--acento); }
-
-.criterios-calificar { display: flex; flex-direction: column; gap: 1rem; }
-
-.fila-calificar {
-  border: 1px solid var(--linea);
-  border-radius: var(--radio);
-  padding: 1rem;
-}
-.fila-calificar .fila-encabezado { display: flex; align-items: center; gap: 0.6rem; margin-bottom: 0.75rem; }
-.fila-calificar .dimension-nombre { flex: 1; }
-
-.componente-matriz { margin-bottom: 0.75rem; }
-.componente-matriz:last-child { margin-bottom: 0; }
-.componente-matriz label,
-.penalizacion-matriz label { display: flex; align-items: center; gap: 0.4rem; margin-bottom: 0.25rem; }
-
-.penalizaciones-matriz {
-  margin-top: 0.75rem;
-  padding-top: 0.75rem;
-  border-top: 1px dashed var(--linea);
-}
-.penalizacion-matriz { display: flex; align-items: center; justify-content: space-between; gap: 1rem; margin-bottom: 0.5rem; }
-.penalizacion-matriz label { flex: 1; font-size: 0.9rem; margin-bottom: 0; }
-.penalizacion-matriz .input-ocurrencias { width: 4.5rem; }
-.input-ocurrencias {
-  padding: 0.3rem 0.5rem;
-  border: 1px solid var(--linea);
-  border-radius: var(--radio);
-  background: var(--papel);
-  color: var(--tinta);
-  font-family: inherit;
-}
-
-.niveles-calificar { display: flex; flex-direction: column; gap: 0.5rem; }
-.opcion-nivel {
-  display: flex;
-  align-items: flex-start;
-  gap: 0.5rem;
-  font-size: 0.9rem;
-  font-weight: 400;
-  color: var(--tinta);
-  cursor: pointer;
-}
-.opcion-nivel input { margin-top: 0.2rem; cursor: pointer; accent-color: var(--acento); }
-
-.resultado-criterio {
-  margin: 0.75rem 0 0;
-  font-size: 0.85rem;
-  color: var(--tinta-suave);
-  min-height: 1.2em;
-}
-
-.resultado-nota {
-  margin-top: 1.5rem;
-  padding: 1rem;
-  background: var(--fondo);
-  border-radius: var(--radio);
-}
-.nota-final { margin: 0; font-size: 1.3rem; }
-.nota-final strong { color: var(--acento); }
 
 .alumnos-guardados-bloque {
   margin-top: 2rem;
