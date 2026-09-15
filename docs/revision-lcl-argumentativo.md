@@ -1,6 +1,6 @@
 # Revisión del pack: Texto argumentativo escrito — Región de Murcia
 
-**Pack** `pack-lcl-argumentativo.json` · versión 0.6.0 · 30 criterios · 120 descriptores · 25 matrices cuantitativas
+**Pack** `pack-lcl-argumentativo.json` · versión 0.7.0 · 30 criterios · 120 descriptores · 25 matrices cuantitativas
 
 > Documento para validación docente, generado desde el JSON. No se edita a mano.
 > Al leer, mira sobre todo tres cosas: si el nivel N4 es alcanzable en ese curso,
@@ -270,7 +270,7 @@
 |---|---|---|
 | Apoyo de los argumentos en las fuentes | 4 | **4** — Cada argumento se apoya en un dato o ejemplo tomado de las fuentes<br>**3** — Al menos un argumento se apoya en un dato de fuente; el resto, en la experiencia propia<br>**2** — Los datos de las fuentes aparecen sueltos, sin ligarse a ningún argumento<br>**1** — Un solo dato procede de una fuente y aparece suelto<br>**0** — Ningún dato procede de una fuente |
 | Atribución de los datos | 4 | **4** — Indica el origen de cada dato tomado de una fuente<br>**3** — Indica las fuentes al final, sin ligar cada dato a la suya<br>**2** — Menciona alguna fuente de pasada, sin sistema<br>**1** — Nombra una fuente una sola vez, al margen de los datos<br>**0** — No indica de dónde procede ningún dato |
-| Distinción entre dato y opinión | 2 | **2** — Distingue los datos comprobables de las opiniones de la fuente y apoya los argumentos en los datos<br>**1.5** — Distingue los datos comprobables de las opiniones de la fuente y apoya algún argumento en una opinión<br>**1** — Emplea datos y opiniones de la fuente con el mismo valor de prueba<br>**0.5** — Traslada algún pasaje de la fuente y reformula el resto con palabras propias<br>**0** — Traslada pasajes de la fuente sin distinguir ni reformular |
+| Reformulación de la fuente y distinción entre dato y opinión | 2 | **2** — Distingue los datos comprobables de las opiniones de la fuente y apoya los argumentos en los datos<br>**1.5** — Distingue los datos comprobables de las opiniones de la fuente y apoya algún argumento en una opinión<br>**1** — Emplea datos y opiniones de la fuente con el mismo valor de prueba<br>**0.5** — Traslada algún pasaje de la fuente y reformula el resto con palabras propias<br>**0** — Traslada pasajes de la fuente sin distinguir ni reformular |
 
 ---
 

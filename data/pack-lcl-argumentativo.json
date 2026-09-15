@@ -2,7 +2,7 @@
   "pack_id": "lcl-murcia-argumentativo",
   "materia": "LCL",
   "etiqueta": "Texto argumentativo escrito — Región de Murcia",
-  "version": "0.6.0",
+  "version": "0.7.0",
   "normativa": {
     "estatal": [
       "RD 217/2022, de 29 de marzo (ESO)",
@@ -1524,7 +1524,7 @@
             ]
           },
           {
-            "nombre": "Distinción entre dato y opinión",
+            "nombre": "Reformulación de la fuente y distinción entre dato y opinión",
             "max": 2,
             "bandas": [
               {

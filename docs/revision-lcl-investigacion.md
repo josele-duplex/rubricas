@@ -1,6 +1,6 @@
 # Revisión del pack: Trabajo de investigación multimodal — Región de Murcia
 
-**Pack** `pack-lcl-investigacion.json` · versión 0.6.0 · 27 criterios · 108 descriptores · 22 matrices cuantitativas
+**Pack** `pack-lcl-investigacion.json` · versión 0.7.0 · 27 criterios · 108 descriptores · 22 matrices cuantitativas
 
 > Documento para validación docente, generado desde el JSON. No se edita a mano.
 > Al leer, mira sobre todo tres cosas: si el nivel N4 es alcanzable en ese curso,
@@ -411,7 +411,7 @@
 
 | Componente | Máx. | Bandas |
 |---|---|---|
-| Apartados con título propio | 4 | **4** — Organiza el trabajo en 4 o más epígrafes jerarquizados<br>**3** — Organiza el trabajo en 3 epígrafes jerarquizados<br>**2** — Organiza el trabajo en 2 epígrafes<br>**1** — Separa el trabajo en 2 bloques sin epígrafe<br>**0** — El trabajo presenta la información en un bloque único |
+| Jerarquización de los epígrafes | 4 | **4** — Organiza el trabajo en 4 o más epígrafes jerarquizados<br>**3** — Organiza el trabajo en 3 epígrafes jerarquizados<br>**2** — Organiza el trabajo en 2 epígrafes<br>**1** — Separa el trabajo en 2 bloques sin epígrafe<br>**0** — El trabajo presenta la información en un bloque único |
 | Reformulación de lo tomado de las fuentes | 4 | **4** — Reformula con palabras propias todos los fragmentos tomados de las fuentes<br>**3** — Deja 1 fragmento con la redacción del original<br>**2** — Deja de 2 a 3 fragmentos con la redacción del original<br>**1** — Deja de 4 a 6 fragmentos con la redacción del original<br>**0** — El trabajo reproduce las fuentes párrafo a párrafo: 7 o más fragmentos con la redacción del original |
 | Enlace entre apartados | 2 | **2** — Enlaza los epígrafes con conectores de orden y de contraste<br>**1.5** — Enlaza los epígrafes con conectores de orden, sin ninguno de contraste<br>**1** — Enlaza 1 o 2 epígrafes y yuxtapone los demás<br>**0.5** — Marca el paso de un epígrafe a otro con el título, sin ningún conector<br>**0** — El trabajo yuxtapone los epígrafes |
 
@@ -546,7 +546,7 @@
 
 | Componente | Máx. | Bandas |
 |---|---|---|
-| Apartados con título propio | 4 | **4** — Organiza el trabajo en 5 o más epígrafes jerarquizados<br>**3** — Organiza el trabajo en 4 epígrafes jerarquizados<br>**2** — Organiza el trabajo en 2 o 3 epígrafes<br>**1** — Separa el trabajo en 2 bloques sin epígrafe<br>**0** — El trabajo presenta la información en un bloque único |
+| Jerarquización de los epígrafes | 4 | **4** — Organiza el trabajo en 5 o más epígrafes jerarquizados<br>**3** — Organiza el trabajo en 4 epígrafes jerarquizados<br>**2** — Organiza el trabajo en 2 o 3 epígrafes<br>**1** — Separa el trabajo en 2 bloques sin epígrafe<br>**0** — El trabajo presenta la información en un bloque único |
 | Reformulación de lo tomado de las fuentes | 4 | **4** — Reformula con palabras propias todos los fragmentos tomados de las fuentes<br>**3** — Deja 1 fragmento con la redacción del original<br>**2** — Deja 2 fragmentos con la redacción del original<br>**1** — Deja de 3 a 6 fragmentos con la redacción del original<br>**0** — El trabajo reproduce las fuentes párrafo a párrafo: 7 o más fragmentos con la redacción del original |
 | Enlace entre apartados | 2 | **2** — Enlaza los epígrafes y gradúa el paso de lo general a lo particular<br>**1.5** — Enlaza los epígrafes y mantiene el mismo grado de generalidad en todo el trabajo<br>**1** — Enlaza 1 o 2 epígrafes y yuxtapone los demás<br>**0.5** — Marca el paso de un epígrafe a otro con el título, sin ningún conector<br>**0** — El trabajo yuxtapone los epígrafes |
 

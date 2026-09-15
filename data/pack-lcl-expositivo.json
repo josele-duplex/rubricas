@@ -2,7 +2,7 @@
   "pack_id": "lcl-murcia-expositivo",
   "materia": "LCL",
   "etiqueta": "Texto expositivo escrito — Región de Murcia",
-  "version": "0.6.0",
+  "version": "0.7.0",
   "normativa": {
     "estatal": [
       "RD 217/2022, de 29 de marzo (ESO)"
@@ -3039,7 +3039,7 @@
             ]
           },
           {
-            "nombre": "Valoración de la fiabilidad de las fuentes",
+            "nombre": "Atribución de los datos y valoración de su fiabilidad",
             "max": 4,
             "bandas": [
               {

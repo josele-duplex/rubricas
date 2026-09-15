@@ -1,6 +1,6 @@
 # Revisión del pack: Texto expositivo escrito — Región de Murcia
 
-**Pack** `pack-lcl-expositivo.json` · versión 0.6.0 · 36 criterios · 144 descriptores · 30 matrices cuantitativas
+**Pack** `pack-lcl-expositivo.json` · versión 0.7.0 · 36 criterios · 144 descriptores · 30 matrices cuantitativas
 
 > Documento para validación docente, generado desde el JSON. No se edita a mano.
 > Al leer, mira sobre todo tres cosas: si el nivel N4 es alcanzable en ese curso,
@@ -535,7 +535,7 @@
 | Componente | Máx. | Bandas |
 |---|---|---|
 | Número de fuentes contrastadas | 4 | **4** — Emplea 3 o más fuentes distintas, coteja entre ellas y señala en qué difieren o coinciden<br>**3** — Emplea 2 fuentes distintas y coteja entre ellas al menos un dato<br>**2** — Emplea 2 fuentes, pero cada una sostiene una parte distinta del texto sin cotejo<br>**1** — Emplea una fuente y nombra otra sin tomar de ella ningún dato<br>**0** — Emplea una sola fuente |
-| Valoración de la fiabilidad de las fuentes | 4 | **4** — Valora la fiabilidad de al menos una fuente a partir de su autoría, su fecha o su propósito, y lo explicita en el texto<br>**3** — Indica el origen de cada dato tomado de una fuente, sin valorar su fiabilidad<br>**2** — Indica las fuentes al final, sin ligar cada dato a la suya<br>**1** — Nombra una fuente de pasada, sin sistema<br>**0** — No indica de dónde procede ningún dato |
+| Atribución de los datos y valoración de su fiabilidad | 4 | **4** — Valora la fiabilidad de al menos una fuente a partir de su autoría, su fecha o su propósito, y lo explicita en el texto<br>**3** — Indica el origen de cada dato tomado de una fuente, sin valorar su fiabilidad<br>**2** — Indica las fuentes al final, sin ligar cada dato a la suya<br>**1** — Nombra una fuente de pasada, sin sistema<br>**0** — No indica de dónde procede ningún dato |
 | Punto de vista crítico propio | 2 | **2** — Integra un punto de vista propio sobre el tema, distinto de la suma de las fuentes, y lo sostiene con los datos contrastados<br>**1.5** — Integra un punto de vista propio sobre el tema y lo sostiene con un solo dato de las fuentes<br>**1** — Explica con palabras propias la información de las fuentes, sin aportar una valoración propia<br>**0.5** — Reformula la información de las fuentes en la mitad del texto y copia el resto<br>**0** — Traslada pasajes literales de las fuentes sin reformular ni valorar |
 
 ---
