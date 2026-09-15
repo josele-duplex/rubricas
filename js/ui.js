@@ -352,7 +352,7 @@ function renderListaCotejo(cotejo, meta) {
   return `
     ${renderCabeceraInstrumento(meta)}
     <ul class="lista-cotejo">${items}</ul>
-    ${cotejo.truncado ? `<p class="mensaje-vacio">Se muestran los 8 ítems de mayor prioridad; el resto queda fuera por el máximo recomendado (§7.2).</p>` : ""}
+    ${cotejo.truncado ? `<p class="mensaje-vacio">Se muestran los 8 ítems de mayor prioridad; el resto queda fuera por el máximo recomendado.</p>` : ""}
     ${microexplicacion("lista-cotejo")}
   `;
 }
@@ -584,7 +584,7 @@ export function renderSaludPack(container, informe) {
   if (informe.nErrores === 0 && informe.nAvisos === 0) {
     container.innerHTML = `
       <details>
-        <summary class="marca-ok">Salud del pack: sin incidencias (validador §10)</summary>
+        <summary class="marca-ok">Salud del pack: sin incidencias</summary>
         <p class="mensaje-vacio">Los descriptores, matrices y penalizaciones del pack cargado pasan las reglas automatizables del validador.</p>
         ${microexplicacion("salud-pack")}
       </details>

@@ -1107,7 +1107,7 @@ function comprobarTareaAplicable(criterios) {
         regla: "tarea_aplicable",
         severidad: REGLAS.tarea_aplicable.severidad,
         criterioId: "(pack)",
-        mensaje: `${curso} · ${tipoTarea}: la combinación se sostiene con solo ${lista.length} dimensión(es). §4.3 la marcaría como incipiente: comprueba que el currículo del curso la ampara.`,
+        mensaje: `${curso} · ${tipoTarea}: la combinación se sostiene con solo ${lista.length} dimensión(es), lo que la deja como incipiente: comprueba que el currículo del curso la ampara.`,
       });
     }
     if (!lista.some((c) => c.prioridad === 1)) {

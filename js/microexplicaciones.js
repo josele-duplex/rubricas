@@ -116,7 +116,7 @@ export const MICROEXPLICACIONES = {
       "En un desarrollo largo o un comentario de texto, corregir de un vistazo pesa más que graduar cuatro " +
       "descriptores por apartado (Marco Teórico §5). Cada apartado reparte su peso en puntos " +
       "sobre 10; el detractor de ortografía y presentación es transversal a todo el texto y resta al " +
-      "final, con un tope de 2 puntos que no se puede superar aunque el texto acumule muchos fallos (§6.3).",
+      "final, con un tope de 2 puntos que no se puede superar aunque el texto acumule muchos fallos.",
   },
 
   "autoevaluacion": {
@@ -206,8 +206,8 @@ export const MICROEXPLICACIONES = {
   "detractor-estimacion": {
     titulo: "¿por qué se resta al final y no dentro de una dimensión?",
     texto:
-      "La ortografía y la presentación son transversales a todo el texto, no de una dimensión concreta " +
-      "(§6.3), así que se restan de la nota ya calculada, con un tope de 2 puntos que no se puede superar " +
+      "La ortografía y la presentación son transversales a todo el texto, no de una dimensión concreta, " +
+      "así que se restan de la nota ya calculada, con un tope de 2 puntos que no se puede superar " +
       "aunque el texto acumule muchos fallos. Se aplica antes que la condición mínima: si esta se dispara, " +
       "lo hace sobre la nota ya descontada, no al revés (orden fijado tras comprobar que da " +
       "notas distintas según el orden elegido).",

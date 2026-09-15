@@ -36,7 +36,7 @@
 
    Para forzar que los dispositivos ya instalados recojan un cambio grande de
    golpe, sube el número de VERSION. */
-const VERSION = 'v1';
+const VERSION = 'v2';
 const CACHE = `taller-rubricas-${VERSION}`;
 
 /* Solo entradas estables. `./` e `./index.html` son la misma página, pero el
@@ -94,8 +94,14 @@ self.addEventListener('fetch', (event) => {
   if (req.method !== 'GET') return;
   if (new URL(req.url).origin !== self.location.origin) return;
 
+  // `{ cache: 'reload' }` es lo que hace cierto el "SIEMPRE" de ahí arriba:
+  // sin él, `fetch(req)` puede resolverse contra la caché HTTP del propio
+  // navegador (por `Cache-Control`/heurística) sin llegar a pedir nada a la
+  // red, así que "red primero" nunca ocurría de verdad y el SW perpetuaba
+  // una copia vieja tanto en el navegador como en su propia caché de
+  // respaldo. Detectado probando en local con `python -m http.server`.
   event.respondWith(
-    fetch(req)
+    fetch(req, { cache: 'reload' })
       .then((res) => {
         // Las respuestas parciales (206) y las opacas no se pueden guardar:
         // meterlas en la caché rompe la entrada entera.
