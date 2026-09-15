@@ -1,6 +1,6 @@
 # Revisión del pack: Resumen de un texto — Región de Murcia
 
-**Pack** `pack-lcl-resumen.json` · versión 0.3.0 · 20 criterios · 80 descriptores · 20 matrices cuantitativas
+**Pack** `pack-lcl-resumen.json` · versión 0.4.0 · 20 criterios · 80 descriptores · 20 matrices cuantitativas
 
 > Documento para validación docente, generado desde el JSON. No se edita a mano.
 > Al leer, mira sobre todo tres cosas: si el nivel N4 es alcanzable en ese curso,
@@ -79,7 +79,7 @@
 |---|---|---|
 | Frases propias | 4 | **4** — Ninguna frase del resumen reproduce literalmente una frase del original<br>**3** — 1 frase literal del original<br>**2** — 2 frases literales del original<br>**1** — 3 o 4 frases literales del original<br>**0** — 5 o más frases literales, o el resumen encadena frases copiadas |
 | Sustitución léxica | 4 | **4** — Emplea sinónimos o términos generales en 3 o más puntos del resumen<br>**3** — Los emplea en 2 puntos<br>**2** — Los emplea en 1 punto<br>**1** — Cambia el orden de las palabras del original sin sustituir ninguna<br>**0** — Repite el léxico del original de principio a fin |
-| Ideas reunidas | 2 | **2** — Reúne en una frase propia ideas que el original reparte en 2 o más<br>**1.5** — Reúne ideas en 2 o 3 puntos del resumen<br>**1** — Reúne ideas en 1 punto del resumen<br>**0.5** — Une dos frases del original con una conjunción, sin reformularlas<br>**0** — Cada frase del resumen corresponde a una frase del original |
+| Ideas reunidas | 2 | **2** — Reúne ideas de 2 o más frases del original en una frase propia, en 2 o más puntos del resumen<br>**1.5** — Reúne ideas de 2 frases del original en una frase propia, en 1 punto del resumen<br>**1** — Reúne ideas de 2 frases del original en 1 punto del resumen, manteniendo el molde de las frases del original<br>**0.5** — Une dos frases del original con una conjunción, sin reformularlas<br>**0** — Cada frase del resumen corresponde a una frase del original |
 
 ### Redacción: texto continuo, objetivo y ajustado  ·  15%  ·  bloque B
 
@@ -197,7 +197,7 @@
 |---|---|---|
 | Frases propias | 4 | **4** — Ninguna frase del resumen reproduce literalmente una frase del original<br>**3** — 1 frase literal del original<br>**2** — 2 frases literales del original<br>**1** — 3 o 4 frases literales del original<br>**0** — 5 o más frases literales, o el resumen encadena frases copiadas |
 | Léxico propio | 2 | **2** — Emplea sinónimos, hiperónimos o términos generales en 4 o más puntos<br>**1.5** — Los emplea en 4 o más puntos y repite el término clave del original<br>**1** — Los emplea en 2 o 3 puntos<br>**0.5** — Los emplea en 1 punto<br>**0** — Repite el léxico del original de principio a fin |
-| Condensación | 4 | **4** — Reúne en una frase propia ideas que el original reparte en 3 o más<br>**3** — Reúne ideas de 2 frases del original<br>**2** — Reúne ideas en 1 punto del resumen<br>**1** — Reúne dos frases del original en una, copiando su redacción<br>**0** — Cada frase del resumen corresponde a una frase del original |
+| Condensación | 4 | **4** — Reúne en una frase propia ideas que el original reparte en 3 o más<br>**3** — Reúne ideas de 2 frases del original en una frase propia, en 2 o más puntos del resumen<br>**2** — Reúne ideas de 2 frases del original en una frase propia, en 1 punto del resumen<br>**1** — Reúne dos frases del original en una, copiando su redacción<br>**0** — Cada frase del resumen corresponde a una frase del original |
 
 ### Redacción: texto continuo, objetivo y ajustado  ·  15%  ·  bloque B
 

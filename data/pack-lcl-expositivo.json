@@ -2,7 +2,7 @@
   "pack_id": "lcl-murcia-expositivo",
   "materia": "LCL",
   "etiqueta": "Texto expositivo escrito — Región de Murcia",
-  "version": "0.5.0",
+  "version": "0.6.0",
   "normativa": {
     "estatal": [
       "RD 217/2022, de 29 de marzo (ESO)"
@@ -330,23 +330,23 @@
             "bandas": [
               {
                 "puntos": 2,
-                "condicion": "Sustituye por sinónimo o pronombre la palabra ya usada en la oración anterior"
+                "condicion": "Sin errores de referencia: sustituye por sinónimo o pronombre cada palabra ya usada en la oración anterior"
               },
               {
                 "puntos": 1.5,
-                "condicion": "Sustituye la palabra ya usada en la oración anterior y deja 1 repetición sin sustituir"
+                "condicion": "Hasta 1 repetición sin sustituir, teniendo sustituto evidente"
               },
               {
                 "puntos": 1,
-                "condicion": "Sustituye alguna repetición, pero deja 2 o 3 sin sustituir"
+                "condicion": "2 o 3 repeticiones sin sustituir, teniendo sustituto evidente"
               },
               {
                 "puntos": 0.5,
-                "condicion": "Sustituye la palabra repetida en un solo punto del texto"
+                "condicion": "4 o 5 repeticiones sin sustituir, con alguna sustituida en el resto del texto"
               },
               {
                 "puntos": 0,
-                "condicion": "Repite la misma palabra en oraciones seguidas a lo largo del texto"
+                "condicion": "6 o más repeticiones sin sustituir: repite la misma palabra en oraciones seguidas a lo largo del texto"
               }
             ]
           }
@@ -480,15 +480,15 @@
               },
               {
                 "puntos": 2,
-                "condicion": "Emplea 3 o más términos generales"
+                "condicion": "Emplea 3 o 4 términos generales"
               },
               {
                 "puntos": 1,
-                "condicion": "Emplea términos generales y alguna palabra propia del tema"
+                "condicion": "Emplea 5 o más términos generales, con alguna palabra propia del tema"
               },
               {
                 "puntos": 0,
-                "condicion": "El texto se sostiene sobre palabras comodín"
+                "condicion": "El texto se sostiene sobre palabras comodín, sin ninguna palabra propia del tema"
               }
             ]
           }
@@ -1099,23 +1099,23 @@
             "bandas": [
               {
                 "puntos": 4,
-                "condicion": "Sustituye por sinónimo, hiperónimo o pronombre la palabra ya usada en el párrafo anterior"
+                "condicion": "Sin errores de referencia: sustituye por sinónimo, hiperónimo o pronombre cada palabra ya usada en el párrafo anterior"
               },
               {
                 "puntos": 3,
-                "condicion": "Sustituye alguna repetición, pero deja 2 o 3 sin sustituir"
+                "condicion": "2 o 3 repeticiones sin sustituir, teniendo sustituto evidente"
               },
               {
                 "puntos": 2,
-                "condicion": "Repite la misma palabra en párrafos seguidos, teniendo sustituto evidente"
+                "condicion": "2 o 3 repeticiones sin sustituir, teniendo sustituto evidente"
               },
               {
                 "puntos": 1,
-                "condicion": "Sustituye la palabra repetida en 1 punto del texto"
+                "condicion": "4 o 5 repeticiones sin sustituir, con alguna sustituida en el resto del texto"
               },
               {
                 "puntos": 0,
-                "condicion": "Repite el mismo sustantivo a lo largo de todo el texto"
+                "condicion": "6 o más repeticiones sin sustituir: repite el mismo sustantivo a lo largo de todo el texto"
               }
             ]
           }
@@ -1253,11 +1253,11 @@
               },
               {
                 "puntos": 1,
-                "condicion": "Emplea términos generales y alguna palabra propia del tema"
+                "condicion": "Emplea 4 o más términos generales, con alguna palabra propia del tema"
               },
               {
                 "puntos": 0,
-                "condicion": "El texto se sostiene sobre palabras comodín"
+                "condicion": "El texto se sostiene sobre palabras comodín, sin ninguna palabra propia del tema"
               }
             ]
           }
@@ -1869,23 +1869,23 @@
             "bandas": [
               {
                 "puntos": 4,
-                "condicion": "Sustituye las repeticiones con sinónimos, hiperónimos o pronombres, y todos los referentes son recuperables"
+                "condicion": "Sin errores de referencia: sustituye las repeticiones con sinónimos, hiperónimos o pronombres, y cada referente se identifica sin releer"
               },
               {
                 "puntos": 3,
-                "condicion": "Sustituye la mayoría de las repeticiones; 1 referente exige releer para identificarlo"
+                "condicion": "Hasta 1 error de referencia: una repetición sin sustituir o un referente que exige releer"
               },
               {
                 "puntos": 2,
-                "condicion": "Repite la palabra clave 3 o más veces teniendo sustituto evidente en el contexto"
+                "condicion": "2 o 3 errores de referencia, entre repeticiones sin sustituir y referentes que exigen releer"
               },
               {
                 "puntos": 1,
-                "condicion": "Sustituye la palabra clave en 1 punto y la repite en el resto"
+                "condicion": "4 o 5 errores de referencia, con alguna sustitución en el resto del texto"
               },
               {
                 "puntos": 0,
-                "condicion": "Repite el mismo sustantivo en oraciones consecutivas a lo largo del texto"
+                "condicion": "4 o más errores de referencia: repite el mismo sustantivo en oraciones consecutivas a lo largo del texto"
               }
             ]
           }
@@ -2651,15 +2651,15 @@
               },
               {
                 "puntos": 1,
-                "condicion": "Sustituye la mayoría de las repeticiones; 1 referente exige releer para identificarlo"
+                "condicion": "Hasta 1 error de referencia: una repetición sin sustituir o un referente que exige releer"
               },
               {
                 "puntos": 0.5,
-                "condicion": "Repite la palabra clave 3 o más veces teniendo sustituto evidente"
+                "condicion": "2 o 3 errores de referencia, entre repeticiones sin sustituir y referentes que exigen releer"
               },
               {
                 "puntos": 0,
-                "condicion": "Repite el mismo sustantivo en oraciones consecutivas a lo largo del texto"
+                "condicion": "4 o más errores de referencia: repite el mismo sustantivo en oraciones consecutivas a lo largo del texto"
               }
             ]
           }
@@ -3425,15 +3425,15 @@
               },
               {
                 "puntos": 1,
-                "condicion": "Sustituye la mayoría de las repeticiones; 1 referente exige releer para identificarlo"
+                "condicion": "Hasta 1 error de referencia: una repetición sin sustituir o un referente que exige releer"
               },
               {
                 "puntos": 0.5,
-                "condicion": "Repite la palabra clave 3 o más veces teniendo sustituto evidente"
+                "condicion": "2 o 3 errores de referencia, entre repeticiones sin sustituir y referentes que exigen releer"
               },
               {
                 "puntos": 0,
-                "condicion": "Repite el mismo sustantivo en oraciones consecutivas a lo largo del texto"
+                "condicion": "4 o más errores de referencia: repite el mismo sustantivo en oraciones consecutivas a lo largo del texto"
               }
             ]
           }
@@ -4199,15 +4199,15 @@
               },
               {
                 "puntos": 1,
-                "condicion": "Sustituye la mayoría de las repeticiones; 1 referente exige releer para identificarlo"
+                "condicion": "Hasta 1 error de referencia: una repetición sin sustituir o un referente que exige releer"
               },
               {
                 "puntos": 0.5,
-                "condicion": "Repite la palabra clave 3 o más veces teniendo sustituto evidente"
+                "condicion": "2 o 3 errores de referencia, entre repeticiones sin sustituir y referentes que exigen releer"
               },
               {
                 "puntos": 0,
-                "condicion": "Repite el mismo sustantivo en oraciones consecutivas a lo largo del texto"
+                "condicion": "4 o más errores de referencia: repite el mismo sustantivo en oraciones consecutivas a lo largo del texto"
               }
             ]
           }

@@ -2,7 +2,7 @@
   "pack_id": "lcl-murcia-comentario",
   "materia": "LCL",
   "etiqueta": "Comentario de texto literario — Región de Murcia",
-  "version": "0.4.0",
+  "version": "0.5.0",
   "normativa": {
     "estatal": [
       "RD 217/2022, de 29 de marzo (ESO)",
@@ -478,15 +478,15 @@
               },
               {
                 "puntos": 2,
-                "condicion": "Emplea 3 o más términos de significado general"
+                "condicion": "Emplea 3 o 4 términos de significado general"
               },
               {
                 "puntos": 1,
-                "condicion": "Emplea términos de significado general y algún verbo preciso"
+                "condicion": "Emplea 5 o más términos de significado general, con algún verbo preciso (*describe*, *compara*)"
               },
               {
                 "puntos": 0,
-                "condicion": "El comentario se sostiene sobre palabras comodín"
+                "condicion": "El comentario se sostiene sobre palabras comodín, sin ningún verbo preciso"
               }
             ]
           }

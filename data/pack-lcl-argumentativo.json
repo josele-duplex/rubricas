@@ -2,7 +2,7 @@
   "pack_id": "lcl-murcia-argumentativo",
   "materia": "LCL",
   "etiqueta": "Texto argumentativo escrito — Región de Murcia",
-  "version": "0.5.0",
+  "version": "0.6.0",
   "normativa": {
     "estatal": [
       "RD 217/2022, de 29 de marzo (ESO)",
@@ -332,23 +332,23 @@
             "bandas": [
               {
                 "puntos": 4,
-                "condicion": "Sustituye por pronombre, sinónimo o hiperónimo la palabra ya usada en la oración anterior"
+                "condicion": "Sin errores de referencia: sustituye por pronombre, sinónimo o hiperónimo cada palabra ya usada en la oración anterior"
               },
               {
                 "puntos": 3,
-                "condicion": "Sustituye alguna repetición, pero deja 2 o 3 sin sustituir"
+                "condicion": "Hasta 1 repetición sin sustituir, teniendo sustituto evidente"
               },
               {
                 "puntos": 2,
-                "condicion": "Repite la misma palabra en oraciones seguidas, teniendo sustituto evidente"
+                "condicion": "2 o 3 repeticiones sin sustituir, teniendo sustituto evidente"
               },
               {
                 "puntos": 1,
-                "condicion": "Sustituye la palabra repetida en 1 punto del texto"
+                "condicion": "4 o 5 repeticiones sin sustituir, con alguna sustituida en el resto del texto"
               },
               {
                 "puntos": 0,
-                "condicion": "Repite el mismo sustantivo a lo largo de todo el texto"
+                "condicion": "6 o más repeticiones sin sustituir: repite el mismo sustantivo a lo largo de todo el texto"
               }
             ]
           }
@@ -1103,23 +1103,23 @@
             "bandas": [
               {
                 "puntos": 4,
-                "condicion": "Sustituye las repeticiones con sinónimos o pronombres, y todos los referentes son recuperables"
+                "condicion": "Sin errores de referencia: sustituye las repeticiones con sinónimos o pronombres, y cada referente se identifica sin releer"
               },
               {
                 "puntos": 3,
-                "condicion": "Sustituye la mayoría de las repeticiones; 1 referente exige releer para identificarlo"
+                "condicion": "Hasta 1 error de referencia: una repetición sin sustituir o un referente que exige releer"
               },
               {
                 "puntos": 2,
-                "condicion": "Repite la palabra clave 3 o más veces teniendo sustituto evidente en el contexto"
+                "condicion": "2 o 3 errores de referencia, entre repeticiones sin sustituir y referentes que exigen releer"
               },
               {
                 "puntos": 1,
-                "condicion": "Sustituye la palabra clave en 1 punto y la repite en el resto"
+                "condicion": "4 o 5 errores de referencia, con alguna sustitución en el resto del texto"
               },
               {
                 "puntos": 0,
-                "condicion": "Repite el mismo sustantivo en oraciones consecutivas a lo largo del texto"
+                "condicion": "4 o más errores de referencia: repite el mismo sustantivo en oraciones consecutivas a lo largo del texto"
               }
             ]
           }
@@ -1714,11 +1714,11 @@
               },
               {
                 "puntos": 2,
-                "condicion": "Menciona que existen otras posturas, sin exponer ninguna"
+                "condicion": "Menciona que existen otras posturas, sin nombrar ninguna"
               },
               {
                 "puntos": 1,
-                "condicion": "Enuncia una objeción y la descarta sin argumento"
+                "condicion": "Enuncia una objeción concreta y la descarta sin argumento"
               },
               {
                 "puntos": 0,
@@ -1883,15 +1883,15 @@
               },
               {
                 "puntos": 1,
-                "condicion": "Sustituye la mayoría de las repeticiones; 1 referente exige releer para identificarlo"
+                "condicion": "Hasta 1 error de referencia: una repetición sin sustituir o un referente que exige releer"
               },
               {
                 "puntos": 0.5,
-                "condicion": "Repite la palabra clave 3 o más veces teniendo sustituto evidente"
+                "condicion": "2 o 3 errores de referencia, entre repeticiones sin sustituir y referentes que exigen releer"
               },
               {
                 "puntos": 0,
-                "condicion": "Repite el mismo sustantivo en oraciones consecutivas a lo largo del texto"
+                "condicion": "4 o más errores de referencia: repite el mismo sustantivo en oraciones consecutivas a lo largo del texto"
               }
             ]
           }
@@ -2487,11 +2487,11 @@
               },
               {
                 "puntos": 2,
-                "condicion": "Menciona la existencia de otras posturas, sin exponer ninguna"
+                "condicion": "Menciona la existencia de otras posturas, sin nombrar ninguna"
               },
               {
                 "puntos": 1,
-                "condicion": "Nombra una postura contraria en una frase y sigue con la propia"
+                "condicion": "Nombra una postura contraria en una frase y sigue con la propia, sin rebatirla"
               },
               {
                 "puntos": 0,
@@ -2655,15 +2655,15 @@
               },
               {
                 "puntos": 1,
-                "condicion": "Sustituye la mayoría de las repeticiones; 1 referente exige releer para identificarlo"
+                "condicion": "Hasta 1 error de referencia: una repetición sin sustituir o un referente que exige releer"
               },
               {
                 "puntos": 0.5,
-                "condicion": "Repite la palabra clave 3 o más veces teniendo sustituto evidente"
+                "condicion": "2 o 3 errores de referencia, entre repeticiones sin sustituir y referentes que exigen releer"
               },
               {
                 "puntos": 0,
-                "condicion": "Repite el mismo sustantivo en oraciones consecutivas a lo largo del texto"
+                "condicion": "4 o más errores de referencia: repite el mismo sustantivo en oraciones consecutivas a lo largo del texto"
               }
             ]
           }
@@ -3257,11 +3257,11 @@
               },
               {
                 "puntos": 2,
-                "condicion": "Menciona la existencia de otras posturas, sin exponer ninguna"
+                "condicion": "Menciona la existencia de otras posturas, sin nombrar ninguna"
               },
               {
                 "puntos": 1,
-                "condicion": "Nombra una postura contraria en una frase y sigue con la propia"
+                "condicion": "Nombra una postura contraria en una frase y sigue con la propia, sin rebatirla"
               },
               {
                 "puntos": 0,
@@ -3425,15 +3425,15 @@
               },
               {
                 "puntos": 1,
-                "condicion": "Sustituye la mayoría de las repeticiones; 1 referente exige releer para identificarlo"
+                "condicion": "Hasta 1 error de referencia: una repetición sin sustituir o un referente que exige releer"
               },
               {
                 "puntos": 0.5,
-                "condicion": "Repite la palabra clave 3 o más veces teniendo sustituto evidente"
+                "condicion": "2 o 3 errores de referencia, entre repeticiones sin sustituir y referentes que exigen releer"
               },
               {
                 "puntos": 0,
-                "condicion": "Repite el mismo sustantivo en oraciones consecutivas a lo largo del texto"
+                "condicion": "4 o más errores de referencia: repite el mismo sustantivo en oraciones consecutivas a lo largo del texto"
               }
             ]
           }

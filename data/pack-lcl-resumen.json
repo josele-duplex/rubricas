@@ -2,7 +2,7 @@
   "pack_id": "lcl-murcia-resumen",
   "materia": "LCL",
   "etiqueta": "Resumen de un texto — Región de Murcia",
-  "version": "0.3.0",
+  "version": "0.4.0",
   "normativa": {
     "estatal": [
       "RD 217/2022, de 29 de marzo (ESO)",
@@ -441,15 +441,15 @@
             "bandas": [
               {
                 "puntos": 2,
-                "condicion": "Reúne en una frase propia ideas que el original reparte en 2 o más"
+                "condicion": "Reúne ideas de 2 o más frases del original en una frase propia, en 2 o más puntos del resumen"
               },
               {
                 "puntos": 1.5,
-                "condicion": "Reúne ideas en 2 o 3 puntos del resumen"
+                "condicion": "Reúne ideas de 2 frases del original en una frase propia, en 1 punto del resumen"
               },
               {
                 "puntos": 1,
-                "condicion": "Reúne ideas en 1 punto del resumen"
+                "condicion": "Reúne ideas de 2 frases del original en 1 punto del resumen, manteniendo el molde de las frases del original"
               },
               {
                 "puntos": 0.5,
@@ -1183,11 +1183,11 @@
               },
               {
                 "puntos": 3,
-                "condicion": "Reúne ideas de 2 frases del original"
+                "condicion": "Reúne ideas de 2 frases del original en una frase propia, en 2 o más puntos del resumen"
               },
               {
                 "puntos": 2,
-                "condicion": "Reúne ideas en 1 punto del resumen"
+                "condicion": "Reúne ideas de 2 frases del original en una frase propia, en 1 punto del resumen"
               },
               {
                 "puntos": 1,

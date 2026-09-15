@@ -2,7 +2,7 @@
   "pack_id": "lcl-murcia-oral",
   "materia": "LCL",
   "etiqueta": "Exposición oral — Región de Murcia",
-  "version": "0.7.0",
+  "version": "0.8.0",
   "normativa": {
     "estatal": [
       "RD 217/2022, de 29 de marzo (ESO)",
@@ -2247,15 +2247,15 @@
               },
               {
                 "puntos": 1,
-                "condicion": "Sustituye la mayoría de las repeticiones; 1 referencia exige un esfuerzo para identificarla"
+                "condicion": "Hasta 1 error de referencia: un término repetido con alternativa evidente o una referencia que exige esfuerzo para identificarla"
               },
               {
                 "puntos": 0.5,
-                "condicion": "Repite el término clave 3 o más veces teniendo alternativa evidente"
+                "condicion": "2 o 3 errores de referencia, entre términos repetidos con alternativa evidente y referencias que exigen esfuerzo para identificarlas"
               },
               {
                 "puntos": 0,
-                "condicion": "Repite el mismo término en frases consecutivas a lo largo de toda la exposición"
+                "condicion": "4 o más errores de referencia: repite el mismo término en frases consecutivas a lo largo de toda la exposición"
               }
             ]
           }
@@ -2905,15 +2905,15 @@
               },
               {
                 "puntos": 1,
-                "condicion": "Sustituye la mayoría de las repeticiones; 1 referencia exige un esfuerzo para identificarla"
+                "condicion": "Hasta 1 error de referencia: un término repetido con alternativa evidente o una referencia que exige esfuerzo para identificarla"
               },
               {
                 "puntos": 0.5,
-                "condicion": "Repite el término clave 3 o más veces teniendo alternativa evidente"
+                "condicion": "2 o 3 errores de referencia, entre términos repetidos con alternativa evidente y referencias que exigen esfuerzo para identificarlas"
               },
               {
                 "puntos": 0,
-                "condicion": "Repite el mismo término en frases consecutivas a lo largo de toda la exposición"
+                "condicion": "4 o más errores de referencia: repite el mismo término en frases consecutivas a lo largo de toda la exposición"
               }
             ]
           }
@@ -3561,15 +3561,15 @@
               },
               {
                 "puntos": 1,
-                "condicion": "Sustituye la mayoría de las repeticiones; 1 referencia exige un esfuerzo para identificarla"
+                "condicion": "Hasta 1 error de referencia: un término repetido con alternativa evidente o una referencia que exige esfuerzo para identificarla"
               },
               {
                 "puntos": 0.5,
-                "condicion": "Repite el término clave 3 o más veces teniendo alternativa evidente"
+                "condicion": "2 o 3 errores de referencia, entre términos repetidos con alternativa evidente y referencias que exigen esfuerzo para identificarlas"
               },
               {
                 "puntos": 0,
-                "condicion": "Repite el mismo término en frases consecutivas a lo largo de toda la exposición"
+                "condicion": "4 o más errores de referencia: repite el mismo término en frases consecutivas a lo largo de toda la exposición"
               }
             ]
           }
