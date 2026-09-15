@@ -2,7 +2,7 @@
 
 ## Generador de Instrumentos de Evaluación — Lengua Castellana y Literatura (LOMLOE)
 
-**Versión 1.58** · Documento de trabajo · Septiembre 2026
+**Versión 1.59** · Documento de trabajo · Septiembre 2026
 Autor: Josele · Diseño técnico: Claude
 
 ---
@@ -16,9 +16,9 @@ Aquí quedan las tres últimas, que son las que suelen hacer falta:
 
 | Versión | Cambios |
 |---|---|
+| **1.59** | **La puerta de aplicabilidad (§8) deja de llamar «proyecto» a lo que no tiene por qué serlo.** «Tarea de desempeño o proyecto» pasa a **«Actividad competencial»**: el nombre sugería un formato —proyecto, producto «real»— que la normativa no exige, y ni el profesorado ni el alumnado usan ese término. El `explicacion` de la opción (`js/motor.js`) lleva ahora la definición completa, con los dos registros —producción académica tradicional o creación en un contexto comunicativo más auténtico— y su ejemplo. El identificador interno (`desempeno`) no cambia. Coherencia total: también se actualizan la fila de la tabla de este §8 y el ejemplo del Caso 1 de `scripts/generar_manual.py`. Ningún pack, matriz ni cálculo se toca. Historia completa en `SDD-cambios.md`. |
 | **1.58** | **Cierra la decisión 20(c) de §17: tres componentes se renombran para decir lo que miden sus bandas bajas.** En los tres casos el componente resultó ser, casi banda a banda, el de un curso o una fila vecina, con solo la banda superior actualizada al verbo nuevo del curso —así que se renombra, no se reescribe: inventar contenido no hacía falta. *Valoración de la fiabilidad de las fuentes* (expositivo 4.º ESO): sus bandas 3 a 0 son literalmente las de *Atribución de los datos* de 3.º ESO (mismo texto, banda a banda), con la banda 4 sustituida por el juicio de fiabilidad que el criterio de 4.º pide explícitamente («calibrando su fiabilidad y pertinencia»); pasa a **Atribución de los datos y valoración de su fiabilidad**. *Distinción entre dato y opinión* (argumentativo 3.º ESO): las bandas 0,5 y 0 miden copia frente a reformulación —el mismo objeto que *Reformulación frente a copia* en el expositivo del mismo curso—, y solo 1/1,5/2 miden de verdad la distinción; pasa a **Reformulación de la fuente y distinción entre dato y opinión**. *Apartados con título propio* (investigación 1.º y 2.º Bach): en 4.º ESO, curso vecino, el componente con ese nombre sí mide título propio; en 1.º y 2.º Bach las cinco bandas cuentan «epígrafes jerarquizados», que es otro objeto; pasa a **Jerarquización de los epígrafes**, y las versiones de 2.º, 3.º y 4.º ESO no se tocan. Ninguna banda cambia de redacción ni de puntos: la nota de ningún alumno se mueve. **Precio pagado a propósito**: las calificaciones ya guardadas en el navegador del docente para esos tres componentes quedan huérfanas, porque `js/calificacion.js` indexa `bandasElegidas` por `comp.nombre` (la decisión 20(d), todavía abierta, es la que decide si eso se arregla). Validados los tres packs, simulados con `--resumen` en los cuatro cursos tocados: mismas notas que antes en los cuatro perfiles; revisiones regeneradas; expositivo, argumentativo e investigación pasan a 0.7.0. |
 | **1.57** | **Cierra la decisión 20(e) de §17: una sola escala contable por componente donde dos bandas contiguas describían al mismo alumno.** *Referencia y sustitución léxica* (argumentativo y expositivo, 2.º y 3.º ESO): la banda de 2 y la de 1 eran la misma producción vista desde dos lados; ahora se cuenta una sola cosa, con la banda de 4 en «sin errores de referencia», 3 = hasta 1, 2 = 2 o 3, 1 = 4 o 5 con alguna sustitución, 0 = 6 o más, pasada por los cinco cursos de los dos packs y por el pack oral. *Matización de la tesis* y *Gestión del contraargumento*: se invierten las bandas de 2 y 1. *Precisión del vocabulario*: se cuentan términos de significado general en una sola escala. *Ideas reunidas* y *Condensación* (resumen): un solo eje de condensación. Validados los cinco packs, simulados con `--resumen`: ninguna nota de perfil cambia; revisiones regeneradas; argumentativo y expositivo 0.6.0, comentario 0.5.0, resumen 0.4.0, oral 0.8.0. |
-| **1.56** | **Cierra la decisión 20(b) de §17: las dos matrices que contaban lo que el descriptor pide seleccionar miden ahora lo que se selecciona.** Comentario: *Fragmentos del texto traídos al comentario* pasa a *Afirmaciones apoyadas en un fragmento a la medida de lo que prueba* (valor probatorio, no número de citas). Investigación 3.º ESO: *Datos contrastados entre fuentes* pasa a *Fuentes entre las que contrasta el dato principal*. Simulado sin saltos, umbrales planos ni ceros nuevos. Historia completa en `SDD-cambios.md`. |
 
 ## 1. Resumen ejecutivo
 
@@ -730,7 +730,7 @@ Antes de generar nada, la app pregunta qué se va a evaluar y actúa según el M
 |---|---|
 | Prueba objetiva: test, huecos, dictado, preguntas factuales | **No genera rúbrica.** Explica por qué (no hay gradación de calidad, solo acierto o error) y ofrece una plantilla de corrección con puntuación directa. |
 | Desarrollo largo, comentario de texto | Propone la **escala de estimación analítica** (7.7) en lugar de la rúbrica analítica completa. |
-| Tarea de desempeño o proyecto | Terreno natural: **rúbrica analítica** completa. |
+| Actividad competencial: resolver una tarea, elaborar un producto, producir una respuesta | Terreno natural: **rúbrica analítica** completa. |
 | Tarea diaria, borrador, ejercicio de proceso | Propone **lista de cotejo** o **rúbrica de un solo punto**, y desaconseja la rúbrica completa. |
 | Fase de un texto: esquema, borrador, revisión, párrafo suelto | **Premarca solo las dimensiones de proceso** (§8.1) y abre la **lista de cotejo**. |
 

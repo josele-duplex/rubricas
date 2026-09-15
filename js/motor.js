@@ -45,11 +45,16 @@ export const PUERTA_APLICABILIDAD = {
       "en lugar de la rúbrica completa: puntuación directa por apartado, sin elegir entre cuatro niveles.",
   },
   desempeno: {
-    etiqueta: "Tarea de desempeño o proyecto",
+    etiqueta: "Actividad competencial",
     generaRubrica: true,
     instrumentoRecomendado: "rubrica_analitica",
     premarca: "todas",
-    explicacion: "Terreno natural de la rúbrica analítica completa.",
+    explicacion:
+      "Actividad evaluable en la que el alumnado moviliza y aplica los aprendizajes adquiridos para " +
+      "resolver una tarea, elaborar un producto o producir una respuesta. Puede ser tanto una producción " +
+      "académica tradicional —un resumen, un texto argumentativo, un comentario— como una creación " +
+      "vinculada a un contexto comunicativo más auténtico —un podcast, un folleto, una presentación—. " +
+      "Terreno natural de la rúbrica analítica completa.",
   },
   proceso: {
     etiqueta: "Tarea diaria, borrador, ejercicio de proceso",

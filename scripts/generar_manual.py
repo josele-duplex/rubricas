@@ -621,7 +621,7 @@ def construir(d: dict) -> Guia:
         ("Caso 1 · Noventa textos expositivos de 3.º de ESO y el fin de semana encima",
          "Has mandado un texto expositivo sobre un tema del aula. Son tres grupos y quieres "
          "corregir rápido sin perder criterio.",
-         ["Tipo de prueba: «Tarea de desempeño o proyecto». Tipo de tarea: «Texto expositivo». "
+         ["Tipo de prueba: «Actividad competencial». Tipo de tarea: «Texto expositivo». "
           "Curso: 3.º de ESO.",
           "Tiempo: «Menos de 2 min por alumno». La rúbrica se queda con las dimensiones "
           "esenciales en vez de con todas.",
