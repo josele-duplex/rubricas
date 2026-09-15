@@ -134,6 +134,13 @@ propias palabras»; «a las notas», no «a sus notas». `su` solo entra cuando 
 («indica **su** procedencia», la de los datos), y entonces se declara en `posesivos_ajenos` de
 `data/reglas-lexicas.json`, con el referente escrito al lado.
 
+**Las formas de la lengua que se mencionan van en cursiva**, con asteriscos: «los conectores
+*y*, *pero* y *entonces*», «palabras comodín (*cosa*, *tema*, *hacer*)». Sin la marca, la «y»
+conector y la «y» que enumera se confunden. Solo formas citadas —conectores, palabras, fórmulas,
+muletillas—, nunca conceptos («primera persona», «la impersonalidad»). La app la pinta en
+cursiva, el CSV la pasa a «comillas», el motor no reconjuga lo que va dentro y el validador da
+error si una marca queda abierta (`js/marcas.js` · `scripts/marcas.py`).
+
 ---
 
 ## Estructura
@@ -218,5 +225,8 @@ Quién manda sobre qué: §2 de
 
 Al final del SDD (§17), y se leen con `python scripts/ver.py sdd 17`. Las seis que quedaban
 abiertas —condición mínima, escala por defecto, tope de detractores, rúbrica holística,
-publicación y el reparto con `rubricas-lomloe`— se cerraron el 2026-08-25. No queda ninguna
-decisión abierta en §17 a fecha de hoy.
+publicación y el reparto con `rubricas-lomloe`— se cerraron el 2026-08-25. Queda **una**,
+la 20 (2026-09-15): lo que la revisión de matrices de la v1.53 vio y no tocó porque pide el
+criterio del docente —el escalón 1.º → 2.º Bach en ortografía, dos matrices que cuentan lo que
+el descriptor pide seleccionar, la regla 5 en los nombres de componente y cuatro cosas más—,
+en siete mitades que se cierran por separado.

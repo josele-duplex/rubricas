@@ -2,7 +2,7 @@
   "pack_id": "lcl-murcia-reaccion",
   "materia": "LCL",
   "etiqueta": "Reacción a una noticia — Región de Murcia",
-  "version": "0.1.0",
+  "version": "0.3.0",
   "normativa": {
     "estatal": [
       "RD 217/2022, de 29 de marzo (ESO)",
@@ -125,7 +125,7 @@
               },
               {
                 "puntos": 0.5,
-                "condicion": "La reacción nombra el medio de forma genérica: la tele, internet"
+                "condicion": "La reacción nombra el medio de forma genérica: *la tele*, *internet*"
               },
               {
                 "puntos": 0,
@@ -241,7 +241,7 @@
               },
               {
                 "puntos": 0.5,
-                "condicion": "La reacción alude al soporte con una fórmula general: lo he visto por ahí"
+                "condicion": "La reacción alude al soporte con una fórmula general: *lo he visto por ahí*"
               },
               {
                 "puntos": 0,
@@ -552,7 +552,7 @@
               },
               {
                 "puntos": 0.5,
-                "condicion": "Enlaza las frases con la conjunción y emplea un conector en un solo punto"
+                "condicion": "Enlaza las frases con la conjunción *y* y emplea un conector en un solo punto"
               },
               {
                 "puntos": 0,
@@ -735,7 +735,7 @@
             "bandas": [
               {
                 "puntos": 4,
-                "condicion": "Emplea términos precisos y ninguna palabra comodín (cosa, tema, hacer)"
+                "condicion": "Emplea términos precisos y ninguna palabra comodín (*cosa*, *tema*, *hacer*)"
               },
               {
                 "puntos": 3,
@@ -814,7 +814,7 @@
         },
         "n4": {
           "verbo": "valora",
-          "texto": "Valora críticamente la fiabilidad de la noticia a partir de la autoría, la fecha, los datos citados y la línea del medio."
+          "texto": "Valora críticamente la fiabilidad de la noticia a partir de la autoría, la fecha, los datos citados y la línea editorial del medio."
         }
       },
       "matriz_cuantitativa": {
@@ -1150,7 +1150,7 @@
               },
               {
                 "puntos": 0.5,
-                "condicion": "Enlaza las frases con la conjunción y emplea un conector en un solo punto"
+                "condicion": "Enlaza las frases con la conjunción *y* y emplea un conector en un solo punto"
               },
               {
                 "puntos": 0,
@@ -1261,7 +1261,7 @@
         },
         "n2": {
           "verbo": "aplica",
-          "texto": "Aplica las normas de acentuación y de concordancia, con errores aislados que dejan seguir el razonamiento."
+          "texto": "Aplica las normas de acentuación y de concordancia, con errores aislados que permiten seguir el razonamiento."
         },
         "n3": {
           "verbo": "aplica",
@@ -1333,7 +1333,7 @@
             "bandas": [
               {
                 "puntos": 4,
-                "condicion": "Emplea términos precisos y ninguna palabra comodín (cosa, tema, hacer)"
+                "condicion": "Emplea términos precisos y ninguna palabra comodín (*cosa*, *tema*, *hacer*)"
               },
               {
                 "puntos": 3,
@@ -1357,7 +1357,7 @@
         "penalizaciones": []
       },
       "descriptor_cotejo": null,
-      "descriptor_un_punto": "Aplica las normas de acentuación y de concordancia, con errores aislados que dejan seguir el razonamiento."
+      "descriptor_un_punto": "Aplica las normas de acentuación y de concordancia, con errores aislados que permiten seguir el razonamiento."
     },
     {
       "id": "lcl-b-valcontenido-rea-1bach",
@@ -1578,7 +1578,7 @@
               },
               {
                 "puntos": 0.5,
-                "condicion": "La reacción alude al canal con una fórmula general: lo he visto por ahí"
+                "condicion": "La reacción alude al canal con una fórmula general: *lo he visto por ahí*"
               },
               {
                 "puntos": 0,
@@ -1890,7 +1890,7 @@
               },
               {
                 "puntos": 0.5,
-                "condicion": "Enlaza las frases con la conjunción y emplea un conector en un solo punto"
+                "condicion": "Enlaza las frases con la conjunción *y* y emplea un conector en un solo punto"
               },
               {
                 "puntos": 0,
@@ -2488,7 +2488,7 @@
               },
               {
                 "puntos": 0.5,
-                "condicion": "Emplea 1 tipo de conector y repite el resto de los enlaces con la conjunción"
+                "condicion": "Emplea 1 tipo de conector y repite el resto de los enlaces con la conjunción *y*"
               },
               {
                 "puntos": 0,

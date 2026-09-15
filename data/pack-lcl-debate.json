@@ -2,7 +2,7 @@
  "pack_id": "lcl-murcia-debate",
  "materia": "LCL",
  "etiqueta": "Debate y situaciones orales dialogadas — Región de Murcia",
- "version": "0.2.0",
+ "version": "0.3.0",
  "normativa": {
   "estatal": [
    "Ley Orgánica 3/2020, de 29 de diciembre (LOMLOE), art. 20",
@@ -318,7 +318,7 @@
    "id": "lcl-b-refutacion-debate-2eso",
    "bloque_lomloe": "B",
    "dimension": "refutacion",
-   "nombre": "Refutación limpia",
+   "nombre": "Refutación: el argumento, no la persona",
    "curso": "2ESO",
    "hereda_de": null,
    "criterio_oficial": {
@@ -559,7 +559,7 @@
    "id": "lcl-b-refutacion-debate-4eso",
    "bloque_lomloe": "B",
    "dimension": "refutacion",
-   "nombre": "Refutación limpia",
+   "nombre": "Refutación: el argumento, no la persona",
    "curso": "4ESO",
    "hereda_de": null,
    "criterio_oficial": {

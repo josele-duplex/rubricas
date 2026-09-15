@@ -405,7 +405,7 @@ def construir(d: dict) -> Guia:
          "Desarrollo largo, comentario de texto, exámenes."],
     ], anchos=[3.4, 7.0, 6.2])
     g.p("Además de las siete pestañas hay cuatro botones: **Ajustar** (apartado 6), **Calificar** "
-        "(apartado 7), **Exportar rúbrica (iDoceo)** (apartado 8) e **Imprimir esta vista** — que "
+        "(apartado 7), **Exportar rúbrica (CSV)** (apartado 8) e **Imprimir esta vista** — que "
         "manda a la impresora o a «Guardar como PDF» exactamente la pestaña que tengas delante, "
         "con los «¿por qué?» ocultos, porque el papel es para el aula.")
     g.caja("Un detalle que cambia mucho en clase",
@@ -517,17 +517,21 @@ def construir(d: dict) -> Guia:
            "contenido.")
 
     # 8
-    g.h1("8 · Llevar el trabajo a iDoceo")
-    g.p("iDoceo tiene **dos importadores distintos**, y la app escribe para los dos. No son "
-        "complementarios: son **dos caminos alternativos**, y eliges tú, instrumento a "
-        "instrumento. Los dos archivos son «.csv», el formato que los dos importadores aceptan, "
-        "así que la exportación no necesita nada instalado y sigue funcionando sin conexión.")
+    g.h1("8 · Exportar la rúbrica, y llevar el trabajo a iDoceo si es tu caso")
+    g.p("El botón **Exportar rúbrica (CSV)** de la vista previa saca la matriz en blanco a un "
+        "archivo que abre cualquier hoja de cálculo — sirve para tenerla en Excel, Sheets o Calc "
+        "por la razón que sea. Si usas iDoceo, ese mismo CSV es además el formato de su "
+        "**importador de rúbricas**, uno de los dos importadores para los que escribe la app; no "
+        "son complementarios entre sí: son **dos caminos alternativos**, y eliges tú, instrumento "
+        "a instrumento. Los dos archivos son «.csv», así que la exportación no necesita nada "
+        "instalado y sigue funcionando sin conexión.")
     g.tabla(["El camino", "Qué exportas", "Qué pasa después"], [
-        ["**Exportar rúbrica (iDoceo)**\nBotón de la vista previa",
+        ["**Exportar rúbrica (CSV)**\nBotón de la vista previa",
          "La matriz en blanco: criterios × niveles, con el peso de cada fila y el valor de cada "
          "nivel. Archivo «Rubrica_…csv».",
-         "Calificas **dentro de iDoceo**, tocando cada celda. La pantalla «Calificar» de esta app "
-         "deja de usarse para ese instrumento."],
+         "Si lo importas en iDoceo, calificas **dentro de iDoceo**, tocando cada celda, y la "
+         "pantalla «Calificar» de esta app deja de usarse para ese instrumento. Si no, tienes la "
+         "matriz en tu hoja de cálculo para lo que necesites."],
         ["**Exportar CSV**\nBotón de la pantalla «Calificar»",
          "Una fila por alumno con su nota final del instrumento activo. Archivo «Notas_…csv».",
          "Sigues calificando **aquí** y iDoceo recibe solo el número, por su asistente general de "
@@ -660,8 +664,8 @@ def construir(d: dict) -> Guia:
           "Los pesos no son iguales aquí, y la ficha del alumno imprime por qué no lo son: eso es "
           "lo que se lee en clase antes de empezar el trabajo.",
           "Al terminar, eliges camino (apartado 8). Si quieres calificar dentro de iDoceo, "
-          "«Exportar rúbrica (iDoceo)» y la importas allí. Si prefieres calificar aquí, usas "
-          "«Calificar» y luego «Exportar CSV» con las notas."],
+          "«Exportar rúbrica (CSV)» y la importas allí, en su importador de rúbricas. Si "
+          "prefieres calificar aquí, usas «Calificar» y luego «Exportar CSV» con las notas."],
          "El instrumento en el sitio donde llevas el curso, sin copiar notas a mano y sin dos "
          "aritméticas distintas."),
         ("Caso 6 · Un test de literatura",

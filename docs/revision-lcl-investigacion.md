@@ -1,6 +1,6 @@
 # Revisión del pack: Trabajo de investigación multimodal — Región de Murcia
 
-**Pack** `pack-lcl-investigacion.json` · versión 0.3.0 · 27 criterios · 108 descriptores · 22 matrices cuantitativas
+**Pack** `pack-lcl-investigacion.json` · versión 0.5.0 · 27 criterios · 108 descriptores · 22 matrices cuantitativas
 
 > Documento para validación docente, generado desde el JSON. No se edita a mano.
 > Al leer, mira sobre todo tres cosas: si el nivel N4 es alcanzable en ese curso,
@@ -95,7 +95,7 @@
 |---|---|---|
 | Ortografía y acentuación | 4 | **4** — Hasta 2 faltas en todo el soporte<br>**3** — 3 o 4 faltas<br>**2** — 5 o 6 faltas<br>**1** — De 7 a 10 faltas<br>**0** — 11 o más faltas |
 | Puntuación | 2 | **2** — Cierra con punto las frases completas y separa con coma las enumeraciones<br>**1.5** — Deja 1 frase o enumeración sin marcar<br>**1** — Deja de 2 a 3 frases o enumeraciones sin marcar<br>**0.5** — Deja de 4 a 6 frases o enumeraciones sin marcar<br>**0** — El soporte encadena el texto sin signos de puntuación: 7 o más frases o enumeraciones sin marcar |
-| Propiedad léxica | 4 | **4** — Emplea los términos del tema investigado y ninguna palabra comodín<br>**3** — Emplea 1 palabra comodín (cosa, tema, hacer)<br>**2** — Emplea 2 palabras comodín<br>**1** — Emplea 3 o 4 palabras comodín<br>**0** — El texto del soporte se sostiene sobre palabras comodín |
+| Propiedad léxica | 4 | **4** — Emplea los términos del tema investigado y ninguna palabra comodín<br>**3** — Emplea 1 palabra comodín (*cosa*, *tema*, *hacer*)<br>**2** — Emplea 2 palabras comodín<br>**1** — Emplea 3 o 4 palabras comodín<br>**0** — El texto del soporte se sostiene sobre palabras comodín |
 
 ---
 
@@ -208,7 +208,7 @@
 |---|---|---|
 | Ortografía y acentuación | 4 | **4** — Hasta 2 faltas en todo el soporte<br>**3** — 3 o 4 faltas<br>**2** — De 5 a 7 faltas<br>**1** — De 8 a 11 faltas<br>**0** — 12 o más faltas |
 | Puntuación | 2 | **2** — Enumeración e inciso llevan la puntuación correspondiente<br>**1.5** — Deja 1 inciso o enumeración sin marcar<br>**1** — Deja de 2 a 3 incisos o enumeraciones sin marcar<br>**0.5** — Deja de 4 a 6 incisos o enumeraciones sin marcar<br>**0** — El soporte encadena el texto sin signos de puntuación: 7 o más incisos o enumeraciones sin marcar |
-| Propiedad léxica | 4 | **4** — Emplea los términos del tema investigado y ninguna palabra comodín<br>**3** — Emplea 1 palabra comodín (cosa, tema, hacer)<br>**2** — Emplea 2 palabras comodín<br>**1** — Emplea 3 o 4 palabras comodín<br>**0** — El texto del soporte se sostiene sobre palabras comodín |
+| Propiedad léxica | 4 | **4** — Emplea los términos del tema investigado y ninguna palabra comodín<br>**3** — Emplea 1 palabra comodín (*cosa*, *tema*, *hacer*)<br>**2** — Emplea 2 palabras comodín<br>**1** — Emplea 3 o 4 palabras comodín<br>**0** — El texto del soporte se sostiene sobre palabras comodín |
 
 ---
 
@@ -311,7 +311,7 @@
 
 | Nivel | Descriptor |
 |---|---|
-| **N1** | Indica el nombre de la página de la cual toma los datos al final del trabajo. |
+| **N1** | Indica al final del trabajo el nombre de la página de la que toma los datos. |
 | **N2** | Anota la dirección completa de cada fuente utilizada en un apartado final. |
 | **N3** | Documenta cada dato con la fuente de procedencia y añade el autor y la fecha en la referencia. |
 | **N4** | Respeta la propiedad intelectual del material ajeno: separa con comillas lo tomado literalmente, documenta el origen de cada imagen y distingue la aportación propia de la ajena. |
@@ -342,7 +342,7 @@
 | Componente | Máx. | Bandas |
 |---|---|---|
 | Ortografía y acentuación | 4 | **4** — Hasta 2 faltas en todo el soporte, incluidos los rótulos<br>**3** — De 3 a 5 faltas<br>**2** — De 6 a 8 faltas<br>**1** — De 9 a 12 faltas<br>**0** — 13 o más faltas |
-| Puntuación | 2 | **2** — Inciso, enumeración y dato entrecomillado llevan la puntuación correspondiente<br>**1.5** — 1 de los tres procedimientos falla<br>**1** — 2 de los tres procedimientos fallan<br>**0.5** — Los tres procedimientos fallan y el texto conserva el punto y la coma<br>**0** — La puntuación del soporte se reduce al punto y la coma |
+| Puntuación | 2 | **2** — Inciso, enumeración y dato entrecomillado llevan la puntuación correspondiente<br>**1.5** — 1 de los tres procedimientos falla<br>**1** — 2 de los tres procedimientos fallan<br>**0.5** — Los tres procedimientos fallan y el texto conserva el punto y la coma<br>**0** — Fallan todos los procedimientos y quedan frases sin cerrar con punto |
 | Propiedad léxica | 4 | **4** — Emplea el término preciso del campo del tema en el texto y en los rótulos<br>**3** — Emplea 1 término impreciso o comodín<br>**2** — Emplea 2 términos imprecisos o comodín<br>**1** — Emplea 3 o 4 términos imprecisos o comodín<br>**0** — El texto del soporte se sostiene sobre términos comodín |
 
 ---
@@ -477,7 +477,7 @@
 | Componente | Máx. | Bandas |
 |---|---|---|
 | Ortografía y acentuación | 4 | **4** — Hasta 2 faltas en todo el soporte, incluidos los rótulos<br>**3** — De 3 a 5 faltas<br>**2** — De 6 a 10 faltas<br>**1** — De 11 a 13 faltas<br>**0** — 14 o más faltas |
-| Puntuación | 2 | **2** — Inciso, dato entrecomillado y referencia abreviada llevan la puntuación correspondiente<br>**1.5** — 1 de los tres procedimientos falla<br>**1** — 2 de los tres procedimientos fallan<br>**0.5** — Los tres procedimientos fallan y el texto conserva el punto y la coma<br>**0** — La puntuación del soporte se reduce al punto y la coma |
+| Puntuación | 2 | **2** — Inciso, dato entrecomillado y referencia abreviada llevan la puntuación correspondiente<br>**1.5** — 1 de los tres procedimientos falla<br>**1** — 2 de los tres procedimientos fallan<br>**0.5** — Los tres procedimientos fallan y el texto conserva el punto y la coma<br>**0** — Fallan todos los procedimientos y quedan frases sin cerrar con punto |
 | Propiedad léxica | 4 | **4** — Emplea el término preciso del registro académico en todo el soporte<br>**3** — Emplea 1 término impreciso o comodín<br>**2** — Emplea 2 términos imprecisos o comodín<br>**1** — Emplea 3 o 4 términos imprecisos o comodín<br>**0** — El texto del soporte se sostiene sobre términos comodín |
 
 ---
@@ -612,7 +612,7 @@
 | Componente | Máx. | Bandas |
 |---|---|---|
 | Ortografía y acentuación | 4 | **4** — Hasta 2 faltas en todo el soporte, incluidos los rótulos<br>**3** — De 3 a 5 faltas<br>**2** — De 6 a 11 faltas<br>**1** — 12 o 13 faltas<br>**0** — 14 o más faltas |
-| Puntuación | 2 | **2** — Inciso, dato entrecomillado y referencia abreviada llevan la puntuación correspondiente<br>**1.5** — 1 de los tres procedimientos falla<br>**1** — 2 de los tres procedimientos fallan<br>**0.5** — Los tres procedimientos fallan y el texto conserva el punto y la coma<br>**0** — La puntuación del soporte se reduce al punto y la coma |
+| Puntuación | 2 | **2** — Inciso, dato entrecomillado y referencia abreviada llevan la puntuación correspondiente<br>**1.5** — 1 de los tres procedimientos falla<br>**1** — 2 de los tres procedimientos fallan<br>**0.5** — Los tres procedimientos fallan y el texto conserva el punto y la coma<br>**0** — Fallan todos los procedimientos y quedan frases sin cerrar con punto |
 | Propiedad léxica | 4 | **4** — Emplea el término preciso del registro académico en todo el soporte<br>**3** — Emplea 1 término impreciso o comodín<br>**2** — Emplea 2 términos imprecisos o comodín<br>**1** — Emplea 3 o 4 términos imprecisos o comodín<br>**0** — El texto del soporte se sostiene sobre términos comodín |
 
 ---

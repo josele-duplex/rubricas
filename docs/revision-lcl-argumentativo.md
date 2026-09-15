@@ -1,6 +1,6 @@
 # Revisión del pack: Texto argumentativo escrito — Región de Murcia
 
-**Pack** `pack-lcl-argumentativo.json` · versión 0.3.0 · 30 criterios · 120 descriptores · 25 matrices cuantitativas
+**Pack** `pack-lcl-argumentativo.json` · versión 0.4.0 · 30 criterios · 120 descriptores · 25 matrices cuantitativas
 
 > Documento para validación docente, generado desde el JSON. No se edita a mano.
 > Al leer, mira sobre todo tres cosas: si el nivel N4 es alcanzable en ese curso,
@@ -29,7 +29,7 @@
 |---|---|
 | **N1** | Utiliza expresiones de la conversación diaria para dar una opinión sobre el tema en un texto dirigido a un lector del ámbito educativo. |
 | **N2** | Ajusta el escrito a la pauta de opinión trabajada en clase y mantiene la primera persona del singular al presentar la postura defendida. |
-| **N3** | Emplea fórmulas de opinión (creo que, en mi opinión) al presentar cada razón y mantiene el resto del texto libre de expresiones coloquiales. |
+| **N3** | Emplea fórmulas de opinión (*creo que*, *en mi opinión*) al presentar cada razón y mantiene el resto del texto libre de expresiones coloquiales. |
 | **N4** | Distingue mediante fórmulas de modalización los hechos comprobables de las opiniones propias a lo largo de todo el texto. |
 
 *Sin matriz cuantitativa: esta dimensión se juzga en conjunto, no hay nada que contar.*
@@ -63,16 +63,16 @@
 
 | Nivel | Descriptor |
 |---|---|
-| **N1** | Utiliza los conectores y, pero y entonces para encadenar la opinión y las razones dentro de un mismo enunciado largo. |
-| **N2** | Utiliza conectores de orden y de contraste (en primer lugar, sin embargo) para enlazar cada razón con la postura, y separa los enunciados con punto. |
-| **N3** | Emplea conectores explicativos y de contraste (es decir, en cambio) para encadenar postura, razones y cierre, y delimita los incisos con comas. |
+| **N1** | Utiliza los conectores *y*, *pero* y *entonces* para encadenar la opinión y las razones dentro de un mismo enunciado largo. |
+| **N2** | Utiliza conectores de orden y de contraste (*en primer lugar*, *sin embargo*) para enlazar cada razón con la postura, y separa los enunciados con punto. |
+| **N3** | Emplea conectores explicativos y de contraste (*es decir*, *en cambio*) para encadenar postura, razones y cierre, y delimita los incisos con comas. |
 | **N4** | Sustituye las repeticiones mediante pronombres, sinónimos e hiperónimos, y emplea conectores temporales para situar cada razón en la secuencia del texto. |
 
 **Matriz cuantitativa** — total 10 puntos. Es lo que usa el modo IA para corregir.
 
 | Componente | Máx. | Bandas |
 |---|---|---|
-| Variedad y uso de conectores | 4 | **4** — Emplea 3 tipos distintos: orden, contraste y explicación<br>**3** — Emplea 2 tipos distintos, uno de ellos de contraste<br>**2** — Emplea conectores de orden, siempre los mismos<br>**1** — Enlaza con y, pero y entonces<br>**0** — Coloca las oraciones una detrás de otra sin enlace |
+| Variedad y uso de conectores | 4 | **4** — Emplea 3 tipos distintos: orden, contraste y explicación<br>**3** — Emplea 2 tipos distintos, uno de ellos de contraste<br>**2** — Emplea conectores de orden, siempre los mismos<br>**1** — Enlaza con *y*, *pero* y *entonces*<br>**0** — Coloca las oraciones una detrás de otra sin enlace |
 | El punto y la coma organizan el texto | 2 | **2** — Separa con punto todos los enunciados y delimita los incisos con comas<br>**1.5** — Separa con punto todos los enunciados y deja sin comas algún inciso<br>**1** — Separa con punto los enunciados, con 1 o 2 casos sin separar<br>**0.5** — Separa con punto la mayoría, pero agrupa 3 o más enunciados seguidos<br>**0** — Escribe el texto casi sin puntos |
 | Referencia y sustitución léxica | 4 | **4** — Sustituye por pronombre, sinónimo o hiperónimo la palabra ya usada en la oración anterior<br>**3** — Sustituye alguna repetición, pero deja 2 o 3 sin sustituir<br>**2** — Repite la misma palabra en oraciones seguidas, teniendo sustituto evidente<br>**1** — Sustituye la palabra repetida en 1 punto del texto<br>**0** — Repite el mismo sustantivo a lo largo de todo el texto |
 
@@ -86,8 +86,8 @@
 |---|---|
 | **N1** | Redacta el texto con errores de ortografía y de concordancia que obligan al lector a releer para reconstruir la idea. |
 | **N2** | Aplica las normas de acentuación y concordancia trabajadas en clase, con errores que permiten seguir la opinión defendida. |
-| **N3** | Aplica las normas de ortografía, acentuación y concordancia del nivel, y emplea términos valorativos propios (injusto, necesario) en lugar de palabras comodín. |
-| **N4** | Sustituye las palabras de significado impreciso (cosa, tema, hacer) por el término valorativo que corresponde, y entrega el texto sin errores que dificulten la lectura. |
+| **N3** | Aplica las normas de ortografía, acentuación y concordancia del nivel, y emplea términos valorativos propios (*injusto*, *necesario*) en lugar de palabras comodín. |
+| **N4** | Sustituye las palabras de significado impreciso (*cosa*, *tema*, *hacer*) por el término valorativo que corresponde, y entrega el texto sin errores que dificulten la lectura. |
 
 **Matriz cuantitativa** — total 10 puntos. Es lo que usa el modo IA para corregir.
 
@@ -95,7 +95,7 @@
 |---|---|---|
 | Ortografía y acentuación | 4 | **4** — Hasta 2 faltas en todo el texto<br>**3** — De 3 a 6 faltas<br>**2** — De 7 a 9 faltas<br>**1** — De 10 a 14 faltas<br>**0** — 15 o más faltas |
 | Concordancia | 2 | **2** — Sin errores de concordancia de género, número o persona<br>**1.5** — Hasta 1 error de concordancia<br>**1** — 2 o 3 errores de concordancia<br>**0.5** — De 4 a 7 errores de concordancia<br>**0** — 8 o más errores de concordancia |
-| Precisión del léxico valorativo | 4 | **4** — Emplea términos valorativos propios (injusto, necesario, útil) en lugar de palabras comodín<br>**3** — Emplea 1 palabra comodín (cosa, tema, hacer) con sustituto evidente<br>**2** — Emplea 2 o 3 palabras comodín<br>**1** — Emplea 4 o 5 palabras comodín y algún término valorativo propio<br>**0** — El texto se sostiene sobre palabras comodín |
+| Precisión del léxico valorativo | 4 | **4** — Emplea términos valorativos propios (*injusto*, *necesario*, *útil*) en lugar de palabras comodín<br>**3** — Emplea 1 palabra comodín (*cosa*, *tema*, *hacer*) con sustituto evidente<br>**2** — Emplea 2 o 3 palabras comodín<br>**1** — Emplea 4 o 5 palabras comodín y algún término valorativo propio<br>**0** — El texto se sostiene sobre palabras comodín |
 
 ### Planificación y revisión del propio texto  ·  10%  ·  bloque B
 
@@ -162,8 +162,8 @@
 |---|---|
 | **N1** | Utiliza expresiones propias de la conversación diaria para defender la opinión personal en una tarea dirigida al ámbito académico. |
 | **N2** | Ajusta el texto al género de opinión trabajado en clase y presenta la postura propia en primera persona, con algún término coloquial en el léxico. |
-| **N3** | Emplea un registro formal sostenido e indica con fórmulas de opinión (considero, a mi juicio) los pasajes donde habla el emisor. |
-| **N4** | Matiza el grado de certeza de las afirmaciones propias combinando expresiones de mayor y menor seguridad (quizá, es probable, resulta innegable) a lo largo del texto. |
+| **N3** | Emplea un registro formal sostenido e indica con fórmulas de opinión (*considero*, *a mi juicio*) los pasajes donde habla el emisor. |
+| **N4** | Matiza el grado de certeza de las afirmaciones propias combinando expresiones de mayor y menor seguridad (*quizá*, *es probable*, *resulta innegable*) a lo largo del texto. |
 
 *Sin matriz cuantitativa: esta dimensión se juzga en conjunto, no hay nada que contar.*
 
@@ -196,16 +196,16 @@
 
 | Nivel | Descriptor |
 |---|---|
-| **N1** | Utiliza los conectores y, pero y porque para enlazar las opiniones con sus razones. |
-| **N2** | Utiliza conectores de causa y de contraste (porque, sin embargo) para unir cada argumento con la tesis, y separa los enunciados con punto. |
+| **N1** | Utiliza los conectores *y*, *pero* y *porque* para enlazar las opiniones con sus razones. |
+| **N2** | Utiliza conectores de causa y de contraste (*porque*, *sin embargo*) para unir cada argumento con la tesis, y separa los enunciados con punto. |
 | **N3** | Emplea conectores de causa, consecuencia y contraste para encadenar tesis, argumentos y conclusión, y delimita los incisos con comas. |
-| **N4** | Articula el paso de un argumento a otro con marcadores de orden y de refuerzo (en primer lugar, es más), y sustituye las repeticiones mediante sinónimos y pronombres. |
+| **N4** | Articula el paso de un argumento a otro con marcadores de orden y de refuerzo (*en primer lugar*, *es más*), y sustituye las repeticiones mediante sinónimos y pronombres. |
 
 **Matriz cuantitativa** — total 10 puntos. Es lo que usa el modo IA para corregir.
 
 | Componente | Máx. | Bandas |
 |---|---|---|
-| Variedad y uso de conectores | 4 | **4** — Emplea 4 o más tipos distintos: causa, consecuencia, contraste y orden u otro del nivel<br>**3** — Emplea 3 tipos distintos, entre ellos causa y contraste<br>**2** — Emplea 2 tipos distintos<br>**1** — Enlaza con y, pero y porque<br>**0** — Yuxtapone las oraciones sin enlace |
+| Variedad y uso de conectores | 4 | **4** — Emplea 4 o más tipos distintos: causa, consecuencia, contraste y orden u otro del nivel<br>**3** — Emplea 3 tipos distintos, entre ellos causa y contraste<br>**2** — Emplea 2 tipos distintos<br>**1** — Enlaza con *y*, *pero* y *porque*<br>**0** — Yuxtapone las oraciones sin enlace |
 | Puntuación al servicio del argumento | 2 | **2** — Separa los argumentos con punto y aparte y delimita los incisos con comas, sin errores que obliguen a releer<br>**1.5** — Separa los argumentos con punto y aparte y deja sin comas algún inciso<br>**1** — Puntuación correcta con 1 o 2 errores que no impiden seguir el texto<br>**0.5** — Puntuación presente pero con 3 o más errores, o párrafos que mezclan argumentos distintos<br>**0** — Texto sin puntuación o con uso errático en más de la mitad del escrito |
 | Referencia y sustitución léxica | 4 | **4** — Sustituye las repeticiones con sinónimos o pronombres, y todos los referentes son recuperables<br>**3** — Sustituye la mayoría de las repeticiones; 1 referente exige releer para identificarlo<br>**2** — Repite la palabra clave 3 o más veces teniendo sustituto evidente en el contexto<br>**1** — Sustituye la palabra clave en 1 punto y la repite en el resto<br>**0** — Repite el mismo sustantivo en oraciones consecutivas a lo largo del texto |
 
@@ -219,7 +219,7 @@
 |---|---|
 | **N1** | Redacta el texto con errores de ortografía, puntuación o concordancia que obligan a releer para reconstruir la idea. |
 | **N2** | Aplica las normas de ortografía y concordancia del nivel, con errores que permiten seguir la argumentación. |
-| **N3** | Aplica las normas ortográficas y gramaticales del nivel y selecciona términos valorativos precisos (beneficioso, injusto, eficaz) en lugar de palabras comodín. |
+| **N3** | Aplica las normas ortográficas y gramaticales del nivel y selecciona términos valorativos precisos (*beneficioso*, *injusto*, *eficaz*) en lugar de palabras comodín. |
 | **N4** | Emplea la subordinación causal y concesiva para condensar un argumento en una sola oración, y mantiene el texto libre de errores que afecten a la comprensión. |
 
 **Matriz cuantitativa** — total 10 puntos. Es lo que usa el modo IA para corregir.
@@ -228,7 +228,7 @@
 |---|---|---|
 | Ortografía, acentuación y puntuación | 4 | **4** — Hasta 3 faltas en todo el texto<br>**3** — De 4 a 7 faltas<br>**2** — De 8 a 11 faltas<br>**1** — De 12 a 18 faltas<br>**0** — 19 o más faltas |
 | Corrección gramatical | 2 | **2** — Sin errores de concordancia ni de construcción de la oración<br>**1.5** — 1 o 2 errores que no impiden la comprensión<br>**1** — De 3 a 5 errores, o alguna oración que hay que releer para reconstruir<br>**0.5** — De 6 a 12 errores, y la lectura se detiene para rehacer la oración<br>**0** — Errores sistemáticos que obligan a reconstruir el sentido |
-| Precisión del léxico valorativo | 4 | **4** — Valora con términos precisos (beneficioso, injusto, eficaz) y emplea alguna subordinada causal o concesiva para condensar un argumento<br>**3** — Valora con términos precisos, pero encadena oraciones simples donde cabría una subordinada<br>**2** — Recurre a valoraciones de significado impreciso con sustituto evidente<br>**1** — Valora con términos imprecisos y alguna palabra comodín<br>**0** — El texto se sostiene sobre palabras comodín |
+| Precisión del léxico valorativo | 4 | **4** — Valora con términos precisos (*beneficioso*, *injusto*, *eficaz*) y emplea alguna subordinada causal o concesiva para condensar un argumento<br>**3** — Valora con términos precisos, pero encadena oraciones simples donde cabría una subordinada<br>**2** — Recurre a valoraciones de significado impreciso con sustituto evidente<br>**1** — Valora con términos imprecisos y alguna palabra comodín<br>**0** — El texto se sostiene sobre palabras comodín |
 
 ### Planificación y revisión del propio texto  ·  10%  ·  bloque D
 
@@ -241,7 +241,7 @@
 | **N1** | Redacta el texto en una sola pasada y entrega la primera versión como texto final. |
 | **N2** | Elabora un esquema previo con la tesis y los argumentos ordenados, y entrega el borrador junto al texto final. |
 | **N3** | Revisa el borrador por cuenta propia y corrige problemas de conexión entre los argumentos y la tesis. |
-| **N4** | Justifica los cambios del borrador con el metalenguaje del nivel (tesis, argumento, conector), explicando qué mejora aporta cada uno. |
+| **N4** | Justifica los cambios del borrador con el metalenguaje del nivel (*tesis*, *argumento*, *conector*), explicando qué mejora aporta cada uno. |
 
 **Matriz cuantitativa** — total 10 puntos. Es lo que usa el modo IA para corregir.
 
@@ -249,7 +249,7 @@
 |---|---|---|
 | Planificación propia | 4 | **4** — Entrega un esquema previo propio con la tesis y los argumentos ordenados<br>**3** — Entrega un esquema previo que solo lista ideas, sin tesis que las organice<br>**2** — Entrega notas sueltas previas, sin esquema<br>**1** — Entrega el esquema del modelo de clase, sin ideas propias<br>**0** — No hay rastro de trabajo previo al texto |
 | Alcance de la revisión | 4 | **4** — Corrige en el borrador la conexión entre argumentos y tesis, no solo faltas<br>**3** — Corrige faltas de ortografía y léxico<br>**2** — Corrige 1 o 2 detalles aislados<br>**1** — Marca en el borrador un punto para corregir y lo deja sin corregir<br>**0** — Entrega la primera versión sin marcas de revisión |
-| Justificación con metalenguaje | 2 | **2** — Justifica 2 o más cambios usando el metalenguaje del nivel (tesis, argumento, conector)<br>**1.5** — Justifica 2 o más cambios y emplea el metalenguaje del nivel en uno de ellos<br>**1** — Justifica 1 cambio con metalenguaje, o varios sin él<br>**0.5** — Anota en el borrador los cambios hechos, sin decir qué mejoran<br>**0** — No justifica ningún cambio |
+| Justificación con metalenguaje | 2 | **2** — Justifica 2 o más cambios usando el metalenguaje del nivel (*tesis*, *argumento*, *conector*)<br>**1.5** — Justifica 2 o más cambios y emplea el metalenguaje del nivel en uno de ellos<br>**1** — Justifica 1 cambio con metalenguaje, o varios sin él<br>**0.5** — Anota en el borrador los cambios hechos, sin decir qué mejoran<br>**0** — No justifica ningún cambio |
 
 ### Tratamiento de la información: datos al servicio del argumento  ·  10%  ·  bloque B
 
@@ -296,7 +296,7 @@
 | **N1** | Utiliza fórmulas de confianza propias de la conversación entre iguales para discrepar en un texto dirigido al ámbito académico. |
 | **N2** | Ajusta el léxico y el tono al género de opinión académico, con alguna fórmula de discrepancia que descalifica la postura contraria. |
 | **N3** | Mantiene el registro formal en todo el texto y emplea fórmulas de cortesía para discrepar sin descalificar al interlocutor. |
-| **N4** | Matiza el grado de certeza de las afirmaciones propias y selecciona la forma deíctica (uno, nosotros, la impersonalidad) que ajusta la distancia con el interlocutor al efecto buscado. |
+| **N4** | Matiza el grado de certeza de las afirmaciones propias y selecciona la forma deíctica (*uno*, *nosotros*, la impersonalidad) que ajusta la distancia con el interlocutor al efecto buscado. |
 
 *Sin matriz cuantitativa: esta dimensión se juzga en conjunto, no hay nada que contar.*
 
@@ -332,13 +332,13 @@
 | **N1** | Utiliza los conectores de adición y de causa a lo largo de todo el texto, con el sustantivo clave repetido en cada párrafo. |
 | **N2** | Utiliza conectores de causa, consecuencia y contraste entre los argumentos, y explica algún término mediante una oración de relativo. |
 | **N3** | Emplea la aposición y la oración de relativo para incorporar al argumento una definición o una precisión sin interrumpir la línea del texto. |
-| **N4** | Sustituye las repeticiones mediante nominalizaciones e hiperónimos de significado abstracto (esta medida, tal decisión) y relaciona con ellos cada párrafo con el argumento del anterior. |
+| **N4** | Sustituye las repeticiones mediante nominalizaciones e hiperónimos de significado abstracto (*esta medida*, *tal decisión*) y relaciona con ellos cada párrafo con el argumento del anterior. |
 
 **Matriz cuantitativa** — total 10 puntos. Es lo que usa el modo IA para corregir.
 
 | Componente | Máx. | Bandas |
 |---|---|---|
-| Variedad y matización de los conectores | 4 | **4** — Emplea 4 o más tipos distintos de conector, incluido alguno de concesión o contraste (aunque, no obstante, a pesar de)<br>**3** — Emplea 3 tipos distintos, sin ninguno de concesión o contraste<br>**2** — Emplea 2 tipos distintos<br>**1** — Se limita a conectores de adición y de causa<br>**0** — Yuxtapone los párrafos sin conector que los enlace |
+| Variedad y matización de los conectores | 4 | **4** — Emplea 4 o más tipos distintos de conector, incluido alguno de concesión o contraste (*aunque*, *no obstante*, *a pesar de*)<br>**3** — Emplea 3 tipos distintos, sin ninguno de concesión o contraste<br>**2** — Emplea 2 tipos distintos<br>**1** — Se limita a conectores de adición y de causa<br>**0** — Yuxtapone los párrafos sin conector que los enlace |
 | Procedimientos explicativos | 4 | **4** — Incorpora 2 o más precisiones mediante aposición u oración de relativo, sin interrumpir la línea argumentativa<br>**3** — Incorpora 1 precisión mediante aposición u oración de relativo<br>**2** — Explica los términos del argumento en una oración aparte<br>**1** — Explica 1 término del argumento con un ejemplo, sin definirlo<br>**0** — Deja sin precisar los términos que el argumento necesita |
 | Referencia y sustitución léxica | 2 | **2** — Sustituye las repeticiones mediante nominalización o hiperónimo de significado abstracto, y todos los referentes son recuperables<br>**1.5** — Sustituye las repeticiones mediante sinónimos y pronombres, sin recurrir a la nominalización ni al hiperónimo, y todos los referentes son recuperables<br>**1** — Sustituye la mayoría de las repeticiones; 1 referente exige releer para identificarlo<br>**0.5** — Repite la palabra clave 3 o más veces teniendo sustituto evidente<br>**0** — Repite el mismo sustantivo en oraciones consecutivas a lo largo del texto |
 
@@ -352,7 +352,7 @@
 |---|---|
 | **N1** | Redacta el texto con errores de ortografía, concordancia o correlación verbal que obligan a releer para reconstruir el argumento. |
 | **N2** | Aplica las normas de ortografía y concordancia del nivel, con algún error aislado de correlación verbal que no impide seguir la argumentación. |
-| **N3** | Aplica las normas ortográficas y gramaticales del nivel y selecciona el término valorativo preciso (discutible, desproporcionado, eficaz) en lugar de palabras comodín. |
+| **N3** | Aplica las normas ortográficas y gramaticales del nivel y selecciona el término valorativo preciso (*discutible*, *desproporcionado*, *eficaz*) en lugar de palabras comodín. |
 | **N4** | Emplea el discurso relatado para incorporar al argumento la posición de otros y mantiene la correlación temporal entre las formas verbales, sin errores que afecten a la comprensión. |
 
 **Matriz cuantitativa** — total 10 puntos. Es lo que usa el modo IA para corregir.
@@ -361,7 +361,7 @@
 |---|---|---|
 | Ortografía, acentuación y puntuación | 4 | **4** — Hasta 3 faltas en todo el texto<br>**3** — De 4 a 7 faltas<br>**2** — De 8 a 12 faltas<br>**1** — De 13 a 18 faltas<br>**0** — 19 o más faltas |
 | Corrección gramatical y correlación verbal | 2 | **2** — Sin errores de concordancia, de construcción de la oración ni de correlación temporal<br>**1.5** — 1 o 2 errores que no impiden la comprensión<br>**1** — De 3 a 5 errores, o alguna oración que hay que releer para reconstruir<br>**0.5** — De 6 a 12 errores, y la lectura se detiene para rehacer la oración<br>**0** — Errores sistemáticos que obligan a reconstruir el sentido |
-| Precisión del léxico valorativo | 4 | **4** — Valora con términos precisos (discutible, desproporcionado, eficaz) y recoge con el discurso relatado la posición de otros<br>**3** — Valora con términos precisos, sin recoger la posición de otros<br>**2** — Recurre a valoraciones de significado impreciso con sustituto evidente<br>**1** — Valora con términos imprecisos y alguna palabra comodín<br>**0** — El texto se sostiene sobre palabras comodín |
+| Precisión del léxico valorativo | 4 | **4** — Valora con términos precisos (*discutible*, *desproporcionado*, *eficaz*) y recoge con el discurso relatado la posición de otros<br>**3** — Valora con términos precisos, sin recoger la posición de otros<br>**2** — Recurre a valoraciones de significado impreciso con sustituto evidente<br>**1** — Valora con términos imprecisos y alguna palabra comodín<br>**0** — El texto se sostiene sobre palabras comodín |
 
 ### Planificación y revisión del propio texto  ·  10%  ·  bloque D
 
@@ -374,7 +374,7 @@
 | **N1** | Redacta el texto en una sola pasada y entrega la primera versión como texto final. |
 | **N2** | Elabora un esquema previo propio con la tesis y el orden de los argumentos, y entrega el borrador con marcas de revisión sobre la ortografía y el léxico. |
 | **N3** | Revisa el borrador de manera autónoma y reformula los pasajes en los que el lector perdería el hilo del argumento. |
-| **N4** | Justifica con el metalenguaje del nivel (tesis, argumento, objeción, conector) los cambios introducidos para subsanar un problema de comprensión detectado en el borrador. |
+| **N4** | Justifica con el metalenguaje del nivel (*tesis*, *argumento*, *objeción*, *conector*) los cambios introducidos para subsanar un problema de comprensión detectado en el borrador. |
 
 **Matriz cuantitativa** — total 10 puntos. Es lo que usa el modo IA para corregir.
 
@@ -444,7 +444,7 @@
 | **N1** | Ordena las opiniones en bloques yuxtapuestos que comparten tema, con una tesis que el lector debe reconstruir. |
 | **N2** | Formula una tesis propia en la introducción y la desarrolla con argumentos de distinto tipo, cada uno en su párrafo. |
 | **N3** | Anticipa una objeción a la propia tesis, la expone con sus términos y la rebate con un argumento distinto de los ya empleados. |
-| **N4** | Integra la concesión y la refutación en la línea argumentativa (es cierto que, sin embargo), y gradúa la fuerza de los argumentos hasta una conclusión que deriva de lo argumentado. |
+| **N4** | Integra la concesión y la refutación en la línea argumentativa (*es cierto que*, *sin embargo*), y gradúa la fuerza de los argumentos hasta una conclusión que deriva de lo argumentado. |
 
 **Matriz cuantitativa** — total 10 puntos. Es lo que usa el modo IA para corregir.
 
@@ -464,14 +464,14 @@
 |---|---|
 | **N1** | Utiliza conectores de adición y de causa para enlazar los argumentos, con el paso de la opinión propia a la objeción sin marcar. |
 | **N2** | Utiliza conectores de causa, consecuencia y contraste entre los párrafos, y delimita los incisos con comas. |
-| **N3** | Emplea marcadores de concesión y refutación (es cierto que, no obstante) para señalar el paso de la objeción a la respuesta. |
+| **N3** | Emplea marcadores de concesión y refutación (*es cierto que*, *no obstante*) para señalar el paso de la objeción a la respuesta. |
 | **N4** | Sustituye las repeticiones mediante nominalizaciones e hiperónimos, y encadena los párrafos retomando al comienzo de cada uno un elemento del anterior. |
 
 **Matriz cuantitativa** — total 10 puntos. Es lo que usa el modo IA para corregir.
 
 | Componente | Máx. | Bandas |
 |---|---|---|
-| Variedad de conectores y marcadores | 4 | **4** — Emplea 4 o más tipos distintos, incluido al menos un marcador de concesión o refutación (es cierto que, no obstante)<br>**3** — Emplea 3 tipos distintos, sin marcador de concesión<br>**2** — Emplea 2 tipos distintos<br>**1** — Se limita a conectores de adición y causa<br>**0** — Yuxtapone los párrafos sin conector que los enlace |
+| Variedad de conectores y marcadores | 4 | **4** — Emplea 4 o más tipos distintos, incluido al menos un marcador de concesión o refutación (*es cierto que*, *no obstante*)<br>**3** — Emplea 3 tipos distintos, sin marcador de concesión<br>**2** — Emplea 2 tipos distintos<br>**1** — Se limita a conectores de adición y causa<br>**0** — Yuxtapone los párrafos sin conector que los enlace |
 | Encadenamiento entre párrafos | 4 | **4** — Cada párrafo retoma al comienzo un elemento del anterior<br>**3** — La mayoría de los párrafos se encadenan; 1 arranca sin vínculo con lo anterior<br>**2** — Los párrafos comparten tema, pero su orden podría alterarse sin que el texto cambie<br>**1** — Encadena 1 par de párrafos y deja el resto sin vínculo<br>**0** — Los párrafos se suceden sin vínculo entre ellos |
 | Referencia y sustitución léxica | 2 | **2** — Sustituye las repeticiones mediante sinónimo, nominalización o hiperónimo, y todos los referentes son recuperables<br>**1.5** — Sustituye las repeticiones mediante sinónimo o pronombre, sin recurrir a la nominalización ni al hiperónimo, y todos los referentes son recuperables<br>**1** — Sustituye la mayoría de las repeticiones; 1 referente exige releer para identificarlo<br>**0.5** — Repite la palabra clave 3 o más veces teniendo sustituto evidente<br>**0** — Repite el mismo sustantivo en oraciones consecutivas a lo largo del texto |
 
@@ -577,7 +577,7 @@
 | **N1** | Ordena los argumentos en párrafos yuxtapuestos que comparten tema, con una tesis que el lector debe inferir del conjunto. |
 | **N2** | Formula una tesis propia en la introducción y la desarrolla en párrafos, cada uno dedicado a un argumento distinto. |
 | **N3** | Anticipa una objeción a la propia tesis, la expone con sus términos y la rebate con un argumento no empleado antes. |
-| **N4** | Integra la concesión y la refutación en la línea argumentativa (es cierto que, sin embargo), y gradúa la fuerza de los argumentos hasta una conclusión que deriva de lo argumentado, sin limitarse a repetir la tesis inicial. |
+| **N4** | Integra la concesión y la refutación en la línea argumentativa (*es cierto que*, *sin embargo*), y gradúa la fuerza de los argumentos hasta una conclusión que deriva de lo argumentado, sin limitarse a repetir la tesis inicial. |
 
 **Matriz cuantitativa** — total 10 puntos. Es lo que usa el modo IA para corregir.
 
@@ -597,14 +597,14 @@
 |---|---|
 | **N1** | Utiliza conectores de adición y de causa para enlazar los argumentos, sin marcar el paso de la opinión propia a la objeción. |
 | **N2** | Utiliza conectores de causa, consecuencia y contraste para engarzar los párrafos, y delimita los incisos mediante comas. |
-| **N3** | Emplea marcadores de concesión y refutación (es cierto que, no obstante) en el tránsito de cada objeción a su respuesta, sin limitarlos a un único par fijo. |
+| **N3** | Emplea marcadores de concesión y refutación (*es cierto que*, *no obstante*) en el tránsito de cada objeción a su respuesta, sin limitarlos a un único par fijo. |
 | **N4** | Sustituye las repeticiones mediante nominalización, sinónimo o hiperónimo, y abre cada párrafo retomando un elemento del anterior para que la línea argumentativa se lea sin saltos. |
 
 **Matriz cuantitativa** — total 10 puntos. Es lo que usa el modo IA para corregir.
 
 | Componente | Máx. | Bandas |
 |---|---|---|
-| Variedad de conectores y marcadores | 4 | **4** — Emplea 4 o más tipos distintos, incluido al menos un marcador de concesión o refutación (es cierto que, no obstante)<br>**3** — Emplea 3 tipos distintos, sin marcador de concesión<br>**2** — Emplea 2 tipos distintos<br>**1** — Se limita a conectores de adición y causa<br>**0** — Yuxtapone los párrafos sin conector que los enlace |
+| Variedad de conectores y marcadores | 4 | **4** — Emplea 4 o más tipos distintos, incluido al menos un marcador de concesión o refutación (*es cierto que*, *no obstante*)<br>**3** — Emplea 3 tipos distintos, sin marcador de concesión<br>**2** — Emplea 2 tipos distintos<br>**1** — Se limita a conectores de adición y causa<br>**0** — Yuxtapone los párrafos sin conector que los enlace |
 | Encadenamiento entre párrafos | 4 | **4** — Cada párrafo retoma al comienzo un elemento del anterior<br>**3** — La mayoría de los párrafos se encadenan; 1 arranca sin vínculo con lo anterior<br>**2** — Los párrafos comparten tema, pero su orden podría alterarse sin que el texto cambie<br>**1** — Encadena 1 par de párrafos y deja el resto sin vínculo<br>**0** — Los párrafos se suceden sin vínculo entre ellos |
 | Referencia y sustitución léxica | 2 | **2** — Sustituye las repeticiones mediante sinónimo, nominalización o hiperónimo, y todos los referentes son recuperables<br>**1.5** — Sustituye las repeticiones mediante sinónimo o pronombre, sin recurrir a la nominalización ni al hiperónimo, y todos los referentes son recuperables<br>**1** — Sustituye la mayoría de las repeticiones; 1 referente exige releer para identificarlo<br>**0.5** — Repite la palabra clave 3 o más veces teniendo sustituto evidente<br>**0** — Repite el mismo sustantivo en oraciones consecutivas a lo largo del texto |
 
@@ -679,6 +679,6 @@ Derivada del banco de verbos, sin reescribir nada a mano. Así es como la vería
 
 | Original (3.ª persona) | Autoevaluación (1.ª persona) |
 |---|---|
-| Emplea fórmulas de opinión (creo que, en mi opinión) al presentar cada razón y mantiene el resto del texto libre de expresiones coloquiales. | Empleo fórmulas de opinión (creo que, en mi opinión) al presentar cada razón y mantiene el resto del texto libre de expresiones coloquiales. |
+| Emplea fórmulas de opinión (*creo que*, *en mi opinión*) al presentar cada razón y mantiene el resto del texto libre de expresiones coloquiales. | Empleo fórmulas de opinión (*creo que*, *en mi opinión*) al presentar cada razón y mantiene el resto del texto libre de expresiones coloquiales. |
 | Ordena el texto en tres partes —postura, razones y cierre— con un párrafo para cada razón. | Ordeno el texto en tres partes —postura, razones y cierre— con un párrafo para cada razón. |
-| Emplea conectores explicativos y de contraste (es decir, en cambio) para encadenar postura, razones y cierre, y delimita los incisos con comas. | Empleo conectores explicativos y de contraste (es decir, en cambio) para encadenar postura, razones y cierre, y delimita los incisos con comas. |
+| Emplea conectores explicativos y de contraste (*es decir*, *en cambio*) para encadenar postura, razones y cierre, y delimita los incisos con comas. | Empleo conectores explicativos y de contraste (*es decir*, *en cambio*) para encadenar postura, razones y cierre, y delimita los incisos con comas. |

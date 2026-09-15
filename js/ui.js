@@ -3,6 +3,7 @@ import { comprobarRepartoPesos, REGLAS } from "./validador.js";
 import { microexplicacion } from "./microexplicaciones.js";
 import { calcularResultadoGuardado, valorNivel } from "./calificacion.js";
 import { filasACsv, descargarCsv, nombreMmaaaa } from "./csv.js";
+import { conCursiva, textoPlano } from "./marcas.js";
 
 // Las etiquetas y el orden de los cursos vienen de data/catalogo.json, no de
 // aquí: eran tres listas cableadas en este archivo y una cuarta —la de packs—
@@ -55,6 +56,14 @@ export function escapeHtml(str) {
     .replaceAll("'", "&#39;");
 }
 
+// Un texto de pack —descriptor, condición de banda, ítem de cotejo— puede
+// llevar formas de la lengua en cursiva (*y*, *pero*; SDD §5.2). Se escapa
+// primero y se marca después: el asterisco no es carácter de HTML, así que
+// nada del texto puede abrir una etiqueta.
+export function textoPack(str) {
+  return conCursiva(escapeHtml(str));
+}
+
 // --- Exportación de la rúbrica para el importador de rúbricas de iDoceo ---
 // (§17.19, ampliada el 2026-08-26). Vía alternativa a "Calificar" (§6.5), no
 // complementaria: si el docente califica aquí importando esto en iDoceo, no
@@ -73,7 +82,8 @@ export function escapeHtml(str) {
 //     "Calificar", así que la nota que compute iDoceo coincide con la que
 //     habría calculado esta app).
 //   - Resto de celdas: el descriptor de ese criterio en ese nivel, el mismo
-//     texto que ya se ve en la Rúbrica analítica.
+//     texto que ya se ve en la Rúbrica analítica, con las cursivas pasadas
+//     a «comillas»: una celda de hoja de cálculo no tiene cursiva.
 // Un salto de línea dentro de una celda citada es CSV válido (RFC 4180) y
 // Excel/iDoceo lo leen como salto de línea de celda, no como fila nueva.
 export function generarCsvRubricaIdoceo(criterios, escala = "equilibrada") {
@@ -81,7 +91,7 @@ export function generarCsvRubricaIdoceo(criterios, escala = "equilibrada") {
   const cabecera = ["", ...nivelesDesc.map((n) => `${etiquetaNivel(n)}\n${valorNivel(n, escala)}`)];
   const filas = criterios.map((c) => [
     `${c.nombre}\n${c.peso_normalizado.toFixed(1)}%`,
-    ...nivelesDesc.map((n) => c.descriptores[`n${n}`].texto),
+    ...nivelesDesc.map((n) => textoPlano(c.descriptores[`n${n}`].texto)),
   ]);
   return filasACsv([cabecera, ...filas]);
 }
@@ -161,9 +171,9 @@ function renderRubricaAnalitica(rubrica) {
           <span class="bloque-etiqueta bloque-${d.bloque}" title="Bloque LOMLOE ${d.bloque}">${d.bloque}</span>
           <span class="dimension-nombre">${escapeHtml(d.nombre)}${d.obligatorio ? ' <span class="etiqueta-obligatorio">obligatorio</span>' : ""}</span>
           <span class="dimension-meta">Peso ${d.peso}% · ${escapeHtml(d.criterioOficial)}</span>
-          ${d.condicionEvidencia ? `<span class="dimension-condicion"><strong>Para poder evaluarla:</strong> ${escapeHtml(d.condicionEvidencia)}</span>` : ""}
+          ${d.condicionEvidencia ? `<span class="dimension-condicion"><strong>Para poder evaluarla:</strong> ${textoPack(d.condicionEvidencia)}</span>` : ""}
         </td>
-        ${d.niveles.map((n) => `<td>${escapeHtml(n)}</td>`).join("")}
+        ${d.niveles.map((n) => `<td>${textoPack(n)}</td>`).join("")}
       </tr>
     `
     )
@@ -202,7 +212,7 @@ function renderMatrizPersona(auto, { coevaluacion } = {}) {
           <span class="dimension-nombre">${escapeHtml(d.nombre)}${d.obligatorio ? ' <span class="etiqueta-obligatorio">obligatorio</span>' : ""}</span>
           <span class="dimension-meta">Peso ${d.peso}%</span>
         </td>
-        ${d.niveles.map((n) => `<td>${escapeHtml(n)}</td>`).join("")}
+        ${d.niveles.map((n) => `<td>${textoPack(n)}</td>`).join("")}
       </tr>
     `;
       const filaComentario = coevaluacion
@@ -253,7 +263,7 @@ function renderRubricaUnPunto(unPunto) {
         <td class="col-dimension">
           <span class="bloque-etiqueta bloque-${d.bloque}" title="Bloque LOMLOE ${d.bloque}">${d.bloque}</span>
           <span class="dimension-nombre">${escapeHtml(d.nombre)}${d.obligatorio ? ' <span class="etiqueta-obligatorio">obligatorio</span>' : ""}</span>
-          <p>${escapeHtml(d.descriptor)}</p>
+          <p>${textoPack(d.descriptor)}</p>
         </td>
         <td class="col-excelencia"><div class="linea-comentario"></div></td>
       </tr>
@@ -331,7 +341,7 @@ function renderListaCotejo(cotejo, meta) {
       <li>
         <input type="checkbox" />
         <span>
-          ${escapeHtml(it.item)}
+          ${textoPack(it.item)}
           <span class="cotejo-dimension">${escapeHtml(it.dimension)}</span>
         </span>
       </li>
@@ -406,7 +416,7 @@ function renderFichaAlumno(ficha, alumnos) {
     .map((d) => `<li>${escapeHtml(d.nombre)} <span class="peso-pill">${d.peso}%</span></li>`)
     .join("");
   const excelente = ficha.comoLlegarAExcelente
-    .map((d) => `<li><strong>${escapeHtml(d.nombre)}:</strong> ${escapeHtml(d.texto)}</li>`)
+    .map((d) => `<li><strong>${escapeHtml(d.nombre)}:</strong> ${textoPack(d.texto)}</li>`)
     .join("");
 
   const nombres = Object.keys(alumnos).sort((a, b) => a.localeCompare(b, "es"));
@@ -524,7 +534,7 @@ export function renderResultado(container, { puertaInfo, resultado, alumnos = {}
       ${pestanas}
       <button class="tab-boton tab-boton-utilidad" id="btn-ajustar" type="button">Ajustar</button>
       <button class="tab-boton tab-boton-utilidad" id="btn-calificar" type="button">Calificar</button>
-      <button class="tab-boton tab-boton-utilidad" id="btn-exportar-idoceo" type="button">Exportar rúbrica (iDoceo)</button>
+      <button class="tab-boton tab-boton-utilidad" id="btn-exportar-idoceo" type="button">Exportar rúbrica (CSV)</button>
       <button class="tab-boton tab-boton-utilidad" id="btn-imprimir" type="button">Imprimir esta vista</button>
     </div>
     ${microexplicacion("exportar-idoceo")}

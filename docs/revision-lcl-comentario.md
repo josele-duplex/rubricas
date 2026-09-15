@@ -1,6 +1,6 @@
 # Revisión del pack: Comentario de texto literario — Región de Murcia
 
-**Pack** `pack-lcl-comentario.json` · versión 0.2.1 · 29 criterios · 116 descriptores · 17 matrices cuantitativas
+**Pack** `pack-lcl-comentario.json` · versión 0.3.0 · 29 criterios · 116 descriptores · 17 matrices cuantitativas
 
 > Documento para validación docente, generado desde el JSON. No se edita a mano.
 > Al leer, mira sobre todo tres cosas: si el nivel N4 es alcanzable en ese curso,
@@ -85,7 +85,7 @@
 | **N1** | Redacta el comentario con faltas de ortografía y errores de concordancia que obligan a releer para reconstruir la idea. |
 | **N2** | Aplica las normas de acentuación y de concordancia trabajadas en clase, con faltas que permiten seguir el comentario. |
 | **N3** | Aplica las normas de ortografía, acentuación y concordancia del nivel, y separa con punto cada idea sobre el texto. |
-| **N4** | Sustituye las palabras de significado general (cosa, tema, decir) por el verbo que nombra lo que hace el texto, y entrega el comentario sin faltas que dificulten la lectura. |
+| **N4** | Sustituye las palabras de significado general (*cosa*, *tema*, *decir*) por el verbo que nombra lo que hace el texto, y entrega el comentario sin faltas que dificulten la lectura. |
 
 **Matriz cuantitativa** — total 10 puntos. Es lo que usa el modo IA para corregir.
 
@@ -93,7 +93,7 @@
 |---|---|---|
 | Ortografía, acentuación y puntuación | 4 | **4** — Hasta 1 falta en todo el comentario<br>**3** — 2 o 3 faltas<br>**2** — 4 o 5 faltas<br>**1** — 6 o 7 faltas<br>**0** — 8 o más faltas |
 | Concordancia | 2 | **2** — Sin errores de concordancia de género, número o persona<br>**1.5** — Hasta 1 error de concordancia<br>**1** — 2 o 3 errores de concordancia<br>**0.5** — De 4 a 5 errores de concordancia<br>**0** — 6 o más errores de concordancia |
-| Precisión del vocabulario | 4 | **4** — Nombra con el verbo preciso lo que hace el texto (describe, compara, repite)<br>**3** — Emplea 1 o 2 términos de significado general (cosa, tema, decir) con sustituto evidente<br>**2** — Emplea 3 o más términos de significado general<br>**1** — Emplea términos de significado general y algún verbo preciso<br>**0** — El comentario se sostiene sobre palabras comodín |
+| Precisión del vocabulario | 4 | **4** — Nombra con el verbo preciso lo que hace el texto (*describe*, *compara*, *repite*)<br>**3** — Emplea 1 o 2 términos de significado general (*cosa*, *tema*, *decir*) con sustituto evidente<br>**2** — Emplea 3 o más términos de significado general<br>**1** — Emplea términos de significado general y algún verbo preciso<br>**0** — El comentario se sostiene sobre palabras comodín |
 
 ---
 
@@ -385,7 +385,7 @@
 
 | Nivel | Descriptor |
 |---|---|
-| **N1** | Utiliza palabras del habla común para nombrar los fenómenos del texto: repeticiones, palabras raras, frases largas. |
+| **N1** | Utiliza palabras del habla común para nombrar los fenómenos del texto: *repeticiones*, *palabras raras*, *frases largas*. |
 | **N2** | Emplea los términos del análisis literario trabajados en clase para nombrar los fenómenos del texto. |
 | **N3** | Distingue los términos referidos a la forma de los referidos al contenido y aplica cada uno donde corresponde. |
 | **N4** | Emplea el término preciso en cada caso y acompaña cada uno del fragmento del texto correspondiente. |
@@ -507,7 +507,7 @@
 
 | Nivel | Descriptor |
 |---|---|
-| **N1** | Localiza los recursos del texto y presenta una lista ordenada por orden de aparición. |
+| **N1** | Localiza los recursos del texto y presenta una lista en orden de aparición. |
 | **N2** | Explica qué aporta cada recurso a la lectura del fragmento, uno por uno. |
 | **N3** | Combina lo observado en los distintos planos del texto para dar cuenta del sentido de la obra. |
 | **N4** | Articula el análisis en torno a los rasgos que deciden la lectura y deja fuera el inventario estéril. |
@@ -528,7 +528,7 @@
 
 | Nivel | Descriptor |
 |---|---|
-| **N1** | Utiliza palabras del habla común para nombrar los fenómenos del texto: repeticiones, saltos, frases cortadas. |
+| **N1** | Utiliza palabras del habla común para nombrar los fenómenos del texto: *repeticiones*, *saltos*, *frases cortadas*. |
 | **N2** | Emplea los términos del análisis literario del repertorio del curso al describir el texto. |
 | **N3** | Distingue el término de la métrica del de la retórica y del de la enunciación, y aplica cada uno donde corresponde. |
 | **N4** | Gradúa el término empleado según lo que el texto autoriza y acompaña cada uno del fragmento correspondiente. |

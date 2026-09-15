@@ -12,7 +12,8 @@
 import { calcularNota, puntosYNivelDe, redondear2 } from "./calificacion.js";
 import { DETRACTOR_ESTIMACION } from "./motor.js";
 import { microexplicacion } from "./microexplicaciones.js";
-import { escapeHtml, etiquetaNivel } from "./ui.js";
+import { escapeHtml, textoPack, etiquetaNivel } from "./ui.js";
+import { textoPlano } from "./marcas.js";
 import { filasACsv, descargarCsv, nombreMmaaaa } from "./csv.js";
 
 // --- Persistencia (§6.5) ---------------------------------------------------
@@ -92,7 +93,7 @@ function descargarCsvNotas(meta) {
 
 function renderComponente(comp) {
   const opciones = comp.bandas
-    .map((b, i) => `<option value="${i}">${b.puntos} pts — ${escapeHtml(b.condicion)}</option>`)
+    .map((b, i) => `<option value="${i}">${b.puntos} pts — ${escapeHtml(textoPlano(b.condicion))}</option>`)
     .join("");
   return `
     <div class="componente-matriz">
@@ -108,7 +109,7 @@ function renderComponente(comp) {
 function renderPenalizacion(pen) {
   return `
     <div class="penalizacion-matriz">
-      <label>${escapeHtml(pen.por)} <span class="peso-pill">${pen.puntos} pts, tope ${pen.tope}</span></label>
+      <label>${textoPack(pen.por)} <span class="peso-pill">${pen.puntos} pts, tope ${pen.tope}</span></label>
       <input type="number" class="input-ocurrencias" data-clave="${escapeHtml(pen.clave)}" min="0" step="1" value="0" />
     </div>
   `;
@@ -130,7 +131,7 @@ function renderCriterioNivel(criterio) {
       return `
         <label class="opcion-nivel">
           <input type="radio" name="nivel-${criterio.id}" value="${n}" />
-          <span><strong>${escapeHtml(etiquetaNivel(n))}</strong> — ${escapeHtml(texto)}</span>
+          <span><strong>${escapeHtml(etiquetaNivel(n))}</strong> — ${textoPack(texto)}</span>
         </label>
       `;
     })

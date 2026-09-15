@@ -2,7 +2,7 @@
   "pack_id": "lcl-murcia-oral",
   "materia": "LCL",
   "etiqueta": "Exposición oral — Región de Murcia",
-  "version": "0.5.0",
+  "version": "0.7.0",
   "normativa": {
     "estatal": [
       "RD 217/2022, de 29 de marzo (ESO)",
@@ -258,11 +258,11 @@
       "descriptores": {
         "n1": {
           "verbo": "utiliza",
-          "texto": "Utiliza y, pero y entonces para enlazar las ideas, sin marcar el paso de una parte a otra de la exposición."
+          "texto": "Utiliza *y*, *pero* y *entonces* para enlazar las ideas, sin marcar el paso de una parte a otra de la exposición."
         },
         "n2": {
           "verbo": "utiliza",
-          "texto": "Utiliza marcadores de orden (primero, después, por último) para señalar el paso de una parte a otra."
+          "texto": "Utiliza marcadores de orden (*primero*, *después*, *por último*) para señalar el paso de una parte a otra."
         },
         "n3": {
           "verbo": "emplea",
@@ -270,7 +270,7 @@
         },
         "n4": {
           "verbo": "sustituye",
-          "texto": "Sustituye la repetición del mismo término mediante un sinónimo o una referencia (esto, esta idea) al retomarlo."
+          "texto": "Sustituye la repetición del mismo término mediante un sinónimo o una referencia (*esto*, *esta idea*) al retomarlo."
         }
       },
       "matriz_cuantitativa": {
@@ -294,7 +294,7 @@
               },
               {
                 "puntos": 1,
-                "condicion": "Enlaza con y, pero y entonces"
+                "condicion": "Enlaza con *y*, *pero* y *entonces*"
               },
               {
                 "puntos": 0,
@@ -334,7 +334,7 @@
             "bandas": [
               {
                 "puntos": 2,
-                "condicion": "Sustituye por sinónimo, pronombre o referencia (esto, esta idea) la palabra ya usada"
+                "condicion": "Sustituye por sinónimo, pronombre o referencia (*esto*, *esta idea*) la palabra ya usada"
               },
               {
                 "puntos": 1.5,
@@ -401,7 +401,7 @@
       "descriptores": {
         "n1": {
           "verbo": "vocaliza",
-          "texto": "Vocaliza con un volumen tan bajo o un ritmo tan rápido que la clase pierde palabras sueltas, y emplea las mismas muletillas (esto, eh) en casi todas las frases."
+          "texto": "Vocaliza con un volumen tan bajo o un ritmo tan rápido que la clase pierde palabras sueltas, y emplea las mismas muletillas (*esto*, *eh*) en casi todas las frases."
         },
         "n2": {
           "verbo": "vocaliza",
@@ -736,7 +736,7 @@
         },
         "n4": {
           "verbo": "articula",
-          "texto": "Articula los bloques del desarrollo de lo general a lo particular y cierra retomando la idea principal, dentro del tiempo asignado y sin que el profesor tenga que avisarle."
+          "texto": "Articula los bloques del desarrollo de lo general a lo particular y cierra retomando la idea principal, dentro del tiempo asignado y sin aviso del profesor."
         }
       },
       "matriz_cuantitativa": {
@@ -893,11 +893,11 @@
       "descriptores": {
         "n1": {
           "verbo": "utiliza",
-          "texto": "Utiliza y, pero y entonces para enlazar las ideas del desarrollo, sin marcar el paso de una parte a otra."
+          "texto": "Utiliza *y*, *pero* y *entonces* para enlazar las ideas del desarrollo, sin marcar el paso de una parte a otra."
         },
         "n2": {
           "verbo": "utiliza",
-          "texto": "Utiliza marcadores de orden y de adición (además, en primer lugar, por último) para señalar el paso de una parte a otra."
+          "texto": "Utiliza marcadores de orden y de adición (*además*, *en primer lugar*, *por último*) para señalar el paso de una parte a otra."
         },
         "n3": {
           "verbo": "emplea",
@@ -905,7 +905,7 @@
         },
         "n4": {
           "verbo": "sustituye",
-          "texto": "Sustituye mediante un sinónimo, un hiperónimo o una referencia (esto, esta idea) la palabra que ya ha aparecido en el bloque anterior."
+          "texto": "Sustituye mediante un sinónimo, un hiperónimo o una referencia (*esto*, *esta idea*) la palabra que ya ha aparecido en el bloque anterior."
         }
       },
       "matriz_cuantitativa": {
@@ -929,7 +929,7 @@
               },
               {
                 "puntos": 1,
-                "condicion": "Enlaza con y, pero y entonces"
+                "condicion": "Enlaza con *y*, *pero* y *entonces*"
               },
               {
                 "puntos": 0,
@@ -969,7 +969,7 @@
             "bandas": [
               {
                 "puntos": 2,
-                "condicion": "Sustituye por sinónimo, hiperónimo o referencia (esto, esta idea) la palabra ya usada"
+                "condicion": "Sustituye por sinónimo, hiperónimo o referencia (*esto*, *esta idea*) la palabra ya usada"
               },
               {
                 "puntos": 1.5,
@@ -1299,7 +1299,7 @@
       "descriptores": {
         "n1": {
           "verbo": "utiliza",
-          "texto": "Utiliza en la misma exposición expresiones coloquiales y expresiones formales, dirigida a toda la clase."
+          "texto": "Utiliza expresiones coloquiales y expresiones formales en una misma exposición dirigida a toda la clase."
         },
         "n2": {
           "verbo": "ajusta",
@@ -1528,15 +1528,15 @@
       "descriptores": {
         "n1": {
           "verbo": "utiliza",
-          "texto": "Utiliza y, pero y entonces para enlazar las ideas, sin marcador que distinga la explicación de la valoración personal."
+          "texto": "Utiliza *y*, *pero* y *entonces* para enlazar las ideas, sin marcador que distinga la explicación de la valoración personal."
         },
         "n2": {
           "verbo": "utiliza",
-          "texto": "Utiliza marcadores de orden y de adición entre los bloques, y añade en mi opinión o creo que para introducir la valoración personal."
+          "texto": "Utiliza marcadores de orden y de adición entre los bloques, y añade *en mi opinión* o *creo que* para introducir la valoración personal."
         },
         "n3": {
           "verbo": "emplea",
-          "texto": "Emplea marcadores de orden, adición y causa, y utiliza algún marcador de opinión (a mi parecer, sin duda) sin repetir siempre el mismo."
+          "texto": "Emplea marcadores de orden, adición y causa, y utiliza algún marcador de opinión (*a mi parecer*, *sin duda*) sin repetir siempre el mismo."
         },
         "n4": {
           "verbo": "sustituye",
@@ -1552,7 +1552,7 @@
             "bandas": [
               {
                 "puntos": 4,
-                "condicion": "Emplea 3 o más tipos distintos, incluido algún marcador de opinión (a mi parecer, sin duda)"
+                "condicion": "Emplea 3 o más tipos distintos, incluido algún marcador de opinión (*a mi parecer*, *sin duda*)"
               },
               {
                 "puntos": 3,
@@ -1564,7 +1564,7 @@
               },
               {
                 "puntos": 1,
-                "condicion": "Enlaza con y, pero y entonces"
+                "condicion": "Enlaza con *y*, *pero* y *entonces*"
               },
               {
                 "puntos": 0,
@@ -1628,7 +1628,7 @@
         "penalizaciones": []
       },
       "descriptor_cotejo": null,
-      "descriptor_un_punto": "Utiliza marcadores de orden y de adición entre los bloques, y añade en mi opinión para introducir la valoración personal."
+      "descriptor_un_punto": "Utiliza marcadores de orden y de adición entre los bloques, y añade *en mi opinión* para introducir la valoración personal."
     },
     {
       "id": "lcl-b-fluidez-oral-3eso",
@@ -1675,7 +1675,7 @@
         },
         "n2": {
           "verbo": "vocaliza",
-          "texto": "Vocaliza con un volumen y un ritmo adecuados durante la mayor parte de la exposición, con alguna muletilla en los momentos de valoración personal."
+          "texto": "Vocaliza con un volumen y un ritmo que permiten seguir la mayor parte de la exposición, con alguna muletilla en los momentos de valoración personal."
         },
         "n3": {
           "verbo": "modula",
@@ -1771,7 +1771,7 @@
         "penalizaciones": []
       },
       "descriptor_cotejo": null,
-      "descriptor_un_punto": "Vocaliza con un volumen y un ritmo adecuados durante la mayor parte de la exposición, con alguna muletilla aislada."
+      "descriptor_un_punto": "Vocaliza con un volumen y un ritmo que permiten seguir la mayor parte de la exposición, con alguna muletilla aislada."
     },
     {
       "id": "lcl-b-noverbal-oral-3eso",
@@ -2163,19 +2163,19 @@
       "descriptores": {
         "n1": {
           "verbo": "utiliza",
-          "texto": "Utiliza y, pero y entonces para enlazar los argumentos, sin marcador que señale el paso de un bloque a otro."
+          "texto": "Utiliza *y*, *pero* y *entonces* para enlazar los argumentos, sin marcador que señale el paso de un bloque a otro."
         },
         "n2": {
           "verbo": "utiliza",
-          "texto": "Utiliza marcadores de orden y de causa-consecuencia (en primer lugar, por tanto) entre los bloques del desarrollo."
+          "texto": "Utiliza marcadores de orden y de causa-consecuencia (*en primer lugar*, *por tanto*) entre los bloques del desarrollo."
         },
         "n3": {
           "verbo": "emplea",
-          "texto": "Emplea marcadores de contraste y de refuerzo (sin embargo, además) para relacionar los argumentos entre sí, no solo para ordenarlos."
+          "texto": "Emplea marcadores de contraste y de refuerzo (*sin embargo*, *además*) para relacionar los argumentos entre sí, no solo para ordenarlos."
         },
         "n4": {
           "verbo": "sustituye",
-          "texto": "Sustituye las repeticiones mediante sinónimos o expresiones de referencia (esta cuestión, dicho argumento) y encadena cada bloque retomando una idea del anterior."
+          "texto": "Sustituye las repeticiones mediante sinónimos o expresiones de referencia (*esta cuestión*, *dicho argumento*) y encadena cada bloque retomando una idea del anterior."
         }
       },
       "matriz_cuantitativa": {
@@ -2309,7 +2309,7 @@
         },
         "n2": {
           "verbo": "vocaliza",
-          "texto": "Vocaliza con un volumen y un ritmo adecuados durante la mayor parte de la exposición, con algún tramo leído de corrido sin pausas que ayuden a seguir el argumento."
+          "texto": "Vocaliza con un volumen y un ritmo que permiten seguir la mayor parte de la exposición, con algún tramo leído de corrido, sin pausas que separen los argumentos."
         },
         "n3": {
           "verbo": "modula",
@@ -2431,7 +2431,7 @@
         "penalizaciones": []
       },
       "descriptor_cotejo": null,
-      "descriptor_un_punto": "Vocaliza con un volumen y un ritmo adecuados durante la mayor parte de la exposición, con alguna muletilla puntual."
+      "descriptor_un_punto": "Vocaliza con un volumen y un ritmo que permiten seguir la mayor parte de la exposición, con alguna muletilla puntual."
     },
     {
       "id": "lcl-b-noverbal-oral-4eso",
@@ -2707,15 +2707,15 @@
               },
               {
                 "puntos": 3,
-                "condicion": "Menciona la existencia de otro punto de vista, sin exponerlo"
+                "condicion": "Los bloques avanzan hacia la tesis y mencionan otro punto de vista sin exponerlo"
               },
               {
                 "puntos": 2,
-                "condicion": "Cada bloque aporta un argumento, pero sin relación reconocible entre ellos"
+                "condicion": "Los bloques avanzan hacia la tesis sin mencionar ningún otro punto de vista"
               },
               {
                 "puntos": 1,
-                "condicion": "Los bloques repiten el mismo argumento con otras palabras"
+                "condicion": "Cada bloque aporta un argumento sin relación reconocible con los demás, o repite el mismo con otras palabras"
               },
               {
                 "puntos": 0,
@@ -2821,15 +2821,15 @@
       "descriptores": {
         "n1": {
           "verbo": "utiliza",
-          "texto": "Utiliza y, pero y entonces para enlazar los argumentos, sin marcador que señale el paso de un bloque a otro."
+          "texto": "Utiliza *y*, *pero* y *entonces* para enlazar los argumentos, sin marcador que señale el paso de un bloque a otro."
         },
         "n2": {
           "verbo": "utiliza",
-          "texto": "Utiliza marcadores de orden y de causa-consecuencia (en primer lugar, por tanto) entre los bloques del desarrollo."
+          "texto": "Utiliza marcadores de orden y de causa-consecuencia (*en primer lugar*, *por tanto*) entre los bloques del desarrollo."
         },
         "n3": {
           "verbo": "emplea",
-          "texto": "Emplea marcadores de concesión y de contraste (es cierto que, no obstante) para introducir y resolver la objeción."
+          "texto": "Emplea marcadores de concesión y de contraste (*es cierto que*, *no obstante*) para introducir y resolver la objeción."
         },
         "n4": {
           "verbo": "sustituye",
@@ -2845,7 +2845,7 @@
             "bandas": [
               {
                 "puntos": 4,
-                "condicion": "Emplea 4 o más tipos distintos, incluido al menos un marcador de concesión (es cierto que, no obstante)"
+                "condicion": "Emplea 4 o más tipos distintos, incluido al menos un marcador de concesión (*es cierto que*, *no obstante*)"
               },
               {
                 "puntos": 3,
@@ -2967,7 +2967,7 @@
         },
         "n2": {
           "verbo": "vocaliza",
-          "texto": "Vocaliza con un volumen y un ritmo adecuados durante la mayor parte de la exposición, con algún error de pronunciación aislado y algún tramo leído de las notas."
+          "texto": "Vocaliza con un volumen y un ritmo que permiten seguir la mayor parte de la exposición, con algún error de pronunciación aislado y algún tramo leído de las notas."
         },
         "n3": {
           "verbo": "pronuncia",
@@ -3089,7 +3089,7 @@
         "penalizaciones": []
       },
       "descriptor_cotejo": null,
-      "descriptor_un_punto": "Vocaliza con un volumen y un ritmo adecuados durante la mayor parte de la exposición, con algún error de pronunciación aislado."
+      "descriptor_un_punto": "Vocaliza con un volumen y un ritmo que permiten seguir la mayor parte de la exposición, con algún error de pronunciación aislado."
     },
     {
       "id": "lcl-b-noverbal-oral-1bach",
@@ -3317,7 +3317,7 @@
         },
         "n3": {
           "verbo": "estructura",
-          "texto": "Estructura el desarrollo relacionando los distintos puntos de vista entre sí (coinciden en, se oponen en) y ajusta la duración al tiempo asignado."
+          "texto": "Estructura el desarrollo relacionando los distintos puntos de vista entre sí (*coinciden en*, *se oponen en*) y ajusta la duración al tiempo asignado."
         },
         "n4": {
           "verbo": "articula",
@@ -3477,15 +3477,15 @@
       "descriptores": {
         "n1": {
           "verbo": "utiliza",
-          "texto": "Utiliza y, pero y entonces para enlazar los puntos de vista, sin marcador que señale el paso de uno a otro."
+          "texto": "Utiliza *y*, *pero* y *entonces* para enlazar los puntos de vista, sin marcador que señale el paso de uno a otro."
         },
         "n2": {
           "verbo": "utiliza",
-          "texto": "Utiliza marcadores de orden y de adición (en primer lugar, además) entre los bloques dedicados a cada punto de vista."
+          "texto": "Utiliza marcadores de orden y de adición (*en primer lugar*, *además*) entre los bloques dedicados a cada punto de vista."
         },
         "n3": {
           "verbo": "emplea",
-          "texto": "Emplea marcadores de contraste entre puntos de vista (frente a, en cambio) y de concesión (es cierto que, no obstante) sin repetir siempre el mismo."
+          "texto": "Emplea marcadores de contraste entre puntos de vista (*frente a*, *en cambio*) y de concesión (*es cierto que*, *no obstante*) sin repetir siempre el mismo."
         },
         "n4": {
           "verbo": "sustituye",
@@ -3501,7 +3501,7 @@
             "bandas": [
               {
                 "puntos": 4,
-                "condicion": "Emplea 4 o más tipos distintos, incluido al menos un marcador de contraste entre puntos de vista (frente a, en cambio)"
+                "condicion": "Emplea 4 o más tipos distintos, incluido al menos un marcador de contraste entre puntos de vista (*frente a*, *en cambio*)"
               },
               {
                 "puntos": 3,
@@ -3623,7 +3623,7 @@
         },
         "n2": {
           "verbo": "vocaliza",
-          "texto": "Vocaliza con un volumen y un ritmo adecuados durante la mayor parte de la exposición, con algún error de pronunciación aislado y algún tramo leído de las notas."
+          "texto": "Vocaliza con un volumen y un ritmo que permiten seguir la mayor parte de la exposición, con algún error de pronunciación aislado y algún tramo leído de las notas."
         },
         "n3": {
           "verbo": "pronuncia",
@@ -3745,7 +3745,7 @@
         "penalizaciones": []
       },
       "descriptor_cotejo": null,
-      "descriptor_un_punto": "Vocaliza con un volumen y un ritmo adecuados durante la mayor parte de la exposición, con algún error de pronunciación aislado."
+      "descriptor_un_punto": "Vocaliza con un volumen y un ritmo que permiten seguir la mayor parte de la exposición, con algún error de pronunciación aislado."
     },
     {
       "id": "lcl-b-noverbal-oral-2bach",

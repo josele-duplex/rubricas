@@ -2,7 +2,7 @@
   "pack_id": "lcl-murcia-resumen",
   "materia": "LCL",
   "etiqueta": "Resumen de un texto — Región de Murcia",
-  "version": "0.1.0",
+  "version": "0.3.0",
   "normativa": {
     "estatal": [
       "RD 217/2022, de 29 de marzo (ESO)",
@@ -520,7 +520,7 @@
         },
         "n4": {
           "verbo": "suprime",
-          "texto": "Suprime las marcas del texto de partida, como el autor opina o en este texto se habla de, y traslada las ideas en voz propia."
+          "texto": "Suprime las marcas del texto de partida, como *el autor opina* o *en este texto se habla de*, y traslada las ideas en voz propia."
         }
       },
       "matriz_cuantitativa": {
@@ -610,7 +610,7 @@
             "bandas": [
               {
                 "puntos": 2,
-                "condicion": "El resumen traslada las ideas sin fórmulas del tipo el autor dice y sin opinión propia"
+                "condicion": "El resumen traslada las ideas sin fórmulas del tipo *el autor dice* y sin opinión propia"
               },
               {
                 "puntos": 1.5,
@@ -753,7 +753,7 @@
             "bandas": [
               {
                 "puntos": 4,
-                "condicion": "Emplea términos precisos y ninguna palabra comodín (cosa, tema, hacer)"
+                "condicion": "Emplea términos precisos y ninguna palabra comodín (*cosa*, *tema*, *hacer*)"
               },
               {
                 "puntos": 3,
@@ -1258,7 +1258,7 @@
         },
         "n4": {
           "verbo": "suprime",
-          "texto": "Suprime las marcas del texto de partida, como el autor opina o en este texto se habla de, y traslada las ideas en voz propia."
+          "texto": "Suprime las marcas del texto de partida, como *el autor opina* o *en este texto se habla de*, y traslada las ideas en voz propia."
         }
       },
       "matriz_cuantitativa": {
@@ -1348,7 +1348,7 @@
             "bandas": [
               {
                 "puntos": 4,
-                "condicion": "El resumen traslada las ideas sin fórmulas del tipo el autor dice y sin opinión propia"
+                "condicion": "El resumen traslada las ideas sin fórmulas del tipo *el autor dice* y sin opinión propia"
               },
               {
                 "puntos": 3,
@@ -1491,7 +1491,7 @@
             "bandas": [
               {
                 "puntos": 4,
-                "condicion": "Emplea términos precisos y ninguna palabra comodín (cosa, tema, hacer)"
+                "condicion": "Emplea términos precisos y ninguna palabra comodín (*cosa*, *tema*, *hacer*)"
               },
               {
                 "puntos": 3,
@@ -1917,7 +1917,7 @@
             "bandas": [
               {
                 "puntos": 2,
-                "condicion": "El resumen conserva las cautelas del original (parece, tiende a, en algunos casos)"
+                "condicion": "El resumen conserva las cautelas del original (*parece*, *tiende a*, *en algunos casos*)"
               },
               {
                 "puntos": 1.5,
@@ -2444,7 +2444,7 @@
         },
         "n3": {
           "verbo": "distingue",
-          "texto": "Distingue en el texto los hechos de las opiniones y los separa en el resumen con esa marca."
+          "texto": "Distingue en el texto los hechos de las opiniones y mantiene esa distinción en el resumen."
         },
         "n4": {
           "verbo": "integra",
@@ -2981,7 +2981,7 @@
               },
               {
                 "puntos": 0,
-                "condicion": "El resumen reduce a decir todos los verbos de opinión del texto"
+                "condicion": "El resumen reduce a *decir* todos los verbos de opinión del texto"
               }
             ]
           }

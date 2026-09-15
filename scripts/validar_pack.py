@@ -16,6 +16,7 @@ import json, re, sys, os, collections, unicodedata
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from catalogo import lexico as cargar_lexico, rutas_de_packs, cargar_pack   # noqa: E402
+from marcas import sin_marcas, error_de_marcas   # noqa: E402
 
 # Las palabras de las reglas viven en un solo sitio (data/reglas-lexicas.json) y
 # js/validador.js las recibe generadas desde ese mismo archivo. Antes estaban
@@ -54,7 +55,7 @@ MINIMO_DIMENSIONES = UMBRALES["minimo_dimensiones_por_combinacion"]
 # cada forma salen de data/reglas-lexicas.json; la lógica está escrita también en
 # js/validador.js, con la misma partición y el mismo resultado.
 def _fichas(texto):
-    return re.findall(r"[^\W\d_]+|\d+", quitar_tildes(texto.lower()), re.UNICODE)
+    return re.findall(r"[^\W\d_]+|\d+", quitar_tildes(sin_marcas(texto).lower()), re.UNICODE)
 
 
 def _numero(ficha):
@@ -264,7 +265,11 @@ _PALABRA_COMPILADA = {t: _regex_termino(t) for t in ADVERBITIS_PALABRA_COMPLETA}
 _MULTI_COMPILADA = {t: _regex_termino(t) for t in ADVERBITIS_MULTIPALABRA}
 
 
+# Las marcas de cursiva (*y*, *pero*) no son texto: las reglas miran las
+# palabras, y una marca dentro de una locución no puede ni tapar ni fabricar
+# un calificador vago. Igual en js/validador.js.
 def encontrar_adverbitis(texto):
+    texto = sin_marcas(texto)
     minus = texto.lower()
     hallados = [t for t in ADVERBITIS_SUBCADENA if t in minus]
     hallados += [t for t, r in _PALABRA_COMPILADA.items() if r.search(texto)]
@@ -273,11 +278,11 @@ def encontrar_adverbitis(texto):
 
 
 def primer_verbo(texto):
-    return re.findall(r"\w+", texto.lower())[0]
+    return re.findall(r"\w+", sin_marcas(texto).lower())[0]
 
 
 def palabras(texto):
-    return set(re.findall(r"\w+", texto.lower()))
+    return set(re.findall(r"\w+", sin_marcas(texto).lower()))
 
 
 def quitar_tildes(texto):
@@ -336,8 +341,8 @@ def validar(ruta):
 
             disparador_ayuda = next((d for d in DISPARADORES_AYUDA if d in cita_norm), None)
             if disparador_ayuda:
-                texto_descriptores = quitar_tildes(
-                    " ".join(c["descriptores"].get(n, {}).get("texto", "") for n in ("n1", "n2", "n3", "n4")).lower()
+                texto_descriptores = quitar_tildes(sin_marcas(
+                    " ".join(c["descriptores"].get(n, {}).get("texto", "") for n in ("n1", "n2", "n3", "n4"))).lower()
                 )
                 if not any(marca in texto_descriptores for marca in MARCAS_ANDAMIAJE):
                     avi(cid, "modalizadores",
@@ -349,7 +354,7 @@ def validar(ruta):
                     d = c["descriptores"].get(nivel)
                     if not d:
                         continue
-                    texto_norm = quitar_tildes(d["texto"].lower())
+                    texto_norm = quitar_tildes(sin_marcas(d["texto"]).lower())
                     marca = next((m for m in MARCAS_ANDAMIAJE_RESIDUAL if m in texto_norm), None)
                     if marca:
                         avi(cid, "modalizadores",
@@ -382,10 +387,31 @@ def validar(ruta):
                     % (c["dimension"], c.get("criterio_oficial", {}).get("codigo"),
                        c["curso"], ", ".join(exigidos)))
 
+        # --- Marcas de cursiva (§5.2): *y*, *pero*. Una marca abierta se
+        # imprime como un asterisco suelto en la rúbrica y en la ficha del
+        # alumno, así que es error, no aviso. Se mira todo texto que la app
+        # pinta; la cita oficial no, porque es literal de la fuente. ---
+        textos_con_marcas = [
+            ("nombre", c.get("nombre")),
+            ("descriptor_un_punto", c.get("descriptor_un_punto")),
+            ("descriptor_cotejo", c.get("descriptor_cotejo")),
+            ("condicion_de_evidencia", c.get("condicion_de_evidencia")),
+        ] + [(nivel, d.get("texto")) for nivel, d in c["descriptores"].items()]
+        if c.get("matriz_cuantitativa"):
+            for comp in c["matriz_cuantitativa"]["componentes"]:
+                textos_con_marcas.append(("matriz · " + comp["nombre"], comp["nombre"]))
+                textos_con_marcas += [("matriz · " + comp["nombre"], b["condicion"]) for b in comp["bandas"]]
+            textos_con_marcas += [("penalización " + pen["clave"], pen.get("por"))
+                                  for pen in c["matriz_cuantitativa"].get("penalizaciones", [])]
+        for donde, texto in textos_con_marcas:
+            fallo = error_de_marcas(texto) if isinstance(texto, str) else None
+            if fallo:
+                err(cid, "cursiva", "%s: %s" % (donde, fallo))
+
         # --- Descriptores ---
         for nivel, d in c["descriptores"].items():
             texto = d["texto"]
-            minus = " " + texto.lower()
+            minus = " " + sin_marcas(texto).lower()
             verbo = primer_verbo(texto)
 
             if verbo not in verbos:

@@ -1,6 +1,6 @@
 # Revisión del pack: Debate y situaciones orales dialogadas — Región de Murcia
 
-**Pack** `pack-lcl-debate.json` · versión 0.2.0 · 11 criterios · 44 descriptores · 0 matrices cuantitativas
+**Pack** `pack-lcl-debate.json` · versión 0.3.0 · 11 criterios · 44 descriptores · 0 matrices cuantitativas
 
 > Documento para validación docente, generado desde el JSON. No se edita a mano.
 > Al leer, mira sobre todo tres cosas: si el nivel N4 es alcanzable en ese curso,
@@ -69,7 +69,7 @@
 |---|---|---|---|---|
 | **Postura sostenida y prueba** 🔒 | 25% | 1 | CE3 — 3.2 | — |
 | **Escucha y recogida de lo dicho por el otro** 🔒 | 25% | 1 | CE3 — 3.2 | — |
-| **Refutación limpia** | 25% | 2 | CE3 — 3.2 | — |
+| **Refutación: el argumento, no la persona** | 25% | 2 | CE3 — 3.2 | — |
 | **Turno, cooperación conversacional y registro** 🔒 | 25% | 2 | CE3 — 3.2 | — |
 
 ### Postura sostenida y prueba  ·  25%  ·  bloque B  ·  🔒 obligatorio
@@ -102,7 +102,7 @@
 
 *Sin matriz cuantitativa: esta dimensión se juzga en conjunto, no hay nada que contar.*
 
-### Refutación limpia  ·  25%  ·  bloque B
+### Refutación: el argumento, no la persona  ·  25%  ·  bloque B
 
 *Criterio oficial 3.2:* «Participar en interacciones orales informales, en el trabajo en equipo y en situaciones orales formales de carácter dialogado, de manera activa y adecuada, con actitudes de escucha activa y haciendo uso de estrategias de cooperación conversacional y cortesía lingüística.»
 
@@ -142,7 +142,7 @@
 |---|---|---|---|---|
 | **Postura sostenida y prueba** 🔒 | 25% | 1 | CE3 — 3.2 | — |
 | **Escucha y recogida de lo dicho por el otro** 🔒 | 25% | 1 | CE3 — 3.2 | — |
-| **Refutación limpia** 🔒 | 25% | 1 | CE3 — 3.2 | — |
+| **Refutación: el argumento, no la persona** 🔒 | 25% | 1 | CE3 — 3.2 | — |
 | **Turno, cooperación conversacional y registro** 🔒 | 25% | 2 | CE3 — 3.2 | — |
 
 ### Postura sostenida y prueba  ·  25%  ·  bloque B  ·  🔒 obligatorio
@@ -175,7 +175,7 @@
 
 *Sin matriz cuantitativa: esta dimensión se juzga en conjunto, no hay nada que contar.*
 
-### Refutación limpia  ·  25%  ·  bloque B  ·  🔒 obligatorio
+### Refutación: el argumento, no la persona  ·  25%  ·  bloque B  ·  🔒 obligatorio
 
 *Criterio oficial 3.2:* «Participar de manera activa y adecuada en interacciones orales informales, de cierta extensión y complejidad, en el trabajo en equipo y en situaciones orales formales de carácter dialogado, con actitudes de escucha activa y estrategias de cooperación conversacional y cortesía lingüística.»
 

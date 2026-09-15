@@ -2,7 +2,7 @@
   "pack_id": "lcl-murcia-comentario",
   "materia": "LCL",
   "etiqueta": "Comentario de texto literario — Región de Murcia",
-  "version": "0.2.1",
+  "version": "0.3.0",
   "normativa": {
     "estatal": [
       "RD 217/2022, de 29 de marzo (ESO)",
@@ -406,7 +406,7 @@
         },
         "n4": {
           "verbo": "sustituye",
-          "texto": "Sustituye las palabras de significado general (cosa, tema, decir) por el verbo que nombra lo que hace el texto, y entrega el comentario sin faltas que dificulten la lectura."
+          "texto": "Sustituye las palabras de significado general (*cosa*, *tema*, *decir*) por el verbo que nombra lo que hace el texto, y entrega el comentario sin faltas que dificulten la lectura."
         }
       },
       "matriz_cuantitativa": {
@@ -470,11 +470,11 @@
             "bandas": [
               {
                 "puntos": 4,
-                "condicion": "Nombra con el verbo preciso lo que hace el texto (describe, compara, repite)"
+                "condicion": "Nombra con el verbo preciso lo que hace el texto (*describe*, *compara*, *repite*)"
               },
               {
                 "puntos": 3,
-                "condicion": "Emplea 1 o 2 términos de significado general (cosa, tema, decir) con sustituto evidente"
+                "condicion": "Emplea 1 o 2 términos de significado general (*cosa*, *tema*, *decir*) con sustituto evidente"
               },
               {
                 "puntos": 2,
@@ -1955,7 +1955,7 @@
       "descriptores": {
         "n1": {
           "verbo": "utiliza",
-          "texto": "Utiliza palabras del habla común para nombrar los fenómenos del texto: repeticiones, palabras raras, frases largas."
+          "texto": "Utiliza palabras del habla común para nombrar los fenómenos del texto: *repeticiones*, *palabras raras*, *frases largas*."
         },
         "n2": {
           "verbo": "emplea",
@@ -2558,7 +2558,7 @@
       "descriptores": {
         "n1": {
           "verbo": "localiza",
-          "texto": "Localiza los recursos del texto y presenta una lista ordenada por orden de aparición."
+          "texto": "Localiza los recursos del texto y presenta una lista en orden de aparición."
         },
         "n2": {
           "verbo": "explica",
@@ -2699,7 +2699,7 @@
       "descriptores": {
         "n1": {
           "verbo": "utiliza",
-          "texto": "Utiliza palabras del habla común para nombrar los fenómenos del texto: repeticiones, saltos, frases cortadas."
+          "texto": "Utiliza palabras del habla común para nombrar los fenómenos del texto: *repeticiones*, *saltos*, *frases cortadas*."
         },
         "n2": {
           "verbo": "emplea",

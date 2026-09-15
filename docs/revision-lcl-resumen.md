@@ -1,6 +1,6 @@
 # Revisión del pack: Resumen de un texto — Región de Murcia
 
-**Pack** `pack-lcl-resumen.json` · versión 0.1.0 · 20 criterios · 80 descriptores · 20 matrices cuantitativas
+**Pack** `pack-lcl-resumen.json` · versión 0.3.0 · 20 criterios · 80 descriptores · 20 matrices cuantitativas
 
 > Documento para validación docente, generado desde el JSON. No se edita a mano.
 > Al leer, mira sobre todo tres cosas: si el nivel N4 es alcanzable en ese curso,
@@ -92,7 +92,7 @@
 | **N1** | Enumera las ideas del texto en frases sueltas y añade al final una opinión propia. |
 | **N2** | Redacta el resumen en un párrafo seguido y emplea los conectores de la pauta facilitada para unir las ideas. |
 | **N3** | Mantiene el resumen dentro de la extensión pedida y enlaza las ideas con conectores de orden y de causa. |
-| **N4** | Suprime las marcas del texto de partida, como el autor opina o en este texto se habla de, y traslada las ideas en voz propia. |
+| **N4** | Suprime las marcas del texto de partida, como *el autor opina* o *en este texto se habla de*, y traslada las ideas en voz propia. |
 
 **Matriz cuantitativa** — total 10 puntos. Es lo que usa el modo IA para corregir.
 
@@ -101,7 +101,7 @@
 | Texto seguido | 2 | **2** — El resumen es un texto seguido, sin guiones ni enumeraciones<br>**1.5** — El resumen es un texto seguido y conserva una enumeración del original<br>**1** — El resumen alterna párrafo y lista de puntos<br>**0.5** — El resumen es una lista de puntos redactados en frases completas<br>**0** — El resumen es una lista de puntos |
 | Conectores entre ideas | 4 | **4** — Emplea 3 o más conectores distintos entre las ideas<br>**3** — Emplea 2 conectores distintos<br>**2** — Repite el mismo conector a lo largo del resumen<br>**1** — Enlaza dos ideas con un conector y coloca el resto sin enlace<br>**0** — Coloca las ideas una detrás de otra sin enlace |
 | Extensión | 2 | **2** — El resumen ocupa entre un cuarto y un tercio del texto original<br>**1.5** — Se aparta de esa extensión en menos de un cuarto<br>**1** — Se aparta de esa extensión en menos de la mitad<br>**0.5** — Se aparta de esa extensión en más de la mitad<br>**0** — El resumen es tan largo como el original o cabe en una línea |
-| Voz del resumen | 2 | **2** — El resumen traslada las ideas sin fórmulas del tipo el autor dice y sin opinión propia<br>**1.5** — Incluye 1 fórmula de ese tipo o 1 opinión propia<br>**1** — Incluye 2 fórmulas de ese tipo u opiniones propias<br>**0.5** — Incluye 3 o 4 fórmulas de ese tipo u opiniones propias<br>**0** — Incluye 5 o más fórmulas de ese tipo u opiniones propias |
+| Voz del resumen | 2 | **2** — El resumen traslada las ideas sin fórmulas del tipo *el autor dice* y sin opinión propia<br>**1.5** — Incluye 1 fórmula de ese tipo o 1 opinión propia<br>**1** — Incluye 2 fórmulas de ese tipo u opiniones propias<br>**0.5** — Incluye 3 o 4 fórmulas de ese tipo u opiniones propias<br>**0** — Incluye 5 o más fórmulas de ese tipo u opiniones propias |
 
 ### Corrección normativa y propiedad léxica  ·  15%  ·  bloque D  ·  🔒 obligatorio
 
@@ -122,7 +122,7 @@
 |---|---|---|
 | Ortografía y acentuación | 4 | **4** — Hasta 1 falta en todo el resumen<br>**3** — 2 o 3 faltas<br>**2** — 4 o 5 faltas<br>**1** — 6 o 7 faltas<br>**0** — 8 o más faltas |
 | Puntuación | 2 | **2** — Cierra con punto todas las frases del resumen<br>**1.5** — Deja 1 frase sin cerrar con punto<br>**1** — Deja 2 frases sin cerrar con punto<br>**0.5** — Deja 3 frases sin cerrar con punto<br>**0** — El resumen es un bloque de texto casi sin puntos |
-| Propiedad léxica | 4 | **4** — Emplea términos precisos y ninguna palabra comodín (cosa, tema, hacer)<br>**3** — Emplea 1 palabra comodín<br>**2** — Emplea 2 palabras comodín<br>**1** — Emplea 3 o 4 palabras comodín<br>**0** — El resumen se sostiene sobre palabras comodín |
+| Propiedad léxica | 4 | **4** — Emplea términos precisos y ninguna palabra comodín (*cosa*, *tema*, *hacer*)<br>**3** — Emplea 1 palabra comodín<br>**2** — Emplea 2 palabras comodín<br>**1** — Emplea 3 o 4 palabras comodín<br>**0** — El resumen se sostiene sobre palabras comodín |
 
 ---
 
@@ -210,7 +210,7 @@
 | **N1** | Enumera las ideas del texto en el orden en que aparecen y añade una valoración propia. |
 | **N2** | Redacta el resumen en un texto seguido y enlaza las ideas con conectores de orden y de causa. |
 | **N3** | Mantiene el resumen en la extensión pedida y encadena las ideas con marcadores de consecuencia y de contraste. |
-| **N4** | Suprime las marcas del texto de partida, como el autor opina o en este texto se habla de, y traslada las ideas en voz propia. |
+| **N4** | Suprime las marcas del texto de partida, como *el autor opina* o *en este texto se habla de*, y traslada las ideas en voz propia. |
 
 **Matriz cuantitativa** — total 10 puntos. Es lo que usa el modo IA para corregir.
 
@@ -219,7 +219,7 @@
 | Texto continuo | 2 | **2** — El resumen es un texto seguido, sin guiones ni enumeraciones<br>**1.5** — El resumen es un texto seguido y conserva una enumeración del original<br>**1** — El resumen alterna párrafo y lista de puntos<br>**0.5** — El resumen es una lista de puntos redactados en frases completas<br>**0** — El resumen es una lista de puntos |
 | Marcadores entre ideas | 2 | **2** — Emplea 4 o más marcadores distintos: orden, causa, consecuencia, contraste<br>**1.5** — Emplea 4 o más marcadores y repite el mismo en la mayoría de los enlaces<br>**1** — Emplea 2 o 3 tipos de marcador<br>**0.5** — Repite el mismo marcador a lo largo del resumen<br>**0** — Coloca las ideas una detrás de otra sin enlace |
 | Extensión | 2 | **2** — El resumen ocupa entre un quinto y un cuarto del texto original<br>**1.5** — Se aparta de esa extensión en menos de un cuarto<br>**1** — Se aparta de esa extensión en menos de la mitad<br>**0.5** — Se aparta de esa extensión en más de la mitad<br>**0** — El resumen es tan largo como el original o cabe en una línea |
-| Objetividad | 4 | **4** — El resumen traslada las ideas sin fórmulas del tipo el autor dice y sin opinión propia<br>**3** — Incluye 1 fórmula de ese tipo o 1 opinión propia<br>**2** — Incluye 2 fórmulas de ese tipo u opiniones propias<br>**1** — Incluye 3 o 4 fórmulas de ese tipo u opiniones propias<br>**0** — El resumen alterna las ideas del texto con la valoración propia |
+| Objetividad | 4 | **4** — El resumen traslada las ideas sin fórmulas del tipo *el autor dice* y sin opinión propia<br>**3** — Incluye 1 fórmula de ese tipo o 1 opinión propia<br>**2** — Incluye 2 fórmulas de ese tipo u opiniones propias<br>**1** — Incluye 3 o 4 fórmulas de ese tipo u opiniones propias<br>**0** — El resumen alterna las ideas del texto con la valoración propia |
 
 ### Corrección normativa y propiedad léxica  ·  15%  ·  bloque D  ·  🔒 obligatorio
 
@@ -240,7 +240,7 @@
 |---|---|---|
 | Ortografía y acentuación | 4 | **4** — Hasta 1 falta en todo el resumen<br>**3** — 2 o 3 faltas<br>**2** — 4 o 5 faltas<br>**1** — 6 o 7 faltas<br>**0** — 8 o más faltas |
 | Puntuación | 2 | **2** — Cierra con punto todas las frases y delimita con coma los incisos<br>**1.5** — 1 inciso sin delimitar o 1 frase sin cerrar<br>**1** — 2 incisos sin delimitar o 2 frases sin cerrar<br>**0.5** — 3 o 4 incisos sin delimitar o 3 o 4 frases sin cerrar<br>**0** — El resumen es un bloque de texto casi sin puntuación |
-| Propiedad léxica | 4 | **4** — Emplea términos precisos y ninguna palabra comodín (cosa, tema, hacer)<br>**3** — Emplea 1 palabra comodín<br>**2** — Emplea 2 palabras comodín<br>**1** — Emplea 3 o 4 palabras comodín<br>**0** — El resumen se sostiene sobre palabras comodín |
+| Propiedad léxica | 4 | **4** — Emplea términos precisos y ninguna palabra comodín (*cosa*, *tema*, *hacer*)<br>**3** — Emplea 1 palabra comodín<br>**2** — Emplea 2 palabras comodín<br>**1** — Emplea 3 o 4 palabras comodín<br>**0** — El resumen se sostiene sobre palabras comodín |
 
 ---
 
@@ -315,7 +315,7 @@
 |---|---|---|
 | Formulación propia | 4 | **4** — Ninguna secuencia del resumen reproduce literalmente el original<br>**3** — 1 secuencia literal del original<br>**2** — 2 secuencias literales del original<br>**1** — 3 o 4 secuencias literales del original<br>**0** — 5 o más secuencias literales del original |
 | Léxico y término técnico | 4 | **4** — Emplea léxico propio y conserva los términos técnicos que el tema exige<br>**3** — Emplea léxico propio y pierde 1 término técnico necesario<br>**2** — Sustituye los términos técnicos por expresiones vagas<br>**1** — Conserva los términos técnicos con el léxico del original alrededor<br>**0** — Repite el léxico del original de principio a fin |
-| Grado de certeza | 2 | **2** — El resumen conserva las cautelas del original (parece, tiende a, en algunos casos)<br>**1.5** — Pierde 1 de esas cautelas y convierte en afirmación lo que era hipótesis<br>**1** — Pierde 2 de esas cautelas<br>**0.5** — Pierde 3 o más cautelas y mantiene alguna<br>**0** — El resumen afirma como cierto lo que el texto plantea como hipótesis |
+| Grado de certeza | 2 | **2** — El resumen conserva las cautelas del original (*parece*, *tiende a*, *en algunos casos*)<br>**1.5** — Pierde 1 de esas cautelas y convierte en afirmación lo que era hipótesis<br>**1** — Pierde 2 de esas cautelas<br>**0.5** — Pierde 3 o más cautelas y mantiene alguna<br>**0** — El resumen afirma como cierto lo que el texto plantea como hipótesis |
 
 ### Redacción: texto continuo, objetivo y ajustado  ·  15%  ·  bloque B
 
@@ -403,7 +403,7 @@
 |---|---|
 | **N1** | Traslada al resumen los datos, los ejemplos y las opiniones del texto uno detrás de otro. |
 | **N2** | Selecciona la tesis y los argumentos del texto y deja fuera los datos ilustrativos. |
-| **N3** | Distingue en el texto los hechos de las opiniones y los separa en el resumen con esa marca. |
+| **N3** | Distingue en el texto los hechos de las opiniones y mantiene esa distinción en el resumen. |
 | **N4** | Integra en una formulación propia los argumentos que el texto reparte entre apartados distintos. |
 
 **Matriz cuantitativa** — total 10 puntos. Es lo que usa el modo IA para corregir.
@@ -476,7 +476,7 @@
 |---|---|---|
 | Ortografía y acentuación | 4 | **4** — Hasta 1 falta en todo el resumen<br>**3** — 2 o 3 faltas<br>**2** — 4 o 5 faltas<br>**1** — 6 o 7 faltas<br>**0** — 8 o más faltas |
 | Puntuación del período | 2 | **2** — Delimita con coma los incisos y las subordinadas antepuestas de todo el resumen<br>**1.5** — 1 período con la puntuación sin delimitar<br>**1** — 2 períodos con la puntuación sin delimitar<br>**0.5** — 3 o 4 períodos con la puntuación sin delimitar<br>**0** — El resumen encadena períodos largos sin puntuación interna |
-| Matiz de los verbos de opinión | 4 | **4** — Gradúa con el verbo exacto lo que el emisor afirma, sugiere o niega<br>**3** — 1 verbo de opinión desplaza el matiz del original<br>**2** — 2 verbos de opinión desplazan el matiz<br>**1** — 3 o 4 verbos de opinión desplazan el matiz<br>**0** — El resumen reduce a decir todos los verbos de opinión del texto |
+| Matiz de los verbos de opinión | 4 | **4** — Gradúa con el verbo exacto lo que el emisor afirma, sugiere o niega<br>**3** — 1 verbo de opinión desplaza el matiz del original<br>**2** — 2 verbos de opinión desplazan el matiz<br>**1** — 3 o 4 verbos de opinión desplazan el matiz<br>**0** — El resumen reduce a *decir* todos los verbos de opinión del texto |
 
 ---
 

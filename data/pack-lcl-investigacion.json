@@ -2,7 +2,7 @@
   "pack_id": "lcl-murcia-investigacion",
   "materia": "LCL",
   "etiqueta": "Trabajo de investigación multimodal — Región de Murcia",
-  "version": "0.3.0",
+  "version": "0.5.0",
   "normativa": {
     "estatal": [
       "RD 217/2022, de 29 de marzo (ESO)",
@@ -479,7 +479,7 @@
               },
               {
                 "puntos": 3,
-                "condicion": "Emplea 1 palabra comodín (cosa, tema, hacer)"
+                "condicion": "Emplea 1 palabra comodín (*cosa*, *tema*, *hacer*)"
               },
               {
                 "puntos": 2,
@@ -1108,7 +1108,7 @@
               },
               {
                 "puntos": 3,
-                "condicion": "Emplea 1 palabra comodín (cosa, tema, hacer)"
+                "condicion": "Emplea 1 palabra comodín (*cosa*, *tema*, *hacer*)"
               },
               {
                 "puntos": 2,
@@ -1656,7 +1656,7 @@
       "descriptores": {
         "n1": {
           "verbo": "indica",
-          "texto": "Indica el nombre de la página de la cual toma los datos al final del trabajo."
+          "texto": "Indica al final del trabajo el nombre de la página de la que toma los datos."
         },
         "n2": {
           "verbo": "anota",
@@ -1865,7 +1865,7 @@
               },
               {
                 "puntos": 0,
-                "condicion": "La puntuación del soporte se reduce al punto y la coma"
+                "condicion": "Fallan todos los procedimientos y quedan frases sin cerrar con punto"
               }
             ]
           },
@@ -2636,7 +2636,7 @@
               },
               {
                 "puntos": 0,
-                "condicion": "La puntuación del soporte se reduce al punto y la coma"
+                "condicion": "Fallan todos los procedimientos y quedan frases sin cerrar con punto"
               }
             ]
           },
@@ -3407,7 +3407,7 @@
               },
               {
                 "puntos": 0,
-                "condicion": "La puntuación del soporte se reduce al punto y la coma"
+                "condicion": "Fallan todos los procedimientos y quedan frases sin cerrar con punto"
               }
             ]
           },

@@ -12,6 +12,7 @@
 
 import { primeraPersona, generarAutoevaluacion } from "../js/motor.js";
 import { LEXICO } from "../js/lexico.js";
+import { MARCA_CURSIVA } from "../js/marcas.js";
 import { cargarPack as cargar, CATALOGO } from "./cargar.mjs";
 
 const pack = cargar("pack-lcl-expositivo.json");
@@ -167,6 +168,19 @@ caso("primeraPersona: reconjuga un segundo verbo no reflexivo en la misma frase"
   );
 });
 
+caso("primeraPersona: lo que va en cursiva es lengua citada y no se reconjuga", () => {
+  const resultado = primeraPersona(
+    "Sustituye los verbos comodín (*explica*, *mantiene*) por otros que precisan la acción, y mantiene el tono.",
+    "sustituye",
+    verbosPorId
+  );
+  assertIgual(
+    resultado,
+    "Sustituyo los verbos comodín (*explica*, *mantiene*) por otros que precisan la acción, y mantengo el tono.",
+    "el verbo en cursiva es una mención, no una acción del alumno; el de fuera sí se reconjuga"
+  );
+});
+
 // El frente (b) de la decisión 16 de §17, pinchado por las dos caras. La
 // redacción de la izquierda es la que llevaban los packs hasta la v1.23 y la de
 // la derecha la que se escribió al barrerla: el idioma equivalente sin posesivo
@@ -267,7 +281,14 @@ if (PACKS.length === 0) throw new Error("data/catalogo.json no declara ningún p
 // sería un descriptor mal proyectado pasando en silencio.
 const RE_QUE_DELANTE = /(?<!\p{L})que $/iu;
 
-function verbosSinFirmar(texto, formas3s, ajenos) {
+// Los dos invariantes miran el texto sin lo que va en cursiva, igual que el
+// motor: una forma citada (*dijo*, *el autor opina*) no es del alumno.
+function sinCursiva(texto) {
+  return texto.replace(MARCA_CURSIVA, "");
+}
+
+function verbosSinFirmar(textoConMarcas, formas3s, ajenos) {
+  const texto = sinCursiva(textoConMarcas);
   const sueltos = [];
   for (const forma of formas3s) {
     for (const m of texto.matchAll(new RegExp(`\\b${forma}\\b`, "gi"))) {
@@ -364,7 +385,7 @@ const RE_POSESIVO = /(?<!\p{L})(su|sus|le|les)(?!\p{L})(?:\s+(\p{L}+))?/giu;
 
 function posesivosSinDeclarar(texto, ajenos) {
   const sueltos = [];
-  for (const [, forma, siguiente] of texto.matchAll(RE_POSESIVO)) {
+  for (const [, forma, siguiente] of sinCursiva(texto).matchAll(RE_POSESIVO)) {
     const frase = `${forma.toLowerCase()} ${(siguiente ?? "").toLowerCase()}`.trim();
     if (!(frase in ajenos)) sueltos.push(frase);
   }

@@ -2,7 +2,7 @@
   "pack_id": "lcl-murcia-noticia",
   "materia": "LCL",
   "etiqueta": "Redacción de una noticia — Región de Murcia",
-  "version": "0.1.0",
+  "version": "0.3.0",
   "normativa": {
     "estatal": [
       "RD 217/2022, de 29 de marzo (ESO)",
@@ -119,7 +119,7 @@
             "bandas": [
               {
                 "puntos": 4,
-                "condicion": "La entradilla responde a 4 preguntas: qué, quién, cuándo y dónde"
+                "condicion": "La entradilla responde a 4 preguntas: *qué*, *quién*, *cuándo* y *dónde*"
               },
               {
                 "puntos": 3,
@@ -645,7 +645,7 @@
         },
         "n2": {
           "verbo": "aplica",
-          "texto": "Aplica las normas de acentuación y concordancia trabajadas en clase, con errores que dejan seguir la noticia."
+          "texto": "Aplica las normas de acentuación y concordancia trabajadas en clase, con errores que permiten seguir la noticia."
         },
         "n3": {
           "verbo": "aplica",
@@ -721,7 +721,7 @@
               },
               {
                 "puntos": 3,
-                "condicion": "Emplea 1 palabra comodín (cosa, tema, hacer)"
+                "condicion": "Emplea 1 palabra comodín (*cosa*, *tema*, *hacer*)"
               },
               {
                 "puntos": 2,
@@ -741,7 +741,7 @@
         "penalizaciones": []
       },
       "descriptor_cotejo": null,
-      "descriptor_un_punto": "Aplica las normas de acentuación y concordancia trabajadas en clase, con errores que dejan seguir la noticia."
+      "descriptor_un_punto": "Aplica las normas de acentuación y concordancia trabajadas en clase, con errores que permiten seguir la noticia."
     },
     {
       "id": "lcl-b-estructura-not-3eso",
@@ -792,7 +792,7 @@
         },
         "n3": {
           "verbo": "formula",
-          "texto": "Formula un titular informativo y resuelve en la entradilla qué, quién, cuándo y dónde."
+          "texto": "Formula un titular informativo y resuelve en la entradilla *qué*, *quién*, *cuándo* y *dónde*."
         },
         "n4": {
           "verbo": "jerarquiza",
@@ -834,7 +834,7 @@
             "bandas": [
               {
                 "puntos": 4,
-                "condicion": "La entradilla responde a 4 preguntas: qué, quién, cuándo y dónde"
+                "condicion": "La entradilla responde a 4 preguntas: *qué*, *quién*, *cuándo* y *dónde*"
               },
               {
                 "puntos": 3,
@@ -1293,7 +1293,7 @@
               },
               {
                 "puntos": 3,
-                "condicion": "Emplea 1 palabra comodín (cosa, tema, hacer)"
+                "condicion": "Emplea 1 palabra comodín (*cosa*, *tema*, *hacer*)"
               },
               {
                 "puntos": 2,
@@ -1406,7 +1406,7 @@
             "bandas": [
               {
                 "puntos": 4,
-                "condicion": "La entradilla responde a las 5 preguntas: qué, quién, cuándo, dónde y por qué"
+                "condicion": "La entradilla responde a las 5 preguntas: *qué*, *quién*, *cuándo*, *dónde* y *por qué*"
               },
               {
                 "puntos": 3,
@@ -1835,19 +1835,19 @@
             "bandas": [
               {
                 "puntos": 4,
-                "condicion": "La noticia distingue el dato comprobado, el atribuido y el pendiente de confirmar"
+                "condicion": "La noticia distingue el dato comprobado, el atribuido y el pendiente de confirmar, y modula con la forma verbal los datos sin confirmar"
               },
               {
                 "puntos": 3,
-                "condicion": "Distingue 2 de los tres grados"
+                "condicion": "Distingue los tres grados sin modular la forma verbal de los datos sin confirmar"
               },
               {
                 "puntos": 2,
-                "condicion": "Distingue 1 de los tres grados"
+                "condicion": "Distingue 2 de los tres grados"
               },
               {
                 "puntos": 1,
-                "condicion": "Nombra uno de los tres grados sin distinguirlo en el texto"
+                "condicion": "Distingue 1 de los tres grados"
               },
               {
                 "puntos": 0,
@@ -2008,7 +2008,7 @@
               },
               {
                 "puntos": 3,
-                "condicion": "Emplea 1 verbo comodín (hacer, tener, decir)"
+                "condicion": "Emplea 1 verbo comodín (*hacer*, *tener*, *decir*)"
               },
               {
                 "puntos": 2,
@@ -2226,7 +2226,7 @@
         },
         "n4": {
           "verbo": "verifica",
-          "texto": "Verifica la trazabilidad de los datos hasta la fuente primaria y valora la línea del medio que los publica."
+          "texto": "Verifica la trazabilidad de los datos hasta la fuente primaria y valora la línea editorial del medio que los publica."
         }
       },
       "matriz_cuantitativa": {
@@ -2709,7 +2709,7 @@
               },
               {
                 "puntos": 0,
-                "condicion": "La puntuación de la noticia se reduce al punto y la coma"
+                "condicion": "Fallan todos los procedimientos y quedan frases sin cerrar con punto"
               }
             ]
           },
@@ -2933,7 +2933,7 @@
         },
         "n2": {
           "verbo": "selecciona",
-          "texto": "Selecciona las fuentes por naturaleza y anota el material recogido de cada una."
+          "texto": "Selecciona las fuentes por el tipo al que pertenecen y anota el material recogido de cada una."
         },
         "n3": {
           "verbo": "contrasta",
@@ -3029,7 +3029,7 @@
         "penalizaciones": []
       },
       "descriptor_cotejo": null,
-      "descriptor_un_punto": "Selecciona las fuentes por naturaleza y anota el material recogido de cada una."
+      "descriptor_un_punto": "Selecciona las fuentes por el tipo al que pertenecen y anota el material recogido de cada una."
     },
     {
       "id": "lcl-b-atribucion-not-2bach",

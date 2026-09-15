@@ -218,8 +218,10 @@ export const MICROEXPLICACIONES = {
   "exportar-idoceo": {
     titulo: "¿esto sustituye a «Calificar»?",
     texto:
-      "Son dos caminos alternativos, no complementarios (SDD §17.19). Este botón exporta la matriz en blanco " +
-      "para el importador de rúbricas de iDoceo: calificarías tocando cada celda dentro de iDoceo, y la " +
+      "Este botón exporta la matriz en blanco —criterio por fila, nivel por columna— en un CSV que abre " +
+      "cualquier hoja de cálculo, no solo iDoceo: sirve igual si lo que quieres es la matriz en Excel, Sheets " +
+      "o Calc por otro motivo. Si vas a llevarla a iDoceo, sí sustituye a «Calificar» y no se suman los dos " +
+      "(SDD §17.19): es el formato de su importador de rúbricas, calificarías tocando cada celda allí, y la " +
       "pantalla «Calificar» de esta app dejaría de usarse para ese instrumento. Si prefieres seguir " +
       "calificando aquí, usa «Calificar» y, si necesitas la nota en iDoceo, el botón «Exportar CSV» de esa " +
       "pantalla — ese es el otro importador de iDoceo, el de alumnos, no el de rúbricas.",

@@ -2,7 +2,7 @@
   "pack_id": "lcl-murcia-narracion",
   "materia": "LCL",
   "etiqueta": "Narración escrita — Región de Murcia",
-  "version": "0.2.0",
+  "version": "0.4.0",
   "normativa": {
     "estatal": [
       "RD 217/2022, de 29 de marzo (ESO)"
@@ -257,11 +257,11 @@
       "descriptores": {
         "n1": {
           "verbo": "utiliza",
-          "texto": "Utiliza los conectores y, luego y entonces para enlazar los hechos, y agrupa varios enunciados sin separarlos con punto."
+          "texto": "Utiliza los conectores *y*, *luego* y *entonces* para enlazar los hechos, y agrupa varios enunciados sin separarlos con punto."
         },
         "n2": {
           "verbo": "emplea",
-          "texto": "Emplea conectores temporales (primero, después, al final) para ordenar los hechos, y separa los enunciados con punto."
+          "texto": "Emplea conectores temporales (*primero*, *después*, *al final*) para ordenar los hechos, y separa los enunciados con punto."
         },
         "n3": {
           "verbo": "mantiene",
@@ -281,7 +281,7 @@
             "bandas": [
               {
                 "puntos": 4,
-                "condicion": "Emplea 3 o más conectores temporales distintos (primero, después, mientras, al final)"
+                "condicion": "Emplea 3 o más conectores temporales distintos (*primero*, *después*, *mientras*, *al final*)"
               },
               {
                 "puntos": 3,
@@ -293,7 +293,7 @@
               },
               {
                 "puntos": 1,
-                "condicion": "Enlaza los hechos con y y con entonces"
+                "condicion": "Enlaza los hechos con *y* y con *entonces*"
               },
               {
                 "puntos": 0,
@@ -412,7 +412,7 @@
         },
         "n4": {
           "verbo": "sustituye",
-          "texto": "Sustituye los verbos comodín (decir, hacer, ir) por otros que precisan la acción del personaje."
+          "texto": "Sustituye los verbos comodín (*decir*, *hacer*, *ir*) por otros que precisan la acción del personaje."
         }
       },
       "matriz_cuantitativa": {
@@ -480,7 +480,7 @@
               },
               {
                 "puntos": 3,
-                "condicion": "Emplea 1 o 2 comodines (decir, hacer, cosa) con sustituto evidente"
+                "condicion": "Emplea 1 o 2 comodines (*decir*, *hacer*, *cosa*) con sustituto evidente"
               },
               {
                 "puntos": 2,
@@ -591,7 +591,7 @@
             "bandas": [
               {
                 "puntos": 4,
-                "condicion": "El borrador muestra 2 o más correcciones sobre el propio texto"
+                "condicion": "El borrador muestra 2 o más correcciones sobre lo que cuenta el relato"
               },
               {
                 "puntos": 3,
@@ -621,7 +621,7 @@
               },
               {
                 "puntos": 1.5,
-                "condicion": "Anota al margen el motivo de un cambio con una palabra suelta: repetido, largo, no se entiende"
+                "condicion": "Anota al margen el motivo de un cambio con una palabra suelta: *repetido*, *largo*, *no se entiende*"
               },
               {
                 "puntos": 1,
@@ -711,7 +711,7 @@
               },
               {
                 "puntos": 3,
-                "condicion": "El relato conserva el esquema del modelo y cambia uno de los tres elementos"
+                "condicion": "El relato conserva el esquema del modelo y cambia uno o dos de los tres elementos"
               },
               {
                 "puntos": 2,
@@ -1029,7 +1029,7 @@
       "descriptores": {
         "n1": {
           "verbo": "utiliza",
-          "texto": "Utiliza y, luego y entonces como único enlace entre los hechos, con el nombre del personaje repetido en cada oración."
+          "texto": "Utiliza *y*, *luego* y *entonces* como único enlace entre los hechos, con el nombre del personaje repetido en cada oración."
         },
         "n2": {
           "verbo": "emplea",
@@ -1209,7 +1209,7 @@
         },
         "n4": {
           "verbo": "sustituye",
-          "texto": "Sustituye los verbos de decir repetidos (dijo, contestó) por otros que aportan la actitud del personaje."
+          "texto": "Sustituye los verbos de decir repetidos (*dijo*, *contestó*) por otros que aportan la actitud del personaje."
         }
       },
       "matriz_cuantitativa": {
@@ -1247,7 +1247,7 @@
             "bandas": [
               {
                 "puntos": 2,
-                "condicion": "Sin errores en las formas de pretérito, incluidas las de hacer, decir y traer"
+                "condicion": "Sin errores en las formas de pretérito, incluidas las de *hacer*, *decir* y *traer*"
               },
               {
                 "puntos": 1.5,
@@ -1281,11 +1281,11 @@
               },
               {
                 "puntos": 2,
-                "condicion": "Emplea dijo y contestó como únicos verbos de decir"
+                "condicion": "Emplea *dijo* y *contestó* como únicos verbos de decir"
               },
               {
                 "puntos": 1,
-                "condicion": "Emplea dijo como único verbo de decir y algún adjetivo concreto"
+                "condicion": "Emplea *dijo* como único verbo de decir y algún adjetivo concreto"
               },
               {
                 "puntos": 0,
@@ -1557,11 +1557,11 @@
             "bandas": [
               {
                 "puntos": 4,
-                "condicion": "La voz elegida, narrador externo o personaje, se sostiene en todo el relato"
+                "condicion": "Cuenta desde la voz de un personaje y la sostiene en todo el relato"
               },
               {
                 "puntos": 3,
-                "condicion": "La voz cambia en 1 punto del relato"
+                "condicion": "Sostiene en todo el relato la voz del narrador externo del modelo, o cambia la voz de personaje en 1 punto"
               },
               {
                 "puntos": 2,
@@ -1759,15 +1759,15 @@
             "bandas": [
               {
                 "puntos": 2,
-                "condicion": "El orden elegido, lineal o con salto atrás, se sigue sin releer"
+                "condicion": "Altera el orden cronológico con un salto atrás o un comienzo por el final, y la historia se sigue sin releer"
               },
               {
                 "puntos": 1.5,
-                "condicion": "Hay 1 salto de tiempo que obliga a releer para situarlo"
+                "condicion": "Sigue el orden cronológico de principio a fin, sin ningún salto"
               },
               {
                 "puntos": 1,
-                "condicion": "Hay 2 saltos de tiempo que obligan a releer para situarlos"
+                "condicion": "Hay 1 o 2 saltos de tiempo que obligan a releer para situarlos"
               },
               {
                 "puntos": 0.5,
@@ -2308,11 +2308,11 @@
         },
         "n2": {
           "verbo": "recrea",
-          "texto": "Recrea las convenciones del género de la obra leída, la voz, el tiempo y el tipo de conflicto, en un relato propio."
+          "texto": "Recrea las convenciones del género de la obra leída —la voz, el tiempo y el tipo de conflicto— en un relato propio."
         },
         "n3": {
           "verbo": "integra",
-          "texto": "Integra en el relato recursos de estilo, la comparación, la elipsis y el detalle de los sentidos, al servicio del conflicto."
+          "texto": "Integra en el relato recursos de estilo —la comparación, la elipsis y el detalle de los sentidos— al servicio del conflicto."
         },
         "n4": {
           "verbo": "transforma",

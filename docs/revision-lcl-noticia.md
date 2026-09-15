@@ -1,6 +1,6 @@
 # Revisión del pack: Redacción de una noticia — Región de Murcia
 
-**Pack** `pack-lcl-noticia.json` · versión 0.1.0 · 24 criterios · 96 descriptores · 24 matrices cuantitativas
+**Pack** `pack-lcl-noticia.json` · versión 0.3.0 · 24 criterios · 96 descriptores · 24 matrices cuantitativas
 
 > Documento para validación docente, generado desde el JSON. No se edita a mano.
 > Al leer, mira sobre todo tres cosas: si el nivel N4 es alcanzable en ese curso,
@@ -36,7 +36,7 @@
 | Componente | Máx. | Bandas |
 |---|---|---|
 | Partes de la noticia | 4 | **4** — El texto presenta las tres partes: titular, entradilla y cuerpo<br>**3** — Presenta 2 de las tres partes<br>**2** — Presenta 1 de las tres partes<br>**1** — El texto marca el titular con otro tipo de letra, sin separarlo del cuerpo<br>**0** — El texto es un bloque continuo sin partes reconocibles |
-| Preguntas resueltas en la entradilla | 4 | **4** — La entradilla responde a 4 preguntas: qué, quién, cuándo y dónde<br>**3** — Responde a 3 preguntas<br>**2** — Responde a 2 preguntas<br>**1** — Responde a 1 pregunta<br>**0** — La entradilla deja las cuatro preguntas sin responder |
+| Preguntas resueltas en la entradilla | 4 | **4** — La entradilla responde a 4 preguntas: *qué*, *quién*, *cuándo* y *dónde*<br>**3** — Responde a 3 preguntas<br>**2** — Responde a 2 preguntas<br>**1** — Responde a 1 pregunta<br>**0** — La entradilla deja las cuatro preguntas sin responder |
 | Orden del cuerpo | 2 | **2** — Los datos del cuerpo van de mayor a menor interés informativo<br>**1.5** — Los datos del cuerpo van de mayor a menor interés y un dato secundario se adelanta<br>**1** — El cuerpo alterna datos principales y datos secundarios<br>**0.5** — El cuerpo abre con el dato de mayor interés y sigue el orden en que se encontraron los demás<br>**0** — El cuerpo sigue el orden en que se encontraron los datos |
 
 ### Fuentes y contraste de la información  ·  25%  ·  bloque B  ·  🔒 obligatorio
@@ -111,7 +111,7 @@
 | Nivel | Descriptor |
 |---|---|
 | **N1** | Redacta la noticia con faltas de ortografía y frases sin cerrar que obligan al lector a volver atrás. |
-| **N2** | Aplica las normas de acentuación y concordancia trabajadas en clase, con errores que dejan seguir la noticia. |
+| **N2** | Aplica las normas de acentuación y concordancia trabajadas en clase, con errores que permiten seguir la noticia. |
 | **N3** | Aplica la puntuación del nivel y pone comillas en las declaraciones recogidas de los protagonistas. |
 | **N4** | Elige el término preciso para nombrar cada parte del hecho y sustituye las palabras comodín. |
 
@@ -121,7 +121,7 @@
 |---|---|---|
 | Ortografía y acentuación | 4 | **4** — Hasta 2 faltas en toda la noticia<br>**3** — 3 o 4 faltas<br>**2** — 5 o 6 faltas<br>**1** — De 7 a 9 faltas<br>**0** — 10 o más faltas |
 | Puntuación | 2 | **2** — Cierra con punto todas las frases y reparte el cuerpo en párrafos<br>**1.5** — Cierra con punto todas las frases y deja el cuerpo sin repartir en párrafos<br>**1** — Deja de 1 a 4 frases sin cerrar<br>**0.5** — Deja de 5 a 8 frases sin cerrar<br>**0** — La noticia es un bloque de texto casi sin puntuación |
-| Propiedad léxica | 4 | **4** — Emplea términos precisos y ninguna palabra comodín<br>**3** — Emplea 1 palabra comodín (cosa, tema, hacer)<br>**2** — Emplea 2 o 3 palabras comodín<br>**1** — Emplea 4 o 5 palabras comodín<br>**0** — La noticia se sostiene sobre palabras comodín |
+| Propiedad léxica | 4 | **4** — Emplea términos precisos y ninguna palabra comodín<br>**3** — Emplea 1 palabra comodín (*cosa*, *tema*, *hacer*)<br>**2** — Emplea 2 o 3 palabras comodín<br>**1** — Emplea 4 o 5 palabras comodín<br>**0** — La noticia se sostiene sobre palabras comodín |
 
 ---
 
@@ -144,7 +144,7 @@
 |---|---|
 | **N1** | Redacta la noticia en párrafos seguidos y anuncia el asunto tratado en la primera línea. |
 | **N2** | Organiza la noticia en titular, entradilla y cuerpo, y presenta en la entradilla el hecho y el protagonista. |
-| **N3** | Formula un titular informativo y resuelve en la entradilla qué, quién, cuándo y dónde. |
+| **N3** | Formula un titular informativo y resuelve en la entradilla *qué*, *quién*, *cuándo* y *dónde*. |
 | **N4** | Jerarquiza el cuerpo en pirámide invertida y deja para el final los datos de contexto. |
 
 **Matriz cuantitativa** — total 10 puntos. Es lo que usa el modo IA para corregir.
@@ -152,7 +152,7 @@
 | Componente | Máx. | Bandas |
 |---|---|---|
 | Partes de la noticia | 2 | **2** — El texto presenta titular, entradilla y cuerpo<br>**1.5** — El texto presenta las tres partes y la entradilla repite el titular<br>**1** — Presenta 2 de las tres partes<br>**0.5** — Presenta 1 de las tres partes<br>**0** — El texto es un bloque continuo sin partes reconocibles |
-| Preguntas resueltas en la entradilla | 4 | **4** — La entradilla responde a 4 preguntas: qué, quién, cuándo y dónde<br>**3** — Responde a 3 preguntas<br>**2** — Responde a 2 preguntas<br>**1** — Responde a 1 pregunta<br>**0** — La entradilla deja las cuatro preguntas sin responder |
+| Preguntas resueltas en la entradilla | 4 | **4** — La entradilla responde a 4 preguntas: *qué*, *quién*, *cuándo* y *dónde*<br>**3** — Responde a 3 preguntas<br>**2** — Responde a 2 preguntas<br>**1** — Responde a 1 pregunta<br>**0** — La entradilla deja las cuatro preguntas sin responder |
 | Pirámide invertida | 4 | **4** — El cuerpo baja de mayor a menor interés informativo en todos los párrafos<br>**3** — Baja de mayor a menor interés con 1 párrafo fuera de sitio<br>**2** — Baja de mayor a menor interés con 2 párrafos fuera de sitio<br>**1** — Baja de mayor a menor interés en los dos primeros párrafos y sigue sin orden<br>**0** — El cuerpo ordena los hechos por el momento en que ocurrieron |
 
 ### Fuentes y contraste de la información  ·  30%  ·  bloque B  ·  🔒 obligatorio
@@ -216,7 +216,7 @@
 |---|---|---|
 | Ortografía y acentuación | 4 | **4** — Hasta 2 faltas en toda la noticia<br>**3** — De 3 a 5 faltas<br>**2** — De 6 a 8 faltas<br>**1** — De 9 a 12 faltas<br>**0** — 13 o más faltas |
 | Puntuación y comillas | 2 | **2** — Cierra con punto todas las frases y entrecomilla todas las declaraciones<br>**1.5** — Deja de 1 a 2 declaraciones o frases sin marcar<br>**1** — Deja de 3 a 5 declaraciones o frases sin marcar<br>**0.5** — Deja de 6 a 9 declaraciones o frases sin marcar<br>**0** — La noticia es un bloque de texto casi sin puntuación |
-| Propiedad léxica | 4 | **4** — Emplea términos precisos y ninguna palabra comodín<br>**3** — Emplea 1 palabra comodín (cosa, tema, hacer)<br>**2** — Emplea 2 palabras comodín<br>**1** — Emplea 3 o 4 palabras comodín<br>**0** — La noticia se sostiene sobre palabras comodín |
+| Propiedad léxica | 4 | **4** — Emplea términos precisos y ninguna palabra comodín<br>**3** — Emplea 1 palabra comodín (*cosa*, *tema*, *hacer*)<br>**2** — Emplea 2 palabras comodín<br>**1** — Emplea 3 o 4 palabras comodín<br>**0** — La noticia se sostiene sobre palabras comodín |
 
 ---
 
@@ -248,7 +248,7 @@
 | Componente | Máx. | Bandas |
 |---|---|---|
 | Titular informativo | 2 | **2** — El titular lleva verbo propio y nombra el hecho y el protagonista<br>**1.5** — El titular lleva verbo propio y nombra el hecho, sin el protagonista<br>**1** — El titular nombra el hecho y va sin verbo propio<br>**0.5** — El titular nombra al protagonista, sin el hecho ni verbo propio<br>**0** — El titular anuncia el tema o es una etiqueta de una palabra |
-| Entradilla completa | 4 | **4** — La entradilla responde a las 5 preguntas: qué, quién, cuándo, dónde y por qué<br>**3** — Responde a 4 preguntas<br>**2** — Responde a 3 preguntas<br>**1** — Responde a 2 preguntas<br>**0** — Responde a 1 pregunta o a ninguna |
+| Entradilla completa | 4 | **4** — La entradilla responde a las 5 preguntas: *qué*, *quién*, *cuándo*, *dónde* y *por qué*<br>**3** — Responde a 4 preguntas<br>**2** — Responde a 3 preguntas<br>**1** — Responde a 2 preguntas<br>**0** — Responde a 1 pregunta o a ninguna |
 | Pirámide invertida | 4 | **4** — Cada párrafo del cuerpo aporta un dato nuevo y de menor jerarquía que el anterior<br>**3** — El cuerpo baja de jerarquía con 1 párrafo fuera de sitio<br>**2** — El cuerpo baja de jerarquía con 2 párrafos fuera de sitio<br>**1** — El cuerpo baja de jerarquía con 3 o 4 párrafos fuera de sitio<br>**0** — El cuerpo repite el orden de la entradilla o el de los hechos |
 
 ### Fuentes y contraste de la información  ·  25%  ·  bloque B  ·  🔒 obligatorio
@@ -311,7 +311,7 @@
 | Componente | Máx. | Bandas |
 |---|---|---|
 | Registro informativo | 2 | **2** — La noticia mantiene la tercera persona y el registro informativo<br>**1.5** — Se aparta del registro informativo en 1 punto del texto<br>**1** — Se aparta del registro informativo en 2 o 3 puntos del texto<br>**0.5** — Se aparta del registro informativo en 4 o más puntos del texto<br>**0** — La noticia alterna el registro informativo con el personal |
-| Grados de la información | 4 | **4** — La noticia distingue el dato comprobado, el atribuido y el pendiente de confirmar<br>**3** — Distingue 2 de los tres grados<br>**2** — Distingue 1 de los tres grados<br>**1** — Nombra uno de los tres grados sin distinguirlo en el texto<br>**0** — La noticia presenta toda la información con el mismo grado de certeza |
+| Grados de la información | 4 | **4** — La noticia distingue el dato comprobado, el atribuido y el pendiente de confirmar, y modula con la forma verbal los datos sin confirmar<br>**3** — Distingue los tres grados sin modular la forma verbal de los datos sin confirmar<br>**2** — Distingue 2 de los tres grados<br>**1** — Distingue 1 de los tres grados<br>**0** — La noticia presenta toda la información con el mismo grado de certeza |
 | Adjetivación | 4 | **4** — La noticia sustituye los adjetivos valorativos por datos<br>**3** — Deja 1 adjetivo valorativo<br>**2** — Deja 2 adjetivos valorativos<br>**1** — Deja 3 o 4 adjetivos valorativos<br>**0** — La noticia se sostiene sobre la adjetivación valorativa |
 
 ### Corrección normativa y propiedad léxica  ·  15%  ·  bloque D  ·  🔒 obligatorio
@@ -333,7 +333,7 @@
 |---|---|---|
 | Ortografía y acentuación | 4 | **4** — Hasta 2 faltas en toda la noticia<br>**3** — De 3 a 5 faltas<br>**2** — De 6 a 9 faltas<br>**1** — De 10 a 14 faltas<br>**0** — 15 o más faltas |
 | Puntuación del discurso referido | 2 | **2** — Todas las declaraciones llevan comillas, dos puntos o raya<br>**1.5** — Todas las declaraciones llevan marca y alguna emplea la que no le corresponde<br>**1** — Deja 1 declaración sin marcar<br>**0.5** — Deja 2 declaraciones sin marcar<br>**0** — Las declaraciones aparecen sin marca de puntuación |
-| Propiedad léxica | 4 | **4** — Emplea términos precisos y ningún verbo comodín<br>**3** — Emplea 1 verbo comodín (hacer, tener, decir)<br>**2** — Emplea 2 verbos comodín<br>**1** — Emplea 3 o 4 verbos comodín<br>**0** — La noticia se sostiene sobre verbos comodín |
+| Propiedad léxica | 4 | **4** — Emplea términos precisos y ningún verbo comodín<br>**3** — Emplea 1 verbo comodín (*hacer*, *tener*, *decir*)<br>**2** — Emplea 2 verbos comodín<br>**1** — Emplea 3 o 4 verbos comodín<br>**0** — La noticia se sostiene sobre verbos comodín |
 
 ---
 
@@ -379,7 +379,7 @@
 | **N1** | Localiza los datos del hecho en una fuente accesible y los traslada a la noticia. |
 | **N2** | Selecciona las fuentes pertinentes para el hecho y descarta las que repiten un mismo origen. |
 | **N3** | Contrasta cada dato en una fuente independiente y explica el alcance de las diferencias. |
-| **N4** | Verifica la trazabilidad de los datos hasta la fuente primaria y valora la línea del medio que los publica. |
+| **N4** | Verifica la trazabilidad de los datos hasta la fuente primaria y valora la línea editorial del medio que los publica. |
 
 **Matriz cuantitativa** — total 10 puntos. Es lo que usa el modo IA para corregir.
 
@@ -449,7 +449,7 @@
 | Componente | Máx. | Bandas |
 |---|---|---|
 | Ortografía y acentuación | 4 | **4** — Hasta 2 faltas en toda la noticia, incluidas las tipográficas<br>**3** — De 3 a 6 faltas<br>**2** — De 7 a 12 faltas<br>**1** — De 13 a 16 faltas<br>**0** — 17 o más faltas |
-| Puntuación | 2 | **2** — Cita, inciso y párrafo llevan la puntuación correspondiente<br>**1.5** — 1 de los tres procedimientos falla<br>**1** — 2 de los tres procedimientos fallan<br>**0.5** — Los tres procedimientos fallan y el texto conserva el punto y la coma<br>**0** — La puntuación de la noticia se reduce al punto y la coma |
+| Puntuación | 2 | **2** — Cita, inciso y párrafo llevan la puntuación correspondiente<br>**1.5** — 1 de los tres procedimientos falla<br>**1** — 2 de los tres procedimientos fallan<br>**0.5** — Los tres procedimientos fallan y el texto conserva el punto y la coma<br>**0** — Fallan todos los procedimientos y quedan frases sin cerrar con punto |
 | Propiedad léxica | 4 | **4** — Emplea el término preciso del registro periodístico en todo el texto<br>**3** — Emplea 1 término impreciso o comodín<br>**2** — Emplea 2 términos imprecisos o comodín<br>**1** — Emplea 3 o 4 términos imprecisos o comodín<br>**0** — La noticia se sostiene sobre términos comodín |
 
 ---
@@ -494,7 +494,7 @@
 | Nivel | Descriptor |
 |---|---|
 | **N1** | Localiza los datos del hecho en las fuentes de acceso inmediato y los traslada a la noticia. |
-| **N2** | Selecciona las fuentes por naturaleza y anota el material recogido de cada una. |
+| **N2** | Selecciona las fuentes por el tipo al que pertenecen y anota el material recogido de cada una. |
 | **N3** | Contrasta cada dato en fuentes de origen independiente y documenta el recorrido de la consulta. |
 | **N4** | Verifica la trazabilidad de los datos hasta la fuente primaria y valora la línea editorial de cada medio. |
 

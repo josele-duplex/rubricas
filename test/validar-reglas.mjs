@@ -163,6 +163,56 @@ caso("adverbitis: 'en general' como locución sí dispara error", () => {
   );
 });
 
+// --- 3b. cursiva (SDD §5.2, paridad con validar_pack.py) -------------------
+// Las formas de la lengua que un descriptor menciona van entre asteriscos:
+// «los conectores *y*, *pero* y *entonces*». La regla solo mira la forma de
+// la marca; las demás reglas ven las palabras, no los asteriscos.
+caso("cursiva: una marca sin cerrar dispara error", () => {
+  const pack = clonarPack();
+  const c = criterio(pack, "lcl-b-cohesion-expo-1eso");
+  c.descriptores.n1.texto = "Utiliza los conectores *y, *pero* y *entonces* para enlazar las oraciones.";
+  const informe = validarPack(pack);
+  assert(
+    avisosDeRegla(informe, "cursiva").some((a) => a.criterioId === c.id && a.mensaje.includes("n1")),
+    "una marca abierta se imprimiría como asterisco suelto y no se detectó"
+  );
+});
+
+caso("cursiva: una marca que abre con espacio dentro dispara error", () => {
+  const pack = clonarPack();
+  const c = criterio(pack, "lcl-b-cohesion-expo-1eso");
+  c.matriz_cuantitativa.componentes[0].bandas[3].condicion = "Enlaza con * y*, *pero* y *entonces*";
+  const informe = validarPack(pack);
+  assert(
+    avisosDeRegla(informe, "cursiva").some((a) => a.criterioId === c.id && a.mensaje.includes("matriz")),
+    "'* y*' no es cursiva en Markdown ni aquí, y no se detectó en la banda"
+  );
+});
+
+caso("cursiva: control — la marca bien formada no dispara nada y no tapa las palabras", () => {
+  const pack = clonarPack();
+  const c = criterio(pack, "lcl-b-cohesion-expo-1eso");
+  c.descriptores.n1.texto =
+    "Utiliza los conectores *y*, *pero* y *entonces* para enlazar las oraciones, y agrupa varios enunciados sin separarlos con punto.";
+  const informe = validarPack(pack);
+  assert(!avisosDeRegla(informe, "cursiva").some((a) => a.criterioId === c.id), "la marca bien formada disparó la regla");
+  assert(
+    !avisosDeRegla(informe, "verbo_observable").some((a) => a.criterioId === c.id),
+    "la marca ha estorbado al verbo inicial"
+  );
+});
+
+caso("cursiva: la marca es transparente para las demás reglas — '*bien*' sigue siendo adverbitis", () => {
+  const pack = clonarPack();
+  const c = criterio(pack, "lcl-b-cohesion-expo-1eso");
+  c.descriptores.n2.texto = "Utiliza *bien* los conectores de adición para enlazar las ideas.";
+  const informe = validarPack(pack);
+  assert(
+    avisosDeRegla(informe, "adverbitis").some((a) => a.criterioId === c.id && a.mensaje.includes("bien")),
+    "una marca de cursiva ha servido para esconder un calificador vago"
+  );
+});
+
 // --- 4. adverbitis_banda ---------------------------------------------------
 caso("adverbitis_banda: condición de banda no contable dispara error", () => {
   const pack = clonarPack();

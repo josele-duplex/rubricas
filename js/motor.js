@@ -4,6 +4,7 @@
 // lo que ya está en el pack.
 
 import { comprobarSostenibilidad, UMBRAL_DIMENSIONES } from "./validador.js";
+import { PARTES_CURSIVA } from "./marcas.js";
 
 export const TIEMPOS_CORRECCION = {
   menos2: { etiqueta: "Menos de 2 min por alumno", prioridades: [1] },
@@ -431,7 +432,18 @@ function minuscula(s) {
 // verbo del banco con el alumno como sujeto. Por eso se excluye ese caso en
 // vez de intentar distinguir sujetos en general, que exigiría analizar la
 // frase de verdad.
+//
+// Lo que va en cursiva (*dijo*, *el autor opina*; SDD §5.2) es lengua citada,
+// no una acción del alumno: se salta entero. El texto se parte en trozos
+// fuera y dentro de cursiva y solo se reconjugan los de fuera.
 function reconjugarSecundarios(texto, verbosPorId) {
+  return texto
+    .split(PARTES_CURSIVA)
+    .map((trozo, i) => (i % 2 ? trozo : reconjugarTrozo(trozo, verbosPorId)))
+    .join("");
+}
+
+function reconjugarTrozo(texto, verbosPorId) {
   let resultado = texto;
   for (const { patron, reemplazo } of SUSTITUCIONES_ESPECIALES) {
     resultado = resultado.replace(patron, reemplazo);

@@ -47,6 +47,9 @@ Fórmula: `[verbo del banco] + [objeto o saber-vehículo] + [condición o finali
   si el criterio dice «de manera guiada», el descriptor dice «con la pauta facilitada».
 - **Nada de adverbitis**: *bien*, *adecuadamente*, *a veces*, *bastante*, *frecuentemente*.
 - **El saber es vehículo**: va dentro del descriptor, no en el nombre de la dimensión.
+- **Las formas mencionadas, en cursiva** con asteriscos: «los conectores *y*, *pero* y
+  *entonces*», «(*cosa*, *tema*, *hacer*)». Solo formas citadas, nunca conceptos; y la marca
+  pegada a la palabra, que una marca abierta es error del validador (`cursiva`).
 
 Cuidado especial con el **N4 de los cursos bajos**: es donde más fácil es pasarse. Pregúntate
 si un alumno bueno de ese curso hace eso de verdad. Pero si el criterio oficial lo pide

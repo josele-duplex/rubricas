@@ -1,6 +1,6 @@
 # Revisión del pack: Reacción a una noticia — Región de Murcia
 
-**Pack** `pack-lcl-reaccion.json` · versión 0.1.0 · 18 criterios · 72 descriptores · 18 matrices cuantitativas
+**Pack** `pack-lcl-reaccion.json` · versión 0.3.0 · 18 criterios · 72 descriptores · 18 matrices cuantitativas
 
 > Documento para validación docente, generado desde el JSON. No se edita a mano.
 > Al leer, mira sobre todo tres cosas: si el nivel N4 es alcanzable en ese curso,
@@ -36,7 +36,7 @@
 | Componente | Máx. | Bandas |
 |---|---|---|
 | Hechos y opiniones separados | 4 | **4** — La reacción separa de los hechos todos los enunciados de opinión de la noticia<br>**3** — Deja 1 opinión presentada como hecho<br>**2** — Deja 2 opiniones presentadas como hecho<br>**1** — Deja 3 o 4 opiniones presentadas como hecho<br>**0** — La reacción trata toda la noticia como hechos |
-| Fuente y fecha | 2 | **2** — La reacción nombra la fuente y la fecha de la noticia<br>**1.5** — La reacción nombra la fuente y sitúa la fecha sin precisarla<br>**1** — Nombra una de las dos<br>**0.5** — La reacción nombra el medio de forma genérica: la tele, internet<br>**0** — La reacción comenta la noticia sin nombrar fuente ni fecha |
+| Fuente y fecha | 2 | **2** — La reacción nombra la fuente y la fecha de la noticia<br>**1.5** — La reacción nombra la fuente y sitúa la fecha sin precisarla<br>**1** — Nombra una de las dos<br>**0.5** — La reacción nombra el medio de forma genérica: *la tele*, *internet*<br>**0** — La reacción comenta la noticia sin nombrar fuente ni fecha |
 | Contraste con otra fuente | 4 | **4** — Contrasta 3 o más datos de la noticia con otra fuente<br>**3** — Contrasta 2 datos de la noticia con otra fuente<br>**2** — Contrasta 1 dato de la noticia con otra fuente<br>**1** — Nombra otra fuente sin contrastar con ella ningún dato<br>**0** — La reacción se apoya solo en la noticia de partida |
 
 ### Valoración del canal: idoneidad del soporte para el mensaje  ·  15%  ·  bloque B
@@ -56,7 +56,7 @@
 
 | Componente | Máx. | Bandas |
 |---|---|---|
-| Soporte identificado | 2 | **2** — La reacción nombra el soporte concreto: periódico digital, radio, red social<br>**1.5** — La reacción nombra el soporte concreto y lo confunde con el medio que lo publica<br>**1** — Nombra el tipo de medio sin concretar el soporte<br>**0.5** — La reacción alude al soporte con una fórmula general: lo he visto por ahí<br>**0** — La reacción comenta la noticia sin nombrar el soporte |
+| Soporte identificado | 2 | **2** — La reacción nombra el soporte concreto: periódico digital, radio, red social<br>**1.5** — La reacción nombra el soporte concreto y lo confunde con el medio que lo publica<br>**1** — Nombra el tipo de medio sin concretar el soporte<br>**0.5** — La reacción alude al soporte con una fórmula general: *lo he visto por ahí*<br>**0** — La reacción comenta la noticia sin nombrar el soporte |
 | Rasgos del soporte | 4 | **4** — Señala 3 o más rasgos del soporte: titular, imagen, extensión, comentarios del lector<br>**3** — Señala 2 rasgos del soporte<br>**2** — Señala 1 rasgo del soporte<br>**1** — Nombra el soporte sin señalar ningún rasgo<br>**0** — La reacción comenta el contenido y deja fuera los rasgos del soporte |
 | Idoneidad razonada | 4 | **4** — Razona por qué ese soporte conviene al mensaje de la noticia, con un rasgo del soporte<br>**3** — Razona por qué ese soporte conviene al mensaje, sin apoyarse en ningún rasgo<br>**2** — Afirma si el soporte conviene sin razonarlo<br>**1** — Apunta que el soporte influye en el mensaje, sin decir si conviene<br>**0** — La reacción deja fuera la idoneidad del soporte |
 
@@ -99,7 +99,7 @@
 | Componente | Máx. | Bandas |
 |---|---|---|
 | Partes de la reacción | 4 | **4** — La reacción presenta la noticia y después la valora, en partes reconocibles<br>**3** — Las dos partes se mezclan y la valoración aún se distingue del resumen<br>**2** — La valoración se reduce a una frase final<br>**1** — La valoración se reduce a una fórmula de acuerdo o desacuerdo<br>**0** — La reacción se queda en resumir la noticia |
-| Conectores entre noticia y valoración | 2 | **2** — Emplea 3 o más conectores distintos de causa, contraste u orden<br>**1.5** — Emplea 3 o más conectores y repite el mismo en la mayoría de los enlaces<br>**1** — Emplea 1 o 2 conectores distintos<br>**0.5** — Enlaza las frases con la conjunción y emplea un conector en un solo punto<br>**0** — Coloca las frases una detrás de otra sin enlace |
+| Conectores entre noticia y valoración | 2 | **2** — Emplea 3 o más conectores distintos de causa, contraste u orden<br>**1.5** — Emplea 3 o más conectores y repite el mismo en la mayoría de los enlaces<br>**1** — Emplea 1 o 2 conectores distintos<br>**0.5** — Enlaza las frases con la conjunción *y* y emplea un conector en un solo punto<br>**0** — Coloca las frases una detrás de otra sin enlace |
 | Apoyo en el texto de partida | 2 | **2** — Apoya la valoración en 1 o más citas literales de la noticia<br>**1.5** — Apoya la valoración en una cita literal copiada sin comillas<br>**1** — Alude a la noticia sin citarla<br>**0.5** — Resume la noticia al principio y valora sin volver a ella<br>**0** — La valoración avanza al margen de la noticia |
 | Registro | 2 | **2** — Mantiene el registro formal en toda la reacción<br>**1.5** — Se desliza al registro coloquial en 1 punto<br>**1** — Se desliza al registro coloquial en 2 o 3 puntos<br>**0.5** — Se desliza al registro coloquial en 4 o más puntos<br>**0** — La reacción está escrita en registro coloquial |
 
@@ -122,7 +122,7 @@
 |---|---|---|
 | Ortografía y acentuación | 4 | **4** — Hasta 1 falta en toda la reacción<br>**3** — 2 o 3 faltas<br>**2** — 4 o 5 faltas<br>**1** — De 6 a 8 faltas<br>**0** — 9 o más faltas |
 | Puntuación y comillas | 2 | **2** — Cierra con punto todas las frases y entrecomilla las palabras tomadas de la noticia<br>**1.5** — Deja 1 cita sin comillas, o 1 frase sin cerrar<br>**1** — Deja 2 o 3 citas sin comillas, o 2 o 3 frases sin cerrar<br>**0.5** — Deja de 4 a 6 citas sin comillas, o de 4 a 6 frases sin cerrar<br>**0** — La reacción es un bloque de texto casi sin puntuación |
-| Propiedad léxica | 4 | **4** — Emplea términos precisos y ninguna palabra comodín (cosa, tema, hacer)<br>**3** — Emplea 1 palabra comodín<br>**2** — Emplea 2 palabras comodín<br>**1** — Emplea 3 o 4 palabras comodín<br>**0** — La reacción se sostiene sobre palabras comodín |
+| Propiedad léxica | 4 | **4** — Emplea términos precisos y ninguna palabra comodín (*cosa*, *tema*, *hacer*)<br>**3** — Emplea 1 palabra comodín<br>**2** — Emplea 2 palabras comodín<br>**1** — Emplea 3 o 4 palabras comodín<br>**0** — La reacción se sostiene sobre palabras comodín |
 
 ---
 
@@ -146,7 +146,7 @@
 | **N1** | Acepta la versión de la noticia y apoya la reacción en los datos tal como aparecen en el texto. |
 | **N2** | Distingue los hechos verificables de las opiniones del autor y los separa en la reacción. |
 | **N3** | Contrasta los datos de la noticia con una segunda fuente y explica en qué difieren las dos versiones. |
-| **N4** | Valora críticamente la fiabilidad de la noticia a partir de la autoría, la fecha, los datos citados y la línea del medio. |
+| **N4** | Valora críticamente la fiabilidad de la noticia a partir de la autoría, la fecha, los datos citados y la línea editorial del medio. |
 
 **Matriz cuantitativa** — total 10 puntos. Es lo que usa el modo IA para corregir.
 
@@ -195,7 +195,7 @@
 | Componente | Máx. | Bandas |
 |---|---|---|
 | Partes de la reacción | 4 | **4** — La reacción presenta la noticia, la valora y cierra con una conclusión<br>**3** — Falta 1 de las tres partes<br>**2** — Faltan 2 de las tres partes<br>**1** — La valoración se reduce a una fórmula de acuerdo o desacuerdo<br>**0** — La reacción se queda en resumir la noticia |
-| Conectores entre juicio y dato | 2 | **2** — Emplea 4 o más conectores distintos de causa, contraste, consecuencia u orden<br>**1.5** — Emplea 4 o más conectores y repite el mismo tipo en la mayoría de los enlaces<br>**1** — Emplea de 1 a 3 tipos de conector<br>**0.5** — Enlaza las frases con la conjunción y emplea un conector en un solo punto<br>**0** — Coloca las frases una detrás de otra sin enlace |
+| Conectores entre juicio y dato | 2 | **2** — Emplea 4 o más conectores distintos de causa, contraste, consecuencia u orden<br>**1.5** — Emplea 4 o más conectores y repite el mismo tipo en la mayoría de los enlaces<br>**1** — Emplea de 1 a 3 tipos de conector<br>**0.5** — Enlaza las frases con la conjunción *y* y emplea un conector en un solo punto<br>**0** — Coloca las frases una detrás de otra sin enlace |
 | Apoyo en el texto de partida | 2 | **2** — Apoya el juicio en 2 o más citas literales de la noticia<br>**1.5** — Apoya el juicio en 2 o más citas y reproduce una sin comillas<br>**1** — Apoya el juicio en 1 cita literal<br>**0.5** — Alude al contenido de la noticia sin reproducir ninguna palabra<br>**0** — El juicio avanza sin citar la noticia |
 | Registro | 2 | **2** — Mantiene el registro formal en toda la reacción<br>**1.5** — Se desliza al registro coloquial en 1 punto<br>**1** — Se desliza al registro coloquial en 2 o 3 puntos<br>**0.5** — Se desliza al registro coloquial en 4 o más puntos<br>**0** — La reacción está escrita en registro coloquial |
 
@@ -208,7 +208,7 @@
 | Nivel | Descriptor |
 |---|---|
 | **N1** | Redacta la reacción con errores de ortografía y de puntuación que obligan a releer para seguir el juicio. |
-| **N2** | Aplica las normas de acentuación y de concordancia, con errores aislados que dejan seguir el razonamiento. |
+| **N2** | Aplica las normas de acentuación y de concordancia, con errores aislados que permiten seguir el razonamiento. |
 | **N3** | Aplica las normas de ortografía y puntuación del nivel y delimita con comillas las palabras tomadas de la noticia. |
 | **N4** | Elige el término preciso para nombrar cada procedimiento de la noticia y sustituye los verbos comodín por otros exactos. |
 
@@ -218,7 +218,7 @@
 |---|---|---|
 | Ortografía y acentuación | 4 | **4** — Hasta 2 faltas en toda la reacción<br>**3** — 3 o 4 faltas<br>**2** — De 5 a 7 faltas<br>**1** — De 8 a 10 faltas<br>**0** — 11 o más faltas |
 | Puntuación y comillas | 2 | **2** — Cierra con punto todas las frases y entrecomilla todas las palabras tomadas de la noticia<br>**1.5** — Deja 1 cita sin comillas, o 1 frase sin cerrar<br>**1** — Deja 2 o 3 citas sin comillas, o 2 o 3 frases sin cerrar<br>**0.5** — Deja de 4 a 6 citas sin comillas, o de 4 a 6 frases sin cerrar<br>**0** — La reacción es un bloque de texto casi sin puntuación |
-| Propiedad léxica | 4 | **4** — Emplea términos precisos y ninguna palabra comodín (cosa, tema, hacer)<br>**3** — Emplea 1 palabra comodín<br>**2** — Emplea 2 palabras comodín<br>**1** — Emplea 3 o 4 palabras comodín<br>**0** — La reacción se sostiene sobre palabras comodín |
+| Propiedad léxica | 4 | **4** — Emplea términos precisos y ninguna palabra comodín (*cosa*, *tema*, *hacer*)<br>**3** — Emplea 1 palabra comodín<br>**2** — Emplea 2 palabras comodín<br>**1** — Emplea 3 o 4 palabras comodín<br>**0** — La reacción se sostiene sobre palabras comodín |
 
 ---
 
@@ -270,7 +270,7 @@
 
 | Componente | Máx. | Bandas |
 |---|---|---|
-| Canal identificado | 2 | **2** — La reacción nombra el canal concreto y el medio que lo sostiene<br>**1.5** — La reacción nombra el canal concreto y deja sin nombrar el medio que lo sostiene<br>**1** — Nombra el tipo de canal sin concretar el medio<br>**0.5** — La reacción alude al canal con una fórmula general: lo he visto por ahí<br>**0** — La reacción comenta la noticia sin nombrar el canal |
+| Canal identificado | 2 | **2** — La reacción nombra el canal concreto y el medio que lo sostiene<br>**1.5** — La reacción nombra el canal concreto y deja sin nombrar el medio que lo sostiene<br>**1** — Nombra el tipo de canal sin concretar el medio<br>**0.5** — La reacción alude al canal con una fórmula general: *lo he visto por ahí*<br>**0** — La reacción comenta la noticia sin nombrar el canal |
 | Rasgos del canal | 4 | **4** — Señala 3 o más rasgos del canal: inmediatez, extensión, verificación previa, interacción del lector<br>**3** — Señala 2 rasgos del canal<br>**2** — Señala 1 rasgo del canal<br>**1** — Nombra el canal sin señalar ningún rasgo<br>**0** — La reacción comenta el contenido y deja fuera los rasgos del canal |
 | Idoneidad razonada | 4 | **4** — Razona la idoneidad del canal y pesa lo que el mensaje gana y lo que pierde<br>**3** — Razona la idoneidad del canal en una sola dirección<br>**2** — Afirma si el canal conviene sin razonarlo<br>**1** — Apunta que el canal influye en el mensaje, sin decir si conviene<br>**0** — La reacción deja fuera la idoneidad del canal |
 
@@ -313,7 +313,7 @@
 | Componente | Máx. | Bandas |
 |---|---|---|
 | Estructura de la reacción | 4 | **4** — La reacción presenta el asunto, lo valora y cierra con una conclusión<br>**3** — Falta 1 de las tres partes<br>**2** — Faltan 2 de las tres partes<br>**1** — La valoración se reduce a una fórmula de acuerdo o desacuerdo<br>**0** — La reacción se queda en resumir la noticia |
-| Conectores y matización | 2 | **2** — Emplea 4 o más conectores distintos, entre ellos 1 de concesión<br>**1.5** — Emplea 4 o más conectores distintos, ninguno de concesión<br>**1** — Emplea de 1 a 3 tipos de conector<br>**0.5** — Enlaza las frases con la conjunción y emplea un conector en un solo punto<br>**0** — Coloca las frases una detrás de otra sin enlace |
+| Conectores y matización | 2 | **2** — Emplea 4 o más conectores distintos, entre ellos 1 de concesión<br>**1.5** — Emplea 4 o más conectores distintos, ninguno de concesión<br>**1** — Emplea de 1 a 3 tipos de conector<br>**0.5** — Enlaza las frases con la conjunción *y* y emplea un conector en un solo punto<br>**0** — Coloca las frases una detrás de otra sin enlace |
 | Apoyo en el texto de partida | 2 | **2** — Apoya el juicio en 2 o más citas literales de la noticia<br>**1.5** — Apoya el juicio en 2 o más citas y reproduce una sin comillas<br>**1** — Apoya el juicio en 1 cita literal<br>**0.5** — Alude al contenido de la noticia sin reproducir ninguna palabra<br>**0** — El juicio avanza sin citar la noticia |
 | Registro y grado de certeza | 2 | **2** — Mantiene el registro académico y modula el juicio con marcas de certeza<br>**1.5** — Mantiene el registro académico y modula un solo juicio con marcas de certeza<br>**1** — Mantiene el registro académico y afirma sin modular<br>**0.5** — Se desliza al registro coloquial en un punto y afirma sin modular<br>**0** — La reacción alterna el registro académico con el coloquial |
 
@@ -409,7 +409,7 @@
 | Componente | Máx. | Bandas |
 |---|---|---|
 | Estructura de la reacción | 4 | **4** — La reacción presenta el asunto, analiza el tratamiento y cierra con una conclusión razonada<br>**3** — Falta 1 de las tres partes<br>**2** — Faltan 2 de las tres partes<br>**1** — La valoración se reduce a una fórmula de acuerdo o desacuerdo<br>**0** — La reacción se queda en resumir la noticia |
-| Conectores y matización | 2 | **2** — Emplea 5 o más conectores distintos, entre ellos concesión y consecuencia<br>**1.5** — Emplea 5 o más conectores distintos, sin ninguno de concesión<br>**1** — Emplea de 2 a 4 tipos de conector<br>**0.5** — Emplea 1 tipo de conector y repite el resto de los enlaces con la conjunción<br>**0** — Repite el mismo conector de principio a fin |
+| Conectores y matización | 2 | **2** — Emplea 5 o más conectores distintos, entre ellos concesión y consecuencia<br>**1.5** — Emplea 5 o más conectores distintos, sin ninguno de concesión<br>**1** — Emplea de 2 a 4 tipos de conector<br>**0.5** — Emplea 1 tipo de conector y repite el resto de los enlaces con la conjunción *y*<br>**0** — Repite el mismo conector de principio a fin |
 | Apoyo en el texto de partida | 2 | **2** — Apoya el juicio en 3 o más citas literales de la noticia<br>**1.5** — Apoya el juicio en 3 o más citas y reproduce una sin comillas<br>**1** — Apoya el juicio en 1 o 2 citas literales<br>**0.5** — Alude al contenido de la noticia sin reproducir ninguna palabra<br>**0** — El juicio avanza sin citar la noticia |
 | Registro y grado de certeza | 2 | **2** — Mantiene el registro académico y modula cada juicio con marcas de certeza<br>**1.5** — Mantiene el registro académico y modula un solo juicio con marcas de certeza<br>**1** — Mantiene el registro académico y afirma sin modular<br>**0.5** — Se desliza al registro coloquial en un punto y afirma sin modular<br>**0** — La reacción alterna el registro académico con el coloquial |
 

@@ -1,6 +1,6 @@
 # Revisión del pack: Exposición oral — Región de Murcia
 
-**Pack** `pack-lcl-oral.json` · versión 0.5.0 · 36 criterios · 144 descriptores · 18 matrices cuantitativas
+**Pack** `pack-lcl-oral.json` · versión 0.7.0 · 36 criterios · 144 descriptores · 18 matrices cuantitativas
 
 > Documento para validación docente, generado desde el JSON. No se edita a mano.
 > Al leer, mira sobre todo tres cosas: si el nivel N4 es alcanzable en ese curso,
@@ -63,18 +63,18 @@
 
 | Nivel | Descriptor |
 |---|---|
-| **N1** | Utiliza y, pero y entonces para enlazar las ideas, sin marcar el paso de una parte a otra de la exposición. |
-| **N2** | Utiliza marcadores de orden (primero, después, por último) para señalar el paso de una parte a otra. |
+| **N1** | Utiliza *y*, *pero* y *entonces* para enlazar las ideas, sin marcar el paso de una parte a otra de la exposición. |
+| **N2** | Utiliza marcadores de orden (*primero*, *después*, *por último*) para señalar el paso de una parte a otra. |
 | **N3** | Emplea marcadores de orden y de adición, y anuncia el cambio de idea antes de desarrollarla. |
-| **N4** | Sustituye la repetición del mismo término mediante un sinónimo o una referencia (esto, esta idea) al retomarlo. |
+| **N4** | Sustituye la repetición del mismo término mediante un sinónimo o una referencia (*esto*, *esta idea*) al retomarlo. |
 
 **Matriz cuantitativa** — total 10 puntos. Es lo que usa el modo IA para corregir.
 
 | Componente | Máx. | Bandas |
 |---|---|---|
-| Variedad de marcadores | 4 | **4** — Emplea 3 o más tipos distintos: orden, adición y causa<br>**3** — Emplea 2 tipos distintos, uno de ellos de orden o de causa<br>**2** — Emplea marcadores de orden y de adición, siempre los mismos<br>**1** — Enlaza con y, pero y entonces<br>**0** — Enlaza las ideas sin ningún marcador |
+| Variedad de marcadores | 4 | **4** — Emplea 3 o más tipos distintos: orden, adición y causa<br>**3** — Emplea 2 tipos distintos, uno de ellos de orden o de causa<br>**2** — Emplea marcadores de orden y de adición, siempre los mismos<br>**1** — Enlaza con *y*, *pero* y *entonces*<br>**0** — Enlaza las ideas sin ningún marcador |
 | Señala el cambio de parte | 4 | **4** — Anuncia verbalmente el paso de una parte a otra en las tres transiciones de la exposición<br>**3** — Anuncia el paso de una parte a otra en 2 transiciones<br>**2** — Anuncia el paso de una parte a otra en 1 transición<br>**1** — Marca el paso de una parte a otra con una pausa, sin anunciarlo<br>**0** — No anuncia ninguna transición; el oyente debe inferir el cambio de parte |
-| No repetir la misma palabra | 2 | **2** — Sustituye por sinónimo, pronombre o referencia (esto, esta idea) la palabra ya usada<br>**1.5** — Sustituye la palabra ya usada y deja 1 repetición sin sustituir<br>**1** — Sustituye alguna repetición, pero deja 2 o 3 sin sustituir<br>**0.5** — Sustituye el término repetido en un solo punto de la exposición<br>**0** — Repite el mismo término a lo largo de toda la exposición |
+| No repetir la misma palabra | 2 | **2** — Sustituye por sinónimo, pronombre o referencia (*esto*, *esta idea*) la palabra ya usada<br>**1.5** — Sustituye la palabra ya usada y deja 1 repetición sin sustituir<br>**1** — Sustituye alguna repetición, pero deja 2 o 3 sin sustituir<br>**0.5** — Sustituye el término repetido en un solo punto de la exposición<br>**0** — Repite el mismo término a lo largo de toda la exposición |
 
 ### Fluidez y corrección de la oralidad formal  ·  17%  ·  bloque B  ·  🔒 obligatorio
 
@@ -84,7 +84,7 @@
 
 | Nivel | Descriptor |
 |---|---|
-| **N1** | Vocaliza con un volumen tan bajo o un ritmo tan rápido que la clase pierde palabras sueltas, y emplea las mismas muletillas (esto, eh) en casi todas las frases. |
+| **N1** | Vocaliza con un volumen tan bajo o un ritmo tan rápido que la clase pierde palabras sueltas, y emplea las mismas muletillas (*esto*, *eh*) en casi todas las frases. |
 | **N2** | Vocaliza con un volumen y un ritmo que permiten seguir la mayor parte de la exposición, con alguna muletilla o silencio largo entre frases. |
 | **N3** | Modula el volumen y el ritmo para que toda la clase entienda la exposición sin esfuerzo, con muletillas puntuales que no interrumpen el sentido. |
 | **N4** | Regula el ritmo y las pausas para destacar las ideas principales, sin muletillas ni titubeos que interrumpan el discurso. |
@@ -168,7 +168,7 @@
 | **N1** | Ordena la exposición en presentación y desarrollo, sin cierre reconocible al final. |
 | **N2** | Estructura la exposición en presentación, desarrollo y cierre por cuenta propia, con un bloque dedicado a cada parte. |
 | **N3** | Estructura el desarrollo en varios bloques, cada uno con una idea distinta, y ajusta la exposición al tiempo asignado. |
-| **N4** | Articula los bloques del desarrollo de lo general a lo particular y cierra retomando la idea principal, dentro del tiempo asignado y sin que el profesor tenga que avisarle. |
+| **N4** | Articula los bloques del desarrollo de lo general a lo particular y cierra retomando la idea principal, dentro del tiempo asignado y sin aviso del profesor. |
 
 **Matriz cuantitativa** — total 10 puntos. Es lo que usa el modo IA para corregir.
 
@@ -187,18 +187,18 @@
 
 | Nivel | Descriptor |
 |---|---|
-| **N1** | Utiliza y, pero y entonces para enlazar las ideas del desarrollo, sin marcar el paso de una parte a otra. |
-| **N2** | Utiliza marcadores de orden y de adición (además, en primer lugar, por último) para señalar el paso de una parte a otra. |
+| **N1** | Utiliza *y*, *pero* y *entonces* para enlazar las ideas del desarrollo, sin marcar el paso de una parte a otra. |
+| **N2** | Utiliza marcadores de orden y de adición (*además*, *en primer lugar*, *por último*) para señalar el paso de una parte a otra. |
 | **N3** | Emplea marcadores de orden, adición y causa entre los bloques, y anuncia el cambio de idea antes de desarrollarla. |
-| **N4** | Sustituye mediante un sinónimo, un hiperónimo o una referencia (esto, esta idea) la palabra que ya ha aparecido en el bloque anterior. |
+| **N4** | Sustituye mediante un sinónimo, un hiperónimo o una referencia (*esto*, *esta idea*) la palabra que ya ha aparecido en el bloque anterior. |
 
 **Matriz cuantitativa** — total 10 puntos. Es lo que usa el modo IA para corregir.
 
 | Componente | Máx. | Bandas |
 |---|---|---|
-| Variedad de marcadores | 4 | **4** — Emplea 3 o más tipos distintos: orden, adición y causa<br>**3** — Emplea 2 tipos distintos, uno de ellos de orden o de causa<br>**2** — Emplea marcadores de orden y de adición, siempre los mismos<br>**1** — Enlaza con y, pero y entonces<br>**0** — Enlaza las ideas sin ningún marcador |
+| Variedad de marcadores | 4 | **4** — Emplea 3 o más tipos distintos: orden, adición y causa<br>**3** — Emplea 2 tipos distintos, uno de ellos de orden o de causa<br>**2** — Emplea marcadores de orden y de adición, siempre los mismos<br>**1** — Enlaza con *y*, *pero* y *entonces*<br>**0** — Enlaza las ideas sin ningún marcador |
 | Señala el cambio de parte | 4 | **4** — Anuncia verbalmente el paso de una parte a otra en las tres transiciones de la exposición<br>**3** — Anuncia el paso de una parte a otra en 2 transiciones<br>**2** — Anuncia el paso de una parte a otra en 1 transición<br>**1** — Marca el paso de una parte a otra con una pausa, sin anunciarlo<br>**0** — No anuncia ninguna transición; el oyente debe inferir el cambio de parte |
-| No repetir la misma palabra | 2 | **2** — Sustituye por sinónimo, hiperónimo o referencia (esto, esta idea) la palabra ya usada<br>**1.5** — Sustituye la palabra ya usada y deja 1 repetición sin sustituir<br>**1** — Sustituye alguna repetición, pero deja 2 o 3 sin sustituir<br>**0.5** — Sustituye el término repetido en un solo punto de la exposición<br>**0** — Repite el mismo término a lo largo de toda la exposición |
+| No repetir la misma palabra | 2 | **2** — Sustituye por sinónimo, hiperónimo o referencia (*esto*, *esta idea*) la palabra ya usada<br>**1.5** — Sustituye la palabra ya usada y deja 1 repetición sin sustituir<br>**1** — Sustituye alguna repetición, pero deja 2 o 3 sin sustituir<br>**0.5** — Sustituye el término repetido en un solo punto de la exposición<br>**0** — Repite el mismo término a lo largo de toda la exposición |
 
 ### Fluidez y corrección de la oralidad formal  ·  17%  ·  bloque B  ·  🔒 obligatorio
 
@@ -274,7 +274,7 @@
 
 | Nivel | Descriptor |
 |---|---|
-| **N1** | Utiliza en la misma exposición expresiones coloquiales y expresiones formales, dirigida a toda la clase. |
+| **N1** | Utiliza expresiones coloquiales y expresiones formales en una misma exposición dirigida a toda la clase. |
 | **N2** | Ajusta el tono a la exposición académica y mantiene la tercera persona, con algún término coloquial en el léxico. |
 | **N3** | Mantiene el registro formal y el vocabulario del tema durante toda la exposición, incluida la parte de valoración personal. |
 | **N4** | Selecciona el léxico y los ejemplos según el propósito de cada parte —explicar el tema o defender una opinión— manteniendo el registro formal. |
@@ -311,16 +311,16 @@
 
 | Nivel | Descriptor |
 |---|---|
-| **N1** | Utiliza y, pero y entonces para enlazar las ideas, sin marcador que distinga la explicación de la valoración personal. |
-| **N2** | Utiliza marcadores de orden y de adición entre los bloques, y añade en mi opinión o creo que para introducir la valoración personal. |
-| **N3** | Emplea marcadores de orden, adición y causa, y utiliza algún marcador de opinión (a mi parecer, sin duda) sin repetir siempre el mismo. |
+| **N1** | Utiliza *y*, *pero* y *entonces* para enlazar las ideas, sin marcador que distinga la explicación de la valoración personal. |
+| **N2** | Utiliza marcadores de orden y de adición entre los bloques, y añade *en mi opinión* o *creo que* para introducir la valoración personal. |
+| **N3** | Emplea marcadores de orden, adición y causa, y utiliza algún marcador de opinión (*a mi parecer*, *sin duda*) sin repetir siempre el mismo. |
 | **N4** | Sustituye las repeticiones mediante sinónimos o referencias y enlaza cada bloque retomando una idea del anterior. |
 
 **Matriz cuantitativa** — total 10 puntos. Es lo que usa el modo IA para corregir.
 
 | Componente | Máx. | Bandas |
 |---|---|---|
-| Variedad de marcadores | 4 | **4** — Emplea 3 o más tipos distintos, incluido algún marcador de opinión (a mi parecer, sin duda)<br>**3** — Emplea 2 tipos distintos, uno de ellos de orden o de causa<br>**2** — Emplea marcadores de orden y de adición, siempre los mismos<br>**1** — Enlaza con y, pero y entonces<br>**0** — Enlaza las ideas sin ningún marcador |
+| Variedad de marcadores | 4 | **4** — Emplea 3 o más tipos distintos, incluido algún marcador de opinión (*a mi parecer*, *sin duda*)<br>**3** — Emplea 2 tipos distintos, uno de ellos de orden o de causa<br>**2** — Emplea marcadores de orden y de adición, siempre los mismos<br>**1** — Enlaza con *y*, *pero* y *entonces*<br>**0** — Enlaza las ideas sin ningún marcador |
 | Señala el cambio de parte | 4 | **4** — Anuncia verbalmente el paso de una parte a otra en las tres transiciones de la exposición<br>**3** — Anuncia el paso de una parte a otra en 2 transiciones<br>**2** — Anuncia el paso de una parte a otra en 1 transición<br>**1** — Marca el paso de una parte a otra con una pausa, sin anunciarlo<br>**0** — No anuncia ninguna transición; el oyente debe inferir el cambio de parte |
 | No repetir la misma palabra | 2 | **2** — Sustituye por sinónimo o referencia la palabra ya usada en el bloque anterior<br>**1.5** — Sustituye la palabra ya usada y deja 1 repetición sin sustituir<br>**1** — Sustituye alguna repetición, pero deja 2 o 3 sin sustituir<br>**0.5** — Sustituye el término repetido en un solo punto de la exposición<br>**0** — Repite el mismo término a lo largo de toda la exposición |
 
@@ -333,7 +333,7 @@
 | Nivel | Descriptor |
 |---|---|
 | **N1** | Vocaliza con un volumen o un ritmo que dificulta seguir la exposición en varios momentos, y emplea las mismas muletillas al pasar de la explicación a la valoración personal. |
-| **N2** | Vocaliza con un volumen y un ritmo adecuados durante la mayor parte de la exposición, con alguna muletilla en los momentos de valoración personal. |
+| **N2** | Vocaliza con un volumen y un ritmo que permiten seguir la mayor parte de la exposición, con alguna muletilla en los momentos de valoración personal. |
 | **N3** | Modula el ritmo para separar la explicación del tema de la valoración personal, con muletillas puntuales que no interrumpen el sentido. |
 | **N4** | Regula el ritmo y las pausas para dar énfasis tanto a la información como a la valoración personal, consultando las notas solo con miradas breves. |
 
@@ -435,10 +435,10 @@
 
 | Nivel | Descriptor |
 |---|---|
-| **N1** | Utiliza y, pero y entonces para enlazar los argumentos, sin marcador que señale el paso de un bloque a otro. |
-| **N2** | Utiliza marcadores de orden y de causa-consecuencia (en primer lugar, por tanto) entre los bloques del desarrollo. |
-| **N3** | Emplea marcadores de contraste y de refuerzo (sin embargo, además) para relacionar los argumentos entre sí, no solo para ordenarlos. |
-| **N4** | Sustituye las repeticiones mediante sinónimos o expresiones de referencia (esta cuestión, dicho argumento) y encadena cada bloque retomando una idea del anterior. |
+| **N1** | Utiliza *y*, *pero* y *entonces* para enlazar los argumentos, sin marcador que señale el paso de un bloque a otro. |
+| **N2** | Utiliza marcadores de orden y de causa-consecuencia (*en primer lugar*, *por tanto*) entre los bloques del desarrollo. |
+| **N3** | Emplea marcadores de contraste y de refuerzo (*sin embargo*, *además*) para relacionar los argumentos entre sí, no solo para ordenarlos. |
+| **N4** | Sustituye las repeticiones mediante sinónimos o expresiones de referencia (*esta cuestión*, *dicho argumento*) y encadena cada bloque retomando una idea del anterior. |
 
 **Matriz cuantitativa** — total 10 puntos. Es lo que usa el modo IA para corregir.
 
@@ -457,7 +457,7 @@
 | Nivel | Descriptor |
 |---|---|
 | **N1** | Vocaliza con un volumen o un ritmo que dificulta seguir la exposición en varios momentos, y recurre a muletillas o repeticiones mientras piensa el siguiente argumento. |
-| **N2** | Vocaliza con un volumen y un ritmo adecuados durante la mayor parte de la exposición, con algún tramo leído de corrido sin pausas que ayuden a seguir el argumento. |
+| **N2** | Vocaliza con un volumen y un ritmo que permiten seguir la mayor parte de la exposición, con algún tramo leído de corrido, sin pausas que separen los argumentos. |
 | **N3** | Modula el ritmo y las pausas para separar los argumentos entre sí, con muletillas puntuales que no interrumpen la argumentación. |
 | **N4** | Regula el ritmo, el volumen y las pausas para reforzar los momentos clave de la argumentación (la tesis, la conclusión), sin recurrir a la lectura literal de las notas. |
 
@@ -548,7 +548,7 @@
 | Componente | Máx. | Bandas |
 |---|---|---|
 | Estructura con función diferenciada | 2 | **2** — Presentación, desarrollo y conclusión cumplen cada una una función reconocible y distinta<br>**1.5** — Las tres partes cumplen una función distinta y la presentación anticipa la conclusión<br>**1** — Se distinguen las tres partes, pero la conclusión repite la presentación sin cerrar la argumentación<br>**0.5** — Se distinguen dos de las tres partes<br>**0** — La exposición no tiene partes reconocibles |
-| Progresión argumentativa hacia una tesis | 4 | **4** — Anticipa al menos una objeción con sus términos y la resuelve con un argumento distinto de los ya empleados<br>**3** — Menciona la existencia de otro punto de vista, sin exponerlo<br>**2** — Cada bloque aporta un argumento, pero sin relación reconocible entre ellos<br>**1** — Los bloques repiten el mismo argumento con otras palabras<br>**0** — La exposición no avanza hacia ninguna tesis reconocible |
+| Progresión argumentativa hacia una tesis | 4 | **4** — Anticipa al menos una objeción con sus términos y la resuelve con un argumento distinto de los ya empleados<br>**3** — Los bloques avanzan hacia la tesis y mencionan otro punto de vista sin exponerlo<br>**2** — Los bloques avanzan hacia la tesis sin mencionar ningún otro punto de vista<br>**1** — Cada bloque aporta un argumento sin relación reconocible con los demás, o repite el mismo con otras palabras<br>**0** — La exposición no avanza hacia ninguna tesis reconocible |
 | Ajuste al tiempo asignado | 2 | **2** — La exposición se ajusta al tiempo asignado, con margen para la conclusión<br>**1.5** — La exposición se ajusta al tiempo asignado y la conclusión se dice sin margen<br>**1** — Se pasa o se queda corto del tiempo asignado, y la conclusión queda apresurada o se omite<br>**0.5** — La exposición se pasa del tiempo asignado y termina cuando el profesor avisa<br>**0** — Excede o se queda corto del tiempo asignado en más de 2 minutos |
 | Cierre sin información nueva | 2 | **2** — El cierre retoma la tesis sin añadir información nueva<br>**1.5** — El cierre retoma la tesis con las mismas palabras de la presentación<br>**1** — El cierre añade información nueva no desarrollada antes<br>**0.5** — La exposición se cierra con una fórmula de despedida ajena al tema<br>**0** — La exposición termina en el último argumento, sin cierre |
 
@@ -560,16 +560,16 @@
 
 | Nivel | Descriptor |
 |---|---|
-| **N1** | Utiliza y, pero y entonces para enlazar los argumentos, sin marcador que señale el paso de un bloque a otro. |
-| **N2** | Utiliza marcadores de orden y de causa-consecuencia (en primer lugar, por tanto) entre los bloques del desarrollo. |
-| **N3** | Emplea marcadores de concesión y de contraste (es cierto que, no obstante) para introducir y resolver la objeción. |
+| **N1** | Utiliza *y*, *pero* y *entonces* para enlazar los argumentos, sin marcador que señale el paso de un bloque a otro. |
+| **N2** | Utiliza marcadores de orden y de causa-consecuencia (*en primer lugar*, *por tanto*) entre los bloques del desarrollo. |
+| **N3** | Emplea marcadores de concesión y de contraste (*es cierto que*, *no obstante*) para introducir y resolver la objeción. |
 | **N4** | Sustituye las repeticiones mediante nominalizaciones o expresiones de referencia y encadena cada bloque retomando un elemento del anterior. |
 
 **Matriz cuantitativa** — total 10 puntos. Es lo que usa el modo IA para corregir.
 
 | Componente | Máx. | Bandas |
 |---|---|---|
-| Variedad de conectores y marcadores | 4 | **4** — Emplea 4 o más tipos distintos, incluido al menos un marcador de concesión (es cierto que, no obstante)<br>**3** — Emplea 3 tipos distintos, sin marcador de concesión<br>**2** — Emplea 2 tipos distintos<br>**1** — Se limita a marcadores de orden y de causa<br>**0** — Enlaza los bloques sin ningún marcador |
+| Variedad de conectores y marcadores | 4 | **4** — Emplea 4 o más tipos distintos, incluido al menos un marcador de concesión (*es cierto que*, *no obstante*)<br>**3** — Emplea 3 tipos distintos, sin marcador de concesión<br>**2** — Emplea 2 tipos distintos<br>**1** — Se limita a marcadores de orden y de causa<br>**0** — Enlaza los bloques sin ningún marcador |
 | Encadenamiento entre bloques | 4 | **4** — Cada bloque retoma al empezar un elemento del bloque anterior<br>**3** — La mayoría de los bloques se encadenan; 1 arranca sin vínculo con lo anterior<br>**2** — Los bloques comparten tema, pero podrían reordenarse sin que cambie el sentido<br>**1** — Encadena 1 par de bloques y deja el resto sin vínculo<br>**0** — Los bloques se suceden sin vínculo entre ellos |
 | Referencia y sustitución léxica | 2 | **2** — Sustituye las repeticiones mediante nominalización, sinónimo o expresión de referencia, y el referente siempre es identificable<br>**1.5** — Sustituye las repeticiones mediante sinónimo o expresión de referencia, sin recurrir a la nominalización, y el referente siempre es identificable<br>**1** — Sustituye la mayoría de las repeticiones; 1 referencia exige un esfuerzo para identificarla<br>**0.5** — Repite el término clave 3 o más veces teniendo alternativa evidente<br>**0** — Repite el mismo término en frases consecutivas a lo largo de toda la exposición |
 
@@ -582,7 +582,7 @@
 | Nivel | Descriptor |
 |---|---|
 | **N1** | Vocaliza con un volumen o un ritmo que dificulta seguir la exposición en varios momentos, con errores de pronunciación que desvían la atención del contenido. |
-| **N2** | Vocaliza con un volumen y un ritmo adecuados durante la mayor parte de la exposición, con algún error de pronunciación aislado y algún tramo leído de las notas. |
+| **N2** | Vocaliza con un volumen y un ritmo que permiten seguir la mayor parte de la exposición, con algún error de pronunciación aislado y algún tramo leído de las notas. |
 | **N3** | Pronuncia con cuidado los términos técnicos del tema y modula el ritmo y las pausas para separar los argumentos entre sí. |
 | **N4** | Regula el ritmo, el volumen y las pausas para reforzar la tesis y la conclusión, con una pronunciación cuidada y sin recurrir a la lectura literal de las notas. |
 
@@ -665,7 +665,7 @@
 |---|---|
 | **N1** | Enumera varios puntos de vista sobre el tema, sin relación reconocible entre ellos. |
 | **N2** | Estructura la exposición en presentación, desarrollo y conclusión, dedicando un bloque a cada punto de vista relevante. |
-| **N3** | Estructura el desarrollo relacionando los distintos puntos de vista entre sí (coinciden en, se oponen en) y ajusta la duración al tiempo asignado. |
+| **N3** | Estructura el desarrollo relacionando los distintos puntos de vista entre sí (*coinciden en*, *se oponen en*) y ajusta la duración al tiempo asignado. |
 | **N4** | Articula los distintos puntos de vista hacia una valoración propia razonada y cierra dentro del tiempo asignado sin añadir información nueva. |
 
 **Matriz cuantitativa** — total 10 puntos. Es lo que usa el modo IA para corregir.
@@ -685,16 +685,16 @@
 
 | Nivel | Descriptor |
 |---|---|
-| **N1** | Utiliza y, pero y entonces para enlazar los puntos de vista, sin marcador que señale el paso de uno a otro. |
-| **N2** | Utiliza marcadores de orden y de adición (en primer lugar, además) entre los bloques dedicados a cada punto de vista. |
-| **N3** | Emplea marcadores de contraste entre puntos de vista (frente a, en cambio) y de concesión (es cierto que, no obstante) sin repetir siempre el mismo. |
+| **N1** | Utiliza *y*, *pero* y *entonces* para enlazar los puntos de vista, sin marcador que señale el paso de uno a otro. |
+| **N2** | Utiliza marcadores de orden y de adición (*en primer lugar*, *además*) entre los bloques dedicados a cada punto de vista. |
+| **N3** | Emplea marcadores de contraste entre puntos de vista (*frente a*, *en cambio*) y de concesión (*es cierto que*, *no obstante*) sin repetir siempre el mismo. |
 | **N4** | Sustituye las repeticiones mediante nominalizaciones o expresiones de referencia y encadena cada bloque retomando un elemento del anterior. |
 
 **Matriz cuantitativa** — total 10 puntos. Es lo que usa el modo IA para corregir.
 
 | Componente | Máx. | Bandas |
 |---|---|---|
-| Variedad de conectores y marcadores | 4 | **4** — Emplea 4 o más tipos distintos, incluido al menos un marcador de contraste entre puntos de vista (frente a, en cambio)<br>**3** — Emplea 3 tipos distintos, sin marcador de contraste<br>**2** — Emplea 2 tipos distintos<br>**1** — Se limita a marcadores de orden y de adición<br>**0** — Enlaza los bloques sin ningún marcador |
+| Variedad de conectores y marcadores | 4 | **4** — Emplea 4 o más tipos distintos, incluido al menos un marcador de contraste entre puntos de vista (*frente a*, *en cambio*)<br>**3** — Emplea 3 tipos distintos, sin marcador de contraste<br>**2** — Emplea 2 tipos distintos<br>**1** — Se limita a marcadores de orden y de adición<br>**0** — Enlaza los bloques sin ningún marcador |
 | Encadenamiento entre bloques | 4 | **4** — Cada bloque retoma al empezar un elemento del bloque anterior<br>**3** — La mayoría de los bloques se encadenan; 1 arranca sin vínculo con lo anterior<br>**2** — Los bloques comparten tema, pero podrían reordenarse sin que cambie el sentido<br>**1** — Encadena 1 par de bloques y deja el resto sin vínculo<br>**0** — Los bloques se suceden sin vínculo entre ellos |
 | Referencia y sustitución léxica | 2 | **2** — Sustituye las repeticiones mediante nominalización, sinónimo o expresión de referencia, y el referente siempre es identificable<br>**1.5** — Sustituye las repeticiones mediante sinónimo o expresión de referencia, sin recurrir a la nominalización, y el referente siempre es identificable<br>**1** — Sustituye la mayoría de las repeticiones; 1 referencia exige un esfuerzo para identificarla<br>**0.5** — Repite el término clave 3 o más veces teniendo alternativa evidente<br>**0** — Repite el mismo término en frases consecutivas a lo largo de toda la exposición |
 
@@ -707,7 +707,7 @@
 | Nivel | Descriptor |
 |---|---|
 | **N1** | Vocaliza con un volumen o un ritmo que dificulta seguir la exposición en varios momentos, con errores de pronunciación que desvían la atención del contenido. |
-| **N2** | Vocaliza con un volumen y un ritmo adecuados durante la mayor parte de la exposición, con algún error de pronunciación aislado y algún tramo leído de las notas. |
+| **N2** | Vocaliza con un volumen y un ritmo que permiten seguir la mayor parte de la exposición, con algún error de pronunciación aislado y algún tramo leído de las notas. |
 | **N3** | Pronuncia con cuidado los términos técnicos y modula el ritmo y las pausas para separar los distintos puntos de vista entre sí. |
 | **N4** | Regula el ritmo, el volumen y las pausas para reforzar los contrastes entre puntos de vista y la valoración final, con una pronunciación cuidada y sin recurrir a la lectura literal de las notas. |
 

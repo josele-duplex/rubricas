@@ -2,7 +2,7 @@
   "pack_id": "lcl-murcia-expositivo",
   "materia": "LCL",
   "etiqueta": "Texto expositivo escrito — Región de Murcia",
-  "version": "0.2.0",
+  "version": "0.4.0",
   "normativa": {
     "estatal": [
       "RD 217/2022, de 29 de marzo (ESO)"
@@ -254,11 +254,11 @@
       "descriptores": {
         "n1": {
           "verbo": "utiliza",
-          "texto": "Utiliza los conectores y, pero y entonces para enlazar las oraciones, y agrupa varios enunciados sin separarlos con punto."
+          "texto": "Utiliza los conectores *y*, *pero* y *entonces* para enlazar las oraciones, y agrupa varios enunciados sin separarlos con punto."
         },
         "n2": {
           "verbo": "utiliza",
-          "texto": "Utiliza conectores de adición y de orden (además, en primer lugar, por último) para enlazar las ideas, y separa los enunciados con punto."
+          "texto": "Utiliza conectores de adición y de orden (*además*, *en primer lugar*, *por último*) para enlazar las ideas, y separa los enunciados con punto."
         },
         "n3": {
           "verbo": "emplea",
@@ -290,7 +290,7 @@
               },
               {
                 "puntos": 1,
-                "condicion": "Enlaza con y, pero y entonces"
+                "condicion": "Enlaza con *y*, *pero* y *entonces*"
               },
               {
                 "puntos": 0,
@@ -408,7 +408,7 @@
         },
         "n4": {
           "verbo": "sustituye",
-          "texto": "Sustituye palabras de significado general (cosa, tema, hacer) por otras propias del tema, y entrega el texto sin errores que dificulten la lectura."
+          "texto": "Sustituye palabras de significado general (*cosa*, *tema*, *hacer*) por otras propias del tema, y entrega el texto sin errores que dificulten la lectura."
         }
       },
       "matriz_cuantitativa": {
@@ -476,7 +476,7 @@
               },
               {
                 "puntos": 3,
-                "condicion": "Emplea 1 o 2 términos generales (cosa, tema, hacer) con sustituto evidente"
+                "condicion": "Emplea 1 o 2 términos generales (*cosa*, *tema*, *hacer*) con sustituto evidente"
               },
               {
                 "puntos": 2,
@@ -587,7 +587,7 @@
             "bandas": [
               {
                 "puntos": 4,
-                "condicion": "El borrador muestra 2 o más correcciones sobre el propio texto"
+                "condicion": "El borrador muestra 2 o más correcciones sobre lo que dice el texto"
               },
               {
                 "puntos": 3,
@@ -617,7 +617,7 @@
               },
               {
                 "puntos": 1.5,
-                "condicion": "Anota el motivo de un cambio con una palabra suelta: repetido, largo, no se entiende"
+                "condicion": "Anota el motivo de un cambio con una palabra suelta: *repetido*, *largo*, *no se entiende*"
               },
               {
                 "puntos": 1,
@@ -749,7 +749,7 @@
             ]
           },
           {
-            "nombre": "Lo cuenta con sus palabras",
+            "nombre": "Explicación con palabras propias",
             "max": 4,
             "bandas": [
               {
@@ -1023,11 +1023,11 @@
       "descriptores": {
         "n1": {
           "verbo": "utiliza",
-          "texto": "Utiliza los conectores y, pero y entonces para enlazar las ideas del texto, sin separarlas con punto."
+          "texto": "Utiliza los conectores *y*, *pero* y *entonces* para enlazar las ideas del texto, sin separarlas con punto."
         },
         "n2": {
           "verbo": "utiliza",
-          "texto": "Utiliza conectores de adición y de orden (además, en primer lugar, por último) para enlazar los párrafos, y separa los enunciados con punto."
+          "texto": "Utiliza conectores de adición y de orden (*además*, *en primer lugar*, *por último*) para enlazar los párrafos, y separa los enunciados con punto."
         },
         "n3": {
           "verbo": "emplea",
@@ -1059,7 +1059,7 @@
               },
               {
                 "puntos": 1,
-                "condicion": "Enlaza con y, pero y entonces"
+                "condicion": "Enlaza con *y*, *pero* y *entonces*"
               },
               {
                 "puntos": 0,
@@ -1177,7 +1177,7 @@
         },
         "n4": {
           "verbo": "sustituye",
-          "texto": "Sustituye palabras de significado general (cosa, tema, hacer) por otras propias del tema, y entrega el texto sin errores que dificulten la lectura."
+          "texto": "Sustituye palabras de significado general (*cosa*, *tema*, *hacer*) por otras propias del tema, y entrega el texto sin errores que dificulten la lectura."
         }
       },
       "matriz_cuantitativa": {
@@ -1245,7 +1245,7 @@
               },
               {
                 "puntos": 3,
-                "condicion": "Emplea 1 término general (cosa, tema, hacer) con sustituto evidente"
+                "condicion": "Emplea 1 término general (*cosa*, *tema*, *hacer*) con sustituto evidente"
               },
               {
                 "puntos": 2,
@@ -1520,7 +1520,7 @@
             ]
           },
           {
-            "nombre": "Lo cuenta con sus palabras",
+            "nombre": "Explicación con palabras propias",
             "max": 4,
             "bandas": [
               {
@@ -1793,7 +1793,7 @@
       "descriptores": {
         "n1": {
           "verbo": "utiliza",
-          "texto": "Utiliza conectores de adición (además, también) para enlazar párrafos que desarrollan contenidos distintos."
+          "texto": "Utiliza conectores de adición (*además*, *también*) para enlazar párrafos que desarrollan contenidos distintos."
         },
         "n2": {
           "verbo": "utiliza",
@@ -1829,7 +1829,7 @@
               },
               {
                 "puntos": 1,
-                "condicion": "Se limita a conectores de adición (además, también) o repite el mismo marcador"
+                "condicion": "Se limita a conectores de adición (*además*, *también*) o repite el mismo marcador"
               },
               {
                 "puntos": 0,
@@ -2089,7 +2089,7 @@
         },
         "n4": {
           "verbo": "justifica",
-          "texto": "Justifica los cambios introducidos en el borrador con el metalenguaje del nivel (conector, referente, subordinada), explicando qué mejora aporta cada uno."
+          "texto": "Justifica los cambios introducidos en el borrador con el metalenguaje del nivel (*conector*, *referente*, *subordinada*), explicando qué mejora aporta cada uno."
         }
       },
       "matriz_cuantitativa": {
@@ -2153,7 +2153,7 @@
             "bandas": [
               {
                 "puntos": 2,
-                "condicion": "Justifica 2 o más cambios usando el metalenguaje del nivel (conector, referente, subordinada)"
+                "condicion": "Justifica 2 o más cambios usando el metalenguaje del nivel (*conector*, *referente*, *subordinada*)"
               },
               {
                 "puntos": 1.5,
@@ -2567,7 +2567,7 @@
       "descriptores": {
         "n1": {
           "verbo": "utiliza",
-          "texto": "Utiliza conectores de adición y de causa (además, porque) para enlazar los párrafos, y explica cada término del tema en una oración distinta a la que lo nombra."
+          "texto": "Utiliza conectores de adición y de causa (*además*, *porque*) para enlazar los párrafos, y explica cada término del tema en una oración distinta de la que lo nombra."
         },
         "n2": {
           "verbo": "utiliza",
@@ -2591,7 +2591,7 @@
             "bandas": [
               {
                 "puntos": 4,
-                "condicion": "Emplea 4 o más tipos distintos de conector, incluyendo alguno de matización o contraste (aunque, no obstante, a pesar de)"
+                "condicion": "Emplea 4 o más tipos distintos de conector, incluyendo alguno de matización o contraste (*aunque*, *no obstante*, *a pesar de*)"
               },
               {
                 "puntos": 3,
@@ -2603,7 +2603,7 @@
               },
               {
                 "puntos": 1,
-                "condicion": "Se limita a conectores de adición (además, también)"
+                "condicion": "Se limita a conectores de adición (*además*, *también*)"
               },
               {
                 "puntos": 0,
@@ -3341,7 +3341,7 @@
       "descriptores": {
         "n1": {
           "verbo": "utiliza",
-          "texto": "Utiliza conectores de adición y de causa para enlazar los párrafos, y mantiene el mismo tiempo verbal a lo largo de todo el texto sin ninguna finalidad."
+          "texto": "Utiliza conectores de adición y de causa para enlazar los párrafos, y mantiene el mismo tiempo verbal a lo largo de todo el texto, sin emplearlo para organizar la exposición."
         },
         "n2": {
           "verbo": "utiliza",
@@ -3349,7 +3349,7 @@
         },
         "n3": {
           "verbo": "emplea",
-          "texto": "Emplea marcadores discursivos que organizan la exposición (en primer lugar, dicho esto, en definitiva) además de los conectores lógicos, y usa el tiempo verbal para distinguir la información general de los datos concretos."
+          "texto": "Emplea marcadores discursivos que organizan la exposición (*en primer lugar*, *dicho esto*, *en definitiva*) además de los conectores lógicos, y usa el tiempo verbal para distinguir la información general de los datos concretos."
         },
         "n4": {
           "verbo": "sustituye",
@@ -3365,7 +3365,7 @@
             "bandas": [
               {
                 "puntos": 4,
-                "condicion": "Emplea 4 o más tipos distintos, incluyendo al menos un marcador discursivo organizador (en primer lugar, dicho esto, en definitiva) además de los conectores lógicos"
+                "condicion": "Emplea 4 o más tipos distintos, incluyendo al menos un marcador discursivo organizador (*en primer lugar*, *dicho esto*, *en definitiva*) además de los conectores lógicos"
               },
               {
                 "puntos": 3,
@@ -3377,7 +3377,7 @@
               },
               {
                 "puntos": 1,
-                "condicion": "Se limita a conectores de adición (además, también)"
+                "condicion": "Se limita a conectores de adición (*además*, *también*)"
               },
               {
                 "puntos": 0,
@@ -3395,19 +3395,19 @@
               },
               {
                 "puntos": 3,
-                "condicion": "Mantiene la correlación temporal, pero no hay ningún cambio de tiempo verbal con función reconocible"
+                "condicion": "Cambia de tiempo verbal solo donde la norma lo exige, sin ningún cambio con función organizadora"
               },
               {
                 "puntos": 2,
-                "condicion": "Presenta 1 o 2 saltos de tiempo verbal que no responden a ninguna norma ni función"
+                "condicion": "Mantiene un único tiempo verbal en todo el texto, también donde la norma exige cambiarlo"
               },
               {
                 "puntos": 1,
-                "condicion": "Presenta 3 o 4 saltos de tiempo verbal que no responden a ninguna norma ni función"
+                "condicion": "Presenta de 1 a 4 saltos de tiempo verbal que no responden a ninguna norma ni función"
               },
               {
                 "puntos": 0,
-                "condicion": "El tiempo verbal cambia sin criterio a lo largo del texto"
+                "condicion": "Presenta 5 o más saltos de tiempo verbal sin norma ni función, o cambia de tiempo dentro de la misma oración"
               }
             ]
           },
@@ -4115,7 +4115,7 @@
       "descriptores": {
         "n1": {
           "verbo": "utiliza",
-          "texto": "Utiliza conectores de adición y de causa para enlazar los párrafos, y mantiene un único tiempo verbal en todo el texto sin ninguna función."
+          "texto": "Utiliza conectores de adición y de causa para enlazar los párrafos, y mantiene un único tiempo verbal en todo el texto, sin emplearlo para organizar la exposición."
         },
         "n2": {
           "verbo": "utiliza",
@@ -4123,7 +4123,7 @@
         },
         "n3": {
           "verbo": "emplea",
-          "texto": "Emplea marcadores discursivos organizadores de la exposición (en primer lugar, dicho esto, en definitiva) además de los conectores lógicos, y usa el tiempo verbal para separar la explicación general de los datos concretos."
+          "texto": "Emplea marcadores discursivos organizadores de la exposición (*en primer lugar*, *dicho esto*, *en definitiva*) además de los conectores lógicos, y usa el tiempo verbal para separar la explicación general de los datos concretos."
         },
         "n4": {
           "verbo": "sustituye",
@@ -4139,7 +4139,7 @@
             "bandas": [
               {
                 "puntos": 4,
-                "condicion": "Emplea 4 o más tipos distintos, incluyendo al menos un marcador discursivo organizador (en primer lugar, dicho esto, en definitiva) además de los conectores lógicos"
+                "condicion": "Emplea 4 o más tipos distintos, incluyendo al menos un marcador discursivo organizador (*en primer lugar*, *dicho esto*, *en definitiva*) además de los conectores lógicos"
               },
               {
                 "puntos": 3,
@@ -4151,7 +4151,7 @@
               },
               {
                 "puntos": 1,
-                "condicion": "Se limita a conectores de adición (además, también)"
+                "condicion": "Se limita a conectores de adición (*además*, *también*)"
               },
               {
                 "puntos": 0,
@@ -4169,19 +4169,19 @@
               },
               {
                 "puntos": 3,
-                "condicion": "Mantiene la correlación temporal, pero no hay ningún cambio de tiempo verbal con función reconocible"
+                "condicion": "Cambia de tiempo verbal solo donde la norma lo exige, sin ningún cambio con función organizadora"
               },
               {
                 "puntos": 2,
-                "condicion": "Presenta 1 o 2 saltos de tiempo verbal que no responden a ninguna norma ni función"
+                "condicion": "Mantiene un único tiempo verbal en todo el texto, también donde la norma exige cambiarlo"
               },
               {
                 "puntos": 1,
-                "condicion": "Presenta 3 o 4 saltos de tiempo verbal que no responden a ninguna norma ni función"
+                "condicion": "Presenta de 1 a 4 saltos de tiempo verbal que no responden a ninguna norma ni función"
               },
               {
                 "puntos": 0,
-                "condicion": "El tiempo verbal cambia sin criterio a lo largo del texto"
+                "condicion": "Presenta 5 o más saltos de tiempo verbal sin norma ni función, o cambia de tiempo dentro de la misma oración"
               }
             ]
           },

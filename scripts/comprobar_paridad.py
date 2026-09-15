@@ -169,6 +169,7 @@ CLAVES_COMPARABLES = frozenset([
     "modalizadores",
     "copia_entre_cursos",
     "condicion_de_evidencia",
+    "cursiva",
     "proceso_sin_respaldo",
     "dimension_sin_respaldo",
     "continuidad_bandas",
@@ -311,6 +312,22 @@ def trampa_condicion_de_evidencia():
     return pack
 
 
+def trampa_cursiva():
+    """Marca de cursiva sin cerrar en un descriptor y otra con espacio dentro
+    en una banda de matriz (SDD §5.2).
+
+    Es el descuido que deja un asterisco suelto impreso en la rúbrica. Las
+    marcas bien formadas del mismo pack —«*y*, *pero* y *entonces*»— no
+    disparan nada, y por eso el pack real de cohesión sirve de control."""
+    pack = _pack("pack-lcl-expositivo.json")
+    criterio = _criterio(pack, "lcl-b-cohesion-expo-1eso")
+    criterio["descriptores"]["n1"]["texto"] = (
+        "Utiliza los conectores *y, *pero* y *entonces* para enlazar las oraciones.")
+    criterio["matriz_cuantitativa"]["componentes"][0]["bandas"][3]["condicion"] = (
+        "Enlaza con * y*, *pero* y *entonces*")
+    return pack
+
+
 def pack_limpio():
     """Control: el pack real de reacción, sin tocar. Los dos lados deben
     coincidir en no emitir ningún error."""
@@ -330,6 +347,9 @@ PACKS_TRAMPA = [
     ("condición de evidencia en un solo curso de la dimensión",
      trampa_condicion_de_evidencia,
      {("error", "condicion_de_evidencia")}),
+    ("marca de cursiva sin cerrar en un descriptor y mal abierta en una banda",
+     trampa_cursiva,
+     {("error", "cursiva")}),
     ("pack de reacción real, sin tocar",
      pack_limpio,
      set()),

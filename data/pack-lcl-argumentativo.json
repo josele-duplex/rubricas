@@ -2,7 +2,7 @@
   "pack_id": "lcl-murcia-argumentativo",
   "materia": "LCL",
   "etiqueta": "Texto argumentativo escrito — Región de Murcia",
-  "version": "0.3.0",
+  "version": "0.4.0",
   "normativa": {
     "estatal": [
       "RD 217/2022, de 29 de marzo (ESO)",
@@ -62,7 +62,7 @@
         },
         "n3": {
           "verbo": "emplea",
-          "texto": "Emplea fórmulas de opinión (creo que, en mi opinión) al presentar cada razón y mantiene el resto del texto libre de expresiones coloquiales."
+          "texto": "Emplea fórmulas de opinión (*creo que*, *en mi opinión*) al presentar cada razón y mantiene el resto del texto libre de expresiones coloquiales."
         },
         "n4": {
           "verbo": "distingue",
@@ -256,15 +256,15 @@
       "descriptores": {
         "n1": {
           "verbo": "utiliza",
-          "texto": "Utiliza los conectores y, pero y entonces para encadenar la opinión y las razones dentro de un mismo enunciado largo."
+          "texto": "Utiliza los conectores *y*, *pero* y *entonces* para encadenar la opinión y las razones dentro de un mismo enunciado largo."
         },
         "n2": {
           "verbo": "utiliza",
-          "texto": "Utiliza conectores de orden y de contraste (en primer lugar, sin embargo) para enlazar cada razón con la postura, y separa los enunciados con punto."
+          "texto": "Utiliza conectores de orden y de contraste (*en primer lugar*, *sin embargo*) para enlazar cada razón con la postura, y separa los enunciados con punto."
         },
         "n3": {
           "verbo": "emplea",
-          "texto": "Emplea conectores explicativos y de contraste (es decir, en cambio) para encadenar postura, razones y cierre, y delimita los incisos con comas."
+          "texto": "Emplea conectores explicativos y de contraste (*es decir*, *en cambio*) para encadenar postura, razones y cierre, y delimita los incisos con comas."
         },
         "n4": {
           "verbo": "sustituye",
@@ -292,7 +292,7 @@
               },
               {
                 "puntos": 1,
-                "condicion": "Enlaza con y, pero y entonces"
+                "condicion": "Enlaza con *y*, *pero* y *entonces*"
               },
               {
                 "puntos": 0,
@@ -407,11 +407,11 @@
         },
         "n3": {
           "verbo": "aplica",
-          "texto": "Aplica las normas de ortografía, acentuación y concordancia del nivel, y emplea términos valorativos propios (injusto, necesario) en lugar de palabras comodín."
+          "texto": "Aplica las normas de ortografía, acentuación y concordancia del nivel, y emplea términos valorativos propios (*injusto*, *necesario*) en lugar de palabras comodín."
         },
         "n4": {
           "verbo": "sustituye",
-          "texto": "Sustituye las palabras de significado impreciso (cosa, tema, hacer) por el término valorativo que corresponde, y entrega el texto sin errores que dificulten la lectura."
+          "texto": "Sustituye las palabras de significado impreciso (*cosa*, *tema*, *hacer*) por el término valorativo que corresponde, y entrega el texto sin errores que dificulten la lectura."
         }
       },
       "matriz_cuantitativa": {
@@ -475,11 +475,11 @@
             "bandas": [
               {
                 "puntos": 4,
-                "condicion": "Emplea términos valorativos propios (injusto, necesario, útil) en lugar de palabras comodín"
+                "condicion": "Emplea términos valorativos propios (*injusto*, *necesario*, *útil*) en lugar de palabras comodín"
               },
               {
                 "puntos": 3,
-                "condicion": "Emplea 1 palabra comodín (cosa, tema, hacer) con sustituto evidente"
+                "condicion": "Emplea 1 palabra comodín (*cosa*, *tema*, *hacer*) con sustituto evidente"
               },
               {
                 "puntos": 2,
@@ -834,11 +834,11 @@
         },
         "n3": {
           "verbo": "emplea",
-          "texto": "Emplea un registro formal sostenido e indica con fórmulas de opinión (considero, a mi juicio) los pasajes donde habla el emisor."
+          "texto": "Emplea un registro formal sostenido e indica con fórmulas de opinión (*considero*, *a mi juicio*) los pasajes donde habla el emisor."
         },
         "n4": {
           "verbo": "matiza",
-          "texto": "Matiza el grado de certeza de las afirmaciones propias combinando expresiones de mayor y menor seguridad (quizá, es probable, resulta innegable) a lo largo del texto."
+          "texto": "Matiza el grado de certeza de las afirmaciones propias combinando expresiones de mayor y menor seguridad (*quizá*, *es probable*, *resulta innegable*) a lo largo del texto."
         }
       },
       "matriz_cuantitativa": null,
@@ -1027,11 +1027,11 @@
       "descriptores": {
         "n1": {
           "verbo": "utiliza",
-          "texto": "Utiliza los conectores y, pero y porque para enlazar las opiniones con sus razones."
+          "texto": "Utiliza los conectores *y*, *pero* y *porque* para enlazar las opiniones con sus razones."
         },
         "n2": {
           "verbo": "utiliza",
-          "texto": "Utiliza conectores de causa y de contraste (porque, sin embargo) para unir cada argumento con la tesis, y separa los enunciados con punto."
+          "texto": "Utiliza conectores de causa y de contraste (*porque*, *sin embargo*) para unir cada argumento con la tesis, y separa los enunciados con punto."
         },
         "n3": {
           "verbo": "emplea",
@@ -1039,7 +1039,7 @@
         },
         "n4": {
           "verbo": "articula",
-          "texto": "Articula el paso de un argumento a otro con marcadores de orden y de refuerzo (en primer lugar, es más), y sustituye las repeticiones mediante sinónimos y pronombres."
+          "texto": "Articula el paso de un argumento a otro con marcadores de orden y de refuerzo (*en primer lugar*, *es más*), y sustituye las repeticiones mediante sinónimos y pronombres."
         }
       },
       "matriz_cuantitativa": {
@@ -1063,7 +1063,7 @@
               },
               {
                 "puntos": 1,
-                "condicion": "Enlaza con y, pero y porque"
+                "condicion": "Enlaza con *y*, *pero* y *porque*"
               },
               {
                 "puntos": 0,
@@ -1178,7 +1178,7 @@
         },
         "n3": {
           "verbo": "aplica",
-          "texto": "Aplica las normas ortográficas y gramaticales del nivel y selecciona términos valorativos precisos (beneficioso, injusto, eficaz) en lugar de palabras comodín."
+          "texto": "Aplica las normas ortográficas y gramaticales del nivel y selecciona términos valorativos precisos (*beneficioso*, *injusto*, *eficaz*) en lugar de palabras comodín."
         },
         "n4": {
           "verbo": "emplea",
@@ -1246,7 +1246,7 @@
             "bandas": [
               {
                 "puntos": 4,
-                "condicion": "Valora con términos precisos (beneficioso, injusto, eficaz) y emplea alguna subordinada causal o concesiva para condensar un argumento"
+                "condicion": "Valora con términos precisos (*beneficioso*, *injusto*, *eficaz*) y emplea alguna subordinada causal o concesiva para condensar un argumento"
               },
               {
                 "puntos": 3,
@@ -1323,7 +1323,7 @@
         },
         "n4": {
           "verbo": "justifica",
-          "texto": "Justifica los cambios del borrador con el metalenguaje del nivel (tesis, argumento, conector), explicando qué mejora aporta cada uno."
+          "texto": "Justifica los cambios del borrador con el metalenguaje del nivel (*tesis*, *argumento*, *conector*), explicando qué mejora aporta cada uno."
         }
       },
       "matriz_cuantitativa": {
@@ -1387,7 +1387,7 @@
             "bandas": [
               {
                 "puntos": 2,
-                "condicion": "Justifica 2 o más cambios usando el metalenguaje del nivel (tesis, argumento, conector)"
+                "condicion": "Justifica 2 o más cambios usando el metalenguaje del nivel (*tesis*, *argumento*, *conector*)"
               },
               {
                 "puntos": 1.5,
@@ -1608,7 +1608,7 @@
         },
         "n4": {
           "verbo": "matiza",
-          "texto": "Matiza el grado de certeza de las afirmaciones propias y selecciona la forma deíctica (uno, nosotros, la impersonalidad) que ajusta la distancia con el interlocutor al efecto buscado."
+          "texto": "Matiza el grado de certeza de las afirmaciones propias y selecciona la forma deíctica (*uno*, *nosotros*, la impersonalidad) que ajusta la distancia con el interlocutor al efecto buscado."
         }
       },
       "matriz_cuantitativa": null,
@@ -1811,7 +1811,7 @@
         },
         "n4": {
           "verbo": "sustituye",
-          "texto": "Sustituye las repeticiones mediante nominalizaciones e hiperónimos de significado abstracto (esta medida, tal decisión) y relaciona con ellos cada párrafo con el argumento del anterior."
+          "texto": "Sustituye las repeticiones mediante nominalizaciones e hiperónimos de significado abstracto (*esta medida*, *tal decisión*) y relaciona con ellos cada párrafo con el argumento del anterior."
         }
       },
       "matriz_cuantitativa": {
@@ -1823,7 +1823,7 @@
             "bandas": [
               {
                 "puntos": 4,
-                "condicion": "Emplea 4 o más tipos distintos de conector, incluido alguno de concesión o contraste (aunque, no obstante, a pesar de)"
+                "condicion": "Emplea 4 o más tipos distintos de conector, incluido alguno de concesión o contraste (*aunque*, *no obstante*, *a pesar de*)"
               },
               {
                 "puntos": 3,
@@ -1950,7 +1950,7 @@
         },
         "n3": {
           "verbo": "aplica",
-          "texto": "Aplica las normas ortográficas y gramaticales del nivel y selecciona el término valorativo preciso (discutible, desproporcionado, eficaz) en lugar de palabras comodín."
+          "texto": "Aplica las normas ortográficas y gramaticales del nivel y selecciona el término valorativo preciso (*discutible*, *desproporcionado*, *eficaz*) en lugar de palabras comodín."
         },
         "n4": {
           "verbo": "emplea",
@@ -2018,7 +2018,7 @@
             "bandas": [
               {
                 "puntos": 4,
-                "condicion": "Valora con términos precisos (discutible, desproporcionado, eficaz) y recoge con el discurso relatado la posición de otros"
+                "condicion": "Valora con términos precisos (*discutible*, *desproporcionado*, *eficaz*) y recoge con el discurso relatado la posición de otros"
               },
               {
                 "puntos": 3,
@@ -2096,7 +2096,7 @@
         },
         "n4": {
           "verbo": "justifica",
-          "texto": "Justifica con el metalenguaje del nivel (tesis, argumento, objeción, conector) los cambios introducidos para subsanar un problema de comprensión detectado en el borrador."
+          "texto": "Justifica con el metalenguaje del nivel (*tesis*, *argumento*, *objeción*, *conector*) los cambios introducidos para subsanar un problema de comprensión detectado en el borrador."
         }
       },
       "matriz_cuantitativa": {
@@ -2441,7 +2441,7 @@
         },
         "n4": {
           "verbo": "integra",
-          "texto": "Integra la concesión y la refutación en la línea argumentativa (es cierto que, sin embargo), y gradúa la fuerza de los argumentos hasta una conclusión que deriva de lo argumentado."
+          "texto": "Integra la concesión y la refutación en la línea argumentativa (*es cierto que*, *sin embargo*), y gradúa la fuerza de los argumentos hasta una conclusión que deriva de lo argumentado."
         }
       },
       "matriz_cuantitativa": {
@@ -2579,7 +2579,7 @@
         },
         "n3": {
           "verbo": "emplea",
-          "texto": "Emplea marcadores de concesión y refutación (es cierto que, no obstante) para señalar el paso de la objeción a la respuesta."
+          "texto": "Emplea marcadores de concesión y refutación (*es cierto que*, *no obstante*) para señalar el paso de la objeción a la respuesta."
         },
         "n4": {
           "verbo": "sustituye",
@@ -2595,7 +2595,7 @@
             "bandas": [
               {
                 "puntos": 4,
-                "condicion": "Emplea 4 o más tipos distintos, incluido al menos un marcador de concesión o refutación (es cierto que, no obstante)"
+                "condicion": "Emplea 4 o más tipos distintos, incluido al menos un marcador de concesión o refutación (*es cierto que*, *no obstante*)"
               },
               {
                 "puntos": 3,
@@ -3211,7 +3211,7 @@
         },
         "n4": {
           "verbo": "integra",
-          "texto": "Integra la concesión y la refutación en la línea argumentativa (es cierto que, sin embargo), y gradúa la fuerza de los argumentos hasta una conclusión que deriva de lo argumentado, sin limitarse a repetir la tesis inicial."
+          "texto": "Integra la concesión y la refutación en la línea argumentativa (*es cierto que*, *sin embargo*), y gradúa la fuerza de los argumentos hasta una conclusión que deriva de lo argumentado, sin limitarse a repetir la tesis inicial."
         }
       },
       "matriz_cuantitativa": {
@@ -3349,7 +3349,7 @@
         },
         "n3": {
           "verbo": "emplea",
-          "texto": "Emplea marcadores de concesión y refutación (es cierto que, no obstante) en el tránsito de cada objeción a su respuesta, sin limitarlos a un único par fijo."
+          "texto": "Emplea marcadores de concesión y refutación (*es cierto que*, *no obstante*) en el tránsito de cada objeción a su respuesta, sin limitarlos a un único par fijo."
         },
         "n4": {
           "verbo": "sustituye",
@@ -3365,7 +3365,7 @@
             "bandas": [
               {
                 "puntos": 4,
-                "condicion": "Emplea 4 o más tipos distintos, incluido al menos un marcador de concesión o refutación (es cierto que, no obstante)"
+                "condicion": "Emplea 4 o más tipos distintos, incluido al menos un marcador de concesión o refutación (*es cierto que*, *no obstante*)"
               },
               {
                 "puntos": 3,

@@ -1,6 +1,6 @@
 # Revisión del pack: Texto expositivo escrito — Región de Murcia
 
-**Pack** `pack-lcl-expositivo.json` · versión 0.2.0 · 36 criterios · 144 descriptores · 30 matrices cuantitativas
+**Pack** `pack-lcl-expositivo.json` · versión 0.4.0 · 36 criterios · 144 descriptores · 30 matrices cuantitativas
 
 > Documento para validación docente, generado desde el JSON. No se edita a mano.
 > Al leer, mira sobre todo tres cosas: si el nivel N4 es alcanzable en ese curso,
@@ -63,8 +63,8 @@
 
 | Nivel | Descriptor |
 |---|---|
-| **N1** | Utiliza los conectores y, pero y entonces para enlazar las oraciones, y agrupa varios enunciados sin separarlos con punto. |
-| **N2** | Utiliza conectores de adición y de orden (además, en primer lugar, por último) para enlazar las ideas, y separa los enunciados con punto. |
+| **N1** | Utiliza los conectores *y*, *pero* y *entonces* para enlazar las oraciones, y agrupa varios enunciados sin separarlos con punto. |
+| **N2** | Utiliza conectores de adición y de orden (*además*, *en primer lugar*, *por último*) para enlazar las ideas, y separa los enunciados con punto. |
 | **N3** | Emplea conectores de orden, adición y causa, y utiliza la coma para separar los elementos de una enumeración. |
 | **N4** | Sustituye por un sinónimo o un pronombre la palabra que ya ha aparecido en la oración anterior. |
 
@@ -72,7 +72,7 @@
 
 | Componente | Máx. | Bandas |
 |---|---|---|
-| Variedad y uso de conectores | 4 | **4** — Emplea 3 o más tipos distintos: orden, adición y causa<br>**3** — Emplea 2 tipos distintos, uno de ellos de orden o de causa<br>**2** — Emplea conectores de adición y de orden, siempre los mismos<br>**1** — Enlaza con y, pero y entonces<br>**0** — Coloca las oraciones una detrás de otra sin enlace |
+| Variedad y uso de conectores | 4 | **4** — Emplea 3 o más tipos distintos: orden, adición y causa<br>**3** — Emplea 2 tipos distintos, uno de ellos de orden o de causa<br>**2** — Emplea conectores de adición y de orden, siempre los mismos<br>**1** — Enlaza con *y*, *pero* y *entonces*<br>**0** — Coloca las oraciones una detrás de otra sin enlace |
 | El punto separa las ideas | 4 | **4** — Separa con punto todos los enunciados y usa la coma en las enumeraciones<br>**3** — Separa con punto los enunciados, con 1 o 2 casos sin separar<br>**2** — Separa con punto la mayoría, pero agrupa 3 o más enunciados seguidos<br>**1** — Separa con punto el final de cada párrafo y deja el interior sin puntos<br>**0** — Escribe el texto casi sin puntos |
 | No repetir la misma palabra | 2 | **2** — Sustituye por sinónimo o pronombre la palabra ya usada en la oración anterior<br>**1.5** — Sustituye la palabra ya usada en la oración anterior y deja 1 repetición sin sustituir<br>**1** — Sustituye alguna repetición, pero deja 2 o 3 sin sustituir<br>**0.5** — Sustituye la palabra repetida en un solo punto del texto<br>**0** — Repite la misma palabra en oraciones seguidas a lo largo del texto |
 
@@ -87,7 +87,7 @@
 | **N1** | Redacta el texto con errores de ortografía y de concordancia que obligan al lector a releer para reconstruir la idea. |
 | **N2** | Aplica las normas de acentuación y concordancia trabajadas en clase, con errores que permiten seguir la explicación. |
 | **N3** | Aplica las normas de ortografía, acentuación y concordancia del nivel, y sustituye las palabras repetidas por sinónimos. |
-| **N4** | Sustituye palabras de significado general (cosa, tema, hacer) por otras propias del tema, y entrega el texto sin errores que dificulten la lectura. |
+| **N4** | Sustituye palabras de significado general (*cosa*, *tema*, *hacer*) por otras propias del tema, y entrega el texto sin errores que dificulten la lectura. |
 
 **Matriz cuantitativa** — total 10 puntos. Es lo que usa el modo IA para corregir.
 
@@ -95,7 +95,7 @@
 |---|---|---|
 | Ortografía y acentuación | 4 | **4** — Hasta 2 faltas en todo el texto<br>**3** — De 3 a 5 faltas<br>**2** — De 6 a 8 faltas<br>**1** — De 9 a 12 faltas<br>**0** — 13 o más faltas |
 | Concordancia | 2 | **2** — Sin errores de concordancia de género, número o persona<br>**1.5** — Hasta 1 error de concordancia<br>**1** — 2 o 3 errores de concordancia<br>**0.5** — De 4 a 5 errores de concordancia<br>**0** — 6 o más errores de concordancia |
-| Precisión del vocabulario | 4 | **4** — Emplea palabras propias del tema en lugar de términos generales<br>**3** — Emplea 1 o 2 términos generales (cosa, tema, hacer) con sustituto evidente<br>**2** — Emplea 3 o más términos generales<br>**1** — Emplea términos generales y alguna palabra propia del tema<br>**0** — El texto se sostiene sobre palabras comodín |
+| Precisión del vocabulario | 4 | **4** — Emplea palabras propias del tema en lugar de términos generales<br>**3** — Emplea 1 o 2 términos generales (*cosa*, *tema*, *hacer*) con sustituto evidente<br>**2** — Emplea 3 o más términos generales<br>**1** — Emplea términos generales y alguna palabra propia del tema<br>**0** — El texto se sostiene sobre palabras comodín |
 
 ### Planificación y revisión del propio texto  ·  10%  ·  bloque D
 
@@ -115,8 +115,8 @@
 | Componente | Máx. | Bandas |
 |---|---|---|
 | Hay planificación previa | 4 | **4** — Entrega un esquema previo con las ideas principales<br>**3** — Entrega un esquema previo con las ideas sueltas, sin distinguir la principal<br>**2** — Entrega notas sueltas previas, sin organizar<br>**1** — Subraya las ideas en el material de partida, sin pasarlas a un esquema<br>**0** — No hay rastro de trabajo previo al texto |
-| Hay revisión | 4 | **4** — El borrador muestra 2 o más correcciones sobre el propio texto<br>**3** — El borrador muestra 2 o más correcciones de ortografía, ninguna sobre lo que dice el texto<br>**2** — El borrador muestra 1 corrección<br>**1** — El borrador muestra una marca de lectura sin corrección terminada<br>**0** — Entrega la primera versión sin marcas de revisión |
-| Explica algún cambio | 2 | **2** — Anota por qué ha cambiado al menos una palabra o frase<br>**1.5** — Anota el motivo de un cambio con una palabra suelta: repetido, largo, no se entiende<br>**1** — Anota el motivo de un cambio que no ha llegado a hacer en el texto<br>**0.5** — Señala el cambio en el borrador, sin anotar el motivo<br>**0** — No explica ningún cambio |
+| Hay revisión | 4 | **4** — El borrador muestra 2 o más correcciones sobre lo que dice el texto<br>**3** — El borrador muestra 2 o más correcciones de ortografía, ninguna sobre lo que dice el texto<br>**2** — El borrador muestra 1 corrección<br>**1** — El borrador muestra una marca de lectura sin corrección terminada<br>**0** — Entrega la primera versión sin marcas de revisión |
+| Explica algún cambio | 2 | **2** — Anota por qué ha cambiado al menos una palabra o frase<br>**1.5** — Anota el motivo de un cambio con una palabra suelta: *repetido*, *largo*, *no se entiende*<br>**1** — Anota el motivo de un cambio que no ha llegado a hacer en el texto<br>**0.5** — Señala el cambio en el borrador, sin anotar el motivo<br>**0** — No explica ningún cambio |
 
 ### Tratamiento de la información y uso de fuentes  ·  10%  ·  bloque B
 
@@ -137,7 +137,7 @@
 |---|---|---|
 | Número de fuentes | 4 | **4** — Emplea las 2 fuentes indicadas y compara algún dato entre ellas<br>**3** — Emplea las 2 fuentes indicadas<br>**2** — Emplea 1 fuente<br>**1** — Nombra una fuente sin tomar de ella ningún dato<br>**0** — No se aprecia consulta de ninguna fuente |
 | Anota de dónde sale cada dato | 2 | **2** — Anota la procedencia de cada dato tomado de una fuente<br>**1.5** — Anota la procedencia de la mayoría de los datos y deja alguno sin fuente<br>**1** — Anota las fuentes al final, sin ligar cada dato a la suya<br>**0.5** — Nombra una fuente en el texto, sin ligarla a ningún dato<br>**0** — No indica ninguna procedencia |
-| Lo cuenta con sus palabras | 4 | **4** — Explica la información con palabras propias en todo el texto<br>**3** — Conserva 1 frase copiada y reformula el resto<br>**2** — Conserva 2 o 3 frases copiadas y reformula el resto<br>**1** — Conserva de 4 a 5 frases copiadas y reformula el resto<br>**0** — Copia fragmentos de la fuente sin señalarlos |
+| Explicación con palabras propias | 4 | **4** — Explica la información con palabras propias en todo el texto<br>**3** — Conserva 1 frase copiada y reformula el resto<br>**2** — Conserva 2 o 3 frases copiadas y reformula el resto<br>**1** — Conserva de 4 a 5 frases copiadas y reformula el resto<br>**0** — Copia fragmentos de la fuente sin señalarlos |
 
 ---
 
@@ -196,8 +196,8 @@
 
 | Nivel | Descriptor |
 |---|---|
-| **N1** | Utiliza los conectores y, pero y entonces para enlazar las ideas del texto, sin separarlas con punto. |
-| **N2** | Utiliza conectores de adición y de orden (además, en primer lugar, por último) para enlazar los párrafos, y separa los enunciados con punto. |
+| **N1** | Utiliza los conectores *y*, *pero* y *entonces* para enlazar las ideas del texto, sin separarlas con punto. |
+| **N2** | Utiliza conectores de adición y de orden (*además*, *en primer lugar*, *por último*) para enlazar los párrafos, y separa los enunciados con punto. |
 | **N3** | Emplea conectores de orden, adición y causa entre los párrafos, y utiliza la coma para delimitar los incisos del texto. |
 | **N4** | Sustituye mediante un sinónimo, un hiperónimo o un pronombre la palabra que ya ha aparecido en el párrafo anterior. |
 
@@ -205,7 +205,7 @@
 
 | Componente | Máx. | Bandas |
 |---|---|---|
-| Variedad y uso de conectores | 4 | **4** — Emplea 3 tipos distintos: orden, adición y causa<br>**3** — Emplea 2 tipos distintos, uno de ellos de orden o de causa<br>**2** — Emplea conectores de adición y de orden, siempre los mismos<br>**1** — Enlaza con y, pero y entonces<br>**0** — Coloca las oraciones una detrás de otra sin enlace |
+| Variedad y uso de conectores | 4 | **4** — Emplea 3 tipos distintos: orden, adición y causa<br>**3** — Emplea 2 tipos distintos, uno de ellos de orden o de causa<br>**2** — Emplea conectores de adición y de orden, siempre los mismos<br>**1** — Enlaza con *y*, *pero* y *entonces*<br>**0** — Coloca las oraciones una detrás de otra sin enlace |
 | El punto separa las ideas | 2 | **2** — Separa con punto todos los enunciados y usa la coma para delimitar incisos<br>**1.5** — Separa con punto todos los enunciados y deja sin comas algún inciso<br>**1** — Separa con punto los enunciados, con 1 o 2 casos sin separar<br>**0.5** — Separa con punto la mayoría, pero agrupa 3 o más enunciados seguidos<br>**0** — Escribe el texto casi sin puntos |
 | No repetir la misma palabra | 4 | **4** — Sustituye por sinónimo, hiperónimo o pronombre la palabra ya usada en el párrafo anterior<br>**3** — Sustituye alguna repetición, pero deja 2 o 3 sin sustituir<br>**2** — Repite la misma palabra en párrafos seguidos, teniendo sustituto evidente<br>**1** — Sustituye la palabra repetida en 1 punto del texto<br>**0** — Repite el mismo sustantivo a lo largo de todo el texto |
 
@@ -220,7 +220,7 @@
 | **N1** | Redacta el texto con errores de ortografía y de concordancia que obligan al lector a releer para reconstruir la idea. |
 | **N2** | Aplica las normas de acentuación y concordancia trabajadas en clase, con errores que permiten seguir la explicación. |
 | **N3** | Aplica las normas de ortografía, acentuación y concordancia del nivel, y sustituye alguna palabra repetida por un sinónimo. |
-| **N4** | Sustituye palabras de significado general (cosa, tema, hacer) por otras propias del tema, y entrega el texto sin errores que dificulten la lectura. |
+| **N4** | Sustituye palabras de significado general (*cosa*, *tema*, *hacer*) por otras propias del tema, y entrega el texto sin errores que dificulten la lectura. |
 
 **Matriz cuantitativa** — total 10 puntos. Es lo que usa el modo IA para corregir.
 
@@ -228,7 +228,7 @@
 |---|---|---|
 | Ortografía y acentuación | 4 | **4** — Hasta 2 faltas en todo el texto<br>**3** — De 3 a 6 faltas<br>**2** — De 7 a 9 faltas<br>**1** — De 10 a 14 faltas<br>**0** — 15 o más faltas |
 | Concordancia | 2 | **2** — Sin errores de concordancia de género, número o persona<br>**1.5** — Hasta 1 error de concordancia<br>**1** — 2 o 3 errores de concordancia<br>**0.5** — De 4 a 7 errores de concordancia<br>**0** — 8 o más errores de concordancia |
-| Precisión del vocabulario | 4 | **4** — Emplea palabras propias del tema en lugar de términos generales<br>**3** — Emplea 1 término general (cosa, tema, hacer) con sustituto evidente<br>**2** — Emplea 2 o 3 términos generales<br>**1** — Emplea términos generales y alguna palabra propia del tema<br>**0** — El texto se sostiene sobre palabras comodín |
+| Precisión del vocabulario | 4 | **4** — Emplea palabras propias del tema en lugar de términos generales<br>**3** — Emplea 1 término general (*cosa*, *tema*, *hacer*) con sustituto evidente<br>**2** — Emplea 2 o 3 términos generales<br>**1** — Emplea términos generales y alguna palabra propia del tema<br>**0** — El texto se sostiene sobre palabras comodín |
 
 ### Planificación y revisión del propio texto  ·  10%  ·  bloque B
 
@@ -270,7 +270,7 @@
 |---|---|---|
 | Número de fuentes | 4 | **4** — Combina la información de 2 o más fuentes indicadas en el mismo trabajo<br>**3** — Emplea las 2 fuentes indicadas, cada una en una parte distinta del trabajo<br>**2** — Emplea 1 fuente<br>**1** — Nombra una fuente sin tomar de ella ningún dato<br>**0** — No se aprecia consulta de ninguna fuente |
 | Selección de la información | 2 | **2** — Incluye solo la información pertinente para el tema del trabajo<br>**1.5** — Incluye la información pertinente y añade algún dato que el tema no pide<br>**1** — Incluye información de la fuente, con 1 o 2 datos que no responden al tema<br>**0.5** — Selecciona un bloque de la fuente y lo traslada entero al trabajo<br>**0** — Traslada la fuente casi completa, sin criterio de selección |
-| Lo cuenta con sus palabras | 4 | **4** — Explica la información con palabras propias en todo el trabajo<br>**3** — Conserva 1 frase copiada y reformula el resto<br>**2** — Conserva 2 o 3 frases copiadas y reformula el resto<br>**1** — Conserva de 4 a 5 frases copiadas y reformula el resto<br>**0** — Copia fragmentos de la fuente sin señalarlos |
+| Explicación con palabras propias | 4 | **4** — Explica la información con palabras propias en todo el trabajo<br>**3** — Conserva 1 frase copiada y reformula el resto<br>**2** — Conserva 2 o 3 frases copiadas y reformula el resto<br>**1** — Conserva de 4 a 5 frases copiadas y reformula el resto<br>**0** — Copia fragmentos de la fuente sin señalarlos |
 
 ---
 
@@ -329,7 +329,7 @@
 
 | Nivel | Descriptor |
 |---|---|
-| **N1** | Utiliza conectores de adición (además, también) para enlazar párrafos que desarrollan contenidos distintos. |
+| **N1** | Utiliza conectores de adición (*además*, *también*) para enlazar párrafos que desarrollan contenidos distintos. |
 | **N2** | Utiliza conectores de orden, adición y causa entre párrafos, y delimita con la coma los incisos del texto. |
 | **N3** | Emplea conectores de causa, consecuencia y ejemplificación, y sustituye las repeticiones mediante sinónimos, hiperónimos y pronombres. |
 | **N4** | Articula la exposición con marcadores de organización, reformulación y ejemplificación, y mantiene la referencia de cada pronombre sin ambigüedad. |
@@ -338,7 +338,7 @@
 
 | Componente | Máx. | Bandas |
 |---|---|---|
-| Variedad y uso de conectores | 4 | **4** — Emplea 4 o más tipos distintos de marcador: al menos ordenación, causa, consecuencia y ejemplificación o reformulación<br>**3** — Emplea 3 tipos distintos de marcador<br>**2** — Emplea 2 tipos, uno de ellos más allá de la adición<br>**1** — Se limita a conectores de adición (además, también) o repite el mismo marcador<br>**0** — Yuxtapone los párrafos sin marcador que los enlace |
+| Variedad y uso de conectores | 4 | **4** — Emplea 4 o más tipos distintos de marcador: al menos ordenación, causa, consecuencia y ejemplificación o reformulación<br>**3** — Emplea 3 tipos distintos de marcador<br>**2** — Emplea 2 tipos, uno de ellos más allá de la adición<br>**1** — Se limita a conectores de adición (*además*, *también*) o repite el mismo marcador<br>**0** — Yuxtapone los párrafos sin marcador que los enlace |
 | Puntuación al servicio de la estructura | 2 | **2** — Separa los bloques con punto y aparte y delimita los incisos con coma, sin errores que obliguen a releer<br>**1.5** — Separa los bloques con punto y aparte y deja sin comas algún inciso<br>**1** — Puntuación correcta con 1 o 2 errores que no impiden seguir el texto<br>**0.5** — Puntuación presente pero con 3 o más errores, o párrafos que mezclan bloques distintos<br>**0** — Texto sin puntuación o con uso errático en más de la mitad del escrito |
 | Referencia y sustitución léxica | 4 | **4** — Sustituye las repeticiones con sinónimos, hiperónimos o pronombres, y todos los referentes son recuperables<br>**3** — Sustituye la mayoría de las repeticiones; 1 referente exige releer para identificarlo<br>**2** — Repite la palabra clave 3 o más veces teniendo sustituto evidente en el contexto<br>**1** — Sustituye la palabra clave en 1 punto y la repite en el resto<br>**0** — Repite el mismo sustantivo en oraciones consecutivas a lo largo del texto |
 
@@ -374,7 +374,7 @@
 | **N1** | Redacta el texto en una sola pasada y entrega la primera versión como texto final. |
 | **N2** | Elabora un esquema previo propio y entrega el borrador con marcas de revisión sobre la ortografía y el léxico. |
 | **N3** | Revisa el borrador por cuenta propia y corrige problemas de puntuación y de conexión entre párrafos. |
-| **N4** | Justifica los cambios introducidos en el borrador con el metalenguaje del nivel (conector, referente, subordinada), explicando qué mejora aporta cada uno. |
+| **N4** | Justifica los cambios introducidos en el borrador con el metalenguaje del nivel (*conector*, *referente*, *subordinada*), explicando qué mejora aporta cada uno. |
 
 **Matriz cuantitativa** — total 10 puntos. Es lo que usa el modo IA para corregir.
 
@@ -382,7 +382,7 @@
 |---|---|---|
 | Planificación propia | 4 | **4** — Entrega un esquema previo propio con la estructura del texto<br>**3** — Entrega un esquema previo que solo lista ideas, sin estructura<br>**2** — Entrega notas sueltas previas, sin esquema<br>**1** — Entrega el esquema del modelo de clase, sin ideas propias<br>**0** — No hay rastro de trabajo previo al texto |
 | Alcance de la revisión | 4 | **4** — Corrige en el borrador aspectos de puntuación y de conexión entre párrafos, no solo faltas<br>**3** — Corrige faltas de ortografía y léxico<br>**2** — Corrige 1 o 2 detalles aislados<br>**1** — Marca en el borrador un punto para corregir y lo deja sin corregir<br>**0** — Entrega la primera versión sin marcas de revisión |
-| Justificación con metalenguaje | 2 | **2** — Justifica 2 o más cambios usando el metalenguaje del nivel (conector, referente, subordinada)<br>**1.5** — Justifica 2 o más cambios y emplea el metalenguaje del nivel en uno de ellos<br>**1** — Justifica 1 cambio con metalenguaje, o varios sin él<br>**0.5** — Anota en el borrador los cambios hechos, sin decir qué mejoran<br>**0** — No justifica ningún cambio |
+| Justificación con metalenguaje | 2 | **2** — Justifica 2 o más cambios usando el metalenguaje del nivel (*conector*, *referente*, *subordinada*)<br>**1.5** — Justifica 2 o más cambios y emplea el metalenguaje del nivel en uno de ellos<br>**1** — Justifica 1 cambio con metalenguaje, o varios sin él<br>**0.5** — Anota en el borrador los cambios hechos, sin decir qué mejoran<br>**0** — No justifica ningún cambio |
 
 ### Tratamiento de la información y uso de fuentes  ·  10%  ·  bloque B
 
@@ -462,7 +462,7 @@
 
 | Nivel | Descriptor |
 |---|---|
-| **N1** | Utiliza conectores de adición y de causa (además, porque) para enlazar los párrafos, y explica cada término del tema en una oración distinta a la que lo nombra. |
+| **N1** | Utiliza conectores de adición y de causa (*además*, *porque*) para enlazar los párrafos, y explica cada término del tema en una oración distinta de la que lo nombra. |
 | **N2** | Utiliza conectores de orden, adición y causa entre párrafos, y explica algún término mediante una oración de relativo aislada. |
 | **N3** | Emplea conectores de causa, consecuencia y contraste entre párrafos, y recurre a la aposición o a la oración de relativo para incorporar una definición sin interrumpir la explicación. |
 | **N4** | Sustituye las repeticiones mediante nominalizaciones e hiperónimos de significado abstracto, y combina conectores de matización con algún procedimiento explicativo para precisar el tema sin romper la cohesión del texto. |
@@ -471,7 +471,7 @@
 
 | Componente | Máx. | Bandas |
 |---|---|---|
-| Variedad y matización de los conectores | 4 | **4** — Emplea 4 o más tipos distintos de conector, incluyendo alguno de matización o contraste (aunque, no obstante, a pesar de)<br>**3** — Emplea 3 tipos distintos de conector, sin ninguno de matización o contraste<br>**2** — Emplea 2 tipos distintos de conector<br>**1** — Se limita a conectores de adición (además, también)<br>**0** — Yuxtapone los párrafos sin conector que los enlace |
+| Variedad y matización de los conectores | 4 | **4** — Emplea 4 o más tipos distintos de conector, incluyendo alguno de matización o contraste (*aunque*, *no obstante*, *a pesar de*)<br>**3** — Emplea 3 tipos distintos de conector, sin ninguno de matización o contraste<br>**2** — Emplea 2 tipos distintos de conector<br>**1** — Se limita a conectores de adición (*además*, *también*)<br>**0** — Yuxtapone los párrafos sin conector que los enlace |
 | Procedimientos explicativos | 4 | **4** — Incorpora 2 o más definiciones o precisiones mediante aposición u oración de relativo, sin interrumpir la exposición<br>**3** — Incorpora 1 definición mediante aposición u oración de relativo<br>**2** — Explica los términos del tema en una oración aparte, sin integrarlos mediante aposición ni relativa<br>**1** — Explica 1 término del tema con un sinónimo del habla común<br>**0** — No explica ningún término del tema |
 | Referencia y sustitución léxica | 2 | **2** — Sustituye las repeticiones mediante sinónimo, nominalización o hiperónimo abstracto, y todos los referentes son recuperables<br>**1.5** — Sustituye las repeticiones mediante sinónimo o pronombre, sin recurrir a la nominalización ni al hiperónimo, y todos los referentes son recuperables<br>**1** — Sustituye la mayoría de las repeticiones; 1 referente exige releer para identificarlo<br>**0.5** — Repite la palabra clave 3 o más veces teniendo sustituto evidente<br>**0** — Repite el mismo sustantivo en oraciones consecutivas a lo largo del texto |
 
@@ -595,17 +595,17 @@
 
 | Nivel | Descriptor |
 |---|---|
-| **N1** | Utiliza conectores de adición y de causa para enlazar los párrafos, y mantiene el mismo tiempo verbal a lo largo de todo el texto sin ninguna finalidad. |
+| **N1** | Utiliza conectores de adición y de causa para enlazar los párrafos, y mantiene el mismo tiempo verbal a lo largo de todo el texto, sin emplearlo para organizar la exposición. |
 | **N2** | Utiliza conectores de orden, adición, causa y contraste entre párrafos, y cambia de tiempo verbal solo cuando la norma gramatical lo exige. |
-| **N3** | Emplea marcadores discursivos que organizan la exposición (en primer lugar, dicho esto, en definitiva) además de los conectores lógicos, y usa el tiempo verbal para distinguir la información general de los datos concretos. |
+| **N3** | Emplea marcadores discursivos que organizan la exposición (*en primer lugar*, *dicho esto*, *en definitiva*) además de los conectores lógicos, y usa el tiempo verbal para distinguir la información general de los datos concretos. |
 | **N4** | Sustituye las repeticiones mediante nominalizaciones e hiperónimos, y elige el tiempo verbal de cada bloque para marcar qué es explicación general y qué es dato concreto o referencia a una fuente. |
 
 **Matriz cuantitativa** — total 10 puntos. Es lo que usa el modo IA para corregir.
 
 | Componente | Máx. | Bandas |
 |---|---|---|
-| Variedad de conectores y marcadores discursivos | 4 | **4** — Emplea 4 o más tipos distintos, incluyendo al menos un marcador discursivo organizador (en primer lugar, dicho esto, en definitiva) además de los conectores lógicos<br>**3** — Emplea 3 tipos distintos de conector, sin ningún marcador discursivo organizador<br>**2** — Emplea 2 tipos distintos de conector<br>**1** — Se limita a conectores de adición (además, también)<br>**0** — Yuxtapone los párrafos sin conector que los enlace |
-| Uso del tiempo verbal como procedimiento de cohesión | 4 | **4** — Mantiene la correlación temporal y usa un cambio de tiempo verbal con una función reconocible: marcar una cita, un dato concreto o un cambio de plano<br>**3** — Mantiene la correlación temporal, pero no hay ningún cambio de tiempo verbal con función reconocible<br>**2** — Presenta 1 o 2 saltos de tiempo verbal que no responden a ninguna norma ni función<br>**1** — Presenta 3 o 4 saltos de tiempo verbal que no responden a ninguna norma ni función<br>**0** — El tiempo verbal cambia sin criterio a lo largo del texto |
+| Variedad de conectores y marcadores discursivos | 4 | **4** — Emplea 4 o más tipos distintos, incluyendo al menos un marcador discursivo organizador (*en primer lugar*, *dicho esto*, *en definitiva*) además de los conectores lógicos<br>**3** — Emplea 3 tipos distintos de conector, sin ningún marcador discursivo organizador<br>**2** — Emplea 2 tipos distintos de conector<br>**1** — Se limita a conectores de adición (*además*, *también*)<br>**0** — Yuxtapone los párrafos sin conector que los enlace |
+| Uso del tiempo verbal como procedimiento de cohesión | 4 | **4** — Mantiene la correlación temporal y usa un cambio de tiempo verbal con una función reconocible: marcar una cita, un dato concreto o un cambio de plano<br>**3** — Cambia de tiempo verbal solo donde la norma lo exige, sin ningún cambio con función organizadora<br>**2** — Mantiene un único tiempo verbal en todo el texto, también donde la norma exige cambiarlo<br>**1** — Presenta de 1 a 4 saltos de tiempo verbal que no responden a ninguna norma ni función<br>**0** — Presenta 5 o más saltos de tiempo verbal sin norma ni función, o cambia de tiempo dentro de la misma oración |
 | Referencia y sustitución léxica | 2 | **2** — Sustituye las repeticiones mediante sinónimo, nominalización o hiperónimo, y todos los referentes son recuperables<br>**1.5** — Sustituye las repeticiones mediante sinónimo o pronombre, sin recurrir a la nominalización ni al hiperónimo, y todos los referentes son recuperables<br>**1** — Sustituye la mayoría de las repeticiones; 1 referente exige releer para identificarlo<br>**0.5** — Repite la palabra clave 3 o más veces teniendo sustituto evidente<br>**0** — Repite el mismo sustantivo en oraciones consecutivas a lo largo del texto |
 
 ### Corrección normativa y propiedad léxica  ·  15%  ·  bloque D  ·  🔒 obligatorio
@@ -728,17 +728,17 @@
 
 | Nivel | Descriptor |
 |---|---|
-| **N1** | Utiliza conectores de adición y de causa para enlazar los párrafos, y mantiene un único tiempo verbal en todo el texto sin ninguna función. |
+| **N1** | Utiliza conectores de adición y de causa para enlazar los párrafos, y mantiene un único tiempo verbal en todo el texto, sin emplearlo para organizar la exposición. |
 | **N2** | Utiliza conectores de orden, adición, causa y contraste entre párrafos, y solo cambia de tiempo verbal cuando lo exige la norma gramatical. |
-| **N3** | Emplea marcadores discursivos organizadores de la exposición (en primer lugar, dicho esto, en definitiva) además de los conectores lógicos, y usa el tiempo verbal para separar la explicación general de los datos concretos. |
+| **N3** | Emplea marcadores discursivos organizadores de la exposición (*en primer lugar*, *dicho esto*, *en definitiva*) además de los conectores lógicos, y usa el tiempo verbal para separar la explicación general de los datos concretos. |
 | **N4** | Sustituye las repeticiones mediante nominalización o hiperónimo, y elige en cada bloque el tiempo verbal que marca si se trata de explicación general o de dato concreto. |
 
 **Matriz cuantitativa** — total 10 puntos. Es lo que usa el modo IA para corregir.
 
 | Componente | Máx. | Bandas |
 |---|---|---|
-| Variedad de conectores y marcadores discursivos | 4 | **4** — Emplea 4 o más tipos distintos, incluyendo al menos un marcador discursivo organizador (en primer lugar, dicho esto, en definitiva) además de los conectores lógicos<br>**3** — Emplea 3 tipos distintos de conector, sin ningún marcador discursivo organizador<br>**2** — Emplea 2 tipos distintos de conector<br>**1** — Se limita a conectores de adición (además, también)<br>**0** — Yuxtapone los párrafos sin conector que los enlace |
-| Uso del tiempo verbal como procedimiento de cohesión | 4 | **4** — Mantiene la correlación temporal y usa un cambio de tiempo verbal con una función reconocible: marcar una cita, un dato concreto o un cambio de plano<br>**3** — Mantiene la correlación temporal, pero no hay ningún cambio de tiempo verbal con función reconocible<br>**2** — Presenta 1 o 2 saltos de tiempo verbal que no responden a ninguna norma ni función<br>**1** — Presenta 3 o 4 saltos de tiempo verbal que no responden a ninguna norma ni función<br>**0** — El tiempo verbal cambia sin criterio a lo largo del texto |
+| Variedad de conectores y marcadores discursivos | 4 | **4** — Emplea 4 o más tipos distintos, incluyendo al menos un marcador discursivo organizador (*en primer lugar*, *dicho esto*, *en definitiva*) además de los conectores lógicos<br>**3** — Emplea 3 tipos distintos de conector, sin ningún marcador discursivo organizador<br>**2** — Emplea 2 tipos distintos de conector<br>**1** — Se limita a conectores de adición (*además*, *también*)<br>**0** — Yuxtapone los párrafos sin conector que los enlace |
+| Uso del tiempo verbal como procedimiento de cohesión | 4 | **4** — Mantiene la correlación temporal y usa un cambio de tiempo verbal con una función reconocible: marcar una cita, un dato concreto o un cambio de plano<br>**3** — Cambia de tiempo verbal solo donde la norma lo exige, sin ningún cambio con función organizadora<br>**2** — Mantiene un único tiempo verbal en todo el texto, también donde la norma exige cambiarlo<br>**1** — Presenta de 1 a 4 saltos de tiempo verbal que no responden a ninguna norma ni función<br>**0** — Presenta 5 o más saltos de tiempo verbal sin norma ni función, o cambia de tiempo dentro de la misma oración |
 | Referencia y sustitución léxica | 2 | **2** — Sustituye las repeticiones mediante sinónimo, nominalización o hiperónimo, y todos los referentes son recuperables<br>**1.5** — Sustituye las repeticiones mediante sinónimo o pronombre, sin recurrir a la nominalización ni al hiperónimo, y todos los referentes son recuperables<br>**1** — Sustituye la mayoría de las repeticiones; 1 referente exige releer para identificarlo<br>**0.5** — Repite la palabra clave 3 o más veces teniendo sustituto evidente<br>**0** — Repite el mismo sustantivo en oraciones consecutivas a lo largo del texto |
 
 ### Corrección normativa y propiedad léxica  ·  15%  ·  bloque D  ·  🔒 obligatorio

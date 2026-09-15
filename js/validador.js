@@ -1,4 +1,5 @@
 import { LEXICO } from "./lexico.js";
+import { sinMarcas, errorDeMarcas } from "./marcas.js";
 
 // Validador de calidad de descriptores — SDD §10.
 //
@@ -103,6 +104,15 @@ export const REGLAS = {
       "Descriptores idénticos en dos cursos distintos suelen ser copiar y pegar, no progresión. El " +
       "N1 queda exento: un texto entregado sin revisar es la misma evidencia en 1.º de ESO que en " +
       "2.º de Bachillerato.",
+  },
+  cursiva: {
+    etiqueta: "Marca de cursiva mal formada",
+    severidad: "error",
+    fuente: "SDD §5.2",
+    porQue:
+      "Las formas de la lengua que un descriptor menciona van en cursiva: «los conectores *y*, " +
+      "*pero* y *entonces*». Una marca que no se cierra, o que abre con un espacio dentro, no se " +
+      "convierte en cursiva: se imprime como un asterisco suelto en la rúbrica y en la ficha del alumno.",
   },
   condicion_de_evidencia: {
     etiqueta: "Condición de evidencia declarada a medias",
@@ -285,7 +295,7 @@ function lexicoDeMateria(pack) {
 }
 
 function primeraPalabra(texto) {
-  const m = texto.trim().match(/^[¡¿]?([A-Za-zÁÉÍÓÚÑáéíóúñ]+)/);
+  const m = sinMarcas(texto).trim().match(/^[¡¿]?([A-Za-zÁÉÍÓÚÑáéíóúñ]+)/);
   return m ? m[1] : "";
 }
 
@@ -307,7 +317,11 @@ function construirRegexTermino(termino) {
 // Se exporta solo para que scripts/comprobar_paridad.py pueda contrastarla,
 // término a término, con la de validar_pack.py sobre un corpus de trampas.
 // Es la función donde los dos validadores se separaron sin que nadie lo viera.
-export function encontrarAdverbitis(texto) {
+// Las marcas de cursiva (*y*, *pero*) no son texto: las reglas miran las
+// palabras, y una marca dentro de una locución no puede ni tapar ni fabricar
+// un calificador vago. Igual en scripts/validar_pack.py.
+export function encontrarAdverbitis(textoConMarcas) {
+  const texto = sinMarcas(textoConMarcas);
   const minus = texto.toLowerCase();
   const porSubcadena = ADVERBITIS_SUBCADENA.filter((termino) => minus.includes(termino));
   const porPalabraCompleta = ADVERBITIS_PALABRA_COMPLETA.filter((termino) =>
@@ -322,7 +336,7 @@ export function encontrarAdverbitis(texto) {
 // Ventana de los primeros 45 caracteres, igual que validar_pack.py: no es
 // "empieza por negación", es "la negación aparece cerca del principio".
 function negacionEncontrada(texto) {
-  const minus = " " + texto.toLowerCase();
+  const minus = " " + sinMarcas(texto).toLowerCase();
   const ventana = minus.slice(0, VENTANA_NEGACION);
   for (const n of NEGACIONES) {
     if (ventana.includes(" " + n)) return n.trim();
@@ -333,7 +347,7 @@ function negacionEncontrada(texto) {
 // Palabras "\w" en sentido Unicode (letras, dígitos y guion bajo), igual que
 // el re.findall(r"\w+", ...) de Python, que sí trata las tildes como letra.
 function palabrasUnicode(texto) {
-  const m = texto.toLowerCase().match(/[\p{L}\p{N}_]+/gu);
+  const m = sinMarcas(texto).toLowerCase().match(/[\p{L}\p{N}_]+/gu);
   return m ? new Set(m) : new Set();
 }
 
@@ -396,6 +410,41 @@ function comprobarVerboObservable(criterio, verbosPorForma) {
         severidad: REGLAS.verbo_observable.severidad,
         criterioId: criterio.id,
         mensaje: `${criterio.id} (${nivel}): el verbo declarado ("${d.verbo}") no es el del texto ("${palabra}").`,
+      });
+    }
+  }
+  return avisos;
+}
+
+// Regla: marcas de cursiva (§5.2) — *y*, *pero*. Una marca abierta se
+// imprime como un asterisco suelto en la rúbrica y en la ficha del alumno,
+// así que es error, no aviso. Se mira todo texto que la app pinta; la cita
+// oficial no, porque es literal de la fuente.
+function comprobarCursiva(criterio) {
+  const textos = [
+    ["nombre", criterio.nombre],
+    ["descriptor_un_punto", criterio.descriptor_un_punto],
+    ["descriptor_cotejo", criterio.descriptor_cotejo],
+    ["condicion_de_evidencia", criterio.condicion_de_evidencia],
+    ...Object.entries(criterio.descriptores ?? {}).map(([nivel, d]) => [nivel, d?.texto]),
+  ];
+  const m = criterio.matriz_cuantitativa;
+  if (m) {
+    for (const comp of m.componentes) {
+      textos.push([`matriz · ${comp.nombre}`, comp.nombre]);
+      for (const banda of comp.bandas) textos.push([`matriz · ${comp.nombre}`, banda.condicion]);
+    }
+    for (const pen of m.penalizaciones ?? []) textos.push([`penalización ${pen.clave}`, pen.por]);
+  }
+  const avisos = [];
+  for (const [donde, texto] of textos) {
+    const fallo = typeof texto === "string" ? errorDeMarcas(texto) : null;
+    if (fallo) {
+      avisos.push({
+        regla: "cursiva",
+        severidad: REGLAS.cursiva.severidad,
+        criterioId: criterio.id,
+        mensaje: `${criterio.id} (${donde}): ${fallo}. Cada *…* se abre y se cierra pegado a la palabra.`,
       });
     }
   }
@@ -535,7 +584,7 @@ function comprobarCondicionDeEvidencia(criterios) {
 // orden de reconocimiento y mismo resultado. Cada forma se traduce a un
 // intervalo (desde, hasta), con hasta === null para la banda abierta.
 function fichasDeCondicion(texto) {
-  return quitarTildes(texto.toLowerCase()).match(/[\p{L}]+|\d+/gu) ?? [];
+  return quitarTildes(sinMarcas(texto).toLowerCase()).match(/[\p{L}]+|\d+/gu) ?? [];
 }
 
 function numeroDeFicha(ficha) {
@@ -953,10 +1002,11 @@ function comprobarModalizadores(criterio) {
   const disparadorAyuda = DISPARADORES_AYUDA.find((d) => citaNorm.includes(d));
   if (disparadorAyuda) {
     const textoDescriptores = quitarTildes(
-      ["n1", "n2", "n3", "n4"]
-        .map((n) => criterio.descriptores[n]?.texto ?? "")
-        .join(" ")
-        .toLowerCase()
+      sinMarcas(
+        ["n1", "n2", "n3", "n4"]
+          .map((n) => criterio.descriptores[n]?.texto ?? "")
+          .join(" ")
+      ).toLowerCase()
     );
     const tieneAndamiaje = MARCAS_ANDAMIAJE.some((marca) => textoDescriptores.includes(marca));
     if (!tieneAndamiaje) {
@@ -974,7 +1024,7 @@ function comprobarModalizadores(criterio) {
     for (const nivel of ["n1", "n2", "n3", "n4"]) {
       const d = criterio.descriptores[nivel];
       if (!d) continue;
-      const textoNorm = quitarTildes(d.texto.toLowerCase());
+      const textoNorm = quitarTildes(sinMarcas(d.texto).toLowerCase());
       const marca = MARCAS_ANDAMIAJE_RESIDUAL.find((m) => textoNorm.includes(m));
       if (marca) {
         avisos.push({
@@ -1146,6 +1196,7 @@ export function validarPack(pack) {
 
   for (const criterio of pack.criterios) {
     avisos.push(...comprobarTrazabilidad(criterio));
+    avisos.push(...comprobarCursiva(criterio));
     if (criterio.criterio_oficial?.cita) {
       avisos.push(...comprobarVerboObservable(criterio, verbosPorForma));
       avisos.push(...comprobarGradacionPositiva(criterio));
