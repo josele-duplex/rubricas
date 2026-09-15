@@ -285,7 +285,7 @@ function renderRubricaUnPunto(unPunto) {
       <tbody>${filas}</tbody>
     </table>
     </div>
-    ${unPunto.truncado ? `<p class="mensaje-vacio">Se muestran las ${unPunto.dimensiones.length} dimensiones de mayor prioridad; el resto queda fuera por el máximo de la rúbrica de un solo punto (SDD §7.4, Marco Teórico §10).</p>` : ""}
+    ${unPunto.truncado ? `<p class="mensaje-vacio">Se muestran las ${unPunto.dimensiones.length} dimensiones de mayor prioridad; el resto queda fuera por el máximo de la rúbrica de un solo punto (Marco Teórico §10).</p>` : ""}
     ${microexplicacion("un-punto")}
   `;
 }

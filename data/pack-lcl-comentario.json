@@ -2,7 +2,7 @@
   "pack_id": "lcl-murcia-comentario",
   "materia": "LCL",
   "etiqueta": "Comentario de texto literario — Región de Murcia",
-  "version": "0.3.0",
+  "version": "0.4.0",
   "normativa": {
     "estatal": [
       "RD 217/2022, de 29 de marzo (ESO)",
@@ -1093,24 +1093,24 @@
         "total": 10,
         "componentes": [
           {
-            "nombre": "Fragmentos del texto traídos al comentario",
+            "nombre": "Afirmaciones apoyadas en un fragmento a la medida de lo que prueba",
             "max": 4,
             "bandas": [
               {
                 "puntos": 4,
-                "condicion": "Trae 5 o más fragmentos distintos del texto"
+                "condicion": "Cada afirmación del comentario lleva un fragmento y ningún fragmento trae más texto del que el comentario usa"
               },
               {
                 "puntos": 3,
-                "condicion": "Trae 3 o 4 fragmentos distintos del texto"
+                "condicion": "Cada afirmación del comentario lleva un fragmento y 1 o más fragmentos traen más texto del que el comentario usa"
               },
               {
                 "puntos": 2,
-                "condicion": "Trae 1 o 2 fragmentos del texto"
+                "condicion": "1 o 2 afirmaciones del comentario quedan sin fragmento que las apoye"
               },
               {
                 "puntos": 1,
-                "condicion": "Reproduce una frase del texto dentro del comentario, sin traerla como fragmento"
+                "condicion": "3 o más afirmaciones del comentario quedan sin fragmento que las apoye"
               },
               {
                 "puntos": 0,
@@ -1691,24 +1691,24 @@
         "total": 10,
         "componentes": [
           {
-            "nombre": "Fragmentos del texto traídos al comentario",
+            "nombre": "Afirmaciones apoyadas en un fragmento a la medida de lo que prueba",
             "max": 4,
             "bandas": [
               {
                 "puntos": 4,
-                "condicion": "Trae 6 o más fragmentos distintos del texto"
+                "condicion": "Cada afirmación del análisis lleva un fragmento y ningún fragmento trae más texto del que el comentario usa"
               },
               {
                 "puntos": 3,
-                "condicion": "Trae 4 o 5 fragmentos distintos del texto"
+                "condicion": "Cada afirmación del análisis lleva un fragmento y 1 o más fragmentos traen más texto del que el comentario usa"
               },
               {
                 "puntos": 2,
-                "condicion": "Trae entre 1 y 3 fragmentos del texto"
+                "condicion": "1 o 2 afirmaciones del análisis quedan sin fragmento que las apoye"
               },
               {
                 "puntos": 1,
-                "condicion": "Reproduce una frase del texto dentro del comentario, sin traerla como fragmento"
+                "condicion": "3 o más afirmaciones del análisis quedan sin fragmento que las apoye"
               },
               {
                 "puntos": 0,
@@ -2435,24 +2435,24 @@
         "total": 10,
         "componentes": [
           {
-            "nombre": "Fragmentos del texto traídos al comentario",
+            "nombre": "Pasos del razonamiento apoyados en un fragmento a la medida de lo que prueba",
             "max": 4,
             "bandas": [
               {
                 "puntos": 4,
-                "condicion": "Trae 6 o más fragmentos distintos del texto"
+                "condicion": "Cada paso del razonamiento lleva un fragmento y ningún fragmento trae más texto del que el comentario usa"
               },
               {
                 "puntos": 3,
-                "condicion": "Trae 4 o 5 fragmentos distintos del texto"
+                "condicion": "Cada paso del razonamiento lleva un fragmento y 1 o más fragmentos traen más texto del que el comentario usa"
               },
               {
                 "puntos": 2,
-                "condicion": "Trae entre 1 y 3 fragmentos del texto"
+                "condicion": "1 o 2 pasos del razonamiento quedan sin fragmento que los apoye"
               },
               {
                 "puntos": 1,
-                "condicion": "Reproduce una frase del texto dentro del comentario, sin traerla como fragmento"
+                "condicion": "3 o más pasos del razonamiento quedan sin fragmento que los apoye"
               },
               {
                 "puntos": 0,

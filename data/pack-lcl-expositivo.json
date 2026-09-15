@@ -2,7 +2,7 @@
   "pack_id": "lcl-murcia-expositivo",
   "materia": "LCL",
   "etiqueta": "Texto expositivo escrito — Región de Murcia",
-  "version": "0.4.0",
+  "version": "0.5.0",
   "normativa": {
     "estatal": [
       "RD 217/2022, de 29 de marzo (ESO)"
@@ -4281,11 +4281,11 @@
             "bandas": [
               {
                 "puntos": 4,
-                "condicion": "Hasta 3 faltas en todo el texto, incluidas las tipográficas"
+                "condicion": "Hasta 2 faltas en todo el texto, incluidas las tipográficas"
               },
               {
                 "puntos": 3,
-                "condicion": "De 4 a 8 faltas"
+                "condicion": "De 3 a 8 faltas"
               },
               {
                 "puntos": 2,

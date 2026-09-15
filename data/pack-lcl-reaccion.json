@@ -2,7 +2,7 @@
   "pack_id": "lcl-murcia-reaccion",
   "materia": "LCL",
   "etiqueta": "Reacción a una noticia — Región de Murcia",
-  "version": "0.3.0",
+  "version": "0.4.0",
   "normativa": {
     "estatal": [
       "RD 217/2022, de 29 de marzo (ESO)",
@@ -2619,11 +2619,11 @@
             "bandas": [
               {
                 "puntos": 4,
-                "condicion": "Hasta 2 faltas en toda la reacción, tipográficas incluidas"
+                "condicion": "Hasta 1 falta en toda la reacción, tipográficas incluidas"
               },
               {
                 "puntos": 3,
-                "condicion": "De 3 a 5 faltas"
+                "condicion": "De 2 a 5 faltas"
               },
               {
                 "puntos": 2,

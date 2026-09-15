@@ -2,7 +2,7 @@
   "pack_id": "lcl-murcia-investigacion",
   "materia": "LCL",
   "etiqueta": "Trabajo de investigación multimodal — Región de Murcia",
-  "version": "0.5.0",
+  "version": "0.6.0",
   "normativa": {
     "estatal": [
       "RD 217/2022, de 29 de marzo (ESO)",
@@ -645,24 +645,24 @@
             ]
           },
           {
-            "nombre": "Datos contrastados entre fuentes",
+            "nombre": "Fuentes entre las que contrasta el dato principal",
             "max": 4,
             "bandas": [
               {
                 "puntos": 4,
-                "condicion": "Contrasta 3 o más datos entre dos fuentes al menos"
+                "condicion": "Contrasta el dato principal del trabajo entre 3 o más fuentes"
               },
               {
                 "puntos": 3,
-                "condicion": "Contrasta 2 datos entre dos fuentes"
+                "condicion": "Contrasta el dato principal del trabajo entre 2 fuentes"
               },
               {
                 "puntos": 2,
-                "condicion": "Contrasta 1 dato entre dos fuentes"
+                "condicion": "Contrasta entre 2 fuentes un dato distinto del principal, que traslada de una sola fuente"
               },
               {
                 "puntos": 1,
-                "condicion": "Sitúa dos datos de fuentes distintas juntos, sin compararlos"
+                "condicion": "Sitúa dos versiones del dato principal juntas, sin compararlas"
               },
               {
                 "puntos": 0,
@@ -1279,15 +1279,15 @@
             "bandas": [
               {
                 "puntos": 4,
-                "condicion": "Contrasta 4 o más datos entre fuentes de distinta procedencia"
+                "condicion": "Contrasta 2 o más datos principales del trabajo entre 3 o más fuentes de distinta procedencia"
               },
               {
                 "puntos": 3,
-                "condicion": "Contrasta 2 o 3 datos"
+                "condicion": "Contrasta 2 o más datos entre 2 fuentes de distinta procedencia"
               },
               {
                 "puntos": 2,
-                "condicion": "Contrasta 1 dato"
+                "condicion": "Contrasta 1 dato entre 2 fuentes"
               },
               {
                 "puntos": 1,

@@ -1,6 +1,6 @@
 # Revisión del pack: Texto expositivo escrito — Región de Murcia
 
-**Pack** `pack-lcl-expositivo.json` · versión 0.4.0 · 36 criterios · 144 descriptores · 30 matrices cuantitativas
+**Pack** `pack-lcl-expositivo.json` · versión 0.5.0 · 36 criterios · 144 descriptores · 30 matrices cuantitativas
 
 > Documento para validación docente, generado desde el JSON. No se edita a mano.
 > Al leer, mira sobre todo tres cosas: si el nivel N4 es alcanzable en ese curso,
@@ -758,7 +758,7 @@
 
 | Componente | Máx. | Bandas |
 |---|---|---|
-| Ortografía, gramática y tipografía | 4 | **4** — Hasta 3 faltas en todo el texto, incluidas las tipográficas<br>**3** — De 4 a 8 faltas<br>**2** — De 9 a 16 faltas<br>**1** — De 17 a 19 faltas<br>**0** — 20 o más faltas |
+| Ortografía, gramática y tipografía | 4 | **4** — Hasta 2 faltas en todo el texto, incluidas las tipográficas<br>**3** — De 3 a 8 faltas<br>**2** — De 9 a 16 faltas<br>**1** — De 17 a 19 faltas<br>**0** — 20 o más faltas |
 | Corrección gramatical | 2 | **2** — Sin errores de concordancia ni de construcción de la oración<br>**1.5** — 1 o 2 errores que no impiden la comprensión<br>**1** — De 3 a 5 errores, o alguna oración que hay que releer para reconstruir<br>**0.5** — De 6 a 12 errores, y la lectura se detiene para rehacer la oración<br>**0** — Errores sistemáticos que obligan a reconstruir el sentido |
 | Precisión léxica y vocación de estilo | 4 | **4** — Selecciona el término preciso y emplea algún recurso de estilo propio del ensayo académico (variación sintáctica, léxico connotativo pertinente)<br>**3** — Selecciona términos precisos, pero no emplea ningún recurso de estilo más allá de lo correcto<br>**2** — Recurre a términos de significado general con sustituto evidente<br>**1** — Emplea términos de significado general y alguno preciso<br>**0** — El texto se sostiene sobre palabras comodín |
 

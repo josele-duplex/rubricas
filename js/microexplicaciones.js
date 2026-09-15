@@ -1,4 +1,6 @@
-// Microexplicaciones — SDD §11.3.
+// Microexplicaciones (SDD §11.3 para quien edite este archivo; el texto que
+// sigue no cita el SDD porque lo lee el profesorado que usa la app, no quien
+// la mantiene).
 //
 // Catálogo único de los "¿por qué?" desplegables. Vive aparte del marcado
 // porque el mismo texto se usa en index.html (anclas [data-micro]), en la
@@ -6,9 +8,11 @@
 // se corrigen leyéndolos seguidos, no persiguiéndolos por tres archivos.
 //
 // Regla de redacción, la misma que se exige a los descriptores: dos o tres
-// líneas, sin adverbios de relleno y con la referencia al marco o al SDD que
-// sostiene la afirmación. Si una microexplicación no puede citar de dónde
-// sale, sobra.
+// líneas, sin adverbios de relleno. Cuando la afirmación necesita respaldo
+// citable por quien la lee, la referencia es al Marco Teórico (documento que
+// el profesorado puede consultar), nunca al SDD (diseño interno de la app,
+// ruido para quien no la mantiene). Si una microexplicación no puede
+// sostenerse sin citar el SDD, se reformula o se quita.
 
 export const MICROEXPLICACIONES = {
   // --- Modo exprés (index.html) ---
@@ -19,7 +23,7 @@ export const MICROEXPLICACIONES = {
       "un desarrollo largo pide otro instrumento. La app decide contigo antes de generar nada " +
       "(Marco Teórico §5), para no enseñar que la rúbrica sirve para todo. Si lo que entregas es una " +
       "fase —un esquema, un borrador, una revisión—, se premarcan solo las dimensiones de proceso y se " +
-      "abre la lista de cotejo: en un esquema todavía no hay texto que juzgar (SDD §8.1).",
+      "abre la lista de cotejo: en un esquema todavía no hay texto que juzgar.",
   },
 
   "tipo-tarea": {
@@ -27,7 +31,7 @@ export const MICROEXPLICACIONES = {
     texto:
       "El tipo de tarea decide qué criterios oficiales la sostienen, y el currículo no ampara todas " +
       "las tareas en todos los cursos: no hay texto argumentativo en 1.º de ESO. La app no ofrece lo " +
-      "que el decreto no escribe (SDD §4.3), así que el desplegable de curso se recalcula con cada tarea.",
+      "que el decreto no escribe, así que el desplegable de curso se recalcula con cada tarea.",
   },
 
   curso: {
@@ -36,7 +40,7 @@ export const MICROEXPLICACIONES = {
       "El decreto de Murcia redacta los criterios curso a curso: el 5.1 de 1.º no es el 5.1 de 3.º. " +
       "La diferencia de exigencia ya está escrita en el propio criterio —«sencillos» y «de manera guiada» " +
       "frente a «de cierta extensión» y «progresivamente autónoma»—, de modo que la progresión no se " +
-      "calibra a mano: se lee (SDD §10).",
+      "calibra a mano: se lee.",
   },
 
   tiempo: {
@@ -85,7 +89,7 @@ export const MICROEXPLICACIONES = {
     titulo: "¿por qué esta lista y no otra rúbrica?",
     texto:
       "La lista de cotejo no es una rúbrica abreviada: es el descriptor de N2 convertido en afirmación " +
-      "verificable (SDD §7.2). Sirve para borradores y tareas de proceso, donde graduar cuatro niveles " +
+      "verificable. Sirve para borradores y tareas de proceso, donde graduar cuatro niveles " +
       "cuesta más de lo que aporta. Se limita a ocho ítems por sostenibilidad.",
   },
 
@@ -102,7 +106,7 @@ export const MICROEXPLICACIONES = {
     texto:
       "Para un borrador o una tarea de proceso, graduar cuatro niveles cuesta más de lo que aporta: basta con " +
       "describir el desempeño esperado y anotar a mano en qué se queda corto o en qué destaca ese alumno " +
-      "concreto (SDD §7.4, Marco Teórico §10). Por eso se limita a 1-2 dimensiones: con más deja de ser " +
+      "concreto (Marco Teórico §10). Por eso se limita a 1-2 dimensiones: con más deja de ser " +
       "«un punto» y toca usar la rúbrica analítica.",
   },
 
@@ -110,7 +114,7 @@ export const MICROEXPLICACIONES = {
     titulo: "¿por qué puntos directos y no los cuatro niveles?",
     texto:
       "En un desarrollo largo o un comentario de texto, corregir de un vistazo pesa más que graduar cuatro " +
-      "descriptores por apartado (Marco Teórico §5, SDD §7.7). Cada apartado reparte su peso en puntos " +
+      "descriptores por apartado (Marco Teórico §5). Cada apartado reparte su peso en puntos " +
       "sobre 10; el detractor de ortografía y presentación es transversal a todo el texto y resta al " +
       "final, con un tope de 2 puntos que no se puede superar aunque el texto acumule muchos fallos (§6.3).",
   },
@@ -119,7 +123,7 @@ export const MICROEXPLICACIONES = {
     titulo: "¿por qué es la misma matriz y no un texto nuevo?",
     texto:
       "No hay contenido propio que redactar: cada descriptor cambia solo el verbo inicial, de 3.ª a 1.ª " +
-      "persona, con la forma que ya guarda el banco de verbos (SDD §5.3, §7.5). Es proyección, no " +
+      "persona, con la forma que ya guarda el banco de verbos. Es proyección, no " +
       "reinterpretación — si el alumno se reconoce en un nivel distinto al que marcarías tú, esa " +
       "diferencia es justo lo que conviene hablar antes de la nota.",
   },
@@ -127,7 +131,7 @@ export const MICROEXPLICACIONES = {
   "coevaluacion": {
     titulo: "¿por qué el comentario es obligatorio?",
     texto:
-      "Sin justificación escrita, la coevaluación degenera en reparto de notas entre amigos (SDD §7.6). " +
+      "Sin justificación escrita, la coevaluación degenera en reparto de notas entre amigos. " +
       "El comentario no es opcional: se pide uno por dimensión, aunque el nivel marcado coincida con el " +
       "de la rúbrica del profesor.",
   },
@@ -144,7 +148,7 @@ export const MICROEXPLICACIONES = {
     titulo: "¿qué significa este aviso?",
     texto:
       "Los ejes de autonomía, complejidad y reflexión metalingüística sitúan cada criterio dentro de la " +
-      "etapa (SDD §5.4). Si un mismo instrumento mezcla criterios separados por más de un nivel en el " +
+      "etapa. Si un mismo instrumento mezcla criterios separados por más de un nivel en el " +
       "mismo eje, la tarea pide a la vez dos cosas de exigencia distinta y conviene revisar la combinación.",
   },
 
@@ -153,7 +157,7 @@ export const MICROEXPLICACIONES = {
     texto:
       "Al cargar se comprueba lo que no exige juicio pedagógico: la cita del criterio, el verbo del banco, " +
       "la gradación positiva del N1, los calificadores vagos y la aritmética de las matrices. El validador " +
-      "no decide si un descriptor es bueno; eso aparece simulando una corrección (SDD §15), que es como se " +
+      "no decide si un descriptor es bueno; eso aparece simulando una corrección, que es como se " +
       "descubrió la regla del doble castigo.",
   },
 
@@ -162,7 +166,7 @@ export const MICROEXPLICACIONES = {
     titulo: "¿hasta dónde puedo mover un peso?",
     texto:
       "Los deslizadores no tienen tope. Si decides que la corrección normativa vale el 50% en esta tarea, " +
-      "la app te lo advierte una vez y te deja hacerlo: la decisión de calificación es tuya (SDD §11.2). " +
+      "la app te lo advierte una vez y te deja hacerlo: la decisión de calificación es tuya. " +
       "Al soltar, el conjunto se normaliza a 100 para que veas si una dimensión se ha comido el instrumento.",
   },
 
@@ -187,7 +191,7 @@ export const MICROEXPLICACIONES = {
       "Las dos valen. Pinchar el descriptor es un clic por fila y la dimensión aporta el valor de su nivel " +
       "según la escala (2,5 / 5 / 7,5 / 10). «Contar» abre la matriz de la dimensión y entonces aporta sus " +
       "puntos brutos, sin colapsar a nivel: colapsar haría que una décima de desempeño valiese hasta 2,5 " +
-      "puntos en el corte del 9 (SDD §6.2). Cuenta cuando la nota importe —una prueba, una entrega final— y " +
+      "puntos en el corte del 9. Cuenta cuando la nota importe —una prueba, una entrega final— y " +
       "pincha cuando baste el nivel. Lo que guardes se conserva en este navegador, por actividad.",
   },
 
@@ -195,7 +199,7 @@ export const MICROEXPLICACIONES = {
     titulo: "¿equilibrada o exigente?",
     texto:
       "La equilibrada evita que un alumno que ha producido algo, aunque flojo, saque un cero en una dimensión " +
-      "sin matriz; la exigente reserva el cero para el trabajo no realizado o ininteligible (SDD §6.2). Se " +
+      "sin matriz; la exigente reserva el cero para el trabajo no realizado o ininteligible. Se " +
       "declara aquí porque cambia la nota, no es un detalle técnico.",
   },
 
@@ -205,7 +209,7 @@ export const MICROEXPLICACIONES = {
       "La ortografía y la presentación son transversales a todo el texto, no de una dimensión concreta " +
       "(§6.3), así que se restan de la nota ya calculada, con un tope de 2 puntos que no se puede superar " +
       "aunque el texto acumule muchos fallos. Se aplica antes que la condición mínima: si esta se dispara, " +
-      "lo hace sobre la nota ya descontada, no al revés (SDD §6.3, orden fijado tras comprobar que da " +
+      "lo hace sobre la nota ya descontada, no al revés (orden fijado tras comprobar que da " +
       "notas distintas según el orden elegido).",
   },
 
@@ -213,7 +217,7 @@ export const MICROEXPLICACIONES = {
     titulo: "¿qué hace exactamente este límite?",
     texto:
       "Si se activa, un solo criterio obligatorio en N1 recorta la nota final a un techo de 4,9; no baja más " +
-      "aunque haya varios en N1, y nunca sube una nota que ya era más baja (SDD §6.2-§6.3). Actívala solo si " +
+      "aunque haya varios en N1, y nunca sube una nota que ya era más baja. Actívala solo si " +
       "se lo anunciaste al alumnado antes de la prueba: una condición mínima no anunciada es difícil de sostener.",
   },
 
@@ -222,8 +226,8 @@ export const MICROEXPLICACIONES = {
     texto:
       "Este botón exporta la matriz en blanco —criterio por fila, nivel por columna— en un CSV que abre " +
       "cualquier hoja de cálculo, no solo iDoceo: sirve igual si lo que quieres es la matriz en Excel, Sheets " +
-      "o Calc por otro motivo. Si vas a llevarla a iDoceo, sí sustituye a «Calificar» y no se suman los dos " +
-      "(SDD §17.19): es el formato de su importador de rúbricas, calificarías tocando cada celda allí —igual que " +
+      "o Calc por otro motivo. Si vas a llevarla a iDoceo, sí sustituye a «Calificar» y no se suman los dos: " +
+      "es el formato de su importador de rúbricas, calificarías tocando cada celda allí —igual que " +
       "en la pantalla «Calificar» de esta app, pero sin las matrices contables—, y la " +
       "pantalla «Calificar» de esta app dejaría de usarse para ese instrumento. Si prefieres seguir " +
       "calificando aquí, usa «Calificar» y, si necesitas la nota en iDoceo, el botón «Exportar CSV» de esa " +

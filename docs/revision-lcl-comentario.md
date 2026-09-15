@@ -1,6 +1,6 @@
 # Revisión del pack: Comentario de texto literario — Región de Murcia
 
-**Pack** `pack-lcl-comentario.json` · versión 0.3.0 · 29 criterios · 116 descriptores · 17 matrices cuantitativas
+**Pack** `pack-lcl-comentario.json` · versión 0.4.0 · 29 criterios · 116 descriptores · 17 matrices cuantitativas
 
 > Documento para validación docente, generado desde el JSON. No se edita a mano.
 > Al leer, mira sobre todo tres cosas: si el nivel N4 es alcanzable en ese curso,
@@ -230,7 +230,7 @@
 
 | Componente | Máx. | Bandas |
 |---|---|---|
-| Fragmentos del texto traídos al comentario | 4 | **4** — Trae 5 o más fragmentos distintos del texto<br>**3** — Trae 3 o 4 fragmentos distintos del texto<br>**2** — Trae 1 o 2 fragmentos del texto<br>**1** — Reproduce una frase del texto dentro del comentario, sin traerla como fragmento<br>**0** — Habla del texto sin traer ningún fragmento |
+| Afirmaciones apoyadas en un fragmento a la medida de lo que prueba | 4 | **4** — Cada afirmación del comentario lleva un fragmento y ningún fragmento trae más texto del que el comentario usa<br>**3** — Cada afirmación del comentario lleva un fragmento y 1 o más fragmentos traen más texto del que el comentario usa<br>**2** — 1 o 2 afirmaciones del comentario quedan sin fragmento que las apoye<br>**1** — 3 o más afirmaciones del comentario quedan sin fragmento que las apoye<br>**0** — Habla del texto sin traer ningún fragmento |
 | Marca de la cita | 2 | **2** — Todos los fragmentos van entrecomillados y con el verso o la línea indicados<br>**1.5** — Todos los fragmentos van entrecomillados y el verso o la línea aparecen solo en algunos<br>**1** — Todos los fragmentos van entrecomillados, sin verso ni línea<br>**0.5** — 1 o 2 fragmentos quedan sin entrecomillar<br>**0** — Los fragmentos se copian dentro del texto propio sin comillas |
 | Cada fragmento prueba una afirmación distinta | 4 | **4** — Cada fragmento prueba una afirmación distinta del comentario<br>**3** — 2 fragmentos prueban la misma afirmación<br>**2** — 3 fragmentos prueban la misma afirmación<br>**1** — 4 o más fragmentos prueban la misma afirmación<br>**0** — Los fragmentos se acumulan al margen de las afirmaciones |
 
@@ -352,7 +352,7 @@
 
 | Componente | Máx. | Bandas |
 |---|---|---|
-| Fragmentos del texto traídos al comentario | 4 | **4** — Trae 6 o más fragmentos distintos del texto<br>**3** — Trae 4 o 5 fragmentos distintos del texto<br>**2** — Trae entre 1 y 3 fragmentos del texto<br>**1** — Reproduce una frase del texto dentro del comentario, sin traerla como fragmento<br>**0** — Habla del texto sin traer ningún fragmento |
+| Afirmaciones apoyadas en un fragmento a la medida de lo que prueba | 4 | **4** — Cada afirmación del análisis lleva un fragmento y ningún fragmento trae más texto del que el comentario usa<br>**3** — Cada afirmación del análisis lleva un fragmento y 1 o más fragmentos traen más texto del que el comentario usa<br>**2** — 1 o 2 afirmaciones del análisis quedan sin fragmento que las apoye<br>**1** — 3 o más afirmaciones del análisis quedan sin fragmento que las apoye<br>**0** — Habla del texto sin traer ningún fragmento |
 | Marca de la cita y respeto del original | 2 | **2** — Todos los fragmentos van entrecomillados, con referencia y con la forma del original respetada<br>**1.5** — Todos los fragmentos van entrecomillados y con referencia, y alguno altera la forma del original<br>**1** — Todos los fragmentos van entrecomillados, sin referencia de verso ni de línea<br>**0.5** — 1 o 2 fragmentos quedan sin entrecomillar o alteran la forma del original<br>**0** — Los fragmentos se copian dentro del texto propio sin comillas |
 | Cada fragmento prueba una afirmación distinta | 4 | **4** — Cada fragmento prueba una afirmación distinta del comentario<br>**3** — 2 fragmentos prueban la misma afirmación<br>**2** — 3 fragmentos prueban la misma afirmación<br>**1** — 4 o más fragmentos prueban la misma afirmación<br>**0** — Los fragmentos se acumulan al margen de las afirmaciones |
 
@@ -495,7 +495,7 @@
 
 | Componente | Máx. | Bandas |
 |---|---|---|
-| Fragmentos del texto traídos al comentario | 4 | **4** — Trae 6 o más fragmentos distintos del texto<br>**3** — Trae 4 o 5 fragmentos distintos del texto<br>**2** — Trae entre 1 y 3 fragmentos del texto<br>**1** — Reproduce una frase del texto dentro del comentario, sin traerla como fragmento<br>**0** — Habla del texto sin traer ningún fragmento |
+| Pasos del razonamiento apoyados en un fragmento a la medida de lo que prueba | 4 | **4** — Cada paso del razonamiento lleva un fragmento y ningún fragmento trae más texto del que el comentario usa<br>**3** — Cada paso del razonamiento lleva un fragmento y 1 o más fragmentos traen más texto del que el comentario usa<br>**2** — 1 o 2 pasos del razonamiento quedan sin fragmento que los apoye<br>**1** — 3 o más pasos del razonamiento quedan sin fragmento que los apoye<br>**0** — Habla del texto sin traer ningún fragmento |
 | Marca de la cita y respeto del original | 2 | **2** — Todos los fragmentos van entrecomillados, con referencia y con la puntuación del original respetada<br>**1.5** — Todos los fragmentos van entrecomillados y con referencia, y alguno altera la puntuación del original<br>**1** — Todos los fragmentos van entrecomillados, sin referencia de verso ni de línea<br>**0.5** — 1 o 2 fragmentos quedan sin entrecomillar o alteran la puntuación del original<br>**0** — Los fragmentos se copian dentro del texto propio sin comillas |
 | Cada fragmento prueba un paso del razonamiento | 4 | **4** — Cada fragmento prueba un paso distinto del razonamiento<br>**3** — 2 fragmentos prueban el mismo paso<br>**2** — 3 fragmentos prueban el mismo paso<br>**1** — 4 o más fragmentos prueban el mismo paso<br>**0** — Los fragmentos se acumulan al margen del razonamiento |
 

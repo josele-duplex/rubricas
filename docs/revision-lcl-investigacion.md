@@ -1,6 +1,6 @@
 # Revisión del pack: Trabajo de investigación multimodal — Región de Murcia
 
-**Pack** `pack-lcl-investigacion.json` · versión 0.5.0 · 27 criterios · 108 descriptores · 22 matrices cuantitativas
+**Pack** `pack-lcl-investigacion.json` · versión 0.6.0 · 27 criterios · 108 descriptores · 22 matrices cuantitativas
 
 > Documento para validación docente, generado desde el JSON. No se edita a mano.
 > Al leer, mira sobre todo tres cosas: si el nivel N4 es alcanzable en ese curso,
@@ -142,7 +142,7 @@
 | Componente | Máx. | Bandas |
 |---|---|---|
 | Fuentes reunidas | 4 | **4** — Reúne 3 o más fuentes de procedencias distintas<br>**3** — Reúne 2 fuentes de procedencias distintas<br>**2** — Reúne 2 fuentes de la misma procedencia<br>**1** — Reúne 2 fuentes y una de ellas reproduce a la otra<br>**0** — El trabajo se apoya en una sola fuente |
-| Datos contrastados entre fuentes | 4 | **4** — Contrasta 3 o más datos entre dos fuentes al menos<br>**3** — Contrasta 2 datos entre dos fuentes<br>**2** — Contrasta 1 dato entre dos fuentes<br>**1** — Sitúa dos datos de fuentes distintas juntos, sin compararlos<br>**0** — El trabajo traslada los datos de cada fuente sin compararlos |
+| Fuentes entre las que contrasta el dato principal | 4 | **4** — Contrasta el dato principal del trabajo entre 3 o más fuentes<br>**3** — Contrasta el dato principal del trabajo entre 2 fuentes<br>**2** — Contrasta entre 2 fuentes un dato distinto del principal, que traslada de una sola fuente<br>**1** — Sitúa dos versiones del dato principal juntas, sin compararlas<br>**0** — El trabajo traslada los datos de cada fuente sin compararlos |
 | Registro de la procedencia | 2 | **2** — Anota la procedencia de todas las fuentes utilizadas<br>**1.5** — Deja 1 fuente sin procedencia anotada<br>**1** — Deja 2 fuentes sin procedencia anotada<br>**0.5** — Deja de 3 a 4 fuentes sin procedencia anotada<br>**0** — El trabajo presenta los datos sin anotar la procedencia: 5 o más fuentes |
 
 ### Integración de la información: esquema propio y apartados  ·  25%  ·  bloque B  ·  🔒 obligatorio
@@ -256,7 +256,7 @@
 | Componente | Máx. | Bandas |
 |---|---|---|
 | Fuentes reunidas | 4 | **4** — Reúne 4 o más fuentes de procedencias distintas<br>**3** — Reúne 3 fuentes de procedencias distintas<br>**2** — Reúne 2 fuentes<br>**1** — Reúne 2 fuentes y una de ellas reproduce a la otra<br>**0** — El trabajo se apoya en una sola fuente |
-| Datos contrastados entre fuentes | 4 | **4** — Contrasta 4 o más datos entre fuentes de distinta procedencia<br>**3** — Contrasta 2 o 3 datos<br>**2** — Contrasta 1 dato<br>**1** — Sitúa dos datos de fuentes distintas juntos, sin compararlos<br>**0** — El trabajo traslada los datos de cada fuente sin compararlos |
+| Datos contrastados entre fuentes | 4 | **4** — Contrasta 2 o más datos principales del trabajo entre 3 o más fuentes de distinta procedencia<br>**3** — Contrasta 2 o más datos entre 2 fuentes de distinta procedencia<br>**2** — Contrasta 1 dato entre 2 fuentes<br>**1** — Sitúa dos datos de fuentes distintas juntos, sin compararlos<br>**0** — El trabajo traslada los datos de cada fuente sin compararlos |
 | Registro de la procedencia | 2 | **2** — Anota la procedencia de todas las fuentes utilizadas<br>**1.5** — Deja 1 fuente sin procedencia anotada<br>**1** — Deja 2 fuentes sin procedencia anotada<br>**0.5** — Deja de 3 a 4 fuentes sin procedencia anotada<br>**0** — El trabajo presenta los datos sin anotar la procedencia: 5 o más fuentes |
 
 ### Integración de la información: esquema propio y apartados  ·  20%  ·  bloque B  ·  🔒 obligatorio

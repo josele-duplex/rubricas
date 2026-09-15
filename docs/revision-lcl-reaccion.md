@@ -1,6 +1,6 @@
 # Revisión del pack: Reacción a una noticia — Región de Murcia
 
-**Pack** `pack-lcl-reaccion.json` · versión 0.3.0 · 18 criterios · 72 descriptores · 18 matrices cuantitativas
+**Pack** `pack-lcl-reaccion.json` · versión 0.4.0 · 18 criterios · 72 descriptores · 18 matrices cuantitativas
 
 > Documento para validación docente, generado desde el JSON. No se edita a mano.
 > Al leer, mira sobre todo tres cosas: si el nivel N4 es alcanzable en ese curso,
@@ -430,7 +430,7 @@
 
 | Componente | Máx. | Bandas |
 |---|---|---|
-| Ortografía y acentuación | 4 | **4** — Hasta 2 faltas en toda la reacción, tipográficas incluidas<br>**3** — De 3 a 5 faltas<br>**2** — De 6 a 10 faltas<br>**1** — De 11 a 15 faltas<br>**0** — 16 o más faltas |
+| Ortografía y acentuación | 4 | **4** — Hasta 1 falta en toda la reacción, tipográficas incluidas<br>**3** — De 2 a 5 faltas<br>**2** — De 6 a 10 faltas<br>**1** — De 11 a 15 faltas<br>**0** — 16 o más faltas |
 | Puntuación del período | 2 | **2** — Puntúa los incisos y las subordinadas y cierra todas las frases<br>**1.5** — Deja 1 inciso sin delimitar, o 1 frase sin cerrar<br>**1** — Deja 2 o 3 incisos sin delimitar, o 2 o 3 frases sin cerrar<br>**0.5** — Deja de 4 a 6 incisos sin delimitar, o de 4 a 6 frases sin cerrar<br>**0** — La reacción encadena períodos casi sin puntuación |
 | Propiedad léxica | 4 | **4** — Emplea términos precisos y ninguna expresión vaga<br>**3** — Emplea 1 expresión vaga<br>**2** — Emplea 2 expresiones vagas<br>**1** — Emplea 3 o 4 expresiones vagas<br>**0** — La reacción se sostiene sobre expresiones vagas |
 
