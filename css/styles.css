@@ -708,6 +708,18 @@ table.rubrica td.col-dimension, table.rubrica th.col-dimension {
   font-weight: 400;
   margin-top: 0.3rem;
 }
+/* Condición de evidencia (§5.2): lo que la tarea tiene que montar para que la
+   fila se pueda puntuar. Se imprime con la rúbrica —no es una microexplicación
+   de pantalla—, así que no lleva la clase que print.css oculta. */
+.dimension-condicion {
+  display: block;
+  font-size: 0.72rem;
+  color: var(--tinta);
+  font-weight: 400;
+  margin-top: 0.3rem;
+  padding-left: 0.5rem;
+  border-left: 2px solid var(--linea-fuerte);
+}
 .criterio-oficial {
   font-size: 0.8rem;
   color: var(--tinta-suave);

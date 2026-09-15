@@ -161,6 +161,7 @@ function renderRubricaAnalitica(rubrica) {
           <span class="bloque-etiqueta bloque-${d.bloque}" title="Bloque LOMLOE ${d.bloque}">${d.bloque}</span>
           <span class="dimension-nombre">${escapeHtml(d.nombre)}${d.obligatorio ? ' <span class="etiqueta-obligatorio">obligatorio</span>' : ""}</span>
           <span class="dimension-meta">Peso ${d.peso}% · ${escapeHtml(d.criterioOficial)}</span>
+          ${d.condicionEvidencia ? `<span class="dimension-condicion"><strong>Para poder evaluarla:</strong> ${escapeHtml(d.condicionEvidencia)}</span>` : ""}
         </td>
         ${d.niveles.map((n) => `<td>${escapeHtml(n)}</td>`).join("")}
       </tr>

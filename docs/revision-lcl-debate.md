@@ -1,6 +1,6 @@
 # Revisión del pack: Debate y situaciones orales dialogadas — Región de Murcia
 
-**Pack** `pack-lcl-debate.json` · versión 0.1.0 · 11 criterios · 44 descriptores · 0 matrices cuantitativas
+**Pack** `pack-lcl-debate.json` · versión 0.2.0 · 11 criterios · 44 descriptores · 0 matrices cuantitativas
 
 > Documento para validación docente, generado desde el JSON. No se edita a mano.
 > Al leer, mira sobre todo tres cosas: si el nivel N4 es alcanzable en ese curso,
@@ -108,6 +108,8 @@
 
 *Saber-vehículo:* interacción oral de carácter informal: tomar y dejar la palabra, escucha activa, asertividad y resolución dialogada de los conflictos
 
+*Para poder evaluarla:* La réplica forma parte de la tarea: se reserva un turno en el que el otro equipo tiene que responder a un argumento concreto del contrario, y si no lo hace por su cuenta, el docente lo señala para que la réplica tenga algo que rebatir.
+
 | Nivel | Descriptor |
 |---|---|
 | **N1** | Rebate una versión más sencilla del argumento contrario, o se dirige a quien lo ha dicho en lugar de a lo dicho. |
@@ -178,6 +180,8 @@
 *Criterio oficial 3.2:* «Participar de manera activa y adecuada en interacciones orales informales, de cierta extensión y complejidad, en el trabajo en equipo y en situaciones orales formales de carácter dialogado, con actitudes de escucha activa y estrategias de cooperación conversacional y cortesía lingüística.»
 
 *Saber-vehículo:* interacción oral de carácter informal y formal: cooperación conversacional y cortesía lingüística, producción oral formal: la deliberación oral argumentada
+
+*Para poder evaluarla:* La réplica forma parte de la tarea: se reserva un turno en el que el otro equipo tiene que responder a un argumento concreto del contrario, y si no lo hace por su cuenta, el docente lo señala para que la réplica tenga algo que rebatir.
 
 | Nivel | Descriptor |
 |---|---|

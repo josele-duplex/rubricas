@@ -2,7 +2,7 @@
   "pack_id": "lcl-murcia-oral",
   "materia": "LCL",
   "etiqueta": "Exposición oral — Región de Murcia",
-  "version": "0.4.0",
+  "version": "0.5.0",
   "normativa": {
     "estatal": [
       "RD 217/2022, de 29 de marzo (ESO)",
@@ -597,6 +597,7 @@
       "tipos_tarea": [
         "oral"
       ],
+      "condicion_de_evidencia": "El turno de preguntas forma parte de la tarea: se reserva tiempo para él y, si la clase no pregunta, pregunta el docente.",
       "obligatorio": false,
       "prioridad": 2,
       "peso_base": 15,
@@ -1231,6 +1232,7 @@
       "tipos_tarea": [
         "oral"
       ],
+      "condicion_de_evidencia": "El turno de preguntas forma parte de la tarea: se reserva tiempo para él y, si la clase no pregunta, pregunta el docente.",
       "obligatorio": false,
       "prioridad": 2,
       "peso_base": 15,
@@ -1865,6 +1867,7 @@
       "tipos_tarea": [
         "oral"
       ],
+      "condicion_de_evidencia": "El turno de preguntas forma parte de la tarea: se reserva tiempo para él y, si la clase no pregunta, pregunta el docente.",
       "obligatorio": false,
       "prioridad": 2,
       "peso_base": 15,
@@ -2524,6 +2527,7 @@
       "tipos_tarea": [
         "oral"
       ],
+      "condicion_de_evidencia": "El turno de preguntas forma parte de la tarea: se reserva tiempo para él y, si la clase no pregunta, pregunta el docente.",
       "obligatorio": false,
       "prioridad": 2,
       "peso_base": 15,
@@ -3179,6 +3183,7 @@
       "tipos_tarea": [
         "oral"
       ],
+      "condicion_de_evidencia": "El turno de preguntas forma parte de la tarea: se reserva tiempo para él y, si la clase no pregunta, pregunta el docente.",
       "obligatorio": false,
       "prioridad": 2,
       "peso_base": 15,
@@ -3834,6 +3839,7 @@
       "tipos_tarea": [
         "oral"
       ],
+      "condicion_de_evidencia": "El turno de preguntas forma parte de la tarea: se reserva tiempo para él y, si la clase no pregunta, pregunta el docente.",
       "obligatorio": false,
       "prioridad": 2,
       "peso_base": 15,

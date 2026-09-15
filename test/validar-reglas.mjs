@@ -281,6 +281,52 @@ caso("copia_entre_cursos: N2-N4 idénticos entre 1º y 3º disparan aviso", () =
   );
 });
 
+// --- 9 bis. condicion_de_evidencia (nivel de pack) ---------------------------
+const CONDICION = "La exposición reserva un turno de preguntas al final.";
+
+caso("condicion_de_evidencia: declarada en un solo curso de la dimensión dispara error", () => {
+  const pack = clonarPack();
+  criterio(pack, "lcl-b-adecuacion-expo-3eso").condicion_de_evidencia = CONDICION;
+  const informe = validarPack(pack);
+  const avisos = avisosDeRegla(informe, "condicion_de_evidencia");
+  assert(avisos.length === 1, "no se detectó la condición declarada a medias");
+  assert(avisos[0].severidad === "error", "la condición declarada a medias debe ser error");
+  assert(
+    avisos[0].mensaje.includes("3ESO") && avisos[0].mensaje.includes("1ESO"),
+    "el mensaje no dice en qué curso está declarada ni en cuáles falta"
+  );
+});
+
+caso("condicion_de_evidencia: declarada en todos los cursos de la dimensión no dispara nada", () => {
+  const pack = clonarPack();
+  for (const c of pack.criterios) {
+    if (c.dimension === "adecuacion") c.condicion_de_evidencia = CONDICION;
+  }
+  assert(
+    avisosDeRegla(validarPack(pack), "condicion_de_evidencia").length === 0,
+    "una condición declarada en los seis cursos no debería disparar nada"
+  );
+});
+
+caso("condicion_de_evidencia: declarada y vacía dispara error", () => {
+  const pack = clonarPack();
+  for (const c of pack.criterios) {
+    if (c.dimension === "adecuacion") c.condicion_de_evidencia = c.curso === "4ESO" ? "   " : CONDICION;
+  }
+  const avisos = avisosDeRegla(validarPack(pack), "condicion_de_evidencia");
+  assert(
+    avisos.length === 2 && avisos.every((a) => a.severidad === "error"),
+    "una condición declarada y vacía debe saltar como vacía y como declarada a medias"
+  );
+});
+
+caso("condicion_de_evidencia: control de falso positivo — el pack real no dispara nada", () => {
+  assert(
+    avisosDeRegla(validarPack(clonarPack()), "condicion_de_evidencia").length === 0,
+    "el pack real no debería disparar la regla de condición de evidencia"
+  );
+});
+
 // --- 10. tarea_aplicable (nivel de pack) -------------------------------------
 caso("tarea_aplicable: combinación con menos de 3 dimensiones dispara aviso", () => {
   const pack = clonarPack();

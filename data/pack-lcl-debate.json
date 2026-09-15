@@ -2,7 +2,7 @@
  "pack_id": "lcl-murcia-debate",
  "materia": "LCL",
  "etiqueta": "Debate y situaciones orales dialogadas — Región de Murcia",
- "version": "0.1.0",
+ "version": "0.2.0",
  "normativa": {
   "estatal": [
    "Ley Orgánica 3/2020, de 29 de diciembre (LOMLOE), art. 20",
@@ -349,6 +349,7 @@
    "tipos_tarea": [
     "debate"
    ],
+   "condicion_de_evidencia": "La réplica forma parte de la tarea: se reserva un turno en el que el otro equipo tiene que responder a un argumento concreto del contrario, y si no lo hace por su cuenta, el docente lo señala para que la réplica tenga algo que rebatir.",
    "obligatorio": false,
    "prioridad": 2,
    "peso_base": 25,
@@ -589,6 +590,7 @@
    "tipos_tarea": [
     "debate"
    ],
+   "condicion_de_evidencia": "La réplica forma parte de la tarea: se reserva un turno en el que el otro equipo tiene que responder a un argumento concreto del contrario, y si no lo hace por su cuenta, el docente lo señala para que la réplica tenga algo que rebatir.",
    "obligatorio": true,
    "prioridad": 1,
    "peso_base": 25,

@@ -121,6 +121,38 @@ caso("fase_texto: sin dimensiones de proceso mantiene todas premarcadas y lo exp
   );
 });
 
+// --- 4 bis. condición de evidencia en el instrumento del docente (§5.2, §7.1) -
+caso("condicion_de_evidencia: la rúbrica analítica la imprime y la ficha del alumno no", () => {
+  const r = generarInstrumentos(oral, {
+    curso: "3ESO",
+    tipoTarea: "oral",
+    tiempoCorreccion: "mas5",
+    actividad: "Exposición oral sobre un tema de actualidad",
+    esProductoFinal: true,
+    puerta: "desempeno",
+  });
+  assert(r.ok, `no se generó el instrumento: ${r.motivo}`);
+
+  const fila = r.rubricaAnalitica.dimensiones.find((d) => d.id === "lcl-b-preguntas-oral-3eso");
+  assert(fila, "la dimensión de respuesta a preguntas no está en la rúbrica");
+  assert(
+    fila.condicionEvidencia?.includes("turno de preguntas"),
+    "la rúbrica del docente no lleva la condición de evidencia del pack"
+  );
+
+  const otras = r.rubricaAnalitica.dimensiones.filter((d) => d.id !== "lcl-b-preguntas-oral-3eso");
+  assert(
+    otras.every((d) => d.condicionEvidencia === null),
+    "solo lleva condición la dimensión que la declara"
+  );
+
+  const ficha = JSON.stringify(r.fichaAlumno);
+  assert(
+    !ficha.includes("turno de preguntas") || !ficha.includes("pregunta el docente"),
+    "la condición es del montaje de la tarea y no se le imprime al alumno"
+  );
+});
+
 // --- 5. las demás puertas siguen igual --------------------------------------
 caso("desempeno: el premarcado de siempre no cambia", () => {
   const conPuerta = generar(expositivo, { puerta: "desempeno", esProductoFinal: true });

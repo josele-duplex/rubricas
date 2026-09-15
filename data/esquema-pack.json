@@ -58,6 +58,7 @@
       "saber_vehiculo":   { "tipo": "lista", "obligatorio": true, "de": "texto_suelto" },
       "progresion":       { "tipo": "objeto", "obligatorio": true, "de": "progresion" },
       "tipos_tarea":      { "tipo": "lista", "obligatorio": true, "de": "texto_suelto", "min_elementos": 1 },
+      "condicion_de_evidencia": { "tipo": "texto|nulo", "obligatorio": false },
       "obligatorio":   { "tipo": "booleano", "obligatorio": true },
       "prioridad":     { "tipo": "entero", "obligatorio": true, "minimo": 1, "maximo": 3 },
       "peso_base":     { "tipo": "entero", "obligatorio": true, "minimo": 0, "maximo": 100 },

@@ -1,6 +1,6 @@
 # Revisión del pack: Trabajo de investigación multimodal — Región de Murcia
 
-**Pack** `pack-lcl-investigacion.json` · versión 0.2.0 · 27 criterios · 108 descriptores · 22 matrices cuantitativas
+**Pack** `pack-lcl-investigacion.json` · versión 0.3.0 · 27 criterios · 108 descriptores · 22 matrices cuantitativas
 
 > Documento para validación docente, generado desde el JSON. No se edita a mano.
 > Al leer, mira sobre todo tres cosas: si el nivel N4 es alcanzable en ese curso,
@@ -58,6 +58,8 @@
 *Criterio oficial 6.1:* «Elaborar trabajos de investigación de manera guiada en diferentes soportes sobre diversos temas de interés académico, personal o social a partir de la información seleccionada.»
 
 *Saber-vehículo:* producción escrita. planificación, textualización, redacción, revisión y edición en diferentes soportes, análisis de la imagen y elementos paratextuales de los textos icónico-verbales y multimodales
+
+*Para poder evaluarla:* El soporte de pantallas forma parte de la tarea: se elige antes de empezar a redactar —una herramienta de presentación digital, no un documento de texto corrido— porque sin pantallas no hay reparto entre texto e imagen que observar.
 
 | Nivel | Descriptor |
 |---|---|
@@ -170,6 +172,8 @@
 
 *Saber-vehículo:* producción escrita. planificación, textualización, redacción, revisión y edición en diferentes soportes, análisis de la imagen y elementos paratextuales de los textos icónico-verbales y multimodales
 
+*Para poder evaluarla:* El soporte de pantallas forma parte de la tarea: se elige antes de empezar a redactar —una herramienta de presentación digital, no un documento de texto corrido— porque sin pantallas no hay reparto entre texto e imagen que observar.
+
 | Nivel | Descriptor |
 |---|---|
 | **N1** | Presenta el trabajo en el soporte elegido con el texto del borrador dividido en pantallas. |
@@ -281,6 +285,8 @@
 *Criterio oficial 6.2:* «Elaborar trabajos de investigación en diferentes soportes sobre diversos temas de interés académico, personal o social a partir de la información seleccionada.»
 
 *Saber-vehículo:* planificación, redacción, revisión y edición en diferentes soportes de textos de cierta complejidad, elementos paratextuales de los textos icónico-verbales y multimodales
+
+*Para poder evaluarla:* El soporte de pantallas forma parte de la tarea: se elige antes de empezar a redactar —una herramienta de presentación digital, no un documento de texto corrido— porque sin pantallas no hay reparto entre texto e imagen que observar.
 
 | Nivel | Descriptor |
 |---|---|
@@ -415,6 +421,8 @@
 
 *Saber-vehículo:* producción escrita. proceso de elaboración: planificación, redacción, revisión y edición en diferentes soportes, combinación ajustada de diferentes códigos comunicativos en los mensajes multimodales
 
+*Para poder evaluarla:* El soporte de pantallas forma parte de la tarea: se elige antes de empezar a redactar —una herramienta de presentación digital, no un documento de texto corrido— porque sin pantallas no hay reparto entre texto e imagen que observar.
+
 | Nivel | Descriptor |
 |---|---|
 | **N1** | Presenta el trabajo en el soporte elegido y reproduce en la pantalla el texto del documento. |
@@ -547,6 +555,8 @@
 *Criterio oficial 6.1:* «Elaborar trabajos de investigación de manera autónoma, en diferentes soportes, sobre diversos temas de interés académico, personal o social que impliquen localizar, seleccionar y contrastar información procedente de diferentes fuentes, con especial atención a la gestión de su almacenamiento y recuperación, así como a la evaluación de su fiabilidad y pertinencia; organizarla e integrarla en esquemas propios; y reelaborarla y comunicarla de manera creativa, adoptando un punto de vista crítico y respetuoso con la propiedad intelectual.»
 
 *Saber-vehículo:* producción escrita. proceso de elaboración: planificación, redacción, revisión y edición en diferentes soportes, combinación ajustada de diferentes códigos comunicativos en los mensajes multimodales
+
+*Para poder evaluarla:* El soporte de pantallas forma parte de la tarea: se elige antes de empezar a redactar —una herramienta de presentación digital, no un documento de texto corrido— porque sin pantallas no hay reparto entre texto e imagen que observar.
 
 | Nivel | Descriptor |
 |---|---|

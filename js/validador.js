@@ -104,6 +104,16 @@ export const REGLAS = {
       "N1 queda exento: un texto entregado sin revisar es la misma evidencia en 1.º de ESO que en " +
       "2.º de Bachillerato.",
   },
+  condicion_de_evidencia: {
+    etiqueta: "Condición de evidencia declarada a medias",
+    severidad: "error",
+    fuente: "SDD §5.2",
+    porQue:
+      "La condición de evidencia dice qué tiene que montar la tarea para que la dimensión pueda " +
+      "observarse —el turno de preguntas de una exposición, por ejemplo—. Es de la dimensión, no del " +
+      "curso: declararla en unos cursos y en otros no deja la misma fila calificándose con dos reglas " +
+      "de juego, y la que falta no se ve, porque el instrumento imprime la fila igual.",
+  },
   proceso_sin_respaldo: {
     etiqueta: "Dimensión de proceso sin respaldo",
     severidad: "error",
@@ -475,6 +485,47 @@ function comprobarCopiaEntreCursos(criterios) {
         }
       }
     }
+  }
+  return avisos;
+}
+
+// Regla: condición de evidencia declarada a medias (§5.2). Lo que la tarea tiene
+// que montar para que la dimensión pueda observarse es propio de la DIMENSIÓN, no
+// del curso; el texto puede cambiar de un curso a otro —quién modera el turno de
+// preguntas, por ejemplo—, pero no puede faltar en unos y estar en otros. Misma
+// lógica y mismo resultado que scripts/validar_pack.py.
+function comprobarCondicionDeEvidencia(criterios) {
+  const avisos = [];
+  const porDimension = new Map();
+  for (const c of criterios) {
+    const lista = porDimension.get(c.dimension) ?? [];
+    lista.push(c);
+    porDimension.set(c.dimension, lista);
+  }
+
+  for (const [dimension, lista] of porDimension) {
+    for (const c of lista) {
+      if (typeof c.condicion_de_evidencia === "string" && !c.condicion_de_evidencia.trim()) {
+        avisos.push({
+          regla: "condicion_de_evidencia",
+          severidad: REGLAS.condicion_de_evidencia.severidad,
+          criterioId: c.id,
+          mensaje: `Dimensión "${dimension}": \`condicion_de_evidencia\` está declarada y vacía. Si no hay condición que montar, el campo se quita.`,
+        });
+      }
+    }
+
+    const con = lista.filter((c) => (c.condicion_de_evidencia ?? "").trim());
+    if (con.length === 0 || con.length === lista.length) continue;
+
+    const declarados = con.map((c) => c.curso).sort();
+    const faltan = lista.filter((c) => !con.includes(c)).map((c) => c.curso).sort();
+    avisos.push({
+      regla: "condicion_de_evidencia",
+      severidad: REGLAS.condicion_de_evidencia.severidad,
+      criterioId: "(pack)",
+      mensaje: `Dimensión "${dimension}": la condición de evidencia se declara en ${declarados.join(", ")} y falta en ${faltan.join(", ")}. Una condición de la dimensión vale para todos sus cursos.`,
+    });
   }
   return avisos;
 }
@@ -1112,6 +1163,7 @@ export function validarPack(pack) {
     }
   }
   avisos.push(...comprobarCopiaEntreCursos(pack.criterios));
+  avisos.push(...comprobarCondicionDeEvidencia(pack.criterios));
   avisos.push(...comprobarTareaAplicable(pack.criterios));
   avisos.push(...comprobarPesosCurso(pack.criterios));
   avisos.push(...comprobarRazonPeso(pack));

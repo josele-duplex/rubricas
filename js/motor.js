@@ -298,7 +298,11 @@ function porPrioridad(criterios) {
   return [...criterios].sort((a, b) => a.prioridad - b.prioridad);
 }
 
-// §7.1 — rúbrica analítica.
+// §7.1 — rúbrica analítica. Es el único instrumento que imprime la
+// `condicion_de_evidencia` del pack (§5.2): lo que la tarea tiene que montar
+// para que esa fila se pueda puntuar. Va aquí y no en la ficha del alumno
+// porque no es lo que se le pide al alumno, es lo que monta quien evalúa —y
+// una fila sin la condición cumplida se califica igual, sin que nada avise.
 export function generarRubricaAnalitica(criterios, meta) {
   return {
     actividad: meta.actividad,
@@ -311,6 +315,7 @@ export function generarRubricaAnalitica(criterios, meta) {
       peso: c.peso_normalizado,
       obligatorio: c.obligatorio,
       criterioOficial: `${c.criterio_oficial.codigo} — «${c.criterio_oficial.cita}»`,
+      condicionEvidencia: c.condicion_de_evidencia ?? null,
       niveles: [1, 2, 3, 4].map((n) => c.descriptores[`n${n}`].texto),
     })),
   };

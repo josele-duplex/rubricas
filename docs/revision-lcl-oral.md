@@ -1,6 +1,6 @@
 # Revisión del pack: Exposición oral — Región de Murcia
 
-**Pack** `pack-lcl-oral.json` · versión 0.4.0 · 36 criterios · 144 descriptores · 18 matrices cuantitativas
+**Pack** `pack-lcl-oral.json` · versión 0.5.0 · 36 criterios · 144 descriptores · 18 matrices cuantitativas
 
 > Documento para validación docente, generado desde el JSON. No se edita a mano.
 > Al leer, mira sobre todo tres cosas: si el nivel N4 es alcanzable en ese curso,
@@ -117,6 +117,8 @@
 *Criterio oficial 3.2:* «Participar en interacciones orales informales, en el trabajo en equipo y en situaciones orales formales de carácter dialogado, de manera activa y adecuada, con actitudes de escucha activa.»
 
 *Saber-vehículo:* interacción oral de carácter informal: tomar y dejar la palabra, estrategias para la cooperación conversacional y la cortesía lingüística
+
+*Para poder evaluarla:* El turno de preguntas forma parte de la tarea: se reserva tiempo para él y, si la clase no pregunta, pregunta el docente.
 
 | Nivel | Descriptor |
 |---|---|
@@ -240,6 +242,8 @@
 
 *Saber-vehículo:* interacción oral de carácter informal: tomar y dejar la palabra, escucha activa, asertividad y resolución dialogada de los conflictos
 
+*Para poder evaluarla:* El turno de preguntas forma parte de la tarea: se reserva tiempo para él y, si la clase no pregunta, pregunta el docente.
+
 | Nivel | Descriptor |
 |---|---|
 | **N1** | Responde a las preguntas del público con una frase suelta que repite lo ya dicho en la exposición. |
@@ -361,6 +365,8 @@
 *Criterio oficial 3.2:* «Participar de manera activa y adecuada en interacciones orales informales de cierta extensión, en el trabajo en equipo y en situaciones orales formales de carácter dialogado, con actitudes de escucha activa y estrategias de cooperación conversacional y cortesía lingüística.»
 
 *Saber-vehículo:* interacción oral de carácter informal y formal: estrategias básicas para la cooperación conversacional y cortesía lingüística, escucha activa, asertividad y resolución dialogada de los conflictos
+
+*Para poder evaluarla:* El turno de preguntas forma parte de la tarea: se reserva tiempo para él y, si la clase no pregunta, pregunta el docente.
 
 | Nivel | Descriptor |
 |---|---|
@@ -485,6 +491,8 @@
 
 *Saber-vehículo:* interacción oral de carácter informal y formal: cooperación conversacional y cortesía lingüística, escucha activa, asertividad y resolución dialogada de los conflictos
 
+*Para poder evaluarla:* El turno de preguntas forma parte de la tarea: se reserva tiempo para él y, si la clase no pregunta, pregunta el docente.
+
 | Nivel | Descriptor |
 |---|---|
 | **N1** | Responde con una frase breve a cada pregunta del público y localiza el dato de la exposición al que apunta. |
@@ -608,6 +616,8 @@
 
 *Saber-vehículo:* interacción oral de carácter formal: tomar y dejar la palabra, cooperación conversacional y cortesía lingüística
 
+*Para poder evaluarla:* El turno de preguntas forma parte de la tarea: se reserva tiempo para él y, si la clase no pregunta, pregunta el docente.
+
 | Nivel | Descriptor |
 |---|---|
 | **N1** | Responde con una frase breve a cada pregunta y señala el punto de la exposición donde ya estaba dicho. |
@@ -730,6 +740,8 @@
 *Criterio oficial 3.2:* «Participar de manera activa y adecuada en interacciones orales (formales e informales) y en el trabajo en equipo con actitudes de escucha activa y estrategias de cooperación conversacional y cortesía lingüística.»
 
 *Saber-vehículo:* interacción oral de carácter formal: tomar y ceder la palabra, cooperación conversacional y cortesía lingüística
+
+*Para poder evaluarla:* El turno de preguntas forma parte de la tarea: se reserva tiempo para él y, si la clase no pregunta, pregunta el docente.
 
 | Nivel | Descriptor |
 |---|---|

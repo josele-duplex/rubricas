@@ -167,6 +167,8 @@ def imprimir_criterio(c, pack_mote=""):
         d = (c.get("descriptores") or {}).get(n)
         if d:
             print("   %s [%s] %s" % (n.upper(), d.get("verbo", ""), d.get("texto", "")))
+    if c.get("condicion_de_evidencia"):
+        print("   condicion  %s" % c["condicion_de_evidencia"])
     if c.get("descriptor_un_punto"):
         print("   1punto     %s" % c["descriptor_un_punto"])
     if c.get("descriptor_cotejo"):
@@ -262,7 +264,8 @@ def buscar(aguja, donde):
                           for n in ("n1", "n2", "n3", "n4")]
                 campos += [("CITA", c["criterio_oficial"]["cita"]),
                            ("NOMBRE", c.get("nombre") or ""),
-                           ("1PUNTO", c.get("descriptor_un_punto") or "")]
+                           ("1PUNTO", c.get("descriptor_un_punto") or ""),
+                           ("CONDICION", c.get("condicion_de_evidencia") or "")]
                 for etiqueta, texto in campos:
                     if texto and aguja_l in texto.lower():
                         aciertos.append(("%s/%s/%s" % (mote, c["curso"], c["id"]),

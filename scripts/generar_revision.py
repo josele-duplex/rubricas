@@ -76,6 +76,8 @@ def generar_texto(ruta_pack):
                 "  ·  🔒 obligatorio" if c["obligatorio"] else ""))
             w("*Criterio oficial %s:* «%s»\n" % (c["criterio_oficial"]["codigo"], c["criterio_oficial"]["cita"]))
             w("*Saber-vehículo:* %s\n" % ", ".join(c["saber_vehiculo"]))
+            if c.get("condicion_de_evidencia"):
+                w("*Para poder evaluarla:* %s\n" % c["condicion_de_evidencia"])
 
             w("| Nivel | Descriptor |")
             w("|---|---|")

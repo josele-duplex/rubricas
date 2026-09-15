@@ -504,6 +504,30 @@ def validar(ruta):
                     avi("%s / %s" % (a["id"], b["id"]), "copia_entre_cursos",
                         "dimensión '%s': los descriptores N2-N4 de %s y %s son idénticos" % (dimension, a["curso"], b["curso"]))
 
+    # --- Condición de evidencia: lo que la tarea tiene que montar para que la
+    # dimensión pueda observarse (§5.2). Es una condición de la DIMENSIÓN, no del
+    # curso: si la exposición reserva turno de preguntas en 3.º, lo reserva también
+    # en 4.º. Declararla en unos cursos y en otros no deja la misma dimensión
+    # calificándose con dos reglas de juego dentro del mismo pack, y la que falta
+    # no se ve —el instrumento imprime la fila igual. Se admite que el texto varíe
+    # de un curso a otro (quién modera el turno puede cambiar); lo que no se admite
+    # es que falte. ---
+    for dimension, lista in por_dimension.items():
+        vacias = [c for c in lista if isinstance(c.get("condicion_de_evidencia"), str)
+                  and not c["condicion_de_evidencia"].strip()]
+        for c in vacias:
+            err(c["id"], "condicion_de_evidencia",
+                "dimensión '%s': `condicion_de_evidencia` está declarada y vacía; "
+                "si no hay condición que montar, el campo se quita" % dimension)
+
+        con = [c for c in lista if (c.get("condicion_de_evidencia") or "").strip()]
+        if con and len(con) < len(lista):
+            faltan = sorted(c["curso"] for c in lista if c not in con)
+            err("(pack)", "condicion_de_evidencia",
+                "dimensión '%s': la condición de evidencia se declara en %s y falta en %s; "
+                "una condición de la dimensión vale para todos sus cursos"
+                % (dimension, ", ".join(sorted(c["curso"] for c in con)), ", ".join(faltan)))
+
     # --- Pesos ---
     for curso, total in sorted(pesos.items()):
         if total != 100:

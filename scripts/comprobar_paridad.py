@@ -168,6 +168,7 @@ CLAVES_COMPARABLES = frozenset([
     "saber_vehiculo",
     "modalizadores",
     "copia_entre_cursos",
+    "condicion_de_evidencia",
     "proceso_sin_respaldo",
     "dimension_sin_respaldo",
     "continuidad_bandas",
@@ -297,6 +298,19 @@ def trampa_continuidad_bandas():
     raise SystemExit("no se encontró el componente de ortografía en el pack de pruebas")
 
 
+def trampa_condicion_de_evidencia():
+    """Condición de evidencia declarada en 2.º de ESO y en ningún otro curso de
+    la misma dimensión.
+
+    Es el descuido real: se escribe la condición mientras se redacta un curso y
+    no se lleva a los otros tres. La fila se sigue imprimiendo igual en 3.º y en
+    4.º, así que nada más lo ve."""
+    pack = _pack("pack-lcl-reaccion.json")
+    _criterio(pack, "lcl-b-valforma-rea-2eso")["condicion_de_evidencia"] = (
+        "La reacción se escribe después de ver el reportaje en clase.")
+    return pack
+
+
 def pack_limpio():
     """Control: el pack real de reacción, sin tocar. Los dos lados deben
     coincidir en no emitir ningún error."""
@@ -313,6 +327,9 @@ PACKS_TRAMPA = [
     ("escala de faltas con un recuento sin banda",
      trampa_continuidad_bandas,
      {("error", "continuidad_bandas")}),
+    ("condición de evidencia en un solo curso de la dimensión",
+     trampa_condicion_de_evidencia,
+     {("error", "condicion_de_evidencia")}),
     ("pack de reacción real, sin tocar",
      pack_limpio,
      set()),

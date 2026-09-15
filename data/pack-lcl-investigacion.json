@@ -2,7 +2,7 @@
   "pack_id": "lcl-murcia-investigacion",
   "materia": "LCL",
   "etiqueta": "Trabajo de investigación multimodal — Región de Murcia",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "normativa": {
     "estatal": [
       "RD 217/2022, de 29 de marzo (ESO)",
@@ -249,6 +249,7 @@
       "tipos_tarea": [
         "investigacion"
       ],
+      "condicion_de_evidencia": "El soporte de pantallas forma parte de la tarea: se elige antes de empezar a redactar —una herramienta de presentación digital, no un documento de texto corrido— porque sin pantallas no hay reparto entre texto e imagen que observar.",
       "obligatorio": true,
       "prioridad": 1,
       "peso_base": 35,
@@ -877,6 +878,7 @@
       "tipos_tarea": [
         "investigacion"
       ],
+      "condicion_de_evidencia": "El soporte de pantallas forma parte de la tarea: se elige antes de empezar a redactar —una herramienta de presentación digital, no un documento de texto corrido— porque sin pantallas no hay reparto entre texto e imagen que observar.",
       "obligatorio": true,
       "prioridad": 1,
       "peso_base": 20,
@@ -1505,6 +1507,7 @@
       "tipos_tarea": [
         "investigacion"
       ],
+      "condicion_de_evidencia": "El soporte de pantallas forma parte de la tarea: se elige antes de empezar a redactar —una herramienta de presentación digital, no un documento de texto corrido— porque sin pantallas no hay reparto entre texto e imagen que observar.",
       "obligatorio": true,
       "prioridad": 1,
       "peso_base": 20,
@@ -2275,6 +2278,7 @@
       "tipos_tarea": [
         "investigacion"
       ],
+      "condicion_de_evidencia": "El soporte de pantallas forma parte de la tarea: se elige antes de empezar a redactar —una herramienta de presentación digital, no un documento de texto corrido— porque sin pantallas no hay reparto entre texto e imagen que observar.",
       "obligatorio": true,
       "prioridad": 1,
       "peso_base": 20,
@@ -3045,6 +3049,7 @@
       "tipos_tarea": [
         "investigacion"
       ],
+      "condicion_de_evidencia": "El soporte de pantallas forma parte de la tarea: se elige antes de empezar a redactar —una herramienta de presentación digital, no un documento de texto corrido— porque sin pantallas no hay reparto entre texto e imagen que observar.",
       "obligatorio": true,
       "prioridad": 1,
       "peso_base": 20,
