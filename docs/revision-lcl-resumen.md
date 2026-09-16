@@ -1,6 +1,6 @@
 # Revisión del pack: Resumen de un texto — Región de Murcia
 
-**Pack** `pack-lcl-resumen.json` · versión 0.4.0 · 20 criterios · 80 descriptores · 20 matrices cuantitativas
+**Pack** `pack-lcl-resumen.json` · versión 0.5.0 · 30 criterios · 120 descriptores · 30 matrices cuantitativas
 
 > Documento para validación docente, generado desde el JSON. No se edita a mano.
 > Al leer, mira sobre todo tres cosas: si el nivel N4 es alcanzable en ese curso,
@@ -126,6 +126,124 @@
 
 ---
 
+## 2.º de ESO
+
+| Dimensión | Peso | Prio | Criterio oficial | Matriz |
+|---|---|---|---|---|
+| **Comprensión: sentido global y jerarquía de las ideas** 🔒 | 25% | 1 | CE4 — 4.1 | sí |
+| **Selección de la información relevante** 🔒 | 25% | 1 | CE4 — 4.1 | sí |
+| **Reformulación con palabras propias** | 20% | 1 | CE5 — 5.2 | sí |
+| **Redacción: texto continuo, objetivo y ajustado** | 15% | 2 | CE5 — 5.1 | sí |
+| **Corrección normativa y propiedad léxica** 🔒 | 15% | 2 | CE5 — 5.2 | sí |
+
+### Comprensión: sentido global y jerarquía de las ideas  ·  25%  ·  bloque B  ·  🔒 obligatorio
+
+*Criterio oficial 4.1:* «Valorar la forma y el contenido de textos escritos y multimodales sencillos evaluando su calidad, su fiabilidad y la idoneidad del canal utilizado, así como la eficacia de los procedimientos comunicativos empleados.»
+
+*Saber-vehículo:* comprensión lectora: sentido global del texto y relación entre sus partes. La intención del emisor, análisis de las propiedades textuales: coherencia
+
+| Nivel | Descriptor |
+|---|---|
+| **N1** | Copia el arranque del texto y lo entrega como resumen del conjunto. |
+| **N2** | Reconoce el tema del texto sencillo y lo anuncia en la primera línea del resumen. |
+| **N3** | Distingue la idea principal de cada párrafo y las ordena en el resumen como aparecen en el original. |
+| **N4** | Jerarquiza las ideas del texto y abre el resumen con la idea que agrupa a las demás, aunque en el original no vaya la primera. |
+
+**Matriz cuantitativa** — total 10 puntos. Es lo que usa el modo IA para corregir.
+
+| Componente | Máx. | Bandas |
+|---|---|---|
+| El tema queda enunciado | 4 | **4** — La primera línea del resumen enuncia el tema del texto<br>**3** — El tema del texto queda enunciado en otro punto del resumen<br>**2** — El tema se deduce del resumen pero no queda enunciado<br>**1** — El tema se reconoce solo al leer el texto original al lado<br>**0** — El resumen arranca con un detalle y el tema queda fuera |
+| Ideas principales de los párrafos | 4 | **4** — Recoge la idea principal de todos los párrafos del texto<br>**3** — Deja fuera la idea principal de 1 párrafo<br>**2** — Deja fuera la idea principal de 2 párrafos<br>**1** — Deja fuera la idea principal de 3 o 4 párrafos<br>**0** — Recoge la idea principal de un solo párrafo |
+| Orden de las ideas | 2 | **2** — Las ideas del resumen siguen el orden del texto original<br>**1.5** — 1 idea queda fuera del orden del original<br>**1** — 2 ideas quedan fuera de orden<br>**0.5** — 3 ideas quedan fuera de orden<br>**0** — Las ideas se suceden en el resumen sin orden reconocible |
+
+### Selección de la información relevante  ·  25%  ·  bloque B  ·  🔒 obligatorio
+
+*Criterio oficial 4.1:* «Valorar la forma y el contenido de textos escritos y multimodales sencillos evaluando su calidad, su fiabilidad y la idoneidad del canal utilizado, así como la eficacia de los procedimientos comunicativos empleados.»
+
+*Saber-vehículo:* comprensión lectora: sentido global del texto y relación entre sus partes. La intención del emisor, usos de la escritura para la organización del pensamiento: toma de notas, esquemas, mapas conceptuales, definiciones, resúmenes
+
+| Nivel | Descriptor |
+|---|---|
+| **N1** | Traslada al resumen los ejemplos y los datos del texto con el detalle del original. |
+| **N2** | Selecciona las ideas que el texto desarrolla y deja fuera los ejemplos y las repeticiones. |
+| **N3** | Descarta los ejemplos, las repeticiones y los datos accesorios, y mantiene las ideas que el texto desarrolla. |
+| **N4** | Dedica más espacio en el resumen a las ideas desarrolladas en el texto que a las apenas apuntadas. |
+
+**Matriz cuantitativa** — total 10 puntos. Es lo que usa el modo IA para corregir.
+
+| Componente | Máx. | Bandas |
+|---|---|---|
+| Los ejemplos quedan fuera | 4 | **4** — El resumen recoge ideas y deja fuera todos los ejemplos del original<br>**3** — Conserva 1 ejemplo del original<br>**2** — Conserva 2 ejemplos del original<br>**1** — Conserva 3 o 4 ejemplos del original<br>**0** — Conserva 5 o más ejemplos o datos accesorios |
+| Las ideas relevantes están | 4 | **4** — El resumen recoge todas las ideas desarrolladas en el texto<br>**3** — Deja fuera 1 de esas ideas<br>**2** — Deja fuera 2 de esas ideas<br>**1** — Deja fuera 3 o 4 de esas ideas<br>**0** — El resumen recoge una sola de esas ideas |
+| Nada ajeno al texto | 2 | **2** — Todo lo que dice el resumen está en el texto original<br>**1.5** — Añade 1 dato que el original no dice<br>**1** — Añade 2 datos que el original no dice<br>**0.5** — Añade 3 o 4 datos ajenos al original<br>**0** — Añade 5 o más datos ajenos al original |
+
+### Reformulación con palabras propias  ·  20%  ·  bloque B
+
+*Criterio oficial 5.2:* «Incorporar procedimientos básicos para enriquecer los textos, atendiendo a aspectos discursivos, lingüísticos y de estilo, con precisión léxica y corrección ortográfica y gramatical.»
+
+*Saber-vehículo:* procedimientos para la adquisición y ampliación de vocabulario, usos de la escritura para la organización del pensamiento: toma de notas, esquemas, mapas conceptuales, definiciones, resúmenes
+
+| Nivel | Descriptor |
+|---|---|
+| **N1** | Copia frases enteras del texto original y las enlaza unas con otras. |
+| **N2** | Sustituye por sinónimos las palabras del texto y mantiene el molde de las frases del original. |
+| **N3** | Reformula con palabras propias las ideas del texto y reúne en una frase lo que el original reparte en dos. |
+| **N4** | Integra las ideas repetidas del texto en una sola frase y emplea un término general para la serie de ejemplos. |
+
+**Matriz cuantitativa** — total 10 puntos. Es lo que usa el modo IA para corregir.
+
+| Componente | Máx. | Bandas |
+|---|---|---|
+| Frases propias | 4 | **4** — Ninguna frase del resumen reproduce literalmente una frase del original<br>**3** — 1 frase literal del original<br>**2** — 2 frases literales del original<br>**1** — 3 o 4 frases literales del original<br>**0** — 5 o más frases literales, o el resumen encadena frases copiadas |
+| Sustitución léxica | 4 | **4** — Emplea sinónimos o términos generales en 3 o más puntos del resumen<br>**3** — Los emplea en 2 puntos<br>**2** — Los emplea en 1 punto<br>**1** — Cambia el orden de las palabras del original sin sustituir ninguna<br>**0** — Repite el léxico del original de principio a fin |
+| Ideas reunidas | 2 | **2** — Reúne ideas de 2 o más frases del original en una frase propia, en 2 o más puntos del resumen<br>**1.5** — Reúne ideas de 2 frases del original en una frase propia, en 1 punto del resumen<br>**1** — Reúne ideas de 2 frases del original en 1 punto del resumen, manteniendo el molde de las frases del original<br>**0.5** — Une dos frases del original con una conjunción, sin reformularlas<br>**0** — Cada frase del resumen corresponde a una frase del original |
+
+### Redacción: texto continuo, objetivo y ajustado  ·  15%  ·  bloque B
+
+*Criterio oficial 5.1:* «Planificar la redacción de textos escritos y multimodales sencillos, atendiendo a la situación comunicativa, al destinatario, al propósito y al canal; redactar borradores y revisarlos con ayuda del diálogo entre iguales e instrumentos de consulta, y presentar un texto final coherente, cohesionado y con el registro adecuado.»
+
+*Saber-vehículo:* producción escrita: planificación, textualización, redacción, revisión y edición en diferentes soportes, mecanismos básicos de cohesión textual, con especial atención a los conectores temporales y explicativos, adecuación al registro y a la situación comunicativa
+
+| Nivel | Descriptor |
+|---|---|
+| **N1** | Enumera las ideas del texto en frases sueltas y añade al final una opinión propia. |
+| **N2** | Redacta el resumen en un párrafo seguido y enlaza las ideas con los conectores de la pauta facilitada. |
+| **N3** | Mantiene el resumen dentro de la extensión pedida y enlaza las ideas con conectores de orden y de causa. |
+| **N4** | Suprime las marcas del texto de partida, como *el autor opina* o *en este texto se habla de*, y traslada las ideas en voz propia. |
+
+**Matriz cuantitativa** — total 10 puntos. Es lo que usa el modo IA para corregir.
+
+| Componente | Máx. | Bandas |
+|---|---|---|
+| Texto seguido | 2 | **2** — El resumen es un texto seguido, sin guiones ni enumeraciones<br>**1.5** — El resumen es un texto seguido y conserva una enumeración del original<br>**1** — El resumen alterna párrafo y lista de puntos<br>**0.5** — El resumen es una lista de puntos redactados en frases completas<br>**0** — El resumen es una lista de puntos |
+| Conectores entre ideas | 4 | **4** — Emplea 3 o más conectores distintos entre las ideas<br>**3** — Emplea 2 conectores distintos<br>**2** — Repite el mismo conector a lo largo del resumen<br>**1** — Enlaza dos ideas con un conector y coloca el resto sin enlace<br>**0** — Coloca las ideas una detrás de otra sin enlace |
+| Extensión | 2 | **2** — El resumen ocupa entre un cuarto y un tercio del texto original<br>**1.5** — Se aparta de esa extensión en menos de un cuarto<br>**1** — Se aparta de esa extensión en menos de la mitad<br>**0.5** — Se aparta de esa extensión en más de la mitad<br>**0** — El resumen es tan largo como el original o cabe en una línea |
+| Voz del resumen | 2 | **2** — El resumen traslada las ideas sin fórmulas del tipo *el autor dice* y sin opinión propia<br>**1.5** — Incluye 1 fórmula de ese tipo o 1 opinión propia<br>**1** — Incluye 2 fórmulas de ese tipo u opiniones propias<br>**0.5** — Incluye 3 o 4 fórmulas de ese tipo u opiniones propias<br>**0** — Incluye 5 o más fórmulas de ese tipo u opiniones propias |
+
+### Corrección normativa y propiedad léxica  ·  15%  ·  bloque D  ·  🔒 obligatorio
+
+*Criterio oficial 5.2:* «Incorporar procedimientos básicos para enriquecer los textos, atendiendo a aspectos discursivos, lingüísticos y de estilo, con precisión léxica y corrección ortográfica y gramatical.»
+
+*Saber-vehículo:* corrección gramatical y ortográfica, los signos básicos de puntuación como mecanismo organizador del texto escrito, propiedad léxica
+
+| Nivel | Descriptor |
+|---|---|
+| **N1** | Redacta el resumen con errores de ortografía y de puntuación que obligan al lector a releer. |
+| **N2** | Aplica las normas de acentuación y concordancia del curso, con errores que permiten seguir el resumen. |
+| **N3** | Aplica las normas de ortografía y puntuación del nivel y emplea la coma en las enumeraciones del resumen. |
+| **N4** | Elige términos precisos para nombrar las ideas del texto y sostiene en todo el resumen el registro que la tarea pide. |
+
+**Matriz cuantitativa** — total 10 puntos. Es lo que usa el modo IA para corregir.
+
+| Componente | Máx. | Bandas |
+|---|---|---|
+| Ortografía y acentuación | 4 | **4** — Hasta 1 falta en todo el resumen<br>**3** — 2 o 3 faltas<br>**2** — 4 o 5 faltas<br>**1** — 6 o 7 faltas<br>**0** — 8 o más faltas |
+| Puntuación | 2 | **2** — Cierra con punto todas las frases y separa con coma los términos de las enumeraciones<br>**1.5** — 1 enumeración sin comas o 1 frase sin cerrar con punto<br>**1** — 2 enumeraciones sin comas o 2 frases sin cerrar con punto<br>**0.5** — 3 o 4 frases sin cerrar con punto<br>**0** — El resumen es un bloque de texto casi sin puntos |
+| Propiedad léxica y registro | 4 | **4** — Emplea términos precisos, ninguna palabra comodín (*cosa*, *tema*, *hacer*) y ninguna expresión coloquial<br>**3** — Emplea 1 palabra comodín o 1 expresión coloquial<br>**2** — Emplea 2 palabras comodín o expresiones coloquiales<br>**1** — Emplea 3 o 4 palabras comodín o expresiones coloquiales<br>**0** — El resumen se sostiene sobre palabras comodín y giros de la conversación |
+
+---
+
 ## 3.º de ESO
 
 | Dimensión | Peso | Prio | Criterio oficial | Matriz |
@@ -232,6 +350,124 @@
 | **N1** | Redacta el resumen con errores de ortografía y de puntuación que obligan a releer para seguir la idea. |
 | **N2** | Aplica las normas de acentuación y concordancia, con errores aislados que permiten seguir el resumen. |
 | **N3** | Aplica las normas de ortografía y puntuación del nivel y emplea la coma para delimitar los incisos. |
+| **N4** | Elige el término preciso para nombrar cada idea del texto y sustituye los verbos comodín por otros exactos. |
+
+**Matriz cuantitativa** — total 10 puntos. Es lo que usa el modo IA para corregir.
+
+| Componente | Máx. | Bandas |
+|---|---|---|
+| Ortografía y acentuación | 4 | **4** — Hasta 1 falta en todo el resumen<br>**3** — 2 o 3 faltas<br>**2** — 4 o 5 faltas<br>**1** — 6 o 7 faltas<br>**0** — 8 o más faltas |
+| Puntuación | 2 | **2** — Cierra con punto todas las frases y delimita con coma los incisos<br>**1.5** — 1 inciso sin delimitar o 1 frase sin cerrar<br>**1** — 2 incisos sin delimitar o 2 frases sin cerrar<br>**0.5** — 3 o 4 incisos sin delimitar o 3 o 4 frases sin cerrar<br>**0** — El resumen es un bloque de texto casi sin puntuación |
+| Propiedad léxica | 4 | **4** — Emplea términos precisos y ninguna palabra comodín (*cosa*, *tema*, *hacer*)<br>**3** — Emplea 1 palabra comodín<br>**2** — Emplea 2 palabras comodín<br>**1** — Emplea 3 o 4 palabras comodín<br>**0** — El resumen se sostiene sobre palabras comodín |
+
+---
+
+## 4.º de ESO
+
+| Dimensión | Peso | Prio | Criterio oficial | Matriz |
+|---|---|---|---|---|
+| **Comprensión: sentido global y jerarquía de las ideas** 🔒 | 25% | 1 | CE9 — 9.1 | sí |
+| **Selección de la información relevante** 🔒 | 25% | 1 | CE4 — 4.1 | sí |
+| **Reformulación con palabras propias** | 20% | 1 | CE5 — 5.2 | sí |
+| **Redacción: texto continuo, objetivo y ajustado** | 15% | 2 | CE5 — 5.1 | sí |
+| **Corrección normativa y propiedad léxica** 🔒 | 15% | 2 | CE5 — 5.2 | sí |
+
+### Comprensión: sentido global y jerarquía de las ideas  ·  25%  ·  bloque B  ·  🔒 obligatorio
+
+*Criterio oficial 9.1:* «Revisar textos de manera autónoma y hacer propuestas de mejora argumentando los cambios a partir de la reflexión metalingüística e interlingüística con el metalenguaje específico, e identificar y subsanar algunos problemas de comprensión lectora utilizando los conocimientos explícitos sobre la lengua y su uso.»
+
+*Saber-vehículo:* comprensión lectora: valoración de la forma y el contenido del texto, alfabetización mediática e informacional: análisis, valoración, reorganización y síntesis de la información en esquemas propios y transformación en conocimiento
+
+| Nivel | Descriptor |
+|---|---|
+| **N1** | Copia el primer párrafo del texto de cierta complejidad y lo presenta como resumen del conjunto. |
+| **N2** | Reconoce el sentido global del texto de cierta complejidad y lo anuncia en la primera línea del resumen. |
+| **N3** | Distingue las ideas principales de las secundarias y encadena en el resumen la relación que el texto establece entre las partes. |
+| **N4** | Jerarquiza las ideas según el peso que reciben en el razonamiento del texto y abre el resumen con la que sostiene a las demás. |
+
+**Matriz cuantitativa** — total 10 puntos. Es lo que usa el modo IA para corregir.
+
+| Componente | Máx. | Bandas |
+|---|---|---|
+| El sentido global queda enunciado | 4 | **4** — La primera línea del resumen enuncia el sentido global del texto<br>**3** — El sentido global queda enunciado en otro punto del resumen<br>**2** — El sentido global se deduce del resumen pero no queda enunciado<br>**1** — El sentido global se reconoce solo al leer el texto original al lado<br>**0** — El resumen arranca con un detalle y el sentido global queda fuera |
+| Ideas principales y secundarias | 4 | **4** — El resumen recoge todas las ideas principales y ninguna secundaria<br>**3** — Recoge todas las principales y 1 secundaria<br>**2** — Deja fuera 1 idea principal o recoge 2 secundarias<br>**1** — Deja fuera 1 idea principal y recoge 2 o más secundarias<br>**0** — Deja fuera 2 o más ideas principales |
+| Relación entre las partes | 2 | **2** — El resumen deja ver la relación que el texto establece entre sus partes<br>**1.5** — El resumen deja ver esa relación y funde las dos últimas partes<br>**1** — El resumen deja ver la relación entre dos partes y sucede el resto<br>**0.5** — El resumen separa el contenido en bloques sin correspondencia con las partes del texto<br>**0** — El resumen sucede las ideas sin dejar ver cómo se relacionan las partes |
+
+### Selección de la información relevante  ·  25%  ·  bloque B  ·  🔒 obligatorio
+
+*Criterio oficial 4.1:* «Valorar críticamente el contenido y la forma de textos escritos y multimodales de cierta complejidad evaluando su calidad y fiabilidad, así como la eficacia de los procedimientos lingüísticos empleados.»
+
+*Saber-vehículo:* comprensión lectora: valoración de la forma y el contenido del texto, desarrollo de usos de la escritura para la organización del pensamiento: toma de notas, esquemas, mapas conceptuales, definiciones, resúmenes
+
+| Nivel | Descriptor |
+|---|---|
+| **N1** | Traslada al resumen los datos y los ejemplos del texto uno detrás de otro. |
+| **N2** | Selecciona las ideas que sostienen el contenido del texto y deja fuera los ejemplos y las digresiones. |
+| **N3** | Descarta las digresiones y los datos accesorios del texto y mantiene las ideas que permiten juzgar lo que el texto afirma. |
+| **N4** | Gradúa el espacio de cada idea en el resumen según el peso que recibe en el texto original. |
+
+**Matriz cuantitativa** — total 10 puntos. Es lo que usa el modo IA para corregir.
+
+| Componente | Máx. | Bandas |
+|---|---|---|
+| Ejemplos y digresiones fuera | 4 | **4** — El resumen deja fuera todos los ejemplos y digresiones del original<br>**3** — Conserva 1 ejemplo o digresión<br>**2** — Conserva 2 ejemplos o digresiones<br>**1** — Conserva 3 o 4 ejemplos o digresiones<br>**0** — Conserva 5 o más |
+| Las ideas que sostienen el texto | 4 | **4** — El resumen recoge todas las ideas que sostienen el contenido del texto<br>**3** — Deja fuera 1 de esas ideas<br>**2** — Deja fuera 2 de esas ideas<br>**1** — Deja fuera 3 o 4 de esas ideas<br>**0** — Deja fuera 5 o más |
+| Fidelidad al original | 2 | **2** — Todo lo que dice el resumen está en el texto original<br>**1.5** — Añade 1 dato o inferencia que el original no sostiene<br>**1** — Añade 2 datos o inferencias que el original no sostiene<br>**0.5** — Añade 3 o 4 datos ajenos al original<br>**0** — Añade 5 o más datos ajenos al original |
+
+### Reformulación con palabras propias  ·  20%  ·  bloque B
+
+*Criterio oficial 5.2:* «Incorporar procedimientos para enriquecer los textos atendiendo a aspectos discursivos, lingüísticos y de estilo, con precisión léxica y corrección ortográfica y gramatical.»
+
+*Saber-vehículo:* alfabetización mediática e informacional: análisis, valoración, reorganización y síntesis de la información en esquemas propios y transformación en conocimiento, procedimientos para la ampliación de vocabulario y relación de significado entre unas palabras y otras
+
+| Nivel | Descriptor |
+|---|---|
+| **N1** | Copia las frases del texto original en el mismo orden y las separa con punto. |
+| **N2** | Sustituye por sinónimos e hiperónimos el léxico del texto y ordena las ideas por cuenta propia. |
+| **N3** | Reformula con palabras propias las ideas del texto y reúne en una frase las que el original reparte en varias. |
+| **N4** | Sintetiza en un término general cada serie de ejemplos del texto y mantiene el sentido del original. |
+
+**Matriz cuantitativa** — total 10 puntos. Es lo que usa el modo IA para corregir.
+
+| Componente | Máx. | Bandas |
+|---|---|---|
+| Frases propias | 4 | **4** — Ninguna frase del resumen reproduce literalmente una frase del original<br>**3** — 1 frase literal del original<br>**2** — 2 frases literales del original<br>**1** — 3 o 4 frases literales del original<br>**0** — 5 o más frases literales, o el resumen encadena frases copiadas |
+| Léxico propio | 2 | **2** — Emplea sinónimos, hiperónimos o términos generales en 4 o más puntos<br>**1.5** — Los emplea en 4 o más puntos y repite el término clave del original<br>**1** — Los emplea en 2 o 3 puntos<br>**0.5** — Los emplea en 1 punto<br>**0** — Repite el léxico del original de principio a fin |
+| Condensación | 4 | **4** — Reúne en una frase propia ideas que el original reparte en 3 o más<br>**3** — Reúne ideas de 2 frases del original en una frase propia, en 2 o más puntos del resumen<br>**2** — Reúne ideas de 2 frases del original en una frase propia, en 1 punto del resumen<br>**1** — Reúne dos frases del original en una, copiando su redacción<br>**0** — Cada frase del resumen corresponde a una frase del original |
+
+### Redacción: texto continuo, objetivo y ajustado  ·  15%  ·  bloque B
+
+*Criterio oficial 5.1:* «Planificar la redacción de escritos y multimodales de cierta extensión atendiendo a la situación comunicativa, al destinatario, al propósito y canal; redactar borradores y revisarlos con ayuda del diálogo entre iguales e instrumentos de consulta, y presentar un texto final, coherente, cohesionado y con el registro adecuado.»
+
+*Saber-vehículo:* producción escrita: planificación, redacción, revisión y edición en diferentes soportes de textos de cierta complejidad, conectores textuales de orden, contraste, explicación, causa, consecuencia y concesión, la expresión de la subjetividad en textos de carácter expositivo y argumentativo
+
+| Nivel | Descriptor |
+|---|---|
+| **N1** | Enumera las ideas del texto en el orden en que aparecen y añade una valoración propia. |
+| **N2** | Redacta el resumen en un texto seguido y enlaza las ideas con conectores de orden y de causa. |
+| **N3** | Mantiene el resumen en la extensión pedida y encadena las ideas con marcadores de consecuencia y de concesión. |
+| **N4** | Suprime las marcas de subjetividad del resumen y traslada el contenido del texto sin tomar partido por él. |
+
+**Matriz cuantitativa** — total 10 puntos. Es lo que usa el modo IA para corregir.
+
+| Componente | Máx. | Bandas |
+|---|---|---|
+| Texto continuo | 2 | **2** — El resumen es un texto seguido, sin guiones ni enumeraciones<br>**1.5** — El resumen es un texto seguido y conserva una enumeración del original<br>**1** — El resumen alterna párrafo y lista de puntos<br>**0.5** — El resumen es una lista de puntos redactados en frases completas<br>**0** — El resumen es una lista de puntos |
+| Marcadores entre ideas | 2 | **2** — Emplea 4 o más marcadores distintos: orden, causa, consecuencia, concesión<br>**1.5** — Emplea 4 o más marcadores y repite el mismo en la mayoría de los enlaces<br>**1** — Emplea 2 o 3 tipos de marcador<br>**0.5** — Repite el mismo marcador a lo largo del resumen<br>**0** — Coloca las ideas una detrás de otra sin enlace |
+| Extensión | 2 | **2** — El resumen ocupa entre un quinto y un cuarto del texto original<br>**1.5** — Se aparta de esa extensión en menos de un cuarto<br>**1** — Se aparta de esa extensión en menos de la mitad<br>**0.5** — Se aparta de esa extensión en más de la mitad<br>**0** — El resumen es tan largo como el original o cabe en una línea |
+| Objetividad | 4 | **4** — El resumen traslada las ideas sin fórmulas del tipo *el autor dice* y sin opinión propia<br>**3** — Incluye 1 fórmula de ese tipo o 1 opinión propia<br>**2** — Incluye 2 fórmulas de ese tipo u opiniones propias<br>**1** — Incluye 3 o 4 fórmulas de ese tipo u opiniones propias<br>**0** — El resumen alterna las ideas del texto con la valoración propia |
+
+### Corrección normativa y propiedad léxica  ·  15%  ·  bloque D  ·  🔒 obligatorio
+
+*Criterio oficial 5.2:* «Incorporar procedimientos para enriquecer los textos atendiendo a aspectos discursivos, lingüísticos y de estilo, con precisión léxica y corrección ortográfica y gramatical.»
+
+*Saber-vehículo:* corrección lingüística y revisión ortográfica y gramatical de los textos, los signos de puntuación como mecanismo organizador del texto escrito. Su relación con el significado, propiedad léxica
+
+| Nivel | Descriptor |
+|---|---|
+| **N1** | Redacta el resumen con errores de ortografía y de puntuación que obligan a releer para seguir la idea. |
+| **N2** | Aplica las normas de acentuación y concordancia, con errores aislados que permiten seguir el resumen. |
+| **N3** | Aplica las normas de ortografía y puntuación del nivel y delimita con coma los incisos del resumen. |
 | **N4** | Elige el término preciso para nombrar cada idea del texto y sustituye los verbos comodín por otros exactos. |
 
 **Matriz cuantitativa** — total 10 puntos. Es lo que usa el modo IA para corregir.

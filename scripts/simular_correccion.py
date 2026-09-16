@@ -69,6 +69,10 @@ PALABRAS_POR_TAREA = {
     # en Bachillerato. Por eso sus umbrales de faltas NO pueden heredarse del
     # expositivo, que es de tres a cuatro veces más largo en el mismo curso:
     # «hasta 2 faltas» significa una cosa en 350 palabras y otra en 90.
+    # 2.º y 4.º de ESO entran en la fila en la v1.62 y se quedan **sin** extensión
+    # de referencia a propósito: interpolarla (75 y 105) habría sido inventar un
+    # dato de aula que nadie ha medido, y el simulador ya sabe no tenerlo —imprime
+    # «?» en la columna y se salta el cálculo de faltas por cada cien palabras—.
     "resumen":       {"1ESO": 60, "3ESO": 90, "1BACH": 120, "2BACH": 130},
     # La reacción a una noticia es un texto de valoración, no de desarrollo: el
     # alumno presenta la noticia en dos líneas y lo demás lo dedica a juzgarla.
