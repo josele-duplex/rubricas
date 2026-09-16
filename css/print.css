@@ -53,9 +53,7 @@
      Aísla el bloque sin importar qué pestaña estuviera activa —fuerza el panel
      de la ficha y tapa todo lo demás del panel, incluida la cabecera del
      instrumento y las otras microexplicaciones/bloques de la ficha—, porque el
-     profesor puede pulsar este botón desde cualquier instrumento. Prioriza
-     legibilidad sobre compacidad (CLAUDE.md): se sobrescribe el
-     `font-size: 0.8rem` de `table.rubrica` de más arriba, no se toca. */
+     profesor puede pulsar este botón desde cualquier instrumento. */
   body.imprimir-solo-breve #resultado > *:not(.panel-instrumento),
   body.imprimir-solo-breve #salud-pack,
   body.imprimir-solo-breve .panel-instrumento:not([data-panel="ficha"]),
@@ -65,11 +63,18 @@
   body.imprimir-solo-breve .panel-instrumento[data-panel="ficha"] {
     display: block !important;
   }
+  /* Densidad por debajo del 0.8rem/0.6rem del resto de tablas impresas (más
+     arriba): medido contra el caso más cargado del catálogo (3ESO expositivo,
+     tiempo largo, 6 dimensiones y 2 bloques) sale justo por debajo de la
+     altura útil de una A4 (26,7 cm con los márgenes de @page). Con menos
+     dimensiones sobra página; con más de 6 puede volver a desbordar una hoja,
+     y eso es aceptable: la alternativa —no tocar el tamaño— desbordaba
+     siempre, incluso el caso de 3 dimensiones. */
   body.imprimir-solo-breve .rubrica-breve table.rubrica {
-    font-size: 1rem;
+    font-size: 0.75rem;
   }
   body.imprimir-solo-breve .rubrica-breve table.rubrica td,
   body.imprimir-solo-breve .rubrica-breve table.rubrica th {
-    padding: 0.6rem 0.7rem;
+    padding: 0.4rem;
   }
 }
