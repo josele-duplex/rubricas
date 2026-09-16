@@ -404,14 +404,16 @@ def construir(d: dict) -> Guia:
          "ortografía y presentación declarado (tope −2).",
          "Desarrollo largo, comentario de texto, exámenes."],
     ], anchos=[3.4, 7.0, 6.2])
-    g.p("Además de las siete pestañas hay cuatro botones: **Ajustar** (apartado 6), **Calificar** "
-        "(apartado 7), **Exportar rúbrica (CSV)** (apartado 8) e **Imprimir esta vista** — que "
+    g.p("Además de las siete pestañas hay cinco botones: **Ajustar** (apartado 6), **Calificar** "
+        "(apartado 7), **Exportar rúbrica (CSV)** (apartado 8), **Imprimir esta vista** — que "
         "manda a la impresora o a «Guardar como PDF» exactamente la pestaña que tengas delante, "
-        "con los «¿por qué?» ocultos, porque el papel es para el aula.")
+        "con los «¿por qué?» ocultos, porque el papel es para el aula— e **Imprimir solo la "
+        "rúbrica breve** (apartado 4).")
     g.caja("Un detalle que cambia mucho en clase",
-           "El registro lingüístico se ajusta al curso: la ficha de 1.º de ESO y la de 2.º de "
-           "Bachillerato no le hablan igual al alumno. Está pensada para caber en un A4 y para "
-           "proyectarse.")
+           "«Imprimir solo la rúbrica breve» saca en una sola hoja la tabla de los cuatro niveles "
+           "que va dentro de la ficha, y nada más: ni cabecera, ni explicaciones, ni el resto de "
+           "bloques. Da igual qué pestaña tengas abierta al pulsarlo. Es la hoja que el alumno "
+           "tiene delante mientras escribe.")
 
     # 4
     g.h1("4 · La ficha del alumno no se puede desmarcar")
@@ -422,15 +424,20 @@ def construir(d: dict) -> Guia:
         "**Qué se te pide** — la actividad, tal y como la escribiste.",
         "**Qué se valora** — cada dimensión con su peso en porcentaje y, cuando los pesos no son "
         "iguales, por qué no lo son, en una frase escrita para que la lea el alumno.",
-        "**Cómo llegar al nivel excelente** — el descriptor más alto de cada dimensión, "
-        "convertido en instrucción accionable.",
-        "**Cómo se calcula la nota** — la escala elegida, sin letra pequeña.",
-        "**Un guion para presentarla en clase** — media página para ti: apertura, recorrido "
-        "dimensión a dimensión, un ejemplo contrastado de N2 frente a N4 y dos preguntas para "
-        "lanzar al grupo. Pensado para cinco o diez minutos.",
+        "**Cómo llegar al nivel excelente** — el descriptor más alto de cada dimensión, tal "
+        "cual: ya está escrito como una instrucción (un verbo, un objeto, una condición).",
+        "**La rúbrica completa, en breve** — la tabla de los cuatro niveles, con el nombre de "
+        "cada dimensión y su peso, sin el criterio oficial ni la etiqueta del bloque: eso es "
+        "para ti, no para el alumno. Ningún descriptor se recorta. Tiene su propio botón de "
+        "impresión, que la saca sola en una hoja.",
         "**El resultado de un alumno concreto** — si ya has calificado, un desplegable muestra su "
         "nivel y sus puntos por dimensión y la nota final. Para la entrega individual.",
+        "**Cómo se calcula la nota** — una frase: se valora el nivel alcanzado en cada dimensión "
+        "por su descriptor. La aritmética, cuando la hay, la ves en «Calificar».",
     ])
+    g.p("Lo que la ficha **no** trae todavía es el guion para presentarla en clase —media página "
+        "para ti, con apertura, recorrido dimensión a dimensión, un N2 frente a un N4 y dos "
+        "preguntas para el grupo—. Está diseñado y en la lista de lo previsto (apartado 10).")
 
     # 5
     g.h1("5 · Mientras tú decides, la app vigila")
@@ -590,6 +597,9 @@ def construir(d: dict) -> Guia:
     ])
     g.h2("Todavía no, pero está previsto")
     g.tabla(["Pieza pendiente", "Estado"], [
+        ["Guion para presentar la ficha en clase",
+         "Media página para ti: apertura, recorrido dimensión a dimensión, un N2 frente a un N4 "
+         "y dos preguntas para el grupo. Diseñado, no implementado."],
         ["Guardar la configuración en «.json»",
          "Para reutilizar un montaje o pasárselo a un compañero de departamento. Diseñado, no "
          "implementado."],
@@ -709,9 +719,10 @@ def construir(d: dict) -> Guia:
          "para que la rúbrica se ajuste a tu realidad y no al revés: si dices que tienes dos "
          "minutos por alumno, no te entrega una tabla de doce filas."],
         ["«Mis alumnos no la van a leer.»",
-         "Por eso la ficha no es una tabla: es una hoja que dice qué se te pide, qué se valora, "
-         "por qué unas cosas pesan más y cómo se llega al nivel excelente. Y viene con un guion "
-         "de cinco a diez minutos para presentarla en clase."],
+         "Por eso la ficha no es solo una tabla: es una hoja que dice qué se te pide, qué se "
+         "valora, por qué unas cosas pesan más y cómo se llega al nivel excelente, y la tabla "
+         "de los cuatro niveles va al final, en breve, para que la tengan delante mientras "
+         "escriben."],
         ["«Ya llevo el curso en iDoceo, no quiero otro sitio más.»",
          "No es otro sitio: la rúbrica o las notas se van a tu cuaderno en un «.csv», por "
          "cualquiera de los dos importadores de iDoceo (apartado 8). Eliges tú cuál, y la "

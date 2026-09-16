@@ -2,7 +2,7 @@
 
 ## Generador de Instrumentos de Evaluación — Lengua Castellana y Literatura (LOMLOE)
 
-**Versión 1.60** · Documento de trabajo · Septiembre 2026
+**Versión 1.61** · Documento de trabajo · Septiembre 2026
 Autor: Josele · Diseño técnico: Claude
 
 ---
@@ -16,9 +16,9 @@ Aquí quedan las tres últimas, que son las que suelen hacer falta:
 
 | Versión | Cambios |
 |---|---|
+| **1.61** | **La ficha del alumno gana «La rúbrica completa, en breve» y §7.3 deja de prometer lo que no existe.** Bloque nuevo con la matriz de cuatro niveles sin criterio oficial, bloque LOMLOE ni condición de evidencia, derivado en el motor (`rubricaBreve`) y con botón propio de impresión que lo aísla en una A4. De §7.3 se **retiran** el N4 «en segunda persona» y el registro lingüístico por curso; el guion de presentación en clase queda como **deuda declarada**. Historia completa en `SDD-cambios.md`. |
 | **1.60** | **Cierra la decisión 20(d) de §17: se queda como está, es decisión del docente.** Una veintena de componentes de matriz cuantitativa se llaman por un saber a secas (*Puntuación*, *Concordancia*, *Adjetivación*…) en vez de por una acción competencial. Preguntado, Josele confirma la lectura de la v1.53: el nombre que orienta es el de la fila (la dimensión); el componente solo etiqueta lo que se cuenta, y lo que de verdad dice qué se valora son las bandas, no su etiqueta. No se renombra ninguno, así que tampoco hace falta la migración que habría exigido lo contrario en `js/calificacion.js` y `js/calificar.js`: las calificaciones ya guardadas en el navegador del docente siguen siendo válidas. Ningún pack, matriz ni validador se toca. |
 | **1.59** | **La puerta de aplicabilidad (§8) deja de llamar «proyecto» a lo que no tiene por qué serlo.** «Tarea de desempeño o proyecto» pasa a **«Actividad competencial»**: el nombre sugería un formato —proyecto, producto «real»— que la normativa no exige, y ni el profesorado ni el alumnado usan ese término. El `explicacion` de la opción (`js/motor.js`) lleva ahora la definición completa, con los dos registros —producción académica tradicional o creación en un contexto comunicativo más auténtico— y su ejemplo. El identificador interno (`desempeno`) no cambia. Ningún pack, matriz ni cálculo se toca. |
-| **1.58** | **Cierra la decisión 20(c) de §17: tres componentes renombrados para decir lo que miden sus bandas bajas.** *Valoración de la fiabilidad de las fuentes* (expositivo 4.º ESO) → *Atribución de los datos y valoración de su fiabilidad*; *Distinción entre dato y opinión* (argumentativo 3.º ESO) → *Reformulación de la fuente y distinción entre dato y opinión*; *Apartados con título propio* (investigación 1.º/2.º Bach) → *Jerarquización de los epígrafes*. Ninguna banda ni nota cambia. Historia completa en `SDD-cambios.md`. |
 
 ## 1. Resumen ejecutivo
 
@@ -661,7 +661,7 @@ Siete instrumentos, todos generados a partir del mismo conjunto de criterios fil
 |---|---|---|---|
 | 7.1 | Rúbrica analítica | básico | Producto final integrador |
 | 7.2 | Lista de cotejo | básico | Tarea diaria o intermedia |
-| 7.3 | Ficha del alumno + guion de clase | **obligatorio** | Siempre |
+| 7.3 | Ficha del alumno (+ guion de clase, pendiente) | **obligatorio** | Siempre |
 | 7.4 | Rúbrica de un solo punto | básico | Borradores y tareas de proceso |
 | 7.5 | Versión de autoevaluación | avanzado | Durante el proceso |
 | 7.6 | Versión de coevaluación | avanzado | Trabajo entre iguales |
@@ -678,15 +678,20 @@ Se deriva del descriptor de **N2 (Suficiente)**, convertido en afirmación verif
 
 ### 7.3 Ficha del alumno y guion de clase — obligatorio
 
-Es la pieza que materializa el objetivo del proyecto y **no se puede desmarcar**. Contiene:
+Es la pieza que materializa el objetivo del proyecto y **no se puede desmarcar**. Lo que la aplicación genera hoy (`generarFichaAlumno`, `js/motor.js`; la vista solo pinta, no recalcula):
 
 - **Qué se te pide**: la actividad, redactada tal y como la escribió el profesor.
 - **Qué se valora**: cada dimensión con su peso, en lenguaje directo, y —cuando los pesos no son iguales— **por qué no lo son**: la `razon_peso` del pack (§5.1, §6.2), escrita para que la lea el alumno antes de la prueba. El marco teórico admite desigualar la ponderación solo con una razón declarada, y este es el sitio donde declararla significa algo.
-- **Cómo se llega al nivel excelente**: para cada dimensión, el descriptor de N4 traducido a instrucción accionable en segunda persona.
-- **Cómo se calcula la nota**: la escala elegida y, si están activados, la condición mínima y los detractores. Sin letra pequeña.
-- **Guion de presentación en clase** (media página, para el profesor): apertura, recorrido dimensión a dimensión, un ejemplo contrastado de N2 frente a N4, y dos preguntas de comprobación para lanzar al grupo. Pensado para una sesión de 5 a 10 minutos.
+- **Cómo se llega al nivel excelente**: para cada dimensión, el descriptor de N4 tal cual está en el pack, en tercera persona. Hasta la v1.61 este punto prometía «traducido a instrucción accionable en segunda persona» y la promesa **se retira**, no se aplaza: el descriptor ya *es* la instrucción —verbo del banco + objeto + condición, que es la forma que exige `CLAUDE.md`—, y el alumno ya lo lee en «yo» en la autoevaluación (§7.5). Una tercera morfología de la misma frase habría costado una columna `2s` en todo `data/verbos.json` y un tercer juego de invariantes en `test/proyeccion.mjs` para no añadir información.
+- **La rúbrica completa, en breve** (v1.61): la misma matriz de la rúbrica analítica —dimensión, peso y los cuatro niveles—, sin el criterio oficial, sin la etiqueta de bloque LOMLOE y sin la condición de evidencia, que son información de quien evalúa y no de quien escribe. Es lo que el alumno se lleva a la mesa; los tres bloques anteriores son su lectura guiada. No se truncan descriptores ni se topa el número de dimensiones. Se imprime con un botón propio, **«Imprimir solo la rúbrica breve»**, que aísla el bloque de todo lo demás —cabecera de la app, microexplicaciones, el resto de la ficha, cualquier pestaña activa— y a una densidad menor que la del resto de tablas impresas (0,75rem, `css/print.css`), fijada midiendo el caso más cargado del catálogo: 3.º ESO expositivo con tiempo largo, 6 dimensiones, cabe en una A4 (22,5 cm de 26,7 útiles); con 3 dimensiones ocupa media página. El dato lo deriva el motor como `rubricaBreve` y `test/ficha.mjs` fija su forma.
+- **Resultado de un alumno calificado** (§6): un desplegable con los alumnos ya calificados en «Calificar»; al elegir uno, su nivel y sus puntos por dimensión y la nota final, con el detractor y la condición mínima si se han disparado. En blanco, la ficha se reparte tal cual.
+- **Cómo se calcula la nota**: el principio del modo cualitativo (§6.1) en una frase —se valora el nivel alcanzado en cada dimensión mediante su descriptor—. La aritmética del modo numérico no se explica aquí sino donde se aplica, en «Calificar»; la ficha no promete una escala que no lleva.
 
-El registro lingüístico se ajusta al curso: la ficha de 1.º de ESO y la de 2.º de Bachillerato no se le hablan igual al alumno. Diseño pensado para imprimirse en un A4 y para proyectarse.
+**Deuda declarada — Guion de presentación en clase** (media página, para el profesor): apertura, recorrido dimensión a dimensión, un ejemplo contrastado de N2 frente a N4, y dos preguntas de comprobación para lanzar al grupo, pensado para una sesión de 5 a 10 minutos. Sigue siendo diseño (principio 3 de §1) y **no está construido**: la memoria de registro (§2.12) lo declara «especificado y pendiente de renderizar» y el manual del docente lo lista entre lo previsto. Cuando se construya, el recorrido y el ejemplo salen del pack (dimensiones ordenadas por prioridad; N2 y N4 de la de mayor peso) y la apertura y las preguntas son plantilla parametrizada por la actividad: no se añade ningún campo nuevo a los packs.
+
+**Promesa retirada — registro lingüístico por curso.** Hasta la v1.61 este apartado decía que «la ficha de 1.º de ESO y la de 2.º de Bachillerato no se le hablan igual al alumno». No es así ni va a serlo: lo que el alumno lee en la ficha son los descriptores, y su registro ya lo fija el pack curso a curso, porque la progresión la escribe el currículo (regla 2 de `CLAUDE.md`). Lo único que la app redacta por su cuenta son los títulos de bloque y la frase del cálculo, y adaptar eso por curso sería exactamente el texto inventado que este proyecto no produce.
+
+Diseño pensado para imprimirse en un A4 y para proyectarse.
 
 ### 7.4 Rúbrica de un solo punto
 
