@@ -411,6 +411,40 @@ export function renderResultadoAlumnoFicha(resultadoCalculado) {
   `;
 }
 
+// Misma matriz que renderRubricaAnalitica, pero sin criterio oficial, sin
+// etiqueta de bloque LOMLOE y sin condición de evidencia (js/motor.js,
+// generarFichaAlumno): lo que el alumno lleva a la mesa, no lo que monta
+// quien evalúa. El motor ya deriva el dato; esto solo lo pinta.
+function renderRubricaBreve(breve) {
+  const filas = breve.dimensiones
+    .map(
+      (d) => `
+      <tr>
+        <td class="col-dimension">
+          <span class="dimension-nombre">${escapeHtml(d.nombre)}</span>
+          <span class="dimension-meta">Peso ${d.peso}%</span>
+        </td>
+        ${d.niveles.map((n) => `<td>${textoPack(n)}</td>`).join("")}
+      </tr>
+    `
+    )
+    .join("");
+
+  return `
+    <div class="tabla-rodante">
+    <table class="rubrica">
+      <thead>
+        <tr>
+          <th class="col-dimension">Dimensión</th>
+          ${[1, 2, 3, 4].map((n) => `<th class="col-nivel nivel-${n}">${escapeHtml(etiquetaNivel(n))}</th>`).join("")}
+        </tr>
+      </thead>
+      <tbody>${filas}</tbody>
+    </table>
+    </div>
+  `;
+}
+
 function renderFichaAlumno(ficha, alumnos) {
   const valora = ficha.queSeValora
     .map((d) => `<li>${escapeHtml(d.nombre)} <span class="peso-pill">${d.peso}%</span></li>`)
@@ -441,6 +475,10 @@ function renderFichaAlumno(ficha, alumnos) {
     <div class="ficha-bloque">
       <h3>Cómo llegar al nivel excelente</h3>
       <ul>${excelente}</ul>
+    </div>
+    <div class="ficha-bloque rubrica-breve">
+      <h3>La rúbrica completa, en breve</h3>
+      ${renderRubricaBreve(ficha.rubricaBreve)}
     </div>
     <div class="ficha-bloque">
       <h3>Resultado de un alumno calificado</h3>
@@ -536,6 +574,7 @@ export function renderResultado(container, { puertaInfo, resultado, alumnos = {}
       <button class="tab-boton tab-boton-utilidad" id="btn-calificar" type="button">Calificar</button>
       <button class="tab-boton tab-boton-utilidad" id="btn-exportar-idoceo" type="button">Exportar rúbrica (CSV)</button>
       <button class="tab-boton tab-boton-utilidad" id="btn-imprimir" type="button">Imprimir esta vista</button>
+      <button class="tab-boton tab-boton-utilidad" id="btn-imprimir-breve" type="button">Imprimir solo la rúbrica breve</button>
     </div>
     ${microexplicacion("exportar-idoceo")}
     ${panel("rubrica", renderRubricaAnalitica(resultado.rubricaAnalitica))}
@@ -560,6 +599,18 @@ export function renderResultado(container, { puertaInfo, resultado, alumnos = {}
   });
 
   container.querySelector("#btn-imprimir").addEventListener("click", () => window.print());
+
+  // La clase en <body> es lo único que el CSS de impresión necesita para
+  // aislar el bloque: no importa qué pestaña estuviera activa, imprimir solo
+  // la rúbrica breve fuerza el panel de la ficha y oculta el resto (css/print.css).
+  // afterprint cubre los navegadores donde print() no bloquea el script.
+  container.querySelector("#btn-imprimir-breve").addEventListener("click", () => {
+    const quitarClase = () => document.body.classList.remove("imprimir-solo-breve");
+    document.body.classList.add("imprimir-solo-breve");
+    window.addEventListener("afterprint", quitarClase, { once: true });
+    window.print();
+    quitarClase();
+  });
 }
 
 // "¿Por qué esta regla?" a partir del catálogo REGLAS de validador.js — no

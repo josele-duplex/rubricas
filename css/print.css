@@ -47,4 +47,29 @@
   table.rubrica tr { page-break-inside: avoid; }
 
   .ficha-bloque { page-break-inside: avoid; }
+
+  /* «Imprimir solo la rúbrica breve» (js/ui.js): la clase la pone y la quita
+     el propio botón alrededor de window.print(), no algo que viva en pantalla.
+     Aísla el bloque sin importar qué pestaña estuviera activa —fuerza el panel
+     de la ficha y tapa todo lo demás del panel, incluida la cabecera del
+     instrumento y las otras microexplicaciones/bloques de la ficha—, porque el
+     profesor puede pulsar este botón desde cualquier instrumento. Prioriza
+     legibilidad sobre compacidad (CLAUDE.md): se sobrescribe el
+     `font-size: 0.8rem` de `table.rubrica` de más arriba, no se toca. */
+  body.imprimir-solo-breve #resultado > *:not(.panel-instrumento),
+  body.imprimir-solo-breve #salud-pack,
+  body.imprimir-solo-breve .panel-instrumento:not([data-panel="ficha"]),
+  body.imprimir-solo-breve .panel-instrumento[data-panel="ficha"] > *:not(.rubrica-breve) {
+    display: none !important;
+  }
+  body.imprimir-solo-breve .panel-instrumento[data-panel="ficha"] {
+    display: block !important;
+  }
+  body.imprimir-solo-breve .rubrica-breve table.rubrica {
+    font-size: 1rem;
+  }
+  body.imprimir-solo-breve .rubrica-breve table.rubrica td,
+  body.imprimir-solo-breve .rubrica-breve table.rubrica th {
+    padding: 0.6rem 0.7rem;
+  }
 }

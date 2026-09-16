@@ -63,6 +63,8 @@ COMPROBACIONES = [
      ["node", "test/proyeccion.mjs"], True, False),
     ("Motor: modelo de calificación",
      ["node", "test/calificacion.mjs"], True, False),
+    ("Motor: rúbrica breve de la ficha del alumno",
+     ["node", "test/ficha.mjs"], True, False),
     ("Derivación: citas, matriz §4.3 y techo §5.4",
      [sys.executable, "scripts/verificar_derivacion.py"], False, True),
     ("Derivación: auto-prueba (lo corrupto debe fallar)",

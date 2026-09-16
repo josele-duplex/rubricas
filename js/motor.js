@@ -524,6 +524,18 @@ export function generarFichaAlumno(criterios, meta, razonPeso = null) {
     razonPeso,
     queSeValora: ordenadas.map((c) => ({ nombre: c.nombre, peso: c.peso_normalizado })),
     comoLlegarAExcelente: ordenadas.map((c) => ({ nombre: c.nombre, texto: c.descriptores.n4.texto })),
+    // Misma matriz que la rúbrica analítica (generarRubricaAnalitica), pero
+    // sin lo que ahí es información de quien evalúa y no del alumno: el
+    // criterio oficial, la etiqueta de bloque LOMLOE y la condición de
+    // evidencia. Lo único que queda es lo que la ficha ya usa en otros
+    // bloques — nombre de la dimensión y peso — más los cuatro niveles.
+    rubricaBreve: {
+      dimensiones: ordenadas.map((c) => ({
+        nombre: c.nombre,
+        peso: c.peso_normalizado,
+        niveles: [1, 2, 3, 4].map((n) => c.descriptores[`n${n}`].texto),
+      })),
+    },
     calculo: {
       modo: "cualitativo",
       texto:
