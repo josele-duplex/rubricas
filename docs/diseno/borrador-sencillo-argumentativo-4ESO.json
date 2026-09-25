@@ -1,0 +1,123 @@
+{
+  "_nota": [
+    "Borrador del lenguaje sencillo para el pack argumentativo de 4.º ESO (25-sep-2026).",
+    "Validado con scripts/validar_pack.py sobre una copia del pack y proyectado a 1.ª persona con",
+    "primeraPersona() de js/motor.js: sin incidencias. Faltan tratamiento_informacion y los nombres",
+    "sencillos de dimensión. Lo carga la sesión L2 de docs/diseno/plan-lenguaje-sencillo.md, y en",
+    "cuanto está en el pack, este archivo se BORRA: el pack pasa a ser la única fuente."
+  ],
+  "pack": "data/pack-lcl-argumentativo.json",
+  "curso": "4ESO",
+  "dimensiones": [
+    {
+      "dimension": "adecuacion",
+      "nombre_alumno_propuesto": "El tono del texto",
+      "niveles": [
+        {
+          "verbo": "usa",
+          "texto": "Usa expresiones de conversación entre amigos (*venga ya*, *qué tontería*) para llevar la contraria en un texto que es para clase."
+        },
+        {
+          "verbo": "mantiene",
+          "texto": "Mantiene un tono serio en casi todo el texto, con alguna frase que ataca a la persona que opina distinto en lugar de rebatir la idea (*eso solo lo defiende un ignorante*)."
+        },
+        {
+          "verbo": "mantiene",
+          "texto": "Mantiene un tono serio de principio a fin y respeta a quien opina distinto: rebate la idea sin atacar a la persona (*entiendo esa postura, pero…*)."
+        },
+        {
+          "verbo": "elige",
+          "texto": "Elige cuánta seguridad transmite cada afirmación (*es evidente que…*, *quizá…*) y qué forma usa en cada momento (*uno*, *nosotros*, *se dice que*) para sonar más cercano o más distante al lector."
+        }
+      ]
+    },
+    {
+      "dimension": "coherencia",
+      "nombre_alumno_propuesto": "Las ideas: opinión, razones y matices",
+      "niveles": [
+        {
+          "verbo": "ordena",
+          "texto": "Ordena las razones (los argumentos) en el orden en que surgen, y la opinión principal (la tesis) aparece a mitad del texto."
+        },
+        {
+          "verbo": "presenta",
+          "texto": "Presenta la opinión principal al principio, dedica un párrafo a cada razón y cierra el texto repitiendo la opinión con las mismas palabras."
+        },
+        {
+          "verbo": "defiende",
+          "texto": "Defiende la opinión principal y reconoce algún caso en el que no se cumple del todo (una matización), sin cambiar de postura."
+        },
+        {
+          "verbo": "anticipa",
+          "texto": "Anticipa lo que respondería alguien que opina lo contrario (una objeción), lo expone en una frase y lo rebate con un argumento propio antes de la conclusión."
+        }
+      ]
+    },
+    {
+      "dimension": "cohesion",
+      "nombre_alumno_propuesto": "Cómo se unen las ideas",
+      "niveles": [
+        {
+          "verbo": "usa",
+          "texto": "Usa como palabras de enlace (conectores) *y*, *también* y *porque*, y vuelve a escribir la misma palabra clave en cada párrafo."
+        },
+        {
+          "verbo": "enlaza",
+          "texto": "Enlaza las razones con conectores de causa (*porque*), de consecuencia (*por eso*) y de oposición (*pero*, *sin embargo*), y explica alguna palabra difícil con una frase que empieza por *que* (oración de relativo)."
+        },
+        {
+          "verbo": "anade",
+          "texto": "Añade aclaraciones dentro de la misma frase, entre comas, sin cortar el hilo de la idea (aposición y oración de relativo: *esta norma, que prohíbe el móvil en clase, …*)."
+        },
+        {
+          "verbo": "sustituye",
+          "texto": "Sustituye las palabras repetidas por expresiones que resumen lo anterior (*esta medida*, *tal decisión*, *este problema*) y las usa para enlazar cada párrafo con el anterior."
+        }
+      ]
+    },
+    {
+      "dimension": "correccion_lexico",
+      "nombre_alumno_propuesto": "Ortografía, gramática y vocabulario",
+      "niveles": [
+        {
+          "verbo": "redacta",
+          "texto": "Redacta con faltas de ortografía, palabras que no concuerdan (*las idea*) o tiempos verbales mezclados, y el lector tiene que leer dos veces para entender el texto."
+        },
+        {
+          "verbo": "aplica",
+          "texto": "Aplica las normas de ortografía y de concordancia, con algún error al combinar los tiempos verbales (*si lo supieran, lo entienden*) que no impide seguir el texto."
+        },
+        {
+          "verbo": "aplica",
+          "texto": "Aplica las normas de ortografía y gramática, y elige palabras exactas para valorar (*discutible*, *desproporcionado*, *eficaz*) en lugar de palabras comodín (*cosa*, *bueno*, *malo*)."
+        },
+        {
+          "verbo": "cita",
+          "texto": "Cita lo que opinan otros para apoyar o discutir la idea propia (discurso relatado: *hay quien dice que…*) y combina los tiempos verbales sin errores que dificulten la lectura."
+        }
+      ]
+    },
+    {
+      "dimension": "planificacion_revision",
+      "nombre_alumno_propuesto": "Preparar y revisar el texto",
+      "niveles": [
+        {
+          "verbo": "redacta",
+          "texto": "Redacta el texto de una vez y entrega ese primer intento como versión final."
+        },
+        {
+          "verbo": "elabora",
+          "texto": "Elabora antes un esquema propio con la opinión principal y el orden de las razones, y entrega el borrador con las correcciones de ortografía y vocabulario marcadas."
+        },
+        {
+          "verbo": "revisa",
+          "texto": "Revisa el borrador por cuenta propia y vuelve a escribir las partes en las que el lector perdería el hilo."
+        },
+        {
+          "verbo": "justifica",
+          "texto": "Justifica cada cambio del borrador con palabras de la asignatura (*tesis*, *argumento*, *objeción*, *conector*) y explica qué problema de comprensión corrige."
+        }
+      ]
+    }
+  ]
+}
