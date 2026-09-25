@@ -1,6 +1,7 @@
 // Carga un borrador de lenguaje sencillo en un pack (docs/diseno/plan-lenguaje-sencillo.md,
-// sesión L1). Una orden por actividad: toma el JSON con el formato de
-// docs/diseno/borrador-sencillo-argumentativo-4ESO.json, escribe `alumno` en
+// sesión L1). Una orden por actividad: toma el JSON con el formato descrito
+// más abajo (el primero fue el argumentativo de 4.º ESO, cargado en L2 y
+// borrado después: la fuente es el pack), escribe `alumno` en
 // cada descriptor y `nombre_alumno` en el criterio, calcula `origen` con la
 // misma huella que comprueban los dos validadores (js/huella.js,
 // scripts/huella.py), valida el pack resultante, proyecta cada texto sencillo

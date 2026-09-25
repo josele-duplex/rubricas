@@ -1,6 +1,6 @@
 # Revisión del pack: Texto argumentativo escrito — Región de Murcia
 
-**Pack** `pack-lcl-argumentativo.json` · versión 0.7.0 · 30 criterios · 120 descriptores · 25 matrices cuantitativas
+**Pack** `pack-lcl-argumentativo.json` · versión 0.8.0 · 30 criterios · 120 descriptores · 25 matrices cuantitativas
 
 > Documento para validación docente, generado desde el JSON. No se edita a mano.
 > Al leer, mira sobre todo tres cosas: si el nivel N4 es alcanzable en ese curso,
@@ -298,6 +298,15 @@
 | **N3** | Mantiene el registro formal en todo el texto y emplea fórmulas de cortesía para discrepar sin descalificar al interlocutor. |
 | **N4** | Matiza el grado de certeza de las afirmaciones propias y selecciona la forma deíctica (*uno*, *nosotros*, la impersonalidad) que ajusta la distancia con el interlocutor al efecto buscado. |
 
+**Lenguaje sencillo** — lo que lee el alumno en la ficha y en la autoevaluación.
+
+| Nivel | Técnico | Sencillo | Sencillo (autoevaluación) |
+|---|---|---|---|
+| **N1** | Utiliza fórmulas de confianza propias de la conversación entre iguales para discrepar en un texto dirigido al ámbito académico. | Usa expresiones de conversación entre amigos (*venga ya*, *qué tontería*) para llevar la contraria en un texto que es para clase. | Uso expresiones de conversación entre amigos (*venga ya*, *qué tontería*) para llevar la contraria en un texto que es para clase. |
+| **N2** | Ajusta el léxico y el tono al género de opinión académico, con alguna fórmula de discrepancia que descalifica la postura contraria. | Mantiene un tono serio en casi todo el texto, con alguna frase que ataca a la persona que opina distinto en lugar de rebatir la idea (*eso solo lo defiende un ignorante*). | Mantengo un tono serio en casi todo el texto, con alguna frase que ataca a la persona que opina distinto en lugar de rebatir la idea (*eso solo lo defiende un ignorante*). |
+| **N3** | Mantiene el registro formal en todo el texto y emplea fórmulas de cortesía para discrepar sin descalificar al interlocutor. | Mantiene un tono serio de principio a fin y respeta a quien opina distinto: rebate la idea sin atacar a la persona (*entiendo esa postura, pero…*). | Mantengo un tono serio de principio a fin y respeto a quien opina distinto: rebato la idea sin atacar a la persona (*entiendo esa postura, pero…*). |
+| **N4** | Matiza el grado de certeza de las afirmaciones propias y selecciona la forma deíctica (*uno*, *nosotros*, la impersonalidad) que ajusta la distancia con el interlocutor al efecto buscado. | Elige cuánta seguridad transmite cada afirmación (*es evidente que…*, *quizá…*) y qué forma usa en cada momento (*uno*, *nosotros*, *se dice que*) para sonar más cercano o más distante al lector. | Elijo cuánta seguridad transmite cada afirmación (*es evidente que…*, *quizá…*) y qué forma uso en cada momento (*uno*, *nosotros*, *se dice que*) para sonar más cercano o más distante al lector. |
+
 *Sin matriz cuantitativa: esta dimensión se juzga en conjunto, no hay nada que contar.*
 
 ### Coherencia: tesis, argumentos y matización  ·  25%  ·  bloque B  ·  🔒 obligatorio
@@ -312,6 +321,15 @@
 | **N2** | Formula la tesis en la introducción y desarrolla cada argumento en su propio párrafo, con un cierre que la repite con las mismas palabras. |
 | **N3** | Matiza la tesis reconociendo un caso o una condición en que resulta menos evidente, sin abandonar la postura defendida. |
 | **N4** | Anticipa una objeción previsible a la tesis, la expone en una oración y la delimita con un argumento propio antes de la conclusión. |
+
+**Lenguaje sencillo** — lo que lee el alumno en la ficha y en la autoevaluación.
+
+| Nivel | Técnico | Sencillo | Sencillo (autoevaluación) |
+|---|---|---|---|
+| **N1** | Ordena los argumentos según van surgiendo, con una tesis que aparece a mitad del texto. | Ordena las razones (los argumentos) en el orden en que surgen, y la opinión principal (la tesis) aparece a mitad del texto. | Ordeno las razones (los argumentos) en el orden en que surgen, y la opinión principal (la tesis) aparece a mitad del texto. |
+| **N2** | Formula la tesis en la introducción y desarrolla cada argumento en su propio párrafo, con un cierre que la repite con las mismas palabras. | Presenta la opinión principal al principio, dedica un párrafo a cada razón y cierra el texto repitiendo la opinión con las mismas palabras. | Presento la opinión principal al principio, dedico un párrafo a cada razón y cierro el texto repitiendo la opinión con las mismas palabras. |
+| **N3** | Matiza la tesis reconociendo un caso o una condición en que resulta menos evidente, sin abandonar la postura defendida. | Defiende la opinión principal y reconoce algún caso en el que no se cumple del todo (una matización), sin cambiar de postura. | Defiendo la opinión principal y reconozco algún caso en el que no se cumple del todo (una matización), sin cambiar de postura. |
+| **N4** | Anticipa una objeción previsible a la tesis, la expone en una oración y la delimita con un argumento propio antes de la conclusión. | Anticipa lo que respondería alguien que opina lo contrario (una objeción), lo expone en una frase y lo rebate con un argumento propio antes de la conclusión. | Anticipo lo que respondería alguien que opina lo contrario (una objeción), lo expongo en una frase y lo rebato con un argumento propio antes de la conclusión. |
 
 **Matriz cuantitativa** — total 10 puntos. Es lo que usa el modo IA para corregir.
 
@@ -334,6 +352,15 @@
 | **N3** | Emplea la aposición y la oración de relativo para incorporar al argumento una definición o una precisión sin interrumpir la línea del texto. |
 | **N4** | Sustituye las repeticiones mediante nominalizaciones e hiperónimos de significado abstracto (*esta medida*, *tal decisión*) y relaciona con ellos cada párrafo con el argumento del anterior. |
 
+**Lenguaje sencillo** — lo que lee el alumno en la ficha y en la autoevaluación.
+
+| Nivel | Técnico | Sencillo | Sencillo (autoevaluación) |
+|---|---|---|---|
+| **N1** | Utiliza los conectores de adición y de causa a lo largo de todo el texto, con el sustantivo clave repetido en cada párrafo. | Usa como palabras de enlace (conectores) *y*, *también* y *porque*, y vuelve a escribir la misma palabra clave en cada párrafo. | Uso como palabras de enlace (conectores) *y*, *también* y *porque*, y vuelvo a escribir la misma palabra clave en cada párrafo. |
+| **N2** | Utiliza conectores de causa, consecuencia y contraste entre los argumentos, y explica algún término mediante una oración de relativo. | Enlaza las razones con conectores de causa (*porque*), de consecuencia (*por eso*) y de oposición (*pero*, *sin embargo*), y explica alguna palabra difícil con una frase que empieza por *que* (oración de relativo). | Enlazo las razones con conectores de causa (*porque*), de consecuencia (*por eso*) y de oposición (*pero*, *sin embargo*), y explico alguna palabra difícil con una frase que empieza por *que* (oración de relativo). |
+| **N3** | Emplea la aposición y la oración de relativo para incorporar al argumento una definición o una precisión sin interrumpir la línea del texto. | Añade aclaraciones dentro de la misma frase, entre comas, sin cortar el hilo de la idea (aposición y oración de relativo: *esta norma, que prohíbe el móvil en clase, …*). | Añado aclaraciones dentro de la misma frase, entre comas, sin cortar el hilo de la idea (aposición y oración de relativo: *esta norma, que prohíbe el móvil en clase, …*). |
+| **N4** | Sustituye las repeticiones mediante nominalizaciones e hiperónimos de significado abstracto (*esta medida*, *tal decisión*) y relaciona con ellos cada párrafo con el argumento del anterior. | Sustituye las palabras repetidas por expresiones que resumen lo anterior (*esta medida*, *tal decisión*, *este problema*) y las usa para enlazar cada párrafo con el anterior. | Sustituyo las palabras repetidas por expresiones que resumen lo anterior (*esta medida*, *tal decisión*, *este problema*) y las uso para enlazar cada párrafo con el anterior. |
+
 **Matriz cuantitativa** — total 10 puntos. Es lo que usa el modo IA para corregir.
 
 | Componente | Máx. | Bandas |
@@ -354,6 +381,15 @@
 | **N2** | Aplica las normas de ortografía y concordancia del nivel, con algún error aislado de correlación verbal que no impide seguir la argumentación. |
 | **N3** | Aplica las normas ortográficas y gramaticales del nivel y selecciona el término valorativo preciso (*discutible*, *desproporcionado*, *eficaz*) en lugar de palabras comodín. |
 | **N4** | Emplea el discurso relatado para incorporar al argumento la posición de otros y mantiene la correlación temporal entre las formas verbales, sin errores que afecten a la comprensión. |
+
+**Lenguaje sencillo** — lo que lee el alumno en la ficha y en la autoevaluación.
+
+| Nivel | Técnico | Sencillo | Sencillo (autoevaluación) |
+|---|---|---|---|
+| **N1** | Redacta el texto con errores de ortografía, concordancia o correlación verbal que obligan a releer para reconstruir el argumento. | Redacta con faltas de ortografía, palabras que no concuerdan (*las idea*) o tiempos verbales mezclados, y el lector tiene que leer dos veces para entender el texto. | Redacto con faltas de ortografía, palabras que no concuerdan (*las idea*) o tiempos verbales mezclados, y el lector tiene que leer dos veces para entender el texto. |
+| **N2** | Aplica las normas de ortografía y concordancia del nivel, con algún error aislado de correlación verbal que no impide seguir la argumentación. | Aplica las normas de ortografía y de concordancia, con algún error al combinar los tiempos verbales (*si lo supieran, lo entienden*) que no impide seguir el texto. | Aplico las normas de ortografía y de concordancia, con algún error al combinar los tiempos verbales (*si lo supieran, lo entienden*) que no impide seguir el texto. |
+| **N3** | Aplica las normas ortográficas y gramaticales del nivel y selecciona el término valorativo preciso (*discutible*, *desproporcionado*, *eficaz*) en lugar de palabras comodín. | Aplica las normas de ortografía y gramática, y elige palabras exactas para valorar (*discutible*, *desproporcionado*, *eficaz*) en lugar de palabras comodín (*cosa*, *bueno*, *malo*). | Aplico las normas de ortografía y gramática, y elijo palabras exactas para valorar (*discutible*, *desproporcionado*, *eficaz*) en lugar de palabras comodín (*cosa*, *bueno*, *malo*). |
+| **N4** | Emplea el discurso relatado para incorporar al argumento la posición de otros y mantiene la correlación temporal entre las formas verbales, sin errores que afecten a la comprensión. | Cita lo que opinan otros para apoyar o discutir la idea propia (discurso relatado: *hay quien dice que…*) y combina los tiempos verbales sin errores que dificulten la lectura. | Cito lo que opinan otros para apoyar o discutir la idea propia (discurso relatado: *hay quien dice que…*) y combino los tiempos verbales sin errores que dificulten la lectura. |
 
 **Matriz cuantitativa** — total 10 puntos. Es lo que usa el modo IA para corregir.
 
@@ -376,6 +412,15 @@
 | **N3** | Revisa el borrador de manera autónoma y reformula los pasajes en los que el lector perdería el hilo del argumento. |
 | **N4** | Justifica con el metalenguaje del nivel (*tesis*, *argumento*, *objeción*, *conector*) los cambios introducidos para subsanar un problema de comprensión detectado en el borrador. |
 
+**Lenguaje sencillo** — lo que lee el alumno en la ficha y en la autoevaluación.
+
+| Nivel | Técnico | Sencillo | Sencillo (autoevaluación) |
+|---|---|---|---|
+| **N1** | Redacta el texto en una sola pasada y entrega la primera versión como texto final. | Redacta el texto de una vez y entrega ese primer intento como versión final. | Redacto el texto de una vez y entrego ese primer intento como versión final. |
+| **N2** | Elabora un esquema previo propio con la tesis y el orden de los argumentos, y entrega el borrador con marcas de revisión sobre la ortografía y el léxico. | Elabora antes un esquema propio con la opinión principal y el orden de las razones, y entrega el borrador con las correcciones de ortografía y vocabulario marcadas. | Elaboro antes un esquema propio con la opinión principal y el orden de las razones, y entrego el borrador con las correcciones de ortografía y vocabulario marcadas. |
+| **N3** | Revisa el borrador de manera autónoma y reformula los pasajes en los que el lector perdería el hilo del argumento. | Revisa el borrador por cuenta propia y vuelve a escribir las partes en las que el lector perdería el hilo. | Reviso el borrador por cuenta propia y vuelvo a escribir las partes en las que el lector perdería el hilo. |
+| **N4** | Justifica con el metalenguaje del nivel (*tesis*, *argumento*, *objeción*, *conector*) los cambios introducidos para subsanar un problema de comprensión detectado en el borrador. | Justifica cada cambio del borrador con palabras de la asignatura (*tesis*, *argumento*, *objeción*, *conector*) y explica qué problema de comprensión corrige. | Justifico cada cambio del borrador con palabras de la asignatura (*tesis*, *argumento*, *objeción*, *conector*) y explico qué problema de comprensión corrijo. |
+
 **Matriz cuantitativa** — total 10 puntos. Es lo que usa el modo IA para corregir.
 
 | Componente | Máx. | Bandas |
@@ -396,6 +441,15 @@
 | **N2** | Selecciona datos de dos o más fuentes de manera autónoma para apoyar los argumentos e indica su procedencia al final del texto. |
 | **N3** | Contrasta la información de fuentes distintas antes de emplearla como apoyo de un argumento, y cita el origen de cada dato en el punto del texto donde aparece. |
 | **N4** | Valora la fiabilidad de cada fuente a partir de su autoría, su fecha y su propósito, y distingue en el texto los datos comprobables de las opiniones, con la referencia completa de cada fuente empleada. |
+
+**Lenguaje sencillo** — lo que lee el alumno en la ficha y en la autoevaluación.
+
+| Nivel | Técnico | Sencillo | Sencillo (autoevaluación) |
+|---|---|---|---|
+| **N1** | Utiliza una única fuente y traslada sus datos al texto sin señalar de dónde proceden. | Usa una sola fuente (un libro, una página web, un artículo) y pone los datos en el texto sin indicar de dónde salen. | Uso una sola fuente (un libro, una página web, un artículo) y pongo los datos en el texto sin indicar de dónde salen. |
+| **N2** | Selecciona datos de dos o más fuentes de manera autónoma para apoyar los argumentos e indica su procedencia al final del texto. | Elige por cuenta propia datos de dos o más fuentes para apoyar las razones (los argumentos) e indica al final del texto de dónde sale cada uno. | Elijo por cuenta propia datos de dos o más fuentes para apoyar las razones (los argumentos) e indico al final del texto de dónde sale cada uno. |
+| **N3** | Contrasta la información de fuentes distintas antes de emplearla como apoyo de un argumento, y cita el origen de cada dato en el punto del texto donde aparece. | Contrasta fuentes distintas, para ver si coinciden, antes de usar un dato como apoyo de una razón, y señala de dónde sale cada dato en la misma frase en que aparece. | Contrasto fuentes distintas, para ver si coinciden, antes de usar un dato como apoyo de una razón, y señalo de dónde sale cada dato en la misma frase en que aparece. |
+| **N4** | Valora la fiabilidad de cada fuente a partir de su autoría, su fecha y su propósito, y distingue en el texto los datos comprobables de las opiniones, con la referencia completa de cada fuente empleada. | Valora si cada fuente es de fiar (la fiabilidad) según quién la firma, de cuándo es y para qué la escribieron; separa en el texto los hechos que cualquiera puede comprobar de las opiniones, y anota los datos completos de cada fuente usada (la referencia). | Valoro si cada fuente es de fiar (la fiabilidad) según quién la firma, de cuándo es y para qué la escribieron; separo en el texto los hechos que cualquiera puede comprobar de las opiniones, y anoto los datos completos de cada fuente usada (la referencia). |
 
 **Matriz cuantitativa** — total 10 puntos. Es lo que usa el modo IA para corregir.
 

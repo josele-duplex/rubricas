@@ -20,8 +20,8 @@ profesor. Hacerlo de forma **eficaz** (sin errores que lleguen al alumno) y **ec
   tratamiento de la información) reescritos en lenguaje sencillo, en 3.ª persona y con el
   término técnico entre paréntesis. Pasados por `validar_pack.py` sobre una copia del pack
   (un error, *mal*, corregido → sin incidencias) y por `primeraPersona()`: los 20 salen en
-  1.ª persona sin mezclar «yo» y «él». Guardados en
-  [`borrador-sencillo-argumentativo-4ESO.json`](borrador-sencillo-argumentativo-4ESO.json).
+  1.ª persona sin mezclar «yo» y «él». Se guardaron en un borrador que L2 cargó en el pack y
+  borró después: hoy viven en `data/pack-lcl-argumentativo.json`.
 - Conclusión de la prueba: **el lenguaje sencillo cabe en la maquinaria que ya existe**
   (banco de verbos, reglas del validador, proyección). No hace falta un sistema nuevo.
 
@@ -96,7 +96,7 @@ Sigue el reparto de [`plan-cierre-fase-2.md`](plan-cierre-fase-2.md):
 |---|---|---|---|
 | L0 | Josele | Decisión en el marco teórico de Lengua | — |
 | L1 ✅ | Sonnet 5 | Infraestructura: campo, validadores, motor, revisión, script de carga — **hecha el 25-sep-2026 (v1.63)** | — |
-| L2 | Opus 5.5 | Argumentativo 4.º ESO: cargar el borrador y completar lo que falta | L1 |
+| L2 ✅ | Opus 5.5 | Argumentativo 4.º ESO: cargar el borrador y completar lo que falta — **hecha el 25-sep-2026 (v1.64)** | L1 |
 | Ln | Opus 5.5 | Una actividad nueva: pack y curso que diga el docente | L1 |
 
 L0 va en paralelo: no bloquea nada técnico, pero la decisión tiene que constar antes de dar
@@ -159,7 +159,7 @@ solo se referencia (lo hace L1 en el §17 del SDD).
 - Si al hacerlo aparece la necesidad de una regla que el plan no prevé, se anota en la
   sección 8 del plan, no se implementa de pasada.
 
-## L2 · Opus 5.5 — Argumentativo de 4.º ESO
+## L2 · Opus 5.5 — Argumentativo de 4.º ESO ✅ hecha el 25-sep-2026 (v1.64)
 
 **Prompt:**
 
@@ -201,22 +201,28 @@ solo se referencia (lo hace L1 en el §17 del SDD).
 
 ## 6. Próxima sesión
 
-**L2 · Opus 5.5 (`claude-opus-5-5`)** — es contenido curricular: juicio sobre el significado de
-los veinte descriptores sencillos y sobre la progresión con reglas duras (sección 3). Prompt: el
-de la sección L2.
+**Ln · Opus 5.5 (`claude-opus-5-5`)** — es redacción de descriptores: juicio sobre el significado
+y la progresión (sección 3). La prueba de ahorro con Sonnet 5 todavía no toca: L2 es la primera
+sesión de contenido y hacen falta dos seguidas sin corrección de significado. Prompt: la
+plantilla de la sección Ln, con `<pack>` y `<curso>` **que fija el docente** según el
+calendario de aula (2.º o 4.º de ESO, sección 1, punto 6). Si la sesión arranca sin ellos, lo
+primero es preguntarlos: no se elige actividad por el docente.
 
-L1 quedó hecha el 25-sep-2026 (v1.63): campo `alumno`/`nombre_alumno` en el esquema, las mismas
-reglas de verbo, adverbitis y cursiva que el técnico más `alumno_desfase` en los dos
-validadores, `generarFichaAlumno`/`generarAutoevaluacion` usándolos cuando el origen está al
-día, la tabla de lenguaje sencillo en `docs/revision-*.md`, `scripts/cargar_sencillo.mjs` y el
-paso 7 del skill `rubricas-pack`. Las 15 comprobaciones, limpias antes y después: sin contenido
-en ningún pack.
+L2 quedó hecha el 25-sep-2026 (v1.64): el argumentativo de 4.º ESO tiene versión sencilla en
+sus seis dimensiones —los veinte descriptores del borrador, sin reescribir; los cuatro de
+`tratamiento_informacion`, nuevos; y los seis `nombre_alumno`—. El docente aprobó el
+significado sin correcciones. El borrador está borrado y el pack pasa a v0.8.0. Para la
+progresión de la próxima actividad de 4.º: este pack aún no tiene sencillo en 3.º ESO ni en
+1.º de Bachillerato, así que no hay con qué comparar en esa dirección.
+
+Sigue abierta **L0** (decisión 22 del SDD, con fecha de hoy, 25-sep-2026): el párrafo en el
+marco teórico de Lengua lo escribe el docente allí. No bloquea ninguna sesión Ln.
 
 ## 7. Registro de cobertura
 
 | Pack | Curso | Estado | Sesión | Fecha |
 |---|---|---|---|---|
-| argumentativo | 4ESO | Borrador validado de 5 dimensiones; falta tratamiento_informacion y nombres | prueba | 25-sep-2026 |
+| argumentativo | 4ESO | Completo: 6 dimensiones × 4 niveles y 6 `nombre_alumno` | prueba + L2 | 25-sep-2026 |
 
 ## 8. Lo que no se hace, a propósito, y cuándo se reconsidera
 

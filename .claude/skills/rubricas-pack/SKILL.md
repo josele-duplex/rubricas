@@ -146,8 +146,9 @@ que al técnico, más una que el técnico no necesita: si el técnico se edita d
 node scripts/cargar_sencillo.mjs <borrador.json>
 ```
 
-Toma un JSON con el formato de `docs/diseno/borrador-sencillo-argumentativo-4ESO.json` (una
-entrada por dimensión, con sus cuatro niveles en orden N1→N4), escribe `alumno` y
+Toma un JSON con el formato descrito en la cabecera del propio script (una entrada por
+dimensión, con sus cuatro niveles en orden N1→N4; el borrador va al directorio temporal de la
+sesión, no al repositorio: una vez cargado, la fuente es el pack), escribe `alumno` y
 `nombre_alumno` en el pack, calcula `origen`, valida y proyecta a 1.ª persona con el motor real.
 Si algo falla no escribe nada: corrige el borrador y repite. Al terminar, regenera la revisión
 docente (paso 6) y enseña al docente una tabla técnico · sencillo de lo nuevo — solo necesita
