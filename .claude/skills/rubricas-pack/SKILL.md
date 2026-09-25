@@ -101,6 +101,58 @@ python scripts/generar_revision.py data/<pack>.json
 Escribe `docs/revision-<pack>.md`, que es lo que se le pasa al docente para validar.
 Es un derivado: no se edita a mano, se regenera.
 
+## Paso 7 · Lenguaje sencillo para el alumnado (solo cuando toque una actividad)
+
+No es obligatorio en todo pack: se escribe **bajo demanda**, dimensión a dimensión, cuando el
+docente va a usar esa actividad en clase (`docs/diseno/plan-lenguaje-sencillo.md`, regla 2). Es
+una **segunda redacción** del mismo descriptor —el técnico sigue siendo la fuente que califica—,
+pensada para que la entienda un alumno de nivel medio-bajo del curso. Va en `alumno: {verbo,
+texto}` dentro de cada descriptor, y `nombre_alumno` en el criterio si el nombre técnico de la
+dimensión no es transparente para el alumno.
+
+Reglas de redacción:
+
+1. **3.ª persona y verbo inicial del banco** (`data/verbos.json`), como el técnico. Puede ser
+   otro verbo que el del técnico (*Presenta* por *Formula*) si es más claro.
+2. **Todo verbo cuyo sujeto sea el alumno, también el segundo de la frase, tiene que estar en
+   el banco.** Si no, la autoevaluación lo deja en 3.ª persona. *Reescribe* no está: se escribe
+   *vuelve a escribir*.
+3. **Cuidado con los verbos del banco cuyo sujeto es otra persona:** *quien piensa distinto* se
+   proyecta como *quien pienso distinto*. Se escribe *quien opina distinto*.
+4. **Nada de reflexivos ni pronombres referidos al alumno** (*se le ocurren*, *su texto*): se
+   proyectan mal. *Por cuenta propia*, *la idea propia*, *en el orden en que surgen*.
+5. **Sin adverbitis**, igual que el técnico: ni *bien*, ni *mal*, ni *a veces*, ni *bastante*.
+6. **El nivel 1 dice lo que el alumno sí hace.** «Usa *y*, *también* y *porque*», no «No usa
+   conectores».
+7. **Cada tecnicismo, sustituido por lo que significa, con el término entre paréntesis**: «las
+   razones (los argumentos)», «lo que respondería alguien que opina lo contrario (una
+   objeción)».
+8. **Las formas citadas, en cursiva con asteriscos**, como en el técnico.
+9. **La progresión tiene que seguir viéndose.** Lo que escala entre cursos (paso 2 de este
+   skill) no puede quedar aplanado por la simplificación. Lee la versión sencilla de la misma
+   dimensión en el curso anterior y en el siguiente, si ya existen, antes de escribir la nueva.
+10. **El texto sencillo dice lo mismo que el técnico: ni más exigencia ni menos.** Es lo único
+    que no comprueba ninguna máquina, y por eso es lo único que revisa el docente — solo el
+    significado, no la forma (reglas 1 a 8, que sí son mecánicas).
+
+Los dos validadores aplican a `alumno.texto` las mismas reglas de verbo, adverbitis y cursiva
+que al técnico, más una que el técnico no necesita: si el técnico se edita después y `origen`
+(la huella del texto del que salió el sencillo) deja de coincidir, el pack queda en desfase
+(`alumno_desfase`) y el motor deja de usar ese sencillo hasta que se vuelva a cargar.
+
+**Carga con el script, nunca a mano:**
+
+```bash
+node scripts/cargar_sencillo.mjs <borrador.json>
+```
+
+Toma un JSON con el formato de `docs/diseno/borrador-sencillo-argumentativo-4ESO.json` (una
+entrada por dimensión, con sus cuatro niveles en orden N1→N4), escribe `alumno` y
+`nombre_alumno` en el pack, calcula `origen`, valida y proyecta a 1.ª persona con el motor real.
+Si algo falla no escribe nada: corrige el borrador y repite. Al terminar, regenera la revisión
+docente (paso 6) y enseña al docente una tabla técnico · sencillo de lo nuevo — solo necesita
+revisar el significado.
+
 ## Al presentar el trabajo al docente
 
 Señala explícitamente estas tres cosas, que son las que de verdad necesitan su criterio:

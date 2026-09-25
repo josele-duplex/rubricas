@@ -12,6 +12,7 @@
 // (ahí replica la búsqueda por subcadena del script).
 
 import { validarPack, comprobarRepartoPesos, comprobarSostenibilidad } from "../js/validador.js";
+import { huellaFnv1a } from "../js/huella.js";
 import { cargarPack } from "./cargar.mjs";
 
 const packOriginal = cargarPack("pack-lcl-expositivo.json");
@@ -779,6 +780,107 @@ caso("sostenibilidad: control de falso positivo — producto final integrador no
   const seis = Array.from({ length: 6 }, (_, i) => ({ id: `dim-${i}` }));
   const aviso = comprobarSostenibilidad(seis, true);
   assert(aviso === null, "el producto final integrador no debería disparar el aviso de sostenibilidad");
+});
+
+// --- 18. lenguaje sencillo: alumno.texto pasa las mismas reglas que el
+// técnico (docs/diseno/plan-lenguaje-sencillo.md) — verbo del banco,
+// adverbitis y cursiva —, más una que el técnico no necesita: `alumno_desfase`
+// si `origen` deja de ser la huella del texto técnico actual (SDD §17,
+// decisión 22).
+caso("alumno · verbo_observable: primera palabra del texto sencillo fuera del banco dispara error", () => {
+  const pack = clonarPack();
+  const c = criterio(pack, "lcl-b-cohesion-expo-1eso");
+  const origen = huellaFnv1a(c.descriptores.n1.texto);
+  c.descriptores.n1.alumno = { verbo: "utiliza", texto: "Junta palabras para unir las frases.", origen };
+  const informe = validarPack(pack);
+  assert(
+    avisosDeRegla(informe, "verbo_observable").some((a) => a.criterioId === c.id && a.mensaje.includes("alumno")),
+    "no se detectó el verbo del texto sencillo fuera del banco"
+  );
+});
+
+caso("alumno · verbo_observable: verbo declarado incoherente con el texto sencillo dispara error", () => {
+  const pack = clonarPack();
+  const c = criterio(pack, "lcl-b-cohesion-expo-1eso");
+  const origen = huellaFnv1a(c.descriptores.n1.texto);
+  c.descriptores.n1.alumno = {
+    verbo: "explica",
+    texto: "Usa palabras de enlace (*y*, *pero*, *entonces*) para unir las frases.",
+    origen,
+  };
+  const informe = validarPack(pack);
+  assert(
+    avisosDeRegla(informe, "verbo_observable").some(
+      (a) => a.criterioId === c.id && a.mensaje.includes("texto sencillo")
+    ),
+    "no se detectó la incoherencia entre el verbo declarado y el texto sencillo"
+  );
+});
+
+caso("alumno · adverbitis: calificador vago en el texto sencillo dispara error", () => {
+  const pack = clonarPack();
+  const c = criterio(pack, "lcl-b-cohesion-expo-1eso");
+  const origen = huellaFnv1a(c.descriptores.n1.texto);
+  c.descriptores.n1.alumno = {
+    verbo: "utiliza",
+    texto: "Utiliza bastantes palabras de enlace para unir las frases.",
+    origen,
+  };
+  const informe = validarPack(pack);
+  assert(
+    avisosDeRegla(informe, "adverbitis").some((a) => a.criterioId === c.id && a.mensaje.includes("alumno")),
+    "no se detectó el calificador vago en el texto sencillo"
+  );
+});
+
+caso("alumno · cursiva: marca sin cerrar en el texto sencillo dispara error", () => {
+  const pack = clonarPack();
+  const c = criterio(pack, "lcl-b-cohesion-expo-1eso");
+  const origen = huellaFnv1a(c.descriptores.n1.texto);
+  c.descriptores.n1.alumno = {
+    verbo: "utiliza",
+    texto: "Utiliza palabras de enlace (*y, *pero* y *entonces*) para unir las frases.",
+    origen,
+  };
+  const informe = validarPack(pack);
+  assert(
+    avisosDeRegla(informe, "cursiva").some((a) => a.criterioId === c.id && a.mensaje.includes("alumno")),
+    "una marca abierta en el texto sencillo no se detectó"
+  );
+});
+
+caso("alumno_desfase: origen distinto de la huella actual del técnico dispara error", () => {
+  const pack = clonarPack();
+  const c = criterio(pack, "lcl-b-cohesion-expo-1eso");
+  c.descriptores.n1.alumno = {
+    verbo: "utiliza",
+    texto: "Utiliza palabras de enlace (*y*, *pero*, *entonces*) para unir las frases.",
+    origen: "00000000",
+  };
+  const informe = validarPack(pack);
+  assert(
+    avisosDeRegla(informe, "alumno_desfase").some((a) => a.criterioId === c.id),
+    "no se detectó el desfase entre el origen declarado y la huella actual del técnico"
+  );
+});
+
+caso("alumno: control de falso positivo — texto sencillo limpio con origen al día no dispara nada", () => {
+  const pack = clonarPack();
+  const c = criterio(pack, "lcl-b-cohesion-expo-1eso");
+  const origen = huellaFnv1a(c.descriptores.n1.texto);
+  c.descriptores.n1.alumno = {
+    verbo: "utiliza",
+    texto: "Utiliza palabras de enlace (*y*, *pero*, *entonces*) para unir las frases.",
+    origen,
+  };
+  const informe = validarPack(pack);
+  assert(
+    !avisosDeRegla(informe, "verbo_observable").some((a) => a.criterioId === c.id) &&
+      !avisosDeRegla(informe, "adverbitis").some((a) => a.criterioId === c.id) &&
+      !avisosDeRegla(informe, "cursiva").some((a) => a.criterioId === c.id) &&
+      avisosDeRegla(informe, "alumno_desfase").length === 0,
+    "un texto sencillo limpio y con el origen al día no debería disparar ninguna regla"
+  );
 });
 
 // --- resumen -------------------------------------------------------------

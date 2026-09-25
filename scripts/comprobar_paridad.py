@@ -33,6 +33,12 @@ Esto la hay, y en cuatro partes, porque la primera sola no basta:
      CLAVES de regla, nunca los mensajes: el script imprime el id del criterio en su
      propia columna y la aplicación lo lleva dentro del mensaje, y esa diferencia es
      deliberada.
+  5. HUELLA · la regla `alumno_desfase` (SDD §17, decisión 22) depende de que
+     scripts/huella.py y js/huella.js calculen la MISMA huella FNV-1a de 32 bits
+     del mismo texto — es otra función suelta escrita dos veces, exactamente el
+     patrón que rompió la adverbitis. Se ejecuta en los dos lados sobre un corpus
+     de textos (con tildes, cursiva, cadena vacía) y se exige coincidencia byte a
+     byte del resultado hexadecimal.
 
 Deuda declarada de la parte 4: solo se comparan las claves de regla que los dos
 lados nombran igual (CLAVES_COMPARABLES). El script agrupa varias reglas bajo un
@@ -59,6 +65,7 @@ import tempfile
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from validar_pack import encontrar_adverbitis, recuentos_de_banda, validar   # noqa: E402
+from huella import huella_fnv1a   # noqa: E402
 
 RAIZ = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
@@ -162,6 +169,16 @@ CORPUS_RECUENTOS = [
      "'cada' y 'una sola' no son recuentos", {}),
 ]
 
+# Corpus de la huella FNV-1a (SDD §17, decisión 22). Incluye tildes, la marca
+# de cursiva y la cadena vacía: los tres puntos donde una codificación de
+# bytes distinta entre Python y JavaScript se notaría.
+CORPUS_HUELLA = [
+    "",
+    "Utiliza conectores de causa y de consecuencia.",
+    "ñ á é í ó ú *cursiva* con asteriscos",
+    "Sustituye las palabras repetidas por expresiones que resumen lo anterior (*esta medida*, *tal decisión*).",
+]
+
 # Reglas que los dos lados nombran igual. Ver la deuda declarada del encabezado.
 CLAVES_COMPARABLES = frozenset([
     "trazabilidad",
@@ -175,6 +192,7 @@ CLAVES_COMPARABLES = frozenset([
     "continuidad_bandas",
     "tarea_aplicable",
     "razon_peso",
+    "alumno_desfase",
 ])
 
 GUION_ADVERBITIS = r"""
@@ -187,6 +205,12 @@ GUION_RECUENTOS = r"""
 import { recuentosDeBanda } from "%s";
 const casos = %s;
 console.log(JSON.stringify(casos.map((t) => Object.fromEntries(recuentosDeBanda(t)))));
+"""
+
+GUION_HUELLA = r"""
+import { huellaFnv1a } from "%s";
+const casos = %s;
+console.log(JSON.stringify(casos.map((t) => huellaFnv1a(t))));
 """
 
 GUION_PACK = r"""
@@ -221,6 +245,11 @@ def adverbitis_js(textos):
 def recuentos_js(condiciones):
     return _node(GUION_RECUENTOS % (_url("js", "validador.js"),
                                     json.dumps(condiciones, ensure_ascii=False)))
+
+
+def huella_js(textos):
+    return _node(GUION_HUELLA % (_url("js", "huella.js"),
+                                 json.dumps(textos, ensure_ascii=False)))
 
 
 def claves_js(ruta_pack):
@@ -328,6 +357,20 @@ def trampa_cursiva():
     return pack
 
 
+def trampa_alumno_desfase():
+    """Descriptor con lenguaje sencillo (SDD §17, decisión 22) cuyo `origen` no
+    es la huella del texto técnico actual.
+
+    El texto sencillo es literalmente el mismo que el técnico —solo cambia
+    `origen`—, para que la regla que se prueba sea de verdad la única que
+    dispara: si además se reescribiera el texto, un defecto de adverbitis o
+    de verbo se colaría en el mismo caso y dejaría de aislar `alumno_desfase`."""
+    pack = _pack("pack-lcl-expositivo.json")
+    d = _criterio(pack, "lcl-b-cohesion-expo-1eso")["descriptores"]["n1"]
+    d["alumno"] = {"verbo": d["verbo"], "texto": d["texto"], "origen": "00000000"}
+    return pack
+
+
 def pack_limpio():
     """Control: el pack real de reacción, sin tocar. Los dos lados deben
     coincidir en no emitir ningún error."""
@@ -350,6 +393,9 @@ PACKS_TRAMPA = [
     ("marca de cursiva sin cerrar en un descriptor y mal abierta en una banda",
      trampa_cursiva,
      {("error", "cursiva")}),
+    ("descriptor sencillo con origen desfasado del técnico",
+     trampa_alumno_desfase,
+     {("error", "alumno_desfase")}),
     ("pack de reacción real, sin tocar",
      pack_limpio,
      set()),
@@ -436,6 +482,33 @@ def comprobar_recuentos():
     return not (discrepancias or equivocaciones)
 
 
+def comprobar_huella():
+    js = huella_js(CORPUS_HUELLA)
+
+    discrepancias = []
+    for texto, hallado_js in zip(CORPUS_HUELLA, js):
+        py = huella_fnv1a(texto)
+        if py != hallado_js:
+            discrepancias.append((texto, py, hallado_js))
+
+    print()
+    print("=" * 72)
+    print("Paridad de la huella FNV-1a · %d casos" % len(CORPUS_HUELLA))
+    print("=" * 72)
+    for texto, py, jsv in discrepancias:
+        print("  DISCREPA  «%s»" % texto)
+        print("            scripts/huella.py : %s" % py)
+        print("            js/huella.js      : %s" % jsv)
+    print("-" * 72)
+    if discrepancias:
+        print("%d caso(s) donde la huella no coincide." % len(discrepancias))
+        print("La regla `alumno_desfase` compararía huellas que no significan lo mismo")
+        print("en los dos lados: revisa scripts/huella.py y js/huella.js.")
+    else:
+        print("Las dos huellas coinciden en los %d casos." % len(CORPUS_HUELLA))
+    return not discrepancias
+
+
 def comprobar_packs():
     print()
     print("=" * 72)
@@ -482,8 +555,9 @@ def main():
 
     ok_textos = comprobar_adverbitis()
     ok_recuentos = comprobar_recuentos()
+    ok_huella = comprobar_huella()
     ok_packs = comprobar_packs()
-    return 0 if (ok_textos and ok_recuentos and ok_packs) else 1
+    return 0 if (ok_textos and ok_recuentos and ok_huella and ok_packs) else 1
 
 
 if __name__ == "__main__":

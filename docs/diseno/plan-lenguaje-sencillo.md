@@ -50,30 +50,9 @@ profesor. Hacerlo de forma **eficaz** (sin errores que lleguen al alumno) y **ec
 
 ## 2. Reglas de redacción del texto sencillo
 
-> Cuando la sesión L1 las copie al skill `rubricas-pack`, esta sección se sustituye por un
-> puntero al skill: las reglas viven en un solo sitio.
-
-1. **3.ª persona y verbo inicial del banco** (`data/verbos.json`), como el técnico. Puede ser
-   otro verbo que el del técnico (*Presenta* por *Formula*) si es más claro.
-2. **Todo verbo cuyo sujeto sea el alumno, también el segundo de la frase, tiene que estar en
-   el banco.** Si no, la autoevaluación lo deja en 3.ª persona. *Reescribe* no está: se
-   escribe *vuelve a escribir*.
-3. **Cuidado con los verbos del banco cuyo sujeto es otra persona:** *quien piensa distinto* se
-   proyecta como *quien pienso distinto*. Se escribe *quien opina distinto*.
-4. **Nada de reflexivos ni pronombres referidos al alumno** (*se le ocurren*, *su texto*): se
-   proyectan mal. *Por cuenta propia*, *la idea propia*, *en el orden en que surgen*.
-5. **Sin adverbitis**, igual que el técnico: ni *bien*, ni *mal*, ni *a veces*, ni *bastante*.
-6. **El nivel 1 dice lo que el alumno sí hace.** «Usa *y*, *también* y *porque*», no «No usa
-   conectores».
-7. **Cada tecnicismo, sustituido por lo que significa, con el término entre paréntesis**:
-   «las razones (los argumentos)», «lo que respondería alguien que opina lo contrario (una
-   objeción)».
-8. **Las formas citadas, en cursiva con asteriscos**, como en el técnico.
-9. **La progresión tiene que seguir viéndose.** Lo que escala entre cursos (regla 2 de
-   CLAUDE.md) no puede quedar aplanado por la simplificación. Por eso la versión sencilla de
-   una dimensión se lee **al lado de la del curso anterior y la del siguiente**, si existen.
-10. **El texto sencillo dice lo mismo que el técnico: ni más exigencia ni menos.** Es lo único
-    que no comprueba ninguna máquina, y por eso es lo único que revisa el docente.
+Viven en un solo sitio desde la sesión L1: **paso 7 del skill `rubricas-pack`**
+(`.claude/skills/rubricas-pack/SKILL.md`). Toda sesión Ln invoca ese skill (regla 3 de la
+sección 4), así que las lee ahí, no aquí.
 
 ## 3. Reparto de modelos
 
@@ -116,7 +95,7 @@ Sigue el reparto de [`plan-cierre-fase-2.md`](plan-cierre-fase-2.md):
 | # | Quién / modelo | Objetivo | Depende de |
 |---|---|---|---|
 | L0 | Josele | Decisión en el marco teórico de Lengua | — |
-| L1 | Sonnet 5 | Infraestructura: campo, validadores, motor, revisión, script de carga | — |
+| L1 ✅ | Sonnet 5 | Infraestructura: campo, validadores, motor, revisión, script de carga — **hecha el 25-sep-2026 (v1.63)** | — |
 | L2 | Opus 5.5 | Argumentativo 4.º ESO: cargar el borrador y completar lo que falta | L1 |
 | Ln | Opus 5.5 | Una actividad nueva: pack y curso que diga el docente | L1 |
 
@@ -133,7 +112,7 @@ Añadir una versión para el alumno es arquitectura de rúbrica, y ese hecho es 
 el término técnico entre paréntesis; la sencilla dice lo mismo, ni más ni menos*. Desde aquí
 solo se referencia (lo hace L1 en el §17 del SDD).
 
-## L1 · Sonnet 5 — Infraestructura
+## L1 · Sonnet 5 — Infraestructura ✅ hecha el 25-sep-2026 (v1.63)
 
 **Prompt:**
 
@@ -222,8 +201,16 @@ solo se referencia (lo hace L1 en el §17 del SDD).
 
 ## 6. Próxima sesión
 
-**L1 · Sonnet 5 (`claude-sonnet-5`)** — es código con la especificación cerrada en este plan;
-no hay juicio curricular. Prompt: el de la sección L1.
+**L2 · Opus 5.5 (`claude-opus-5-5`)** — es contenido curricular: juicio sobre el significado de
+los veinte descriptores sencillos y sobre la progresión con reglas duras (sección 3). Prompt: el
+de la sección L2.
+
+L1 quedó hecha el 25-sep-2026 (v1.63): campo `alumno`/`nombre_alumno` en el esquema, las mismas
+reglas de verbo, adverbitis y cursiva que el técnico más `alumno_desfase` en los dos
+validadores, `generarFichaAlumno`/`generarAutoevaluacion` usándolos cuando el origen está al
+día, la tabla de lenguaje sencillo en `docs/revision-*.md`, `scripts/cargar_sencillo.mjs` y el
+paso 7 del skill `rubricas-pack`. Las 15 comprobaciones, limpias antes y después: sin contenido
+en ningún pack.
 
 ## 7. Registro de cobertura
 

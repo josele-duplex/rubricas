@@ -17,6 +17,7 @@ import json, re, sys, os, collections, unicodedata
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from catalogo import lexico as cargar_lexico, rutas_de_packs, cargar_pack   # noqa: E402
 from marcas import sin_marcas, error_de_marcas   # noqa: E402
+from huella import huella_fnv1a   # noqa: E402
 
 # Las palabras de las reglas viven en un solo sitio (data/reglas-lexicas.json) y
 # js/validador.js las recibe generadas desde ese mismo archivo. Antes estaban
@@ -393,10 +394,14 @@ def validar(ruta):
         # pinta; la cita oficial no, porque es literal de la fuente. ---
         textos_con_marcas = [
             ("nombre", c.get("nombre")),
+            ("nombre_alumno", c.get("nombre_alumno")),
             ("descriptor_un_punto", c.get("descriptor_un_punto")),
             ("descriptor_cotejo", c.get("descriptor_cotejo")),
             ("condicion_de_evidencia", c.get("condicion_de_evidencia")),
-        ] + [(nivel, d.get("texto")) for nivel, d in c["descriptores"].items()]
+        ] + [(nivel, d.get("texto")) for nivel, d in c["descriptores"].items()] + [
+            (nivel + " (alumno)", d["alumno"]["texto"])
+            for nivel, d in c["descriptores"].items() if d.get("alumno")
+        ]
         if c.get("matriz_cuantitativa"):
             for comp in c["matriz_cuantitativa"]["componentes"]:
                 textos_con_marcas.append(("matriz · " + comp["nombre"], comp["nombre"]))
@@ -426,6 +431,37 @@ def validar(ruta):
                 for n in NEGACIONES:
                     if (" " + n) in minus[:VENTANA_NEGACION]:
                         err(cid, nivel, "gradación negativa: el nivel 1 describe lo que sí hace, no lo que falta ('%s')" % n.strip())
+
+            # --- Lenguaje sencillo (docs/diseno/plan-lenguaje-sencillo.md,
+            # SDD §17 decisión 22): es una segunda redacción del mismo
+            # descriptor, así que pasa las mismas reglas de verbo y de
+            # adverbitis que el técnico (las de cursiva ya están arriba, y
+            # las de posesivos las cubre generarAutoevaluacion sobre
+            # cualquier pack del catálogo, sea cual sea su fuente —
+            # test/proyeccion.mjs). Y una regla que el técnico no necesita:
+            # si deja de coincidir con la huella del texto del que salió, el
+            # sencillo se quedó desfasado y el motor no debe usarlo.
+            alumno = d.get("alumno")
+            if alumno:
+                texto_alumno = alumno["texto"]
+                verbo_alumno = primer_verbo(texto_alumno)
+
+                if verbo_alumno not in verbos:
+                    err(cid, nivel + " (alumno)",
+                        "el descriptor sencillo no empieza por un verbo del banco: '%s'" % verbo_alumno)
+                elif verbos[verbo_alumno]["id"] != alumno["verbo"]:
+                    err(cid, nivel + " (alumno)",
+                        "el verbo declarado (%s) no es el del texto sencillo (%s)" % (alumno["verbo"], verbo_alumno))
+
+                for a in encontrar_adverbitis(texto_alumno):
+                    err(cid, nivel + " (alumno)", "adverbitis: '%s'" % a.strip())
+
+                huella_actual = huella_fnv1a(texto)
+                if alumno.get("origen") != huella_actual:
+                    err(cid, "alumno_desfase",
+                        "%s: el texto sencillo se redactó sobre otra versión del técnico "
+                        "(origen '%s', actual '%s'); revísalo y vuelve a cargarlo con "
+                        "scripts/cargar_sencillo.mjs" % (nivel, alumno.get("origen"), huella_actual))
 
         niveles = [c["descriptores"][n]["texto"] for n in ("n1", "n2", "n3", "n4")]
         for i in range(3):

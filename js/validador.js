@@ -1,5 +1,6 @@
 import { LEXICO } from "./lexico.js";
 import { sinMarcas, errorDeMarcas } from "./marcas.js";
+import { huellaFnv1a } from "./huella.js";
 
 // Validador de calidad de descriptores — SDD §10.
 //
@@ -222,6 +223,16 @@ export const REGLAS = {
       "declarada. Un reparto desigual del que nadie sabe decir por qué es la mitad de una " +
       "reclamación ya escrita, y el alumno lo lee en la ficha antes de la prueba.",
   },
+  alumno_desfase: {
+    etiqueta: "Lenguaje sencillo desfasado",
+    severidad: "error",
+    fuente: "SDD §17 (decisión 22)",
+    porQue:
+      "El texto sencillo (`alumno.texto`) es una segunda redacción del descriptor técnico, no una " +
+      "fuente propia: si el técnico se edita en el modo avanzado y el sencillo no se revisa, el " +
+      "alumno leería una versión que ya no dice lo mismo que la que califica. El motor deja de " +
+      "usarlo hasta que se vuelva a cargar sobre el texto técnico actual.",
+  },
   materia_sin_lexico: {
     etiqueta: "Materia sin léxico propio",
     severidad: "error",
@@ -412,6 +423,28 @@ function comprobarVerboObservable(criterio, verbosPorForma) {
         mensaje: `${criterio.id} (${nivel}): el verbo declarado ("${d.verbo}") no es el del texto ("${palabra}").`,
       });
     }
+
+    // Lenguaje sencillo: misma regla sobre `alumno.texto`, que es una
+    // segunda redacción del mismo descriptor (docs/diseno/plan-lenguaje-sencillo.md).
+    if (d.alumno) {
+      const palabraAl = primeraPalabra(d.alumno.texto).toLowerCase();
+      const verboAl = verbosPorForma.get(palabraAl);
+      if (!verboAl) {
+        avisos.push({
+          regla: "verbo_observable",
+          severidad: REGLAS.verbo_observable.severidad,
+          criterioId: criterio.id,
+          mensaje: `${criterio.id} (${nivel} alumno): "${primeraPalabra(d.alumno.texto)}" no está en el banco cerrado de verbos.`,
+        });
+      } else if (verboAl.id !== d.alumno.verbo) {
+        avisos.push({
+          regla: "verbo_observable",
+          severidad: REGLAS.verbo_observable.severidad,
+          criterioId: criterio.id,
+          mensaje: `${criterio.id} (${nivel} alumno): el verbo declarado ("${d.alumno.verbo}") no es el del texto sencillo ("${palabraAl}").`,
+        });
+      }
+    }
   }
   return avisos;
 }
@@ -423,10 +456,14 @@ function comprobarVerboObservable(criterio, verbosPorForma) {
 function comprobarCursiva(criterio) {
   const textos = [
     ["nombre", criterio.nombre],
+    ["nombre_alumno", criterio.nombre_alumno],
     ["descriptor_un_punto", criterio.descriptor_un_punto],
     ["descriptor_cotejo", criterio.descriptor_cotejo],
     ["condicion_de_evidencia", criterio.condicion_de_evidencia],
     ...Object.entries(criterio.descriptores ?? {}).map(([nivel, d]) => [nivel, d?.texto]),
+    ...Object.entries(criterio.descriptores ?? {})
+      .filter(([, d]) => d?.alumno)
+      .map(([nivel, d]) => [`${nivel} (alumno)`, d.alumno.texto]),
   ];
   const m = criterio.matriz_cuantitativa;
   if (m) {
@@ -479,6 +516,18 @@ function comprobarAdverbitis(criterio) {
         criterioId: criterio.id,
         mensaje: `${criterio.id} (${nivel}): contiene calificador vago (${encontrados.join(", ")}) sin anclaje observable.`,
       });
+    }
+
+    if (d.alumno) {
+      const encontradosAl = encontrarAdverbitis(d.alumno.texto);
+      if (encontradosAl.length) {
+        avisos.push({
+          regla: "adverbitis",
+          severidad: REGLAS.adverbitis.severidad,
+          criterioId: criterio.id,
+          mensaje: `${criterio.id} (${nivel} alumno): contiene calificador vago (${encontradosAl.join(", ")}) sin anclaje observable.`,
+        });
+      }
     }
   }
   return avisos;
@@ -1040,6 +1089,31 @@ function comprobarModalizadores(criterio) {
   return avisos;
 }
 
+// Regla: lenguaje sencillo desfasado (SDD §17, decisión 22). `alumno.texto`
+// es una segunda redacción del descriptor técnico, no una fuente propia: si
+// el técnico se edita en el modo avanzado y el sencillo no se revisa,
+// `origen` (la huella FNV-1a del técnico en el momento de escribirlo, misma
+// función en js/huella.js y scripts/huella.py) deja de coincidir con la
+// huella actual, y eso es justo la señal de que el alumno leería una
+// versión que ya no dice lo mismo que la que califica.
+function comprobarDesfaseAlumno(criterio) {
+  const avisos = [];
+  for (const nivel of ["n1", "n2", "n3", "n4"]) {
+    const d = criterio.descriptores[nivel];
+    if (!d?.alumno) continue;
+    const actual = huellaFnv1a(d.texto);
+    if (d.alumno.origen !== actual) {
+      avisos.push({
+        regla: "alumno_desfase",
+        severidad: REGLAS.alumno_desfase.severidad,
+        criterioId: criterio.id,
+        mensaje: `${criterio.id} (${nivel}): el texto sencillo se redactó sobre otra versión del técnico (origen "${d.alumno.origen}", actual "${actual}"); revísalo y vuelve a cargarlo con scripts/cargar_sencillo.mjs.`,
+      });
+    }
+  }
+  return avisos;
+}
+
 // Regla: dimensión de proceso sin respaldo (§10). `evalua_proceso` decide
 // qué se premarca en la puerta de "fase de un texto" (§8), así que responde
 // a la misma exigencia que todo lo demás: el criterio es la puerta. Se
@@ -1201,6 +1275,7 @@ export function validarPack(pack) {
       avisos.push(...comprobarVerboObservable(criterio, verbosPorForma));
       avisos.push(...comprobarGradacionPositiva(criterio));
       avisos.push(...comprobarAdverbitis(criterio));
+      avisos.push(...comprobarDesfaseAlumno(criterio));
       avisos.push(...comprobarAdverbitisBanda(criterio));
       avisos.push(...comprobarMatrizCuadrada(criterio));
       avisos.push(...comprobarContinuidadBandas(criterio));

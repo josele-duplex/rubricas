@@ -11,6 +11,7 @@
 // no leyendo el código (CLAUDE.md, método de trabajo).
 
 import { primeraPersona, generarAutoevaluacion } from "../js/motor.js";
+import { huellaFnv1a } from "../js/huella.js";
 import { LEXICO } from "../js/lexico.js";
 import { MARCA_CURSIVA } from "../js/marcas.js";
 import { cargarPack as cargar, CATALOGO } from "./cargar.mjs";
@@ -227,6 +228,64 @@ caso("generarAutoevaluacion: reconjuga sin excepciones los doce criterios del pa
   for (const d of auto.dimensiones) {
     if (d.niveles.length !== 4) throw new Error(`la dimensión "${d.nombre}" no tiene los cuatro niveles`);
   }
+});
+
+// --- generarAutoevaluacion y el lenguaje sencillo (docs/diseno/plan-lenguaje-sencillo.md,
+// SDD §17 decisión 22) --------------------------------------------------
+// Un criterio sintético, no uno del catálogo real: ningún pack lleva
+// todavía lenguaje sencillo, L1 es infraestructura sin contenido.
+const N1_TECNICO_SENCILLO = "Ajusta el tono al destinatario del texto.";
+const N2_TECNICO_SENCILLO = "Ajusta el tono al destinatario y a la intención del texto.";
+
+function criterioSenteticoAlumno() {
+  return {
+    id: "trampa-sencillo",
+    nombre: "Adecuación al destinatario",
+    nombre_alumno: "El tono del texto",
+    bloque_lomloe: "B",
+    obligatorio: true,
+    prioridad: 1,
+    peso_normalizado: 100,
+    descriptores: {
+      n1: {
+        verbo: "ajusta",
+        texto: N1_TECNICO_SENCILLO,
+        alumno: { verbo: "cuida", texto: "Cuida el tono según a quién le escribe.", origen: huellaFnv1a(N1_TECNICO_SENCILLO) },
+      },
+      n2: {
+        verbo: "ajusta",
+        texto: N2_TECNICO_SENCILLO,
+        alumno: { verbo: "cuida", texto: "Cuida el tono según a quién le escribe y para qué.", origen: "00000000" },
+      },
+      n3: { verbo: "ajusta", texto: "Ajusta el tono con precisión al destinatario y a la finalidad del texto." },
+      n4: { verbo: "ajusta", texto: "Ajusta el tono y lo sostiene con matices a lo largo de todo el texto." },
+    },
+  };
+}
+
+caso("generarAutoevaluacion: proyecta el texto sencillo a 1.ª persona cuando el origen está al día", () => {
+  const meta = { actividad: "Prueba", curso: "1ESO", tipoTarea: "expositivo" };
+  const auto = generarAutoevaluacion([criterioSenteticoAlumno()], pack.verbos.concat([
+    { id: "cuida", "3s": "Cuida", "1s": "Cuido", nivel_cognitivo: 3 },
+  ]), meta);
+  assertIgual(auto.dimensiones[0].niveles[0], "Cuido el tono según a quién le escribe.", "N1 debía proyectar el texto sencillo, no el técnico");
+});
+
+caso("generarAutoevaluacion: cae al técnico proyectado cuando el origen del sencillo está desfasado", () => {
+  const meta = { actividad: "Prueba", curso: "1ESO", tipoTarea: "expositivo" };
+  const auto = generarAutoevaluacion([criterioSenteticoAlumno()], pack.verbos.concat([
+    { id: "cuida", "3s": "Cuida", "1s": "Cuido", nivel_cognitivo: 3 },
+  ]), meta);
+  assertIgual(auto.dimensiones[0].niveles[1], "Ajusto el tono al destinatario y a la intención del texto.",
+    "N2 tiene `alumno.origen` desfasado: debía proyectar el técnico, no el sencillo");
+});
+
+caso("generarAutoevaluacion: usa nombre_alumno para el nombre de la dimensión", () => {
+  const meta = { actividad: "Prueba", curso: "1ESO", tipoTarea: "expositivo" };
+  const auto = generarAutoevaluacion([criterioSenteticoAlumno()], pack.verbos.concat([
+    { id: "cuida", "3s": "Cuida", "1s": "Cuido", nivel_cognitivo: 3 },
+  ]), meta);
+  assertIgual(auto.dimensiones[0].nombre, "El tono del texto", "la autoevaluación debía usar nombre_alumno");
 });
 
 // Los packs sobre los que corren los dos invariantes NO son una lista escrita

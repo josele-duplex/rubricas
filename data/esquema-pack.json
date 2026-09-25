@@ -52,6 +52,7 @@
       "bloque_lomloe": { "tipo": "texto", "obligatorio": true, "valores": ["A", "B", "C", "D"] },
       "dimension":     { "tipo": "texto", "obligatorio": true },
       "nombre":        { "tipo": "texto", "obligatorio": true },
+      "nombre_alumno": { "tipo": "texto", "obligatorio": false },
       "curso":         { "tipo": "texto", "obligatorio": true, "del_catalogo": "cursos" },
       "hereda_de":     { "tipo": "texto|nulo", "obligatorio": true },
       "criterio_oficial": { "tipo": "objeto", "obligatorio": true, "de": "criterio_oficial" },
@@ -93,8 +94,23 @@
     },
 
     "descriptor": {
-      "verbo": { "tipo": "texto", "obligatorio": true },
-      "texto": { "tipo": "texto", "obligatorio": true }
+      "verbo":  { "tipo": "texto", "obligatorio": true },
+      "texto":  { "tipo": "texto", "obligatorio": true },
+      "alumno": { "tipo": "objeto", "obligatorio": false, "de": "descriptor_alumno" }
+    },
+
+    "descriptor_alumno": {
+      "_nota": [
+        "La versión en lenguaje sencillo del descriptor técnico (docs/diseno/plan-lenguaje-sencillo.md).",
+        "`origen` es la huella FNV-1a de 32 bits (js/huella.js, scripts/huella.py) del `texto` técnico",
+        "del que salió este sencillo, tal cual estaba en el momento de redactarlo. Si el técnico se",
+        "edita después y `origen` deja de coincidir con su huella actual, el pack queda en desfase",
+        "(regla `alumno_desfase` de los dos validadores) y el motor deja de usar el sencillo hasta que",
+        "se vuelva a cargar sobre el texto actual (scripts/cargar_sencillo.mjs)."
+      ],
+      "verbo":  { "tipo": "texto", "obligatorio": true },
+      "texto":  { "tipo": "texto", "obligatorio": true },
+      "origen": { "tipo": "texto", "obligatorio": true }
     },
 
     "matriz": {

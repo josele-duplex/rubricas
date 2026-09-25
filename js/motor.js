@@ -5,6 +5,7 @@
 
 import { comprobarSostenibilidad, UMBRAL_DIMENSIONES } from "./validador.js";
 import { PARTES_CURSIVA } from "./marcas.js";
+import { huellaFnv1a } from "./huella.js";
 
 export const TIEMPOS_CORRECCION = {
   menos2: { etiqueta: "Menos de 2 min por alumno", prioridades: [1] },
@@ -486,6 +487,26 @@ export function primeraPersona(texto, verboId, verbosPorId) {
   return reconjugarSecundarios(proyectado, verbosPorId);
 }
 
+// Lenguaje sencillo (docs/diseno/plan-lenguaje-sencillo.md, SDD §17 decisión
+// 22): lo que lee el alumno usa `alumno`/`nombre_alumno` cuando existen y el
+// sencillo sigue vigente —su `origen` es la huella del `texto` técnico tal
+// como está ahora—; si no, el técnico. Así, si el profesor edita un
+// descriptor en el modo avanzado, el alumno ve el técnico editado y nunca un
+// sencillo que ya no le corresponde. Solo lo usan generarFichaAlumno y
+// generarAutoevaluacion (con ella, la coevaluación): los instrumentos del
+// profesor —rúbrica analítica, lista de cotejo, escala de estimación— no
+// cambian, porque quien califica necesita el texto técnico, no su traducción.
+function descriptorParaAlumno(d) {
+  if (d.alumno && d.alumno.origen === huellaFnv1a(d.texto)) {
+    return { texto: d.alumno.texto, verbo: d.alumno.verbo };
+  }
+  return { texto: d.texto, verbo: d.verbo };
+}
+
+function nombreParaAlumno(c) {
+  return c.nombre_alumno ?? c.nombre;
+}
+
 // §7.5 — autoevaluación: la misma matriz de la rúbrica analítica, con los
 // cuatro niveles conjugados en 1.ª persona. §7.6 (coevaluación) reutiliza
 // esta misma proyección; lo que cambia entre ambas es solo la interfaz (la
@@ -499,13 +520,13 @@ export function generarAutoevaluacion(criterios, verbosPack, meta) {
     tipoTarea: meta.tipoTarea,
     dimensiones: porPrioridad(criterios).map((c) => ({
       id: c.id,
-      nombre: c.nombre,
+      nombre: nombreParaAlumno(c),
       bloque: c.bloque_lomloe,
       peso: c.peso_normalizado,
       obligatorio: c.obligatorio,
       niveles: [1, 2, 3, 4].map((n) => {
-        const d = c.descriptores[`n${n}`];
-        return primeraPersona(d.texto, d.verbo, verbosPorId);
+        const efectivo = descriptorParaAlumno(c.descriptores[`n${n}`]);
+        return primeraPersona(efectivo.texto, efectivo.verbo, verbosPorId);
       }),
     })),
   };
@@ -522,8 +543,11 @@ export function generarFichaAlumno(criterios, meta, razonPeso = null) {
     curso: meta.curso,
     tipoTarea: meta.tipoTarea,
     razonPeso,
-    queSeValora: ordenadas.map((c) => ({ nombre: c.nombre, peso: c.peso_normalizado })),
-    comoLlegarAExcelente: ordenadas.map((c) => ({ nombre: c.nombre, texto: c.descriptores.n4.texto })),
+    queSeValora: ordenadas.map((c) => ({ nombre: nombreParaAlumno(c), peso: c.peso_normalizado })),
+    comoLlegarAExcelente: ordenadas.map((c) => ({
+      nombre: nombreParaAlumno(c),
+      texto: descriptorParaAlumno(c.descriptores.n4).texto,
+    })),
     // Misma matriz que la rúbrica analítica (generarRubricaAnalitica), pero
     // sin lo que ahí es información de quien evalúa y no del alumno: el
     // criterio oficial, la etiqueta de bloque LOMLOE y la condición de
@@ -531,9 +555,9 @@ export function generarFichaAlumno(criterios, meta, razonPeso = null) {
     // bloques — nombre de la dimensión y peso — más los cuatro niveles.
     rubricaBreve: {
       dimensiones: ordenadas.map((c) => ({
-        nombre: c.nombre,
+        nombre: nombreParaAlumno(c),
         peso: c.peso_normalizado,
-        niveles: [1, 2, 3, 4].map((n) => c.descriptores[`n${n}`].texto),
+        niveles: [1, 2, 3, 4].map((n) => descriptorParaAlumno(c.descriptores[`n${n}`]).texto),
       })),
     },
     calculo: {

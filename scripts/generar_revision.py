@@ -20,10 +20,49 @@ roja. Nueve documentos versionados sin esto eran nueve copias que se podían
 separar de su fuente en silencio, exactamente el error que el proyecto ya
 sufrió con el banco de verbos (CLAUDE.md, «cada hecho en un solo sitio»).
 """
-import json, sys, os, re, collections
+import json, sys, os, re, collections, subprocess
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from catalogo import catalogo, cargar_pack, rutas_de_packs   # noqa: E402
+
+RAIZ = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+
+# Para la columna "Sencillo (autoevaluación)": tiene que salir de
+# primeraPersona() de js/motor.js y no de una segunda implementación
+# (docs/diseno/plan-lenguaje-sencillo.md, sesión L1) — el mismo patrón que
+# scripts/comprobar_paridad.py usa para ejecutar la app desde Python.
+GUION_PROYECTAR = r"""
+import { readFileSync } from "node:fs";
+import { componerPack, primeraPersona } from "%s";
+const banco = JSON.parse(readFileSync(%s, "utf8")).verbos;
+const pack = componerPack(JSON.parse(readFileSync(%s, "utf8")), banco);
+const verbosPorId = Object.fromEntries(pack.verbos.map((v) => [v.id, v]));
+const casos = %s;
+console.log(JSON.stringify(casos.map(([texto, verboId]) => primeraPersona(texto, verboId, verbosPorId))));
+"""
+
+
+def _url(*partes):
+    return "file:///" + os.path.join(RAIZ, *partes).replace("\\", "/")
+
+
+def primera_persona_js(ruta_pack, casos):
+    """casos: lista de (texto, verboId). Vacía, no llama a node."""
+    if not casos:
+        return []
+    guion = GUION_PROYECTAR % (
+        _url("js", "motor.js"),
+        json.dumps(os.path.join(RAIZ, "data", "verbos.json")),
+        json.dumps(os.path.join(RAIZ, ruta_pack)),
+        json.dumps(casos, ensure_ascii=False),
+    )
+    salida = subprocess.run(
+        ["node", "--input-type=module", "-e", guion],
+        cwd=RAIZ, capture_output=True, text=True, encoding="utf8",
+    )
+    if salida.returncode != 0:
+        raise SystemExit("No se pudo proyectar a 1.ª persona con js/motor.js:\n%s" % salida.stderr)
+    return json.loads(salida.stdout)
 
 NIVELES = [("n1", "N1"), ("n2", "N2"), ("n3", "N3"), ("n4", "N4")]
 
@@ -42,6 +81,19 @@ def generar_texto(ruta_pack):
     pack = cargar_pack(ruta_pack)
     verbos = {v["3s"]: v["1s"] for v in pack["verbos"]}
     n_matrices = sum(1 for c in pack["criterios"] if c.get("matriz_cuantitativa"))
+
+    # Lenguaje sencillo (docs/diseno/plan-lenguaje-sencillo.md): una sola
+    # llamada a node por pack, no una por descriptor. `claves_sencillo` fija
+    # el orden en el que las respuestas de primera_persona_js casan con cada
+    # (criterio, nivel) que tiene `alumno`.
+    descriptores_con_alumno = [
+        ((c["id"], k), d["alumno"])
+        for c in pack["criterios"] for k, _ in NIVELES
+        for d in [c["descriptores"][k]] if d.get("alumno")
+    ]
+    claves_sencillo = [clave for clave, _ in descriptores_con_alumno]
+    casos_sencillo = [(al["texto"], al["verbo"]) for _, al in descriptores_con_alumno]
+    sencillo_1a_persona = dict(zip(claves_sencillo, primera_persona_js(ruta_pack, casos_sencillo)))
 
     L = []
     w = L.append
@@ -84,6 +136,18 @@ def generar_texto(ruta_pack):
             for k, etq in NIVELES:
                 w("| **%s** | %s |" % (etq, c["descriptores"][k]["texto"]))
             w("")
+
+            niveles_con_alumno = [(k, etq) for k, etq in NIVELES if (c["id"], k) in sencillo_1a_persona]
+            if niveles_con_alumno:
+                w("**Lenguaje sencillo** — lo que lee el alumno en la ficha y en la autoevaluación.")
+                w("")
+                w("| Nivel | Técnico | Sencillo | Sencillo (autoevaluación) |")
+                w("|---|---|---|---|")
+                for k, etq in niveles_con_alumno:
+                    w("| **%s** | %s | %s | %s |" % (
+                        etq, c["descriptores"][k]["texto"], c["descriptores"][k]["alumno"]["texto"],
+                        sencillo_1a_persona[(c["id"], k)]))
+                w("")
 
             m = c.get("matriz_cuantitativa")
             if m:
