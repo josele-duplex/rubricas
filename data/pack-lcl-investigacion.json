@@ -54,24 +54,45 @@
       "descriptores": {
         "n1": {
           "verbo": "anota",
-          "texto": "Anota el tema del trabajo con el título que aparece en el guion facilitado."
+          "texto": "Anota el tema del trabajo con el título que aparece en el guion facilitado.",
+          "alumno": {
+            "verbo": "anota",
+            "texto": "Anota el tema del trabajo con el título que aparece en el guion del profesor.",
+            "origen": "f386ed2b"
+          }
         },
         "n2": {
           "verbo": "delimita",
-          "texto": "Delimita el tema en una pregunta tomada de la lista de propuestas del guion."
+          "texto": "Delimita el tema en una pregunta tomada de la lista de propuestas del guion.",
+          "alumno": {
+            "verbo": "presenta",
+            "texto": "Presenta el tema como una pregunta elegida de la lista de propuestas del guion.",
+            "origen": "f3a1696c"
+          }
         },
         "n3": {
           "verbo": "formula",
-          "texto": "Formula la pregunta de investigación con palabras propias y delimita el periodo o el ámbito que abarca."
+          "texto": "Formula la pregunta de investigación con palabras propias y delimita el periodo o el ámbito que abarca.",
+          "alumno": {
+            "verbo": "formula",
+            "texto": "Formula con palabras propias la pregunta que guía el trabajo (pregunta de investigación) y señala la época (el periodo) o el campo (el ámbito) que abarca.",
+            "origen": "d0c7d74c"
+          }
         },
         "n4": {
           "verbo": "ajusta",
-          "texto": "Ajusta la pregunta de investigación a la información disponible y señala en una frase los aspectos del tema que quedan fuera."
+          "texto": "Ajusta la pregunta de investigación a la información disponible y señala en una frase los aspectos del tema que quedan fuera.",
+          "alumno": {
+            "verbo": "ajusta",
+            "texto": "Ajusta la pregunta de investigación a la información disponible en las fuentes y señala en una frase qué partes del tema quedan fuera del trabajo.",
+            "origen": "b2606317"
+          }
         }
       },
       "matriz_cuantitativa": null,
       "descriptor_cotejo": null,
-      "descriptor_un_punto": "Delimita el tema en una pregunta tomada de la lista de propuestas del guion."
+      "descriptor_un_punto": "Delimita el tema en una pregunta tomada de la lista de propuestas del guion.",
+      "nombre_alumno": "La pregunta del trabajo y hasta dónde llega"
     },
     {
       "id": "lcl-b-integracion-inv-2eso",
@@ -113,19 +134,39 @@
       "descriptores": {
         "n1": {
           "verbo": "traslada",
-          "texto": "Traslada al soporte los párrafos de la fuente en el orden en que aparecen."
+          "texto": "Traslada al soporte los párrafos de la fuente en el orden en que aparecen.",
+          "alumno": {
+            "verbo": "pone",
+            "texto": "Pone en el trabajo los párrafos de la fuente en el mismo orden en que aparecen.",
+            "origen": "55221115"
+          }
         },
         "n2": {
           "verbo": "agrupa",
-          "texto": "Agrupa la información en los apartados del guion facilitado y pone un título a cada uno."
+          "texto": "Agrupa la información en los apartados del guion facilitado y pone un título a cada uno.",
+          "alumno": {
+            "verbo": "agrupa",
+            "texto": "Agrupa la información en los apartados del guion del profesor y pone un título a cada uno.",
+            "origen": "567211f9"
+          }
         },
         "n3": {
           "verbo": "organiza",
-          "texto": "Organiza la información en apartados propios y sitúa cada dato en el apartado que lo recoge."
+          "texto": "Organiza la información en apartados propios y sitúa cada dato en el apartado que lo recoge.",
+          "alumno": {
+            "verbo": "organiza",
+            "texto": "Organiza la información en apartados propios, no los del guion, y sitúa cada dato en el apartado correcto.",
+            "origen": "c5fd1952"
+          }
         },
         "n4": {
           "verbo": "integra",
-          "texto": "Integra los datos en un esquema propio, reformula con palabras propias lo que cada apartado aporta y enlaza los apartados con conectores de orden."
+          "texto": "Integra los datos en un esquema propio, reformula con palabras propias lo que cada apartado aporta y enlaza los apartados con conectores de orden.",
+          "alumno": {
+            "verbo": "combina",
+            "texto": "Combina los datos en un esquema propio, explica con palabras propias lo que aporta cada apartado y enlaza los apartados con conectores de orden (*primero*, *después*, *por último*).",
+            "origen": "bee6bdf8"
+          }
         }
       },
       "matriz_cuantitativa": {
@@ -213,7 +254,8 @@
         "penalizaciones": []
       },
       "descriptor_cotejo": null,
-      "descriptor_un_punto": "Agrupa la información en los apartados del guion facilitado y pone un título a cada uno."
+      "descriptor_un_punto": "Agrupa la información en los apartados del guion facilitado y pone un título a cada uno.",
+      "nombre_alumno": "Organizar la información: esquema y apartados"
     },
     {
       "id": "lcl-b-soporte-inv-2eso",
@@ -256,19 +298,39 @@
       "descriptores": {
         "n1": {
           "verbo": "presenta",
-          "texto": "Presenta el trabajo en el soporte del modelo facilitado, con el texto del borrador dividido en pantallas."
+          "texto": "Presenta el trabajo en el soporte del modelo facilitado, con el texto del borrador dividido en pantallas.",
+          "alumno": {
+            "verbo": "presenta",
+            "texto": "Presenta el trabajo en el formato del modelo que da el profesor, con el texto del borrador repartido entre las pantallas.",
+            "origen": "d0a93762"
+          }
         },
         "n2": {
           "verbo": "combina",
-          "texto": "Combina en cada pantalla un bloque de texto breve y una imagen relacionada con el tema."
+          "texto": "Combina en cada pantalla un bloque de texto breve y una imagen relacionada con el tema.",
+          "alumno": {
+            "verbo": "combina",
+            "texto": "Combina en cada pantalla un texto breve y una imagen relacionada con el tema.",
+            "origen": "b3f5bc02"
+          }
         },
         "n3": {
           "verbo": "ajusta",
-          "texto": "Ajusta el soporte al contenido: sitúa los hechos de la línea de tiempo por orden y acompaña cada hito con un pie de imagen."
+          "texto": "Ajusta el soporte al contenido: sitúa los hechos de la línea de tiempo por orden y acompaña cada hito con un pie de imagen.",
+          "alumno": {
+            "verbo": "ajusta",
+            "texto": "Ajusta el formato al contenido: sitúa por orden los hechos en la línea del tiempo y acompaña cada hecho importante (hito) con una imagen y una frase debajo (pie de imagen).",
+            "origen": "b8c0aa1b"
+          }
         },
         "n4": {
           "verbo": "mantiene",
-          "texto": "Mantiene en todas las pantallas el mismo reparto entre texto e imagen y ajusta la cantidad de texto para que la imagen sostenga el dato."
+          "texto": "Mantiene en todas las pantallas el mismo reparto entre texto e imagen y ajusta la cantidad de texto para que la imagen sostenga el dato.",
+          "alumno": {
+            "verbo": "mantiene",
+            "texto": "Mantiene en todas las pantallas el mismo reparto entre texto e imagen y ajusta la cantidad de texto para que sea la imagen la que muestre el dato.",
+            "origen": "6d9ee616"
+          }
         }
       },
       "matriz_cuantitativa": {
@@ -356,7 +418,8 @@
         "penalizaciones": []
       },
       "descriptor_cotejo": null,
-      "descriptor_un_punto": "Combina en cada pantalla un bloque de texto breve y una imagen relacionada con el tema."
+      "descriptor_un_punto": "Combina en cada pantalla un bloque de texto breve y una imagen relacionada con el tema.",
+      "nombre_alumno": "Las pantallas: texto, imagen y línea del tiempo"
     },
     {
       "id": "lcl-d-correccion-inv-2eso",
@@ -399,19 +462,39 @@
       "descriptores": {
         "n1": {
           "verbo": "redacta",
-          "texto": "Redacta el texto del soporte con faltas de ortografía y de puntuación que entorpecen la lectura de cada pantalla."
+          "texto": "Redacta el texto del soporte con faltas de ortografía y de puntuación que entorpecen la lectura de cada pantalla.",
+          "alumno": {
+            "verbo": "redacta",
+            "texto": "Redacta el texto del trabajo con faltas de ortografía y de puntuación que hacen difícil leer cada pantalla.",
+            "origen": "cf530c4f"
+          }
         },
         "n2": {
           "verbo": "aplica",
-          "texto": "Aplica las normas de acentuación y de concordancia, con errores aislados en las palabras menos frecuentes."
+          "texto": "Aplica las normas de acentuación y de concordancia, con errores aislados en las palabras menos frecuentes.",
+          "alumno": {
+            "verbo": "aplica",
+            "texto": "Aplica las normas de las tildes (acentuación) y de concordancia entre palabras (*los datos importantes*), con algún error suelto en las palabras menos habituales.",
+            "origen": "1717022a"
+          }
         },
         "n3": {
           "verbo": "aplica",
-          "texto": "Aplica la puntuación de la enumeración y cierra con punto las frases completas del soporte."
+          "texto": "Aplica la puntuación de la enumeración y cierra con punto las frases completas del soporte.",
+          "alumno": {
+            "verbo": "separa",
+            "texto": "Separa con comas los elementos de una lista (enumeración) y cierra con punto las frases completas de las pantallas.",
+            "origen": "2bded61c"
+          }
         },
         "n4": {
           "verbo": "elige",
-          "texto": "Elige el término preciso del tema investigado en lugar de la palabra comodín y sostiene la ortografía y la puntuación en todas las pantallas."
+          "texto": "Elige el término preciso del tema investigado en lugar de la palabra comodín y sostiene la ortografía y la puntuación en todas las pantallas.",
+          "alumno": {
+            "verbo": "elige",
+            "texto": "Elige la palabra exacta del tema en lugar de palabras comodín (*cosa*, *hacer*, *poner*) y mantiene la ortografía y la puntuación correctas en todas las pantallas.",
+            "origen": "8946a2b8"
+          }
         }
       },
       "matriz_cuantitativa": {
@@ -499,7 +582,8 @@
         "penalizaciones": []
       },
       "descriptor_cotejo": null,
-      "descriptor_un_punto": "Aplica las normas de acentuación y de concordancia, con errores aislados en las palabras menos frecuentes."
+      "descriptor_un_punto": "Aplica las normas de acentuación y de concordancia, con errores aislados en las palabras menos frecuentes.",
+      "nombre_alumno": "Ortografía, gramática y vocabulario"
     },
     {
       "id": "lcl-b-tema-inv-3eso",
@@ -1170,24 +1254,45 @@
       "descriptores": {
         "n1": {
           "verbo": "enumera",
-          "texto": "Enumera los aspectos del tema en el orden en que aparecen en la propuesta."
+          "texto": "Enumera los aspectos del tema en el orden en que aparecen en la propuesta.",
+          "alumno": {
+            "verbo": "enumera",
+            "texto": "Enumera las partes del tema en el mismo orden en que aparecen en la propuesta del trabajo.",
+            "origen": "c08317d0"
+          }
         },
         "n2": {
           "verbo": "delimita",
-          "texto": "Delimita el tema en una pregunta propia y sitúa el periodo y el ámbito que abarca."
+          "texto": "Delimita el tema en una pregunta propia y sitúa el periodo y el ámbito que abarca.",
+          "alumno": {
+            "verbo": "presenta",
+            "texto": "Presenta el tema como una pregunta propia y señala la época (el periodo) y el campo (el ámbito) que abarca.",
+            "origen": "c8089c5a"
+          }
         },
         "n3": {
           "verbo": "formula",
-          "texto": "Formula la pregunta de investigación y desarrolla dos subpreguntas que ordenan el trabajo."
+          "texto": "Formula la pregunta de investigación y desarrolla dos subpreguntas que ordenan el trabajo.",
+          "alumno": {
+            "verbo": "formula",
+            "texto": "Formula la pregunta que guía el trabajo (pregunta de investigación) y desarrolla a partir de ella dos preguntas más concretas (subpreguntas) que ordenan el trabajo.",
+            "origen": "b437a6c0"
+          }
         },
         "n4": {
           "verbo": "justifica",
-          "texto": "Justifica la pregunta de investigación por lo que las fuentes consultadas dejan sin responder y delimita el alcance del trabajo."
+          "texto": "Justifica la pregunta de investigación por lo que las fuentes consultadas dejan sin responder y delimita el alcance del trabajo.",
+          "alumno": {
+            "verbo": "justifica",
+            "texto": "Justifica la pregunta de investigación a partir de lo que las fuentes consultadas no responden todavía, y señala hasta dónde llega el trabajo (el alcance).",
+            "origen": "324d4d89"
+          }
         }
       },
       "matriz_cuantitativa": null,
       "descriptor_cotejo": null,
-      "descriptor_un_punto": "Delimita el tema en una pregunta propia y sitúa el periodo y el ámbito que abarca."
+      "descriptor_un_punto": "Delimita el tema en una pregunta propia y sitúa el periodo y el ámbito que abarca.",
+      "nombre_alumno": "La pregunta del trabajo y hasta dónde llega"
     },
     {
       "id": "lcl-b-fuentes-inv-4eso",
@@ -1229,19 +1334,39 @@
       "descriptores": {
         "n1": {
           "verbo": "localiza",
-          "texto": "Localiza la información en una sola fuente y la traslada al trabajo con las palabras del original."
+          "texto": "Localiza la información en una sola fuente y la traslada al trabajo con las palabras del original.",
+          "alumno": {
+            "verbo": "localiza",
+            "texto": "Localiza la información en una sola fuente y la pone en el trabajo con las mismas palabras del original.",
+            "origen": "25ce215e"
+          }
         },
         "n2": {
           "verbo": "selecciona",
-          "texto": "Selecciona información de dos fuentes distintas y relaciona los datos que ofrecen sobre el tema."
+          "texto": "Selecciona información de dos fuentes distintas y relaciona los datos que ofrecen sobre el tema.",
+          "alumno": {
+            "verbo": "elige",
+            "texto": "Elige información de dos fuentes distintas y relaciona los datos de las dos sobre el tema.",
+            "origen": "f1c45bfb"
+          }
         },
         "n3": {
           "verbo": "contrasta",
-          "texto": "Contrasta los datos principales entre tres fuentes de distinta procedencia y descarta las que carecen de autoría."
+          "texto": "Contrasta los datos principales entre tres fuentes de distinta procedencia y descarta las que carecen de autoría.",
+          "alumno": {
+            "verbo": "contrasta",
+            "texto": "Contrasta los datos principales en tres fuentes de distinto origen, para ver si coinciden, y descarta las fuentes sin firma (sin autoría).",
+            "origen": "bba29948"
+          }
         },
         "n4": {
           "verbo": "valora",
-          "texto": "Valora la fiabilidad de cada fuente por la autoría, la fecha y el respaldo de los datos, y justifica la selección final dentro del trabajo."
+          "texto": "Valora la fiabilidad de cada fuente por la autoría, la fecha y el respaldo de los datos, y justifica la selección final dentro del trabajo.",
+          "alumno": {
+            "verbo": "valora",
+            "texto": "Valora si cada fuente es de fiar (la fiabilidad) según quién la firma, de cuándo es y si otras pruebas o fuentes respaldan los datos, y justifica dentro del trabajo la elección final de fuentes.",
+            "origen": "5d8fe465"
+          }
         }
       },
       "matriz_cuantitativa": {
@@ -1329,7 +1454,8 @@
         "penalizaciones": []
       },
       "descriptor_cotejo": null,
-      "descriptor_un_punto": "Selecciona información de dos fuentes distintas y relaciona los datos que ofrecen sobre el tema."
+      "descriptor_un_punto": "Selecciona información de dos fuentes distintas y relaciona los datos que ofrecen sobre el tema.",
+      "nombre_alumno": "Buscar y comprobar las fuentes"
     },
     {
       "id": "lcl-b-integracion-inv-4eso",
@@ -1371,19 +1497,39 @@
       "descriptores": {
         "n1": {
           "verbo": "traslada",
-          "texto": "Traslada al soporte los datos de las fuentes en el orden de consulta."
+          "texto": "Traslada al soporte los datos de las fuentes en el orden de consulta.",
+          "alumno": {
+            "verbo": "pone",
+            "texto": "Pone en el trabajo los datos de las fuentes, uno detrás de otro, en el orden en que fueron consultadas.",
+            "origen": "05fc5a4a"
+          }
         },
         "n2": {
           "verbo": "agrupa",
-          "texto": "Agrupa la información en apartados y anuncia el contenido de cada uno con un título."
+          "texto": "Agrupa la información en apartados y anuncia el contenido de cada uno con un título.",
+          "alumno": {
+            "verbo": "agrupa",
+            "texto": "Agrupa la información en apartados y pone a cada uno un título que dice de qué trata.",
+            "origen": "42c4abbd"
+          }
         },
         "n3": {
           "verbo": "organiza",
-          "texto": "Organiza la información en un esquema propio de tres o más apartados y encadena los apartados con conectores de orden y de contraste."
+          "texto": "Organiza la información en un esquema propio de tres o más apartados y encadena los apartados con conectores de orden y de contraste.",
+          "alumno": {
+            "verbo": "organiza",
+            "texto": "Organiza la información en un esquema propio de tres o más apartados y los enlaza con conectores de orden (*en primer lugar*) y de oposición (*sin embargo*).",
+            "origen": "091ee2c8"
+          }
         },
         "n4": {
           "verbo": "integra",
-          "texto": "Integra los datos de varias fuentes en un esquema propio y reelabora la información en un texto que responde a la pregunta de investigación."
+          "texto": "Integra los datos de varias fuentes en un esquema propio y reelabora la información en un texto que responde a la pregunta de investigación.",
+          "alumno": {
+            "verbo": "combina",
+            "texto": "Combina los datos de varias fuentes en un esquema propio y vuelve a escribir la información con palabras propias (reelaboración) en un texto que da respuesta a la pregunta de investigación.",
+            "origen": "d576ae48"
+          }
         }
       },
       "matriz_cuantitativa": {
@@ -1471,7 +1617,8 @@
         "penalizaciones": []
       },
       "descriptor_cotejo": null,
-      "descriptor_un_punto": "Agrupa la información en apartados y anuncia el contenido de cada uno con un título."
+      "descriptor_un_punto": "Agrupa la información en apartados y anuncia el contenido de cada uno con un título.",
+      "nombre_alumno": "Organizar la información: esquema y apartados"
     },
     {
       "id": "lcl-b-soporte-inv-4eso",
@@ -1514,19 +1661,39 @@
       "descriptores": {
         "n1": {
           "verbo": "presenta",
-          "texto": "Presenta el trabajo en el soporte elegido con un cuerpo de letra único en todas las pantallas."
+          "texto": "Presenta el trabajo en el soporte elegido con un cuerpo de letra único en todas las pantallas.",
+          "alumno": {
+            "verbo": "presenta",
+            "texto": "Presenta el trabajo en el formato elegido (el soporte: presentación, mural digital, vídeo…) con la letra del mismo tamaño en todas las pantallas.",
+            "origen": "bb61a2b4"
+          }
         },
         "n2": {
           "verbo": "combina",
-          "texto": "Combina en cada pantalla texto, imagen y pie, y mantiene el mismo esquema de color en el trabajo."
+          "texto": "Combina en cada pantalla texto, imagen y pie, y mantiene el mismo esquema de color en el trabajo.",
+          "alumno": {
+            "verbo": "combina",
+            "texto": "Combina en cada pantalla texto, imagen y una frase bajo la imagen (pie de foto), y mantiene los mismos colores en todo el trabajo.",
+            "origen": "f39269fd"
+          }
         },
         "n3": {
           "verbo": "ajusta",
-          "texto": "Ajusta el soporte al contenido, gradúa la cantidad de texto por pantalla y dirige la mirada con el tamaño y el color."
+          "texto": "Ajusta el soporte al contenido, gradúa la cantidad de texto por pantalla y dirige la mirada con el tamaño y el color.",
+          "alumno": {
+            "verbo": "ajusta",
+            "texto": "Ajusta el formato al contenido, gradúa cuánto texto pone en cada pantalla y usa el tamaño y el color para llevar la vista del público a lo importante.",
+            "origen": "166112f8"
+          }
         },
         "n4": {
           "verbo": "elige",
-          "texto": "Elige el soporte según lo que el tema pide, justifica la elección por el destinatario y adapta el reparto entre texto e imagen a cada apartado."
+          "texto": "Elige el soporte según lo que el tema pide, justifica la elección por el destinatario y adapta el reparto entre texto e imagen a cada apartado.",
+          "alumno": {
+            "verbo": "elige",
+            "texto": "Elige el formato según lo que pide el tema, justifica la elección pensando en el público al que va dirigido (el destinatario) y adapta la cantidad de texto y de imagen a cada apartado.",
+            "origen": "2bfa4d69"
+          }
         }
       },
       "matriz_cuantitativa": {
@@ -1614,7 +1781,8 @@
         "penalizaciones": []
       },
       "descriptor_cotejo": null,
-      "descriptor_un_punto": "Combina en cada pantalla texto, imagen y pie, y mantiene el mismo esquema de color en el trabajo."
+      "descriptor_un_punto": "Combina en cada pantalla texto, imagen y pie, y mantiene el mismo esquema de color en el trabajo.",
+      "nombre_alumno": "Las pantallas: texto, imagen y línea del tiempo"
     },
     {
       "id": "lcl-b-atribucion-inv-4eso",
@@ -1656,19 +1824,39 @@
       "descriptores": {
         "n1": {
           "verbo": "indica",
-          "texto": "Indica al final del trabajo el nombre de la página de la que toma los datos."
+          "texto": "Indica al final del trabajo el nombre de la página de la que toma los datos.",
+          "alumno": {
+            "verbo": "indica",
+            "texto": "Indica al final del trabajo el nombre de la página web de la que salen los datos.",
+            "origen": "a5e3692a"
+          }
         },
         "n2": {
           "verbo": "anota",
-          "texto": "Anota la dirección completa de cada fuente utilizada en un apartado final."
+          "texto": "Anota la dirección completa de cada fuente utilizada en un apartado final.",
+          "alumno": {
+            "verbo": "anota",
+            "texto": "Anota en un apartado final la dirección completa de cada fuente usada (el enlace entero, si es una página web).",
+            "origen": "e15b718f"
+          }
         },
         "n3": {
           "verbo": "documenta",
-          "texto": "Documenta cada dato con la fuente de procedencia y añade el autor y la fecha en la referencia."
+          "texto": "Documenta cada dato con la fuente de procedencia y añade el autor y la fecha en la referencia.",
+          "alumno": {
+            "verbo": "indica",
+            "texto": "Indica junto a cada dato de qué fuente sale, y añade el autor y la fecha en la referencia de esa fuente.",
+            "origen": "da50977f"
+          }
         },
         "n4": {
           "verbo": "respeta",
-          "texto": "Respeta la propiedad intelectual del material ajeno: separa con comillas lo tomado literalmente, documenta el origen de cada imagen y distingue la aportación propia de la ajena."
+          "texto": "Respeta la propiedad intelectual del material ajeno: separa con comillas lo tomado literalmente, documenta el origen de cada imagen y distingue la aportación propia de la ajena.",
+          "alumno": {
+            "verbo": "respeta",
+            "texto": "Respeta el trabajo de otros (la propiedad intelectual): pone entre comillas las frases copiadas tal cual, indica de dónde sale cada imagen y distingue las ideas propias de las de otros.",
+            "origen": "a599c145"
+          }
         }
       },
       "matriz_cuantitativa": {
@@ -1756,7 +1944,8 @@
         "penalizaciones": []
       },
       "descriptor_cotejo": null,
-      "descriptor_un_punto": "Anota la dirección completa de cada fuente utilizada en un apartado final."
+      "descriptor_un_punto": "Anota la dirección completa de cada fuente utilizada en un apartado final.",
+      "nombre_alumno": "Decir de dónde sale cada dato y cada imagen"
     },
     {
       "id": "lcl-d-correccion-inv-4eso",
@@ -1799,19 +1988,39 @@
       "descriptores": {
         "n1": {
           "verbo": "redacta",
-          "texto": "Redacta el texto del soporte con faltas de ortografía y de puntuación que interrumpen la lectura."
+          "texto": "Redacta el texto del soporte con faltas de ortografía y de puntuación que interrumpen la lectura.",
+          "alumno": {
+            "verbo": "redacta",
+            "texto": "Redacta el texto del trabajo con faltas de ortografía y de puntuación que cortan la lectura.",
+            "origen": "50af3d02"
+          }
         },
         "n2": {
           "verbo": "aplica",
-          "texto": "Aplica las normas de acentuación, concordancia y puntuación, con errores en los rótulos y los pies."
+          "texto": "Aplica las normas de acentuación, concordancia y puntuación, con errores en los rótulos y los pies.",
+          "alumno": {
+            "verbo": "aplica",
+            "texto": "Aplica las normas de las tildes (acentuación), de concordancia entre palabras y de puntuación, con errores en los títulos de las pantallas (rótulos) y en las frases bajo las imágenes (pies de foto).",
+            "origen": "5e473dcd"
+          }
         },
         "n3": {
           "verbo": "aplica",
-          "texto": "Aplica la puntuación del inciso explicativo y la del dato entrecomillado en cada pantalla."
+          "texto": "Aplica la puntuación del inciso explicativo y la del dato entrecomillado en cada pantalla.",
+          "alumno": {
+            "verbo": "aplica",
+            "texto": "Aplica en cada pantalla la puntuación de las aclaraciones entre comas (incisos: *el proyecto, iniciado en 2020, …*) y la de los datos copiados de una fuente entre comillas.",
+            "origen": "df9082e3"
+          }
         },
         "n4": {
           "verbo": "elige",
-          "texto": "Elige el término preciso del campo del tema y mantiene el mismo registro en el texto y en los rótulos."
+          "texto": "Elige el término preciso del campo del tema y mantiene el mismo registro en el texto y en los rótulos.",
+          "alumno": {
+            "verbo": "elige",
+            "texto": "Elige la palabra exacta del tema en cada caso y mantiene el mismo tono (registro) en el texto y en los títulos de las pantallas (rótulos).",
+            "origen": "9bdf6c07"
+          }
         }
       },
       "matriz_cuantitativa": {
@@ -1899,7 +2108,8 @@
         "penalizaciones": []
       },
       "descriptor_cotejo": null,
-      "descriptor_un_punto": "Aplica las normas de acentuación, concordancia y puntuación, con errores en los rótulos y los pies."
+      "descriptor_un_punto": "Aplica las normas de acentuación, concordancia y puntuación, con errores en los rótulos y los pies.",
+      "nombre_alumno": "Ortografía, gramática y vocabulario"
     },
     {
       "id": "lcl-b-tema-inv-1bach",

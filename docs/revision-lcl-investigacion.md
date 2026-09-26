@@ -30,6 +30,15 @@
 | **N3** | Formula la pregunta de investigación con palabras propias y delimita el periodo o el ámbito que abarca. |
 | **N4** | Ajusta la pregunta de investigación a la información disponible y señala en una frase los aspectos del tema que quedan fuera. |
 
+**Lenguaje sencillo** — lo que lee el alumno en la ficha y en la autoevaluación.
+
+| Nivel | Técnico | Sencillo | Sencillo (autoevaluación) |
+|---|---|---|---|
+| **N1** | Anota el tema del trabajo con el título que aparece en el guion facilitado. | Anota el tema del trabajo con el título que aparece en el guion del profesor. | Anoto el tema del trabajo con el título que aparece en el guion del profesor. |
+| **N2** | Delimita el tema en una pregunta tomada de la lista de propuestas del guion. | Presenta el tema como una pregunta elegida de la lista de propuestas del guion. | Presento el tema como una pregunta elegida de la lista de propuestas del guion. |
+| **N3** | Formula la pregunta de investigación con palabras propias y delimita el periodo o el ámbito que abarca. | Formula con palabras propias la pregunta que guía el trabajo (pregunta de investigación) y señala la época (el periodo) o el campo (el ámbito) que abarca. | Formulo con palabras propias la pregunta que guía el trabajo (pregunta de investigación) y señalo la época (el periodo) o el campo (el ámbito) que abarca. |
+| **N4** | Ajusta la pregunta de investigación a la información disponible y señala en una frase los aspectos del tema que quedan fuera. | Ajusta la pregunta de investigación a la información disponible en las fuentes y señala en una frase qué partes del tema quedan fuera del trabajo. | Ajusto la pregunta de investigación a la información disponible en las fuentes y señalo en una frase qué partes del tema quedan fuera del trabajo. |
+
 *Sin matriz cuantitativa: esta dimensión se juzga en conjunto, no hay nada que contar.*
 
 ### Integración de la información: esquema propio y apartados  ·  35%  ·  bloque B  ·  🔒 obligatorio
@@ -44,6 +53,15 @@
 | **N2** | Agrupa la información en los apartados del guion facilitado y pone un título a cada uno. |
 | **N3** | Organiza la información en apartados propios y sitúa cada dato en el apartado que lo recoge. |
 | **N4** | Integra los datos en un esquema propio, reformula con palabras propias lo que cada apartado aporta y enlaza los apartados con conectores de orden. |
+
+**Lenguaje sencillo** — lo que lee el alumno en la ficha y en la autoevaluación.
+
+| Nivel | Técnico | Sencillo | Sencillo (autoevaluación) |
+|---|---|---|---|
+| **N1** | Traslada al soporte los párrafos de la fuente en el orden en que aparecen. | Pone en el trabajo los párrafos de la fuente en el mismo orden en que aparecen. | Pongo en el trabajo los párrafos de la fuente en el mismo orden en que aparecen. |
+| **N2** | Agrupa la información en los apartados del guion facilitado y pone un título a cada uno. | Agrupa la información en los apartados del guion del profesor y pone un título a cada uno. | Agrupo la información en los apartados del guion del profesor y pongo un título a cada uno. |
+| **N3** | Organiza la información en apartados propios y sitúa cada dato en el apartado que lo recoge. | Organiza la información en apartados propios, no los del guion, y sitúa cada dato en el apartado correcto. | Organizo la información en apartados propios, no los del guion, y sitúo cada dato en el apartado correcto. |
+| **N4** | Integra los datos en un esquema propio, reformula con palabras propias lo que cada apartado aporta y enlaza los apartados con conectores de orden. | Combina los datos en un esquema propio, explica con palabras propias lo que aporta cada apartado y enlaza los apartados con conectores de orden (*primero*, *después*, *por último*). | Combino los datos en un esquema propio, explico con palabras propias lo que aporta cada apartado y enlazo los apartados con conectores de orden (*primero*, *después*, *por último*). |
 
 **Matriz cuantitativa** — total 10 puntos. Es lo que usa el modo IA para corregir.
 
@@ -68,6 +86,15 @@
 | **N3** | Ajusta el soporte al contenido: sitúa los hechos de la línea de tiempo por orden y acompaña cada hito con un pie de imagen. |
 | **N4** | Mantiene en todas las pantallas el mismo reparto entre texto e imagen y ajusta la cantidad de texto para que la imagen sostenga el dato. |
 
+**Lenguaje sencillo** — lo que lee el alumno en la ficha y en la autoevaluación.
+
+| Nivel | Técnico | Sencillo | Sencillo (autoevaluación) |
+|---|---|---|---|
+| **N1** | Presenta el trabajo en el soporte del modelo facilitado, con el texto del borrador dividido en pantallas. | Presenta el trabajo en el formato del modelo que da el profesor, con el texto del borrador repartido entre las pantallas. | Presento el trabajo en el formato del modelo que da el profesor, con el texto del borrador repartido entre las pantallas. |
+| **N2** | Combina en cada pantalla un bloque de texto breve y una imagen relacionada con el tema. | Combina en cada pantalla un texto breve y una imagen relacionada con el tema. | Combino en cada pantalla un texto breve y una imagen relacionada con el tema. |
+| **N3** | Ajusta el soporte al contenido: sitúa los hechos de la línea de tiempo por orden y acompaña cada hito con un pie de imagen. | Ajusta el formato al contenido: sitúa por orden los hechos en la línea del tiempo y acompaña cada hecho importante (hito) con una imagen y una frase debajo (pie de imagen). | Ajusto el formato al contenido: sitúo por orden los hechos en la línea del tiempo y acompaño cada hecho importante (hito) con una imagen y una frase debajo (pie de imagen). |
+| **N4** | Mantiene en todas las pantallas el mismo reparto entre texto e imagen y ajusta la cantidad de texto para que la imagen sostenga el dato. | Mantiene en todas las pantallas el mismo reparto entre texto e imagen y ajusta la cantidad de texto para que sea la imagen la que muestre el dato. | Mantengo en todas las pantallas el mismo reparto entre texto e imagen y ajusto la cantidad de texto para que sea la imagen la que muestre el dato. |
+
 **Matriz cuantitativa** — total 10 puntos. Es lo que usa el modo IA para corregir.
 
 | Componente | Máx. | Bandas |
@@ -88,6 +115,15 @@
 | **N2** | Aplica las normas de acentuación y de concordancia, con errores aislados en las palabras menos frecuentes. |
 | **N3** | Aplica la puntuación de la enumeración y cierra con punto las frases completas del soporte. |
 | **N4** | Elige el término preciso del tema investigado en lugar de la palabra comodín y sostiene la ortografía y la puntuación en todas las pantallas. |
+
+**Lenguaje sencillo** — lo que lee el alumno en la ficha y en la autoevaluación.
+
+| Nivel | Técnico | Sencillo | Sencillo (autoevaluación) |
+|---|---|---|---|
+| **N1** | Redacta el texto del soporte con faltas de ortografía y de puntuación que entorpecen la lectura de cada pantalla. | Redacta el texto del trabajo con faltas de ortografía y de puntuación que hacen difícil leer cada pantalla. | Redacto el texto del trabajo con faltas de ortografía y de puntuación que hacen difícil leer cada pantalla. |
+| **N2** | Aplica las normas de acentuación y de concordancia, con errores aislados en las palabras menos frecuentes. | Aplica las normas de las tildes (acentuación) y de concordancia entre palabras (*los datos importantes*), con algún error suelto en las palabras menos habituales. | Aplico las normas de las tildes (acentuación) y de concordancia entre palabras (*los datos importantes*), con algún error suelto en las palabras menos habituales. |
+| **N3** | Aplica la puntuación de la enumeración y cierra con punto las frases completas del soporte. | Separa con comas los elementos de una lista (enumeración) y cierra con punto las frases completas de las pantallas. | Separo con comas los elementos de una lista (enumeración) y cierro con punto las frases completas de las pantallas. |
+| **N4** | Elige el término preciso del tema investigado en lugar de la palabra comodín y sostiene la ortografía y la puntuación en todas las pantallas. | Elige la palabra exacta del tema en lugar de palabras comodín (*cosa*, *hacer*, *poner*) y mantiene la ortografía y la puntuación correctas en todas las pantallas. | Elijo la palabra exacta del tema en lugar de palabras comodín (*cosa*, *hacer*, *poner*) y mantengo la ortografía y la puntuación correctas en todas las pantallas. |
 
 **Matriz cuantitativa** — total 10 puntos. Es lo que usa el modo IA para corregir.
 
@@ -236,6 +272,15 @@
 | **N3** | Formula la pregunta de investigación y desarrolla dos subpreguntas que ordenan el trabajo. |
 | **N4** | Justifica la pregunta de investigación por lo que las fuentes consultadas dejan sin responder y delimita el alcance del trabajo. |
 
+**Lenguaje sencillo** — lo que lee el alumno en la ficha y en la autoevaluación.
+
+| Nivel | Técnico | Sencillo | Sencillo (autoevaluación) |
+|---|---|---|---|
+| **N1** | Enumera los aspectos del tema en el orden en que aparecen en la propuesta. | Enumera las partes del tema en el mismo orden en que aparecen en la propuesta del trabajo. | Enumero las partes del tema en el mismo orden en que aparecen en la propuesta del trabajo. |
+| **N2** | Delimita el tema en una pregunta propia y sitúa el periodo y el ámbito que abarca. | Presenta el tema como una pregunta propia y señala la época (el periodo) y el campo (el ámbito) que abarca. | Presento el tema como una pregunta propia y señalo la época (el periodo) y el campo (el ámbito) que abarca. |
+| **N3** | Formula la pregunta de investigación y desarrolla dos subpreguntas que ordenan el trabajo. | Formula la pregunta que guía el trabajo (pregunta de investigación) y desarrolla a partir de ella dos preguntas más concretas (subpreguntas) que ordenan el trabajo. | Formulo la pregunta que guía el trabajo (pregunta de investigación) y desarrollo a partir de ella dos preguntas más concretas (subpreguntas) que ordenan el trabajo. |
+| **N4** | Justifica la pregunta de investigación por lo que las fuentes consultadas dejan sin responder y delimita el alcance del trabajo. | Justifica la pregunta de investigación a partir de lo que las fuentes consultadas no responden todavía, y señala hasta dónde llega el trabajo (el alcance). | Justifico la pregunta de investigación a partir de lo que las fuentes consultadas no responden todavía, y señalo hasta dónde llega el trabajo (el alcance). |
+
 *Sin matriz cuantitativa: esta dimensión se juzga en conjunto, no hay nada que contar.*
 
 ### Fuentes: selección y contraste de la información  ·  20%  ·  bloque B  ·  🔒 obligatorio
@@ -250,6 +295,15 @@
 | **N2** | Selecciona información de dos fuentes distintas y relaciona los datos que ofrecen sobre el tema. |
 | **N3** | Contrasta los datos principales entre tres fuentes de distinta procedencia y descarta las que carecen de autoría. |
 | **N4** | Valora la fiabilidad de cada fuente por la autoría, la fecha y el respaldo de los datos, y justifica la selección final dentro del trabajo. |
+
+**Lenguaje sencillo** — lo que lee el alumno en la ficha y en la autoevaluación.
+
+| Nivel | Técnico | Sencillo | Sencillo (autoevaluación) |
+|---|---|---|---|
+| **N1** | Localiza la información en una sola fuente y la traslada al trabajo con las palabras del original. | Localiza la información en una sola fuente y la pone en el trabajo con las mismas palabras del original. | Localizo la información en una sola fuente y la pongo en el trabajo con las mismas palabras del original. |
+| **N2** | Selecciona información de dos fuentes distintas y relaciona los datos que ofrecen sobre el tema. | Elige información de dos fuentes distintas y relaciona los datos de las dos sobre el tema. | Elijo información de dos fuentes distintas y relaciono los datos de las dos sobre el tema. |
+| **N3** | Contrasta los datos principales entre tres fuentes de distinta procedencia y descarta las que carecen de autoría. | Contrasta los datos principales en tres fuentes de distinto origen, para ver si coinciden, y descarta las fuentes sin firma (sin autoría). | Contrasto los datos principales en tres fuentes de distinto origen, para ver si coinciden, y descarto las fuentes sin firma (sin autoría). |
+| **N4** | Valora la fiabilidad de cada fuente por la autoría, la fecha y el respaldo de los datos, y justifica la selección final dentro del trabajo. | Valora si cada fuente es de fiar (la fiabilidad) según quién la firma, de cuándo es y si otras pruebas o fuentes respaldan los datos, y justifica dentro del trabajo la elección final de fuentes. | Valoro si cada fuente es de fiar (la fiabilidad) según quién la firma, de cuándo es y si otras pruebas o fuentes respaldan los datos, y justifico dentro del trabajo la elección final de fuentes. |
 
 **Matriz cuantitativa** — total 10 puntos. Es lo que usa el modo IA para corregir.
 
@@ -271,6 +325,15 @@
 | **N2** | Agrupa la información en apartados y anuncia el contenido de cada uno con un título. |
 | **N3** | Organiza la información en un esquema propio de tres o más apartados y encadena los apartados con conectores de orden y de contraste. |
 | **N4** | Integra los datos de varias fuentes en un esquema propio y reelabora la información en un texto que responde a la pregunta de investigación. |
+
+**Lenguaje sencillo** — lo que lee el alumno en la ficha y en la autoevaluación.
+
+| Nivel | Técnico | Sencillo | Sencillo (autoevaluación) |
+|---|---|---|---|
+| **N1** | Traslada al soporte los datos de las fuentes en el orden de consulta. | Pone en el trabajo los datos de las fuentes, uno detrás de otro, en el orden en que fueron consultadas. | Pongo en el trabajo los datos de las fuentes, uno detrás de otro, en el orden en que fueron consultadas. |
+| **N2** | Agrupa la información en apartados y anuncia el contenido de cada uno con un título. | Agrupa la información en apartados y pone a cada uno un título que dice de qué trata. | Agrupo la información en apartados y pongo a cada uno un título que dice de qué trata. |
+| **N3** | Organiza la información en un esquema propio de tres o más apartados y encadena los apartados con conectores de orden y de contraste. | Organiza la información en un esquema propio de tres o más apartados y los enlaza con conectores de orden (*en primer lugar*) y de oposición (*sin embargo*). | Organizo la información en un esquema propio de tres o más apartados y los enlazo con conectores de orden (*en primer lugar*) y de oposición (*sin embargo*). |
+| **N4** | Integra los datos de varias fuentes en un esquema propio y reelabora la información en un texto que responde a la pregunta de investigación. | Combina los datos de varias fuentes en un esquema propio y vuelve a escribir la información con palabras propias (reelaboración) en un texto que da respuesta a la pregunta de investigación. | Combino los datos de varias fuentes en un esquema propio y vuelvo a escribir la información con palabras propias (reelaboración) en un texto que da respuesta a la pregunta de investigación. |
 
 **Matriz cuantitativa** — total 10 puntos. Es lo que usa el modo IA para corregir.
 
@@ -295,6 +358,15 @@
 | **N3** | Ajusta el soporte al contenido, gradúa la cantidad de texto por pantalla y dirige la mirada con el tamaño y el color. |
 | **N4** | Elige el soporte según lo que el tema pide, justifica la elección por el destinatario y adapta el reparto entre texto e imagen a cada apartado. |
 
+**Lenguaje sencillo** — lo que lee el alumno en la ficha y en la autoevaluación.
+
+| Nivel | Técnico | Sencillo | Sencillo (autoevaluación) |
+|---|---|---|---|
+| **N1** | Presenta el trabajo en el soporte elegido con un cuerpo de letra único en todas las pantallas. | Presenta el trabajo en el formato elegido (el soporte: presentación, mural digital, vídeo…) con la letra del mismo tamaño en todas las pantallas. | Presento el trabajo en el formato elegido (el soporte: presentación, mural digital, vídeo…) con la letra del mismo tamaño en todas las pantallas. |
+| **N2** | Combina en cada pantalla texto, imagen y pie, y mantiene el mismo esquema de color en el trabajo. | Combina en cada pantalla texto, imagen y una frase bajo la imagen (pie de foto), y mantiene los mismos colores en todo el trabajo. | Combino en cada pantalla texto, imagen y una frase bajo la imagen (pie de foto), y mantengo los mismos colores en todo el trabajo. |
+| **N3** | Ajusta el soporte al contenido, gradúa la cantidad de texto por pantalla y dirige la mirada con el tamaño y el color. | Ajusta el formato al contenido, gradúa cuánto texto pone en cada pantalla y usa el tamaño y el color para llevar la vista del público a lo importante. | Ajusto el formato al contenido, gradúo cuánto texto pongo en cada pantalla y uso el tamaño y el color para llevar la vista del público a lo importante. |
+| **N4** | Elige el soporte según lo que el tema pide, justifica la elección por el destinatario y adapta el reparto entre texto e imagen a cada apartado. | Elige el formato según lo que pide el tema, justifica la elección pensando en el público al que va dirigido (el destinatario) y adapta la cantidad de texto y de imagen a cada apartado. | Elijo el formato según lo que pide el tema, justifico la elección pensando en el público al que va dirigido (el destinatario) y adapto la cantidad de texto y de imagen a cada apartado. |
+
 **Matriz cuantitativa** — total 10 puntos. Es lo que usa el modo IA para corregir.
 
 | Componente | Máx. | Bandas |
@@ -316,6 +388,15 @@
 | **N3** | Documenta cada dato con la fuente de procedencia y añade el autor y la fecha en la referencia. |
 | **N4** | Respeta la propiedad intelectual del material ajeno: separa con comillas lo tomado literalmente, documenta el origen de cada imagen y distingue la aportación propia de la ajena. |
 
+**Lenguaje sencillo** — lo que lee el alumno en la ficha y en la autoevaluación.
+
+| Nivel | Técnico | Sencillo | Sencillo (autoevaluación) |
+|---|---|---|---|
+| **N1** | Indica al final del trabajo el nombre de la página de la que toma los datos. | Indica al final del trabajo el nombre de la página web de la que salen los datos. | Indico al final del trabajo el nombre de la página web de la que salen los datos. |
+| **N2** | Anota la dirección completa de cada fuente utilizada en un apartado final. | Anota en un apartado final la dirección completa de cada fuente usada (el enlace entero, si es una página web). | Anoto en un apartado final la dirección completa de cada fuente usada (el enlace entero, si es una página web). |
+| **N3** | Documenta cada dato con la fuente de procedencia y añade el autor y la fecha en la referencia. | Indica junto a cada dato de qué fuente sale, y añade el autor y la fecha en la referencia de esa fuente. | Indico junto a cada dato de qué fuente sale, y añado el autor y la fecha en la referencia de esa fuente. |
+| **N4** | Respeta la propiedad intelectual del material ajeno: separa con comillas lo tomado literalmente, documenta el origen de cada imagen y distingue la aportación propia de la ajena. | Respeta el trabajo de otros (la propiedad intelectual): pone entre comillas las frases copiadas tal cual, indica de dónde sale cada imagen y distingue las ideas propias de las de otros. | Respeto el trabajo de otros (la propiedad intelectual): pongo entre comillas las frases copiadas tal cual, indico de dónde sale cada imagen y distingo las ideas propias de las de otros. |
+
 **Matriz cuantitativa** — total 10 puntos. Es lo que usa el modo IA para corregir.
 
 | Componente | Máx. | Bandas |
@@ -336,6 +417,15 @@
 | **N2** | Aplica las normas de acentuación, concordancia y puntuación, con errores en los rótulos y los pies. |
 | **N3** | Aplica la puntuación del inciso explicativo y la del dato entrecomillado en cada pantalla. |
 | **N4** | Elige el término preciso del campo del tema y mantiene el mismo registro en el texto y en los rótulos. |
+
+**Lenguaje sencillo** — lo que lee el alumno en la ficha y en la autoevaluación.
+
+| Nivel | Técnico | Sencillo | Sencillo (autoevaluación) |
+|---|---|---|---|
+| **N1** | Redacta el texto del soporte con faltas de ortografía y de puntuación que interrumpen la lectura. | Redacta el texto del trabajo con faltas de ortografía y de puntuación que cortan la lectura. | Redacto el texto del trabajo con faltas de ortografía y de puntuación que cortan la lectura. |
+| **N2** | Aplica las normas de acentuación, concordancia y puntuación, con errores en los rótulos y los pies. | Aplica las normas de las tildes (acentuación), de concordancia entre palabras y de puntuación, con errores en los títulos de las pantallas (rótulos) y en las frases bajo las imágenes (pies de foto). | Aplico las normas de las tildes (acentuación), de concordancia entre palabras y de puntuación, con errores en los títulos de las pantallas (rótulos) y en las frases bajo las imágenes (pies de foto). |
+| **N3** | Aplica la puntuación del inciso explicativo y la del dato entrecomillado en cada pantalla. | Aplica en cada pantalla la puntuación de las aclaraciones entre comas (incisos: *el proyecto, iniciado en 2020, …*) y la de los datos copiados de una fuente entre comillas. | Aplico en cada pantalla la puntuación de las aclaraciones entre comas (incisos: *el proyecto, iniciado en 2020, …*) y la de los datos copiados de una fuente entre comillas. |
+| **N4** | Elige el término preciso del campo del tema y mantiene el mismo registro en el texto y en los rótulos. | Elige la palabra exacta del tema en cada caso y mantiene el mismo tono (registro) en el texto y en los títulos de las pantallas (rótulos). | Elijo la palabra exacta del tema en cada caso y mantengo el mismo tono (registro) en el texto y en los títulos de las pantallas (rótulos). |
 
 **Matriz cuantitativa** — total 10 puntos. Es lo que usa el modo IA para corregir.
 

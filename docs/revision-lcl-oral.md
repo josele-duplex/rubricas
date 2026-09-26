@@ -155,6 +155,15 @@
 | **N3** | Emplea el vocabulario específico del tema y mantiene un tono formal dirigido a toda la clase durante toda la exposición. |
 | **N4** | Selecciona el léxico específico del tema y mantiene el registro formal incluso al responder a las preguntas del público al final de la exposición. |
 
+**Lenguaje sencillo** — lo que lee el alumno en la ficha y en la autoevaluación.
+
+| Nivel | Técnico | Sencillo | Sencillo (autoevaluación) |
+|---|---|---|---|
+| **N1** | Utiliza expresiones propias de la conversación cotidiana en una exposición dirigida a toda la clase. | Usa expresiones de la conversación de todos los días (*o sea*, *en plan*, *un montón*) en una exposición para toda la clase. | Uso expresiones de la conversación de todos los días (*o sea*, *en plan*, *un montón*) en una exposición para toda la clase. |
+| **N2** | Ajusta el tono al modelo de exposición trabajado en clase, con alguna expresión coloquial aislada entre el vocabulario del tema. | Ajusta el tono al modelo de exposición visto en clase, con alguna expresión suelta de la conversación de todos los días entre las palabras del tema. | Ajusto el tono al modelo de exposición visto en clase, con alguna expresión suelta de la conversación de todos los días entre las palabras del tema. |
+| **N3** | Emplea el vocabulario específico del tema y mantiene un tono formal dirigido a toda la clase durante toda la exposición. | Emplea las palabras propias del tema (vocabulario específico) y mantiene un tono serio (formal), dirigido a toda la clase, durante toda la exposición. | Empleo las palabras propias del tema (vocabulario específico) y mantengo un tono serio (formal), dirigido a toda la clase, durante toda la exposición. |
+| **N4** | Selecciona el léxico específico del tema y mantiene el registro formal incluso al responder a las preguntas del público al final de la exposición. | Elige las palabras propias del tema y mantiene el tono serio (registro formal) también al responder a las preguntas del público, al final de la exposición. | Elijo las palabras propias del tema y mantengo el tono serio (registro formal) también al responder a las preguntas del público, al final de la exposición. |
+
 *Sin matriz cuantitativa: esta dimensión se juzga en conjunto, no hay nada que contar.*
 
 ### Coherencia: estructura y planificación del discurso  ·  22%  ·  bloque B  ·  🔒 obligatorio
@@ -169,6 +178,15 @@
 | **N2** | Estructura la exposición en presentación, desarrollo y cierre por cuenta propia, con un bloque dedicado a cada parte. |
 | **N3** | Estructura el desarrollo en varios bloques, cada uno con una idea distinta, y ajusta la exposición al tiempo asignado. |
 | **N4** | Articula los bloques del desarrollo de lo general a lo particular y cierra retomando la idea principal, dentro del tiempo asignado y sin aviso del profesor. |
+
+**Lenguaje sencillo** — lo que lee el alumno en la ficha y en la autoevaluación.
+
+| Nivel | Técnico | Sencillo | Sencillo (autoevaluación) |
+|---|---|---|---|
+| **N1** | Ordena la exposición en presentación y desarrollo, sin cierre reconocible al final. | Ordena la exposición en presentación y desarrollo, sin una parte final (cierre) clara. | Ordeno la exposición en presentación y desarrollo, sin una parte final (cierre) clara. |
+| **N2** | Estructura la exposición en presentación, desarrollo y cierre por cuenta propia, con un bloque dedicado a cada parte. | Organiza por cuenta propia la exposición en presentación, desarrollo y cierre, y dedica un bloque a cada parte. | Organizo por cuenta propia la exposición en presentación, desarrollo y cierre, y dedico un bloque a cada parte. |
+| **N3** | Estructura el desarrollo en varios bloques, cada uno con una idea distinta, y ajusta la exposición al tiempo asignado. | Organiza el desarrollo en varios bloques, cada uno con una idea distinta, y ajusta la exposición al tiempo disponible. | Organizo el desarrollo en varios bloques, cada uno con una idea distinta, y ajusto la exposición al tiempo disponible. |
+| **N4** | Articula los bloques del desarrollo de lo general a lo particular y cierra retomando la idea principal, dentro del tiempo asignado y sin aviso del profesor. | Ordena los bloques del desarrollo de lo más general a lo más concreto y cierra volviendo a la idea principal, dentro del tiempo disponible y sin que el profesor tenga que avisar. | Ordeno los bloques del desarrollo de lo más general a lo más concreto y cierro volviendo a la idea principal, dentro del tiempo disponible y sin que el profesor tenga que avisar. |
 
 **Matriz cuantitativa** — total 10 puntos. Es lo que usa el modo IA para corregir.
 
@@ -192,6 +210,15 @@
 | **N3** | Emplea marcadores de orden, adición y causa entre los bloques, y anuncia el cambio de idea antes de desarrollarla. |
 | **N4** | Sustituye mediante un sinónimo, un hiperónimo o una referencia (*esto*, *esta idea*) la palabra que ya ha aparecido en el bloque anterior. |
 
+**Lenguaje sencillo** — lo que lee el alumno en la ficha y en la autoevaluación.
+
+| Nivel | Técnico | Sencillo | Sencillo (autoevaluación) |
+|---|---|---|---|
+| **N1** | Utiliza *y*, *pero* y *entonces* para enlazar las ideas del desarrollo, sin marcar el paso de una parte a otra. | Usa *y*, *pero* y *entonces* para enlazar las ideas del desarrollo, sin avisar del paso de una parte a otra. | Uso *y*, *pero* y *entonces* para enlazar las ideas del desarrollo, sin avisar del paso de una parte a otra. |
+| **N2** | Utiliza marcadores de orden y de adición (*además*, *en primer lugar*, *por último*) para señalar el paso de una parte a otra. | Usa palabras de enlace (marcadores) de orden y de suma (*en primer lugar*, *además*, *por último*) para avisar del paso de una parte a otra. | Uso palabras de enlace (marcadores) de orden y de suma (*en primer lugar*, *además*, *por último*) para avisar del paso de una parte a otra. |
+| **N3** | Emplea marcadores de orden, adición y causa entre los bloques, y anuncia el cambio de idea antes de desarrollarla. | Emplea entre los bloques marcadores de orden (*en primer lugar*), de suma (*además*) y de causa (*porque*), y anuncia la idea nueva antes de explicarla (*ahora voy a hablar de…*). | Empleo entre los bloques marcadores de orden (*en primer lugar*), de suma (*además*) y de causa (*porque*), y anuncio la idea nueva antes de explicarla (*ahora voy a hablar de…*). |
+| **N4** | Sustituye mediante un sinónimo, un hiperónimo o una referencia (*esto*, *esta idea*) la palabra que ya ha aparecido en el bloque anterior. | Sustituye la palabra que ya ha salido en el bloque anterior por otra de significado parecido (sinónimo), por otra más general (hiperónimo: *animal* en lugar de *perro*) o por una expresión que remite a ella (*esto*, *esta idea*). | Sustituyo la palabra que ya ha salido en el bloque anterior por otra de significado parecido (sinónimo), por otra más general (hiperónimo: *animal* en lugar de *perro*) o por una expresión que remite a ella (*esto*, *esta idea*). |
+
 **Matriz cuantitativa** — total 10 puntos. Es lo que usa el modo IA para corregir.
 
 | Componente | Máx. | Bandas |
@@ -212,6 +239,15 @@
 | **N2** | Vocaliza con un volumen y un ritmo que permiten seguir toda la exposición, con alguna muletilla o silencio largo. |
 | **N3** | Modula el volumen y el ritmo para mantener la atención de la clase, con muletillas puntuales que no interrumpen el sentido. |
 | **N4** | Regula el ritmo y las pausas para dar énfasis a las ideas principales, consultando las notas solo con miradas breves. |
+
+**Lenguaje sencillo** — lo que lee el alumno en la ficha y en la autoevaluación.
+
+| Nivel | Técnico | Sencillo | Sencillo (autoevaluación) |
+|---|---|---|---|
+| **N1** | Vocaliza con un volumen o un ritmo que dificulta seguir la exposición en algún momento, y emplea las mismas muletillas a lo largo de toda la exposición. | Pronuncia con un volumen o una velocidad (ritmo) que en algún momento dificulta seguir la exposición, y emplea las mismas muletillas (*eh*, *o sea*, *bueno*) durante toda la exposición. | Pronuncio con un volumen o una velocidad (ritmo) que en algún momento dificulta seguir la exposición, y empleo las mismas muletillas (*eh*, *o sea*, *bueno*) durante toda la exposición. |
+| **N2** | Vocaliza con un volumen y un ritmo que permiten seguir toda la exposición, con alguna muletilla o silencio largo. | Pronuncia con un volumen y una velocidad que permiten seguir toda la exposición, con alguna muletilla o algún silencio largo. | Pronuncio con un volumen y una velocidad que permiten seguir toda la exposición, con alguna muletilla o algún silencio largo. |
+| **N3** | Modula el volumen y el ritmo para mantener la atención de la clase, con muletillas puntuales que no interrumpen el sentido. | Ajusta el volumen y la velocidad para mantener la atención de la clase, con alguna muletilla suelta que no corta el sentido de lo dicho. | Ajusto el volumen y la velocidad para mantener la atención de la clase, con alguna muletilla suelta que no corta el sentido de lo dicho. |
+| **N4** | Regula el ritmo y las pausas para dar énfasis a las ideas principales, consultando las notas solo con miradas breves. | Usa la velocidad y las pausas para destacar las ideas principales, echando solo miradas rápidas a las notas. | Uso la velocidad y las pausas para destacar las ideas principales, echando solo miradas rápidas a las notas. |
 
 **Matriz cuantitativa** — total 10 puntos. Es lo que usa el modo IA para corregir.
 
@@ -234,6 +270,15 @@
 | **N3** | Mantiene el contacto visual con distintos puntos de la clase durante la mayor parte de la exposición y acompaña alguna idea con gestos. |
 | **N4** | Acompaña las ideas principales con gestos naturales y mantiene el contacto visual con toda la clase durante toda la exposición. |
 
+**Lenguaje sencillo** — lo que lee el alumno en la ficha y en la autoevaluación.
+
+| Nivel | Técnico | Sencillo | Sencillo (autoevaluación) |
+|---|---|---|---|
+| **N1** | Dirige la mirada a las notas o a la pantalla la mayor parte del tiempo, con una postura tensa. | Dirige la mirada a las notas o a la pantalla la mayor parte del tiempo, con el cuerpo tenso. | Dirijo la mirada a las notas o a la pantalla la mayor parte del tiempo, con el cuerpo tenso. |
+| **N2** | Dirige la mirada al público en varios momentos, alternando con las notas, y mantiene una postura relajada. | Dirige la mirada al público en varios momentos, alternando con las notas, y mantiene el cuerpo relajado. | Dirijo la mirada al público en varios momentos, alternando con las notas, y mantengo el cuerpo relajado. |
+| **N3** | Mantiene el contacto visual con distintos puntos de la clase durante la mayor parte de la exposición y acompaña alguna idea con gestos. | Dirige la mirada a distintos puntos de la clase (contacto visual) durante la mayor parte de la exposición y acompaña alguna idea con gestos. | Dirijo la mirada a distintos puntos de la clase (contacto visual) durante la mayor parte de la exposición y acompaño alguna idea con gestos. |
+| **N4** | Acompaña las ideas principales con gestos naturales y mantiene el contacto visual con toda la clase durante toda la exposición. | Acompaña las ideas principales con gestos naturales y dirige la mirada a toda la clase (contacto visual) durante toda la exposición. | Acompaño las ideas principales con gestos naturales y dirijo la mirada a toda la clase (contacto visual) durante toda la exposición. |
+
 *Sin matriz cuantitativa: esta dimensión se juzga en conjunto, no hay nada que contar.*
 
 ### Respuesta a las preguntas del público  ·  15%  ·  bloque B
@@ -250,6 +295,15 @@
 | **N2** | Responde a cada pregunta con la información pedida y respeta el turno completo antes de contestar. |
 | **N3** | Explica con palabras propias la parte de la exposición por la que pregunta el público y deja la palabra con una fórmula de cortesía. |
 | **N4** | Relaciona la respuesta con un dato o un ejemplo de la exposición hasta aclarar la duda del público. |
+
+**Lenguaje sencillo** — lo que lee el alumno en la ficha y en la autoevaluación.
+
+| Nivel | Técnico | Sencillo | Sencillo (autoevaluación) |
+|---|---|---|---|
+| **N1** | Responde a las preguntas del público con una frase suelta que repite lo ya dicho en la exposición. | Responde a las preguntas del público con una sola frase que repite lo ya dicho en la exposición. | Respondo a las preguntas del público con una sola frase que repite lo ya dicho en la exposición. |
+| **N2** | Responde a cada pregunta con la información pedida y respeta el turno completo antes de contestar. | Responde a cada pregunta con la información pedida y deja hablar hasta el final a quien pregunta antes de contestar (respeta el turno). | Respondo a cada pregunta con la información pedida y dejo hablar hasta el final a quien pregunta antes de contestar (respeto el turno). |
+| **N3** | Explica con palabras propias la parte de la exposición por la que pregunta el público y deja la palabra con una fórmula de cortesía. | Explica con palabras propias la parte de la exposición por la que pregunta el público y deja la palabra con una expresión amable (fórmula de cortesía: *gracias por la pregunta*). | Explico con palabras propias la parte de la exposición por la que pregunta el público y dejo la palabra con una expresión amable (fórmula de cortesía: *gracias por la pregunta*). |
+| **N4** | Relaciona la respuesta con un dato o un ejemplo de la exposición hasta aclarar la duda del público. | Relaciona la respuesta con un dato o un ejemplo de la exposición hasta aclarar la duda del público. | Relaciono la respuesta con un dato o un ejemplo de la exposición hasta aclarar la duda del público. |
 
 *Sin matriz cuantitativa: esta dimensión se juzga en conjunto, no hay nada que contar.*
 
@@ -403,6 +457,15 @@
 | **N3** | Mantiene el registro formal y el léxico específico del tema durante toda la exposición, sin mezclarlo con expresiones coloquiales. |
 | **N4** | Adapta el grado de formalidad y los ejemplos al conocimiento previo del público, sin perder el rigor del tema. |
 
+**Lenguaje sencillo** — lo que lee el alumno en la ficha y en la autoevaluación.
+
+| Nivel | Técnico | Sencillo | Sencillo (autoevaluación) |
+|---|---|---|---|
+| **N1** | Utiliza el mismo registro coloquial tanto al saludar al público como al presentar el tema académico. | Usa el mismo tono de conversación entre amigos (registro coloquial) al saludar al público y al explicar el tema de clase. | Uso el mismo tono de conversación entre amigos (registro coloquial) al saludar al público y al explicar el tema de clase. |
+| **N2** | Ajusta el registro al género académico y mantiene la tercera persona, con algún término coloquial aislado en el léxico. | Ajusta el tono a una exposición seria de clase y mantiene la tercera persona (sin *yo* ni *tú*), con alguna palabra suelta de conversación entre amigos (*un montón*, *guay*). | Ajusto el tono a una exposición seria de clase y mantengo la tercera persona (sin *yo* ni *tú*), con alguna palabra suelta de conversación entre amigos (*un montón*, *guay*). |
+| **N3** | Mantiene el registro formal y el léxico específico del tema durante toda la exposición, sin mezclarlo con expresiones coloquiales. | Mantiene un tono serio (registro formal) y las palabras propias del tema (léxico específico) durante toda la exposición, sin mezclarlos con expresiones de conversación entre amigos. | Mantengo un tono serio (registro formal) y las palabras propias del tema (léxico específico) durante toda la exposición, sin mezclarlos con expresiones de conversación entre amigos. |
+| **N4** | Adapta el grado de formalidad y los ejemplos al conocimiento previo del público, sin perder el rigor del tema. | Adapta el tono, más o menos serio, y los ejemplos a lo que el público ya sabe del tema, sin perder exactitud (rigor) en el contenido. | Adapto el tono, más o menos serio, y los ejemplos a lo que el público ya sabe del tema, sin perder exactitud (rigor) en el contenido. |
+
 *Sin matriz cuantitativa: esta dimensión se juzga en conjunto, no hay nada que contar.*
 
 ### Coherencia: estructura y planificación del discurso  ·  22%  ·  bloque B  ·  🔒 obligatorio
@@ -417,6 +480,15 @@
 | **N2** | Estructura la exposición en presentación, desarrollo y conclusión, con un bloque dedicado a cada parte. |
 | **N3** | Estructura el desarrollo en bloques, cada uno con un argumento distinto, y ajusta la duración de cada bloque al tiempo asignado. |
 | **N4** | Articula los bloques del desarrollo de lo general a lo particular, deja tiempo para la conclusión y cierra retomando la tesis sin añadir información nueva. |
+
+**Lenguaje sencillo** — lo que lee el alumno en la ficha y en la autoevaluación.
+
+| Nivel | Técnico | Sencillo | Sencillo (autoevaluación) |
+|---|---|---|---|
+| **N1** | Enumera los argumentos y los datos por el orden de aparición en las notas, sin jerarquía entre ellos. | Enumera las razones (los argumentos) y los datos en el mismo orden en que están en las notas, sin distinguir los más importantes de los menos importantes (sin jerarquía). | Enumero las razones (los argumentos) y los datos en el mismo orden en que están en las notas, sin distinguir los más importantes de los menos importantes (sin jerarquía). |
+| **N2** | Estructura la exposición en presentación, desarrollo y conclusión, con un bloque dedicado a cada parte. | Organiza la exposición en presentación, desarrollo y conclusión, y dedica un bloque a cada parte. | Organizo la exposición en presentación, desarrollo y conclusión, y dedico un bloque a cada parte. |
+| **N3** | Estructura el desarrollo en bloques, cada uno con un argumento distinto, y ajusta la duración de cada bloque al tiempo asignado. | Organiza el desarrollo en bloques, cada uno con una razón (argumento) distinta, y ajusta cuánto dura cada bloque al tiempo disponible. | Organizo el desarrollo en bloques, cada uno con una razón (argumento) distinta, y ajusto cuánto dura cada bloque al tiempo disponible. |
+| **N4** | Articula los bloques del desarrollo de lo general a lo particular, deja tiempo para la conclusión y cierra retomando la tesis sin añadir información nueva. | Ordena los bloques del desarrollo de lo más general a lo más concreto, deja tiempo para la conclusión y cierra volviendo a la opinión principal (la tesis) sin añadir información nueva. | Ordeno los bloques del desarrollo de lo más general a lo más concreto, dejo tiempo para la conclusión y cierro volviendo a la opinión principal (la tesis) sin añadir información nueva. |
 
 **Matriz cuantitativa** — total 10 puntos. Es lo que usa el modo IA para corregir.
 
@@ -440,6 +512,15 @@
 | **N3** | Emplea marcadores de contraste y de refuerzo (*sin embargo*, *además*) para relacionar los argumentos entre sí, no solo para ordenarlos. |
 | **N4** | Sustituye las repeticiones mediante sinónimos o expresiones de referencia (*esta cuestión*, *dicho argumento*) y encadena cada bloque retomando una idea del anterior. |
 
+**Lenguaje sencillo** — lo que lee el alumno en la ficha y en la autoevaluación.
+
+| Nivel | Técnico | Sencillo | Sencillo (autoevaluación) |
+|---|---|---|---|
+| **N1** | Utiliza *y*, *pero* y *entonces* para enlazar los argumentos, sin marcador que señale el paso de un bloque a otro. | Usa *y*, *pero* y *entonces* para enlazar las razones (los argumentos), sin palabras de enlace (marcadores) que indiquen el paso de un bloque a otro. | Uso *y*, *pero* y *entonces* para enlazar las razones (los argumentos), sin palabras de enlace (marcadores) que indiquen el paso de un bloque a otro. |
+| **N2** | Utiliza marcadores de orden y de causa-consecuencia (*en primer lugar*, *por tanto*) entre los bloques del desarrollo. | Usa entre los bloques del desarrollo palabras de enlace (marcadores) de orden (*en primer lugar*) y de causa y consecuencia (*por tanto*). | Uso entre los bloques del desarrollo palabras de enlace (marcadores) de orden (*en primer lugar*) y de causa y consecuencia (*por tanto*). |
+| **N3** | Emplea marcadores de contraste y de refuerzo (*sin embargo*, *además*) para relacionar los argumentos entre sí, no solo para ordenarlos. | Emplea marcadores de oposición (*sin embargo*) y de refuerzo (*además*) para relacionar las razones entre sí, no solo para ordenarlas. | Empleo marcadores de oposición (*sin embargo*) y de refuerzo (*además*) para relacionar las razones entre sí, no solo para ordenarlas. |
+| **N4** | Sustituye las repeticiones mediante sinónimos o expresiones de referencia (*esta cuestión*, *dicho argumento*) y encadena cada bloque retomando una idea del anterior. | Sustituye las palabras repetidas por otras de significado parecido (sinónimos) o por expresiones que remiten a lo ya dicho (*esta cuestión*, *dicho argumento*), y encadena cada bloque con el anterior recuperando una idea ya dicha. | Sustituyo las palabras repetidas por otras de significado parecido (sinónimos) o por expresiones que remiten a lo ya dicho (*esta cuestión*, *dicho argumento*), y encadeno cada bloque con el anterior recuperando una idea ya dicha. |
+
 **Matriz cuantitativa** — total 10 puntos. Es lo que usa el modo IA para corregir.
 
 | Componente | Máx. | Bandas |
@@ -460,6 +541,15 @@
 | **N2** | Vocaliza con un volumen y un ritmo que permiten seguir la mayor parte de la exposición, con algún tramo leído de corrido, sin pausas que separen los argumentos. |
 | **N3** | Modula el ritmo y las pausas para separar los argumentos entre sí, con muletillas puntuales que no interrumpen la argumentación. |
 | **N4** | Regula el ritmo, el volumen y las pausas para reforzar los momentos clave de la argumentación (la tesis, la conclusión), sin recurrir a la lectura literal de las notas. |
+
+**Lenguaje sencillo** — lo que lee el alumno en la ficha y en la autoevaluación.
+
+| Nivel | Técnico | Sencillo | Sencillo (autoevaluación) |
+|---|---|---|---|
+| **N1** | Vocaliza con un volumen o un ritmo que dificulta seguir la exposición en varios momentos, y recurre a muletillas o repeticiones mientras piensa el siguiente argumento. | Pronuncia con un volumen o una velocidad (ritmo) que en varios momentos dificulta seguir la exposición, y recurre a muletillas (*eh*, *o sea*, *bueno*) o a repeticiones mientras piensa la razón siguiente. | Pronuncio con un volumen o una velocidad (ritmo) que en varios momentos dificulta seguir la exposición, y recurro a muletillas (*eh*, *o sea*, *bueno*) o a repeticiones mientras pienso la razón siguiente. |
+| **N2** | Vocaliza con un volumen y un ritmo que permiten seguir la mayor parte de la exposición, con algún tramo leído de corrido, sin pausas que separen los argumentos. | Pronuncia con un volumen y una velocidad que permiten seguir casi toda la exposición, con algún trozo leído de corrido y sin pausas entre una razón y otra. | Pronuncio con un volumen y una velocidad que permiten seguir casi toda la exposición, con algún trozo leído de corrido y sin pausas entre una razón y otra. |
+| **N3** | Modula el ritmo y las pausas para separar los argumentos entre sí, con muletillas puntuales que no interrumpen la argumentación. | Ajusta la velocidad (ritmo) y las pausas para separar unas razones de otras, con alguna muletilla suelta que no corta el hilo del razonamiento. | Ajusto la velocidad (ritmo) y las pausas para separar unas razones de otras, con alguna muletilla suelta que no corta el hilo del razonamiento. |
+| **N4** | Regula el ritmo, el volumen y las pausas para reforzar los momentos clave de la argumentación (la tesis, la conclusión), sin recurrir a la lectura literal de las notas. | Usa el ritmo, el volumen y las pausas para destacar los momentos más importantes (la opinión principal o tesis, la conclusión), sin leer las notas palabra por palabra. | Uso el ritmo, el volumen y las pausas para destacar los momentos más importantes (la opinión principal o tesis, la conclusión), sin leer las notas palabra por palabra. |
 
 **Matriz cuantitativa** — total 10 puntos. Es lo que usa el modo IA para corregir.
 
@@ -483,6 +573,15 @@
 | **N3** | Mantiene el contacto visual con distintas zonas del público durante toda la exposición y acompaña las ideas clave con gestos naturales. |
 | **N4** | Adapta la mirada, la postura y los gestos a la reacción del público (vuelve sobre una idea o la reformula cuando el público da señales de no seguirla) y los pone al servicio de la argumentación. |
 
+**Lenguaje sencillo** — lo que lee el alumno en la ficha y en la autoevaluación.
+
+| Nivel | Técnico | Sencillo | Sencillo (autoevaluación) |
+|---|---|---|---|
+| **N1** | Dirige la mirada a las notas o a la pantalla durante la mayor parte de la exposición, con una postura rígida o inquieta. | Dirige la mirada a las notas o a la pantalla durante la mayor parte de la exposición, con una postura rígida o nerviosa. | Dirijo la mirada a las notas o a la pantalla durante la mayor parte de la exposición, con una postura rígida o nerviosa. |
+| **N2** | Dirige la mirada al público en varios momentos y mantiene una postura estable, aunque los gestos no acompañan el contenido. | Dirige la mirada al público en varios momentos y mantiene una postura tranquila, aunque los gestos no acompañan las ideas. | Dirijo la mirada al público en varios momentos y mantengo una postura tranquila, aunque los gestos no acompañan las ideas. |
+| **N3** | Mantiene el contacto visual con distintas zonas del público durante toda la exposición y acompaña las ideas clave con gestos naturales. | Dirige la mirada a distintas zonas del público durante toda la exposición (contacto visual) y acompaña las ideas clave con gestos naturales. | Dirijo la mirada a distintas zonas del público durante toda la exposición (contacto visual) y acompaño las ideas clave con gestos naturales. |
+| **N4** | Adapta la mirada, la postura y los gestos a la reacción del público (vuelve sobre una idea o la reformula cuando el público da señales de no seguirla) y los pone al servicio de la argumentación. | Adapta la mirada, la postura y los gestos a la reacción del público (vuelve sobre una idea o la explica de otra manera cuando el público da señales de no seguirla) y los usa para apoyar las razones (la argumentación). | Adapto la mirada, la postura y los gestos a la reacción del público (vuelvo sobre una idea o la explico de otra manera cuando el público da señales de no seguirla) y los uso para apoyar las razones (la argumentación). |
+
 *Sin matriz cuantitativa: esta dimensión se juzga en conjunto, no hay nada que contar.*
 
 ### Respuesta a las preguntas del público  ·  15%  ·  bloque B
@@ -499,6 +598,15 @@
 | **N2** | Responde a cada pregunta con la información pedida y respeta el turno completo de quien pregunta. |
 | **N3** | Desarrolla la respuesta en varias frases encadenadas y reconoce la parte de la pregunta que la exposición había dejado fuera. |
 | **N4** | Matiza la respuesta ante una objeción del público y distingue lo afirmado en la exposición de lo que queda por comprobar. |
+
+**Lenguaje sencillo** — lo que lee el alumno en la ficha y en la autoevaluación.
+
+| Nivel | Técnico | Sencillo | Sencillo (autoevaluación) |
+|---|---|---|---|
+| **N1** | Responde con una frase breve a cada pregunta del público y localiza el dato de la exposición al que apunta. | Responde con una frase corta a cada pregunta del público y localiza el dato de la exposición del que trata la pregunta. | Respondo con una frase corta a cada pregunta del público y localizo el dato de la exposición del que trata la pregunta. |
+| **N2** | Responde a cada pregunta con la información pedida y respeta el turno completo de quien pregunta. | Responde a cada pregunta con la información pedida y deja hablar hasta el final a quien pregunta (respeta el turno). | Respondo a cada pregunta con la información pedida y dejo hablar hasta el final a quien pregunta (respeto el turno). |
+| **N3** | Desarrolla la respuesta en varias frases encadenadas y reconoce la parte de la pregunta que la exposición había dejado fuera. | Desarrolla la respuesta en varias frases enlazadas y reconoce qué parte de la pregunta había quedado fuera de la exposición. | Desarrollo la respuesta en varias frases enlazadas y reconozco qué parte de la pregunta había quedado fuera de la exposición. |
+| **N4** | Matiza la respuesta ante una objeción del público y distingue lo afirmado en la exposición de lo que queda por comprobar. | Matiza la respuesta ante una opinión contraria del público (una objeción) y distingue lo dicho en la exposición de lo que todavía está por comprobar. | Matizo la respuesta ante una opinión contraria del público (una objeción) y distingo lo dicho en la exposición de lo que todavía está por comprobar. |
 
 *Sin matriz cuantitativa: esta dimensión se juzga en conjunto, no hay nada que contar.*
 
