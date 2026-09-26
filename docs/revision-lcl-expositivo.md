@@ -431,6 +431,15 @@
 | **N3** | Mantiene el registro formal y la tercera persona en todo el texto, y emplea fórmulas de objetividad propias del género expositivo. |
 | **N4** | Matiza el grado de objetividad introduciendo el punto de vista propio mediante fórmulas propias del registro académico, sin abandonar la tercera persona ni el léxico específico del tema. |
 
+**Lenguaje sencillo** — lo que lee el alumno en la ficha y en la autoevaluación.
+
+| Nivel | Técnico | Sencillo | Sencillo (autoevaluación) |
+|---|---|---|---|
+| **N1** | Utiliza fórmulas coloquiales de cercanía junto a expresiones del registro formal en un mismo párrafo, sin ajustarlas al destinatario académico. | Usa expresiones de conversación entre amigos (*fíjate*, *o sea*, *un montón*) mezcladas con otras serias en el mismo párrafo, en un texto que es para clase. | Uso expresiones de conversación entre amigos (*fíjate*, *o sea*, *un montón*) mezcladas con otras serias en el mismo párrafo, en un texto que es para clase. |
+| **N2** | Ajusta el léxico y el tono al género expositivo académico, aunque mantiene alguna fórmula de cercanía aislada dirigida al lector. | Ajusta el tono y el vocabulario a un texto serio para clase, con alguna frase suelta que habla al lector como a un amigo (*¿a que no sabías…?*). | Ajusto el tono y el vocabulario a un texto serio para clase, con alguna frase suelta que habla al lector como a un amigo (*¿a que no sabías…?*). |
+| **N3** | Mantiene el registro formal y la tercera persona en todo el texto, y emplea fórmulas de objetividad propias del género expositivo. | Mantiene un tono serio y la tercera persona (sin *yo* ni *tú*) de principio a fin, y usa expresiones que presentan la información sin opinar (fórmulas de objetividad: *se considera que…*, *los datos muestran que…*). | Mantengo un tono serio y la tercera persona (sin *yo* ni *tú*) de principio a fin, y uso expresiones que presentan la información sin opinar (fórmulas de objetividad: *se considera que…*, *los datos muestran que…*). |
+| **N4** | Matiza el grado de objetividad introduciendo el punto de vista propio mediante fórmulas propias del registro académico, sin abandonar la tercera persona ni el léxico específico del tema. | Añade en algún momento el punto de vista propio con expresiones serias (*cabe pensar que…*, *parece razonable que…*), sin pasar a *yo* y sin abandonar el vocabulario específico del tema. | Añado en algún momento el punto de vista propio con expresiones serias (*cabe pensar que…*, *parece razonable que…*), sin pasar a *yo* y sin abandonar el vocabulario específico del tema. |
+
 *Sin matriz cuantitativa: esta dimensión se juzga en conjunto, no hay nada que contar.*
 
 ### Coherencia: estructura y progresión temática  ·  25%  ·  bloque B  ·  🔒 obligatorio
@@ -445,6 +454,15 @@
 | **N2** | Estructura el texto en introducción, desarrollo y conclusión, y dedica un párrafo a cada aspecto relevante del tema. |
 | **N3** | Estructura el desarrollo en párrafos que avanzan de lo general a lo particular y encadena cada uno con un elemento retomado del anterior. |
 | **N4** | Articula la progresión temática incorporando algún matiz o excepción pertinente para comprender el tema en su complejidad, y cierra con una conclusión que sintetiza lo expuesto sin añadir información nueva. |
+
+**Lenguaje sencillo** — lo que lee el alumno en la ficha y en la autoevaluación.
+
+| Nivel | Técnico | Sencillo | Sencillo (autoevaluación) |
+|---|---|---|---|
+| **N1** | Ordena la información en bloques que mezclan ideas de aspectos distintos del tema, sin criterio que los relacione entre sí. | Ordena la información en bloques que mezclan ideas de partes distintas del tema, sin una razón que explique por qué van juntas. | Ordeno la información en bloques que mezclan ideas de partes distintas del tema, sin una razón que explique por qué van juntas. |
+| **N2** | Estructura el texto en introducción, desarrollo y conclusión, y dedica un párrafo a cada aspecto relevante del tema. | Organiza el texto en introducción, desarrollo y conclusión, y dedica un párrafo a cada parte importante del tema. | Organizo el texto en introducción, desarrollo y conclusión, y dedico un párrafo a cada parte importante del tema. |
+| **N3** | Estructura el desarrollo en párrafos que avanzan de lo general a lo particular y encadena cada uno con un elemento retomado del anterior. | Ordena los párrafos del desarrollo de lo más general a lo más concreto y enlaza cada uno con el anterior retomando alguna idea que ya apareció. | Ordeno los párrafos del desarrollo de lo más general a lo más concreto y enlazo cada uno con el anterior retomando alguna idea que ya apareció. |
+| **N4** | Articula la progresión temática incorporando algún matiz o excepción pertinente para comprender el tema en su complejidad, y cierra con una conclusión que sintetiza lo expuesto sin añadir información nueva. | Añade algún matiz o alguna excepción que ayuda a ver que el tema es más complejo de lo que parece, y cierra con una conclusión que resume lo explicado sin añadir nada nuevo. | Añado algún matiz o alguna excepción que ayuda a ver que el tema es más complejo de lo que parece, y cierro con una conclusión que resume lo explicado sin añadir nada nuevo. |
 
 **Matriz cuantitativa** — total 10 puntos. Es lo que usa el modo IA para corregir.
 
@@ -467,6 +485,15 @@
 | **N3** | Emplea conectores de causa, consecuencia y contraste entre párrafos, y recurre a la aposición o a la oración de relativo para incorporar una definición sin interrumpir la explicación. |
 | **N4** | Sustituye las repeticiones mediante nominalizaciones e hiperónimos de significado abstracto, y combina conectores de matización con algún procedimiento explicativo para precisar el tema sin romper la cohesión del texto. |
 
+**Lenguaje sencillo** — lo que lee el alumno en la ficha y en la autoevaluación.
+
+| Nivel | Técnico | Sencillo | Sencillo (autoevaluación) |
+|---|---|---|---|
+| **N1** | Utiliza conectores de adición y de causa (*además*, *porque*) para enlazar los párrafos, y explica cada término del tema en una oración distinta de la que lo nombra. | Usa palabras de enlace (conectores) de suma y de causa (*además*, *porque*) entre los párrafos, y explica cada palabra difícil del tema en una frase aparte, después de nombrarla. | Uso palabras de enlace (conectores) de suma y de causa (*además*, *porque*) entre los párrafos, y explico cada palabra difícil del tema en una frase aparte, después de nombrarla. |
+| **N2** | Utiliza conectores de orden, adición y causa entre párrafos, y explica algún término mediante una oración de relativo aislada. | Enlaza los párrafos con conectores de orden (*en primer lugar*), de suma (*además*) y de causa (*porque*), y explica alguna palabra difícil con una frase que empieza por *que* (oración de relativo). | Enlazo los párrafos con conectores de orden (*en primer lugar*), de suma (*además*) y de causa (*porque*), y explico alguna palabra difícil con una frase que empieza por *que* (oración de relativo). |
+| **N3** | Emplea conectores de causa, consecuencia y contraste entre párrafos, y recurre a la aposición o a la oración de relativo para incorporar una definición sin interrumpir la explicación. | Emplea entre los párrafos conectores de causa (*porque*), de consecuencia (*por eso*) y de oposición (*sin embargo*), y añade la definición de una palabra difícil dentro de la misma frase, entre comas, sin cortar la explicación (aposición y oración de relativo). | Empleo entre los párrafos conectores de causa (*porque*), de consecuencia (*por eso*) y de oposición (*sin embargo*), y añado la definición de una palabra difícil dentro de la misma frase, entre comas, sin cortar la explicación (aposición y oración de relativo). |
+| **N4** | Sustituye las repeticiones mediante nominalizaciones e hiperónimos de significado abstracto, y combina conectores de matización con algún procedimiento explicativo para precisar el tema sin romper la cohesión del texto. | Sustituye las palabras repetidas por expresiones que resumen lo anterior (*este proceso*, *dicho fenómeno*) y combina conectores que matizan (*en cierto modo*, *salvo que*) con aclaraciones o ejemplos (procedimientos explicativos) para precisar el tema sin cortar el hilo. | Sustituyo las palabras repetidas por expresiones que resumen lo anterior (*este proceso*, *dicho fenómeno*) y combino conectores que matizan (*en cierto modo*, *salvo que*) con aclaraciones o ejemplos (procedimientos explicativos) para precisar el tema sin cortar el hilo. |
+
 **Matriz cuantitativa** — total 10 puntos. Es lo que usa el modo IA para corregir.
 
 | Componente | Máx. | Bandas |
@@ -487,6 +514,15 @@
 | **N2** | Aplica las normas de ortografía y concordancia del nivel, con algún error aislado de correlación verbal que no impide seguir la exposición. |
 | **N3** | Aplica las normas ortográficas y gramaticales del nivel, mantiene la correlación temporal entre las formas verbales y selecciona el término preciso en lugar de palabras de significado general. |
 | **N4** | Emplea la subordinación para condensar la información y mantiene la correlación temporal en el discurso relatado, sin errores que afecten a la comprensión. |
+
+**Lenguaje sencillo** — lo que lee el alumno en la ficha y en la autoevaluación.
+
+| Nivel | Técnico | Sencillo | Sencillo (autoevaluación) |
+|---|---|---|---|
+| **N1** | Redacta el texto con errores de ortografía, concordancia o correlación verbal que obligan a releer para reconstruir la idea. | Redacta con faltas de ortografía, fallos de concordancia (*las idea*) o tiempos verbales mezclados, y el lector tiene que leer dos veces para entender la idea. | Redacto con faltas de ortografía, fallos de concordancia (*las idea*) o tiempos verbales mezclados, y el lector tiene que leer dos veces para entender la idea. |
+| **N2** | Aplica las normas de ortografía y concordancia del nivel, con algún error aislado de correlación verbal que no impide seguir la exposición. | Aplica las normas de ortografía y de concordancia, con algún error al combinar los tiempos verbales (*si lo supieran, lo entienden*) que permite seguir la explicación. | Aplico las normas de ortografía y de concordancia, con algún error al combinar los tiempos verbales (*si lo supieran, lo entienden*) que permite seguir la explicación. |
+| **N3** | Aplica las normas ortográficas y gramaticales del nivel, mantiene la correlación temporal entre las formas verbales y selecciona el término preciso en lugar de palabras de significado general. | Aplica las normas de ortografía y gramática, combina los tiempos verbales sin errores y elige la palabra exacta del tema en lugar de palabras de significado general (*cosa*, *hacer*, *poner*). | Aplico las normas de ortografía y gramática, combino los tiempos verbales sin errores y elijo la palabra exacta del tema en lugar de palabras de significado general (*cosa*, *hacer*, *poner*). |
+| **N4** | Emplea la subordinación para condensar la información y mantiene la correlación temporal en el discurso relatado, sin errores que afecten a la comprensión. | Agrupa varias informaciones en una sola frase con oraciones que dependen de otra (subordinación: *que*, *cuando*, *aunque*) y mantiene los tiempos verbales en orden al contar lo que dijo otra persona (discurso relatado: *afirmó que había…*), sin errores que dificulten la lectura. | Agrupo varias informaciones en una sola frase con oraciones que dependen de otra (subordinación: *que*, *cuando*, *aunque*) y mantengo los tiempos verbales en orden al contar lo que dijo otra persona (discurso relatado: *afirmó que había…*), sin errores que dificulten la lectura. |
 
 **Matriz cuantitativa** — total 10 puntos. Es lo que usa el modo IA para corregir.
 
@@ -509,6 +545,15 @@
 | **N3** | Revisa el borrador por cuenta propia y reformula los pasajes que, releídos, resultan difíciles de entender para un lector que no conoce el tema. |
 | **N4** | Justifica con el metalenguaje del nivel los cambios introducidos para resolver un problema de comprensión detectado en el borrador, explicando qué mejora aporta cada uno. |
 
+**Lenguaje sencillo** — lo que lee el alumno en la ficha y en la autoevaluación.
+
+| Nivel | Técnico | Sencillo | Sencillo (autoevaluación) |
+|---|---|---|---|
+| **N1** | Redacta el texto en una sola pasada y entrega la primera versión como texto final. | Redacta el texto de una vez y entrega ese primer intento como versión final. | Redacto el texto de una vez y entrego ese primer intento como versión final. |
+| **N2** | Elabora un esquema previo propio con el orden de las partes del texto y entrega el borrador con marcas de revisión sobre la ortografía y el léxico. | Elabora antes un esquema propio con el orden de las partes del texto, y entrega el borrador con las correcciones de ortografía y vocabulario marcadas. | Elaboro antes un esquema propio con el orden de las partes del texto, y entrego el borrador con las correcciones de ortografía y vocabulario marcadas. |
+| **N3** | Revisa el borrador por cuenta propia y reformula los pasajes que, releídos, resultan difíciles de entender para un lector que no conoce el tema. | Revisa el borrador por cuenta propia y vuelve a escribir las partes que resultarían difíciles de entender para alguien que desconoce el tema. | Reviso el borrador por cuenta propia y vuelvo a escribir las partes que resultarían difíciles de entender para alguien que desconoce el tema. |
+| **N4** | Justifica con el metalenguaje del nivel los cambios introducidos para resolver un problema de comprensión detectado en el borrador, explicando qué mejora aporta cada uno. | Justifica cada cambio del borrador con palabras de la asignatura (*registro*, *párrafo*, *conector*, *aposición*) y explica, para cada uno, qué problema de comprensión corrige y en qué mejora el texto. | Justifico cada cambio del borrador con palabras de la asignatura (*registro*, *párrafo*, *conector*, *aposición*) y explico, para cada uno, qué problema de comprensión corrijo y en qué mejora el texto. |
+
 **Matriz cuantitativa** — total 10 puntos. Es lo que usa el modo IA para corregir.
 
 | Componente | Máx. | Bandas |
@@ -529,6 +574,15 @@
 | **N2** | Selecciona información de dos o más fuentes por cuenta propia e indica su procedencia en el texto. |
 | **N3** | Contrasta la información de fuentes distintas, valora cuál es más fiable a partir de su autoría o su fecha, y cita el origen de los datos empleados. |
 | **N4** | Integra en el texto un punto de vista propio sobre el tema, contrastando las posturas de las fuentes cuando difieren entre sí, y respeta los principios de propiedad intelectual en todas las citas. |
+
+**Lenguaje sencillo** — lo que lee el alumno en la ficha y en la autoevaluación.
+
+| Nivel | Técnico | Sencillo | Sencillo (autoevaluación) |
+|---|---|---|---|
+| **N1** | Utiliza una única fuente y traslada su información al texto sin indicar su procedencia. | Usa una sola fuente (un libro, una página web, un artículo) y pone la información en el texto sin indicar de dónde sale. | Uso una sola fuente (un libro, una página web, un artículo) y pongo la información en el texto sin indicar de dónde sale. |
+| **N2** | Selecciona información de dos o más fuentes por cuenta propia e indica su procedencia en el texto. | Elige por cuenta propia información de dos o más fuentes e indica en el texto de dónde sale. | Elijo por cuenta propia información de dos o más fuentes e indico en el texto de dónde sale. |
+| **N3** | Contrasta la información de fuentes distintas, valora cuál es más fiable a partir de su autoría o su fecha, y cita el origen de los datos empleados. | Contrasta fuentes distintas para ver si coinciden, valora cuál merece más confianza según quién la firma o de cuándo es, y señala de dónde sale cada dato usado. | Contrasto fuentes distintas para ver si coinciden, valoro cuál merece más confianza según quién la firma o de cuándo es, y señalo de dónde sale cada dato usado. |
+| **N4** | Integra en el texto un punto de vista propio sobre el tema, contrastando las posturas de las fuentes cuando difieren entre sí, y respeta los principios de propiedad intelectual en todas las citas. | Expone una opinión propia sobre el tema, comparando lo que dice cada fuente cuando las fuentes discrepan, y respeta el trabajo ajeno (la propiedad intelectual): indica el autor de cada idea o frase tomada de una fuente. | Expongo una opinión propia sobre el tema, comparando lo que dice cada fuente cuando las fuentes discrepan, y respeto el trabajo ajeno (la propiedad intelectual): indico el autor de cada idea o frase tomada de una fuente. |
 
 **Matriz cuantitativa** — total 10 puntos. Es lo que usa el modo IA para corregir.
 

@@ -2363,24 +2363,45 @@
       "descriptores": {
         "n1": {
           "verbo": "utiliza",
-          "texto": "Utiliza fórmulas coloquiales de cercanía junto a expresiones del registro formal en un mismo párrafo, sin ajustarlas al destinatario académico."
+          "texto": "Utiliza fórmulas coloquiales de cercanía junto a expresiones del registro formal en un mismo párrafo, sin ajustarlas al destinatario académico.",
+          "alumno": {
+            "verbo": "usa",
+            "texto": "Usa expresiones de conversación entre amigos (*fíjate*, *o sea*, *un montón*) mezcladas con otras serias en el mismo párrafo, en un texto que es para clase.",
+            "origen": "dcffde67"
+          }
         },
         "n2": {
           "verbo": "ajusta",
-          "texto": "Ajusta el léxico y el tono al género expositivo académico, aunque mantiene alguna fórmula de cercanía aislada dirigida al lector."
+          "texto": "Ajusta el léxico y el tono al género expositivo académico, aunque mantiene alguna fórmula de cercanía aislada dirigida al lector.",
+          "alumno": {
+            "verbo": "ajusta",
+            "texto": "Ajusta el tono y el vocabulario a un texto serio para clase, con alguna frase suelta que habla al lector como a un amigo (*¿a que no sabías…?*).",
+            "origen": "a4bbfe0d"
+          }
         },
         "n3": {
           "verbo": "mantiene",
-          "texto": "Mantiene el registro formal y la tercera persona en todo el texto, y emplea fórmulas de objetividad propias del género expositivo."
+          "texto": "Mantiene el registro formal y la tercera persona en todo el texto, y emplea fórmulas de objetividad propias del género expositivo.",
+          "alumno": {
+            "verbo": "mantiene",
+            "texto": "Mantiene un tono serio y la tercera persona (sin *yo* ni *tú*) de principio a fin, y usa expresiones que presentan la información sin opinar (fórmulas de objetividad: *se considera que…*, *los datos muestran que…*).",
+            "origen": "b187aa80"
+          }
         },
         "n4": {
           "verbo": "matiza",
-          "texto": "Matiza el grado de objetividad introduciendo el punto de vista propio mediante fórmulas propias del registro académico, sin abandonar la tercera persona ni el léxico específico del tema."
+          "texto": "Matiza el grado de objetividad introduciendo el punto de vista propio mediante fórmulas propias del registro académico, sin abandonar la tercera persona ni el léxico específico del tema.",
+          "alumno": {
+            "verbo": "anade",
+            "texto": "Añade en algún momento el punto de vista propio con expresiones serias (*cabe pensar que…*, *parece razonable que…*), sin pasar a *yo* y sin abandonar el vocabulario específico del tema.",
+            "origen": "c876a211"
+          }
         }
       },
       "matriz_cuantitativa": null,
       "descriptor_cotejo": null,
-      "descriptor_un_punto": "Ajusta el léxico y el tono al género expositivo académico, con alguna fórmula de cercanía aislada dirigida al lector."
+      "descriptor_un_punto": "Ajusta el léxico y el tono al género expositivo académico, con alguna fórmula de cercanía aislada dirigida al lector.",
+      "nombre_alumno": "El tono del texto"
     },
     {
       "id": "lcl-b-coherencia-expo-4eso",
@@ -2423,19 +2444,39 @@
       "descriptores": {
         "n1": {
           "verbo": "ordena",
-          "texto": "Ordena la información en bloques que mezclan ideas de aspectos distintos del tema, sin criterio que los relacione entre sí."
+          "texto": "Ordena la información en bloques que mezclan ideas de aspectos distintos del tema, sin criterio que los relacione entre sí.",
+          "alumno": {
+            "verbo": "ordena",
+            "texto": "Ordena la información en bloques que mezclan ideas de partes distintas del tema, sin una razón que explique por qué van juntas.",
+            "origen": "e9e1e3f9"
+          }
         },
         "n2": {
           "verbo": "estructura",
-          "texto": "Estructura el texto en introducción, desarrollo y conclusión, y dedica un párrafo a cada aspecto relevante del tema."
+          "texto": "Estructura el texto en introducción, desarrollo y conclusión, y dedica un párrafo a cada aspecto relevante del tema.",
+          "alumno": {
+            "verbo": "organiza",
+            "texto": "Organiza el texto en introducción, desarrollo y conclusión, y dedica un párrafo a cada parte importante del tema.",
+            "origen": "b27aed9a"
+          }
         },
         "n3": {
           "verbo": "estructura",
-          "texto": "Estructura el desarrollo en párrafos que avanzan de lo general a lo particular y encadena cada uno con un elemento retomado del anterior."
+          "texto": "Estructura el desarrollo en párrafos que avanzan de lo general a lo particular y encadena cada uno con un elemento retomado del anterior.",
+          "alumno": {
+            "verbo": "ordena",
+            "texto": "Ordena los párrafos del desarrollo de lo más general a lo más concreto y enlaza cada uno con el anterior retomando alguna idea que ya apareció.",
+            "origen": "ad514045"
+          }
         },
         "n4": {
           "verbo": "articula",
-          "texto": "Articula la progresión temática incorporando algún matiz o excepción pertinente para comprender el tema en su complejidad, y cierra con una conclusión que sintetiza lo expuesto sin añadir información nueva."
+          "texto": "Articula la progresión temática incorporando algún matiz o excepción pertinente para comprender el tema en su complejidad, y cierra con una conclusión que sintetiza lo expuesto sin añadir información nueva.",
+          "alumno": {
+            "verbo": "anade",
+            "texto": "Añade algún matiz o alguna excepción que ayuda a ver que el tema es más complejo de lo que parece, y cierra con una conclusión que resume lo explicado sin añadir nada nuevo.",
+            "origen": "489fb156"
+          }
         }
       },
       "matriz_cuantitativa": {
@@ -2523,7 +2564,8 @@
         "penalizaciones": []
       },
       "descriptor_cotejo": null,
-      "descriptor_un_punto": "Estructura el texto en introducción, desarrollo y conclusión, y dedica un párrafo a cada aspecto relevante del tema."
+      "descriptor_un_punto": "Estructura el texto en introducción, desarrollo y conclusión, y dedica un párrafo a cada aspecto relevante del tema.",
+      "nombre_alumno": "Las ideas: el orden y el avance del tema"
     },
     {
       "id": "lcl-b-cohesion-expo-4eso",
@@ -2567,19 +2609,39 @@
       "descriptores": {
         "n1": {
           "verbo": "utiliza",
-          "texto": "Utiliza conectores de adición y de causa (*además*, *porque*) para enlazar los párrafos, y explica cada término del tema en una oración distinta de la que lo nombra."
+          "texto": "Utiliza conectores de adición y de causa (*además*, *porque*) para enlazar los párrafos, y explica cada término del tema en una oración distinta de la que lo nombra.",
+          "alumno": {
+            "verbo": "usa",
+            "texto": "Usa palabras de enlace (conectores) de suma y de causa (*además*, *porque*) entre los párrafos, y explica cada palabra difícil del tema en una frase aparte, después de nombrarla.",
+            "origen": "97f2660c"
+          }
         },
         "n2": {
           "verbo": "utiliza",
-          "texto": "Utiliza conectores de orden, adición y causa entre párrafos, y explica algún término mediante una oración de relativo aislada."
+          "texto": "Utiliza conectores de orden, adición y causa entre párrafos, y explica algún término mediante una oración de relativo aislada.",
+          "alumno": {
+            "verbo": "enlaza",
+            "texto": "Enlaza los párrafos con conectores de orden (*en primer lugar*), de suma (*además*) y de causa (*porque*), y explica alguna palabra difícil con una frase que empieza por *que* (oración de relativo).",
+            "origen": "87c71d62"
+          }
         },
         "n3": {
           "verbo": "emplea",
-          "texto": "Emplea conectores de causa, consecuencia y contraste entre párrafos, y recurre a la aposición o a la oración de relativo para incorporar una definición sin interrumpir la explicación."
+          "texto": "Emplea conectores de causa, consecuencia y contraste entre párrafos, y recurre a la aposición o a la oración de relativo para incorporar una definición sin interrumpir la explicación.",
+          "alumno": {
+            "verbo": "emplea",
+            "texto": "Emplea entre los párrafos conectores de causa (*porque*), de consecuencia (*por eso*) y de oposición (*sin embargo*), y añade la definición de una palabra difícil dentro de la misma frase, entre comas, sin cortar la explicación (aposición y oración de relativo).",
+            "origen": "d1c3bd52"
+          }
         },
         "n4": {
           "verbo": "sustituye",
-          "texto": "Sustituye las repeticiones mediante nominalizaciones e hiperónimos de significado abstracto, y combina conectores de matización con algún procedimiento explicativo para precisar el tema sin romper la cohesión del texto."
+          "texto": "Sustituye las repeticiones mediante nominalizaciones e hiperónimos de significado abstracto, y combina conectores de matización con algún procedimiento explicativo para precisar el tema sin romper la cohesión del texto.",
+          "alumno": {
+            "verbo": "sustituye",
+            "texto": "Sustituye las palabras repetidas por expresiones que resumen lo anterior (*este proceso*, *dicho fenómeno*) y combina conectores que matizan (*en cierto modo*, *salvo que*) con aclaraciones o ejemplos (procedimientos explicativos) para precisar el tema sin cortar el hilo.",
+            "origen": "5b749441"
+          }
         }
       },
       "matriz_cuantitativa": {
@@ -2667,7 +2729,8 @@
         "penalizaciones": []
       },
       "descriptor_cotejo": null,
-      "descriptor_un_punto": "Utiliza conectores de orden, adición y causa entre párrafos, y explica algún término mediante una oración de relativo aislada."
+      "descriptor_un_punto": "Utiliza conectores de orden, adición y causa entre párrafos, y explica algún término mediante una oración de relativo aislada.",
+      "nombre_alumno": "Cómo se unen las ideas"
     },
     {
       "id": "lcl-d-correccion-expo-4eso",
@@ -2710,19 +2773,39 @@
       "descriptores": {
         "n1": {
           "verbo": "redacta",
-          "texto": "Redacta el texto con errores de ortografía, concordancia o correlación verbal que obligan a releer para reconstruir la idea."
+          "texto": "Redacta el texto con errores de ortografía, concordancia o correlación verbal que obligan a releer para reconstruir la idea.",
+          "alumno": {
+            "verbo": "redacta",
+            "texto": "Redacta con faltas de ortografía, fallos de concordancia (*las idea*) o tiempos verbales mezclados, y el lector tiene que leer dos veces para entender la idea.",
+            "origen": "e5a22d24"
+          }
         },
         "n2": {
           "verbo": "aplica",
-          "texto": "Aplica las normas de ortografía y concordancia del nivel, con algún error aislado de correlación verbal que no impide seguir la exposición."
+          "texto": "Aplica las normas de ortografía y concordancia del nivel, con algún error aislado de correlación verbal que no impide seguir la exposición.",
+          "alumno": {
+            "verbo": "aplica",
+            "texto": "Aplica las normas de ortografía y de concordancia, con algún error al combinar los tiempos verbales (*si lo supieran, lo entienden*) que permite seguir la explicación.",
+            "origen": "d2ef647e"
+          }
         },
         "n3": {
           "verbo": "aplica",
-          "texto": "Aplica las normas ortográficas y gramaticales del nivel, mantiene la correlación temporal entre las formas verbales y selecciona el término preciso en lugar de palabras de significado general."
+          "texto": "Aplica las normas ortográficas y gramaticales del nivel, mantiene la correlación temporal entre las formas verbales y selecciona el término preciso en lugar de palabras de significado general.",
+          "alumno": {
+            "verbo": "aplica",
+            "texto": "Aplica las normas de ortografía y gramática, combina los tiempos verbales sin errores y elige la palabra exacta del tema en lugar de palabras de significado general (*cosa*, *hacer*, *poner*).",
+            "origen": "b0a7f717"
+          }
         },
         "n4": {
           "verbo": "emplea",
-          "texto": "Emplea la subordinación para condensar la información y mantiene la correlación temporal en el discurso relatado, sin errores que afecten a la comprensión."
+          "texto": "Emplea la subordinación para condensar la información y mantiene la correlación temporal en el discurso relatado, sin errores que afecten a la comprensión.",
+          "alumno": {
+            "verbo": "agrupa",
+            "texto": "Agrupa varias informaciones en una sola frase con oraciones que dependen de otra (subordinación: *que*, *cuando*, *aunque*) y mantiene los tiempos verbales en orden al contar lo que dijo otra persona (discurso relatado: *afirmó que había…*), sin errores que dificulten la lectura.",
+            "origen": "417d656d"
+          }
         }
       },
       "matriz_cuantitativa": {
@@ -2810,7 +2893,8 @@
         "penalizaciones": []
       },
       "descriptor_cotejo": null,
-      "descriptor_un_punto": "Aplica las normas de ortografía y concordancia del nivel, con algún error aislado de correlación verbal que no impide seguir la exposición."
+      "descriptor_un_punto": "Aplica las normas de ortografía y concordancia del nivel, con algún error aislado de correlación verbal que no impide seguir la exposición.",
+      "nombre_alumno": "Ortografía, gramática y vocabulario"
     },
     {
       "id": "lcl-d-planificacion-expo-4eso",
@@ -2852,19 +2936,39 @@
       "descriptores": {
         "n1": {
           "verbo": "redacta",
-          "texto": "Redacta el texto en una sola pasada y entrega la primera versión como texto final."
+          "texto": "Redacta el texto en una sola pasada y entrega la primera versión como texto final.",
+          "alumno": {
+            "verbo": "redacta",
+            "texto": "Redacta el texto de una vez y entrega ese primer intento como versión final.",
+            "origen": "9b7b415d"
+          }
         },
         "n2": {
           "verbo": "elabora",
-          "texto": "Elabora un esquema previo propio con el orden de las partes del texto y entrega el borrador con marcas de revisión sobre la ortografía y el léxico."
+          "texto": "Elabora un esquema previo propio con el orden de las partes del texto y entrega el borrador con marcas de revisión sobre la ortografía y el léxico.",
+          "alumno": {
+            "verbo": "elabora",
+            "texto": "Elabora antes un esquema propio con el orden de las partes del texto, y entrega el borrador con las correcciones de ortografía y vocabulario marcadas.",
+            "origen": "7c43c4fc"
+          }
         },
         "n3": {
           "verbo": "revisa",
-          "texto": "Revisa el borrador por cuenta propia y reformula los pasajes que, releídos, resultan difíciles de entender para un lector que no conoce el tema."
+          "texto": "Revisa el borrador por cuenta propia y reformula los pasajes que, releídos, resultan difíciles de entender para un lector que no conoce el tema.",
+          "alumno": {
+            "verbo": "revisa",
+            "texto": "Revisa el borrador por cuenta propia y vuelve a escribir las partes que resultarían difíciles de entender para alguien que desconoce el tema.",
+            "origen": "de9372a3"
+          }
         },
         "n4": {
           "verbo": "justifica",
-          "texto": "Justifica con el metalenguaje del nivel los cambios introducidos para resolver un problema de comprensión detectado en el borrador, explicando qué mejora aporta cada uno."
+          "texto": "Justifica con el metalenguaje del nivel los cambios introducidos para resolver un problema de comprensión detectado en el borrador, explicando qué mejora aporta cada uno.",
+          "alumno": {
+            "verbo": "justifica",
+            "texto": "Justifica cada cambio del borrador con palabras de la asignatura (*registro*, *párrafo*, *conector*, *aposición*) y explica, para cada uno, qué problema de comprensión corrige y en qué mejora el texto.",
+            "origen": "5607ac89"
+          }
         }
       },
       "matriz_cuantitativa": {
@@ -2952,7 +3056,8 @@
         "penalizaciones": []
       },
       "descriptor_cotejo": null,
-      "descriptor_un_punto": "Elabora un esquema previo propio con el orden de las partes del texto y entrega el borrador con marcas de revisión sobre la ortografía y el léxico."
+      "descriptor_un_punto": "Elabora un esquema previo propio con el orden de las partes del texto y entrega el borrador con marcas de revisión sobre la ortografía y el léxico.",
+      "nombre_alumno": "Preparar y revisar el texto"
     },
     {
       "id": "lcl-b-informacion-expo-4eso",
@@ -2994,19 +3099,39 @@
       "descriptores": {
         "n1": {
           "verbo": "utiliza",
-          "texto": "Utiliza una única fuente y traslada su información al texto sin indicar su procedencia."
+          "texto": "Utiliza una única fuente y traslada su información al texto sin indicar su procedencia.",
+          "alumno": {
+            "verbo": "usa",
+            "texto": "Usa una sola fuente (un libro, una página web, un artículo) y pone la información en el texto sin indicar de dónde sale.",
+            "origen": "62f82bfb"
+          }
         },
         "n2": {
           "verbo": "selecciona",
-          "texto": "Selecciona información de dos o más fuentes por cuenta propia e indica su procedencia en el texto."
+          "texto": "Selecciona información de dos o más fuentes por cuenta propia e indica su procedencia en el texto.",
+          "alumno": {
+            "verbo": "elige",
+            "texto": "Elige por cuenta propia información de dos o más fuentes e indica en el texto de dónde sale.",
+            "origen": "8f4d2ec1"
+          }
         },
         "n3": {
           "verbo": "contrasta",
-          "texto": "Contrasta la información de fuentes distintas, valora cuál es más fiable a partir de su autoría o su fecha, y cita el origen de los datos empleados."
+          "texto": "Contrasta la información de fuentes distintas, valora cuál es más fiable a partir de su autoría o su fecha, y cita el origen de los datos empleados.",
+          "alumno": {
+            "verbo": "contrasta",
+            "texto": "Contrasta fuentes distintas para ver si coinciden, valora cuál merece más confianza según quién la firma o de cuándo es, y señala de dónde sale cada dato usado.",
+            "origen": "22a3beb0"
+          }
         },
         "n4": {
           "verbo": "integra",
-          "texto": "Integra en el texto un punto de vista propio sobre el tema, contrastando las posturas de las fuentes cuando difieren entre sí, y respeta los principios de propiedad intelectual en todas las citas."
+          "texto": "Integra en el texto un punto de vista propio sobre el tema, contrastando las posturas de las fuentes cuando difieren entre sí, y respeta los principios de propiedad intelectual en todas las citas.",
+          "alumno": {
+            "verbo": "expone",
+            "texto": "Expone una opinión propia sobre el tema, comparando lo que dice cada fuente cuando las fuentes discrepan, y respeta el trabajo ajeno (la propiedad intelectual): indica el autor de cada idea o frase tomada de una fuente.",
+            "origen": "ed96b0f9"
+          }
         }
       },
       "matriz_cuantitativa": {
@@ -3094,7 +3219,8 @@
         "penalizaciones": []
       },
       "descriptor_cotejo": null,
-      "descriptor_un_punto": "Selecciona información de dos o más fuentes por cuenta propia e indica su procedencia en el texto."
+      "descriptor_un_punto": "Selecciona información de dos o más fuentes por cuenta propia e indica su procedencia en el texto.",
+      "nombre_alumno": "Las fuentes: de dónde sale la información"
     },
     {
       "id": "lcl-b-adecuacion-expo-1bach",

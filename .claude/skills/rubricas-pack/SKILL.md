@@ -118,7 +118,13 @@ Reglas de redacción:
    el banco.** Si no, la autoevaluación lo deja en 3.ª persona. *Reescribe* no está: se escribe
    *vuelve a escribir*.
 3. **Cuidado con los verbos del banco cuyo sujeto es otra persona:** *quien piensa distinto* se
-   proyecta como *quien pienso distinto*. Se escribe *quien opina distinto*.
+   proyecta como *quien pienso distinto*. Se escribe *quien opina distinto*. Lo mismo con los
+   sustantivos que se escriben igual que un verbo del banco: *en cada cita* sale *en cada cito*
+   (y *una copia*, *la entrega*). El validador no lo detecta: se lee la columna de autoevaluación
+   que imprime el script de carga. Tras *que* el motor no reconjuga, pero eso tampoco vale: una
+   relativa con verbo del banco (*los datos que cita*) la rechaza `test/proyeccion.mjs` si no
+   está declarada en `sujetos_ajenos` de `data/reglas-lexicas.json`. Se reescribe sin el verbo
+   (*los datos citados*).
 4. **Nada de reflexivos ni pronombres referidos al alumno** (*se le ocurren*, *su texto*): se
    proyectan mal. *Por cuenta propia*, *la idea propia*, *en el orden en que surgen*.
 5. **Sin adverbitis**, igual que el técnico: ni *bien*, ni *mal*, ni *a veces*, ni *bastante*.

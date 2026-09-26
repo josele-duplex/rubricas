@@ -385,6 +385,15 @@
 | **N3** | Distingue las ideas principales de las secundarias y encadena en el resumen la relación que el texto establece entre las partes. |
 | **N4** | Jerarquiza las ideas según el peso que reciben en el razonamiento del texto y abre el resumen con la que sostiene a las demás. |
 
+**Lenguaje sencillo** — lo que lee el alumno en la ficha y en la autoevaluación.
+
+| Nivel | Técnico | Sencillo | Sencillo (autoevaluación) |
+|---|---|---|---|
+| **N1** | Copia el primer párrafo del texto de cierta complejidad y lo presenta como resumen del conjunto. | Copia el primer párrafo de un texto con cierta dificultad y lo presenta como resumen de todo el texto. | Copio el primer párrafo de un texto con cierta dificultad y lo presento como resumen de todo el texto. |
+| **N2** | Reconoce el sentido global del texto de cierta complejidad y lo anuncia en la primera línea del resumen. | Reconoce de qué trata el texto en conjunto (el sentido global), aunque sea un texto con cierta dificultad, y lo anuncia en la primera línea del resumen. | Reconozco de qué trata el texto en conjunto (el sentido global), aunque sea un texto con cierta dificultad, y lo anuncio en la primera línea del resumen. |
+| **N3** | Distingue las ideas principales de las secundarias y encadena en el resumen la relación que el texto establece entre las partes. | Distingue las ideas más importantes (principales) de las que las completan (secundarias) y mantiene en el resumen la relación que hay entre las partes del texto (por ejemplo, causa y consecuencia). | Distingo las ideas más importantes (principales) de las que las completan (secundarias) y mantengo en el resumen la relación que hay entre las partes del texto (por ejemplo, causa y consecuencia). |
+| **N4** | Jerarquiza las ideas según el peso que reciben en el razonamiento del texto y abre el resumen con la que sostiene a las demás. | Ordena las ideas de más a menos importante según el peso que tienen en el razonamiento del texto (jerarquía) y abre el resumen con la idea que sostiene a todas las demás. | Ordeno las ideas de más a menos importante según el peso que tienen en el razonamiento del texto (jerarquía) y abro el resumen con la idea que sostiene a todas las demás. |
+
 **Matriz cuantitativa** — total 10 puntos. Es lo que usa el modo IA para corregir.
 
 | Componente | Máx. | Bandas |
@@ -405,6 +414,15 @@
 | **N2** | Selecciona las ideas que sostienen el contenido del texto y deja fuera los ejemplos y las digresiones. |
 | **N3** | Descarta las digresiones y los datos accesorios del texto y mantiene las ideas que permiten juzgar lo que el texto afirma. |
 | **N4** | Gradúa el espacio de cada idea en el resumen según el peso que recibe en el texto original. |
+
+**Lenguaje sencillo** — lo que lee el alumno en la ficha y en la autoevaluación.
+
+| Nivel | Técnico | Sencillo | Sencillo (autoevaluación) |
+|---|---|---|---|
+| **N1** | Traslada al resumen los datos y los ejemplos del texto uno detrás de otro. | Pone en el resumen los datos y los ejemplos del texto, uno detrás de otro. | Pongo en el resumen los datos y los ejemplos del texto, uno detrás de otro. |
+| **N2** | Selecciona las ideas que sostienen el contenido del texto y deja fuera los ejemplos y las digresiones. | Elige las ideas que sostienen el texto y deja fuera los ejemplos y lo que se aparta del tema (las digresiones). | Elijo las ideas que sostienen el texto y dejo fuera los ejemplos y lo que se aparta del tema (las digresiones). |
+| **N3** | Descarta las digresiones y los datos accesorios del texto y mantiene las ideas que permiten juzgar lo que el texto afirma. | Descarta las digresiones y los datos que sobran (accesorios), y mantiene las ideas que un lector necesita para opinar sobre lo que dice el texto. | Descarto las digresiones y los datos que sobran (accesorios), y mantengo las ideas que un lector necesita para opinar sobre lo que dice el texto. |
+| **N4** | Gradúa el espacio de cada idea en el resumen según el peso que recibe en el texto original. | Dedica a cada idea más o menos espacio en el resumen según la importancia que tiene en el texto original. | Dedico a cada idea más o menos espacio en el resumen según la importancia que tiene en el texto original. |
 
 **Matriz cuantitativa** — total 10 puntos. Es lo que usa el modo IA para corregir.
 
@@ -427,6 +445,15 @@
 | **N3** | Reformula con palabras propias las ideas del texto y reúne en una frase las que el original reparte en varias. |
 | **N4** | Sintetiza en un término general cada serie de ejemplos del texto y mantiene el sentido del original. |
 
+**Lenguaje sencillo** — lo que lee el alumno en la ficha y en la autoevaluación.
+
+| Nivel | Técnico | Sencillo | Sencillo (autoevaluación) |
+|---|---|---|---|
+| **N1** | Copia las frases del texto original en el mismo orden y las separa con punto. | Copia las frases del texto original en el mismo orden y las separa con puntos. | Copio las frases del texto original en el mismo orden y las separo con puntos. |
+| **N2** | Sustituye por sinónimos e hiperónimos el léxico del texto y ordena las ideas por cuenta propia. | Cambia las palabras del texto por otras de significado parecido (sinónimos) o más general (hiperónimos: *animal* en lugar de *perro*) y ordena las ideas por cuenta propia. | Cambio las palabras del texto por otras de significado parecido (sinónimos) o más general (hiperónimos: *animal* en lugar de *perro*) y ordeno las ideas por cuenta propia. |
+| **N3** | Reformula con palabras propias las ideas del texto y reúne en una frase las que el original reparte en varias. | Vuelve a contar con palabras propias las ideas del texto (reformulación) y agrupa en una sola frase lo que el original reparte en varias. | Vuelvo a contar con palabras propias las ideas del texto (reformulación) y agrupo en una sola frase lo que el original reparte en varias. |
+| **N4** | Sintetiza en un término general cada serie de ejemplos del texto y mantiene el sentido del original. | Sustituye cada lista de ejemplos del texto por una palabra general que los reúne (*la fruta* en lugar de *manzanas*, *peras* y *naranjas*) y mantiene el sentido del original. | Sustituyo cada lista de ejemplos del texto por una palabra general que los reúne (*la fruta* en lugar de *manzanas*, *peras* y *naranjas*) y mantengo el sentido del original. |
+
 **Matriz cuantitativa** — total 10 puntos. Es lo que usa el modo IA para corregir.
 
 | Componente | Máx. | Bandas |
@@ -447,6 +474,15 @@
 | **N2** | Redacta el resumen en un texto seguido y enlaza las ideas con conectores de orden y de causa. |
 | **N3** | Mantiene el resumen en la extensión pedida y encadena las ideas con marcadores de consecuencia y de concesión. |
 | **N4** | Suprime las marcas de subjetividad del resumen y traslada el contenido del texto sin tomar partido por él. |
+
+**Lenguaje sencillo** — lo que lee el alumno en la ficha y en la autoevaluación.
+
+| Nivel | Técnico | Sencillo | Sencillo (autoevaluación) |
+|---|---|---|---|
+| **N1** | Enumera las ideas del texto en el orden en que aparecen y añade una valoración propia. | Enumera las ideas del texto en forma de lista, en el mismo orden en que aparecen, y añade una opinión propia. | Enumero las ideas del texto en forma de lista, en el mismo orden en que aparecen, y añado una opinión propia. |
+| **N2** | Redacta el resumen en un texto seguido y enlaza las ideas con conectores de orden y de causa. | Redacta el resumen como un texto seguido y enlaza las ideas con conectores de orden (*primero*, *después*) y de causa (*porque*, *ya que*). | Redacto el resumen como un texto seguido y enlazo las ideas con conectores de orden (*primero*, *después*) y de causa (*porque*, *ya que*). |
+| **N3** | Mantiene el resumen en la extensión pedida y encadena las ideas con marcadores de consecuencia y de concesión. | Ajusta el resumen a la longitud pedida y enlaza las ideas con conectores de consecuencia (*por tanto*) y de oposición parcial (concesión: *aunque*, *a pesar de que*). | Ajusto el resumen a la longitud pedida y enlazo las ideas con conectores de consecuencia (*por tanto*) y de oposición parcial (concesión: *aunque*, *a pesar de que*). |
+| **N4** | Suprime las marcas de subjetividad del resumen y traslada el contenido del texto sin tomar partido por él. | Deja fuera del resumen las opiniones y las palabras que valoran (marcas de subjetividad: *por desgracia*, *increíble*) y traslada lo que dice el texto sin tomar partido, ni a favor ni en contra. | Dejo fuera del resumen las opiniones y las palabras que valoran (marcas de subjetividad: *por desgracia*, *increíble*) y traslado lo que dice el texto sin tomar partido, ni a favor ni en contra. |
 
 **Matriz cuantitativa** — total 10 puntos. Es lo que usa el modo IA para corregir.
 
@@ -469,6 +505,15 @@
 | **N2** | Aplica las normas de acentuación y concordancia, con errores aislados que permiten seguir el resumen. |
 | **N3** | Aplica las normas de ortografía y puntuación del nivel y delimita con coma los incisos del resumen. |
 | **N4** | Elige el término preciso para nombrar cada idea del texto y sustituye los verbos comodín por otros exactos. |
+
+**Lenguaje sencillo** — lo que lee el alumno en la ficha y en la autoevaluación.
+
+| Nivel | Técnico | Sencillo | Sencillo (autoevaluación) |
+|---|---|---|---|
+| **N1** | Redacta el resumen con errores de ortografía y de puntuación que obligan a releer para seguir la idea. | Redacta el resumen con faltas de ortografía y de puntuación, y el lector tiene que leer dos veces para seguir la idea. | Redacto el resumen con faltas de ortografía y de puntuación, y el lector tiene que leer dos veces para seguir la idea. |
+| **N2** | Aplica las normas de acentuación y concordancia, con errores aislados que permiten seguir el resumen. | Aplica las normas de las tildes (acentuación) y de concordancia entre palabras (*las ideas principales*), con errores sueltos que permiten seguir el resumen. | Aplico las normas de las tildes (acentuación) y de concordancia entre palabras (*las ideas principales*), con errores sueltos que permiten seguir el resumen. |
+| **N3** | Aplica las normas de ortografía y puntuación del nivel y delimita con coma los incisos del resumen. | Aplica las normas de ortografía y puntuación, y pone entre comas las aclaraciones que interrumpen la frase (incisos: *el autor, según parece, defiende…*). | Aplico las normas de ortografía y puntuación, y pongo entre comas las aclaraciones que interrumpen la frase (incisos: *el autor, según parece, defiende…*). |
+| **N4** | Elige el término preciso para nombrar cada idea del texto y sustituye los verbos comodín por otros exactos. | Elige la palabra exacta para nombrar cada idea del texto y cambia los verbos comodín (*hacer*, *poner*, *decir*) por otros más exactos (*realizar*, *colocar*, *afirmar*). | Elijo la palabra exacta para nombrar cada idea del texto y cambio los verbos comodín (*hacer*, *poner*, *decir*) por otros más exactos (*realizar*, *colocar*, *afirmar*). |
 
 **Matriz cuantitativa** — total 10 puntos. Es lo que usa el modo IA para corregir.
 

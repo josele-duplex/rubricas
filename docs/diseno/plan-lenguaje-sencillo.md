@@ -232,6 +232,13 @@ así que van en **dos sesiones**, en este orden:
 El de Ln-b es el mismo con `investigacion` y `oral`, y con el argumentativo y
 los tres de Ln-a como referencia.
 
+**2.º ESO** (fijado por el docente el 26-sep-2026): `argumentativo`, `expositivo`, `narracion`,
+`resumen`, `oral` (exposiciones orales) e `investigacion` (el trabajo multimodal). Son seis
+packs, 33 dimensiones y 132 descriptores. El docente pidió también la **redacción de una
+noticia**, pero en 2.º ESO esa celda de §4.3 está vacía: no hay criterio de la competencia 6
+que abra la puerta, y la app no ofrece ese pack en ese curso. Se le ha dicho; si quiere
+reabrirlo, es una decisión de derivación (§17 del SDD), no de este plan.
+
 ## 7. Registro de cobertura
 
 | Pack | Curso | Estado | Sesión | Fecha |

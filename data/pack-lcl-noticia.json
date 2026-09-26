@@ -1356,19 +1356,39 @@
       "descriptores": {
         "n1": {
           "verbo": "redacta",
-          "texto": "Redacta la noticia como un relato continuo de los hechos y abre el texto con una frase de resumen."
+          "texto": "Redacta la noticia como un relato continuo de los hechos y abre el texto con una frase de resumen.",
+          "alumno": {
+            "verbo": "redacta",
+            "texto": "Redacta la noticia como una historia seguida de lo ocurrido y abre el texto con una frase que resume el hecho.",
+            "origen": "7c4a2d10"
+          }
         },
         "n2": {
           "verbo": "organiza",
-          "texto": "Organiza la noticia en titular, entradilla y cuerpo, y ordena los datos en párrafos temáticos."
+          "texto": "Organiza la noticia en titular, entradilla y cuerpo, y ordena los datos en párrafos temáticos.",
+          "alumno": {
+            "verbo": "organiza",
+            "texto": "Organiza la noticia en titular, entradilla (el primer párrafo, que resume lo esencial) y cuerpo, y agrupa en cada párrafo los datos de un mismo aspecto.",
+            "origen": "f18feca6"
+          }
         },
         "n3": {
           "verbo": "formula",
-          "texto": "Formula un titular informativo con verbo propio y resuelve en la entradilla las cinco preguntas del hecho."
+          "texto": "Formula un titular informativo con verbo propio y resuelve en la entradilla las cinco preguntas del hecho.",
+          "alumno": {
+            "verbo": "pone",
+            "texto": "Pone a la noticia un titular que informa y lleva verbo propio (*Un incendio arrasa…*), y resuelve en la entradilla las cinco preguntas del hecho: *qué*, *quién*, *cuándo*, *dónde* y *por qué*.",
+            "origen": "3b27aa41"
+          }
         },
         "n4": {
           "verbo": "jerarquiza",
-          "texto": "Jerarquiza el cuerpo en pirámide invertida y sostiene cada párrafo con un dato nuevo."
+          "texto": "Jerarquiza el cuerpo en pirámide invertida y sostiene cada párrafo con un dato nuevo.",
+          "alumno": {
+            "verbo": "ordena",
+            "texto": "Ordena el cuerpo de lo más importante a lo menos importante (pirámide invertida) y añade un dato nuevo en cada párrafo.",
+            "origen": "fee3d217"
+          }
         }
       },
       "matriz_cuantitativa": {
@@ -1456,7 +1476,8 @@
         "penalizaciones": []
       },
       "descriptor_cotejo": null,
-      "descriptor_un_punto": "Organiza la noticia en titular, entradilla y cuerpo, y ordena los datos en párrafos temáticos."
+      "descriptor_un_punto": "Organiza la noticia en titular, entradilla y cuerpo, y ordena los datos en párrafos temáticos.",
+      "nombre_alumno": "Las partes de la noticia"
     },
     {
       "id": "lcl-b-fuentes-not-4eso",
@@ -1499,19 +1520,39 @@
       "descriptores": {
         "n1": {
           "verbo": "localiza",
-          "texto": "Localiza los datos del hecho en la primera fuente encontrada y los traslada a la noticia."
+          "texto": "Localiza los datos del hecho en la primera fuente encontrada y los traslada a la noticia.",
+          "alumno": {
+            "verbo": "localiza",
+            "texto": "Localiza los datos del hecho en la primera fuente encontrada y los pone en la noticia.",
+            "origen": "404cb7d3"
+          }
         },
         "n2": {
           "verbo": "selecciona",
-          "texto": "Selecciona entre varias fuentes las pertinentes para el hecho y descarta las demás."
+          "texto": "Selecciona entre varias fuentes las pertinentes para el hecho y descarta las demás.",
+          "alumno": {
+            "verbo": "elige",
+            "texto": "Elige entre varias fuentes las que sirven para ese hecho (las pertinentes) y descarta las demás.",
+            "origen": "b70300c3"
+          }
         },
         "n3": {
           "verbo": "contrasta",
-          "texto": "Contrasta cada dato del hecho en dos fuentes y anota las diferencias entre ambas."
+          "texto": "Contrasta cada dato del hecho en dos fuentes y anota las diferencias entre ambas.",
+          "alumno": {
+            "verbo": "contrasta",
+            "texto": "Contrasta cada dato del hecho en dos fuentes, para ver si coinciden, y anota las diferencias entre ellas.",
+            "origen": "53403403"
+          }
         },
         "n4": {
           "verbo": "verifica",
-          "texto": "Verifica la autoría, la fecha y los datos citados de cada fuente antes de darla por buena."
+          "texto": "Verifica la autoría, la fecha y los datos citados de cada fuente antes de darla por buena.",
+          "alumno": {
+            "verbo": "verifica",
+            "texto": "Verifica, antes de dar por buena una fuente, quién la firma (la autoría), de cuándo es y si son ciertos los datos citados en ella.",
+            "origen": "b0899369"
+          }
         }
       },
       "matriz_cuantitativa": {
@@ -1599,7 +1640,8 @@
         "penalizaciones": []
       },
       "descriptor_cotejo": null,
-      "descriptor_un_punto": "Selecciona entre varias fuentes las pertinentes para el hecho y descarta las demás."
+      "descriptor_un_punto": "Selecciona entre varias fuentes las pertinentes para el hecho y descarta las demás.",
+      "nombre_alumno": "Buscar y comprobar las fuentes"
     },
     {
       "id": "lcl-b-atribucion-not-4eso",
@@ -1642,19 +1684,39 @@
       "descriptores": {
         "n1": {
           "verbo": "anota",
-          "texto": "Anota al final de la noticia la lista de fuentes consultadas."
+          "texto": "Anota al final de la noticia la lista de fuentes consultadas.",
+          "alumno": {
+            "verbo": "anota",
+            "texto": "Anota al final de la noticia la lista de las fuentes consultadas.",
+            "origen": "1488a002"
+          }
         },
         "n2": {
           "verbo": "indica",
-          "texto": "Indica en el cuerpo la procedencia de los datos tomados de cada fuente."
+          "texto": "Indica en el cuerpo la procedencia de los datos tomados de cada fuente.",
+          "alumno": {
+            "verbo": "indica",
+            "texto": "Indica dentro de la noticia (en el cuerpo) de dónde sale cada dato tomado de una fuente (*según el Ayuntamiento…*).",
+            "origen": "454d3a01"
+          }
         },
         "n3": {
           "verbo": "cita",
-          "texto": "Cita entre comillas las declaraciones textuales y añade el nombre del autor de cada una."
+          "texto": "Cita entre comillas las declaraciones textuales y añade el nombre del autor de cada una.",
+          "alumno": {
+            "verbo": "pone",
+            "texto": "Pone entre comillas las palabras exactas de cada persona (declaraciones textuales) y añade quién las dijo.",
+            "origen": "dcccd354"
+          }
         },
         "n4": {
           "verbo": "atribuye",
-          "texto": "Atribuye cada afirmación a la fuente correspondiente y distingue el dato verificado del dato atribuido."
+          "texto": "Atribuye cada afirmación a la fuente correspondiente y distingue el dato verificado del dato atribuido.",
+          "alumno": {
+            "verbo": "senala",
+            "texto": "Señala de qué fuente sale cada afirmación y distingue lo que está comprobado (dato verificado) de lo que solo dice una fuente (dato atribuido: *según la policía…*).",
+            "origen": "7f61367a"
+          }
         }
       },
       "matriz_cuantitativa": {
@@ -1742,7 +1804,8 @@
         "penalizaciones": []
       },
       "descriptor_cotejo": null,
-      "descriptor_un_punto": "Indica en el cuerpo la procedencia de los datos tomados de cada fuente."
+      "descriptor_un_punto": "Indica en el cuerpo la procedencia de los datos tomados de cada fuente.",
+      "nombre_alumno": "Decir de dónde sale cada dato"
     },
     {
       "id": "lcl-b-registro-not-4eso",
@@ -1785,19 +1848,39 @@
       "descriptores": {
         "n1": {
           "verbo": "traslada",
-          "texto": "Traslada a la noticia la impresión personal del hecho junto a los datos reunidos."
+          "texto": "Traslada a la noticia la impresión personal del hecho junto a los datos reunidos.",
+          "alumno": {
+            "verbo": "anade",
+            "texto": "Añade a los datos reunidos la impresión propia sobre lo ocurrido (*fue algo horrible*).",
+            "origen": "7d11aecb"
+          }
         },
         "n2": {
           "verbo": "separa",
-          "texto": "Separa los hechos comprobados, las declaraciones citadas y los datos todavía sin confirmar."
+          "texto": "Separa los hechos comprobados, las declaraciones citadas y los datos todavía sin confirmar.",
+          "alumno": {
+            "verbo": "separa",
+            "texto": "Separa lo que está comprobado, lo que ha dicho alguien (declaraciones) y lo que todavía falta por confirmar.",
+            "origen": "88dfe234"
+          }
         },
         "n3": {
           "verbo": "mantiene",
-          "texto": "Mantiene el registro informativo y sustituye los adjetivos valorativos por datos."
+          "texto": "Mantiene el registro informativo y sustituye los adjetivos valorativos por datos.",
+          "alumno": {
+            "verbo": "mantiene",
+            "texto": "Mantiene un tono de informar, sin opinar (registro informativo), y cambia los adjetivos que valoran (*enorme*, *terrible*) por datos (*de 300 hectáreas*).",
+            "origen": "e0835107"
+          }
         },
         "n4": {
           "verbo": "elige",
-          "texto": "Elige la forma verbal correspondiente al grado de certeza de cada dato y modula la afirmación cuando la fuente resulta dudosa."
+          "texto": "Elige la forma verbal correspondiente al grado de certeza de cada dato y modula la afirmación cuando la fuente resulta dudosa.",
+          "alumno": {
+            "verbo": "elige",
+            "texto": "Elige la forma del verbo según lo seguro que es cada dato (*ha dimitido* o *habría dimitido*) y matiza la afirmación cuando la fuente es dudosa (*al parecer*, *según fuentes sin confirmar*).",
+            "origen": "86b97822"
+          }
         }
       },
       "matriz_cuantitativa": {
@@ -1885,7 +1968,8 @@
         "penalizaciones": []
       },
       "descriptor_cotejo": null,
-      "descriptor_un_punto": "Separa los hechos comprobados, las declaraciones citadas y los datos todavía sin confirmar."
+      "descriptor_un_punto": "Separa los hechos comprobados, las declaraciones citadas y los datos todavía sin confirmar.",
+      "nombre_alumno": "Informar sin opinar"
     },
     {
       "id": "lcl-d-correccion-not-4eso",
@@ -1928,19 +2012,39 @@
       "descriptores": {
         "n1": {
           "verbo": "redacta",
-          "texto": "Redacta la noticia con faltas que obligan al lector a reconstruir alguna frase."
+          "texto": "Redacta la noticia con faltas que obligan al lector a reconstruir alguna frase.",
+          "alumno": {
+            "verbo": "redacta",
+            "texto": "Redacta la noticia con faltas que obligan al lector a leer alguna frase dos veces para entenderla.",
+            "origen": "b2aab33f"
+          }
         },
         "n2": {
           "verbo": "aplica",
-          "texto": "Aplica las normas de acentuación y de concordancia y resuelve las dudas con el diccionario."
+          "texto": "Aplica las normas de acentuación y de concordancia y resuelve las dudas con el diccionario.",
+          "alumno": {
+            "verbo": "aplica",
+            "texto": "Aplica las normas de las tildes (acentuación) y de concordancia entre palabras, y resuelve las dudas consultando el diccionario.",
+            "origen": "516ac9ef"
+          }
         },
         "n3": {
           "verbo": "aplica",
-          "texto": "Aplica la puntuación del discurso referido: comillas, dos puntos y raya de diálogo."
+          "texto": "Aplica la puntuación del discurso referido: comillas, dos puntos y raya de diálogo.",
+          "alumno": {
+            "verbo": "aplica",
+            "texto": "Aplica los signos que sirven para reproducir lo que dice otra persona (puntuación del discurso referido): comillas, dos puntos y raya de diálogo.",
+            "origen": "fcaefdb6"
+          }
         },
         "n4": {
           "verbo": "elige",
-          "texto": "Elige el término preciso para cada acción del hecho y sustituye el verbo comodín por otro exacto."
+          "texto": "Elige el término preciso para cada acción del hecho y sustituye el verbo comodín por otro exacto.",
+          "alumno": {
+            "verbo": "elige",
+            "texto": "Elige la palabra exacta para cada acción del hecho y cambia el verbo comodín por otro exacto (*se declaró un incendio* en lugar de *hubo un incendio*).",
+            "origen": "ac5ec9c5"
+          }
         }
       },
       "matriz_cuantitativa": {
@@ -2028,7 +2132,8 @@
         "penalizaciones": []
       },
       "descriptor_cotejo": null,
-      "descriptor_un_punto": "Aplica las normas de acentuación y de concordancia y resuelve las dudas con el diccionario."
+      "descriptor_un_punto": "Aplica las normas de acentuación y de concordancia y resuelve las dudas con el diccionario.",
+      "nombre_alumno": "Ortografía, gramática y vocabulario"
     },
     {
       "id": "lcl-b-estructura-not-1bach",

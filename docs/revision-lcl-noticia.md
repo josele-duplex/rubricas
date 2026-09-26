@@ -243,6 +243,15 @@
 | **N3** | Formula un titular informativo con verbo propio y resuelve en la entradilla las cinco preguntas del hecho. |
 | **N4** | Jerarquiza el cuerpo en pirámide invertida y sostiene cada párrafo con un dato nuevo. |
 
+**Lenguaje sencillo** — lo que lee el alumno en la ficha y en la autoevaluación.
+
+| Nivel | Técnico | Sencillo | Sencillo (autoevaluación) |
+|---|---|---|---|
+| **N1** | Redacta la noticia como un relato continuo de los hechos y abre el texto con una frase de resumen. | Redacta la noticia como una historia seguida de lo ocurrido y abre el texto con una frase que resume el hecho. | Redacto la noticia como una historia seguida de lo ocurrido y abro el texto con una frase que resume el hecho. |
+| **N2** | Organiza la noticia en titular, entradilla y cuerpo, y ordena los datos en párrafos temáticos. | Organiza la noticia en titular, entradilla (el primer párrafo, que resume lo esencial) y cuerpo, y agrupa en cada párrafo los datos de un mismo aspecto. | Organizo la noticia en titular, entradilla (el primer párrafo, que resume lo esencial) y cuerpo, y agrupo en cada párrafo los datos de un mismo aspecto. |
+| **N3** | Formula un titular informativo con verbo propio y resuelve en la entradilla las cinco preguntas del hecho. | Pone a la noticia un titular que informa y lleva verbo propio (*Un incendio arrasa…*), y resuelve en la entradilla las cinco preguntas del hecho: *qué*, *quién*, *cuándo*, *dónde* y *por qué*. | Pongo a la noticia un titular que informa y lleva verbo propio (*Un incendio arrasa…*), y resuelvo en la entradilla las cinco preguntas del hecho: *qué*, *quién*, *cuándo*, *dónde* y *por qué*. |
+| **N4** | Jerarquiza el cuerpo en pirámide invertida y sostiene cada párrafo con un dato nuevo. | Ordena el cuerpo de lo más importante a lo menos importante (pirámide invertida) y añade un dato nuevo en cada párrafo. | Ordeno el cuerpo de lo más importante a lo menos importante (pirámide invertida) y añado un dato nuevo en cada párrafo. |
+
 **Matriz cuantitativa** — total 10 puntos. Es lo que usa el modo IA para corregir.
 
 | Componente | Máx. | Bandas |
@@ -263,6 +272,15 @@
 | **N2** | Selecciona entre varias fuentes las pertinentes para el hecho y descarta las demás. |
 | **N3** | Contrasta cada dato del hecho en dos fuentes y anota las diferencias entre ambas. |
 | **N4** | Verifica la autoría, la fecha y los datos citados de cada fuente antes de darla por buena. |
+
+**Lenguaje sencillo** — lo que lee el alumno en la ficha y en la autoevaluación.
+
+| Nivel | Técnico | Sencillo | Sencillo (autoevaluación) |
+|---|---|---|---|
+| **N1** | Localiza los datos del hecho en la primera fuente encontrada y los traslada a la noticia. | Localiza los datos del hecho en la primera fuente encontrada y los pone en la noticia. | Localizo los datos del hecho en la primera fuente encontrada y los pongo en la noticia. |
+| **N2** | Selecciona entre varias fuentes las pertinentes para el hecho y descarta las demás. | Elige entre varias fuentes las que sirven para ese hecho (las pertinentes) y descarta las demás. | Elijo entre varias fuentes las que sirven para ese hecho (las pertinentes) y descarto las demás. |
+| **N3** | Contrasta cada dato del hecho en dos fuentes y anota las diferencias entre ambas. | Contrasta cada dato del hecho en dos fuentes, para ver si coinciden, y anota las diferencias entre ellas. | Contrasto cada dato del hecho en dos fuentes, para ver si coinciden, y anoto las diferencias entre ellas. |
+| **N4** | Verifica la autoría, la fecha y los datos citados de cada fuente antes de darla por buena. | Verifica, antes de dar por buena una fuente, quién la firma (la autoría), de cuándo es y si son ciertos los datos citados en ella. | Verifico, antes de dar por buena una fuente, quién la firma (la autoría), de cuándo es y si son ciertos los datos citados en ella. |
 
 **Matriz cuantitativa** — total 10 puntos. Es lo que usa el modo IA para corregir.
 
@@ -285,6 +303,15 @@
 | **N3** | Cita entre comillas las declaraciones textuales y añade el nombre del autor de cada una. |
 | **N4** | Atribuye cada afirmación a la fuente correspondiente y distingue el dato verificado del dato atribuido. |
 
+**Lenguaje sencillo** — lo que lee el alumno en la ficha y en la autoevaluación.
+
+| Nivel | Técnico | Sencillo | Sencillo (autoevaluación) |
+|---|---|---|---|
+| **N1** | Anota al final de la noticia la lista de fuentes consultadas. | Anota al final de la noticia la lista de las fuentes consultadas. | Anoto al final de la noticia la lista de las fuentes consultadas. |
+| **N2** | Indica en el cuerpo la procedencia de los datos tomados de cada fuente. | Indica dentro de la noticia (en el cuerpo) de dónde sale cada dato tomado de una fuente (*según el Ayuntamiento…*). | Indico dentro de la noticia (en el cuerpo) de dónde sale cada dato tomado de una fuente (*según el Ayuntamiento…*). |
+| **N3** | Cita entre comillas las declaraciones textuales y añade el nombre del autor de cada una. | Pone entre comillas las palabras exactas de cada persona (declaraciones textuales) y añade quién las dijo. | Pongo entre comillas las palabras exactas de cada persona (declaraciones textuales) y añado quién las dijo. |
+| **N4** | Atribuye cada afirmación a la fuente correspondiente y distingue el dato verificado del dato atribuido. | Señala de qué fuente sale cada afirmación y distingue lo que está comprobado (dato verificado) de lo que solo dice una fuente (dato atribuido: *según la policía…*). | Señalo de qué fuente sale cada afirmación y distingo lo que está comprobado (dato verificado) de lo que solo dice una fuente (dato atribuido: *según la policía…*). |
+
 **Matriz cuantitativa** — total 10 puntos. Es lo que usa el modo IA para corregir.
 
 | Componente | Máx. | Bandas |
@@ -306,6 +333,15 @@
 | **N3** | Mantiene el registro informativo y sustituye los adjetivos valorativos por datos. |
 | **N4** | Elige la forma verbal correspondiente al grado de certeza de cada dato y modula la afirmación cuando la fuente resulta dudosa. |
 
+**Lenguaje sencillo** — lo que lee el alumno en la ficha y en la autoevaluación.
+
+| Nivel | Técnico | Sencillo | Sencillo (autoevaluación) |
+|---|---|---|---|
+| **N1** | Traslada a la noticia la impresión personal del hecho junto a los datos reunidos. | Añade a los datos reunidos la impresión propia sobre lo ocurrido (*fue algo horrible*). | Añado a los datos reunidos la impresión propia sobre lo ocurrido (*fue algo horrible*). |
+| **N2** | Separa los hechos comprobados, las declaraciones citadas y los datos todavía sin confirmar. | Separa lo que está comprobado, lo que ha dicho alguien (declaraciones) y lo que todavía falta por confirmar. | Separo lo que está comprobado, lo que ha dicho alguien (declaraciones) y lo que todavía falta por confirmar. |
+| **N3** | Mantiene el registro informativo y sustituye los adjetivos valorativos por datos. | Mantiene un tono de informar, sin opinar (registro informativo), y cambia los adjetivos que valoran (*enorme*, *terrible*) por datos (*de 300 hectáreas*). | Mantengo un tono de informar, sin opinar (registro informativo), y cambio los adjetivos que valoran (*enorme*, *terrible*) por datos (*de 300 hectáreas*). |
+| **N4** | Elige la forma verbal correspondiente al grado de certeza de cada dato y modula la afirmación cuando la fuente resulta dudosa. | Elige la forma del verbo según lo seguro que es cada dato (*ha dimitido* o *habría dimitido*) y matiza la afirmación cuando la fuente es dudosa (*al parecer*, *según fuentes sin confirmar*). | Elijo la forma del verbo según lo seguro que es cada dato (*ha dimitido* o *habría dimitido*) y matizo la afirmación cuando la fuente es dudosa (*al parecer*, *según fuentes sin confirmar*). |
+
 **Matriz cuantitativa** — total 10 puntos. Es lo que usa el modo IA para corregir.
 
 | Componente | Máx. | Bandas |
@@ -326,6 +362,15 @@
 | **N2** | Aplica las normas de acentuación y de concordancia y resuelve las dudas con el diccionario. |
 | **N3** | Aplica la puntuación del discurso referido: comillas, dos puntos y raya de diálogo. |
 | **N4** | Elige el término preciso para cada acción del hecho y sustituye el verbo comodín por otro exacto. |
+
+**Lenguaje sencillo** — lo que lee el alumno en la ficha y en la autoevaluación.
+
+| Nivel | Técnico | Sencillo | Sencillo (autoevaluación) |
+|---|---|---|---|
+| **N1** | Redacta la noticia con faltas que obligan al lector a reconstruir alguna frase. | Redacta la noticia con faltas que obligan al lector a leer alguna frase dos veces para entenderla. | Redacto la noticia con faltas que obligan al lector a leer alguna frase dos veces para entenderla. |
+| **N2** | Aplica las normas de acentuación y de concordancia y resuelve las dudas con el diccionario. | Aplica las normas de las tildes (acentuación) y de concordancia entre palabras, y resuelve las dudas consultando el diccionario. | Aplico las normas de las tildes (acentuación) y de concordancia entre palabras, y resuelvo las dudas consultando el diccionario. |
+| **N3** | Aplica la puntuación del discurso referido: comillas, dos puntos y raya de diálogo. | Aplica los signos que sirven para reproducir lo que dice otra persona (puntuación del discurso referido): comillas, dos puntos y raya de diálogo. | Aplico los signos que sirven para reproducir lo que dice otra persona (puntuación del discurso referido): comillas, dos puntos y raya de diálogo. |
+| **N4** | Elige el término preciso para cada acción del hecho y sustituye el verbo comodín por otro exacto. | Elige la palabra exacta para cada acción del hecho y cambia el verbo comodín por otro exacto (*se declaró un incendio* en lugar de *hubo un incendio*). | Elijo la palabra exacta para cada acción del hecho y cambio el verbo comodín por otro exacto (*se declaró un incendio* en lugar de *hubo un incendio*). |
 
 **Matriz cuantitativa** — total 10 puntos. Es lo que usa el modo IA para corregir.
 

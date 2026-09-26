@@ -2293,19 +2293,39 @@
       "descriptores": {
         "n1": {
           "verbo": "copia",
-          "texto": "Copia el primer párrafo del texto de cierta complejidad y lo presenta como resumen del conjunto."
+          "texto": "Copia el primer párrafo del texto de cierta complejidad y lo presenta como resumen del conjunto.",
+          "alumno": {
+            "verbo": "copia",
+            "texto": "Copia el primer párrafo de un texto con cierta dificultad y lo presenta como resumen de todo el texto.",
+            "origen": "7103dc01"
+          }
         },
         "n2": {
           "verbo": "reconoce",
-          "texto": "Reconoce el sentido global del texto de cierta complejidad y lo anuncia en la primera línea del resumen."
+          "texto": "Reconoce el sentido global del texto de cierta complejidad y lo anuncia en la primera línea del resumen.",
+          "alumno": {
+            "verbo": "reconoce",
+            "texto": "Reconoce de qué trata el texto en conjunto (el sentido global), aunque sea un texto con cierta dificultad, y lo anuncia en la primera línea del resumen.",
+            "origen": "cafc3ca2"
+          }
         },
         "n3": {
           "verbo": "distingue",
-          "texto": "Distingue las ideas principales de las secundarias y encadena en el resumen la relación que el texto establece entre las partes."
+          "texto": "Distingue las ideas principales de las secundarias y encadena en el resumen la relación que el texto establece entre las partes.",
+          "alumno": {
+            "verbo": "distingue",
+            "texto": "Distingue las ideas más importantes (principales) de las que las completan (secundarias) y mantiene en el resumen la relación que hay entre las partes del texto (por ejemplo, causa y consecuencia).",
+            "origen": "463523f1"
+          }
         },
         "n4": {
           "verbo": "jerarquiza",
-          "texto": "Jerarquiza las ideas según el peso que reciben en el razonamiento del texto y abre el resumen con la que sostiene a las demás."
+          "texto": "Jerarquiza las ideas según el peso que reciben en el razonamiento del texto y abre el resumen con la que sostiene a las demás.",
+          "alumno": {
+            "verbo": "ordena",
+            "texto": "Ordena las ideas de más a menos importante según el peso que tienen en el razonamiento del texto (jerarquía) y abre el resumen con la idea que sostiene a todas las demás.",
+            "origen": "11df9ebf"
+          }
         }
       },
       "matriz_cuantitativa": {
@@ -2393,7 +2413,8 @@
         "penalizaciones": []
       },
       "descriptor_cotejo": null,
-      "descriptor_un_punto": "Reconoce el sentido global del texto y lo anuncia en la primera línea del resumen."
+      "descriptor_un_punto": "Reconoce el sentido global del texto y lo anuncia en la primera línea del resumen.",
+      "nombre_alumno": "Entender el texto: qué ideas importan más"
     },
     {
       "id": "lcl-b-seleccion-res-4eso",
@@ -2435,19 +2456,39 @@
       "descriptores": {
         "n1": {
           "verbo": "traslada",
-          "texto": "Traslada al resumen los datos y los ejemplos del texto uno detrás de otro."
+          "texto": "Traslada al resumen los datos y los ejemplos del texto uno detrás de otro.",
+          "alumno": {
+            "verbo": "pone",
+            "texto": "Pone en el resumen los datos y los ejemplos del texto, uno detrás de otro.",
+            "origen": "d671f6d2"
+          }
         },
         "n2": {
           "verbo": "selecciona",
-          "texto": "Selecciona las ideas que sostienen el contenido del texto y deja fuera los ejemplos y las digresiones."
+          "texto": "Selecciona las ideas que sostienen el contenido del texto y deja fuera los ejemplos y las digresiones.",
+          "alumno": {
+            "verbo": "elige",
+            "texto": "Elige las ideas que sostienen el texto y deja fuera los ejemplos y lo que se aparta del tema (las digresiones).",
+            "origen": "cd0cd273"
+          }
         },
         "n3": {
           "verbo": "descarta",
-          "texto": "Descarta las digresiones y los datos accesorios del texto y mantiene las ideas que permiten juzgar lo que el texto afirma."
+          "texto": "Descarta las digresiones y los datos accesorios del texto y mantiene las ideas que permiten juzgar lo que el texto afirma.",
+          "alumno": {
+            "verbo": "descarta",
+            "texto": "Descarta las digresiones y los datos que sobran (accesorios), y mantiene las ideas que un lector necesita para opinar sobre lo que dice el texto.",
+            "origen": "849607d9"
+          }
         },
         "n4": {
           "verbo": "gradua",
-          "texto": "Gradúa el espacio de cada idea en el resumen según el peso que recibe en el texto original."
+          "texto": "Gradúa el espacio de cada idea en el resumen según el peso que recibe en el texto original.",
+          "alumno": {
+            "verbo": "dedica",
+            "texto": "Dedica a cada idea más o menos espacio en el resumen según la importancia que tiene en el texto original.",
+            "origen": "bc5662b6"
+          }
         }
       },
       "matriz_cuantitativa": {
@@ -2535,7 +2576,8 @@
         "penalizaciones": []
       },
       "descriptor_cotejo": null,
-      "descriptor_un_punto": "Selecciona las ideas que sostienen el contenido del texto y deja fuera los ejemplos y las digresiones."
+      "descriptor_un_punto": "Selecciona las ideas que sostienen el contenido del texto y deja fuera los ejemplos y las digresiones.",
+      "nombre_alumno": "Elegir lo importante del texto"
     },
     {
       "id": "lcl-b-reformulacion-res-4eso",
@@ -2577,19 +2619,39 @@
       "descriptores": {
         "n1": {
           "verbo": "copia",
-          "texto": "Copia las frases del texto original en el mismo orden y las separa con punto."
+          "texto": "Copia las frases del texto original en el mismo orden y las separa con punto.",
+          "alumno": {
+            "verbo": "copia",
+            "texto": "Copia las frases del texto original en el mismo orden y las separa con puntos.",
+            "origen": "e506f74d"
+          }
         },
         "n2": {
           "verbo": "sustituye",
-          "texto": "Sustituye por sinónimos e hiperónimos el léxico del texto y ordena las ideas por cuenta propia."
+          "texto": "Sustituye por sinónimos e hiperónimos el léxico del texto y ordena las ideas por cuenta propia.",
+          "alumno": {
+            "verbo": "cambia",
+            "texto": "Cambia las palabras del texto por otras de significado parecido (sinónimos) o más general (hiperónimos: *animal* en lugar de *perro*) y ordena las ideas por cuenta propia.",
+            "origen": "0e55081b"
+          }
         },
         "n3": {
           "verbo": "reformula",
-          "texto": "Reformula con palabras propias las ideas del texto y reúne en una frase las que el original reparte en varias."
+          "texto": "Reformula con palabras propias las ideas del texto y reúne en una frase las que el original reparte en varias.",
+          "alumno": {
+            "verbo": "vuelve",
+            "texto": "Vuelve a contar con palabras propias las ideas del texto (reformulación) y agrupa en una sola frase lo que el original reparte en varias.",
+            "origen": "431ab5a8"
+          }
         },
         "n4": {
           "verbo": "sintetiza",
-          "texto": "Sintetiza en un término general cada serie de ejemplos del texto y mantiene el sentido del original."
+          "texto": "Sintetiza en un término general cada serie de ejemplos del texto y mantiene el sentido del original.",
+          "alumno": {
+            "verbo": "sustituye",
+            "texto": "Sustituye cada lista de ejemplos del texto por una palabra general que los reúne (*la fruta* en lugar de *manzanas*, *peras* y *naranjas*) y mantiene el sentido del original.",
+            "origen": "99167aca"
+          }
         }
       },
       "matriz_cuantitativa": {
@@ -2677,7 +2739,8 @@
         "penalizaciones": []
       },
       "descriptor_cotejo": null,
-      "descriptor_un_punto": "Sustituye por sinónimos e hiperónimos el léxico del texto y ordena las ideas por cuenta propia."
+      "descriptor_un_punto": "Sustituye por sinónimos e hiperónimos el léxico del texto y ordena las ideas por cuenta propia.",
+      "nombre_alumno": "Con palabras propias"
     },
     {
       "id": "lcl-b-redaccion-res-4eso",
@@ -2720,19 +2783,39 @@
       "descriptores": {
         "n1": {
           "verbo": "enumera",
-          "texto": "Enumera las ideas del texto en el orden en que aparecen y añade una valoración propia."
+          "texto": "Enumera las ideas del texto en el orden en que aparecen y añade una valoración propia.",
+          "alumno": {
+            "verbo": "enumera",
+            "texto": "Enumera las ideas del texto en forma de lista, en el mismo orden en que aparecen, y añade una opinión propia.",
+            "origen": "2b81a426"
+          }
         },
         "n2": {
           "verbo": "redacta",
-          "texto": "Redacta el resumen en un texto seguido y enlaza las ideas con conectores de orden y de causa."
+          "texto": "Redacta el resumen en un texto seguido y enlaza las ideas con conectores de orden y de causa.",
+          "alumno": {
+            "verbo": "redacta",
+            "texto": "Redacta el resumen como un texto seguido y enlaza las ideas con conectores de orden (*primero*, *después*) y de causa (*porque*, *ya que*).",
+            "origen": "659250e8"
+          }
         },
         "n3": {
           "verbo": "mantiene",
-          "texto": "Mantiene el resumen en la extensión pedida y encadena las ideas con marcadores de consecuencia y de concesión."
+          "texto": "Mantiene el resumen en la extensión pedida y encadena las ideas con marcadores de consecuencia y de concesión.",
+          "alumno": {
+            "verbo": "ajusta",
+            "texto": "Ajusta el resumen a la longitud pedida y enlaza las ideas con conectores de consecuencia (*por tanto*) y de oposición parcial (concesión: *aunque*, *a pesar de que*).",
+            "origen": "41d58c8d"
+          }
         },
         "n4": {
           "verbo": "suprime",
-          "texto": "Suprime las marcas de subjetividad del resumen y traslada el contenido del texto sin tomar partido por él."
+          "texto": "Suprime las marcas de subjetividad del resumen y traslada el contenido del texto sin tomar partido por él.",
+          "alumno": {
+            "verbo": "deja",
+            "texto": "Deja fuera del resumen las opiniones y las palabras que valoran (marcas de subjetividad: *por desgracia*, *increíble*) y traslada lo que dice el texto sin tomar partido, ni a favor ni en contra.",
+            "origen": "9f7d014f"
+          }
         }
       },
       "matriz_cuantitativa": {
@@ -2846,7 +2929,8 @@
         "penalizaciones": []
       },
       "descriptor_cotejo": null,
-      "descriptor_un_punto": "Redacta el resumen en un texto seguido y enlaza las ideas con conectores de orden y de causa."
+      "descriptor_un_punto": "Redacta el resumen en un texto seguido y enlaza las ideas con conectores de orden y de causa.",
+      "nombre_alumno": "Cómo está escrito el resumen"
     },
     {
       "id": "lcl-d-correccion-res-4eso",
@@ -2889,19 +2973,39 @@
       "descriptores": {
         "n1": {
           "verbo": "redacta",
-          "texto": "Redacta el resumen con errores de ortografía y de puntuación que obligan a releer para seguir la idea."
+          "texto": "Redacta el resumen con errores de ortografía y de puntuación que obligan a releer para seguir la idea.",
+          "alumno": {
+            "verbo": "redacta",
+            "texto": "Redacta el resumen con faltas de ortografía y de puntuación, y el lector tiene que leer dos veces para seguir la idea.",
+            "origen": "55a1a0ae"
+          }
         },
         "n2": {
           "verbo": "aplica",
-          "texto": "Aplica las normas de acentuación y concordancia, con errores aislados que permiten seguir el resumen."
+          "texto": "Aplica las normas de acentuación y concordancia, con errores aislados que permiten seguir el resumen.",
+          "alumno": {
+            "verbo": "aplica",
+            "texto": "Aplica las normas de las tildes (acentuación) y de concordancia entre palabras (*las ideas principales*), con errores sueltos que permiten seguir el resumen.",
+            "origen": "451f6788"
+          }
         },
         "n3": {
           "verbo": "aplica",
-          "texto": "Aplica las normas de ortografía y puntuación del nivel y delimita con coma los incisos del resumen."
+          "texto": "Aplica las normas de ortografía y puntuación del nivel y delimita con coma los incisos del resumen.",
+          "alumno": {
+            "verbo": "aplica",
+            "texto": "Aplica las normas de ortografía y puntuación, y pone entre comas las aclaraciones que interrumpen la frase (incisos: *el autor, según parece, defiende…*).",
+            "origen": "4437581c"
+          }
         },
         "n4": {
           "verbo": "elige",
-          "texto": "Elige el término preciso para nombrar cada idea del texto y sustituye los verbos comodín por otros exactos."
+          "texto": "Elige el término preciso para nombrar cada idea del texto y sustituye los verbos comodín por otros exactos.",
+          "alumno": {
+            "verbo": "elige",
+            "texto": "Elige la palabra exacta para nombrar cada idea del texto y cambia los verbos comodín (*hacer*, *poner*, *decir*) por otros más exactos (*realizar*, *colocar*, *afirmar*).",
+            "origen": "a1fa2134"
+          }
         }
       },
       "matriz_cuantitativa": {
@@ -2989,7 +3093,8 @@
         "penalizaciones": []
       },
       "descriptor_cotejo": null,
-      "descriptor_un_punto": "Aplica las normas de acentuación y concordancia, con errores aislados que permiten seguir el resumen."
+      "descriptor_un_punto": "Aplica las normas de acentuación y concordancia, con errores aislados que permiten seguir el resumen.",
+      "nombre_alumno": "Ortografía, gramática y vocabulario"
     },
     {
       "id": "lcl-b-comprension-res-1bach",
