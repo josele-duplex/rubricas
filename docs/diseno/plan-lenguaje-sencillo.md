@@ -94,7 +94,7 @@ Sigue el reparto de [`plan-cierre-fase-2.md`](plan-cierre-fase-2.md):
 
 | # | Quién / modelo | Objetivo | Depende de |
 |---|---|---|---|
-| L0 | Josele | Decisión en el marco teórico de Lengua | — |
+| L0 ✅ | Josele | Decisión en el marco teórico de Lengua — **hecha el 26-sep-2026: §2.4 del marco** | — |
 | L1 ✅ | Sonnet 5 | Infraestructura: campo, validadores, motor, revisión, script de carga — **hecha el 25-sep-2026 (v1.63)** | — |
 | L2 ✅ | Opus 5.5 | Argumentativo 4.º ESO: cargar el borrador y completar lo que falta — **hecha el 25-sep-2026 (v1.64)** | L1 |
 | Ln | Opus 5.5 | Una actividad nueva: pack y curso que diga el docente | L1 |
@@ -104,7 +104,7 @@ por cerrado el plan.
 
 ---
 
-## L0 · Josele — La decisión, en el sitio que le corresponde
+## L0 · Josele — La decisión, en el sitio que le corresponde ✅ hecha el 26-sep-2026
 
 Añadir una versión para el alumno es arquitectura de rúbrica, y ese hecho es de Lengua
 (matriz digital, §2). Un párrafo en `proyecto/documentos_base/marco_teorico_rubricas-LOMLOE.md`:
@@ -215,8 +215,9 @@ significado sin correcciones. El borrador está borrado y el pack pasa a v0.8.0.
 progresión de la próxima actividad de 4.º: este pack aún no tiene sencillo en 3.º ESO ni en
 1.º de Bachillerato, así que no hay con qué comparar en esa dirección.
 
-Sigue abierta **L0** (decisión 22 del SDD, con fecha de hoy, 25-sep-2026): el párrafo en el
-marco teórico de Lengua lo escribe el docente allí. No bloquea ninguna sesión Ln.
+L0 quedó hecha el 26-sep-2026: la doble versión consta en el §2.4 del marco teórico de Lengua
+(«Doble versión del descriptor: técnica y sencilla»), con un inciso en su §7.4, y la decisión
+22 del SDD está cerrada (v1.65). Con L0, L1 y L2 hechas, el plan queda en régimen de sesiones Ln.
 
 ## 7. Registro de cobertura
 

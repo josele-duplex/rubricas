@@ -225,8 +225,8 @@ Quién manda sobre qué: §2 de
 
 Al final del SDD (§17), y se leen con `python scripts/ver.py sdd 17`. Las seis que quedaban
 abiertas —condición mínima, escala por defecto, tope de detractores, rúbrica holística,
-publicación y el reparto con `rubricas-lomloe`— se cerraron el 2026-08-25. Quedan **dos**:
+publicación y el reparto con `rubricas-lomloe`— se cerraron el 2026-08-25. Queda **una**:
 la 20 (2026-09-15), de la que ya se cerraron cinco de siete mitades y quedan (f) y (g) —dos
-cabezas de dimensión que nombran un contenido y una banda máxima que contradice su N4—; y la 22
-(2026-09-25), el párrafo pendiente en el marco teórico de Lengua sobre la doble versión —técnica
-y sencilla— de cada descriptor (`docs/diseno/plan-lenguaje-sencillo.md`, sección L0).
+cabezas de dimensión que nombran un contenido y una banda máxima que contradice su N4—. La 22,
+la doble versión —técnica y sencilla— de cada descriptor, se cerró el 2026-09-26: consta en el
+§2.4 del marco teórico de Lengua.
