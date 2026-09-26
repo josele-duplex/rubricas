@@ -206,16 +206,16 @@ significado y la progresión (sección 3). La prueba de ahorro con Sonnet 5 toda
 es la única sesión de contenido hecha.
 
 El 26-sep-2026 el docente fijó las actividades de 4.º ESO de este curso: **todos los packs con
-4.º ESO salvo reacción y debate** (el argumentativo ya está hecho). Son seis packs, 34
-dimensiones y 136 descriptores: demasiado para revisar el significado de una vez, así que van
-en **dos sesiones de tres packs**, en este orden:
+4.º ESO salvo reacción, debate y comentario** (el argumentativo ya está hecho). Son cinco
+packs, 28 dimensiones y 112 descriptores: demasiado para revisar el significado de una vez,
+así que van en **dos sesiones**, en este orden:
 
 - **Ln-a** · `expositivo`, `resumen`, `noticia` — los textos escritos, los más cercanos al
   argumentativo ya hecho. Las dimensiones que comparten con él (`correccion_lexico`,
   `planificacion_revision`, `adecuacion`, `coherencia`, `cohesion`,
   `tratamiento_informacion`) toman su versión sencilla de 4.º como referencia de tono y
   de `nombre_alumno`, sin copiarla cuando el técnico dice otra cosa.
-- **Ln-b** · `comentario`, `investigacion`, `oral`.
+- **Ln-b** · `investigacion`, `oral`.
 
 **Prompt de Ln-a:**
 
@@ -229,7 +229,7 @@ en **dos sesiones de tres packs**, en este orden:
 > significado. Cuando lo apruebe: `comprobar_todo.py` en verde, actualiza el plan (esta
 > sección, con el prompt de Ln-b, y el registro de cobertura) y commit.
 
-El de Ln-b es el mismo con `comentario`, `investigacion` y `oral`, y con el argumentativo y
+El de Ln-b es el mismo con `investigacion` y `oral`, y con el argumentativo y
 los tres de Ln-a como referencia.
 
 ## 7. Registro de cobertura
