@@ -201,23 +201,36 @@ solo se referencia (lo hace L1 en el §17 del SDD).
 
 ## 6. Próxima sesión
 
-**Ln · Opus 5.5 (`claude-opus-5-5`)** — es redacción de descriptores: juicio sobre el significado
-y la progresión (sección 3). La prueba de ahorro con Sonnet 5 todavía no toca: L2 es la primera
-sesión de contenido y hacen falta dos seguidas sin corrección de significado. Prompt: la
-plantilla de la sección Ln, con `<pack>` y `<curso>` **que fija el docente** según el
-calendario de aula (2.º o 4.º de ESO, sección 1, punto 6). Si la sesión arranca sin ellos, lo
-primero es preguntarlos: no se elige actividad por el docente.
+**Ln-a · Opus 5.5 (`claude-opus-5-5`)** — es redacción de descriptores: juicio sobre el
+significado y la progresión (sección 3). La prueba de ahorro con Sonnet 5 todavía no toca: L2
+es la única sesión de contenido hecha.
 
-L2 quedó hecha el 25-sep-2026 (v1.64): el argumentativo de 4.º ESO tiene versión sencilla en
-sus seis dimensiones —los veinte descriptores del borrador, sin reescribir; los cuatro de
-`tratamiento_informacion`, nuevos; y los seis `nombre_alumno`—. El docente aprobó el
-significado sin correcciones. El borrador está borrado y el pack pasa a v0.8.0. Para la
-progresión de la próxima actividad de 4.º: este pack aún no tiene sencillo en 3.º ESO ni en
-1.º de Bachillerato, así que no hay con qué comparar en esa dirección.
+El 26-sep-2026 el docente fijó las actividades de 4.º ESO de este curso: **todos los packs con
+4.º ESO salvo reacción y debate** (el argumentativo ya está hecho). Son seis packs, 34
+dimensiones y 136 descriptores: demasiado para revisar el significado de una vez, así que van
+en **dos sesiones de tres packs**, en este orden:
 
-L0 quedó hecha el 26-sep-2026: la doble versión consta en el §2.4 del marco teórico de Lengua
-(«Doble versión del descriptor: técnica y sencilla»), con un inciso en su §7.4, y la decisión
-22 del SDD está cerrada (v1.65). Con L0, L1 y L2 hechas, el plan queda en régimen de sesiones Ln.
+- **Ln-a** · `expositivo`, `resumen`, `noticia` — los textos escritos, los más cercanos al
+  argumentativo ya hecho. Las dimensiones que comparten con él (`correccion_lexico`,
+  `planificacion_revision`, `adecuacion`, `coherencia`, `cohesion`,
+  `tratamiento_informacion`) toman su versión sencilla de 4.º como referencia de tono y
+  de `nombre_alumno`, sin copiarla cuando el técnico dice otra cosa.
+- **Ln-b** · `comentario`, `investigacion`, `oral`.
+
+**Prompt de Ln-a:**
+
+> Ejecuta una sesión Ln de `docs/diseno/plan-lenguaje-sencillo.md` para `expositivo`,
+> `resumen` y `noticia` en 4ESO (sección 6). Invoca el skill `rubricas-pack`. Lee solo 4.º
+> de esos tres packs, sin las matrices, y como referencia la versión sencilla ya cargada del
+> argumentativo de 4.º. Escribe los descriptores sencillos y los `nombre_alumno` en un JSON
+> por pack, en el directorio temporal de la sesión, cárgalos con
+> `node scripts/cargar_sencillo.mjs`, deja validación y proyección en limpio, regenera las
+> revisiones y enséñame una tabla técnico · sencillo **por pack** para que revise el
+> significado. Cuando lo apruebe: `comprobar_todo.py` en verde, actualiza el plan (esta
+> sección, con el prompt de Ln-b, y el registro de cobertura) y commit.
+
+El de Ln-b es el mismo con `comentario`, `investigacion` y `oral`, y con el argumentativo y
+los tres de Ln-a como referencia.
 
 ## 7. Registro de cobertura
 
