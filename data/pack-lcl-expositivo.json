@@ -2,7 +2,7 @@
   "pack_id": "lcl-murcia-expositivo",
   "materia": "LCL",
   "etiqueta": "Texto expositivo escrito — Región de Murcia",
-  "version": "0.8.0",
+  "version": "0.9.0",
   "normativa": {
     "estatal": [
       "RD 217/2022, de 29 de marzo (ESO)"
@@ -1086,7 +1086,7 @@
           "texto": "Emplea conectores de orden, adición y causa entre los párrafos, y utiliza la coma para delimitar los incisos del texto.",
           "alumno": {
             "verbo": "emplea",
-            "texto": "Emplea entre los párrafos palabras de enlace (conectores) de orden, de suma y de causa, y usa la coma para separar las partes que se añaden dentro de la frase (los incisos).",
+            "texto": "Emplea entre los párrafos palabras de enlace (conectores) de orden, de suma y de causa, y separa con comas las aclaraciones que van dentro de la frase (los incisos).",
             "origen": "1c49160e"
           }
         },
@@ -1095,7 +1095,7 @@
           "texto": "Sustituye mediante un sinónimo, un hiperónimo o un pronombre la palabra que ya ha aparecido en el párrafo anterior.",
           "alumno": {
             "verbo": "sustituye",
-            "texto": "Sustituye por un sinónimo, un hiperónimo o un pronombre la palabra que ya ha aparecido en el párrafo anterior.",
+            "texto": "Sustituye la palabra que ya ha aparecido en el párrafo anterior por otra de significado parecido (sinónimo), por otra más general (hiperónimo: *animal* en lugar de *perro*) o por un pronombre.",
             "origen": "1bfbd499"
           }
         }
@@ -1240,7 +1240,7 @@
           "texto": "Aplica las normas de acentuación y concordancia trabajadas en clase, con errores que permiten seguir la explicación.",
           "alumno": {
             "verbo": "aplica",
-            "texto": "Aplica las normas de las tildes (acentuación) y de concordancia vistas en clase, con algún error suelto que permite seguir la explicación.",
+            "texto": "Aplica las normas de las tildes (acentuación) y de concordancia vistas en clase, con fallos que permiten seguir la explicación.",
             "origen": "95b8970b"
           }
         },
@@ -1557,7 +1557,7 @@
           "texto": "Utiliza una única fuente y traslada al texto fragmentos literales sin señalar que proceden de ella.",
           "alumno": {
             "verbo": "usa",
-            "texto": "Usa una sola fuente y traslada al texto fragmentos literales sin señalar que vienen de ella.",
+            "texto": "Usa una sola fuente y traslada al texto trozos copiados tal cual (fragmentos literales) sin señalar que vienen de ella.",
             "origen": "957e0d49"
           }
         },

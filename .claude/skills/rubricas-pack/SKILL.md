@@ -140,6 +140,18 @@ Reglas de redacción:
 10. **El texto sencillo dice lo mismo que el técnico: ni más exigencia ni menos.** Es lo único
     que no comprueba ninguna máquina, y por eso es lo único que revisa el docente — solo el
     significado, no la forma (reglas 1 a 8, que sí son mecánicas).
+11. **Los errores de significado que ya ha corregido el docente** (Ln-c, 28-sep-2026). Se
+    comparan nivel a nivel con el técnico antes de cargar:
+    - El N2 dice lo que dice el N2, no el campo `descriptor_un_punto`: «con errores que
+      permiten seguir» no es «con algún error suelto».
+    - El verbo que da la exigencia se conserva: *mantiene la primera persona* no es *usa el yo*.
+    - Los ejemplos de un tipo de conector son de ese tipo: los temporales no son de
+      simultaneidad (*mientras tanto*).
+    - «En un orden propio» (criterio elegido por el alumno) no es «por cuenta propia»
+      (autonomía): se escribe «con un criterio propio».
+    - También se explican *hiperónimo* y *pertinente*: «palabras más generales (hiperónimos:
+      *animal* en lugar de *perro*)», «los datos que vienen al caso (datos pertinentes)».
+    - Los ejemplos de habla coloquial no son malsonantes: *qué rollo*, no *una chorrada*.
 
 Los dos validadores aplican a `alumno.texto` las mismas reglas de verbo, adverbitis y cursiva
 que al técnico, más una que el técnico no necesita: si el técnico se edita después y `origen`

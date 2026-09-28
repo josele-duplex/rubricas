@@ -1,6 +1,6 @@
 # Revisión del pack: Texto expositivo escrito — Región de Murcia
 
-**Pack** `pack-lcl-expositivo.json` · versión 0.8.0 · 36 criterios · 144 descriptores · 30 matrices cuantitativas
+**Pack** `pack-lcl-expositivo.json` · versión 0.9.0 · 36 criterios · 144 descriptores · 30 matrices cuantitativas
 
 > Documento para validación docente, generado desde el JSON. No se edita a mano.
 > Al leer, mira sobre todo tres cosas: si el nivel N4 es alcanzable en ese curso,
@@ -225,8 +225,8 @@
 |---|---|---|---|
 | **N1** | Utiliza los conectores *y*, *pero* y *entonces* para enlazar las ideas del texto, sin separarlas con punto. | Usa *y*, *pero* y *entonces* para unir las ideas del texto, sin separarlas con punto. | Uso *y*, *pero* y *entonces* para unir las ideas del texto, sin separarlas con punto. |
 | **N2** | Utiliza conectores de adición y de orden (*además*, *en primer lugar*, *por último*) para enlazar los párrafos, y separa los enunciados con punto. | Usa palabras de enlace (conectores) de suma y de orden (*además*, *en primer lugar*, *por último*) para unir los párrafos, y separa las frases con punto. | Uso palabras de enlace (conectores) de suma y de orden (*además*, *en primer lugar*, *por último*) para unir los párrafos, y separo las frases con punto. |
-| **N3** | Emplea conectores de orden, adición y causa entre los párrafos, y utiliza la coma para delimitar los incisos del texto. | Emplea entre los párrafos palabras de enlace (conectores) de orden, de suma y de causa, y usa la coma para separar las partes que se añaden dentro de la frase (los incisos). | Empleo entre los párrafos palabras de enlace (conectores) de orden, de suma y de causa, y uso la coma para separar las partes que se añaden dentro de la frase (los incisos). |
-| **N4** | Sustituye mediante un sinónimo, un hiperónimo o un pronombre la palabra que ya ha aparecido en el párrafo anterior. | Sustituye por un sinónimo, un hiperónimo o un pronombre la palabra que ya ha aparecido en el párrafo anterior. | Sustituyo por un sinónimo, un hiperónimo o un pronombre la palabra que ya ha aparecido en el párrafo anterior. |
+| **N3** | Emplea conectores de orden, adición y causa entre los párrafos, y utiliza la coma para delimitar los incisos del texto. | Emplea entre los párrafos palabras de enlace (conectores) de orden, de suma y de causa, y separa con comas las aclaraciones que van dentro de la frase (los incisos). | Empleo entre los párrafos palabras de enlace (conectores) de orden, de suma y de causa, y separo con comas las aclaraciones que van dentro de la frase (los incisos). |
+| **N4** | Sustituye mediante un sinónimo, un hiperónimo o un pronombre la palabra que ya ha aparecido en el párrafo anterior. | Sustituye la palabra que ya ha aparecido en el párrafo anterior por otra de significado parecido (sinónimo), por otra más general (hiperónimo: *animal* en lugar de *perro*) o por un pronombre. | Sustituyo la palabra que ya ha aparecido en el párrafo anterior por otra de significado parecido (sinónimo), por otra más general (hiperónimo: *animal* en lugar de *perro*) o por un pronombre. |
 
 **Matriz cuantitativa** — total 10 puntos. Es lo que usa el modo IA para corregir.
 
@@ -254,7 +254,7 @@
 | Nivel | Técnico | Sencillo | Sencillo (autoevaluación) |
 |---|---|---|---|
 | **N1** | Redacta el texto con errores de ortografía y de concordancia que obligan al lector a releer para reconstruir la idea. | Redacta el texto con faltas de ortografía y fallos de concordancia (*las idea*), y el lector tiene que leer dos veces para entender la idea. | Redacto el texto con faltas de ortografía y fallos de concordancia (*las idea*), y el lector tiene que leer dos veces para entender la idea. |
-| **N2** | Aplica las normas de acentuación y concordancia trabajadas en clase, con errores que permiten seguir la explicación. | Aplica las normas de las tildes (acentuación) y de concordancia vistas en clase, con algún error suelto que permite seguir la explicación. | Aplico las normas de las tildes (acentuación) y de concordancia vistas en clase, con algún error suelto que permite seguir la explicación. |
+| **N2** | Aplica las normas de acentuación y concordancia trabajadas en clase, con errores que permiten seguir la explicación. | Aplica las normas de las tildes (acentuación) y de concordancia vistas en clase, con fallos que permiten seguir la explicación. | Aplico las normas de las tildes (acentuación) y de concordancia vistas en clase, con fallos que permiten seguir la explicación. |
 | **N3** | Aplica las normas de ortografía, acentuación y concordancia del nivel, y sustituye alguna palabra repetida por un sinónimo. | Aplica las normas de ortografía, tildes y concordancia del curso, y sustituye alguna palabra repetida por un sinónimo. | Aplico las normas de ortografía, tildes y concordancia del curso, y sustituyo alguna palabra repetida por un sinónimo. |
 | **N4** | Sustituye palabras de significado general (*cosa*, *tema*, *hacer*) por otras propias del tema, y entrega el texto sin errores que dificulten la lectura. | Sustituye palabras de significado general (*cosa*, *tema*, *hacer*) por otras propias del tema, y entrega el texto sin errores que hagan difícil la lectura. | Sustituyo palabras de significado general (*cosa*, *tema*, *hacer*) por otras propias del tema, y entrego el texto sin errores que hagan difícil la lectura. |
 
@@ -313,7 +313,7 @@
 
 | Nivel | Técnico | Sencillo | Sencillo (autoevaluación) |
 |---|---|---|---|
-| **N1** | Utiliza una única fuente y traslada al texto fragmentos literales sin señalar que proceden de ella. | Usa una sola fuente y traslada al texto fragmentos literales sin señalar que vienen de ella. | Uso una sola fuente y traslado al texto fragmentos literales sin señalar que vienen de ella. |
+| **N1** | Utiliza una única fuente y traslada al texto fragmentos literales sin señalar que proceden de ella. | Usa una sola fuente y traslada al texto trozos copiados tal cual (fragmentos literales) sin señalar que vienen de ella. | Uso una sola fuente y traslado al texto trozos copiados tal cual (fragmentos literales) sin señalar que vienen de ella. |
 | **N2** | Selecciona información de la fuente indicada por el profesor y la traslada al texto con alguna palabra propia. | Selecciona información de la fuente indicada por el profesor y la traslada al texto con alguna palabra propia. | Selecciono información de la fuente indicada por el profesor y la traslado al texto con alguna palabra propia. |
 | **N3** | Elabora el texto a partir de la información seleccionada de dos fuentes indicadas y la explica en su mayor parte con palabras propias. | Elabora el texto a partir de la información elegida de dos fuentes indicadas, y la explica en su mayor parte con palabras propias. | Elaboro el texto a partir de la información elegida de dos fuentes indicadas, y la explico en su mayor parte con palabras propias. |
 | **N4** | Desarrolla el trabajo de investigación combinando la información de dos o más fuentes indicadas, y explica con palabras propias el contenido tomado de cada una. | Desarrolla el trabajo combinando información de dos o más fuentes indicadas, y explica con palabras propias el contenido tomado de cada una. | Desarrollo el trabajo combinando información de dos o más fuentes indicadas, y explico con palabras propias el contenido tomado de cada una. |
