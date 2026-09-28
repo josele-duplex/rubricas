@@ -199,47 +199,20 @@ solo se referencia (lo hace L1 en el §17 del SDD).
 
 ## 6. Próxima sesión
 
-**4.º ESO, completo** (Ln-a y Ln-b, 28-sep-2026, aprobadas sin correcciones). **Ln-c**
-(`argumentativo` y `expositivo` de 2.º) volvió el 28-sep-2026 con correcciones de
-significado en ocho descriptores (siete del argumentativo y uno del expositivo); se cargaron y los errores que pueden repetirse quedan en
-la regla 11 del paso 7 del skill `rubricas-pack`.
+**2.º y 4.º de ESO, agotados.** Los doce packs que el docente fijó el 26-sep-2026 —seis para
+4.º y seis para 2.º— tienen su versión sencilla aprobada:
 
-**Nueva sesión, no esta misma.** Cada Ln arranca leyendo solo esta sección (regla 1 de la
-sección 4) y los packs con `ver.py`, sin el historial de exploración de la sesión que cierra
-este documento — así se mantiene el presupuesto de contexto de `CLAUDE.md`.
+- 4.º ESO: prueba + L2 (`argumentativo`), Ln-a (`expositivo`, `resumen`, `noticia`) y Ln-b
+  (`investigacion`, `oral`), aprobadas sin correcciones.
+- 2.º ESO: Ln-b (`oral`, `investigacion`), Ln-c (`argumentativo`, `expositivo`, con ocho
+  descriptores corregidos por el docente, ahora regla 11 del paso 7 del skill `rubricas-pack`)
+  y Ln-d (`narracion`, `resumen`, aprobada el 28-sep-2026 sin correcciones).
 
-Queda **Ln-d · Opus 5.5 (`claude-opus-5-5`)** · `narracion`, `resumen` en 2.º ESO — `resumen`
-tiene referencia de 4.º (Ln-a); `narracion` no tiene pack en 4.º y comparte cinco de sus seis
-dimensiones con el argumentativo y el expositivo de 2.º (`adecuacion`, `coherencia`,
-`cohesion`, `correccion_lexico`, `planificacion_revision`); solo `intencion_literaria` es
-nueva.
-
-**Prompt de Ln-d:**
-
-> Ejecuta una sesión Ln de `docs/diseno/plan-lenguaje-sencillo.md`: la Ln-d, para
-> `narracion` y `resumen` en 2ESO (sección 6). Invoca el skill `rubricas-pack`.
->
-> - Lee solo 2.º de esos dos packs, sin las matrices (`py scripts/ver.py pack <mote> --curso
->   2ESO` y `ver.py criterio <id>`). Como referencia de tono y de `nombre_alumno`, usa la
->   versión sencilla ya cargada del `resumen` de 4.º y, para las dimensiones que comparten
->   nombre, las del `argumentativo` y el `expositivo` de 2.º (Ln-c). `intencion_literaria`
->   es nueva: no tiene referencia. Los `alumno` no salen en `ver.py`: extráelos con un script
->   mínimo que imprima solo esos campos, sin abrir el pack entero.
-> - Antes de escribir, compara cada nivel con el técnico con la regla 11 del paso 7 del skill.
-> - Escribe un JSON por pack en el directorio temporal de la sesión. Cárgalos con
->   `node scripts/cargar_sencillo.mjs`, deja validación y proyección en limpio y lee la
->   columna de autoevaluación entera. Regenera las revisiones y pasa
->   `py scripts/comprobar_todo.py`.
-> - Para mi revisión de significado, dame un Word (A4 apaisado; columnas N · Técnico ·
->   Sencillo; una fila gris por dimensión con el nombre técnico y el `nombre_alumno`; filas
->   que no se parten entre páginas), una sección por pack, generado desde los packs. En la
->   primera página, las dudas de significado que tengas.
-> - Cuando te devuelva las correcciones: vuelve a cargar, `comprobar_todo.py` en verde,
->   actualiza el plan (sección 6 y tus filas en el registro de cobertura de la sección 7) y
->   haz un commit.
-
-Cuando Ln-d termine, 2.º y 4.º de ESO quedan agotados (regla 6 de la sección 1): la siguiente
-decisión —qué curso sigue, 1.º, 3.º o Bachillerato— es del docente, no de este plan.
+**No hay próxima sesión fijada.** La siguiente decisión —qué curso sigue, 1.º, 3.º o
+Bachillerato, o una actividad puntual de otro curso— es del docente, no de este plan
+(regla 6 de la sección 1 y sección 8). Cuando la tome, la sesión se hace con la plantilla
+**Ln** de arriba y con **Opus 5.5** (`claude-opus-5-5`), como toda redacción de descriptores
+(sección 3), agrupando las actividades como en Ln-a a Ln-d por la referencia disponible.
 
 ## 7. Registro de cobertura
 
@@ -255,6 +228,8 @@ decisión —qué curso sigue, 1.º, 3.º o Bachillerato— es del docente, no d
 | investigacion | 2ESO | Completo: 4 dimensiones × 4 niveles y 4 `nombre_alumno` | Ln-b | 28-sep-2026 |
 | argumentativo | 2ESO | Completo: 6 dimensiones × 4 niveles y 6 `nombre_alumno`; siete descriptores corregidos por el docente | Ln-c | 28-sep-2026 |
 | expositivo | 2ESO | Completo: 6 dimensiones × 4 niveles y 6 `nombre_alumno`; un descriptor corregido por el docente | Ln-c | 28-sep-2026 |
+| narracion | 2ESO | Completo: 6 dimensiones × 4 niveles y 6 `nombre_alumno` | Ln-d | 28-sep-2026 |
+| resumen | 2ESO | Completo: 5 dimensiones × 4 niveles y 5 `nombre_alumno` | Ln-d | 28-sep-2026 |
 
 ## 8. Lo que no se hace, a propósito, y cuándo se reconsidera
 

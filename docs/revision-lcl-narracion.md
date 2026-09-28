@@ -1,6 +1,6 @@
 # Revisión del pack: Narración escrita — Región de Murcia
 
-**Pack** `pack-lcl-narracion.json` · versión 0.4.0 · 18 criterios · 72 descriptores · 15 matrices cuantitativas
+**Pack** `pack-lcl-narracion.json` · versión 0.5.0 · 18 criterios · 72 descriptores · 15 matrices cuantitativas
 
 > Documento para validación docente, generado desde el JSON. No se edita a mano.
 > Al leer, mira sobre todo tres cosas: si el nivel N4 es alcanzable en ese curso,
@@ -165,6 +165,15 @@
 | **N3** | Mantiene un registro propio de la lengua escrita y ajusta el léxico al mundo en que transcurre el relato. |
 | **N4** | Adapta el registro a cada voz del texto: distingue el modo de hablar de los personajes del modo de contar del narrador. |
 
+**Lenguaje sencillo** — lo que lee el alumno en la ficha y en la autoevaluación.
+
+| Nivel | Técnico | Sencillo | Sencillo (autoevaluación) |
+|---|---|---|---|
+| **N1** | Utiliza expresiones de la conversación diaria y cambia el tratamiento del lector a mitad del relato. | Usa expresiones de la conversación de cada día (*un montón*, *flipar*) y cambia a mitad del relato la forma de tratar al lector (el tratamiento: *tú*, *usted*, *vosotros*). | Uso expresiones de la conversación de cada día (*un montón*, *flipar*) y cambio a mitad del relato la forma de tratar al lector (el tratamiento: *tú*, *usted*, *vosotros*). |
+| **N2** | Ajusta el registro del relato a la situación que plantea el encargo y mantiene el mismo tratamiento del lector. | Ajusta el tono del relato (el registro) a la situación que plantea la tarea y mantiene de principio a fin la misma forma de tratar al lector (el tratamiento). | Ajusto el tono del relato (el registro) a la situación que plantea la tarea y mantengo de principio a fin la misma forma de tratar al lector (el tratamiento). |
+| **N3** | Mantiene un registro propio de la lengua escrita y ajusta el léxico al mundo en que transcurre el relato. | Mantiene el tono propio de un texto escrito, no el de una conversación (registro escrito), y ajusta las palabras (el léxico) al mundo en que pasa la historia: en un relato de caballeros, *espada* o *castillo*. | Mantengo el tono propio de un texto escrito, no el de una conversación (registro escrito), y ajusto las palabras (el léxico) al mundo en que pasa la historia: en un relato de caballeros, *espada* o *castillo*. |
+| **N4** | Adapta el registro a cada voz del texto: distingue el modo de hablar de los personajes del modo de contar del narrador. | Adapta el tono (el registro) a cada voz del texto: distingue la manera de hablar de los personajes de la manera de contar del narrador. | Adapto el tono (el registro) a cada voz del texto: distingo la manera de hablar de los personajes de la manera de contar del narrador. |
+
 *Sin matriz cuantitativa: esta dimensión se juzga en conjunto, no hay nada que contar.*
 
 ### Coherencia: construcción de la secuencia narrativa  ·  25%  ·  bloque B  ·  🔒 obligatorio
@@ -179,6 +188,15 @@
 | **N2** | Ordena el relato en planteamiento, nudo y desenlace, y sitúa el conflicto en el nudo. |
 | **N3** | Estructura el relato en planteamiento, nudo y desenlace, y desarrolla el conflicto hasta un final que se sigue de lo contado. |
 | **N4** | Selecciona los hechos que sostienen el conflicto y descarta los que lo detienen. |
+
+**Lenguaje sencillo** — lo que lee el alumno en la ficha y en la autoevaluación.
+
+| Nivel | Técnico | Sencillo | Sencillo (autoevaluación) |
+|---|---|---|---|
+| **N1** | Enumera los hechos en un bloque único y agrupa el planteamiento y el desenlace en la misma línea. | Enumera los hechos en un solo bloque de texto y agrupa en la misma línea el comienzo de la historia (el planteamiento) y el final (el desenlace). | Enumero los hechos en un solo bloque de texto y agrupo en la misma línea el comienzo de la historia (el planteamiento) y el final (el desenlace). |
+| **N2** | Ordena el relato en planteamiento, nudo y desenlace, y sitúa el conflicto en el nudo. | Ordena el relato en tres partes —comienzo (planteamiento), parte central (nudo) y final (desenlace)— y sitúa el problema de la historia (el conflicto) en el nudo. | Ordeno el relato en tres partes —comienzo (planteamiento), parte central (nudo) y final (desenlace)— y sitúo el problema de la historia (el conflicto) en el nudo. |
+| **N3** | Estructura el relato en planteamiento, nudo y desenlace, y desarrolla el conflicto hasta un final que se sigue de lo contado. | Organiza el relato en planteamiento, nudo y desenlace, y desarrolla el problema de la historia (el conflicto) hasta un final que es consecuencia de lo contado antes. | Organizo el relato en planteamiento, nudo y desenlace, y desarrollo el problema de la historia (el conflicto) hasta un final que es consecuencia de lo contado antes. |
+| **N4** | Selecciona los hechos que sostienen el conflicto y descarta los que lo detienen. | Selecciona los hechos que hacen avanzar el problema de la historia (el conflicto) y descarta los que lo frenan. | Selecciono los hechos que hacen avanzar el problema de la historia (el conflicto) y descarto los que lo frenan. |
 
 **Matriz cuantitativa** — total 10 puntos. Es lo que usa el modo IA para corregir.
 
@@ -200,6 +218,15 @@
 | **N2** | Emplea conectores temporales y de orden para encadenar los hechos, y separa con punto los enunciados. |
 | **N3** | Sustituye por pronombres y sinónimos los nombres de los personajes ya citados, y mantiene el pretérito como tiempo del relato. |
 | **N4** | Emplea la raya en los diálogos y la coma en los incisos, y señala con conectores los saltos de tiempo del relato. |
+
+**Lenguaje sencillo** — lo que lee el alumno en la ficha y en la autoevaluación.
+
+| Nivel | Técnico | Sencillo | Sencillo (autoevaluación) |
+|---|---|---|---|
+| **N1** | Utiliza *y*, *luego* y *entonces* como único enlace entre los hechos, con el nombre del personaje repetido en cada oración. | Usa solo *y*, *luego* y *entonces* para unir los hechos, con el nombre del personaje repetido en cada frase. | Uso solo *y*, *luego* y *entonces* para unir los hechos, con el nombre del personaje repetido en cada frase. |
+| **N2** | Emplea conectores temporales y de orden para encadenar los hechos, y separa con punto los enunciados. | Emplea palabras de enlace (conectores) de tiempo (*después*, *al día siguiente*) y de orden (*primero*, *por último*) para unir los hechos, y separa las frases con punto. | Empleo palabras de enlace (conectores) de tiempo (*después*, *al día siguiente*) y de orden (*primero*, *por último*) para unir los hechos, y separo las frases con punto. |
+| **N3** | Sustituye por pronombres y sinónimos los nombres de los personajes ya citados, y mantiene el pretérito como tiempo del relato. | Sustituye el nombre de un personaje ya nombrado por un pronombre (*él*, *ella*, *lo*) o por una palabra de significado parecido (sinónimo: *el chico* en lugar de *el muchacho*), y mantiene el pasado (pretérito: *llegó*, *miraba*) como tiempo del relato. | Sustituyo el nombre de un personaje ya nombrado por un pronombre (*él*, *ella*, *lo*) o por una palabra de significado parecido (sinónimo: *el chico* en lugar de *el muchacho*), y mantengo el pasado (pretérito: *llegó*, *miraba*) como tiempo del relato. |
+| **N4** | Emplea la raya en los diálogos y la coma en los incisos, y señala con conectores los saltos de tiempo del relato. | Emplea la raya (—) para marcar lo que dice cada personaje en los diálogos y la coma para separar las aclaraciones que van dentro de la frase (los incisos), y señala con palabras de enlace (conectores) los saltos de tiempo del relato (*dos años después*, *a la mañana siguiente*). | Empleo la raya (—) para marcar lo que dice cada personaje en los diálogos y la coma para separar las aclaraciones que van dentro de la frase (los incisos), y señalo con palabras de enlace (conectores) los saltos de tiempo del relato (*dos años después*, *a la mañana siguiente*). |
 
 **Matriz cuantitativa** — total 10 puntos. Es lo que usa el modo IA para corregir.
 
@@ -223,6 +250,15 @@
 | **N3** | Aplica las normas de ortografía del nivel y emplea las formas de pretérito con la grafía y la acentuación correctas. |
 | **N4** | Sustituye los verbos de decir repetidos (*dijo*, *contestó*) por otros que aportan la actitud del personaje. |
 
+**Lenguaje sencillo** — lo que lee el alumno en la ficha y en la autoevaluación.
+
+| Nivel | Técnico | Sencillo | Sencillo (autoevaluación) |
+|---|---|---|---|
+| **N1** | Redacta el relato con errores de ortografía y de puntuación que obligan al lector a releer. | Redacta el relato con faltas de ortografía y de puntuación que obligan al lector a leer dos veces. | Redacto el relato con faltas de ortografía y de puntuación que obligan al lector a leer dos veces. |
+| **N2** | Aplica las normas de acentuación y concordancia, con errores aislados que permiten seguir el relato. | Aplica las normas de las tildes (acentuación) y de concordancia entre palabras (*los caballeros cansados*), con errores sueltos que permiten seguir el relato. | Aplico las normas de las tildes (acentuación) y de concordancia entre palabras (*los caballeros cansados*), con errores sueltos que permiten seguir el relato. |
+| **N3** | Aplica las normas de ortografía del nivel y emplea las formas de pretérito con la grafía y la acentuación correctas. | Aplica las normas de ortografía del curso y emplea las formas del pasado (pretérito) con las letras y las tildes correctas (*llegó*, *hizo*, *estuvo*, *había*). | Aplico las normas de ortografía del curso y empleo las formas del pasado (pretérito) con las letras y las tildes correctas (*llegó*, *hizo*, *estuvo*, *había*). |
+| **N4** | Sustituye los verbos de decir repetidos (*dijo*, *contestó*) por otros que aportan la actitud del personaje. | Sustituye los verbos de decir repetidos (*dijo*, *contestó*) por otros que muestran la actitud del personaje al hablar (*susurró*, *gritó*, *protestó*). | Sustituyo los verbos de decir repetidos (*dijo*, *contestó*) por otros que muestran la actitud del personaje al hablar (*susurró*, *gritó*, *protestó*). |
+
 **Matriz cuantitativa** — total 10 puntos. Es lo que usa el modo IA para corregir.
 
 | Componente | Máx. | Bandas |
@@ -244,6 +280,15 @@
 | **N3** | Revisa el borrador con un compañero y corrige los puntos del relato que el lector no entiende. |
 | **N4** | Reelabora el desenlace del borrador después de la lectura entre iguales y anota el motivo del cambio. |
 
+**Lenguaje sencillo** — lo que lee el alumno en la ficha y en la autoevaluación.
+
+| Nivel | Técnico | Sencillo | Sencillo (autoevaluación) |
+|---|---|---|---|
+| **N1** | Redacta el relato de una sola vez y entrega la primera versión como texto final. | Redacta el relato de una vez y entrega ese primer intento como versión final. | Redacto el relato de una vez y entrego ese primer intento como versión final. |
+| **N2** | Elabora un guion previo con los hechos y los personajes del relato y entrega el borrador junto al texto final. | Elabora, antes de escribir, un guion (un esquema) con los hechos y los personajes del relato, y entrega el borrador junto al texto final. | Elaboro, antes de escribir, un guion (un esquema) con los hechos y los personajes del relato, y entrego el borrador junto al texto final. |
+| **N3** | Revisa el borrador con un compañero y corrige los puntos del relato que el lector no entiende. | Revisa el borrador con un compañero y corrige las partes del relato que el lector no entiende. | Reviso el borrador con un compañero y corrijo las partes del relato que el lector no entiende. |
+| **N4** | Reelabora el desenlace del borrador después de la lectura entre iguales y anota el motivo del cambio. | Vuelve a escribir el final (el desenlace) del borrador después de que lo lea un compañero (lectura entre iguales), y anota el motivo del cambio. | Vuelvo a escribir el final (el desenlace) del borrador después de que lo lea un compañero (lectura entre iguales), y anoto el motivo del cambio. |
+
 **Matriz cuantitativa** — total 10 puntos. Es lo que usa el modo IA para corregir.
 
 | Componente | Máx. | Bandas |
@@ -264,6 +309,15 @@
 | **N2** | Recrea un fragmento de la obra leída conservando las convenciones del género: la voz del narrador y el tipo de personaje. |
 | **N3** | Emplea comparaciones, metáforas y detalles de los sentidos para construir la atmósfera del relato. |
 | **N4** | Transforma la voz del relato, de narrador externo a personaje que cuenta, y sostiene esa voz en todo el texto. |
+
+**Lenguaje sencillo** — lo que lee el alumno en la ficha y en la autoevaluación.
+
+| Nivel | Técnico | Sencillo | Sencillo (autoevaluación) |
+|---|---|---|---|
+| **N1** | Utiliza el argumento de la obra leída con los nombres de los personajes cambiados. | Usa la historia de la obra leída (el argumento) y cambia los nombres de los personajes. | Uso la historia de la obra leída (el argumento) y cambio los nombres de los personajes. |
+| **N2** | Recrea un fragmento de la obra leída conservando las convenciones del género: la voz del narrador y el tipo de personaje. | Vuelve a escribir un fragmento de la obra leída (recreación) y mantiene los rasgos propios de ese tipo de relato (las convenciones del género): quién cuenta la historia (la voz del narrador) y la clase de personajes que aparecen (el tipo de personaje). | Vuelvo a escribir un fragmento de la obra leída (recreación) y mantengo los rasgos propios de ese tipo de relato (las convenciones del género): quién cuenta la historia (la voz del narrador) y la clase de personajes que aparecen (el tipo de personaje). |
+| **N3** | Emplea comparaciones, metáforas y detalles de los sentidos para construir la atmósfera del relato. | Emplea comparaciones (*blanco como la nieve*), metáforas (*sus ojos eran dos luceros*) y detalles que llegan por los sentidos —la vista, el oído, el olfato, el gusto y el tacto— para crear el ambiente del relato (la atmósfera). | Empleo comparaciones (*blanco como la nieve*), metáforas (*sus ojos eran dos luceros*) y detalles que llegan por los sentidos —la vista, el oído, el olfato, el gusto y el tacto— para crear el ambiente del relato (la atmósfera). |
+| **N4** | Transforma la voz del relato, de narrador externo a personaje que cuenta, y sostiene esa voz en todo el texto. | Transforma la voz que cuenta la historia: en lugar de un narrador que está fuera de ella (narrador externo), la cuenta uno de los personajes; y mantiene esa voz en todo el texto. | Transformo la voz que cuenta la historia: en lugar de un narrador que está fuera de ella (narrador externo), la cuenta uno de los personajes; y mantengo esa voz en todo el texto. |
 
 **Matriz cuantitativa** — total 10 puntos. Es lo que usa el modo IA para corregir.
 

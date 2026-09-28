@@ -2,7 +2,7 @@
   "pack_id": "lcl-murcia-resumen",
   "materia": "LCL",
   "etiqueta": "Resumen de un texto — Región de Murcia",
-  "version": "0.6.0",
+  "version": "0.7.0",
   "normativa": {
     "estatal": [
       "RD 217/2022, de 29 de marzo (ESO)",
@@ -819,19 +819,39 @@
       "descriptores": {
         "n1": {
           "verbo": "copia",
-          "texto": "Copia el arranque del texto y lo entrega como resumen del conjunto."
+          "texto": "Copia el arranque del texto y lo entrega como resumen del conjunto.",
+          "alumno": {
+            "verbo": "copia",
+            "texto": "Copia el comienzo del texto y lo entrega como resumen de todo el texto.",
+            "origen": "42d06c1e"
+          }
         },
         "n2": {
           "verbo": "reconoce",
-          "texto": "Reconoce el tema del texto sencillo y lo anuncia en la primera línea del resumen."
+          "texto": "Reconoce el tema del texto sencillo y lo anuncia en la primera línea del resumen.",
+          "alumno": {
+            "verbo": "reconoce",
+            "texto": "Reconoce de qué trata un texto sencillo (el tema) y lo anuncia en la primera línea del resumen.",
+            "origen": "fa3917f0"
+          }
         },
         "n3": {
           "verbo": "distingue",
-          "texto": "Distingue la idea principal de cada párrafo y las ordena en el resumen como aparecen en el original."
+          "texto": "Distingue la idea principal de cada párrafo y las ordena en el resumen como aparecen en el original.",
+          "alumno": {
+            "verbo": "distingue",
+            "texto": "Distingue la idea más importante de cada párrafo (la idea principal) y las ordena en el resumen en el mismo orden que en el texto original.",
+            "origen": "33ce800a"
+          }
         },
         "n4": {
           "verbo": "jerarquiza",
-          "texto": "Jerarquiza las ideas del texto y abre el resumen con la idea que agrupa a las demás, aunque en el original no vaya la primera."
+          "texto": "Jerarquiza las ideas del texto y abre el resumen con la idea que agrupa a las demás, aunque en el original no vaya la primera.",
+          "alumno": {
+            "verbo": "ordena",
+            "texto": "Ordena las ideas del texto de más a menos importante (jerarquía) y abre el resumen con la idea que reúne a todas las demás, aunque en el texto original no vaya la primera.",
+            "origen": "0cb619b5"
+          }
         }
       },
       "matriz_cuantitativa": {
@@ -919,7 +939,8 @@
         "penalizaciones": []
       },
       "descriptor_cotejo": null,
-      "descriptor_un_punto": "Reconoce el tema del texto sencillo y lo anuncia en la primera línea del resumen."
+      "descriptor_un_punto": "Reconoce el tema del texto sencillo y lo anuncia en la primera línea del resumen.",
+      "nombre_alumno": "Entender el texto: qué ideas importan más"
     },
     {
       "id": "lcl-b-seleccion-res-2eso",
@@ -961,19 +982,39 @@
       "descriptores": {
         "n1": {
           "verbo": "traslada",
-          "texto": "Traslada al resumen los ejemplos y los datos del texto con el detalle del original."
+          "texto": "Traslada al resumen los ejemplos y los datos del texto con el detalle del original.",
+          "alumno": {
+            "verbo": "pone",
+            "texto": "Pone en el resumen los ejemplos y los datos del texto con el mismo detalle que el original.",
+            "origen": "dba8f461"
+          }
         },
         "n2": {
           "verbo": "selecciona",
-          "texto": "Selecciona las ideas que el texto desarrolla y deja fuera los ejemplos y las repeticiones."
+          "texto": "Selecciona las ideas que el texto desarrolla y deja fuera los ejemplos y las repeticiones.",
+          "alumno": {
+            "verbo": "elige",
+            "texto": "Elige las ideas desarrolladas en el texto, es decir, las explicadas con detalle, y deja fuera los ejemplos y lo que se repite (las repeticiones).",
+            "origen": "49adab26"
+          }
         },
         "n3": {
           "verbo": "descarta",
-          "texto": "Descarta los ejemplos, las repeticiones y los datos accesorios, y mantiene las ideas que el texto desarrolla."
+          "texto": "Descarta los ejemplos, las repeticiones y los datos accesorios, y mantiene las ideas que el texto desarrolla.",
+          "alumno": {
+            "verbo": "descarta",
+            "texto": "Descarta los ejemplos, las repeticiones y los datos que sobran (datos accesorios), y mantiene las ideas desarrolladas en el texto.",
+            "origen": "6eb883e3"
+          }
         },
         "n4": {
           "verbo": "dedica",
-          "texto": "Dedica más espacio en el resumen a las ideas desarrolladas en el texto que a las apenas apuntadas."
+          "texto": "Dedica más espacio en el resumen a las ideas desarrolladas en el texto que a las apenas apuntadas.",
+          "alumno": {
+            "verbo": "dedica",
+            "texto": "Dedica más espacio en el resumen a las ideas desarrolladas en el texto (explicadas con detalle) que a las solo mencionadas de pasada (apenas apuntadas).",
+            "origen": "32b5ce61"
+          }
         }
       },
       "matriz_cuantitativa": {
@@ -1061,7 +1102,8 @@
         "penalizaciones": []
       },
       "descriptor_cotejo": null,
-      "descriptor_un_punto": "Selecciona las ideas que el texto desarrolla y deja fuera los ejemplos y las repeticiones."
+      "descriptor_un_punto": "Selecciona las ideas que el texto desarrolla y deja fuera los ejemplos y las repeticiones.",
+      "nombre_alumno": "Elegir lo importante del texto"
     },
     {
       "id": "lcl-b-reformulacion-res-2eso",
@@ -1103,19 +1145,39 @@
       "descriptores": {
         "n1": {
           "verbo": "copia",
-          "texto": "Copia frases enteras del texto original y las enlaza unas con otras."
+          "texto": "Copia frases enteras del texto original y las enlaza unas con otras.",
+          "alumno": {
+            "verbo": "copia",
+            "texto": "Copia frases enteras del texto original y las enlaza unas con otras.",
+            "origen": "9fd63561"
+          }
         },
         "n2": {
           "verbo": "sustituye",
-          "texto": "Sustituye por sinónimos las palabras del texto y mantiene el molde de las frases del original."
+          "texto": "Sustituye por sinónimos las palabras del texto y mantiene el molde de las frases del original.",
+          "alumno": {
+            "verbo": "cambia",
+            "texto": "Cambia las palabras del texto por otras de significado parecido (sinónimos), pero mantiene la forma de las frases del original (el molde): el mismo orden y la misma construcción.",
+            "origen": "087ffdf1"
+          }
         },
         "n3": {
           "verbo": "reformula",
-          "texto": "Reformula con palabras propias las ideas del texto y reúne en una frase lo que el original reparte en dos."
+          "texto": "Reformula con palabras propias las ideas del texto y reúne en una frase lo que el original reparte en dos.",
+          "alumno": {
+            "verbo": "vuelve",
+            "texto": "Vuelve a contar con palabras propias las ideas del texto (reformulación) y agrupa en una sola frase lo que el original reparte en dos.",
+            "origen": "01e08ef1"
+          }
         },
         "n4": {
           "verbo": "integra",
-          "texto": "Integra las ideas repetidas del texto en una sola frase y emplea un término general para la serie de ejemplos."
+          "texto": "Integra las ideas repetidas del texto en una sola frase y emplea un término general para la serie de ejemplos.",
+          "alumno": {
+            "verbo": "agrupa",
+            "texto": "Agrupa en una sola frase las ideas que se repiten en el texto, y emplea una palabra general para toda una lista de ejemplos (*la fruta* en lugar de *manzanas*, *peras* y *naranjas*).",
+            "origen": "400453f6"
+          }
         }
       },
       "matriz_cuantitativa": {
@@ -1203,7 +1265,8 @@
         "penalizaciones": []
       },
       "descriptor_cotejo": null,
-      "descriptor_un_punto": "Sustituye por sinónimos las palabras del texto y mantiene el molde de las frases del original."
+      "descriptor_un_punto": "Sustituye por sinónimos las palabras del texto y mantiene el molde de las frases del original.",
+      "nombre_alumno": "Con palabras propias"
     },
     {
       "id": "lcl-b-redaccion-res-2eso",
@@ -1246,19 +1309,39 @@
       "descriptores": {
         "n1": {
           "verbo": "enumera",
-          "texto": "Enumera las ideas del texto en frases sueltas y añade al final una opinión propia."
+          "texto": "Enumera las ideas del texto en frases sueltas y añade al final una opinión propia.",
+          "alumno": {
+            "verbo": "enumera",
+            "texto": "Enumera las ideas del texto en frases sueltas y añade al final una opinión propia.",
+            "origen": "1da5fe20"
+          }
         },
         "n2": {
           "verbo": "redacta",
-          "texto": "Redacta el resumen en un párrafo seguido y enlaza las ideas con los conectores de la pauta facilitada."
+          "texto": "Redacta el resumen en un párrafo seguido y enlaza las ideas con los conectores de la pauta facilitada.",
+          "alumno": {
+            "verbo": "redacta",
+            "texto": "Redacta el resumen en un párrafo seguido y enlaza las ideas con las palabras de enlace (conectores) de la pauta que da el profesor.",
+            "origen": "2a3a3475"
+          }
         },
         "n3": {
           "verbo": "mantiene",
-          "texto": "Mantiene el resumen dentro de la extensión pedida y enlaza las ideas con conectores de orden y de causa."
+          "texto": "Mantiene el resumen dentro de la extensión pedida y enlaza las ideas con conectores de orden y de causa.",
+          "alumno": {
+            "verbo": "mantiene",
+            "texto": "Mantiene el resumen dentro de la longitud pedida (la extensión) y enlaza las ideas con conectores de orden (*en primer lugar*, *por último*) y de causa (*porque*, *ya que*).",
+            "origen": "abdb8ea8"
+          }
         },
         "n4": {
           "verbo": "suprime",
-          "texto": "Suprime las marcas del texto de partida, como *el autor opina* o *en este texto se habla de*, y traslada las ideas en voz propia."
+          "texto": "Suprime las marcas del texto de partida, como *el autor opina* o *en este texto se habla de*, y traslada las ideas en voz propia.",
+          "alumno": {
+            "verbo": "suprime",
+            "texto": "Suprime las frases que remiten al texto de partida, como *el autor opina* o *en este texto se habla de*, y presenta directamente las ideas, sin esas fórmulas (en voz propia).",
+            "origen": "06b4432f"
+          }
         }
       },
       "matriz_cuantitativa": {
@@ -1372,7 +1455,8 @@
         "penalizaciones": []
       },
       "descriptor_cotejo": null,
-      "descriptor_un_punto": "Redacta el resumen en un párrafo seguido y enlaza las ideas con los conectores de la pauta facilitada."
+      "descriptor_un_punto": "Redacta el resumen en un párrafo seguido y enlaza las ideas con los conectores de la pauta facilitada.",
+      "nombre_alumno": "Cómo está escrito el resumen"
     },
     {
       "id": "lcl-d-correccion-res-2eso",
@@ -1415,19 +1499,39 @@
       "descriptores": {
         "n1": {
           "verbo": "redacta",
-          "texto": "Redacta el resumen con errores de ortografía y de puntuación que obligan al lector a releer."
+          "texto": "Redacta el resumen con errores de ortografía y de puntuación que obligan al lector a releer.",
+          "alumno": {
+            "verbo": "redacta",
+            "texto": "Redacta el resumen con faltas de ortografía y de puntuación que obligan al lector a leer dos veces.",
+            "origen": "34734cc5"
+          }
         },
         "n2": {
           "verbo": "aplica",
-          "texto": "Aplica las normas de acentuación y concordancia del curso, con errores que permiten seguir el resumen."
+          "texto": "Aplica las normas de acentuación y concordancia del curso, con errores que permiten seguir el resumen.",
+          "alumno": {
+            "verbo": "aplica",
+            "texto": "Aplica las normas de las tildes (acentuación) y de concordancia entre palabras (*las ideas principales*) vistas en el curso, con errores que permiten seguir el resumen.",
+            "origen": "181f2cfd"
+          }
         },
         "n3": {
           "verbo": "aplica",
-          "texto": "Aplica las normas de ortografía y puntuación del nivel y emplea la coma en las enumeraciones del resumen."
+          "texto": "Aplica las normas de ortografía y puntuación del nivel y emplea la coma en las enumeraciones del resumen.",
+          "alumno": {
+            "verbo": "aplica",
+            "texto": "Aplica las normas de ortografía y puntuación del curso y usa la coma para separar los elementos de una lista (enumeración: *el agua, el aire y el suelo*).",
+            "origen": "6b475091"
+          }
         },
         "n4": {
           "verbo": "elige",
-          "texto": "Elige términos precisos para nombrar las ideas del texto y sostiene en todo el resumen el registro que la tarea pide."
+          "texto": "Elige términos precisos para nombrar las ideas del texto y sostiene en todo el resumen el registro que la tarea pide.",
+          "alumno": {
+            "verbo": "elige",
+            "texto": "Elige palabras exactas para nombrar las ideas del texto y mantiene en todo el resumen el tono que pide la tarea (el registro).",
+            "origen": "0875224a"
+          }
         }
       },
       "matriz_cuantitativa": {
@@ -1515,7 +1619,8 @@
         "penalizaciones": []
       },
       "descriptor_cotejo": null,
-      "descriptor_un_punto": "Aplica las normas de acentuación y concordancia del curso, con errores que permiten seguir el resumen."
+      "descriptor_un_punto": "Aplica las normas de acentuación y concordancia del curso, con errores que permiten seguir el resumen.",
+      "nombre_alumno": "Ortografía, gramática y vocabulario"
     },
     {
       "id": "lcl-b-comprension-res-3eso",

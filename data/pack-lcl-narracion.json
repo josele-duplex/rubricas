@@ -2,7 +2,7 @@
   "pack_id": "lcl-murcia-narracion",
   "materia": "LCL",
   "etiqueta": "Narración escrita — Región de Murcia",
-  "version": "0.4.0",
+  "version": "0.5.0",
   "normativa": {
     "estatal": [
       "RD 217/2022, de 29 de marzo (ESO)"
@@ -826,24 +826,45 @@
       "descriptores": {
         "n1": {
           "verbo": "utiliza",
-          "texto": "Utiliza expresiones de la conversación diaria y cambia el tratamiento del lector a mitad del relato."
+          "texto": "Utiliza expresiones de la conversación diaria y cambia el tratamiento del lector a mitad del relato.",
+          "alumno": {
+            "verbo": "usa",
+            "texto": "Usa expresiones de la conversación de cada día (*un montón*, *flipar*) y cambia a mitad del relato la forma de tratar al lector (el tratamiento: *tú*, *usted*, *vosotros*).",
+            "origen": "fdd5b878"
+          }
         },
         "n2": {
           "verbo": "ajusta",
-          "texto": "Ajusta el registro del relato a la situación que plantea el encargo y mantiene el mismo tratamiento del lector."
+          "texto": "Ajusta el registro del relato a la situación que plantea el encargo y mantiene el mismo tratamiento del lector.",
+          "alumno": {
+            "verbo": "ajusta",
+            "texto": "Ajusta el tono del relato (el registro) a la situación que plantea la tarea y mantiene de principio a fin la misma forma de tratar al lector (el tratamiento).",
+            "origen": "8270eeff"
+          }
         },
         "n3": {
           "verbo": "mantiene",
-          "texto": "Mantiene un registro propio de la lengua escrita y ajusta el léxico al mundo en que transcurre el relato."
+          "texto": "Mantiene un registro propio de la lengua escrita y ajusta el léxico al mundo en que transcurre el relato.",
+          "alumno": {
+            "verbo": "mantiene",
+            "texto": "Mantiene el tono propio de un texto escrito, no el de una conversación (registro escrito), y ajusta las palabras (el léxico) al mundo en que pasa la historia: en un relato de caballeros, *espada* o *castillo*.",
+            "origen": "0191690a"
+          }
         },
         "n4": {
           "verbo": "adapta",
-          "texto": "Adapta el registro a cada voz del texto: distingue el modo de hablar de los personajes del modo de contar del narrador."
+          "texto": "Adapta el registro a cada voz del texto: distingue el modo de hablar de los personajes del modo de contar del narrador.",
+          "alumno": {
+            "verbo": "adapta",
+            "texto": "Adapta el tono (el registro) a cada voz del texto: distingue la manera de hablar de los personajes de la manera de contar del narrador.",
+            "origen": "3fd5e4d4"
+          }
         }
       },
       "matriz_cuantitativa": null,
       "descriptor_cotejo": null,
-      "descriptor_un_punto": "Ajusta el registro del relato a la situación que plantea el encargo y mantiene el mismo tratamiento del lector."
+      "descriptor_un_punto": "Ajusta el registro del relato a la situación que plantea el encargo y mantiene el mismo tratamiento del lector.",
+      "nombre_alumno": "El tono del relato"
     },
     {
       "id": "lcl-b-coherencia-narr-2eso",
@@ -885,19 +906,39 @@
       "descriptores": {
         "n1": {
           "verbo": "enumera",
-          "texto": "Enumera los hechos en un bloque único y agrupa el planteamiento y el desenlace en la misma línea."
+          "texto": "Enumera los hechos en un bloque único y agrupa el planteamiento y el desenlace en la misma línea.",
+          "alumno": {
+            "verbo": "enumera",
+            "texto": "Enumera los hechos en un solo bloque de texto y agrupa en la misma línea el comienzo de la historia (el planteamiento) y el final (el desenlace).",
+            "origen": "c966c3ca"
+          }
         },
         "n2": {
           "verbo": "ordena",
-          "texto": "Ordena el relato en planteamiento, nudo y desenlace, y sitúa el conflicto en el nudo."
+          "texto": "Ordena el relato en planteamiento, nudo y desenlace, y sitúa el conflicto en el nudo.",
+          "alumno": {
+            "verbo": "ordena",
+            "texto": "Ordena el relato en tres partes —comienzo (planteamiento), parte central (nudo) y final (desenlace)— y sitúa el problema de la historia (el conflicto) en el nudo.",
+            "origen": "3a1c7f28"
+          }
         },
         "n3": {
           "verbo": "estructura",
-          "texto": "Estructura el relato en planteamiento, nudo y desenlace, y desarrolla el conflicto hasta un final que se sigue de lo contado."
+          "texto": "Estructura el relato en planteamiento, nudo y desenlace, y desarrolla el conflicto hasta un final que se sigue de lo contado.",
+          "alumno": {
+            "verbo": "organiza",
+            "texto": "Organiza el relato en planteamiento, nudo y desenlace, y desarrolla el problema de la historia (el conflicto) hasta un final que es consecuencia de lo contado antes.",
+            "origen": "4e9f3386"
+          }
         },
         "n4": {
           "verbo": "selecciona",
-          "texto": "Selecciona los hechos que sostienen el conflicto y descarta los que lo detienen."
+          "texto": "Selecciona los hechos que sostienen el conflicto y descarta los que lo detienen.",
+          "alumno": {
+            "verbo": "selecciona",
+            "texto": "Selecciona los hechos que hacen avanzar el problema de la historia (el conflicto) y descarta los que lo frenan.",
+            "origen": "f9616432"
+          }
         }
       },
       "matriz_cuantitativa": {
@@ -985,7 +1026,8 @@
         "penalizaciones": []
       },
       "descriptor_cotejo": null,
-      "descriptor_un_punto": "Ordena el relato en planteamiento, nudo y desenlace, y sitúa el conflicto en el nudo."
+      "descriptor_un_punto": "Ordena el relato en planteamiento, nudo y desenlace, y sitúa el conflicto en el nudo.",
+      "nombre_alumno": "Las partes de la historia"
     },
     {
       "id": "lcl-b-cohesion-narr-2eso",
@@ -1029,19 +1071,39 @@
       "descriptores": {
         "n1": {
           "verbo": "utiliza",
-          "texto": "Utiliza *y*, *luego* y *entonces* como único enlace entre los hechos, con el nombre del personaje repetido en cada oración."
+          "texto": "Utiliza *y*, *luego* y *entonces* como único enlace entre los hechos, con el nombre del personaje repetido en cada oración.",
+          "alumno": {
+            "verbo": "usa",
+            "texto": "Usa solo *y*, *luego* y *entonces* para unir los hechos, con el nombre del personaje repetido en cada frase.",
+            "origen": "354406e8"
+          }
         },
         "n2": {
           "verbo": "emplea",
-          "texto": "Emplea conectores temporales y de orden para encadenar los hechos, y separa con punto los enunciados."
+          "texto": "Emplea conectores temporales y de orden para encadenar los hechos, y separa con punto los enunciados.",
+          "alumno": {
+            "verbo": "emplea",
+            "texto": "Emplea palabras de enlace (conectores) de tiempo (*después*, *al día siguiente*) y de orden (*primero*, *por último*) para unir los hechos, y separa las frases con punto.",
+            "origen": "c1360adf"
+          }
         },
         "n3": {
           "verbo": "sustituye",
-          "texto": "Sustituye por pronombres y sinónimos los nombres de los personajes ya citados, y mantiene el pretérito como tiempo del relato."
+          "texto": "Sustituye por pronombres y sinónimos los nombres de los personajes ya citados, y mantiene el pretérito como tiempo del relato.",
+          "alumno": {
+            "verbo": "sustituye",
+            "texto": "Sustituye el nombre de un personaje ya nombrado por un pronombre (*él*, *ella*, *lo*) o por una palabra de significado parecido (sinónimo: *el chico* en lugar de *el muchacho*), y mantiene el pasado (pretérito: *llegó*, *miraba*) como tiempo del relato.",
+            "origen": "224988b9"
+          }
         },
         "n4": {
           "verbo": "emplea",
-          "texto": "Emplea la raya en los diálogos y la coma en los incisos, y señala con conectores los saltos de tiempo del relato."
+          "texto": "Emplea la raya en los diálogos y la coma en los incisos, y señala con conectores los saltos de tiempo del relato.",
+          "alumno": {
+            "verbo": "emplea",
+            "texto": "Emplea la raya (—) para marcar lo que dice cada personaje en los diálogos y la coma para separar las aclaraciones que van dentro de la frase (los incisos), y señala con palabras de enlace (conectores) los saltos de tiempo del relato (*dos años después*, *a la mañana siguiente*).",
+            "origen": "5ed93c05"
+          }
         }
       },
       "matriz_cuantitativa": {
@@ -1155,7 +1217,8 @@
         "penalizaciones": []
       },
       "descriptor_cotejo": null,
-      "descriptor_un_punto": "Emplea conectores temporales y de orden para encadenar los hechos y separa con punto los enunciados."
+      "descriptor_un_punto": "Emplea conectores temporales y de orden para encadenar los hechos y separa con punto los enunciados.",
+      "nombre_alumno": "Cómo se unen los hechos"
     },
     {
       "id": "lcl-d-correccion-narr-2eso",
@@ -1197,19 +1260,39 @@
       "descriptores": {
         "n1": {
           "verbo": "redacta",
-          "texto": "Redacta el relato con errores de ortografía y de puntuación que obligan al lector a releer."
+          "texto": "Redacta el relato con errores de ortografía y de puntuación que obligan al lector a releer.",
+          "alumno": {
+            "verbo": "redacta",
+            "texto": "Redacta el relato con faltas de ortografía y de puntuación que obligan al lector a leer dos veces.",
+            "origen": "91b7226d"
+          }
         },
         "n2": {
           "verbo": "aplica",
-          "texto": "Aplica las normas de acentuación y concordancia, con errores aislados que permiten seguir el relato."
+          "texto": "Aplica las normas de acentuación y concordancia, con errores aislados que permiten seguir el relato.",
+          "alumno": {
+            "verbo": "aplica",
+            "texto": "Aplica las normas de las tildes (acentuación) y de concordancia entre palabras (*los caballeros cansados*), con errores sueltos que permiten seguir el relato.",
+            "origen": "891aaf0e"
+          }
         },
         "n3": {
           "verbo": "aplica",
-          "texto": "Aplica las normas de ortografía del nivel y emplea las formas de pretérito con la grafía y la acentuación correctas."
+          "texto": "Aplica las normas de ortografía del nivel y emplea las formas de pretérito con la grafía y la acentuación correctas.",
+          "alumno": {
+            "verbo": "aplica",
+            "texto": "Aplica las normas de ortografía del curso y emplea las formas del pasado (pretérito) con las letras y las tildes correctas (*llegó*, *hizo*, *estuvo*, *había*).",
+            "origen": "9e06dd16"
+          }
         },
         "n4": {
           "verbo": "sustituye",
-          "texto": "Sustituye los verbos de decir repetidos (*dijo*, *contestó*) por otros que aportan la actitud del personaje."
+          "texto": "Sustituye los verbos de decir repetidos (*dijo*, *contestó*) por otros que aportan la actitud del personaje.",
+          "alumno": {
+            "verbo": "sustituye",
+            "texto": "Sustituye los verbos de decir repetidos (*dijo*, *contestó*) por otros que muestran la actitud del personaje al hablar (*susurró*, *gritó*, *protestó*).",
+            "origen": "afcd1d12"
+          }
         }
       },
       "matriz_cuantitativa": {
@@ -1297,7 +1380,8 @@
         "penalizaciones": []
       },
       "descriptor_cotejo": null,
-      "descriptor_un_punto": "Aplica las normas de acentuación y concordancia, con errores aislados que permiten seguir el relato."
+      "descriptor_un_punto": "Aplica las normas de acentuación y concordancia, con errores aislados que permiten seguir el relato.",
+      "nombre_alumno": "Ortografía, gramática y vocabulario"
     },
     {
       "id": "lcl-d-planificacion-narr-2eso",
@@ -1339,19 +1423,39 @@
       "descriptores": {
         "n1": {
           "verbo": "redacta",
-          "texto": "Redacta el relato de una sola vez y entrega la primera versión como texto final."
+          "texto": "Redacta el relato de una sola vez y entrega la primera versión como texto final.",
+          "alumno": {
+            "verbo": "redacta",
+            "texto": "Redacta el relato de una vez y entrega ese primer intento como versión final.",
+            "origen": "0d4762bf"
+          }
         },
         "n2": {
           "verbo": "elabora",
-          "texto": "Elabora un guion previo con los hechos y los personajes del relato y entrega el borrador junto al texto final."
+          "texto": "Elabora un guion previo con los hechos y los personajes del relato y entrega el borrador junto al texto final.",
+          "alumno": {
+            "verbo": "elabora",
+            "texto": "Elabora, antes de escribir, un guion (un esquema) con los hechos y los personajes del relato, y entrega el borrador junto al texto final.",
+            "origen": "3a829020"
+          }
         },
         "n3": {
           "verbo": "revisa",
-          "texto": "Revisa el borrador con un compañero y corrige los puntos del relato que el lector no entiende."
+          "texto": "Revisa el borrador con un compañero y corrige los puntos del relato que el lector no entiende.",
+          "alumno": {
+            "verbo": "revisa",
+            "texto": "Revisa el borrador con un compañero y corrige las partes del relato que el lector no entiende.",
+            "origen": "df780279"
+          }
         },
         "n4": {
           "verbo": "reelabora",
-          "texto": "Reelabora el desenlace del borrador después de la lectura entre iguales y anota el motivo del cambio."
+          "texto": "Reelabora el desenlace del borrador después de la lectura entre iguales y anota el motivo del cambio.",
+          "alumno": {
+            "verbo": "vuelve",
+            "texto": "Vuelve a escribir el final (el desenlace) del borrador después de que lo lea un compañero (lectura entre iguales), y anota el motivo del cambio.",
+            "origen": "8b8abfc8"
+          }
         }
       },
       "matriz_cuantitativa": {
@@ -1439,7 +1543,8 @@
         "penalizaciones": []
       },
       "descriptor_cotejo": null,
-      "descriptor_un_punto": "Elabora un guion previo con los hechos y los personajes del relato y entrega el borrador junto al texto final."
+      "descriptor_un_punto": "Elabora un guion previo con los hechos y los personajes del relato y entrega el borrador junto al texto final.",
+      "nombre_alumno": "Preparar y revisar el relato"
     },
     {
       "id": "lcl-c-literaria-narr-2eso",
@@ -1481,19 +1586,39 @@
       "descriptores": {
         "n1": {
           "verbo": "utiliza",
-          "texto": "Utiliza el argumento de la obra leída con los nombres de los personajes cambiados."
+          "texto": "Utiliza el argumento de la obra leída con los nombres de los personajes cambiados.",
+          "alumno": {
+            "verbo": "usa",
+            "texto": "Usa la historia de la obra leída (el argumento) y cambia los nombres de los personajes.",
+            "origen": "0e821c1e"
+          }
         },
         "n2": {
           "verbo": "recrea",
-          "texto": "Recrea un fragmento de la obra leída conservando las convenciones del género: la voz del narrador y el tipo de personaje."
+          "texto": "Recrea un fragmento de la obra leída conservando las convenciones del género: la voz del narrador y el tipo de personaje.",
+          "alumno": {
+            "verbo": "vuelve",
+            "texto": "Vuelve a escribir un fragmento de la obra leída (recreación) y mantiene los rasgos propios de ese tipo de relato (las convenciones del género): quién cuenta la historia (la voz del narrador) y la clase de personajes que aparecen (el tipo de personaje).",
+            "origen": "ee3fcc8b"
+          }
         },
         "n3": {
           "verbo": "emplea",
-          "texto": "Emplea comparaciones, metáforas y detalles de los sentidos para construir la atmósfera del relato."
+          "texto": "Emplea comparaciones, metáforas y detalles de los sentidos para construir la atmósfera del relato.",
+          "alumno": {
+            "verbo": "emplea",
+            "texto": "Emplea comparaciones (*blanco como la nieve*), metáforas (*sus ojos eran dos luceros*) y detalles que llegan por los sentidos —la vista, el oído, el olfato, el gusto y el tacto— para crear el ambiente del relato (la atmósfera).",
+            "origen": "c6d0506c"
+          }
         },
         "n4": {
           "verbo": "transforma",
-          "texto": "Transforma la voz del relato, de narrador externo a personaje que cuenta, y sostiene esa voz en todo el texto."
+          "texto": "Transforma la voz del relato, de narrador externo a personaje que cuenta, y sostiene esa voz en todo el texto.",
+          "alumno": {
+            "verbo": "transforma",
+            "texto": "Transforma la voz que cuenta la historia: en lugar de un narrador que está fuera de ella (narrador externo), la cuenta uno de los personajes; y mantiene esa voz en todo el texto.",
+            "origen": "06bd4931"
+          }
         }
       },
       "matriz_cuantitativa": {
@@ -1581,7 +1706,8 @@
         "penalizaciones": []
       },
       "descriptor_cotejo": null,
-      "descriptor_un_punto": "Recrea un fragmento de la obra leída conservando la voz del narrador y el tipo de personaje del original."
+      "descriptor_un_punto": "Recrea un fragmento de la obra leída conservando la voz del narrador y el tipo de personaje del original.",
+      "nombre_alumno": "Escribir con estilo literario a partir de la obra leída"
     },
     {
       "id": "lcl-b-adecuacion-narr-3eso",
