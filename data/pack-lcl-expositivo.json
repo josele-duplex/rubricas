@@ -821,24 +821,45 @@
       "descriptores": {
         "n1": {
           "verbo": "utiliza",
-          "texto": "Utiliza expresiones propias de la conversación cotidiana en un texto dirigido a un lector del ámbito educativo."
+          "texto": "Utiliza expresiones propias de la conversación cotidiana en un texto dirigido a un lector del ámbito educativo.",
+          "alumno": {
+            "verbo": "usa",
+            "texto": "Usa expresiones de la conversación de cada día (*o sea*, *un montón*) en un texto que es para clase.",
+            "origen": "bd9ca275"
+          }
         },
         "n2": {
           "verbo": "ajusta",
-          "texto": "Ajusta el texto al modelo de exposición trabajado en clase, con algún término coloquial junto al vocabulario del tema."
+          "texto": "Ajusta el texto al modelo de exposición trabajado en clase, con algún término coloquial junto al vocabulario del tema.",
+          "alumno": {
+            "verbo": "ajusta",
+            "texto": "Ajusta el texto al modelo de exposición visto en clase, con alguna palabra de la conversación de cada día mezclada con el vocabulario del tema.",
+            "origen": "a06266ea"
+          }
         },
         "n3": {
           "verbo": "emplea",
-          "texto": "Emplea el vocabulario propio del tema y mantiene la tercera persona a lo largo de todo el texto."
+          "texto": "Emplea el vocabulario propio del tema y mantiene la tercera persona a lo largo de todo el texto.",
+          "alumno": {
+            "verbo": "emplea",
+            "texto": "Emplea las palabras propias del tema (vocabulario específico) y mantiene la tercera persona (sin *yo* ni *tú*) en todo el texto.",
+            "origen": "0b0a5e66"
+          }
         },
         "n4": {
           "verbo": "selecciona",
-          "texto": "Selecciona el léxico específico del tema y mantiene el registro formal sin mezclarlo con expresiones coloquiales a lo largo de todo el texto."
+          "texto": "Selecciona el léxico específico del tema y mantiene el registro formal sin mezclarlo con expresiones coloquiales a lo largo de todo el texto.",
+          "alumno": {
+            "verbo": "selecciona",
+            "texto": "Selecciona las palabras específicas del tema y mantiene, en todo el texto, un tono serio (registro formal) sin mezclarlo con expresiones de la conversación de cada día.",
+            "origen": "654f9975"
+          }
         }
       },
       "matriz_cuantitativa": null,
       "descriptor_cotejo": null,
-      "descriptor_un_punto": "Ajusta el texto al modelo de exposición trabajado en clase, con algún término coloquial aislado en el vocabulario."
+      "descriptor_un_punto": "Ajusta el texto al modelo de exposición trabajado en clase, con algún término coloquial aislado en el vocabulario.",
+      "nombre_alumno": "El tono del texto"
     },
     {
       "id": "lcl-b-coherencia-expo-2eso",
@@ -880,19 +901,39 @@
       "descriptores": {
         "n1": {
           "verbo": "ordena",
-          "texto": "Ordena la información en dos bloques —introducción y desarrollo—, sin cierre reconocible al final del texto."
+          "texto": "Ordena la información en dos bloques —introducción y desarrollo—, sin cierre reconocible al final del texto.",
+          "alumno": {
+            "verbo": "ordena",
+            "texto": "Ordena la información en dos bloques —introducción y desarrollo—, sin una parte final (cierre) reconocible.",
+            "origen": "37010dae"
+          }
         },
         "n2": {
           "verbo": "estructura",
-          "texto": "Estructura el texto en introducción, desarrollo y cierre por cuenta propia, con un párrafo dedicado a cada parte."
+          "texto": "Estructura el texto en introducción, desarrollo y cierre por cuenta propia, con un párrafo dedicado a cada parte.",
+          "alumno": {
+            "verbo": "organiza",
+            "texto": "Organiza el texto por cuenta propia en introducción, desarrollo y cierre, y dedica un párrafo a cada parte.",
+            "origen": "e182a4c1"
+          }
         },
         "n3": {
           "verbo": "estructura",
-          "texto": "Estructura el desarrollo en varios párrafos, cada uno con una idea distinta, y mantiene el tema anunciado en la introducción."
+          "texto": "Estructura el desarrollo en varios párrafos, cada uno con una idea distinta, y mantiene el tema anunciado en la introducción.",
+          "alumno": {
+            "verbo": "organiza",
+            "texto": "Organiza el desarrollo en varios párrafos, cada uno con una idea distinta, y mantiene el tema anunciado en la introducción.",
+            "origen": "93e4aa5f"
+          }
         },
         "n4": {
           "verbo": "articula",
-          "texto": "Articula los párrafos del desarrollo de lo general a lo particular y cierra el texto retomando la idea principal sin añadir información nueva."
+          "texto": "Articula los párrafos del desarrollo de lo general a lo particular y cierra el texto retomando la idea principal sin añadir información nueva.",
+          "alumno": {
+            "verbo": "ordena",
+            "texto": "Ordena los párrafos del desarrollo de lo más general a lo más concreto, y cierra el texto retomando la idea principal sin añadir información nueva.",
+            "origen": "6d7df8d5"
+          }
         }
       },
       "matriz_cuantitativa": {
@@ -980,7 +1021,8 @@
         "penalizaciones": []
       },
       "descriptor_cotejo": null,
-      "descriptor_un_punto": "Estructura el texto en introducción, desarrollo y cierre por cuenta propia, con un párrafo dedicado a cada parte."
+      "descriptor_un_punto": "Estructura el texto en introducción, desarrollo y cierre por cuenta propia, con un párrafo dedicado a cada parte.",
+      "nombre_alumno": "Las ideas: el orden y la información"
     },
     {
       "id": "lcl-b-cohesion-expo-2eso",
@@ -1023,19 +1065,39 @@
       "descriptores": {
         "n1": {
           "verbo": "utiliza",
-          "texto": "Utiliza los conectores *y*, *pero* y *entonces* para enlazar las ideas del texto, sin separarlas con punto."
+          "texto": "Utiliza los conectores *y*, *pero* y *entonces* para enlazar las ideas del texto, sin separarlas con punto.",
+          "alumno": {
+            "verbo": "usa",
+            "texto": "Usa *y*, *pero* y *entonces* para unir las ideas del texto, sin separarlas con punto.",
+            "origen": "09d6ced5"
+          }
         },
         "n2": {
           "verbo": "utiliza",
-          "texto": "Utiliza conectores de adición y de orden (*además*, *en primer lugar*, *por último*) para enlazar los párrafos, y separa los enunciados con punto."
+          "texto": "Utiliza conectores de adición y de orden (*además*, *en primer lugar*, *por último*) para enlazar los párrafos, y separa los enunciados con punto.",
+          "alumno": {
+            "verbo": "usa",
+            "texto": "Usa palabras de enlace (conectores) de suma y de orden (*además*, *en primer lugar*, *por último*) para unir los párrafos, y separa las frases con punto.",
+            "origen": "62f214ce"
+          }
         },
         "n3": {
           "verbo": "emplea",
-          "texto": "Emplea conectores de orden, adición y causa entre los párrafos, y utiliza la coma para delimitar los incisos del texto."
+          "texto": "Emplea conectores de orden, adición y causa entre los párrafos, y utiliza la coma para delimitar los incisos del texto.",
+          "alumno": {
+            "verbo": "emplea",
+            "texto": "Emplea entre los párrafos palabras de enlace (conectores) de orden, de suma y de causa, y usa la coma para separar las partes que se añaden dentro de la frase (los incisos).",
+            "origen": "1c49160e"
+          }
         },
         "n4": {
           "verbo": "sustituye",
-          "texto": "Sustituye mediante un sinónimo, un hiperónimo o un pronombre la palabra que ya ha aparecido en el párrafo anterior."
+          "texto": "Sustituye mediante un sinónimo, un hiperónimo o un pronombre la palabra que ya ha aparecido en el párrafo anterior.",
+          "alumno": {
+            "verbo": "sustituye",
+            "texto": "Sustituye por un sinónimo, un hiperónimo o un pronombre la palabra que ya ha aparecido en el párrafo anterior.",
+            "origen": "1bfbd499"
+          }
         }
       },
       "matriz_cuantitativa": {
@@ -1123,7 +1185,8 @@
         "penalizaciones": []
       },
       "descriptor_cotejo": null,
-      "descriptor_un_punto": "Utiliza conectores de adición y de orden para enlazar los párrafos, y separa los enunciados con punto."
+      "descriptor_un_punto": "Utiliza conectores de adición y de orden para enlazar los párrafos, y separa los enunciados con punto.",
+      "nombre_alumno": "Cómo se unen las ideas"
     },
     {
       "id": "lcl-d-correccion-expo-2eso",
@@ -1165,19 +1228,39 @@
       "descriptores": {
         "n1": {
           "verbo": "redacta",
-          "texto": "Redacta el texto con errores de ortografía y de concordancia que obligan al lector a releer para reconstruir la idea."
+          "texto": "Redacta el texto con errores de ortografía y de concordancia que obligan al lector a releer para reconstruir la idea.",
+          "alumno": {
+            "verbo": "redacta",
+            "texto": "Redacta el texto con faltas de ortografía y fallos de concordancia (*las idea*), y el lector tiene que leer dos veces para entender la idea.",
+            "origen": "217a70d5"
+          }
         },
         "n2": {
           "verbo": "aplica",
-          "texto": "Aplica las normas de acentuación y concordancia trabajadas en clase, con errores que permiten seguir la explicación."
+          "texto": "Aplica las normas de acentuación y concordancia trabajadas en clase, con errores que permiten seguir la explicación.",
+          "alumno": {
+            "verbo": "aplica",
+            "texto": "Aplica las normas de las tildes (acentuación) y de concordancia vistas en clase, con algún error suelto que permite seguir la explicación.",
+            "origen": "95b8970b"
+          }
         },
         "n3": {
           "verbo": "aplica",
-          "texto": "Aplica las normas de ortografía, acentuación y concordancia del nivel, y sustituye alguna palabra repetida por un sinónimo."
+          "texto": "Aplica las normas de ortografía, acentuación y concordancia del nivel, y sustituye alguna palabra repetida por un sinónimo.",
+          "alumno": {
+            "verbo": "aplica",
+            "texto": "Aplica las normas de ortografía, tildes y concordancia del curso, y sustituye alguna palabra repetida por un sinónimo.",
+            "origen": "e66c1986"
+          }
         },
         "n4": {
           "verbo": "sustituye",
-          "texto": "Sustituye palabras de significado general (*cosa*, *tema*, *hacer*) por otras propias del tema, y entrega el texto sin errores que dificulten la lectura."
+          "texto": "Sustituye palabras de significado general (*cosa*, *tema*, *hacer*) por otras propias del tema, y entrega el texto sin errores que dificulten la lectura.",
+          "alumno": {
+            "verbo": "sustituye",
+            "texto": "Sustituye palabras de significado general (*cosa*, *tema*, *hacer*) por otras propias del tema, y entrega el texto sin errores que hagan difícil la lectura.",
+            "origen": "5e5fdc11"
+          }
         }
       },
       "matriz_cuantitativa": {
@@ -1265,7 +1348,8 @@
         "penalizaciones": []
       },
       "descriptor_cotejo": null,
-      "descriptor_un_punto": "Aplica las normas de acentuación y concordancia trabajadas en clase, con algún error aislado que no impide seguir la explicación."
+      "descriptor_un_punto": "Aplica las normas de acentuación y concordancia trabajadas en clase, con algún error aislado que no impide seguir la explicación.",
+      "nombre_alumno": "Ortografía, gramática y vocabulario"
     },
     {
       "id": "lcl-b-planificacion-expo-2eso",
@@ -1307,19 +1391,39 @@
       "descriptores": {
         "n1": {
           "verbo": "redacta",
-          "texto": "Redacta el texto en una sola pasada y entrega la primera versión como texto final."
+          "texto": "Redacta el texto en una sola pasada y entrega la primera versión como texto final.",
+          "alumno": {
+            "verbo": "redacta",
+            "texto": "Redacta el texto de una vez y entrega ese primer intento como versión final.",
+            "origen": "9b7b415d"
+          }
         },
         "n2": {
           "verbo": "elabora",
-          "texto": "Elabora un esquema previo con las ideas principales por cuenta propia y entrega el borrador junto al texto final."
+          "texto": "Elabora un esquema previo con las ideas principales por cuenta propia y entrega el borrador junto al texto final.",
+          "alumno": {
+            "verbo": "elabora",
+            "texto": "Elabora antes, por cuenta propia, un esquema con las ideas principales, y entrega el borrador junto al texto final.",
+            "origen": "c2b5d8ba"
+          }
         },
         "n3": {
           "verbo": "revisa",
-          "texto": "Revisa el borrador con ayuda de un compañero y corrige al menos dos aspectos de puntuación o de conexión entre las ideas."
+          "texto": "Revisa el borrador con ayuda de un compañero y corrige al menos dos aspectos de puntuación o de conexión entre las ideas.",
+          "alumno": {
+            "verbo": "revisa",
+            "texto": "Revisa el borrador con la ayuda de un compañero y corrige al menos dos aspectos de puntuación o de conexión entre las ideas.",
+            "origen": "e4391dea"
+          }
         },
         "n4": {
           "verbo": "explica",
-          "texto": "Explica, en una nota al margen del borrador, qué mejora aporta cada cambio introducido en el texto final."
+          "texto": "Explica, en una nota al margen del borrador, qué mejora aporta cada cambio introducido en el texto final.",
+          "alumno": {
+            "verbo": "explica",
+            "texto": "Explica, en una nota al margen del borrador, qué mejora aporta cada cambio hecho en el texto final.",
+            "origen": "4c167c40"
+          }
         }
       },
       "matriz_cuantitativa": {
@@ -1407,7 +1511,8 @@
         "penalizaciones": []
       },
       "descriptor_cotejo": null,
-      "descriptor_un_punto": "Elabora un esquema previo con las ideas principales por cuenta propia y entrega el borrador junto al texto final."
+      "descriptor_un_punto": "Elabora un esquema previo con las ideas principales por cuenta propia y entrega el borrador junto al texto final.",
+      "nombre_alumno": "Preparar y revisar el texto"
     },
     {
       "id": "lcl-b-informacion-expo-2eso",
@@ -1449,19 +1554,39 @@
       "descriptores": {
         "n1": {
           "verbo": "utiliza",
-          "texto": "Utiliza una única fuente y traslada al texto fragmentos literales sin señalar que proceden de ella."
+          "texto": "Utiliza una única fuente y traslada al texto fragmentos literales sin señalar que proceden de ella.",
+          "alumno": {
+            "verbo": "usa",
+            "texto": "Usa una sola fuente y traslada al texto fragmentos literales sin señalar que vienen de ella.",
+            "origen": "957e0d49"
+          }
         },
         "n2": {
           "verbo": "selecciona",
-          "texto": "Selecciona información de la fuente indicada por el profesor y la traslada al texto con alguna palabra propia."
+          "texto": "Selecciona información de la fuente indicada por el profesor y la traslada al texto con alguna palabra propia.",
+          "alumno": {
+            "verbo": "selecciona",
+            "texto": "Selecciona información de la fuente indicada por el profesor y la traslada al texto con alguna palabra propia.",
+            "origen": "cc923972"
+          }
         },
         "n3": {
           "verbo": "elabora",
-          "texto": "Elabora el texto a partir de la información seleccionada de dos fuentes indicadas y la explica en su mayor parte con palabras propias."
+          "texto": "Elabora el texto a partir de la información seleccionada de dos fuentes indicadas y la explica en su mayor parte con palabras propias.",
+          "alumno": {
+            "verbo": "elabora",
+            "texto": "Elabora el texto a partir de la información elegida de dos fuentes indicadas, y la explica en su mayor parte con palabras propias.",
+            "origen": "81337650"
+          }
         },
         "n4": {
           "verbo": "desarrolla",
-          "texto": "Desarrolla el trabajo de investigación combinando la información de dos o más fuentes indicadas, y explica con palabras propias el contenido tomado de cada una."
+          "texto": "Desarrolla el trabajo de investigación combinando la información de dos o más fuentes indicadas, y explica con palabras propias el contenido tomado de cada una.",
+          "alumno": {
+            "verbo": "desarrolla",
+            "texto": "Desarrolla el trabajo combinando información de dos o más fuentes indicadas, y explica con palabras propias el contenido tomado de cada una.",
+            "origen": "939c13ed"
+          }
         }
       },
       "matriz_cuantitativa": {
@@ -1549,7 +1674,8 @@
         "penalizaciones": []
       },
       "descriptor_cotejo": null,
-      "descriptor_un_punto": "Selecciona información de la fuente indicada por el profesor y la traslada al texto con alguna palabra propia."
+      "descriptor_un_punto": "Selecciona información de la fuente indicada por el profesor y la traslada al texto con alguna palabra propia.",
+      "nombre_alumno": "Las fuentes: de dónde sale la información"
     },
     {
       "id": "lcl-b-adecuacion-expo-3eso",

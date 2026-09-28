@@ -165,6 +165,15 @@
 | **N3** | Emplea el vocabulario propio del tema y mantiene la tercera persona a lo largo de todo el texto. |
 | **N4** | Selecciona el léxico específico del tema y mantiene el registro formal sin mezclarlo con expresiones coloquiales a lo largo de todo el texto. |
 
+**Lenguaje sencillo** — lo que lee el alumno en la ficha y en la autoevaluación.
+
+| Nivel | Técnico | Sencillo | Sencillo (autoevaluación) |
+|---|---|---|---|
+| **N1** | Utiliza expresiones propias de la conversación cotidiana en un texto dirigido a un lector del ámbito educativo. | Usa expresiones de la conversación de cada día (*o sea*, *un montón*) en un texto que es para clase. | Uso expresiones de la conversación de cada día (*o sea*, *un montón*) en un texto que es para clase. |
+| **N2** | Ajusta el texto al modelo de exposición trabajado en clase, con algún término coloquial junto al vocabulario del tema. | Ajusta el texto al modelo de exposición visto en clase, con alguna palabra de la conversación de cada día mezclada con el vocabulario del tema. | Ajusto el texto al modelo de exposición visto en clase, con alguna palabra de la conversación de cada día mezclada con el vocabulario del tema. |
+| **N3** | Emplea el vocabulario propio del tema y mantiene la tercera persona a lo largo de todo el texto. | Emplea las palabras propias del tema (vocabulario específico) y mantiene la tercera persona (sin *yo* ni *tú*) en todo el texto. | Empleo las palabras propias del tema (vocabulario específico) y mantengo la tercera persona (sin *yo* ni *tú*) en todo el texto. |
+| **N4** | Selecciona el léxico específico del tema y mantiene el registro formal sin mezclarlo con expresiones coloquiales a lo largo de todo el texto. | Selecciona las palabras específicas del tema y mantiene, en todo el texto, un tono serio (registro formal) sin mezclarlo con expresiones de la conversación de cada día. | Selecciono las palabras específicas del tema y mantengo, en todo el texto, un tono serio (registro formal) sin mezclarlo con expresiones de la conversación de cada día. |
+
 *Sin matriz cuantitativa: esta dimensión se juzga en conjunto, no hay nada que contar.*
 
 ### Coherencia: estructura y selección de la información  ·  25%  ·  bloque B  ·  🔒 obligatorio
@@ -179,6 +188,15 @@
 | **N2** | Estructura el texto en introducción, desarrollo y cierre por cuenta propia, con un párrafo dedicado a cada parte. |
 | **N3** | Estructura el desarrollo en varios párrafos, cada uno con una idea distinta, y mantiene el tema anunciado en la introducción. |
 | **N4** | Articula los párrafos del desarrollo de lo general a lo particular y cierra el texto retomando la idea principal sin añadir información nueva. |
+
+**Lenguaje sencillo** — lo que lee el alumno en la ficha y en la autoevaluación.
+
+| Nivel | Técnico | Sencillo | Sencillo (autoevaluación) |
+|---|---|---|---|
+| **N1** | Ordena la información en dos bloques —introducción y desarrollo—, sin cierre reconocible al final del texto. | Ordena la información en dos bloques —introducción y desarrollo—, sin una parte final (cierre) reconocible. | Ordeno la información en dos bloques —introducción y desarrollo—, sin una parte final (cierre) reconocible. |
+| **N2** | Estructura el texto en introducción, desarrollo y cierre por cuenta propia, con un párrafo dedicado a cada parte. | Organiza el texto por cuenta propia en introducción, desarrollo y cierre, y dedica un párrafo a cada parte. | Organizo el texto por cuenta propia en introducción, desarrollo y cierre, y dedico un párrafo a cada parte. |
+| **N3** | Estructura el desarrollo en varios párrafos, cada uno con una idea distinta, y mantiene el tema anunciado en la introducción. | Organiza el desarrollo en varios párrafos, cada uno con una idea distinta, y mantiene el tema anunciado en la introducción. | Organizo el desarrollo en varios párrafos, cada uno con una idea distinta, y mantengo el tema anunciado en la introducción. |
+| **N4** | Articula los párrafos del desarrollo de lo general a lo particular y cierra el texto retomando la idea principal sin añadir información nueva. | Ordena los párrafos del desarrollo de lo más general a lo más concreto, y cierra el texto retomando la idea principal sin añadir información nueva. | Ordeno los párrafos del desarrollo de lo más general a lo más concreto, y cierro el texto retomando la idea principal sin añadir información nueva. |
 
 **Matriz cuantitativa** — total 10 puntos. Es lo que usa el modo IA para corregir.
 
@@ -201,6 +219,15 @@
 | **N3** | Emplea conectores de orden, adición y causa entre los párrafos, y utiliza la coma para delimitar los incisos del texto. |
 | **N4** | Sustituye mediante un sinónimo, un hiperónimo o un pronombre la palabra que ya ha aparecido en el párrafo anterior. |
 
+**Lenguaje sencillo** — lo que lee el alumno en la ficha y en la autoevaluación.
+
+| Nivel | Técnico | Sencillo | Sencillo (autoevaluación) |
+|---|---|---|---|
+| **N1** | Utiliza los conectores *y*, *pero* y *entonces* para enlazar las ideas del texto, sin separarlas con punto. | Usa *y*, *pero* y *entonces* para unir las ideas del texto, sin separarlas con punto. | Uso *y*, *pero* y *entonces* para unir las ideas del texto, sin separarlas con punto. |
+| **N2** | Utiliza conectores de adición y de orden (*además*, *en primer lugar*, *por último*) para enlazar los párrafos, y separa los enunciados con punto. | Usa palabras de enlace (conectores) de suma y de orden (*además*, *en primer lugar*, *por último*) para unir los párrafos, y separa las frases con punto. | Uso palabras de enlace (conectores) de suma y de orden (*además*, *en primer lugar*, *por último*) para unir los párrafos, y separo las frases con punto. |
+| **N3** | Emplea conectores de orden, adición y causa entre los párrafos, y utiliza la coma para delimitar los incisos del texto. | Emplea entre los párrafos palabras de enlace (conectores) de orden, de suma y de causa, y usa la coma para separar las partes que se añaden dentro de la frase (los incisos). | Empleo entre los párrafos palabras de enlace (conectores) de orden, de suma y de causa, y uso la coma para separar las partes que se añaden dentro de la frase (los incisos). |
+| **N4** | Sustituye mediante un sinónimo, un hiperónimo o un pronombre la palabra que ya ha aparecido en el párrafo anterior. | Sustituye por un sinónimo, un hiperónimo o un pronombre la palabra que ya ha aparecido en el párrafo anterior. | Sustituyo por un sinónimo, un hiperónimo o un pronombre la palabra que ya ha aparecido en el párrafo anterior. |
+
 **Matriz cuantitativa** — total 10 puntos. Es lo que usa el modo IA para corregir.
 
 | Componente | Máx. | Bandas |
@@ -221,6 +248,15 @@
 | **N2** | Aplica las normas de acentuación y concordancia trabajadas en clase, con errores que permiten seguir la explicación. |
 | **N3** | Aplica las normas de ortografía, acentuación y concordancia del nivel, y sustituye alguna palabra repetida por un sinónimo. |
 | **N4** | Sustituye palabras de significado general (*cosa*, *tema*, *hacer*) por otras propias del tema, y entrega el texto sin errores que dificulten la lectura. |
+
+**Lenguaje sencillo** — lo que lee el alumno en la ficha y en la autoevaluación.
+
+| Nivel | Técnico | Sencillo | Sencillo (autoevaluación) |
+|---|---|---|---|
+| **N1** | Redacta el texto con errores de ortografía y de concordancia que obligan al lector a releer para reconstruir la idea. | Redacta el texto con faltas de ortografía y fallos de concordancia (*las idea*), y el lector tiene que leer dos veces para entender la idea. | Redacto el texto con faltas de ortografía y fallos de concordancia (*las idea*), y el lector tiene que leer dos veces para entender la idea. |
+| **N2** | Aplica las normas de acentuación y concordancia trabajadas en clase, con errores que permiten seguir la explicación. | Aplica las normas de las tildes (acentuación) y de concordancia vistas en clase, con algún error suelto que permite seguir la explicación. | Aplico las normas de las tildes (acentuación) y de concordancia vistas en clase, con algún error suelto que permite seguir la explicación. |
+| **N3** | Aplica las normas de ortografía, acentuación y concordancia del nivel, y sustituye alguna palabra repetida por un sinónimo. | Aplica las normas de ortografía, tildes y concordancia del curso, y sustituye alguna palabra repetida por un sinónimo. | Aplico las normas de ortografía, tildes y concordancia del curso, y sustituyo alguna palabra repetida por un sinónimo. |
+| **N4** | Sustituye palabras de significado general (*cosa*, *tema*, *hacer*) por otras propias del tema, y entrega el texto sin errores que dificulten la lectura. | Sustituye palabras de significado general (*cosa*, *tema*, *hacer*) por otras propias del tema, y entrega el texto sin errores que hagan difícil la lectura. | Sustituyo palabras de significado general (*cosa*, *tema*, *hacer*) por otras propias del tema, y entrego el texto sin errores que hagan difícil la lectura. |
 
 **Matriz cuantitativa** — total 10 puntos. Es lo que usa el modo IA para corregir.
 
@@ -243,6 +279,15 @@
 | **N3** | Revisa el borrador con ayuda de un compañero y corrige al menos dos aspectos de puntuación o de conexión entre las ideas. |
 | **N4** | Explica, en una nota al margen del borrador, qué mejora aporta cada cambio introducido en el texto final. |
 
+**Lenguaje sencillo** — lo que lee el alumno en la ficha y en la autoevaluación.
+
+| Nivel | Técnico | Sencillo | Sencillo (autoevaluación) |
+|---|---|---|---|
+| **N1** | Redacta el texto en una sola pasada y entrega la primera versión como texto final. | Redacta el texto de una vez y entrega ese primer intento como versión final. | Redacto el texto de una vez y entrego ese primer intento como versión final. |
+| **N2** | Elabora un esquema previo con las ideas principales por cuenta propia y entrega el borrador junto al texto final. | Elabora antes, por cuenta propia, un esquema con las ideas principales, y entrega el borrador junto al texto final. | Elaboro antes, por cuenta propia, un esquema con las ideas principales, y entrego el borrador junto al texto final. |
+| **N3** | Revisa el borrador con ayuda de un compañero y corrige al menos dos aspectos de puntuación o de conexión entre las ideas. | Revisa el borrador con la ayuda de un compañero y corrige al menos dos aspectos de puntuación o de conexión entre las ideas. | Reviso el borrador con la ayuda de un compañero y corrijo al menos dos aspectos de puntuación o de conexión entre las ideas. |
+| **N4** | Explica, en una nota al margen del borrador, qué mejora aporta cada cambio introducido en el texto final. | Explica, en una nota al margen del borrador, qué mejora aporta cada cambio hecho en el texto final. | Explico, en una nota al margen del borrador, qué mejora aporta cada cambio hecho en el texto final. |
+
 **Matriz cuantitativa** — total 10 puntos. Es lo que usa el modo IA para corregir.
 
 | Componente | Máx. | Bandas |
@@ -263,6 +308,15 @@
 | **N2** | Selecciona información de la fuente indicada por el profesor y la traslada al texto con alguna palabra propia. |
 | **N3** | Elabora el texto a partir de la información seleccionada de dos fuentes indicadas y la explica en su mayor parte con palabras propias. |
 | **N4** | Desarrolla el trabajo de investigación combinando la información de dos o más fuentes indicadas, y explica con palabras propias el contenido tomado de cada una. |
+
+**Lenguaje sencillo** — lo que lee el alumno en la ficha y en la autoevaluación.
+
+| Nivel | Técnico | Sencillo | Sencillo (autoevaluación) |
+|---|---|---|---|
+| **N1** | Utiliza una única fuente y traslada al texto fragmentos literales sin señalar que proceden de ella. | Usa una sola fuente y traslada al texto fragmentos literales sin señalar que vienen de ella. | Uso una sola fuente y traslado al texto fragmentos literales sin señalar que vienen de ella. |
+| **N2** | Selecciona información de la fuente indicada por el profesor y la traslada al texto con alguna palabra propia. | Selecciona información de la fuente indicada por el profesor y la traslada al texto con alguna palabra propia. | Selecciono información de la fuente indicada por el profesor y la traslado al texto con alguna palabra propia. |
+| **N3** | Elabora el texto a partir de la información seleccionada de dos fuentes indicadas y la explica en su mayor parte con palabras propias. | Elabora el texto a partir de la información elegida de dos fuentes indicadas, y la explica en su mayor parte con palabras propias. | Elaboro el texto a partir de la información elegida de dos fuentes indicadas, y la explico en su mayor parte con palabras propias. |
+| **N4** | Desarrolla el trabajo de investigación combinando la información de dos o más fuentes indicadas, y explica con palabras propias el contenido tomado de cada una. | Desarrolla el trabajo combinando información de dos o más fuentes indicadas, y explica con palabras propias el contenido tomado de cada una. | Desarrollo el trabajo combinando información de dos o más fuentes indicadas, y explico con palabras propias el contenido tomado de cada una. |
 
 **Matriz cuantitativa** — total 10 puntos. Es lo que usa el modo IA para corregir.
 

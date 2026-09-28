@@ -32,6 +32,15 @@
 | **N3** | Emplea fórmulas de opinión (*creo que*, *en mi opinión*) al presentar cada razón y mantiene el resto del texto libre de expresiones coloquiales. |
 | **N4** | Distingue mediante fórmulas de modalización los hechos comprobables de las opiniones propias a lo largo de todo el texto. |
 
+**Lenguaje sencillo** — lo que lee el alumno en la ficha y en la autoevaluación.
+
+| Nivel | Técnico | Sencillo | Sencillo (autoevaluación) |
+|---|---|---|---|
+| **N1** | Utiliza expresiones de la conversación diaria para dar una opinión sobre el tema en un texto dirigido a un lector del ámbito educativo. | Usa expresiones de la conversación de cada día (*a mí me mola*, *una chorrada*) para dar una opinión sobre el tema, en un texto que es para clase. | Uso expresiones de la conversación de cada día (*a mí me mola*, *una chorrada*) para dar una opinión sobre el tema, en un texto que es para clase. |
+| **N2** | Ajusta el escrito a la pauta de opinión trabajada en clase y mantiene la primera persona del singular al presentar la postura defendida. | Ajusta el escrito al modelo de opinión visto en clase y usa el *yo* (primera persona) al presentar la postura defendida. | Ajusto el escrito al modelo de opinión visto en clase y uso el *yo* (primera persona) al presentar la postura defendida. |
+| **N3** | Emplea fórmulas de opinión (*creo que*, *en mi opinión*) al presentar cada razón y mantiene el resto del texto libre de expresiones coloquiales. | Emplea fórmulas de opinión (*creo que*, *en mi opinión*) para presentar cada razón, y mantiene el resto del texto sin expresiones de la conversación de cada día. | Empleo fórmulas de opinión (*creo que*, *en mi opinión*) para presentar cada razón, y mantengo el resto del texto sin expresiones de la conversación de cada día. |
+| **N4** | Distingue mediante fórmulas de modalización los hechos comprobables de las opiniones propias a lo largo de todo el texto. | Distingue, a lo largo de todo el texto, los hechos que se pueden comprobar de las opiniones propias, marcando la diferencia con fórmulas como *está comprobado que…* o *para mí…* (modalización). | Distingo, a lo largo de todo el texto, los hechos que se pueden comprobar de las opiniones propias, marcando la diferencia con fórmulas como *está comprobado que…* o *para mí…* (modalización). |
+
 *Sin matriz cuantitativa: esta dimensión se juzga en conjunto, no hay nada que contar.*
 
 ### Coherencia: postura, razones y cierre  ·  25%  ·  bloque B  ·  🔒 obligatorio
@@ -46,6 +55,15 @@
 | **N2** | Formula la postura defendida en una oración al comienzo del texto y la apoya con dos razones, cada una en una oración distinta. |
 | **N3** | Ordena el texto en tres partes —postura, razones y cierre— con un párrafo para cada razón. |
 | **N4** | Articula las razones en un orden propio, de la menos a la más importante, y cierra el texto retomando la postura inicial con otras palabras. |
+
+**Lenguaje sencillo** — lo que lee el alumno en la ficha y en la autoevaluación.
+
+| Nivel | Técnico | Sencillo | Sencillo (autoevaluación) |
+|---|---|---|---|
+| **N1** | Enumera opiniones sueltas sobre el tema en un único bloque, mezclando las razones con la postura. | Enumera opiniones sueltas sobre el tema en un solo bloque de texto, mezclando las razones con la postura. | Enumero opiniones sueltas sobre el tema en un solo bloque de texto, mezclando las razones con la postura. |
+| **N2** | Formula la postura defendida en una oración al comienzo del texto y la apoya con dos razones, cada una en una oración distinta. | Presenta la postura al principio del texto en una oración y la apoya con dos razones, cada una en una oración distinta. | Presento la postura al principio del texto en una oración y la apoyo con dos razones, cada una en una oración distinta. |
+| **N3** | Ordena el texto en tres partes —postura, razones y cierre— con un párrafo para cada razón. | Organiza el texto en tres partes —postura, razones y cierre— y dedica un párrafo a cada razón. | Organizo el texto en tres partes —postura, razones y cierre— y dedico un párrafo a cada razón. |
+| **N4** | Articula las razones en un orden propio, de la menos a la más importante, y cierra el texto retomando la postura inicial con otras palabras. | Ordena las razones por cuenta propia, de la menos a la más importante, y cierra el texto retomando la postura inicial con otras palabras. | Ordeno las razones por cuenta propia, de la menos a la más importante, y cierro el texto retomando la postura inicial con otras palabras. |
 
 **Matriz cuantitativa** — total 10 puntos. Es lo que usa el modo IA para corregir.
 
@@ -68,6 +86,15 @@
 | **N3** | Emplea conectores explicativos y de contraste (*es decir*, *en cambio*) para encadenar postura, razones y cierre, y delimita los incisos con comas. |
 | **N4** | Sustituye las repeticiones mediante pronombres, sinónimos e hiperónimos, y emplea conectores temporales para situar cada razón en la secuencia del texto. |
 
+**Lenguaje sencillo** — lo que lee el alumno en la ficha y en la autoevaluación.
+
+| Nivel | Técnico | Sencillo | Sencillo (autoevaluación) |
+|---|---|---|---|
+| **N1** | Utiliza los conectores *y*, *pero* y *entonces* para encadenar la opinión y las razones dentro de un mismo enunciado largo. | Usa *y*, *pero* y *entonces* para unir la opinión y las razones dentro de una misma frase larga. | Uso *y*, *pero* y *entonces* para unir la opinión y las razones dentro de una misma frase larga. |
+| **N2** | Utiliza conectores de orden y de contraste (*en primer lugar*, *sin embargo*) para enlazar cada razón con la postura, y separa los enunciados con punto. | Usa palabras de enlace (conectores) de orden y de contraste (*en primer lugar*, *sin embargo*) para unir cada razón con la postura, y separa las frases con punto. | Uso palabras de enlace (conectores) de orden y de contraste (*en primer lugar*, *sin embargo*) para unir cada razón con la postura, y separo las frases con punto. |
+| **N3** | Emplea conectores explicativos y de contraste (*es decir*, *en cambio*) para encadenar postura, razones y cierre, y delimita los incisos con comas. | Emplea palabras de enlace (conectores) que explican o que contrastan (*es decir*, *en cambio*) para unir postura, razones y cierre, y usa comas para separar las partes que se añaden dentro de la frase (los incisos). | Empleo palabras de enlace (conectores) que explican o que contrastan (*es decir*, *en cambio*) para unir postura, razones y cierre, y uso comas para separar las partes que se añaden dentro de la frase (los incisos). |
+| **N4** | Sustituye las repeticiones mediante pronombres, sinónimos e hiperónimos, y emplea conectores temporales para situar cada razón en la secuencia del texto. | Sustituye las palabras repetidas por pronombres, sinónimos o hiperónimos, y emplea conectores de tiempo (*antes*, *después*, *mientras tanto*) para ordenar en el tiempo las razones del texto. | Sustituyo las palabras repetidas por pronombres, sinónimos o hiperónimos, y empleo conectores de tiempo (*antes*, *después*, *mientras tanto*) para ordenar en el tiempo las razones del texto. |
+
 **Matriz cuantitativa** — total 10 puntos. Es lo que usa el modo IA para corregir.
 
 | Componente | Máx. | Bandas |
@@ -88,6 +115,15 @@
 | **N2** | Aplica las normas de acentuación y concordancia trabajadas en clase, con errores que permiten seguir la opinión defendida. |
 | **N3** | Aplica las normas de ortografía, acentuación y concordancia del nivel, y emplea términos valorativos propios (*injusto*, *necesario*) en lugar de palabras comodín. |
 | **N4** | Sustituye las palabras de significado impreciso (*cosa*, *tema*, *hacer*) por el término valorativo que corresponde, y entrega el texto sin errores que dificulten la lectura. |
+
+**Lenguaje sencillo** — lo que lee el alumno en la ficha y en la autoevaluación.
+
+| Nivel | Técnico | Sencillo | Sencillo (autoevaluación) |
+|---|---|---|---|
+| **N1** | Redacta el texto con errores de ortografía y de concordancia que obligan al lector a releer para reconstruir la idea. | Redacta el texto con faltas de ortografía y fallos de concordancia (*las idea*), y el lector tiene que leer dos veces para entender la idea. | Redacto el texto con faltas de ortografía y fallos de concordancia (*las idea*), y el lector tiene que leer dos veces para entender la idea. |
+| **N2** | Aplica las normas de acentuación y concordancia trabajadas en clase, con errores que permiten seguir la opinión defendida. | Aplica las normas de las tildes (acentuación) y de concordancia vistas en clase, con algún error suelto que no impide seguir la opinión defendida. | Aplico las normas de las tildes (acentuación) y de concordancia vistas en clase, con algún error suelto que no impide seguir la opinión defendida. |
+| **N3** | Aplica las normas de ortografía, acentuación y concordancia del nivel, y emplea términos valorativos propios (*injusto*, *necesario*) en lugar de palabras comodín. | Aplica las normas de ortografía, tildes y concordancia del curso, y usa palabras que valoran con precisión (*injusto*, *necesario*) en lugar de palabras comodín. | Aplico las normas de ortografía, tildes y concordancia del curso, y uso palabras que valoran con precisión (*injusto*, *necesario*) en lugar de palabras comodín. |
+| **N4** | Sustituye las palabras de significado impreciso (*cosa*, *tema*, *hacer*) por el término valorativo que corresponde, y entrega el texto sin errores que dificulten la lectura. | Sustituye las palabras de significado impreciso (*cosa*, *tema*, *hacer*) por el término valorativo exacto, y entrega el texto sin errores que hagan difícil la lectura. | Sustituyo las palabras de significado impreciso (*cosa*, *tema*, *hacer*) por el término valorativo exacto, y entrego el texto sin errores que hagan difícil la lectura. |
 
 **Matriz cuantitativa** — total 10 puntos. Es lo que usa el modo IA para corregir.
 
@@ -110,6 +146,15 @@
 | **N3** | Revisa el borrador con ayuda de un compañero y corrige al menos dos aspectos de puntuación o de conexión entre las razones. |
 | **N4** | Explica, en una nota al margen del borrador, qué mejora aporta cada cambio introducido en el texto final. |
 
+**Lenguaje sencillo** — lo que lee el alumno en la ficha y en la autoevaluación.
+
+| Nivel | Técnico | Sencillo | Sencillo (autoevaluación) |
+|---|---|---|---|
+| **N1** | Redacta el texto en una sola pasada y entrega la primera versión como texto final. | Redacta el texto de una vez y entrega ese primer intento como versión final. | Redacto el texto de una vez y entrego ese primer intento como versión final. |
+| **N2** | Elabora un esquema previo propio con la postura y las razones, y entrega el borrador junto al texto final. | Elabora antes un esquema propio con la postura y las razones, y entrega el borrador junto al texto final. | Elaboro antes un esquema propio con la postura y las razones, y entrego el borrador junto al texto final. |
+| **N3** | Revisa el borrador con ayuda de un compañero y corrige al menos dos aspectos de puntuación o de conexión entre las razones. | Revisa el borrador con la ayuda de un compañero y corrige al menos dos aspectos de puntuación o de conexión entre las razones. | Reviso el borrador con la ayuda de un compañero y corrijo al menos dos aspectos de puntuación o de conexión entre las razones. |
+| **N4** | Explica, en una nota al margen del borrador, qué mejora aporta cada cambio introducido en el texto final. | Explica, en una nota al margen del borrador, qué mejora aporta cada cambio hecho en el texto final. | Explico, en una nota al margen del borrador, qué mejora aporta cada cambio hecho en el texto final. |
+
 **Matriz cuantitativa** — total 10 puntos. Es lo que usa el modo IA para corregir.
 
 | Componente | Máx. | Bandas |
@@ -130,6 +175,15 @@
 | **N2** | Selecciona los datos pertinentes de la fuente indicada por el profesor y los emplea como apoyo de una de las razones. |
 | **N3** | Elabora el texto a partir de las dos fuentes indicadas y apoya cada razón en un dato tomado de ellas. |
 | **N4** | Explica con palabras propias la información de cada fuente e indica junto a cada dato la fuente de la que procede. |
+
+**Lenguaje sencillo** — lo que lee el alumno en la ficha y en la autoevaluación.
+
+| Nivel | Técnico | Sencillo | Sencillo (autoevaluación) |
+|---|---|---|---|
+| **N1** | Utiliza una única fuente indicada por el profesor y traslada sus datos al texto sin señalar de dónde proceden. | Usa una sola fuente indicada por el profesor (un libro, una página web) y traslada los datos al texto sin decir de dónde salen. | Uso una sola fuente indicada por el profesor (un libro, una página web) y traslado los datos al texto sin decir de dónde salen. |
+| **N2** | Selecciona los datos pertinentes de la fuente indicada por el profesor y los emplea como apoyo de una de las razones. | Selecciona los datos importantes de la fuente indicada por el profesor y los usa para apoyar una de las razones. | Selecciono los datos importantes de la fuente indicada por el profesor y los uso para apoyar una de las razones. |
+| **N3** | Elabora el texto a partir de las dos fuentes indicadas y apoya cada razón en un dato tomado de ellas. | Elabora el texto a partir de las dos fuentes indicadas y apoya cada razón en un dato tomado de ellas. | Elaboro el texto a partir de las dos fuentes indicadas y apoyo cada razón en un dato tomado de ellas. |
+| **N4** | Explica con palabras propias la información de cada fuente e indica junto a cada dato la fuente de la que procede. | Explica con palabras propias la información de cada fuente, e indica junto a cada dato de qué fuente sale. | Explico con palabras propias la información de cada fuente, e indico junto a cada dato de qué fuente sale. |
 
 **Matriz cuantitativa** — total 10 puntos. Es lo que usa el modo IA para corregir.
 
