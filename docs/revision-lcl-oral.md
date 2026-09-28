@@ -1,6 +1,6 @@
 # Revisión del pack: Exposición oral — Región de Murcia
 
-**Pack** `pack-lcl-oral.json` · versión 0.8.0 · 36 criterios · 144 descriptores · 18 matrices cuantitativas
+**Pack** `pack-lcl-oral.json` · versión 0.9.0 · 36 criterios · 144 descriptores · 18 matrices cuantitativas
 
 > Documento para validación docente, generado desde el JSON. No se edita a mano.
 > Al leer, mira sobre todo tres cosas: si el nivel N4 es alcanzable en ese curso,
