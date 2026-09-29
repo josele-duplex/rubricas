@@ -7,9 +7,16 @@
 // campos de los que pide CLAUDE.md, ni menos dimensiones o niveles que la
 // rúbrica analítica de la que se deriva.
 
-import { generarInstrumentos, generarFichaAlumno, generarRubricaAnalitica } from "../js/motor.js";
+import {
+  generarInstrumentos,
+  generarFichaAlumno,
+  generarRubricaAnalitica,
+  descuentoOrtografia,
+  cursosDisponibles,
+  DETRACTOR_ESTIMACION,
+} from "../js/motor.js";
 import { huellaFnv1a } from "../js/huella.js";
-import { cargarPack as cargar } from "./cargar.mjs";
+import { cargarPack as cargar, CATALOGO } from "./cargar.mjs";
 
 const pack = cargar("pack-lcl-expositivo.json");
 
@@ -159,6 +166,70 @@ caso("lenguaje sencillo: los instrumentos del profesor no usan alumno ni nombre_
   const analitica = generarRubricaAnalitica([criterioSintetico("Cómo se unen las ideas")], { actividad: "a", curso: "1ESO", tipoTarea: "expositivo" });
   assertIgual(analitica.dimensiones[0].nombre, "Cohesión: conectores y puntuación", "la rúbrica analítica debía seguir usando el nombre técnico");
   assertIgual(analitica.dimensiones[0].niveles[0], N1_TECNICO, "la rúbrica analítica debía seguir usando el texto técnico, no el sencillo");
+});
+
+// --- Descuento de ortografía: cuenta una sola vez (SDD §6.3, regla 7) -------
+// El descuento de la escala de estimación y de «Calificar» solo aplica cuando
+// ninguna dimensión activa puntúa ya la ortografía; si una lo hace, restarlo
+// además sería doble castigo. La ficha lo anuncia solo cuando aplica, y una
+// tarea oral no lo lleva nunca. Qué dimensión es, lo dice data/catalogo.json.
+
+const DIM_ORTOGRAFIA = CATALOGO.materias.LCL.descuento_ortografia?.dimension;
+const oral = cargar("pack-lcl-oral.json");
+
+function generarCon(packUsado, extra) {
+  return generarInstrumentos(packUsado, {
+    curso: "3ESO",
+    tipoTarea: "expositivo",
+    tiempoCorreccion: "mas5",
+    actividad: "Examen: texto expositivo sobre el reciclaje",
+    esProductoFinal: false,
+    puerta: "desarrollo_largo",
+    dimensionOrtografia: DIM_ORTOGRAFIA,
+    ...extra,
+  });
+}
+
+caso("descuento: el catálogo declara una dimensión que existe en el pack escrito y no en el oral", () => {
+  assert(DIM_ORTOGRAFIA, "data/catalogo.json no declara materias.LCL.descuento_ortografia.dimension");
+  assert(pack.criterios.some((c) => c.dimension === DIM_ORTOGRAFIA),
+    `ningún criterio del expositivo tiene dimension "${DIM_ORTOGRAFIA}": el descuento se aplicaría siempre, con doble castigo`);
+  assert(!oral.criterios.some((c) => c.dimension === DIM_ORTOGRAFIA),
+    "la exposición oral no debería tener dimensión de ortografía");
+});
+
+caso("descuento: con la dimensión de corrección activa no se descuenta, y la escala dice dónde cuenta", () => {
+  const r = generarCon(pack);
+  const correccion = r.criterios.find((c) => c.dimension === DIM_ORTOGRAFIA);
+  assert(correccion, "el caso necesita la dimensión de corrección entre las activas");
+  assertIgual(r.descuento.aplica, false, "con la corrección activa, el descuento no debía aplicar");
+  assertIgual(r.descuento.apartado, correccion.nombre, "el descuento debía nombrar el apartado que ya cuenta la ortografía");
+  assertIgual(r.escalaEstimacion.descuento, r.descuento, "la escala debía llevar el mismo estado de descuento");
+  assertIgual(r.fichaAlumno.descuento, null, "la ficha no debía anunciar un descuento que no se aplica");
+});
+
+caso("descuento: sin la dimensión de corrección, aplica con su tope y la ficha lo anuncia", () => {
+  const r = generarCon(pack);
+  const sinCorreccion = r.criterios.filter((c) => c.dimension !== DIM_ORTOGRAFIA);
+  const d = descuentoOrtografia(sinCorreccion, r.dimensionOrtografia);
+  assertIgual(d.aplica, true, "sin la corrección entre las activas, el descuento debía aplicar");
+  assertIgual(d.tope, DETRACTOR_ESTIMACION.tope, "el descuento debía llevar el tope de DETRACTOR_ESTIMACION");
+  const ficha = generarFichaAlumno(sinCorreccion, { actividad: "a", curso: "3ESO", tipoTarea: "expositivo" }, null, d);
+  assert(ficha.descuento && ficha.descuento.tope === DETRACTOR_ESTIMACION.tope,
+    "la ficha debía anunciar el descuento con su tope antes de la prueba");
+});
+
+caso("descuento: una tarea oral no lleva descuento, aunque la materia lo declare", () => {
+  const curso = cursosDisponibles(oral, "oral")[0];
+  const r = generarCon(oral, { curso, tipoTarea: "oral" });
+  assert(r.ok, `el pack oral debía generar instrumentos en ${curso}`);
+  assertIgual(r.descuento, null, "en una exposición oral no hay faltas de ortografía que descontar");
+  assertIgual(r.escalaEstimacion.descuento, null, "la escala de una tarea oral no debía mostrar descuento");
+});
+
+caso("descuento: una materia que no declara dimensión de ortografía no lleva descuento", () => {
+  const r = generarCon(pack, { dimensionOrtografia: undefined });
+  assertIgual(r.descuento, null, "sin dimensión declarada no debía haber descuento");
 });
 
 console.log(`\n${pasados} caso(s) correcto(s), ${fallidos} fallido(s).`);

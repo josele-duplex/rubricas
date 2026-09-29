@@ -3,7 +3,7 @@
 // de dónde salió (no hay todavía pantalla que registre el resultado de un
 // alumno; ver §6.5). No se toca la interfaz aquí.
 
-import { normalizarPesos } from "./motor.js";
+import { normalizarPesos, DETRACTOR_ESTIMACION } from "./motor.js";
 
 // §6.2 — valor de cada nivel según la escala elegida. La equilibrada es la que
 // se imprime en la ficha del alumno (Suficiente 5, Notable 7,5, Excelente 10),
@@ -33,14 +33,19 @@ export function valorNivel(nivel, escala = "equilibrada") {
   return valor;
 }
 
+// §6.4 — dónde empieza cada nivel sobre 10: las bandas 9–10 · 7–8,9 · 5–6,9 ·
+// 0–4,9 de la regla 3 de CLAUDE.md. Es su única implementación: la usa nivelDe
+// y la escala de estimación, que la reescala al máximo de cada apartado.
+export const CORTES_NIVEL = { 4: 9, 3: 7, 2: 5, 1: 0 };
+
 // §6.4 — traduce puntos (0-10) al nivel cuyo nombre ve el alumno. Por umbrales
 // cerrados con >=, sin hueco entre bandas. El valor de entrada debe venir ya
 // pasado por redondear2, para que un 9,00 almacenado como 8,99999... no caiga
 // al lado equivocado del corte.
 export function nivelDe(puntos) {
-  if (puntos >= 9) return 4;
-  if (puntos >= 7) return 3;
-  if (puntos >= 5) return 2;
+  if (puntos >= CORTES_NIVEL[4]) return 4;
+  if (puntos >= CORTES_NIVEL[3]) return 3;
+  if (puntos >= CORTES_NIVEL[2]) return 2;
   return 1;
 }
 
@@ -121,7 +126,7 @@ export function calcularNota(entradas, opciones = {}) {
 
   // §6.3 — el detractor forma parte de calcular la nota; se aplica antes que
   // la condición mínima, que es un límite sobre la nota ya calculada.
-  const notaTrasDetractor = Math.max(0, notaCalculada - Math.min(detractorAcumulado, 2));
+  const notaTrasDetractor = Math.max(0, notaCalculada - Math.min(detractorAcumulado, DETRACTOR_ESTIMACION.tope));
 
   const notaFinal =
     condicionMinimaActiva && algunObligatorioEnN1 ? Math.min(notaTrasDetractor, 4.9) : notaTrasDetractor;

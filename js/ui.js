@@ -1,7 +1,7 @@
 import { PUERTA_APLICABILIDAD, TIEMPOS_CORRECCION, tiposTareaDisponibles, cursosDisponibles } from "./motor.js";
 import { comprobarRepartoPesos, REGLAS } from "./validador.js";
 import { microexplicacion } from "./microexplicaciones.js";
-import { calcularResultadoGuardado, valorNivel } from "./calificacion.js";
+import { calcularResultadoGuardado, valorNivel, CORTES_NIVEL } from "./calificacion.js";
 import { filasACsv, descargarCsv, nombreMmaaaa } from "./csv.js";
 import { conCursiva, textoPlano } from "./marcas.js";
 
@@ -290,9 +290,44 @@ function renderRubricaUnPunto(unPunto) {
   `;
 }
 
-// §7.7 — escala de estimación analítica. Puntuación directa por apartado (sin
-// elegir entre los cuatro niveles) más el bloque de detractores globales y la
-// línea de nota final, todo en blanco para rellenar a mano o al corregir.
+function puntosEs(n) {
+  return n.toLocaleString("es-ES", { maximumFractionDigits: 2 });
+}
+
+// Dónde empieza cada nivel dentro del máximo de un apartado: las bandas sobre
+// 10 (CORTES_NIVEL, js/calificacion.js) reescaladas a ese máximo. Es lo que
+// ata la puntuación directa a los cuatro niveles: un 1,8 sobre 2,5 es Notable
+// por la misma razón que un 7,2 sobre 10.
+function renderCortesApartado(maxPuntos) {
+  const corte = (n) => Math.round(((maxPuntos * CORTES_NIVEL[n]) / 10) * 100) / 100;
+  const lineas = [4, 3, 2, 1].map((n) => {
+    const tramo = n === 1 ? `menos de ${puntosEs(corte(2))}` : `desde ${puntosEs(corte(n))}`;
+    return `<li><span class="corte-nivel">${escapeHtml(etiquetaNivel(n))}</span> ${tramo}</li>`;
+  });
+  return `<ul class="cortes-apartado">${lineas.join("")}</ul>`;
+}
+
+// El descuento (descuentoOrtografia, js/motor.js) tiene tres estados, y cada
+// uno se imprime distinto: si aplica, su casilla; si la ortografía ya la
+// puntúa un apartado, una línea que dice cuál, para que nadie la reste a
+// mano otra vez; si la tarea no tiene texto escrito, nada.
+function renderDescuentoEscala(descuento) {
+  if (!descuento) return "";
+  if (!descuento.aplica) {
+    return `<p class="ayuda nota-descuento">Sin descuento por ortografía: las faltas ya cuentan en «${escapeHtml(descuento.apartado)}». Si quitas ese apartado en «Ajustar», pasan a descontarse al final, hasta ${puntosEs(descuento.tope)} puntos.</p>`;
+  }
+  return `
+    <div class="bloque-detractor">
+      <span class="dimension-nombre">Descuento: ${escapeHtml(descuento.concepto.toLowerCase())}</span>
+      <span class="dimension-meta">Se resta de la suma de los apartados, hasta −${puntosEs(descuento.tope)} puntos</span>
+      <div class="linea-comentario"></div>
+    </div>
+  `;
+}
+
+// §7.7 — escala de estimación analítica. Puntuación directa por apartado, con
+// el máximo y los cortes de nivel delante, más el descuento cuando aplica y la
+// línea de nota final, todo en blanco para rellenar a mano al corregir.
 function renderEscalaEstimacion(escala) {
   const filas = escala.apartados
     .map(
@@ -303,7 +338,8 @@ function renderEscalaEstimacion(escala) {
           <span class="dimension-nombre">${escapeHtml(a.nombre)}${a.obligatorio ? ' <span class="etiqueta-obligatorio">obligatorio</span>' : ""}</span>
           <span class="dimension-meta">${escapeHtml(a.criterioOficial)}</span>
         </td>
-        <td class="col-max-puntos">${a.maxPuntos.toLocaleString("es-ES", { maximumFractionDigits: 2 })} pts</td>
+        <td class="col-max-puntos">${puntosEs(a.maxPuntos)} ${a.maxPuntos === 1 ? "pt" : "pts"}</td>
+        <td class="col-cortes">${renderCortesApartado(a.maxPuntos)}</td>
         <td class="col-puntuacion"><div class="linea-comentario"></div></td>
       </tr>
     `
@@ -318,17 +354,14 @@ function renderEscalaEstimacion(escala) {
         <tr>
           <th class="col-dimension">Apartado</th>
           <th class="col-max-puntos">Máx.</th>
+          <th class="col-cortes">Nivel según los puntos</th>
           <th class="col-puntuacion">Puntuación otorgada</th>
         </tr>
       </thead>
       <tbody>${filas}</tbody>
     </table>
     </div>
-    <div class="bloque-detractor">
-      <span class="dimension-nombre">${escapeHtml(escala.detractor.concepto)}</span>
-      <span class="dimension-meta">Transversal a todo el texto, tope −${escala.detractor.tope} puntos</span>
-      <div class="linea-comentario"></div>
-    </div>
+    ${renderDescuentoEscala(escala.descuento)}
     <p class="nota-final-estimacion">Nota final: <span class="linea-nombre"></span></p>
     ${microexplicacion("escala-estimacion")}
   `;
@@ -469,6 +502,11 @@ function renderFichaAlumno(ficha, alumnos) {
       ${
         ficha.razonPeso
           ? `<p class="ayuda razon-peso"><strong>Por qué no pesan igual:</strong> ${escapeHtml(ficha.razonPeso)}</p>`
+          : ""
+      }
+      ${
+        ficha.descuento
+          ? `<p class="ayuda descuento-ficha"><strong>${escapeHtml(ficha.descuento.concepto)}:</strong> no tiene fila propia; se resta de la nota final, hasta ${puntosEs(ficha.descuento.tope)} puntos como máximo.</p>`
           : ""
       }
     </div>

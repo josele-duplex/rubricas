@@ -43,7 +43,8 @@ export const PUERTA_APLICABILIDAD = {
     premarca: "todas",
     explicacion:
       "Para un desarrollo largo o un comentario de texto se recomienda la escala de estimación analítica " +
-      "en lugar de la rúbrica completa: puntuación directa por apartado, sin elegir entre cuatro niveles.",
+      "en lugar de la rúbrica completa: cada apartado se puntúa con un número, hasta su máximo, sin elegir " +
+      "entre cuatro descriptores.",
   },
   desempeno: {
     etiqueta: "Actividad competencial",
@@ -373,22 +374,42 @@ export function generarRubricaUnPunto(criterios, meta) {
   };
 }
 
-// §7.7 — escala de estimación analítica: puntuación directa por apartado, sin
-// elegir entre los cuatro niveles cualitativos, más el bloque de detractores
-// globales de §6.3 (ortografía y presentación, transversales a todo el texto,
-// con tope de 2 puntos sobre 10 — §17.3, pendiente de contrastar con el
-// departamento). Pensada para «Desarrollo largo / comentario de texto» (Marco
-// Teórico §5), donde puntuar de un vistazo pesa más que graduar cuatro
-// niveles. El detractor es un mecanismo del modelo de calificación (§6.2-§6.4),
-// no contenido curricular del pack, así que vive aquí como constante y no en
-// el JSON: no necesita `criterio_oficial` porque no es un criterio de
-// evaluación, es una convención de corrección transversal a cualquier texto.
+// §6.3 — el descuento global de ortografía y presentación, con tope de 2
+// puntos sobre 10 (§17.3, cerrada el 2026-08-25). Es un mecanismo del modelo
+// de calificación, no contenido curricular del pack, así que vive aquí como
+// constante y no en el JSON: no necesita `criterio_oficial` porque no es un
+// criterio de evaluación, es una convención de corrección.
 export const DETRACTOR_ESTIMACION = {
   concepto: "Ortografía y presentación",
   tope: 2,
 };
 
-export function generarEscalaEstimacion(criterios, meta) {
+// §6.3 — regla 7 de CLAUDE.md aplicada al descuento: la ortografía cuenta una
+// sola vez. Toda tarea escrita del pack de Lengua trae una dimensión de
+// corrección que ya cuenta las faltas en su matriz; si esa dimensión está
+// entre las activas, restar además el descuento castigaría dos veces lo
+// mismo. Qué dimensión es la declara la materia en data/catalogo.json
+// (`descuento_ortografia.dimension`), no este archivo.
+//
+// `dimension` llega a null cuando la tarea no tiene esa dimensión en su curso
+// —una exposición oral no tiene faltas que descontar— o la materia no la
+// declara: entonces no hay descuento ni nada que explicar.
+export function descuentoOrtografia(activos, dimension) {
+  if (!dimension) return null;
+  const apartado = activos.find((c) => c.dimension === dimension);
+  return {
+    ...DETRACTOR_ESTIMACION,
+    aplica: !apartado,
+    apartado: apartado ? apartado.nombre : null,
+  };
+}
+
+// §7.7 — escala de estimación analítica: puntuación directa por apartado, sin
+// elegir entre los cuatro descriptores, para la fila «Desarrollo largo /
+// comentario de texto» del Marco Teórico §5. El máximo de cada apartado es su
+// peso sobre 10; la vista añade dónde empieza cada nivel dentro de ese máximo,
+// para que el número siga siendo la traducción de un nivel (Marco §2.3).
+export function generarEscalaEstimacion(criterios, meta, descuento = null) {
   return {
     actividad: meta.actividad,
     curso: meta.curso,
@@ -401,7 +422,7 @@ export function generarEscalaEstimacion(criterios, meta) {
       criterioOficial: `${c.criterio_oficial.codigo} — «${c.criterio_oficial.cita}»`,
       maxPuntos: Math.round((c.peso_normalizado / 10) * 100) / 100,
     })),
-    detractor: DETRACTOR_ESTIMACION,
+    descuento,
   };
 }
 
@@ -536,13 +557,17 @@ export function generarAutoevaluacion(criterios, verbosPack, meta) {
 // `razonPeso` llega desde el pack (§5.1) y no desde aquí: es contenido, y el
 // Marco Teórico §2.3 lo exige escrito precisamente donde el alumno lo lee antes
 // de la prueba. Sin él, la ficha enseña un reparto desigual sin decir por qué.
-export function generarFichaAlumno(criterios, meta, razonPeso = null) {
+// `descuento` (descuentoOrtografia) entra por lo mismo: si la nota va a perder
+// hasta 2 puntos por ortografía, el alumno tiene que leerlo antes de escribir
+// (Marco §7.1), no descubrirlo en la nota.
+export function generarFichaAlumno(criterios, meta, razonPeso = null, descuento = null) {
   const ordenadas = porPrioridad(criterios);
   return {
     actividad: meta.actividad,
     curso: meta.curso,
     tipoTarea: meta.tipoTarea,
     razonPeso,
+    descuento: descuento?.aplica ? descuento : null,
     queSeValora: ordenadas.map((c) => ({ nombre: nombreParaAlumno(c), peso: c.peso_normalizado })),
     comoLlegarAExcelente: ordenadas.map((c) => ({
       nombre: nombreParaAlumno(c),
@@ -570,7 +595,7 @@ export function generarFichaAlumno(criterios, meta, razonPeso = null) {
 
 // Orquesta el pipeline completo del motor (§9, pasos 3-10, sin validador ni exportación).
 export function generarInstrumentos(pack, config) {
-  const { curso, tipoTarea, tiempoCorreccion, actividad, esProductoFinal, puerta } = config;
+  const { curso, tipoTarea, tiempoCorreccion, actividad, esProductoFinal, puerta, dimensionOrtografia } = config;
 
   const filtrados = filtrarCriterios(pack, { curso, tipoTarea });
   if (filtrados.length === 0) {
@@ -588,6 +613,14 @@ export function generarInstrumentos(pack, config) {
 
   const meta = { actividad, curso, tipoTarea };
 
+  // Si la tarea tiene dimensión de ortografía se mira en `filtrados`, no en
+  // lo que sobrevive al filtro de tiempo: quitarla por tiempo no convierte un
+  // texto escrito en uno oral, y es justo el caso en que el descuento aplica.
+  // Se devuelve para que «Ajustar» recalcule el descuento con las mismas reglas.
+  const dimOrtografia =
+    dimensionOrtografia && filtrados.some((c) => c.dimension === dimensionOrtografia) ? dimensionOrtografia : null;
+  const descuento = descuentoOrtografia(ponderados, dimOrtografia);
+
   return {
     ok: true,
     criterios: ponderados,
@@ -595,11 +628,13 @@ export function generarInstrumentos(pack, config) {
     avisoPremarcado,
     avisosProgresion,
     complejidad,
+    dimensionOrtografia: dimOrtografia,
+    descuento,
     rubricaAnalitica: generarRubricaAnalitica(ponderados, meta),
     listaCotejo: generarListaCotejo(ponderados),
-    fichaAlumno: generarFichaAlumno(ponderados, meta, razonPesoDe(pack, tipoTarea)),
+    fichaAlumno: generarFichaAlumno(ponderados, meta, razonPesoDe(pack, tipoTarea), descuento),
     rubricaUnPunto: generarRubricaUnPunto(ponderados, meta),
     autoevaluacion: generarAutoevaluacion(ponderados, pack.verbos, meta),
-    escalaEstimacion: generarEscalaEstimacion(ponderados, meta),
+    escalaEstimacion: generarEscalaEstimacion(ponderados, meta, descuento),
   };
 }

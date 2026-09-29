@@ -215,9 +215,20 @@ function renderListaAlumnos(meta) {
   return `<ul class="lista-alumnos-guardados" id="lista-alumnos-guardados">${filas}</ul>`;
 }
 
-export function renderCalificacion(container, criterios, meta) {
+// `descuento` es el de descuentoOrtografia (js/motor.js): null si la tarea no
+// tiene ortografía que descontar; con `aplica: false` si ya la cuenta una
+// dimensión de la tabla. Solo con `aplica: true` hay campo en la barra: si
+// estuviera siempre, las faltas se podrían restar dos veces (regla 7).
+export function renderCalificacion(container, criterios, meta, descuento = null) {
   const hayAlumnosGuardados = Object.keys(alumnosGuardados(meta)).length > 0;
   const filas = criterios.map(renderFila).join("");
+  const campoDescuento = descuento?.aplica
+    ? `
+      <label class="campo-barra campo-detractor" title="${escapeHtml(descuento.concepto)}: puntos que se restan de la nota, hasta ${descuento.tope}">
+        <span>Descuento ${escapeHtml(descuento.concepto.toLowerCase())}</span>
+        <input type="number" id="detractor-acumulado" min="0" max="${descuento.tope}" step="0.1" value="0" />
+      </label>`
+    : "";
 
   container.innerHTML = `
     <h2>Calificar</h2>
@@ -228,10 +239,7 @@ export function renderCalificacion(container, criterios, meta) {
         <span>Alumno</span>
         <input type="text" id="nombre-alumno" placeholder="p. ej. García Ruiz, Elena" autocomplete="off" />
       </label>
-      <label class="campo-barra campo-detractor" title="${escapeHtml(DETRACTOR_ESTIMACION.concepto)}: puntos a restar de la nota, tope ${DETRACTOR_ESTIMACION.tope}">
-        <span>Descuento ${escapeHtml(DETRACTOR_ESTIMACION.concepto.toLowerCase())}</span>
-        <input type="number" id="detractor-acumulado" min="0" max="${DETRACTOR_ESTIMACION.tope}" step="0.1" value="0" />
-      </label>
+      ${campoDescuento}
       <div class="nota-viva" id="resultado-nota" aria-live="polite">
         <span class="nota-etiqueta">Nota</span>
         <strong class="nota-valor">—</strong>
@@ -274,7 +282,7 @@ export function renderCalificacion(container, criterios, meta) {
           Condición mínima: un criterio obligatorio en N1 limita la nota a 4,9
         </label>
         ${microexplicacion("condicion-minima")}
-        ${microexplicacion("detractor-estimacion")}
+        ${descuento ? microexplicacion("detractor-estimacion") : ""}
         ${microexplicacion("modo-numerico")}
       </div>
     </details>
@@ -290,7 +298,7 @@ export function renderCalificacion(container, criterios, meta) {
   `;
 }
 
-export function conectarEventosCalificacion(container, criterios, meta, onCerrar) {
+export function conectarEventosCalificacion(container, criterios, meta, descuento, onCerrar) {
   const porId = Object.fromEntries(criterios.map((c) => [c.id, c]));
   const resultadoNota = container.querySelector("#resultado-nota");
   const aviso = container.querySelector("#aviso-calificar");
@@ -408,11 +416,10 @@ export function conectarEventosCalificacion(container, criterios, meta, onCerrar
     // §6.3 — el profesor introduce el valor ya acumulado (no se cuenta por
     // ocurrencias, porque el pack no declara una tarifa por falta); se acota
     // aquí porque un <input type="number"> no impide escribir fuera de
-    // min/max a mano.
-    const detractorAcumulado = Math.min(
-      Math.max(Number(detractorInput.value) || 0, 0),
-      DETRACTOR_ESTIMACION.tope
-    );
+    // min/max a mano. Sin campo (la ortografía ya tiene dimensión), es 0.
+    const detractorAcumulado = detractorInput
+      ? Math.min(Math.max(Number(detractorInput.value) || 0, 0), DETRACTOR_ESTIMACION.tope)
+      : 0;
     const { notaCalculada, notaTrasDetractor, notaFinal, algunObligatorioEnN1 } = calcularNota(entradas, {
       escala,
       condicionMinimaActiva,
@@ -444,7 +451,7 @@ export function conectarEventosCalificacion(container, criterios, meta, onCerrar
 
   function limpiar() {
     nombreInput.value = "";
-    detractorInput.value = 0;
+    if (detractorInput) detractorInput.value = 0;
     for (const c of criterios) estados.set(c.id, estadoFilaVacio(c));
     pintarTodo();
     actualizar();
@@ -513,7 +520,7 @@ export function conectarEventosCalificacion(container, criterios, meta, onCerrar
     actualizar();
   });
   condicionCheckbox.addEventListener("change", actualizar);
-  detractorInput.addEventListener("input", actualizar);
+  detractorInput?.addEventListener("input", actualizar);
 
   container.querySelector("#reiniciar-calificacion").addEventListener("click", limpiar);
 
@@ -555,12 +562,21 @@ export function conectarEventosCalificacion(container, criterios, meta, onCerrar
       nombreInput.value = nombre;
       escalaSelect.value = datos.escala;
       condicionCheckbox.checked = datos.condicionMinima;
-      detractorInput.value = datos.detractorAcumulado ?? 0;
+      if (detractorInput) detractorInput.value = datos.detractorAcumulado ?? 0;
       for (const c of criterios) {
         estados.set(c.id, estadoDeResultado(c, datos.resultadosPorCriterio[c.id]));
       }
       pintarTodo();
       actualizar();
+      // Alumnos guardados antes del 2026-09-29, cuando el campo estaba siempre:
+      // si se les restó ortografía que ya contaba una dimensión, se avisa en vez
+      // de arrastrar el doble castigo en silencio al volver a guardar.
+      if (!detractorInput && (datos.detractorAcumulado ?? 0) > 0) {
+        const motivo = descuento?.apartado
+          ? `que ya cuenta «${escapeHtml(descuento.apartado)}»`
+          : "y esta tarea no tiene texto escrito que descontar";
+        aviso.innerHTML = `<div class="aviso-caja">Este alumno se guardó con un descuento de ${formatoPuntos(datos.detractorAcumulado)} por ortografía, ${motivo}. Aquí se calcula sin él: guárdalo de nuevo para corregir su nota.</div>`;
+      }
       // Al principio de la tarjeta, no a la barra: la barra es pegajosa y ya
       // está a la vista, así que llevarla «a la vista» no desplaza nada.
       container.scrollIntoView({ behavior: "smooth", block: "start" });

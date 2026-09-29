@@ -13,6 +13,7 @@ import {
   generarRubricaUnPunto,
   generarAutoevaluacion,
   generarEscalaEstimacion,
+  descuentoOrtografia,
 } from "./motor.js";
 import { poblarFormulario, actualizarCursos, renderResultado, renderSaludPack, renderResultadoAlumnoFicha, escapeHtml, fijarCatalogo, descargarRubricaIdoceo } from "./ui.js";
 import { validarPack } from "./validador.js";
@@ -48,11 +49,22 @@ const URL_CATALOGO = "data/catalogo.json";
 const URL_VERBOS = "data/verbos.json";
 
 let pack;
+let catalogo = null;
 let configActual = null;
+
+// Qué dimensión puntúa ya la ortografía en la materia de esta tarea
+// (data/catalogo.json, `descuento_ortografia`): decide si hay descuento al
+// final (SDD §6.3, regla 7 de CLAUDE.md). La materia se reconoce por el tipo
+// de tarea, que es lo que el profesor elige.
+function dimensionOrtografiaDe(tipoTarea) {
+  for (const materia of Object.values(catalogo?.materias ?? {})) {
+    if (materia.tipos_tarea?.[tipoTarea]) return materia.descuento_ortografia?.dimension ?? null;
+  }
+  return null;
+}
 
 async function iniciar() {
   let packsOriginales;
-  let catalogo;
   try {
     const [cat, bancoJson] = await Promise.all([
       cargarJson(URL_CATALOGO),
@@ -100,6 +112,7 @@ function generarYMostrar(ajustesAplicados = null) {
       actividad: els.actividad.value.trim(),
       esProductoFinal: els.puerta.value === "desempeno",
       puerta: els.puerta.value,
+      dimensionOrtografia: dimensionOrtografiaDe(els.tipoTarea.value),
     });
 
     if (resultado.ok) {
@@ -128,6 +141,7 @@ function generarYMostrar(ajustesAplicados = null) {
       const criteriosAjustados = normalizarPesos(conAjuste.filter((c) => !c.desactivado));
 
       const esProductoFinal = els.puerta.value === "desempeno";
+      const descuento = descuentoOrtografia(criteriosAjustados, resultado.dimensionOrtografia);
 
       resultado.criterios = criteriosAjustados;
       resultado.noPremarcados = conAjuste
@@ -137,10 +151,11 @@ function generarYMostrar(ajustesAplicados = null) {
       resultado.complejidad = calcularComplejidad(criteriosAjustados, esProductoFinal);
       resultado.rubricaAnalitica = generarRubricaAnalitica(criteriosAjustados, meta);
       resultado.listaCotejo = generarListaCotejo(criteriosAjustados);
-      resultado.fichaAlumno = generarFichaAlumno(criteriosAjustados, meta);
+      resultado.descuento = descuento;
+      resultado.fichaAlumno = generarFichaAlumno(criteriosAjustados, meta, null, descuento);
       resultado.rubricaUnPunto = generarRubricaUnPunto(criteriosAjustados, meta);
       resultado.autoevaluacion = generarAutoevaluacion(criteriosAjustados, pack.verbos, meta);
-      resultado.escalaEstimacion = generarEscalaEstimacion(criteriosAjustados, meta);
+      resultado.escalaEstimacion = generarEscalaEstimacion(criteriosAjustados, meta, descuento);
     }
   }
 
@@ -161,7 +176,7 @@ function generarYMostrar(ajustesAplicados = null) {
   const btnCalificar = els.resultado.querySelector("#btn-calificar");
   if (btnCalificar && resultado?.ok) {
     btnCalificar.addEventListener("click", () => {
-      abrirCalificacion(resultado.criterios, meta);
+      abrirCalificacion(resultado.criterios, meta, resultado.descuento);
     });
   }
 
@@ -236,15 +251,15 @@ function abrirModoAvanzado(criterios) {
   contenedor.scrollIntoView({ behavior: "smooth", block: "start" });
 }
 
-function abrirCalificacion(criterios, meta) {
+function abrirCalificacion(criterios, meta, descuento) {
   const contenedor = document.createElement("div");
   contenedor.id = "calificacion-contenedor";
   contenedor.className = "tarjeta";
   document.querySelector("main").insertBefore(contenedor, els.resultado);
 
-  renderCalificacion(contenedor, criterios, meta);
+  renderCalificacion(contenedor, criterios, meta, descuento);
 
-  conectarEventosCalificacion(contenedor, criterios, meta, () => {
+  conectarEventosCalificacion(contenedor, criterios, meta, descuento, () => {
     contenedor.remove();
     refrescarSelectorFicha(meta);
     els.resultado.scrollIntoView({ behavior: "smooth", block: "start" });

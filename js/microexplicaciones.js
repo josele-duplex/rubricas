@@ -113,10 +113,11 @@ export const MICROEXPLICACIONES = {
   "escala-estimacion": {
     titulo: "¿por qué puntos directos y no los cuatro niveles?",
     texto:
-      "En un desarrollo largo o un comentario de texto, corregir de un vistazo pesa más que graduar cuatro " +
-      "descriptores por apartado (Marco Teórico §5). Cada apartado reparte su peso en puntos " +
-      "sobre 10; el detractor de ortografía y presentación es transversal a todo el texto y resta al " +
-      "final, con un tope de 2 puntos que no se puede superar aunque el texto acumule muchos fallos.",
+      "En un examen largo, elegir entre cuatro descriptores por apartado y por alumno alarga la corrección; " +
+      "para el desarrollo largo y el comentario de texto, el Marco Teórico (§5) propone esta escala, que " +
+      "puntúa cada apartado hasta su peso sobre 10 (un 25 % son 2,5 puntos). Los cuatro niveles siguen " +
+      "ahí: la columna «Nivel según los puntos» dice qué nivel corresponde a cada puntuación, con las " +
+      "mismas bandas que la nota sobre 10.",
   },
 
   "autoevaluacion": {
@@ -204,13 +205,12 @@ export const MICROEXPLICACIONES = {
   },
 
   "detractor-estimacion": {
-    titulo: "¿por qué se resta al final y no dentro de una dimensión?",
+    titulo: "¿cuándo se descuenta la ortografía?",
     texto:
-      "La ortografía y la presentación son transversales a todo el texto, no de una dimensión concreta, " +
-      "así que se restan de la nota ya calculada, con un tope de 2 puntos que no se puede superar " +
-      "aunque el texto acumule muchos fallos. Se aplica antes que la condición mínima: si esta se dispara, " +
-      "lo hace sobre la nota ya descontada, no al revés (orden fijado tras comprobar que da " +
-      "notas distintas según el orden elegido).",
+      "La ortografía cuenta una sola vez. Si la rúbrica tiene la dimensión de corrección, las faltas se " +
+      "valoran ahí y no hay descuento: restarlas también al final sería castigarlas dos veces. Si quitas " +
+      "esa dimensión en «Ajustar», aparece el campo de descuento en la barra: resta hasta 2 puntos de la " +
+      "nota ya calculada, y la condición mínima, si se dispara, recorta la nota ya descontada.",
   },
 
   "condicion-minima": {
@@ -222,16 +222,12 @@ export const MICROEXPLICACIONES = {
   },
 
   "exportar-idoceo": {
-    titulo: "¿esto sustituye a «Calificar»?",
+    titulo: "¿«Exportar rúbrica (CSV)» sustituye a «Calificar»?",
     texto:
-      "Este botón exporta la matriz en blanco —criterio por fila, nivel por columna— en un CSV que abre " +
-      "cualquier hoja de cálculo, no solo iDoceo: sirve igual si lo que quieres es la matriz en Excel, Sheets " +
-      "o Calc por otro motivo. Si vas a llevarla a iDoceo, sí sustituye a «Calificar» y no se suman los dos: " +
-      "es el formato de su importador de rúbricas, calificarías tocando cada celda allí —igual que " +
-      "en la pantalla «Calificar» de esta app, pero sin las matrices contables—, y la " +
-      "pantalla «Calificar» de esta app dejaría de usarse para ese instrumento. Si prefieres seguir " +
-      "calificando aquí, usa «Calificar» y, si necesitas la nota en iDoceo, el botón «Exportar CSV» de esa " +
-      "pantalla — ese es el otro importador de iDoceo, el de alumnos, no el de rúbricas.",
+      "Solo si vas a calificar dentro de iDoceo. El botón descarga la rúbrica analítica en blanco " +
+      "(dimensiones por filas, niveles por columnas), tengas abierta la pestaña que tengas, en el formato " +
+      "del importador de rúbricas de iDoceo; también la abre cualquier hoja de cálculo. Si calificas aquí, " +
+      "no lo necesitas: al terminar, el botón «Exportar CSV» de «Calificar» lleva a iDoceo la nota de cada alumno.",
   },
 };
 

@@ -9,7 +9,8 @@ La introducción de la \*\*LOMLOE\*\* (Ley Orgánica 3/2020) y sus reales decret
 
 \*   \*\*Estatus del Criterio de Evaluación:\*\* Es el único referente legal y obligatorio para la calificación \[1, 3\].  
 \*   \*\*Definición de Rúbrica:\*\* Instrumento que descompone operativa y gradadamente los niveles de desempeño esperados en una tarea compleja \[3, 4\].  
-\*   \*\*Evaluación Global y Continua:\*\* Según el Art. 20.1, la evaluación debe ser consensuada, diferenciada por materias y orientada tanto al aprendizaje del alumno como a la mejora de la práctica docente \[1\].
+\*   \*\*Evaluación Global y Continua:\*\* Según el Art. 20.1, la evaluación debe ser consensuada, diferenciada por materias y orientada tanto al aprendizaje del alumno como a la mejora de la práctica docente \[1\].  
+    \*\*\[Nota del proyecto, 28-09-2026: afirmación sin fuente.\]\*\* Ninguna norma dice que la evaluación deba ser «consensuada», y el art. 20 de la LOE regula la Primaria; la nota \[1\] no lleva referencia. Para la ESO: LOE art. 28.1 (evaluación «continua, formativa e integradora»), RD 217/2022 art. 15.1 y 15.8, Decreto 235/2022 art. 20.1 y Orden de 4 de julio de 2024 (BORM 18-07-2024) art. 13; para Bachillerato, la misma Orden, art. 42. Las citas literales, en el §1.1 del marco teórico vigente (repositorio de Lengua).
 
 \#\# 2\. Principios de Diseño: La Arquitectura del Instrumento  
 Para garantizar la \*\*validez\*\* (medir lo que se pretende) y la \*\*fiabilidad\*\* (consistencia entre evaluadores), el diseño debe seguir estas directrices técnicas \[4, 5\]:

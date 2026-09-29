@@ -82,6 +82,20 @@
         "una por materia. El SDD las imprime desde ahí; no se editan en el SDD."
       ],
       "derivacion": "data/derivacion-lcl.json",
+   "descuento_ortografia": {
+    "_nota": [
+     "Qué dimensión de esta materia puntúa ya la ortografía (regla 7 de CLAUDE.md: doble castigo).",
+     "",
+     "El descuento de ortografía y presentación (DETRACTOR_ESTIMACION, js/motor.js) solo se",
+     "aplica cuando esa dimensión NO está entre las activas: si está, las faltas ya cuentan en",
+     "ella y restarlas otra vez al final las castigaría dos veces. Una tarea que no tiene esa",
+     "dimensión en su curso —la exposición oral, el debate— no tiene texto escrito que",
+     "descontar y no lleva descuento nunca; una materia que no declare este bloque, tampoco.",
+     "",
+     "Decidido con el docente el 2026-09-29 (SDD §6.3): la ortografía cuenta una sola vez."
+    ],
+    "dimension": "correccion_lexico"
+   },
 
       "tipos_tarea": {
         "narracion": "Narración",

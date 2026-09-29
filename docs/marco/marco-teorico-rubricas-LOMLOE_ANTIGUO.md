@@ -1,3 +1,5 @@
+> **Nota del proyecto (28-09-2026).** Copia histórica congelada: su texto no se corrige. El §1.1 y el §11 citan mal la norma: el art. 20 de la LOE regula la evaluación en Primaria, no la de ESO ni Bachillerato, y ninguna norma habla de criterios «consensuados». La versión vigente, con las citas correctas, es `proyecto/documentos_base/marco_teorico_rubricas-LOMLOE.md` del repositorio de Lengua.
+
 # Marco Teórico para el Diseño de Rúbricas Competenciales
 
 ## Lengua Castellana y Literatura — ESO y Bachillerato (LOMLOE)

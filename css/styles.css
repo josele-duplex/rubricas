@@ -768,12 +768,26 @@ table.rubrica-estimacion th.col-puntuacion,
 table.rubrica-estimacion td.col-puntuacion {
   width: 18%;
 }
+table.rubrica-estimacion th.col-cortes,
+table.rubrica-estimacion td.col-cortes {
+  width: 20%;
+}
+.cortes-apartado {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  font-size: 0.8rem;
+  line-height: 1.35;
+}
+.cortes-apartado li { white-space: nowrap; }
+.cortes-apartado .corte-nivel { color: var(--tinta-suave); }
 .bloque-detractor {
   border: 1px solid var(--linea);
   border-top: none;
   padding: 0.6rem;
 }
 .bloque-detractor .linea-comentario { max-width: 10rem; margin-top: 0.4rem; }
+.nota-descuento { margin-top: 0.6rem; }
 .nota-final-estimacion {
   margin-top: 1rem;
   font-weight: 600;

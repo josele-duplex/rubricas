@@ -4,8 +4,22 @@
     {
       "name": "rubricas-static",
       "runtimeExecutable": "python",
-      "runtimeArgs": ["-m", "http.server", "5173"],
+      "runtimeArgs": [
+        "-m",
+        "http.server",
+        "5173"
+      ],
       "port": 5173
+    },
+    {
+      "name": "rubricas-static-py",
+      "runtimeExecutable": "py",
+      "runtimeArgs": [
+        "-m",
+        "http.server",
+        "5174"
+      ],
+      "port": 5174
     }
   ]
 }

@@ -2,7 +2,7 @@
 
 ## Generador de Instrumentos de Evaluación — Lengua Castellana y Literatura (LOMLOE)
 
-**Versión 1.65** · Documento de trabajo · Septiembre 2026
+**Versión 1.67** · Documento de trabajo · Septiembre 2026
 Autor: Josele · Diseño técnico: Claude
 
 ---
@@ -16,9 +16,9 @@ Aquí quedan las tres últimas, que son las que suelen hacer falta:
 
 | Versión | Cambios |
 |---|---|
+| **1.67** | **La ortografía cuenta una sola vez, y la escala de estimación se entiende.** Revisión pedida por el docente de todo lo que toca a la escala de estimación, empezando por dos microexplicaciones que no se entendían. **Doble castigo (regla 7):** la escala ponía la dimensión de corrección como apartado y además restaba «Ortografía y presentación»; «Calificar» ofrecía ese descuento siempre, también junto a la fila de corrección y en tareas orales. Decidido con el docente: el descuento solo aplica si ninguna dimensión activa puntúa la ortografía; la dimensión la declara cada materia en `data/catalogo.json` (`descuento_ortografia`), y `descuentoOrtografia` (`js/motor.js`) calcula el estado una vez para la escala, la ficha y «Calificar» (§6.3). La ficha anuncia el descuento cuando aplica (§7.3), que era lo que §6.3 ya decía y no se hacía. **Escala (§7.7):** cada apartado lleva los puntos desde los que empieza cada nivel (`CORTES_NIVEL`, ahora exportado desde `js/calificacion.js`), para que el número siga siendo la traducción de un nivel (Marco §2.3). **Textos:** «¿por qué puntos directos…?» deja de atribuir al Marco §5 lo que no dice; «¿esto sustituye a «Calificar»?» pasa a nombrar el botón que explica, dice que exporta siempre la rúbrica analítica y baja de ocho líneas a cuatro; el desplegable del descuento en «Calificar» explica cuándo lo hay. `calcularNota` lee el tope de `DETRACTOR_ESTIMACION` en vez de repetir el 2. Cinco casos nuevos en `test/ficha.mjs`. Ningún pack cambia. |
+| **1.66** | **Corrige una cita legal: la evaluación de secundaria no está en el art. 20 de la LOE, que es el de Primaria.** Lo detectó el docente y lo comprobó en el BOE (28-09-2026); el marco teórico de Lengua ya estaba corregido (§1.1 y §11). §18 cita ahora LOE art. 28.1, RD 217/2022 art. 15.1 y 15.8, Decreto 235/2022 art. 20.1 y la Orden de 4 de julio de 2024, art. 13 (ESO) y 42 (Bachillerato). `pack-lcl-debate.json` deja de citar la ley en `normativa.estatal` y queda como los demás packs de ESO; `docs/marco/matrices-cuantitativas-y-ejemplos.md` marca como afirmación sin fuente la evaluación «consensuada» del «Art. 20.1», y la copia `…_ANTIGUO.md` gana una nota al principio sin tocar su texto. Sin cambios de código. |
 | **1.65** | **Cierra la decisión 22 de §17: la doble versión del descriptor consta en el marco teórico de Lengua.** El docente añadió el §2.4 «Doble versión del descriptor: técnica y sencilla» a `marco_teorico_rubricas-LOMLOE.md` y un inciso en su §7.4 (commit `4bc8c61` del proyecto de Lengua). §17.22 pasa a remitir a ese apartado sin copiarlo; `CLAUDE.md` deja una sola decisión abierta, la 20, y el plan del lenguaje sencillo da la sesión L0 por hecha. Sin cambios de código ni de packs. |
-| **1.64** | **Primer contenido en lenguaje sencillo: el argumentativo de 4.º ESO, entero (sesión L2 de `docs/diseno/plan-lenguaje-sencillo.md`).** Las seis dimensiones llevan `alumno` en sus cuatro niveles y `nombre_alumno`: los veinte descriptores del borrador de prueba, sin reescribir, más los cuatro de tratamiento de la información, redactados en esta sesión, y los seis nombres. Cargado con `scripts/cargar_sencillo.mjs`; validación y proyección a 1.ª persona sin incidencias; el docente revisó el significado. El pack pasa a v0.8.0 y el borrador se borra: el pack es la única fuente. Ninguna regla nueva del validador. |
-| **1.63** | **Infraestructura del lenguaje sencillo para el alumnado (sesión L1 de `docs/diseno/plan-lenguaje-sencillo.md`, decisión 22 de §17).** Campo opcional `alumno: {verbo, texto, origen}` en cada descriptor y `nombre_alumno` en cada criterio (`data/esquema-pack.json`); `origen` es la huella FNV-1a de 32 bits del técnico, calculada igual en `js/huella.js` y `scripts/huella.py`. Los dos validadores aplican al sencillo las mismas reglas de verbo, adverbitis y cursiva que al técnico, más `alumno_desfase` si `origen` deja de ser la huella actual. `generarFichaAlumno`/`generarAutoevaluacion` usan el sencillo solo cuando está al día; los instrumentos del profesor no lo usan nunca. `scripts/cargar_sencillo.mjs` carga un borrador validado sin tocar JSON a mano, y `docs/revision-*.md` gana su tabla técnico · sencillo · sencillo en 1.ª persona. Sin contenido en ningún pack: las 15 comprobaciones dan lo mismo antes y después. |
 
 ## 1. Resumen ejecutivo
 
@@ -467,11 +467,11 @@ El sistema tiene dos formas de restar puntos y conviene no confundirlas, porque 
 
 | | **Penalización de componente** | **Detractor global** |
 |---|---|---|
-| Dónde vive | Dentro de la `matriz_cuantitativa` de una dimensión (§5.2) | En la escala de estimación analítica (§7.7) |
+| Dónde vive | Dentro de la `matriz_cuantitativa` de una dimensión (§5.2) | En la escala de estimación analítica (§7.7) y en «Calificar» (§6.5), **solo si ninguna dimensión activa puntúa ya la ortografía** |
 | Qué penaliza | Un fenómeno lingüístico concreto de esa dimensión: una anáfora ambigua, una falacia, un párrafo de diez líneas sin un punto | La ortografía y la presentación, transversales a todo el texto |
 | Sobre qué resta | Sobre los 10 puntos de **esa dimensión** | Sobre la **nota final** |
 | Tope | Propio de cada penalización, declarado en la matriz | 2 puntos sobre 10 |
-| Dónde aparece | En la rúbrica en modo IA y en la corrección detallada | Impreso en la ficha del alumno |
+| Dónde aparece | En la rúbrica en modo IA y en la corrección detallada | Impreso en la escala y anunciado en la ficha del alumno, cuando aplica |
 
 **Los topes no son opcionales.** Sin ellos, un texto flojo acumula descuentos hasta un negativo, y una dimensión puede acabar restando de otras. Cada penalización declara el suyo y la app rechaza la matriz que no lo traiga.
 
@@ -537,12 +537,37 @@ notaFinal = condicionMinimaActiva && algúnObligatorioEnN1
   : notaTrasDetractor
 ```
 
-**Conectado.** La escala de estimación analítica (§7.7) declara el detractor
-(`DETRACTOR_ESTIMACION` en `js/motor.js`) y lo imprime con su tope. La pantalla de «Calificar»
-(§6.5, `js/calificar.js`) tiene un campo numérico que captura `detractorAcumulado` — acotado en el
-cliente entre 0 y el tope antes de llamar a `calcularNota`, porque esta función solo acota el tope
-superior y un valor negativo escrito a mano subiría la nota en vez de bajarla — y persiste junto al
-resto del `ResultadoCriterio` guardado por alumno.
+**La ortografía cuenta una sola vez (v1.67).** Hasta la v1.66 el detractor se ofrecía siempre, y
+eso era la regla del doble castigo aplicada a toda una tarea: las 39 dimensiones de corrección de
+los ocho packs escritos (`dimension: "correccion_lexico"`) ya cuentan las faltas en su matriz, y la
+escala de estimación las ponía como apartado **y además** restaba «Ortografía y presentación» al
+final; «Calificar» ofrecía el mismo descuento junto a esa fila, y también en la exposición oral y el
+debate, donde no hay ortografía. Decidido con el docente el 2026-09-29: el descuento **solo aplica
+cuando ninguna dimensión activa puntúa la ortografía**. Qué dimensión lo hace lo declara cada materia
+en `data/catalogo.json` (`descuento_ortografia.dimension`), no el código. Tres estados, calculados
+una vez (`descuentoOrtografia`, `js/motor.js`) y compartidos por la escala, la ficha y «Calificar»:
+
+- la tarea no tiene esa dimensión en su curso (oral, debate) o la materia no la declara: no hay
+  descuento ni nada que explicar;
+- la dimensión está entre las activas: no hay descuento, y la escala imprime en qué apartado cuentan
+  las faltas, para que nadie las reste a mano otra vez;
+- la dimensión se ha quitado en «Ajustar» o por tiempo de corrección: el descuento aplica, con su
+  tope, en la escala, en la barra de «Calificar» y anunciado en «Qué se valora» de la ficha.
+
+Se descartaron las otras dos salidas. Sacar la dimensión de la escala y dejar solo el descuento, que
+es la letra de la fila del Marco Teórico §5 («descuento por ortografía»), dejaba sin medir la
+precisión léxica y la concordancia, y ponía la ortografía fuera de todo criterio oficial (regla 1).
+Reducir el descuento a la presentación cambiaba el concepto cerrado en §17.3 y daba 2 puntos a
+márgenes y letra.
+
+**Conectado.** `DETRACTOR_ESTIMACION` (`js/motor.js`) declara el concepto y el tope, y
+`calcularNota` lee de ahí el tope en vez de repetir el 2. Cuando aplica, la escala lo imprime y la
+pantalla de «Calificar» (§6.5, `js/calificar.js`) tiene un campo numérico que captura
+`detractorAcumulado` — acotado en el cliente entre 0 y el tope antes de llamar a `calcularNota`,
+porque esta función solo acota el tope superior y un valor negativo escrito a mano subiría la nota
+en vez de bajarla — y persiste junto al resto del `ResultadoCriterio` guardado por alumno. Cuando
+no aplica, no hay campo y el detractor vale 0; un alumno guardado antes con descuento se carga sin
+él y con un aviso, en vez de arrastrar el doble castigo en silencio al volver a guardarlo.
 
 ### 6.4 De puntos a nivel
 
@@ -681,7 +706,7 @@ Se deriva del descriptor de **N2 (Suficiente)**, convertido en afirmación verif
 Es la pieza que materializa el objetivo del proyecto y **no se puede desmarcar**. Lo que la aplicación genera hoy (`generarFichaAlumno`, `js/motor.js`; la vista solo pinta, no recalcula):
 
 - **Qué se te pide**: la actividad, redactada tal y como la escribió el profesor.
-- **Qué se valora**: cada dimensión con su peso, en lenguaje directo, y —cuando los pesos no son iguales— **por qué no lo son**: la `razon_peso` del pack (§5.1, §6.2), escrita para que la lea el alumno antes de la prueba. El marco teórico admite desigualar la ponderación solo con una razón declarada, y este es el sitio donde declararla significa algo.
+- **Qué se valora**: cada dimensión con su peso, en lenguaje directo, y —cuando los pesos no son iguales— **por qué no lo son**: la `razon_peso` del pack (§5.1, §6.2), escrita para que la lea el alumno antes de la prueba. El marco teórico admite desigualar la ponderación solo con una razón declarada, y este es el sitio donde declararla significa algo. Por lo mismo, cuando aplica el descuento de ortografía y presentación (§6.3), aquí se anuncia con su tope: es una regla que cambia la nota, y el alumno la lee antes de escribir, no en la nota.
 - **Cómo se llega al nivel excelente**: para cada dimensión, el descriptor de N4 tal cual está en el pack, en tercera persona. Hasta la v1.61 este punto prometía «traducido a instrucción accionable en segunda persona» y la promesa **se retira**, no se aplaza: el descriptor ya *es* la instrucción —verbo del banco + objeto + condición, que es la forma que exige `CLAUDE.md`—, y el alumno ya lo lee en «yo» en la autoevaluación (§7.5). Una tercera morfología de la misma frase habría costado una columna `2s` en todo `data/verbos.json` y un tercer juego de invariantes en `test/proyeccion.mjs` para no añadir información.
 - **La rúbrica completa, en breve** (v1.61): la misma matriz de la rúbrica analítica —dimensión, peso y los cuatro niveles—, sin el criterio oficial, sin la etiqueta de bloque LOMLOE y sin la condición de evidencia, que son información de quien evalúa y no de quien escribe. Es lo que el alumno se lleva a la mesa; los tres bloques anteriores son su lectura guiada. No se truncan descriptores ni se topa el número de dimensiones. Se imprime con un botón propio, **«Imprimir solo la rúbrica breve»**, que aísla el bloque de todo lo demás —cabecera de la app, microexplicaciones, el resto de la ficha, cualquier pestaña activa— y a una densidad menor que la del resto de tablas impresas (0,75rem, `css/print.css`), fijada midiendo el caso más cargado del catálogo: 3.º ESO expositivo con tiempo largo, 6 dimensiones, cabe en una A4 (22,5 cm de 26,7 útiles); con 3 dimensiones ocupa media página. El dato lo deriva el motor como `rubricaBreve` y `test/ficha.mjs` fija su forma.
 - **Resultado de un alumno calificado** (§6): un desplegable con los alumnos ya calificados en «Calificar»; al elegir uno, su nivel y sus puntos por dimensión y la nota final, con el detractor y la condición mínima si se han disparado. En blanco, la ficha se reparte tal cual.
@@ -703,7 +728,9 @@ La misma matriz con los descriptores en primera persona, derivados de forma exac
 
 ### 7.7 Escala de estimación analítica
 
-Para la fila que el Marco Teórico §5 llama «Desarrollo largo / comentario de texto» (exámenes, comentario de 1.º BACH). Es una rúbrica simplificada con puntuación directa por apartado, más el bloque de detractores declarados (§6.3), y responde punto por punto a lo que esa fila prescribe: descuento por ortografía, madurez argumentativa y estructura de la respuesta abierta.
+Para la fila que el Marco Teórico §5 llama «Desarrollo largo / comentario de texto» (exámenes, comentario de 1.º BACH). Es una rúbrica simplificada con puntuación directa por apartado: cada apartado es una dimensión activa, con su cita oficial, y su máximo es su peso sobre 10. Responde a lo que esa fila prescribe —descuento por ortografía, madurez argumentativa y estructura de la respuesta abierta— con una condición que la fila no escribe y la regla 7 de `CLAUDE.md` impone: la ortografía cuenta una sola vez, en su apartado o en el descuento, nunca en los dos (§6.3).
+
+**Los cuatro niveles no desaparecen (v1.67).** Puntuar con un número no puede romper el orden del Marco Teórico §2.3, «el descriptor cualitativo manda; el número es su traducción». Por eso cada apartado lleva al lado dónde empieza cada nivel dentro de su máximo: las bandas sobre 10 de §6.4 (`CORTES_NIVEL`, `js/calificacion.js`, su única implementación) reescaladas a ese apartado, de modo que un 1,8 sobre 2,5 es Notable por la misma razón que un 7,2 sobre 10. La microexplicación de la escala decía hasta la v1.66 que el Marco §5 sostenía que «corregir de un vistazo pesa más que graduar cuatro descriptores»; el §5 no lo dice —solo asigna el instrumento a esa fila—, y la frase ya no se lo atribuye.
 
 **La EBAU es horizonte, no diana.** El marco vigente retiró «PAU/EBAU» de esa fila —la versión anterior sí la nombraba— y la dejó en «comentario de 1.º BACH», coherente con su §1.2: la senda del comentario (4.º ESO → 1.º BACH) **prepara** la prueba de acceso, de modo que un instrumento de comentario debe ser coherente con ese horizonte, pero la prueba no es su fuente ni su destinatario. De ahí que la puerta de aplicabilidad (§8) ofrezca «Desarrollo largo o comentario de texto» y no nombre la EBAU como una tarea elegible: nombrarla la convertía en diana. Lo que sigue es la misma conclusión leída desde la regla #1 de `CLAUDE.md`, y se conserva porque explica el caso concreto que se descartó.
 
@@ -1081,4 +1108,4 @@ expl-*ícita*)—: es la tercera versión seguida en que la lectura de los proye
 - `Rúbricas documentación.md` — matrices cuantitativas y ejemplos de descriptores operativos.
 - `Lomloe ESO Murcia Lengua (1).md` — currículo de ESO, competencias específicas y criterios de evaluación.
 - `Criterios curriculum bachillerato lengua (1).md` — currículo de Bachillerato.
-- LOMLOE (Ley Orgánica 3/2020, art. 20) · RD 217/2022 (ESO) · RD 243/2022 (Bachillerato).
+- Normativa de evaluación, comprobada por el docente en el BOE y el BORM el 28-09-2026: LOE, en la redacción de la LOMLOE (Ley Orgánica 3/2020), art. 28.1 —la evaluación en la ESO será «continua, formativa e integradora»— · RD 217/2022 (ESO), art. 15.1 y 15.8 (evaluación de la práctica docente) · RD 243/2022 (Bachillerato) · Decreto 235/2022 (ESO, Región de Murcia), art. 20.1 · Orden de 4 de julio de 2024 (BORM 18-07-2024), art. 13.2, 13.5 y 13.6 para la ESO y art. 42 para Bachillerato. **El art. 20 de la LOE no se cita**: regula la evaluación en Primaria, y hasta la v1.66 este apartado lo daba por la de secundaria. Las citas literales, en el §1.1 y el §11 del marco teórico vigente, que manda sobre ellas.
