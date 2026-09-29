@@ -1,6 +1,6 @@
 # Revisión del pack: Resumen de un texto — Región de Murcia
 
-**Pack** `pack-lcl-resumen.json` · versión 0.7.0 · 30 criterios · 120 descriptores · 30 matrices cuantitativas
+**Pack** `pack-lcl-resumen.json` · versión 0.8.0 · 30 criterios · 120 descriptores · 30 matrices cuantitativas
 
 > Documento para validación docente, generado desde el JSON. No se edita a mano.
 > Al leer, mira sobre todo tres cosas: si el nivel N4 es alcanzable en ese curso,

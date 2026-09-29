@@ -2,7 +2,7 @@
   "pack_id": "lcl-murcia-oral",
   "materia": "LCL",
   "etiqueta": "Exposición oral — Región de Murcia",
-  "version": "0.9.0",
+  "version": "0.10.0",
   "normativa": {
     "estatal": [
       "RD 217/2022, de 29 de marzo (ESO)",
@@ -701,8 +701,7 @@
       },
       "matriz_cuantitativa": null,
       "descriptor_cotejo": null,
-      "descriptor_un_punto": "Ajusta el tono al modelo de exposición trabajado en clase, con alguna expresión coloquial aislada en el léxico.",
-      "nombre_alumno": "El tono de la exposición"
+      "descriptor_un_punto": "Ajusta el tono al modelo de exposición trabajado en clase, con alguna expresión coloquial aislada en el léxico."
     },
     {
       "id": "lcl-b-coherencia-oral-2eso",
@@ -891,8 +890,7 @@
         "penalizaciones": []
       },
       "descriptor_cotejo": null,
-      "descriptor_un_punto": "Estructura la exposición en presentación, desarrollo y cierre por cuenta propia, con un bloque dedicado a cada parte.",
-      "nombre_alumno": "El orden de la exposición"
+      "descriptor_un_punto": "Estructura la exposición en presentación, desarrollo y cierre por cuenta propia, con un bloque dedicado a cada parte."
     },
     {
       "id": "lcl-b-cohesion-oral-2eso",
@@ -1055,8 +1053,7 @@
         "penalizaciones": []
       },
       "descriptor_cotejo": null,
-      "descriptor_un_punto": "Utiliza marcadores de orden y de adición para señalar el paso de una parte a otra de la exposición.",
-      "nombre_alumno": "Cómo se unen las ideas"
+      "descriptor_un_punto": "Utiliza marcadores de orden y de adición para señalar el paso de una parte a otra de la exposición."
     },
     {
       "id": "lcl-b-fluidez-oral-2eso",
@@ -2096,8 +2093,7 @@
       },
       "matriz_cuantitativa": null,
       "descriptor_cotejo": null,
-      "descriptor_un_punto": "Ajusta el registro al género académico, con algún término coloquial aislado en el léxico.",
-      "nombre_alumno": "El tono de la exposición"
+      "descriptor_un_punto": "Ajusta el registro al género académico, con algún término coloquial aislado en el léxico."
     },
     {
       "id": "lcl-b-coherencia-oral-4eso",
@@ -2143,7 +2139,7 @@
           "texto": "Enumera los argumentos y los datos por el orden de aparición en las notas, sin jerarquía entre ellos.",
           "alumno": {
             "verbo": "enumera",
-            "texto": "Enumera las razones (los argumentos) y los datos en el mismo orden en que están en las notas, sin distinguir los más importantes de los menos importantes (sin jerarquía).",
+            "texto": "Enumera los argumentos y los datos en el mismo orden en que están en las notas, sin distinguir los más importantes de los menos importantes (sin jerarquía).",
             "origen": "478ea59d"
           }
         },
@@ -2161,7 +2157,7 @@
           "texto": "Estructura el desarrollo en bloques, cada uno con un argumento distinto, y ajusta la duración de cada bloque al tiempo asignado.",
           "alumno": {
             "verbo": "organiza",
-            "texto": "Organiza el desarrollo en bloques, cada uno con una razón (argumento) distinta, y ajusta cuánto dura cada bloque al tiempo disponible.",
+            "texto": "Organiza el desarrollo en bloques, cada uno con un argumento distinto, y ajusta cuánto dura cada bloque al tiempo disponible.",
             "origen": "295c9ac2"
           }
         },
@@ -2170,7 +2166,7 @@
           "texto": "Articula los bloques del desarrollo de lo general a lo particular, deja tiempo para la conclusión y cierra retomando la tesis sin añadir información nueva.",
           "alumno": {
             "verbo": "ordena",
-            "texto": "Ordena los bloques del desarrollo de lo más general a lo más concreto, deja tiempo para la conclusión y cierra volviendo a la opinión principal (la tesis) sin añadir información nueva.",
+            "texto": "Ordena los bloques del desarrollo de lo más general a lo más concreto, deja tiempo para la conclusión y cierra volviendo a la opinión personal (tesis) sin añadir información nueva.",
             "origen": "f6647c1c"
           }
         }
@@ -2286,8 +2282,7 @@
         "penalizaciones": []
       },
       "descriptor_cotejo": null,
-      "descriptor_un_punto": "Estructura la exposición en presentación, desarrollo y conclusión, con un bloque dedicado a cada parte.",
-      "nombre_alumno": "El orden de la exposición"
+      "descriptor_un_punto": "Estructura la exposición en presentación, desarrollo y conclusión, con un bloque dedicado a cada parte."
     },
     {
       "id": "lcl-b-cohesion-oral-4eso",
@@ -2333,7 +2328,7 @@
           "texto": "Utiliza *y*, *pero* y *entonces* para enlazar los argumentos, sin marcador que señale el paso de un bloque a otro.",
           "alumno": {
             "verbo": "usa",
-            "texto": "Usa *y*, *pero* y *entonces* para enlazar las razones (los argumentos), sin palabras de enlace (marcadores) que indiquen el paso de un bloque a otro.",
+            "texto": "Usa *y*, *pero* y *entonces* para enlazar los argumentos, sin palabras de enlace (marcadores) que indiquen el paso de un bloque a otro.",
             "origen": "150b69af"
           }
         },
@@ -2351,7 +2346,7 @@
           "texto": "Emplea marcadores de contraste y de refuerzo (*sin embargo*, *además*) para relacionar los argumentos entre sí, no solo para ordenarlos.",
           "alumno": {
             "verbo": "emplea",
-            "texto": "Emplea marcadores de oposición (*sin embargo*) y de refuerzo (*además*) para relacionar las razones entre sí, no solo para ordenarlas.",
+            "texto": "Emplea marcadores de oposición (*sin embargo*) y de refuerzo (*además*) para relacionar los argumentos entre sí, no solo para ordenarlos.",
             "origen": "ae410beb"
           }
         },
@@ -2450,8 +2445,7 @@
         "penalizaciones": []
       },
       "descriptor_cotejo": null,
-      "descriptor_un_punto": "Utiliza marcadores de orden y de causa-consecuencia entre los bloques del desarrollo.",
-      "nombre_alumno": "Cómo se unen las ideas"
+      "descriptor_un_punto": "Utiliza marcadores de orden y de causa-consecuencia entre los bloques del desarrollo."
     },
     {
       "id": "lcl-b-fluidez-oral-4eso",
@@ -2496,7 +2490,7 @@
           "texto": "Vocaliza con un volumen o un ritmo que dificulta seguir la exposición en varios momentos, y recurre a muletillas o repeticiones mientras piensa el siguiente argumento.",
           "alumno": {
             "verbo": "pronuncia",
-            "texto": "Pronuncia con un volumen o una velocidad (ritmo) que en varios momentos dificulta seguir la exposición, y recurre a muletillas (*eh*, *o sea*, *bueno*) o a repeticiones mientras piensa la razón siguiente.",
+            "texto": "Pronuncia con un volumen o una velocidad (ritmo) que en varios momentos dificulta seguir la exposición, y recurre a muletillas (*eh*, *o sea*, *bueno*) o a repeticiones mientras piensa el argumento siguiente.",
             "origen": "00316f09"
           }
         },
@@ -2505,7 +2499,7 @@
           "texto": "Vocaliza con un volumen y un ritmo que permiten seguir la mayor parte de la exposición, con algún tramo leído de corrido, sin pausas que separen los argumentos.",
           "alumno": {
             "verbo": "pronuncia",
-            "texto": "Pronuncia con un volumen y una velocidad que permiten seguir casi toda la exposición, con algún trozo leído de corrido y sin pausas entre una razón y otra.",
+            "texto": "Pronuncia con un volumen y una velocidad que permiten seguir casi toda la exposición, con algún trozo leído de corrido y sin pausas entre un argumento y otro.",
             "origen": "441fe353"
           }
         },
@@ -2514,7 +2508,7 @@
           "texto": "Modula el ritmo y las pausas para separar los argumentos entre sí, con muletillas puntuales que no interrumpen la argumentación.",
           "alumno": {
             "verbo": "ajusta",
-            "texto": "Ajusta la velocidad (ritmo) y las pausas para separar unas razones de otras, con alguna muletilla suelta que no corta el hilo del razonamiento.",
+            "texto": "Ajusta la velocidad (ritmo) y las pausas para separar unos argumentos de otros, con alguna muletilla suelta que no corta el hilo del razonamiento.",
             "origen": "77b938ce"
           }
         },
@@ -2523,7 +2517,7 @@
           "texto": "Regula el ritmo, el volumen y las pausas para reforzar los momentos clave de la argumentación (la tesis, la conclusión), sin recurrir a la lectura literal de las notas.",
           "alumno": {
             "verbo": "usa",
-            "texto": "Usa el ritmo, el volumen y las pausas para destacar los momentos más importantes (la opinión principal o tesis, la conclusión), sin leer las notas palabra por palabra.",
+            "texto": "Usa el ritmo, el volumen y las pausas para destacar los momentos más importantes, como la opinión personal (tesis) y la conclusión, sin leer las notas palabra por palabra.",
             "origen": "7cec748a"
           }
         }
@@ -2712,7 +2706,7 @@
           "texto": "Adapta la mirada, la postura y los gestos a la reacción del público (vuelve sobre una idea o la reformula cuando el público da señales de no seguirla) y los pone al servicio de la argumentación.",
           "alumno": {
             "verbo": "adapta",
-            "texto": "Adapta la mirada, la postura y los gestos a la reacción del público (vuelve sobre una idea o la explica de otra manera cuando el público da señales de no seguirla) y los usa para apoyar las razones (la argumentación).",
+            "texto": "Adapta la mirada, la postura y los gestos a la reacción del público (vuelve sobre una idea o la explica de otra manera cuando el público da señales de no seguirla) y los usa para apoyar la argumentación.",
             "origen": "2df30ebe"
           }
         }

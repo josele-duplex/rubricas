@@ -1,6 +1,6 @@
 # Revisión del pack: Redacción de una noticia — Región de Murcia
 
-**Pack** `pack-lcl-noticia.json` · versión 0.4.0 · 24 criterios · 96 descriptores · 24 matrices cuantitativas
+**Pack** `pack-lcl-noticia.json` · versión 0.5.0 · 24 criterios · 96 descriptores · 24 matrices cuantitativas
 
 > Documento para validación docente, generado desde el JSON. No se edita a mano.
 > Al leer, mira sobre todo tres cosas: si el nivel N4 es alcanzable en ese curso,

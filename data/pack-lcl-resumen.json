@@ -2,7 +2,7 @@
   "pack_id": "lcl-murcia-resumen",
   "materia": "LCL",
   "etiqueta": "Resumen de un texto — Región de Murcia",
-  "version": "0.7.0",
+  "version": "0.8.0",
   "normativa": {
     "estatal": [
       "RD 217/2022, de 29 de marzo (ESO)",
@@ -939,8 +939,7 @@
         "penalizaciones": []
       },
       "descriptor_cotejo": null,
-      "descriptor_un_punto": "Reconoce el tema del texto sencillo y lo anuncia en la primera línea del resumen.",
-      "nombre_alumno": "Entender el texto: qué ideas importan más"
+      "descriptor_un_punto": "Reconoce el tema del texto sencillo y lo anuncia en la primera línea del resumen."
     },
     {
       "id": "lcl-b-seleccion-res-2eso",
@@ -1102,8 +1101,7 @@
         "penalizaciones": []
       },
       "descriptor_cotejo": null,
-      "descriptor_un_punto": "Selecciona las ideas que el texto desarrolla y deja fuera los ejemplos y las repeticiones.",
-      "nombre_alumno": "Elegir lo importante del texto"
+      "descriptor_un_punto": "Selecciona las ideas que el texto desarrolla y deja fuera los ejemplos y las repeticiones."
     },
     {
       "id": "lcl-b-reformulacion-res-2eso",
@@ -1265,8 +1263,7 @@
         "penalizaciones": []
       },
       "descriptor_cotejo": null,
-      "descriptor_un_punto": "Sustituye por sinónimos las palabras del texto y mantiene el molde de las frases del original.",
-      "nombre_alumno": "Con palabras propias"
+      "descriptor_un_punto": "Sustituye por sinónimos las palabras del texto y mantiene el molde de las frases del original."
     },
     {
       "id": "lcl-b-redaccion-res-2eso",
@@ -1455,8 +1452,7 @@
         "penalizaciones": []
       },
       "descriptor_cotejo": null,
-      "descriptor_un_punto": "Redacta el resumen en un párrafo seguido y enlaza las ideas con los conectores de la pauta facilitada.",
-      "nombre_alumno": "Cómo está escrito el resumen"
+      "descriptor_un_punto": "Redacta el resumen en un párrafo seguido y enlaza las ideas con los conectores de la pauta facilitada."
     },
     {
       "id": "lcl-d-correccion-res-2eso",
@@ -2518,8 +2514,7 @@
         "penalizaciones": []
       },
       "descriptor_cotejo": null,
-      "descriptor_un_punto": "Reconoce el sentido global del texto y lo anuncia en la primera línea del resumen.",
-      "nombre_alumno": "Entender el texto: qué ideas importan más"
+      "descriptor_un_punto": "Reconoce el sentido global del texto y lo anuncia en la primera línea del resumen."
     },
     {
       "id": "lcl-b-seleccion-res-4eso",
@@ -2681,8 +2676,7 @@
         "penalizaciones": []
       },
       "descriptor_cotejo": null,
-      "descriptor_un_punto": "Selecciona las ideas que sostienen el contenido del texto y deja fuera los ejemplos y las digresiones.",
-      "nombre_alumno": "Elegir lo importante del texto"
+      "descriptor_un_punto": "Selecciona las ideas que sostienen el contenido del texto y deja fuera los ejemplos y las digresiones."
     },
     {
       "id": "lcl-b-reformulacion-res-4eso",
@@ -2844,8 +2838,7 @@
         "penalizaciones": []
       },
       "descriptor_cotejo": null,
-      "descriptor_un_punto": "Sustituye por sinónimos e hiperónimos el léxico del texto y ordena las ideas por cuenta propia.",
-      "nombre_alumno": "Con palabras propias"
+      "descriptor_un_punto": "Sustituye por sinónimos e hiperónimos el léxico del texto y ordena las ideas por cuenta propia."
     },
     {
       "id": "lcl-b-redaccion-res-4eso",
@@ -3034,8 +3027,7 @@
         "penalizaciones": []
       },
       "descriptor_cotejo": null,
-      "descriptor_un_punto": "Redacta el resumen en un texto seguido y enlaza las ideas con conectores de orden y de causa.",
-      "nombre_alumno": "Cómo está escrito el resumen"
+      "descriptor_un_punto": "Redacta el resumen en un texto seguido y enlaza las ideas con conectores de orden y de causa."
     },
     {
       "id": "lcl-d-correccion-res-4eso",

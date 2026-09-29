@@ -2,7 +2,7 @@
   "pack_id": "lcl-murcia-expositivo",
   "materia": "LCL",
   "etiqueta": "Texto expositivo escrito — Región de Murcia",
-  "version": "0.9.0",
+  "version": "0.10.0",
   "normativa": {
     "estatal": [
       "RD 217/2022, de 29 de marzo (ESO)"
@@ -858,8 +858,7 @@
       },
       "matriz_cuantitativa": null,
       "descriptor_cotejo": null,
-      "descriptor_un_punto": "Ajusta el texto al modelo de exposición trabajado en clase, con algún término coloquial aislado en el vocabulario.",
-      "nombre_alumno": "El tono del texto"
+      "descriptor_un_punto": "Ajusta el texto al modelo de exposición trabajado en clase, con algún término coloquial aislado en el vocabulario."
     },
     {
       "id": "lcl-b-coherencia-expo-2eso",
@@ -1021,8 +1020,7 @@
         "penalizaciones": []
       },
       "descriptor_cotejo": null,
-      "descriptor_un_punto": "Estructura el texto en introducción, desarrollo y cierre por cuenta propia, con un párrafo dedicado a cada parte.",
-      "nombre_alumno": "Las ideas: el orden y la información"
+      "descriptor_un_punto": "Estructura el texto en introducción, desarrollo y cierre por cuenta propia, con un párrafo dedicado a cada parte."
     },
     {
       "id": "lcl-b-cohesion-expo-2eso",
@@ -1185,8 +1183,7 @@
         "penalizaciones": []
       },
       "descriptor_cotejo": null,
-      "descriptor_un_punto": "Utiliza conectores de adición y de orden para enlazar los párrafos, y separa los enunciados con punto.",
-      "nombre_alumno": "Cómo se unen las ideas"
+      "descriptor_un_punto": "Utiliza conectores de adición y de orden para enlazar los párrafos, y separa los enunciados con punto."
     },
     {
       "id": "lcl-d-correccion-expo-2eso",
@@ -1511,8 +1508,7 @@
         "penalizaciones": []
       },
       "descriptor_cotejo": null,
-      "descriptor_un_punto": "Elabora un esquema previo con las ideas principales por cuenta propia y entrega el borrador junto al texto final.",
-      "nombre_alumno": "Preparar y revisar el texto"
+      "descriptor_un_punto": "Elabora un esquema previo con las ideas principales por cuenta propia y entrega el borrador junto al texto final."
     },
     {
       "id": "lcl-b-informacion-expo-2eso",
@@ -1674,8 +1670,7 @@
         "penalizaciones": []
       },
       "descriptor_cotejo": null,
-      "descriptor_un_punto": "Selecciona información de la fuente indicada por el profesor y la traslada al texto con alguna palabra propia.",
-      "nombre_alumno": "Las fuentes: de dónde sale la información"
+      "descriptor_un_punto": "Selecciona información de la fuente indicada por el profesor y la traslada al texto con alguna palabra propia."
     },
     {
       "id": "lcl-b-adecuacion-expo-3eso",
@@ -2526,8 +2521,7 @@
       },
       "matriz_cuantitativa": null,
       "descriptor_cotejo": null,
-      "descriptor_un_punto": "Ajusta el léxico y el tono al género expositivo académico, con alguna fórmula de cercanía aislada dirigida al lector.",
-      "nombre_alumno": "El tono del texto"
+      "descriptor_un_punto": "Ajusta el léxico y el tono al género expositivo académico, con alguna fórmula de cercanía aislada dirigida al lector."
     },
     {
       "id": "lcl-b-coherencia-expo-4eso",
@@ -2690,8 +2684,7 @@
         "penalizaciones": []
       },
       "descriptor_cotejo": null,
-      "descriptor_un_punto": "Estructura el texto en introducción, desarrollo y conclusión, y dedica un párrafo a cada aspecto relevante del tema.",
-      "nombre_alumno": "Las ideas: el orden y el avance del tema"
+      "descriptor_un_punto": "Estructura el texto en introducción, desarrollo y conclusión, y dedica un párrafo a cada aspecto relevante del tema."
     },
     {
       "id": "lcl-b-cohesion-expo-4eso",
@@ -2855,8 +2848,7 @@
         "penalizaciones": []
       },
       "descriptor_cotejo": null,
-      "descriptor_un_punto": "Utiliza conectores de orden, adición y causa entre párrafos, y explica algún término mediante una oración de relativo aislada.",
-      "nombre_alumno": "Cómo se unen las ideas"
+      "descriptor_un_punto": "Utiliza conectores de orden, adición y causa entre párrafos, y explica algún término mediante una oración de relativo aislada."
     },
     {
       "id": "lcl-d-correccion-expo-4eso",
@@ -3182,8 +3174,7 @@
         "penalizaciones": []
       },
       "descriptor_cotejo": null,
-      "descriptor_un_punto": "Elabora un esquema previo propio con el orden de las partes del texto y entrega el borrador con marcas de revisión sobre la ortografía y el léxico.",
-      "nombre_alumno": "Preparar y revisar el texto"
+      "descriptor_un_punto": "Elabora un esquema previo propio con el orden de las partes del texto y entrega el borrador con marcas de revisión sobre la ortografía y el léxico."
     },
     {
       "id": "lcl-b-informacion-expo-4eso",
@@ -3345,8 +3336,7 @@
         "penalizaciones": []
       },
       "descriptor_cotejo": null,
-      "descriptor_un_punto": "Selecciona información de dos o más fuentes por cuenta propia e indica su procedencia en el texto.",
-      "nombre_alumno": "Las fuentes: de dónde sale la información"
+      "descriptor_un_punto": "Selecciona información de dos o más fuentes por cuenta propia e indica su procedencia en el texto."
     },
     {
       "id": "lcl-b-adecuacion-expo-1bach",

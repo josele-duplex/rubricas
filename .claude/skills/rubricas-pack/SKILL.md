@@ -107,8 +107,14 @@ No es obligatorio en todo pack: se escribe **bajo demanda**, dimensión a dimens
 docente va a usar esa actividad en clase (`docs/diseno/plan-lenguaje-sencillo.md`, regla 2). Es
 una **segunda redacción** del mismo descriptor —el técnico sigue siendo la fuente que califica—,
 pensada para que la entienda un alumno de nivel medio-bajo del curso. Va en `alumno: {verbo,
-texto}` dentro de cada descriptor, y `nombre_alumno` en el criterio si el nombre técnico de la
-dimensión no es transparente para el alumno.
+texto}` dentro de cada descriptor. **El nombre de la dimensión no se traduce**: *adecuación*,
+*coherencia*, *cohesión* y el resto los maneja el alumno de 2.º ESO a 2.º BACH, así que la ficha
+enseña el nombre técnico (docente, 29-sep-2026). Solo llevan `nombre_alumno` la corrección
+normativa y propiedad léxica («Ortografía, gramática y vocabulario») y los nombres técnicos que
+el docente ha dado por opacos: ajuste del soporte, elementos no verbales, registro informativo,
+fluidez oral, intención literaria, delimitación del tema, integración de la información y
+atribución de fuentes (esta, con el término entre paréntesis: «Decir de dónde sale cada dato
+(atribución de la información)»). Uno nuevo se le consulta antes de traducirlo.
 
 Reglas de redacción:
 
@@ -130,9 +136,12 @@ Reglas de redacción:
 5. **Sin adverbitis**, igual que el técnico: ni *bien*, ni *mal*, ni *a veces*, ni *bastante*.
 6. **El nivel 1 dice lo que el alumno sí hace.** «Usa *y*, *también* y *porque*», no «No usa
    conectores».
-7. **Cada tecnicismo, sustituido por lo que significa, con el término entre paréntesis**: «las
-   razones (los argumentos)», «lo que respondería alguien que opina lo contrario (una
-   objeción)».
+7. **Cada tecnicismo, sustituido por lo que significa, con el término entre paréntesis**: «lo
+   que respondería alguien que opina lo contrario (una objeción)». Dos excepciones fijadas por
+   el docente (29-sep-2026): *argumento* no se sustituye —nunca «razones»—, y la tesis se
+   escribe «la opinión personal (tesis)», con *tesis* siempre entre paréntesis; ni «la
+   postura» ni «la opinión principal». El técnico del argumentativo dice *tesis* y
+   *argumentos* en todos los cursos, también en 2.º ESO.
 8. **Las formas citadas, en cursiva con asteriscos**, como en el técnico.
 9. **La progresión tiene que seguir viéndose.** Lo que escala entre cursos (paso 2 de este
    skill) no puede quedar aplanado por la simplificación. Lee la versión sencilla de la misma

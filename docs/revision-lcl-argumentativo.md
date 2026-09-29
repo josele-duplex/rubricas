@@ -1,6 +1,6 @@
 # Revisión del pack: Texto argumentativo escrito — Región de Murcia
 
-**Pack** `pack-lcl-argumentativo.json` · versión 0.9.0 · 30 criterios · 120 descriptores · 25 matrices cuantitativas
+**Pack** `pack-lcl-argumentativo.json` · versión 0.10.0 · 30 criterios · 120 descriptores · 25 matrices cuantitativas
 
 > Documento para validación docente, generado desde el JSON. No se edita a mano.
 > Al leer, mira sobre todo tres cosas: si el nivel N4 es alcanzable en ese curso,
@@ -13,7 +13,7 @@
 | Dimensión | Peso | Prio | Criterio oficial | Matriz |
 |---|---|---|---|---|
 | **Adecuación: registro y expresión de la opinión** | 20% | 1 | CE5 — 5.1 | — |
-| **Coherencia: postura, razones y cierre** 🔒 | 25% | 1 | CE5 — 5.1 | sí |
+| **Coherencia: tesis, argumentos y cierre** 🔒 | 25% | 1 | CE5 — 5.1 | sí |
 | **Cohesión: conectores y puntuación** | 20% | 1 | CE5 — 5.1 | sí |
 | **Corrección normativa y propiedad léxica** 🔒 | 15% | 2 | CE5 — 5.2 | sí |
 | **Planificación y revisión del propio texto** | 10% | 2 | CE5 — 5.1 | sí |
@@ -28,8 +28,8 @@
 | Nivel | Descriptor |
 |---|---|
 | **N1** | Utiliza expresiones de la conversación diaria para dar una opinión sobre el tema en un texto dirigido a un lector del ámbito educativo. |
-| **N2** | Ajusta el escrito a la pauta de opinión trabajada en clase y mantiene la primera persona del singular al presentar la postura defendida. |
-| **N3** | Emplea fórmulas de opinión (*creo que*, *en mi opinión*) al presentar cada razón y mantiene el resto del texto libre de expresiones coloquiales. |
+| **N2** | Ajusta el escrito a la pauta de opinión trabajada en clase y mantiene la primera persona del singular al presentar la tesis defendida. |
+| **N3** | Emplea fórmulas de opinión (*creo que*, *en mi opinión*) al presentar cada argumento y mantiene el resto del texto libre de expresiones coloquiales. |
 | **N4** | Distingue mediante fórmulas de modalización los hechos comprobables de las opiniones propias a lo largo de todo el texto. |
 
 **Lenguaje sencillo** — lo que lee el alumno en la ficha y en la autoevaluación.
@@ -37,13 +37,13 @@
 | Nivel | Técnico | Sencillo | Sencillo (autoevaluación) |
 |---|---|---|---|
 | **N1** | Utiliza expresiones de la conversación diaria para dar una opinión sobre el tema en un texto dirigido a un lector del ámbito educativo. | Usa expresiones de la conversación de cada día (*a mí me mola*, *qué rollo*) para dar una opinión sobre el tema, en un texto que es para clase. | Uso expresiones de la conversación de cada día (*a mí me mola*, *qué rollo*) para dar una opinión sobre el tema, en un texto que es para clase. |
-| **N2** | Ajusta el escrito a la pauta de opinión trabajada en clase y mantiene la primera persona del singular al presentar la postura defendida. | Ajusta el escrito al modelo de opinión visto en clase y mantiene el *yo* (primera persona del singular) al presentar la postura defendida. | Ajusto el escrito al modelo de opinión visto en clase y mantengo el *yo* (primera persona del singular) al presentar la postura defendida. |
-| **N3** | Emplea fórmulas de opinión (*creo que*, *en mi opinión*) al presentar cada razón y mantiene el resto del texto libre de expresiones coloquiales. | Emplea fórmulas de opinión (*creo que*, *en mi opinión*) para presentar cada razón, y mantiene el resto del texto sin expresiones de la conversación de cada día. | Empleo fórmulas de opinión (*creo que*, *en mi opinión*) para presentar cada razón, y mantengo el resto del texto sin expresiones de la conversación de cada día. |
+| **N2** | Ajusta el escrito a la pauta de opinión trabajada en clase y mantiene la primera persona del singular al presentar la tesis defendida. | Ajusta el escrito al modelo de opinión visto en clase y mantiene el *yo* (primera persona del singular) al presentar la opinión personal (tesis). | Ajusto el escrito al modelo de opinión visto en clase y mantengo el *yo* (primera persona del singular) al presentar la opinión personal (tesis). |
+| **N3** | Emplea fórmulas de opinión (*creo que*, *en mi opinión*) al presentar cada argumento y mantiene el resto del texto libre de expresiones coloquiales. | Emplea fórmulas de opinión (*creo que*, *en mi opinión*) para presentar cada argumento, y mantiene el resto del texto sin expresiones de la conversación de cada día. | Empleo fórmulas de opinión (*creo que*, *en mi opinión*) para presentar cada argumento, y mantengo el resto del texto sin expresiones de la conversación de cada día. |
 | **N4** | Distingue mediante fórmulas de modalización los hechos comprobables de las opiniones propias a lo largo de todo el texto. | Distingue, a lo largo de todo el texto, los hechos que se pueden comprobar de las opiniones propias, marcando la diferencia con fórmulas como *está comprobado que…* o *para mí…* (modalización). | Distingo, a lo largo de todo el texto, los hechos que se pueden comprobar de las opiniones propias, marcando la diferencia con fórmulas como *está comprobado que…* o *para mí…* (modalización). |
 
 *Sin matriz cuantitativa: esta dimensión se juzga en conjunto, no hay nada que contar.*
 
-### Coherencia: postura, razones y cierre  ·  25%  ·  bloque B  ·  🔒 obligatorio
+### Coherencia: tesis, argumentos y cierre  ·  25%  ·  bloque B  ·  🔒 obligatorio
 
 *Criterio oficial 5.1:* «Planificar la redacción de textos escritos y multimodales sencillos, atendiendo a la situación comunicativa, al destinatario, al propósito y al canal; redactar borradores y revisarlos con ayuda del diálogo entre iguales e instrumentos de consulta, y presentar un texto final coherente, cohesionado y con el registro adecuado.»
 
@@ -51,27 +51,27 @@
 
 | Nivel | Descriptor |
 |---|---|
-| **N1** | Enumera opiniones sueltas sobre el tema en un único bloque, mezclando las razones con la postura. |
-| **N2** | Formula la postura defendida en una oración al comienzo del texto y la apoya con dos razones, cada una en una oración distinta. |
-| **N3** | Ordena el texto en tres partes —postura, razones y cierre— con un párrafo para cada razón. |
-| **N4** | Articula las razones en un orden propio, de la menos a la más importante, y cierra el texto retomando la postura inicial con otras palabras. |
+| **N1** | Enumera opiniones sueltas sobre el tema en un único bloque, mezclando los argumentos con la tesis. |
+| **N2** | Formula la tesis defendida en una oración al comienzo del texto y la apoya con dos argumentos, cada uno en una oración distinta. |
+| **N3** | Ordena el texto en tres partes —tesis, argumentos y cierre— con un párrafo para cada argumento. |
+| **N4** | Articula los argumentos en un orden propio, del menos al más importante, y cierra el texto retomando la tesis inicial con otras palabras. |
 
 **Lenguaje sencillo** — lo que lee el alumno en la ficha y en la autoevaluación.
 
 | Nivel | Técnico | Sencillo | Sencillo (autoevaluación) |
 |---|---|---|---|
-| **N1** | Enumera opiniones sueltas sobre el tema en un único bloque, mezclando las razones con la postura. | Enumera opiniones sueltas sobre el tema en un solo bloque de texto, mezclando las razones con la postura. | Enumero opiniones sueltas sobre el tema en un solo bloque de texto, mezclando las razones con la postura. |
-| **N2** | Formula la postura defendida en una oración al comienzo del texto y la apoya con dos razones, cada una en una oración distinta. | Presenta la postura al principio del texto en una oración y la apoya con dos razones, cada una en una oración distinta. | Presento la postura al principio del texto en una oración y la apoyo con dos razones, cada una en una oración distinta. |
-| **N3** | Ordena el texto en tres partes —postura, razones y cierre— con un párrafo para cada razón. | Organiza el texto en tres partes —postura, razones y cierre— y dedica un párrafo a cada razón. | Organizo el texto en tres partes —postura, razones y cierre— y dedico un párrafo a cada razón. |
-| **N4** | Articula las razones en un orden propio, de la menos a la más importante, y cierra el texto retomando la postura inicial con otras palabras. | Ordena las razones con un criterio propio, de la menos a la más importante, y cierra el texto retomando la postura inicial con otras palabras. | Ordeno las razones con un criterio propio, de la menos a la más importante, y cierro el texto retomando la postura inicial con otras palabras. |
+| **N1** | Enumera opiniones sueltas sobre el tema en un único bloque, mezclando los argumentos con la tesis. | Enumera opiniones sueltas sobre el tema en un solo bloque de texto, mezclando los argumentos con la opinión personal (tesis). | Enumero opiniones sueltas sobre el tema en un solo bloque de texto, mezclando los argumentos con la opinión personal (tesis). |
+| **N2** | Formula la tesis defendida en una oración al comienzo del texto y la apoya con dos argumentos, cada uno en una oración distinta. | Presenta la opinión personal (tesis) al principio del texto en una oración y la apoya con dos argumentos, cada uno en una oración distinta. | Presento la opinión personal (tesis) al principio del texto en una oración y la apoyo con dos argumentos, cada uno en una oración distinta. |
+| **N3** | Ordena el texto en tres partes —tesis, argumentos y cierre— con un párrafo para cada argumento. | Organiza el texto en tres partes —opinión personal (tesis), argumentos y cierre— y dedica un párrafo a cada argumento. | Organizo el texto en tres partes —opinión personal (tesis), argumentos y cierre— y dedico un párrafo a cada argumento. |
+| **N4** | Articula los argumentos en un orden propio, del menos al más importante, y cierra el texto retomando la tesis inicial con otras palabras. | Ordena los argumentos con un criterio propio, del menos al más importante, y cierra el texto retomando con otras palabras la opinión personal (tesis) del principio. | Ordeno los argumentos con un criterio propio, del menos al más importante, y cierro el texto retomando con otras palabras la opinión personal (tesis) del principio. |
 
 **Matriz cuantitativa** — total 10 puntos. Es lo que usa el modo IA para corregir.
 
 | Componente | Máx. | Bandas |
 |---|---|---|
-| Postura reconocible | 4 | **4** — La postura aparece formulada en una oración propia del primer párrafo<br>**3** — La postura se deduce del conjunto del texto, sin una oración que la formule<br>**2** — El texto sostiene una postura distinta en cada parte<br>**1** — La postura aparece en una frase suelta del final, sin recorrido en el texto<br>**0** — El texto comenta el tema sin postura reconocible |
-| Razones que apoyan la postura | 4 | **4** — 3 o más razones distintas, cada una desarrollada al menos en dos oraciones<br>**3** — 2 razones distintas, cada una desarrollada al menos en dos oraciones<br>**2** — 2 razones enunciadas en una sola oración cada una<br>**1** — 1 razón desarrollada<br>**0** — El texto repite la misma razón con otras palabras |
-| Cierre | 2 | **2** — El cierre retoma la postura con otras palabras y recoge las razones dadas<br>**1.5** — El cierre retoma la postura con otras palabras, sin recoger las razones dadas<br>**1** — El cierre repite la postura con las mismas palabras del comienzo<br>**0.5** — El texto se cierra con una fórmula de despedida ajena a la postura<br>**0** — El texto termina en la última razón, sin cierre |
+| Tesis reconocible | 4 | **4** — La tesis aparece formulada en una oración propia del primer párrafo<br>**3** — La tesis se deduce del conjunto del texto, sin una oración que la formule<br>**2** — El texto sostiene una tesis distinta en cada parte<br>**1** — La tesis aparece en una frase suelta del final, sin recorrido en el texto<br>**0** — El texto comenta el tema sin tesis reconocible |
+| Argumentos que apoyan la tesis | 4 | **4** — 3 o más argumentos distintos, cada uno desarrollado al menos en dos oraciones<br>**3** — 2 argumentos distintos, cada uno desarrollado al menos en dos oraciones<br>**2** — 2 argumentos enunciados en una sola oración cada uno<br>**1** — 1 argumento desarrollado<br>**0** — El texto repite el mismo argumento con otras palabras |
+| Cierre | 2 | **2** — El cierre retoma la tesis con otras palabras y recoge los argumentos dados<br>**1.5** — El cierre retoma la tesis con otras palabras, sin recoger los argumentos dados<br>**1** — El cierre repite la tesis con las mismas palabras del comienzo<br>**0.5** — El texto se cierra con una fórmula de despedida ajena a la tesis<br>**0** — El texto termina en el último argumento, sin cierre |
 
 ### Cohesión: conectores y puntuación  ·  20%  ·  bloque B
 
@@ -81,19 +81,19 @@
 
 | Nivel | Descriptor |
 |---|---|
-| **N1** | Utiliza los conectores *y*, *pero* y *entonces* para encadenar la opinión y las razones dentro de un mismo enunciado largo. |
-| **N2** | Utiliza conectores de orden y de contraste (*en primer lugar*, *sin embargo*) para enlazar cada razón con la postura, y separa los enunciados con punto. |
-| **N3** | Emplea conectores explicativos y de contraste (*es decir*, *en cambio*) para encadenar postura, razones y cierre, y delimita los incisos con comas. |
-| **N4** | Sustituye las repeticiones mediante pronombres, sinónimos e hiperónimos, y emplea conectores temporales para situar cada razón en la secuencia del texto. |
+| **N1** | Utiliza los conectores *y*, *pero* y *entonces* para encadenar la tesis y los argumentos dentro de un mismo enunciado largo. |
+| **N2** | Utiliza conectores de orden y de contraste (*en primer lugar*, *sin embargo*) para enlazar cada argumento con la tesis, y separa los enunciados con punto. |
+| **N3** | Emplea conectores explicativos y de contraste (*es decir*, *en cambio*) para encadenar tesis, argumentos y cierre, y delimita los incisos con comas. |
+| **N4** | Sustituye las repeticiones mediante pronombres, sinónimos e hiperónimos, y emplea conectores temporales para situar cada argumento en la secuencia del texto. |
 
 **Lenguaje sencillo** — lo que lee el alumno en la ficha y en la autoevaluación.
 
 | Nivel | Técnico | Sencillo | Sencillo (autoevaluación) |
 |---|---|---|---|
-| **N1** | Utiliza los conectores *y*, *pero* y *entonces* para encadenar la opinión y las razones dentro de un mismo enunciado largo. | Usa *y*, *pero* y *entonces* para unir la opinión y las razones dentro de una misma frase larga. | Uso *y*, *pero* y *entonces* para unir la opinión y las razones dentro de una misma frase larga. |
-| **N2** | Utiliza conectores de orden y de contraste (*en primer lugar*, *sin embargo*) para enlazar cada razón con la postura, y separa los enunciados con punto. | Usa palabras de enlace (conectores) de orden y de contraste (*en primer lugar*, *sin embargo*) para unir cada razón con la postura, y separa las frases con punto. | Uso palabras de enlace (conectores) de orden y de contraste (*en primer lugar*, *sin embargo*) para unir cada razón con la postura, y separo las frases con punto. |
-| **N3** | Emplea conectores explicativos y de contraste (*es decir*, *en cambio*) para encadenar postura, razones y cierre, y delimita los incisos con comas. | Emplea palabras de enlace (conectores) que explican o que contrastan (*es decir*, *en cambio*) para unir postura, razones y cierre, y separa con comas las aclaraciones que van dentro de la frase (los incisos). | Empleo palabras de enlace (conectores) que explican o que contrastan (*es decir*, *en cambio*) para unir postura, razones y cierre, y separo con comas las aclaraciones que van dentro de la frase (los incisos). |
-| **N4** | Sustituye las repeticiones mediante pronombres, sinónimos e hiperónimos, y emplea conectores temporales para situar cada razón en la secuencia del texto. | Sustituye las palabras repetidas por pronombres, por palabras de significado parecido (sinónimos) y por palabras más generales (hiperónimos: *animal* en lugar de *perro*), y emplea conectores de tiempo (*primero*, *después*, *al final*) para marcar en qué punto del texto va cada razón. | Sustituyo las palabras repetidas por pronombres, por palabras de significado parecido (sinónimos) y por palabras más generales (hiperónimos: *animal* en lugar de *perro*), y empleo conectores de tiempo (*primero*, *después*, *al final*) para marcar en qué punto del texto va cada razón. |
+| **N1** | Utiliza los conectores *y*, *pero* y *entonces* para encadenar la tesis y los argumentos dentro de un mismo enunciado largo. | Usa *y*, *pero* y *entonces* para unir la opinión personal (tesis) y los argumentos dentro de una misma frase larga. | Uso *y*, *pero* y *entonces* para unir la opinión personal (tesis) y los argumentos dentro de una misma frase larga. |
+| **N2** | Utiliza conectores de orden y de contraste (*en primer lugar*, *sin embargo*) para enlazar cada argumento con la tesis, y separa los enunciados con punto. | Usa palabras de enlace (conectores) de orden y de contraste (*en primer lugar*, *sin embargo*) para unir cada argumento con la opinión personal (tesis), y separa las frases con punto. | Uso palabras de enlace (conectores) de orden y de contraste (*en primer lugar*, *sin embargo*) para unir cada argumento con la opinión personal (tesis), y separo las frases con punto. |
+| **N3** | Emplea conectores explicativos y de contraste (*es decir*, *en cambio*) para encadenar tesis, argumentos y cierre, y delimita los incisos con comas. | Emplea palabras de enlace (conectores) que explican o que contrastan (*es decir*, *en cambio*) para unir opinión personal (tesis), argumentos y cierre, y separa con comas las aclaraciones que van dentro de la frase (los incisos). | Empleo palabras de enlace (conectores) que explican o que contrastan (*es decir*, *en cambio*) para unir opinión personal (tesis), argumentos y cierre, y separo con comas las aclaraciones que van dentro de la frase (los incisos). |
+| **N4** | Sustituye las repeticiones mediante pronombres, sinónimos e hiperónimos, y emplea conectores temporales para situar cada argumento en la secuencia del texto. | Sustituye las palabras repetidas por pronombres, por palabras de significado parecido (sinónimos) y por palabras más generales (hiperónimos: *animal* en lugar de *perro*), y emplea conectores de tiempo (*primero*, *después*, *al final*) para marcar en qué punto del texto va cada argumento. | Sustituyo las palabras repetidas por pronombres, por palabras de significado parecido (sinónimos) y por palabras más generales (hiperónimos: *animal* en lugar de *perro*), y empleo conectores de tiempo (*primero*, *después*, *al final*) para marcar en qué punto del texto va cada argumento. |
 
 **Matriz cuantitativa** — total 10 puntos. Es lo que usa el modo IA para corregir.
 
@@ -142,8 +142,8 @@
 | Nivel | Descriptor |
 |---|---|
 | **N1** | Redacta el texto en una sola pasada y entrega la primera versión como texto final. |
-| **N2** | Elabora un esquema previo propio con la postura y las razones, y entrega el borrador junto al texto final. |
-| **N3** | Revisa el borrador con ayuda de un compañero y corrige al menos dos aspectos de puntuación o de conexión entre las razones. |
+| **N2** | Elabora un esquema previo propio con la tesis y los argumentos, y entrega el borrador junto al texto final. |
+| **N3** | Revisa el borrador con ayuda de un compañero y corrige al menos dos aspectos de puntuación o de conexión entre los argumentos. |
 | **N4** | Explica, en una nota al margen del borrador, qué mejora aporta cada cambio introducido en el texto final. |
 
 **Lenguaje sencillo** — lo que lee el alumno en la ficha y en la autoevaluación.
@@ -151,16 +151,16 @@
 | Nivel | Técnico | Sencillo | Sencillo (autoevaluación) |
 |---|---|---|---|
 | **N1** | Redacta el texto en una sola pasada y entrega la primera versión como texto final. | Redacta el texto de una vez y entrega ese primer intento como versión final. | Redacto el texto de una vez y entrego ese primer intento como versión final. |
-| **N2** | Elabora un esquema previo propio con la postura y las razones, y entrega el borrador junto al texto final. | Elabora antes un esquema propio con la postura y las razones, y entrega el borrador junto al texto final. | Elaboro antes un esquema propio con la postura y las razones, y entrego el borrador junto al texto final. |
-| **N3** | Revisa el borrador con ayuda de un compañero y corrige al menos dos aspectos de puntuación o de conexión entre las razones. | Revisa el borrador con la ayuda de un compañero y corrige al menos dos aspectos de puntuación o de conexión entre las razones. | Reviso el borrador con la ayuda de un compañero y corrijo al menos dos aspectos de puntuación o de conexión entre las razones. |
+| **N2** | Elabora un esquema previo propio con la tesis y los argumentos, y entrega el borrador junto al texto final. | Elabora antes un esquema propio con la opinión personal (tesis) y los argumentos, y entrega el borrador junto al texto final. | Elaboro antes un esquema propio con la opinión personal (tesis) y los argumentos, y entrego el borrador junto al texto final. |
+| **N3** | Revisa el borrador con ayuda de un compañero y corrige al menos dos aspectos de puntuación o de conexión entre los argumentos. | Revisa el borrador con la ayuda de un compañero y corrige al menos dos aspectos de puntuación o de conexión entre los argumentos. | Reviso el borrador con la ayuda de un compañero y corrijo al menos dos aspectos de puntuación o de conexión entre los argumentos. |
 | **N4** | Explica, en una nota al margen del borrador, qué mejora aporta cada cambio introducido en el texto final. | Explica, en una nota al margen del borrador, qué mejora aporta cada cambio hecho en el texto final. | Explico, en una nota al margen del borrador, qué mejora aporta cada cambio hecho en el texto final. |
 
 **Matriz cuantitativa** — total 10 puntos. Es lo que usa el modo IA para corregir.
 
 | Componente | Máx. | Bandas |
 |---|---|---|
-| Hay planificación previa | 4 | **4** — Entrega un esquema previo propio con la postura y las razones ordenadas<br>**3** — Entrega un esquema previo que solo lista las razones, sin postura que las organice<br>**2** — Entrega notas sueltas previas, sin postura que las organice<br>**1** — Entrega el esquema del modelo de clase, sin razones propias<br>**0** — No hay rastro de trabajo previo al texto |
-| Alcance de la revisión | 4 | **4** — El borrador muestra 2 o más correcciones sobre la conexión entre las razones y la postura<br>**3** — El borrador muestra 2 o más correcciones de puntuación o de léxico<br>**2** — El borrador muestra 1 corrección<br>**1** — El borrador muestra marcas de lectura sin corrección terminada<br>**0** — Entrega la primera versión sin marcas de revisión |
+| Hay planificación previa | 4 | **4** — Entrega un esquema previo propio con la tesis y los argumentos ordenados<br>**3** — Entrega un esquema previo que solo lista los argumentos, sin tesis que los organice<br>**2** — Entrega notas sueltas previas, sin tesis que las organice<br>**1** — Entrega el esquema del modelo de clase, sin argumentos propios<br>**0** — No hay rastro de trabajo previo al texto |
+| Alcance de la revisión | 4 | **4** — El borrador muestra 2 o más correcciones sobre la conexión entre los argumentos y la tesis<br>**3** — El borrador muestra 2 o más correcciones de puntuación o de léxico<br>**2** — El borrador muestra 1 corrección<br>**1** — El borrador muestra marcas de lectura sin corrección terminada<br>**0** — Entrega la primera versión sin marcas de revisión |
 | Explica alguna mejora | 2 | **2** — Explica en el borrador qué mejora aporta al menos un cambio<br>**1.5** — Explica qué mejora aporta el conjunto de los cambios, sin ligarla a ninguno en concreto<br>**1** — Anota un cambio sin explicar qué mejora aporta<br>**0.5** — Marca en el borrador un punto para revisar y lo deja sin cambiar<br>**0** — No explica ningún cambio |
 
 ### Tratamiento de la información: datos al servicio de la opinión  ·  10%  ·  bloque B
@@ -172,8 +172,8 @@
 | Nivel | Descriptor |
 |---|---|
 | **N1** | Utiliza una única fuente indicada por el profesor y traslada sus datos al texto sin señalar de dónde proceden. |
-| **N2** | Selecciona los datos pertinentes de la fuente indicada por el profesor y los emplea como apoyo de una de las razones. |
-| **N3** | Elabora el texto a partir de las dos fuentes indicadas y apoya cada razón en un dato tomado de ellas. |
+| **N2** | Selecciona los datos pertinentes de la fuente indicada por el profesor y los emplea como apoyo de uno de los argumentos. |
+| **N3** | Elabora el texto a partir de las dos fuentes indicadas y apoya cada argumento en un dato tomado de ellas. |
 | **N4** | Explica con palabras propias la información de cada fuente e indica junto a cada dato la fuente de la que procede. |
 
 **Lenguaje sencillo** — lo que lee el alumno en la ficha y en la autoevaluación.
@@ -181,16 +181,16 @@
 | Nivel | Técnico | Sencillo | Sencillo (autoevaluación) |
 |---|---|---|---|
 | **N1** | Utiliza una única fuente indicada por el profesor y traslada sus datos al texto sin señalar de dónde proceden. | Usa una sola fuente indicada por el profesor (un libro, una página web) y traslada los datos al texto sin decir de dónde salen. | Uso una sola fuente indicada por el profesor (un libro, una página web) y traslado los datos al texto sin decir de dónde salen. |
-| **N2** | Selecciona los datos pertinentes de la fuente indicada por el profesor y los emplea como apoyo de una de las razones. | Selecciona de la fuente indicada por el profesor los datos que vienen al caso (datos pertinentes) y los usa para apoyar una de las razones. | Selecciono de la fuente indicada por el profesor los datos que vienen al caso (datos pertinentes) y los uso para apoyar una de las razones. |
-| **N3** | Elabora el texto a partir de las dos fuentes indicadas y apoya cada razón en un dato tomado de ellas. | Elabora el texto a partir de las dos fuentes indicadas y apoya cada razón en un dato tomado de ellas. | Elaboro el texto a partir de las dos fuentes indicadas y apoyo cada razón en un dato tomado de ellas. |
+| **N2** | Selecciona los datos pertinentes de la fuente indicada por el profesor y los emplea como apoyo de uno de los argumentos. | Selecciona de la fuente indicada por el profesor los datos que vienen al caso (datos pertinentes) y los usa para apoyar uno de los argumentos. | Selecciono de la fuente indicada por el profesor los datos que vienen al caso (datos pertinentes) y los uso para apoyar uno de los argumentos. |
+| **N3** | Elabora el texto a partir de las dos fuentes indicadas y apoya cada argumento en un dato tomado de ellas. | Elabora el texto a partir de las dos fuentes indicadas y apoya cada argumento en un dato tomado de ellas. | Elaboro el texto a partir de las dos fuentes indicadas y apoyo cada argumento en un dato tomado de ellas. |
 | **N4** | Explica con palabras propias la información de cada fuente e indica junto a cada dato la fuente de la que procede. | Explica con palabras propias la información de cada fuente, e indica junto a cada dato de qué fuente sale. | Explico con palabras propias la información de cada fuente, e indico junto a cada dato de qué fuente sale. |
 
 **Matriz cuantitativa** — total 10 puntos. Es lo que usa el modo IA para corregir.
 
 | Componente | Máx. | Bandas |
 |---|---|---|
-| Fuentes empleadas | 4 | **4** — Combina los datos de las 2 fuentes indicadas en el mismo texto<br>**3** — Emplea las 2 fuentes indicadas, cada una en una razón distinta<br>**2** — Emplea 1 fuente<br>**1** — Nombra una fuente sin tomar de ella ningún dato<br>**0** — No se aprecia consulta de ninguna fuente |
-| Los datos apoyan las razones | 4 | **4** — Cada razón se apoya en un dato o ejemplo tomado de las fuentes<br>**3** — Alguna razón se apoya en un dato de fuente; el resto, en la experiencia propia<br>**2** — Los datos aparecen sueltos, sin ligarse a ninguna razón<br>**1** — Un solo dato procede de una fuente y aparece suelto<br>**0** — Ningún dato procede de una fuente |
+| Fuentes empleadas | 4 | **4** — Combina los datos de las 2 fuentes indicadas en el mismo texto<br>**3** — Emplea las 2 fuentes indicadas, cada una en un argumento distinto<br>**2** — Emplea 1 fuente<br>**1** — Nombra una fuente sin tomar de ella ningún dato<br>**0** — No se aprecia consulta de ninguna fuente |
+| Los datos apoyan los argumentos | 4 | **4** — Cada argumento se apoya en un dato o ejemplo tomado de las fuentes<br>**3** — Algún argumento se apoya en un dato de fuente; el resto, en la experiencia propia<br>**2** — Los datos aparecen sueltos, sin ligarse a ningún argumento<br>**1** — Un solo dato procede de una fuente y aparece suelto<br>**0** — Ningún dato procede de una fuente |
 | Atribución y palabras propias | 2 | **2** — Señala junto a cada dato la fuente de la que procede y explica la información con palabras propias<br>**1.5** — Señala junto a cada dato la fuente de la que procede y mantiene entre comillas algún pasaje de la fuente<br>**1** — Indica las fuentes al final, sin ligar cada dato a la suya<br>**0.5** — Conserva alguna frase copiada de la fuente, sin señalarla<br>**0** — No indica de dónde procede ningún dato |
 
 ---
@@ -215,7 +215,7 @@
 | Nivel | Descriptor |
 |---|---|
 | **N1** | Utiliza expresiones propias de la conversación diaria para defender la opinión personal en una tarea dirigida al ámbito académico. |
-| **N2** | Ajusta el texto al género de opinión trabajado en clase y presenta la postura propia en primera persona, con algún término coloquial en el léxico. |
+| **N2** | Ajusta el texto al género de opinión trabajado en clase y presenta la tesis propia en primera persona, con algún término coloquial en el léxico. |
 | **N3** | Emplea un registro formal sostenido e indica con fórmulas de opinión (*considero*, *a mi juicio*) los pasajes donde habla el emisor. |
 | **N4** | Matiza el grado de certeza de las afirmaciones propias combinando expresiones de mayor y menor seguridad (*quizá*, *es probable*, *resulta innegable*) a lo largo del texto. |
 
@@ -238,8 +238,8 @@
 
 | Componente | Máx. | Bandas |
 |---|---|---|
-| Tesis reconocible | 4 | **4** — La tesis está formulada en una oración propia al comienzo y el texto entero la defiende<br>**3** — La tesis se deduce del conjunto, pero ninguna oración la formula<br>**2** — El texto defiende dos posturas distintas según el párrafo<br>**1** — La tesis aparece enunciada en la última línea<br>**0** — El texto opina sin tesis reconocible |
-| Argumentos que apoyan la tesis | 4 | **4** — 3 o más argumentos de al menos 2 tipos distintos (dato, ejemplo, experiencia), cada uno en su párrafo<br>**3** — 2 argumentos desarrollados, cada uno en su párrafo<br>**2** — 2 argumentos compartiendo párrafo, o 1 desarrollado y el resto solo enunciados<br>**1** — 1 argumento desarrollado<br>**0** — Las razones se enuncian en una línea, sin desarrollo |
+| Tesis reconocible | 4 | **4** — La tesis está formulada en una oración propia al comienzo y el texto entero la defiende<br>**3** — La tesis se deduce del conjunto, pero ninguna oración la formula<br>**2** — El texto defiende dos tesis distintas según el párrafo<br>**1** — La tesis aparece enunciada en la última línea<br>**0** — El texto opina sin tesis reconocible |
+| Argumentos que apoyan la tesis | 4 | **4** — 3 o más argumentos de al menos 2 tipos distintos (dato, ejemplo, experiencia), cada uno en su párrafo<br>**3** — 2 argumentos desarrollados, cada uno en su párrafo<br>**2** — 2 argumentos compartiendo párrafo, o 1 desarrollado y el resto solo enunciados<br>**1** — 1 argumento desarrollado<br>**0** — Los argumentos se enuncian en una línea, sin desarrollo |
 | Conclusión | 2 | **2** — La conclusión retoma la tesis con otras palabras y recoge lo argumentado<br>**1.5** — La conclusión retoma la tesis con otras palabras, sin recoger los argumentos dados<br>**1** — La conclusión repite la tesis con las mismas palabras de la introducción<br>**0.5** — El texto se cierra con una fórmula de despedida ajena a la tesis<br>**0** — El texto termina en el último argumento, sin cierre |
 
 ### Cohesión: conectores y puntuación  ·  20%  ·  bloque B
@@ -250,7 +250,7 @@
 
 | Nivel | Descriptor |
 |---|---|
-| **N1** | Utiliza los conectores *y*, *pero* y *porque* para enlazar las opiniones con sus razones. |
+| **N1** | Utiliza los conectores *y*, *pero* y *porque* para enlazar las opiniones con sus argumentos. |
 | **N2** | Utiliza conectores de causa y de contraste (*porque*, *sin embargo*) para unir cada argumento con la tesis, y separa los enunciados con punto. |
 | **N3** | Emplea conectores de causa, consecuencia y contraste para encadenar tesis, argumentos y conclusión, y delimita los incisos con comas. |
 | **N4** | Articula el paso de un argumento a otro con marcadores de orden y de refuerzo (*en primer lugar*, *es más*), y sustituye las repeticiones mediante sinónimos y pronombres. |
@@ -348,7 +348,7 @@
 | Nivel | Descriptor |
 |---|---|
 | **N1** | Utiliza fórmulas de confianza propias de la conversación entre iguales para discrepar en un texto dirigido al ámbito académico. |
-| **N2** | Ajusta el léxico y el tono al género de opinión académico, con alguna fórmula de discrepancia que descalifica la postura contraria. |
+| **N2** | Ajusta el léxico y el tono al género de opinión académico, con alguna fórmula de discrepancia que descalifica la tesis contraria. |
 | **N3** | Mantiene el registro formal en todo el texto y emplea fórmulas de cortesía para discrepar sin descalificar al interlocutor. |
 | **N4** | Matiza el grado de certeza de las afirmaciones propias y selecciona la forma deíctica (*uno*, *nosotros*, la impersonalidad) que ajusta la distancia con el interlocutor al efecto buscado. |
 
@@ -357,8 +357,8 @@
 | Nivel | Técnico | Sencillo | Sencillo (autoevaluación) |
 |---|---|---|---|
 | **N1** | Utiliza fórmulas de confianza propias de la conversación entre iguales para discrepar en un texto dirigido al ámbito académico. | Usa expresiones de conversación entre amigos (*venga ya*, *qué tontería*) para llevar la contraria en un texto que es para clase. | Uso expresiones de conversación entre amigos (*venga ya*, *qué tontería*) para llevar la contraria en un texto que es para clase. |
-| **N2** | Ajusta el léxico y el tono al género de opinión académico, con alguna fórmula de discrepancia que descalifica la postura contraria. | Mantiene un tono serio en casi todo el texto, con alguna frase que ataca a la persona que opina distinto en lugar de rebatir la idea (*eso solo lo defiende un ignorante*). | Mantengo un tono serio en casi todo el texto, con alguna frase que ataca a la persona que opina distinto en lugar de rebatir la idea (*eso solo lo defiende un ignorante*). |
-| **N3** | Mantiene el registro formal en todo el texto y emplea fórmulas de cortesía para discrepar sin descalificar al interlocutor. | Mantiene un tono serio de principio a fin y respeta a quien opina distinto: rebate la idea sin atacar a la persona (*entiendo esa postura, pero…*). | Mantengo un tono serio de principio a fin y respeto a quien opina distinto: rebato la idea sin atacar a la persona (*entiendo esa postura, pero…*). |
+| **N2** | Ajusta el léxico y el tono al género de opinión académico, con alguna fórmula de discrepancia que descalifica la tesis contraria. | Mantiene un tono serio en casi todo el texto, con alguna frase que ataca a la persona que opina distinto en lugar de rebatir la idea (*eso solo lo defiende un ignorante*). | Mantengo un tono serio en casi todo el texto, con alguna frase que ataca a la persona que opina distinto en lugar de rebatir la idea (*eso solo lo defiende un ignorante*). |
+| **N3** | Mantiene el registro formal en todo el texto y emplea fórmulas de cortesía para discrepar sin descalificar al interlocutor. | Mantiene un tono serio de principio a fin y respeta a quien opina distinto: rebate la idea sin atacar a la persona (*entiendo ese punto de vista, pero…*). | Mantengo un tono serio de principio a fin y respeto a quien opina distinto: rebato la idea sin atacar a la persona (*entiendo ese punto de vista, pero…*). |
 | **N4** | Matiza el grado de certeza de las afirmaciones propias y selecciona la forma deíctica (*uno*, *nosotros*, la impersonalidad) que ajusta la distancia con el interlocutor al efecto buscado. | Elige cuánta seguridad transmite cada afirmación (*es evidente que…*, *quizá…*) y qué forma usa en cada momento (*uno*, *nosotros*, *se dice que*) para sonar más cercano o más distante al lector. | Elijo cuánta seguridad transmite cada afirmación (*es evidente que…*, *quizá…*) y qué forma uso en cada momento (*uno*, *nosotros*, *se dice que*) para sonar más cercano o más distante al lector. |
 
 *Sin matriz cuantitativa: esta dimensión se juzga en conjunto, no hay nada que contar.*
@@ -373,16 +373,16 @@
 |---|---|
 | **N1** | Ordena los argumentos según van surgiendo, con una tesis que aparece a mitad del texto. |
 | **N2** | Formula la tesis en la introducción y desarrolla cada argumento en su propio párrafo, con un cierre que la repite con las mismas palabras. |
-| **N3** | Matiza la tesis reconociendo un caso o una condición en que resulta menos evidente, sin abandonar la postura defendida. |
+| **N3** | Matiza la tesis reconociendo un caso o una condición en que resulta menos evidente, sin abandonarla. |
 | **N4** | Anticipa una objeción previsible a la tesis, la expone en una oración y la delimita con un argumento propio antes de la conclusión. |
 
 **Lenguaje sencillo** — lo que lee el alumno en la ficha y en la autoevaluación.
 
 | Nivel | Técnico | Sencillo | Sencillo (autoevaluación) |
 |---|---|---|---|
-| **N1** | Ordena los argumentos según van surgiendo, con una tesis que aparece a mitad del texto. | Ordena las razones (los argumentos) en el orden en que surgen, y la opinión principal (la tesis) aparece a mitad del texto. | Ordeno las razones (los argumentos) en el orden en que surgen, y la opinión principal (la tesis) aparece a mitad del texto. |
-| **N2** | Formula la tesis en la introducción y desarrolla cada argumento en su propio párrafo, con un cierre que la repite con las mismas palabras. | Presenta la opinión principal al principio, dedica un párrafo a cada razón y cierra el texto repitiendo la opinión con las mismas palabras. | Presento la opinión principal al principio, dedico un párrafo a cada razón y cierro el texto repitiendo la opinión con las mismas palabras. |
-| **N3** | Matiza la tesis reconociendo un caso o una condición en que resulta menos evidente, sin abandonar la postura defendida. | Defiende la opinión principal y reconoce algún caso en el que no se cumple del todo (una matización), sin cambiar de postura. | Defiendo la opinión principal y reconozco algún caso en el que no se cumple del todo (una matización), sin cambiar de postura. |
+| **N1** | Ordena los argumentos según van surgiendo, con una tesis que aparece a mitad del texto. | Ordena los argumentos en el orden en que surgen, y la opinión personal (tesis) aparece a mitad del texto. | Ordeno los argumentos en el orden en que surgen, y la opinión personal (tesis) aparece a mitad del texto. |
+| **N2** | Formula la tesis en la introducción y desarrolla cada argumento en su propio párrafo, con un cierre que la repite con las mismas palabras. | Presenta la opinión personal (tesis) al principio, dedica un párrafo a cada argumento y cierra el texto repitiendo la opinión con las mismas palabras. | Presento la opinión personal (tesis) al principio, dedico un párrafo a cada argumento y cierro el texto repitiendo la opinión con las mismas palabras. |
+| **N3** | Matiza la tesis reconociendo un caso o una condición en que resulta menos evidente, sin abandonarla. | Defiende la opinión personal (tesis) y reconoce algún caso en el que no se cumple del todo (una matización), sin cambiar de opinión. | Defiendo la opinión personal (tesis) y reconozco algún caso en el que no se cumple del todo (una matización), sin cambiar de opinión. |
 | **N4** | Anticipa una objeción previsible a la tesis, la expone en una oración y la delimita con un argumento propio antes de la conclusión. | Anticipa lo que respondería alguien que opina lo contrario (una objeción), lo expone en una frase y lo rebate con un argumento propio antes de la conclusión. | Anticipo lo que respondería alguien que opina lo contrario (una objeción), lo expongo en una frase y lo rebato con un argumento propio antes de la conclusión. |
 
 **Matriz cuantitativa** — total 10 puntos. Es lo que usa el modo IA para corregir.
@@ -390,7 +390,7 @@
 | Componente | Máx. | Bandas |
 |---|---|---|
 | Tesis y línea argumentativa | 4 | **4** — La tesis está formulada en la introducción y cada párrafo cumple una función reconocible respecto a ella<br>**3** — La tesis está formulada, pero algún párrafo queda sin función respecto a ella<br>**2** — La tesis aparece a mitad del texto o debe reconstruirse del conjunto<br>**1** — La tesis aparece enunciada en la conclusión<br>**0** — El texto acumula argumentos sin tesis reconocible |
-| Matización de la tesis | 4 | **4** — Expone una objeción previsible y la delimita con un argumento propio antes de la conclusión<br>**3** — Reconoce un caso o una condición en que la tesis resulta menos evidente, sin abandonar la postura<br>**2** — Menciona que existen otras posturas, sin nombrar ninguna<br>**1** — Enuncia una objeción concreta y la descarta sin argumento<br>**0** — Argumenta solo a favor de su tesis, sin matiz alguno |
+| Matización de la tesis | 4 | **4** — Expone una objeción previsible y la delimita con un argumento propio antes de la conclusión<br>**3** — Reconoce un caso o una condición en que la tesis resulta menos evidente, sin abandonarla<br>**2** — Menciona que existen otras tesis, sin nombrar ninguna<br>**1** — Enuncia una objeción concreta y la descarta sin argumento<br>**0** — Argumenta solo a favor de su tesis, sin matiz alguno |
 | Conclusión | 2 | **2** — La conclusión recoge lo argumentado e incorpora el matiz introducido<br>**1.5** — La conclusión recoge lo argumentado y deja fuera el matiz introducido<br>**1** — La conclusión retoma la tesis sin recoger lo argumentado<br>**0.5** — La conclusión introduce argumentos nuevos<br>**0** — El texto termina en el último argumento, sin conclusión |
 
 ### Cohesión: conectores, referencia y procedimientos explicativos  ·  20%  ·  bloque B
@@ -411,7 +411,7 @@
 | Nivel | Técnico | Sencillo | Sencillo (autoevaluación) |
 |---|---|---|---|
 | **N1** | Utiliza los conectores de adición y de causa a lo largo de todo el texto, con el sustantivo clave repetido en cada párrafo. | Usa como palabras de enlace (conectores) *y*, *también* y *porque*, y vuelve a escribir la misma palabra clave en cada párrafo. | Uso como palabras de enlace (conectores) *y*, *también* y *porque*, y vuelvo a escribir la misma palabra clave en cada párrafo. |
-| **N2** | Utiliza conectores de causa, consecuencia y contraste entre los argumentos, y explica algún término mediante una oración de relativo. | Enlaza las razones con conectores de causa (*porque*), de consecuencia (*por eso*) y de oposición (*pero*, *sin embargo*), y explica alguna palabra difícil con una frase que empieza por *que* (oración de relativo). | Enlazo las razones con conectores de causa (*porque*), de consecuencia (*por eso*) y de oposición (*pero*, *sin embargo*), y explico alguna palabra difícil con una frase que empieza por *que* (oración de relativo). |
+| **N2** | Utiliza conectores de causa, consecuencia y contraste entre los argumentos, y explica algún término mediante una oración de relativo. | Enlaza los argumentos con conectores de causa (*porque*), de consecuencia (*por eso*) y de oposición (*pero*, *sin embargo*), y explica alguna palabra difícil con una frase que empieza por *que* (oración de relativo). | Enlazo los argumentos con conectores de causa (*porque*), de consecuencia (*por eso*) y de oposición (*pero*, *sin embargo*), y explico alguna palabra difícil con una frase que empieza por *que* (oración de relativo). |
 | **N3** | Emplea la aposición y la oración de relativo para incorporar al argumento una definición o una precisión sin interrumpir la línea del texto. | Añade aclaraciones dentro de la misma frase, entre comas, sin cortar el hilo de la idea (aposición y oración de relativo: *esta norma, que prohíbe el móvil en clase, …*). | Añado aclaraciones dentro de la misma frase, entre comas, sin cortar el hilo de la idea (aposición y oración de relativo: *esta norma, que prohíbe el móvil en clase, …*). |
 | **N4** | Sustituye las repeticiones mediante nominalizaciones e hiperónimos de significado abstracto (*esta medida*, *tal decisión*) y relaciona con ellos cada párrafo con el argumento del anterior. | Sustituye las palabras repetidas por expresiones que resumen lo anterior (*esta medida*, *tal decisión*, *este problema*) y las usa para enlazar cada párrafo con el anterior. | Sustituyo las palabras repetidas por expresiones que resumen lo anterior (*esta medida*, *tal decisión*, *este problema*) y las uso para enlazar cada párrafo con el anterior. |
 
@@ -471,7 +471,7 @@
 | Nivel | Técnico | Sencillo | Sencillo (autoevaluación) |
 |---|---|---|---|
 | **N1** | Redacta el texto en una sola pasada y entrega la primera versión como texto final. | Redacta el texto de una vez y entrega ese primer intento como versión final. | Redacto el texto de una vez y entrego ese primer intento como versión final. |
-| **N2** | Elabora un esquema previo propio con la tesis y el orden de los argumentos, y entrega el borrador con marcas de revisión sobre la ortografía y el léxico. | Elabora antes un esquema propio con la opinión principal y el orden de las razones, y entrega el borrador con las correcciones de ortografía y vocabulario marcadas. | Elaboro antes un esquema propio con la opinión principal y el orden de las razones, y entrego el borrador con las correcciones de ortografía y vocabulario marcadas. |
+| **N2** | Elabora un esquema previo propio con la tesis y el orden de los argumentos, y entrega el borrador con marcas de revisión sobre la ortografía y el léxico. | Elabora antes un esquema propio con la opinión personal (tesis) y el orden de los argumentos, y entrega el borrador con las correcciones de ortografía y vocabulario marcadas. | Elaboro antes un esquema propio con la opinión personal (tesis) y el orden de los argumentos, y entrego el borrador con las correcciones de ortografía y vocabulario marcadas. |
 | **N3** | Revisa el borrador de manera autónoma y reformula los pasajes en los que el lector perdería el hilo del argumento. | Revisa el borrador por cuenta propia y vuelve a escribir las partes en las que el lector perdería el hilo. | Reviso el borrador por cuenta propia y vuelvo a escribir las partes en las que el lector perdería el hilo. |
 | **N4** | Justifica con el metalenguaje del nivel (*tesis*, *argumento*, *objeción*, *conector*) los cambios introducidos para subsanar un problema de comprensión detectado en el borrador. | Justifica cada cambio del borrador con palabras de la asignatura (*tesis*, *argumento*, *objeción*, *conector*) y explica qué problema de comprensión corrige. | Justifico cada cambio del borrador con palabras de la asignatura (*tesis*, *argumento*, *objeción*, *conector*) y explico qué problema de comprensión corrijo. |
 
@@ -501,8 +501,8 @@
 | Nivel | Técnico | Sencillo | Sencillo (autoevaluación) |
 |---|---|---|---|
 | **N1** | Utiliza una única fuente y traslada sus datos al texto sin señalar de dónde proceden. | Usa una sola fuente (un libro, una página web, un artículo) y pone los datos en el texto sin indicar de dónde salen. | Uso una sola fuente (un libro, una página web, un artículo) y pongo los datos en el texto sin indicar de dónde salen. |
-| **N2** | Selecciona datos de dos o más fuentes de manera autónoma para apoyar los argumentos e indica su procedencia al final del texto. | Elige por cuenta propia datos de dos o más fuentes para apoyar las razones (los argumentos) e indica al final del texto de dónde sale cada uno. | Elijo por cuenta propia datos de dos o más fuentes para apoyar las razones (los argumentos) e indico al final del texto de dónde sale cada uno. |
-| **N3** | Contrasta la información de fuentes distintas antes de emplearla como apoyo de un argumento, y cita el origen de cada dato en el punto del texto donde aparece. | Contrasta fuentes distintas, para ver si coinciden, antes de usar un dato como apoyo de una razón, y señala de dónde sale cada dato en la misma frase en que aparece. | Contrasto fuentes distintas, para ver si coinciden, antes de usar un dato como apoyo de una razón, y señalo de dónde sale cada dato en la misma frase en que aparece. |
+| **N2** | Selecciona datos de dos o más fuentes de manera autónoma para apoyar los argumentos e indica su procedencia al final del texto. | Elige por cuenta propia datos de dos o más fuentes para apoyar los argumentos e indica al final del texto de dónde sale cada uno. | Elijo por cuenta propia datos de dos o más fuentes para apoyar los argumentos e indico al final del texto de dónde sale cada uno. |
+| **N3** | Contrasta la información de fuentes distintas antes de emplearla como apoyo de un argumento, y cita el origen de cada dato en el punto del texto donde aparece. | Contrasta fuentes distintas, para ver si coinciden, antes de usar un dato como apoyo de un argumento, y señala de dónde sale cada dato en la misma frase en que aparece. | Contrasto fuentes distintas, para ver si coinciden, antes de usar un dato como apoyo de un argumento, y señalo de dónde sale cada dato en la misma frase en que aparece. |
 | **N4** | Valora la fiabilidad de cada fuente a partir de su autoría, su fecha y su propósito, y distingue en el texto los datos comprobables de las opiniones, con la referencia completa de cada fuente empleada. | Valora si cada fuente es de fiar (la fiabilidad) según quién la firma, de cuándo es y para qué la escribieron; separa en el texto los hechos que cualquiera puede comprobar de las opiniones, y anota los datos completos de cada fuente usada (la referencia). | Valoro si cada fuente es de fiar (la fiabilidad) según quién la firma, de cuándo es y para qué la escribieron; separo en el texto los hechos que cualquiera puede comprobar de las opiniones, y anoto los datos completos de cada fuente usada (la referencia). |
 
 **Matriz cuantitativa** — total 10 puntos. Es lo que usa el modo IA para corregir.
@@ -536,7 +536,7 @@
 |---|---|
 | **N1** | Utiliza fórmulas coloquiales o exclamativas en un ensayo que el encargo académico pide en registro formal. |
 | **N2** | Ajusta el léxico y el tono al género del ensayo, aunque presenta las opiniones propias como si fueran hechos comprobados, sin marca que las distinga. |
-| **N3** | Mantiene el registro formal en todo el ensayo y distingue mediante la enunciación qué afirma como información y qué defiende como postura propia. |
+| **N3** | Mantiene el registro formal en todo el ensayo y distingue mediante la enunciación qué afirma como información y qué defiende como tesis propia. |
 | **N4** | Justifica la elección del grado de presencia del emisor (primera persona, impersonalidad) según el efecto persuasivo buscado, y emplea en todo el texto un lenguaje no discriminatorio. |
 
 *Sin matriz cuantitativa: esta dimensión se juzga en conjunto, no hay nada que contar.*
@@ -559,7 +559,7 @@
 | Componente | Máx. | Bandas |
 |---|---|---|
 | Tesis y línea argumentativa | 4 | **4** — La tesis está formulada en la introducción y cada párrafo cumple una función reconocible respecto a ella<br>**3** — La tesis está formulada, pero algún párrafo queda sin función respecto a ella<br>**2** — La tesis debe reconstruirse del conjunto del texto<br>**1** — La tesis aparece enunciada en la conclusión<br>**0** — El texto acumula opiniones sin tesis reconocible |
-| Gestión del contraargumento | 4 | **4** — Expone al menos una objeción con sus términos y la rebate o la delimita con un argumento distinto de los ya empleados<br>**3** — Expone una objeción y la rebate repitiendo un argumento ya empleado<br>**2** — Menciona la existencia de otras posturas, sin nombrar ninguna<br>**1** — Nombra una postura contraria en una frase y sigue con la propia, sin rebatirla<br>**0** — Argumenta solo a favor de su tesis, sin objeción alguna |
+| Gestión del contraargumento | 4 | **4** — Expone al menos una objeción con sus términos y la rebate o la delimita con un argumento distinto de los ya empleados<br>**3** — Expone una objeción y la rebate repitiendo un argumento ya empleado<br>**2** — Menciona la existencia de otras tesis, sin nombrar ninguna<br>**1** — Nombra una tesis contraria en una frase y sigue con la propia, sin rebatirla<br>**0** — Argumenta solo a favor de su tesis, sin objeción alguna |
 | Conclusión derivada | 2 | **2** — La conclusión deriva de lo argumentado e incorpora el resultado de la refutación<br>**1.5** — La conclusión deriva de lo argumentado y deja fuera el resultado de la refutación<br>**1** — La conclusión retoma la tesis sin incorporar lo ganado en la argumentación<br>**0.5** — La conclusión introduce argumentos nuevos<br>**0** — El ensayo termina en el último argumento, sin conclusión |
 
 ### Cohesión: conectores, marcadores y referencia  ·  20%  ·  bloque B
@@ -614,7 +614,7 @@
 |---|---|
 | **N1** | Redacta el texto en una sola pasada y entrega la primera versión como texto final. |
 | **N2** | Elabora un guion previo con la tesis, los argumentos y la objeción prevista, y entrega el borrador con marcas de revisión sobre la ortografía y el léxico. |
-| **N3** | Revisa el borrador de manera autónoma y reformula los pasajes donde la argumentación resulta difícil de seguir para un lector que no comparte la postura defendida. |
+| **N3** | Revisa el borrador de manera autónoma y reformula los pasajes donde la argumentación resulta difícil de seguir para un lector que no comparte la tesis defendida. |
 | **N4** | Justifica con metalenguaje específico los cambios introducidos, explicando tanto el problema argumentativo que resuelven como el efecto persuasivo que persiguen. |
 
 **Matriz cuantitativa** — total 10 puntos. Es lo que usa el modo IA para corregir.
@@ -644,7 +644,7 @@
 |---|---|---|
 | Vínculos entre la obra y otros textos | 4 | **4** — Establece 2 o más vínculos, cada uno justificado por tema, tópico, estructura o recurso expresivo<br>**3** — Establece 1 vínculo justificado<br>**2** — Enuncia vínculos sin justificar en qué se apoyan<br>**1** — Nombra otro texto sin llegar a establecer el vínculo<br>**0** — El ensayo trata la obra aislada, sin conexión con otros textos |
 | Los vínculos sirven a la tesis | 4 | **4** — Cada vínculo funciona como argumento de la tesis del ensayo<br>**3** — La mayoría de los vínculos funcionan como argumento; 1 queda como comparación suelta<br>**2** — Algún vínculo funciona como argumento; el resto queda como comparación suelta<br>**1** — Un vínculo se acerca a la tesis sin llegar a funcionar como argumento<br>**0** — Los vínculos aparecen al margen de la línea argumentativa |
-| Respuesta personal del lector | 2 | **2** — Explicita la respuesta personal que la lectura le provoca y la conecta con la valoración que defiende<br>**1.5** — Explicita la respuesta personal que la lectura provoca y la conecta con un solo tramo de la valoración<br>**1** — Explicita una impresión personal aislada de la argumentación<br>**0.5** — Emplea la primera persona al valorar, sin nombrar la respuesta que la lectura provoca<br>**0** — La postura personal del lector queda fuera del texto |
+| Respuesta personal del lector | 2 | **2** — Explicita la respuesta personal que la lectura le provoca y la conecta con la valoración que defiende<br>**1.5** — Explicita la respuesta personal que la lectura provoca y la conecta con un solo tramo de la valoración<br>**1** — Explicita una impresión personal aislada de la argumentación<br>**0.5** — Emplea la primera persona al valorar, sin nombrar la respuesta que la lectura provoca<br>**0** — La respuesta personal del lector queda fuera del texto |
 
 ---
 
@@ -692,7 +692,7 @@
 | Componente | Máx. | Bandas |
 |---|---|---|
 | Tesis y línea argumentativa | 4 | **4** — La tesis está formulada en la introducción y cada párrafo cumple una función reconocible respecto a ella<br>**3** — La tesis está formulada, pero algún párrafo queda sin función respecto a ella<br>**2** — La tesis debe inferirse del conjunto del texto<br>**1** — La tesis aparece enunciada en la conclusión<br>**0** — El texto acumula argumentos sin tesis reconocible |
-| Gestión del contraargumento | 4 | **4** — Expone al menos una objeción con sus términos y la rebate con un argumento distinto de los ya empleados<br>**3** — Expone una objeción y la rebate repitiendo un argumento ya empleado<br>**2** — Menciona la existencia de otras posturas, sin nombrar ninguna<br>**1** — Nombra una postura contraria en una frase y sigue con la propia, sin rebatirla<br>**0** — Argumenta solo a favor de su tesis, sin objeción alguna |
+| Gestión del contraargumento | 4 | **4** — Expone al menos una objeción con sus términos y la rebate con un argumento distinto de los ya empleados<br>**3** — Expone una objeción y la rebate repitiendo un argumento ya empleado<br>**2** — Menciona la existencia de otras tesis, sin nombrar ninguna<br>**1** — Nombra una tesis contraria en una frase y sigue con la propia, sin rebatirla<br>**0** — Argumenta solo a favor de su tesis, sin objeción alguna |
 | Conclusión derivada | 2 | **2** — La conclusión deriva de lo argumentado e incorpora el resultado de la refutación<br>**1.5** — La conclusión deriva de lo argumentado y deja fuera el resultado de la refutación<br>**1** — La conclusión retoma la tesis sin incorporar lo ganado en la argumentación<br>**0.5** — La conclusión introduce argumentos nuevos<br>**0** — El ensayo termina en el último argumento, sin conclusión |
 
 ### Cohesión: conectores, marcadores y referencia  ·  20%  ·  bloque B
@@ -747,7 +747,7 @@
 |---|---|
 | **N1** | Redacta el texto en una sola pasada y lo entrega como versión final, sin someterlo a ninguna revisión. |
 | **N2** | Elabora un guion previo con la tesis, los argumentos y la objeción prevista, y revisa el borrador de forma individual, sin contrastarlo con nadie ni con ningún instrumento de consulta. |
-| **N3** | Revisa el borrador con ayuda de un compañero o de un instrumento de consulta (corrector, manual de estilo) y reformula los pasajes donde la argumentación resulta difícil de seguir para un lector que no comparte la postura defendida. |
+| **N3** | Revisa el borrador con ayuda de un compañero o de un instrumento de consulta (corrector, manual de estilo) y reformula los pasajes donde la argumentación resulta difícil de seguir para un lector que no comparte la tesis defendida. |
 | **N4** | Justifica con metalenguaje específico los cambios introducidos a partir de esa revisión compartida, explicando tanto el problema argumentativo que resuelven como el efecto persuasivo que persiguen. |
 
 **Matriz cuantitativa** — total 10 puntos. Es lo que usa el modo IA para corregir.
@@ -777,7 +777,7 @@
 |---|---|---|
 | Vínculos entre la obra y otros textos | 4 | **4** — Establece 2 o más vínculos, cada uno justificado por tema, tópico, estructura o recurso expresivo y situado en su eje temático<br>**3** — Establece 1 vínculo justificado y situado en su eje temático<br>**2** — Enuncia vínculos sin justificar en qué se apoyan ni en qué eje se sitúan<br>**1** — Nombra otro texto del mismo eje sin llegar a establecer el vínculo<br>**0** — El ensayo trata la obra aislada, sin conexión con otros textos |
 | Los vínculos sirven a la tesis | 4 | **4** — Cada vínculo funciona como argumento de la tesis del ensayo<br>**3** — La mayoría de los vínculos funcionan como argumento; 1 queda como comparación suelta<br>**2** — Algún vínculo funciona como argumento; el resto queda como comparación suelta<br>**1** — Un vínculo se acerca a la tesis sin llegar a funcionar como argumento<br>**0** — Los vínculos aparecen al margen de la línea argumentativa |
-| Respuesta personal del lector | 2 | **2** — Explicita la respuesta personal que la lectura le provoca y la conecta con la valoración que defiende<br>**1.5** — Explicita la respuesta personal que la lectura provoca y la conecta con un solo tramo de la valoración<br>**1** — Explicita una impresión personal aislada de la argumentación<br>**0.5** — Emplea la primera persona al valorar, sin nombrar la respuesta que la lectura provoca<br>**0** — La postura personal del lector queda fuera del texto |
+| Respuesta personal del lector | 2 | **2** — Explicita la respuesta personal que la lectura le provoca y la conecta con la valoración que defiende<br>**1.5** — Explicita la respuesta personal que la lectura provoca y la conecta con un solo tramo de la valoración<br>**1** — Explicita una impresión personal aislada de la argumentación<br>**0.5** — Emplea la primera persona al valorar, sin nombrar la respuesta que la lectura provoca<br>**0** — La respuesta personal del lector queda fuera del texto |
 
 ---
 
@@ -787,6 +787,6 @@ Derivada del banco de verbos, sin reescribir nada a mano. Así es como la vería
 
 | Original (3.ª persona) | Autoevaluación (1.ª persona) |
 |---|---|
-| Emplea fórmulas de opinión (*creo que*, *en mi opinión*) al presentar cada razón y mantiene el resto del texto libre de expresiones coloquiales. | Empleo fórmulas de opinión (*creo que*, *en mi opinión*) al presentar cada razón y mantiene el resto del texto libre de expresiones coloquiales. |
-| Ordena el texto en tres partes —postura, razones y cierre— con un párrafo para cada razón. | Ordeno el texto en tres partes —postura, razones y cierre— con un párrafo para cada razón. |
-| Emplea conectores explicativos y de contraste (*es decir*, *en cambio*) para encadenar postura, razones y cierre, y delimita los incisos con comas. | Empleo conectores explicativos y de contraste (*es decir*, *en cambio*) para encadenar postura, razones y cierre, y delimita los incisos con comas. |
+| Emplea fórmulas de opinión (*creo que*, *en mi opinión*) al presentar cada argumento y mantiene el resto del texto libre de expresiones coloquiales. | Empleo fórmulas de opinión (*creo que*, *en mi opinión*) al presentar cada argumento y mantiene el resto del texto libre de expresiones coloquiales. |
+| Ordena el texto en tres partes —tesis, argumentos y cierre— con un párrafo para cada argumento. | Ordeno el texto en tres partes —tesis, argumentos y cierre— con un párrafo para cada argumento. |
+| Emplea conectores explicativos y de contraste (*es decir*, *en cambio*) para encadenar tesis, argumentos y cierre, y delimita los incisos con comas. | Empleo conectores explicativos y de contraste (*es decir*, *en cambio*) para encadenar tesis, argumentos y cierre, y delimita los incisos con comas. |

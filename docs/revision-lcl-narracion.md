@@ -1,6 +1,6 @@
 # Revisión del pack: Narración escrita — Región de Murcia
 
-**Pack** `pack-lcl-narracion.json` · versión 0.5.0 · 18 criterios · 72 descriptores · 15 matrices cuantitativas
+**Pack** `pack-lcl-narracion.json` · versión 0.6.0 · 18 criterios · 72 descriptores · 15 matrices cuantitativas
 
 > Documento para validación docente, generado desde el JSON. No se edita a mano.
 > Al leer, mira sobre todo tres cosas: si el nivel N4 es alcanzable en ese curso,

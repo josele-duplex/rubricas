@@ -2,7 +2,7 @@
   "pack_id": "lcl-murcia-investigacion",
   "materia": "LCL",
   "etiqueta": "Trabajo de investigación multimodal — Región de Murcia",
-  "version": "0.8.0",
+  "version": "0.9.0",
   "normativa": {
     "estatal": [
       "RD 217/2022, de 29 de marzo (ESO)",
@@ -1454,8 +1454,7 @@
         "penalizaciones": []
       },
       "descriptor_cotejo": null,
-      "descriptor_un_punto": "Selecciona información de dos fuentes distintas y relaciona los datos que ofrecen sobre el tema.",
-      "nombre_alumno": "Buscar y comprobar las fuentes"
+      "descriptor_un_punto": "Selecciona información de dos fuentes distintas y relaciona los datos que ofrecen sobre el tema."
     },
     {
       "id": "lcl-b-integracion-inv-4eso",
@@ -1945,7 +1944,7 @@
       },
       "descriptor_cotejo": null,
       "descriptor_un_punto": "Anota la dirección completa de cada fuente utilizada en un apartado final.",
-      "nombre_alumno": "Decir de dónde sale cada dato y cada imagen"
+      "nombre_alumno": "Decir de dónde sale cada dato y cada imagen (atribución de fuentes)"
     },
     {
       "id": "lcl-d-correccion-inv-4eso",

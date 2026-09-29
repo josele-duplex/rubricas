@@ -2,7 +2,7 @@
   "pack_id": "lcl-murcia-narracion",
   "materia": "LCL",
   "etiqueta": "Narración escrita — Región de Murcia",
-  "version": "0.5.0",
+  "version": "0.6.0",
   "normativa": {
     "estatal": [
       "RD 217/2022, de 29 de marzo (ESO)"
@@ -863,8 +863,7 @@
       },
       "matriz_cuantitativa": null,
       "descriptor_cotejo": null,
-      "descriptor_un_punto": "Ajusta el registro del relato a la situación que plantea el encargo y mantiene el mismo tratamiento del lector.",
-      "nombre_alumno": "El tono del relato"
+      "descriptor_un_punto": "Ajusta el registro del relato a la situación que plantea el encargo y mantiene el mismo tratamiento del lector."
     },
     {
       "id": "lcl-b-coherencia-narr-2eso",
@@ -1026,8 +1025,7 @@
         "penalizaciones": []
       },
       "descriptor_cotejo": null,
-      "descriptor_un_punto": "Ordena el relato en planteamiento, nudo y desenlace, y sitúa el conflicto en el nudo.",
-      "nombre_alumno": "Las partes de la historia"
+      "descriptor_un_punto": "Ordena el relato en planteamiento, nudo y desenlace, y sitúa el conflicto en el nudo."
     },
     {
       "id": "lcl-b-cohesion-narr-2eso",
@@ -1217,8 +1215,7 @@
         "penalizaciones": []
       },
       "descriptor_cotejo": null,
-      "descriptor_un_punto": "Emplea conectores temporales y de orden para encadenar los hechos y separa con punto los enunciados.",
-      "nombre_alumno": "Cómo se unen los hechos"
+      "descriptor_un_punto": "Emplea conectores temporales y de orden para encadenar los hechos y separa con punto los enunciados."
     },
     {
       "id": "lcl-d-correccion-narr-2eso",
@@ -1543,8 +1540,7 @@
         "penalizaciones": []
       },
       "descriptor_cotejo": null,
-      "descriptor_un_punto": "Elabora un guion previo con los hechos y los personajes del relato y entrega el borrador junto al texto final.",
-      "nombre_alumno": "Preparar y revisar el relato"
+      "descriptor_un_punto": "Elabora un guion previo con los hechos y los personajes del relato y entrega el borrador junto al texto final."
     },
     {
       "id": "lcl-c-literaria-narr-2eso",

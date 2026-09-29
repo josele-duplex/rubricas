@@ -1,6 +1,6 @@
 # Revisión del pack: Trabajo de investigación multimodal — Región de Murcia
 
-**Pack** `pack-lcl-investigacion.json` · versión 0.8.0 · 27 criterios · 108 descriptores · 22 matrices cuantitativas
+**Pack** `pack-lcl-investigacion.json` · versión 0.9.0 · 27 criterios · 108 descriptores · 22 matrices cuantitativas
 
 > Documento para validación docente, generado desde el JSON. No se edita a mano.
 > Al leer, mira sobre todo tres cosas: si el nivel N4 es alcanzable en ese curso,

@@ -231,6 +231,14 @@ Bachillerato, o una actividad puntual de otro curso— es del docente, no de est
 | narracion | 2ESO | Completo: 6 dimensiones × 4 niveles y 6 `nombre_alumno` | Ln-d | 28-sep-2026 |
 | resumen | 2ESO | Completo: 5 dimensiones × 4 niveles y 5 `nombre_alumno` | Ln-d | 28-sep-2026 |
 
+**Revisión transversal del 29-sep-2026 (docente).** Los `nombre_alumno` de la tabla ya no
+cuentan: el alumno de 2.º ESO a 2.º BACH maneja *adecuación*, *coherencia* y *cohesión*, así
+que la ficha enseña el nombre técnico de la dimensión. Solo conservan nombre sencillo la
+corrección normativa y las dimensiones que el docente dio por opacas (regla del paso 7 del
+skill `rubricas-pack`). En los textos sencillos, «razones» pasa a «argumentos» y la tesis se
+escribe «la opinión personal (tesis)»; el técnico del argumentativo dice *tesis* y
+*argumentos* en todos los cursos.
+
 ## 8. Lo que no se hace, a propósito, y cuándo se reconsidera
 
 | No se hace | Se reconsidera si… |

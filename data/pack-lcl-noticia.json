@@ -2,7 +2,7 @@
   "pack_id": "lcl-murcia-noticia",
   "materia": "LCL",
   "etiqueta": "Redacción de una noticia — Región de Murcia",
-  "version": "0.4.0",
+  "version": "0.5.0",
   "normativa": {
     "estatal": [
       "RD 217/2022, de 29 de marzo (ESO)",
@@ -1476,8 +1476,7 @@
         "penalizaciones": []
       },
       "descriptor_cotejo": null,
-      "descriptor_un_punto": "Organiza la noticia en titular, entradilla y cuerpo, y ordena los datos en párrafos temáticos.",
-      "nombre_alumno": "Las partes de la noticia"
+      "descriptor_un_punto": "Organiza la noticia en titular, entradilla y cuerpo, y ordena los datos en párrafos temáticos."
     },
     {
       "id": "lcl-b-fuentes-not-4eso",
@@ -1640,8 +1639,7 @@
         "penalizaciones": []
       },
       "descriptor_cotejo": null,
-      "descriptor_un_punto": "Selecciona entre varias fuentes las pertinentes para el hecho y descarta las demás.",
-      "nombre_alumno": "Buscar y comprobar las fuentes"
+      "descriptor_un_punto": "Selecciona entre varias fuentes las pertinentes para el hecho y descarta las demás."
     },
     {
       "id": "lcl-b-atribucion-not-4eso",
@@ -1805,7 +1803,7 @@
       },
       "descriptor_cotejo": null,
       "descriptor_un_punto": "Indica en el cuerpo la procedencia de los datos tomados de cada fuente.",
-      "nombre_alumno": "Decir de dónde sale cada dato"
+      "nombre_alumno": "Decir de dónde sale cada dato (atribución de la información)"
     },
     {
       "id": "lcl-b-registro-not-4eso",
